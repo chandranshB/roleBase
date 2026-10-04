@@ -32,6 +32,9 @@ rows = sorted(map(row, jobs), key=lambda r: r[6], reverse=True)
 out = Path("_site")
 out.mkdir(exist_ok=True)
 shutil.copy("web/index.html", out / "index.html")
+shutil.copy("web/search.html", out / "search.html")  # prototype: search-engine style front end
+shutil.copy("web/favicon.svg", out / "favicon.svg")
+shutil.copytree("web/fonts", out / "fonts", dirs_exist_ok=True)  # Instrument Sans (SIL OFL), bundled so no outside font service is used
 (out / "jobs.json").write_text(json.dumps(
     {"updated": dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%d %H:%M UTC"), "levels": levels, "sources": sources, "rows": rows},
     ensure_ascii=False, separators=(",", ":")), encoding="utf-8")

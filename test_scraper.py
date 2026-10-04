@@ -91,6 +91,20 @@ assert slim(row) == {"id": "ashby:acme:u1", "years": 0, "title": "Engineer"}
 assert slim({**row, "level": "manager+"})["level"] == "manager+"  # level from an API hint is not derivable, so it stays
 assert url_of("remotive:7") is None
 
+# --- logos: icon detection and ordering ---
+import struct
+
+from build_logos import candidates, kind, size, wide
+
+png = b"\x89PNG\r\n\x1a\n" + b"\0\0\0\rIHDR" + struct.pack(">II", 180, 180)
+ico = b"\x00\x00\x01\x00\x02\x00" + bytes([16, 16]) + b"\0" * 14 + bytes([0, 0]) + b"\0" * 14  # 16px and 256px entries
+assert (kind(png), size(png, "png")) == ("png", 180) and (kind(ico), size(ico, "ico")) == ("ico", 256)
+assert wide(png) == 1 and wide(b"\x89PNG\r\n\x1a\n" + b"\0\0\0\rIHDR" + struct.pack(">II", 400, 100)) == 4
+assert kind(b'<?xml version="1.0"?><svg xmlns="x"/>') == "svg" and kind(b"<html><body>404</body></html>") is None and kind(b"GIF89a") is None
+html = '''<link rel="icon" href="/f.png" sizes="32x32"><link rel="apple-touch-icon" sizes="180x180" href="/t.png">
+<link rel="icon" type="image/svg+xml" href="/m.svg"><link rel="mask-icon" href="/mask.svg"><link rel="stylesheet" href="/a.css">'''
+assert candidates(html, "https://x.com/") == ["https://x.com/t.png", "https://x.com/m.svg", "https://x.com/f.png", "https://x.com/favicon.ico"]
+
 # --- charts: valid XML, labels escaped, empty and single-day data do not crash ---
 import xml.etree.ElementTree as ET
 

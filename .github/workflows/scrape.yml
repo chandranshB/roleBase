@@ -38,6 +38,14 @@ jobs:
         with: { python-version: "3.12" }
       - run: pip install requests
       - run: python build_site.py
+      - id: month
+        run: echo "ym=$(date -u +%Y-%m)" >> "$GITHUB_OUTPUT"
+      - uses: actions/cache@v4 # company icons are fetched once a month, not on every 6-hourly deploy
+        with:
+          path: logo-cache
+          key: logos-${{ steps.month.outputs.ym }}-${{ hashFiles('domains.json', 'companies.json') }}
+          restore-keys: logos-
+      - run: python build_logos.py
       - uses: actions/upload-pages-artifact@v3
         with: { path: _site }
       - id: d
