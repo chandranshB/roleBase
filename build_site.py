@@ -31,8 +31,7 @@ def row(j):
 rows = sorted(map(row, jobs), key=lambda r: r[6], reverse=True)
 out = Path("_site")
 out.mkdir(exist_ok=True)
-shutil.copy("web/index.html", out / "index.html")
-shutil.copy("web/search.html", out / "search.html")  # prototype: search-engine style front end
+shutil.copy("web/index.html", out / "index.html")  # the search and feed front end
 shutil.copy("web/favicon.svg", out / "favicon.svg")
 shutil.copytree("web/fonts", out / "fonts", dirs_exist_ok=True)  # Instrument Sans (SIL OFL), bundled so no outside font service is used
 (out / "jobs.json").write_text(json.dumps(
