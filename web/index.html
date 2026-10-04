@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>RoleBase: job search</title>
+<meta name="description" content="Fast, ad-free search over open jobs from company career boards. Updated every 6 hours.">
+<style>
+:root{--bg:#fff;--fg:#14171a;--mute:#5b6770;--line:#e3e7ea;--card:#f6f8fa;--acc:#2457d6;--tag:#e9eef7;--rem:#d9f2e3;--remfg:#116638}
+@media(prefers-color-scheme:dark){:root{--bg:#0e1114;--fg:#e8ecef;--mute:#98a3ab;--line:#222a30;--card:#161b20;--acc:#7ea2ff;--tag:#1d2733;--rem:#14301f;--remfg:#6fd69b}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.45 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+main,header,footer{max-width:820px;margin:0 auto;padding:0 16px}
+header{padding-top:24px}
+h1{margin:0;font-size:1.5rem}
+#meta{margin:2px 0 14px;color:var(--mute);font-size:.875rem}
+form{position:sticky;top:0;background:var(--bg);padding:10px 0;border-bottom:1px solid var(--line);display:flex;flex-wrap:wrap;gap:8px;z-index:1}
+input[type=search]{flex:1 1 100%}
+input,select{font:inherit;padding:8px 10px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--fg);min-width:0}
+select{flex:1 1 120px}
+label.ck{display:flex;align-items:center;gap:6px;white-space:nowrap;padding:0 4px}
+#count{color:var(--mute);font-size:.875rem;margin:12px 0 4px}
+ul{list-style:none;margin:0;padding:0}
+li{padding:12px 0;border-bottom:1px solid var(--line)}
+a.t{color:var(--acc);font-weight:600;text-decoration:none;overflow-wrap:anywhere}
+a.t:hover,a.t:focus-visible{text-decoration:underline}
+.m{color:var(--mute);font-size:.9rem;margin-top:2px}
+.m .c{color:var(--fg);margin-right:8px}
+.b{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+.tag{background:var(--tag);border-radius:999px;padding:1px 9px;font-size:.75rem;text-transform:capitalize}
+.tag.r{background:var(--rem);color:var(--remfg)}
+#more{display:block;margin:16px auto;padding:10px 22px;font:inherit;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--fg);cursor:pointer}
+#more[hidden]{display:none}
+footer{color:var(--mute);font-size:.8rem;padding-bottom:32px;padding-top:12px}
+footer a{color:inherit}
+</style>
+</head>
+<body>
+<header>
+  <h1>RoleBase</h1>
+  <p id="meta">Loading jobs…</p>
+</header>
+<main>
+  <form id="f" role="search" autocomplete="off">
+    <input type="search" name="q" placeholder="Search title, company or location, e.g. python berlin" aria-label="Search jobs">
+    <select name="level" aria-label="Level"><option value="">Any level</option></select>
+    <select name="source" aria-label="Source"><option value="">Any source</option></select>
+    <select name="days" aria-label="Posted">
+      <option value="">Any date</option><option value="1">Last 24h</option><option value="7">Last 7 days</option><option value="30">Last 30 days</option>
+    </select>
+    <label class="ck"><input type="checkbox" name="remote"> Remote</label>
+  </form>
+  <p id="count" aria-live="polite"></p>
+  <noscript>This page needs JavaScript to search jobs.</noscript>
+  <ul id="list"></ul>
+  <button id="more" type="button" hidden>Show more</button>
+</main>
+<footer>
+  Jobs are scraped from public company career boards plus Remotive, RemoteOK and Arbeitnow; every listing belongs to its employer and links to the original posting.
+  Open source: <a href="https://github.com/chandranshB/roleBase">GitHub</a>.
+</footer>
+<script>
+(()=>{
+const $=s=>document.querySelector(s),PAGE=50,F=$("#f").elements;
+let D,H,res=[],shown=0;
+const el=(t,c,x)=>{const e=document.createElement(t);if(c)e.className=c;if(x)e.textContent=x;return e};
+const age=d=>{const n=Math.floor((Date.now()-Date.parse(d))/864e5);return n<1?"today":n<30?n+"d ago":Math.floor(n/30)+"mo ago"};
+function card(r){
+  const li=el("li"),a=el("a","t",r[0]);
+  if(/^https?:\/\//i.test(r[7])){a.href=r[7];a.target="_blank";a.rel="noopener noreferrer nofollow"}
+  const m=el("div","m");m.append(el("span","c",r[1]),el("span","",r[2]||"Location n/a"));
+  const b=el("div","b");
+  if(r[3])b.append(el("span","tag r","Remote"));
+  b.append(el("span","tag",D.levels[r[4]]),el("span","tag",D.sources[r[5]]),el("span","tag",age(r[6])));
+  li.append(a,m,b);return li;
+}
+function more(){
+  const fr=document.createDocumentFragment();
+  for(const r of res.slice(shown,shown+PAGE))fr.append(card(r));
+  shown+=PAGE;$("#list").append(fr);$("#more").hidden=shown>=res.length;
+}
+function save(){
+  const p=new URLSearchParams();
+  for(const n of["q","level","source","days"])if(F[n].value)p.set(n,F[n].value);
+  if(F.remote.checked)p.set("remote","1");
+  history.replaceState(null,"","#"+p);
+}
+function run(){
+  const terms=F.q.value.toLowerCase().split(/\s+/).filter(Boolean),lv=F.level.value,sr=F.source.value,rm=F.remote.checked,d=+F.days.value;
+  const cut=d?new Date(Date.now()-d*864e5).toISOString().slice(0,10):"";
+  res=D.rows.filter((r,i)=>!((rm&&!r[3])||(lv!==""&&r[4]!=lv)||(sr!==""&&r[5]!=sr)||(cut&&r[6]<cut))&&terms.every(t=>H[i].includes(t)));
+  shown=0;$("#list").replaceChildren();more();save();
+  $("#count").textContent=res.length.toLocaleString()+(res.length===1?" job":" jobs");
+}
+const fill=(n,a)=>a.forEach((x,i)=>{const o=el("option","",x);o.value=i;F[n].append(o)});
+let t;$("#f").addEventListener("input",()=>{clearTimeout(t);t=setTimeout(run,120)});
+$("#f").addEventListener("submit",e=>e.preventDefault());
+$("#more").addEventListener("click",more);
+fetch("jobs.json").then(r=>r.json()).then(d=>{
+  D=d;H=d.rows.map(r=>(r[0]+" "+r[1]+" "+r[2]).toLowerCase());
+  fill("level",d.levels);fill("source",d.sources);
+  const p=new URLSearchParams(location.hash.slice(1));
+  for(const n of["q","level","source","days"])F[n].value=p.get(n)||"";
+  F.remote.checked=p.has("remote");
+  $("#meta").textContent=d.rows.length.toLocaleString()+" open jobs · updated "+d.updated;
+  run();
+}).catch(()=>{$("#meta").textContent="Could not load jobs."});
+})();
+</script>
+</body>
+</html>

@@ -24,3 +24,21 @@ jobs:
             git commit -m "data: $(date -u '+%F %H:%M') UTC"
             git push
           fi
+  deploy: # rebuild the Pages site from the freshly committed data
+    needs: scrape
+    runs-on: ubuntu-latest
+    permissions: { pages: write, id-token: write, contents: read }
+    environment:
+      name: github-pages
+      url: ${{ steps.d.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: main } # not the triggering sha: the bot commit above is newer
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install requests
+      - run: python build_site.py
+      - uses: actions/upload-pages-artifact@v3
+        with: { path: _site }
+      - id: d
+        uses: actions/deploy-pages@v4
