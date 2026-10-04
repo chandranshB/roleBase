@@ -48,28 +48,40 @@ svg{width:20px;height:20px;flex:none}
 .ib:active,.meb:active{transform:scale(.92)}
 
 /* brand */
-.logo{display:inline-flex;font:700 26px/1 var(--brand);letter-spacing:-.04em;text-decoration:none;flex:none;color:var(--ink)}
+.logo{display:inline-flex;align-items:center;gap:10px;font:700 22px/1 var(--brand);letter-spacing:-.04em;text-decoration:none;flex:none;color:var(--ink)}
+.logo img{display:block;width:30px;height:30px}
 
 /* header: translucent, hairline appears only once content scrolls under it */
 .top{position:sticky;top:0;z-index:20;margin:0 -32px;padding:0 32px;background:color-mix(in srgb,var(--page) 82%,transparent);-webkit-backdrop-filter:saturate(170%) blur(18px);backdrop-filter:saturate(170%) blur(18px)}
 .top::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--line);opacity:0;transition:opacity .2s var(--ease)}
 .top.stuck::after{opacity:1}
 @media(prefers-reduced-transparency:reduce){.top{background:var(--page);-webkit-backdrop-filter:none;backdrop-filter:none}}
-.bar{display:flex;align-items:center;gap:28px;padding:14px 0 12px;min-width:0}
-#f{position:relative;flex:1;min-width:0;max-width:720px}
-.sbox{display:flex;align-items:center;gap:10px;height:48px;padding:0 8px 0 18px;border-radius:999px;background:var(--surface);box-shadow:0 0 0 1px var(--line),var(--shadow1);color:var(--faint);transition:box-shadow .18s var(--ease)}
-.sbox:focus-within{box-shadow:0 0 0 1px var(--acc),0 0 0 4px var(--acc-t2),var(--shadow1)}
+.bar{display:flex;align-items:center;gap:24px;padding:12px 0;min-width:0}
+#f{position:relative;flex:1;min-width:0;max-width:640px}
+.sbox{display:flex;align-items:center;gap:10px;height:44px;padding:0 8px 0 16px;border-radius:999px;background:var(--wash);box-shadow:0 0 0 1px transparent;color:var(--faint);transition:background-color .18s var(--ease),box-shadow .18s var(--ease)}
+.sbox:focus-within{background:var(--surface);box-shadow:0 0 0 1px var(--acc),0 0 0 4px var(--acc-t2),var(--shadow1)}
+.kb{display:none;flex:none;min-width:24px;height:24px;padding:0 6px;border-radius:var(--r-badge);box-shadow:inset 0 0 0 1px var(--line2);color:var(--faint);font:600 12px/24px var(--font);text-align:center}
 .sbox input{flex:1;min-width:0;height:100%;border:0;outline:0;background:none;font:400 16px/24px var(--font);color:var(--ink)}
 .sbox input::placeholder{color:var(--faint)}
 .sbox input::-webkit-search-cancel-button{display:none}
 #clr{display:grid;place-items:center;width:34px;height:34px;border:0;border-radius:50%;background:none;color:var(--faint)}
-.meb{display:grid;place-items:center;flex:none;width:46px;height:46px;border:0;border-radius:50%;background:var(--surface);box-shadow:0 0 0 1px var(--line);color:var(--ink);position:relative}
+.meb{display:grid;place-items:center;flex:none;width:44px;height:44px;border:0;border-radius:50%;background:none;color:var(--ink);position:relative}
+.hn{display:none;gap:4px}
+.end{display:flex;align-items:center;gap:4px;margin-left:auto}
+.hn button{display:inline-flex;align-items:center;gap:8px;height:40px;padding:0 14px;border:0;border-radius:999px;background:none;color:var(--sub);font-weight:500}
+.hn button[aria-current=page]{background:var(--wash);color:var(--ink)}
+@media(min-width:720px){.hn{display:flex}}
+@media(min-width:1200px){ /* logo | search | actions: the side columns match, so the search sits dead centre */
+  .bar{display:grid;grid-template-columns:1fr minmax(0,560px) 1fr;gap:24px}
+  #f{max-width:none}
+  .end{margin-left:0;justify-self:end}
+}
 .meb .bd{position:absolute;top:-3px;right:-3px}
 #sug{position:absolute;left:0;right:0;top:calc(100% + 8px);margin:0;padding:6px;list-style:none;background:var(--surface);border-radius:var(--r-card);box-shadow:0 0 0 1px var(--line),var(--shadow2);z-index:30}
 #sug li{display:flex;justify-content:space-between;gap:12px;padding:10px 14px;border-radius:var(--r-row);cursor:pointer}
 #sug li[aria-selected=true]{background:var(--wash)}
 #sug small{color:var(--faint)}
-@media(hover:hover) and (pointer:fine){#clr:hover,.meb:hover{background:var(--wash)}#sug li:hover{background:var(--wash)}}
+@media(hover:hover) and (pointer:fine){.kb{display:block}.sbox:focus-within .kb,#clr:not([hidden])+.kb{display:none}.sbox:hover:not(:focus-within){background:color-mix(in srgb,var(--ink) 8%,transparent)}.hn button:hover{background:var(--wash);color:var(--ink)}#clr:hover,.meb:hover{background:var(--wash)}#sug li:hover{background:var(--wash)}}
 
 /* quick filters (phones and tablets) */
 #quick{display:none;gap:8px;overflow-x:auto;padding:2px 0 12px;scrollbar-width:none}
@@ -101,11 +113,11 @@ body.home #home{display:block}
 .pill{flex:none;display:inline-flex;align-items:center;gap:6px;min-height:38px;padding:0 16px;border:0;border-radius:999px;background:var(--surface);box-shadow:0 0 0 1px var(--line);white-space:nowrap;font-weight:500}
 .feed{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:minmax(0,1fr);gap:16px}
 .post{background:var(--surface);border-radius:var(--r-card);box-shadow:0 0 0 1px var(--line),var(--shadow1);overflow:hidden}
-.ph{display:flex;align-items:center;gap:12px;padding:16px 18px 12px}
+.ph{display:flex;align-items:center;gap:12px;padding:18px 20px 8px}
 .pw{min-width:0}
 .pw b{display:block;line-height:20px;font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .pw small{display:block;color:var(--sub);font-size:13.5px;line-height:18px}
-.pm{position:relative;margin:0 14px;padding:20px 20px 18px;border-radius:12px;background:var(--wash);touch-action:manipulation}
+.pm{position:relative;padding:6px 20px 18px;touch-action:manipulation}
 .pm .lab{display:block;margin-bottom:6px;color:var(--faint);font-size:13px}
 .pm h3{margin:0;font:650 22px/28px var(--brand);letter-spacing:-.022em;overflow-wrap:anywhere}
 .pm h3 a{color:var(--ink);text-decoration:none}
@@ -119,7 +131,7 @@ body.home #home{display:block}
 .pop svg{width:84px;height:84px;color:var(--acc);fill:currentColor}
 .pop.go{animation:pop .7s var(--ease)}
 @keyframes pop{0%{opacity:0;transform:scale(.7)}25%{opacity:.95;transform:scale(1.04)}100%{opacity:0;transform:scale(1)}}
-.pf{display:flex;align-items:center;gap:2px;padding:10px 10px 12px 12px}
+.pf{display:flex;align-items:center;gap:2px;padding:10px 10px 12px 12px;box-shadow:inset 0 1px 0 var(--line)}
 .pf button{display:inline-flex;align-items:center;gap:8px;height:42px;padding:0 14px;border:0;border-radius:999px;background:none;color:var(--ink);font-weight:500}
 .pf button svg{width:21px;height:21px;fill:none}
 .pf .sv[aria-pressed=true]{color:var(--acc)}
@@ -136,10 +148,26 @@ body.home #home{display:block}
 #fsent{height:1px}
 .fend{padding:28px 8px 8px;text-align:center;color:var(--sub)}
 .fend button{margin-top:14px;height:44px;padding:0 24px;border:0;border-radius:999px;background:var(--surface);box-shadow:0 0 0 1px var(--line);color:var(--acc);font-weight:600}
-.tune{display:flex;align-items:center;gap:14px;margin:0 0 18px;padding:12px 12px 12px 18px;border-radius:14px;background:var(--acc-t);color:var(--ink);font-size:14.5px}
+.tune{display:flex;align-items:center;gap:14px;margin:0 0 18px;padding:12px 12px 12px 18px;border-radius:var(--r-card);background:var(--acc-t);color:var(--ink);font-size:14.5px}
 .tune span{flex:1}
 .tune button{flex:none;height:36px;padding:0 16px;border:0;border-radius:999px;background:var(--acc);color:var(--on-acc);font-weight:600}
 .tune .x{display:grid;place-items:center;width:36px;padding:0;background:none;color:var(--sub)}
+
+/* feed entrance: first cards rise in once, never on later re-renders */
+@keyframes rise{from{opacity:0;transform:translateY(8px)}}
+.feed>li{animation:rise .28s var(--ease) backwards}
+.feed>li:nth-child(2){animation-delay:40ms}.feed>li:nth-child(3){animation-delay:80ms}.feed>li:nth-child(n+4){animation-delay:120ms}
+.rh{display:none;margin:0 0 10px;font:650 15px/20px var(--brand);letter-spacing:-.01em}
+@media(min-width:1024px){
+  body.home #home{max-width:none;margin:0;display:grid;grid-template-columns:minmax(0,680px) 320px;gap:0 56px;align-items:start}
+  .greet{grid-column:1/-1}
+  .feed,#fsent,#fend{grid-column:1}
+  .rail{grid-column:2;grid-row:2/span 3;position:sticky;top:88px;max-height:calc(100vh - 104px);overflow-y:auto;overscroll-behavior:contain;scrollbar-width:none;padding-top:18px}
+  .rh{display:block}
+  .stories{display:grid;grid-template-columns:repeat(4,1fr);gap:16px 6px;overflow:visible;padding:0 0 22px}
+  .st{width:auto}.ring{margin:0 auto}
+  .fchips{flex-wrap:wrap;overflow:visible;padding:0 0 18px}
+}
 
 /* results */
 #resbar,.cols{display:none}
@@ -179,11 +207,16 @@ body:not(.home) .cols{display:grid}
 .uc button{display:grid;place-items:center;width:26px;height:26px;border:0;border-radius:50%;background:none;color:inherit;transition:background-color .16s var(--ease)}
 .uc svg{width:14px;height:14px}
 @media(hover:hover) and (pointer:fine){.uc button:hover{background:var(--acc-t2)}}
-ul.out{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:minmax(0,1fr);gap:14px}
+ul.out{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:minmax(0,1fr)}
 .cols>*{min-width:0}
+/* Companies and Saved have no filters, so the list centres under the tabs instead of leaving an empty rail */
+body.solo .cols{grid-template-columns:minmax(0,720px);justify-content:center}
+body.solo aside{display:none}
+body.solo .tabrow{justify-content:center}
 .res{position:relative;min-width:0}
-.rc{position:relative;padding:20px 22px 16px;background:var(--surface);border-radius:var(--r-card);box-shadow:0 0 0 1px var(--line),var(--shadow1);transition:box-shadow .2s var(--ease)}
-@media(hover:hover) and (pointer:fine){.rc:hover{box-shadow:0 0 0 1px var(--line2),var(--shadow2)}.ttl:hover{color:var(--acc)}.ttl:hover .go{opacity:1;transform:none}}
+.rc{position:relative;margin:0 -14px;padding:22px 14px 16px;border-radius:var(--r-card);transition:background-color .2s var(--ease)}
+.res+.res::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;background:var(--line)}
+@media(hover:hover) and (pointer:fine){.rc:hover{background:var(--wash)}.ttl:hover{color:var(--acc)}.ttl:hover .go{opacity:1;transform:none}}
 .hd{display:flex;align-items:center;gap:12px;min-width:0}
 .av{display:grid;place-items:center;width:36px;height:36px;flex:none;border-radius:10px;background:var(--wash);color:var(--sub);font:600 14px/1 var(--font);overflow:hidden}
 .av.has{background:#fff;box-shadow:inset 0 0 0 1px var(--line);padding:5px}
@@ -196,9 +229,11 @@ ul.out{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:min
 .line .pay2{color:var(--ink);font-weight:600;font-variant-numeric:tabular-nums}
 .line .pay2 small{color:var(--faint);font-weight:400;font-size:13.5px}
 .tg{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
-.tg.sk{margin-top:8px}
+.tg.skl{margin-top:8px}
 .t{display:inline-flex;align-items:center;height:26px;padding:0 10px;border-radius:var(--r-badge);background:var(--wash);color:var(--sub);font-size:13px;font-weight:500}
 .t.b{background:var(--acc-t);color:var(--acc)}
+.t:not(.b):not(.q){height:auto;padding:0;background:none;color:var(--sub);font-size:14px;font-weight:400}
+.t:not(.b):not(.q)+.t:not(.b):not(.q){margin-left:6px;padding-left:12px;box-shadow:inset 1px 0 0 var(--line2)}
 .t.q{background:none;box-shadow:inset 0 0 0 1px var(--line);font-weight:400}
 .t.q.b{background:var(--acc-t);box-shadow:none;font-weight:500}
 .gh{margin:14px 0 0;padding:10px 14px;border-radius:var(--r-row);background:var(--warn-t);color:var(--warn);font-size:13.5px;line-height:20px}
@@ -218,8 +253,8 @@ ul.out{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:min
 @media(hover:hover) and (pointer:fine){.ib:hover{background:var(--wash);color:var(--ink)}}
 .apply{display:inline-flex;align-items:center;justify-content:center;height:42px;padding:0 24px;border-radius:999px;background:var(--acc-t);color:var(--acc);font-weight:600;text-decoration:none}
 @media(hover:hover) and (pointer:fine){.apply:hover{background:var(--acc-t2)}}
-.meter{height:6px;margin:12px 0 4px;border-radius:3px;background:var(--wash);overflow:hidden;max-width:420px}
-.meter i{display:block;height:100%;border-radius:3px;background:var(--acc)}
+.meter{height:4px;margin:12px 0 4px;border-radius:2px;max-width:420px}
+.meter i{display:block;height:100%;border-radius:2px;background:var(--acc)}
 .snip{margin:8px 0 0;color:var(--sub)}
 .empty{padding:40px 8px;color:var(--sub)}
 .empty h3{margin:0 0 6px;font:650 21px/28px var(--brand);letter-spacing:-.02em;color:var(--ink)}
@@ -231,22 +266,32 @@ footer a{color:var(--acc)}
 #toast{position:fixed;left:50%;bottom:28px;transform:translateX(-50%);z-index:60;display:flex;align-items:center;gap:6px;max-width:calc(100% - 24px);padding:6px 6px 6px 18px;border-radius:999px;background:#202328;color:#f2f3f5;box-shadow:0 12px 32px rgba(0,0,0,.35);font-size:14.5px}
 #toast button{height:36px;padding:0 16px;border:0;border-radius:999px;background:none;color:#9db8ff;font-weight:600}
 
-/* preferences dialog */
-dialog{padding:0;border:0;border-radius:20px;width:calc(100% - 24px);max-width:600px;max-height:88vh;background:var(--surface);color:var(--ink);box-shadow:0 0 0 1px var(--line),0 32px 80px rgba(0,0,0,.35)}
+/* preferences: sticky header and footer around a scrolling body; a bottom sheet on phones */
+dialog{padding:0;border:0;border-radius:20px;width:calc(100% - 24px);max-width:560px;background:var(--surface);color:var(--ink);box-shadow:0 0 0 1px var(--line),0 32px 80px rgba(0,0,0,.35);overflow:hidden}
 dialog::backdrop{background:rgba(8,10,14,.5)}
-.dl{padding:24px 24px 18px;max-height:88vh;overflow-y:auto}
-.dl header{display:flex;align-items:center;justify-content:space-between;gap:12px}
-.dl h2{margin:0;font:700 26px/32px var(--brand);letter-spacing:-.03em}
-.dl h3{margin:24px 0 10px;font:600 13.5px/20px var(--brand)}
-.dl p{margin:8px 0 0;color:var(--sub)}
+.dl{display:flex;flex-direction:column;max-height:min(88vh,720px)}
+.dl header{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;padding:22px 20px 16px 24px;box-shadow:inset 0 -1px 0 var(--line)}
+.dl h2{margin:0;font:700 24px/30px var(--brand);letter-spacing:-.03em}
+.dl header p{margin:2px 0 0;color:var(--sub);font-size:14px;line-height:20px}
+.db{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain;padding:4px 24px 12px}
+.dl h3{margin:22px 0 10px;font:600 14px/20px var(--brand)}
+.dl .db p{margin:8px 0 0;color:var(--sub)}
 .cs{display:flex;flex-wrap:wrap;gap:8px}
-.cs button,.cs span{display:inline-flex;align-items:center;min-height:38px;padding:0 16px;border:0;border-radius:999px;background:var(--surface);box-shadow:0 0 0 1px var(--line);font-weight:500}
-.cs button[aria-pressed=true]{background:var(--acc-t);box-shadow:none;color:var(--acc)}
+.cs button,.cs span{display:inline-flex;align-items:center;min-height:38px;padding:0 16px;border:0;border-radius:999px;background:none;box-shadow:inset 0 0 0 1px var(--line2);font-weight:500;transition:transform .14s var(--ease),background-color .16s var(--ease),color .16s var(--ease),box-shadow .16s var(--ease)}
+.cs button:active{transform:scale(.97)}
+.cs button[aria-pressed=true]{background:var(--acc-t);box-shadow:inset 0 0 0 1px var(--acc);color:var(--acc)}
 .cs span{min-height:32px;padding:0 14px;background:var(--acc-t);box-shadow:none;color:var(--acc)}
 .cs span.neg{background:var(--warn-t);color:var(--warn)}
-.dl footer{display:flex;gap:10px;justify-content:space-between;margin:26px 0 0;max-width:none}
-.dl footer button{height:44px;padding:0 22px;border:0;border-radius:999px;background:var(--wash);font-weight:500}
-.dl footer .primary{background:var(--acc);color:var(--on-acc);font-weight:600}
+@media(hover:hover) and (pointer:fine){.cs button:hover{background:var(--wash)}.cs button[aria-pressed=true]:hover{background:var(--acc-t2)}}
+.lrn{margin-top:24px;padding-top:6px;box-shadow:inset 0 1px 0 var(--line)}
+.lrn summary{display:flex;align-items:center;justify-content:space-between;min-height:44px;font-weight:600;cursor:pointer;list-style:none}
+.lrn summary::-webkit-details-marker{display:none}
+.lrn summary::after{content:"";width:8px;height:8px;margin-right:4px;border:solid var(--faint);border-width:0 2px 2px 0;transform:rotate(45deg);transition:transform .2s var(--ease)}
+.lrn[open] summary::after{transform:rotate(-135deg)}
+.dl footer{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:0;max-width:none;padding:14px 24px calc(14px + env(safe-area-inset-bottom));box-shadow:inset 0 1px 0 var(--line);color:var(--ink);font-size:15px;line-height:24px}
+.dl footer button{height:44px;padding:0 22px;border:0;border-radius:999px;background:none;color:var(--sub);font-weight:500}
+.dl footer .primary{background:var(--ink);color:var(--surface);font-weight:600}
+@media(hover:hover) and (pointer:fine){.dl footer button:hover{background:var(--wash);color:var(--ink)}.dl footer .primary:hover{background:var(--ink);opacity:.88;color:var(--surface)}}
 
 /* wide: filter rail pinned under the header, scrolling on its own */
 @media(min-width:960px){
@@ -257,6 +302,7 @@ dialog::backdrop{background:rgba(8,10,14,.5)}
 /* phones and tablets: filters become a bottom sheet */
 @media(max-width:959px){
   #quick{display:flex}
+  .tabrow{flex-wrap:wrap;gap:12px 20px}
   aside{position:fixed;left:0;right:0;bottom:0;z-index:40;max-height:88vh;overflow-y:auto;overscroll-behavior:contain;background:var(--surface);border-radius:20px 20px 0 0;box-shadow:0 -1px 0 var(--line),0 -16px 48px rgba(0,0,0,.28);padding:0 18px;transform:translateY(105%);transition:transform .34s var(--drawer);visibility:hidden}
   body.sheet aside{transform:none;visibility:visible}
   #scrim{display:block;position:fixed;inset:0;z-index:35;background:rgba(8,10,14,.5);opacity:0;pointer-events:none;transition:opacity .26s var(--ease)}
@@ -282,11 +328,10 @@ dialog::backdrop{background:rgba(8,10,14,.5)}
   .shell{padding:0 16px calc(92px + env(safe-area-inset-bottom))}
   .top{margin:0 -16px;padding:0 16px}
   .bar{gap:10px;padding:10px 0 8px}
-  .logo{display:block;width:38px;height:38px;border-radius:11px;background:#1f5eff;font-size:0;letter-spacing:0}
-  .logo::after{content:"R";display:block;font:700 22px/38px var(--brand);text-align:center;color:#fff}
+  .logo span{display:none}
+  .logo img{width:38px;height:38px}
   .sbox{height:46px}
   .greet h1{font-size:26px;line-height:32px}
-  .post{border-radius:14px}
   .pm h3{font-size:20px;line-height:26px}
   .pf button{padding:0 10px}
   .pf a.pap{padding:0 20px}
@@ -295,12 +340,13 @@ dialog::backdrop{background:rgba(8,10,14,.5)}
   .und::-webkit-scrollbar{display:none}
   .lbl,#countsub{display:none}
   #count{font-size:22px;line-height:28px}
-  .rc{padding:18px 18px 14px}
+  .rc{margin:0;padding:20px 0 14px}
+  .rc:hover{background:none}
   .ttl{font-size:19px;line-height:25px}
   .ttl .go{display:none}
   .ft{gap:8px}
   .ago{flex:0 0 100%;margin:0 0 4px}
-  .apply{flex:1;background:var(--acc);color:var(--on-acc);height:46px}
+  .apply{flex:1;height:46px}
   .ib{width:46px;height:46px;box-shadow:inset 0 0 0 1px var(--line)}
   #toast{bottom:calc(76px + env(safe-area-inset-bottom))}
   #nav{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:30;height:calc(60px + env(safe-area-inset-bottom));padding-bottom:env(safe-area-inset-bottom);background:color-mix(in srgb,var(--page) 88%,transparent);-webkit-backdrop-filter:saturate(170%) blur(18px);backdrop-filter:saturate(170%) blur(18px);box-shadow:0 -1px 0 var(--line)}
@@ -311,10 +357,41 @@ dialog::backdrop{background:rgba(8,10,14,.5)}
   #more{width:100%}
   footer{margin-top:28px}
 }
+/* skeletons: one transform-only shimmer (compositor), static under reduced motion */
+.sk,#greetsub:empty,#count:empty,#tabs:empty{position:relative;overflow:hidden;background:var(--wash);border-radius:7px}
+.sk{display:block;flex:none;height:14px}
+.sk::after,#greetsub:empty::after,#count:empty::after,#tabs:empty::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent,color-mix(in srgb,var(--ink) 7%,transparent),transparent);transform:translateX(-100%);animation:shim 1.3s linear infinite}
+@keyframes shim{to{transform:translateX(100%)}}
+#greetsub:empty{width:min(300px,80%);height:16px;margin:8px 0 4px}
+#count:empty{width:150px;height:28px}
+#tabs:empty{width:min(100%,440px);height:44px;border-radius:999px}
+[aria-hidden=true].post,[aria-hidden=true].res{pointer-events:none}
+
+/* micro-interactions: transform and opacity only, ease-out, under 300ms */
+.fopt,.tab,.ring,.hn button{transition:transform .14s var(--ease),background-color .16s var(--ease),color .16s var(--ease),box-shadow .2s var(--ease)}
+.fopt:active,.tab:active,.hn button:active{transform:scale(.97)}
+.st:active .ring{transform:scale(.93)}
+#nav button svg{transition:transform .14s var(--ease)}
+#nav button:active svg{transform:scale(.86)}
+.pf .sv[aria-pressed=true] svg{animation:starpop .24s var(--ease)}
+@keyframes fadein{from{opacity:0}}
+@keyframes toastin{from{opacity:0;transform:translate(-50%,12px)}}
+@keyframes dlgin{from{opacity:0;transform:translateY(8px) scale(.97)}}
+@keyframes sugin{from{opacity:0;transform:translateY(-4px) scale(.98)}}
+#toast:not([hidden]){animation:toastin .24s var(--ease)}
+dialog[open]{animation:dlgin .22s var(--ease)}
+dialog[open]::backdrop{animation:fadein .22s var(--ease)}
+@keyframes sheetin{from{transform:translateY(100%)}}
+@media(max-width:719px){dialog{margin:auto 0 0;width:100%;max-width:none;border-radius:20px 20px 0 0}dialog[open]{animation:sheetin .34s var(--drawer)}.dl{max-height:90vh}}
+#sug:not([hidden]){animation:sugin .14s var(--ease)}
+/* long lists: the browser skips layout and paint for rows far off screen */
+.rc{content-visibility:auto;contain-intrinsic-size:auto 190px}
+.post{content-visibility:auto;contain-intrinsic-size:auto 280px}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{transition-duration:.01ms!important;animation:none!important}}
 </style>
 </head>
 <body class="home">
+<script>if(location.hash.length>1)document.body.classList.remove("home")</script>
 <svg style="display:none" aria-hidden="true">
   <symbol id="i-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/></symbol>
   <symbol id="i-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></symbol>
@@ -332,25 +409,35 @@ dialog::backdrop{background:rgba(8,10,14,.5)}
 <div class="shell">
   <header class="top" id="top">
     <div class="bar">
-      <a class="logo" href="#" id="logo" aria-label="RoleBase home">RoleBase</a>
+      <a class="logo" href="#" id="logo" aria-label="RoleBase home"><img src="favicon.svg" alt="" width="30" height="30"><span>RoleBase</span></a>
       <form id="f" role="search" autocomplete="off">
         <div class="sbox">
           <svg aria-hidden="true"><use href="#i-search"/></svg>
-          <input id="q" type="search" name="q" aria-label="Search jobs" role="combobox" aria-autocomplete="list" aria-controls="sug" aria-expanded="false" placeholder="Search jobs" enterkeyhint="search">
+          <input id="q" type="search" name="q" aria-label="Search jobs" role="combobox" aria-keyshortcuts="/" aria-autocomplete="list" aria-controls="sug" aria-expanded="false" placeholder="Search jobs" enterkeyhint="search">
           <button type="button" id="clr" aria-label="Clear search" hidden><svg><use href="#i-x"/></svg></button>
+          <kbd class="kb" aria-hidden="true">/</kbd>
         </div>
         <ul id="sug" role="listbox" hidden></ul>
       </form>
+      <div class="end">
+      <nav class="hn" aria-label="Browse"><button type="button" data-v="companies">Companies</button><button type="button" data-v="saved">Saved<span class="bd nsv" hidden></span></button></nav>
       <button type="button" class="meb" id="me" aria-label="Your preferences" title="Your preferences"><svg><use href="#i-tune"/></svg><span class="bd" id="mebd" hidden></span></button>
+      </div>
     </div>
     <div id="quick" role="toolbar" aria-label="Quick filters"></div>
   </header>
 
   <section id="home" aria-label="Your job feed">
     <div class="greet"><h1 id="greet">Welcome</h1><p id="greetsub"></p></div>
-    <div class="stories" id="stories" role="list" aria-label="Companies hiring now"></div>
-    <div class="fchips" id="fchips" aria-label="Browse by topic"></div>
-    <ol class="feed" id="feed"></ol>
+    <div class="rail">
+      <h2 class="rh">Hiring now</h2><div class="stories" id="stories" role="list" aria-label="Companies hiring now"><span class="st" aria-hidden="true"><span class="ring"><i class="sk" style="width:100%;height:100%;border-radius:50%"></i></span><i class="sk" style="width:44px;height:10px;margin:8px auto 0"></i></span><span class="st" aria-hidden="true"><span class="ring"><i class="sk" style="width:100%;height:100%;border-radius:50%"></i></span><i class="sk" style="width:44px;height:10px;margin:8px auto 0"></i></span><span class="st" aria-hidden="true"><span class="ring"><i class="sk" style="width:100%;height:100%;border-radius:50%"></i></span><i class="sk" style="width:44px;height:10px;margin:8px auto 0"></i></span><span class="st" aria-hidden="true"><span class="ring"><i class="sk" style="width:100%;height:100%;border-radius:50%"></i></span><i class="sk" style="width:44px;height:10px;margin:8px auto 0"></i></span><span class="st" aria-hidden="true"><span class="ring"><i class="sk" style="width:100%;height:100%;border-radius:50%"></i></span><i class="sk" style="width:44px;height:10px;margin:8px auto 0"></i></span><span class="st" aria-hidden="true"><span class="ring"><i class="sk" style="width:100%;height:100%;border-radius:50%"></i></span><i class="sk" style="width:44px;height:10px;margin:8px auto 0"></i></span><span class="st" aria-hidden="true"><span class="ring"><i class="sk" style="width:100%;height:100%;border-radius:50%"></i></span><i class="sk" style="width:44px;height:10px;margin:8px auto 0"></i></span><span class="st" aria-hidden="true"><span class="ring"><i class="sk" style="width:100%;height:100%;border-radius:50%"></i></span><i class="sk" style="width:44px;height:10px;margin:8px auto 0"></i></span></div>
+      <h2 class="rh">Browse</h2><div class="fchips" id="fchips" aria-label="Browse by topic"><i class="sk" style="width:130px;height:38px;border-radius:999px"></i><i class="sk" style="width:80px;height:38px;border-radius:999px"></i><i class="sk" style="width:110px;height:38px;border-radius:999px"></i><i class="sk" style="width:120px;height:38px;border-radius:999px"></i></div>
+    </div>
+    <ol class="feed" id="feed">
+<li class="post" aria-hidden="true"><div class="ph"><i class="sk" style="width:36px;height:36px;border-radius:10px"></i><div style="display:grid;gap:8px"><i class="sk" style="width:90px;"></i><i class="sk" style="width:140px;height:12px;"></i></div></div><div class="pm"><i class="sk" style="width:78%;height:22px;"></i><i class="sk" style="width:30%;height:18px;margin-top:14px"></i><i class="sk" style="width:46%;height:14px;margin-top:14px"></i><div class="tg"><i class="sk" style="width:58px;height:26px;border-radius:8px"></i><i class="sk" style="width:58px;height:26px;border-radius:8px"></i><i class="sk" style="width:58px;height:26px;border-radius:8px"></i></div></div><div class="pf" style="gap:10px"><i class="sk" style="width:70px;height:24px;border-radius:12px"></i><i class="sk" style="width:90px;height:24px;border-radius:12px"></i><span class="gap"></span><i class="sk" style="width:84px;height:42px;border-radius:999px"></i></div></li>
+<li class="post" aria-hidden="true"><div class="ph"><i class="sk" style="width:36px;height:36px;border-radius:10px"></i><div style="display:grid;gap:8px"><i class="sk" style="width:90px;"></i><i class="sk" style="width:140px;height:12px;"></i></div></div><div class="pm"><i class="sk" style="width:78%;height:22px;"></i><i class="sk" style="width:30%;height:18px;margin-top:14px"></i><i class="sk" style="width:46%;height:14px;margin-top:14px"></i><div class="tg"><i class="sk" style="width:58px;height:26px;border-radius:8px"></i><i class="sk" style="width:58px;height:26px;border-radius:8px"></i><i class="sk" style="width:58px;height:26px;border-radius:8px"></i></div></div><div class="pf" style="gap:10px"><i class="sk" style="width:70px;height:24px;border-radius:12px"></i><i class="sk" style="width:90px;height:24px;border-radius:12px"></i><span class="gap"></span><i class="sk" style="width:84px;height:42px;border-radius:999px"></i></div></li>
+<li class="post" aria-hidden="true"><div class="ph"><i class="sk" style="width:36px;height:36px;border-radius:10px"></i><div style="display:grid;gap:8px"><i class="sk" style="width:90px;"></i><i class="sk" style="width:140px;height:12px;"></i></div></div><div class="pm"><i class="sk" style="width:78%;height:22px;"></i><i class="sk" style="width:30%;height:18px;margin-top:14px"></i><i class="sk" style="width:46%;height:14px;margin-top:14px"></i><div class="tg"><i class="sk" style="width:58px;height:26px;border-radius:8px"></i><i class="sk" style="width:58px;height:26px;border-radius:8px"></i><i class="sk" style="width:58px;height:26px;border-radius:8px"></i></div></div><div class="pf" style="gap:10px"><i class="sk" style="width:70px;height:24px;border-radius:12px"></i><i class="sk" style="width:90px;height:24px;border-radius:12px"></i><span class="gap"></span><i class="sk" style="width:84px;height:42px;border-radius:999px"></i></div></li>
+</ol>
     <div id="fsent"></div>
     <div class="fend" id="fend" hidden><p>That's everything for now. New jobs arrive several times a day.</p><button type="button" id="frefresh">Start over with a fresh mix</button></div>
   </section>
@@ -366,7 +453,7 @@ dialog::backdrop{background:rgba(8,10,14,.5)}
     <aside id="aside" aria-label="Filters">
       <div id="fdet">
         <div class="sh"><strong>Filters</strong><button type="button" id="sclr">Clear all</button><button type="button" id="sx" aria-label="Close filters">Done</button></div>
-        <div id="fbody"></div>
+        <div id="fbody"><section class="fg" aria-hidden="true"><i class="sk" style="width:64px;height:12px;margin:0 10px 12px"></i><i class="sk" style="width:70%;height:14px;margin:14px 10px"></i><i class="sk" style="width:55%;height:14px;margin:14px 10px"></i><i class="sk" style="width:80%;height:14px;margin:14px 10px"></i><i class="sk" style="width:48%;height:14px;margin:14px 10px"></i></section><section class="fg" aria-hidden="true"><i class="sk" style="width:64px;height:12px;margin:0 10px 12px"></i><i class="sk" style="width:70%;height:14px;margin:14px 10px"></i><i class="sk" style="width:55%;height:14px;margin:14px 10px"></i><i class="sk" style="width:80%;height:14px;margin:14px 10px"></i><i class="sk" style="width:48%;height:14px;margin:14px 10px"></i></section></div>
         <div class="sf"><button type="button" id="show">Show results</button></div>
       </div>
     </aside>
@@ -377,7 +464,12 @@ dialog::backdrop{background:rgba(8,10,14,.5)}
         <select id="sort" aria-label="Sort"><option value="">Best for you</option><option value="new">Newest</option><option value="pay">Highest pay</option></select>
       </div>
       <div class="und" id="und" aria-label="How your search was understood"></div>
-      <ul class="out" id="list"></ul>
+      <ul class="out" id="list">
+<li class="res" aria-hidden="true"><div class="rc"><div class="hd"><i class="sk" style="width:36px;height:36px;border-radius:10px"></i><i class="sk" style="width:130px;"></i></div><i class="sk" style="width:62%;height:20px;margin-top:16px"></i><i class="sk" style="width:36%;height:14px;margin-top:12px"></i><div class="tg"><i class="sk" style="width:72px;height:26px;border-radius:8px"></i><i class="sk" style="width:72px;height:26px;border-radius:8px"></i><i class="sk" style="width:72px;height:26px;border-radius:8px"></i></div><div class="ft"><span class="ago"><i class="sk" style="width:90px;height:12px;"></i></span><i class="sk" style="width:84px;height:42px;border-radius:999px"></i></div></div></li>
+<li class="res" aria-hidden="true"><div class="rc"><div class="hd"><i class="sk" style="width:36px;height:36px;border-radius:10px"></i><i class="sk" style="width:130px;"></i></div><i class="sk" style="width:62%;height:20px;margin-top:16px"></i><i class="sk" style="width:36%;height:14px;margin-top:12px"></i><div class="tg"><i class="sk" style="width:72px;height:26px;border-radius:8px"></i><i class="sk" style="width:72px;height:26px;border-radius:8px"></i><i class="sk" style="width:72px;height:26px;border-radius:8px"></i></div><div class="ft"><span class="ago"><i class="sk" style="width:90px;height:12px;"></i></span><i class="sk" style="width:84px;height:42px;border-radius:999px"></i></div></div></li>
+<li class="res" aria-hidden="true"><div class="rc"><div class="hd"><i class="sk" style="width:36px;height:36px;border-radius:10px"></i><i class="sk" style="width:130px;"></i></div><i class="sk" style="width:62%;height:20px;margin-top:16px"></i><i class="sk" style="width:36%;height:14px;margin-top:12px"></i><div class="tg"><i class="sk" style="width:72px;height:26px;border-radius:8px"></i><i class="sk" style="width:72px;height:26px;border-radius:8px"></i><i class="sk" style="width:72px;height:26px;border-radius:8px"></i></div><div class="ft"><span class="ago"><i class="sk" style="width:90px;height:12px;"></i></span><i class="sk" style="width:84px;height:42px;border-radius:999px"></i></div></div></li>
+<li class="res" aria-hidden="true"><div class="rc"><div class="hd"><i class="sk" style="width:36px;height:36px;border-radius:10px"></i><i class="sk" style="width:130px;"></i></div><i class="sk" style="width:62%;height:20px;margin-top:16px"></i><i class="sk" style="width:36%;height:14px;margin-top:12px"></i><div class="tg"><i class="sk" style="width:72px;height:26px;border-radius:8px"></i><i class="sk" style="width:72px;height:26px;border-radius:8px"></i><i class="sk" style="width:72px;height:26px;border-radius:8px"></i></div><div class="ft"><span class="ago"><i class="sk" style="width:90px;height:12px;"></i></span><i class="sk" style="width:84px;height:42px;border-radius:999px"></i></div></div></li>
+</ul>
       <div id="empty" class="empty" hidden></div>
       <button id="more" type="button" hidden>More results</button>
     </main>
@@ -393,18 +485,19 @@ dialog::backdrop{background:rgba(8,10,14,.5)}
 <nav id="nav" aria-label="Main">
   <button type="button" data-v="jobs"><svg aria-hidden="true"><use href="#i-feed"/></svg>For you</button>
   <button type="button" data-v="companies"><svg aria-hidden="true"><use href="#i-build"/></svg>Companies</button>
-  <button type="button" data-v="saved"><svg aria-hidden="true"><use href="#i-star"/></svg>Saved<span class="bd" id="nsv" hidden></span></button>
+  <button type="button" data-v="saved"><svg aria-hidden="true"><use href="#i-star"/></svg>Saved<span class="bd nsv" hidden></span></button>
 </nav>
 
 <dialog id="dlg" aria-labelledby="dt">
   <form method="dialog" class="dl">
-    <header><h2 id="dt">Your preferences</h2><button type="submit" class="ib" aria-label="Close"><svg><use href="#i-x"/></svg></button></header>
-    <p>Choose what you are looking for. Saving, applying to or hiding jobs as you browse refines the ranking further. All of it stays in this browser and is never sent anywhere.</p>
-    <h3>Fields</h3><div class="cs" id="pf"></div>
-    <h3>Experience</h3><div class="cs" id="pl"></div>
-    <h3>Skills</h3><div class="cs" id="ps"></div>
-    <h3>Work</h3><div class="cs" id="pw"></div>
-    <h3>What it has learned so far</h3><div id="learned"></div>
+    <header><div><h2 id="dt">Your preferences</h2><p>Pick what you want to see more of. It all stays on this device.</p></div><button type="submit" class="ib" aria-label="Close"><svg><use href="#i-x"/></svg></button></header>
+    <div class="db">
+      <h3>Fields</h3><div class="cs" id="pf"></div>
+      <h3>Experience</h3><div class="cs" id="pl"></div>
+      <h3>Skills</h3><div class="cs" id="ps"></div>
+      <h3>Work</h3><div class="cs" id="pw"></div>
+      <details class="lrn"><summary>What it has learned so far</summary><div id="learned"></div></details>
+    </div>
     <footer><button type="button" id="reset">Reset everything</button><button type="submit" class="primary">Done</button></footer>
   </form>
 </dialog>
@@ -415,6 +508,7 @@ const el=(t,c,x)=>{const e=document.createElement(t);if(c)e.className=c;if(x!=nu
 const cap=s=>s.replace(/_/g," ").replace(/^./,c=>c.toUpperCase());
 const EMP={full_time:"Full-time",part_time:"Part-time",contract:"Contract",internship:"Internship"},CUR={USD:"$",GBP:"£",EUR:"€"};
 const SK={ml:"ML",aws:"AWS",gcp:"GCP",sql:"SQL",nosql:"NoSQL",llm:"LLM",dbt:"dbt",php:"PHP",sap:"SAP","ci/cd":"CI/CD",graphql:"GraphQL",javascript:"JavaScript",typescript:"TypeScript",mongodb:"MongoDB",mysql:"MySQL",pytorch:"PyTorch",tensorflow:"TensorFlow","node.js":"Node.js","spring-boot":"Spring Boot",hubspot:"HubSpot"};
+const RM=matchMedia("(prefers-reduced-motion:reduce)");let quiet=0; // quiet = results changed by typing, so no fade
 let D,C,H,LC,CO,BY,SKS=new Set(),VOC=[],P=null,S={},q="",view="jobs",opened=false,items=[],build,shown=0,t0=0,saved=new Set(),ALT=new Map(),postings=0;
 try{saved=new Set(JSON.parse(localStorage.getItem("rb_saved")||"[]"))}catch(e){}
 const persist=()=>{try{localStorage.setItem("rb_saved",JSON.stringify([...saved]))}catch(e){}};
@@ -587,10 +681,12 @@ function paint(cnt){
   document.body.classList.toggle("home",!active);
   qi.placeholder=active?"Search jobs":ph[phI];$("#clr").hidden=!q;
   shown=0;list.replaceChildren();more();
+  if(!quiet&&!RM.matches)list.animate({opacity:[.35,1]},{duration:180,easing:"cubic-bezier(.23,1,.32,1)"});quiet=0;
   const n=items.length,sec=((performance.now()-t0)/1000).toFixed(2),jobs=view==="jobs",ct=$("#count"),cs=$("#countsub");
   if(view==="companies"){ct.textContent=n.toLocaleString()+" companies";cs.textContent="With five or more open roles, ranked by how many are open to 0-2 years of experience."}
   else if(view==="saved"){const miss=saved.size-n;ct.textContent=n+" saved job"+(n===1?"":"s");cs.textContent=miss>0?miss+" no longer open":"Kept on this device."}
   else{ct.textContent=n===0?"No results":n.toLocaleString()+" role"+(n===1?"":"s");cs.textContent=(postings>n?postings.toLocaleString()+" postings in total. ":"")+"Found in "+sec+" seconds."}
+  document.body.classList.toggle("solo",!jobs);
   $("#sort").hidden=!jobs;$("#sort").value=S.sort||"";$("#fdet").hidden=!jobs;$("#gs").hidden=!jobs;$("#quick").hidden=!jobs;
   $("#tune2").hidden=!(jobs&&tuneOn());
   const und=$("#und");und.replaceChildren();
@@ -604,8 +700,8 @@ function paint(cnt){
   if(cnt)facets(cnt);else $("#fbody").replaceChildren();
   $("#show").textContent="Show "+n.toLocaleString()+" role"+(n===1?"":"s");
   quickSync();
-  document.querySelectorAll("#nav button").forEach(b=>{b.removeAttribute("aria-current");if(b.dataset.v===view)b.setAttribute("aria-current","page")});
-  const nv=$("#nsv");nv.hidden=!saved.size;nv.textContent=saved.size;
+  document.querySelectorAll("#nav button,.hn button").forEach(b=>{b.removeAttribute("aria-current");if(b.dataset.v===view)b.setAttribute("aria-current","page")});
+  bump2();
   const e=$("#empty");e.hidden=n>0;
   if(!n){
     if(view==="saved")e.replaceChildren(el("h3","","No saved jobs yet"),el("p","","Tap the star on any job to keep it here. Saved jobs stay on this device."));
@@ -617,6 +713,7 @@ const FX=new Set(); // filter groups the user expanded
 function facets(cnt){
   const fb=$("#fbody");fb.replaceChildren();let last="",sec=null;
   G.forEach((g,gi)=>{
+    if(g.hide)return; // ghost filter lives in the toggle up top
     if(g.name&&g.name!==last){sec=el("section","fg");sec.append(el("h4","",g.name));fb.append(sec);last=g.name}
     let keys=g.ord?g.ord().filter(x=>cnt[gi].has(x)):[...cnt[gi].keys()].sort((a,b)=>cnt[gi].get(b)-cnt[gi].get(a)||(g.lab(a)>g.lab(b)?1:-1));
     const lim=FX.has(g.k)?99:(g.k==="cat"||g.k==="co")?6:99,total=keys.length;
@@ -645,7 +742,7 @@ const avatar=n=>{
   if(LG[n]){const i=new Image();i.alt="";i.width=i.height=36;i.decoding="async";i.onload=()=>{a.textContent="";a.classList.add("has");a.append(i)};i.src=LG[n]}
   return a;
 };
-const bump2=()=>{const nv=$("#nsv");nv.hidden=!saved.size;nv.textContent=saved.size};
+const bump2=()=>document.querySelectorAll(".nsv").forEach(nv=>{nv.hidden=!saved.size;nv.textContent=saved.size});
 function starBtn(r){
   const url=r[7],b=el("button","ib star");b.type="button";b.append(svgUse("i-star"));
   const set=()=>{const on=saved.has(url);b.setAttribute("aria-pressed",on);b.setAttribute("aria-label",on?"Remove from saved":"Save job");b.title=on?"Remove from saved":"Save job"};
@@ -656,11 +753,12 @@ function starBtn(r){
 function hideBtn(r,li){
   const b=el("button","ib");b.type="button";b.append(svgUse("i-hide"));b.setAttribute("aria-label","Not interested");b.title="Not interested: show fewer like this";
   b.addEventListener("click",()=>{
-    HID.add(r[7]);const un=learn(r,0,1);saveM();li.remove();refreshHome();
+    HID.add(r[7]);const un=learn(r,0,1);saveM();gone(li);refreshHome();
     toast("Hidden. You will see fewer jobs like this.",()=>{un();HID.delete(r[7]);saveM();run()});
   });
   return b;
 }
+const gone=li=>{li.style.pointerEvents="none";if(!RM.matches)li.animate({opacity:[1,0],transform:["scale(1)","scale(.97)"]},{duration:150,easing:"cubic-bezier(.23,1,.32,1)",fill:"forwards"});setTimeout(()=>li.remove(),RM.matches?0:150)};
 const out=(a,url)=>{if(/^https?:\/\//i.test(url)){a.href=url;a.target="_blank";a.rel="noopener noreferrer nofollow"}};
 function item(r){
   const li=el("li","res"),rc=el("div","rc"),alts=ALT.get(r)||[];
@@ -674,7 +772,7 @@ function item(r){
   const fa=el("div","tg"),t=(x,c)=>fa.append(el("span","t"+(c?" "+c:""),x));
   if(r[3])t("Remote","b");if(r[18])t("Fresher-friendly","b");
   t(cap(D.levels[r[4]])+" level");if(r[10]>=0)t(r[10]+"+ years");if(r[9])t(EMP[r[9]]);
-  const sk=el("div","tg sk");
+  const sk=el("div","tg skl");
   if(r[14])r[14].split(",").slice(0,6).forEach(s=>sk.append(el("span","t q"+(P&&P.skills.includes(s)?" b":""),SK[s]||cap(s))));
   rc.append(hd,a,line,fa);if(sk.children.length)rc.append(sk);
   if(r[16]>=2){const g=el("p","gh");g.append(el("b","",(r[16]>=3?"Likely ghost job. ":"Possible ghost job. ")),r[17]+".");rc.append(g)}
@@ -816,7 +914,7 @@ function post(r,ex){
   sv.addEventListener("click",()=>{if(saved.has(r[7])){saved.delete(r[7]);persist();set();bump2()}else save()});
   pm.addEventListener("dblclick",()=>{save();pop.classList.remove("go");void pop.offsetWidth;pop.classList.add("go")}); // double-tap to save
   hide.append(svgUse("i-close"),el("span","","Not for me"));
-  hide.addEventListener("click",()=>{const nx=li.nextSibling,un=learn(r,0,1);HID.add(r[7]);saveM();li.remove();refreshHome();
+  hide.addEventListener("click",()=>{const nx=li.nextSibling,un=learn(r,0,1);HID.add(r[7]);saveM();gone(li);refreshHome();
     toast("Hidden. You will see fewer jobs like this.",()=>{un();HID.delete(r[7]);saveM();feed.insertBefore(li,nx)})});
   out(ap,r[7]);
   ap.setAttribute("aria-label","Apply to "+r[0]+" at "+r[1]);ap.addEventListener("click",()=>learn(r,1,.7));
@@ -871,7 +969,7 @@ $("#sx").addEventListener("click",()=>sheet(false));
 $("#show").addEventListener("click",()=>{sheet(false);scrollTo(0,0)});
 $("#sclr").addEventListener("click",()=>{const s=S.sort;S={};if(s)S.sort=s;run()});
 addEventListener("keydown",e=>{if(e.key==="Escape"&&document.body.classList.contains("sheet"))sheet(false)});
-document.querySelectorAll("#nav button").forEach(b=>b.addEventListener("click",()=>{
+document.querySelectorAll("#nav button,.hn button").forEach(b=>b.addEventListener("click",()=>{
   if(b.dataset.v==="jobs"){reset();return}   // Home = the feed
   view=b.dataset.v;opened=true;run();scrollTo(0,0)}));
 // the header gets its hairline only once content scrolls beneath it (observer, not a scroll listener)
@@ -890,8 +988,8 @@ function sync(){
 }
 function reset(){q="";S={};view="jobs";opened=false;qi.value="";hideSug();run();feedInit();scrollTo(0,0)}
 let timer;
-qi.addEventListener("input",()=>{q=qi.value;clearTimeout(timer);timer=setTimeout(run,140);suggest()});
-form.addEventListener("submit",e=>{e.preventDefault();hideSug();clearTimeout(timer);q=qi.value;if(view!=="jobs")view="jobs";if(!q.trim()&&!filterCount())opened=true;run();qi.blur();scrollTo(0,0)});
+qi.addEventListener("input",()=>{q=qi.value;clearTimeout(timer);timer=setTimeout(()=>{quiet=1;run()},140);suggest()});
+form.addEventListener("submit",e=>{e.preventDefault();hideSug();clearTimeout(timer);q=qi.value;remember(q);if(view!=="jobs")view="jobs";if(!q.trim()&&!filterCount())opened=true;run();qi.blur();scrollTo(0,0)});
 $("#clr").addEventListener("click",()=>{q="";qi.value="";hideSug();run();qi.focus()});
 $("#logo").addEventListener("click",e=>{e.preventDefault();reset()});
 $("#more").addEventListener("click",more);
@@ -900,11 +998,12 @@ $("#sort").addEventListener("change",e=>{S.sort=e.target.value;run()});
 const io=new IntersectionObserver(e=>{if(e[0].isIntersecting&&!$("#more").hidden){more();io.unobserve($("#more"));io.observe($("#more"))}},{rootMargin:"600px"});io.observe($("#more"));
 
 /* ---- preferences dialog ---- */
-const dlg=$("#dlg");
+const dlg=$("#dlg");let PD=0; // PD: a preference changed, so the feed needs a rebuild
 function togglePref(key,w){
+  PD=1;
   const i=M.prefs.indexOf(key);
   if(i>=0){M.prefs.splice(i,1);delete M.p[key]}else{M.prefs.push(key);M.p[key]=w}
-  saveM();drawPrefs();refreshHome();
+  saveM();drawLearned();refreshHome();
 }
 function lab(x){
   const[t,v]=x.split(/:(.*)/);
@@ -912,13 +1011,16 @@ function lab(x){
     ({remote:"Remote",fresher:"Fresher-friendly",pay:"Salary listed",pay100:"$100k+"})[x]||x;
 }
 function drawPrefs(){
-  const chipset=(id,opts)=>$(id).replaceChildren(...opts.map(([key,label,w])=>{const b=el("button","",label);b.type="button";b.setAttribute("aria-pressed",M.prefs.includes(key));b.addEventListener("click",()=>togglePref(key,w));return b}));
+  const chipset=(id,opts)=>$(id).replaceChildren(...opts.map(([key,label,w])=>{const b=el("button","",label);b.type="button";b.setAttribute("aria-pressed",M.prefs.includes(key));b.addEventListener("click",()=>{togglePref(key,w);b.setAttribute("aria-pressed",M.prefs.includes(key))});return b}));
   const cats=new Map(),sk=new Map();
   for(const r of D.rows){cats.set(r[8],(cats.get(r[8])||0)+1);if(r[14])for(const s of r[14].split(","))sk.set(s,(sk.get(s)||0)+1)}
   chipset("#pf",[...cats].filter(([x])=>x!=="other").sort((a,b)=>b[1]-a[1]).slice(0,10).map(([x])=>["cat:"+x,cap(x),1]));
   chipset("#pl",[["fresher","Fresher-friendly (0-2 yrs)",1.2],...["intern","junior","mid","senior"].map(x=>["lv:"+D.levels.indexOf(x),cap(x),1])]);
   chipset("#ps",[...sk].sort((a,b)=>b[1]-a[1]).slice(0,16).map(([x])=>["sk:"+x,SK[x]||cap(x),1]));
   chipset("#pw",[["remote","Remote",1.2],["pay","Salary listed",.8],["pay100","$100k and up",1]]);
+  drawLearned();
+}
+function drawLearned(){
   const ents=Object.entries(M.w),pos=ents.filter(e=>e[1]>.15).sort((a,b)=>b[1]-a[1]).slice(0,8),neg=ents.filter(e=>e[1]<-.15).sort((a,b)=>a[1]-b[1]).slice(0,6);
   const ln=$("#learned");ln.replaceChildren();
   const row=(t,list,c)=>{if(!list.length)return;ln.append(el("p","",t));const d=el("div","cs");for(const [x] of list)d.append(el("span",c,lab(x)));ln.append(d)};
@@ -930,18 +1032,22 @@ $("#me").addEventListener("click",openDlg);
 document.querySelectorAll(".tune .tb").forEach(b=>b.addEventListener("click",openDlg));
 document.querySelectorAll(".tune .x").forEach(b=>b.addEventListener("click",()=>{try{localStorage.setItem("rb_tune_x","1")}catch(e){}$("#tune2").hidden=true}));
 dlg.addEventListener("click",e=>{if(e.target===dlg)dlg.close()});
-dlg.addEventListener("close",()=>{refreshHome();if(document.body.classList.contains("home"))feedInit();else run()});
-$("#reset").addEventListener("click",()=>{if(confirm("Forget everything it has learned and your picks? Saved jobs stay.")){M={w:{},g:{},p:{},n:0,hid:[],prefs:[]};HID.clear();saveM();drawPrefs();refreshHome()}});
+dlg.addEventListener("close",()=>{refreshHome();if(!PD)return;PD=0;if(document.body.classList.contains("home"))feedInit();else run()});
+$("#reset").addEventListener("click",()=>{if(confirm("Forget everything it has learned and your picks? Saved jobs stay.")){PD=1;M={w:{},g:{},p:{},n:0,hid:[],prefs:[]};HID.clear();saveM();drawPrefs();refreshHome()}});
 
-/* ---- autocomplete ---- */
+/* ---- autocomplete, with recent searches when the field is empty ---- */
+let REC=[];try{REC=JSON.parse(localStorage.getItem("rb_recent")||"[]")}catch(e){}
+const remember=t=>{t=t.trim();if(!t)return;REC=[t,...REC.filter(x=>x!==t)].slice(0,5);try{localStorage.setItem("rb_recent",JSON.stringify(REC))}catch(e){}};
+addEventListener("keydown",e=>{if(e.key==="/"&&!e.ctrlKey&&!e.metaKey&&!e.altKey&&!/^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement.tagName)&&!dlg.open){e.preventDefault();qi.focus();qi.select()}});
 const sug=$("#sug");let sugI=-1,sugL=[];
 function hideSug(){sug.hidden=true;sugI=-1;qi.setAttribute("aria-expanded","false");qi.removeAttribute("aria-activedescendant")}
 function suggest(){
   const m=qi.value.match(/(\S+)$/),w=m?m[1].toLowerCase().replace(/^["-]+/,""):"";
-  if(w.length<2||!VOC.length){hideSug();return}
+  const rec=!qi.value.trim()&&REC.length;
+  if(!rec&&(w.length<2||!VOC.length)){hideSug();return}
   const a=[],b=[];
-  for(const o of VOC){const t=o.t.toLowerCase();if(t.startsWith(w))a.push(o);else if(t.includes(" "+w))b.push(o)}
-  sugL=[...a,...b].slice(0,7);sugI=-1;
+  if(!rec)for(const o of VOC){const t=o.t.toLowerCase();if(t.startsWith(w))a.push(o);else if(t.includes(" "+w))b.push(o)}
+  sugL=rec?REC.map(t=>({t,k:"Recent"})):[...a,...b].slice(0,7);sugI=-1;
   if(!sugL.length){hideSug();return}
   sug.replaceChildren(...sugL.map((o,i)=>{const li=el("li");li.id="s"+i;li.setAttribute("role","option");li.append(el("span","",o.t),el("small","",o.k));
     li.addEventListener("mousedown",e=>{e.preventDefault();pick(i)});return li}));
@@ -959,11 +1065,12 @@ qi.addEventListener("keydown",e=>{
   else if(e.key==="Enter"&&sugI>=0){e.preventDefault();pick(sugI)}
   else if(e.key==="Escape")hideSug();
 });
+qi.addEventListener("focus",suggest);
 qi.addEventListener("blur",()=>setTimeout(hideSug,120));
 
 /* ---- start ---- */
 const ph=["remote python jobs for freshers","data internships in berlin","senior designer $120k+","paid sales roles posted today","fresher friendly companies"];let phI=0;
-setInterval(()=>{if(document.body.classList.contains("home")&&!qi.value){phI=(phI+1)%ph.length;qi.placeholder=ph[phI]}},3200);
+setInterval(()=>{if(!document.hidden&&document.body.classList.contains("home")&&!qi.value){phI=(phI+1)%ph.length;qi.placeholder=ph[phI]}},3200);
 
 Promise.all([fetch("jobs.json").then(r=>r.json()),fetch("companies.json").then(r=>r.json()),fetch("logos.json").then(r=>r.ok?r.json():{}).catch(()=>({}))]).then(([d,c,lg])=>{
   D=d;C=c;LG=lg;BY=new Map(d.rows.map(r=>[r[7],r]));
@@ -982,7 +1089,7 @@ Promise.all([fetch("jobs.json").then(r=>r.json()),fetch("companies.json").then(r
   if(p.get("sort"))S.sort=p.get("sort");
   run();refreshHome();greeting();feedInit();
   document.fonts&&document.fonts.ready.then(tabsSync);
-}).catch(()=>{$("#greetsub").textContent="Could not load jobs. Please refresh the page."});
+}).catch(()=>{$("#greetsub").textContent="Could not load jobs. Please refresh the page.";$("#count").textContent="Could not load jobs";for(const x of [feed,list,$("#stories"),$("#fchips"),$("#fbody")])x.replaceChildren()});
 })();
 </script>
 </body>
