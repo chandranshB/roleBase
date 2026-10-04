@@ -19,6 +19,7 @@ from scraper import load
 CACHE, SITE = Path("logo-cache"), Path("_site")
 MIN, MAX_BYTES, FRESH, RETRY = 48, 120_000, 30 * 86400, 7 * 86400  # px, bytes, seconds before re-fetching a hit / a miss
 HEADERS = {"User-Agent": "roleBase-job-scraper (icon fetch)"}
+BAD = []
 
 
 def kind(b):
@@ -63,6 +64,8 @@ def candidates(html, base):
 
 def fetch(url):
     r = requests.get(url, headers=HEADERS, timeout=15, allow_redirects=True)
+    if not r.ok and "google.com/s2" in url and len(BAD) < 5:
+        BAD.append(f"{r.status_code} {url}")  # shown at the end, to tell "no icon" from "we are being blocked"
     return r.content if r.ok and len(r.content) <= MAX_BYTES else None
 
 
@@ -155,6 +158,8 @@ def main():
             mapping[name] = f"logos/{f}"
     (SITE / "logos.json").write_text(json.dumps(mapping, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     print(f"logos: {len(mapping)} of {len(todo)} companies; letter avatar for the other {len(todo) - len(mapping)}")
+    if BAD:
+        print("icon service refusals:", *BAD, sep="\n  ")
 
 
 if __name__ == "__main__":
