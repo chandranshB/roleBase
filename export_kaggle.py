@@ -5,7 +5,7 @@ import os
 import shutil
 from pathlib import Path
 
-from scraper import load
+from scraper import ghost_flags, load
 
 # Remotive / RemoteOK terms are about attribution and display, so they stay out of a republished dataset.
 SKIP = {"remotive", "remoteok"}
@@ -28,17 +28,25 @@ COLUMNS = {  # name -> (type, description); also the CSV column order
     "posted": ("datetime", "Date the job was published (YYYY-MM-DD) when the source gives one."),
     "first_seen": ("datetime", "Date this scraper first saw the job."),
     "closed_at": ("datetime", "Date the job disappeared from its board. Empty means still open."),
+    "ghost_score": ("numeric", "Ghost-job heuristic for open jobs: 0 = nothing suspicious, 2+ = possibly a ghost job, 3+ = likely. A guess, not proof."),
+    "ghost_reasons": ("string", "Why ghost_score is above zero, e.g. open for over a year, talent-pool wording, agency, reposted."),
     "url": ("string", "Apply link."),
 }
 
 
+jobs = [j for j in load().values() if j["source"] not in SKIP]
+flags = ghost_flags([j for j in jobs if j["closed_at"] is None])  # closed jobs get no score
+
+
 def flat(j):
     lo, hi, cur = j["pay"] or ("", "", "")
+    f = flags.get(j["id"])
     return {**j, "years_experience": "" if j["years"] is None else j["years"], "skills": ";".join(j["skills"]),
-            "pay_min": lo, "pay_max": hi, "pay_currency": cur}
+            "pay_min": lo, "pay_max": hi, "pay_currency": cur,
+            "ghost_score": "" if f is None else sum(p for _, p in f), "ghost_reasons": "; ".join(r for r, _ in f or [])}
 
 
-rows = sorted((flat(j) for j in load().values() if j["source"] not in SKIP), key=lambda j: j["id"])
+rows = sorted(map(flat, jobs), key=lambda j: j["id"])
 out = Path("kaggle")
 out.mkdir(exist_ok=True)
 shutil.copy("kaggle_assets/dataset-cover-image.png", out)  # picked up by `kaggle datasets metadata --update`

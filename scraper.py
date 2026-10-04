@@ -135,6 +135,39 @@ def clean_company(n):  # "Stripe, Inc." -> "Stripe"
     return n
 
 
+EVERGREEN_RX = re.compile(r"talent (community|network|pool|pipeline)|general application|future (opportunit|role)|evergreen|always hiring"
+                          r"|expression of interest|join our (talent|network)", re.I)
+HIDDEN_RX = re.compile(r"confidential|stealth|undisclosed|anonymous|our client|staffing|recruit(er|ing|ment)|talent (solutions|partners)", re.I)
+
+
+def ghost_flags(jobs, today=None):
+    """id -> [(reason, points)] for open jobs. Heuristics for *possible* ghost jobs (no real vacancy, resume farming), never proof.
+    2+ points = possibly ghost, 3+ = likely. Needs no stored data except `reposts`, which builds up as the scraper keeps running."""
+    today = today or dt.date.today()
+    same = {}
+    for j in jobs:
+        k = (j["company"], re.sub(r"\W", "", j["title"].lower()))
+        same[k] = same.get(k, 0) + 1
+    out = {}
+    for j in jobs:
+        r, age = [], (today - dt.date.fromisoformat(j["posted"] or j["first_seen"])).days
+        if age >= 365:
+            r.append(("open for over a year", 2))
+        elif age >= 180:
+            r.append(("open for over 6 months", 1))
+        if EVERGREEN_RX.search(j["title"]):
+            r.append(("talent-pool / expression-of-interest wording", 3))
+        if HIDDEN_RX.search(j["company"]):
+            r.append(("agency or hidden employer", 1))
+        n = same[(j["company"], re.sub(r"\W", "", j["title"].lower()))]
+        if n >= 8:
+            r.append((f"{n} identical postings", 1))
+        if j.get("reposts"):
+            r.append((f"reposted {j['reposts']}x", 1 if j["reposts"] < 3 else 2))
+        out[j["id"]] = r
+    return out
+
+
 def get(url, **kw):
     r = S.get(url, timeout=60, **kw)
     r.raise_for_status()
@@ -252,7 +285,7 @@ FEEDS = dict(remotive=remotive, remoteok=remoteok, arbeitnow=arbeitnow)
 # ---------- storage ----------
 URLS = dict(greenhouse="https://job-boards.greenhouse.io/{s}/jobs/{r}", lever="https://jobs.lever.co/{s}/{r}/apply",
             ashby="https://jobs.ashbyhq.com/{s}/{r}/application", smartrecruiters="https://jobs.smartrecruiters.com/{s}/{r}")
-DEFAULTS = dict(closed_at=None, location="", team="", remote=False, years=None, skills=[], pay=None, employment="", posted=None)
+DEFAULTS = dict(closed_at=None, location="", team="", remote=False, years=None, skills=[], pay=None, employment="", posted=None, reposts=0)
 
 
 def url_of(id):  # apply URL is derivable for ATS jobs, so it is only stored when it differs
@@ -278,6 +311,8 @@ def load():
 def slim(j):  # drop empty values and anything derivable from other fields (load() restores it)
     r = {k: v for k, v in j.items() if v is not None and v is not False and v != "" and v != []}
     r.pop("source", None)
+    if not r.get("reposts"):
+        r.pop("reposts", None)
     if r.get("url") == url_of(j["id"]):
         del r["url"]
     if r.get("level") == level(j["title"], j.get("years")):
@@ -304,10 +339,16 @@ def save(db):  # one file per board; sorted + compact + LF => small files, diffs
 def merge(db, fetched, today):
     """db: id->job. fetched: scope->jobs, ONLY scopes that fetched OK (so failures never close jobs)."""
     seen = {j["id"] for jobs in fetched.values() for j in jobs}
+    tkey = lambda i, o: (i.rsplit(":", 1)[0], re.sub(r"\W", "", o["title"].lower()))
+    closed = {}  # (board, title) -> how many jobs with that title already closed there: a new one is a repost
+    for i, o in db.items():
+        if o["closed_at"]:
+            closed[tkey(i, o)] = closed.get(tkey(i, o), 0) + 1
     for jobs in fetched.values():
         for j in jobs:
             old = db.get(j["id"])
-            db[j["id"]] = {**j, "first_seen": old["first_seen"] if old else today, "closed_at": None}
+            db[j["id"]] = {**j, "first_seen": old["first_seen"] if old else today, "closed_at": None,
+                           "reposts": old.get("reposts", 0) if old else closed.get(tkey(j["id"], j), 0)}
     for i, o in db.items():
         if o["closed_at"] is None and i not in seen and i.rsplit(":", 1)[0] in fetched:
             o["closed_at"] = today

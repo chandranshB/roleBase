@@ -1,4 +1,6 @@
-from scraper import (category, clean_company, employment, find_pay, level, merge, skills, slim, url_of, years_req)
+import datetime as dt
+
+from scraper import (category, clean_company, employment, find_pay, ghost_flags, level, merge, skills, slim, url_of, years_req)
 
 
 def j(i, **kw):
@@ -21,6 +23,21 @@ assert db["a:x:2"]["closed_at"] is None and db["a:x:2"]["first_seen"] == "2026-0
 db = merge(db, {"a:x": [j("a:x:1")]}, "2026-01-04")
 db = merge(db, {"a:x": [j("a:x:1")]}, "2026-06-01")
 assert "a:x:2" not in db
+
+# repost: a job closes, then a new id with the same title appears on the same board
+db = merge({}, {"a:x": [j("a:x:1")]}, "2026-01-01")
+db = merge(db, {"a:x": []}, "2026-01-02")
+db = merge(db, {"a:x": [j("a:x:5")]}, "2026-01-03")
+assert db["a:x:5"]["reposts"] == 1 and db["a:x:1"]["closed_at"] == "2026-01-02"
+db = merge(db, {"a:x": [j("a:x:5")]}, "2026-01-04")
+assert db["a:x:5"]["reposts"] == 1  # unchanged on later runs
+
+# --- ghost jobs ---
+d = dt.date(2026, 10, 4)
+mk = lambda i, title, posted, **kw: {"id": i, "company": "Acme", "title": title, "posted": posted, "first_seen": posted, **kw}
+g = ghost_flags([mk("1", "Talent Pool", "2026-09-30"), mk("2", "Dev", "2024-01-01"), mk("3", "Data Pipeline Engineer", "2026-10-01"),
+                 mk("4", "Dev", "2026-01-01", reposts=3)], d)
+assert sum(p for _, p in g["1"]) == 3 and sum(p for _, p in g["2"]) == 2 and g["3"] == [] and sum(p for _, p in g["4"]) == 3
 
 # --- understanding ---
 assert [level(t) for t in ["Software Engineering Intern", "Sr. Engineer", "Staff Engineer", "Engineering Manager", "Engineer",

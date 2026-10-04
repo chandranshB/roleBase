@@ -14,6 +14,7 @@
   --secondary-container:#e8def8;--on-secondary-container:#1d192b;
   --surface:#fef7ff;--surface-low:#f7f2fa;--surface-mid:#f3edf7;--surface-high:#ece6f0;
   --on-surface:#1d1b20;--on-surface-variant:#49454f;--outline:#79747e;--outline-variant:#cac4d0;
+  --warn:#ffdea8;--on-warn:#4a2c00;
   --font:Roboto,"Google Sans",system-ui,-apple-system,"Segoe UI",sans-serif;--ease:cubic-bezier(.2,0,0,1)
 }
 *{box-sizing:border-box}
@@ -70,6 +71,9 @@ ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
 .tags{grid-area:tags;display:flex;flex-wrap:wrap;gap:6px}
 .tag{display:inline-flex;align-items:center;height:24px;padding:0 8px;border:1px solid var(--outline-variant);border-radius:8px;font:500 12px/16px var(--font);color:var(--on-surface-variant)}
 .tag.hi{background:var(--primary-container);color:var(--on-primary-container);border-color:transparent}
+@media(prefers-color-scheme:dark){:root{--warn:#5c3d00;--on-warn:#ffdea8}}
+.tag.warn{background:var(--warn);color:var(--on-warn);border-color:transparent}
+.flag{margin:8px 0 0;color:var(--on-warn);background:var(--warn);border-radius:8px;padding:6px 10px;font:400 12px/16px var(--font)}
 .tag.sk{background:var(--surface-high);border-color:transparent}
 .card .sup{grid-area:sup}
 .btn{grid-area:act;justify-self:start;align-self:start;display:inline-flex;align-items:center;gap:8px;height:40px;padding:0 24px;border:0;border-radius:20px;background:var(--secondary-container);color:var(--on-secondary-container);font:500 14px/20px var(--font);text-decoration:none}
@@ -131,6 +135,7 @@ matchMedia("(prefers-color-scheme:dark)").addEventListener("change",()=>theme(se
     <div class="chips">
       <label class="chip sl"><input type="checkbox" name="remote"><svg class="ck"><use href="#i-check"/></svg>Remote</label>
       <label class="chip sl"><input type="checkbox" name="pay"><svg class="ck"><use href="#i-check"/></svg>Salary listed</label>
+      <label class="chip sl"><input type="checkbox" name="ghost"><svg class="ck"><use href="#i-check"/></svg>Hide ghost jobs</label>
       <label class="chip sl sel"><select name="level" aria-label="Level"><option value="">Level</option></select></label>
       <label class="chip sl sel"><select name="years" aria-label="Experience required">
         <option value="">Experience</option><option value="1">Up to 1 year</option><option value="3">Up to 3 years</option><option value="5">Up to 5 years</option><option value="8">Up to 8 years</option>
@@ -171,6 +176,7 @@ function card(r){
   const li=el("li","card"),main=el("div","main"),tags=el("div","tags");
   main.append(el("h3","",r[0]),el("div","co",r[1]+" · "+(r[2]||"Location n/a")));
   const tag=(t,c)=>tags.append(el("span","tag"+(c?" "+c:""),t));
+  if(r[16]>=2){tag(r[16]>=3?"Likely ghost job":"Possibly ghost job","warn");main.append(el("p","flag","Why flagged: "+r[17]+". Ghost-job checks are guesses, not proof."))}
   if(r[3])tag("Remote","hi");
   if(r[12])tag(money(r),"hi");
   tag(cap(D.levels[r[4]]));
@@ -193,16 +199,16 @@ function more(){
 function sync(){
   const p=new URLSearchParams();
   for(const n of FIELDS)if(F[n].value)p.set(n,F[n].value);
-  for(const n of["remote","pay"])if(F[n].checked)p.set(n,"1");
+  for(const n of["remote","pay","ghost"])if(F[n].checked)p.set(n,"1");
   history.replaceState(null,"","#"+p);
   document.querySelectorAll(".chip").forEach(c=>{const x=c.querySelector("select,input");c.classList.toggle("on",x.type==="checkbox"?x.checked:x.value!=="")});
   $("#clr").hidden=!F.q.value;
 }
 function run(){
   const terms=F.q.value.toLowerCase().split(/\s+/).filter(Boolean),lv=F.level.value,cat=F.category.value,em=F.employment.value,sr=F.source.value;
-  const mx=F.years.value===""?-1:+F.years.value,rm=F.remote.checked,pay=F.pay.checked,d=+F.days.value;
+  const mx=F.years.value===""?-1:+F.years.value,rm=F.remote.checked,pay=F.pay.checked,gh=F.ghost.checked,d=+F.days.value;
   const cut=d?new Date(Date.now()-d*864e5).toISOString().slice(0,10):"";
-  res=D.rows.filter((r,i)=>!(rm&&!r[3])&&!(pay&&!r[12])&&!(lv!==""&&r[4]!=lv)&&!(cat&&r[8]!==cat)&&!(em&&r[9]!==em)
+  res=D.rows.filter((r,i)=>!(rm&&!r[3])&&!(pay&&!r[12])&&!(gh&&r[16]>=2)&&!(lv!==""&&r[4]!=lv)&&!(cat&&r[8]!==cat)&&!(em&&r[9]!==em)
     &&!(sr!==""&&r[5]!=sr)&&!(mx>=0&&r[10]>mx)&&!(cut&&r[6]<cut)&&terms.every(t=>H[i].includes(t)));
   if(F.sort.value==="pay")res.sort((a,b)=>b[12]-a[12]);
   shown=0;list.replaceChildren();more();sync();
@@ -223,7 +229,7 @@ fetch("jobs.json").then(r=>r.json()).then(d=>{
   fill("source",d.sources.map((_,i)=>i),i=>cap(d.sources[i]));
   const p=new URLSearchParams(location.hash.slice(1));
   for(const n of FIELDS)F[n].value=p.get(n)||"";
-  for(const n of["remote","pay"])F[n].checked=p.has(n);
+  for(const n of["remote","pay","ghost"])F[n].checked=p.has(n);
   $("#meta").textContent=d.rows.length.toLocaleString()+" open jobs · updated "+d.updated;
   run();
 }).catch(()=>{$("#count").textContent="Could not load jobs."});
