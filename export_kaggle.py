@@ -1,4 +1,4 @@
-﻿"""Build the kaggle/ dataset folder (one CSV + metadata) from data/jobs/*.jsonl."""
+"""Build the kaggle/ dataset folder (one CSV + metadata) from data/jobs/*.jsonl."""
 import csv
 import json
 import os
@@ -64,7 +64,7 @@ with open(out / "jobs.csv", "w", encoding="utf-8", newline="") as f:
     w = csv.DictWriter(f, list(COLUMNS), extrasaction="ignore")
     w.writeheader()
     w.writerows(rows)
-with open(out / "companies.csv", "w", encoding="utf-8", newline="") as f:
+with open(out / "jobs_by_company.csv", "w", encoding="utf-8", newline="") as f:
     w = csv.DictWriter(f, list(COMPANY_COLUMNS))
     w.writeheader()
     w.writerows(company_stats([j for j in jobs if j["closed_at"] is None]))
@@ -94,9 +94,9 @@ with open(out / "companies.csv", "w", encoding="utf-8", newline="") as f:
         "description": "One row per job posting (open, or closed within the last 90 days).",
         "schema": {"fields": [{"name": n, "description": d, "type": t} for n, (t, d) in COLUMNS.items()]},
     }, {
-        "path": "companies.csv",
+        "path": "jobs_by_company.csv",
         "description": "One row per company with 5+ open jobs: how many of its roles are open to 0-2 years of experience.",
         "schema": {"fields": [{"name": n, "description": d, "type": t} for n, (t, d) in COMPANY_COLUMNS.items()]},
     }],
 }, indent=2), encoding="utf-8")
-print(f"{len(rows)} rows -> kaggle/jobs.csv (+ companies.csv)")
+print(f"{len(rows)} rows -> kaggle/jobs.csv (+ jobs_by_company.csv)")
