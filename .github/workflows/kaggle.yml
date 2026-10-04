@@ -24,5 +24,8 @@ jobs:
       - name: Sync subtitle, tags, sources, file/column descriptions and cover image
         if: env.KAGGLE_API_TOKEN != ''
         run: |
-          sleep 30  # let the new version register first
+          for _ in $(seq 30); do  # wait until the new version is built, else the update hits the old one
+            [ "$(kaggle datasets status "$KAGGLE_USERNAME/job-listings")" = ready ] && break
+            sleep 10
+          done
           kaggle datasets metadata --update -p kaggle "$KAGGLE_USERNAME/job-listings"
