@@ -18,7 +18,7 @@
   --page:#f4f5f7;--surface:#fdfdfe;--ink:#14161a;--sub:#566070;--faint:#8590a0;
   --line:rgba(20,22,26,.09);--line2:rgba(20,22,26,.17);--wash:rgba(20,22,26,.055);
   --acc:#1f5eff;--on-acc:#fff;--acc-t:rgba(31,94,255,.09);--acc-t2:rgba(31,94,255,.18);
-  --warn:#8f5300;--warn-t:#fff1da;
+  --thumb:var(--surface);--warn:#8f5300;--warn-t:#fff1da;
   --shadow1:0 1px 2px rgba(20,22,26,.04),0 10px 28px -14px rgba(20,22,26,.14);
   --shadow2:0 2px 4px rgba(20,22,26,.05),0 22px 44px -18px rgba(20,22,26,.24);
   --r-card:16px;--r-row:10px;--r-badge:8px;
@@ -29,7 +29,7 @@
   --page:#0d0f12;--surface:#15181c;--ink:#eceef2;--sub:#a0a8b5;--faint:#707988;
   --line:rgba(255,255,255,.08);--line2:rgba(255,255,255,.17);--wash:rgba(255,255,255,.07);
   --acc:#86a9ff;--on-acc:#0b1020;--acc-t:rgba(134,169,255,.12);--acc-t2:rgba(134,169,255,.24);
-  --warn:#f1c068;--warn-t:rgba(241,192,104,.12);
+  --thumb:#2b3038;--warn:#f1c068;--warn-t:rgba(241,192,104,.12);
   --shadow1:0 1px 2px rgba(0,0,0,.3),0 10px 28px -14px rgba(0,0,0,.6);
   --shadow2:0 2px 4px rgba(0,0,0,.35),0 22px 44px -18px rgba(0,0,0,.7)}}
 *{box-sizing:border-box}
@@ -176,7 +176,7 @@ body:not(.home) .cols{display:grid}
 .tabrow{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:8px 0 22px}
 .seg{position:relative;display:inline-flex;padding:4px;border-radius:999px;background:var(--wash);overflow-x:auto;scrollbar-width:none;max-width:100%}
 .seg::-webkit-scrollbar{display:none}
-.seg .ind{position:absolute;top:4px;bottom:4px;left:0;width:0;border-radius:999px;background:var(--surface);box-shadow:0 0 0 1px var(--line),0 1px 3px rgba(20,22,26,.12);transition:transform .26s var(--drawer),width .26s var(--drawer)}
+.seg .ind{position:absolute;top:4px;bottom:4px;left:0;width:0;border-radius:999px;background:var(--thumb);box-shadow:0 0 0 1px var(--line),0 1px 3px rgba(20,22,26,.12);transition:transform .26s var(--drawer),width .26s var(--drawer)}
 .tab{position:relative;z-index:1;flex:none;height:36px;padding:0 16px;border:0;border-radius:999px;background:none;color:var(--sub);font-weight:500;transition:color .16s var(--ease)}
 .tab[aria-selected=true]{color:var(--ink)}
 @media(hover:hover) and (pointer:fine){.tab:hover{color:var(--ink)}}
