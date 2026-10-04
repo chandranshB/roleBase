@@ -91,4 +91,14 @@ assert slim(row) == {"id": "ashby:acme:u1", "years": 0, "title": "Engineer"}
 assert slim({**row, "level": "manager+"})["level"] == "manager+"  # level from an API hint is not derivable, so it stays
 assert url_of("remotive:7") is None
 
+# --- charts: valid XML, labels escaped, empty and single-day data do not crash ---
+import xml.etree.ElementTree as ET
+
+from make_charts import bars, lines
+
+for s in (bars("T <&>", "sub", [("A & B <x>", 3), ("c" * 40, 1)]), bars("empty", "s", []),
+          lines("L", "s", [("a", 1, [("2026-10-04", 5)])]), lines("L", "s", [("a", 1, [("2026-10-04", 5), ("2026-10-06", 9)])]), lines("L", "s", [])):
+    ET.fromstring(s)
+assert "A &amp; B &lt;x&gt;" in bars("t", "s", [("A & B <x>", 3)])
+
 print("ok")
