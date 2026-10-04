@@ -4,6 +4,7 @@
 Every job is enriched from its title/description: level, category, employment type, years of experience,
 skills and pay. Only those facts are stored (never the description), and empty values are left out of the files.
 """
+import csv
 import datetime as dt
 import html
 import json
@@ -166,6 +167,26 @@ def ghost_flags(jobs, today=None):
             r.append((f"reposted {j['reposts']}x", 1 if j["reposts"] < 3 else 2))
         out[j["id"]] = r
     return out
+
+
+def fresher_ok(j):
+    """Open to 0-2 years of experience: the posting states <= 2 years, or is an intern/junior role that states nothing.
+    A "junior" role that asks for 3+ years is NOT fresher-friendly, and a senior/lead title never is."""
+    y = j["years"]
+    return j["level"] in ("intern", "junior", "mid") and (y <= 2 if y is not None else j["level"] != "mid")
+
+
+def company_stats(jobs, min_roles=5):
+    """Per company: open roles, how many are fresher-friendly, 'junior' roles that ask 3+ years, and how often years are stated at all."""
+    by = {}
+    for j in jobs:
+        by.setdefault(j["company"], []).append(j)
+    out = [dict(company=c, open_roles=len(js), fresher_roles=sum(map(fresher_ok, js)),
+                fresher_share=round(sum(map(fresher_ok, js)) / len(js), 3),
+                junior_asking_3plus=sum(j["level"] in ("intern", "junior") and (j["years"] or 0) >= 3 for j in js),
+                years_stated_share=round(sum(j["years"] is not None for j in js) / len(js), 2))
+           for c, js in by.items() if len(js) >= min_roles]
+    return sorted(out, key=lambda r: (-r["fresher_share"], -r["open_roles"]))
 
 
 def get(url, **kw):
@@ -336,8 +357,9 @@ def save(db):  # one file per board; sorted + compact + LF => small files, diffs
             f.write("\n".join(lines) + "\n")
 
 
-def merge(db, fetched, today):
-    """db: id->job. fetched: scope->jobs, ONLY scopes that fetched OK (so failures never close jobs)."""
+def merge(db, fetched, today, pruned=None):
+    """db: id->job. fetched: scope->jobs, ONLY scopes that fetched OK (so failures never close jobs).
+    Rows that age out are appended to `pruned` if given, so the caller can archive them."""
     seen = {j["id"] for jobs in fetched.values() for j in jobs}
     tkey = lambda i, o: (i.rsplit(":", 1)[0], re.sub(r"\W", "", o["title"].lower()))
     closed = {}  # (board, title) -> how many jobs with that title already closed there: a new one is a repost
@@ -353,7 +375,36 @@ def merge(db, fetched, today):
         if o["closed_at"] is None and i not in seen and i.rsplit(":", 1)[0] in fetched:
             o["closed_at"] = today
     cutoff = (dt.date.fromisoformat(today) - dt.timedelta(KEEP_CLOSED_DAYS)).isoformat()
-    return {i: o for i, o in db.items() if not (o["closed_at"] and o["closed_at"] < cutoff)}
+    keep = {i: o for i, o in db.items() if not (o["closed_at"] and o["closed_at"] < cutoff)}
+    if pruned is not None:
+        pruned.extend(o for i, o in db.items() if i not in keep)
+    return keep
+
+
+def append_csv(path, header, rows):
+    new = not path.exists()
+    with open(path, "a", encoding="utf-8", newline="") as f:
+        w = csv.writer(f, lineterminator="\n")
+        if new:
+            w.writerow(header)
+        w.writerows(rows)
+
+
+def log_history(db, pruned, today):
+    """Append-only history for trends the 90-day job window can't answer later (git stores only the new lines):
+    pulse.csv = open/fresher job counts per board once a day; archive.csv = lifetime of every job that aged out."""
+    pulse = Path("data/pulse.csv")
+    if not (pulse.exists() and any(l.startswith(today + ",") for l in pulse.read_text(encoding="utf-8").split("\n"))):
+        counts = {}
+        for i, o in db.items():
+            if o["closed_at"] is None:
+                c = counts.setdefault(i.rsplit(":", 1)[0], [0, 0])
+                c[0] += 1
+                c[1] += fresher_ok(o)
+        append_csv(pulse, ["date", "board", "open", "fresher"], [[today, b, n, f] for b, (n, f) in sorted(counts.items())])
+    if pruned:
+        append_csv(Path("data/archive.csv"), ["id", "company", "level", "category", "posted", "first_seen", "closed_at"],
+                   [[o["id"], o["company"], o["level"], o["category"], o["posted"] or "", o["first_seen"], o["closed_at"]] for o in pruned])
 
 
 def main():
@@ -398,11 +449,12 @@ def main():
     if not fetched:
         sys.exit("all sources failed")
 
-    before = set(db)
-    db = merge(db, fetched, dt.date.today().isoformat())
+    before, today, pruned = set(db), dt.date.today().isoformat(), []
+    db = merge(db, fetched, today, pruned)
     n_open = sum(o["closed_at"] is None for o in db.values())
     print(f"sources ok={len(fetched)} failed={len(failed)} | new={len(set(db) - before)} open={n_open} closed={len(db) - n_open}")
     save(db)
+    log_history(db, pruned, today)
 
 
 if __name__ == "__main__":

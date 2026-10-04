@@ -45,6 +45,13 @@ svg{width:24px;height:24px;fill:currentColor;flex:none}
 .search input::-webkit-search-cancel-button{display:none}
 #clr[hidden]{display:none}
 
+.tabs{display:flex;border-bottom:1px solid var(--outline-variant);margin-bottom:8px}
+.tab{flex:1;position:relative;height:48px;border:0;background:none;color:var(--on-surface-variant);font:500 14px/20px var(--font)}
+.tab[aria-selected=true]{color:var(--primary)}
+.tab[aria-selected=true]::after{content:"";position:absolute;left:25%;right:25%;bottom:0;height:3px;border-radius:3px 3px 0 0;background:var(--primary)}
+.meter{height:8px;border-radius:4px;background:var(--surface-high);overflow:hidden;margin:8px 0 4px}
+.meter i{display:block;height:100%;border-radius:4px;background:var(--primary)}
+.chips[hidden]{display:none}
 .chips{display:flex;gap:8px;padding-top:12px;overflow-x:auto;scrollbar-width:none}
 .chips::-webkit-scrollbar{display:none}
 @media(min-width:720px){.chips{flex-wrap:wrap;overflow:visible}}
@@ -127,12 +134,22 @@ matchMedia("(prefers-color-scheme:dark)").addEventListener("change",()=>theme(se
     <label class="ib sl" title="Accent colour" aria-label="Pick accent colour"><svg><use href="#i-palette"/></svg><input type="color" id="seed"></label>
   </header>
   <form id="f" class="top" role="search" autocomplete="off">
+    <div class="tabs" role="tablist">
+      <button type="button" role="tab" class="tab sl" data-v="jobs" aria-selected="true">Jobs</button>
+      <button type="button" role="tab" class="tab sl" data-v="companies" aria-selected="false">Companies</button>
+    </div>
     <div class="search">
       <svg aria-hidden="true"><use href="#i-search"/></svg>
       <input type="search" name="q" placeholder="Search roles, companies, skills, places" aria-label="Search jobs">
       <button type="button" id="clr" class="ib sl" aria-label="Clear search" hidden><svg><use href="#i-close"/></svg></button>
     </div>
-    <div class="chips">
+    <div class="chips" id="cchips" hidden>
+      <label class="chip sl sel"><select name="csort" aria-label="Sort companies">
+        <option value="">Most fresher-friendly</option><option value="roles">Most open roles</option><option value="inflated">Most “junior” roles asking 3+ years</option>
+      </select></label>
+    </div>
+    <div class="chips" id="jchips">
+      <label class="chip sl"><input type="checkbox" name="fresher"><svg class="ck"><use href="#i-check"/></svg>Fresher-friendly (0–2 yrs)</label>
       <label class="chip sl"><input type="checkbox" name="remote"><svg class="ck"><use href="#i-check"/></svg>Remote</label>
       <label class="chip sl"><input type="checkbox" name="pay"><svg class="ck"><use href="#i-check"/></svg>Salary listed</label>
       <label class="chip sl"><input type="checkbox" name="ghost"><svg class="ck"><use href="#i-check"/></svg>Hide ghost jobs</label>
@@ -163,9 +180,9 @@ matchMedia("(prefers-color-scheme:dark)").addEventListener("change",()=>theme(se
 <script>
 (()=>{
 const $=s=>document.querySelector(s),PAGE=50,form=$("#f"),F=form.elements,list=$("#list");
-const FIELDS=["q","level","category","employment","years","days","source","sort"],CUR={USD:"$",GBP:"£",EUR:"€"};
+const FIELDS=["q","level","category","employment","years","days","source","sort","csort"],CUR={USD:"$",GBP:"£",EUR:"€"},BOXES=["fresher","remote","pay","ghost"];
 const EMP={full_time:"Full-time",part_time:"Part-time",contract:"Contract",internship:"Internship"};
-let D,H,res=[],shown=0;
+let D,H,C,res=[],items=[],build,view="jobs",shown=0;
 const el=(t,c,x)=>{const e=document.createElement(t);if(c)e.className=c;if(x)e.textContent=x;return e};
 const cap=s=>s.replace(/_/g," ").replace(/^./,c=>c.toUpperCase());
 const age=d=>{const n=Math.floor((Date.now()-Date.parse(d))/864e5);return n<1?"Today":n<30?n+"d ago":Math.floor(n/30)+"mo ago"};
@@ -191,27 +208,52 @@ function card(r){
   li.append(main,a,tags,el("p","sup",cap(D.sources[r[5]])+" · "+age(r[6])));
   return li;
 }
+function ccard(r){ // company: name, open roles, fresher roles, share, junior roles asking 3+ yrs, share of roles that state years
+  const li=el("li","card"),main=el("div","main"),tags=el("div","tags"),pct=Math.round(r[3]*100),meter=el("div","meter"),bar=el("i");
+  bar.style.width=pct+"%";meter.append(bar);meter.setAttribute("role","img");meter.setAttribute("aria-label",pct+"% fresher-friendly");
+  main.append(el("h3","",r[0]),el("div","co",r[2]+" of "+r[1]+" open roles are open to 0–2 years of experience"),meter,el("div","co",pct+"% fresher-friendly"));
+  if(r[4])tags.append(el("span","tag warn",r[4]+(r[4]===1?" “junior” role asks":" “junior” roles ask")+" for 3+ years"));
+  const b=el("button","btn sl","Fresher roles");b.type="button";
+  b.addEventListener("click",()=>{F.q.value=r[0];F.fresher.checked=true;setView("jobs");run()});
+  const y=Math.round(r[5]*100);
+  li.append(main,b,tags,el("p","sup","Years of experience are stated in "+y+"% of its roles"+(r[5]<.3?", so this score leans on job titles.":".")));
+  return li;
+}
 function more(){
   const fr=document.createDocumentFragment();
-  for(const r of res.slice(shown,shown+PAGE))fr.append(card(r));
-  shown+=PAGE;list.append(fr);$("#more").hidden=shown>=res.length;
+  for(const r of items.slice(shown,shown+PAGE))fr.append(build(r));
+  shown+=PAGE;list.append(fr);$("#more").hidden=shown>=items.length;
+}
+function setView(v){
+  view=v;
+  document.querySelectorAll(".tab").forEach(t=>t.setAttribute("aria-selected",t.dataset.v===v));
+  $("#jchips").hidden=v!=="jobs";$("#cchips").hidden=v!=="companies";
+  F.q.placeholder=v==="jobs"?"Search roles, companies, skills, places":"Search companies";
+}
+function runCompanies(){
+  const q=F.q.value.toLowerCase().trim(),s=F.csort.value;
+  items=C.filter(r=>r[0].toLowerCase().includes(q)).sort(s==="roles"?(a,b)=>b[1]-a[1]:s==="inflated"?(a,b)=>b[4]-a[4]||b[1]-a[1]:(a,b)=>b[3]-a[3]||b[1]-a[1]);
+  build=ccard;shown=0;list.replaceChildren();more();sync();
+  $("#count").textContent=items.length.toLocaleString()+" COMPANIES WITH 5+ OPEN ROLES";
 }
 function sync(){
   const p=new URLSearchParams();
+  if(view!=="jobs")p.set("view",view);
   for(const n of FIELDS)if(F[n].value)p.set(n,F[n].value);
-  for(const n of["remote","pay","ghost"])if(F[n].checked)p.set(n,"1");
+  for(const n of BOXES)if(F[n].checked)p.set(n,"1");
   history.replaceState(null,"","#"+p);
   document.querySelectorAll(".chip").forEach(c=>{const x=c.querySelector("select,input");c.classList.toggle("on",x.type==="checkbox"?x.checked:x.value!=="")});
   $("#clr").hidden=!F.q.value;
 }
 function run(){
+  if(view!=="jobs")return runCompanies();
   const terms=F.q.value.toLowerCase().split(/\s+/).filter(Boolean),lv=F.level.value,cat=F.category.value,em=F.employment.value,sr=F.source.value;
-  const mx=F.years.value===""?-1:+F.years.value,rm=F.remote.checked,pay=F.pay.checked,gh=F.ghost.checked,d=+F.days.value;
+  const mx=F.years.value===""?-1:+F.years.value,rm=F.remote.checked,pay=F.pay.checked,gh=F.ghost.checked,fr=F.fresher.checked,d=+F.days.value;
   const cut=d?new Date(Date.now()-d*864e5).toISOString().slice(0,10):"";
-  res=D.rows.filter((r,i)=>!(rm&&!r[3])&&!(pay&&!r[12])&&!(gh&&r[16]>=2)&&!(lv!==""&&r[4]!=lv)&&!(cat&&r[8]!==cat)&&!(em&&r[9]!==em)
+  res=D.rows.filter((r,i)=>!(rm&&!r[3])&&!(pay&&!r[12])&&!(gh&&r[16]>=2)&&!(fr&&!r[18])&&!(lv!==""&&r[4]!=lv)&&!(cat&&r[8]!==cat)&&!(em&&r[9]!==em)
     &&!(sr!==""&&r[5]!=sr)&&!(mx>=0&&r[10]>mx)&&!(cut&&r[6]<cut)&&terms.every(t=>H[i].includes(t)));
   if(F.sort.value==="pay")res.sort((a,b)=>b[12]-a[12]);
-  shown=0;list.replaceChildren();more();sync();
+  items=res;build=card;shown=0;list.replaceChildren();more();sync();
   $("#count").textContent=res.length.toLocaleString()+(res.length===1?" JOB":" JOBS");
 }
 const fill=(n,vals,label)=>vals.forEach(x=>{const o=el("option","",label?label(x):x);o.value=x;F[n].append(o)});
@@ -219,18 +261,20 @@ let t;form.addEventListener("input",()=>{clearTimeout(t);t=setTimeout(run,120)})
 form.addEventListener("submit",e=>e.preventDefault());
 $("#clr").addEventListener("click",()=>{F.q.value="";run();F.q.focus()});
 $("#more").addEventListener("click",more);
+document.querySelectorAll(".tab").forEach(t=>t.addEventListener("click",()=>{setView(t.dataset.v);run()}));
 $("#seed").value=seed;
 $("#seed").addEventListener("input",e=>{seed=e.target.value;theme(seed);try{localStorage.setItem("seed",seed)}catch(x){}});
-fetch("jobs.json").then(r=>r.json()).then(d=>{
-  D=d;H=d.rows.map(r=>[r[0],r[1],r[2],r[8],r[14],r[15]].join(" ").toLowerCase());
+Promise.all([fetch("jobs.json").then(r=>r.json()),fetch("companies.json").then(r=>r.json())]).then(([d,c])=>{
+  C=c;D=d;H=d.rows.map(r=>[r[0],r[1],r[2],r[8],r[14],r[15]].join(" ").toLowerCase());
   const uniq=i=>[...new Set(d.rows.map(r=>r[i]).filter(Boolean))].sort();
   fill("level",d.levels.map((_,i)=>i),i=>cap(d.levels[i]));
   fill("category",uniq(8),cap);fill("employment",uniq(9),x=>EMP[x]||cap(x));
   fill("source",d.sources.map((_,i)=>i),i=>cap(d.sources[i]));
   const p=new URLSearchParams(location.hash.slice(1));
   for(const n of FIELDS)F[n].value=p.get(n)||"";
-  for(const n of["remote","pay","ghost"])F[n].checked=p.has(n);
+  for(const n of BOXES)F[n].checked=p.has(n);
   $("#meta").textContent=d.rows.length.toLocaleString()+" open jobs · updated "+d.updated;
+  setView(p.get("view")==="companies"?"companies":"jobs");
   run();
 }).catch(()=>{$("#count").textContent="Could not load jobs."});
 })();

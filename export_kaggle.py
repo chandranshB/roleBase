@@ -5,7 +5,7 @@ import os
 import shutil
 from pathlib import Path
 
-from scraper import ghost_flags, load
+from scraper import company_stats, fresher_ok, ghost_flags, load
 
 # Remotive / RemoteOK terms are about attribution and display, so they stay out of a republished dataset.
 SKIP = {"remotive", "remoteok"}
@@ -30,7 +30,16 @@ COLUMNS = {  # name -> (type, description); also the CSV column order
     "closed_at": ("datetime", "Date the job disappeared from its board. Empty means still open."),
     "ghost_score": ("numeric", "Ghost-job heuristic for open jobs: 0 = nothing suspicious, 2+ = possibly a ghost job, 3+ = likely. A guess, not proof."),
     "ghost_reasons": ("string", "Why ghost_score is above zero, e.g. open for over a year, talent-pool wording, agency, reposted."),
+    "fresher_friendly": ("boolean", "True if open to 0-2 years of experience: states <= 2 years, or an intern/junior role that states nothing. A 'junior' role asking 3+ years is False."),
     "url": ("string", "Apply link."),
+}
+COMPANY_COLUMNS = {
+    "company": ("string", "Employer name (companies with 5+ open jobs only)."),
+    "open_roles": ("numeric", "Open jobs at this company."),
+    "fresher_roles": ("numeric", "Open jobs that are fresher-friendly (see fresher_friendly in jobs.csv)."),
+    "fresher_share": ("numeric", "fresher_roles / open_roles, 0 to 1."),
+    "junior_asking_3plus": ("numeric", "Intern/junior-titled jobs that ask for 3+ years of experience."),
+    "years_stated_share": ("numeric", "Share of this company's jobs that state a years-of-experience requirement; low values mean the score leans on job titles."),
 }
 
 
@@ -43,7 +52,8 @@ def flat(j):
     f = flags.get(j["id"])
     return {**j, "years_experience": "" if j["years"] is None else j["years"], "skills": ";".join(j["skills"]),
             "pay_min": lo, "pay_max": hi, "pay_currency": cur,
-            "ghost_score": "" if f is None else sum(p for _, p in f), "ghost_reasons": "; ".join(r for r, _ in f or [])}
+            "ghost_score": "" if f is None else sum(p for _, p in f), "ghost_reasons": "; ".join(r for r, _ in f or []),
+            "fresher_friendly": fresher_ok(j)}
 
 
 rows = sorted(map(flat, jobs), key=lambda j: j["id"])
@@ -54,6 +64,10 @@ with open(out / "jobs.csv", "w", encoding="utf-8", newline="") as f:
     w = csv.DictWriter(f, list(COLUMNS), extrasaction="ignore")
     w.writeheader()
     w.writerows(rows)
+with open(out / "companies.csv", "w", encoding="utf-8", newline="") as f:
+    w = csv.DictWriter(f, list(COMPANY_COLUMNS))
+    w.writeheader()
+    w.writerows(company_stats([j for j in jobs if j["closed_at"] is None]))
 
 (out / "dataset-metadata.json").write_text(json.dumps({
     "title": "Job Listings (auto-updated)",
@@ -79,6 +93,10 @@ with open(out / "jobs.csv", "w", encoding="utf-8", newline="") as f:
         "path": "jobs.csv",
         "description": "One row per job posting (open, or closed within the last 90 days).",
         "schema": {"fields": [{"name": n, "description": d, "type": t} for n, (t, d) in COLUMNS.items()]},
+    }, {
+        "path": "companies.csv",
+        "description": "One row per company with 5+ open jobs: how many of its roles are open to 0-2 years of experience.",
+        "schema": {"fields": [{"name": n, "description": d, "type": t} for n, (t, d) in COMPANY_COLUMNS.items()]},
     }],
 }, indent=2), encoding="utf-8")
-print(f"{len(rows)} rows -> kaggle/jobs.csv")
+print(f"{len(rows)} rows -> kaggle/jobs.csv (+ companies.csv)")

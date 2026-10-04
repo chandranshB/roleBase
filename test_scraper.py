@@ -1,6 +1,7 @@
 import datetime as dt
 
-from scraper import (category, clean_company, employment, find_pay, ghost_flags, level, merge, skills, slim, url_of, years_req)
+from scraper import (category, clean_company, company_stats, employment, find_pay, fresher_ok, ghost_flags, level, merge, skills, slim,
+                     url_of, years_req)
 
 
 def j(i, **kw):
@@ -31,6 +32,20 @@ db = merge(db, {"a:x": [j("a:x:5")]}, "2026-01-03")
 assert db["a:x:5"]["reposts"] == 1 and db["a:x:1"]["closed_at"] == "2026-01-02"
 db = merge(db, {"a:x": [j("a:x:5")]}, "2026-01-04")
 assert db["a:x:5"]["reposts"] == 1  # unchanged on later runs
+
+# aged-out rows are handed back for archiving
+p = []
+merge({"a:x:1": {"id": "a:x:1", "title": "t", "closed_at": "2026-01-01", "first_seen": "2025-12-01"}}, {"a:x": []}, "2026-09-01", p)
+assert [o["id"] for o in p] == ["a:x:1"]
+
+# --- fresher-friendliness ---
+fj = lambda level, years, company="C": {"level": level, "years": years, "company": company}
+assert fresher_ok(fj("junior", None)) and fresher_ok(fj("intern", 0)) and fresher_ok(fj("mid", 2)) and fresher_ok(fj("junior", 2))
+assert not fresher_ok(fj("junior", 3))  # "junior" asking 3+ years
+assert not fresher_ok(fj("mid", None)) and not fresher_ok(fj("senior", 1)) and not fresher_ok(fj("manager+", 0))
+s = company_stats([fj("junior", None), fj("junior", 4), fj("mid", 1), fj("senior", 8), fj("mid", None)], min_roles=5)[0]
+assert (s["open_roles"], s["fresher_roles"], s["junior_asking_3plus"], s["years_stated_share"]) == (5, 2, 1, 0.6)
+assert company_stats([fj("junior", 0)], min_roles=5) == []
 
 # --- ghost jobs ---
 d = dt.date(2026, 10, 4)
