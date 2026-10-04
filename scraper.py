@@ -24,7 +24,9 @@ KEEP_CLOSED_DAYS = 90  # closed jobs older than this are pruned (git history sti
 
 S = requests.Session()
 S.headers["User-Agent"] = "roleBase-job-scraper"
-S.mount("https://", HTTPAdapter(max_retries=Retry(total=5, backoff_factor=2, status_forcelist=[429, 500, 502, 503, 504])))
+S.mount("https://", HTTPAdapter(pool_maxsize=64, max_retries=Retry(total=5, backoff_factor=2, status_forcelist=[429, 500, 502, 503, 504],
+                                                                    allowed_methods=None)))  # None = retry POST too (Workday searches are read-only)
+TIMEOUT = (10, 60)  # connect, read
 
 # ---------- understanding a posting ----------
 LEVELS = [  # first match wins
@@ -48,6 +50,11 @@ CATEGORIES = [  # first match wins; "sales engineer" must hit sales before engin
     ("finance", r"financ|account(ing|ant)|payroll|\btax\b|treasury|audit|controller|fp&a|procurement"),
     ("legal", r"legal|counsel|attorney|compliance|paralegal|privacy"),
     ("people", r"recruit|talent|\bpeople\b|\bhr\b|human resources|workplace"),
+    ("healthcare", r"nurs(e|ing)|physician|clinic(al|ian)|pharmac|medical|therapist|patient|dental|dentist|surgeon|radiolog|caregiver|health ?care|\brn\b|paramedic|phlebotom|\bcna\b|veterinar"),
+    ("education", r"teacher|professor|instructor|lecturer|tutor|faculty|curriculum|academic|educator|school"),
+    ("science", r"scientist|laborator|chemist|biolog|\blab\b|research (associate|assistant|fellow)|geolog"),
+    ("retail", r"\bstore\b|retail|cashier|barista|\bcook\b|\bchef\b|kitchen|bartender|hotel|guest (service|experience)|concierge|housekeep|front desk|merchandis|stylist|restaurant|\bcrew\b|\bshift\b"),
+    ("manufacturing", r"manufactur|production (operator|associate|supervisor|technician|worker)|assembl|machinist|weld|electrician|plumb|forklift|fabricat|\bplant\b|\bmill\b|maintenance"),
     ("operations", r"operations|\bops\b|supply chain|logistics|business (analyst|operations)|chief of staff|strategy|facilit|admin|office|warehouse|driver|technician|mechanic"),
 ]
 SKILLS = ("python java javascript typescript rust c++ c# ruby php swift kotlin scala sql nosql react vue angular node.js django "
@@ -190,7 +197,7 @@ def company_stats(jobs, min_roles=5):
 
 
 def get(url, **kw):
-    r = S.get(url, timeout=60, **kw)
+    r = S.get(url, timeout=TIMEOUT, **kw)
     r.raise_for_status()
     return r.json()
 
@@ -270,6 +277,48 @@ def smartrecruiters(s, name):  # list endpoint has no description, so years/skil
             return out
 
 
+def wd_posted(t):  # "Posted 3 Days Ago" / "Posted Today" / "Posted 30+ Days Ago" -> YYYY-MM-DD
+    m = re.search(r"\d+", t or "")
+    n = int(m.group()) if m else 1 if "yesterday" in (t or "").lower() else 0
+    return (dt.date.today() - dt.timedelta(days=n)).isoformat()
+
+
+WD_CAP = 150  # newest N per tenant: keeps jobs.json small, and the API refuses offsets past 2000 anyway. ponytail: raise if the site copes
+
+
+def pmap(fn, xs, workers=4):  # a few pages at a time: fast, but polite to one host. Own pool, so no deadlock inside main()'s pool
+    with ThreadPoolExecutor(workers) as ex:
+        return list(ex.map(fn, xs))
+
+
+def workday(s, name):  # s = "<tenant>.<pod>.myworkdayjobs.com/<site>"; the list has no description, so years/skills/pay stay empty
+    host, site = s.split("/", 1)
+
+    def page(off):
+        r = S.post(f"https://{host}/wday/cxs/{host.split('.')[0]}/{site}/jobs", json={"limit": 20, "offset": off, "searchText": ""}, timeout=TIMEOUT)
+        r.raise_for_status()
+        return r.json()
+
+    first = page(0)
+    rest = pmap(page, range(20, min(first["total"], WD_CAP), 20))
+    return list({j["externalPath"]: job("workday", f"workday:{s}", j["externalPath"], name, j["title"], f"https://{s}{j['externalPath']}",
+                                        j.get("locationsText"), posted=wd_posted(j.get("postedOn")))
+                 for d in [first, *rest] for j in d["jobPostings"]}.values())
+
+
+def microsoft(s, name):  # careers site's own search API (s = domain); robots.txt allows /api/pcsx
+    def page(off):
+        return get("https://apply.careers.microsoft.com/api/pcsx/search", params={"domain": s, "query": "", "start": off})["data"]
+
+    first = page(0)
+    size = len(first["positions"])
+    rest = pmap(page, range(size, first["count"], size), 6) if size else []
+    return list({j["id"]: job("microsoft", f"microsoft:{s}", j["id"], name, j["name"], f"https://apply.careers.microsoft.com/careers/job/{j['id']}",
+                              "; ".join(j["standardizedLocations"] or j["locations"] or []), j.get("workLocationOption") == "remote",
+                              j.get("postedTs"), team=j.get("department"))
+                 for d in [first, *rest] for j in d["positions"]}.values())
+
+
 # ---------- feeds (whole-board snapshots) ----------
 def remotive():
     return [job("remotive", "remotive", j["id"], clean_company(j["company_name"]), j["title"], j["url"],
@@ -299,13 +348,14 @@ def arbeitnow():  # must read every page, else jobs pushed past the cap would lo
     raise RuntimeError("arbeitnow: >100 pages")
 
 
-ATS = dict(greenhouse=greenhouse, lever=lever, ashby=ashby, smartrecruiters=smartrecruiters)
+ATS = dict(greenhouse=greenhouse, lever=lever, ashby=ashby, smartrecruiters=smartrecruiters, workday=workday, microsoft=microsoft)
 FEEDS = dict(remotive=remotive, remoteok=remoteok, arbeitnow=arbeitnow)
 
 
 # ---------- storage ----------
 URLS = dict(greenhouse="https://job-boards.greenhouse.io/{s}/jobs/{r}", lever="https://jobs.lever.co/{s}/{r}/apply",
-            ashby="https://jobs.ashbyhq.com/{s}/{r}/application", smartrecruiters="https://jobs.smartrecruiters.com/{s}/{r}")
+            ashby="https://jobs.ashbyhq.com/{s}/{r}/application", smartrecruiters="https://jobs.smartrecruiters.com/{s}/{r}",
+            workday="https://{s}{r}", microsoft="https://apply.careers.microsoft.com/careers/job/{r}")
 DEFAULTS = dict(closed_at=None, location="", team="", remote=False, years=None, skills=[], pay=None, employment="", posted=None, reposts=0)
 
 
@@ -347,7 +397,7 @@ def save(db):  # one file per board; sorted + compact + LF => small files, diffs
     DIR.mkdir(parents=True, exist_ok=True)
     shards = {}
     for i in sorted(db):
-        name = i.rsplit(":", 1)[0].replace(":", "_")
+        name = i.rsplit(":", 1)[0].replace(":", "_").replace("/", "_")
         shards.setdefault(name, []).append(json.dumps(slim(db[i]), sort_keys=True, ensure_ascii=False, separators=(",", ":")))
     for f in DIR.glob("*.jsonl"):
         if f.stem not in shards:
@@ -407,54 +457,84 @@ def log_history(db, pruned, today):
                    [[o["id"], o["company"], o["level"], o["category"], o["posted"] or "", o["first_seen"], o["closed_at"]] for o in pruned])
 
 
+HEALTH = Path("data/health.json")  # per board: consecutive suspicious runs + last good day, so dead boards are visible
+PATIENCE = 2  # a board may look broken (empty / mostly gone) this many runs in a row before we believe it and close its jobs
+
+
+def verdict(jobs, err, prev, strikes):
+    """None = accept this answer. Otherwise why we distrust it (and keep the board's jobs as they were).
+    Errors are always distrusted; an empty or shrunken answer is believed once it repeats, so real shutdowns still close."""
+    if err:
+        return f"error: {err}"
+    if strikes >= PATIENCE:
+        return None
+    if not jobs and prev >= 5:
+        return "empty answer"
+    if prev >= 20 and len(jobs) < .4 * prev:
+        return f"dropped from {prev} to {len(jobs)}"
+    return None
+
+
 def main():
+    t_start = time.time()
     cfg = json.loads(COMPANIES.read_text(encoding="utf-8"))
     tasks = [(f"{k}:{s}", lambda k=k, s=s, n=n: ATS[k](s, n)) for k, boards in cfg.items() for s, n in boards.items()] + list(FEEDS.items())
-
-    def run(t):
-        try:
-            return t[0], t[1](), None
-        except Exception as e:
-            return t[0], None, e
-
-    with ThreadPoolExecutor(16) as ex:
-        results = list(ex.map(run, tasks))
-
     db = load()
     open_n = {}
     for i, o in db.items():
         if o["closed_at"] is None:
             open_n[i.rsplit(":", 1)[0]] = open_n.get(i.rsplit(":", 1)[0], 0) + 1
+    tasks.sort(key=lambda t: -open_n.get(t[0], 0))  # biggest boards first, so the pool never ends waiting on one slow giant
+    lines = [l for l in HEALTH.read_text(encoding="utf-8").split(chr(10)) if l] if HEALTH.exists() else []
+    health = {r.pop("b"): r for r in map(json.loads, lines)}
 
+    def run(t):
+        t0 = time.time()
+        try:
+            return t[0], t[1](), None, time.time() - t0
+        except Exception as e:
+            return t[0], None, e, time.time() - t0
+
+    with ThreadPoolExecutor(16) as ex:
+        results = list(ex.map(run, tasks))
+
+    today = dt.date.today().isoformat()
     fetched, ats_keys, failed = {}, set(), []
     norm = lambda j: re.sub(r"\W", "", clean_company(j["company"]) + j["title"]).lower()
-    for scope, jobs, err in results:  # ATS results come first, so feed dupes of them get dropped
-        if err:
-            failed.append((scope, err))
-        elif not jobs and open_n.get(scope, 0) >= 5:  # empty answer for a board that had jobs: likely a glitch
-            failed.append((scope, "empty response, not closing jobs"))
-        elif scope in FEEDS:
-            fetched[scope] = [j for j in jobs if norm(j) not in ats_keys]
+    new_health = {}
+    for scope, jobs, err, _ in sorted(results, key=lambda r: r[0] in FEEDS):  # ATS first, so feed dupes of them get dropped
+        h = health.get(scope, {})
+        why = verdict(jobs, err, open_n.get(scope, 0), h.get("strikes", 0))
+        if why:
+            failed.append((scope, why))
+            new_health[scope] = {"strikes": h.get("strikes", 0) + (not err), "last_ok": h.get("last_ok", ""), "why": why}
+            continue
+        new_health[scope] = {"strikes": 0, "last_ok": today}
+        if scope in FEEDS:
+            jobs = [j for j in jobs if norm(j) not in ats_keys]
         else:
             ats_keys.update(norm(j) for j in jobs)
-            fetched[scope] = jobs
+        fetched[scope] = [j for j in jobs if j["title"]]  # a posting with no title is not a posting
 
     known = {t[0] for t in tasks}  # boards removed from companies.json: close their jobs instead of leaving them open forever
     for scope in open_n:
         if scope not in known:
             fetched[scope] = []
 
-    for scope, err in failed:
-        print(f"FAIL {scope}: {err}", file=sys.stderr)
+    for scope, why in failed:
+        print(f"::warning title=scrape {scope}::{why}")  # shows up as an annotation on the Actions run
+    slow = sorted(results, key=lambda r: -r[3])[:3]
+    print("slowest: " + ", ".join(f"{r[0]} {r[3]:.0f}s" for r in slow))
     if not fetched:
         sys.exit("all sources failed")
 
-    before, today, pruned = set(db), dt.date.today().isoformat(), []
+    before, pruned = set(db), []
     db = merge(db, fetched, today, pruned)
     n_open = sum(o["closed_at"] is None for o in db.values())
-    print(f"sources ok={len(fetched)} failed={len(failed)} | new={len(set(db) - before)} open={n_open} closed={len(db) - n_open}")
+    print(f"sources ok={len(fetched)} failed={len(failed)} | new={len(set(db) - before)} open={n_open} closed={len(db) - n_open} | {time.time() - t_start:.0f}s")
     save(db)
     log_history(db, pruned, today)
+    HEALTH.write_text(chr(10).join(json.dumps({"b": k, **v}, sort_keys=True) for k, v in sorted(new_health.items())) + chr(10), encoding="utf-8", newline=chr(10))  # one board per line
 
 
 if __name__ == "__main__":

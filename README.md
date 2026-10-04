@@ -99,3 +99,7 @@ python build_site.py       # build _site/ for GitHub Pages
 ## Roadmap
 
 Things that need weeks or months of history first, such as how long postings stay open, hiring freezes, skill trends and seasonality, are tracked as [issues](../../issues?q=label%3Aneeds-history).
+
+## Credits
+
+Icons are from [Tabler Icons](https://tabler.io/icons) (MIT, © Paweł Kuna). The Instrument Sans font is bundled under the SIL Open Font License.

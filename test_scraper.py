@@ -1,7 +1,7 @@
 import datetime as dt
 
 from scraper import (category, clean_company, company_stats, employment, find_pay, fresher_ok, ghost_flags, level, merge, skills, slim,
-                     url_of, years_req)
+                     url_of, verdict, wd_posted, years_req)
 
 
 def j(i, **kw):
@@ -65,8 +65,8 @@ assert level("Engineer", 0) == "junior" and level("Engineer", 3) == "mid" and le
 assert level("Engineer", None, "junior") == "junior" and level("Senior Engineer", None, "junior") == "senior"
 
 assert [category(t) for t in ["Sales Engineer", "Product Designer", "Data Engineer", "Security Engineer", "Technical Program Manager",
-                              "Backend Engineer", "Product Marketing Manager", "Senior Accountant", "Barista"]] == \
-    ["sales", "design", "data", "security", "product", "engineering", "marketing", "finance", "other"]
+                              "Backend Engineer", "Product Marketing Manager", "Senior Accountant", "Barista", "Registered Nurse", "Store Manager"]] == \
+    ["sales", "design", "data", "security", "product", "engineering", "marketing", "finance", "retail", "healthcare", "retail"]
 assert category("Weird Title", "Legal & Compliance") == "legal"
 
 assert years_req("We are 10 years old. Requirements: 5+ years of experience in Go; 8 years experience preferred") == 5
@@ -116,3 +116,17 @@ for s in (bars("T <&>", "sub", [("A & B <x>", 3), ("c" * 40, 1)]), bars("empty",
 assert "A &amp; B &lt;x&gt;" in bars("t", "s", [("A & B <x>", 3)])
 
 print("ok")
+
+
+# --- workday "Posted N Days Ago" text -> date ---
+_t = dt.date.today()
+assert wd_posted("Posted Today") == _t.isoformat()
+assert wd_posted("Posted Yesterday") == (_t - dt.timedelta(days=1)).isoformat()
+assert wd_posted("Posted 30+ Days Ago") == (_t - dt.timedelta(days=30)).isoformat()
+
+# --- scrape guard: distrust errors / empty / collapsed answers, but believe them once they repeat ---
+assert verdict([1] * 50, None, 50, 0) is None and verdict([1] * 10, None, 0, 0) is None  # healthy, or a new board
+assert verdict(None, RuntimeError("boom"), 50, 5).startswith("error")  # errors are never believed
+assert verdict([], None, 10, 0) == "empty answer" and verdict([], None, 10, 2) is None
+assert verdict([1] * 5, None, 50, 0).startswith("dropped") and verdict([1] * 5, None, 50, 2) is None
+assert verdict([1] * 30, None, 50, 0) is None  # a 40% drop is normal churn

@@ -35,10 +35,16 @@
 *{box-sizing:border-box}
 [hidden]{display:none!important}
 body{margin:0;background:var(--page);color:var(--ink);font:400 15px/24px var(--font);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;-webkit-tap-highlight-color:transparent}
+/* dot grid: a frame of dots hugging the edges, densest in the corners (top-left and bottom-right most), uneven but balanced; fixed behind everything, so it never repaints on scroll */
+:root{--dot:rgba(20,22,26,.3)}
+@media(prefers-color-scheme:dark){:root{--dot:rgba(255,255,255,.26)}}
+#bg{position:fixed;inset:0;z-index:-1;pointer-events:none;overflow:hidden}
+#bg::before{content:"";position:absolute;inset:0;background-image:radial-gradient(circle at 1px 1px,var(--dot) 1px,transparent 0);background-size:20px 20px;-webkit-mask-image:linear-gradient(to bottom,rgba(0,0,0,.5),transparent 18%),linear-gradient(to top,rgba(0,0,0,.6),transparent 18%),linear-gradient(to right,rgba(0,0,0,.6),transparent 12%),linear-gradient(to left,rgba(0,0,0,.45),transparent 12%),radial-gradient(ellipse 40% 38% at 0% 0%,#000,transparent),radial-gradient(ellipse 34% 32% at 100% 100%,rgba(0,0,0,.8),transparent),radial-gradient(ellipse 24% 26% at 100% 6%,rgba(0,0,0,.45),transparent),radial-gradient(ellipse 22% 24% at 3% 94%,rgba(0,0,0,.4),transparent);mask-image:linear-gradient(to bottom,rgba(0,0,0,.5),transparent 18%),linear-gradient(to top,rgba(0,0,0,.6),transparent 18%),linear-gradient(to right,rgba(0,0,0,.6),transparent 12%),linear-gradient(to left,rgba(0,0,0,.45),transparent 12%),radial-gradient(ellipse 40% 38% at 0% 0%,#000,transparent),radial-gradient(ellipse 34% 32% at 100% 100%,rgba(0,0,0,.8),transparent),radial-gradient(ellipse 24% 26% at 100% 6%,rgba(0,0,0,.45),transparent),radial-gradient(ellipse 22% 24% at 3% 94%,rgba(0,0,0,.4),transparent)}
 button,select,input{font:inherit;color:inherit}
 button{cursor:pointer}
-:focus-visible{outline:2px solid var(--acc);outline-offset:3px;border-radius:10px}
-svg{width:20px;height:20px;flex:none}
+:focus-visible{outline:2px solid var(--acc);outline-offset:3px}
+a:focus-visible{border-radius:6px}
+svg{width:20px;height:20px;flex:none;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
 .shell{max-width:1160px;margin:0 auto;padding:0 32px 64px}
 #sentinel{height:1px}
 
@@ -69,7 +75,7 @@ svg{width:20px;height:20px;flex:none}
 .hn{display:none;gap:4px}
 .end{display:flex;align-items:center;gap:4px;margin-left:auto}
 .hn button{display:inline-flex;align-items:center;gap:8px;height:40px;padding:0 14px;border:0;border-radius:999px;background:none;color:var(--sub);font-weight:500}
-.hn button[aria-current=page]{background:var(--wash);color:var(--ink)}
+.hn button[aria-current=page]{background:var(--thumb);color:var(--ink);box-shadow:0 0 0 1px var(--line),0 1px 3px rgba(20,22,26,.12)} /* same pill as the tab thumb */
 @media(min-width:720px){.hn{display:flex}}
 @media(min-width:1200px){ /* logo | search | actions: the side columns match, so the search sits dead centre */
   .bar{display:grid;grid-template-columns:1fr minmax(0,560px) 1fr;gap:24px}
@@ -81,7 +87,7 @@ svg{width:20px;height:20px;flex:none}
 #sug li{display:flex;justify-content:space-between;gap:12px;padding:10px 14px;border-radius:var(--r-row);cursor:pointer}
 #sug li[aria-selected=true]{background:var(--wash)}
 #sug small{color:var(--faint)}
-@media(hover:hover) and (pointer:fine){.kb{display:block}.sbox:focus-within .kb,#clr:not([hidden])+.kb{display:none}.sbox:hover:not(:focus-within){background:color-mix(in srgb,var(--ink) 8%,transparent)}.hn button:hover{background:var(--wash);color:var(--ink)}#clr:hover,.meb:hover{background:var(--wash)}#sug li:hover{background:var(--wash)}}
+@media(hover:hover) and (pointer:fine){.kb{display:block}.sbox:focus-within .kb,#clr:not([hidden])+.kb{display:none}.sbox:hover:not(:focus-within){background:color-mix(in srgb,var(--ink) 8%,transparent)}.hn button:not([aria-current]):hover{background:var(--wash);color:var(--ink)}#clr:hover,.meb:hover{background:var(--wash)}#sug li:hover{background:var(--wash)}}
 
 /* quick filters (phones and tablets) */
 #quick{display:none;gap:8px;overflow-x:auto;padding:2px 0 12px;scrollbar-width:none}
@@ -93,11 +99,8 @@ body.home #quick{display:none!important}
 .bd{min-width:18px;height:18px;padding:0 5px;border-radius:9px;background:var(--acc);color:var(--on-acc);font:600 11px/18px var(--font);text-align:center}
 
 /* home feed */
-#home{display:none;max-width:620px;margin:0 auto;padding-top:8px}
+#home{display:none;max-width:620px;margin:0 auto;padding-top:20px}
 body.home #home{display:block}
-.greet{padding:14px 4px 2px}
-.greet h1{margin:0;font:700 30px/36px var(--brand);letter-spacing:-.03em}
-.greet p{margin:4px 0 0;color:var(--sub)}
 .stories{display:flex;gap:16px;overflow-x:auto;padding:18px 4px 8px;scrollbar-width:none}
 .stories::-webkit-scrollbar{display:none}
 .st{flex:none;width:72px;padding:0;border:0;background:none;text-align:center}
@@ -160,9 +163,8 @@ body.home #home{display:block}
 .rh{display:none;margin:0 0 10px;font:650 15px/20px var(--brand);letter-spacing:-.01em}
 @media(min-width:1024px){
   body.home #home{max-width:none;margin:0;display:grid;grid-template-columns:minmax(0,680px) 320px;gap:0 56px;align-items:start}
-  .greet{grid-column:1/-1}
   .feed,#fsent,#fend{grid-column:1}
-  .rail{grid-column:2;grid-row:2/span 3;position:sticky;top:88px;max-height:calc(100vh - 104px);overflow-y:auto;overscroll-behavior:contain;scrollbar-width:none;padding-top:18px}
+  .rail{grid-column:2;grid-row:1/span 3;position:sticky;top:88px;max-height:calc(100vh - 104px);overflow-y:auto;overscroll-behavior:contain;scrollbar-width:none}
   .rh{display:block}
   .stories{display:grid;grid-template-columns:repeat(4,1fr);gap:16px 6px;overflow:visible;padding:0 0 22px}
   .st{width:auto}.ring{margin:0 auto}
@@ -188,7 +190,7 @@ body:not(.home) .cols{display:grid}
 .gs[aria-checked=true] .tr::after{transform:translateX(16px)}
 .cols{grid-template-columns:minmax(0,1fr);gap:0 48px}
 .fg{margin:0 0 24px}
-.fg h4{margin:0 0 6px;padding:0 10px;font:600 13.5px/20px var(--brand);letter-spacing:-.005em}
+.fg h4{margin:0 0 8px;padding:0 10px;color:var(--ink);font:700 16px/22px var(--brand);letter-spacing:-.02em}
 .fopt{display:flex;align-items:center;justify-content:space-between;gap:10px;width:100%;min-height:36px;padding:6px 10px;border:0;border-radius:var(--r-row);background:none;color:var(--ink);text-align:left;transition:background-color .16s var(--ease)}
 .fopt[aria-pressed=true]{background:var(--acc-t);color:var(--acc);font-weight:600}
 .fopt .n{color:var(--faint);font-size:13px;font-variant-numeric:tabular-nums;font-weight:400}
@@ -199,7 +201,12 @@ body:not(.home) .cols{display:grid}
 .sumrow{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin:0 0 16px}
 #count{margin:0;font:650 25px/30px var(--brand);letter-spacing:-.03em}
 #countsub{margin:3px 0 0;color:var(--faint);font-size:13.5px;line-height:18px}
-#sort{height:40px;padding:0 14px;border:0;border-radius:999px;background:var(--surface);box-shadow:0 0 0 1px var(--line);font-weight:500;cursor:pointer}
+.sortc{position:relative;display:inline-flex;align-items:center;gap:8px;flex:none;height:40px;padding:0 38px 0 16px;border-radius:999px;box-shadow:inset 0 0 0 1px var(--line2);color:var(--faint);font-size:14px;cursor:pointer;transition:background-color .16s var(--ease)}
+.sortc::after{content:"";position:absolute;right:16px;top:50%;width:7px;height:7px;border:solid var(--sub);border-width:0 1.8px 1.8px 0;transform:translateY(-70%) rotate(45deg);pointer-events:none}
+.sortc:focus-within{outline:2px solid var(--acc);outline-offset:2px}
+#sort{appearance:none;-webkit-appearance:none;border:0;outline:0;background:none;padding:0;color:var(--ink);font-weight:600;font-size:14px;cursor:pointer}
+#sort option{background:var(--surface);color:var(--ink)}
+@media(hover:hover) and (pointer:fine){.sortc:hover{background:var(--wash)}}
 .und{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:0 0 18px}
 .und:empty{display:none}
 .lbl{color:var(--faint);font-size:13.5px;margin-right:2px}
@@ -210,6 +217,7 @@ body:not(.home) .cols{display:grid}
 ul.out{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:minmax(0,1fr)}
 .cols>*{min-width:0}
 /* Companies and Saved have no filters, so the list centres under the tabs instead of leaving an empty rail */
+body.solo .tabrow{display:none}
 body.solo .cols{grid-template-columns:minmax(0,720px);justify-content:center}
 body.solo aside{display:none}
 .res{position:relative;min-width:0}
@@ -274,6 +282,7 @@ dialog::backdrop{background:rgba(8,10,14,.5)}
 .dl header p{margin:2px 0 0;color:var(--sub);font-size:14px;line-height:20px}
 .db{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain;padding:4px 24px 12px}
 .dl h3{margin:22px 0 10px;font:600 14px/20px var(--brand)}
+.dl h3 small{font-weight:400;color:var(--sub)}
 .dl .db p{margin:8px 0 0;color:var(--sub)}
 .cs{display:flex;flex-wrap:wrap;gap:8px}
 .cs button,.cs span{display:inline-flex;align-items:center;min-height:38px;padding:0 16px;border:0;border-radius:999px;background:none;box-shadow:inset 0 0 0 1px var(--line2);font-weight:500;transition:transform .14s var(--ease),background-color .16s var(--ease),color .16s var(--ease),box-shadow .16s var(--ease)}
@@ -330,7 +339,6 @@ dialog::backdrop{background:rgba(8,10,14,.5)}
   .logo span{display:none}
   .logo img{width:38px;height:38px}
   .sbox{height:46px}
-  .greet h1{font-size:26px;line-height:32px}
   .pm h3{font-size:20px;line-height:26px}
   .pf button{padding:0 10px}
   .pf a.pap{padding:0 20px}
@@ -357,11 +365,10 @@ dialog::backdrop{background:rgba(8,10,14,.5)}
   footer{margin-top:28px}
 }
 /* skeletons: one transform-only shimmer (compositor), static under reduced motion */
-.sk,#greetsub:empty,#count:empty,#tabs:empty{position:relative;overflow:hidden;background:var(--wash);border-radius:7px}
-.sk{display:block;flex:none;height:14px}
-.sk::after,#greetsub:empty::after,#count:empty::after,#tabs:empty::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent,color-mix(in srgb,var(--ink) 7%,transparent),transparent);transform:translateX(-100%);animation:shim 1.3s linear infinite}
+.skel,#count:empty,#tabs:empty{position:relative;overflow:hidden;background:var(--wash);border-radius:7px}
+.skel{display:block;flex:none;height:14px}
+.skel::after,#count:empty::after,#tabs:empty::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent,color-mix(in srgb,var(--ink) 7%,transparent),transparent);transform:translateX(-100%);animation:shim 1.3s linear infinite}
 @keyframes shim{to{transform:translateX(100%)}}
-#greetsub:empty{width:min(300px,80%);height:16px;margin:8px 0 4px}
 #count:empty{width:150px;height:28px}
 #tabs:empty{width:min(100%,440px);height:44px;border-radius:999px}
 [aria-hidden=true].post,[aria-hidden=true].res{pointer-events:none}
@@ -383,6 +390,9 @@ dialog[open]::backdrop{animation:fadein .22s var(--ease)}
 @keyframes sheetin{from{transform:translateY(100%)}}
 @media(max-width:719px){dialog{margin:auto 0 0;width:100%;max-width:none;border-radius:20px 20px 0 0}dialog[open]{animation:sheetin .34s var(--drawer)}.dl{max-height:90vh}}
 #sug:not([hidden]){animation:sugin .14s var(--ease)}
+/* panels over the dot grid blur it away; blur only, so their own colours stay exactly as they were */
+.rail,.seg,main,footer{-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)} /* main is one layer for the whole results column, cheaper than one per row */
+@media(min-width:960px){aside{-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}}
 /* long lists: the browser skips layout and paint for rows far off screen */
 .rc{content-visibility:auto;contain-intrinsic-size:auto 190px}
 .post{content-visibility:auto;contain-intrinsic-size:auto 280px}
@@ -390,19 +400,21 @@ dialog[open]::backdrop{animation:fadein .22s var(--ease)}
 </style>
 </head>
 <body class="home">
+<div id="bg" aria-hidden="true"></div>
 <script>if(location.hash.length>1)document.body.classList.remove("home")</script>
+<!-- Icons: Tabler Icons (MIT), (c) Pawel Kuna, https://tabler.io/icons. Stroke style is set once in CSS on svg. -->
 <svg style="display:none" aria-hidden="true">
-  <symbol id="i-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/></symbol>
-  <symbol id="i-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></symbol>
-  <symbol id="i-star" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></symbol>
-  <symbol id="i-hide" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="12" r="8.5"/><path d="M6 6l12 12"/></symbol>
-  <symbol id="i-out" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></symbol>
-  <symbol id="i-filter" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M4 6h16M7 12h10M10 18h4"/></symbol>
-  <symbol id="i-tune" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h8M18 7h2M4 17h2M12 17h8"/><circle cx="15" cy="7" r="2.4"/><circle cx="9" cy="17" r="2.4"/></symbol>
-  <symbol id="i-feed" viewBox="0 0 24 24"><rect x="4" y="4.5" width="16" height="6" rx="1.5"/><rect x="4" y="13.5" width="16" height="6" rx="1.5"/></symbol>
-  <symbol id="i-bm" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M6.5 3.5h11v17L12 16.6 6.5 20.5z"/></symbol>
-  <symbol id="i-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="8.5"/><path d="M9 9l6 6M15 9l-6 6"/></symbol>
-  <symbol id="i-build" viewBox="0 0 24 24"><path d="M5 21V4h9v17M14 9h5v12M8 8h3M8 12h3M8 16h3M3 21h18"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><path d="M3 10a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"/><path d="M21 21l-6 -6"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6l-12 12"/><path d="M6 6l12 12"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873l-6.158 -3.245"/></symbol>
+  <symbol id="i-hide" viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"/><path d="M5.7 5.7l12.6 12.6"/></symbol>
+  <symbol id="i-out" viewBox="0 0 24 24"><path d="M17 7l-10 10"/><path d="M8 7l9 0l0 9"/></symbol>
+  <symbol id="i-filter" viewBox="0 0 24 24"><path d="M4 4h16v2.172a2 2 0 0 1 -.586 1.414l-4.414 4.414v7l-6 2v-8.5l-4.48 -4.928a2 2 0 0 1 -.52 -1.345v-2.227"/></symbol>
+  <symbol id="i-tune" viewBox="0 0 24 24"><path d="M12 6a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"/><path d="M4 6l8 0"/><path d="M16 6l4 0"/><path d="M6 12a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"/><path d="M4 12l2 0"/><path d="M10 12l10 0"/><path d="M15 18a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"/><path d="M4 18l11 0"/><path d="M19 18l1 0"/></symbol>
+  <symbol id="i-feed" viewBox="0 0 24 24"><path d="M4 6a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v2a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2l0 -2"/><path d="M4 16a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v2a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2l0 -2"/></symbol>
+  <symbol id="i-bm" viewBox="0 0 24 24"><path d="M18 7v14l-6 -4l-6 4v-14a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"/><path d="M10 10l4 4m0 -4l-4 4"/></symbol>
+  <symbol id="i-build" viewBox="0 0 24 24"><path d="M3 21l18 0"/><path d="M9 8l1 0"/><path d="M9 12l1 0"/><path d="M9 16l1 0"/><path d="M14 8l1 0"/><path d="M14 12l1 0"/><path d="M14 16l1 0"/><path d="M5 21v-16a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v16"/></symbol>
 </svg>
 <div id="sentinel"></div>
 <div class="shell">
@@ -427,15 +439,14 @@ dialog[open]::backdrop{animation:fadein .22s var(--ease)}
   </header>
 
   <section id="home" aria-label="Your job feed">
-    <div class="greet"><h1 id="greet">Welcome</h1><p id="greetsub"></p></div>
     <div class="rail">
-      <h2 class="rh">Hiring now</h2><div class="stories" id="stories" role="list" aria-label="Companies hiring now"><span class="st" aria-hidden="true"><span class="ring"><i class="sk" style="width:100%;height:100%;border-radius:50%"></i></span><i class="sk" style="width:44px;height:10px;margin:8px auto 0"></i></span><span class="st" aria-hidden="true"><span class="ring"><i class="sk" style="width:100%;height:100%;border-radius:50%"></i></span><i class="sk" style="width:44px;height:10px;margin:8px auto 0"></i></span><span class="st" aria-hidden="true"><span class="ring"><i class="sk" style="width:100%;height:100%;border-radius:50%"></i></span><i class="sk" style="width:44px;height:10px;margin:8px auto 0"></i></span><span class="st" aria-hidden="true"><span class="ring"><i class="sk" style="width:100%;height:100%;border-radius:50%"></i></span><i class="sk" style="width:44px;height:10px;margin:8px auto 0"></i></span><span class="st" aria-hidden="true"><span class="ring"><i class="sk" style="width:100%;height:100%;border-radius:50%"></i></span><i class="sk" style="width:44px;height:10px;margin:8px auto 0"></i></span><span class="st" aria-hidden="true"><span class="ring"><i class="sk" style="width:100%;height:100%;border-radius:50%"></i></span><i class="sk" style="width:44px;height:10px;margin:8px auto 0"></i></span><span class="st" aria-hidden="true"><span class="ring"><i class="sk" style="width:100%;height:100%;border-radius:50%"></i></span><i class="sk" style="width:44px;height:10px;margin:8px auto 0"></i></span><span class="st" aria-hidden="true"><span class="ring"><i class="sk" style="width:100%;height:100%;border-radius:50%"></i></span><i class="sk" style="width:44px;height:10px;margin:8px auto 0"></i></span></div>
-      <h2 class="rh">Browse</h2><div class="fchips" id="fchips" aria-label="Browse by topic"><i class="sk" style="width:130px;height:38px;border-radius:999px"></i><i class="sk" style="width:80px;height:38px;border-radius:999px"></i><i class="sk" style="width:110px;height:38px;border-radius:999px"></i><i class="sk" style="width:120px;height:38px;border-radius:999px"></i></div>
+      <h2 class="rh">Hiring now</h2><div class="stories" id="stories" role="list" aria-label="Companies hiring now"><span class="st" aria-hidden="true"><span class="ring"><i class="skel" style="width:100%;height:100%;border-radius:50%"></i></span><i class="skel" style="width:44px;height:10px;margin:8px auto 0"></i></span><span class="st" aria-hidden="true"><span class="ring"><i class="skel" style="width:100%;height:100%;border-radius:50%"></i></span><i class="skel" style="width:44px;height:10px;margin:8px auto 0"></i></span><span class="st" aria-hidden="true"><span class="ring"><i class="skel" style="width:100%;height:100%;border-radius:50%"></i></span><i class="skel" style="width:44px;height:10px;margin:8px auto 0"></i></span><span class="st" aria-hidden="true"><span class="ring"><i class="skel" style="width:100%;height:100%;border-radius:50%"></i></span><i class="skel" style="width:44px;height:10px;margin:8px auto 0"></i></span><span class="st" aria-hidden="true"><span class="ring"><i class="skel" style="width:100%;height:100%;border-radius:50%"></i></span><i class="skel" style="width:44px;height:10px;margin:8px auto 0"></i></span><span class="st" aria-hidden="true"><span class="ring"><i class="skel" style="width:100%;height:100%;border-radius:50%"></i></span><i class="skel" style="width:44px;height:10px;margin:8px auto 0"></i></span><span class="st" aria-hidden="true"><span class="ring"><i class="skel" style="width:100%;height:100%;border-radius:50%"></i></span><i class="skel" style="width:44px;height:10px;margin:8px auto 0"></i></span><span class="st" aria-hidden="true"><span class="ring"><i class="skel" style="width:100%;height:100%;border-radius:50%"></i></span><i class="skel" style="width:44px;height:10px;margin:8px auto 0"></i></span></div>
+      <h2 class="rh">Browse</h2><div class="fchips" id="fchips" aria-label="Browse by topic"><i class="skel" style="width:130px;height:38px;border-radius:999px"></i><i class="skel" style="width:80px;height:38px;border-radius:999px"></i><i class="skel" style="width:110px;height:38px;border-radius:999px"></i><i class="skel" style="width:120px;height:38px;border-radius:999px"></i></div>
     </div>
     <ol class="feed" id="feed">
-<li class="post" aria-hidden="true"><div class="ph"><i class="sk" style="width:36px;height:36px;border-radius:10px"></i><div style="display:grid;gap:8px"><i class="sk" style="width:90px;"></i><i class="sk" style="width:140px;height:12px;"></i></div></div><div class="pm"><i class="sk" style="width:78%;height:22px;"></i><i class="sk" style="width:30%;height:18px;margin-top:14px"></i><i class="sk" style="width:46%;height:14px;margin-top:14px"></i><div class="tg"><i class="sk" style="width:58px;height:26px;border-radius:8px"></i><i class="sk" style="width:58px;height:26px;border-radius:8px"></i><i class="sk" style="width:58px;height:26px;border-radius:8px"></i></div></div><div class="pf" style="gap:10px"><i class="sk" style="width:70px;height:24px;border-radius:12px"></i><i class="sk" style="width:90px;height:24px;border-radius:12px"></i><span class="gap"></span><i class="sk" style="width:84px;height:42px;border-radius:999px"></i></div></li>
-<li class="post" aria-hidden="true"><div class="ph"><i class="sk" style="width:36px;height:36px;border-radius:10px"></i><div style="display:grid;gap:8px"><i class="sk" style="width:90px;"></i><i class="sk" style="width:140px;height:12px;"></i></div></div><div class="pm"><i class="sk" style="width:78%;height:22px;"></i><i class="sk" style="width:30%;height:18px;margin-top:14px"></i><i class="sk" style="width:46%;height:14px;margin-top:14px"></i><div class="tg"><i class="sk" style="width:58px;height:26px;border-radius:8px"></i><i class="sk" style="width:58px;height:26px;border-radius:8px"></i><i class="sk" style="width:58px;height:26px;border-radius:8px"></i></div></div><div class="pf" style="gap:10px"><i class="sk" style="width:70px;height:24px;border-radius:12px"></i><i class="sk" style="width:90px;height:24px;border-radius:12px"></i><span class="gap"></span><i class="sk" style="width:84px;height:42px;border-radius:999px"></i></div></li>
-<li class="post" aria-hidden="true"><div class="ph"><i class="sk" style="width:36px;height:36px;border-radius:10px"></i><div style="display:grid;gap:8px"><i class="sk" style="width:90px;"></i><i class="sk" style="width:140px;height:12px;"></i></div></div><div class="pm"><i class="sk" style="width:78%;height:22px;"></i><i class="sk" style="width:30%;height:18px;margin-top:14px"></i><i class="sk" style="width:46%;height:14px;margin-top:14px"></i><div class="tg"><i class="sk" style="width:58px;height:26px;border-radius:8px"></i><i class="sk" style="width:58px;height:26px;border-radius:8px"></i><i class="sk" style="width:58px;height:26px;border-radius:8px"></i></div></div><div class="pf" style="gap:10px"><i class="sk" style="width:70px;height:24px;border-radius:12px"></i><i class="sk" style="width:90px;height:24px;border-radius:12px"></i><span class="gap"></span><i class="sk" style="width:84px;height:42px;border-radius:999px"></i></div></li>
+<li class="post" aria-hidden="true"><div class="ph"><i class="skel" style="width:36px;height:36px;border-radius:10px"></i><div style="display:grid;gap:8px"><i class="skel" style="width:90px;"></i><i class="skel" style="width:140px;height:12px;"></i></div></div><div class="pm"><i class="skel" style="width:78%;height:22px;"></i><i class="skel" style="width:30%;height:18px;margin-top:14px"></i><i class="skel" style="width:46%;height:14px;margin-top:14px"></i><div class="tg"><i class="skel" style="width:58px;height:26px;border-radius:8px"></i><i class="skel" style="width:58px;height:26px;border-radius:8px"></i><i class="skel" style="width:58px;height:26px;border-radius:8px"></i></div></div><div class="pf" style="gap:10px"><i class="skel" style="width:70px;height:24px;border-radius:12px"></i><i class="skel" style="width:90px;height:24px;border-radius:12px"></i><span class="gap"></span><i class="skel" style="width:84px;height:42px;border-radius:999px"></i></div></li>
+<li class="post" aria-hidden="true"><div class="ph"><i class="skel" style="width:36px;height:36px;border-radius:10px"></i><div style="display:grid;gap:8px"><i class="skel" style="width:90px;"></i><i class="skel" style="width:140px;height:12px;"></i></div></div><div class="pm"><i class="skel" style="width:78%;height:22px;"></i><i class="skel" style="width:30%;height:18px;margin-top:14px"></i><i class="skel" style="width:46%;height:14px;margin-top:14px"></i><div class="tg"><i class="skel" style="width:58px;height:26px;border-radius:8px"></i><i class="skel" style="width:58px;height:26px;border-radius:8px"></i><i class="skel" style="width:58px;height:26px;border-radius:8px"></i></div></div><div class="pf" style="gap:10px"><i class="skel" style="width:70px;height:24px;border-radius:12px"></i><i class="skel" style="width:90px;height:24px;border-radius:12px"></i><span class="gap"></span><i class="skel" style="width:84px;height:42px;border-radius:999px"></i></div></li>
+<li class="post" aria-hidden="true"><div class="ph"><i class="skel" style="width:36px;height:36px;border-radius:10px"></i><div style="display:grid;gap:8px"><i class="skel" style="width:90px;"></i><i class="skel" style="width:140px;height:12px;"></i></div></div><div class="pm"><i class="skel" style="width:78%;height:22px;"></i><i class="skel" style="width:30%;height:18px;margin-top:14px"></i><i class="skel" style="width:46%;height:14px;margin-top:14px"></i><div class="tg"><i class="skel" style="width:58px;height:26px;border-radius:8px"></i><i class="skel" style="width:58px;height:26px;border-radius:8px"></i><i class="skel" style="width:58px;height:26px;border-radius:8px"></i></div></div><div class="pf" style="gap:10px"><i class="skel" style="width:70px;height:24px;border-radius:12px"></i><i class="skel" style="width:90px;height:24px;border-radius:12px"></i><span class="gap"></span><i class="skel" style="width:84px;height:42px;border-radius:999px"></i></div></li>
 </ol>
     <div id="fsent"></div>
     <div class="fend" id="fend" hidden><p>That's everything for now. New jobs arrive several times a day.</p><button type="button" id="frefresh">Start over with a fresh mix</button></div>
@@ -452,7 +463,7 @@ dialog[open]::backdrop{animation:fadein .22s var(--ease)}
     <aside id="aside" aria-label="Filters">
       <div id="fdet">
         <div class="sh"><strong>Filters</strong><button type="button" id="sclr">Clear all</button><button type="button" id="sx" aria-label="Close filters">Done</button></div>
-        <div id="fbody"><section class="fg" aria-hidden="true"><i class="sk" style="width:64px;height:12px;margin:0 10px 12px"></i><i class="sk" style="width:70%;height:14px;margin:14px 10px"></i><i class="sk" style="width:55%;height:14px;margin:14px 10px"></i><i class="sk" style="width:80%;height:14px;margin:14px 10px"></i><i class="sk" style="width:48%;height:14px;margin:14px 10px"></i></section><section class="fg" aria-hidden="true"><i class="sk" style="width:64px;height:12px;margin:0 10px 12px"></i><i class="sk" style="width:70%;height:14px;margin:14px 10px"></i><i class="sk" style="width:55%;height:14px;margin:14px 10px"></i><i class="sk" style="width:80%;height:14px;margin:14px 10px"></i><i class="sk" style="width:48%;height:14px;margin:14px 10px"></i></section></div>
+        <div id="fbody"><section class="fg" aria-hidden="true"><i class="skel" style="width:64px;height:12px;margin:0 10px 12px"></i><i class="skel" style="width:70%;height:14px;margin:14px 10px"></i><i class="skel" style="width:55%;height:14px;margin:14px 10px"></i><i class="skel" style="width:80%;height:14px;margin:14px 10px"></i><i class="skel" style="width:48%;height:14px;margin:14px 10px"></i></section><section class="fg" aria-hidden="true"><i class="skel" style="width:64px;height:12px;margin:0 10px 12px"></i><i class="skel" style="width:70%;height:14px;margin:14px 10px"></i><i class="skel" style="width:55%;height:14px;margin:14px 10px"></i><i class="skel" style="width:80%;height:14px;margin:14px 10px"></i><i class="skel" style="width:48%;height:14px;margin:14px 10px"></i></section></div>
         <div class="sf"><button type="button" id="show">Show results</button></div>
       </div>
     </aside>
@@ -460,14 +471,14 @@ dialog[open]::backdrop{animation:fadein .22s var(--ease)}
       <div class="tune" id="tune2" hidden><span>Set your preferences to get better matches. They stay on your device.</span><button type="button" class="tb">Set preferences</button><button type="button" class="x" aria-label="Dismiss"><svg><use href="#i-x"/></svg></button></div>
       <div class="sumrow">
         <div><h2 id="count" aria-live="polite"></h2><p id="countsub"></p></div>
-        <select id="sort" aria-label="Sort"><option value="">Best for you</option><option value="new">Newest</option><option value="pay">Highest pay</option></select>
+        <label class="sortc" id="sortc"><span>Sort by</span><select id="sort" aria-label="Sort by"><option value="">Best for you</option><option value="new">Newest</option><option value="pay">Highest pay</option></select></label>
       </div>
       <div class="und" id="und" aria-label="How your search was understood"></div>
       <ul class="out" id="list">
-<li class="res" aria-hidden="true"><div class="rc"><div class="hd"><i class="sk" style="width:36px;height:36px;border-radius:10px"></i><i class="sk" style="width:130px;"></i></div><i class="sk" style="width:62%;height:20px;margin-top:16px"></i><i class="sk" style="width:36%;height:14px;margin-top:12px"></i><div class="tg"><i class="sk" style="width:72px;height:26px;border-radius:8px"></i><i class="sk" style="width:72px;height:26px;border-radius:8px"></i><i class="sk" style="width:72px;height:26px;border-radius:8px"></i></div><div class="ft"><span class="ago"><i class="sk" style="width:90px;height:12px;"></i></span><i class="sk" style="width:84px;height:42px;border-radius:999px"></i></div></div></li>
-<li class="res" aria-hidden="true"><div class="rc"><div class="hd"><i class="sk" style="width:36px;height:36px;border-radius:10px"></i><i class="sk" style="width:130px;"></i></div><i class="sk" style="width:62%;height:20px;margin-top:16px"></i><i class="sk" style="width:36%;height:14px;margin-top:12px"></i><div class="tg"><i class="sk" style="width:72px;height:26px;border-radius:8px"></i><i class="sk" style="width:72px;height:26px;border-radius:8px"></i><i class="sk" style="width:72px;height:26px;border-radius:8px"></i></div><div class="ft"><span class="ago"><i class="sk" style="width:90px;height:12px;"></i></span><i class="sk" style="width:84px;height:42px;border-radius:999px"></i></div></div></li>
-<li class="res" aria-hidden="true"><div class="rc"><div class="hd"><i class="sk" style="width:36px;height:36px;border-radius:10px"></i><i class="sk" style="width:130px;"></i></div><i class="sk" style="width:62%;height:20px;margin-top:16px"></i><i class="sk" style="width:36%;height:14px;margin-top:12px"></i><div class="tg"><i class="sk" style="width:72px;height:26px;border-radius:8px"></i><i class="sk" style="width:72px;height:26px;border-radius:8px"></i><i class="sk" style="width:72px;height:26px;border-radius:8px"></i></div><div class="ft"><span class="ago"><i class="sk" style="width:90px;height:12px;"></i></span><i class="sk" style="width:84px;height:42px;border-radius:999px"></i></div></div></li>
-<li class="res" aria-hidden="true"><div class="rc"><div class="hd"><i class="sk" style="width:36px;height:36px;border-radius:10px"></i><i class="sk" style="width:130px;"></i></div><i class="sk" style="width:62%;height:20px;margin-top:16px"></i><i class="sk" style="width:36%;height:14px;margin-top:12px"></i><div class="tg"><i class="sk" style="width:72px;height:26px;border-radius:8px"></i><i class="sk" style="width:72px;height:26px;border-radius:8px"></i><i class="sk" style="width:72px;height:26px;border-radius:8px"></i></div><div class="ft"><span class="ago"><i class="sk" style="width:90px;height:12px;"></i></span><i class="sk" style="width:84px;height:42px;border-radius:999px"></i></div></div></li>
+<li class="res" aria-hidden="true"><div class="rc"><div class="hd"><i class="skel" style="width:36px;height:36px;border-radius:10px"></i><i class="skel" style="width:130px;"></i></div><i class="skel" style="width:62%;height:20px;margin-top:16px"></i><i class="skel" style="width:36%;height:14px;margin-top:12px"></i><div class="tg"><i class="skel" style="width:72px;height:26px;border-radius:8px"></i><i class="skel" style="width:72px;height:26px;border-radius:8px"></i><i class="skel" style="width:72px;height:26px;border-radius:8px"></i></div><div class="ft"><span class="ago"><i class="skel" style="width:90px;height:12px;"></i></span><i class="skel" style="width:84px;height:42px;border-radius:999px"></i></div></div></li>
+<li class="res" aria-hidden="true"><div class="rc"><div class="hd"><i class="skel" style="width:36px;height:36px;border-radius:10px"></i><i class="skel" style="width:130px;"></i></div><i class="skel" style="width:62%;height:20px;margin-top:16px"></i><i class="skel" style="width:36%;height:14px;margin-top:12px"></i><div class="tg"><i class="skel" style="width:72px;height:26px;border-radius:8px"></i><i class="skel" style="width:72px;height:26px;border-radius:8px"></i><i class="skel" style="width:72px;height:26px;border-radius:8px"></i></div><div class="ft"><span class="ago"><i class="skel" style="width:90px;height:12px;"></i></span><i class="skel" style="width:84px;height:42px;border-radius:999px"></i></div></div></li>
+<li class="res" aria-hidden="true"><div class="rc"><div class="hd"><i class="skel" style="width:36px;height:36px;border-radius:10px"></i><i class="skel" style="width:130px;"></i></div><i class="skel" style="width:62%;height:20px;margin-top:16px"></i><i class="skel" style="width:36%;height:14px;margin-top:12px"></i><div class="tg"><i class="skel" style="width:72px;height:26px;border-radius:8px"></i><i class="skel" style="width:72px;height:26px;border-radius:8px"></i><i class="skel" style="width:72px;height:26px;border-radius:8px"></i></div><div class="ft"><span class="ago"><i class="skel" style="width:90px;height:12px;"></i></span><i class="skel" style="width:84px;height:42px;border-radius:999px"></i></div></div></li>
+<li class="res" aria-hidden="true"><div class="rc"><div class="hd"><i class="skel" style="width:36px;height:36px;border-radius:10px"></i><i class="skel" style="width:130px;"></i></div><i class="skel" style="width:62%;height:20px;margin-top:16px"></i><i class="skel" style="width:36%;height:14px;margin-top:12px"></i><div class="tg"><i class="skel" style="width:72px;height:26px;border-radius:8px"></i><i class="skel" style="width:72px;height:26px;border-radius:8px"></i><i class="skel" style="width:72px;height:26px;border-radius:8px"></i></div><div class="ft"><span class="ago"><i class="skel" style="width:90px;height:12px;"></i></span><i class="skel" style="width:84px;height:42px;border-radius:999px"></i></div></div></li>
 </ul>
       <div id="empty" class="empty" hidden></div>
       <button id="more" type="button" hidden>More results</button>
@@ -493,8 +504,9 @@ dialog[open]::backdrop{animation:fadein .22s var(--ease)}
     <div class="db">
       <h3>Fields</h3><div class="cs" id="pf"></div>
       <h3>Experience</h3><div class="cs" id="pl"></div>
-      <h3>Skills</h3><div class="cs" id="ps"></div>
+      <h3>Job type</h3><div class="cs" id="pt"></div>
       <h3>Work</h3><div class="cs" id="pw"></div>
+      <h3>Tech skills <small>(optional)</small></h3><div class="cs" id="ps"></div>
       <details class="lrn"><summary>What it has learned so far</summary><div id="learned"></div></details>
     </div>
     <footer><button type="button" id="reset">Reset everything</button><button type="submit" class="primary">Done</button></footer>
@@ -576,7 +588,7 @@ const KW={remote:["remote"],remotely:["remote"],wfh:["remote"],
   junior:["lv","junior"],jr:["lv","junior"],mid:["lv","mid"],"mid-level":["lv","mid"],senior:["lv","senior"],sr:["lv","senior"],lead:["lv","lead"],staff:["lv","staff+"],principal:["lv","staff+"],director:["lv","manager+"],vp:["lv","manager+"],head:["lv","manager+"],
   "full-time":["emp","full_time"],fulltime:["emp","full_time"],"part-time":["emp","part_time"],parttime:["emp","part_time"],contract:["emp","contract"],contractor:["emp","contract"],freelance:["emp","contract"],
   paid:["pay"],salary:["pay"],today:["days",1],"24h":["days",1],week:["days",7],month:["days",30],recent:["days",7],latest:["days",7],new:["days",7],
-  data:["cat","data"],design:["cat","design"],designer:["cat","design"],designers:["cat","design"],sales:["cat","sales"],marketing:["cat","marketing"],product:["cat","product"],finance:["cat","finance"],legal:["cat","legal"],security:["cat","security"],support:["cat","support"],operations:["cat","operations"],engineering:["cat","engineering"],hr:["cat","people"],recruiting:["cat","people"]};
+  data:["cat","data"],design:["cat","design"],designer:["cat","design"],designers:["cat","design"],sales:["cat","sales"],marketing:["cat","marketing"],product:["cat","product"],finance:["cat","finance"],legal:["cat","legal"],security:["cat","security"],support:["cat","support"],operations:["cat","operations"],engineering:["cat","engineering"],hr:["cat","people"],recruiting:["cat","people"],healthcare:["cat","healthcare"],nursing:["cat","healthcare"],nurse:["cat","healthcare"],education:["cat","education"],teaching:["cat","education"],science:["cat","science"],retail:["cat","retail"],hospitality:["cat","retail"],manufacturing:["cat","manufacturing"]};
 const ALIAS={golang:"go",js:"javascript",ts:"typescript",k8s:"kubernetes",postgresql:"postgres",nodejs:"node.js",reactjs:"react"};
 const MONEY=/^[$£€]?(\d{1,3}(?:,\d{3})+|\d{2,3}k|\d{5,6})\+?$/i;
 const val=w=>{w=w.replace(/[$£€,+]/g,"").toLowerCase();return w.endsWith("k")?parseInt(w)*1000:parseInt(w)};
@@ -667,7 +679,14 @@ function run(){
 }
 function runCompanies(){
   P=parse("");const s=q.toLowerCase().replace(/[^a-z0-9 ]/g," ").trim().split(/\s+/).filter(Boolean);
-  items=C.filter(c=>s.every(t=>c[0].toLowerCase().includes(t))).sort((a,b)=>b[3]-a[3]||b[1]-a[1]);build=citem;paint(null);
+  const by=new Map();for(const r of D.rows){const a=by.get(r[1]);a?a.push(r):by.set(r[1],[r])}
+  const tot=C.reduce((a,c)=>a+c[1],0),mean=tot?C.reduce((a,c)=>a+c[2],0)/tot:0,mx=Math.log1p(Math.max(1,...C.map(c=>c[2])));
+  const sc=new Map(C.map(c=>{
+    const js=by.get(c[0])||[],ghost=js.length?js.filter(r=>r[16]>=2).length/js.length:0,n=c[0].toLowerCase();
+    const share=(c[2]+4*mean)/(c[1]+4); // smoothed toward the overall rate, so 5 of 5 doesn't blindly beat 40 of 50
+    const like=hasModel()&&js.length?Math.tanh(js.map(aff).sort((a,b)=>b-a).slice(0,5).reduce((x,y)=>x+y,0)/20):0; // how well its best jobs match what you save
+    return [c,2*share+.8*Math.log1p(c[2])/mx+.5*c[5]-.6*Math.min(1,3*c[4]/c[1])-.8*ghost+1.2*like+(s.length&&n.startsWith(s[0])?.5:0)]}));
+  items=C.filter(c=>s.every(t=>c[0].toLowerCase().includes(t))).sort((a,b)=>sc.get(b)-sc.get(a)||a[0].localeCompare(b[0]));build=citem;paint(null);
 }
 function runSaved(){
   P=parse("");ALT=new Map();items=[...saved].reverse().map(u=>BY.get(u)).filter(Boolean);build=item;paint(null);
@@ -682,11 +701,11 @@ function paint(cnt){
   shown=0;list.replaceChildren();more();
   if(!quiet&&!RM.matches)list.animate({opacity:[.35,1]},{duration:180,easing:"cubic-bezier(.23,1,.32,1)"});quiet=0;
   const n=items.length,sec=((performance.now()-t0)/1000).toFixed(2),jobs=view==="jobs",ct=$("#count"),cs=$("#countsub");
-  if(view==="companies"){ct.textContent=n.toLocaleString()+" companies";cs.textContent="With five or more open roles, ranked by how many are open to 0-2 years of experience."}
+  if(view==="companies"){ct.textContent=n.toLocaleString()+" companies";cs.textContent="With five or more open roles, ranked by fresher-friendly roles, how reliable the data is, and"+(hasModel()?" what you have saved.":" ghost-job signals.")}
   else if(view==="saved"){const miss=saved.size-n;ct.textContent=n+" saved job"+(n===1?"":"s");cs.textContent=miss>0?miss+" no longer open":"Kept on this device."}
   else{ct.textContent=n===0?"No results":n.toLocaleString()+" role"+(n===1?"":"s");cs.textContent=(postings>n?postings.toLocaleString()+" postings in total. ":"")+"Found in "+sec+" seconds."}
   document.body.classList.toggle("solo",!jobs);
-  $("#sort").hidden=!jobs;$("#sort").value=S.sort||"";$("#fdet").hidden=!jobs;$("#gs").hidden=!jobs;$("#quick").hidden=!jobs;
+  $("#sortc").hidden=!jobs;$("#sort").value=S.sort||"";$("#fdet").hidden=!jobs;$("#gs").hidden=!jobs;$("#quick").hidden=!jobs;
   $("#tune2").hidden=!(jobs&&tuneOn());
   const und=$("#und");und.replaceChildren();
   if(jobs&&P.chips.length){
@@ -820,13 +839,6 @@ const seenIO=new IntersectionObserver(es=>{for(const e of es){const li=e.target;
   if(e.isIntersecting&&!SEEN[li._u])li._t=setTimeout(()=>{SEEN[li._u]=Date.now();seenIO.unobserve(li);saveSeen()},900);else clearTimeout(li._t)}},{threshold:.6});
 const feedIO=new IntersectionObserver(e=>{if(e[0].isIntersecting&&!fdone&&document.body.classList.contains("home")){feedMore(6);feedIO.unobserve($("#fsent"));feedIO.observe($("#fsent"))}},{rootMargin:"900px"});
 feedIO.observe($("#fsent"));
-function greeting(){
-  const h=new Date().getHours(),today=new Date().toISOString().slice(0,10);let prev="";
-  $("#greet").textContent=h<12?"Good morning":h<18?"Good afternoon":"Good evening";
-  try{const v=localStorage.getItem("rb_visit");prev=localStorage.getItem("rb_prev")||"";if(v!==today){prev=v||"";localStorage.setItem("rb_prev",prev);localStorage.setItem("rb_visit",today)}}catch(e){}
-  const n=prev?D.rows.filter(r=>r[6]>prev&&!HID.has(r[7])).length:0;
-  $("#greetsub").textContent=n?n.toLocaleString()+" new jobs since "+new Date(prev+"T12:00").toLocaleDateString(undefined,{day:"numeric",month:"short"})+". Here is a fresh mix for you.":"A fresh mix of recent jobs. It gets better as you save and hide.";
-}
 function chrome(){ // company "stories" (ring = jobs you haven't seen) and topic chips
   const un=new Map(),cats=new Map();
   for(const r of D.rows){if(!SEEN[r[7]]&&!HID.has(r[7]))un.set(r[1],(un.get(r[1])||0)+1);cats.set(r[8],(cats.get(r[8])||0)+1)}
@@ -923,8 +935,8 @@ function post(r,ex){
 $("#frefresh").addEventListener("click",()=>{SEEN={};saveSeen();feedInit();scrollTo(0,0)});
 
 /* ---- tabs, quick filters, bottom sheet, state ---- */
-const TABS=["All","Fresher-friendly","Remote","Internships","Best paid","Companies","Saved"],INT=()=>""+D.levels.indexOf("intern");
-const tabNow=()=>view==="companies"?5:view==="saved"?6:S.fresher?1:S.remote?2:S.level===INT()?3:S.sort==="pay"?4:0;
+const TABS=["All","Fresher-friendly","Remote","Internships","Best paid"],INT=()=>""+D.levels.indexOf("intern");
+const tabNow=()=>view!=="jobs"?-1:S.fresher?1:S.remote?2:S.level===INT()?3:S.sort==="pay"?4:0;
 function tabsBuild(){
   $("#tabs").replaceChildren(el("span","ind"),...TABS.map((t,i)=>{const b=el("button","tab",t);b.type="button";b.setAttribute("role","tab");b.addEventListener("click",()=>setTab(i));return b}));
 }
@@ -932,15 +944,15 @@ let tabsReady=false;
 function tabsSync(){ // the white thumb slides to the selected tab
   const bs=[...$("#tabs").querySelectorAll(".tab")],ind=$("#tabs .ind");if(!bs.length)return;
   const now=tabNow(),b=bs[now];bs.forEach((x,i)=>x.setAttribute("aria-selected",i===now));
-  if(!b.offsetWidth)return;
+  if(!b||!b.offsetWidth)return;
   if(!tabsReady){ind.style.transition="none"}
   ind.style.width=b.offsetWidth+"px";ind.style.transform="translateX("+b.offsetLeft+"px)";
   if(!tabsReady){void ind.offsetWidth;ind.style.transition="";tabsReady=true}
 }
 function setTab(i){
-  opened=true;view=i===5?"companies":i===6?"saved":"jobs";
-  if(i<5){S.fresher=S.remote="";if(S.level===INT())S.level="";if(S.sort==="pay")S.sort="";
-    if(i===1)S.fresher="1";if(i===2)S.remote="1";if(i===3)S.level=INT();if(i===4)S.sort="pay"}
+  opened=true;view="jobs";
+  S.fresher=S.remote="";if(S.level===INT())S.level="";if(S.sort==="pay")S.sort="";
+  if(i===1)S.fresher="1";if(i===2)S.remote="1";if(i===3)S.level=INT();if(i===4)S.sort="pay";
   run();
 }
 const QP=[["Remote",()=>S.remote,()=>S.remote=S.remote?"":"1"],["Fresher-friendly",()=>S.fresher,()=>S.fresher=S.fresher?"":"1"],
@@ -1013,9 +1025,10 @@ function drawPrefs(){
   const chipset=(id,opts)=>$(id).replaceChildren(...opts.map(([key,label,w])=>{const b=el("button","",label);b.type="button";b.setAttribute("aria-pressed",M.prefs.includes(key));b.addEventListener("click",()=>{togglePref(key,w);b.setAttribute("aria-pressed",M.prefs.includes(key))});return b}));
   const cats=new Map(),sk=new Map();
   for(const r of D.rows){cats.set(r[8],(cats.get(r[8])||0)+1);if(r[14])for(const s of r[14].split(","))sk.set(s,(sk.get(s)||0)+1)}
-  chipset("#pf",[...cats].filter(([x])=>x!=="other").sort((a,b)=>b[1]-a[1]).slice(0,10).map(([x])=>["cat:"+x,cap(x),1]));
+  chipset("#pf",[...cats].filter(([x])=>x!=="other").sort((a,b)=>b[1]-a[1]).map(([x])=>["cat:"+x,cap(x),1]));
   chipset("#pl",[["fresher","Fresher-friendly (0-2 yrs)",1.2],...["intern","junior","mid","senior"].map(x=>["lv:"+D.levels.indexOf(x),cap(x),1])]);
   chipset("#ps",[...sk].sort((a,b)=>b[1]-a[1]).slice(0,16).map(([x])=>["sk:"+x,SK[x]||cap(x),1]));
+  chipset("#pt",Object.entries(EMP).map(([x,l])=>["emp:"+x,l,1]));
   chipset("#pw",[["remote","Remote",1.2],["pay","Salary listed",.8],["pay100","$100k and up",1]]);
   drawLearned();
 }
@@ -1086,9 +1099,9 @@ Promise.all([fetch("jobs.json").then(r=>r.json()),fetch("companies.json").then(r
   q=p.get("q")||"";qi.value=q;view=["companies","saved"].includes(p.get("view"))?p.get("view"):"jobs";opened=p.has("all");
   for(const g of G){const v=p.get(g.k);if(v)S[g.k]=v}
   if(p.get("sort"))S.sort=p.get("sort");
-  run();refreshHome();greeting();feedInit();
+  run();refreshHome();feedInit();
   document.fonts&&document.fonts.ready.then(tabsSync);
-}).catch(()=>{$("#greetsub").textContent="Could not load jobs. Please refresh the page.";$("#count").textContent="Could not load jobs";for(const x of [feed,list,$("#stories"),$("#fchips"),$("#fbody")])x.replaceChildren()});
+}).catch(()=>{$("#count").textContent="Could not load jobs";for(const x of [feed,list,$("#stories"),$("#fchips"),$("#fbody")])x.replaceChildren();feed.append(note("Could not load jobs","Please refresh the page."))});
 })();
 </script>
 </body>
