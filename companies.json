@@ -1,0 +1,6 @@
+{
+  "greenhouse": ["stripe", "airbnb", "discord", "figma", "cloudflare", "databricks", "datadog", "gitlab", "instacart", "robinhood", "coinbase", "reddit", "pinterest", "lyft", "dropbox", "twilio", "asana", "brex", "anthropic", "vercel", "mongodb", "elastic", "okta", "samsara", "duolingo", "webflow", "gusto"],
+  "lever": ["spotify", "palantir","zoox", "wealthfront", "mistral"],
+  "ashby": ["openai", "notion", "ramp", "linear", "deel", "supabase", "replit", "clickhouse", "cohere"],
+  "smartrecruiters": ["Visa", "BoschGroup", "Ubisoft2"]
+}
