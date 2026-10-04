@@ -11,7 +11,7 @@ from scraper import company_stats, fresher_ok, ghost_flags, load
 SKIP = {"remotive", "remoteok"}
 COLUMNS = {  # name -> (type, description); also the CSV column order
     "id": ("string", "Unique job id: <source>:<board>:<id on that board>."),
-    "source": ("string", "Where the job was read from: greenhouse, lever, ashby, smartrecruiters or arbeitnow."),
+    "source": ("string", "Where the job was read from: greenhouse, lever, ashby, smartrecruiters, workday, microsoft or arbeitnow."),
     "company": ("string", "Employer name."),
     "title": ("string", "Job title as posted."),
     "team": ("string", "Department or team if the posting gives one."),
@@ -76,18 +76,18 @@ with open(out / "jobs_by_company.csv", "w", encoding="utf-8", newline="") as f:
     "licenses": [{"name": "other"}],
     "keywords": ["jobs and career", "employment", "business", "internet"],
     "expectedUpdateFrequency": "daily",
-    "userSpecifiedSources": "Public job-board APIs of Greenhouse, Lever, Ashby and SmartRecruiters (company list: "
+    "userSpecifiedSources": "Public job-board APIs of Greenhouse, Lever, Ashby, SmartRecruiters and Workday, plus Microsoft's careers search API (company list: "
                             "https://github.com/chandranshB/roleBase/blob/main/companies.json) and the Arbeitnow job API. "
                             "Collected by https://github.com/chandranshB/roleBase with GitHub Actions; no logins, no private data.",
     "description": (
         "Job postings scraped every few hours from public company career boards, with how long each posting stays open.\n\n"
-        "**Source / provenance.** Public job-board APIs of Greenhouse, Lever, Ashby and SmartRecruiters (a few dozen "
+        "**Source / provenance.** Public job-board APIs of Greenhouse, Lever, Ashby, SmartRecruiters and Workday, plus Microsoft's careers search API (about 240 "
         "companies, listed in `companies.json`) plus the Arbeitnow job API. No logins and no private data. Postings belong "
         "to their employers. Code and raw history: https://github.com/chandranshB/roleBase\n\n"
         "**Updates.** This dataset is refreshed automatically once a day by GitHub Actions. A job that disappears from its "
         "board gets a `closed_at` date, and closed jobs are dropped after 90 days.\n\n"
         "**Caveats.** `level`, `category`, `employment`, `years_experience`, `skills` and pay are read from the posting text with "
-        "simple rules, so expect some errors. Pay is only filled when the posting states a yearly range. Company coverage is a "
+        "simple rules, so expect some errors. Pay is only filled when the posting states a yearly range. Workday employers contribute only their newest 150 postings and have no years, skills or pay. Company coverage is a "
         "sample, not the whole market."),
     "resources": [{
         "path": "jobs.csv",
