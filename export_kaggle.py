@@ -1,7 +1,8 @@
-"""Build the kaggle/ dataset folder (one CSV + metadata) from data/jobs/*.jsonl."""
+﻿"""Build the kaggle/ dataset folder (one CSV + metadata) from data/jobs/*.jsonl."""
 import csv
 import json
 import os
+import shutil
 from pathlib import Path
 
 from scraper import load
@@ -16,17 +17,17 @@ COLUMNS = {  # name -> (type, description); also the CSV column order
     "team": ("string", "Department or team if the posting gives one."),
     "category": ("string", "Field inferred from the title and team: engineering, data, design, product, sales, marketing, support, finance, legal, people, operations, security or other."),
     "level": ("string", "Seniority inferred from the title (and years of experience): intern, junior, mid, senior, lead, staff+ or manager+."),
-    "years_experience": ("integer", "Minimum years of experience the posting asks for. Empty if not stated."),
+    "years_experience": ("numeric", "Minimum years of experience the posting asks for. Empty if not stated."),
     "employment": ("string", "full_time, part_time, contract or internship. Empty if not stated."),
     "remote": ("boolean", "True if the posting is remote or its location says remote."),
     "location": ("string", "Location text as posted."),
     "skills": ("string", "Up to 8 technologies found in the posting, separated by semicolons."),
-    "pay_min": ("integer", "Lower end of the stated yearly pay range. Empty if no pay is stated."),
-    "pay_max": ("integer", "Upper end of the stated yearly pay range."),
+    "pay_min": ("numeric", "Lower end of the stated yearly pay range. Empty if no pay is stated."),
+    "pay_max": ("numeric", "Upper end of the stated yearly pay range."),
     "pay_currency": ("string", "Currency of the pay range (a $ sign is reported as USD)."),
-    "posted": ("date", "Date the job was published (YYYY-MM-DD) when the source gives one."),
-    "first_seen": ("date", "Date this scraper first saw the job."),
-    "closed_at": ("date", "Date the job disappeared from its board. Empty means still open."),
+    "posted": ("datetime", "Date the job was published (YYYY-MM-DD) when the source gives one."),
+    "first_seen": ("datetime", "Date this scraper first saw the job."),
+    "closed_at": ("datetime", "Date the job disappeared from its board. Empty means still open."),
     "url": ("string", "Apply link."),
 }
 
@@ -40,6 +41,7 @@ def flat(j):
 rows = sorted((flat(j) for j in load().values() if j["source"] not in SKIP), key=lambda j: j["id"])
 out = Path("kaggle")
 out.mkdir(exist_ok=True)
+shutil.copy("kaggle_assets/dataset-cover-image.png", out)  # picked up by `kaggle datasets metadata --update`
 with open(out / "jobs.csv", "w", encoding="utf-8", newline="") as f:
     w = csv.DictWriter(f, list(COLUMNS), extrasaction="ignore")
     w.writeheader()
@@ -52,6 +54,9 @@ with open(out / "jobs.csv", "w", encoding="utf-8", newline="") as f:
     "licenses": [{"name": "other"}],
     "keywords": ["jobs and career", "employment", "business", "internet"],
     "expectedUpdateFrequency": "daily",
+    "userSpecifiedSources": "Public job-board APIs of Greenhouse, Lever, Ashby and SmartRecruiters (company list: "
+                            "https://github.com/chandranshB/roleBase/blob/main/companies.json) and the Arbeitnow job API. "
+                            "Collected by https://github.com/chandranshB/roleBase with GitHub Actions; no logins, no private data.",
     "description": (
         "Job postings scraped every few hours from public company career boards, with how long each posting stays open.\n\n"
         "**Source / provenance.** Public job-board APIs of Greenhouse, Lever, Ashby and SmartRecruiters (a few dozen "

@@ -21,3 +21,8 @@ jobs:
       - name: Publish new dataset version (creates it, private, on first run)
         if: env.KAGGLE_API_TOKEN != ''
         run: kaggle datasets version -p kaggle -m "auto $(date -u +%F)" || kaggle datasets create -p kaggle
+      - name: Sync subtitle, tags, sources, file/column descriptions and cover image
+        if: env.KAGGLE_API_TOKEN != ''
+        run: |
+          sleep 30  # let the new version register first
+          kaggle datasets metadata --update -p kaggle "$KAGGLE_USERNAME/job-listings"
