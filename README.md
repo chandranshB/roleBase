@@ -19,9 +19,12 @@ An open job database that updates itself. A scraper reads the public job-board A
     <td><img src="docs/charts/fresher_friendly.svg" alt="Most fresher-friendly companies"></td>
     <td><img src="docs/charts/open_jobs_over_time.svg" alt="Open jobs over time"></td>
   </tr>
+  <tr>
+    <td colspan="2"><img src="docs/charts/skill_trends.svg" alt="Skill demand trend" width="100%"></td>
+  </tr>
 </table>
 
-The charts are regenerated after every scrape by [`make_charts.py`](make_charts.py), which writes plain SVG with the standard library. No plotting package and no outside service is involved. The "over time" chart starts with the first day of tracking and fills in as the scraper keeps running.
+The charts are regenerated after every scrape by [`make_charts.py`](make_charts.py), which writes plain SVG with the standard library. No plotting package and no outside service is involved. The "over time" and "skill demand trend" charts start with the first day of tracking and fill in as the scraper keeps running. The trend chart shows, for the six skills most requested today, the share of skill-tagged postings that mention each one, from the daily snapshot in `data/skills.csv`.
 
 ## What it figures out for each job
 

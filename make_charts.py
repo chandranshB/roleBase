@@ -14,8 +14,11 @@ STYLE = """<style>
 text{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Helvetica Neue","Segoe UI",Roboto,sans-serif;fill:#000}
 .sub,.val,.axis{fill:#6c6c70}.bar{fill:#007aff}.track{fill:#e5e5ea}.grid{stroke:#d1d1d6}
 .l1{fill:none;stroke:#007aff;stroke-width:2.5}.d1{fill:#007aff}.l2{fill:none;stroke:#ff9500;stroke-width:2.5}.d2{fill:#ff9500}
+.l3{fill:none;stroke:#34c759;stroke-width:2.5}.d3{fill:#34c759}.l4{fill:none;stroke:#af52de;stroke-width:2.5}.d4{fill:#af52de}
+.l5{fill:none;stroke:#ff3b30;stroke-width:2.5}.d5{fill:#ff3b30}.l6{fill:none;stroke:#00b8d4;stroke-width:2.5}.d6{fill:#00b8d4}
 @media(prefers-color-scheme:dark){text{fill:#fff}.sub,.val,.axis{fill:#98989d}.bar{fill:#0a84ff}.track{fill:#2c2c2e}.grid{stroke:#38383a}
-.l1{stroke:#0a84ff}.d1{fill:#0a84ff}.l2{stroke:#ff9f0a}.d2{fill:#ff9f0a}}
+.l1{stroke:#0a84ff}.d1{fill:#0a84ff}.l2{stroke:#ff9f0a}.d2{fill:#ff9f0a}
+.l3{stroke:#30d158}.d3{fill:#30d158}.l4{stroke:#bf5af2}.d4{fill:#bf5af2}.l5{stroke:#ff453a}.d5{fill:#ff453a}.l6{stroke:#40cbe0}.d6{fill:#40cbe0}}
 </style>"""
 SK = {"ml": "ML", "aws": "AWS", "gcp": "GCP", "sql": "SQL", "nosql": "NoSQL", "llm": "LLM", "dbt": "dbt", "php": "PHP", "sap": "SAP",
       "ci/cd": "CI/CD", "graphql": "GraphQL", "javascript": "JavaScript", "typescript": "TypeScript", "mongodb": "MongoDB",
@@ -24,8 +27,8 @@ SK = {"ml": "ML", "aws": "AWS", "gcp": "GCP", "sql": "SQL", "nosql": "NoSQL", "l
 esc = lambda s: html.escape(str(s), quote=True)
 
 
-def svg(h, body, title, sub):
-    return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {h}" width="{W}" height="{h}" role="img" aria-label="{esc(title)}">'
+def svg(h, body, title, sub, w=W):
+    return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" width="{w}" height="{h}" role="img" aria-label="{esc(title)}">'
             f'{STYLE}<text x="24" y="34" font-size="18" font-weight="600">{esc(title)}</text>'
             f'<text class="sub" x="24" y="56" font-size="12">{esc(sub)}</text>{body}</svg>\n')
 
@@ -45,11 +48,11 @@ def bars(title, sub, rows, fmt=lambda v: f"{v:,}"):
     return svg(78 + len(rows) * 28 + 16, body, title, sub)
 
 
-def lines(title, sub, series):
+def lines(title, sub, series, w=W, unit=""):
     """series: [(name, css index, [(date, value)])]; x positions follow the dates, so gaps in history show as gaps."""
     days = sorted({d for _, _, p in series for d, _ in p})
     top = max((v for _, _, p in series for _, v in p), default=0) or 1
-    x0, x1, y0, y1 = 64, W - 30, 96, 250
+    x0, x1, y0, y1 = 64, w - 30, (118 if len(series) > 2 else 96), 250
     days_n = [dt.date.fromisoformat(d).toordinal() for d in days]
     span = (days_n[-1] - days_n[0]) if days else 0
     gx = lambda d: x0 + (x1 - x0) * ((dt.date.fromisoformat(d).toordinal() - days_n[0]) / span if span else 0.5)
@@ -58,7 +61,7 @@ def lines(title, sub, series):
     for k in range(5):
         v = top * k / 4
         body += (f'<line class="grid" x1="{x0}" x2="{x1}" y1="{gy(v):.1f}" y2="{gy(v):.1f}"/>'
-                 f'<text class="axis" x="{x0 - 8}" y="{gy(v) + 4:.1f}" font-size="11" text-anchor="end">{v:,.0f}</text>')
+                 f'<text class="axis" x="{x0 - 8}" y="{gy(v) + 4:.1f}" font-size="11" text-anchor="end">{v:,.0f}{unit}</text>')
     for d in (days[:1] + days[-1:] if len(days) > 1 else days):
         body += f'<text class="axis" x="{gx(d):.1f}" y="{y1 + 20}" font-size="11" text-anchor="middle">{d}</text>'
     for i, (name, c, pts) in enumerate(series):
@@ -66,11 +69,12 @@ def lines(title, sub, series):
         if len(xy) > 1:
             body += f'<polyline class="l{c}" points="{" ".join(f"{x:.1f},{y:.1f}" for x, y in xy)}"/>'
         body += "".join(f'<circle class="d{c}" cx="{x:.1f}" cy="{y:.1f}" r="3.5"/>' for x, y in xy)
-        body += (f'<circle class="d{c}" cx="{W - 230 + i * 120}" cy="46" r="5"/>'
-                 f'<text x="{W - 220 + i * 120}" y="50" font-size="12">{esc(name)}</text>')
+        lx, ly = (24 + i * 130, 82) if len(series) > 2 else (W - 230 + i * 120, 46)  # many series: legend on its own row under the subtitle
+        body += (f'<circle class="d{c}" cx="{lx + 5}" cy="{ly}" r="5"/>'
+                 f'<text x="{lx + 16}" y="{ly + 4}" font-size="12">{esc(name)}</text>')
     if len(days) < 2:
-        body += f'<text class="sub" x="{W / 2}" y="{y1 + 48}" font-size="12" text-anchor="middle">History builds up daily; the line fills in as the scraper keeps running.</text>'
-    return svg(300, body, title, sub)
+        body += f'<text class="sub" x="{w / 2}" y="{y1 + 48}" font-size="12" text-anchor="middle">History builds up daily; the line fills in as the scraper keeps running.</text>'
+    return svg(300, body, title, sub, w)
 
 
 def pulse():
@@ -80,6 +84,17 @@ def pulse():
             open_[r["date"]] += int(r["open"])
             fresher[r["date"]] += int(r["fresher"])
     return sorted(open_.items()), sorted(fresher.items())
+
+
+def skill_trends():
+    """Share of skill-tagged open postings that mention each skill, per day (data/skills.csv); the 6 skills that lead today."""
+    p, share = Path("data/skills.csv"), {}
+    if p.exists():
+        for r in csv.DictReader(open(p, encoding="utf-8")):
+            if int(r["tagged"]):
+                share.setdefault(r["skill"], []).append((r["date"], 100 * int(r["jobs"]) / int(r["tagged"])))
+    top = sorted(share, key=lambda s: -share[s][-1][1])[:6]
+    return [(SK.get(s, s.capitalize()), i + 1, share[s]) for i, s in enumerate(top)]
 
 
 def main():
@@ -97,6 +112,7 @@ def main():
         "fresher_friendly": bars("Most fresher-friendly companies (roles open to 0–2 years)", f"companies with 20+ open jobs · {stamp}",
                                  [(f"{c['company']} ({c['fresher_roles']}/{c['open_roles']})", c["fresher_share"] * 100)
                                   for c in fresh[:12]], fmt=lambda v: f"{v:.0f}%"),
+        "skill_trends": lines("Skill demand trend", "share of skill-tagged open postings that mention each skill, " + stamp, skill_trends(), w=1200, unit="%"),
         "open_jobs_over_time": lines("Open jobs over time", stamp, [("Open jobs", 1, open_pts), ("Fresher-friendly", 2, fresher_pts)]),
     }
     OUT.mkdir(parents=True, exist_ok=True)

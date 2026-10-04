@@ -306,17 +306,47 @@ def workday(s, name):  # s = "<tenant>.<pod>.myworkdayjobs.com/<site>"; the list
                  for d in [first, *rest] for j in d["jobPostings"]}.values())
 
 
-def microsoft(s, name):  # careers site's own search API (s = domain); robots.txt allows /api/pcsx
+EF_CAP = 300  # newest N per Eightfold/Amazon site (Starbucks alone lists 20k+ store jobs)
+
+
+def pcsx(host, domain, source, scope, name, cap=None):  # Eightfold "PCSX" search API behind a careers site; their robots.txt allows /api/pcsx
     def page(off):
-        return get("https://apply.careers.microsoft.com/api/pcsx/search", params={"domain": s, "query": "", "start": off})["data"]
+        return get(f"https://{host}/api/pcsx/search", params={"domain": domain, "query": "", "start": off})["data"]
 
     first = page(0)
     size = len(first["positions"])
-    rest = pmap(page, range(size, first["count"], size), 6) if size else []
-    return list({j["id"]: job("microsoft", f"microsoft:{s}", j["id"], name, j["name"], f"https://apply.careers.microsoft.com/careers/job/{j['id']}",
+    rest = pmap(page, range(size, min(first["count"], cap or first["count"]), size), 6) if size else []
+    return list({j["id"]: job(source, scope, j["id"], name, j["name"], f"https://{host}/careers/job/{j['id']}",
                               "; ".join(j["standardizedLocations"] or j["locations"] or []), j.get("workLocationOption") == "remote",
                               j.get("postedTs"), team=j.get("department"))
                  for d in [first, *rest] for j in d["positions"]}.values())
+
+
+def microsoft(s, name):  # s = domain
+    return pcsx("apply.careers.microsoft.com", s, "microsoft", f"microsoft:{s}", name)
+
+
+def eightfold(s, name):  # s = "<careers host>/<domain>", e.g. "apply.starbucks.com/starbucks.com"; the apply URL is stored per job
+    host, domain = s.split("/", 1)
+    return pcsx(host, domain, "eightfold", f"eightfold:{s}", name, EF_CAP)
+
+
+def amazon(s, name):  # amazon.jobs' own search endpoint (robots.txt only blocks /internal); newest first
+    def page(off):
+        return get("https://www.amazon.jobs/en/search.json", params={"offset": off, "result_limit": 100, "sort": "recent"})["jobs"]
+
+    def posted(t):
+        try:
+            return dt.datetime.strptime(" ".join(t.split()), "%B %d, %Y").date().isoformat()
+        except (ValueError, AttributeError):
+            return None
+
+    return list({j["id_icims"]: job("amazon", f"amazon:{s}", j["id_icims"], name, j["title"], "https://www.amazon.jobs" + j["job_path"],
+                                    j.get("normalized_location") or j.get("location"), False, posted(j.get("posted_date")),
+                                    desc=text(" ".join(filter(None, [j.get("description"), j.get("basic_qualifications"), j.get("preferred_qualifications")]))),
+                                    team=j.get("job_family") or j.get("job_category"), emp=[j.get("job_schedule_type")],
+                                    hint="intern" if j.get("is_intern") else None)
+                 for p in pmap(page, range(0, EF_CAP, 100), 3) for j in p}.values())
 
 
 # ---------- feeds (whole-board snapshots) ----------
@@ -348,7 +378,7 @@ def arbeitnow():  # must read every page, else jobs pushed past the cap would lo
     raise RuntimeError("arbeitnow: >100 pages")
 
 
-ATS = dict(greenhouse=greenhouse, lever=lever, ashby=ashby, smartrecruiters=smartrecruiters, workday=workday, microsoft=microsoft)
+ATS = dict(greenhouse=greenhouse, lever=lever, ashby=ashby, smartrecruiters=smartrecruiters, workday=workday, microsoft=microsoft, eightfold=eightfold, amazon=amazon)
 FEEDS = dict(remotive=remotive, remoteok=remoteok, arbeitnow=arbeitnow)
 
 
@@ -452,6 +482,14 @@ def log_history(db, pruned, today):
                 c[0] += 1
                 c[1] += fresher_ok(o)
         append_csv(pulse, ["date", "board", "open", "fresher"], [[today, b, n, f] for b, (n, f) in sorted(counts.items())])
+    skills = Path("data/skills.csv")  # skill demand per day: postings that name each skill, out of postings that name any skill
+    if not (skills.exists() and any(l.startswith(today + ",") for l in skills.read_text(encoding="utf-8").split(chr(10)))):
+        live = [o for o in db.values() if o["closed_at"] is None]
+        tagged, n = sum(bool(o["skills"]) for o in live), {}
+        for o in live:
+            for k in o["skills"]:
+                n[k] = n.get(k, 0) + 1
+        append_csv(skills, ["date", "skill", "jobs", "tagged"], [[today, k, c, tagged] for k, c in sorted(n.items())])
     if pruned:
         append_csv(Path("data/archive.csv"), ["id", "company", "level", "category", "posted", "first_seen", "closed_at"],
                    [[o["id"], o["company"], o["level"], o["category"], o["posted"] or "", o["first_seen"], o["closed_at"]] for o in pruned])
