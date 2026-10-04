@@ -12,7 +12,7 @@ import requests
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 
-DB = Path("data/jobs.jsonl")
+DIR = Path("data/jobs")  # one jsonl per board, e.g. greenhouse_stripe.jsonl
 COMPANIES = Path("companies.json")
 KEEP_CLOSED_DAYS = 90  # closed jobs older than this are pruned (git history still has them)
 
@@ -132,17 +132,23 @@ def merge(db, fetched, today):
 
 
 def load():
-    if not DB.exists():
-        return {}
     # split("\n"), not splitlines(): titles can contain U+2028 etc., which splitlines() would cut on
-    return {j["id"]: j for j in map(json.loads, filter(None, DB.read_text(encoding="utf-8").split("\n")))}
+    rows = (l for f in DIR.glob("*.jsonl") for l in f.read_text(encoding="utf-8").split("\n") if l)
+    return {j["id"]: j for j in map(json.loads, rows)}
 
 
-def save(db):  # sorted + compact + LF => git diffs only show real changes
-    DB.parent.mkdir(exist_ok=True)
-    with open(DB, "w", encoding="utf-8", newline="\n") as f:
-        for i in sorted(db):
-            f.write(json.dumps(db[i], sort_keys=True, ensure_ascii=False, separators=(",", ":")) + "\n")
+def save(db):  # one file per board; sorted + compact + LF => small files, diffs show only real changes
+    DIR.mkdir(parents=True, exist_ok=True)
+    shards = {}
+    for i in sorted(db):
+        name = i.rsplit(":", 1)[0].replace(":", "_")
+        shards.setdefault(name, []).append(json.dumps(db[i], sort_keys=True, ensure_ascii=False, separators=(",", ":")))
+    for f in DIR.glob("*.jsonl"):
+        if f.stem not in shards:
+            f.unlink()
+    for name, lines in shards.items():
+        with open(DIR / f"{name}.jsonl", "w", encoding="utf-8", newline="\n") as f:
+            f.write("\n".join(lines) + "\n")
 
 
 def main():

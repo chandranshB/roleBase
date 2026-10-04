@@ -1,0 +1,23 @@
+name: kaggle
+on:
+  schedule: [{ cron: "40 2 * * *" }] # daily; scrape.yml commits every 6h
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency: kaggle
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
+      KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install requests kaggle
+      - run: python export_kaggle.py
+      - name: Publish new dataset version (creates it, private, on first run)
+        if: env.KAGGLE_KEY != ''
+        run: kaggle datasets version -p kaggle -m "auto $(date -u +%F)" || kaggle datasets create -p kaggle
