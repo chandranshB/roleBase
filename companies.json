@@ -1,6 +1,16 @@
 {
-  "greenhouse": ["stripe", "airbnb", "discord", "figma", "cloudflare", "databricks", "datadog", "gitlab", "instacart", "robinhood", "coinbase", "reddit", "pinterest", "lyft", "dropbox", "twilio", "asana", "brex", "anthropic", "vercel", "mongodb", "elastic", "okta", "samsara", "duolingo", "webflow", "gusto"],
-  "lever": ["spotify", "palantir","zoox", "wealthfront", "mistral"],
-  "ashby": ["openai", "notion", "ramp", "linear", "deel", "supabase", "replit", "clickhouse", "cohere"],
-  "smartrecruiters": ["Visa", "BoschGroup", "Ubisoft2"]
+  "greenhouse": {
+    "stripe": "Stripe", "airbnb": "Airbnb", "discord": "Discord", "figma": "Figma", "cloudflare": "Cloudflare",
+    "databricks": "Databricks", "datadog": "Datadog", "gitlab": "GitLab", "instacart": "Instacart", "robinhood": "Robinhood",
+    "coinbase": "Coinbase", "reddit": "Reddit", "pinterest": "Pinterest", "lyft": "Lyft", "dropbox": "Dropbox",
+    "twilio": "Twilio", "asana": "Asana", "brex": "Brex", "anthropic": "Anthropic", "vercel": "Vercel",
+    "mongodb": "MongoDB", "elastic": "Elastic", "okta": "Okta", "samsara": "Samsara", "duolingo": "Duolingo",
+    "webflow": "Webflow", "gusto": "Gusto"
+  },
+  "lever": { "spotify": "Spotify", "palantir": "Palantir", "wealthfront": "Wealthfront", "zoox": "Zoox", "mistral": "Mistral AI" },
+  "ashby": {
+    "openai": "OpenAI", "notion": "Notion", "ramp": "Ramp", "linear": "Linear", "deel": "Deel",
+    "supabase": "Supabase", "replit": "Replit", "clickhouse": "ClickHouse", "cohere": "Cohere"
+  },
+  "smartrecruiters": { "Visa": "Visa", "BoschGroup": "Bosch", "Ubisoft2": "Ubisoft" }
 }

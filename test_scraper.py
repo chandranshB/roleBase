@@ -1,10 +1,11 @@
-from scraper import level, merge
+from scraper import (category, clean_company, employment, find_pay, level, merge, skills, slim, url_of, years_req)
 
 
 def j(i, **kw):
     return {"id": i, "company": "c", "title": "t", **kw}
 
 
+# --- merge: open / close / reopen / prune ---
 db = merge({}, {"a:x": [j("a:x:1"), j("a:x:2")], "b": [j("b:9")]}, "2026-01-01")
 assert all(o["closed_at"] is None and o["first_seen"] == "2026-01-01" for o in db.values())
 
@@ -21,6 +22,41 @@ db = merge(db, {"a:x": [j("a:x:1")]}, "2026-01-04")
 db = merge(db, {"a:x": [j("a:x:1")]}, "2026-06-01")
 assert "a:x:2" not in db
 
-assert [level(t) for t in ["Software Engineering Intern", "Sr. Engineer", "Staff Engineer", "Engineering Manager", "Engineer"]] == \
-    ["intern", "senior", "staff+", "manager+", "mid"]
+# --- understanding ---
+assert [level(t) for t in ["Software Engineering Intern", "Sr. Engineer", "Staff Engineer", "Engineering Manager", "Engineer",
+                           "Associate Director, Ops", "Junior Developer", "Werkstudent Marketing"]] == \
+    ["intern", "senior", "staff+", "manager+", "mid", "manager+", "junior", "intern"]
+assert [level(t) for t in ["Product Manager", "Account Manager", "Engineering Manager", "Director of Sales"]] == \
+    ["mid", "mid", "manager+", "manager+"]
+assert category("RTL Design Engineer") == "engineering"
+assert level("Engineer", 0) == "junior" and level("Engineer", 3) == "mid" and level("Engineer", 6) == "senior"
+assert level("Engineer", None, "junior") == "junior" and level("Senior Engineer", None, "junior") == "senior"
+
+assert [category(t) for t in ["Sales Engineer", "Product Designer", "Data Engineer", "Security Engineer", "Technical Program Manager",
+                              "Backend Engineer", "Product Marketing Manager", "Senior Accountant", "Barista"]] == \
+    ["sales", "design", "data", "security", "product", "engineering", "marketing", "finance", "other"]
+assert category("Weird Title", "Legal & Compliance") == "legal"
+
+assert years_req("We are 10 years old. Requirements: 5+ years of experience in Go; 8 years experience preferred") == 5
+assert years_req("3-5 years of professional experience") == 3 and years_req("no numbers here") is None
+assert years_req("Founded 15 years ago") is None
+
+assert skills("Senior Python/Go dev, AWS and Kubernetes (k8s), JavaScript, not Javascripty") == ["python", "aws", "kubernetes", "javascript"]
+assert skills("golang postgresql node.js c++ c#") == ["go", "postgres", "node.js", "c++", "c#"]
+
+assert find_pay("Pay range: $150,000 - $200,000 USD") == [150000, 200000, "USD"]
+assert find_pay("£60k to £80k a year") == [60000, 80000, "GBP"] and find_pay("$20 - $30 per hour") is None
+
+assert employment("Dev", "Full-time") == "full_time" and employment("Dev", ["Teilzeit"]) == "part_time"
+assert employment("Marketing Intern") == "internship" and employment("Contract Dev") == "contract" and employment("Dev") == ""
+
+assert clean_company("Stripe, Inc.") == "Stripe" and clean_company("Acme GmbH") == "Acme" and clean_company("Inc") == "Inc"
+
+# --- storage: slim drops empties and derivable bits, load() would restore them ---
+row = {"id": "ashby:acme:u1", "source": "ashby", "url": url_of("ashby:acme:u1"), "remote": False, "years": 0, "skills": [], "team": "",
+       "title": "Engineer", "level": "junior", "category": "engineering"}
+assert slim(row) == {"id": "ashby:acme:u1", "years": 0, "title": "Engineer"}
+assert slim({**row, "level": "manager+"})["level"] == "manager+"  # level from an API hint is not derivable, so it stays
+assert url_of("remotive:7") is None
+
 print("ok")
