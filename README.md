@@ -1,4 +1,4 @@
-# RoleBase
+<p><img src="docs/logo.svg" alt="RoleBase" height="48"></p>
 
 An open job database that updates itself. A scraper reads the public job-board APIs of company career pages, keeps every posting in git, works out what each one asks for (level, field, years of experience, skills, pay), tracks when postings disappear, and publishes the result as a searchable website and a Kaggle dataset. Everything runs on GitHub Actions, and the charts below are drawn by the workflow itself.
 
@@ -52,7 +52,7 @@ flowchart LR
 ```
 
 - [`scrape.yml`](.github/workflows/scrape.yml) runs every 6 hours: tests, scrape, charts, commit the changes, deploy the site.
-- [`kaggle.yml`](.github/workflows/kaggle.yml) runs daily: builds `jobs.csv` and `companies.csv` and publishes a new dataset version.
+- [`kaggle.yml`](.github/workflows/kaggle.yml) runs daily: builds `jobs.csv` and `jobs_by_company.csv` and publishes a new dataset version.
 - A failed source never closes its jobs, and an unexpectedly empty answer is treated as a failure too.
 - Jobs that closed more than 90 days ago are dropped from the live files. Their lifetime is kept in `data/archive.csv`, and open and fresher counts per board are logged daily in `data/pulse.csv`. Both are append-only, so git stores only new lines.
 
@@ -76,7 +76,7 @@ flowchart LR
 | `posted`, `first_seen`, `closed_at` | Dates; empty `closed_at` means still open |
 | `reposts` | Earlier closed jobs with the same title on the same board |
 
-The Kaggle dataset has the same data as flat CSV, plus `companies.csv` (open roles and fresher share per company).
+The Kaggle dataset has the same data as flat CSV, plus `jobs_by_company.csv` (open roles and fresher share per company).
 
 ## Run it yourself
 

@@ -11,11 +11,11 @@ from scraper import company_stats, load
 OUT = Path("docs/charts")
 W = 720
 STYLE = """<style>
-text{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;fill:#1d1b20}
-.sub,.val,.axis{fill:#49454f}.bar{fill:#6750a4}.track{fill:#e8def8}.grid{stroke:#cac4d0}
-.l1{fill:none;stroke:#6750a4;stroke-width:2.5}.d1{fill:#6750a4}.l2{fill:none;stroke:#e08a1e;stroke-width:2.5}.d2{fill:#e08a1e}
-@media(prefers-color-scheme:dark){text{fill:#e6e0e9}.sub,.val,.axis{fill:#cac4d0}.bar{fill:#d0bcff}.track{fill:#2b2930}.grid{stroke:#49454f}
-.l1{stroke:#d0bcff}.d1{fill:#d0bcff}.l2{stroke:#ffb95c}.d2{fill:#ffb95c}}
+text{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Helvetica Neue","Segoe UI",Roboto,sans-serif;fill:#000}
+.sub,.val,.axis{fill:#6c6c70}.bar{fill:#007aff}.track{fill:#e5e5ea}.grid{stroke:#d1d1d6}
+.l1{fill:none;stroke:#007aff;stroke-width:2.5}.d1{fill:#007aff}.l2{fill:none;stroke:#ff9500;stroke-width:2.5}.d2{fill:#ff9500}
+@media(prefers-color-scheme:dark){text{fill:#fff}.sub,.val,.axis{fill:#98989d}.bar{fill:#0a84ff}.track{fill:#2c2c2e}.grid{stroke:#38383a}
+.l1{stroke:#0a84ff}.d1{fill:#0a84ff}.l2{stroke:#ff9f0a}.d2{fill:#ff9f0a}}
 </style>"""
 SK = {"ml": "ML", "aws": "AWS", "gcp": "GCP", "sql": "SQL", "nosql": "NoSQL", "llm": "LLM", "dbt": "dbt", "php": "PHP", "sap": "SAP",
       "ci/cd": "CI/CD", "graphql": "GraphQL", "javascript": "JavaScript", "typescript": "TypeScript", "mongodb": "MongoDB",
