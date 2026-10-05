@@ -342,7 +342,7 @@ dialog::backdrop{background:rgba(8,10,14,.5)}
 
 /* phones: compact header, bottom navigation, thumb-sized cards */
 @media(max-width:719px){
-  .shell{padding:0 16px calc(92px + env(safe-area-inset-bottom))}
+  .shell{padding:0 16px calc(108px + env(safe-area-inset-bottom))}
   .top{margin:0 -16px;padding:0 16px}
   .bar{gap:10px;padding:10px 0 8px}
   .logo span{display:none}
@@ -364,12 +364,16 @@ dialog::backdrop{background:rgba(8,10,14,.5)}
   .ago{flex:0 0 100%;margin:0 0 4px}
   .apply{flex:1;height:46px}
   .ib{width:46px;height:46px;box-shadow:inset 0 0 0 1px var(--line)}
-  #toast{bottom:calc(76px + env(safe-area-inset-bottom))}
-  #nav{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:30;height:calc(60px + env(safe-area-inset-bottom));padding-bottom:env(safe-area-inset-bottom);background:color-mix(in srgb,var(--page) 88%,transparent);-webkit-backdrop-filter:saturate(170%) blur(18px);backdrop-filter:saturate(170%) blur(18px);box-shadow:0 -1px 0 var(--line)}
-  #nav button{position:relative;flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;border:0;background:none;color:var(--faint);font:500 11.5px/14px var(--font)}
-  #nav button svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
-  #nav button[aria-current=page]{color:var(--acc)}
-  #nav .bd{position:absolute;top:6px;left:calc(50% + 8px)}
+  #toast{bottom:calc(96px + env(safe-area-inset-bottom))}
+  /* floating glass island: the thumb slides to the current item (pure CSS, driven by aria-current) */
+  #nav{display:flex;position:fixed;left:14px;right:14px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:30;height:64px;padding:6px;border-radius:999px;background:color-mix(in srgb,var(--page) 88%,transparent);-webkit-backdrop-filter:blur(18px);backdrop-filter:blur(18px);box-shadow:0 0 0 1px var(--line2),var(--shadow2)}
+  #nav .ind{position:absolute;top:6px;bottom:6px;left:6px;width:calc((100% - 12px)/3);border-radius:999px;background:var(--thumb);box-shadow:0 0 0 1px var(--line),0 1px 3px rgba(20,22,26,.12);transition:transform .34s var(--drawer)}
+  #nav:has(button:nth-of-type(2)[aria-current]) .ind{transform:translateX(100%)}
+  #nav:has(button:nth-of-type(3)[aria-current]) .ind{transform:translateX(200%)}
+  #nav button{position:relative;z-index:1;flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;border:0;border-radius:999px;background:none;color:var(--sub);font:500 12px/14px var(--font);transition:color .2s var(--ease)}
+  #nav button svg{width:23px;height:23px}
+  #nav button[aria-current=page]{color:var(--acc);font-weight:600}
+  #nav .bd{position:absolute;top:5px;left:calc(50% + 8px)}
   #more{width:100%}
   footer{margin-top:28px}
 }
@@ -512,6 +516,7 @@ dialog[open]::backdrop{animation:fadein .22s var(--ease)}
 <div id="scrim"></div>
 <div id="toast" role="status" aria-live="polite" hidden><span id="tmsg"></span><button type="button" id="undo">Undo</button></div>
 <nav id="nav" aria-label="Main">
+  <span class="ind" aria-hidden="true"></span>
   <button type="button" data-v="jobs"><svg aria-hidden="true"><use href="#i-feed"/></svg>For you</button>
   <button type="button" data-v="companies"><svg aria-hidden="true"><use href="#i-build"/></svg>Companies</button>
   <button type="button" data-v="saved"><svg aria-hidden="true"><use href="#i-star"/></svg>Saved<span class="bd nsv" hidden></span></button>
