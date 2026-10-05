@@ -3,6 +3,7 @@
 Order per company: the logo on its Lever board page, else the best icon on its own homepage (domain from domains.json).
 Only sharp icons are kept (PNG/ICO at least MIN px, or SVG); anything else falls back to the letter avatar on the site.
 Run after build_site.py: it writes _site/logos/* and _site/logos.json ({company name: file})."""
+import io
 import json
 import re
 import shutil
@@ -13,6 +14,7 @@ from pathlib import Path
 from urllib.parse import urljoin
 
 import requests
+from PIL import Image, ImageChops
 
 from scraper import load
 
@@ -164,6 +166,26 @@ def find_logo(name, slug, lever_slug, domain):
         print(f"  {name}: {type(e).__name__}")
 
 
+def tidy(b):
+    """Crop the empty margin many favicons carry (transparent, or plain white), so the logo fills its tile. -> (PNG bytes, fills the tile)"""
+    im = Image.open(io.BytesIO(b)).convert("RGBA")
+    a = im.getchannel("A")
+    if a.getextrema()[0] < 250:  # transparent margins
+        box = a.point(lambda v: 255 if v > 16 else 0).getbbox()
+    elif sum(im.getpixel((0, 0))[:3]) >= 3 * 240:  # opaque but white margins; a coloured background is part of the logo, so it stays
+        box = ImageChops.difference(im, Image.new("RGBA", im.size, im.getpixel((0, 0)))).convert("L").point(lambda v: 255 if v > 24 else 0).getbbox()
+    else:
+        box = None
+    if box and box[2] - box[0] >= 16 and box[3] - box[1] >= 16:
+        im = im.crop(box)
+    out = io.BytesIO()
+    im.save(out, "PNG", optimize=True)
+    w, h = im.size
+    # an opaque, coloured, squarish icon is itself the tile: the site should let it fill the tile edge to edge instead of floating inside white padding
+    full = a.getextrema()[0] >= 240 and sum(im.getpixel((0, 0))[:3]) < 3 * 240 and .8 <= w / h <= 1.25
+    return out.getvalue(), full
+
+
 def main():
     cfg = json.loads(Path("companies.json").read_text(encoding="utf-8"))
     domains = json.loads(Path("domains.json").read_text(encoding="utf-8"))
@@ -203,6 +225,14 @@ def main():
     for name, *_ in todo:
         f = (idx.get(name) or {}).get("file")
         if f and (CACHE / f).exists():
+            if f.endswith((".png", ".ico")):
+                try:
+                    data, full = tidy((CACHE / f).read_bytes())
+                    (out / (Path(f).stem + ".png")).write_bytes(data)
+                    mapping[name] = f"logos/{Path(f).stem}.png" + ("#fb" if full else "")  # "#fb" = full bleed, read by the site
+                    continue
+                except Exception as e:
+                    print(f"  {name}: tidy {type(e).__name__}")
             shutil.copy(CACHE / f, out / f)
             mapping[name] = f"logos/{f}"
     cats = {}  # company -> {field: open jobs}

@@ -122,7 +122,7 @@ print("ok")
 _t = dt.date.today()
 assert wd_posted("Posted Today") == _t.isoformat()
 assert wd_posted("Posted Yesterday") == (_t - dt.timedelta(days=1)).isoformat()
-assert wd_posted("Posted 30+ Days Ago") == (_t - dt.timedelta(days=30)).isoformat()
+assert wd_posted("Posted 30+ Days Ago") is None
 
 # --- scrape guard: distrust errors / empty / collapsed answers, but believe them once they repeat ---
 assert verdict([1] * 50, None, 50, 0) is None and verdict([1] * 10, None, 0, 0) is None  # healthy, or a new board

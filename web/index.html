@@ -107,7 +107,8 @@ body.home #home{display:block}
 .ring{display:grid;place-items:center;width:68px;height:68px;border-radius:50%;box-shadow:inset 0 0 0 2px var(--line2);padding:4px;transition:box-shadow .2s var(--ease)}
 .ring.on{box-shadow:inset 0 0 0 2.5px var(--acc)}
 .ring .av,.ring .ic{width:100%;height:100%;border-radius:50%;font-size:20px}
-.ring .av.has{padding:10px}
+.ring .av.has{padding:7px}
+.av.has.fb,.ring .av.has.fb{padding:0;box-shadow:none}
 .ic{display:grid;place-items:center;background:var(--wash);color:var(--ink)}
 .ic svg{width:26px;height:26px;fill:none}
 .sl{display:block;margin-top:6px;font-size:12.5px;line-height:16px;color:var(--sub);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
@@ -227,7 +228,7 @@ body.solo aside{display:none}
 @media(hover:hover) and (pointer:fine){.rc:hover{background:var(--wash)}.ttl:hover{color:var(--acc)}.ttl:hover .go{opacity:1;transform:none}}
 .hd{display:flex;align-items:center;gap:12px;min-width:0}
 .av{display:grid;place-items:center;width:36px;height:36px;flex:none;border-radius:10px;background:var(--wash);color:var(--sub);font:600 14px/1 var(--font);overflow:hidden}
-.av.has{background:#fff;box-shadow:inset 0 0 0 1px var(--line);padding:5px}
+.av.has{background:#fff;box-shadow:inset 0 0 0 1px var(--line);padding:3px}
 .av img{display:block;width:100%;height:100%;object-fit:contain}
 .who{min-width:0;font-weight:600;line-height:20px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .via{color:var(--faint);font-size:13.5px;font-weight:400;margin-left:8px}
@@ -769,7 +770,7 @@ function hl(p,s){
 let LG={}; // company name -> logo file (built by build_logos.py); anything missing keeps its initial
 const avatar=n=>{
   const a=el("span","av",(n.match(/[A-Za-z0-9]/)||["?"])[0].toUpperCase());
-  if(LG[n]){const i=new Image();i.alt="";i.width=i.height=36;i.decoding="async";i.onload=()=>{a.textContent="";a.classList.add("has");a.append(i)};i.src=LG[n]}
+  if(LG[n]){const i=new Image();i.alt="";i.width=i.height=36;i.decoding="async";i.onload=()=>{a.textContent="";a.classList.add("has");if(LG[n].endsWith("#fb"))a.classList.add("fb");a.append(i)};i.src=LG[n]}
   return a;
 };
 const bump2=()=>document.querySelectorAll(".nsv").forEach(nv=>{nv.hidden=!saved.size;nv.textContent=saved.size});

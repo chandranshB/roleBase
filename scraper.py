@@ -293,6 +293,8 @@ def smartrecruiters(s, name):  # list endpoint has no description, so years/skil
 
 
 def wd_posted(t):  # "Posted 3 Days Ago" / "Posted Today" / "Posted 30+ Days Ago" -> YYYY-MM-DD
+    if "30+" in (t or ""):  # "30+ days ago" has no date; guessing today-30 would shift every day and rewrite those rows daily
+        return None
     m = re.search(r"\d+", t or "")
     n = int(m.group()) if m else 1 if "yesterday" in (t or "").lower() else 0
     return (dt.date.today() - dt.timedelta(days=n)).isoformat()

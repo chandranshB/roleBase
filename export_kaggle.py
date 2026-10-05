@@ -10,11 +10,11 @@ from scraper import company_stats, fresher_ok, ghost_flags, load
 # Remotive / RemoteOK terms are about attribution and display, so they stay out of a republished dataset.
 SKIP = {"remotive", "remoteok"}
 COLUMNS = {  # name -> (type, description); also the CSV column order
-    "id": ("string", "Unique job id: <source>:<board>:<id on that board>."),
     "source": ("string", "Where the job was read from: greenhouse, lever, ashby, smartrecruiters, workday, microsoft or arbeitnow."),
     "company": ("string", "Employer name."),
     "title": ("string", "Job title as posted."),
-    "url": ("string", "Apply link: opens the posting on the employer's own careers page or job board, where you can apply."),
+    "url": ("string", "Apply link: opens the posting on the employer's own careers page or job board, where you can apply. Unique per row, so it works as the key."),
+    "openings": ("numeric", "How many identical postings (same company, title, team and location) this row stands for. 1 for most jobs; more for roles opened in bulk, such as store jobs."),
     "team": ("string", "Department or team if the posting gives one."),
     "category": ("string", "Field inferred from the title and team: engineering, data, design, product, sales, marketing, support, finance, legal, people, operations, security or other."),
     "level": ("string", "Seniority inferred from the title (and years of experience): intern, junior, mid, senior, lead, staff+ or manager+."),
@@ -56,7 +56,19 @@ def flat(j):
             "fresher_friendly": fresher_ok(j)}
 
 
-rows = sorted(map(flat, jobs), key=lambda j: j["id"])
+def collapse(rows):
+    """Identical postings (same company, title, team, location, open/closed) become one row with `openings`, so bulk-posted roles don't pad the file."""
+    g = {}
+    for r in sorted(rows, key=lambda r: (r["first_seen"], r["url"])):
+        k = (r["company"], r["title"].lower().strip(), (r["team"] or "").lower(), r["location"].lower().strip(), bool(r["closed_at"]))
+        if k in g:
+            g[k]["openings"] += 1
+        else:
+            g[k] = {**r, "openings": 1}
+    return sorted(g.values(), key=lambda r: (r["company"], r["title"], r["url"]))
+
+
+rows = collapse(map(flat, jobs))
 out = Path("kaggle")
 out.mkdir(exist_ok=True)
 shutil.copy("kaggle_assets/dataset-cover-image.png", out)  # picked up by `kaggle datasets metadata --update`
