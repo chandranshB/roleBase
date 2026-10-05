@@ -123,6 +123,7 @@ python scraper.py          # fetch everything and update data/
 python make_charts.py      # redraw docs/charts/
 python build_site.py       # build _site/ for GitHub Pages
 python build_logos.py      # fetch company icons into _site/logos (slow the first time, cached after)
+python build_pages.py      # crawlable field and company pages, sitemap.xml (needs the two steps above)
 ```
 
 **Add a company:** find its board slug (the last part of `boards.greenhouse.io/<slug>`, `jobs.lever.co/<slug>`, `jobs.ashbyhq.com/<slug>` or `jobs.smartrecruiters.com/<slug>`) and add `"slug": "Display Name"` under the right key in [`companies.json`](companies.json). For a Workday employer use `"<tenant>.<pod>.myworkdayjobs.com/<site>"` as the key (the host and first path part of its careers URL), for example `"adobe.wd5.myworkdayjobs.com/external_experienced"`. Add its website to [`domains.json`](domains.json) so it gets an icon. Dead slugs show up as warnings in the log and never close anything.

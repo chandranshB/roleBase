@@ -46,6 +46,7 @@ jobs:
           key: logos-${{ steps.month.outputs.ym }}-${{ hashFiles('domains.json', 'companies.json') }}
           restore-keys: logos-
       - run: python build_logos.py
+      - run: python build_pages.py # crawlable field/company pages, sitemap.xml
       - uses: actions/upload-pages-artifact@v3
         with: { path: _site }
       - id: d
