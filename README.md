@@ -1,6 +1,6 @@
 <p><img src="docs/logo.svg" alt="RoleBase" height="48"></p>
 
-An open job database that updates itself. A scraper reads the public job-board APIs of about 240 company career pages (tech, but also healthcare, retail, finance, pharma, energy, media, nonprofits and more) plus a few open feeds, keeps every posting in git, works out what each one asks for (level, field, years of experience, skills, pay), tracks when postings disappear, and publishes the result as a searchable website and a Kaggle dataset. Everything runs on GitHub Actions, and the charts below are drawn by the workflow itself.
+An open job database that updates itself. A scraper reads the public job-board APIs of about 490 company career pages (tech, but also healthcare, retail, finance, pharma, energy, media, nonprofits and more) plus a few open feeds, keeps every posting in git, works out what each one asks for (level, field, years of experience, skills, pay), tracks when postings disappear, and publishes the result as a searchable website and a Kaggle dataset. Everything runs on GitHub Actions, and the charts below are drawn by the workflow itself.
 
 **[Search the jobs](https://chandranshb.github.io/roleBase/)** · **[Kaggle dataset](https://www.kaggle.com/datasets/chandranshbinjola/job-listings)** · **[Roadmap](../../issues)**
 
@@ -24,7 +24,7 @@ An open job database that updates itself. A scraper reads the public job-board A
   </tr>
 </table>
 
-The charts are regenerated after every scrape by [`make_charts.py`](make_charts.py), which writes plain SVG with the standard library. No plotting package and no outside service is involved. The "over time" and "skill demand trend" charts start with the first day of tracking and fill in as the scraper keeps running. The trend chart shows, for the six skills most requested today, the share of skill-tagged postings that mention each one, from the daily snapshot in `data/skills.csv`.
+The charts are regenerated after every scrape by [`make_charts.py`](make_charts.py), which writes plain SVG with the standard library. No plotting package and no outside service is involved. The "over time" and "skill demand trend" charts start with the first day of tracking and fill in as the scraper keeps running. The trend chart shows, for the three most requested non-IT skills (Excel, customer service, project management and so on) and the three most requested IT skills, the share of skill-tagged postings that mention each one, from the daily snapshot in `data/skills.csv`.
 
 ## What it figures out for each job
 

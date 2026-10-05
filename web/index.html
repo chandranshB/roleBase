@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>RoleBase: search open jobs</title>
-<meta name="description" content="Search open jobs in plain words: remote python jobs for freshers, data internships in berlin, senior designer $120k+. Rankings that learn from you, privately on your device.">
+<meta name="description" content="Search open jobs in every field in plain words: nursing jobs in london, remote customer support for freshers, accounting internships in berlin. Rankings that learn from you, privately on your device.">
 <meta name="theme-color" content="#f4f5f7" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#0d0f12" media="(prefers-color-scheme: dark)">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -515,7 +515,7 @@ dialog[open]::backdrop{animation:fadein .22s var(--ease)}
       <h3>Experience</h3><div class="cs" id="pl"></div>
       <h3>Job type</h3><div class="cs" id="pt"></div>
       <h3>Work</h3><div class="cs" id="pw"></div>
-      <h3>Tech skills <small>(optional)</small></h3><div class="cs" id="ps"></div>
+      <h3>Skills</h3><div class="cs" id="ps"></div>
       <details class="lrn"><summary>What it has learned so far</summary><div id="learned"></div></details>
     </div>
     <footer><button type="button" id="reset">Reset everything</button><button type="submit" class="primary">Done</button></footer>
@@ -527,7 +527,7 @@ const $=s=>document.querySelector(s),PAGE=20,form=$("#f"),qi=$("#q"),list=$("#li
 const el=(t,c,x)=>{const e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e};
 const cap=s=>s.replace(/_/g," ").replace(/^./,c=>c.toUpperCase());
 const EMP={full_time:"Full-time",part_time:"Part-time",contract:"Contract",internship:"Internship"},CUR={USD:"$",GBP:"£",EUR:"€"};
-const SK={ml:"ML",aws:"AWS",gcp:"GCP",sql:"SQL",nosql:"NoSQL",llm:"LLM",dbt:"dbt",php:"PHP",sap:"SAP","ci/cd":"CI/CD",graphql:"GraphQL",javascript:"JavaScript",typescript:"TypeScript",mongodb:"MongoDB",mysql:"MySQL",pytorch:"PyTorch",tensorflow:"TensorFlow","node.js":"Node.js","spring-boot":"Spring Boot",hubspot:"HubSpot"};
+const SK={ml:"ML",aws:"AWS",gcp:"GCP",sql:"SQL",nosql:"NoSQL",llm:"LLM",dbt:"dbt",php:"PHP",sap:"SAP","ci/cd":"CI/CD",graphql:"GraphQL",javascript:"JavaScript",typescript:"TypeScript",mongodb:"MongoDB",mysql:"MySQL",pytorch:"PyTorch",tensorflow:"TensorFlow","node.js":"Node.js","spring-boot":"Spring Boot",hubspot:"HubSpot",excel:"Excel",ms_office:"MS Office",cpr:"CPR",bls:"BLS",acls:"ACLS",ehr:"EHR",emr:"EMR",hipaa:"HIPAA",osha:"OSHA",cdl:"CDL",haccp:"HACCP",hris:"HRIS",pmp:"PMP",crm:"CRM",erp:"ERP",gaap:"GAAP",ifrs:"IFRS",seo:"SEO",autocad:"AutoCAD",solidworks:"SolidWorks",quickbooks:"QuickBooks",powerpoint:"PowerPoint"};
 const RM=matchMedia("(prefers-reduced-motion:reduce)");let quiet=0; // quiet = results changed by typing, so no fade
 let D,C,H,LC,CO,BY,SKS=new Set(),VOC=[],P=null,S={},q="",view="jobs",opened=false,items=[],build,shown=0,t0=0,saved=new Set(),ALT=new Map(),postings=0;
 try{saved=new Set(JSON.parse(localStorage.getItem("rb_saved")||"[]"))}catch(e){}
@@ -732,7 +732,7 @@ function paint(cnt){
   const e=$("#empty");e.hidden=n>0;
   if(!n){
     if(view==="saved")e.replaceChildren(el("h3","","No saved jobs yet"),el("p","","Tap the star on any job to keep it here. Saved jobs stay on this device."));
-    else e.replaceChildren(el("h3","","No matching jobs"),el("p","","Try removing a filter or searching with fewer words, for example “python jobs” or “internships in london”."));
+    else e.replaceChildren(el("h3","","No matching jobs"),el("p","","Try removing a filter or searching with fewer words, for example “nurse jobs” or “internships in london”."));
   }
   sync();
 }
@@ -863,14 +863,15 @@ function chrome(){ // company "stories" (ring = jobs you haven't seen) and topic
     ...[...logos,...rest].map(([n,u])=>st(n,avatar(n),u>0,()=>{S={co:n};run();scrollTo(0,0)})));
   const chip=(label,fn)=>{const b=el("button","pill",label);b.type="button";b.addEventListener("click",()=>{S={};fn();opened=false;run();scrollTo(0,0)});return b};
   $("#fchips").replaceChildren(chip("Fresher-friendly",()=>{S.fresher="1"}),chip("Remote",()=>{S.remote="1"}),chip("Internships",()=>{S.level=INT()}),chip("Salary listed",()=>{S.pay="1"}),
-    ...[...cats].filter(([x])=>x!=="other").sort((a,b)=>b[1]-a[1]).slice(0,8).map(([x])=>chip(cap(x),()=>{S.cat=x})));
+    ...[...cats].filter(([x])=>x!=="other").sort((a,b)=>b[1]-a[1]).slice(0,16).map(([x])=>chip(cap(x),()=>{S.cat=x})));
 }
 function feedInit(){
   if(!D)return;
   P=parse("");const now=Date.now();
   SEEN0=new Set(Object.keys(SEEN));
   const cand=D.rows.filter(r=>!HID.has(r[7])&&!saved.has(r[7])&&r[16]<2); // no hidden, saved or likely-ghost jobs
-  const sc=new Map(cand.map(r=>[r,score(r,[],now)+Math.random()*.7])); // a little randomness, so each visit starts differently
+  const fc=new Map();for(const r of cand)fc.set(r[8],(fc.get(r[8])||0)+1);
+  const sc=new Map(cand.map(r=>[r,score(r,[],now)+.3*Math.min(2.5,Math.log(cand.length/fc.get(r[8])))+Math.random()*.7])); // a little randomness, so each visit starts differently
   const by=rows=>rows.sort((a,b)=>sc.get(b)-sc.get(a));
   pool=arrange(by(cand.filter(r=>!SEEN0.has(r[7]))).concat(by(cand.filter(r=>SEEN0.has(r[7])))),false); // unseen first, then what you've seen
   ptr=0;usedF=new Set();recentF=[];fcount=0;caughtF=false;fdone=false;$("#fend").hidden=true;
@@ -1039,7 +1040,7 @@ function drawPrefs(){
   for(const r of D.rows){cats.set(r[8],(cats.get(r[8])||0)+1);if(r[14])for(const s of r[14].split(","))sk.set(s,(sk.get(s)||0)+1)}
   chipset("#pf",[...cats].filter(([x])=>x!=="other").sort((a,b)=>b[1]-a[1]).map(([x])=>["cat:"+x,cap(x),1]));
   chipset("#pl",[["fresher","Fresher-friendly (0-2 yrs)",1.2],...["intern","junior","mid","senior"].map(x=>["lv:"+D.levels.indexOf(x),cap(x),1])]);
-  chipset("#ps",[...sk].sort((a,b)=>b[1]-a[1]).slice(0,16).map(([x])=>["sk:"+x,SK[x]||cap(x),1]));
+  chipset("#ps",[...sk].sort((a,b)=>b[1]-a[1]).slice(0,24).map(([x])=>["sk:"+x,SK[x]||cap(x),1]));
   chipset("#pt",Object.entries(EMP).map(([x,l])=>["emp:"+x,l,1]));
   chipset("#pw",[["remote","Remote",1.2],["pay","Salary listed",.8],["pay100","$100k and up",1]]);
   drawLearned();
@@ -1093,7 +1094,7 @@ qi.addEventListener("focus",suggest);
 qi.addEventListener("blur",()=>setTimeout(hideSug,120));
 
 /* ---- start ---- */
-const ph=["remote python jobs for freshers","data internships in berlin","senior designer $120k+","paid sales roles posted today","fresher friendly companies"];let phI=0;
+const ph=["nursing jobs in london","remote customer support for freshers","part-time retail near me","accounting internships in berlin","paid sales roles posted today","teacher jobs $50k+","warehouse jobs full-time","fresher friendly companies"];let phI=0;
 setInterval(()=>{if(!document.hidden&&document.body.classList.contains("home")&&!qi.value){phI=(phI+1)%ph.length;qi.placeholder=ph[phI]}},3200);
 
 Promise.all([fetch("jobs.json").then(r=>r.json()),fetch("companies.json").then(r=>r.json()),fetch("logos.json").then(r=>r.ok?r.json():{}).catch(()=>({}))]).then(([d,c,lg])=>{

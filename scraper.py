@@ -43,18 +43,20 @@ CATEGORIES = [  # first match wins; "sales engineer" must hit sales before engin
     ("design", r"design(?! engineer)|\bux\b|\bui\b|creative"),
     ("data", r"data (scien|analy|engineer)|machine learning|\bml\b|\bai\b|research scientist|applied scientist|analytics|business intelligence|\bbi\b"),
     ("product", r"product (manager|owner|lead)|program manager|\bpm\b|head of product"),
+    ("protective", r"guard\b|ochron|vekter|sicherheitsdienst|sicherheitsmitarbeiter|beveilig|doorman|patrol|security (officer|agent|guard)"),
     ("security", r"security|infosec|appsec|penetration|threat"),
     ("engineering", r"engineer|developer|software|devops|\bsre\b|site reliability|back-?end|front-?end|full.?stack|mobile|\bios\b|android|platform|infrastructure|architect|programmer|\bqa\b|quality assurance|sdet|firmware|embedded|technical"),
     ("marketing", r"marketing|growth|\bseo\b|content|communications|brand|social media|community|copywrit"),
     ("support", r"support|customer (success|service|experience)|technical account|help ?desk|implementation|onboarding"),
-    ("finance", r"financ|account(ing|ant)|payroll|\btax\b|treasury|audit|controller|fp&a|procurement"),
+    ("finance", r"financ|account(ing|ant)|payroll|\btax\b|treasury|audit|controller|fp&a|procurement|banker|teller|underwrit|\bloan|insuranc|adjuster|actuar|fraud|kredit|steuer|\bbank"),
     ("legal", r"legal|counsel|attorney|compliance|paralegal|privacy"),
     ("people", r"recruit|talent|\bpeople\b|\bhr\b|human resources|workplace"),
-    ("healthcare", r"nurs(e|ing)|physician|clinic(al|ian)|pharmac|medical|therapist|patient|dental|dentist|surgeon|radiolog|caregiver|health ?care|\brn\b|paramedic|phlebotom|\bcna\b|veterinar"),
+    ("healthcare", r"nurs(e|ing)|physician|clinic(al|ian)|pharmac|medical|therapist|patient|dental|dentist|surgeon|radiolog|caregiver|health ?care|\brn\b|paramedic|phlebotom|\bcna\b|veterinar|psychiat|psycholog|mental health|neurolog|hospital"),
     ("education", r"teacher|professor|instructor|lecturer|tutor|faculty|curriculum|academic|educator|school"),
     ("science", r"scientist|laborator|chemist|biolog|\blab\b|research (associate|assistant|fellow)|geolog"),
-    ("retail", r"\bstore\b|retail|cashier|barista|\bcook\b|\bchef\b|kitchen|bartender|hotel|guest (service|experience)|concierge|housekeep|front desk|merchandis|stylist|restaurant|\bcrew\b|\bshift\b"),
-    ("manufacturing", r"manufactur|production (operator|associate|supervisor|technician|worker)|assembl|machinist|weld|electrician|plumb|forklift|fabricat|\bplant\b|\bmill\b|maintenance"),
+    ("retail", r"\bstore\b|retail|cashier|barista|\bcook\b|\bchef\b|kitchen|bartender|hotel|guest (service|experience)|concierge|housekeep|front desk|merchandis|stylist|restaurant|\bcrew\b|\bshift\b|food service|catering|cleaner|reinigung|janitor|arrumadeira|verk.ufer|cafeteria|barber|salon|k.chenhilfe|k.che\b"),
+    ("manufacturing", r"manufactur|production (operator|associate|supervisor|technician|worker)|assembl|machinist|weld|electrician|plumb|forklift|fabricat|\bplant\b|\bmill\b|maintenance|operator|operat.r|monteur|fertigung|toolmaker|produktion|produktie|construction|quality (inspector|control)"),
+    ("logistics", r"logist|warehouse|material handler|\bdriver\b|\blkw\b|fahrer|courier|picker|\bpacker\b|shipping|dispatch|freight"),
     ("operations", r"operations|\bops\b|supply chain|logistics|business (analyst|operations)|chief of staff|strategy|facilit|admin|office|warehouse|driver|technician|mechanic"),
 ]
 SKILLS = ("python java javascript typescript rust c++ c# ruby php swift kotlin scala sql nosql react vue angular node.js django "
@@ -62,6 +64,19 @@ SKILLS = ("python java javascript typescript rust c++ c# ruby php swift kotlin s
           "databricks dbt airflow pytorch tensorflow llm ml graphql linux git ci/cd figma tableau salesforce hubspot jira sap").split()
 ALIAS = dict(golang="go", postgresql="postgres", nodejs="node.js", node="node.js", k8s="kubernetes", reactjs="react",
              **{"react.js": "react", "machine learning": "ml", "spring boot": "spring-boot"}, js="javascript", ts="typescript")
+# skills outside IT, so every field has something to count. Multi-word phrases map to a key with "_" (shown as "Customer service").
+SKILLS += ("powerpoint quickbooks erp crm pmp agile scrum budgeting forecasting gaap ifrs payroll procurement negotiation seo copywriting "
+           "photoshop illustrator autocad solidworks revit cpr bls acls ehr emr hipaa phlebotomy forklift osha cdl welding haccp hris bilingual spanish").split()
+ALIAS.update({"microsoft excel": "excel", "ms excel": "excel", "advanced excel": "excel", "excel spreadsheets": "excel", "microsoft office": "ms_office",
+              "ms office": "ms_office", "customer service": "customer_service", "project management": "project_management",
+              "six sigma": "six_sigma", "financial modeling": "financial_modeling", "financial modelling": "financial_modeling",
+              "accounts payable": "accounts_payable", "accounts receivable": "accounts_receivable", "data entry": "data_entry",
+              "supply chain": "supply_chain", "social media": "social_media", "google analytics": "google_analytics",
+              "adobe creative suite": "adobe_creative_suite", "patient care": "patient_care", "electronic health records": "ehr",
+              "medical coding": "medical_coding", "preventive maintenance": "preventive_maintenance", "food safety": "food_safety",
+              "cash handling": "cash_handling", "inventory management": "inventory_management", "lesson planning": "lesson_planning",
+              "talent acquisition": "talent_acquisition", "employee relations": "employee_relations", "public speaking": "public_speaking",
+              "time management": "time_management", "forklift operator": "forklift"})
 SKILL_RX = re.compile(r"(?<![\w+#.])(" + "|".join(sorted(map(re.escape, SKILLS + list(ALIAS)), key=len, reverse=True)) + r")(?![\w+#])", re.I)
 EMP = dict(fulltime="full_time", permanent="full_time", vollzeit="full_time", parttime="part_time", teilzeit="part_time",
            contract="contract", contractor="contract", temporary="contract", freelance="contract",
@@ -283,7 +298,7 @@ def wd_posted(t):  # "Posted 3 Days Ago" / "Posted Today" / "Posted 30+ Days Ago
     return (dt.date.today() - dt.timedelta(days=n)).isoformat()
 
 
-WD_CAP = 150  # newest N per tenant: keeps jobs.json small, and the API refuses offsets past 2000 anyway. ponytail: raise if the site copes
+WD_CAP = 60  # newest N per tenant: keeps jobs.json small, and the API refuses offsets past 2000 anyway. ponytail: raise if the site copes
 
 
 def pmap(fn, xs, workers=4):  # a few pages at a time: fast, but polite to one host. Own pool, so no deadlock inside main()'s pool
@@ -303,9 +318,10 @@ def workday(s, name):  # s = "<tenant>.<pod>.myworkdayjobs.com/<site>"; the list
     rest = pmap(page, range(20, min(first["total"], WD_CAP), 20))
     return list({j["externalPath"]: job("workday", f"workday:{s}", j["externalPath"], name, j["title"], f"https://{s}{j['externalPath']}",
                                         j.get("locationsText"), posted=wd_posted(j.get("postedOn")))
-                 for d in [first, *rest] for j in d["jobPostings"]}.values())
+                 for d in [first, *rest] for j in d["jobPostings"] if j.get("externalPath")}.values())  # some tenants list entries with no link: skip those
 
 
+CAPPED = {"workday", "eightfold", "amazon"}
 EF_CAP = 300  # newest N per Eightfold/Amazon site (Starbucks alone lists 20k+ store jobs)
 
 
@@ -568,6 +584,8 @@ def main():
 
     before, pruned = set(db), []
     db = merge(db, fetched, today, pruned)
+    # these sources only list their newest N jobs, so a job missing from the list may just have slid out of view, not closed: forget it instead of recording a closure
+    db = {i: o for i, o in db.items() if not (o["closed_at"] and i.split(":")[0] in CAPPED)}
     n_open = sum(o["closed_at"] is None for o in db.values())
     print(f"sources ok={len(fetched)} failed={len(failed)} | new={len(set(db) - before)} open={n_open} closed={len(db) - n_open} | {time.time() - t_start:.0f}s")
     save(db)

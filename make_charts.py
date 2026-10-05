@@ -23,7 +23,16 @@ text{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Helvetica Neue"
 SK = {"ml": "ML", "aws": "AWS", "gcp": "GCP", "sql": "SQL", "nosql": "NoSQL", "llm": "LLM", "dbt": "dbt", "php": "PHP", "sap": "SAP",
       "ci/cd": "CI/CD", "graphql": "GraphQL", "javascript": "JavaScript", "typescript": "TypeScript", "mongodb": "MongoDB",
       "mysql": "MySQL", "pytorch": "PyTorch", "tensorflow": "TensorFlow", "node.js": "Node.js", "spring-boot": "Spring Boot",
-      "hubspot": "HubSpot"}
+      "hubspot": "HubSpot", "excel": "Excel", "ms_office": "MS Office", "cpr": "CPR", "bls": "BLS", "acls": "ACLS", "ehr": "EHR", "emr": "EMR",
+      "hipaa": "HIPAA", "osha": "OSHA", "cdl": "CDL", "haccp": "HACCP", "hris": "HRIS", "pmp": "PMP", "crm": "CRM", "erp": "ERP", "gaap": "GAAP",
+      "ifrs": "IFRS", "seo": "SEO", "autocad": "AutoCAD", "solidworks": "SolidWorks", "quickbooks": "QuickBooks", "powerpoint": "PowerPoint"}
+SK = {**SK, **{k: k.replace("_", " ").capitalize() for k in ("customer_service", "project_management", "six_sigma", "financial_modeling",
+      "accounts_payable", "accounts_receivable", "data_entry", "supply_chain", "social_media", "google_analytics", "adobe_creative_suite", "patient_care",
+      "medical_coding", "preventive_maintenance", "food_safety", "cash_handling", "inventory_management", "lesson_planning", "talent_acquisition",
+      "employee_relations", "public_speaking", "time_management")}}
+TECH = set("python java javascript typescript rust c++ c# ruby php swift kotlin scala sql nosql react vue angular node.js django flask spring-boot aws azure gcp "
+           "kubernetes docker terraform postgres mysql mongodb redis kafka spark snowflake databricks dbt airflow pytorch tensorflow llm ml graphql linux git ci/cd "
+           "figma tableau salesforce hubspot jira sap go".split())
 esc = lambda s: html.escape(str(s), quote=True)
 
 
@@ -93,7 +102,8 @@ def skill_trends():
         for r in csv.DictReader(open(p, encoding="utf-8")):
             if int(r["tagged"]):
                 share.setdefault(r["skill"], []).append((r["date"], 100 * int(r["jobs"]) / int(r["tagged"])))
-    top = sorted(share, key=lambda s: -share[s][-1][1])[:6]
+    lead = sorted(share, key=lambda s: -share[s][-1][1])
+    top = [s for s in lead if s not in TECH][:3] + [s for s in lead if s in TECH][:3]  # three non-IT skills and three IT ones, so no field drowns the chart
     return [(SK.get(s, s.capitalize()), i + 1, share[s]) for i, s in enumerate(top)]
 
 
@@ -112,7 +122,7 @@ def main():
         "fresher_friendly": bars("Most fresher-friendly companies (roles open to 0–2 years)", f"companies with 20+ open jobs · {stamp}",
                                  [(f"{c['company']} ({c['fresher_roles']}/{c['open_roles']})", c["fresher_share"] * 100)
                                   for c in fresh[:12]], fmt=lambda v: f"{v:.0f}%"),
-        "skill_trends": lines("Skill demand trend", "share of skill-tagged open postings that mention each skill, " + stamp, skill_trends(), w=1200, unit="%"),
+        "skill_trends": lines("Skill demand trend", "share of skill-tagged open postings that mention each skill: the 3 leading non-IT and 3 leading IT skills · " + stamp, skill_trends(), w=1200, unit="%"),
         "open_jobs_over_time": lines("Open jobs over time", stamp, [("Open jobs", 1, open_pts), ("Fresher-friendly", 2, fresher_pts)]),
     }
     OUT.mkdir(parents=True, exist_ok=True)

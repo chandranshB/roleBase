@@ -81,7 +81,7 @@ with open(out / "jobs_by_company.csv", "w", encoding="utf-8", newline="") as f:
                             "Collected by https://github.com/chandranshB/roleBase with GitHub Actions; no logins, no private data.",
     "description": (
         "Job postings scraped every few hours from public company career boards, with how long each posting stays open.\n\n"
-        "**Source / provenance.** Public job-board APIs of Greenhouse, Lever, Ashby, SmartRecruiters and Workday, plus Microsoft's careers search API (about 240 "
+        "**Source / provenance.** Public job-board APIs of Greenhouse, Lever, Ashby, SmartRecruiters and Workday, plus Microsoft's careers search API (about 490 "
         "companies, listed in `companies.json`) plus the Arbeitnow job API. No logins and no private data. Postings belong "
         "to their employers. Code and raw history: https://github.com/chandranshB/roleBase\n\n"
         "**Updates.** This dataset is refreshed automatically once a day by GitHub Actions. A job that disappears from its "
