@@ -59,7 +59,7 @@ flowchart LR
 - A failed source never closes its jobs. An empty answer, or one that is suddenly under 40% of the board's previous size, is distrusted too and only believed if it repeats on a third run in a row, so real shutdowns still close their jobs. [`data/health.json`](data/health.json) lists every board with its last good day and bad-run count, and failures show up as warnings on the Actions run.
 - Boards are fetched 16 at a time, biggest first; the two big paged APIs (Workday, Microsoft) fetch their pages in parallel. A full run takes about a minute.
 - Workday employers can post thousands of jobs, so only the newest 150 per employer are kept (`WD_CAP` in `scraper.py`). Their list endpoint has no description, so years, skills and pay are empty for them.
-- Company icons (`build_logos.py`) come from each company's own site, with Google's icon service as a build-time fallback. Where nothing reliable is found the site shows a letter avatar instead of guessing.
+- Company icons (`build_logos.py`) come from each company's own site first, then the [Simple Icons](https://simpleicons.org) library (CC0 files, exact name matches only), then Google's icon service as a build-time fallback. A company with no usable logo gets a generic sector icon from Tabler Icons (chosen by the field most of its jobs are in) rather than a guessed or wrong logo. Brand names and marks belong to their owners and are shown only to identify who posted a job.
 - Jobs that closed more than 90 days ago are dropped from the live files. Their lifetime is kept in `data/archive.csv`, and open and fresher counts per board are logged daily in `data/pulse.csv`. Both are append-only, so git stores only new lines.
 
 ### Why the data stays small in git
@@ -117,4 +117,4 @@ Things that need weeks or months of history first, such as how long postings sta
 
 ## Credits
 
-Icons are from [Tabler Icons](https://tabler.io/icons) (MIT, © Paweł Kuna). The Instrument Sans font is bundled under the SIL Open Font License.
+Interface and sector icons are from [Tabler Icons](https://tabler.io/icons) (MIT, © Paweł Kuna). Brand marks, where used, come from [Simple Icons](https://simpleicons.org) (CC0). The Instrument Sans font is bundled under the SIL Open Font License.

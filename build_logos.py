@@ -20,6 +20,7 @@ CACHE, SITE = Path("logo-cache"), Path("_site")
 MIN, MAX_BYTES, FRESH, RETRY = 48, 120_000, 30 * 86400, 7 * 86400  # px, bytes, seconds before re-fetching a hit / a miss
 HEADERS = {"User-Agent": "roleBase-job-scraper (icon fetch)"}
 BAD = []
+VER = 2  # bump when the lookup recipe gains a source, so earlier misses get another try
 
 
 def kind(b):
@@ -91,6 +92,51 @@ def guess_domain(name):
             return f"{base}{tld}"
 
 
+_SI = {}
+
+
+def simple_icon(name):
+    """Brand mark from the Simple Icons library (CC0 files, vector, brand colour), only on an exact name match. Used when the
+    company's own site gave no usable icon. Brand names stay the property of their owners; this is just to show who posted a job."""
+    if not _SI:
+        try:
+            data = requests.get("https://cdn.jsdelivr.net/npm/simple-icons@latest/data/simple-icons.json", headers=HEADERS, timeout=30).json()
+            for e in data:
+                for t in [e["title"], *(e.get("aliases", {}).get("aka", []))]:
+                    _SI.setdefault(re.sub(r"[^a-z0-9]", "", t.lower()), (e["slug"], e["hex"]))
+        except Exception as e:
+            print(f"  simple-icons: {type(e).__name__}")
+        _SI.setdefault("", None)
+    key = re.sub(r"[^a-z0-9]", "", re.sub(r"\b(inc|llc|ltd|plc|corp|corporation|group|the)\b", "", name.lower()))
+    hit = len(key) >= 4 and _SI.get(key)
+    if not hit:
+        return None
+    try:
+        b = fetch(f"https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/{hit[0]}.svg")
+        if b and kind(b) == "svg":
+            return b.replace(b"<svg ", f'<svg fill="#{hit[1]}" '.encode(), 1)
+    except Exception as e:
+        print(f"  {name}: {type(e).__name__}")
+
+
+# Last resort for companies with no usable logo: a generic sector icon from Tabler Icons (MIT, same set the site already uses),
+# chosen by the field most of the company's jobs are in. No brand involved, so no permission needed.
+SECTOR = dict(engineering="code", data="chart-bar", sales="briefcase", marketing="speakerphone", finance="coin", healthcare="stethoscope",
+              education="school", science="flask", retail="shopping-cart", manufacturing="building-factory-2", logistics="truck",
+              protective="shield", operations="settings", legal="scale", people="users", design="palette", product="box",
+              support="headset", security="lock", other="building")
+
+
+def sector_icon(cat):
+    f = CACHE / f"_sector_{cat}.svg"
+    if not f.exists():
+        r = requests.get(f"https://cdn.jsdelivr.net/npm/@tabler/icons@latest/icons/outline/{SECTOR.get(cat, 'building')}.svg", headers=HEADERS, timeout=30)
+        if not r.ok:
+            return None
+        f.write_bytes(r.content.replace(b"currentColor", b"#6b7280"))
+    return f
+
+
 def find_logo(name, slug, lever_slug, domain):
     """-> (bytes, ext) or None"""
     try:
@@ -107,6 +153,9 @@ def find_logo(name, slug, lever_slug, domain):
                     return b, kind(b)
     except Exception as e:
         print(f"  {name}: {type(e).__name__}")
+    si = simple_icon(name)
+    if si:
+        return si, "svg"
     try:  # many big sites refuse bots: ask Google's icon service for the domain's favicon (build time only, never from the visitor's browser)
         b = domain and fetch(f"https://www.google.com/s2/favicons?domain={domain}&sz=128")
         if b and kind(b) == "png" and max(struct.unpack(">II", b[16:24])) >= 32:  # smaller than MIN, but a real logo beats a letter
@@ -136,13 +185,13 @@ def main():
     def one(t):
         name, slug, lever, domain = t
         e = idx.get(name)
-        if e and now - e["t"] < (FRESH if e["file"] else RETRY):
+        if e and now - e["t"] < (FRESH if e["file"] else RETRY) and (e["file"] or e.get("v") == VER):  # misses from an older lookup recipe are retried
             return name, e
         domain = domain or (e or {}).get("domain") or guess_domain(name) or (re.sub(r"[^a-z0-9]", "", name.lower()) + ".com" if name in seen else None)  # curated names: plain .com is a safe last guess
         got = find_logo(name, slug, lever, domain) or (time.sleep(2), find_logo(name, slug, lever, domain))[1]  # one retry for flaky networks
         if got:
             (CACHE / f"{slug}.{got[1]}").write_bytes(got[0])
-        return name, {"file": f"{slug}.{got[1]}" if got else None, "t": now, **({"domain": domain} if domain else {})}
+        return name, {"file": f"{slug}.{got[1]}" if got else None, "t": now, "v": VER, **({"domain": domain} if domain else {})}
 
     with ThreadPoolExecutor(16) as ex:
         idx.update(dict(ex.map(one, todo)))
@@ -156,8 +205,27 @@ def main():
         if f and (CACHE / f).exists():
             shutil.copy(CACHE / f, out / f)
             mapping[name] = f"logos/{f}"
+    cats = {}  # company -> {field: open jobs}
+    for j in load().values():
+        if j["closed_at"] is None:
+            c = cats.setdefault(j["company"], {})
+            c[j["category"]] = c.get(j["category"], 0) + 1
+    real = len(mapping)
+    for name, *_ in todo:
+        if name in mapping or name not in cats:
+            continue
+        c = cats[name]
+        top = max((k for k in c if k != "other"), key=c.get, default="other")  # "other" only if nothing better
+        try:
+            f = sector_icon(top)
+        except Exception as e:
+            print(f"  sector icon {top}: {type(e).__name__}")
+            f = None
+        if f:
+            shutil.copy(f, out / f.name)
+            mapping[name] = f"logos/{f.name}"
     (SITE / "logos.json").write_text(json.dumps(mapping, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
-    print(f"logos: {len(mapping)} of {len(todo)} companies; letter avatar for the other {len(todo) - len(mapping)}")
+    print(f"logos: {real} real logos + {len(mapping) - real} sector icons of {len(todo)} companies; letter avatar for the other {len(todo) - len(mapping)}")
     if BAD:
         print("icon service refusals:", *BAD, sep="\n  ")
 
