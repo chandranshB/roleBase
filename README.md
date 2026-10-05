@@ -1,26 +1,50 @@
 <p><img src="docs/logo.svg" alt="RoleBase" height="48"></p>
 
-An open job database that updates itself. A scraper reads the public job-board APIs of about 490 company career pages (tech, but also healthcare, retail, finance, pharma, energy, media, nonprofits and more) plus a few open feeds, keeps every posting in git, works out what each one asks for (level, field, years of experience, skills, pay), tracks when postings disappear, and publishes the result as a searchable website and a Kaggle dataset. Everything runs on GitHub Actions, and the charts below are drawn by the workflow itself.
+# RoleBase: open job search and job-market data for every field
+
+RoleBase is a free, open job board and job-market dataset that updates itself. It collects around 55,000 open jobs straight from about 490 employers' own career pages, in nursing, retail, finance, education, manufacturing, logistics, engineering and many other fields, and lets you filter for entry-level, remote and salary-listed roles. Postings are kept in git, tagged with level, field, skills and pay, and tracked until they disappear, so you can also see which listings look like ghost jobs. The result is published as a searchable website and a Kaggle dataset, and everything runs on GitHub Actions.
 
 **[Search the jobs](https://chandranshb.github.io/roleBase/)** · **[Kaggle dataset](https://www.kaggle.com/datasets/chandranshbinjola/job-listings)** · **[Roadmap](../../issues)**
+
+## Who it's for
+
+- **People looking for work**, including students and new graduates. Turn on "fresher-friendly" to see roles that ask for two years of experience or less, or browse the companies that hire the most of them.
+- **Career changers** who want to see what a field actually asks for: level, years of experience, skills and, where employers state it, pay.
+- **Researchers, analysts and journalists** who need a job market dataset with history: when postings appear, how long they stay open and which companies repost the same role.
+
+## Find jobs by field
+
+The site is a plain search box that understands everyday phrases. A few starting points:
+
+| Looking for | Try |
+|---|---|
+| Healthcare and care work | [nursing jobs](https://chandranshb.github.io/roleBase/#q=nurse&all=1) · [pharmacy and clinical roles](https://chandranshb.github.io/roleBase/#q=pharmacist&all=1) |
+| Retail, food and hospitality | [store and restaurant jobs](https://chandranshb.github.io/roleBase/#q=retail&all=1) · [part-time work](https://chandranshb.github.io/roleBase/#q=part-time&all=1) |
+| Banking, finance and insurance | [finance jobs](https://chandranshb.github.io/roleBase/#q=finance&all=1) · [accounting roles](https://chandranshb.github.io/roleBase/#q=accountant&all=1) |
+| Manufacturing, trades and logistics | [warehouse jobs](https://chandranshb.github.io/roleBase/#q=warehouse&all=1) · [production roles](https://chandranshb.github.io/roleBase/#q=production&all=1) |
+| Sales, marketing and support | [sales jobs](https://chandranshb.github.io/roleBase/#q=sales&all=1) · [customer support](https://chandranshb.github.io/roleBase/#q=customer%20support&all=1) |
+| Software, data and design | [engineering jobs](https://chandranshb.github.io/roleBase/#q=engineer&all=1) · [data roles](https://chandranshb.github.io/roleBase/#q=data&all=1) |
+| Work from anywhere | [remote jobs](https://chandranshb.github.io/roleBase/#q=remote&all=1) · [internships](https://chandranshb.github.io/roleBase/#q=internship&all=1) |
+
+Queries can also include a place, a pay floor or an exclusion, for example `remote jobs for freshers in berlin`, `$100k+` or `-sales`.
 
 ## What's in it right now
 
 <table>
   <tr>
-    <td><img src="docs/charts/jobs_by_level.svg" alt="Open jobs by level"></td>
-    <td><img src="docs/charts/jobs_by_field.svg" alt="Open jobs by field"></td>
+    <td><img src="docs/charts/jobs_by_level.svg" alt="Open jobs by seniority level, from internships to management"></td>
+    <td><img src="docs/charts/jobs_by_field.svg" alt="Number of open jobs by field, from healthcare and retail to engineering"></td>
   </tr>
   <tr>
-    <td><img src="docs/charts/top_skills.svg" alt="Most requested skills"></td>
-    <td><img src="docs/charts/top_companies.svg" alt="Companies with the most open jobs"></td>
+    <td><img src="docs/charts/top_skills.svg" alt="Most requested skills in job postings, technical and non-technical"></td>
+    <td><img src="docs/charts/top_companies.svg" alt="Employers with the most open job listings"></td>
   </tr>
   <tr>
-    <td><img src="docs/charts/fresher_friendly.svg" alt="Most fresher-friendly companies"></td>
-    <td><img src="docs/charts/open_jobs_over_time.svg" alt="Open jobs over time"></td>
+    <td><img src="docs/charts/fresher_friendly.svg" alt="Companies with the most entry-level, fresher-friendly roles"></td>
+    <td><img src="docs/charts/open_jobs_over_time.svg" alt="Open jobs and fresher-friendly jobs over time"></td>
   </tr>
   <tr>
-    <td colspan="2"><img src="docs/charts/skill_trends.svg" alt="Skill demand trend" width="100%"></td>
+    <td colspan="2"><img src="docs/charts/skill_trends.svg" alt="Skill demand trend over time: share of postings that mention each skill" width="100%"></td>
   </tr>
 </table>
 
@@ -110,6 +134,20 @@ python build_logos.py      # fetch company icons into _site/logos (slow the firs
 - Only public job-board APIs and feeds are used (Microsoft's careers search API is allowed by its robots.txt). Sites that forbid scraping (LinkedIn, Indeed, Naukri and similar) are left out on purpose.
 - Every listing belongs to its employer and links back to the original posting. Remotive and RemoteOK entries link to their own pages as their terms ask, and are left out of the Kaggle dataset.
 - The scraper identifies itself with a user agent and backs off on rate limits.
+
+## Questions people ask
+
+**How do I find entry-level jobs when I have no experience?**
+Switch on "Fresher-friendly" in the search. It keeps roles that state two years of experience or less, and intern or junior roles that state nothing. A "junior" job that asks for three or more years is not counted, which is the most common trap in entry-level listings. The Companies tab ranks employers by how many of their open roles qualify.
+
+**What is a ghost job, and how are they flagged?**
+A ghost job is a listing that is not really being hired for, such as an evergreen "talent pool" post or a role open for over a year. RoleBase adds points for age, talent-pool wording, recruiting agencies, many identical postings and reposts, and shows the reason. It is a guess, not proof.
+
+**Where do the listings come from?**
+Directly from employers' own application systems (Greenhouse, Lever, Ashby, SmartRecruiters, Workday and a few company career sites) and from a few open feeds. Every job links back to the original posting, so you apply on the employer's page.
+
+**Is there a free job postings dataset I can use for analysis?**
+Yes. The [Kaggle dataset](https://www.kaggle.com/datasets/chandranshbinjola/job-listings) has the same data as flat CSV, with the apply link, level, field, skills, pay where stated and open or closed dates.
 
 ## Roadmap
 

@@ -39,7 +39,7 @@ LEVELS = [  # first match wins
     ("senior", r"\bsenior\b|\bsr\b"),
 ]
 CATEGORIES = [  # first match wins; "sales engineer" must hit sales before engineering, etc.
-    ("sales", r"\bsales\b|account (executive|manager)|business development|\bbdr\b|\bsdr\b|solutions? (engineer|architect|consultant)|pre-?sales|partnership|revenue|go-to-market"),
+    ("sales", r"\bsales\b|account (executive|manager)|business development|\bbdr\b|\bsdr\b|solutions? (engineer|architect|consultant)|pre-?sales|partnership|revenue|go-to-market|account (partner|representative|associate|specialist|director)"),
     ("design", r"design(?! engineer)|\bux\b|\bui\b|creative"),
     ("data", r"data (scien|analy|engineer)|machine learning|\bml\b|\bai\b|research scientist|applied scientist|analytics|business intelligence|\bbi\b"),
     ("product", r"product (manager|owner|lead)|program manager|\bpm\b|head of product"),
@@ -48,16 +48,19 @@ CATEGORIES = [  # first match wins; "sales engineer" must hit sales before engin
     ("engineering", r"engineer|developer|software|devops|\bsre\b|site reliability|back-?end|front-?end|full.?stack|mobile|\bios\b|android|platform|infrastructure|architect|programmer|\bqa\b|quality assurance|sdet|firmware|embedded|technical"),
     ("marketing", r"marketing|growth|\bseo\b|content|communications|brand|social media|community|copywrit"),
     ("support", r"support|customer (success|service|experience)|technical account|help ?desk|implementation|onboarding"),
-    ("finance", r"financ|account(ing|ant)|payroll|\btax\b|treasury|audit|controller|fp&a|procurement|banker|teller|underwrit|\bloan|insuranc|adjuster|actuar|fraud|kredit|steuer|\bbank"),
+    ("finance", r"financ|account(ing|ant)|payroll|\btax\b|treasury|audit|controller|fp&a|procurement|banker|teller|underwrit|\bloan|insuranc|adjuster|actuar|fraud|kredit|steuer|\bbank|risk|claims|credit|invest|portfolio|wealth"),
     ("legal", r"legal|counsel|attorney|compliance|paralegal|privacy"),
     ("people", r"recruit|talent|\bpeople\b|\bhr\b|human resources|workplace"),
     ("healthcare", r"nurs(e|ing)|physician|clinic(al|ian)|pharmac|medical|therapist|patient|dental|dentist|surgeon|radiolog|caregiver|health ?care|\brn\b|paramedic|phlebotom|\bcna\b|veterinar|psychiat|psycholog|mental health|neurolog|hospital"),
-    ("education", r"teacher|professor|instructor|lecturer|tutor|faculty|curriculum|academic|educator|school"),
+    ("education", r"teacher|professor|instructor|lecturer|tutor|faculty|curriculum|academic|educator|school|teaching"),
     ("science", r"scientist|laborator|chemist|biolog|\blab\b|research (associate|assistant|fellow)|geolog"),
-    ("retail", r"\bstore\b|retail|cashier|barista|\bcook\b|\bchef\b|kitchen|bartender|hotel|guest (service|experience)|concierge|housekeep|front desk|merchandis|stylist|restaurant|\bcrew\b|\bshift\b|food service|catering|cleaner|reinigung|janitor|arrumadeira|verk.ufer|cafeteria|barber|salon|k.chenhilfe|k.che\b"),
-    ("manufacturing", r"manufactur|production (operator|associate|supervisor|technician|worker)|assembl|machinist|weld|electrician|plumb|forklift|fabricat|\bplant\b|\bmill\b|maintenance|operator|operat.r|monteur|fertigung|toolmaker|produktion|produktie|construction|quality (inspector|control)"),
+    ("retail", r"\bstore\b|retail|cashier|barista|\bcook\b|\bchef\b|kitchen|bartender|hotel|guest (service|experience)|concierge|housekeep|front desk|merchandis|stylist|restaurant|\bcrew\b|\bshift\b|food service|catering|cleaner|reinigung|janitor|arrumadeira|verk.ufer|cafeteria|barber|salon|k.chenhilfe|k.che\b|einzelhandel|kaufmann|gar.om|vendedor|ayudante|hostess|waiter|waitress|meat|grocery|stocker"),
+    ("manufacturing", r"manufactur|production (operator|associate|supervisor|technician|worker)|assembl|machinist|weld|electrician|plumb|forklift|fabricat|\bplant\b|\bmill\b|maintenance|operator|operat.r|monteur|fertigung|toolmaker|produktion|produktie|construction|quality|inspector|\bnde\b|operario|op.rateur|lead hand"),
     ("logistics", r"logist|warehouse|material handler|\bdriver\b|\blkw\b|fahrer|courier|picker|\bpacker\b|shipping|dispatch|freight"),
-    ("operations", r"operations|\bops\b|supply chain|logistics|business (analyst|operations)|chief of staff|strategy|facilit|admin|office|warehouse|driver|technician|mechanic"),
+    ("administrative", r"assistant|receptionist|secretar|\bclerk|recepcion|data entry|coordinator|administrat"),
+    ("social", r"social work|case manag|caseworker|counsel+or|youth|outreach|advocate|community (health|support)"),
+    ("consulting", r"consultant|consulting|strategist|advisory|engagement manager|business partner"),
+    ("operations", r"operations|\bops\b|supply|logistics|business (analyst|operations)|chief of staff|strategy|facilit|office|warehouse|driver|technician|mechanic|buyer|sourcing|category manager|planner|planning|inventory|distribution|materials|supervisor"),
 ]
 SKILLS = ("python java javascript typescript rust c++ c# ruby php swift kotlin scala sql nosql react vue angular node.js django "
           "flask spring-boot aws azure gcp kubernetes docker terraform postgres mysql mongodb redis kafka spark snowflake "
