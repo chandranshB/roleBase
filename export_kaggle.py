@@ -14,6 +14,7 @@ COLUMNS = {  # name -> (type, description); also the CSV column order
     "source": ("string", "Where the job was read from: greenhouse, lever, ashby, smartrecruiters, workday, microsoft or arbeitnow."),
     "company": ("string", "Employer name."),
     "title": ("string", "Job title as posted."),
+    "url": ("string", "Apply link: opens the posting on the employer's own careers page or job board, where you can apply."),
     "team": ("string", "Department or team if the posting gives one."),
     "category": ("string", "Field inferred from the title and team: engineering, data, design, product, sales, marketing, support, finance, legal, people, operations, security or other."),
     "level": ("string", "Seniority inferred from the title (and years of experience): intern, junior, mid, senior, lead, staff+ or manager+."),
@@ -31,7 +32,6 @@ COLUMNS = {  # name -> (type, description); also the CSV column order
     "ghost_score": ("numeric", "Ghost-job heuristic for open jobs: 0 = nothing suspicious, 2+ = possibly a ghost job, 3+ = likely. A guess, not proof."),
     "ghost_reasons": ("string", "Why ghost_score is above zero, e.g. open for over a year, talent-pool wording, agency, reposted."),
     "fresher_friendly": ("boolean", "True if open to 0-2 years of experience: states <= 2 years, or an intern/junior role that states nothing. A 'junior' role asking 3+ years is False."),
-    "url": ("string", "Apply link."),
 }
 COMPANY_COLUMNS = {
     "company": ("string", "Employer name (companies with 5+ open jobs only)."),
