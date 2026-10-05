@@ -190,7 +190,7 @@ Binjola, C. ({today[:4]}). RoleBase Job Listings: Open Jobs in Every Field. Kagg
     "subtitle": SUBTITLE,
     "id": f"{os.environ.get('KAGGLE_USERNAME', 'user')}/job-listings",
     "licenses": [{"name": "other"}],
-    "keywords": ["jobs and career", "employment", "business", "internet", "healthcare", "finance", "education", "economics"],
+    "keywords": ["jobs and career", "employment", "business", "healthcare", "finance"],  # Kaggle allows only a few tags: more fails the whole version ("max category limit")
     "expectedUpdateFrequency": "daily",
     "userSpecifiedSources": SOURCES,
     "description": DESCRIPTION,
