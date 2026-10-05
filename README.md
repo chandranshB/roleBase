@@ -112,7 +112,7 @@ flowchart LR
 | `posted`, `first_seen`, `closed_at` | Dates; empty `closed_at` means still open |
 | `reposts` | Earlier closed jobs with the same title on the same board |
 
-The Kaggle dataset has the same data as flat CSV, plus `jobs_by_company.csv` (open roles and fresher share per company). To keep `jobs.csv` lean, `url` (the apply link, unique per row) is the key and there is no `id` column, and identical postings (same company, title, team and location) are merged into one row with an `openings` count.
+The Kaggle dataset has the same data as flat CSV, plus `jobs_by_company.csv` (open roles and fresher share per company), `open_jobs_daily.csv` and `skill_demand_daily.csv` (two time series that grow daily), and a public [starter notebook](https://www.kaggle.com/code/chandranshbinjola/job-listings-explorer). To keep `jobs.csv` lean, `url` (the apply link, unique per row) is the key and there is no `id` column, and identical postings (same company, title, team and location) are merged into one row with an `openings` count.
 
 ## Run it yourself
 

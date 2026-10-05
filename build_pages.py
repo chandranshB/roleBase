@@ -5,6 +5,7 @@ as an almost empty page; these pages put real, useful content in plain HTML. Run
 Each page has a unique title and description, real numbers computed from the data, links to the original postings (nofollow),
 and links to its siblings. No JobPosting markup: we don't host the postings, so we don't claim to."""
 import datetime as dt
+import shutil
 import html
 import json
 import re
@@ -49,7 +50,7 @@ def page(path, title, desc, body, crumbs):
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{esc(title)}</title><meta name="description" content="{esc(desc)}"><link rel="canonical" href="{esc(url)}">
 <meta property="og:type" content="website"><meta property="og:title" content="{esc(title)}"><meta property="og:description" content="{esc(desc)}">
-<meta property="og:url" content="{esc(url)}"><meta property="og:site_name" content="RoleBase"><meta name="twitter:card" content="summary">
+<meta property="og:url" content="{esc(url)}"><meta property="og:site_name" content="RoleBase"><meta property="og:image" content="{BASE}/og.png"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="{BASE}/og.png">
 <link rel="icon" href="{BASE}/favicon.svg" type="image/svg+xml"><style>{CSS}</style>
 <script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script></head>
 <body><main><nav class="bc" aria-label="Breadcrumb">{nav}</nav>{body}
@@ -151,11 +152,13 @@ def main():
         url = f"{BASE}/{path}/"
         crumbs = [home] + ([("Jobs by field", f"{BASE}/fields/")] if cat else []) + [(h1, url)]
         employers = "".join(f'<li><a href="{BASE}/companies/{cmap[c]}/">{esc(c)}</a> <small>({n:,})</small></li>' for c, n in emp.most_common(12) if c in cmap)
+        others = "".join(f'<li><a href="{BASE}/{p2}/">{esc(h2)}</a></li>' for p2, h2, *_ in pages if p2 != path)
         q = {"entry-level-jobs": "fresher", "remote-jobs": "remote", "internships": "internship"}.get(path, label.split(" and ")[0].split(",")[0])
         body = (f"<h1>{esc(h1)}: {len(js):,} open roles</h1><p class='lead'>{esc(text)} {esc(intro)}</p>"
                 f'<a class="cta" href="{BASE}/#q={esc(q)}&amp;all=1">Search and filter these in the app</a>'
                 f"<h2>Latest {esc(label)} listings</h2>{listing(js, cmap)}"
-                + (f"<h2>Employers hiring most</h2><ul class='cols'>{employers}</ul>" if employers else ""))
+                + (f"<h2>Employers hiring most</h2><ul class='cols'>{employers}</ul>" if employers else "")
+                + f"<h2>Other ways to browse</h2><ul class='cols'>{others}</ul>")
         page(path, f"{h1}: {len(js):,} open roles | RoleBase", short, body, crumbs)
         urls.append(url)
 
@@ -177,9 +180,10 @@ def main():
         name, s = c["company"], cmap[c["company"]]
         js = [j for j in jobs if j["company"] == name]
         text, _, short = stats_text(js, "job", name)
-        fields = Counter(FIELDS.get(j["category"], "Other") for j in js)
+        cats = Counter(j["category"] for j in js)
+        byf = join(('<a href="%s/fields/%s/">%s</a> (%d)' % (BASE, c, esc(FIELDS[c].lower()), v)) if c in FIELDS else "other (%d)" % v for c, v in cats.most_common(4))
         logo = f'<img class="lg" src="{BASE}/{logos[name].split("#")[0]}" alt="{esc(name)} logo" width="40" height="40">' if name in logos else ""
-        body = (f"<h1>{logo}Jobs at {esc(name)}</h1><p class='lead'>{esc(text)} By field: {esc(join(f'{k.lower()} ({v})' for k, v in fields.most_common(4)))}.</p>"
+        body = (f"<h1>{logo}Jobs at {esc(name)}</h1><p class='lead'>{esc(text)} By field: {byf}.</p>"
                 f'<a class="cta" href="{BASE}/#q=%22{esc(urllib.parse.quote(name))}%22&amp;all=1">Search {esc(name)} jobs in the app</a>'
                 f"<h2>Latest openings</h2>{listing(js, {}, per_company=40, limit=40)}")
         url = f"{BASE}/companies/{s}/"
@@ -190,6 +194,8 @@ def main():
     sm = "".join(f"<url><loc>{esc(u)}</loc><lastmod>{TODAY}</lastmod></url>" for u in urls)
     (SITE / "sitemap.xml").write_text(f'<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">{sm}</urlset>', encoding="utf-8")
     (SITE / "robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {BASE}/sitemap.xml\n", encoding="utf-8")
+    if Path("kaggle_assets/dataset-cover-image.png").exists():
+        shutil.copy("kaggle_assets/dataset-cover-image.png", SITE / "og.png")  # social preview image
     print(f"pages: {len(urls)} URLs in sitemap ({len(pages)} collections, {len(cs)} companies)")
 
 
