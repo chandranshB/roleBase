@@ -233,7 +233,7 @@
 {"b": "workday:broadridge.wd5.myworkdayjobs.com/Careers", "last_ok": "2026-10-06", "strikes": 0}
 {"b": "workday:brunswick.wd1.myworkdayjobs.com/search", "last_ok": "2026-10-06", "strikes": 0}
 {"b": "workday:cabotcorp.wd12.myworkdayjobs.com/Careers", "last_ok": "2026-10-06", "strikes": 0}
-{"b": "workday:caci.wd1.myworkdayjobs.com/external", "last_ok": "2026-10-06", "strikes": 0}
+{"b": "workday:caci.wd1.myworkdayjobs.com/external", "last_ok": "2026-10-06", "strikes": 0, "why": "error: HTTPSConnectionPool(host='caci.wd1.myworkdayjobs.com', port=443): Read timed out."}
 {"b": "workday:cadence.wd1.myworkdayjobs.com/external_careers", "last_ok": "2026-10-06", "strikes": 0}
 {"b": "workday:campbellsoup.wd5.myworkdayjobs.com/externalcareers_globalsite", "last_ok": "2026-10-06", "strikes": 0}
 {"b": "workday:canadiantirecorporation.wd3.myworkdayjobs.com/Enterprise_External_Careers_Site", "last_ok": "2026-10-06", "strikes": 0}
@@ -417,7 +417,7 @@
 {"b": "workday:servicetitan.wd1.myworkdayjobs.com/ServiceTitan", "last_ok": "2026-10-06", "strikes": 0}
 {"b": "workday:shutterstock.wd1.myworkdayjobs.com/ShutterstockCareers", "last_ok": "2026-10-06", "strikes": 0}
 {"b": "workday:smithnephew.wd5.myworkdayjobs.com/external", "last_ok": "2026-10-06", "strikes": 0}
-{"b": "workday:snapchat.wd1.myworkdayjobs.com/snap", "last_ok": "2026-10-05", "strikes": 0, "why": "error: 'title'"}
+{"b": "workday:snapchat.wd1.myworkdayjobs.com/snap", "last_ok": "2026-10-06", "strikes": 0}
 {"b": "workday:snc.wd1.myworkdayjobs.com/SNC_External_Career_Site", "last_ok": "2026-10-06", "strikes": 0}
 {"b": "workday:sonos.wd1.myworkdayjobs.com/Sonos", "last_ok": "2026-10-06", "strikes": 0}
 {"b": "workday:sonyglobal.wd1.myworkdayjobs.com/SonyGlobalCareers", "last_ok": "2026-10-06", "strikes": 0}
