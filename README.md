@@ -2,7 +2,7 @@
 
 # RoleBase: open job search and job-market data for every field
 
-RoleBase is a free, open job board and job-market dataset that updates itself. It collects around 55,000 open jobs straight from about 490 employers' own career pages, in nursing, retail, finance, education, manufacturing, logistics, engineering and many other fields, and lets you filter for entry-level, remote and salary-listed roles. Postings are kept in git, tagged with level, field, skills and pay, and tracked until they disappear, so you can also see which listings look like ghost jobs. The result is published as a searchable website and a Kaggle dataset, and everything runs on GitHub Actions.
+RoleBase is a free, open job board and job-market dataset that updates itself. It collects around 55,000 open jobs, 52,000 of them straight from about 480 employers' own career pages and the rest from open job feeds, in nursing, retail, finance, education, manufacturing, logistics, engineering and many other fields, and lets you filter for entry-level, remote and salary-listed roles. Postings are kept in git, tagged with level, field, skills and pay, and tracked until they disappear, so you can also see which listings look like ghost jobs. The result is published as a searchable website and a Kaggle dataset, and everything runs on GitHub Actions.
 
 **[Search the jobs](https://chandranshb.github.io/roleBase/)** · **[Kaggle dataset](https://www.kaggle.com/datasets/chandranshbinjola/job-listings)** · **[Roadmap](../../issues)**
 
@@ -70,19 +70,20 @@ All of this is read from posting text with simple rules, so expect mistakes. Lev
 
 ```mermaid
 flowchart LR
-  A["Public job-board APIs<br/>Greenhouse, Lever, Ashby, SmartRecruiters,<br/>Workday, Microsoft careers + feeds"] --> B[scraper.py]
+  A["Public job-board APIs<br/>Greenhouse, Lever, Ashby, SmartRecruiters,<br/>Workday, Eightfold, Amazon, Microsoft careers + feeds"] --> B[scraper.py]
   B --> C[("data/jobs/*.jsonl<br/>data/pulse.csv<br/>data/archive.csv")]
   C -->|commit| G[(git history)]
   C --> D[build_site.py + build_logos.py] --> E[GitHub Pages site]
   C --> F[export_kaggle.py] --> H[Kaggle dataset]
   C --> I[make_charts.py] --> J[docs/charts/*.svg]
+  C --> K[build_pages.py] --> L[field, company and entry-level pages + sitemap]
 ```
 
 - [`scrape.yml`](.github/workflows/scrape.yml) runs every 6 hours: tests, scrape, charts, commit the changes, deploy the site.
-- [`kaggle.yml`](.github/workflows/kaggle.yml) runs daily: builds `jobs.csv` and `jobs_by_company.csv` and publishes a new dataset version.
+- [`kaggle.yml`](.github/workflows/kaggle.yml) runs daily: builds the four dataset CSVs, publishes a new version, waits until Kaggle has built it, then syncs the description, tags, column docs and the public starter notebook.
 - A failed source never closes its jobs. An empty answer, or one that is suddenly under 40% of the board's previous size, is distrusted too and only believed if it repeats on a third run in a row, so real shutdowns still close their jobs. [`data/health.json`](data/health.json) lists every board with its last good day and bad-run count, and failures show up as warnings on the Actions run.
 - Boards are fetched 16 at a time, biggest first; the two big paged APIs (Workday, Microsoft) fetch their pages in parallel. A full run takes about a minute.
-- Workday employers can post thousands of jobs, so only the newest 150 per employer are kept (`WD_CAP` in `scraper.py`). Their list endpoint has no description, so years, skills and pay are empty for them.
+- Workday employers can post thousands of jobs, so only the newest 150 per employer are kept (`WD_CAP` in `scraper.py`); Amazon and Eightfold-powered career sites (Starbucks and others) keep the newest 300 (`EF_CAP`). Their list endpoint has no description, so years, skills and pay are empty for them.
 - Company icons (`build_logos.py`) come from each company's own site first, then the [Simple Icons](https://simpleicons.org) library (CC0 files, exact name matches only), then Google's icon service as a build-time fallback. A company with no usable logo gets a generic sector icon from Tabler Icons (chosen by the field most of its jobs are in) rather than a guessed or wrong logo. Brand names and marks belong to their owners and are shown only to identify who posted a job.
 - Jobs that closed more than 90 days ago are dropped from the live files. Their lifetime is kept in `data/archive.csv`, and open and fresher counts per board are logged daily in `data/pulse.csv`. Both are append-only, so git stores only new lines.
 
@@ -94,9 +95,12 @@ flowchart LR
 
 ## On the website
 
-- **Best for you** ranks search results by match, freshness and completeness, plus what you have saved, applied to or hidden.
-- **Companies** ranks employers by fresher-friendly roles (smoothed so tiny boards don't win on 5 of 5), how many roles, whether years are actually stated, junior roles that ask for 3+ years, ghost-job signals, and how well their jobs match what you save.
-- **Preferences** (fields, experience, job type, remote, pay, optional tech skills) and everything learned from your clicks stay in your browser's storage. Nothing is sent anywhere.
+- **Best for you** ranks search results by match, freshness and completeness, plus what you have saved, applied to or hidden. A sort menu also offers newest and highest pay.
+- **Companies** ranks employers by fresher-friendly roles (smoothed so tiny boards don't win on 5 of 5), how many roles, whether years are actually stated, junior roles that ask for 3+ years, ghost-job signals, and how well their jobs match what you save. Sort by best match, most fresher-friendly, most roles, hiring most this week, pay transparency or fewest ghost jobs, and filter with quick chips.
+- **Saved** keeps both jobs and companies you starred, on your device.
+- **Pay in your currency**: pick a display currency in preferences and amounts are converted with the day's exchange rates (marked with `~` because they are estimates). Without a choice, pay shows as posted.
+- **Crawlable pages**: [`build_pages.py`](build_pages.py) writes plain HTML pages per field and company, plus entry-level, remote and internship pages, a sitemap and structured data, so search engines can index what the single-page app shows.
+- **Preferences** (display currency, fields, experience, job type, remote, pay, optional tech skills) and everything learned from your clicks stay in your browser's storage. Nothing is sent anywhere.
 
 ## Data
 
@@ -157,3 +161,5 @@ Things that need weeks or months of history first, such as how long postings sta
 ## Credits
 
 Interface and sector icons are from [Tabler Icons](https://tabler.io/icons) (MIT, © Paweł Kuna). Brand marks, where used, come from [Simple Icons](https://simpleicons.org) (CC0). The Instrument Sans font is bundled under the SIL Open Font License.
+
+Exchange rates come from the European Central Bank via [Frankfurter](https://frankfurter.dev), with [Exchange Rate API](https://www.exchangerate-api.com) filling currencies the ECB does not publish. They are fetched when the site is built.

@@ -9,6 +9,7 @@ jobs.json rows are arrays, newest first:
 import datetime as dt
 import json
 import shutil
+import urllib.request
 from pathlib import Path
 
 from scraper import company_stats, fresher_ok, ghost_flags, load
@@ -29,6 +30,24 @@ def row(j):
 
 
 rows = sorted(map(row, jobs), key=lambda r: r[6], reverse=True)
+def fetch_rates():
+    """Free, no key: ECB rates from frankfurter.dev, with open.er-api.com filling any code the ECB does not publish (e.g. KHR).
+    Fetched at build time, so the page never calls a rates API itself and the site still works if both are down."""
+    rates, date = {"USD": 1.0}, ""
+    for url, pick in (("https://api.frankfurter.dev/v1/latest?base=USD", lambda d: (d["rates"], d["date"])),
+                      ("https://open.er-api.com/v6/latest/USD", lambda d: (d["rates"], ""))):
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": "roleBase (github.com/chandranshB/roleBase)"})
+            got, day = pick(json.load(urllib.request.urlopen(req, timeout=15)))
+        except Exception as e:
+            print("rates:", url, "failed:", e)
+            continue
+        for c, v in got.items():
+            rates.setdefault(c, v)
+        date = date or day
+    return (rates, date or dt.date.today().isoformat()) if len(rates) > 1 else None
+
+
 out = Path("_site")
 out.mkdir(exist_ok=True)
 shutil.copy("web/index.html", out / "index.html")  # the search and feed front end
@@ -41,3 +60,7 @@ companies = [[c["company"], c["open_roles"], c["fresher_roles"], c["fresher_shar
              for c in company_stats(jobs)]  # companies.json rows: name, open roles, fresher roles, share, junior asking 3+ yrs, years-stated share
 (out / "companies.json").write_text(json.dumps(companies, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
 print(f"{len(rows)} open jobs -> _site/jobs.json, {len(companies)} companies -> _site/companies.json")
+rates = fetch_rates()
+if rates:
+    (out / "rates.json").write_text(json.dumps({"date": rates[1], "rates": rates[0]}, separators=(",", ":")), encoding="utf-8")
+    print(f"{len(rates[0])} exchange rates ({rates[1]}) -> _site/rates.json")

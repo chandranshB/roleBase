@@ -24,7 +24,7 @@
   --page:#f4f5f7;--surface:#fdfdfe;--ink:#14161a;--sub:#566070;--faint:#8590a0;
   --line:rgba(20,22,26,.09);--line2:rgba(20,22,26,.17);--wash:rgba(20,22,26,.055);
   --acc:#1f5eff;--on-acc:#fff;--acc-t:rgba(31,94,255,.09);--acc-t2:rgba(31,94,255,.18);
-  --thumb:var(--surface);--warn:#8f5300;--warn-t:#fff1da;
+  --sheet:var(--surface);--thumb:var(--surface);--warn:#8f5300;--warn-t:#fff1da;
   --shadow1:0 1px 2px rgba(20,22,26,.04),0 10px 28px -14px rgba(20,22,26,.14);
   --shadow2:0 2px 4px rgba(20,22,26,.05),0 22px 44px -18px rgba(20,22,26,.24);
   --r-card:16px;--r-row:10px;--r-badge:8px;
@@ -35,7 +35,7 @@
   --page:#0d0f12;--surface:#15181c;--ink:#eceef2;--sub:#a0a8b5;--faint:#707988;
   --line:rgba(255,255,255,.08);--line2:rgba(255,255,255,.17);--wash:rgba(255,255,255,.07);
   --acc:#86a9ff;--on-acc:#0b1020;--acc-t:rgba(134,169,255,.12);--acc-t2:rgba(134,169,255,.24);
-  --thumb:#2b3038;--warn:#f1c068;--warn-t:rgba(241,192,104,.12);
+  --sheet:#1f242b;--thumb:#2b3038;--warn:#f1c068;--warn-t:rgba(241,192,104,.12);
   --shadow1:0 1px 2px rgba(0,0,0,.3),0 10px 28px -14px rgba(0,0,0,.6);
   --shadow2:0 2px 4px rgba(0,0,0,.35),0 22px 44px -18px rgba(0,0,0,.7)}}
 *{box-sizing:border-box}
@@ -46,6 +46,7 @@ body{margin:0;background:var(--page);color:var(--ink);font:400 15px/24px var(--f
 @media(prefers-color-scheme:dark){:root{--dot:rgba(255,255,255,.26)}}
 #bg{position:fixed;inset:0;z-index:-1;pointer-events:none;overflow:hidden}
 #bg::before{content:"";position:absolute;inset:0;background-image:radial-gradient(circle at 1px 1px,var(--dot) 1px,transparent 0);background-size:20px 20px;-webkit-mask-image:linear-gradient(to bottom,rgba(0,0,0,.5),transparent 18%),linear-gradient(to top,rgba(0,0,0,.6),transparent 18%),linear-gradient(to right,rgba(0,0,0,.6),transparent 12%),linear-gradient(to left,rgba(0,0,0,.45),transparent 12%),radial-gradient(ellipse 40% 38% at 0% 0%,#000,transparent),radial-gradient(ellipse 34% 32% at 100% 100%,rgba(0,0,0,.8),transparent),radial-gradient(ellipse 24% 26% at 100% 6%,rgba(0,0,0,.45),transparent),radial-gradient(ellipse 22% 24% at 3% 94%,rgba(0,0,0,.4),transparent);mask-image:linear-gradient(to bottom,rgba(0,0,0,.5),transparent 18%),linear-gradient(to top,rgba(0,0,0,.6),transparent 18%),linear-gradient(to right,rgba(0,0,0,.6),transparent 12%),linear-gradient(to left,rgba(0,0,0,.45),transparent 12%),radial-gradient(ellipse 40% 38% at 0% 0%,#000,transparent),radial-gradient(ellipse 34% 32% at 100% 100%,rgba(0,0,0,.8),transparent),radial-gradient(ellipse 24% 26% at 100% 6%,rgba(0,0,0,.45),transparent),radial-gradient(ellipse 22% 24% at 3% 94%,rgba(0,0,0,.4),transparent)}
+#bg::after{content:"";position:absolute;inset:0;background-image:radial-gradient(circle at 10px 10px,var(--dot) 0,transparent 3px);background-size:20px 20px;background-position:-9px -9px;-webkit-mask-image:linear-gradient(to bottom,rgba(0,0,0,.4),transparent 34%),linear-gradient(to top,rgba(0,0,0,.5),transparent 34%),linear-gradient(to right,rgba(0,0,0,.5),transparent 24%),linear-gradient(to left,rgba(0,0,0,.35),transparent 24%),radial-gradient(ellipse 55% 52% at 0% 0%,rgba(0,0,0,.8),transparent),radial-gradient(ellipse 48% 44% at 100% 100%,rgba(0,0,0,.7),transparent);mask-image:linear-gradient(to bottom,rgba(0,0,0,.4),transparent 34%),linear-gradient(to top,rgba(0,0,0,.5),transparent 34%),linear-gradient(to right,rgba(0,0,0,.5),transparent 24%),linear-gradient(to left,rgba(0,0,0,.35),transparent 24%),radial-gradient(ellipse 55% 52% at 0% 0%,rgba(0,0,0,.8),transparent),radial-gradient(ellipse 48% 44% at 100% 100%,rgba(0,0,0,.7),transparent)} /* soft dots, wider and fainter than the sharp ones: a blurred fade inward, drawn with gradients instead of a filter */
 button,select,input{font:inherit;color:inherit}
 button{cursor:pointer}
 :focus-visible{outline:2px solid var(--acc);outline-offset:3px}
@@ -205,15 +206,79 @@ body:not(.home) .cols{display:grid}
 .fopt[aria-pressed=true] .n{color:var(--acc)}
 .fmore{margin:2px 0 0;padding:6px 10px;border:0;background:none;color:var(--acc);font-weight:500;font-size:14px}
 @media(hover:hover) and (pointer:fine){.fopt:hover{background:var(--wash)}.fopt[aria-pressed=true]:hover{background:var(--acc-t2)}.fmore:hover{text-decoration:underline}}
-.sh,.sf,#scrim,#nav{display:none}
+.sh,.sf,#scrim,#nav,#navfade{display:none}
 .sumrow{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin:0 0 16px}
 #count{margin:0;font:650 25px/30px var(--brand);letter-spacing:-.03em}
 #countsub{margin:3px 0 0;color:var(--faint);font-size:13.5px;line-height:18px}
+.ctl{display:flex;align-items:center;flex-wrap:wrap;gap:8px}
+.vw{position:relative;display:inline-flex;padding:3px;border-radius:999px;box-shadow:inset 0 0 0 1px var(--line2);--i:0}
+.vw::before{content:"";position:absolute;top:3px;left:3px;width:34px;height:34px;border-radius:50%;background:var(--thumb);box-shadow:0 0 0 1px var(--line),0 1px 3px rgba(20,22,26,.12);transform:translateX(calc(var(--i)*34px));transition:transform .3s var(--drawer)}
+.vw button{position:relative;display:grid;place-items:center;width:34px;height:34px;border:0;border-radius:50%;background:none;color:var(--faint);transition:color .2s var(--ease)}
+.vw button svg{width:18px;height:18px}
+.vw button[aria-pressed=true]{color:var(--ink)}
+.vw button:focus-visible{outline-offset:1px}
+.sortc svg{width:18px;height:18px;color:var(--faint)}
+@media(hover:hover) and (pointer:fine){.vw button[aria-pressed=false]:hover{color:var(--ink)}}
+/* company layouts: pure CSS on the list, so switching never re-renders */
+.v-compact .tg,.v-compact .line,.v-compact .gh{display:none}
+.v-compact .rc{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1.5fr) auto;align-items:center;gap:16px;padding:12px 14px;contain-intrinsic-size:auto 64px}
+.v-compact .cst{margin:0;gap:4px}
+.v-compact .cst b{font-size:16px;line-height:20px}
+.v-compact .cst span{font-size:11.5px;line-height:14px}
+.v-compact .ft{margin:0;padding:0;box-shadow:none}
+.v-compact .ft .ago,.v-compact .cb{display:none}
+.v-compact .apply{height:34px;padding:0 16px}
+.v-relaxed .rc{padding:32px 18px 26px}
+.v-relaxed .cst{margin-top:24px;gap:12px}
+.v-relaxed .cst b{font-size:30px;line-height:36px}
+.v-relaxed .tg{margin-top:18px}
+.v-relaxed .tg.skl{margin-top:10px}
+.v-relaxed .line{margin-top:16px}
+.v-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:12px}
+.v-grid .res+.res::before{display:none}
+.v-grid .rc{margin:0;padding:18px;background:var(--surface);box-shadow:0 0 0 1px var(--line),var(--shadow1)}
+.v-grid .ft .ago{display:none}
+@media(hover:hover) and (pointer:fine){.v-grid .rc:hover{background:var(--surface);box-shadow:0 0 0 1px var(--line2),var(--shadow2)}}
+body.solo.cgrid .cols{grid-template-columns:minmax(0,1040px)}
+@media(max-width:719px){.v-grid{grid-template-columns:minmax(0,1fr)!important}.v-compact .rc{grid-template-columns:minmax(0,1fr);gap:8px}.v-compact .ft{display:none}}
+.cobar{display:flex;align-items:center;flex-wrap:wrap;gap:10px 14px;margin:0 0 20px}
+.bk{display:inline-flex;align-items:center;gap:2px;height:36px;padding:0 14px 0 8px;border:0;border-radius:999px;background:none;color:var(--sub);font-weight:500;box-shadow:inset 0 0 0 1px var(--line2);transition:transform .14s var(--ease),background-color .16s var(--ease)}
+.bk:active{transform:scale(.97)}
+.bk svg{width:18px;height:18px}
+.coi{display:flex;align-items:center;gap:12px;min-width:0;flex:1 1 220px}
+.cot{display:grid;min-width:0}
+.cot b{font:650 18px/24px var(--brand);letter-spacing:-.015em;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.cot span{color:var(--faint);font-size:13.5px;line-height:18px}
+.svco{flex:none;gap:8px}
+.svco[aria-pressed=true] svg{fill:currentColor}
+.hd .ib{margin-left:auto;flex:none}
+.v-compact .hd .ib{width:34px;height:34px}
+@media(hover:hover) and (pointer:fine){.bk:hover{background:var(--wash);color:var(--ink)}}
+.cfx{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:0 0 20px}
+.cfx .qp{height:34px;padding:0 14px;gap:8px;font-size:14px;transition:transform .14s var(--ease),background-color .16s var(--ease),color .16s var(--ease),box-shadow .16s var(--ease)}
+.cfx .qp:active{transform:scale(.97)}
+.cfx .qp .n{color:var(--faint);font-size:12.5px;font-weight:400;font-variant-numeric:tabular-nums}
+.cfx .qp[aria-pressed=true]{box-shadow:inset 0 0 0 1px var(--acc)}
+.cfx .qp[aria-pressed=true] .n{color:var(--acc)}
+.cfx .clr{height:34px;padding:0 10px;border:0;background:none;color:var(--sub);font-size:14px;font-weight:500}
+@media(hover:hover) and (pointer:fine){.cfx .qp:hover{background:var(--wash)}.cfx .qp[aria-pressed=true]:hover{background:var(--acc-t2)}.cfx .clr:hover{color:var(--ink)}}
+body.solo .sumrow{align-items:center}
+@media(max-width:719px){.sumrow{flex-wrap:wrap;align-items:center}.ctl{flex-wrap:nowrap;width:100%}.ctl .sortc{flex:1;min-width:0}.sortc{max-width:100%}#sort,#csort{min-width:0;max-width:100%;text-overflow:ellipsis}.cfx{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none}.cfx::-webkit-scrollbar{display:none}}
+.cst{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin:16px 0 0}
+.cst div{display:grid;gap:2px}
+.cst b{font:650 22px/28px var(--brand);letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.cst span{color:var(--faint);font-size:12.5px;line-height:16px}
+.cst .on b{color:var(--acc)}
+.res.co .rc{cursor:pointer}
+.cn{padding:0;border:0;background:none;font:inherit;color:inherit;text-align:left;cursor:pointer}
+@media(hover:hover) and (pointer:fine){.cn:hover{color:var(--acc)}}
+.cb{height:42px;padding:0 16px;border:0;border-radius:999px;background:none;color:var(--sub);font-weight:500}
+@media(hover:hover) and (pointer:fine){.cb:hover{background:var(--wash);color:var(--ink)}}
 .sortc{position:relative;display:inline-flex;align-items:center;gap:8px;flex:none;height:40px;padding:0 38px 0 16px;border-radius:999px;box-shadow:inset 0 0 0 1px var(--line2);color:var(--faint);font-size:14px;cursor:pointer;transition:background-color .16s var(--ease)}
 .sortc::after{content:"";position:absolute;right:16px;top:50%;width:7px;height:7px;border:solid var(--sub);border-width:0 1.8px 1.8px 0;transform:translateY(-70%) rotate(45deg);pointer-events:none}
 .sortc:focus-within{outline:2px solid var(--acc);outline-offset:2px}
-#sort{appearance:none;-webkit-appearance:none;border:0;outline:0;background:none;padding:0;color:var(--ink);font-weight:600;font-size:14px;cursor:pointer}
-#sort option{background:var(--surface);color:var(--ink)}
+#sort,#csort{appearance:none;-webkit-appearance:none;border:0;outline:0;background:none;padding:0;color:var(--ink);font-weight:600;font-size:14px;cursor:pointer}
+#sort option,#csort option{background:var(--surface);color:var(--ink)}
 @media(hover:hover) and (pointer:fine){.sortc:hover{background:var(--wash)}}
 .und{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:0 0 18px}
 .und:empty{display:none}
@@ -266,7 +331,7 @@ body.solo aside{display:none}
 .ib.star[aria-pressed=true] svg{fill:currentColor;animation:starpop .24s var(--ease)}
 @keyframes starpop{0%{transform:scale(.8)}60%{transform:scale(1.12)}100%{transform:scale(1)}}
 @media(hover:hover) and (pointer:fine){.ib:hover{background:var(--wash);color:var(--ink)}}
-.apply{display:inline-flex;align-items:center;justify-content:center;height:42px;padding:0 24px;border-radius:999px;background:var(--acc-t);color:var(--acc);font-weight:600;text-decoration:none}
+.apply{display:inline-flex;align-items:center;justify-content:center;height:42px;padding:0 24px;border:0;border-radius:999px;background:var(--acc-t);color:var(--acc);font-weight:600;text-decoration:none}
 @media(hover:hover) and (pointer:fine){.apply:hover{background:var(--acc-t2)}}
 .meter{height:4px;margin:12px 0 4px;border-radius:2px;max-width:420px}
 .meter i{display:block;height:100%;border-radius:2px;background:var(--acc)}
@@ -283,12 +348,15 @@ footer a{color:var(--acc)}
 #toast button{height:36px;padding:0 16px;border:0;border-radius:999px;background:none;color:#9db8ff;font-weight:600}
 
 /* preferences: sticky header and footer around a scrolling body; a bottom sheet on phones */
-dialog{padding:0;border:0;border-radius:20px;width:calc(100% - 24px);max-width:560px;background:var(--surface);color:var(--ink);box-shadow:0 0 0 1px var(--line),0 32px 80px rgba(0,0,0,.35);overflow:hidden}
-dialog::backdrop{background:rgba(8,10,14,.5)}
+dialog{padding:0;border:0;border-radius:20px;width:calc(100% - 24px);max-width:560px;background:var(--sheet);color:var(--ink);box-shadow:0 0 0 1px var(--line2),0 32px 80px rgba(0,0,0,.5);overflow:hidden}
+dialog::backdrop{background:rgba(3,5,9,.66)}
 .dl{display:flex;flex-direction:column;max-height:min(88vh,720px)}
 .dl header{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;padding:22px 20px 16px 24px;box-shadow:inset 0 -1px 0 var(--line)}
 .dl h2{margin:0;font:700 24px/30px var(--brand);letter-spacing:-.03em}
 .dl header p{margin:2px 0 0;color:var(--sub);font-size:14px;line-height:20px}
+.db:focus{outline:none}
+.pcn{font-size:13px;line-height:18px}
+.pcn a{color:var(--acc)}
 .db{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain;padding:4px 24px 12px}
 .dl h3{margin:22px 0 10px;font:600 14px/20px var(--brand)}
 .dl h3 small{font-weight:400;color:var(--sub)}
@@ -365,8 +433,16 @@ dialog::backdrop{background:rgba(8,10,14,.5)}
   .apply{flex:1;height:46px}
   .ib{width:46px;height:46px;box-shadow:inset 0 0 0 1px var(--line)}
   #toast{bottom:calc(96px + env(safe-area-inset-bottom))}
+  /* progressive blur + fade under the pill: three blur layers that kick in lower and lower, shaped so the middle is the widest part.
+     Each layer carries its own mask (an ancestor mask would cut off backdrop-filter), and the pill sits above with a near-solid fill so nothing overlaps it. */
+  #navfade{display:block;position:fixed;left:0;right:0;bottom:0;height:calc(120px + env(safe-area-inset-bottom));z-index:29;pointer-events:none;--shape:radial-gradient(ellipse 80% 130% at 50% 100%,#000 50%,transparent)}
+  #navfade i{position:absolute;inset:0;-webkit-mask-composite:source-in;mask-composite:intersect}
+  #navfade i:nth-child(1){-webkit-backdrop-filter:blur(1.5px);backdrop-filter:blur(1.5px);-webkit-mask-image:linear-gradient(to bottom,transparent 5%,#000 45%),var(--shape);mask-image:linear-gradient(to bottom,transparent 5%,#000 45%),var(--shape)}
+  #navfade i:nth-child(2){-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px);-webkit-mask-image:linear-gradient(to bottom,transparent 30%,#000 65%),var(--shape);mask-image:linear-gradient(to bottom,transparent 30%,#000 65%),var(--shape)}
+  #navfade i:nth-child(3){-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);-webkit-mask-image:linear-gradient(to bottom,transparent 55%,#000 85%),var(--shape);mask-image:linear-gradient(to bottom,transparent 55%,#000 85%),var(--shape)}
+  #navfade i.f{background:linear-gradient(to bottom,transparent,color-mix(in srgb,var(--page) 85%,transparent) 80%);-webkit-mask-image:var(--shape);mask-image:var(--shape)}
   /* floating glass island: the thumb slides to the current item (pure CSS, driven by aria-current) */
-  #nav{display:flex;position:fixed;left:14px;right:14px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:30;height:64px;padding:6px;border-radius:999px;background:color-mix(in srgb,var(--page) 88%,transparent);-webkit-backdrop-filter:blur(18px);backdrop-filter:blur(18px);box-shadow:0 0 0 1px var(--line2),var(--shadow2)}
+  #nav{display:flex;position:fixed;left:14px;right:14px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:30;height:64px;padding:6px;border-radius:999px;background:color-mix(in srgb,var(--page) 94%,transparent);-webkit-backdrop-filter:blur(18px);backdrop-filter:blur(18px);box-shadow:0 0 0 1px var(--line2),var(--shadow2)}
   #nav .ind{position:absolute;top:6px;bottom:6px;left:6px;width:calc((100% - 12px)/3);border-radius:999px;background:var(--thumb);box-shadow:0 0 0 1px var(--line),0 1px 3px rgba(20,22,26,.12);transition:transform .34s var(--drawer)}
   #nav:has(button:nth-of-type(2)[aria-current]) .ind{transform:translateX(100%)}
   #nav:has(button:nth-of-type(3)[aria-current]) .ind{transform:translateX(200%)}
@@ -401,7 +477,17 @@ dialog::backdrop{background:rgba(8,10,14,.5)}
 dialog[open]{animation:dlgin .22s var(--ease)}
 dialog[open]::backdrop{animation:fadein .22s var(--ease)}
 @keyframes sheetin{from{transform:translateY(100%)}}
-@media(max-width:719px){dialog{margin:auto 0 0;width:100%;max-width:none;border-radius:20px 20px 0 0}dialog[open]{animation:sheetin .34s var(--drawer)}.dl{max-height:90vh}}
+/* phones: an inset action sheet with a grabber; drag the header down to dismiss */
+@media(max-width:719px){
+  dialog{margin:auto auto calc(10px + env(safe-area-inset-bottom));width:calc(100% - 20px);max-width:none;border-radius:28px}
+  dialog[open]{animation:sheetin .38s var(--drawer)}
+  dialog::backdrop{-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+  .dl{max-height:calc(88vh - 10px)}
+  .dl header{position:relative;padding:24px 16px 14px 22px;touch-action:none}
+  .dl header::before{content:"";position:absolute;top:8px;left:50%;width:38px;height:5px;margin-left:-19px;border-radius:3px;background:var(--line2)}
+  .dl footer{flex-direction:column-reverse;align-items:stretch;gap:4px;padding:12px 16px 14px}
+  .dl footer .primary{height:52px;font-size:16px}
+}
 #sug:not([hidden]){animation:sugin .14s var(--ease)}
 /* panels over the dot grid blur it away; blur only, so their own colours stay exactly as they were */
 .rail,.seg,main,footer{-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)} /* main is one layer for the whole results column, cheaper than one per row */
@@ -435,6 +521,11 @@ dialog[open]::backdrop{animation:fadein .22s var(--ease)}
   <symbol id="i-pay" viewBox="0 0 24 24"><path d="M16.7 8a3 3 0 0 0 -2.7 -2h-4a3 3 0 0 0 0 6h4a3 3 0 0 1 0 6h-4a3 3 0 0 1 -2.7 -2"/><path d="M12 3v3m0 12v3"/></symbol>
   <symbol id="i-date" viewBox="0 0 24 24"><path d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12"/><path d="M16 3v4"/><path d="M8 3v4"/><path d="M4 11h16"/><path d="M11 15h1"/><path d="M12 15v3"/></symbol>
   <symbol id="i-src" viewBox="0 0 24 24"><path d="M9 15l6 -6"/><path d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464"/><path d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463"/></symbol>
+  <symbol id="i-vc" viewBox="0 0 24 24"><path d="M9 6l11 0"/><path d="M9 12l11 0"/><path d="M9 18l11 0"/><path d="M5 6l0 .01"/><path d="M5 12l0 .01"/><path d="M5 18l0 .01"/></symbol>
+  <symbol id="i-vr" viewBox="0 0 24 24"><path d="M4 6a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2l0 -12"/><path d="M4 12l16 0"/></symbol>
+  <symbol id="i-vg" viewBox="0 0 24 24"><path d="M4 5a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1l0 -4"/><path d="M14 5a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1l0 -4"/><path d="M4 15a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1l0 -4"/><path d="M14 15a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1l0 -4"/></symbol>
+  <symbol id="i-sort" viewBox="0 0 24 24"><path d="M3 9l4 -4l4 4m-4 -4v14"/><path d="M21 15l-4 4l-4 -4m4 4v-14"/></symbol>
+  <symbol id="i-back" viewBox="0 0 24 24"><path d="M15 6l-6 6l6 6"/></symbol>
   <symbol id="i-build" viewBox="0 0 24 24"><path d="M3 21l18 0"/><path d="M9 8l1 0"/><path d="M9 12l1 0"/><path d="M9 16l1 0"/><path d="M14 8l1 0"/><path d="M14 12l1 0"/><path d="M14 16l1 0"/><path d="M5 21v-16a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v16"/></symbol>
 </svg>
 <div id="sentinel"></div>
@@ -491,10 +582,15 @@ dialog[open]::backdrop{animation:fadein .22s var(--ease)}
     </aside>
     <main>
       <div class="tune" id="tune2" hidden><span>Set your preferences to get better matches. They stay on your device.</span><button type="button" class="tb">Set preferences</button><button type="button" class="x" aria-label="Dismiss"><svg><use href="#i-x"/></svg></button></div>
+      <div class="cobar" id="cobar" hidden></div>
+      <div class="svx cfx" id="svx" hidden></div>
       <div class="sumrow">
         <div><h2 id="count" aria-live="polite"></h2><p id="countsub"></p></div>
+        <div class="ctl" id="cctl" hidden><div class="vw" id="cvw" role="group" aria-label="Layout"></div>
+        <label class="sortc" id="csortc"><svg aria-hidden="true"><use href="#i-sort"/></svg><select id="csort" aria-label="Sort companies by"><option value="best">Best match</option><option value="fresh">Most fresher-friendly</option><option value="roles">Most open roles</option><option value="new">Hiring most this week</option><option value="pay">Pay transparency</option><option value="clean">Fewest ghost jobs</option></select></label></div>
         <label class="sortc" id="sortc"><span>Sort by</span><select id="sort" aria-label="Sort by"><option value="">Best for you</option><option value="new">Newest</option><option value="pay">Highest pay</option></select></label>
       </div>
+      <div class="cfx" id="cfx" role="group" aria-label="Company filters" hidden></div>
       <div class="und" id="und" aria-label="How your search was understood"></div>
       <ul class="out" id="list">
 <li class="res" aria-hidden="true"><div class="rc"><div class="hd"><i class="skel" style="width:36px;height:36px;border-radius:10px"></i><i class="skel" style="width:130px;"></i></div><i class="skel" style="width:62%;height:20px;margin-top:16px"></i><i class="skel" style="width:36%;height:14px;margin-top:12px"></i><div class="tg"><i class="skel" style="width:72px;height:26px;border-radius:8px"></i><i class="skel" style="width:72px;height:26px;border-radius:8px"></i><i class="skel" style="width:72px;height:26px;border-radius:8px"></i></div><div class="ft"><span class="ago"><i class="skel" style="width:90px;height:12px;"></i></span><i class="skel" style="width:84px;height:42px;border-radius:999px"></i></div></div></li>
@@ -515,6 +611,7 @@ dialog[open]::backdrop{animation:fadein .22s var(--ease)}
 </div>
 <div id="scrim"></div>
 <div id="toast" role="status" aria-live="polite" hidden><span id="tmsg"></span><button type="button" id="undo">Undo</button></div>
+<div id="navfade" aria-hidden="true"><i></i><i></i><i></i><i class="f"></i></div>
 <nav id="nav" aria-label="Main">
   <span class="ind" aria-hidden="true"></span>
   <button type="button" data-v="jobs"><svg aria-hidden="true"><use href="#i-feed"/></svg>For you</button>
@@ -525,12 +622,13 @@ dialog[open]::backdrop{animation:fadein .22s var(--ease)}
 <dialog id="dlg" aria-labelledby="dt">
   <form method="dialog" class="dl">
     <header><div><h2 id="dt">Your preferences</h2><p>Pick what you want to see more of. It all stays on this device.</p></div><button type="submit" class="ib" aria-label="Close"><svg><use href="#i-x"/></svg></button></header>
-    <div class="db">
+    <div class="db" tabindex="-1" autofocus>
       <h3>Fields</h3><div class="cs" id="pf"></div>
       <h3>Experience</h3><div class="cs" id="pl"></div>
       <h3>Job type</h3><div class="cs" id="pt"></div>
       <h3>Work</h3><div class="cs" id="pw"></div>
       <h3>Skills</h3><div class="cs" id="ps"></div>
+      <div id="pcsec" hidden><h3>Show pay in</h3><div class="cs" id="pc"></div><p class="pcn">Converted amounts show a ~ and are estimates. Rates: <a href="https://frankfurter.dev" target="_blank" rel="noopener">ECB via Frankfurter</a> and <a href="https://www.exchangerate-api.com" target="_blank" rel="noopener">Exchange Rate API</a>, <span id="pcd"></span>.</p></div>
       <details class="lrn"><summary>What it has learned so far</summary><div id="learned"></div></details>
     </div>
     <footer><button type="button" id="reset">Reset everything</button><button type="submit" class="primary">Done</button></footer>
@@ -541,14 +639,25 @@ dialog[open]::backdrop{animation:fadein .22s var(--ease)}
 const $=s=>document.querySelector(s),PAGE=20,form=$("#f"),qi=$("#q"),list=$("#list");
 const el=(t,c,x)=>{const e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e};
 const cap=s=>s.replace(/_/g," ").replace(/^./,c=>c.toUpperCase());
-const EMP={full_time:"Full-time",part_time:"Part-time",contract:"Contract",internship:"Internship"},CUR={USD:"$",GBP:"£",EUR:"€"};
+const EMP={full_time:"Full-time",part_time:"Part-time",contract:"Contract",internship:"Internship"};
 const SK={ml:"ML",aws:"AWS",gcp:"GCP",sql:"SQL",nosql:"NoSQL",llm:"LLM",dbt:"dbt",php:"PHP",sap:"SAP","ci/cd":"CI/CD",graphql:"GraphQL",javascript:"JavaScript",typescript:"TypeScript",mongodb:"MongoDB",mysql:"MySQL",pytorch:"PyTorch",tensorflow:"TensorFlow","node.js":"Node.js","spring-boot":"Spring Boot",hubspot:"HubSpot",excel:"Excel",ms_office:"MS Office",cpr:"CPR",bls:"BLS",acls:"ACLS",ehr:"EHR",emr:"EMR",hipaa:"HIPAA",osha:"OSHA",cdl:"CDL",haccp:"HACCP",hris:"HRIS",pmp:"PMP",crm:"CRM",erp:"ERP",gaap:"GAAP",ifrs:"IFRS",seo:"SEO",autocad:"AutoCAD",solidworks:"SolidWorks",quickbooks:"QuickBooks",powerpoint:"PowerPoint"};
 const RM=matchMedia("(prefers-reduced-motion:reduce)");let quiet=0; // quiet = results changed by typing, so no fade
+const CS={sort:"best",f:new Set(),v:"compact"}; // companies view: sort and filters
 let D,C,H,LC,CO,BY,SKS=new Set(),VOC=[],P=null,S={},q="",view="jobs",opened=false,items=[],build,shown=0,t0=0,saved=new Set(),ALT=new Map(),postings=0;
 try{saved=new Set(JSON.parse(localStorage.getItem("rb_saved")||"[]"))}catch(e){}
+const savedCo=new Set();try{for(const n of JSON.parse(localStorage.getItem("rb_savedco")||"[]"))savedCo.add(n)}catch(e){}
+let back=null,savedTab="jobs"; // back: where "View jobs" came from; savedTab: jobs or companies inside Saved
+const persistCo=()=>{try{localStorage.setItem("rb_savedco",JSON.stringify([...savedCo]))}catch(e){}};
 const persist=()=>{try{localStorage.setItem("rb_saved",JSON.stringify([...saved]))}catch(e){}};
-const k=n=>n>=1000?Math.round(n/1000)+"k":n;
-const money=r=>(CUR[r[13]]||r[13]+" ")+k(r[11])+(r[12]>r[11]?"-"+k(r[12]):"");
+const k=n=>n>=1e6?+(n/1e6).toFixed(1)+"M":n>=1000?Math.round(n/1000)+"k":Math.round(n);
+let RT=null,RDATE="",CURV="";try{CURV=localStorage.getItem("rb_cur")||""}catch(e){} // RT: units per US dollar, from rates.json; CURV: display currency ("" = as posted)
+const SYMS=new Map(),sym=c=>{let v=SYMS.get(c);if(v==null){try{v=new Intl.NumberFormat("en-US",{style:"currency",currency:c}).formatToParts(0).find(p=>p.type==="currency").value}catch(e){v=c+" "}SYMS.set(c,v)}return v};
+const inr=n=>n>=1e7?+(n/1e7).toFixed(2)+"Cr":n>=1e5?+(n/1e5).toFixed(1)+"L":k(n); // Indian units: lakh and crore
+const usd=(a,c)=>RT&&RT[c]?a/RT[c]:a; // to US dollars; unknown currencies pass through unchanged
+const money=r=>{let c=r[13],lo=r[11],hi=r[12],cv="";
+  if(CURV&&RT&&RT[CURV]&&RT[c]&&c!==CURV){const f=RT[CURV]/RT[c];lo*=f;hi*=f;c=CURV;cv="~"} // ~ marks an estimate
+  const f=c==="INR"?inr:k;
+  return cv+sym(c)+f(lo)+(hi>lo?"-"+f(hi):"")};
 const age=d=>{const n=Math.floor((Date.now()-Date.parse(d))/864e5);return n<1?"today":n===1?"1 day ago":n<30?n+" days ago":Math.floor(n/30)+" months ago"};
 const iso=n=>new Date(Date.now()-n*864e5).toISOString().slice(0,10);
 const CUT={1:iso(1),7:iso(7),30:iso(30)},buckets=d=>[1,7,30].filter(n=>d>=CUT[n]).map(String);
@@ -566,7 +675,7 @@ function feats(r){ // [key,label] pairs describing a job
   let f=FC.get(r);if(f)return f;f=[];const add=(a,b)=>f.push([a,b]);
   add("cat:"+r[8],cap(r[8]));add("lv:"+r[4],cap(D.levels[r[4]]));
   if(r[9])add("emp:"+r[9],EMP[r[9]]);if(r[3])add("remote","Remote");if(r[18])add("fresher","Fresher-friendly");
-  if(r[12])add("pay","Salary listed");if(r[11]>=1e5)add("pay100","$100k+");
+  if(r[12])add("pay","Salary listed");if(usd(r[11],r[13])>=1e5)add("pay100","$100k+");
   add("co:"+r[1].toLowerCase(),r[1]);
   if(r[14])for(const s of r[14].split(","))add("sk:"+s,SK[s]||cap(s));
   let n=0;for(const x of new Set(r[0].toLowerCase().match(/[a-zà-ÿ]{3,}/g)||[])){if(n>=8)break;if(!TW.has(x)){add("w:"+x,x);n++}}
@@ -659,7 +768,7 @@ function base(r,i){
   if(P.remote&&!r[3]||P.fresher&&!r[18]||P.pay&&!r[12])return false;
   if(P.lv.length&&!P.lv.includes(D.levels[r[4]])||P.emp.length&&!P.emp.includes(r[9])||P.cats.length&&!P.cats.includes(r[8]))return false;
   if(P.days&&r[6]<CUT[P.days])return false;
-  if(P.min&&r[12]<P.min||P.max&&(!r[11]||r[11]>P.max))return false;
+  if(P.min&&usd(r[12],r[13])<P.min||P.max&&(!r[11]||usd(r[11],r[13])>P.max))return false;
   for(const s of P.skills)if(!(","+r[14]+",").includes(","+s+","))return false;
   return true;
 }
@@ -672,7 +781,7 @@ const G=[
   {k:"fresher",name:"Experience",vals:r=>r[18]?["1"]:[],lab:()=>"Fresher-friendly (0-2 yrs)"},
   {k:"remote",name:"Work",vals:r=>r[3]?["1"]:[],lab:()=>"Remote"},
   {k:"pay",name:"Pay",vals:r=>r[12]?["1"]:[],lab:()=>"Salary listed"},
-  {k:"pay100",name:"",vals:r=>r[11]>=1e5?["1"]:[],lab:()=>"$100k and up"},
+  {k:"pay100",name:"",vals:r=>usd(r[11],r[13])>=1e5?["1"]:[],lab:()=>"$100k and up"},
   {k:"days",name:"Posted",vals:r=>buckets(r[6]),lab:v=>({1:"Last 24 hours",7:"Last 7 days",30:"Last 30 days"})[v],ord:()=>["1","7","30"]},
   {k:"src",name:"Source",vals:r=>[""+r[5]],lab:v=>cap(D.sources[v])},
   {k:"co",name:"Company",vals:r=>[r[1]],lab:x=>x,top:6},
@@ -695,25 +804,53 @@ function run(){
   }
   postings=res.length;
   const terms=[...P.terms,...P.phr];
-  if(S.sort==="pay")items=arrange(res.slice().sort((a,b)=>b[12]-a[12]),false);
+  if(S.sort==="pay")items=arrange(res.slice().sort((a,b)=>usd(b[12],b[13])-usd(a[12],a[13])),false);
   else if(S.sort==="new")items=arrange(res,false);
   else items=arrange(rank(res,terms));
   build=item;
   paint(cnt);
 }
+let CIX=null; // company -> its jobs, and per-company stats, built once
+function cindex(){
+  if(CIX)return CIX;
+  const by=new Map(),st=new Map(),wk=CUT[7];
+  for(const r of D.rows){const a=by.get(r[1]);a?a.push(r):by.set(r[1],[r])}
+  for(const [name,js] of by){
+    const t={n:js.length,fr:0,rm:0,pay:0,gh:0,nw:0,cats:new Map(),sk:new Map(),loc:new Map(),last:""},add=(m,k)=>m.set(k,(m.get(k)||0)+1);
+    for(const r of js){
+      t.fr+=r[18];t.rm+=r[3];if(r[12])t.pay++;if(r[16]>=2)t.gh++;if(r[6]>=wk)t.nw++;if(r[6]>t.last)t.last=r[6];
+      if(r[8]!=="other")add(t.cats,r[8]);
+      if(r[14])for(const x of r[14].split(","))add(t.sk,x);
+      if(r[2])add(t.loc,r[2].split(";")[0].trim());
+    }
+    st.set(name,t);
+  }
+  return CIX={by,st};
+}
+const CMET={fresh:t=>t.fr/t.n,roles:t=>t.n,new:t=>t.nw,pay:t=>t.pay/t.n,clean:t=>-t.gh/t.n};
+const CFIL={fresh:["Fresher-friendly",t=>t.fr/t.n>=.3],remote:["Remote-friendly",t=>t.rm/t.n>=.3],pay:["Lists pay",t=>t.pay/t.n>=.5],clean:["Few ghost jobs",t=>t.gh/t.n<.1]};
 function runCompanies(){
   P=parse("");const s=q.toLowerCase().replace(/[^a-z0-9 ]/g," ").trim().split(/\s+/).filter(Boolean);
-  const by=new Map();for(const r of D.rows){const a=by.get(r[1]);a?a.push(r):by.set(r[1],[r])}
+  const {by,st}=cindex();
   const tot=C.reduce((a,c)=>a+c[1],0),mean=tot?C.reduce((a,c)=>a+c[2],0)/tot:0,mx=Math.log1p(Math.max(1,...C.map(c=>c[2])));
   const sc=new Map(C.map(c=>{
     const js=by.get(c[0])||[],ghost=js.length?js.filter(r=>r[16]>=2).length/js.length:0,n=c[0].toLowerCase();
     const share=(c[2]+4*mean)/(c[1]+4); // smoothed toward the overall rate, so 5 of 5 doesn't blindly beat 40 of 50
     const like=hasModel()&&js.length?Math.tanh(js.map(aff).sort((a,b)=>b-a).slice(0,5).reduce((x,y)=>x+y,0)/20):0; // how well its best jobs match what you save
     return [c,2*share+.8*Math.log1p(c[2])/mx+.5*c[5]-.6*Math.min(1,3*c[4]/c[1])-.8*ghost+1.2*like+(s.length&&n.startsWith(s[0])?.5:0)]}));
-  items=C.filter(c=>s.every(t=>c[0].toLowerCase().includes(t))).sort((a,b)=>sc.get(b)-sc.get(a)||a[0].localeCompare(b[0]));build=citem;paint(null);
+  const ok=c=>{const t=st.get(c[0]);return!t||[...CS.f].every(k=>CFIL[k][1](t))},m=c=>{const t=st.get(c[0]);return t?CMET[CS.sort](t):0};
+  const cmp=CS.sort==="best"?(a,b)=>sc.get(b)-sc.get(a)||a[0].localeCompare(b[0]):(a,b)=>m(b)-m(a)||b[1]-a[1]||a[0].localeCompare(b[0]);
+  const nm=c=>s.every(t=>c[0].toLowerCase().includes(t));
+  CCNT={};for(const k in CFIL){CCNT[k]=0;for(const c of C){const t=st.get(c[0]);if(t&&nm(c)&&CFIL[k][1](t))CCNT[k]++}}
+  items=C.filter(c=>nm(c)&&ok(c)).sort(cmp);build=citem;paint(null);
 }
 function runSaved(){
-  P=parse("");ALT=new Map();items=[...saved].reverse().map(u=>BY.get(u)).filter(Boolean);build=item;paint(null);
+  P=parse("");ALT=new Map();
+  if(savedTab==="companies"){
+    const cm=new Map(C.map(c=>[c[0],c]));
+    items=[...savedCo].reverse().map(n=>{const c=cm.get(n);if(c)return c;const js=cindex().by.get(n)||[],fr=js.filter(r=>r[18]).length;return[n,js.length,fr,js.length?fr/js.length:0,0,0]});build=citem;
+  }else{items=[...saved].reverse().map(u=>BY.get(u)).filter(Boolean);build=item}
+  paint(null);
 }
 
 /* ---- drawing ---- */
@@ -725,11 +862,12 @@ function paint(cnt){
   shown=0;list.replaceChildren();more();
   if(!quiet&&!RM.matches)list.animate({opacity:[.35,1]},{duration:180,easing:"cubic-bezier(.23,1,.32,1)"});quiet=0;
   const n=items.length,sec=((performance.now()-t0)/1000).toFixed(2),jobs=view==="jobs",ct=$("#count"),cs=$("#countsub");
-  if(view==="companies"){ct.textContent=n.toLocaleString()+" companies";cs.textContent="With five or more open roles, ranked by fresher-friendly roles, how reliable the data is, and"+(hasModel()?" what you have saved.":" ghost-job signals.")}
+  if(view==="companies"){ct.textContent=n.toLocaleString()+" companies";cs.textContent="5+ open roles each, ranked by "+({best:"your best match",fresh:"share of fresher-friendly roles",roles:"open roles",new:"roles posted this week",pay:"share of roles that list pay",clean:"fewest ghost-job signals"})[CS.sort]}
+  else if(view==="saved"&&savedTab==="companies"){ct.textContent=n+" saved compan"+(n===1?"y":"ies");cs.textContent="Kept on this device."}
   else if(view==="saved"){const miss=saved.size-n;ct.textContent=n+" saved job"+(n===1?"":"s");cs.textContent=miss>0?miss+" no longer open":"Kept on this device."}
   else{ct.textContent=n===0?"No results":n.toLocaleString()+" role"+(n===1?"":"s");cs.textContent=(postings>n?postings.toLocaleString()+" postings in total. ":"")+"Found in "+sec+" seconds."}
   document.body.classList.toggle("solo",!jobs);
-  $("#sortc").hidden=!jobs;$("#sort").value=S.sort||"";$("#fdet").hidden=!jobs;$("#gs").hidden=!jobs;$("#quick").hidden=!jobs;
+  $("#sortc").hidden=!jobs;$("#cctl").hidden=view!=="companies";$("#svx").hidden=view!=="saved";svxSync();coBar();cvSync();$("#cfx").hidden=view!=="companies";$("#csort").value=CS.sort;cfxSync();$("#sort").value=S.sort||"";$("#fdet").hidden=!jobs;$("#gs").hidden=!jobs;$("#quick").hidden=!jobs;
   $("#tune2").hidden=!(jobs&&tuneOn());
   const und=$("#und");und.replaceChildren();
   if(jobs&&P.chips.length){
@@ -746,7 +884,8 @@ function paint(cnt){
   bump2();
   const e=$("#empty");e.hidden=n>0;
   if(!n){
-    if(view==="saved")e.replaceChildren(el("h3","","No saved jobs yet"),el("p","","Tap the star on any job to keep it here. Saved jobs stay on this device."));
+    if(view==="saved"&&savedTab==="companies")e.replaceChildren(el("h3","","No saved companies yet"),el("p","","Tap the star on a company to keep it here. Saved companies stay on this device."));
+    else if(view==="saved")e.replaceChildren(el("h3","","No saved jobs yet"),el("p","","Tap the star on any job to keep it here. Saved jobs stay on this device."));
     else e.replaceChildren(el("h3","","No matching jobs"),el("p","","Try removing a filter or searching with fewer words, for example “nurse jobs” or “internships in london”."));
   }
   sync();
@@ -787,7 +926,8 @@ const avatar=n=>{
   if(LG[n]){const i=new Image();i.alt="";i.width=i.height=36;i.decoding="async";i.onload=()=>{a.textContent="";a.classList.add("has");if(LG[n].endsWith("#fb"))a.classList.add("fb");a.append(i)};i.src=LG[n]}
   return a;
 };
-const bump2=()=>document.querySelectorAll(".nsv").forEach(nv=>{nv.hidden=!saved.size;nv.textContent=saved.size});
+const bump2=()=>{const n=saved.size+savedCo.size;document.querySelectorAll(".nsv").forEach(nv=>{nv.hidden=!n;nv.textContent=n})};
+const toggleCo=n=>{savedCo.has(n)?savedCo.delete(n):savedCo.add(n);persistCo();bump2()};
 function starBtn(r){
   const url=r[7],b=el("button","ib star");b.type="button";b.append(svgUse("i-star"));
   const set=()=>{const on=saved.has(url);b.setAttribute("aria-pressed",on);b.setAttribute("aria-label",on?"Remove from saved":"Save job");b.title=on?"Remove from saved":"Save job"};
@@ -833,16 +973,30 @@ function item(r){
   ft.append(el("span","ago","Posted "+age(r[6])),starBtn(r),hideBtn(r,li),ap);
   rc.append(ft);li.append(rc);return li;
 }
-function citem(r){
-  const li=el("li","res"),rc=el("div","rc"),hd=el("div","hd"),pct=Math.round(r[3]*100);
-  const who=el("div","who",r[0]);who.append(el("span","via",r[1]+" open roles"));hd.append(avatar(r[0]),who);
-  const a=el("button","ttl");a.type="button";a.style.cssText="border:0;background:none;padding:0;text-align:left;font:inherit;color:inherit";
-  a.append(el("span","",pct+"% fresher-friendly"));
-  a.addEventListener("click",()=>{view="jobs";q=r[0];S={fresher:"1"};opened=true;qi.value=q;run();scrollTo(0,0)});
-  const m=el("div","meter"),b=el("i");b.style.width=pct+"%";m.append(b);
-  const sn=el("p","snip",r[2]+" of "+r[1]+" open roles are open to 0-2 years of experience. Years of experience are stated in "+Math.round(r[5]*100)+"% of them"+(r[5]<.3?", so this leans on job titles.":"."));
-  rc.append(hd,a,m,sn);
-  if(r[4])rc.append(el("p","gh",r[4]+(r[4]===1?" junior role asks":" junior roles ask")+" for 3+ years of experience."));
+function citem(c){ // c: [name, open roles, fresher roles, share, junior roles asking 3+ years, share stating years]
+  const li=el("li","res co"),rc=el("div","rc"),hd=el("div","hd"),t=cindex().st.get(c[0]),name=c[0];
+  const who=el("div","who"),nb=el("button","cn",name);nb.type="button";nb.title="View all jobs at "+name;nb.addEventListener("click",()=>go({}));who.append(nb,el("span","via",c[1].toLocaleString()+" open roles"));const sv=el("button","ib star");sv.type="button";sv.append(svgUse("i-star"));
+  const setSv=()=>{const on=savedCo.has(name);sv.setAttribute("aria-pressed",on);sv.setAttribute("aria-label",on?"Remove "+name+" from saved":"Save "+name);sv.title=on?"Remove from saved":"Save company"};setSv();
+  sv.addEventListener("click",()=>{toggleCo(name);setSv();if(view==="saved")run()});
+  hd.append(avatar(name),who,sv);rc.append(hd);
+  if(t){
+    const pc=x=>Math.round(100*x/t.n)+"%",stat=(k,v,l)=>{const d=el("div",CS.sort===k?"on":""),b=el("b","",v);d.append(b,el("span","",l));return d};
+    const g=el("div","cst");g.append(stat("fresh",pc(t.fr),"fresher"),stat("remote",pc(t.rm),"remote"),stat("pay",pc(t.pay),"pay listed"),stat("new",""+t.nw,"new in 7d"));rc.append(g);
+    const top=(m,n)=>[...m].sort((a,b)=>b[1]-a[1]).slice(0,n);
+    const cats=el("div","tg");for(const [x,n] of top(t.cats,3))cats.append(el("span","t b",cap(x)+" "+n));if(cats.children.length)rc.append(cats);
+    const sk=el("div","tg skl");for(const [x] of top(t.sk,5))sk.append(el("span","t q",SK[x]||cap(x)));if(sk.children.length)rc.append(sk);
+    const [loc,ln]=top(t.loc,1)[0]||["",0],bits=[];
+    if(loc&&ln/t.n>=.35)bits.push("Mostly "+loc);bits.push("Last posted "+age(t.last));
+    rc.append(el("p","line",bits.join(". ")));
+    if(t.gh/t.n>=.2)rc.append(el("p","gh",t.gh.toLocaleString()+" of "+t.n.toLocaleString()+" roles look like ghost postings."));
+  }
+  if(c[4])rc.append(el("p","gh",c[4]+(c[4]===1?" junior role asks":" junior roles ask")+" for 3+ years of experience."));
+  const go=(extra)=>{back={co:name,to:view==="saved"?"saved":"companies",y:scrollY};view="jobs";S={co:name,...extra};q="";qi.value="";opened=true;run();scrollTo(0,0)};
+  li.addEventListener("click",e=>{if(!e.target.closest("button,a"))go({})}); // the whole card opens the company
+  const ft=el("div","ft"),fr=el("button","cb","Fresher roles"),vw=el("button","apply","View jobs");fr.type=vw.type="button";
+  fr.addEventListener("click",()=>go({fresher:"1"}));vw.addEventListener("click",()=>go({}));
+  vw.setAttribute("aria-label","View all "+c[1]+" jobs at "+name);
+  ft.append(el("span","ago",c[2].toLocaleString()+" of "+c[1].toLocaleString()+" open to 0-2 years"),fr,vw);rc.append(ft);
   li.append(rc);return li;
 }
 function more(){
@@ -1022,10 +1176,11 @@ function drop(words){
 function sync(){
   const p=new URLSearchParams();
   if(q)p.set("q",q);if(view!=="jobs")p.set("view",view);if(opened)p.set("all","1");
+  if(view==="companies"){if(CS.sort!=="best")p.set("cs",CS.sort);if(CS.f.size)p.set("cf",[...CS.f].join())}
   for(const [a,b] of Object.entries(S))if(b)p.set(a,b);
   history.replaceState(null,"","#"+p);
 }
-function reset(){q="";S={};view="jobs";opened=false;qi.value="";hideSug();run();feedInit();scrollTo(0,0)}
+function reset(){back=null;q="";S={};view="jobs";opened=false;qi.value="";hideSug();run();feedInit();scrollTo(0,0)}
 let timer;
 qi.addEventListener("input",()=>{q=qi.value;clearTimeout(timer);timer=setTimeout(()=>{quiet=1;run()},140);suggest()});
 form.addEventListener("submit",e=>{e.preventDefault();hideSug();clearTimeout(timer);q=qi.value;remember(q);if(view!=="jobs")view="jobs";if(!q.trim()&&!filterCount())opened=true;run();qi.blur();scrollTo(0,0)});
@@ -1034,6 +1189,31 @@ $("#logo").addEventListener("click",e=>{e.preventDefault();reset()});
 $("#more").addEventListener("click",more);
 $("#gs").addEventListener("click",()=>{S.ghost=S.ghost?"":"1";opened=true;run()});
 $("#sort").addEventListener("change",e=>{S.sort=e.target.value;run()});
+$("#csort").addEventListener("change",e=>{CS.sort=e.target.value;run()});
+const cfx=$("#cfx");
+let CCNT={}; // how many companies each filter would match on its own, for the current name search
+for(const [k,[label]] of Object.entries(CFIL)){const b=el("button","qp");b.type="button";b.dataset.k=k;b.append(el("span","",label),el("span","n"));b.addEventListener("click",()=>{CS.f.has(k)?CS.f.delete(k):CS.f.add(k);run()});cfx.append(b)}
+const cclr=el("button","clr","Clear");cclr.type="button";cclr.hidden=true;cclr.addEventListener("click",()=>{CS.f.clear();run()});cfx.append(cclr);
+const VWS=[["compact","Compact","i-vc"],["comfy","Comfortable","i-feed"],["relaxed","Relaxed","i-vr"],["grid","Grid","i-vg"]],cvw=$("#cvw");
+try{const v=localStorage.getItem("rb_cview");if(VWS.some(x=>x[0]===v))CS.v=v}catch(e){}
+for(const [k,l,ic] of VWS){const b=el("button");b.type="button";b.dataset.k=k;b.title=l;b.setAttribute("aria-label",l+" layout");b.append(svgUse(ic));
+  b.addEventListener("click",()=>{CS.v=k;try{localStorage.setItem("rb_cview",k)}catch(e){}cvSync()});cvw.append(b)}
+function cvSync(){const co=view==="companies"||view==="saved"&&savedTab==="companies";list.className="out"+(co?" v-"+CS.v:"");document.body.classList.toggle("cgrid",co&&CS.v==="grid");for(const b of cvw.children)b.setAttribute("aria-pressed",b.dataset.k===CS.v);cvw.style.setProperty("--i",VWS.findIndex(x=>x[0]===CS.v))}
+const svx=$("#svx");
+for(const [k,l] of [["jobs","Jobs"],["companies","Companies"]]){const b=el("button","qp");b.type="button";b.dataset.k=k;b.append(el("span","",l),el("span","n"));b.addEventListener("click",()=>{savedTab=k;run()});svx.append(b)}
+function svxSync(){for(const b of svx.children){const k=b.dataset.k;b.setAttribute("aria-pressed",savedTab===k);b.lastChild.textContent=k==="jobs"?saved.size:savedCo.size}}
+function coBar(){ // company banner on a company's jobs: back link, name, save toggle
+  const bar=$("#cobar"),co=view==="jobs"&&S.co;bar.hidden=!co;if(!co)return;
+  bar.replaceChildren();
+  if(back&&back.co===co){const b=el("button","bk");b.type="button";b.append(svgUse("i-back"),el("span","",back.to==="saved"?"Saved":"Companies"));
+    b.addEventListener("click",()=>{const bk=back;back=null;view=bk.to;if(bk.to==="saved")savedTab="companies";S={};q="";qi.value="";opened=true;run();requestAnimationFrame(()=>scrollTo(0,bk.y))});bar.append(b)}
+  const info=el("div","coi"),t=el("div","cot"),n=(cindex().by.get(co)||[]).length;
+  t.append(el("b","",co),el("span","",n.toLocaleString()+" open role"+(n===1?"":"s")));info.append(avatar(co),t);bar.append(info);
+  const sv=el("button","qp svco");sv.type="button";
+  const set=()=>{const on=savedCo.has(co);sv.setAttribute("aria-pressed",on);sv.replaceChildren(svgUse("i-star"),el("span","",on?"Saved":"Save company"))};set();
+  sv.addEventListener("click",()=>{toggleCo(co);set()});bar.append(sv);
+}
+function cfxSync(){for(const b of cfx.querySelectorAll(".qp")){const k=b.dataset.k;b.setAttribute("aria-pressed",CS.f.has(k));b.lastChild.textContent=CCNT[k]==null?"":CCNT[k].toLocaleString()}cclr.hidden=!CS.f.size}
 const io=new IntersectionObserver(e=>{if(e[0].isIntersecting&&!$("#more").hidden){more();io.unobserve($("#more"));io.observe($("#more"))}},{rootMargin:"600px"});io.observe($("#more"));
 
 /* ---- preferences dialog ---- */
@@ -1058,6 +1238,13 @@ function drawPrefs(){
   chipset("#ps",[...sk].sort((a,b)=>b[1]-a[1]).slice(0,24).map(([x])=>["sk:"+x,SK[x]||cap(x),1]));
   chipset("#pt",Object.entries(EMP).map(([x,l])=>["emp:"+x,l,1]));
   chipset("#pw",[["remote","Remote",1.2],["pay","Salary listed",.8],["pay100","$100k and up",1]]);
+  $("#pcsec").hidden=!RT;
+  if(RT){
+    $("#pcd").textContent="updated "+RDATE;
+    $("#pc").replaceChildren(...[["","As posted"],...["USD","EUR","GBP","INR","CAD","AUD","SGD","JPY"].filter(c=>RT[c]).map(c=>[c,c+" "+sym(c).trim()])].map(([c,l])=>{
+      const b=el("button","",l);b.type="button";b.setAttribute("aria-pressed",CURV===c);
+      b.addEventListener("click",()=>{CURV=c;try{localStorage.setItem("rb_cur",c)}catch(e){}PD=1;for(const x of $("#pc").children)x.setAttribute("aria-pressed",x===b)});return b}));
+  }
   drawLearned();
 }
 function drawLearned(){
@@ -1067,12 +1254,24 @@ function drawLearned(){
   if(!M.n)ln.append(el("p","","Nothing yet. Save, apply to or hide a few jobs and this fills in."));
   else{ln.append(el("p","",M.n+" signal"+(M.n===1?"":"s")+" from "+saved.size+" saved and "+HID.size+" hidden jobs"));row("You tend to like",pos,"");row("You tend to skip",neg,"neg")}
 }
-function openDlg(){drawPrefs();dlg.showModal()}
+function openDlg(){drawPrefs();dlg.getAnimations().forEach(a=>a.cancel());dlg.showModal()}
 $("#me").addEventListener("click",openDlg);
 document.querySelectorAll(".tune .tb").forEach(b=>b.addEventListener("click",openDlg));
 document.querySelectorAll(".tune .x").forEach(b=>b.addEventListener("click",()=>{try{localStorage.setItem("rb_tune_x","1")}catch(e){}$("#tune2").hidden=true}));
-dlg.addEventListener("click",e=>{if(e.target===dlg)dlg.close()});
-dlg.addEventListener("close",()=>{refreshHome();if(!PD)return;PD=0;if(document.body.classList.contains("home"))feedInit();else run()});
+const SM=matchMedia("(max-width:719px)");let sdy=0;
+const closeSheet=()=>{ // slides the sheet out on phones, then closes it
+  if(!dlg.open)return;if(!SM.matches||RM.matches){dlg.close();return}
+  const a=dlg.animate({transform:["translateY("+sdy+"px)","translateY(110%)"]},{duration:220,easing:"cubic-bezier(.32,.72,0,1)",fill:"forwards"});
+  setTimeout(()=>{dlg.close();a.cancel();sdy=0},220)};
+dlg.addEventListener("click",e=>{if(e.target===dlg)closeSheet()});
+dlg.querySelector("form").addEventListener("submit",e=>{if(SM.matches&&!RM.matches){e.preventDefault();closeSheet()}});
+{const hd=dlg.querySelector("header");let y0=0,t0=0,on=0;
+ hd.addEventListener("pointerdown",e=>{if(!SM.matches||e.target.closest("button"))return;on=1;y0=e.clientY;t0=e.timeStamp;sdy=0;hd.setPointerCapture(e.pointerId)});
+ hd.addEventListener("pointermove",e=>{if(!on)return;const d=e.clientY-y0;sdy=d>0?d:d*.12;dlg.style.transform="translateY("+sdy+"px)"}); // upward drags resist
+ const end=e=>{if(!on)return;on=0;const v=sdy/Math.max(1,e.timeStamp-t0);dlg.style.transform="";
+  if(sdy>110||v>.6)closeSheet();else{dlg.animate({transform:["translateY("+sdy+"px)","translateY(0)"]},{duration:300,easing:"cubic-bezier(.32,.72,0,1)"});sdy=0}};
+ hd.addEventListener("pointerup",end);hd.addEventListener("pointercancel",end)}
+dlg.addEventListener("close",()=>{dlg.getAnimations().forEach(a=>a.cancel());sdy=0;refreshHome();if(!PD)return;PD=0;if(document.body.classList.contains("home"))feedInit();else run()});
 $("#reset").addEventListener("click",()=>{if(confirm("Forget everything it has learned and your picks? Saved jobs stay.")){PD=1;M={w:{},g:{},p:{},n:0,hid:[],prefs:[]};HID.clear();saveM();drawPrefs();refreshHome()}});
 
 /* ---- autocomplete, with recent searches when the field is empty ---- */
@@ -1112,8 +1311,8 @@ qi.addEventListener("blur",()=>setTimeout(hideSug,120));
 const ph=["nursing jobs in london","remote customer support for freshers","part-time retail near me","accounting internships in berlin","paid sales roles posted today","teacher jobs $50k+","warehouse jobs full-time","fresher friendly companies"];let phI=0;
 setInterval(()=>{if(!document.hidden&&document.body.classList.contains("home")&&!qi.value){phI=(phI+1)%ph.length;qi.placeholder=ph[phI]}},3200);
 
-Promise.all([fetch("jobs.json").then(r=>r.json()),fetch("companies.json").then(r=>r.json()),fetch("logos.json").then(r=>r.ok?r.json():{}).catch(()=>({}))]).then(([d,c,lg])=>{
-  D=d;C=c;LG=lg;BY=new Map(d.rows.map(r=>[r[7],r]));
+Promise.all([fetch("jobs.json").then(r=>r.json()),fetch("companies.json").then(r=>r.json()),fetch("logos.json").then(r=>r.ok?r.json():{}).catch(()=>({})),fetch("rates.json").then(r=>r.ok?r.json():null).catch(()=>null)]).then(([d,c,lg,rt])=>{
+  D=d;C=c;LG=lg;if(rt&&rt.rates){RT=rt.rates;RDATE=rt.date}BY=new Map(d.rows.map(r=>[r[7],r]));
   H=d.rows.map(r=>[r[0],r[1],r[2],r[8],r[14],r[15]].join(" ").toLowerCase());LC=d.rows.map(r=>r[2].toLowerCase());CO=d.rows.map(r=>r[1].toLowerCase());
   const sc=new Map(),cats=new Map();CC=new Map();
   for(const r of d.rows){CC.set(r[1],(CC.get(r[1])||0)+1);cats.set(r[8],(cats.get(r[8])||0)+1);
@@ -1124,7 +1323,7 @@ Promise.all([fetch("jobs.json").then(r=>r.json()),fetch("companies.json").then(r
   $("#meta").textContent=d.rows.length.toLocaleString()+" open jobs from "+CC.size.toLocaleString()+" companies, updated "+d.updated+".";
   tabsBuild();quickBuild();sheet(false);
   const p=new URLSearchParams(location.hash.slice(1));
-  q=p.get("q")||"";qi.value=q;view=["companies","saved"].includes(p.get("view"))?p.get("view"):"jobs";opened=p.has("all");
+  q=p.get("q")||"";qi.value=q;view=["companies","saved"].includes(p.get("view"))?p.get("view"):"jobs";opened=p.has("all");CS.sort=["fresh","roles","new","pay","clean"].includes(p.get("cs"))?p.get("cs"):"best";CS.f=new Set((p.get("cf")||"").split(",").filter(k=>CFIL[k]));
   for(const g of G){const v=p.get(g.k);if(v)S[g.k]=v}
   if(p.get("sort"))S.sort=p.get("sort");
   run();refreshHome();feedInit();

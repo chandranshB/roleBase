@@ -12,13 +12,13 @@ from scraper import company_stats, fresher_ok, ghost_flags, load
 # Remotive / RemoteOK terms are about attribution and display, so they stay out of a republished dataset.
 SKIP = {"remotive", "remoteok"}
 COLUMNS = {  # name -> (type, description); also the CSV column order
-    "source": ("string", "Where the job was read from: greenhouse, lever, ashby, smartrecruiters, workday, microsoft or arbeitnow."),
+    "source": ("string", "Where the job was read from: greenhouse, lever, ashby, smartrecruiters, workday, eightfold, amazon, microsoft or arbeitnow."),
     "company": ("string", "Employer name."),
     "title": ("string", "Job title as posted."),
     "url": ("string", "Apply link: opens the posting on the employer's own careers page or job board, where you can apply. Unique per row, so it works as the key."),
     "openings": ("numeric", "How many identical postings (same company, title, team and location) this row stands for. 1 for most jobs; more for roles opened in bulk, such as store jobs."),
     "team": ("string", "Department or team if the posting gives one."),
-    "category": ("string", "Field inferred from the title and team: engineering, data, design, product, sales, marketing, support, finance, legal, people, operations, security or other."),
+    "category": ("string", "Field inferred from the title and team: one of about 20 fields such as engineering, data, design, product, sales, marketing, support, finance, healthcare, retail, manufacturing, education, logistics, legal, people, operations or other."),
     "level": ("string", "Seniority inferred from the title (and years of experience): intern, junior, mid, senior, lead, staff+ or manager+."),
     "years_experience": ("numeric", "Minimum years of experience the posting asks for. Empty if not stated."),
     "employment": ("string", "full_time, part_time, contract or internship. Empty if not stated."),
