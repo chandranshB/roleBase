@@ -1,0 +1,11 @@
+name: Bug report
+description: Something on the site, the scraper or the data is wrong
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What's wrong?
+      description: Include a link to the job or page, and what you expected.
+    validations:
+      required: true

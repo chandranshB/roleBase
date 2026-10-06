@@ -160,6 +160,8 @@ Things that need weeks or months of history first, such as how long postings sta
 
 ## Credits
 
+Code is released under the [AGPL-3.0 License](LICENSE). See [CONTRIBUTING](CONTRIBUTING.md) to help out.
+
 Interface and sector icons are from [Tabler Icons](https://tabler.io/icons) (MIT, © Paweł Kuna). Brand marks, where used, come from [Simple Icons](https://simpleicons.org) (CC0). The Instrument Sans font is bundled under the SIL Open Font License.
 
 Exchange rates come from the European Central Bank via [Frankfurter](https://frankfurter.dev), with [Exchange Rate API](https://www.exchangerate-api.com) filling currencies the ECB does not publish. They are fetched when the site is built.

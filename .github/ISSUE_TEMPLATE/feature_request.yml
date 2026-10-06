@@ -1,0 +1,10 @@
+name: Feature request
+description: Suggest an employer, source or site feature
+labels: [enhancement]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What would you like to see?
+    validations:
+      required: true
