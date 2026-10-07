@@ -35,6 +35,7 @@
 {"company":"Wolt","first_seen":"2026-10-05","id":"greenhouse:wolt:6739407","location":"Kfar Saba, Israel","posted":"2026-02-24","team":"Order Fulfillment","title":"מלקטים - וולט מרקט - כפר סבא"}
 {"company":"Wolt","first_seen":"2026-10-05","id":"greenhouse:wolt:6739427","location":"Tel Aviv, Israel","posted":"2025-04-22","team":"Order Fulfillment","title":"מלקטים- וולט מרקט- מודיעין"}
 {"company":"Wolt","first_seen":"2026-10-05","id":"greenhouse:wolt:6739452","location":"Nicosia, Cyprus","posted":"2025-04-01","team":"Order Fulfillment","title":"Retail Grocery Assistant"}
+{"company":"Wolt","first_seen":"2026-10-07","id":"greenhouse:wolt:6739485","location":"Be’er Sheva, Israel","posted":"2025-04-22","team":"Order Fulfillment","title":"מלקטים-וולט מרקט- באר שבע"}
 {"company":"Wolt","first_seen":"2026-10-05","id":"greenhouse:wolt:6797490","location":"Paralimni, Cyprus","posted":"2025-04-11","team":"Order Fulfillment","title":"Retail Grocery Assistant"}
 {"company":"Wolt","first_seen":"2026-10-05","id":"greenhouse:wolt:6822282","location":"Munich, Germany","posted":"2025-04-22","team":"Order Fulfillment","title":"Grocery Associate"}
 {"company":"Wolt","first_seen":"2026-10-05","id":"greenhouse:wolt:6886954","location":"Aalborg, Denmark","posted":"2026-04-07","team":"Order Fulfillment","title":"Grocery Associate (under 18 years old)"}
@@ -209,7 +210,7 @@
 {"company":"Wolt","first_seen":"2026-10-05","id":"greenhouse:wolt:8223261","location":"Bielefeld, Germany; Cologne, Germany; Dortmund, Germany; Düsseldorf, Germany; Essen, Germany; Münster, Germany","posted":"2026-09-23","skills":["excel","tableau"],"team":"Merchant account management SMB","title":"Account Management Executive"}
 {"company":"Wolt","first_seen":"2026-10-05","id":"greenhouse:wolt:8223316","location":"Budapest, Hungary","posted":"2026-09-22","skills":["time_management"],"team":"Merchant onboarding","title":"Merchant Compliance Administrator (German speaking)","years":1}
 {"company":"Wolt","first_seen":"2026-10-05","id":"greenhouse:wolt:8223321","location":"Budapest, Hungary","posted":"2026-09-22","skills":["time_management"],"team":"Merchant onboarding","title":"Merchant Compliance Administrator (Greek speaking)","years":1}
-{"company":"Wolt","first_seen":"2026-10-05","id":"greenhouse:wolt:8227260","location":"Baku, Azerbaijan","posted":"2026-09-25","skills":["talent_acquisition"],"team":"Marketing Local","title":"Marketing Specialist"}
+{"closed_at":"2026-10-07","company":"Wolt","first_seen":"2026-10-05","id":"greenhouse:wolt:8227260","location":"Baku, Azerbaijan","posted":"2026-09-25","skills":["talent_acquisition"],"team":"Marketing Local","title":"Marketing Specialist"}
 {"company":"Wolt","first_seen":"2026-10-05","id":"greenhouse:wolt:8227743","location":"Helsinki, Finland","posted":"2026-09-28","skills":["negotiation","salesforce"],"team":"Global Drive","title":"Business Development Manager, SevenRooms","years":3}
 {"company":"Wolt","first_seen":"2026-10-05","id":"greenhouse:wolt:8230146","location":"Stockholm, Sweden","posted":"2026-09-24","skills":["ml","project_management"],"team":"Merchant onboarding","title":"Specialist, Catalog Operations EMEA","years":3}
 {"company":"Wolt","first_seen":"2026-10-05","id":"greenhouse:wolt:8230253","location":"Tallinn, Estonia","posted":"2026-09-25","skills":["talent_acquisition"],"team":"Workplace Services","title":"Workplace Coordinator"}
@@ -235,3 +236,4 @@
 {"company":"Wolt","first_seen":"2026-10-07","id":"greenhouse:wolt:8258732","location":"Helsinki, Finland","posted":"2026-10-07","skills":["project_management"],"team":"Global New Verticals","title":"(Associate) Manager, Quality, New Verticals"}
 {"company":"Wolt","first_seen":"2026-10-07","id":"greenhouse:wolt:8259568","location":"Nicosia, Cyprus","posted":"2026-10-07","skills":["agile","customer_service"],"team":"Merchant services","title":"Merchant Operations Associate"}
 {"company":"Wolt","first_seen":"2026-10-07","id":"greenhouse:wolt:8261112","location":"Nicosia, Cyprus","posted":"2026-10-07","skills":["six_sigma"],"team":"Talent Acquisition","title":"Senior Platform Hiring Partner","years":6}
+{"company":"Wolt","first_seen":"2026-10-07","id":"greenhouse:wolt:8261974","location":"Prague, Czechia","posted":"2026-10-07","skills":["crm","salesforce"],"team":"Merchant Operations and Support Leads","title":"Onboarding Team Lead"}
