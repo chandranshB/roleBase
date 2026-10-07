@@ -2,7 +2,7 @@
 
 # RoleBase: open job search and job-market data for every field
 
-RoleBase is a free, open job board and job-market dataset that updates itself. It collects around 55,000 open jobs, 52,000 of them straight from about 480 employers' own career pages and the rest from open job feeds, in nursing, retail, finance, education, manufacturing, logistics, engineering and many other fields, and lets you filter for entry-level, remote and salary-listed roles. Postings are kept in git, tagged with level, field, skills and pay, and tracked until they disappear, so you can also see which listings look like ghost jobs. The result is published as a searchable website and a Kaggle dataset, and everything runs on GitHub Actions.
+RoleBase is a free, open job board and job-market dataset that updates itself. It collects around 55,000 open jobs, 52,000 of them straight from about 550 employers' own career pages and the rest from open job feeds, in nursing, retail, finance, education, manufacturing, logistics, engineering and many other fields, and lets you filter for entry-level, remote and salary-listed roles. Postings are kept in git, tagged with level, field, skills and pay, and tracked until they disappear, so you can also see which listings look like ghost jobs. The result is published as a searchable website and a Kaggle dataset, and everything runs on GitHub Actions.
 
 **[Search the jobs](https://chandranshb.github.io/roleBase/)** · **[Kaggle dataset](https://www.kaggle.com/datasets/chandranshbinjola/job-listings)** · **[Roadmap](../../issues)**
 
