@@ -209,7 +209,7 @@
 {"b": "lever:aledade", "last_ok": "2026-10-08", "strikes": 0}
 {"b": "lever:anchorage", "last_ok": "2026-10-08", "strikes": 0}
 {"b": "lever:belvederetrading", "last_ok": "2026-10-08", "strikes": 0}
-{"b": "lever:binance", "last_ok": "2026-10-08", "strikes": 1, "why": "dropped from 284 to 33"}
+{"b": "lever:binance", "last_ok": "2026-10-08", "strikes": 2, "why": "dropped from 284 to 33"}
 {"b": "lever:bluebottlecoffee", "last_ok": "2026-10-08", "strikes": 0}
 {"b": "lever:brookings", "last_ok": "2026-10-08", "strikes": 0}
 {"b": "lever:charitywater", "last_ok": "2026-10-08", "strikes": 0}
@@ -391,12 +391,12 @@
 {"b": "workday:ing.wd3.myworkdayjobs.com/icsgblcor", "last_ok": "2026-10-08", "strikes": 0}
 {"b": "workday:insperity.wd12.myworkdayjobs.com/NSP", "last_ok": "2026-10-08", "strikes": 0}
 {"b": "workday:intapp.wd1.myworkdayjobs.com/Intapp", "last_ok": "2026-10-08", "strikes": 0}
-{"b": "workday:intel.wd1.myworkdayjobs.com/External", "last_ok": "2026-10-07", "strikes": 0, "why": "error: 'title'"}
+{"b": "workday:intel.wd1.myworkdayjobs.com/External", "last_ok": "2026-10-08", "strikes": 0}
 {"b": "workday:ivytech.wd1.myworkdayjobs.com/Ivy_Tech_Careers", "last_ok": "2026-10-08", "strikes": 0}
 {"b": "workday:jj.wd5.myworkdayjobs.com/JJ", "last_ok": "2026-10-08", "strikes": 0}
 {"b": "workday:jll.wd1.myworkdayjobs.com/jllcareers", "last_ok": "2026-10-08", "strikes": 0}
 {"b": "workday:kainos.wd3.myworkdayjobs.com/Kainos", "last_ok": "2026-10-08", "strikes": 0}
-{"b": "workday:kbr.wd5.myworkdayjobs.com/KBR_Careers", "last_ok": "2026-10-08", "strikes": 0, "why": "error: 'title'"}
+{"b": "workday:kbr.wd5.myworkdayjobs.com/KBR_Careers", "last_ok": "2026-10-08", "strikes": 0}
 {"b": "workday:kiongroup.wd3.myworkdayjobs.com/KION_SCS", "last_ok": "2026-10-08", "strikes": 0}
 {"b": "workday:kla.wd1.myworkdayjobs.com/Search", "last_ok": "2026-10-08", "strikes": 0}
 {"b": "workday:kone.wd3.myworkdayjobs.com/Careers", "last_ok": "2026-10-08", "strikes": 0}
