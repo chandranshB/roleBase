@@ -50,7 +50,7 @@
 {"company":"xAI","first_seen":"2026-10-08","id":"greenhouse:xai:5090120007","location":"Remote","posted":"2026-04-01","remote":true,"team":"Human Data","title":"AI Tutor - German"}
 {"closed_at":"2026-10-08","company":"xAI","first_seen":"2026-10-07","id":"greenhouse:xai:5090171007","location":"Remote International","posted":"2026-03-27","remote":true,"team":"Human Data","title":"AI Tutor - Arabic"}
 {"company":"xAI","first_seen":"2026-10-07","id":"greenhouse:xai:5090180007","location":"Remote US","posted":"2026-04-01","remote":true,"team":"Human Data","title":"AI Tutor - Chinese"}
-{"company":"xAI","first_seen":"2026-10-07","id":"greenhouse:xai:5090197007","location":"Remote International","posted":"2026-03-27","remote":true,"team":"Human Data","title":"AI Tutor - Dutch"}
+{"closed_at":"2026-10-09","company":"xAI","first_seen":"2026-10-07","id":"greenhouse:xai:5090197007","location":"Remote International","posted":"2026-03-27","remote":true,"team":"Human Data","title":"AI Tutor - Dutch"}
 {"company":"xAI","first_seen":"2026-10-07","id":"greenhouse:xai:5090199007","location":"Remote International","posted":"2026-04-01","remote":true,"team":"Human Data","title":"AI Tutor - Finnish"}
 {"company":"xAI","first_seen":"2026-10-07","id":"greenhouse:xai:5090202007","location":"Remote International","posted":"2026-04-01","remote":true,"team":"Human Data","title":"AI Tutor - French"}
 {"company":"xAI","first_seen":"2026-10-07","id":"greenhouse:xai:5090209007","location":"Remote International","posted":"2026-04-01","remote":true,"team":"Human Data","title":"AI Tutor - Italian"}
@@ -117,7 +117,7 @@
 {"company":"xAI","first_seen":"2026-10-07","id":"greenhouse:xai:5186992007","location":"Palo Alto, CA","pay":[180000,440000,"USD"],"posted":"2026-07-14","skills":["python","rust","c++","llm"],"team":"Model","title":"Member of Technical Staff - RL Training Framework"}
 {"company":"xAI","first_seen":"2026-10-07","id":"greenhouse:xai:5187964007","location":"Dublin, Ireland","pay":[80000,150000,"EUR"],"posted":"2026-07-15","team":"Engineering","title":"Software Engineer - Network Software and Services"}
 {"company":"xAI","first_seen":"2026-10-07","id":"greenhouse:xai:5188230007","location":"Palo Alto, CA","pay":[175000,275000,"USD"],"posted":"2026-07-22","skills":["ml"],"team":"Engineering","title":"Software Engineer - Evals","years":3}
-{"company":"xAI","first_seen":"2026-10-07","id":"greenhouse:xai:5188312007","location":"Remote International","posted":"2026-07-15","remote":true,"team":"Human Data","title":"AI Tutor - Sinhala"}
+{"closed_at":"2026-10-09","company":"xAI","first_seen":"2026-10-07","id":"greenhouse:xai:5188312007","location":"Remote International","posted":"2026-07-15","remote":true,"team":"Human Data","title":"AI Tutor - Sinhala"}
 {"company":"xAI","first_seen":"2026-10-07","id":"greenhouse:xai:5189147007","location":"Southaven, MS; Memphis, TN","posted":"2026-07-16","team":"Data Center","title":"Power Systems Engineer, Data Center Infrastructure - Memphis","years":3}
 {"company":"xAI","first_seen":"2026-10-07","id":"greenhouse:xai:5189148007","location":"Southaven, MS; Memphis, TN","posted":"2026-07-16","team":"Data Center","title":"Electrical Reliability Engineer, Data Center Infrastructure - Memphis","years":3}
 {"company":"xAI","first_seen":"2026-10-07","id":"greenhouse:xai:5191142007","location":"Palo Alto, CA","pay":[180000,440000,"USD"],"posted":"2026-07-20","skills":["rust","c++","linux","kubernetes","docker"],"team":"Engineering","title":"Software Engineer - Platform Infrastructure (Rust, C++)"}
@@ -143,9 +143,9 @@
 {"company":"xAI","first_seen":"2026-10-07","id":"greenhouse:xai:5206598007","location":"Southaven, MS; Memphis, TN","posted":"2026-08-06","skills":["inventory_management","jira","ml","python"],"team":"Data Center","title":"Manager, Data Center Operations","years":5}
 {"company":"xAI","first_seen":"2026-10-07","id":"greenhouse:xai:5206940007","location":"Southaven, MS; Memphis, TN","posted":"2026-08-10","skills":["procurement","revit"],"team":"Data Center","title":"Mechanical Engineer (Macrohard/Colossus) - Memphis","years":1}
 {"company":"xAI","first_seen":"2026-10-07","id":"greenhouse:xai:5207340007","location":"Remote International","posted":"2026-08-07","remote":true,"team":"Human Data","title":"AI Tutor - Croatian"}
-{"company":"xAI","first_seen":"2026-10-07","id":"greenhouse:xai:5207373007","location":"Remote US","posted":"2026-08-07","remote":true,"team":"Human Data","title":"AI Tutor - Ukrainian"}
+{"closed_at":"2026-10-09","company":"xAI","first_seen":"2026-10-07","id":"greenhouse:xai:5207373007","location":"Remote US","posted":"2026-08-07","remote":true,"team":"Human Data","title":"AI Tutor - Ukrainian"}
 {"company":"xAI","first_seen":"2026-10-07","id":"greenhouse:xai:5207427007","location":"Remote International","posted":"2026-08-07","remote":true,"team":"Human Data","title":"AI Tutor - Hausa"}
-{"company":"xAI","first_seen":"2026-10-07","id":"greenhouse:xai:5207579007","location":"Remote International","posted":"2026-08-07","remote":true,"team":"Human Data","title":"AI Tutor - Bulgarian"}
+{"closed_at":"2026-10-09","company":"xAI","first_seen":"2026-10-07","id":"greenhouse:xai:5207579007","location":"Remote International","posted":"2026-08-07","remote":true,"team":"Human Data","title":"AI Tutor - Bulgarian"}
 {"company":"xAI","first_seen":"2026-10-07","id":"greenhouse:xai:5207581007","location":"Remote International","posted":"2026-08-07","remote":true,"team":"Human Data","title":"AI Tutor - Yoruba"}
 {"closed_at":"2026-10-08","company":"xAI","first_seen":"2026-10-07","id":"greenhouse:xai:5207584007","location":"Remote International","posted":"2026-08-07","remote":true,"team":"Human Data","title":"AI Tutor - Igbo"}
 {"company":"xAI","first_seen":"2026-10-08","id":"greenhouse:xai:5207586007","location":"Remote International","posted":"2026-08-07","remote":true,"team":"Human Data","title":"AI Tutor - Serbian"}
