@@ -70,7 +70,7 @@ All of this is read from posting text with simple rules, so expect mistakes. Lev
 
 ```mermaid
 flowchart LR
-  A["Public job-board APIs<br/>Greenhouse, Lever, Ashby, SmartRecruiters,<br/>Workday, Eightfold, Amazon, Microsoft careers + feeds"] --> B[scraper.py]
+  A["Public job-board APIs<br/>Greenhouse, Lever, Ashby, SmartRecruiters,<br/>Teamtailor, Personio, Recruitee, Workday, Eightfold, Amazon, Microsoft careers + feeds"] --> B[scraper.py]
   B --> C[("data/jobs/*.jsonl<br/>data/pulse.csv<br/>data/archive.csv")]
   C -->|commit| G[(git history)]
   C --> D[build_site.py + build_logos.py] --> E[GitHub Pages site]
@@ -137,7 +137,7 @@ python build_pages.py      # crawlable field and company pages, sitemap.xml (nee
 ## Good citizen
 
 - Only public job-board APIs and feeds are used (Microsoft's careers search API is allowed by its robots.txt). Sites that forbid scraping (LinkedIn, Indeed, Naukri and similar) are left out on purpose.
-- Every listing belongs to its employer and links back to the original posting. Remotive and RemoteOK entries link to their own pages as their terms ask, and are left out of the Kaggle dataset.
+- Every listing belongs to its employer and links back to the original posting. Remotive, RemoteOK, Himalayas, Jobicy, We Work Remotely and Get on Board entries link to their own pages as their terms ask, and are left out of the Kaggle dataset.
 - The scraper identifies itself with a user agent and backs off on rate limits.
 
 ## Questions people ask
@@ -149,7 +149,7 @@ Switch on "Fresher-friendly" in the search. It keeps roles that state two years 
 A ghost job is a listing that is not really being hired for, such as an evergreen "talent pool" post or a role open for over a year. RoleBase adds points for age, talent-pool wording, recruiting agencies, many identical postings and reposts, and shows the reason. It is a guess, not proof.
 
 **Where do the listings come from?**
-Directly from employers' own application systems (Greenhouse, Lever, Ashby, SmartRecruiters, Workday and a few company career sites) and from a few open feeds. Every job links back to the original posting, so you apply on the employer's page.
+Directly from employers' own application systems (Greenhouse, Lever, Ashby, SmartRecruiters, Teamtailor, Personio, Recruitee, Workday and a few company career sites) and from a few open feeds. Every job links back to the original posting, so you apply on the employer's page.
 
 **Is there a free job postings dataset I can use for analysis?**
 Yes. The [Kaggle dataset](https://www.kaggle.com/datasets/chandranshbinjola/job-listings) has the same data as flat CSV, with the apply link, level, field, skills, pay where stated and open or closed dates.

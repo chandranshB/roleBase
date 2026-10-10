@@ -11,7 +11,9 @@ import json
 import re
 import sys
 import time
+import xml.etree.ElementTree as ET
 from concurrent.futures import ThreadPoolExecutor
+from email.utils import parsedate_to_datetime
 from pathlib import Path
 
 import requests
@@ -326,7 +328,8 @@ def workday(s, name):  # s = "<tenant>.<pod>.myworkdayjobs.com/<site>"; the list
                  for d in [first, *rest] for j in d["jobPostings"] if j.get("externalPath")}.values())  # some tenants list entries with no link: skip those
 
 
-CAPPED = {"workday", "eightfold", "amazon"}
+CAPPED = {"workday", "eightfold", "amazon", "himalayas", "jobicy"}
+HIM_CAP = 400  # newest N Himalayas jobs (of 100k+)
 EF_CAP = 300  # newest N per Eightfold/Amazon site (Starbucks alone lists 20k+ store jobs)
 
 
@@ -399,8 +402,106 @@ def arbeitnow():  # must read every page, else jobs pushed past the cap would lo
     raise RuntimeError("arbeitnow: >100 pages")
 
 
-ATS = dict(greenhouse=greenhouse, lever=lever, ashby=ashby, smartrecruiters=smartrecruiters, workday=workday, microsoft=microsoft, eightfold=eightfold, amazon=amazon)
-FEEDS = dict(remotive=remotive, remoteok=remoteok, arbeitnow=arbeitnow)
+def rss_day(s):
+    try:
+        return parsedate_to_datetime(s).date().isoformat()
+    except (TypeError, ValueError):
+        return None
+
+
+def himalayas():  # remote jobs worldwide; 117k listed, so only the newest HIM_CAP (20 per page, cursor paging)
+    out, cur = [], None
+    while len(out) < HIM_CAP:
+        d = get("https://himalayas.app/jobs/api", params={"limit": 20, **({"cursor": cur} if cur else {})})
+        out += [job("himalayas", "himalayas", j["guid"].rstrip("/").rsplit("/", 1)[-1], clean_company(j["companyName"]), j["title"],
+                    j["applicationLink"], ", ".join(j.get("locationRestrictions") or []) or "Worldwide", True, j.get("pubDate"),
+                    desc=text(j.get("description")), team=" ".join(j.get("parentCategories") or []), emp=[j.get("employmentType")],
+                    tags=j.get("categories") or [], hint="junior" if "Entry-level" in (j.get("seniority") or []) else None,
+                    pay=[int(j["minSalary"]), int(j["maxSalary"]), j["currency"]] if j.get("minSalary") and j.get("maxSalary") and j.get("currency")
+                    and j.get("salaryPeriod") == "annual" else None) for j in d["jobs"]]
+        cur = d.get("nextCursor")
+        if not cur or not d["jobs"]:
+            break
+    return out
+
+
+def jobicy():  # newest 100 remote jobs, salary stated for many
+    return [job("jobicy", "jobicy", j["id"], clean_company(j["companyName"]), j["jobTitle"], j["url"], j.get("jobGeo"), True, j.get("pubDate"),
+                desc=text(j.get("jobDescription")), team=" ".join(j.get("jobIndustry") or []), emp=j.get("jobType") or [],
+                pay=[int(j["salaryMin"]), int(j["salaryMax"]), j["salaryCurrency"]] if j.get("salaryMin") and j.get("salaryMax")
+                and j.get("salaryCurrency") and j.get("salaryPeriod") == "yearly" else None)
+            for j in get("https://jobicy.com/api/v2/remote-jobs", params={"count": 100})["jobs"]]
+
+
+def weworkremotely():  # RSS of the whole board; titles are "Company: Role"
+    r = S.get("https://weworkremotely.com/remote-jobs.rss", timeout=TIMEOUT)
+    r.raise_for_status()
+    out = []
+    for i in ET.fromstring(r.content).iter("item"):
+        co, _, title = (i.findtext("title") or "").partition(": ")
+        out.append(job("weworkremotely", "weworkremotely", i.findtext("link").rstrip("/").rsplit("/", 1)[-1], clean_company(co), title, i.findtext("link"),
+                       i.findtext("region") or i.findtext("country"), True, rss_day(i.findtext("pubDate")),
+                       desc=text(i.findtext("description")), team=i.findtext("category"), emp=[i.findtext("type")]))
+    return out
+
+
+def getonbrd():  # Latin America's tech board (mostly Spanish postings), programming category
+    out = []
+    for p in range(1, 21):
+        d = get("https://www.getonbrd.com/api/v0/categories/programming/jobs", params={"per_page": 100, "page": p, "expand": '["company"]'})
+        for j in d["data"]:
+            a = j["attributes"]
+            out.append(job("getonbrd", "getonbrd", j["id"], clean_company(a["company"]["data"]["attributes"]["name"]), a["title"],
+                           f"https://www.getonbrd.com/jobs/{j['id']}", ", ".join(a.get("countries") or []), a.get("remote"), a.get("published_at"),
+                           desc=text(" ".join(filter(None, [a.get("description"), a.get("functions"), a.get("desirable")])))))
+        if p >= d["meta"]["total_pages"]:
+            return out
+    raise RuntimeError("getonbrd: >20 pages")
+
+
+def teamtailor(s, name):  # RSS per company: <slug>.teamtailor.com
+    r = S.get(f"https://{s}.teamtailor.com/jobs.rss", timeout=TIMEOUT)
+    r.raise_for_status()
+    ns, out = {"tt": "https://teamtailor.com/locations"}, []
+    for i in ET.fromstring(r.content).iter("item"):
+        loc = "; ".join(", ".join(filter(None, [l.findtext("tt:city", "", ns), l.findtext("tt:country", "", ns)])) for l in i.iterfind("tt:locations/tt:location", ns))
+        out.append(job("teamtailor", f"teamtailor:{s}", i.findtext("guid"), name, i.findtext("title"), i.findtext("link"), loc,
+                       i.findtext("remoteStatus") == "fully", rss_day(i.findtext("pubDate")), desc=text(i.findtext("description")),
+                       team=i.findtext("tt:department", "", ns)))
+    return out
+
+
+PERSONIO_LEVEL = {"entry-level": "junior", "student": "intern", "executive": "manager+"}
+
+
+def personio(s, name):  # XML feed per company: <slug>.jobs.personio.de/xml
+    r = S.get(f"https://{s}.jobs.personio.de/xml", timeout=TIMEOUT)
+    r.raise_for_status()
+    out = []
+    for p in ET.fromstring(r.content).iter("position"):
+        offices = [p.findtext("office")] + [o.text for o in p.iterfind("additionalOffices/office")]
+        desc = " ".join(text(d.findtext("value")) for d in p.iterfind("jobDescriptions/jobDescription"))
+        out.append(job("personio", f"personio:{s}", p.findtext("id"), name, p.findtext("name"), f"https://{s}.jobs.personio.de/job/{p.findtext('id')}",
+                       "; ".join(filter(None, offices)), False, p.findtext("createdAt"), desc=desc, team=p.findtext("department"),
+                       emp=[p.findtext("schedule"), p.findtext("employmentType")], hint=PERSONIO_LEVEL.get(p.findtext("seniority"))))
+    return out
+
+
+def recruitee(s, name):  # <slug>.recruitee.com/api/offers
+    out = []
+    for j in get(f"https://{s}.recruitee.com/api/offers/")["offers"]:
+        sal = j.get("salary") or {}
+        out.append(job("recruitee", f"recruitee:{s}", j["id"], name, j["title"], j["careers_url"], j.get("location"), j.get("remote"),
+                       j.get("published_at"), desc=text((j.get("description") or "") + " " + (j.get("requirements") or "")), team=j.get("department"),
+                       emp=[j.get("employment_type_code")],
+                       pay=[int(sal["min"]), int(sal["max"]), sal["currency"]] if sal.get("min") and sal.get("max") and sal.get("period") == "year" else None))
+    return out
+
+
+ATS = dict(greenhouse=greenhouse, lever=lever, ashby=ashby, smartrecruiters=smartrecruiters, workday=workday, microsoft=microsoft, eightfold=eightfold,
+           amazon=amazon, teamtailor=teamtailor, personio=personio, recruitee=recruitee)
+FEEDS = dict(remotive=remotive, remoteok=remoteok, arbeitnow=arbeitnow, himalayas=himalayas, jobicy=jobicy, weworkremotely=weworkremotely,
+             getonbrd=getonbrd)
 
 
 # ---------- storage ----------

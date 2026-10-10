@@ -578,5 +578,32 @@
   "apply.starbucks.com/starbucks.com": "Starbucks",
   "careers.qualcomm.com/qualcomm.com": "Qualcomm",
   "jobs.vodafone.com/vodafone.com": "Vodafone"
+ },
+ "teamtailor": {
+  "sendcloud": "Sendcloud",
+  "storytel": "Storytel",
+  "payfit": "PayFit",
+  "deezer": "Deezer",
+  "ornikar": "Ornikar",
+  "huel": "Huel",
+  "funnel": "Funnel",
+  "lunar": "Lunar",
+  "templafy": "Templafy",
+  "anyfin": "Anyfin",
+  "tibber": "Tibber",
+  "oatly": "Oatly",
+  "polestar": "Polestar",
+  "schibsted": "Schibsted",
+  "vipps": "Vipps",
+  "maersk": "Maersk"
+ },
+ "personio": {
+  "thermondo": "Thermondo",
+  "chrono24": "Chrono24",
+  "clark": "Clark"
+ },
+ "recruitee": {
+  "bunq": "bunq",
+  "bitfinex": "Bitfinex"
  }
 }
