@@ -20,7 +20,12 @@ jobs:
       - run: python export_kaggle.py
       - name: Publish new dataset version (creates it, private, on first run)
         if: env.KAGGLE_API_TOKEN != ''
-        run: kaggle datasets version -p kaggle -m "auto $(date -u +%F)" || kaggle datasets create -p kaggle
+        run: |
+          for try in 1 2 3; do  # Kaggle's API sometimes answers with an empty body; a retry at worst makes one extra version
+            kaggle datasets version -p kaggle -m "auto $(date -u +%F)" && exit 0
+            sleep 20
+          done
+          kaggle datasets create -p kaggle  # only the very first run gets here: the dataset does not exist yet
       - name: Sync subtitle, tags, sources, file/column descriptions and cover image
         if: env.KAGGLE_API_TOKEN != ''
         run: |
@@ -29,7 +34,13 @@ jobs:
             [ "$(kaggle datasets status "$KAGGLE_USERNAME/job-listings")" = ready ] && break
             sleep 10
           done
-          kaggle datasets metadata --update -p kaggle "$KAGGLE_USERNAME/job-listings"
+          for try in 1 2 3; do  # the cover-image upload gets an empty reply now and then (2 of the first 8 runs), and the whole sync is skipped
+            kaggle datasets metadata --update -p kaggle "$KAGGLE_USERNAME/job-listings" && exit 0
+            sleep 20
+          done
+          # the data is already published, so this is a warning (the next daily run tries again) and the notebook step below still runs
+          echo "::warning title=kaggle metadata::sync failed three times"
+          # column descriptions: Kaggle's server drops them (kaggle-cli#1207), so export_kaggle.py also writes them into the dataset description
       - name: Publish the starter notebook (public, shows under the dataset Code tab)
         if: env.KAGGLE_API_TOKEN != ''
         run: kaggle kernels push -p kaggle_notebook || echo "notebook push failed, not fatal"

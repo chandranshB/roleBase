@@ -25,7 +25,20 @@ DIR = Path("data/jobs")  # one jsonl per board, e.g. greenhouse_stripe.jsonl
 COMPANIES = Path("companies.json")  # {"greenhouse": {"stripe": "Stripe"}, ...}  slug -> display name
 KEEP_CLOSED_DAYS = 90  # closed jobs older than this are pruned (git history still has them)
 
-S = requests.Session()
+class Client(requests.Session):
+    waits = (2, 6)  # seconds before the 2nd and 3rd try
+
+    def request(self, *a, **kw):  # urllib3's Retry stops once the response starts, so a connection cut mid-body (IncompleteRead) is retried here
+        for w in (*self.waits, None):
+            try:
+                return super().request(*a, **kw)
+            except requests.exceptions.ChunkedEncodingError:
+                if w is None:
+                    raise
+                time.sleep(w)
+
+
+S = Client()
 S.headers["User-Agent"] = "roleBase-job-scraper"
 S.mount("https://", HTTPAdapter(pool_maxsize=64, max_retries=Retry(total=5, backoff_factor=2, status_forcelist=[429, 500, 502, 503, 504],
                                                                     allowed_methods=None)))  # None = retry POST too (Workday searches are read-only)
@@ -743,14 +756,16 @@ def verdict(jobs, err, prev, strikes):
     return None
 
 
-LANES = {"workable": 2, "arbeitnow": 1}  # rate-limited hosts get their own small pools: their pauses never tie up the main workers
-WORKERS = 24  # main pool: all I/O, spread over hundreds of different hosts
+# Every provider is its own lane and all lanes start at once, so a slow or rate-limited provider only ever delays its own boards, never someone else's.
+# The number is how many boards of that provider are fetched at the same time (conservative defaults, not published limits); a provider not listed
+# here (Arbeitnow, every feed, Amazon, Microsoft...) gets one worker, i.e. one board at a time. Workable and Arbeitnow also pause a second between requests.
+LANES = {"greenhouse": 8, "lever": 6, "ashby": 6, "smartrecruiters": 4, "workday": 16, "teamtailor": 4, "oracle": 4, "workable": 2, "personio": 2, "recruitee": 2}
 RUN_BUDGET = 22 * 60  # seconds. A hung source is cut off (its jobs are kept as they were); the Actions job itself times out at 30 minutes
 
 
-def run_all(tasks, budget=RUN_BUDGET, workers=WORKERS):
-    """tasks: [(key, fn)] -> ([(key, result, error, seconds)], unfinished keys). Every task runs at once in its pool: the main pool, or the lane named
-    by the key's first part (e.g. "workable:foo" -> the workable lane). Past `budget` seconds the unfinished tasks are reported as timed out."""
+def run_all(tasks, budget=RUN_BUDGET):
+    """tasks: [(key, fn)] -> ([(key, result, error, seconds)], unfinished keys). A task runs in the lane named by its key's first part
+    ("workable:foo" -> workable, "remotive" -> remotive), at that lane's own pace. Past `budget` seconds the unfinished tasks are reported as timed out."""
     def run(t):
         t0 = time.time()
         try:
@@ -758,8 +773,12 @@ def run_all(tasks, budget=RUN_BUDGET, workers=WORKERS):
         except Exception as e:
             return t[0], None, e, time.time() - t0
 
-    pools = {None: ThreadPoolExecutor(workers), **{lane: ThreadPoolExecutor(n) for lane, n in LANES.items()}}
-    futs = {pools[t[0].split(":")[0] if t[0].split(":")[0] in LANES else None].submit(run, t): t[0] for t in tasks}
+    pools = {}
+    futs = {}
+    for t in tasks:
+        lane = t[0].split(":")[0]
+        pool = pools.get(lane) or pools.setdefault(lane, ThreadPoolExecutor(LANES.get(lane, 1)))
+        futs[pool.submit(run, t)] = t[0]
     done, pending = wait(futs, timeout=budget)
     for ex in pools.values():
         ex.shutdown(wait=False, cancel_futures=True)
@@ -808,6 +827,10 @@ def main():
         print(f"::warning title=scrape {scope}::{why}")  # shows up as an annotation on the Actions run
     slow = sorted(results, key=lambda r: -r[3])[:3]
     print("slowest: " + ", ".join(f"{r[0]} {r[3]:.0f}s" for r in slow) + f" | busy {sum(r[3] for r in results):.0f}s of {time.time() - t_start:.0f}s")
+    busy = {}
+    for r in results:
+        busy[r[0].split(":")[0]] = busy.get(r[0].split(":")[0], 0) + r[3]
+    print("busy per lane (seconds of work / workers): " + ", ".join(f"{k} {v:.0f}/{LANES.get(k, 1)}" for k, v in sorted(busy.items(), key=lambda kv: -kv[1])[:6]))
     if not fetched:
         sys.exit("all sources failed")
 

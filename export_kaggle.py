@@ -12,7 +12,7 @@ from scraper import company_stats, fresher_ok, ghost_flags, load
 # These boards' terms are about attribution and display, so they stay out of a republished dataset.
 SKIP = {"remotive", "remoteok", "himalayas", "jobicy", "weworkremotely", "getonbrd", "workingnomads", "landingjobs", "cryptojobs"}
 COLUMNS = {  # name -> (type, description); also the CSV column order
-    "source": ("string", "Where the job was read from: greenhouse, lever, ashby, smartrecruiters, workday, eightfold, amazon, microsoft, teamtailor, personio, recruitee, workable, oracle or arbeitnow."),
+    "source": ("string", "Where the job was read from: greenhouse, lever, ashby, smartrecruiters, workday, eightfold, amazon, microsoft, teamtailor, personio, recruitee, workable, oracle, arbeitnow, jobtech (Swedish Public Employment Service) or usajobs (US federal jobs)."),
     "company": ("string", "Employer name."),
     "title": ("string", "Job title as posted."),
     "url": ("string", "Apply link: opens the posting on the employer's own careers page or job board, where you can apply. Unique per row, so it works as the key."),
@@ -55,6 +55,12 @@ SKILL_COLUMNS = {
     "jobs": ("numeric", "Open postings that mention the skill."),
     "tagged": ("numeric", "Open postings that mention at least one skill (the denominator for share_pct)."),
     "share_pct": ("numeric", "100 * jobs / tagged."),
+}
+FILES = {  # file -> (description, its columns): feeds the Kaggle file/column metadata, the column table in the description and the header check below
+    "jobs.csv": ("One row per job posting (open, or closed within the last 90 days), with the apply link, level, field, skills, pay where stated and dates. Identical postings are merged (see openings).", COLUMNS),
+    "jobs_by_company.csv": ("One row per company with 5+ open jobs: how many of its roles are open to 0-2 years of experience.", COMPANY_COLUMNS),
+    "open_jobs_daily.csv": ("Open and fresher-friendly job counts per day since tracking began (a growing time series).", DAILY_COLUMNS),
+    "skill_demand_daily.csv": ("Per day and skill: postings that mention the skill, postings that mention any skill, and the share between them.", SKILL_COLUMNS),
 }
 
 
@@ -120,6 +126,11 @@ with open(out / "skill_demand_daily.csv", "w", encoding="utf-8", newline="") as 
             if int(r["tagged"]):
                 w.writerow([r["date"], r["skill"], r["jobs"], r["tagged"], round(100 * int(r["jobs"]) / int(r["tagged"]), 2)])
 
+for name, (_, cols) in FILES.items():  # Kaggle's docs: the field list must cover every CSV column, in order, or descriptions "will not be matched up correctly": fail here, before anything is published
+    with open(out / name, encoding="utf-8", newline="") as f:
+        assert next(csv.reader(f)) == list(cols), f"{name}: CSV header and column descriptions differ"
+    assert all(t and d.strip() for t, d in cols.values()), f"{name}: a column has no type or description"
+
 fields = Counter(r["category"] for r in live if r["category"] != "other")
 field_list = ", ".join(f"{k.replace('_', ' ')} ({v:,})" for k, v in fields.most_common(14))
 n_companies = len({r["company"] for r in live})
@@ -127,8 +138,12 @@ TITLE = "Job Listings: Open Jobs in Every Field (Daily)"
 SUBTITLE = "Daily-updated open jobs with apply links, level, field, skills and pay"
 assert 6 <= len(TITLE) <= 50 and len(SUBTITLE) <= 80, (len(TITLE), len(SUBTITLE))
 SOURCES = ("Public job-board APIs and feeds of Greenhouse, Lever, Ashby, SmartRecruiters, Workday, Teamtailor, Personio, Recruitee, Workable and Oracle Recruiting, plus the careers search APIs of Microsoft, Amazon and "
-           "Eightfold-powered sites, and the Arbeitnow job API (company list: https://github.com/chandranshB/roleBase/blob/main/companies.json). "
+           "Eightfold-powered sites, the Arbeitnow job API, Sweden's open JobTech job-ad API and USAJOBS (company list: https://github.com/chandranshB/roleBase/blob/main/companies.json). "
            "Collected by https://github.com/chandranshB/roleBase with GitHub Actions; no logins, no private data.")
+# Kaggle's API accepts the per-column descriptions below but its server drops them (https://github.com/Kaggle/kaggle-cli/issues/1207), so they are also
+# written into the description itself, where they always show. The metadata is still sent: it starts to count as soon as Kaggle fixes that.
+COLUMN_TABLE = "\n\n".join(f"**`{name}`**\n\n| Column | Type | Meaning |\n|---|---|---|\n" + "\n".join(f"| `{c}` | {t} | {d.replace('|', '/')} |" for c, (t, d) in cols.items())
+                           for name, (_, cols) in FILES.items())
 DESCRIPTION = f"""# Job Listings: open jobs in every field, updated daily
 
 {len(live):,} open job postings from {n_companies:,} employers, collected straight from their own career pages and refreshed every day. Unlike most job datasets, it is **not limited to tech**: healthcare, retail, finance and banking, education, manufacturing, logistics, sales, marketing, engineering and more are all in here, so you can compare the job market across fields, not just inside one.
@@ -143,6 +158,10 @@ Every row has the **apply link**, the level (intern to manager+), the field, the
 | `jobs_by_company.csv` | One row per employer with 5+ open jobs ({len(company_rows):,} employers): how many of its roles are open to people with 0-2 years of experience, and how many "junior" roles quietly ask for 3+. |
 | `open_jobs_daily.csv` | Open and fresher-friendly job counts per day since tracking began. |
 | `skill_demand_daily.csv` | For every skill, the share of skill-tagged postings that mention it, per day. Technical and non-technical skills (Excel, customer service, project management, CPR, forklift and more). |
+
+## Columns
+
+{COLUMN_TABLE}
 
 ## Fields covered (open postings)
 
@@ -194,22 +213,7 @@ Binjola, C. ({today[:4]}). RoleBase Job Listings: Open Jobs in Every Field. Kagg
     "expectedUpdateFrequency": "daily",
     "userSpecifiedSources": SOURCES,
     "description": DESCRIPTION,
-    "resources": [{
-        "path": "jobs.csv",
-        "description": "One row per job posting (open, or closed within the last 90 days), with the apply link, level, field, skills, pay where stated and dates. Identical postings are merged (see openings).",
-        "schema": {"fields": [{"name": n, "description": d, "type": t} for n, (t, d) in COLUMNS.items()]},
-    }, {
-        "path": "jobs_by_company.csv",
-        "description": "One row per company with 5+ open jobs: how many of its roles are open to 0-2 years of experience.",
-        "schema": {"fields": [{"name": n, "description": d, "type": t} for n, (t, d) in COMPANY_COLUMNS.items()]},
-    }, {
-        "path": "open_jobs_daily.csv",
-        "description": "Open and fresher-friendly job counts per day since tracking began (a growing time series).",
-        "schema": {"fields": [{"name": n, "description": d, "type": t} for n, (t, d) in DAILY_COLUMNS.items()]},
-    }, {
-        "path": "skill_demand_daily.csv",
-        "description": "Per day and skill: postings that mention the skill, postings that mention any skill, and the share between them.",
-        "schema": {"fields": [{"name": n, "description": d, "type": t} for n, (t, d) in SKILL_COLUMNS.items()]},
-    }],
+    "resources": [{"path": name, "description": desc, "schema": {"fields": [{"name": n, "description": d, "type": t} for n, (t, d) in cols.items()]}}
+                  for name, (desc, cols) in FILES.items()],
 }, indent=2), encoding="utf-8")
-print(f"{len(rows)} rows -> kaggle/jobs.csv (+ jobs_by_company.csv, open_jobs_daily.csv, skill_demand_daily.csv)")
+print(f"{len(rows)} rows -> kaggle/jobs.csv (+ jobs_by_company.csv, open_jobs_daily.csv, skill_demand_daily.csv); description {len(DESCRIPTION):,} chars")

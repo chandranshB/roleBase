@@ -1,0 +1,55 @@
+<!doctype html>
+<!-- Source of dataset-cover-image.png (also the website's social preview). Render with:
+     chrome --headless=new --hide-scrollbars --force-device-scale-factor=1 --window-size=1280,640 --screenshot=dataset-cover-image.png file:///.../kaggle_assets/cover.html
+     Kaggle shows the whole 2:1 image as the header and the centre 640x640 square as the thumbnail, so the title block stays inside that square;
+     the field chips on the sides are decoration. -->
+<meta charset="utf-8">
+<title>cover</title>
+<style>
+@font-face{font-family:"Instrument Sans";font-weight:400 700;src:url(../web/fonts/instrument-sans-latin.woff2) format("woff2")}
+*{box-sizing:border-box;margin:0}
+html,body{width:1280px;height:640px;overflow:hidden;background:#0d0f12;font-family:"Instrument Sans",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+.stage{position:relative;width:1280px;height:640px;background:
+  radial-gradient(ellipse 620px 360px at 50% 48%,rgba(31,94,255,.30),transparent 70%),
+  radial-gradient(circle,rgba(255,255,255,.075) 1.4px,transparent 1.6px) 0 0/26px 26px,#0d0f12}
+.side{position:absolute;top:0;bottom:0;width:316px;display:flex;flex-direction:column;justify-content:center;gap:16px}
+.side.l{left:0;align-items:flex-end;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 12%,#000 78%,transparent 100%)}
+.side.r{right:0;align-items:flex-start;-webkit-mask-image:linear-gradient(270deg,transparent 0,#000 12%,#000 78%,transparent 100%)}
+.row{display:flex;gap:12px;white-space:nowrap}
+.l .row{justify-content:flex-end}
+.chip{display:inline-flex;align-items:center;gap:11px;height:46px;padding:0 20px 0 16px;border-radius:23px;border:1px solid rgba(255,255,255,.13);background:rgba(255,255,255,.045);color:#b3bbc8;font-size:21px;font-weight:500;letter-spacing:-.01em}
+.chip::before{content:'';width:10px;height:10px;border-radius:50%;background:var(--c);box-shadow:0 0 12px -1px var(--c)}
+.vig{position:absolute;inset:0;background:radial-gradient(ellipse 70% 95% at 50% 50%,transparent 58%,rgba(13,15,18,.8) 100%)}
+.mid{position:absolute;left:320px;width:640px;top:0;bottom:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+.tile{width:96px;height:96px;border-radius:24px;box-shadow:0 22px 56px -12px rgba(31,94,255,.65),0 0 0 1px rgba(255,255,255,.08) inset}
+h1{margin-top:30px;font-size:96px;line-height:1;font-weight:700;letter-spacing:-.045em;color:#f2f4f8}
+.sub{margin-top:16px;font-size:37px;line-height:1.15;font-weight:500;letter-spacing:-.02em;color:#a9b2c0}
+.sub b{font-weight:600;color:#86a9ff}
+.meta{margin-top:26px;font-size:22px;font-weight:500;letter-spacing:-.005em;color:#7c8696}
+.meta s{text-decoration:none;color:#4d5563;margin:0 9px}
+</style>
+<div class="stage">
+  <div class="side l">
+    <div class="row" style="margin-right:58px"><span class="chip" style="--c:#7ddc8f">Education</span><span class="chip" style="--c:#f08cae">Healthcare</span></div>
+    <div class="row" style="margin-right:28px"><span class="chip" style="--c:#fb923c">Manufacturing</span><span class="chip" style="--c:#86a9ff">Engineering</span></div>
+    <div class="row" style="margin-right:76px"><span class="chip" style="--c:#a78bfa">Legal</span><span class="chip" style="--c:#f1c068">Retail</span></div>
+    <div class="row" style="margin-right:42px"><span class="chip" style="--c:#67d4ff">Data</span><span class="chip" style="--c:#5eead4">Public safety</span></div>
+    <div class="row" style="margin-right:82px"><span class="chip" style="--c:#f08cae">Social work</span><span class="chip" style="--c:#7ddc8f">Finance</span></div>
+    <div class="row" style="margin-right:32px"><span class="chip" style="--c:#f1c068">Customer support</span></div>
+  </div>
+  <div class="side r">
+    <div class="row" style="margin-left:72px"><span class="chip" style="--c:#5eead4">Logistics</span><span class="chip" style="--c:#86a9ff">Sales</span></div>
+    <div class="row" style="margin-left:34px"><span class="chip" style="--c:#f1c068">Marketing</span><span class="chip" style="--c:#fb923c">Science</span></div>
+    <div class="row" style="margin-left:86px"><span class="chip" style="--c:#7ddc8f">Administration</span></div>
+    <div class="row" style="margin-left:48px"><span class="chip" style="--c:#a78bfa">Operations</span><span class="chip" style="--c:#67d4ff">Product</span></div>
+    <div class="row" style="margin-left:44px"><span class="chip" style="--c:#86a9ff">Consulting</span><span class="chip" style="--c:#5eead4">Security</span></div>
+    <div class="row" style="margin-left:26px"><span class="chip" style="--c:#a78bfa">Design</span><span class="chip" style="--c:#f08cae">People &amp; HR</span></div>
+  </div>
+  <div class="vig"></div>
+  <div class="mid">
+    <img class="tile" src="../web/favicon.svg" alt="">
+    <h1>Job Listings</h1>
+    <div class="sub">Open jobs in <b>every field</b></div>
+    <div class="meta">70,000+ open jobs<s>·</s>5,000+ employers<s>·</s>updated daily</div>
+  </div>
+</div>

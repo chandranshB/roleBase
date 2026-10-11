@@ -138,7 +138,7 @@ u = usajobs_job({"MatchedObjectId": "123", "MatchedObjectDescriptor": {
     "PositionSchedule": [{"Name": "Full-time"}], "JobCategory": [{"Name": "Nurse"}], "UserArea": {"Details": {"RemoteIndicator": "False", "JobSummary": "Care for patients."}}}})
 assert u["id"] == "usajobs:123" and u["category"] == "healthcare" and u["pay"] == [70000, 95000, "USD"] and not u["remote"] and u["posted"] == "2026-10-01"
 
-# --- run_all: lanes cap concurrency per rate-limited host, a hung source is cut off at the budget and everything else still finishes ---
+# --- run_all: each provider is its own lane with its own concurrency cap, a hung source is cut off at the budget and everything else still finishes ---
 import threading
 import time
 
@@ -163,5 +163,50 @@ assert peak == 2, peak  # the workable lane runs two boards at a time, however m
 assert unfinished == ["hang"] and time.time() - t0 < 2.5  # cut off at the budget, not after the hang
 by = {r[0]: r for r in res}
 assert len(res) == 12 and all(by[f"workable:{i}"][1] == ["job"] for i in range(6)) and isinstance(by["hang"][2], TimeoutError)
+
+# a connection cut mid-body is retried (urllib3's own retry does not cover it), and gives up after three tries
+import requests
+import scraper
+
+cuts, orig = [], requests.Session.request
+scraper.S.waits = (0, 0)
+
+
+def flaky(self, *a, **kw):
+    cuts.append(1)
+    if len(cuts) <= 2:
+        raise requests.exceptions.ChunkedEncodingError("IncompleteRead")
+    return "ok"
+
+
+requests.Session.request = flaky
+assert scraper.S.get("https://x.test") == "ok" and len(cuts) == 3
+cuts.clear()
+requests.Session.request = lambda self, *a, **kw: cuts.append(1) or (_ for _ in ()).throw(requests.exceptions.ChunkedEncodingError("cut"))
+try:
+    scraper.S.get("https://x.test")
+    raise SystemExit("should have raised")
+except requests.exceptions.ChunkedEncodingError:
+    assert len(cuts) == 3
+requests.Session.request = orig
+
+# providers do not queue behind each other: 3 providers x 3 slow boards, one worker each -> about 3 boards deep, not 9
+seen, mx = {}, {}
+
+
+def slow(lane):
+    with lock:
+        seen[lane] = seen.get(lane, 0) + 1
+        mx[lane] = max(mx.get(lane, 0), seen[lane])
+    time.sleep(.2)
+    with lock:
+        seen[lane] -= 1
+    return ["job"]
+
+
+t0 = time.time()
+res, unfinished = run_all([(f"{lane}:{i}", lambda lane=lane: slow(lane)) for i in range(3) for lane in ("prov_a", "prov_b", "prov_c")], budget=5)
+assert not unfinished and len(res) == 9 and mx == {"prov_a": 1, "prov_b": 1, "prov_c": 1}, mx  # an unlisted provider fetches one board at a time
+assert time.time() - t0 < .9, time.time() - t0  # 0.6s when the three providers run side by side, 1.8s if they queued
 
 print("ok")
