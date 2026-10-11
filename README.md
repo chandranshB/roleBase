@@ -2,7 +2,7 @@
 
 # RoleBase: open job search and job-market data for every field
 
-RoleBase is a free, open job board and job-market dataset that updates itself. It collects around 90,000 open jobs, 80,000 of them straight from about 800 employers' own career pages and the rest from open job feeds, in nursing, retail, finance, education, manufacturing, logistics, engineering and many other fields, and lets you filter for entry-level, remote and salary-listed roles. Postings are kept in git, tagged with level, field, skills and pay, and tracked until they disappear, so you can also see which listings look like ghost jobs. The result is published as a searchable website and a Kaggle dataset, and everything runs on GitHub Actions.
+RoleBase is a free, open job board and job-market dataset that updates itself. It collects around 100,000 open jobs, 90,000 of them straight from about 950 employers' own career pages and the rest from open job feeds, in nursing, retail, finance, education, manufacturing, logistics, engineering and many other fields, and lets you filter for entry-level, remote and salary-listed roles. Postings are kept in git, tagged with level, field, skills and pay, and tracked until they disappear, so you can also see which listings look like ghost jobs. The result is published as a searchable website and a Kaggle dataset, and everything runs on GitHub Actions.
 
 **[Search the jobs](https://chandranshb.github.io/roleBase/)** · **[Kaggle dataset](https://www.kaggle.com/datasets/chandranshbinjola/job-listings)** · **[Roadmap](../../issues)**
 
@@ -82,7 +82,7 @@ flowchart LR
 - [`scrape.yml`](.github/workflows/scrape.yml) runs every 6 hours: tests, scrape, charts, commit the changes, deploy the site.
 - [`kaggle.yml`](.github/workflows/kaggle.yml) runs daily: builds the four dataset CSVs, publishes a new version, waits until Kaggle has built it, then syncs the description, tags, column docs and the public starter notebook.
 - A failed source never closes its jobs. An empty answer, or one that is suddenly under 40% of the board's previous size, is distrusted too and only believed if it repeats on a third run in a row, so real shutdowns still close their jobs. [`data/health.json`](data/health.json) lists every board with its last good day and bad-run count, and failures show up as warnings on the Actions run.
-- Boards are fetched 16 at a time, biggest first; the two big paged APIs (Workday, Microsoft) fetch their pages in parallel. A full run takes about four minutes (most of it Arbeitnow's one-page-per-second limit).
+- Boards are fetched 16 at a time, biggest first; the two big paged APIs (Workday, Microsoft) fetch their pages in parallel. A full run takes about seven minutes (most of it Arbeitnow's one-page-per-second limit).
 - Workday employers can post thousands of jobs, so only the newest 60 per employer are kept (`WD_CAP` in `scraper.py`); Amazon and Eightfold-powered career sites (Starbucks and others) keep the newest 300 (`EF_CAP`). Their list endpoint has no description, so years, skills and pay are empty for them.
 - US federal jobs (every occupation) come from USAJOBS when `USAJOBS_API_KEY` and `USAJOBS_EMAIL` are set as repository secrets (free key at developer.usajobs.gov); without them that source is simply skipped.
 - Company icons (`build_logos.py`) come from each company's own site first, then the [Simple Icons](https://simpleicons.org) library (CC0 files, exact name matches only), then Google's icon service as a build-time fallback. A company with no usable logo gets a generic sector icon from Tabler Icons (chosen by the field most of its jobs are in) rather than a guessed or wrong logo. Brand names and marks belong to their owners and are shown only to identify who posted a job.
@@ -150,7 +150,7 @@ Switch on "Fresher-friendly" in the search. It keeps roles that state two years 
 A ghost job is a listing that is not really being hired for, such as an evergreen "talent pool" post or a role open for over a year. RoleBase adds points for age, talent-pool wording, recruiting agencies, many identical postings and reposts, and shows the reason. It is a guess, not proof.
 
 **Where do the listings come from?**
-Directly from employers' own application systems (Greenhouse, Lever, Ashby, SmartRecruiters, Teamtailor, Personio, Recruitee, Workday and a few company career sites) and from a few open feeds. Every job links back to the original posting, so you apply on the employer's page.
+Directly from employers' own application systems (Greenhouse, Lever, Ashby, SmartRecruiters, Teamtailor, Personio, Recruitee, Workable, Oracle Recruiting, Workday and a few company career sites) and from a few open feeds. Every job links back to the original posting, so you apply on the employer's page.
 
 **Is there a free job postings dataset I can use for analysis?**
 Yes. The [Kaggle dataset](https://www.kaggle.com/datasets/chandranshbinjola/job-listings) has the same data as flat CSV, with the apply link, level, field, skills, pay where stated and open or closed dates.

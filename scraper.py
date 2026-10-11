@@ -11,6 +11,7 @@ import json
 import os
 import re
 import sys
+import threading
 import time
 import xml.etree.ElementTree as ET
 from concurrent.futures import ThreadPoolExecutor
@@ -53,13 +54,13 @@ CATEGORIES = [  # first match wins; "sales engineer" must hit sales before engin
     ("support", r"support|customer (success|service|experience)|technical account|help ?desk|implementation|onboarding"),
     ("finance", r"financ|account(ing|ant)|payroll|\btax\b|treasury|audit|controller|fp&a|procurement|banker|teller|underwrit|\bloan|insuranc|adjuster|actuar|fraud|kredit|steuer|\bbank|risk|claims|credit|invest|portfolio|wealth"),
     ("legal", r"legal|counsel|attorney|compliance|paralegal|privacy"),
-    ("people", r"recruit|talent|\bpeople\b|\bhr\b|human resources|workplace"),
+    ("people", r"recruit|talent|\bpeople\b|\bhr\b|human resources|workplace|\btrainer\b|learning (and|&) development|training (specialist|manager|coordinator)"),
     ("healthcare", r"nurs(e|ing)|physician|clinic(al|ian)|pharmac|medical|therapist|patient|dental|dentist|surgeon|radiolog|caregiver|health ?care|\brn\b|paramedic|phlebotom|\bcna\b|veterinar|psychiat|psycholog|mental health|neurolog|hospital"),
     ("education", r"teacher|professor|instructor|lecturer|tutor|faculty|curriculum|academic|educator|school|teaching"),
     ("science", r"scientist|laborator|chemist|biolog|\blab\b|research (associate|assistant|fellow)|geolog"),
-    ("retail", r"\bstore\b|retail|cashier|barista|\bcook\b|\bchef\b|kitchen|bartender|hotel|guest (service|experience)|concierge|housekeep|front desk|merchandis|stylist|restaurant|\bcrew\b|\bshift\b|food service|catering|cleaner|reinigung|janitor|arrumadeira|verk.ufer|cafeteria|barber|salon|k.chenhilfe|k.che\b|einzelhandel|kaufmann|gar.om|vendedor|ayudante|hostess|waiter|waitress|meat|grocery|stocker"),
-    ("manufacturing", r"manufactur|production (operator|associate|supervisor|technician|worker)|assembl|machinist|weld|electrician|plumb|forklift|fabricat|\bplant\b|\bmill\b|maintenance|operator|operat.r|monteur|fertigung|toolmaker|produktion|produktie|construction|quality|inspector|\bnde\b|operario|op.rateur|lead hand"),
-    ("logistics", r"logist|warehouse|material handler|\bdriver\b|\blkw\b|fahrer|courier|picker|\bpacker\b|shipping|dispatch|freight"),
+    ("retail", r"\bstore\b|retail|personal train|fitness|\battendant\b|detailer|car wash|lifeguard|cashier|barista|\bcook\b|\bchef\b|kitchen|bartender|hotel|guest (service|experience)|concierge|housekeep|front desk|merchandis|stylist|restaurant|\bcrew\b|\bshift\b|food service|catering|cleaner|reinigung|janitor|arrumadeira|verk.ufer|cafeteria|barber|salon|k.chenhilfe|k.che\b|einzelhandel|kaufmann|gar.om|vendedor|ayudante|hostess|waiter|waitress|meat|grocery|stocker"),
+    ("manufacturing", r"painter|mechatronik|mechatronic|manufactur|production (operator|associate|supervisor|technician|worker)|assembl|machinist|weld|electrician|plumb|forklift|fabricat|\bplant\b|\bmill\b|maintenance|operator|operat.r|monteur|fertigung|toolmaker|produktion|produktie|construction|quality|inspector|\bnde\b|operario|op.rateur|lead hand"),
+    ("logistics", r"logist|warehouse|\bdelivery (driver|associate|partner)|parts (associate|clerk|specialist)|material handler|\bdriver\b|\blkw\b|fahrer|courier|picker|\bpacker\b|shipping|dispatch|freight"),
     ("administrative", r"assistant|receptionist|secretar|\bclerk|recepcion|data entry|coordinator|administrat"),
     ("social", r"social work|case manag|caseworker|counsel+or|youth|outreach|advocate|community (health|support)"),
     ("consulting", r"consultant|consulting|strategist|advisory|engagement manager|business partner"),
@@ -329,8 +330,9 @@ def workday(s, name):  # s = "<tenant>.<pod>.myworkdayjobs.com/<site>"; the list
                  for d in [first, *rest] for j in d["jobPostings"] if j.get("externalPath")}.values())  # some tenants list entries with no link: skip those
 
 
-CAPPED = {"workday", "eightfold", "amazon", "himalayas", "jobicy", "jobtech", "usajobs"}
+CAPPED = {"workday", "eightfold", "amazon", "himalayas", "jobicy", "jobtech", "usajobs", "oracle"}
 HIM_CAP = 400  # newest N Himalayas jobs (of 100k+)
+ORA_CAP = 100  # newest N per Oracle career site
 USAJOBS_CAP = 2000  # newest N federal postings (of ~15k)
 JT_CAP = 500  # newest N Swedish public-employment ads (of ~40k)
 EF_CAP = 300  # newest N per Eightfold/Amazon site (Starbucks alone lists 20k+ store jobs)
@@ -537,6 +539,35 @@ def usajobs():  # US federal jobs, every occupation; needs a free API key (devel
     return out
 
 
+def oracle(s, name):  # Oracle Recruiting Cloud career site, s = "<host>/<site number>", e.g. "ecvz.fa.us2.oraclecloud.com/CX_1"; newest ORA_CAP, no descriptions
+    host, site = s.split("/", 1)
+
+    def page(off):
+        d = get(f"https://{host}/hcmRestApi/resources/latest/recruitingCEJobRequisitions", params={
+            "onlyData": "true", "expand": "requisitionList.secondaryLocations",
+            "finder": f"findReqs;siteNumber={site},limit=50,offset={off},sortBy=POSTING_DATES_DESC"})["items"][0]
+        return d["TotalJobsCount"], d["requisitionList"]
+
+    total, first = page(0)
+    rest = pmap(lambda o: page(o)[1], range(50, min(total, ORA_CAP), 50))
+    return list({j["Id"]: job("oracle", f"oracle:{s}", j["Id"], name, j["Title"], f"https://{host}/hcmUI/CandidateExperience/en/sites/{site}/job/{j['Id']}",
+                              j.get("PrimaryLocation"), "REMOTE" in (j.get("WorkplaceTypeCode") or ""), j.get("PostedDate"))
+                 for js in [first, *rest] for j in js}.values())
+
+
+WORKABLE_GATE = threading.Semaphore(2)  # their widget API answers 429 to a burst; two at a time with a pause stays under it
+
+
+def workable(s, name):  # apply.workable.com/<slug>; many small and mid-size employers (restaurants, clinics, schools, shops)
+    with WORKABLE_GATE:
+        d = get(f"https://apply.workable.com/api/v1/widget/accounts/{s}", params={"details": "true"})
+        time.sleep(1)
+    return [job("workable", f"workable:{s}", j["shortcode"], name or d.get("name") or s, j["title"], j["url"],
+                ", ".join(filter(None, [j.get("city"), j.get("state"), j.get("country")])), j.get("telecommuting"), j.get("published_on") or j.get("created_at"),
+                desc=text(j.get("description")), team=j.get("department") or j.get("function") or j.get("industry"), emp=[j.get("employment_type")])
+            for j in d.get("jobs") or []]
+
+
 def teamtailor(s, name):  # RSS per company: <slug>.teamtailor.com
     r = S.get(f"https://{s}.teamtailor.com/jobs.rss", timeout=TIMEOUT)
     r.raise_for_status()
@@ -577,7 +608,7 @@ def recruitee(s, name):  # <slug>.recruitee.com/api/offers
 
 
 ATS = dict(greenhouse=greenhouse, lever=lever, ashby=ashby, smartrecruiters=smartrecruiters, workday=workday, microsoft=microsoft, eightfold=eightfold,
-           amazon=amazon, teamtailor=teamtailor, personio=personio, recruitee=recruitee)
+           amazon=amazon, teamtailor=teamtailor, personio=personio, recruitee=recruitee, oracle=oracle, workable=workable)
 FEEDS = dict(remotive=remotive, remoteok=remoteok, arbeitnow=arbeitnow, himalayas=himalayas, jobicy=jobicy, weworkremotely=weworkremotely,
              getonbrd=getonbrd, workingnomads=workingnomads, landingjobs=landingjobs, jobtech=jobtech, cryptojobs=cryptojobs)
 if os.environ.get("USAJOBS_API_KEY") and os.environ.get("USAJOBS_EMAIL"):  # optional: skipped (not failed) without a key
