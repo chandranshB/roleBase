@@ -10,7 +10,7 @@ from pathlib import Path
 from scraper import company_stats, fresher_ok, ghost_flags, load
 
 # These boards' terms are about attribution and display, so they stay out of a republished dataset.
-SKIP = {"remotive", "remoteok", "himalayas", "jobicy", "weworkremotely", "getonbrd"}
+SKIP = {"remotive", "remoteok", "himalayas", "jobicy", "weworkremotely", "getonbrd", "workingnomads", "landingjobs", "cryptojobs"}
 COLUMNS = {  # name -> (type, description); also the CSV column order
     "source": ("string", "Where the job was read from: greenhouse, lever, ashby, smartrecruiters, workday, eightfold, amazon, microsoft, teamtailor, personio, recruitee or arbeitnow."),
     "company": ("string", "Employer name."),

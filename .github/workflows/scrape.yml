@@ -14,7 +14,10 @@ jobs:
       - uses: actions/setup-python@v5
         with: { python-version: "3.12" }
       - run: pip install requests pillow
-      - run: python test_scraper.py && python scraper.py && python make_charts.py
+      - env: # optional: US federal jobs; unset secrets arrive empty and the source is skipped
+          USAJOBS_API_KEY: ${{ secrets.USAJOBS_API_KEY }}
+          USAJOBS_EMAIL: ${{ secrets.USAJOBS_EMAIL }}
+        run: python test_scraper.py && python scraper.py && python make_charts.py
       - name: Commit data
         run: |
           git config user.name "github-actions[bot]"

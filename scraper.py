@@ -8,6 +8,7 @@ import csv
 import datetime as dt
 import html
 import json
+import os
 import re
 import sys
 import time
@@ -328,8 +329,10 @@ def workday(s, name):  # s = "<tenant>.<pod>.myworkdayjobs.com/<site>"; the list
                  for d in [first, *rest] for j in d["jobPostings"] if j.get("externalPath")}.values())  # some tenants list entries with no link: skip those
 
 
-CAPPED = {"workday", "eightfold", "amazon", "himalayas", "jobicy"}
+CAPPED = {"workday", "eightfold", "amazon", "himalayas", "jobicy", "jobtech", "usajobs"}
 HIM_CAP = 400  # newest N Himalayas jobs (of 100k+)
+USAJOBS_CAP = 2000  # newest N federal postings (of ~15k)
+JT_CAP = 500  # newest N Swedish public-employment ads (of ~40k)
 EF_CAP = 300  # newest N per Eightfold/Amazon site (Starbucks alone lists 20k+ store jobs)
 
 
@@ -459,6 +462,81 @@ def getonbrd():  # Latin America's tech board (mostly Spanish postings), program
     raise RuntimeError("getonbrd: >20 pages")
 
 
+def workingnomads():  # remote jobs, tags and time-zone notes; the list is short (~50) and complete
+    return [job("workingnomads", "workingnomads", j["url"].rstrip("/").rsplit("/", 1)[-1], clean_company(j["company_name"]), j["title"], j["url"],
+                j.get("location"), True, j.get("pub_date"), desc=text(j.get("description")), team=j.get("category_name"),
+                tags=(j.get("tags") or "").split(","))
+            for j in get("https://www.workingnomads.com/api/exposed_jobs/")]
+
+
+def landingjobs():  # European tech board (Portugal-heavy); company name only appears in the URL: landing.jobs/at/<company>/<job>
+    out, off = [], 0
+    while True:
+        page = get("https://landing.jobs/api/v1/jobs", params={"limit": 50, "offset": off})
+        for j in page:
+            co = j["url"].split("/at/", 1)[-1].split("/", 1)[0].replace("-", " ").title()
+            lo, hi = j.get("gross_salary_low"), j.get("gross_salary_high")
+            out.append(job("landingjobs", "landingjobs", j["id"], co, j["title"], j["url"],
+                           "; ".join(", ".join(filter(None, [l.get("city"), l.get("country_code")])) for l in j.get("locations") or []),
+                           j.get("remote"), j.get("published_at"), desc=text(" ".join(filter(None, [j.get("role_description"), j.get("main_requirements")]))),
+                           emp=[j.get("type")], tags=j.get("tags") or [], pay=[int(lo), int(hi), j["currency_code"]] if lo and hi and j.get("currency_code") else None))
+        off += 50
+        if not page or off > 5000:
+            return out
+
+
+def jobtech():  # Sweden's public employment service (open data, Swedish text): newest JT_CAP of ~40k ads
+    out = []
+    for off in range(0, JT_CAP, 100):
+        for j in get("https://jobsearch.api.jobtechdev.se/search", params={"limit": 100, "offset": off, "sort": "pubdate-desc"})["hits"]:
+            a = j.get("workplace_address") or {}
+            out.append(job("jobtech", "jobtech", j["id"], clean_company((j.get("employer") or {}).get("name")), j["headline"], j["webpage_url"],
+                           ", ".join(filter(None, [a.get("municipality"), a.get("country")])), False, j.get("publication_date"),
+                           desc=(j.get("description") or {}).get("text") or "", team=(j.get("occupation_field") or {}).get("label"),
+                           emp=[(j.get("working_hours_type") or {}).get("label"), (j.get("employment_type") or {}).get("label")]))
+    return out
+
+
+def rss_board(url, source, remote=True):  # titles read "Role at Company"
+    r = S.get(url, timeout=TIMEOUT)
+    r.raise_for_status()
+    out = []
+    for i in ET.fromstring(r.content).iter("item"):
+        link = i.findtext("link").strip()
+        title, _, co = (i.findtext("title") or "").rpartition(" at ")
+        out.append(job(source, source, link.rstrip("/").rsplit("/", 1)[-1], clean_company(co), title, link, "", remote, rss_day(i.findtext("pubDate")),
+                       desc=text(i.findtext("description")), team=i.findtext("category") or ""))
+    return out
+
+
+def cryptojobs():
+    return [j for j in rss_board("https://cryptocurrencyjobs.co/index.xml", "cryptojobs", remote=False) if j["company"]]
+
+
+def usajobs_job(i):  # one SearchResultItem of the USAJOBS API -> job
+    d = i["MatchedObjectDescriptor"]
+    det = (d.get("UserArea") or {}).get("Details") or {}
+    pay = next((r for r in d.get("PositionRemuneration") or [] if r.get("RateIntervalCode") == "PA" and r.get("MinimumRange") and r.get("MaximumRange")), None)
+    return job("usajobs", "usajobs", i["MatchedObjectId"], d.get("OrganizationName") or d.get("DepartmentName") or "US federal government", d["PositionTitle"],
+               (d.get("ApplyURI") or [d["PositionURI"]])[0], d.get("PositionLocationDisplay"), str(det.get("RemoteIndicator")).lower() == "true",
+               d.get("PublicationStartDate"), desc=(d.get("QualificationSummary") or "") + " " + (det.get("JobSummary") or ""),
+               team=" ".join(c["Name"] for c in d.get("JobCategory") or []), emp=[(d.get("PositionSchedule") or [{}])[0].get("Name")],
+               pay=[int(float(pay["MinimumRange"])), int(float(pay["MaximumRange"])), "USD"] if pay else None)
+
+
+def usajobs():  # US federal jobs, every occupation; needs a free API key (developer.usajobs.gov): USAJOBS_API_KEY + USAJOBS_EMAIL. Newest USAJOBS_CAP.
+    hdr = {"Host": "data.usajobs.gov", "User-Agent": os.environ["USAJOBS_EMAIL"], "Authorization-Key": os.environ["USAJOBS_API_KEY"]}
+    out = []
+    for p in range(1, USAJOBS_CAP // 500 + 1):
+        r = S.get("https://data.usajobs.gov/api/search", headers=hdr, timeout=TIMEOUT, params={"ResultsPerPage": 500, "Page": p, "SortField": "opendate", "SortDirection": "desc"})
+        r.raise_for_status()
+        items = r.json()["SearchResult"]["SearchResultItems"]
+        out += map(usajobs_job, items)
+        if len(items) < 500:
+            break
+    return out
+
+
 def teamtailor(s, name):  # RSS per company: <slug>.teamtailor.com
     r = S.get(f"https://{s}.teamtailor.com/jobs.rss", timeout=TIMEOUT)
     r.raise_for_status()
@@ -501,7 +579,9 @@ def recruitee(s, name):  # <slug>.recruitee.com/api/offers
 ATS = dict(greenhouse=greenhouse, lever=lever, ashby=ashby, smartrecruiters=smartrecruiters, workday=workday, microsoft=microsoft, eightfold=eightfold,
            amazon=amazon, teamtailor=teamtailor, personio=personio, recruitee=recruitee)
 FEEDS = dict(remotive=remotive, remoteok=remoteok, arbeitnow=arbeitnow, himalayas=himalayas, jobicy=jobicy, weworkremotely=weworkremotely,
-             getonbrd=getonbrd)
+             getonbrd=getonbrd, workingnomads=workingnomads, landingjobs=landingjobs, jobtech=jobtech, cryptojobs=cryptojobs)
+if os.environ.get("USAJOBS_API_KEY") and os.environ.get("USAJOBS_EMAIL"):  # optional: skipped (not failed) without a key
+    FEEDS["usajobs"] = usajobs
 
 
 # ---------- storage ----------

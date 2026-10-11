@@ -1,7 +1,7 @@
 import datetime as dt
 
 from scraper import (category, clean_company, company_stats, employment, find_pay, fresher_ok, ghost_flags, level, merge, skills, slim,
-                     url_of, verdict, wd_posted, years_req)
+                     url_of, usajobs_job, verdict, wd_posted, years_req)
 
 
 def j(i, **kw):
@@ -115,7 +115,6 @@ for s in (bars("T <&>", "sub", [("A & B <x>", 3), ("c" * 40, 1)]), bars("empty",
     ET.fromstring(s)
 assert "A &amp; B &lt;x&gt;" in bars("t", "s", [("A & B <x>", 3)])
 
-print("ok")
 
 
 # --- workday "Posted N Days Ago" text -> date ---
@@ -130,3 +129,13 @@ assert verdict(None, RuntimeError("boom"), 50, 5).startswith("error")  # errors 
 assert verdict([], None, 10, 0) == "empty answer" and verdict([], None, 10, 2) is None
 assert verdict([1] * 5, None, 50, 0).startswith("dropped") and verdict([1] * 5, None, 50, 2) is None
 assert verdict([1] * 30, None, 50, 0) is None  # a 40% drop is normal churn
+
+# --- usajobs: one API item -> job (fixture shaped like the documented response) ---
+u = usajobs_job({"MatchedObjectId": "123", "MatchedObjectDescriptor": {
+    "PositionTitle": "Registered Nurse", "OrganizationName": "Veterans Health Administration", "PositionURI": "https://www.usajobs.gov/job/123",
+    "ApplyURI": ["https://www.usajobs.gov/job/123/apply"], "PositionLocationDisplay": "Boise, Idaho", "PublicationStartDate": "2026-10-01T00:00:00.0000",
+    "PositionRemuneration": [{"MinimumRange": "70000.00", "MaximumRange": "95000.00", "RateIntervalCode": "PA"}],
+    "PositionSchedule": [{"Name": "Full-time"}], "JobCategory": [{"Name": "Nurse"}], "UserArea": {"Details": {"RemoteIndicator": "False", "JobSummary": "Care for patients."}}}})
+assert u["id"] == "usajobs:123" and u["category"] == "healthcare" and u["pay"] == [70000, 95000, "USD"] and not u["remote"] and u["posted"] == "2026-10-01"
+
+print("ok")
