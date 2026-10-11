@@ -1,7 +1,7 @@
 import datetime as dt
 
 from scraper import (category, clean_company, company_stats, employment, find_pay, fresher_ok, ghost_flags, level, merge, skills, slim,
-                     url_of, usajobs_job, verdict, wd_posted, years_req)
+                     run_all, url_of, usajobs_job, verdict, wd_posted, years_req)
 
 
 def j(i, **kw):
@@ -137,5 +137,31 @@ u = usajobs_job({"MatchedObjectId": "123", "MatchedObjectDescriptor": {
     "PositionRemuneration": [{"MinimumRange": "70000.00", "MaximumRange": "95000.00", "RateIntervalCode": "PA"}],
     "PositionSchedule": [{"Name": "Full-time"}], "JobCategory": [{"Name": "Nurse"}], "UserArea": {"Details": {"RemoteIndicator": "False", "JobSummary": "Care for patients."}}}})
 assert u["id"] == "usajobs:123" and u["category"] == "healthcare" and u["pay"] == [70000, 95000, "USD"] and not u["remote"] and u["posted"] == "2026-10-01"
+
+# --- run_all: lanes cap concurrency per rate-limited host, a hung source is cut off at the budget and everything else still finishes ---
+import threading
+import time
+
+live, peak, lock = 0, 0, threading.Lock()
+
+
+def lane_task():
+    global live, peak
+    with lock:
+        live += 1
+        peak = max(peak, live)
+    time.sleep(.2)
+    with lock:
+        live -= 1
+    return ["job"]
+
+
+t0 = time.time()
+tasks = [(f"workable:{i}", lane_task) for i in range(6)] + [(f"greenhouse:{i}", lambda: ["job"]) for i in range(5)] + [("hang", lambda: time.sleep(3))]
+res, unfinished = run_all(tasks, budget=1.5)
+assert peak == 2, peak  # the workable lane runs two boards at a time, however many are queued
+assert unfinished == ["hang"] and time.time() - t0 < 2.5  # cut off at the budget, not after the hang
+by = {r[0]: r for r in res}
+assert len(res) == 12 and all(by[f"workable:{i}"][1] == ["job"] for i in range(6)) and isinstance(by["hang"][2], TimeoutError)
 
 print("ok")

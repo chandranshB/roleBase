@@ -11,10 +11,9 @@ import json
 import os
 import re
 import sys
-import threading
 import time
 import xml.etree.ElementTree as ET
-from concurrent.futures import ThreadPoolExecutor
+from concurrent.futures import ThreadPoolExecutor, wait
 from email.utils import parsedate_to_datetime
 from pathlib import Path
 
@@ -327,7 +326,7 @@ def workday(s, name):  # s = "<tenant>.<pod>.myworkdayjobs.com/<site>"; the list
     rest = pmap(page, range(20, min(first["total"], WD_CAP), 20))
     return list({j["externalPath"]: job("workday", f"workday:{s}", j["externalPath"], name, j["title"], f"https://{s}{j['externalPath']}",
                                         j.get("locationsText"), posted=wd_posted(j.get("postedOn")))
-                 for d in [first, *rest] for j in d["jobPostings"] if j.get("externalPath")}.values())  # some tenants list entries with no link: skip those
+                 for d in [first, *rest] for j in d["jobPostings"] if j.get("externalPath") and j.get("title")}.values())  # entries with no link or no title exist (KBR has one): skip them, not the board
 
 
 CAPPED = {"workday", "eightfold", "amazon", "himalayas", "jobicy", "jobtech", "usajobs", "oracle"}
@@ -397,7 +396,7 @@ def remoteok():  # row 0 is a legal notice; their terms require linking back, so
 def arbeitnow():  # must read every page, else jobs pushed past the cap would look closed
     out = []
     for p in range(1, 101):
-        time.sleep(1)  # their rate limit 429s a fast pager
+        time.sleep(1)  # their rate limit 429s a fast pager; runs in its own lane (LANES), so the pause costs the other sources nothing
         d = get("https://www.arbeitnow.com/api/job-board-api", params={"page": p})
         out += [job("arbeitnow", "arbeitnow", j["slug"], clean_company(j["company_name"]), j["title"], j["url"], j.get("location"),
                     j.get("remote"), j.get("created_at"), desc=text(j.get("description")), team=" ".join(j.get("tags") or []),
@@ -488,14 +487,16 @@ def landingjobs():  # European tech board (Portugal-heavy); company name only ap
 
 
 def jobtech():  # Sweden's public employment service (open data, Swedish text): newest JT_CAP of ~40k ads
+    def page(off):
+        return get("https://jobsearch.api.jobtechdev.se/search", params={"limit": 100, "offset": off, "sort": "pubdate-desc"})["hits"]
+
     out = []
-    for off in range(0, JT_CAP, 100):
-        for j in get("https://jobsearch.api.jobtechdev.se/search", params={"limit": 100, "offset": off, "sort": "pubdate-desc"})["hits"]:
-            a = j.get("workplace_address") or {}
-            out.append(job("jobtech", "jobtech", j["id"], clean_company((j.get("employer") or {}).get("name")), j["headline"], j["webpage_url"],
-                           ", ".join(filter(None, [a.get("municipality"), a.get("country")])), False, j.get("publication_date"),
-                           desc=(j.get("description") or {}).get("text") or "", team=(j.get("occupation_field") or {}).get("label"),
-                           emp=[(j.get("working_hours_type") or {}).get("label"), (j.get("employment_type") or {}).get("label")]))
+    for j in (h for hits in pmap(page, range(0, JT_CAP, 100), 3) for h in hits):
+        a = j.get("workplace_address") or {}
+        out.append(job("jobtech", "jobtech", j["id"], clean_company((j.get("employer") or {}).get("name")), j["headline"], j["webpage_url"],
+                       ", ".join(filter(None, [a.get("municipality"), a.get("country")])), False, j.get("publication_date"),
+                       desc=(j.get("description") or {}).get("text") or "", team=(j.get("occupation_field") or {}).get("label"),
+                       emp=[(j.get("working_hours_type") or {}).get("label"), (j.get("employment_type") or {}).get("label")]))
     return out
 
 
@@ -552,20 +553,16 @@ def oracle(s, name):  # Oracle Recruiting Cloud career site, s = "<host>/<site n
     rest = pmap(lambda o: page(o)[1], range(50, min(total, ORA_CAP), 50))
     return list({j["Id"]: job("oracle", f"oracle:{s}", j["Id"], name, j["Title"], f"https://{host}/hcmUI/CandidateExperience/en/sites/{site}/job/{j['Id']}",
                               j.get("PrimaryLocation"), "REMOTE" in (j.get("WorkplaceTypeCode") or ""), j.get("PostedDate"))
-                 for js in [first, *rest] for j in js}.values())
-
-
-WORKABLE_GATE = threading.Semaphore(2)  # their widget API answers 429 to a burst; two at a time with a pause stays under it
+                 for js in [first, *rest] for j in js if j.get("Id") and j.get("Title")}.values())
 
 
 def workable(s, name):  # apply.workable.com/<slug>; many small and mid-size employers (restaurants, clinics, schools, shops)
-    with WORKABLE_GATE:
-        d = get(f"https://apply.workable.com/api/v1/widget/accounts/{s}", params={"details": "true"})
-        time.sleep(1)
+    d = get(f"https://apply.workable.com/api/v1/widget/accounts/{s}", params={"details": "true"})
+    time.sleep(1)  # their widget API answers 429 to a burst: LANES runs two boards at a time, each pausing a second
     return [job("workable", f"workable:{s}", j["shortcode"], name or d.get("name") or s, j["title"], j["url"],
                 ", ".join(filter(None, [j.get("city"), j.get("state"), j.get("country")])), j.get("telecommuting"), j.get("published_on") or j.get("created_at"),
                 desc=text(j.get("description")), team=j.get("department") or j.get("function") or j.get("industry"), emp=[j.get("employment_type")])
-            for j in d.get("jobs") or []]
+            for j in d.get("jobs") or [] if j.get("shortcode") and j.get("title")]
 
 
 def teamtailor(s, name):  # RSS per company: <slug>.teamtailor.com
@@ -746,6 +743,29 @@ def verdict(jobs, err, prev, strikes):
     return None
 
 
+LANES = {"workable": 2, "arbeitnow": 1}  # rate-limited hosts get their own small pools: their pauses never tie up the main workers
+WORKERS = 24  # main pool: all I/O, spread over hundreds of different hosts
+RUN_BUDGET = 22 * 60  # seconds. A hung source is cut off (its jobs are kept as they were); the Actions job itself times out at 30 minutes
+
+
+def run_all(tasks, budget=RUN_BUDGET, workers=WORKERS):
+    """tasks: [(key, fn)] -> ([(key, result, error, seconds)], unfinished keys). Every task runs at once in its pool: the main pool, or the lane named
+    by the key's first part (e.g. "workable:foo" -> the workable lane). Past `budget` seconds the unfinished tasks are reported as timed out."""
+    def run(t):
+        t0 = time.time()
+        try:
+            return t[0], t[1](), None, time.time() - t0
+        except Exception as e:
+            return t[0], None, e, time.time() - t0
+
+    pools = {None: ThreadPoolExecutor(workers), **{lane: ThreadPoolExecutor(n) for lane, n in LANES.items()}}
+    futs = {pools[t[0].split(":")[0] if t[0].split(":")[0] in LANES else None].submit(run, t): t[0] for t in tasks}
+    done, pending = wait(futs, timeout=budget)
+    for ex in pools.values():
+        ex.shutdown(wait=False, cancel_futures=True)
+    return [f.result() for f in done] + [(futs[f], None, TimeoutError(f"still running after {budget}s"), budget) for f in pending], [futs[f] for f in pending]
+
+
 def main():
     t_start = time.time()
     cfg = json.loads(COMPANIES.read_text(encoding="utf-8"))
@@ -759,15 +779,7 @@ def main():
     lines = [l for l in HEALTH.read_text(encoding="utf-8").split(chr(10)) if l] if HEALTH.exists() else []
     health = {r.pop("b"): r for r in map(json.loads, lines)}
 
-    def run(t):
-        t0 = time.time()
-        try:
-            return t[0], t[1](), None, time.time() - t0
-        except Exception as e:
-            return t[0], None, e, time.time() - t0
-
-    with ThreadPoolExecutor(16) as ex:
-        results = list(ex.map(run, tasks))
+    results, unfinished = run_all(tasks)
 
     today = dt.date.today().isoformat()
     fetched, ats_keys, failed = {}, set(), []
@@ -795,7 +807,7 @@ def main():
     for scope, why in failed:
         print(f"::warning title=scrape {scope}::{why}")  # shows up as an annotation on the Actions run
     slow = sorted(results, key=lambda r: -r[3])[:3]
-    print("slowest: " + ", ".join(f"{r[0]} {r[3]:.0f}s" for r in slow))
+    print("slowest: " + ", ".join(f"{r[0]} {r[3]:.0f}s" for r in slow) + f" | busy {sum(r[3] for r in results):.0f}s of {time.time() - t_start:.0f}s")
     if not fetched:
         sys.exit("all sources failed")
 
@@ -808,6 +820,10 @@ def main():
     save(db)
     log_history(db, pruned, today)
     HEALTH.write_text(chr(10).join(json.dumps({"b": k, **v}, sort_keys=True) for k, v in sorted(new_health.items())) + chr(10), encoding="utf-8", newline=chr(10))  # one board per line
+    if unfinished:  # everything is saved; threads stuck in a slow request must not keep the process (and the Actions job) alive
+        print(f"::warning title=scrape timed out::{len(unfinished)} sources did not finish: {', '.join(unfinished[:10])}")
+        sys.stdout.flush()
+        os._exit(0)
 
 
 if __name__ == "__main__":

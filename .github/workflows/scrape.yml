@@ -25,7 +25,12 @@ jobs:
           git add data docs
           if ! git diff --cached --quiet; then
             git commit -m "data: $(date -u '+%F %H:%M') UTC"
-            git push
+            # someone may have pushed during the ~7 minute scrape: rebase our data commit on top instead of losing the run
+            for try in 1 2 3; do
+              git pull --rebase -q && git push && exit 0
+              sleep 10
+            done
+            exit 1
           fi
   deploy: # rebuild the Pages site from the freshly committed data
     needs: scrape
