@@ -2,11 +2,15 @@ name: scrape
 on:
   schedule: [{ cron: "17 */6 * * *" }] # every 6h; Remotive asks for <=4 fetches/day
   workflow_dispatch:
+  push: # a front-end fix goes live within minutes instead of at the next 6-hourly run: only the deploy job runs, no scrape
+    branches: [main]
+    paths: ["web/**", "build_site.py", "build_pages.py", "build_logos.py"]
 permissions:
   contents: write
 concurrency: scrape
 jobs:
   scrape:
+    if: github.event_name != 'push'
     runs-on: ubuntu-latest
     timeout-minutes: 30
     steps:
@@ -37,6 +41,7 @@ jobs:
           fi
   deploy: # rebuild the Pages site from the freshly committed data
     needs: scrape
+    if: ${{ !cancelled() && needs.scrape.result != 'failure' }} # a push skips the scrape job; a failed scrape still stops the deploy
     runs-on: ubuntu-latest
     permissions: { pages: write, id-token: write, contents: read }
     environment:
@@ -62,3 +67,10 @@ jobs:
         with: { path: _site }
       - id: d
         uses: actions/deploy-pages@v4
+      - name: Update the About text # the open-job figure in the repo description. GITHUB_TOKEN may not edit repo settings, so this needs a fine-grained token (Administration: read and write) in the ABOUT_TOKEN secret; without one it is skipped
+        continue-on-error: true # never fails a deploy
+        env:
+          GH_TOKEN: ${{ secrets.ABOUT_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          if [ -n "$GH_TOKEN" ]; then python update_about.py; else echo "ABOUT_TOKEN is not set: leaving the About text alone"; fi

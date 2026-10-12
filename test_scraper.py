@@ -2,6 +2,7 @@ import datetime as dt
 
 from scraper import (category, clean_company, company_stats, employment, find_pay, fresher_ok, ghost_flags, level, merge, skills, slim,
                      phenom_job, run_all, url_of, usajobs_job, verdict, wd_posted, years_req)
+from update_about import about_text
 
 
 def j(i, **kw):
@@ -256,5 +257,8 @@ t0 = time.time()
 res, unfinished = run_all([(f"{lane}:{i}", lambda lane=lane: slow(lane)) for i in range(3) for lane in ("prov_a", "prov_b", "prov_c")], budget=5)
 assert not unfinished and len(res) == 9 and mx == {"prov_a": 1, "prov_b": 1, "prov_c": 1}, mx  # an unlisted provider fetches one board at a time
 assert time.time() - t0 < .9, time.time() - t0  # 0.6s when the three providers run side by side, 1.8s if they queued
+
+# About text: the figure is rounded to 10k so it does not change on every run, and the description stays under GitHub's 350 characters
+assert "~480k open jobs" in about_text(480764) and "~70k open jobs" in about_text(72300) and len(about_text(480764)) < 350
 
 print("ok")
