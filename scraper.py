@@ -493,22 +493,6 @@ def workingnomads():  # remote jobs, tags and time-zone notes; the list is short
             for j in get("https://www.workingnomads.com/api/exposed_jobs/")]
 
 
-def landingjobs():  # European tech board (Portugal-heavy); company name only appears in the URL: landing.jobs/at/<company>/<job>
-    out, off = [], 0
-    while True:
-        page = get("https://landing.jobs/api/v1/jobs", params={"limit": 50, "offset": off})
-        for j in page:
-            co = j["url"].split("/at/", 1)[-1].split("/", 1)[0].replace("-", " ").title()
-            lo, hi = j.get("gross_salary_low"), j.get("gross_salary_high")
-            out.append(job("landingjobs", "landingjobs", j["id"], co, j["title"], j["url"],
-                           "; ".join(", ".join(filter(None, [l.get("city"), l.get("country_code")])) for l in j.get("locations") or []),
-                           j.get("remote"), j.get("published_at"), desc=text(" ".join(filter(None, [j.get("role_description"), j.get("main_requirements")]))),
-                           emp=[j.get("type")], tags=j.get("tags") or [], pay=[int(lo), int(hi), j["currency_code"]] if lo and hi and j.get("currency_code") else None))
-        off += 50
-        if not page or off > 5000:
-            return out
-
-
 def jobtech():  # Sweden's public employment service (open data, Swedish text): newest JT_CAP of ~40k ads
     def page(off):
         return get("https://jobsearch.api.jobtechdev.se/search", params={"limit": 100, "offset": off, "sort": "pubdate-desc"})["hits"]
@@ -656,7 +640,7 @@ def phenom(s, name):  # Phenom People career site, s = host, e.g. "talent.lowes.
 ATS = dict(greenhouse=greenhouse, lever=lever, ashby=ashby, smartrecruiters=smartrecruiters, workday=workday, microsoft=microsoft, eightfold=eightfold,
            amazon=amazon, teamtailor=teamtailor, personio=personio, recruitee=recruitee, oracle=oracle, workable=workable, phenom=phenom)
 FEEDS = dict(remotive=remotive, remoteok=remoteok, arbeitnow=arbeitnow, himalayas=himalayas, jobicy=jobicy, weworkremotely=weworkremotely,
-             getonbrd=getonbrd, workingnomads=workingnomads, landingjobs=landingjobs, jobtech=jobtech, cryptojobs=cryptojobs)
+             getonbrd=getonbrd, workingnomads=workingnomads, jobtech=jobtech, cryptojobs=cryptojobs)
 if os.environ.get("USAJOBS_API_KEY") and os.environ.get("USAJOBS_EMAIL"):  # optional: skipped (not failed) without a key
     FEEDS["usajobs"] = usajobs
 
@@ -797,7 +781,7 @@ def verdict(jobs, err, prev, strikes):
 # here (Arbeitnow, every feed, Amazon, Microsoft...) gets one worker, i.e. one board at a time. Workable and Arbeitnow also pause a second between requests.
 LANE_OF = {"microsoft": "eightfold"}  # Microsoft's careers site is Eightfold-hosted: one lane, one site at a time, so their bot protection never sees a burst
 LANES = {"greenhouse": 8, "lever": 6, "ashby": 6, "smartrecruiters": 4, "workday": 24, "teamtailor": 4, "oracle": 4, "workable": 2, "personio": 2, "recruitee": 2, "phenom": 4}
-RUN_BUDGET = 22 * 60  # seconds. A hung source is cut off (its jobs are kept as they were); the Actions job itself times out at 30 minutes
+RUN_BUDGET = 26 * 60  # seconds (the deep crawl takes 13 minutes here, 17 on GitHub's runners). A hung source is cut off and keeps its old jobs; the Actions job times out at 30 minutes
 
 
 def run_all(tasks, budget=RUN_BUDGET):
