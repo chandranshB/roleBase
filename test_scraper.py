@@ -1,7 +1,7 @@
 import datetime as dt
 
 from scraper import (category, clean_company, company_stats, employment, find_pay, fresher_ok, ghost_flags, level, merge, skills, slim,
-                     run_all, url_of, usajobs_job, verdict, wd_posted, years_req)
+                     phenom_job, run_all, url_of, usajobs_job, verdict, wd_posted, years_req)
 
 
 def j(i, **kw):
@@ -138,6 +138,19 @@ u = usajobs_job({"MatchedObjectId": "123", "MatchedObjectDescriptor": {
     "PositionSchedule": [{"Name": "Full-time"}], "JobCategory": [{"Name": "Nurse"}], "UserArea": {"Details": {"RemoteIndicator": "False", "JobSummary": "Care for patients."}}}})
 assert u["id"] == "usajobs:123" and u["category"] == "healthcare" and u["pay"] == [70000, 95000, "USD"] and not u["remote"] and u["posted"] == "2026-10-01"
 
+# --- phenom: one search record (shaped like talent.lowes.com's) -> job; the Workday apply link becomes the posting link ---
+ph = phenom_job("talent.lowes.com", "Lowe's", {
+    "jobId": "JR-02676490", "title": "Part Time - Receiver/Stocker - Flexible", "type": "Part time", "category": "Store Operations", "department": "Receiving",
+    "cityStateCountry": "Glen Allen, Virginia, United States of America", "postedDate": "2026-10-11T00:00:00.000+0000",
+    "applyUrl": "https://lowes.wd5.myworkdayjobs.com/LWS_External_CS/job/Glen-Allen-VA/Part-Time---Receiver-Stocker_JR-02676490/apply",
+    "descriptionTeaser": "Receive freight and stock shelves.", "ml_skills": ["inventory management", "forklift operation"]})
+assert ph["id"] == "phenom:talent.lowes.com:JR-02676490" and ph["employment"] == "part_time" and ph["posted"] == "2026-10-11" and not ph["remote"]
+assert ph["url"].endswith("_JR-02676490") and ph["team"] == "Receiving" and "Glen Allen" in ph["location"]
+sf = phenom_job("careers.allianz.com", "Allianz", {"jobId": "97277", "title": "Data Analyst", "remote": "Hybrid working",
+                                                    "applyUrl": "https://career5.successfactors.eu/careers?company=AZ&career_job_req_id=97277&career_ns=job_application"})
+assert sf["url"].endswith("job_application") and not sf["remote"]  # a non-Workday apply link is kept whole
+assert phenom_job("x", "X", {"jobId": "1", "title": "", "applyUrl": "https://x"}) is None  # no title: skipped, not a failed board
+
 # --- run_all: each provider is its own lane with its own concurrency cap, a hung source is cut off at the budget and everything else still finishes ---
 import threading
 import time
@@ -189,6 +202,35 @@ try:
 except requests.exceptions.ChunkedEncodingError:
     assert len(cuts) == 3
 requests.Session.request = orig
+
+# an empty or cut-off JSON body is retried too (a rate limit often answers 200 with nothing), and gives up after three tries
+class Resp:
+    def __init__(self, ok):
+        self.ok = ok
+
+    def raise_for_status(self):
+        pass
+
+    def json(self):
+        if not self.ok:
+            raise ValueError("Expecting value")
+        return {"n": 1}
+
+
+real_sleep, scraper.time.sleep = scraper.time.sleep, lambda s: None
+seq = iter([Resp(False), Resp(False), Resp(True)])
+assert scraper.body(lambda: next(seq)) == {"n": 1}
+try:
+    scraper.body(lambda: Resp(False))
+    raise SystemExit("should have raised")
+except ValueError:
+    pass
+scraper.time.sleep = real_sleep
+
+# Microsoft's careers site is Eightfold-hosted, so it shares that lane: never two of them at once
+live = peak = 0
+res, unfinished = run_all([("microsoft:a", lane_task), ("eightfold:b", lane_task), ("eightfold:c", lane_task), ("microsoft:d", lane_task)], budget=5)
+assert not unfinished and peak == 1, peak
 
 # providers do not queue behind each other: 3 providers x 3 slow boards, one worker each -> about 3 boards deep, not 9
 seen, mx = {}, {}

@@ -10,7 +10,7 @@ concurrency: kaggle
 jobs:
   publish:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 25
     env:
       KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
       KAGGLE_API_TOKEN: ${{ secrets.KAGGLE_API_TOKEN }} # new-style KGAT_ token

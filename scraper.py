@@ -230,10 +230,20 @@ def company_stats(jobs, min_roles=5):
     return sorted(out, key=lambda r: (-r["fresher_share"], -r["open_roles"]))
 
 
+def body(call, tries=3):  # an empty or cut-off JSON body (a rate limit, a proxy hiccup) is retried; urllib3 only retries the error statuses
+    for i in range(tries):
+        r = call()
+        r.raise_for_status()
+        try:
+            return r.json()
+        except ValueError:
+            if i == tries - 1:
+                raise
+            time.sleep(2 * (i + 1))
+
+
 def get(url, **kw):
-    r = S.get(url, timeout=TIMEOUT, **kw)
-    r.raise_for_status()
-    return r.json()
+    return body(lambda: S.get(url, timeout=TIMEOUT, **kw))
 
 
 def day(v):  # epoch ms / epoch s / ISO string -> YYYY-MM-DD
@@ -319,7 +329,7 @@ def wd_posted(t):  # "Posted 3 Days Ago" / "Posted Today" / "Posted 30+ Days Ago
     return (dt.date.today() - dt.timedelta(days=n)).isoformat()
 
 
-WD_CAP = 60  # newest N per tenant: keeps jobs.json small, and the API refuses offsets past 2000 anyway. ponytail: raise if the site copes
+WD_CAP = 2000  # newest N per tenant: Workday refuses offsets past 2000. The site shows each employer's newest SITE_PER_COMPANY only (build_site.py)
 
 
 def pmap(fn, xs, workers=4):  # a few pages at a time: fast, but polite to one host. Own pool, so no deadlock inside main()'s pool
@@ -331,9 +341,7 @@ def workday(s, name):  # s = "<tenant>.<pod>.myworkdayjobs.com/<site>"; the list
     host, site = s.split("/", 1)
 
     def page(off):
-        r = S.post(f"https://{host}/wday/cxs/{host.split('.')[0]}/{site}/jobs", json={"limit": 20, "offset": off, "searchText": ""}, timeout=TIMEOUT)
-        r.raise_for_status()
-        return r.json()
+        return body(lambda: S.post(f"https://{host}/wday/cxs/{host.split('.')[0]}/{site}/jobs", json={"limit": 20, "offset": off, "searchText": ""}, timeout=TIMEOUT))
 
     first = page(0)
     rest = pmap(page, range(20, min(first["total"], WD_CAP), 20))
@@ -342,21 +350,23 @@ def workday(s, name):  # s = "<tenant>.<pod>.myworkdayjobs.com/<site>"; the list
                  for d in [first, *rest] for j in d["jobPostings"] if j.get("externalPath") and j.get("title")}.values())  # entries with no link or no title exist (KBR has one): skip them, not the board
 
 
-CAPPED = {"workday", "eightfold", "amazon", "himalayas", "jobicy", "jobtech", "usajobs", "oracle"}
+CAPPED = {"workday", "eightfold", "amazon", "himalayas", "jobicy", "jobtech", "usajobs", "oracle", "phenom"}
 HIM_CAP = 400  # newest N Himalayas jobs (of 100k+)
-ORA_CAP = 100  # newest N per Oracle career site
+ORA_CAP = 2000  # newest N per Oracle career site
 USAJOBS_CAP = 2000  # newest N federal postings (of ~15k)
 JT_CAP = 500  # newest N Swedish public-employment ads (of ~40k)
-EF_CAP = 300  # newest N per Eightfold/Amazon site (Starbucks alone lists 20k+ store jobs)
+EF_CAP = 2000  # newest N per Eightfold site (Starbucks alone lists 20k+ store jobs, 10 per request)
+AMZ_CAP = 10000  # amazon.jobs' search stops at 10,000 results
 
 
 def pcsx(host, domain, source, scope, name, cap=None):  # Eightfold "PCSX" search API behind a careers site; their robots.txt allows /api/pcsx
     def page(off):
+        time.sleep(.2)  # Eightfold's bot protection answers 405 to a burst, so a few pages at a time with a pause (and one site at a time, see LANE_OF)
         return get(f"https://{host}/api/pcsx/search", params={"domain": domain, "query": "", "start": off})["data"]
 
     first = page(0)
     size = len(first["positions"])
-    rest = pmap(page, range(size, min(first["count"], cap or first["count"]), size), 6) if size else []
+    rest = pmap(page, range(size, min(first["count"], cap or first["count"]), size), 4) if size else []
     return list({j["id"]: job(source, scope, j["id"], name, j["name"], f"https://{host}/careers/job/{j['id']}",
                               "; ".join(j["standardizedLocations"] or j["locations"] or []), j.get("workLocationOption") == "remote",
                               j.get("postedTs"), team=j.get("department"))
@@ -387,7 +397,7 @@ def amazon(s, name):  # amazon.jobs' own search endpoint (robots.txt only blocks
                                     desc=text(" ".join(filter(None, [j.get("description"), j.get("basic_qualifications"), j.get("preferred_qualifications")]))),
                                     team=j.get("job_family") or j.get("job_category"), emp=[j.get("job_schedule_type")],
                                     hint="intern" if j.get("is_intern") else None)
-                 for p in pmap(page, range(0, EF_CAP, 100), 3) for j in p}.values())
+                 for p in pmap(page, range(0, AMZ_CAP, 100), 3) for j in p}.values())
 
 
 # ---------- feeds (whole-board snapshots) ----------
@@ -617,8 +627,34 @@ def recruitee(s, name):  # <slug>.recruitee.com/api/offers
     return out
 
 
+PH_CAP = 10000  # newest N per Phenom site (Phenom stops at 10,000 results; Advance Auto Parts alone lists 16,000+)
+
+
+def phenom_job(s, name, j):  # one record of a Phenom careers site's search -> job; the record has no page link of its own, only the apply link
+    if not (j.get("jobId") and j.get("title") and j.get("applyUrl")):
+        return None
+    return job("phenom", f"phenom:{s}", j["jobId"], name, j["title"], j["applyUrl"].removesuffix("/apply") if "myworkdayjobs.com" in j["applyUrl"] else j["applyUrl"],
+               j.get("cityStateCountry") or j.get("location"), "remote" in str(j.get("remote") or "").lower(), j.get("postedDate") or j.get("dateCreated"),
+               desc=j.get("descriptionTeaser") or "", team=j.get("department") or j.get("category"), emp=[j.get("type"), j.get("employmentType")],
+               tags=j.get("ml_skills") or [])
+
+
+def phenom(s, name):  # Phenom People career site, s = host, e.g. "talent.lowes.com": the /widgets search the page itself calls, newest first, 100 per request
+    def page(off):
+        return body(lambda: S.post(f"https://{s}/widgets", timeout=TIMEOUT, headers={"Content-Type": "application/json"}, json={
+            "lang": "en_us", "deviceType": "desktop", "country": "us", "pageName": "search-results", "ddoKey": "refineSearch", "sortBy": "", "subsearch": "",
+            "from": off, "jobs": True, "counts": True, "all_fields": ["category", "country", "state", "city", "type"], "size": 100, "clearAll": False,
+            "jdsource": "facets", "isSliderEnable": False, "pageId": "page1", "siteType": "external", "keywords": "", "global": True, "selected_fields": {},
+            "sort": {"order": "desc", "field": "postedDate"}, "locationData": {}})).get("refineSearch") or {}
+
+    first = page(0)
+    rest = pmap(page, range(100, min(first.get("totalHits") or 0, PH_CAP), 100), 3)
+    jobs = (phenom_job(s, name, j) for d in [first, *rest] for j in (d.get("data") or {}).get("jobs") or [])
+    return list({j["id"]: j for j in jobs if j}.values())
+
+
 ATS = dict(greenhouse=greenhouse, lever=lever, ashby=ashby, smartrecruiters=smartrecruiters, workday=workday, microsoft=microsoft, eightfold=eightfold,
-           amazon=amazon, teamtailor=teamtailor, personio=personio, recruitee=recruitee, oracle=oracle, workable=workable)
+           amazon=amazon, teamtailor=teamtailor, personio=personio, recruitee=recruitee, oracle=oracle, workable=workable, phenom=phenom)
 FEEDS = dict(remotive=remotive, remoteok=remoteok, arbeitnow=arbeitnow, himalayas=himalayas, jobicy=jobicy, weworkremotely=weworkremotely,
              getonbrd=getonbrd, workingnomads=workingnomads, landingjobs=landingjobs, jobtech=jobtech, cryptojobs=cryptojobs)
 if os.environ.get("USAJOBS_API_KEY") and os.environ.get("USAJOBS_EMAIL"):  # optional: skipped (not failed) without a key
@@ -759,7 +795,8 @@ def verdict(jobs, err, prev, strikes):
 # Every provider is its own lane and all lanes start at once, so a slow or rate-limited provider only ever delays its own boards, never someone else's.
 # The number is how many boards of that provider are fetched at the same time (conservative defaults, not published limits); a provider not listed
 # here (Arbeitnow, every feed, Amazon, Microsoft...) gets one worker, i.e. one board at a time. Workable and Arbeitnow also pause a second between requests.
-LANES = {"greenhouse": 8, "lever": 6, "ashby": 6, "smartrecruiters": 4, "workday": 16, "teamtailor": 4, "oracle": 4, "workable": 2, "personio": 2, "recruitee": 2}
+LANE_OF = {"microsoft": "eightfold"}  # Microsoft's careers site is Eightfold-hosted: one lane, one site at a time, so their bot protection never sees a burst
+LANES = {"greenhouse": 8, "lever": 6, "ashby": 6, "smartrecruiters": 4, "workday": 24, "teamtailor": 4, "oracle": 4, "workable": 2, "personio": 2, "recruitee": 2, "phenom": 4}
 RUN_BUDGET = 22 * 60  # seconds. A hung source is cut off (its jobs are kept as they were); the Actions job itself times out at 30 minutes
 
 
@@ -777,6 +814,7 @@ def run_all(tasks, budget=RUN_BUDGET):
     futs = {}
     for t in tasks:
         lane = t[0].split(":")[0]
+        lane = LANE_OF.get(lane, lane)
         pool = pools.get(lane) or pools.setdefault(lane, ThreadPoolExecutor(LANES.get(lane, 1)))
         futs[pool.submit(run, t)] = t[0]
     done, pending = wait(futs, timeout=budget)

@@ -137,7 +137,7 @@ n_companies = len({r["company"] for r in live})
 TITLE = "Job Listings: Open Jobs in Every Field (Daily)"
 SUBTITLE = "Daily-updated open jobs with apply links, level, field, skills and pay"
 assert 6 <= len(TITLE) <= 50 and len(SUBTITLE) <= 80, (len(TITLE), len(SUBTITLE))
-SOURCES = ("Public job-board APIs and feeds of Greenhouse, Lever, Ashby, SmartRecruiters, Workday, Teamtailor, Personio, Recruitee, Workable and Oracle Recruiting, plus the careers search APIs of Microsoft, Amazon and "
+SOURCES = ("Public job-board APIs and feeds of Greenhouse, Lever, Ashby, SmartRecruiters, Workday, Teamtailor, Personio, Recruitee, Workable, Oracle Recruiting and Phenom, plus the careers search APIs of Microsoft, Amazon and "
            "Eightfold-powered sites, the Arbeitnow job API, Sweden's open JobTech job-ad API and USAJOBS (company list: https://github.com/chandranshB/roleBase/blob/main/companies.json). "
            "Collected by https://github.com/chandranshB/roleBase with GitHub Actions; no logins, no private data.")
 # Kaggle's API accepts the per-column descriptions below but its server drops them (https://github.com/Kaggle/kaggle-cli/issues/1207), so they are also
@@ -191,7 +191,7 @@ Refreshed automatically once a day by GitHub Actions; the scraper itself runs ev
 ## Limitations
 
 - `level`, `category`, `employment`, `years_experience`, `skills` and pay are inferred from posting text, so expect some errors. Pay is only filled when the posting states a yearly range.
-- Workday, Amazon and Eightfold-based employers contribute only their newest postings (60 to 300 each), and Workday postings carry no years, skills or pay because their list endpoint has no description.
+- Very large employers contribute their newest postings only: up to 2,000 each on Workday, 3,000 on Eightfold, 10,000 on Amazon and Phenom. Workday and Oracle postings carry no years, skills or pay because their list endpoint has no description.
 - Company coverage is a large sample, not the whole market. Companies that forbid automated collection (for example Google, Meta and Apple) are not included.
 - Postings belong to their employers. Use the apply link to apply on the employer's own page.
 

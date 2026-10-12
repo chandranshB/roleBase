@@ -29,7 +29,13 @@ def row(j):
             int(fresher_ok(j))]
 
 
-rows = sorted(map(row, jobs), key=lambda r: r[6], reverse=True)
+SITE_PER_COMPANY = 200  # the page downloads every row, so it lists each employer's newest 200; data/ and the Kaggle dataset keep all of them
+shown, per = [], {}
+for j in sorted(jobs, key=lambda j: j["posted"] or j["first_seen"], reverse=True):
+    per[j["company"]] = per.get(j["company"], 0) + 1
+    if per[j["company"]] <= SITE_PER_COMPANY:
+        shown.append(j)
+rows = sorted(map(row, shown), key=lambda r: r[6], reverse=True)
 def fetch_rates():
     """Free, no key: ECB rates from frankfurter.dev, with open.er-api.com filling any code the ECB does not publish (e.g. KHR).
     Fetched at build time, so the page never calls a rates API itself and the site still works if both are down."""
@@ -59,7 +65,7 @@ shutil.copytree("web/fonts", out / "fonts", dirs_exist_ok=True)  # Instrument Sa
 companies = [[c["company"], c["open_roles"], c["fresher_roles"], c["fresher_share"], c["junior_asking_3plus"], c["years_stated_share"]]
              for c in company_stats(jobs)]  # companies.json rows: name, open roles, fresher roles, share, junior asking 3+ yrs, years-stated share
 (out / "companies.json").write_text(json.dumps(companies, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
-print(f"{len(rows)} open jobs -> _site/jobs.json, {len(companies)} companies -> _site/companies.json")
+print(f"{len(rows)} of {len(jobs)} open jobs -> _site/jobs.json, {len(companies)} companies -> _site/companies.json")
 rates = fetch_rates()
 if rates:
     (out / "rates.json").write_text(json.dumps({"date": rates[1], "rates": rates[0]}, separators=(",", ":")), encoding="utf-8")
