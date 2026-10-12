@@ -194,8 +194,8 @@ def main():
     sm = "".join(f"<url><loc>{esc(u)}</loc><lastmod>{TODAY}</lastmod></url>" for u in urls)
     (SITE / "sitemap.xml").write_text(f'<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">{sm}</urlset>', encoding="utf-8")
     (SITE / "robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {BASE}/sitemap.xml\n", encoding="utf-8")
-    if Path("kaggle_assets/dataset-cover-image.png").exists():
-        shutil.copy("kaggle_assets/dataset-cover-image.png", SITE / "og.png")  # social preview image
+    if Path("kaggle_assets/social-preview.png").exists():
+        shutil.copy("kaggle_assets/social-preview.png", SITE / "og.png")  # social preview image
     print(f"pages: {len(urls)} URLs in sitemap ({len(pages)} collections, {len(cs)} companies)")
 
 
