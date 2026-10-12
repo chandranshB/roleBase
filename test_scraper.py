@@ -138,6 +138,12 @@ u = usajobs_job({"MatchedObjectId": "123", "MatchedObjectDescriptor": {
     "PositionSchedule": [{"Name": "Full-time"}], "JobCategory": [{"Name": "Nurse"}], "UserArea": {"Details": {"RemoteIndicator": "False", "JobSummary": "Care for patients."}}}})
 assert u["id"] == "usajobs:123" and u["category"] == "healthcare" and u["pay"] == [70000, 95000, "USD"] and not u["remote"] and u["posted"] == "2026-10-01"
 
+# --- companies.json: no two boards of a system differ only by letter case (same jobs twice on Linux, one shared data file on Windows) ---
+import json
+for system, boards in json.load(open("companies.json", encoding="utf-8")).items():
+    keys = [k.lower() for k in boards]
+    assert len(keys) == len(set(keys)), (system, sorted(k for k in set(keys) if keys.count(k) > 1))
+
 # --- phenom: one search record (shaped like talent.lowes.com's) -> job; the Workday apply link becomes the posting link ---
 ph = phenom_job("talent.lowes.com", "Lowe's", {
     "jobId": "JR-02676490", "title": "Part Time - Receiver/Stocker - Flexible", "type": "Part time", "category": "Store Operations", "department": "Receiving",
