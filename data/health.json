@@ -514,7 +514,7 @@
 {"b": "workday:agilent.wd5.myworkdayjobs.com/Agilent_Careers", "last_ok": "2026-10-12", "strikes": 0}
 {"b": "workday:agropur.wd3.myworkdayjobs.com/Agropur_Careers", "last_ok": "2026-10-12", "strikes": 0}
 {"b": "workday:aia.wd3.myworkdayjobs.com/External", "last_ok": "2026-10-12", "strikes": 0}
-{"b": "workday:aig.wd1.myworkdayjobs.com/aig", "last_ok": "2026-10-12", "strikes": 0}
+{"b": "workday:aig.wd1.myworkdayjobs.com/aig", "last_ok": "2026-10-12", "strikes": 0, "why": "error: 520 Server Error: <none> for url: https://aig.wd1.myworkdayjobs.com/wday/cxs/aig/aig/jobs"}
 {"b": "workday:aims.wd1.myworkdayjobs.com/Jobs", "last_ok": "2026-10-12", "strikes": 0}
 {"b": "workday:airliquidehr.wd3.myworkdayjobs.com/AirLiquideExternalCareer", "last_ok": "2026-10-12", "strikes": 0}
 {"b": "workday:airproducts.wd5.myworkdayjobs.com/AP0001", "last_ok": "2026-10-12", "strikes": 0}
