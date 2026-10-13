@@ -17,7 +17,7 @@
 {"b": "ashby:bynder", "last_ok": "2026-10-13", "strikes": 0}
 {"b": "ashby:capsule", "last_ok": "2026-10-13", "strikes": 0}
 {"b": "ashby:character", "last_ok": "2026-10-13", "strikes": 0}
-{"b": "ashby:circle", "last_ok": "2026-10-13", "strikes": 0}
+{"b": "ashby:circle", "last_ok": "2026-10-13", "strikes": 1, "why": "dropped from 32 to 8"}
 {"b": "ashby:clickhouse", "last_ok": "2026-10-13", "strikes": 0}
 {"b": "ashby:clickup", "last_ok": "2026-10-13", "strikes": 0}
 {"b": "ashby:cohere", "last_ok": "2026-10-13", "strikes": 0}
