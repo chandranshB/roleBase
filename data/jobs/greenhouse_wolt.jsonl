@@ -3,7 +3,7 @@
 {"company":"Wolt","first_seen":"2026-10-14","id":"greenhouse:wolt:6693436","location":"Patras, Greece; Remote","posted":"2025-06-25","remote":true,"reposts":1,"team":"Country Support","title":"Support Associate (Remote)"}
 {"company":"Wolt","first_seen":"2026-10-05","id":"greenhouse:wolt:6693444","location":"Paphos, Cyprus","posted":"2025-11-18","team":"Order Fulfillment","title":"Retail Grocery Assistant"}
 {"company":"Wolt","first_seen":"2026-10-05","id":"greenhouse:wolt:6693465","location":"Košice, Slovakia; Slovakia","posted":"2025-04-16","team":"Country Support","title":"Support Associate (Full-Time Remote)"}
-{"company":"Wolt","first_seen":"2026-10-13","id":"greenhouse:wolt:6693481","location":"OSLO, Norway","posted":"2025-04-11","team":"Order Fulfillment","title":"Grocery Associate"}
+{"closed_at":"2026-10-14","company":"Wolt","first_seen":"2026-10-13","id":"greenhouse:wolt:6693481","location":"OSLO, Norway","posted":"2025-04-11","team":"Order Fulfillment","title":"Grocery Associate"}
 {"company":"Wolt","first_seen":"2026-10-05","id":"greenhouse:wolt:6693496","location":"Košice, Slovakia; Slovakia","posted":"2025-03-27","team":"Country Support","title":"Support Associate (Part -Time Remote)"}
 {"company":"Wolt","first_seen":"2026-10-05","id":"greenhouse:wolt:6693501","location":"San Ġwann, Malta","posted":"2025-04-15","team":"Order Fulfillment","title":"Grocery Store Assistant"}
 {"company":"Wolt","first_seen":"2026-10-05","id":"greenhouse:wolt:6693504","location":"Ljubljana, Slovenia","posted":"2025-05-28","team":"Country Support","title":"Support Associate - Fulltime/Student- Ljubljana"}
@@ -158,7 +158,7 @@
 {"company":"Wolt","first_seen":"2026-10-05","id":"greenhouse:wolt:8147105","location":"Poland; Remote","posted":"2026-08-21","remote":true,"skills":["forecasting","negotiation"],"team":"Merchant acquisition SMB","title":"Sales Manager (Trójmiasto)"}
 {"closed_at":"2026-10-12","company":"Wolt","first_seen":"2026-10-05","id":"greenhouse:wolt:8154330","location":"Riga, Latvia","posted":"2026-08-25","skills":["negotiation","talent_acquisition"],"team":"Merchant Acquisition ENT","title":"Enterprise Sales Manager, Retail"}
 {"company":"Wolt","first_seen":"2026-10-05","id":"greenhouse:wolt:8154334","location":"Sweden","posted":"2026-08-25","team":"Merchant services","title":"Merchant Services Associate"}
-{"company":"Wolt","first_seen":"2026-10-05","id":"greenhouse:wolt:8154455","location":"Almaty, Kazakhstan","posted":"2026-08-26","team":"Merchant acquisition SMB","title":"B2B Sales Specialist"}
+{"closed_at":"2026-10-14","company":"Wolt","first_seen":"2026-10-05","id":"greenhouse:wolt:8154455","location":"Almaty, Kazakhstan","posted":"2026-08-26","team":"Merchant acquisition SMB","title":"B2B Sales Specialist"}
 {"company":"Wolt","first_seen":"2026-10-05","id":"greenhouse:wolt:8155294","location":"Belgrade - Savski Venac, Serbia","posted":"2026-08-25","skills":["project_management"],"team":"Merchant account management SMB","title":"Partner Success Specialist","years":2}
 {"company":"Wolt","first_seen":"2026-10-05","id":"greenhouse:wolt:8156073","location":"Helsinki, Finland","posted":"2026-08-25","skills":["crm","sql","project_management"],"team":"Consumer Business Strategy & Operations","title":"Strategy & Operations Manager, EMEA Growth & Engagement","years":5}
 {"company":"Wolt","first_seen":"2026-10-05","id":"greenhouse:wolt:8156191","location":"Shymkent, Kazakhstan","posted":"2026-08-26","team":"Merchant acquisition SMB","title":"Partner Sales Manager"}
@@ -233,6 +233,7 @@
 {"closed_at":"2026-10-09","company":"Wolt","first_seen":"2026-10-05","id":"greenhouse:wolt:8235901","location":"Birkirkara, Malta","posted":"2026-09-28","skills":["talent_acquisition"],"team":"Merchant services","title":"Sales Support Associate"}
 {"company":"Wolt","first_seen":"2026-10-05","id":"greenhouse:wolt:8236959","location":"Berlin, Germany; Helsinki, Finland; London, United Kingdom","posted":"2026-09-29","skills":["erp","project_management","sql","snowflake"],"team":"Wolt Tax","title":"Manager, Tax Technology — VAT (Wolt & Deliveroo Tax Platform & Business Projects)","years":8}
 {"company":"Wolt","first_seen":"2026-10-05","id":"greenhouse:wolt:8237035","location":"Solna, Sweden","posted":"2026-09-28","team":"Order Fulfillment","title":"Grocery Associate - Youth Workers"}
+{"company":"Wolt","first_seen":"2026-10-14","id":"greenhouse:wolt:8237053","location":"Solna, Sweden","posted":"2026-10-14","team":"Order Fulfillment","title":"Grocery Shift Lead"}
 {"company":"Wolt","first_seen":"2026-10-05","id":"greenhouse:wolt:8237716","location":"Reykjavik, Iceland","posted":"2026-09-29","skills":["crm"],"team":"Merchant Account Management ENT","title":"Account Manager"}
 {"company":"Wolt","first_seen":"2026-10-05","id":"greenhouse:wolt:8239639","location":"OSLO, Norway","posted":"2026-09-30","team":"Merchant Account Management ENT","title":"Junior Key Account Manager, Retail"}
 {"company":"Wolt","first_seen":"2026-10-05","id":"greenhouse:wolt:8240236","location":"Budapest, Hungary","posted":"2026-09-29","team":"Global Merchant Strategy and Operations","title":"Onboarding Team Lead, Germany","years":2}
@@ -259,3 +260,4 @@
 {"company":"Wolt","first_seen":"2026-10-12","id":"greenhouse:wolt:8266773","location":"Athens, Greece","posted":"2026-10-12","skills":["powerpoint","talent_acquisition"],"team":"Wolt Market Country Admin","title":"Category Specialist (WM)"}
 {"company":"Wolt","first_seen":"2026-10-11","id":"greenhouse:wolt:8272680","location":"Baku, Azerbaijan","posted":"2026-10-11","team":"Merchant acquisition SMB","title":"Partnership Associate"}
 {"company":"Wolt","first_seen":"2026-10-13","id":"greenhouse:wolt:8276119","location":"Prague, Czechia","posted":"2026-10-13","reposts":1,"team":"Merchant acquisition SMB","title":"Sales Manager"}
+{"company":"Wolt","first_seen":"2026-10-14","id":"greenhouse:wolt:8281238","location":"Berlin, Germany","posted":"2026-10-14","skills":["food_safety","haccp","talent_acquisition"],"team":"Wolt Global Security and Safety","title":"Global Associate Manager, Food Safety","years":5}
