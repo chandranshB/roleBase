@@ -113,16 +113,16 @@
 {"b": "ashby:zapier", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "cryptojobs", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "eightfold:apply.starbucks.com/starbucks.com", "last_ok": "2026-10-15", "strikes": 0}
-{"b": "eightfold:bostonscientific.eightfold.ai/bostonscientific.com", "last_ok": "2026-10-15", "strikes": 0, "why": "error: 405 Client Error: Not Allowed for url: https://bostonscientific.eightfold.ai/api/pcsx/search?domain=bostonscientific.com&query=&start=0"}
-{"b": "eightfold:careers.qualcomm.com/qualcomm.com", "last_ok": "2026-10-15", "strikes": 0, "why": "error: 405 Client Error: Not Allowed for url: https://careers.qualcomm.com/api/pcsx/search?domain=qualcomm.com&query=&start=0"}
+{"b": "eightfold:bostonscientific.eightfold.ai/bostonscientific.com", "last_ok": "2026-10-15", "strikes": 0}
+{"b": "eightfold:careers.qualcomm.com/qualcomm.com", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "eightfold:eaton.eightfold.ai/eaton.com", "last_ok": "2026-10-15", "strikes": 0}
-{"b": "eightfold:ericsson.eightfold.ai/ericsson.com", "last_ok": "", "strikes": 0, "why": "error: 405 Client Error: Not Allowed for url: https://ericsson.eightfold.ai/api/pcsx/search?domain=ericsson.com&query=&start=0"}
-{"b": "eightfold:ford.eightfold.ai/ford.com", "last_ok": "2026-10-15", "strikes": 0, "why": "error: 405 Client Error: Not Allowed for url: https://ford.eightfold.ai/api/pcsx/search?domain=ford.com&query=&start=0"}
-{"b": "eightfold:jobs.vodafone.com/vodafone.com", "last_ok": "2026-10-15", "strikes": 0, "why": "error: 405 Client Error: Not Allowed for url: https://jobs.vodafone.com/api/pcsx/search?domain=vodafone.com&query=&start=0"}
-{"b": "eightfold:lamresearch.eightfold.ai/lamresearch.com", "last_ok": "2026-10-15", "strikes": 0, "why": "error: 405 Client Error: Not Allowed for url: https://lamresearch.eightfold.ai/api/pcsx/search?domain=lamresearch.com&query=&start=0"}
+{"b": "eightfold:ericsson.eightfold.ai/ericsson.com", "last_ok": "2026-10-15", "strikes": 0}
+{"b": "eightfold:ford.eightfold.ai/ford.com", "last_ok": "2026-10-15", "strikes": 0}
+{"b": "eightfold:jobs.vodafone.com/vodafone.com", "last_ok": "2026-10-15", "strikes": 0}
+{"b": "eightfold:lamresearch.eightfold.ai/lamresearch.com", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "eightfold:lockheedmartin.eightfold.ai/lockheedmartin.com", "last_ok": "2026-10-15", "strikes": 0}
-{"b": "eightfold:morganstanley.eightfold.ai/morganstanley.com", "last_ok": "2026-10-15", "strikes": 0, "why": "error: 405 Client Error: Not Allowed for url: https://morganstanley.eightfold.ai/api/pcsx/search?domain=morganstanley.com&query=&start=0"}
-{"b": "eightfold:slb.eightfold.ai/slb.com", "last_ok": "2026-10-15", "strikes": 0, "why": "error: 405 Client Error: Not Allowed for url: https://slb.eightfold.ai/api/pcsx/search?domain=slb.com&query=&start=0"}
+{"b": "eightfold:morganstanley.eightfold.ai/morganstanley.com", "last_ok": "2026-10-15", "strikes": 0}
+{"b": "eightfold:slb.eightfold.ai/slb.com", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "getonbrd", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:aclu", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:adaptivebiotechnologies", "last_ok": "2026-10-15", "strikes": 0}
@@ -386,7 +386,7 @@
 {"b": "oracle:estm.fa.em2.oraclecloud.com/CX_1", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "oracle:eswt.fa.us6.oraclecloud.com/CX_1001", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "oracle:evac.fa.us2.oraclecloud.com/CX_1", "last_ok": "2026-10-15", "strikes": 0}
-{"b": "oracle:fa-evlo-saasfaprod1.fa.ocs.oraclecloud.com/CX_1", "last_ok": "2026-10-15", "strikes": 0, "why": "error: HTTPSConnectionPool(host='fa-evlo-saasfaprod1.fa.ocs.oraclecloud.com', port=443): Max retries exceeded with url: /hcmRestApi/resources/latest/recruitingCEJobRequisitions?onlyData=true&expand=requisitionList.secondaryLocations&finder=findReqs%3BsiteNumber%3DCX_1%2Climit%3D50%2Coffset%3D0%2CsortBy%3DPOSTING_DATES_DESC (Caused by ResponseError('too many 503 error responses'))"}
+{"b": "oracle:fa-evlo-saasfaprod1.fa.ocs.oraclecloud.com/CX_1", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "oracle:fa-evly-saasfaprod1.fa.ocs.oraclecloud.com/CX_1", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "oracle:fa-ewgu-saasfaprod1.fa.ocs.oraclecloud.com/CX_2001", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "oracle:fa-ewgu-saasfaprod1.fa.ocs.oraclecloud.com/CX_3001", "last_ok": "2026-10-15", "strikes": 0}
@@ -398,7 +398,7 @@
 {"b": "oracle:ibpwjb.fa.ocs.oraclecloud.com/CX_1", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "oracle:ibqbjb.fa.ocs.oraclecloud.com/CX_1", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "oracle:jpmc.fa.oraclecloud.com/CX_1001", "last_ok": "2026-10-15", "strikes": 0}
-{"b": "oracle:ublcloud-iaanbv.fa.ocs.oraclecloud.com/UBL-Careers", "last_ok": "2026-10-15", "strikes": 0, "why": "error: HTTPSConnectionPool(host='ublcloud-iaanbv.fa.ocs.oraclecloud.com', port=443): Max retries exceeded with url: /hcmRestApi/resources/latest/recruitingCEJobRequisitions?onlyData=true&expand=requisitionList.secondaryLocations&finder=findReqs%3BsiteNumber%3DUBL-Careers%2Climit%3D50%2Coffset%3D0%2CsortBy%3DPOSTING_DATES_DESC (Caused by ResponseError('too many 503 error responses'))"}
+{"b": "oracle:ublcloud-iaanbv.fa.ocs.oraclecloud.com/UBL-Careers", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "personio:chrono24", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "personio:clark", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "personio:thermondo", "last_ok": "2026-10-15", "strikes": 0}
