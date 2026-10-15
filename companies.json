@@ -174,7 +174,30 @@
   "mentimeter": "Mentimeter",
   "honeycomb": "Honeycomb",
   "dataiku": "Dataiku",
-  "circleci": "CircleCI"
+  "circleci": "CircleCI",
+  "janestreet": "Jane Street",
+  "point72": "Point72",
+  "jumptrading": "Jump Trading",
+  "imc": "IMC Trading",
+  "flowtraders": "Flow Traders",
+  "akunacapital": "Akuna Capital",
+  "worldquant": "WorldQuant",
+  "virtu": "Virtu Financial",
+  "mangroup": "Man Group",
+  "aqr": "AQR Capital Management",
+  "schonfeld": "Schonfeld Strategic Advisors",
+  "tudorgroup": "Tudor Investment Corporation",
+  "exoduspoint": "ExodusPoint Capital Management",
+  "doordashusa": "DoorDash",
+  "doordashindia": "DoorDash India",
+  "canonical": "Canonical",
+  "zscaler": "Zscaler",
+  "togetherai": "Together AI",
+  "gleanwork": "Glean",
+  "heygen": "HeyGen",
+  "optiverus": "Optiver",
+  "fiveringsllc": "Five Rings",
+  "stabilityai": "Stability AI"
  },
  "lever": {
   "spotify": "Spotify",
@@ -316,7 +339,24 @@
   "whoop": "WHOOP",
   "xero": "Xero",
   "fullstory": "FullStory",
-  "ledger": "Ledger"
+  "ledger": "Ledger",
+  "cognition": "Cognition",
+  "docker": "Docker",
+  "midjourney": "Midjourney",
+  "warp": "Warp",
+  "cartesia": "Cartesia",
+  "deepgram": "Deepgram",
+  "tavus": "Tavus",
+  "vapi": "Vapi",
+  "livekit": "LiveKit",
+  "baseten": "Baseten",
+  "ideogram": "Ideogram",
+  "pika": "Pika",
+  "synthesia": "Synthesia",
+  "krea": "Krea",
+  "pinecone": "Pinecone",
+  "poolside": "Poolside",
+  "writer": "Writer"
  },
  "smartrecruiters": {
   "BoschGroup": "Bosch",
@@ -996,7 +1036,10 @@
   "telstra.wd3.myworkdayjobs.com/Telstra_Careers": "Telstra",
   "upm.wd103.myworkdayjobs.com/Careers": "UPM",
   "whataburger.wd5.myworkdayjobs.com/WAB_CAREERS": "Whataburger",
-  "zalando.wd3.myworkdayjobs.com/ZalandoSiteWD": "Zalando"
+  "zalando.wd3.myworkdayjobs.com/ZalandoSiteWD": "Zalando",
+  "paloaltonetworks.wd5.myworkdayjobs.com/panwexternalcareers": "Palo Alto Networks",
+  "fmr.wd1.myworkdayjobs.com/FidelityCareers": "Fidelity Investments",
+  "blackstone.wd1.myworkdayjobs.com/Blackstone_Careers": "Blackstone"
  },
  "microsoft": {
   "microsoft.com": "Microsoft"
@@ -1014,7 +1057,8 @@
   "lamresearch.eightfold.ai/lamresearch.com": "Lam Research",
   "ford.eightfold.ai/ford.com": "Ford",
   "slb.eightfold.ai/slb.com": "SLB",
-  "bostonscientific.eightfold.ai/bostonscientific.com": "Boston Scientific"
+  "bostonscientific.eightfold.ai/bostonscientific.com": "Boston Scientific",
+  "ericsson.eightfold.ai/ericsson.com": "Ericsson"
  },
  "teamtailor": {
   "sendcloud": "Sendcloud",
@@ -1164,6 +1208,10 @@
   "jobs.bnsf.com": "BNSF Railway",
   "jobs.newmont.com": "Newmont",
   "careers.activision.com": "Activision",
-  "careers.humana.com": "Humana"
+  "careers.humana.com": "Humana",
+  "careers.southwestair.com": "Southwest Airlines"
+ },
+ "apple": {
+  "apple": "Apple"
  }
 }

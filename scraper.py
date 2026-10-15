@@ -28,11 +28,11 @@ KEEP_CLOSED_DAYS = 90  # closed jobs older than this are pruned (git history sti
 class Client(requests.Session):
     waits = (2, 6)  # seconds before the 2nd and 3rd try
 
-    def request(self, *a, **kw):  # urllib3's Retry stops once the response starts, so a connection cut mid-body (IncompleteRead) is retried here
+    def request(self, *a, **kw):  # urllib3's Retry stops once the response starts, so connection cuts / timeouts mid-body are retried here
         for w in (*self.waits, None):
             try:
                 return super().request(*a, **kw)
-            except requests.exceptions.ChunkedEncodingError:
+            except (requests.exceptions.ChunkedEncodingError, requests.exceptions.ConnectionError, requests.exceptions.ReadTimeout):
                 if w is None:
                     raise
                 time.sleep(w)
@@ -230,13 +230,15 @@ def company_stats(jobs, min_roles=5):
     return sorted(out, key=lambda r: (-r["fresher_share"], -r["open_roles"]))
 
 
-def body(call, tries=3):  # an empty or cut-off JSON body (a rate limit, a proxy hiccup) is retried; urllib3 only retries the error statuses
+def body(call, tries=3):  # retries JSON decoding errors, rate-limits, and transient network / 5xx hiccups
     for i in range(tries):
-        r = call()
-        r.raise_for_status()
         try:
+            r = call()
+            r.raise_for_status()
             return r.json()
-        except ValueError:
+        except (ValueError, requests.exceptions.RequestException) as e:
+            if isinstance(e, requests.exceptions.HTTPError) and e.response is not None and 400 <= e.response.status_code < 500 and e.response.status_code != 429:
+                raise
             if i == tries - 1:
                 raise
             time.sleep(2 * (i + 1))
@@ -258,7 +260,7 @@ def day(v):  # epoch ms / epoch s / ISO string -> YYYY-MM-DD
 
 def job(source, scope, rid, company, title, url, location="", remote=False, posted=None,
         desc="", team="", emp=(), pay=None, tags=(), hint=None):
-    location, team, title = (location or "").strip(), (team or "").strip(), title.strip()
+    location, team, title = (location or "").strip(), (team or "").strip(), (title or "").strip()
     yrs = years_req(desc)
     return dict(id=f"{scope}:{rid}", source=source, company=company, title=title, team=team, location=location,
                 remote=bool(remote) or "remote" in location.lower(), level=level(title, yrs, hint),
@@ -268,19 +270,23 @@ def job(source, scope, rid, company, title, url, location="", remote=False, post
 
 # ---------- per-company ATS fetchers (slug, display name -> jobs). `url` is the apply link. ----------
 def greenhouse(s, name):
+    data = get(f"https://boards-api.greenhouse.io/v1/boards/{s}/jobs", params={"content": "true"})
     return [job("greenhouse", f"greenhouse:{s}", j["id"], name or j.get("company_name") or s, j["title"], j["absolute_url"],
                 (j.get("location") or {}).get("name"), posted=j.get("first_published") or j.get("updated_at"),
-                desc=text(j.get("content")), team=next((d["name"] for d in j.get("departments") or []), ""))
-            for j in get(f"https://boards-api.greenhouse.io/v1/boards/{s}/jobs", params={"content": "true"})["jobs"]]
+                desc=text(j.get("content")), team=next((d.get("name") for d in j.get("departments") or [] if isinstance(d, dict) and d.get("name")), ""))
+            for j in data.get("jobs", []) if j.get("id") and j.get("title")]
 
 
 def lever(s, name):
     out = []
-    for j in get(f"https://api.lever.co/v0/postings/{s}", params={"mode": "json"}):
-        c, r = j["categories"], j.get("salaryRange") or {}
+    items = get(f"https://api.lever.co/v0/postings/{s}", params={"mode": "json"})
+    for j in (items if isinstance(items, list) else []):
+        if not j.get("id") or not j.get("text"):
+            continue
+        c, r = j.get("categories") or {}, j.get("salaryRange") or {}
         pay = [int(r["min"]), int(r["max"]), r.get("currency", "USD")] if r.get("min") and r.get("max") and "year" in r.get("interval", "") else None
         desc = " ".join([j.get("descriptionPlain") or "", j.get("additionalPlain") or ""] + [text(l.get("content")) for l in j.get("lists") or []])
-        out.append(job("lever", f"lever:{s}", j["id"], name, j["text"], j["applyUrl"], c.get("location"),
+        out.append(job("lever", f"lever:{s}", j["id"], name, j["text"], j.get("applyUrl") or f"https://jobs.lever.co/{s}/{j['id']}", c.get("location"),
                        j.get("workplaceType") == "remote", j.get("createdAt"), desc=desc,
                        team=c.get("team") or c.get("department"), emp=[c.get("commitment")], pay=pay))
     return out
@@ -288,13 +294,14 @@ def lever(s, name):
 
 def ashby(s, name):
     out = []
-    for j in get(f"https://api.ashbyhq.com/posting-api/job-board/{s}", params={"includeCompensation": "true"})["jobs"]:
-        if not j.get("isListed", True):
+    data = get(f"https://api.ashbyhq.com/posting-api/job-board/{s}", params={"includeCompensation": "true"})
+    for j in data.get("jobs", []):
+        if not j.get("isListed", True) or not j.get("id") or not j.get("title"):
             continue
         comp = next((c for t in (j.get("compensation") or {}).get("compensationTiers") or [] for c in t.get("components") or []
                      if c.get("compensationType") == "Salary" and "YEAR" in (c.get("interval") or "")), None)
         pay = [int(comp["minValue"]), int(comp["maxValue"]), comp["currencyCode"]] if comp and comp.get("minValue") and comp.get("maxValue") else None
-        out.append(job("ashby", f"ashby:{s}", j["id"], name, j["title"], j.get("applyUrl") or j["jobUrl"], j.get("location"),
+        out.append(job("ashby", f"ashby:{s}", j["id"], name, j["title"], j.get("applyUrl") or j.get("jobUrl") or "", j.get("location"),
                        j.get("isRemote") or j.get("workplaceType") == "Remote", j.get("publishedAt"),
                        desc=j.get("descriptionPlain") or "", team=j.get("department") or j.get("team"),
                        emp=[j.get("employmentType")], pay=pay))
@@ -308,7 +315,10 @@ def smartrecruiters(s, name):  # list endpoint has no description, so years/skil
     out, off = [], 0
     while True:
         d = get(f"https://api.smartrecruiters.com/v1/companies/{s}/postings", params={"limit": 100, "offset": off})
-        for j in d["content"]:
+        content = d.get("content", [])
+        for j in content:
+            if not j.get("id") or not j.get("name"):
+                continue
             l = j.get("location") or {}
             loc = l.get("fullLocation") or ", ".join(filter(None, [l.get("city"), (l.get("country") or "").upper()]))
             out.append(job("smartrecruiters", f"smartrecruiters:{s}", j["id"], name or (j.get("company") or {}).get("name") or s,
@@ -317,7 +327,7 @@ def smartrecruiters(s, name):  # list endpoint has no description, so years/skil
                            emp=[(j.get("typeOfEmployment") or {}).get("label")],
                            hint=SR_LEVEL.get((j.get("experienceLevel") or {}).get("id"))))
         off += 100
-        if not d["content"] or off >= d["totalFound"]:
+        if not content or off >= d.get("totalFound", 0):
             return out
 
 
@@ -344,33 +354,37 @@ def workday(s, name):  # s = "<tenant>.<pod>.myworkdayjobs.com/<site>"; the list
         return body(lambda: S.post(f"https://{host}/wday/cxs/{host.split('.')[0]}/{site}/jobs", json={"limit": 20, "offset": off, "searchText": ""}, timeout=TIMEOUT))
 
     first = page(0)
-    rest = pmap(page, range(20, min(first["total"], WD_CAP), 20))
+    total = first.get("total", 0)
+    rest = pmap(page, range(20, min(total, WD_CAP), 20)) if total > 20 else []
     return list({j["externalPath"]: job("workday", f"workday:{s}", j["externalPath"], name, j["title"], f"https://{s}{j['externalPath']}",
                                         j.get("locationsText"), posted=wd_posted(j.get("postedOn")))
-                 for d in [first, *rest] for j in d["jobPostings"] if j.get("externalPath") and j.get("title")}.values())  # entries with no link or no title exist (KBR has one): skip them, not the board
+                 for d in [first, *rest] for j in d.get("jobPostings", []) if j.get("externalPath") and j.get("title")}.values())  # entries with no link or no title exist (KBR has one): skip them, not the board
 
 
-CAPPED = {"workday", "eightfold", "amazon", "himalayas", "jobicy", "jobtech", "usajobs", "oracle", "phenom"}
+CAPPED = {"workday", "eightfold", "amazon", "himalayas", "jobicy", "jobtech", "usajobs", "oracle", "phenom", "apple"}
 HIM_CAP = 400  # newest N Himalayas jobs (of 100k+)
 ORA_CAP = 2000  # newest N per Oracle career site
 USAJOBS_CAP = 2000  # newest N federal postings (of ~15k)
 JT_CAP = 500  # newest N Swedish public-employment ads (of ~40k)
 EF_CAP = 2000  # newest N per Eightfold site (Starbucks alone lists 20k+ store jobs, 10 per request)
 AMZ_CAP = 10000  # amazon.jobs' search stops at 10,000 results
+APPLE_CAP = 2000  # newest N Apple jobs (Apple lists ~6,000)
 
 
 def pcsx(host, domain, source, scope, name, cap=None):  # Eightfold "PCSX" search API behind a careers site; their robots.txt allows /api/pcsx
     def page(off):
         time.sleep(.2)  # Eightfold's bot protection answers 405 to a burst, so a few pages at a time with a pause (and one site at a time, see LANE_OF)
-        return get(f"https://{host}/api/pcsx/search", params={"domain": domain, "query": "", "start": off})["data"]
+        return get(f"https://{host}/api/pcsx/search", params={"domain": domain, "query": "", "start": off}).get("data", {})
 
     first = page(0)
-    size = len(first["positions"])
-    rest = pmap(page, range(size, min(first["count"], cap or first["count"]), size), 4) if size else []
+    positions = first.get("positions") or []
+    size = len(positions)
+    count = first.get("count", 0)
+    rest = pmap(page, range(size, min(count, cap or count), size), 4) if size and size < count else []
     return list({j["id"]: job(source, scope, j["id"], name, j["name"], f"https://{host}/careers/job/{j['id']}",
                               "; ".join(j["standardizedLocations"] or j["locations"] or []), j.get("workLocationOption") == "remote",
                               j.get("postedTs"), team=j.get("department"))
-                 for d in [first, *rest] for j in d["positions"]}.values())
+                 for d in [first, *rest] for j in (d.get("positions") or []) if j.get("id") and j.get("name")}.values())
 
 
 def microsoft(s, name):  # s = domain
@@ -398,6 +412,62 @@ def amazon(s, name):  # amazon.jobs' own search endpoint (robots.txt only blocks
                                     team=j.get("job_family") or j.get("job_category"), emp=[j.get("job_schedule_type")],
                                     hint="intern" if j.get("is_intern") else None)
                  for p in pmap(page, range(0, AMZ_CAP, 100), 3) for j in p}.values())
+
+
+def apple(s, name):  # Apple careers API (jobs.apple.com)
+    csrf_res = S.get("https://jobs.apple.com/api/v1/CSRFToken", timeout=TIMEOUT)
+    csrf_res.raise_for_status()
+    csrf = csrf_res.headers.get("X-Apple-CSRF-Token")
+    if not csrf:
+        raise ValueError("Apple CSRF token not found in response headers")
+
+    headers = {
+        "X-Apple-CSRF-Token": csrf,
+        "Content-Type": "application/json;charset=UTF-8",
+        "Origin": "https://jobs.apple.com",
+        "Referer": "https://jobs.apple.com/en-us/search",
+    }
+
+    def page(p):
+        payload = {
+            "query": "",
+            "filters": {},
+            "page": p,
+            "locale": "en-us",
+            "sort": "newest",
+            "format": {"longDate": "MMMM D, YYYY", "mediumDate": "MMM D, YYYY"},
+        }
+        r = body(lambda: S.post("https://jobs.apple.com/api/v1/search", json=payload, headers=headers, timeout=TIMEOUT))
+        return r.get("res") or {}
+
+    first = page(1)
+    total = first.get("totalRecords", 0)
+    pages_to_fetch = min(total, APPLE_CAP) // 20 + 1
+    rest = pmap(page, range(2, pages_to_fetch + 1), workers=4) if pages_to_fetch > 1 else []
+
+    out = []
+    seen = set()
+    for d in [first, *rest]:
+        for j in d.get("searchResults") or []:
+            pos_id = j.get("positionId")
+            if not pos_id or not j.get("postingTitle") or pos_id in seen:
+                continue
+            seen.add(pos_id)
+            locs = []
+            for loc in j.get("locations") or []:
+                parts = filter(None, [loc.get("city"), loc.get("stateProvince"), loc.get("countryName")])
+                loc_str = ", ".join(parts) or loc.get("name") or ""
+                if loc_str and loc_str not in locs:
+                    locs.append(loc_str)
+            post_date = j.get("postDateInGMT")
+            date_str = post_date[:10] if post_date and len(post_date) >= 10 else None
+            team = (j.get("team") or {}).get("teamName")
+            desc = text(j.get("jobSummary") or "")
+            out.append(job("apple", f"apple:{s}", pos_id, name or "Apple", j["postingTitle"],
+                           f"https://jobs.apple.com/en-us/details/{pos_id}",
+                           "; ".join(locs), j.get("homeOffice") is True, date_str,
+                           desc=desc, team=team))
+    return out
 
 
 # ---------- feeds (whole-board snapshots) ----------
@@ -551,13 +621,15 @@ def oracle(s, name):  # Oracle Recruiting Cloud career site, s = "<host>/<site n
     host, site = s.split("/", 1)
 
     def page(off):
-        d = get(f"https://{host}/hcmRestApi/resources/latest/recruitingCEJobRequisitions", params={
+        res = get(f"https://{host}/hcmRestApi/resources/latest/recruitingCEJobRequisitions", params={
             "onlyData": "true", "expand": "requisitionList.secondaryLocations",
-            "finder": f"findReqs;siteNumber={site},limit=50,offset={off},sortBy=POSTING_DATES_DESC"})["items"][0]
-        return d["TotalJobsCount"], d["requisitionList"]
+            "finder": f"findReqs;siteNumber={site},limit=50,offset={off},sortBy=POSTING_DATES_DESC"})
+        items = res.get("items", []) if isinstance(res, dict) else []
+        d = items[0] if items else {}
+        return d.get("TotalJobsCount", 0), d.get("requisitionList", [])
 
     total, first = page(0)
-    rest = pmap(lambda o: page(o)[1], range(50, min(total, ORA_CAP), 50))
+    rest = pmap(lambda o: page(o)[1], range(50, min(total, ORA_CAP), 50)) if total > 50 else []
     return list({j["Id"]: job("oracle", f"oracle:{s}", j["Id"], name, j["Title"], f"https://{host}/hcmUI/CandidateExperience/en/sites/{site}/job/{j['Id']}",
                               j.get("PrimaryLocation"), "REMOTE" in (j.get("WorkplaceTypeCode") or ""), j.get("PostedDate"))
                  for js in [first, *rest] for j in js if j.get("Id") and j.get("Title")}.values())
@@ -632,13 +704,14 @@ def phenom(s, name):  # Phenom People career site, s = host, e.g. "talent.lowes.
             "sort": {"order": "desc", "field": "postedDate"}, "locationData": {}})).get("refineSearch") or {}
 
     first = page(0)
-    rest = pmap(page, range(100, min(first.get("totalHits") or 0, PH_CAP), 100), 3)
+    total = first.get("totalHits") or 0
+    rest = pmap(page, range(100, min(total, PH_CAP), 100), 3) if total > 100 else []
     jobs = (phenom_job(s, name, j) for d in [first, *rest] for j in (d.get("data") or {}).get("jobs") or [])
     return list({j["id"]: j for j in jobs if j}.values())
 
 
 ATS = dict(greenhouse=greenhouse, lever=lever, ashby=ashby, smartrecruiters=smartrecruiters, workday=workday, microsoft=microsoft, eightfold=eightfold,
-           amazon=amazon, teamtailor=teamtailor, personio=personio, recruitee=recruitee, oracle=oracle, workable=workable, phenom=phenom)
+           amazon=amazon, apple=apple, teamtailor=teamtailor, personio=personio, recruitee=recruitee, oracle=oracle, workable=workable, phenom=phenom)
 FEEDS = dict(remotive=remotive, remoteok=remoteok, arbeitnow=arbeitnow, himalayas=himalayas, jobicy=jobicy, weworkremotely=weworkremotely,
              getonbrd=getonbrd, workingnomads=workingnomads, jobtech=jobtech, cryptojobs=cryptojobs)
 if os.environ.get("USAJOBS_API_KEY") and os.environ.get("USAJOBS_EMAIL"):  # optional: skipped (not failed) without a key
@@ -648,7 +721,8 @@ if os.environ.get("USAJOBS_API_KEY") and os.environ.get("USAJOBS_EMAIL"):  # opt
 # ---------- storage ----------
 URLS = dict(greenhouse="https://job-boards.greenhouse.io/{s}/jobs/{r}", lever="https://jobs.lever.co/{s}/{r}/apply",
             ashby="https://jobs.ashbyhq.com/{s}/{r}/application", smartrecruiters="https://jobs.smartrecruiters.com/{s}/{r}",
-            workday="https://{s}{r}", microsoft="https://apply.careers.microsoft.com/careers/job/{r}")
+            workday="https://{s}{r}", microsoft="https://apply.careers.microsoft.com/careers/job/{r}",
+            apple="https://jobs.apple.com/en-us/details/{r}")
 DEFAULTS = dict(closed_at=None, location="", team="", remote=False, years=None, skills=[], pay=None, employment="", posted=None, reposts=0)
 
 
@@ -780,7 +854,7 @@ def verdict(jobs, err, prev, strikes):
 # The number is how many boards of that provider are fetched at the same time (conservative defaults, not published limits); a provider not listed
 # here (Arbeitnow, every feed, Amazon, Microsoft...) gets one worker, i.e. one board at a time. Workable and Arbeitnow also pause a second between requests.
 LANE_OF = {"microsoft": "eightfold"}  # Microsoft's careers site is Eightfold-hosted: one lane, one site at a time, so their bot protection never sees a burst
-LANES = {"greenhouse": 8, "lever": 6, "ashby": 6, "smartrecruiters": 4, "workday": 24, "teamtailor": 4, "oracle": 4, "workable": 2, "personio": 2, "recruitee": 2, "phenom": 4}
+LANES = {"greenhouse": 8, "lever": 6, "ashby": 6, "smartrecruiters": 4, "workday": 24, "teamtailor": 4, "oracle": 4, "workable": 2, "personio": 2, "recruitee": 2, "phenom": 4, "apple": 1}
 RUN_BUDGET = 26 * 60  # seconds (the deep crawl takes 13 minutes here, 17 on GitHub's runners). A hung source is cut off and keeps its old jobs; the Actions job times out at 30 minutes
 
 

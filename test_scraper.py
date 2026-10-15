@@ -1,6 +1,6 @@
 import datetime as dt
 
-from scraper import (category, clean_company, company_stats, employment, find_pay, fresher_ok, ghost_flags, level, merge, skills, slim,
+from scraper import (ATS, CAPPED, apple, category, clean_company, company_stats, employment, find_pay, fresher_ok, ghost_flags, level, merge, skills, slim,
                      phenom_job, run_all, url_of, usajobs_job, verdict, wd_posted, years_req)
 from update_about import about_text
 
@@ -91,6 +91,8 @@ row = {"id": "ashby:acme:u1", "source": "ashby", "url": url_of("ashby:acme:u1"),
 assert slim(row) == {"id": "ashby:acme:u1", "years": 0, "title": "Engineer"}
 assert slim({**row, "level": "manager+"})["level"] == "manager+"  # level from an API hint is not derivable, so it stays
 assert url_of("remotive:7") is None
+assert url_of("apple:apple:200313970") == "https://jobs.apple.com/en-us/details/200313970"
+assert "apple" in CAPPED and ATS["apple"] == apple
 
 # --- logos: icon detection and ordering ---
 import struct
@@ -232,6 +234,13 @@ try:
     raise SystemExit("should have raised")
 except ValueError:
     pass
+
+# body retries transient connection errors
+seq_conn = iter([lambda: (_ for _ in ()).throw(requests.exceptions.ConnectionError("flaky")), lambda: Resp(True)])
+assert scraper.body(lambda: next(seq_conn)()) == {"n": 1}
+
+# job safely handles None title without raising
+assert scraper.job("greenhouse", "greenhouse:test", "1", "Co", None, "http://apply")["title"] == ""
 scraper.time.sleep = real_sleep
 
 # Microsoft's careers site is Eightfold-hosted, so it shares that lane: never two of them at once
