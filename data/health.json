@@ -33,7 +33,7 @@
 {"b": "ashby:harvey", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "ashby:headway", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "ashby:helion", "last_ok": "2026-10-15", "strikes": 0}
-{"b": "ashby:helsing", "last_ok": "2026-10-15", "strikes": 0}
+{"b": "ashby:helsing", "last_ok": "2026-10-15", "strikes": 0, "why": "error: 404 Client Error: Not Found for url: https://api.ashbyhq.com/posting-api/job-board/helsing?includeCompensation=true"}
 {"b": "ashby:hopper", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "ashby:industrious", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "ashby:iterable", "last_ok": "2026-10-15", "strikes": 0}
@@ -508,7 +508,7 @@
 {"b": "workday:adventhealth.wd12.myworkdayjobs.com/AH_External_Career_Site", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "workday:adventisthealthcare.wd1.myworkdayjobs.com/AdventistHealthCareCareers", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "workday:aeci.wd1.myworkdayjobs.com/AECI", "last_ok": "2026-10-15", "strikes": 0}
-{"b": "workday:aep.wd1.myworkdayjobs.com/AEPCareerSite", "last_ok": "2026-10-14", "strikes": 0, "why": "error: 520 Server Error: <none> for url: https://aep.wd1.myworkdayjobs.com/wday/cxs/aep/AEPCareerSite/jobs"}
+{"b": "workday:aep.wd1.myworkdayjobs.com/AEPCareerSite", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "workday:aero.wd5.myworkdayjobs.com/External", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "workday:ag.wd3.myworkdayjobs.com/Airbus", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "workday:agilent.wd5.myworkdayjobs.com/Agilent_Careers", "last_ok": "2026-10-15", "strikes": 0}
