@@ -1,4 +1,5 @@
 {"b": "amazon:jobs", "last_ok": "2026-10-15", "strikes": 0}
+{"b": "apple:apple", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "arbeitnow", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "ashby:1password", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "ashby:abridge", "last_ok": "2026-10-15", "strikes": 0}
@@ -12,19 +13,24 @@
 {"b": "ashby:anyscale", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "ashby:away", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "ashby:backmarket", "last_ok": "2026-10-15", "strikes": 0}
+{"b": "ashby:baseten", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "ashby:benchling", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "ashby:brooklinen", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "ashby:bynder", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "ashby:capsule", "last_ok": "2026-10-15", "strikes": 0}
+{"b": "ashby:cartesia", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "ashby:character", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "ashby:circle", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "ashby:clickhouse", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "ashby:clickup", "last_ok": "2026-10-15", "strikes": 0}
+{"b": "ashby:cognition", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "ashby:cohere", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "ashby:cursor", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "ashby:decagon", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "ashby:deel", "last_ok": "2026-10-15", "strikes": 0}
+{"b": "ashby:deepgram", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "ashby:deliveroo", "last_ok": "2026-10-15", "strikes": 0}
+{"b": "ashby:docker", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "ashby:doctolib", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "ashby:elevenlabs", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "ashby:enpal", "last_ok": "2026-10-15", "strikes": 0}
@@ -35,15 +41,19 @@
 {"b": "ashby:helion", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "ashby:helsing", "last_ok": "2026-10-15", "strikes": 0, "why": "error: 404 Client Error: Not Found for url: https://api.ashbyhq.com/posting-api/job-board/helsing?includeCompensation=true"}
 {"b": "ashby:hopper", "last_ok": "2026-10-15", "strikes": 0}
+{"b": "ashby:ideogram", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "ashby:industrious", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "ashby:iterable", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "ashby:kayak", "last_ok": "2026-10-15", "strikes": 0}
+{"b": "ashby:krea", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "ashby:langchain", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "ashby:ledger", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "ashby:lemonade", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "ashby:linear", "last_ok": "2026-10-15", "strikes": 0}
+{"b": "ashby:livekit", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "ashby:lovable", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "ashby:merge", "last_ok": "2026-10-15", "strikes": 0}
+{"b": "ashby:midjourney", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "ashby:miro", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "ashby:modal", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "ashby:mollie", "last_ok": "2026-10-15", "strikes": 0}
@@ -59,7 +69,10 @@
 {"b": "ashby:pennylane", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "ashby:perplexity", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "ashby:phantom", "last_ok": "2026-10-15", "strikes": 0}
+{"b": "ashby:pika", "last_ok": "2026-10-15", "strikes": 0}
+{"b": "ashby:pinecone", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "ashby:plaid", "last_ok": "2026-10-15", "strikes": 0}
+{"b": "ashby:poolside", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "ashby:poshmark", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "ashby:posthog", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "ashby:qonto", "last_ok": "2026-10-15", "strikes": 0}
@@ -82,28 +95,34 @@
 {"b": "ashby:suno", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "ashby:supabase", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "ashby:supercell", "last_ok": "2026-10-15", "strikes": 0}
+{"b": "ashby:synthesia", "last_ok": "2026-10-15", "strikes": 0}
+{"b": "ashby:tavus", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "ashby:thumbtack", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "ashby:vanta", "last_ok": "2026-10-15", "strikes": 0}
+{"b": "ashby:vapi", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "ashby:vultr", "last_ok": "2026-10-15", "strikes": 0}
+{"b": "ashby:warp", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "ashby:watershed", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "ashby:wayve", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "ashby:wealthsimple", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "ashby:webflow", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "ashby:wheel", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "ashby:whoop", "last_ok": "2026-10-15", "strikes": 0}
+{"b": "ashby:writer", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "ashby:xero", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "ashby:zapier", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "cryptojobs", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "eightfold:apply.starbucks.com/starbucks.com", "last_ok": "2026-10-15", "strikes": 0}
-{"b": "eightfold:bostonscientific.eightfold.ai/bostonscientific.com", "last_ok": "2026-10-15", "strikes": 0}
-{"b": "eightfold:careers.qualcomm.com/qualcomm.com", "last_ok": "2026-10-15", "strikes": 0}
+{"b": "eightfold:bostonscientific.eightfold.ai/bostonscientific.com", "last_ok": "2026-10-15", "strikes": 0, "why": "error: 405 Client Error: Not Allowed for url: https://bostonscientific.eightfold.ai/api/pcsx/search?domain=bostonscientific.com&query=&start=0"}
+{"b": "eightfold:careers.qualcomm.com/qualcomm.com", "last_ok": "2026-10-15", "strikes": 0, "why": "error: 405 Client Error: Not Allowed for url: https://careers.qualcomm.com/api/pcsx/search?domain=qualcomm.com&query=&start=0"}
 {"b": "eightfold:eaton.eightfold.ai/eaton.com", "last_ok": "2026-10-15", "strikes": 0}
-{"b": "eightfold:ford.eightfold.ai/ford.com", "last_ok": "2026-10-15", "strikes": 0}
-{"b": "eightfold:jobs.vodafone.com/vodafone.com", "last_ok": "2026-10-15", "strikes": 0}
-{"b": "eightfold:lamresearch.eightfold.ai/lamresearch.com", "last_ok": "2026-10-15", "strikes": 0}
+{"b": "eightfold:ericsson.eightfold.ai/ericsson.com", "last_ok": "", "strikes": 0, "why": "error: 405 Client Error: Not Allowed for url: https://ericsson.eightfold.ai/api/pcsx/search?domain=ericsson.com&query=&start=0"}
+{"b": "eightfold:ford.eightfold.ai/ford.com", "last_ok": "2026-10-15", "strikes": 0, "why": "error: 405 Client Error: Not Allowed for url: https://ford.eightfold.ai/api/pcsx/search?domain=ford.com&query=&start=0"}
+{"b": "eightfold:jobs.vodafone.com/vodafone.com", "last_ok": "2026-10-15", "strikes": 0, "why": "error: 405 Client Error: Not Allowed for url: https://jobs.vodafone.com/api/pcsx/search?domain=vodafone.com&query=&start=0"}
+{"b": "eightfold:lamresearch.eightfold.ai/lamresearch.com", "last_ok": "2026-10-15", "strikes": 0, "why": "error: 405 Client Error: Not Allowed for url: https://lamresearch.eightfold.ai/api/pcsx/search?domain=lamresearch.com&query=&start=0"}
 {"b": "eightfold:lockheedmartin.eightfold.ai/lockheedmartin.com", "last_ok": "2026-10-15", "strikes": 0}
-{"b": "eightfold:morganstanley.eightfold.ai/morganstanley.com", "last_ok": "2026-10-15", "strikes": 0}
-{"b": "eightfold:slb.eightfold.ai/slb.com", "last_ok": "2026-10-15", "strikes": 0}
+{"b": "eightfold:morganstanley.eightfold.ai/morganstanley.com", "last_ok": "2026-10-15", "strikes": 0, "why": "error: 405 Client Error: Not Allowed for url: https://morganstanley.eightfold.ai/api/pcsx/search?domain=morganstanley.com&query=&start=0"}
+{"b": "eightfold:slb.eightfold.ai/slb.com", "last_ok": "2026-10-15", "strikes": 0, "why": "error: 405 Client Error: Not Allowed for url: https://slb.eightfold.ai/api/pcsx/search?domain=slb.com&query=&start=0"}
 {"b": "getonbrd", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:aclu", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:adaptivebiotechnologies", "last_ok": "2026-10-15", "strikes": 0}
@@ -111,8 +130,10 @@
 {"b": "greenhouse:affirm", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:airbnb", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:airtable", "last_ok": "2026-10-15", "strikes": 0}
+{"b": "greenhouse:akunacapital", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:algolia", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:anthropic", "last_ok": "2026-10-15", "strikes": 0}
+{"b": "greenhouse:aqr", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:asana", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:astranis", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:attentive", "last_ok": "2026-10-15", "strikes": 0}
@@ -126,6 +147,7 @@
 {"b": "greenhouse:bombas", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:braze", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:brex", "last_ok": "2026-10-15", "strikes": 0}
+{"b": "greenhouse:canonical", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:carbonrobotics", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:carrotfertility", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:carta", "last_ok": "2026-10-15", "strikes": 0}
@@ -151,27 +173,33 @@
 {"b": "greenhouse:discord", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:divergent", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:donorschoose", "last_ok": "2026-10-15", "strikes": 0}
+{"b": "greenhouse:doordashindia", "last_ok": "2026-10-15", "strikes": 0}
+{"b": "greenhouse:doordashusa", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:doximity", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:dropbox", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:duolingo", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:elastic", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:epicgames", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:everlane", "last_ok": "2026-10-15", "strikes": 0}
+{"b": "greenhouse:exoduspoint", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:faire", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:fanduel", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:fashionnova", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:fastly", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:figma", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:fireblocks", "last_ok": "2026-10-15", "strikes": 0}
+{"b": "greenhouse:fiveringsllc", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:fivetran", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:flatironhealth", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:flexport", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:flix", "last_ok": "2026-10-15", "strikes": 0}
+{"b": "greenhouse:flowtraders", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:formlabs", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:gemini", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:ginkgobioworks", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:gitlab", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:givedirectly", "last_ok": "2026-10-15", "strikes": 0}
+{"b": "greenhouse:gleanwork", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:glossier", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:gocardless", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:grafanalabs", "last_ok": "2026-10-15", "strikes": 0}
@@ -180,12 +208,16 @@
 {"b": "greenhouse:gymshark", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:harrys", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:hellofresh", "last_ok": "2026-10-15", "strikes": 0}
+{"b": "greenhouse:heygen", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:honehealth", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:honeycomb", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:humanrightswatch", "last_ok": "2026-10-15", "strikes": 0}
+{"b": "greenhouse:imc", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:instacart", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:intercom", "last_ok": "2026-10-15", "strikes": 0}
+{"b": "greenhouse:janestreet", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:jfrog", "last_ok": "2026-10-15", "strikes": 0}
+{"b": "greenhouse:jumptrading", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:justworks", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:khanacademy", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:klaviyo", "last_ok": "2026-10-15", "strikes": 0}
@@ -194,6 +226,7 @@
 {"b": "greenhouse:launchdarkly", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:lucidmotors", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:lyft", "last_ok": "2026-10-15", "strikes": 0}
+{"b": "greenhouse:mangroup", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:masterclass", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:mavenclinic", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:mentimeter", "last_ok": "2026-10-15", "strikes": 0}
@@ -213,6 +246,7 @@
 {"b": "greenhouse:okta", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:onemedical", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:opentable", "last_ok": "2026-10-15", "strikes": 0}
+{"b": "greenhouse:optiverus", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:oscar", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:oura", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:pagerduty", "last_ok": "2026-10-15", "strikes": 0}
@@ -220,6 +254,7 @@
 {"b": "greenhouse:pinterest", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:planetlabs", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:planetscale", "last_ok": "2026-10-15", "strikes": 0}
+{"b": "greenhouse:point72", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:propublica", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:proton", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:raisin", "last_ok": "2026-10-15", "strikes": 0}
@@ -236,6 +271,7 @@
 {"b": "greenhouse:salesloft", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:samsara", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:scaleai", "last_ok": "2026-10-15", "strikes": 0}
+{"b": "greenhouse:schonfeld", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:scopely", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:scout24", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:seatgeek", "last_ok": "2026-10-15", "strikes": 0}
@@ -247,6 +283,7 @@
 {"b": "greenhouse:spin", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:spire", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:squarespace", "last_ok": "2026-10-15", "strikes": 0}
+{"b": "greenhouse:stabilityai", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:stitchfix", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:stripe", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:sumologic", "last_ok": "2026-10-15", "strikes": 0}
@@ -260,9 +297,11 @@
 {"b": "greenhouse:tia", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:tide", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:toast", "last_ok": "2026-10-15", "strikes": 0}
+{"b": "greenhouse:togetherai", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:tripadvisor", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:trivago", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:truecaller", "last_ok": "2026-10-15", "strikes": 0}
+{"b": "greenhouse:tudorgroup", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:twilio", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:twistbioscience", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:twitch", "last_ok": "2026-10-15", "strikes": 0}
@@ -271,15 +310,18 @@
 {"b": "greenhouse:upwork", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:vercel", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:via", "last_ok": "2026-10-15", "strikes": 0}
+{"b": "greenhouse:virtu", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:voxmedia", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:waymo", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:webflow", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:wikimedia", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:wise", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:wolt", "last_ok": "2026-10-15", "strikes": 0}
+{"b": "greenhouse:worldquant", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:wrike", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:xai", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "greenhouse:zocdoc", "last_ok": "2026-10-15", "strikes": 0}
+{"b": "greenhouse:zscaler", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "himalayas", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "jobicy", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "jobtech", "last_ok": "2026-10-15", "strikes": 0}
@@ -344,7 +386,7 @@
 {"b": "oracle:estm.fa.em2.oraclecloud.com/CX_1", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "oracle:eswt.fa.us6.oraclecloud.com/CX_1001", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "oracle:evac.fa.us2.oraclecloud.com/CX_1", "last_ok": "2026-10-15", "strikes": 0}
-{"b": "oracle:fa-evlo-saasfaprod1.fa.ocs.oraclecloud.com/CX_1", "last_ok": "2026-10-15", "strikes": 0}
+{"b": "oracle:fa-evlo-saasfaprod1.fa.ocs.oraclecloud.com/CX_1", "last_ok": "2026-10-15", "strikes": 0, "why": "error: HTTPSConnectionPool(host='fa-evlo-saasfaprod1.fa.ocs.oraclecloud.com', port=443): Max retries exceeded with url: /hcmRestApi/resources/latest/recruitingCEJobRequisitions?onlyData=true&expand=requisitionList.secondaryLocations&finder=findReqs%3BsiteNumber%3DCX_1%2Climit%3D50%2Coffset%3D0%2CsortBy%3DPOSTING_DATES_DESC (Caused by ResponseError('too many 503 error responses'))"}
 {"b": "oracle:fa-evly-saasfaprod1.fa.ocs.oraclecloud.com/CX_1", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "oracle:fa-ewgu-saasfaprod1.fa.ocs.oraclecloud.com/CX_2001", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "oracle:fa-ewgu-saasfaprod1.fa.ocs.oraclecloud.com/CX_3001", "last_ok": "2026-10-15", "strikes": 0}
@@ -356,7 +398,7 @@
 {"b": "oracle:ibpwjb.fa.ocs.oraclecloud.com/CX_1", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "oracle:ibqbjb.fa.ocs.oraclecloud.com/CX_1", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "oracle:jpmc.fa.oraclecloud.com/CX_1001", "last_ok": "2026-10-15", "strikes": 0}
-{"b": "oracle:ublcloud-iaanbv.fa.ocs.oraclecloud.com/UBL-Careers", "last_ok": "2026-10-15", "strikes": 0}
+{"b": "oracle:ublcloud-iaanbv.fa.ocs.oraclecloud.com/UBL-Careers", "last_ok": "2026-10-15", "strikes": 0, "why": "error: HTTPSConnectionPool(host='ublcloud-iaanbv.fa.ocs.oraclecloud.com', port=443): Max retries exceeded with url: /hcmRestApi/resources/latest/recruitingCEJobRequisitions?onlyData=true&expand=requisitionList.secondaryLocations&finder=findReqs%3BsiteNumber%3DUBL-Careers%2Climit%3D50%2Coffset%3D0%2CsortBy%3DPOSTING_DATES_DESC (Caused by ResponseError('too many 503 error responses'))"}
 {"b": "personio:chrono24", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "personio:clark", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "personio:thermondo", "last_ok": "2026-10-15", "strikes": 0}
@@ -371,6 +413,7 @@
 {"b": "phenom:careers.lilly.com", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "phenom:careers.nttdata.com", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "phenom:careers.roberthalf.com", "last_ok": "2026-10-15", "strikes": 0}
+{"b": "phenom:careers.southwestair.com", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "phenom:careers.united.com", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "phenom:jobs.advanceautoparts.com", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "phenom:jobs.baesystems.com", "last_ok": "2026-10-15", "strikes": 0}
@@ -577,6 +620,7 @@
 {"b": "workday:blackbaud.wd1.myworkdayjobs.com/ExternalCareers", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "workday:blackrock.wd1.myworkdayjobs.com/BlackRock_Professional", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "workday:blackstone.wd1.myworkdayjobs.com/Blackstone_Campus_Careers", "last_ok": "2026-10-15", "strikes": 0}
+{"b": "workday:blackstone.wd1.myworkdayjobs.com/Blackstone_Careers", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "workday:bloomberg.wd1.myworkdayjobs.com/Bloombergindustrygroup_External_Career_Site", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "workday:blueorigin.wd5.myworkdayjobs.com/blueorigin", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "workday:bmo.wd3.myworkdayjobs.com/External", "last_ok": "2026-10-15", "strikes": 0}
@@ -742,6 +786,7 @@
 {"b": "workday:flextronics.wd1.myworkdayjobs.com/Careers", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "workday:flir.wd1.myworkdayjobs.com/flircareers", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "workday:fmc.wd12.myworkdayjobs.com/FMC", "last_ok": "2026-10-15", "strikes": 0}
+{"b": "workday:fmr.wd1.myworkdayjobs.com/FidelityCareers", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "workday:foundationccc.wd1.myworkdayjobs.com/fccc-careers", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "workday:fox.wd1.myworkdayjobs.com/Domestic", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "workday:gandwukeurope.wd3.myworkdayjobs.com/freightliner", "last_ok": "2026-10-15", "strikes": 0}
@@ -928,6 +973,7 @@
 {"b": "workday:oxy.wd5.myworkdayjobs.com/UniversityRelations", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "workday:pae.wd1.myworkdayjobs.com/Amentum_Careers", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "workday:paho.wd5.myworkdayjobs.com/pahocareers", "last_ok": "2026-10-15", "strikes": 0}
+{"b": "workday:paloaltonetworks.wd5.myworkdayjobs.com/panwexternalcareers", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "workday:papajohns.wd1.myworkdayjobs.com/PapaJohnsCareers", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "workday:papedawson.wd12.myworkdayjobs.com/PDE", "last_ok": "2026-10-15", "strikes": 0}
 {"b": "workday:parklandhospital.wd12.myworkdayjobs.com/parkland_careers", "last_ok": "2026-10-15", "strikes": 0}

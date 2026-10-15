@@ -136,7 +136,7 @@
 {"company":"Adyen","first_seen":"2026-10-07","id":"greenhouse:adyen:8098671","location":"Bengaluru","posted":"2026-08-13","skills":["kotlin","c++","python"],"team":"Development","title":"Senior Software Engineer (Android - Kotlin Expert)","years":5}
 {"company":"Adyen","first_seen":"2026-10-07","id":"greenhouse:adyen:8099261","location":"Mexico City","posted":"2026-07-31","team":"Account Management","title":"Account Manager"}
 {"company":"Adyen","first_seen":"2026-10-07","id":"greenhouse:adyen:8099367","location":"Chicago","pay":[125000,170000,"USD"],"posted":"2026-08-10","team":"Merchant Operations","title":"Senior Financial Risk Analyst"}
-{"company":"Adyen","first_seen":"2026-10-07","id":"greenhouse:adyen:8102216","location":"Amsterdam","posted":"2026-09-15","team":"Internal Control","title":"Internal Control Specialist, Non-Financial Risk"}
+{"closed_at":"2026-10-15","company":"Adyen","first_seen":"2026-10-07","id":"greenhouse:adyen:8102216","location":"Amsterdam","posted":"2026-09-15","team":"Internal Control","title":"Internal Control Specialist, Non-Financial Risk"}
 {"company":"Adyen","first_seen":"2026-10-07","id":"greenhouse:adyen:8102387","location":"Amsterdam","posted":"2026-08-05","team":"Security","title":"Senior Security Program Manager","years":5}
 {"company":"Adyen","first_seen":"2026-10-07","id":"greenhouse:adyen:8103468","location":"Chicago","posted":"2026-08-24","skills":["kotlin","swift"],"team":"Development","title":"Staff Engineer - Payments (Mobile & Terminal Experiences)"}
 {"company":"Adyen","first_seen":"2026-10-07","id":"greenhouse:adyen:8104096","location":"London","posted":"2026-08-10","team":"Sales","title":"Enterprise Sales Manager"}
@@ -260,6 +260,7 @@
 {"company":"Adyen","first_seen":"2026-10-07","id":"greenhouse:adyen:8258725","location":"Amsterdam","posted":"2026-10-06","team":"Compliance","title":"Senior Compliance Officer - Brand Integrity","years":5}
 {"company":"Adyen","first_seen":"2026-10-07","id":"greenhouse:adyen:8259467","location":"San Francisco","pay":[215000,275000,"USD"],"posted":"2026-10-07","team":"Partnerships","title":"Senior Commercial Partnerships Manager - Agentic Commerce"}
 {"company":"Adyen","first_seen":"2026-10-13","id":"greenhouse:adyen:8260386","location":"Sydney","posted":"2026-10-12","skills":["project_management"],"team":"Account Management","title":"Enterprise Account Manager, Platforms"}
+{"company":"Adyen","first_seen":"2026-10-15","id":"greenhouse:adyen:8265553","location":"New York; San Francisco","pay":[235000,310000,"USD"],"posted":"2026-10-15","skills":["forecasting"],"team":"Marketing","title":"Head of Demand Generation, North America","years":12}
 {"company":"Adyen","first_seen":"2026-10-13","id":"greenhouse:adyen:8266135","location":"Tokyo","posted":"2026-10-12","team":"Regulatory","title":"Regulatory Compliance Officer","years":7}
 {"company":"Adyen","first_seen":"2026-10-09","id":"greenhouse:adyen:8267439","location":"Amsterdam","posted":"2026-10-09","skills":["salesforce","agile"],"team":"Infrastructure","title":"Manager, Service Cloud"}
 {"company":"Adyen","first_seen":"2026-10-09","id":"greenhouse:adyen:8267441","location":"Amsterdam","posted":"2026-10-09","skills":["salesforce","agile"],"team":"Infrastructure","title":"Manager, Customer Support Technology"}
