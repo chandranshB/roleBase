@@ -849,7 +849,7 @@
 {"b": "workday:invesco.wd1.myworkdayjobs.com/IVZ", "last_ok": "2026-10-16", "strikes": 0}
 {"b": "workday:ipsen.wd103.myworkdayjobs.com/Ipsen_Careers", "last_ok": "2026-10-16", "strikes": 0}
 {"b": "workday:ivytech.wd1.myworkdayjobs.com/Ivy_Tech_Careers", "last_ok": "2026-10-16", "strikes": 0}
-{"b": "workday:japfa.wd102.myworkdayjobs.com/External", "last_ok": "2026-10-16", "strikes": 0}
+{"b": "workday:japfa.wd102.myworkdayjobs.com/External", "last_ok": "2026-10-16", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
 {"b": "workday:jbhunt.wd501.myworkdayjobs.com/Careers", "last_ok": "2026-10-16", "strikes": 0}
 {"b": "workday:jci.wd5.myworkdayjobs.com/JCI", "last_ok": "2026-10-16", "strikes": 0}
 {"b": "workday:jdgroupnam.wd1.myworkdayjobs.com/JDFL_Store_Careers", "last_ok": "2026-10-16", "strikes": 0}
@@ -885,7 +885,7 @@
 {"b": "workday:magna.wd3.myworkdayjobs.com/Magna", "last_ok": "2026-10-16", "strikes": 0}
 {"b": "workday:manulife.wd3.myworkdayjobs.com/MFCJH_Jobs", "last_ok": "2026-10-16", "strikes": 0}
 {"b": "workday:maricopa.wd1.myworkdayjobs.com/MC_External", "last_ok": "2026-10-16", "strikes": 0}
-{"b": "workday:marinabaysands.wd102.myworkdayjobs.com/External", "last_ok": "2026-10-16", "strikes": 0}
+{"b": "workday:marinabaysands.wd102.myworkdayjobs.com/External", "last_ok": "2026-10-16", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
 {"b": "workday:mars.wd3.myworkdayjobs.com/External", "last_ok": "2026-10-16", "strikes": 0}
 {"b": "workday:marvell.wd1.myworkdayjobs.com/MarvellCareers", "last_ok": "2026-10-16", "strikes": 0}
 {"b": "workday:massgeneralbrigham.wd1.myworkdayjobs.com/MGBExternal", "last_ok": "2026-10-16", "strikes": 0}
@@ -907,7 +907,7 @@
 {"b": "workday:miamioh.wd5.myworkdayjobs.com/miamioh-staff", "last_ok": "2026-10-16", "strikes": 0}
 {"b": "workday:michelinhr.wd3.myworkdayjobs.com/Michelin", "last_ok": "2026-10-16", "strikes": 0}
 {"b": "workday:micron.wd1.myworkdayjobs.com/External", "last_ok": "2026-10-16", "strikes": 0}
-{"b": "workday:minor.wd102.myworkdayjobs.com/Careers", "last_ok": "2026-10-16", "strikes": 0}
+{"b": "workday:minor.wd102.myworkdayjobs.com/Careers", "last_ok": "2026-10-16", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
 {"b": "workday:mitel.wd3.myworkdayjobs.com/MitelCareers", "last_ok": "2026-10-16", "strikes": 0}
 {"b": "workday:modernatx.wd1.myworkdayjobs.com/M_tx", "last_ok": "2026-10-16", "strikes": 0}
 {"b": "workday:montefiore.wd12.myworkdayjobs.com/MMC", "last_ok": "2026-10-16", "strikes": 0}
@@ -956,7 +956,7 @@
 {"b": "workday:nus.wd1.myworkdayjobs.com/Careers", "last_ok": "2026-10-16", "strikes": 0}
 {"b": "workday:nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite", "last_ok": "2026-10-16", "strikes": 0}
 {"b": "workday:nxp.wd3.myworkdayjobs.com/careers", "last_ok": "2026-10-16", "strikes": 0}
-{"b": "workday:ocbc.wd102.myworkdayjobs.com/External", "last_ok": "2026-10-16", "strikes": 0}
+{"b": "workday:ocbc.wd102.myworkdayjobs.com/External", "last_ok": "2026-10-16", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
 {"b": "workday:odfl.wd1.myworkdayjobs.com/ODFL_Careers", "last_ok": "2026-10-16", "strikes": 0}
 {"b": "workday:ohioliving.wd12.myworkdayjobs.com/OHL", "last_ok": "2026-10-16", "strikes": 0}
 {"b": "workday:okgov.wd1.myworkdayjobs.com/okgovjobs", "last_ok": "2026-10-16", "strikes": 0}

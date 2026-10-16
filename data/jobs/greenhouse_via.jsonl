@@ -103,7 +103,7 @@
 {"company":"Via","first_seen":"2026-10-05","id":"greenhouse:via:8657135002","location":"Baton Rouge, LA","pay":[80000,125000,"USD"],"posted":"2026-07-29","team":"Operations","title":"General Manager","years":4}
 {"company":"Via","first_seen":"2026-10-05","id":"greenhouse:via:8660386002","location":"London","posted":"2026-08-21","team":"Partnerships","title":"Strategic Partnerships Principal","years":6}
 {"company":"Via","first_seen":"2026-10-05","id":"greenhouse:via:8677582002","location":"Tulare, CA","posted":"2026-08-04","skills":["customer_service"],"team":"Field Operations","title":"Road Supervisor","years":3}
-{"company":"Via","first_seen":"2026-10-05","id":"greenhouse:via:8679753002","location":"Tulare, CA","posted":"2026-08-04","team":"Field Operations","title":"Utility Worker"}
+{"closed_at":"2026-10-16","company":"Via","first_seen":"2026-10-05","id":"greenhouse:via:8679753002","location":"Tulare, CA","posted":"2026-08-04","team":"Field Operations","title":"Utility Worker"}
 {"company":"Via","first_seen":"2026-10-05","id":"greenhouse:via:8692280002","location":"Baton Rogue, LA","posted":"2026-08-07","team":"Field Operations","title":"Customer Support Agent"}
 {"company":"Via","first_seen":"2026-10-05","id":"greenhouse:via:8692323002","location":"Tulare, CA","posted":"2026-08-07","skills":["customer_service"],"team":"Field Operations","title":"Customer Service Representative"}
 {"company":"Via","first_seen":"2026-10-05","id":"greenhouse:via:8692342002","location":"Rochester, MN","posted":"2026-08-07","team":"Field Operations","title":"Utility Worker"}
@@ -196,3 +196,4 @@
 {"company":"Via","first_seen":"2026-10-15","id":"greenhouse:via:8893064002","location":"San Francisco","pay":[200000,250000,"USD"],"posted":"2026-10-15","team":"Product","title":"Director of Product","years":10}
 {"company":"Via","first_seen":"2026-10-15","id":"greenhouse:via:8893086002","location":"New York City","pay":[150000,200000,"USD"],"posted":"2026-10-15","team":"Product","title":"Senior Product Manager","years":5}
 {"company":"Via","first_seen":"2026-10-15","id":"greenhouse:via:8893087002","location":"San Francisco","pay":[150000,200000,"USD"],"posted":"2026-10-15","team":"Product","title":"Senior Product Manager","years":5}
+{"company":"Via","first_seen":"2026-10-16","id":"greenhouse:via:8894256002","location":"New York City; San Francisco","pay":[95000,115000,"USD"],"posted":"2026-10-16","team":"Expansion","title":"Launch Operations Associate Principal","years":3}
