@@ -32,7 +32,7 @@
 {"company":"Wolt","first_seen":"2026-10-05","id":"greenhouse:wolt:6694824","location":"Malta","posted":"2025-05-13","team":"Order Fulfillment","title":"Grocery Store Assistant"}
 {"company":"Wolt","first_seen":"2026-10-05","id":"greenhouse:wolt:6694874","location":"Budapest, Hungary","posted":"2026-02-02","team":"Merchant onboarding","title":"Restaurant and Retail Administrator (Finnish Speaking)"}
 {"company":"Wolt","first_seen":"2026-10-05","id":"greenhouse:wolt:6694889","location":"Trnava, Slovakia","posted":"2026-07-07","team":"Wolt Market","title":"Grocery Associate"}
-{"company":"Wolt","first_seen":"2026-10-12","id":"greenhouse:wolt:6694964","location":"Stockholm, Sweden","posted":"2025-04-16","reposts":1,"team":"Wolt Market","title":"Grocery Associate - Youth Workers"}
+{"closed_at":"2026-10-16","company":"Wolt","first_seen":"2026-10-12","id":"greenhouse:wolt:6694964","location":"Stockholm, Sweden","posted":"2025-04-16","reposts":1,"team":"Wolt Market","title":"Grocery Associate - Youth Workers"}
 {"company":"Wolt","first_seen":"2026-10-05","id":"greenhouse:wolt:6694988","location":"Prague, Czechia","posted":"2025-03-10","team":"Order Fulfillment","title":"Grocery Associate - Praha"}
 {"company":"Wolt","first_seen":"2026-10-05","id":"greenhouse:wolt:6699197","location":"Budapest, Hungary","posted":"2025-03-11","team":"Merchant onboarding","title":"Restaurant and Retail Administrator, Swedish speaking"}
 {"company":"Wolt","first_seen":"2026-10-05","id":"greenhouse:wolt:6735470","location":"Athens, Greece","posted":"2025-03-21","team":"Wolt Market","title":"Shift Lead - Wolt Market Marousi"}
@@ -235,7 +235,7 @@
 {"company":"Wolt","first_seen":"2026-10-05","id":"greenhouse:wolt:8235901","location":"Birkirkara, Malta","posted":"2026-09-28","skills":["talent_acquisition"],"team":"Merchant services","title":"Sales Support Associate"}
 {"company":"Wolt","first_seen":"2026-10-05","id":"greenhouse:wolt:8236959","location":"Berlin, Germany; Helsinki, Finland; London, United Kingdom","posted":"2026-09-29","skills":["erp","project_management","sql","snowflake"],"team":"Wolt Tax","title":"Manager, Tax Technology — VAT (Wolt & Deliveroo Tax Platform & Business Projects)","years":8}
 {"closed_at":"2026-10-15","company":"Wolt","first_seen":"2026-10-05","id":"greenhouse:wolt:8237035","location":"Solna, Sweden","posted":"2026-09-28","team":"Order Fulfillment","title":"Grocery Associate - Youth Workers"}
-{"company":"Wolt","first_seen":"2026-10-14","id":"greenhouse:wolt:8237053","location":"Solna, Sweden","posted":"2026-10-14","team":"Order Fulfillment","title":"Grocery Shift Lead"}
+{"closed_at":"2026-10-16","company":"Wolt","first_seen":"2026-10-14","id":"greenhouse:wolt:8237053","location":"Solna, Sweden","posted":"2026-10-14","team":"Order Fulfillment","title":"Grocery Shift Lead"}
 {"company":"Wolt","first_seen":"2026-10-05","id":"greenhouse:wolt:8237716","location":"Reykjavik, Iceland","posted":"2026-09-29","skills":["crm"],"team":"Merchant Account Management ENT","title":"Account Manager"}
 {"company":"Wolt","first_seen":"2026-10-05","id":"greenhouse:wolt:8239639","location":"OSLO, Norway","posted":"2026-09-30","team":"Merchant Account Management ENT","title":"Junior Key Account Manager, Retail"}
 {"company":"Wolt","first_seen":"2026-10-05","id":"greenhouse:wolt:8240236","location":"Budapest, Hungary","posted":"2026-09-29","team":"Global Merchant Strategy and Operations","title":"Onboarding Team Lead, Germany","years":2}
@@ -266,3 +266,4 @@
 {"company":"Wolt","first_seen":"2026-10-15","id":"greenhouse:wolt:8280859","location":"Athens, Greece","posted":"2026-10-15","team":"Global Advertising","title":"Merchant Promotions Manager","years":1}
 {"company":"Wolt","first_seen":"2026-10-14","id":"greenhouse:wolt:8281238","location":"Berlin, Germany","posted":"2026-10-14","skills":["food_safety","haccp","talent_acquisition"],"team":"Wolt Global Security and Safety","title":"Global Associate Manager, Food Safety","years":5}
 {"company":"Wolt","first_seen":"2026-10-15","id":"greenhouse:wolt:8282183","location":"Berlin, Germany; Helsinki, Finland","posted":"2026-10-15","team":"Communications","title":"Senior Associate, Internal Communications, International","years":5}
+{"company":"Wolt","first_seen":"2026-10-16","id":"greenhouse:wolt:8289288","location":"Belgrade - Savski Venac, Serbia","posted":"2026-10-16","skills":["inventory_management","talent_acquisition"],"team":"Wolt Market Country Admin","title":"Category Specialist (WM)","years":1}
