@@ -123,7 +123,7 @@
 {"b": "eightfold:lockheedmartin.eightfold.ai/lockheedmartin.com", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "eightfold:morganstanley.eightfold.ai/morganstanley.com", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "eightfold:slb.eightfold.ai/slb.com", "last_ok": "2026-10-17", "strikes": 0}
-{"b": "getonbrd", "last_ok": "2026-10-17", "strikes": 0}
+{"b": "getonbrd", "last_ok": "2026-10-17", "strikes": 0, "why": "error: 403 Client Error: Forbidden for url: https://www.getonbrd.com/api/v0/categories/programming/jobs?per_page=100&page=1&expand=%5B%22company%22%5D"}
 {"b": "greenhouse:aclu", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "greenhouse:adaptivebiotechnologies", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "greenhouse:adyen", "last_ok": "2026-10-17", "strikes": 0}
@@ -148,7 +148,7 @@
 {"b": "greenhouse:braze", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "greenhouse:brex", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "greenhouse:canonical", "last_ok": "2026-10-17", "strikes": 0}
-{"b": "greenhouse:carbonrobotics", "last_ok": "2026-10-16", "strikes": 2, "why": "empty answer"}
+{"b": "greenhouse:carbonrobotics", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "greenhouse:carrotfertility", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "greenhouse:carta", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "greenhouse:carvana", "last_ok": "2026-10-17", "strikes": 0}
@@ -313,7 +313,7 @@
 {"b": "greenhouse:virtu", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "greenhouse:voxmedia", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "greenhouse:waymo", "last_ok": "2026-10-17", "strikes": 0}
-{"b": "greenhouse:webflow", "last_ok": "2026-10-16", "strikes": 1, "why": "empty answer"}
+{"b": "greenhouse:webflow", "last_ok": "2026-10-16", "strikes": 2, "why": "empty answer"}
 {"b": "greenhouse:wikimedia", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "greenhouse:wise", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "greenhouse:wolt", "last_ok": "2026-10-17", "strikes": 0}
@@ -392,7 +392,7 @@
 {"b": "oracle:fa-ewgu-saasfaprod1.fa.ocs.oraclecloud.com/CX_3001", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "oracle:fa-ewgu-saasfaprod1.fa.ocs.oraclecloud.com/CX_5001", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "oracle:hcbt.fa.em2.oraclecloud.com/CX", "last_ok": "2026-10-17", "strikes": 0}
-{"b": "oracle:hcgn.fa.us2.oraclecloud.com/CX_1", "last_ok": "2026-10-16", "strikes": 1, "why": "empty answer"}
+{"b": "oracle:hcgn.fa.us2.oraclecloud.com/CX_1", "last_ok": "2026-10-16", "strikes": 2, "why": "empty answer"}
 {"b": "oracle:iadyup.fa.ocs.oraclecloud.com/CX_4001", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "oracle:iaucqy.fa.ocs.oraclecloud.com/CX_1", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "oracle:ibpwjb.fa.ocs.oraclecloud.com/CX_1", "last_ok": "2026-10-17", "strikes": 0}
@@ -541,14 +541,14 @@
 {"b": "workday:abb.wd3.myworkdayjobs.com/External_Career_Page", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:abbott.wd5.myworkdayjobs.com/AbbottCareers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:abcfws.wd1.myworkdayjobs.com/abcfws", "last_ok": "2026-10-17", "strikes": 0}
-{"b": "workday:abercrombie.wd108.myworkdayjobs.com/anf", "last_ok": "2026-10-16", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:abercrombie.wd108.myworkdayjobs.com/anf", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:academy.wd1.myworkdayjobs.com/Careers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:accenture.wd103.myworkdayjobs.com/AccentureCareers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:acg.wd1.myworkdayjobs.com/Careers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:acrt.wd1.myworkdayjobs.com/ACRT_Careers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:adient.wd3.myworkdayjobs.com/External", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:adobe.wd5.myworkdayjobs.com/external_experienced", "last_ok": "2026-10-17", "strikes": 0}
-{"b": "workday:adventhealth.wd12.myworkdayjobs.com/AH_External_Career_Site", "last_ok": "2026-10-16", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:adventhealth.wd12.myworkdayjobs.com/AH_External_Career_Site", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:adventisthealthcare.wd1.myworkdayjobs.com/AdventistHealthCareCareers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:aeci.wd1.myworkdayjobs.com/AECI", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:aep.wd1.myworkdayjobs.com/AEPCareerSite", "last_ok": "2026-10-17", "strikes": 0}
@@ -603,7 +603,7 @@
 {"b": "workday:bah.wd1.myworkdayjobs.com/BAH_Jobs", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:bakerhughes.wd5.myworkdayjobs.com/bakerhughes", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:bakertilly.wd5.myworkdayjobs.com/BTCareers", "last_ok": "2026-10-17", "strikes": 0}
-{"b": "workday:bannerhealth.wd108.myworkdayjobs.com/Careers", "last_ok": "2026-10-16", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:bannerhealth.wd108.myworkdayjobs.com/Careers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:barclays.wd3.myworkdayjobs.com/External_Career_Site_Barclays", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:barr.wd1.myworkdayjobs.com/BarrCareers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:baxter.wd1.myworkdayjobs.com/baxter", "last_ok": "2026-10-17", "strikes": 0}
@@ -614,7 +614,7 @@
 {"b": "workday:becu.wd1.myworkdayjobs.com/External", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:benchmark.wd1.myworkdayjobs.com/PGH_Careers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:berklee.wd1.myworkdayjobs.com/BerkleeCareers", "last_ok": "2026-10-17", "strikes": 0}
-{"b": "workday:bigcommerce.wd12.myworkdayjobs.com/Commerce", "last_ok": "2026-10-16", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:bigcommerce.wd12.myworkdayjobs.com/Commerce", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:bishopfleming.wd3.myworkdayjobs.com/BF", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:bitsight.wd1.myworkdayjobs.com/Bitsight", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:blackbaud.wd1.myworkdayjobs.com/ExternalCareers", "last_ok": "2026-10-17", "strikes": 0}
@@ -635,27 +635,27 @@
 {"b": "workday:bristolmyerssquibb.wd5.myworkdayjobs.com/BMS", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:broadcom.wd1.myworkdayjobs.com/External_Career", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:broadridge.wd5.myworkdayjobs.com/Careers", "last_ok": "2026-10-17", "strikes": 0}
-{"b": "workday:brooklynpubliclibrary.wd12.myworkdayjobs.com/BPL", "last_ok": "2026-10-16", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
-{"b": "workday:brookshires.wd108.myworkdayjobs.com/BGC", "last_ok": "2026-10-16", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
-{"b": "workday:brownhealth.wd12.myworkdayjobs.com/External_Careers", "last_ok": "2026-10-16", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:brooklynpubliclibrary.wd12.myworkdayjobs.com/BPL", "last_ok": "2026-10-17", "strikes": 0}
+{"b": "workday:brookshires.wd108.myworkdayjobs.com/BGC", "last_ok": "2026-10-17", "strikes": 0}
+{"b": "workday:brownhealth.wd12.myworkdayjobs.com/External_Careers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:brunswick.wd1.myworkdayjobs.com/search", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:burlington.wd5.myworkdayjobs.com/BurlingtonCareers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:caa.wd1.myworkdayjobs.com/Careers", "last_ok": "2026-10-17", "strikes": 0}
-{"b": "workday:cabotcorp.wd12.myworkdayjobs.com/Careers", "last_ok": "2026-10-16", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:cabotcorp.wd12.myworkdayjobs.com/Careers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:caci.wd1.myworkdayjobs.com/external", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:cadence.wd1.myworkdayjobs.com/external_careers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:cae.wd3.myworkdayjobs.com/career", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:calwatergroup.wd5.myworkdayjobs.com/CWSG", "last_ok": "2026-10-17", "strikes": 0}
-{"b": "workday:camdennational.wd12.myworkdayjobs.com/CNB-Careers", "last_ok": "2026-10-16", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:camdennational.wd12.myworkdayjobs.com/CNB-Careers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:campbellsoup.wd5.myworkdayjobs.com/externalcareers_globalsite", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:campbellsville.wd1.myworkdayjobs.com/CU", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:canadiantirecorporation.wd3.myworkdayjobs.com/Enterprise_External_Careers_Site", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:capitalhealth.wd1.myworkdayjobs.com/CapitalHealthCareers", "last_ok": "2026-10-17", "strikes": 0}
-{"b": "workday:capitalone.wd12.myworkdayjobs.com/Capital_One", "last_ok": "2026-10-16", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:capitalone.wd12.myworkdayjobs.com/Capital_One", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:capri.wd1.myworkdayjobs.com/JimmyChooCareers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:capri.wd1.myworkdayjobs.com/Michael_Kors", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:cardinalhealth.wd1.myworkdayjobs.com/EXT", "last_ok": "2026-10-17", "strikes": 0}
-{"b": "workday:careoregon.wd12.myworkdayjobs.com/co", "last_ok": "2026-10-16", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:careoregon.wd12.myworkdayjobs.com/co", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:carlyle.wd1.myworkdayjobs.com/Carlyle", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:carmax.wd1.myworkdayjobs.com/External", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:carrier.wd5.myworkdayjobs.com/Union_Workers_Career_Page", "last_ok": "2026-10-17", "strikes": 0}
@@ -663,7 +663,7 @@
 {"b": "workday:carrier.wd5.myworkdayjobs.com/kgs_jobs", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:cat.wd5.myworkdayjobs.com/CaterpillarCareers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:cba.wd3.myworkdayjobs.com/CommBank_Careers", "last_ok": "2026-10-17", "strikes": 0}
-{"b": "workday:cbh.wd12.myworkdayjobs.com/cherrybekaert", "last_ok": "2026-10-16", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:cbh.wd12.myworkdayjobs.com/cherrybekaert", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:cboe.wd1.myworkdayjobs.com/External_Career_CBOE", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:ccc.wd5.myworkdayjobs.com/ccc_External", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:cdw.wd5.myworkdayjobs.com/Careers", "last_ok": "2026-10-17", "strikes": 0}
@@ -671,12 +671,12 @@
 {"b": "workday:cenovus.wd3.myworkdayjobs.com/careers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:centene.wd5.myworkdayjobs.com/Centene_External", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:cfindustries.wd1.myworkdayjobs.com/careers", "last_ok": "2026-10-17", "strikes": 0}
-{"b": "workday:charlottenc.wd12.myworkdayjobs.com/citgov", "last_ok": "2026-10-16", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:charlottenc.wd12.myworkdayjobs.com/citgov", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:chemours.wd103.myworkdayjobs.com/Chemours", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:chevron.wd5.myworkdayjobs.com/jobs", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:chg.wd5.myworkdayjobs.com/US_External_Career_Site", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:chipotle.wd5.myworkdayjobs.com/ChipotleCareers", "last_ok": "2026-10-17", "strikes": 0}
-{"b": "workday:choa.wd12.myworkdayjobs.com/externalcareers", "last_ok": "2026-10-16", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:choa.wd12.myworkdayjobs.com/externalcareers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:choicehotels.wd5.myworkdayjobs.com/External", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:churchdwight.wd1.myworkdayjobs.com/chdcanadacareers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:churchdwight.wd1.myworkdayjobs.com/chdcareers", "last_ok": "2026-10-17", "strikes": 0}
@@ -701,17 +701,17 @@
 {"b": "workday:commercebank.wd1.myworkdayjobs.com/CommerceJobs", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:conocophillips.wd1.myworkdayjobs.com/External", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:cookchildrens.wd1.myworkdayjobs.com/Cook_Childrens_Careers", "last_ok": "2026-10-17", "strikes": 0}
-{"b": "workday:copart.wd12.myworkdayjobs.com/copart", "last_ok": "2026-10-16", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
-{"b": "workday:cree.wd108.myworkdayjobs.com/EXT", "last_ok": "2026-10-16", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:copart.wd12.myworkdayjobs.com/copart", "last_ok": "2026-10-17", "strikes": 0}
+{"b": "workday:cree.wd108.myworkdayjobs.com/EXT", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:crestnicholson.wd103.myworkdayjobs.com/CN", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:crossoverhealth.wd1.myworkdayjobs.com/Careers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:crowdstrike.wd5.myworkdayjobs.com/crowdstrikecareers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:cscc.wd1.myworkdayjobs.com/CSCC_ext", "last_ok": "2026-10-17", "strikes": 0}
-{"b": "workday:csusystem.wd12.myworkdayjobs.com/fortcollins_careers", "last_ok": "2026-10-16", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:csusystem.wd12.myworkdayjobs.com/fortcollins_careers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:curtisswright.wd1.myworkdayjobs.com/CW_External_Career_Site", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:cvshealth.wd1.myworkdayjobs.com/cvs_health_careers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:danaher.wd1.myworkdayjobs.com/DanaherJobs", "last_ok": "2026-10-17", "strikes": 0}
-{"b": "workday:dataminr.wd12.myworkdayjobs.com/Dataminr", "last_ok": "2026-10-16", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:dataminr.wd12.myworkdayjobs.com/Dataminr", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:datarobot.wd1.myworkdayjobs.com/DataRobot_External_Careers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:daveandbusters.wd1.myworkdayjobs.com/dave_and_busters_careers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:davisconstruction.wd501.myworkdayjobs.com/DAVIS-Careers", "last_ok": "2026-10-16", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
@@ -730,7 +730,7 @@
 {"b": "workday:dennys.wd1.myworkdayjobs.com/Dennys", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:dentsuaegis.wd3.myworkdayjobs.com/DAN_GLOBAL", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:denver.wd1.myworkdayjobs.com/CCD-denver-denvergov-CSC_Jobs-Civil_service_jobs-Police_Jobs-Fire_Jobs", "last_ok": "2026-10-17", "strikes": 0}
-{"b": "workday:desjardins.wd10.myworkdayjobs.com/Desjardins", "last_ok": "2026-10-16", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:desjardins.wd10.myworkdayjobs.com/Desjardins", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:destinationpet.wd5.myworkdayjobs.com/DPEC", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:dexcom.wd1.myworkdayjobs.com/Dexcom", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:diageo.wd3.myworkdayjobs.com/Diageo_Careers", "last_ok": "2026-10-17", "strikes": 0}
@@ -753,7 +753,7 @@
 {"b": "workday:emcins.wd5.myworkdayjobs.com/EMC_Careers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:emerson.wd5.myworkdayjobs.com/Emerson_College_Affiliated_Faculty", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:emerson.wd5.myworkdayjobs.com/Emerson_College_Staff", "last_ok": "2026-10-17", "strikes": 0}
-{"b": "workday:empower.wd12.myworkdayjobs.com/empower", "last_ok": "2026-10-16", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:empower.wd12.myworkdayjobs.com/empower", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:ensemblehp.wd5.myworkdayjobs.com/EnsembleHealthPartnersCareers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:equifax.wd5.myworkdayjobs.com/External", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:erm.wd3.myworkdayjobs.com/ERM_Careers", "last_ok": "2026-10-17", "strikes": 0}
@@ -762,9 +762,9 @@
 {"b": "workday:etsy.wd5.myworkdayjobs.com/Depop_Careers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:etsy.wd5.myworkdayjobs.com/Etsy_Careers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:evonik.wd3.myworkdayjobs.com/External_Careers", "last_ok": "2026-10-17", "strikes": 0}
-{"b": "workday:evs.wd108.myworkdayjobs.com/evsengineeringcareers", "last_ok": "2026-10-16", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
-{"b": "workday:expedia.wd108.myworkdayjobs.com/search", "last_ok": "2026-10-16", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
-{"b": "workday:factset.wd108.myworkdayjobs.com/FactSetCareers", "last_ok": "2026-10-16", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:evs.wd108.myworkdayjobs.com/evsengineeringcareers", "last_ok": "2026-10-17", "strikes": 0}
+{"b": "workday:expedia.wd108.myworkdayjobs.com/search", "last_ok": "2026-10-17", "strikes": 0}
+{"b": "workday:factset.wd108.myworkdayjobs.com/FactSetCareers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:familydollar.wd503.myworkdayjobs.com/familydollarus", "last_ok": "2026-10-16", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
 {"b": "workday:fastretailing.wd3.myworkdayjobs.com/retail_us_Uniqlo", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:fca.wd3.myworkdayjobs.com/FCA_Careers", "last_ok": "2026-10-17", "strikes": 0}
@@ -785,7 +785,7 @@
 {"b": "workday:fivebelow.wd1.myworkdayjobs.com/fivebelowcareers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:flextronics.wd1.myworkdayjobs.com/Careers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:flir.wd1.myworkdayjobs.com/flircareers", "last_ok": "2026-10-17", "strikes": 0}
-{"b": "workday:fmc.wd12.myworkdayjobs.com/FMC", "last_ok": "2026-10-16", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:fmc.wd12.myworkdayjobs.com/FMC", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:fmr.wd1.myworkdayjobs.com/FidelityCareers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:foundationccc.wd1.myworkdayjobs.com/fccc-careers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:fox.wd1.myworkdayjobs.com/Domestic", "last_ok": "2026-10-17", "strikes": 0}
@@ -829,7 +829,7 @@
 {"b": "workday:hpe.wd5.myworkdayjobs.com/Jobsathpe", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:hrone.wd1.myworkdayjobs.com/Universal_Logistics_Holdings", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:hshs.wd1.myworkdayjobs.com/hshscareers", "last_ok": "2026-10-17", "strikes": 0}
-{"b": "workday:huntington.wd12.myworkdayjobs.com/HNBcareers", "last_ok": "2026-10-16", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:huntington.wd12.myworkdayjobs.com/HNBcareers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:huntingtonlibrary.wd1.myworkdayjobs.com/HuntingtonCareers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:hyvee.wd1.myworkdayjobs.com/HyVeeCareers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:icon.wd3.myworkdayjobs.com/broadbean_external", "last_ok": "2026-10-17", "strikes": 0}
@@ -839,10 +839,10 @@
 {"b": "workday:illumina.wd1.myworkdayjobs.com/illumina-careers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:imeg.wd1.myworkdayjobs.com/Imeg_Careers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:imerys.wd3.myworkdayjobs.com/IMERYS-Careers", "last_ok": "2026-10-17", "strikes": 0}
-{"b": "workday:imh.wd108.myworkdayjobs.com/IntermountainCareers", "last_ok": "2026-10-16", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:imh.wd108.myworkdayjobs.com/IntermountainCareers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:ing.wd3.myworkdayjobs.com/icsgblcor", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:ingredion.wd1.myworkdayjobs.com/IngredionCareers", "last_ok": "2026-10-17", "strikes": 0}
-{"b": "workday:insperity.wd12.myworkdayjobs.com/NSP", "last_ok": "2026-10-16", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:insperity.wd12.myworkdayjobs.com/NSP", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:insulet.wd5.myworkdayjobs.com/insuletcareers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:intapp.wd1.myworkdayjobs.com/Intapp", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:intel.wd1.myworkdayjobs.com/External", "last_ok": "2026-10-17", "strikes": 0}
@@ -897,10 +897,10 @@
 {"b": "workday:mckesson.wd3.myworkdayjobs.com/SCRI_Careers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:medline.wd5.myworkdayjobs.com/Medline", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:medtronic.wd1.myworkdayjobs.com/MedtronicCareers", "last_ok": "2026-10-17", "strikes": 0}
-{"b": "workday:meharrymedicalcollege.wd12.myworkdayjobs.com/external", "last_ok": "2026-10-16", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:meharrymedicalcollege.wd12.myworkdayjobs.com/external", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:meijer.wd5.myworkdayjobs.com/Meijer_Stores_Hourly", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:meijer.wd5.myworkdayjobs.com/Meijer_Stores_Leadership", "last_ok": "2026-10-17", "strikes": 0}
-{"b": "workday:menasha.wd12.myworkdayjobs.com/menashacorp", "last_ok": "2026-10-16", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:menasha.wd12.myworkdayjobs.com/menashacorp", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:mes.wd5.myworkdayjobs.com/Careers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:methodisthealthsystem.wd1.myworkdayjobs.com/MHS_Careers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:metmuseum.wd5.myworkdayjobs.com/metmuseumcareers", "last_ok": "2026-10-17", "strikes": 0}
@@ -910,14 +910,14 @@
 {"b": "workday:minor.wd102.myworkdayjobs.com/Careers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:mitel.wd3.myworkdayjobs.com/MitelCareers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:modernatx.wd1.myworkdayjobs.com/M_tx", "last_ok": "2026-10-17", "strikes": 0}
-{"b": "workday:montefiore.wd12.myworkdayjobs.com/MMC", "last_ok": "2026-10-16", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:montefiore.wd12.myworkdayjobs.com/MMC", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:moog.wd5.myworkdayjobs.com/moog_external_career_site", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:morningstar.wd5.myworkdayjobs.com/MorningstarDBRS", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:morningstar.wd5.myworkdayjobs.com/morningstar", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:mosaic.wd5.myworkdayjobs.com/mosaic", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:motorolasolutions.wd5.myworkdayjobs.com/Careers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:msd.wd5.myworkdayjobs.com/SearchJobs", "last_ok": "2026-10-17", "strikes": 0}
-{"b": "workday:msmc.wd12.myworkdayjobs.com/msmc_careers", "last_ok": "2026-10-16", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:msmc.wd12.myworkdayjobs.com/msmc_careers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:mtb.wd5.myworkdayjobs.com/MTB", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:musc.wd1.myworkdayjobs.com/MUSC", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:mwaa.wd1.myworkdayjobs.com/MWAA", "last_ok": "2026-10-17", "strikes": 0}
@@ -929,12 +929,12 @@
 {"b": "workday:nationwide.wd1.myworkdayjobs.com/Nationwide_Career", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:nationwide.wd1.myworkdayjobs.com/Nationwide_Career_India", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:nationwidechildrens.wd5.myworkdayjobs.com/NCHCareers", "last_ok": "2026-10-17", "strikes": 0}
-{"b": "workday:nc.wd108.myworkdayjobs.com/NC_Careers", "last_ok": "2026-10-16", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
-{"b": "workday:nclh.wd108.myworkdayjobs.com/NCLH_Careers", "last_ok": "2026-10-16", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:nc.wd108.myworkdayjobs.com/NC_Careers", "last_ok": "2026-10-17", "strikes": 0}
+{"b": "workday:nclh.wd108.myworkdayjobs.com/NCLH_Careers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:ncr.wd1.myworkdayjobs.com/ext_us", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:nelnet.wd1.myworkdayjobs.com/MyNelnet", "last_ok": "2026-10-17", "strikes": 0}
-{"b": "workday:netflix.wd108.myworkdayjobs.com/Eyeline", "last_ok": "2026-10-16", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
-{"b": "workday:netflix.wd108.myworkdayjobs.com/Netflix", "last_ok": "2026-10-16", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:netflix.wd108.myworkdayjobs.com/Eyeline", "last_ok": "2026-10-17", "strikes": 0}
+{"b": "workday:netflix.wd108.myworkdayjobs.com/Netflix", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:newbalance.wd1.myworkdayjobs.com/Careers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:newbalance.wd1.myworkdayjobs.com/Careers-UK", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:newrez.wd1.myworkdayjobs.com/NRZ", "last_ok": "2026-10-17", "strikes": 0}
@@ -958,10 +958,10 @@
 {"b": "workday:nxp.wd3.myworkdayjobs.com/careers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:ocbc.wd102.myworkdayjobs.com/External", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:odfl.wd1.myworkdayjobs.com/ODFL_Careers", "last_ok": "2026-10-17", "strikes": 0}
-{"b": "workday:ohioliving.wd12.myworkdayjobs.com/OHL", "last_ok": "2026-10-16", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:ohioliving.wd12.myworkdayjobs.com/OHL", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:okgov.wd1.myworkdayjobs.com/okgovjobs", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:oldmutual.wd3.myworkdayjobs.com/Old_Mutual_Careers", "last_ok": "2026-10-17", "strikes": 0}
-{"b": "workday:olemiss.wd12.myworkdayjobs.com/External__Faculty", "last_ok": "2026-10-16", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:olemiss.wd12.myworkdayjobs.com/External__Faculty", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:omers.wd3.myworkdayjobs.com/OMERS_External", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:omya.wd3.myworkdayjobs.com/Omya", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:oneok.wd1.myworkdayjobs.com/ONEOK", "last_ok": "2026-10-17", "strikes": 0}
@@ -975,8 +975,8 @@
 {"b": "workday:paho.wd5.myworkdayjobs.com/pahocareers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:paloaltonetworks.wd5.myworkdayjobs.com/panwexternalcareers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:papajohns.wd1.myworkdayjobs.com/PapaJohnsCareers", "last_ok": "2026-10-17", "strikes": 0}
-{"b": "workday:papedawson.wd12.myworkdayjobs.com/PDE", "last_ok": "2026-10-16", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
-{"b": "workday:parklandhospital.wd12.myworkdayjobs.com/parkland_careers", "last_ok": "2026-10-16", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:papedawson.wd12.myworkdayjobs.com/PDE", "last_ok": "2026-10-17", "strikes": 0}
+{"b": "workday:parklandhospital.wd12.myworkdayjobs.com/parkland_careers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:parsons.wd5.myworkdayjobs.com/Search", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:patagonia.wd503.myworkdayjobs.com/PWCareers", "last_ok": "2026-10-16", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
 {"b": "workday:paypal.wd1.myworkdayjobs.com/jobs", "last_ok": "2026-10-17", "strikes": 0}
@@ -992,11 +992,11 @@
 {"b": "workday:polypipe.wd103.myworkdayjobs.com/Careers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:poolcorp.wd1.myworkdayjobs.com/POOLCORP", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:ppg.wd5.myworkdayjobs.com/ppg_careers", "last_ok": "2026-10-17", "strikes": 0}
-{"b": "workday:prim.wd108.myworkdayjobs.com/Primoris", "last_ok": "2026-10-16", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:prim.wd108.myworkdayjobs.com/Primoris", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:primetherapeutics.wd1.myworkdayjobs.com/PrimeTherapeuticsCareers", "last_ok": "2026-10-17", "strikes": 0}
-{"b": "workday:procore.wd12.myworkdayjobs.com/Procore_External_Careers", "last_ok": "2026-10-16", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:procore.wd12.myworkdayjobs.com/Procore_External_Careers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:prologis.wd5.myworkdayjobs.com/Prologis_External_Careers", "last_ok": "2026-10-17", "strikes": 0}
-{"b": "workday:promedica.wd12.myworkdayjobs.com/external_careers", "last_ok": "2026-10-16", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:promedica.wd12.myworkdayjobs.com/external_careers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:proofpoint.wd5.myworkdayjobs.com/proofpointcareers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:pru.wd5.myworkdayjobs.com/Careers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:prudential.wd3.myworkdayjobs.com/prudential", "last_ok": "2026-10-17", "strikes": 0}
@@ -1013,7 +1013,7 @@
 {"b": "workday:redhat.wd5.myworkdayjobs.com/jobs", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:regeneron.wd1.myworkdayjobs.com/careers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:regions.wd5.myworkdayjobs.com/regions_careers", "last_ok": "2026-10-17", "strikes": 0}
-{"b": "workday:rehmann.wd108.myworkdayjobs.com/Rehmann_External_Career_Site", "last_ok": "2026-10-16", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:rehmann.wd108.myworkdayjobs.com/Rehmann_External_Career_Site", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:relx.wd3.myworkdayjobs.com/relx", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:republic.wd5.myworkdayjobs.com/Republic", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:resmed.wd3.myworkdayjobs.com/ResMed_External_Careers", "last_ok": "2026-10-17", "strikes": 0}
@@ -1030,7 +1030,7 @@
 {"b": "workday:rtddenver.wd5.myworkdayjobs.com/Careers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:rwlasvegas.wd501.myworkdayjobs.com/Resorts_World_External_Careers", "last_ok": "2026-10-16", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
 {"b": "workday:ryder.wd5.myworkdayjobs.com/RyderCareers", "last_ok": "2026-10-17", "strikes": 0}
-{"b": "workday:salesforce.wd12.myworkdayjobs.com/External_Career_Site", "last_ok": "2026-10-16", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:salesforce.wd12.myworkdayjobs.com/External_Career_Site", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:salvationarmyca.wd3.myworkdayjobs.com/tsacb", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:sandvik.wd3.myworkdayjobs.com/sandvik-jobs", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:sanmanuel.wd1.myworkdayjobs.com/SMGHANevada", "last_ok": "2026-10-17", "strikes": 0}
@@ -1039,7 +1039,7 @@
 {"b": "workday:saputo.wd5.myworkdayjobs.com/Saputo_External_Careers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:sartorius.wd3.myworkdayjobs.com/sartoriuscareers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:scgov.wd5.myworkdayjobs.com/SCGOV", "last_ok": "2026-10-17", "strikes": 0}
-{"b": "workday:schweigerderm.wd12.myworkdayjobs.com/SchweigerCareers", "last_ok": "2026-10-16", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:schweigerderm.wd12.myworkdayjobs.com/SchweigerCareers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:scottishwater.wd3.myworkdayjobs.com/External_Careers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:seaworldentertainment.wd1.myworkdayjobs.com/SEA", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:sec.wd3.myworkdayjobs.com/Samsung_Careers", "last_ok": "2026-10-17", "strikes": 0}
@@ -1067,7 +1067,7 @@
 {"b": "workday:sonaca.wd103.myworkdayjobs.com/Sonaca_Careers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:sonos.wd1.myworkdayjobs.com/Sonos", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:sonyglobal.wd1.myworkdayjobs.com/SonyGlobalCareers", "last_ok": "2026-10-17", "strikes": 0}
-{"b": "workday:southtexascollege.wd12.myworkdayjobs.com/STC", "last_ok": "2026-10-16", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:southtexascollege.wd12.myworkdayjobs.com/STC", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:sovereignnetworkgroup.wd103.myworkdayjobs.com/SNGExternal", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:spectrumhealth.wd5.myworkdayjobs.com/CorewellHealthCareers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:spgi.wd5.myworkdayjobs.com/SPGI_Careers", "last_ok": "2026-10-17", "strikes": 0}
@@ -1077,15 +1077,15 @@
 {"b": "workday:stvinc.wd5.myworkdayjobs.com/stv", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:sumitomoheavyindustries.wd103.myworkdayjobs.com/External", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:suncor.wd1.myworkdayjobs.com/Suncor_External", "last_ok": "2026-10-17", "strikes": 0}
-{"b": "workday:sunriseseniorliving.wd12.myworkdayjobs.com/SUNRISE_EXT_CAREERS", "last_ok": "2026-10-16", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:sunriseseniorliving.wd12.myworkdayjobs.com/SUNRISE_EXT_CAREERS", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:swisscom.wd103.myworkdayjobs.com/SwisscomExternalCareers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:synnex.wd5.myworkdayjobs.com/hyvecareers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:talenenergy.wd1.myworkdayjobs.com/TalenCareers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:tamus.wd1.myworkdayjobs.com/TAMUSA_External", "last_ok": "2026-10-17", "strikes": 0}
-{"b": "workday:tapestry.wd108.myworkdayjobs.com/Tapestry_Careers", "last_ok": "2026-10-16", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:tapestry.wd108.myworkdayjobs.com/Tapestry_Careers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:target.wd5.myworkdayjobs.com/targetcareers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:taylormorrison.wd1.myworkdayjobs.com/TaylorMorrisonCareers", "last_ok": "2026-10-17", "strikes": 0}
-{"b": "workday:tbc.wd12.myworkdayjobs.com/LyricCareers", "last_ok": "2026-10-16", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:tbc.wd12.myworkdayjobs.com/LyricCareers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:tcsedsystem.wd1.myworkdayjobs.com/TCSPP", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:td.wd3.myworkdayjobs.com/TD_Bank_Careers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:teamcarcare.wd1.myworkdayjobs.com/external", "last_ok": "2026-10-17", "strikes": 0}
@@ -1093,7 +1093,7 @@
 {"b": "workday:tencent.wd1.myworkdayjobs.com/Tencent_Careers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:thales.wd3.myworkdayjobs.com/Careers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:thehartford.wd5.myworkdayjobs.com/Careers_External", "last_ok": "2026-10-17", "strikes": 0}
-{"b": "workday:thepizzeriany.wd108.myworkdayjobs.com/ExternalCareers", "last_ok": "2026-10-16", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:thepizzeriany.wd108.myworkdayjobs.com/ExternalCareers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:thermofisher.wd5.myworkdayjobs.com/ThermoFisherCareers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:thinkbrg.wd5.myworkdayjobs.com/BRG_External_Career_Site", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:thomsonreuters.wd5.myworkdayjobs.com/External_Career_Site", "last_ok": "2026-10-17", "strikes": 0}
@@ -1113,7 +1113,7 @@
 {"b": "workday:trwd.wd1.myworkdayjobs.com/TRWDCareers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:tt.wd503.myworkdayjobs.com/ThorntonTomasetti", "last_ok": "2026-10-16", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
 {"b": "workday:uasys.wd5.myworkdayjobs.com/UASYS", "last_ok": "2026-10-17", "strikes": 0}
-{"b": "workday:ubc.wd10.myworkdayjobs.com/ubcstaffjobs", "last_ok": "2026-10-16", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:ubc.wd10.myworkdayjobs.com/ubcstaffjobs", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:ucf.wd1.myworkdayjobs.com/athletics", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:uchicago.wd5.myworkdayjobs.com/External", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:uline.wd1.myworkdayjobs.com/Uline_Careers", "last_ok": "2026-10-17", "strikes": 0}
@@ -1138,23 +1138,23 @@
 {"b": "workday:uva.wd1.myworkdayjobs.com/UVAStudentJobs", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:uw.wd5.myworkdayjobs.com/UWHires", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:valeo.wd3.myworkdayjobs.com/valeo_jobs", "last_ok": "2026-10-17", "strikes": 0}
-{"b": "workday:valleychildrens.wd12.myworkdayjobs.com/VCH_External", "last_ok": "2026-10-16", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:valleychildrens.wd12.myworkdayjobs.com/VCH_External", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:vanguard.wd5.myworkdayjobs.com/vanguard_external", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:vantagedc.wd1.myworkdayjobs.com/vantage", "last_ok": "2026-10-17", "strikes": 0}
-{"b": "workday:veradigm.wd12.myworkdayjobs.com/VR", "last_ok": "2026-10-16", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:veradigm.wd12.myworkdayjobs.com/VR", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:veralto.wd1.myworkdayjobs.com/EskoJobs", "last_ok": "2026-10-17", "strikes": 0}
-{"b": "workday:verizon.wd12.myworkdayjobs.com/verizon-careers", "last_ok": "2026-10-16", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:verizon.wd12.myworkdayjobs.com/verizon-careers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:vfc.wd5.myworkdayjobs.com/vfc_careers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:visa.wd5.myworkdayjobs.com/Visa", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:visa.wd5.myworkdayjobs.com/Visa_Early_Careers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:vizient.wd1.myworkdayjobs.com/Vizient_Careers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:vsp.wd1.myworkdayjobs.com/VSPVisionCareers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:vst.wd5.myworkdayjobs.com/luminant_careers", "last_ok": "2026-10-17", "strikes": 0}
-{"b": "workday:walmart.wd504.myworkdayjobs.com/WalmartExternal", "last_ok": "2026-10-17", "strikes": 0}
+{"b": "workday:walmart.wd504.myworkdayjobs.com/WalmartExternal", "last_ok": "2026-10-17", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
 {"b": "workday:warnerbros.wd5.myworkdayjobs.com/global", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:washpost.wd5.myworkdayjobs.com/washingtonpostcareers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:wasteconnections.wd1.myworkdayjobs.com/Careers", "last_ok": "2026-10-17", "strikes": 0}
-{"b": "workday:wastequip.wd108.myworkdayjobs.com/Wastequip_Careers", "last_ok": "2026-10-16", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:wastequip.wd108.myworkdayjobs.com/Wastequip_Careers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:wawa.wd1.myworkdayjobs.com/careers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:waystar.wd1.myworkdayjobs.com/Waystar", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:wellington.wd5.myworkdayjobs.com/External", "last_ok": "2026-10-17", "strikes": 0}
@@ -1162,8 +1162,8 @@
 {"b": "workday:wf.wd1.myworkdayjobs.com/WellsFargoJobs", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:whataburger.wd5.myworkdayjobs.com/WAB_CAREERS", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:whitecap.wd1.myworkdayjobs.com/Careers", "last_ok": "2026-10-17", "strikes": 0}
-{"b": "workday:williammary.wd12.myworkdayjobs.com/WM", "last_ok": "2026-10-16", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
-{"b": "workday:wisk.wd108.myworkdayjobs.com/Wisk_Careers", "last_ok": "2026-10-16", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:williammary.wd12.myworkdayjobs.com/WM", "last_ok": "2026-10-17", "strikes": 0}
+{"b": "workday:wisk.wd108.myworkdayjobs.com/Wisk_Careers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:wje.wd1.myworkdayjobs.com/Careers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:wk.wd3.myworkdayjobs.com/External", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:woodruffcenter.wd5.myworkdayjobs.com/woodruffcenter", "last_ok": "2026-10-17", "strikes": 0}
