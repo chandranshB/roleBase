@@ -122,7 +122,7 @@
 {"b": "eightfold:lamresearch.eightfold.ai/lamresearch.com", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "eightfold:lockheedmartin.eightfold.ai/lockheedmartin.com", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "eightfold:morganstanley.eightfold.ai/morganstanley.com", "last_ok": "2026-10-17", "strikes": 0}
-{"b": "eightfold:slb.eightfold.ai/slb.com", "last_ok": "2026-10-17", "strikes": 0, "why": "error: 405 Client Error: Not Allowed for url: https://slb.eightfold.ai/api/pcsx/search?domain=slb.com&query=&start=60"}
+{"b": "eightfold:slb.eightfold.ai/slb.com", "last_ok": "2026-10-17", "strikes": 0, "why": "error: 405 Client Error: Not Allowed for url: https://slb.eightfold.ai/api/pcsx/search?domain=slb.com&query=&start=0"}
 {"b": "getonbrd", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "greenhouse:aclu", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "greenhouse:adaptivebiotechnologies", "last_ok": "2026-10-17", "strikes": 0}
@@ -946,7 +946,7 @@
 {"b": "workday:njm.wd1.myworkdayjobs.com/njm", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:nkg.wd103.myworkdayjobs.com/nkg", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:nngroup.wd3.myworkdayjobs.com/WDExternal", "last_ok": "2026-10-17", "strikes": 0}
-{"b": "workday:nordstrom.wd501.myworkdayjobs.com/nordstrom_careers", "last_ok": "2026-10-16", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:nordstrom.wd501.myworkdayjobs.com/nordstrom_careers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:northeastern.wd1.myworkdayjobs.com/careers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:novartis.wd3.myworkdayjobs.com/Novartis_Careers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:nreca.wd1.myworkdayjobs.com/External", "last_ok": "2026-10-17", "strikes": 0}
@@ -1150,7 +1150,7 @@
 {"b": "workday:vizient.wd1.myworkdayjobs.com/Vizient_Careers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:vsp.wd1.myworkdayjobs.com/VSPVisionCareers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:vst.wd5.myworkdayjobs.com/luminant_careers", "last_ok": "2026-10-17", "strikes": 0}
-{"b": "workday:walmart.wd504.myworkdayjobs.com/WalmartExternal", "last_ok": "2026-10-17", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:walmart.wd504.myworkdayjobs.com/WalmartExternal", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:warnerbros.wd5.myworkdayjobs.com/global", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:washpost.wd5.myworkdayjobs.com/washingtonpostcareers", "last_ok": "2026-10-17", "strikes": 0}
 {"b": "workday:wasteconnections.wd1.myworkdayjobs.com/Careers", "last_ok": "2026-10-17", "strikes": 0}
