@@ -111,6 +111,10 @@
 {"b": "ashby:writer", "last_ok": "2026-10-18", "strikes": 0}
 {"b": "ashby:xero", "last_ok": "2026-10-18", "strikes": 0}
 {"b": "ashby:zapier", "last_ok": "2026-10-18", "strikes": 0}
+{"b": "breezy:almentor", "last_ok": "2026-10-18", "strikes": 0}
+{"b": "breezy:breezy", "last_ok": "2026-10-18", "strikes": 0}
+{"b": "breezy:float-health", "last_ok": "2026-10-18", "strikes": 0}
+{"b": "breezy:zero-hash", "last_ok": "2026-10-18", "strikes": 0}
 {"b": "cryptojobs", "last_ok": "2026-10-18", "strikes": 0}
 {"b": "eightfold:apply.starbucks.com/starbucks.com", "last_ok": "2026-10-18", "strikes": 0}
 {"b": "eightfold:bostonscientific.eightfold.ai/bostonscientific.com", "last_ok": "2026-10-18", "strikes": 0}
@@ -371,8 +375,8 @@
 {"b": "lever:zoox", "last_ok": "2026-10-18", "strikes": 0}
 {"b": "lever:zopa", "last_ok": "2026-10-18", "strikes": 0}
 {"b": "microsoft:microsoft.com", "last_ok": "2026-10-18", "strikes": 0}
-{"b": "oracle:ebwh.fa.us2.oraclecloud.com/CX_1001", "last_ok": "2026-10-18", "strikes": 0}
-{"b": "oracle:ebwh.fa.us2.oraclecloud.com/CX_1002", "last_ok": "2026-10-18", "strikes": 0}
+{"b": "oracle:ebwh.fa.us2.oraclecloud.com/CX_1001", "last_ok": "2026-10-18", "strikes": 0, "why": "error: 403 Client Error: Forbidden for url: http://www.oracle.com/splash/cloud/index.html"}
+{"b": "oracle:ebwh.fa.us2.oraclecloud.com/CX_1002", "last_ok": "2026-10-18", "strikes": 0, "why": "error: 403 Client Error: Forbidden for url: http://www.oracle.com/splash/cloud/index.html"}
 {"b": "oracle:ebwh.fa.us2.oraclecloud.com/CX_4001", "last_ok": "2026-10-18", "strikes": 0}
 {"b": "oracle:ecvz.fa.us2.oraclecloud.com/CX_1", "last_ok": "2026-10-18", "strikes": 0}
 {"b": "oracle:edbz.fa.us2.oraclecloud.com/CX", "last_ok": "2026-10-18", "strikes": 0}
@@ -424,6 +428,14 @@
 {"b": "phenom:jobs.tjx.com", "last_ok": "2026-10-18", "strikes": 0}
 {"b": "phenom:orange.jobs", "last_ok": "2026-10-18", "strikes": 0}
 {"b": "phenom:talent.lowes.com", "last_ok": "2026-10-18", "strikes": 0}
+{"b": "pinpoint:article", "last_ok": "2026-10-18", "strikes": 0}
+{"b": "pinpoint:butlins", "last_ok": "2026-10-18", "strikes": 0}
+{"b": "pinpoint:cazoo", "last_ok": "2026-10-18", "strikes": 0}
+{"b": "pinpoint:davies", "last_ok": "2026-10-18", "strikes": 0}
+{"b": "pinpoint:grantthornton", "last_ok": "2026-10-18", "strikes": 0}
+{"b": "pinpoint:kempinski", "last_ok": "2026-10-18", "strikes": 0}
+{"b": "pinpoint:oaknorth", "last_ok": "2026-10-18", "strikes": 0}
+{"b": "pinpoint:thoughtmachine", "last_ok": "2026-10-18", "strikes": 0}
 {"b": "recruitee:bitfinex", "last_ok": "2026-10-18", "strikes": 0}
 {"b": "recruitee:bunq", "last_ok": "2026-10-18", "strikes": 0}
 {"b": "remoteok", "last_ok": "2026-10-18", "strikes": 0}
@@ -468,6 +480,7 @@
 {"b": "teamtailor:templafy", "last_ok": "2026-10-18", "strikes": 0}
 {"b": "teamtailor:tibber", "last_ok": "2026-10-18", "strikes": 0}
 {"b": "teamtailor:vipps", "last_ok": "2026-10-18", "strikes": 0}
+{"b": "themuse", "last_ok": "2026-10-18", "strikes": 0}
 {"b": "weworkremotely", "last_ok": "2026-10-18", "strikes": 0}
 {"b": "workable:1-resource-group", "last_ok": "2026-10-18", "strikes": 0}
 {"b": "workable:afreximbank", "last_ok": "2026-10-18", "strikes": 0}
@@ -1105,7 +1118,7 @@
 {"b": "workday:transamerica.wd5.myworkdayjobs.com/US", "last_ok": "2026-10-18", "strikes": 0}
 {"b": "workday:transunion.wd5.myworkdayjobs.com/transunion", "last_ok": "2026-10-18", "strikes": 0}
 {"b": "workday:travelers.wd5.myworkdayjobs.com/External", "last_ok": "2026-10-18", "strikes": 0}
-{"b": "workday:trimble.wd1.myworkdayjobs.com/TrimbleCareers", "last_ok": "2026-10-18", "strikes": 0}
+{"b": "workday:trimble.wd1.myworkdayjobs.com/TrimbleCareers", "last_ok": "2026-10-18", "strikes": 1, "why": "dropped from 87 to 19"}
 {"b": "workday:trinityhealth.wd1.myworkdayjobs.com/Jobs", "last_ok": "2026-10-18", "strikes": 0}
 {"b": "workday:troweprice.wd5.myworkdayjobs.com/TRowePrice", "last_ok": "2026-10-18", "strikes": 0}
 {"b": "workday:truist.wd1.myworkdayjobs.com/careers", "last_ok": "2026-10-18", "strikes": 0}

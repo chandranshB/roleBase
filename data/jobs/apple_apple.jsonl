@@ -106,7 +106,7 @@
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200624287","location":"Taiwan","posted":"2026-09-22","team":"Hardware","title":"IC Packaging Engineer"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200627202","location":"United States of America","posted":"2026-10-05","team":"Hardware","title":"Physical Synthesis CAD Engineer"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200627388","location":"United States of America","posted":"2026-09-17","team":"Operations and Supply Chain","title":"CapEx Global Supply Manager (GSM) - Mechanical Enclosures"}
-{"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200627584","location":"Israel","posted":"2026-09-14","team":"Software and Services","title":"Backend SW Engineer"}
+{"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200627584","location":"Israel","posted":"2026-09-14","skills":["c++"],"team":"Software and Services","title":"C/C++ Software engineer"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200629964","location":"United States of America","posted":"2026-09-17","skills":["swift"],"team":"Software and Services","title":"Swift Engineer, Find My"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200630172","location":"United States of America","posted":"2026-09-16","team":"Hardware","title":"Wireless SoC RF Integration and Validation Engineer"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200631299","location":"United States of America","posted":"2026-10-12","skills":["ml"],"team":"Machine Learning and AI","title":"Research Scientist/ Engineer - Photorealism"}
