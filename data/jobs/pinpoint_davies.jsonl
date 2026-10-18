@@ -167,7 +167,7 @@
 {"company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:8fcfd733-209c-437a-84b7-3ce9760319aa","location":"Pune","skills":["azure","ml","python","pytorch","sql"],"title":"Senior Associate - AI / Data"}
 {"company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:916dba78-1436-42bd-bc8c-5c96e5b4d158","location":"Stoke","title":"Customer Support Technician","years":1}
 {"company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:927a5d91-0d70-4916-ba5b-355bb4dcde10","location":"Bolton","title":"Property Risks and Coverage Paralegal"}
-{"company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:92876c15-ae4b-410a-a1b3-de4f045d4e8a","location":"Preston","skills":["customer_service"],"title":"Customer Service Advisor - Evenings FTC"}
+{"closed_at":"2026-10-18","company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:92876c15-ae4b-410a-a1b3-de4f045d4e8a","location":"Preston","skills":["customer_service"],"title":"Customer Service Advisor - Evenings FTC"}
 {"company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:92dbf375-d27d-4658-b9ac-9615a12bce4e","location":"Remote, FL","pay":[80000,85000,"USD"],"remote":true,"skills":["customer_service"],"title":"Senior Excess Adjuster (Florida - Remote)"}
 {"company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:9309fc71-5e16-444b-aff0-94b09caf0288","location":"Leeds","pay":[25000,100000,"GBP"],"title":"Multi Track File Handler"}
 {"company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:93b1a52a-d905-4f3b-81ec-4ac7c949beec","location":"Stoke","skills":["customer_service"],"title":"Casualty Claims Handler"}
