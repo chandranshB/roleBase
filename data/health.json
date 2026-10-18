@@ -375,8 +375,8 @@
 {"b": "lever:zoox", "last_ok": "2026-10-18", "strikes": 0}
 {"b": "lever:zopa", "last_ok": "2026-10-18", "strikes": 0}
 {"b": "microsoft:microsoft.com", "last_ok": "2026-10-18", "strikes": 0}
-{"b": "oracle:ebwh.fa.us2.oraclecloud.com/CX_1001", "last_ok": "2026-10-18", "strikes": 0, "why": "error: 403 Client Error: Forbidden for url: http://www.oracle.com/splash/cloud/index.html"}
-{"b": "oracle:ebwh.fa.us2.oraclecloud.com/CX_1002", "last_ok": "2026-10-18", "strikes": 0, "why": "error: 403 Client Error: Forbidden for url: http://www.oracle.com/splash/cloud/index.html"}
+{"b": "oracle:ebwh.fa.us2.oraclecloud.com/CX_1001", "last_ok": "2026-10-18", "strikes": 0}
+{"b": "oracle:ebwh.fa.us2.oraclecloud.com/CX_1002", "last_ok": "2026-10-18", "strikes": 0}
 {"b": "oracle:ebwh.fa.us2.oraclecloud.com/CX_4001", "last_ok": "2026-10-18", "strikes": 0}
 {"b": "oracle:ecvz.fa.us2.oraclecloud.com/CX_1", "last_ok": "2026-10-18", "strikes": 0}
 {"b": "oracle:edbz.fa.us2.oraclecloud.com/CX", "last_ok": "2026-10-18", "strikes": 0}
@@ -1118,7 +1118,7 @@
 {"b": "workday:transamerica.wd5.myworkdayjobs.com/US", "last_ok": "2026-10-18", "strikes": 0}
 {"b": "workday:transunion.wd5.myworkdayjobs.com/transunion", "last_ok": "2026-10-18", "strikes": 0}
 {"b": "workday:travelers.wd5.myworkdayjobs.com/External", "last_ok": "2026-10-18", "strikes": 0}
-{"b": "workday:trimble.wd1.myworkdayjobs.com/TrimbleCareers", "last_ok": "2026-10-18", "strikes": 1, "why": "dropped from 87 to 19"}
+{"b": "workday:trimble.wd1.myworkdayjobs.com/TrimbleCareers", "last_ok": "2026-10-18", "strikes": 2, "why": "dropped from 87 to 16"}
 {"b": "workday:trinityhealth.wd1.myworkdayjobs.com/Jobs", "last_ok": "2026-10-18", "strikes": 0}
 {"b": "workday:troweprice.wd5.myworkdayjobs.com/TRowePrice", "last_ok": "2026-10-18", "strikes": 0}
 {"b": "workday:truist.wd1.myworkdayjobs.com/careers", "last_ok": "2026-10-18", "strikes": 0}
