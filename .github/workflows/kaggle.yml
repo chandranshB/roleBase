@@ -38,26 +38,27 @@ jobs:
             [ "$(kaggle datasets status "$KAGGLE_USERNAME/job-listings")" = ready ] && break
             sleep 10
           done
-          # Kaggle answers with an empty body when this call is slow (it did on all three tries when the cover and the per-column descriptions went
-          # together), so: first the text and the file/column descriptions, then the cover on its own, without the descriptions. Each is retried
-          # and only warns: the data is published already. (Kaggle may still drop the column descriptions, kaggle-cli#1207; export_kaggle.py also
-          # writes them into the dataset description.)
-          mkdir sync-text sync-cover
+          # Sync metadata, full column schemas, and cover image.
+          # First try syncing everything directly from kaggle/.
+          # Fallback: sync cover first, then sync text with full column descriptions last so descriptions persist.
+          mkdir -p sync-text sync-cover
           cp kaggle/dataset-metadata.json sync-text/
-          python -c "import json; m = json.load(open('kaggle/dataset-metadata.json')); m.pop('resources'); json.dump(m, open('sync-cover/dataset-metadata.json', 'w'))"
+          python -c "import json; m = json.load(open('kaggle/dataset-metadata.json')); m.pop('resources', None); json.dump(m, open('sync-cover/dataset-metadata.json', 'w'))"
           cp kaggle/dataset-cover-image.png sync-cover/
           sync() {
             local t=$SECONDS
             kaggle datasets metadata --update -p "$1" "$KAGGLE_USERNAME/job-listings" && { echo "$1 synced in $((SECONDS - t)) s"; return 0; }
             echo "$1 failed after $((SECONDS - t)) s"; return 1
           }
-          for what in text cover; do
-            for try in 1 2 3; do
-              sync "sync-$what" && continue 2
-              sleep 20
+          if ! sync kaggle; then
+            for what in cover text; do
+              for try in 1 2 3; do
+                sync "sync-$what" && continue 2
+                sleep 20
+              done
+              echo "::warning title=kaggle $what::sync failed three times, the next run tries again"
             done
-            echo "::warning title=kaggle $what::sync failed three times, the next run tries again"
-          done
+          fi
       - name: Publish the starter notebook (public, shows under the dataset Code tab)
         if: env.KAGGLE_API_TOKEN != ''
         run: kaggle kernels push -p kaggle_notebook || echo "notebook push failed, not fatal"

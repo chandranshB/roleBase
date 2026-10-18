@@ -361,8 +361,9 @@ def workday(s, name):  # s = "<tenant>.<pod>.myworkdayjobs.com/<site>"; the list
                  for d in [first, *rest] for j in d.get("jobPostings", []) if j.get("externalPath") and j.get("title")}.values())  # entries with no link or no title exist (KBR has one): skip them, not the board
 
 
-CAPPED = {"workday", "eightfold", "amazon", "himalayas", "jobicy", "jobtech", "usajobs", "oracle", "phenom", "apple"}
+CAPPED = {"workday", "eightfold", "amazon", "himalayas", "jobicy", "jobtech", "usajobs", "oracle", "phenom", "apple", "themuse"}
 HIM_CAP = 400  # newest N Himalayas jobs (of 100k+)
+MUSE_CAP = 400  # newest N jobs from The Muse (of 400k+)
 ORA_CAP = 2000  # newest N per Oracle career site
 USAJOBS_CAP = 2000  # newest N federal postings (of ~15k)
 JT_CAP = 500  # newest N Swedish public-employment ads (of ~40k)
@@ -593,6 +594,26 @@ def cryptojobs():
     return [j for j in rss_board("https://cryptocurrencyjobs.co/index.xml", "cryptojobs", remote=False) if j["company"]]
 
 
+def themuse():  # public US & global jobs feed across healthcare, retail, finance, engineering: newest MUSE_CAP
+    out = []
+    for p in range(1, MUSE_CAP // 20 + 1):
+        d = get("https://www.themuse.com/api/public/jobs", params={"page": p})
+        for j in d.get("results") or []:
+            if not j.get("id") or not j.get("name"):
+                continue
+            co = (j.get("company") or {}).get("name") or "Unknown"
+            locs = [l.get("name") for l in j.get("locations") or [] if l.get("name")]
+            loc = "; ".join(locs)
+            remote = any("remote" in l.lower() or "flexible" in l.lower() for l in locs)
+            jid = str(j["id"])
+            url = (j.get("refs") or {}).get("landing_page") or f"https://www.themuse.com/jobs/{jid}"
+            desc = text(j.get("contents"))
+            cat = next((c.get("name") for c in j.get("categories") or [] if c.get("name")), "")
+            out.append(job("themuse", "themuse", jid, co, j["name"], url, loc, remote, j.get("publication_date"),
+                           desc=desc, team=cat))
+    return out
+
+
 def usajobs_job(i):  # one SearchResultItem of the USAJOBS API -> job
     d = i["MatchedObjectDescriptor"]
     det = (d.get("UserArea") or {}).get("Details") or {}
@@ -710,10 +731,51 @@ def phenom(s, name):  # Phenom People career site, s = host, e.g. "talent.lowes.
     return list({j["id"]: j for j in jobs if j}.values())
 
 
+def pinpoint(s, name):  # <slug>.pinpointhq.com/postings.json
+    d = get(f"https://{s}.pinpointhq.com/postings.json")
+    items = d.get("data") if isinstance(d, dict) else d
+    out = []
+    for j in (items if isinstance(items, list) else []):
+        if not j.get("id") or not j.get("title"):
+            continue
+        l = j.get("location") or {}
+        loc = l.get("name") or ", ".join(filter(None, [l.get("city"), l.get("province") or l.get("country")]))
+        pay = [int(j["compensation_minimum"]), int(j["compensation_maximum"]), j.get("compensation_currency", "USD")] \
+            if j.get("compensation_minimum") and j.get("compensation_maximum") and j.get("compensation_frequency") == "year" else None
+        desc = " ".join(filter(None, [text(j.get("description")), text(j.get("key_responsibilities")), text(j.get("skills_knowledge_expertise"))]))
+        team = (j.get("job") or {}).get("title") or ""
+        jid = j["path"].split("/")[-1] if j.get("path") else str(j["id"])
+        url = j.get("url") or f"https://{s}.pinpointhq.com/en/postings/{jid}"
+        out.append(job("pinpoint", f"pinpoint:{s}", jid, name, j["title"], url, loc,
+                       j.get("workplace_type") == "remote", None, desc=desc, team=team,
+                       emp=[j.get("employment_type"), j.get("employment_type_text")], pay=pay))
+    return out
+
+
+def breezy(s, name):  # <slug>.breezy.hr/json
+    data = get(f"https://{s}.breezy.hr/json")
+    out = []
+    for j in (data if isinstance(data, list) else []):
+        if not j.get("id") or not j.get("name"):
+            continue
+        l = j.get("location") or {}
+        sal = j.get("salary") or {}
+        pay = None
+        if isinstance(sal, dict) and sal.get("min") and sal.get("max") and "year" in (sal.get("period") or ""):
+            pay = [int(sal["min"]), int(sal["max"]), sal.get("currency", "USD")]
+        url = j.get("url") or f"https://{s}.breezy.hr/p/{j['id']}"
+        emp_type = (j.get("type") or {}).get("name") if isinstance(j.get("type"), dict) else j.get("type")
+        out.append(job("breezy", f"breezy:{s}", str(j["id"]), name or (j.get("company") or {}).get("name") or s,
+                       j["name"], url, l.get("name") or "", bool(l.get("is_remote")), j.get("published_date"),
+                       team=j.get("department") or "", emp=[emp_type], pay=pay))
+    return out
+
+
 ATS = dict(greenhouse=greenhouse, lever=lever, ashby=ashby, smartrecruiters=smartrecruiters, workday=workday, microsoft=microsoft, eightfold=eightfold,
-           amazon=amazon, apple=apple, teamtailor=teamtailor, personio=personio, recruitee=recruitee, oracle=oracle, workable=workable, phenom=phenom)
+           amazon=amazon, apple=apple, teamtailor=teamtailor, personio=personio, recruitee=recruitee, oracle=oracle, workable=workable, phenom=phenom,
+           pinpoint=pinpoint, breezy=breezy)
 FEEDS = dict(remotive=remotive, remoteok=remoteok, arbeitnow=arbeitnow, himalayas=himalayas, jobicy=jobicy, weworkremotely=weworkremotely,
-             getonbrd=getonbrd, workingnomads=workingnomads, jobtech=jobtech, cryptojobs=cryptojobs)
+             getonbrd=getonbrd, workingnomads=workingnomads, jobtech=jobtech, cryptojobs=cryptojobs, themuse=themuse)
 if os.environ.get("USAJOBS_API_KEY") and os.environ.get("USAJOBS_EMAIL"):  # optional: skipped (not failed) without a key
     FEEDS["usajobs"] = usajobs
 
@@ -722,7 +784,9 @@ if os.environ.get("USAJOBS_API_KEY") and os.environ.get("USAJOBS_EMAIL"):  # opt
 URLS = dict(greenhouse="https://job-boards.greenhouse.io/{s}/jobs/{r}", lever="https://jobs.lever.co/{s}/{r}/apply",
             ashby="https://jobs.ashbyhq.com/{s}/{r}/application", smartrecruiters="https://jobs.smartrecruiters.com/{s}/{r}",
             workday="https://{s}{r}", microsoft="https://apply.careers.microsoft.com/careers/job/{r}",
-            apple="https://jobs.apple.com/en-us/details/{r}")
+            apple="https://jobs.apple.com/en-us/details/{r}",
+            pinpoint="https://{s}.pinpointhq.com/en/postings/{r}",
+            breezy="https://{s}.breezy.hr/p/{r}")
 DEFAULTS = dict(closed_at=None, location="", team="", remote=False, years=None, skills=[], pay=None, employment="", posted=None, reposts=0)
 
 
@@ -854,7 +918,7 @@ def verdict(jobs, err, prev, strikes):
 # The number is how many boards of that provider are fetched at the same time (conservative defaults, not published limits); a provider not listed
 # here (Arbeitnow, every feed, Amazon, Microsoft...) gets one worker, i.e. one board at a time. Workable and Arbeitnow also pause a second between requests.
 LANE_OF = {"microsoft": "eightfold"}  # Microsoft's careers site is Eightfold-hosted: one lane, one site at a time, so their bot protection never sees a burst
-LANES = {"greenhouse": 8, "lever": 6, "ashby": 6, "smartrecruiters": 4, "workday": 24, "teamtailor": 4, "oracle": 4, "workable": 2, "personio": 2, "recruitee": 2, "phenom": 4, "apple": 1}
+LANES = {"greenhouse": 8, "lever": 6, "ashby": 6, "smartrecruiters": 4, "workday": 24, "teamtailor": 4, "oracle": 4, "workable": 2, "personio": 2, "recruitee": 2, "phenom": 4, "apple": 1, "pinpoint": 4, "breezy": 4}
 RUN_BUDGET = 26 * 60  # seconds (the deep crawl takes 13 minutes here, 17 on GitHub's runners). A hung source is cut off and keeps its old jobs; the Actions job times out at 30 minutes
 
 

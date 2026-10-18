@@ -9,7 +9,7 @@
 <meta property="og:type" content="website"><meta property="og:site_name" content="RoleBase"><meta property="og:title" content="Free job search for every field | RoleBase">
 <meta property="og:description" content="Open jobs from employers' own career pages in every field, with entry-level, remote and salary filters and ghost-job flags.">
 <meta property="og:url" content="https://chandranshb.github.io/roleBase/"><meta property="og:image" content="https://chandranshb.github.io/roleBase/og.png"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://chandranshb.github.io/roleBase/og.png">
-<link rel="preload" href="jobs.json" as="fetch" crossorigin>
+<link rel="preload" href="feed.json" as="fetch" crossorigin>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","name":"RoleBase","url":"https://chandranshb.github.io/roleBase/","description":"Free, open job search across every field."},{"@type":"Dataset","name":"Job Listings (auto-updated)","description":"Open and recently closed jobs from company career boards, refreshed daily: apply link, level, field, skills, pay where stated, open and closed dates.","url":"https://www.kaggle.com/datasets/chandranshbinjola/job-listings","sameAs":"https://github.com/chandranshB/roleBase","isAccessibleForFree":true,"keywords":["jobs","job listings","job market","entry-level jobs","remote jobs","labor market"],"creator":{"@type":"Person","name":"Chandransh Binjola"},"distribution":[{"@type":"DataDownload","encodingFormat":"text/csv","contentUrl":"https://www.kaggle.com/datasets/chandranshbinjola/job-listings"}]}]}</script>
 <meta name="theme-color" content="#f4f5f7" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#0d0f12" media="(prefers-color-scheme: dark)">
@@ -644,7 +644,7 @@ const EMP={full_time:"Full-time",part_time:"Part-time",contract:"Contract",inter
 const SK={ml:"ML",aws:"AWS",gcp:"GCP",sql:"SQL",nosql:"NoSQL",llm:"LLM",dbt:"dbt",php:"PHP",sap:"SAP","ci/cd":"CI/CD",graphql:"GraphQL",javascript:"JavaScript",typescript:"TypeScript",mongodb:"MongoDB",mysql:"MySQL",pytorch:"PyTorch",tensorflow:"TensorFlow","node.js":"Node.js","spring-boot":"Spring Boot",hubspot:"HubSpot",excel:"Excel",ms_office:"MS Office",cpr:"CPR",bls:"BLS",acls:"ACLS",ehr:"EHR",emr:"EMR",hipaa:"HIPAA",osha:"OSHA",cdl:"CDL",haccp:"HACCP",hris:"HRIS",pmp:"PMP",crm:"CRM",erp:"ERP",gaap:"GAAP",ifrs:"IFRS",seo:"SEO",autocad:"AutoCAD",solidworks:"SolidWorks",quickbooks:"QuickBooks",powerpoint:"PowerPoint"};
 const RM=matchMedia("(prefers-reduced-motion:reduce)");let quiet=0; // quiet = results changed by typing, so no fade
 const CS={sort:"best",f:new Set(),v:"compact"}; // companies view: sort and filters
-let D,C,H,LC,CO,BY,SKS=new Set(),VOC=[],P=null,S={},q="",view="jobs",opened=false,items=[],build,shown=0,t0=0,saved=new Set(),ALT=new Map(),postings=0;
+let D,C,H,BY,SKS=new Set(),VOC=[],P=null,S={},q="",view="jobs",opened=false,items=[],build,shown=0,t0=0,saved=new Set(),ALT=new Map(),postings=0,fullLoaded=false;
 try{saved=new Set(JSON.parse(localStorage.getItem("rb_saved")||"[]"))}catch(e){}
 const savedCo=new Set();try{for(const n of JSON.parse(localStorage.getItem("rb_savedco")||"[]"))savedCo.add(n)}catch(e){}
 let back=null,savedTab="jobs"; // back: where "View jobs" came from; savedTab: jobs or companies inside Saved
@@ -764,8 +764,8 @@ function base(r,i){
   for(const t of P.terms)if(!h.includes(t))return false;
   for(const t of P.phr)if(!h.includes(t))return false;
   for(const t of P.ex)if(h.includes(t))return false;
-  for(const c of P.co)if(!CO[i].includes(c))return false;
-  for(const l of P.loc)if(!LC[i].includes(l))return false;
+  for(const c of P.co)if(!r[1].toLowerCase().includes(c))return false;
+  for(const l of P.loc)if(!r[2].toLowerCase().includes(l))return false;
   if(P.remote&&!r[3]||P.fresher&&!r[18]||P.pay&&!r[12])return false;
   if(P.lv.length&&!P.lv.includes(D.levels[r[4]])||P.emp.length&&!P.emp.includes(r[9])||P.cats.length&&!P.cats.includes(r[8]))return false;
   if(P.days&&r[6]<CUT[P.days])return false;
@@ -1067,7 +1067,9 @@ function pickNext(){
 function feedMore(n=6){
   const fr=document.createDocumentFragment();
   for(let k=0;k<n;k++){
-    const p=pickNext();if(!p){fdone=true;$("#fend").hidden=false;break}
+    const p=pickNext();if(!p){
+      if(!fullLoaded){loadFull();break}
+      fdone=true;$("#fend").hidden=false;break}
     const[r,ex]=p;
     if(SEEN0.has(r[7])&&!caughtF){caughtF=true;fr.append(note("You're all caught up on new jobs","Below are jobs you've seen before, in case you want a second look."))}
     usedF.add(r);recentF.push(r);if(recentF.length>6)recentF.shift();fcount++;
@@ -1255,7 +1257,7 @@ function drawLearned(){
   if(!M.n)ln.append(el("p","","Nothing yet. Save, apply to or hide a few jobs and this fills in."));
   else{ln.append(el("p","",M.n+" signal"+(M.n===1?"":"s")+" from "+saved.size+" saved and "+HID.size+" hidden jobs"));row("You tend to like",pos,"");row("You tend to skip",neg,"neg")}
 }
-function openDlg(){drawPrefs();dlg.getAnimations().forEach(a=>a.cancel());dlg.showModal()}
+function openDlg(){loadFull();drawPrefs();dlg.getAnimations().forEach(a=>a.cancel());dlg.showModal()}
 $("#me").addEventListener("click",openDlg);
 document.querySelectorAll(".tune .tb").forEach(b=>b.addEventListener("click",openDlg));
 document.querySelectorAll(".tune .x").forEach(b=>b.addEventListener("click",()=>{try{localStorage.setItem("rb_tune_x","1")}catch(e){}$("#tune2").hidden=true}));
@@ -1312,16 +1314,53 @@ qi.addEventListener("blur",()=>setTimeout(hideSug,120));
 const ph=["nursing jobs in london","remote customer support for freshers","part-time retail near me","accounting internships in berlin","paid sales roles posted today","teacher jobs $50k+","warehouse jobs full-time","fresher friendly companies"];let phI=0;
 setInterval(()=>{if(!document.hidden&&document.body.classList.contains("home")&&!qi.value){phI=(phI+1)%ph.length;qi.placeholder=ph[phI]}},3200);
 
-Promise.all([fetch("jobs.json").then(r=>r.json()),fetch("companies.json").then(r=>r.json()),fetch("logos.json").then(r=>r.ok?r.json():{}).catch(()=>({})),fetch("rates.json").then(r=>r.ok?r.json():null).catch(()=>null)]).then(([d,c,lg,rt])=>{
-  D=d;C=c;LG=lg;if(rt&&rt.rates){RT=rt.rates;RDATE=rt.date}BY=new Map(d.rows.map(r=>[r[7],r]));
-  H=d.rows.map(r=>[r[0],r[1],r[2],r[8],r[14],r[15]].join(" ").toLowerCase());LC=d.rows.map(r=>r[2].toLowerCase());CO=d.rows.map(r=>r[1].toLowerCase());
-  const sc=new Map(),cats=new Map();CC=new Map();
-  for(const r of d.rows){CC.set(r[1],(CC.get(r[1])||0)+1);cats.set(r[8],(cats.get(r[8])||0)+1);
-    if(r[14])for(const s of r[14].split(","))sc.set(s,(sc.get(s)||0)+1)}
+function ingest(d){
+  D=d;const n=d.rows.length;
+  H=new Array(n);BY=new Map();CC=new Map();
+  const sc=new Map(),cats=new Map();
+  for(let i=0;i<n;i++){
+    const r=d.rows[i];
+    BY.set(r[7],r);
+    H[i]=(r[0]+" "+r[1]+" "+r[2]+" "+r[8]+" "+r[14]+" "+r[15]).toLowerCase();
+    CC.set(r[1],(CC.get(r[1])||0)+1);
+    cats.set(r[8],(cats.get(r[8])||0)+1);
+    if(r[14]){const parts=r[14].split(",");for(let j=0;j<parts.length;j++)sc.set(parts[j],(sc.get(parts[j])||0)+1)}
+  }
   sc.forEach((_,s)=>SKS.add(s));
   VOC=[...[...sc].sort((a,b)=>b[1]-a[1]).map(([s])=>({t:SK[s]||cap(s),k:"Skill"})),...[...cats.keys()].filter(x=>x!=="other").map(x=>({t:cap(x),k:"Field"})),
-    ...C.map(x=>({t:x[0],k:"Company"})),...["remote","fresher","internship","entry level","senior","junior","part-time","contract"].map(t=>({t,k:"Filter"}))];
-  $("#meta").textContent=d.rows.length.toLocaleString()+" open jobs from "+CC.size.toLocaleString()+" companies, updated "+d.updated+".";
+    ...(C||[]).map(x=>({t:x[0],k:"Company"})),...["remote","fresher","internship","entry level","senior","junior","part-time","contract"].map(t=>({t,k:"Filter"}))];
+  const tot=d.total||d.rows.length;
+  $("#meta").textContent=tot.toLocaleString()+" open jobs from "+(C?C.length:CC.size).toLocaleString()+" companies, updated "+d.updated+".";
+  CIX=null;
+}
+
+let fullP=null;
+function loadFull(){
+  if(fullLoaded)return;
+  if(!fullP){
+    fullP=fetch("jobs.json").then(r=>{if(!r.ok)throw new Error("HTTP "+r.status);return r.json()}).then(d=>{
+      fullLoaded=true;ingest(d);
+      if(document.body.classList.contains("home")){
+        chrome();
+        const cand=D.rows.filter(r=>!HID.has(r[7])&&!saved.has(r[7])&&r[16]<2);
+        const fc=new Map();for(const r of cand)fc.set(r[8],(fc.get(r[8])||0)+1);
+        const now=Date.now();
+        const sc=new Map(cand.map(r=>[r,score(r,[],now)+.3*Math.min(2.5,Math.log(cand.length/fc.get(r[8])))+Math.random()*.7]));
+        const by=rows=>rows.sort((a,b)=>sc.get(b)-sc.get(a));
+        pool=arrange(by(cand.filter(r=>!SEEN0.has(r[7]))).concat(by(cand.filter(r=>SEEN0.has(r[7])))),false);
+      }else{
+        run();
+      }
+    }).catch(e=>console.error("loadFull error:",e));
+  }
+  return fullP;
+}
+qi.addEventListener("focus",loadFull);
+qi.addEventListener("input",loadFull);
+
+Promise.all([fetch("feed.json").then(r=>r.json()),fetch("companies.json").then(r=>r.json()),fetch("logos.json").then(r=>r.ok?r.json():{}).catch(()=>({})),fetch("rates.json").then(r=>r.ok?r.json():null).catch(()=>null)]).then(([d,c,lg,rt])=>{
+  C=c;LG=lg;if(rt&&rt.rates){RT=rt.rates;RDATE=rt.date}
+  ingest(d);
   tabsBuild();quickBuild();sheet(false);
   const p=new URLSearchParams(location.hash.slice(1));
   q=p.get("q")||"";qi.value=q;view=["companies","saved"].includes(p.get("view"))?p.get("view"):"jobs";opened=p.has("all");CS.sort=["fresh","roles","new","pay","clean"].includes(p.get("cs"))?p.get("cs"):"best";CS.f=new Set((p.get("cf")||"").split(",").filter(k=>CFIL[k]));
@@ -1329,7 +1368,18 @@ Promise.all([fetch("jobs.json").then(r=>r.json()),fetch("companies.json").then(r
   if(p.get("sort"))S.sort=p.get("sort");
   run();refreshHome();feedInit();
   document.fonts&&document.fonts.ready.then(tabsSync);
-}).catch(()=>{$("#count").textContent="Could not load jobs";for(const x of [feed,list,$("#stories"),$("#fchips"),$("#fbody")])x.replaceChildren();feed.append(note("Could not load jobs","Please refresh the page."))});
+  if(q||view!=="jobs"||Object.keys(S).length){
+    loadFull();
+  }else if("requestIdleCallback" in window){
+    requestIdleCallback(()=>loadFull(),{timeout:2000});
+  }else{
+    setTimeout(loadFull,300);
+  }
+}).catch(()=>{
+  fetch("jobs.json").then(r=>r.json()).then(d=>{
+    fullLoaded=true;ingest(d);run();refreshHome();feedInit();
+  }).catch(()=>{$("#count").textContent="Could not load jobs";for(const x of [feed,list,$("#stories"),$("#fchips"),$("#fbody")])x.replaceChildren();feed.append(note("Could not load jobs","Please refresh the page."))});
+});
 })();
 </script>
 </body>

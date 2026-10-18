@@ -10,51 +10,51 @@ from pathlib import Path
 from scraper import company_stats, fresher_ok, ghost_flags, load
 
 # These boards' terms are about attribution and display, so they stay out of a republished dataset.
-SKIP = {"remotive", "remoteok", "himalayas", "jobicy", "weworkremotely", "getonbrd", "workingnomads", "cryptojobs"}
+SKIP = {"remotive", "remoteok", "himalayas", "jobicy", "weworkremotely", "getonbrd", "workingnomads", "cryptojobs", "themuse"}
 COLUMNS = {  # name -> (type, description); also the CSV column order
-    "source": ("string", "Job board or feed the posting came from (greenhouse, workday, lever, ashby, arbeitnow...)."),
-    "company": ("string", "Employer name."),
-    "title": ("string", "Job title as posted."),
-    "url": ("string", "Apply link on the employer's own careers page. Unique per row."),
-    "openings": ("numeric", "Identical postings merged into this row (same company, title, team, location). Usually 1."),
-    "team": ("string", "Department or team, if the posting gives one."),
-    "category": ("string", "Field inferred from title and team, e.g. engineering, sales, healthcare, retail, finance."),
-    "level": ("string", "Seniority inferred from the title: intern, junior, mid, senior, lead, staff+ or manager+."),
-    "years_experience": ("numeric", "Minimum years of experience the posting asks for. Empty if not stated."),
-    "employment": ("string", "full_time, part_time, contract or internship. Empty if not stated."),
-    "remote": ("boolean", "True if the posting is remote or its location says remote."),
-    "location": ("string", "Location text as posted."),
-    "skills": ("string", "Up to 8 skills found in the posting, separated by semicolons."),
-    "pay_min": ("numeric", "Lower end of the stated yearly pay range. Empty if no pay is stated."),
-    "pay_max": ("numeric", "Upper end of the stated yearly pay range."),
-    "pay_currency": ("string", "Currency of the pay range (a $ sign is reported as USD)."),
-    "posted": ("datetime", "Date the job was published (YYYY-MM-DD), when the source gives one."),
-    "first_seen": ("datetime", "Date this scraper first saw the job."),
-    "closed_at": ("datetime", "Date the job disappeared from its board. Empty means still open."),
-    "ghost_score": ("numeric", "Ghost-job guess for open jobs: 0 = nothing odd, 2+ = possible, 3+ = likely. Not proof."),
-    "ghost_reasons": ("string", "Why ghost_score is above zero, e.g. open over a year, talent-pool wording, agency."),
-    "fresher_friendly": ("boolean", "True if it suits 0-2 years of experience: states <= 2 years, or an intern/junior role stating none."),
+    "source": ("string", "Job board or applicant tracking system (ATS) feed where the posting was detected: greenhouse, workday, lever, ashby, smartrecruiters, personio, teamtailor, recruitee, workable, phenom, pinpoint, breezy, amazon, microsoft, eightfold, arbeitnow, usajobs, or jobtech."),
+    "company": ("string", "Employer or hiring organization name advertising the job vacancy."),
+    "title": ("string", "Official job title as published on the employer's career portal."),
+    "url": ("string", "Direct apply link on the employer's official job board (unique primary key per row)."),
+    "openings": ("integer", "Number of identical postings merged into this row sharing the same company, title, team, and location (typically 1; higher for bulk retail, hospitality, or warehouse hiring)."),
+    "team": ("string", "Internal department, division, or business unit as specified in the posting (empty if not specified)."),
+    "category": ("string", "Primary professional field / industry domain inferred from title and team: engineering, data, design, product, sales, marketing, support, finance, healthcare, retail, manufacturing, logistics, legal, people, operations, education, science, security, or administrative."),
+    "level": ("string", "Seniority tier inferred from title keywords and experience requirements: intern, junior, mid, senior, lead, staff+, or manager+."),
+    "years_experience": ("integer", "Minimum years of professional experience explicitly required in the posting text (integer, empty if not stated)."),
+    "employment": ("string", "Employment type arrangement: full_time, part_time, contract, or internship (empty if not specified)."),
+    "remote": ("boolean", "Boolean flag indicating whether the position offers remote work (True) or requires in-person attendance (False)."),
+    "location": ("string", "Geographic location text as published by the employer (e.g. 'New York, NY', 'London, UK; Remote', or 'Hybrid')."),
+    "skills": ("string", "Up to 8 normalized technical and domain skills detected in the posting, separated by semicolons (e.g. 'python;aws;sql')."),
+    "pay_min": ("number", "Lower bound of the stated annual salary or compensation in the specified currency (empty if no pay is stated)."),
+    "pay_max": ("number", "Upper bound of the stated annual salary or compensation in the specified currency (empty if no pay is stated)."),
+    "pay_currency": ("string", "ISO 4217 three-letter currency code for stated compensation (e.g. USD, EUR, GBP, CAD, AUD, INR)."),
+    "posted": ("date", "Original publication date of the listing in ISO 8601 format (YYYY-MM-DD), when provided by the source ATS."),
+    "first_seen": ("date", "Date when this listing was first indexed and verified by the automated crawler (YYYY-MM-DD)."),
+    "closed_at": ("date", "Date when the job was confirmed closed or removed from the employer's career site (YYYY-MM-DD; empty indicates an actively open position)."),
+    "ghost_score": ("integer", "Calculated heuristic ghost-job risk score for open listings: 0 = normal, 2 = possibly stale/ghost posting, 3+ = likely ghost posting or perpetual talent pool."),
+    "ghost_reasons": ("string", "Specific heuristic audit triggers explaining why ghost_score is above zero (e.g. open over a year, talent pool phrasing, multiple reposts)."),
+    "fresher_friendly": ("boolean", "Boolean flag indicating whether the role is open to early-career candidates with 0-2 years of experience (True/False)."),
 }
 COMPANY_COLUMNS = {
-    "company": ("string", "Employer name (companies with 5+ open jobs only)."),
-    "open_roles": ("numeric", "Open jobs at this company."),
-    "fresher_roles": ("numeric", "Open jobs that are fresher-friendly (see fresher_friendly in jobs.csv)."),
-    "fresher_share": ("numeric", "fresher_roles / open_roles, 0 to 1."),
-    "junior_asking_3plus": ("numeric", "Intern/junior-titled jobs that ask for 3+ years of experience."),
-    "years_stated_share": ("numeric", "Share of jobs stating a years-of-experience requirement; low means the score leans on titles."),
+    "company": ("string", "Employer or organization name (included for all companies with 5 or more open roles)."),
+    "open_roles": ("integer", "Total number of currently active, open job listings tracked for this employer."),
+    "fresher_roles": ("integer", "Number of currently active open roles at this company accessible to early-career candidates (0-2 years of experience)."),
+    "fresher_share": ("number", "Proportion of the employer's total open roles that are fresher-friendly (fresher_roles / open_roles, float between 0.0 and 1.0)."),
+    "junior_asking_3plus": ("integer", "Number of roles titled 'junior' or 'associate' at this company that ask for 3+ years of experience."),
+    "years_stated_share": ("number", "Share of job postings at this company stating an explicit experience requirement (float between 0.0 and 1.0; low values mean the score leans on title keywords)."),
 }
 
 DAILY_COLUMNS = {
-    "date": ("datetime", "Day (YYYY-MM-DD), UTC."),
-    "open_jobs": ("numeric", "Open jobs tracked that day. Grows as employers are added, so compare shares over long periods."),
-    "fresher_friendly_jobs": ("numeric", "Of those, how many are fresher-friendly (0-2 years of experience)."),
+    "date": ("date", "Observation date in UTC (YYYY-MM-DD)."),
+    "open_jobs": ("integer", "Total active open jobs tracked globally on this date across all indexed employers (time series benchmark)."),
+    "fresher_friendly_jobs": ("integer", "Total active open jobs verified as fresher-friendly (0-2 years of experience) on this date."),
 }
 SKILL_COLUMNS = {
-    "date": ("datetime", "Day (YYYY-MM-DD), UTC."),
-    "skill": ("string", "Skill keyword found in postings, e.g. python, excel, customer_service, cpr."),
-    "jobs": ("numeric", "Open postings that mention the skill."),
-    "tagged": ("numeric", "Open postings that mention at least one skill (the denominator for share_pct)."),
-    "share_pct": ("numeric", "100 * jobs / tagged."),
+    "date": ("date", "Observation date in UTC (YYYY-MM-DD)."),
+    "skill": ("string", "Normalized skill keyword tracked across postings (e.g. python, excel, sql, customer_service, cpr)."),
+    "jobs": ("integer", "Number of active open job postings on this date explicitly mentioning or requiring this skill."),
+    "tagged": ("integer", "Total count of active open job postings on this date that mention at least one tracked skill (denominator for share_pct)."),
+    "share_pct": ("number", "Percentage share of skill-tagged open jobs that demand this specific skill (100 * jobs / tagged)."),
 }
 FILES = {  # file -> (description, its columns): feeds the Kaggle file/column metadata, the column table in the description and the header check below
     "jobs.csv": ("One row per job posting (open, or closed within the last 90 days), with the apply link, level, field, skills, pay where stated and dates. Identical postings are merged (see openings).", COLUMNS),
@@ -137,7 +137,7 @@ n_companies = len({r["company"] for r in live})
 TITLE = "Job Listings: Open Jobs in Every Field (Daily)"
 SUBTITLE = "Daily-updated open jobs with apply links, level, field, skills and pay"
 assert 6 <= len(TITLE) <= 50 and len(SUBTITLE) <= 80, (len(TITLE), len(SUBTITLE))
-SOURCES = ("Public job-board APIs and feeds of Greenhouse, Lever, Ashby, SmartRecruiters, Workday, Teamtailor, Personio, Recruitee, Workable, Oracle Recruiting and Phenom, plus the careers search APIs of Microsoft, Amazon and "
+SOURCES = ("Public job-board APIs and feeds of Greenhouse, Lever, Ashby, SmartRecruiters, Workday, Teamtailor, Personio, Recruitee, Workable, Pinpoint, Breezy HR, Oracle Recruiting and Phenom, plus the careers search APIs of Microsoft, Amazon and "
            "Eightfold-powered sites, the Arbeitnow job API, Sweden's open JobTech job-ad API and USAJOBS (company list: https://github.com/chandranshB/roleBase/blob/main/companies.json). "
            "Collected by https://github.com/chandranshB/roleBase with GitHub Actions; no logins, no private data.")
 # Kaggle's API accepts the per-column descriptions below but its server drops them (https://github.com/Kaggle/kaggle-cli/issues/1207), so they are also

@@ -29,7 +29,7 @@ def row(j):
             int(fresher_ok(j))]
 
 
-SITE_PER_COMPANY = 200  # the page downloads every row, so it lists each employer's newest 200; data/ and the Kaggle dataset keep all of them
+SITE_PER_COMPANY = 35  # the page downloads every row, so it lists each employer's newest 35; data/ and the Kaggle dataset keep all of them
 shown, per = [], {}
 for j in sorted(jobs, key=lambda j: j["posted"] or j["first_seen"], reverse=True):
     per[j["company"]] = per.get(j["company"], 0) + 1
@@ -59,14 +59,20 @@ out.mkdir(exist_ok=True)
 shutil.copy("web/index.html", out / "index.html")  # the search and feed front end
 shutil.copy("web/favicon.svg", out / "favicon.svg")
 shutil.copytree("web/fonts", out / "fonts", dirs_exist_ok=True)  # Instrument Sans (SIL OFL), bundled so no outside font service is used
+FEED_SIZE = 1200
+updated_str = dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+(out / "feed.json").write_text(json.dumps(
+    {"updated": updated_str, "levels": levels, "sources": sources, "rows": rows[:FEED_SIZE], "total": len(rows)},
+    ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
 (out / "jobs.json").write_text(json.dumps(
-    {"updated": dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%d %H:%M UTC"), "levels": levels, "sources": sources, "rows": rows},
+    {"updated": updated_str, "levels": levels, "sources": sources, "rows": rows, "total": len(rows)},
     ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
 companies = [[c["company"], c["open_roles"], c["fresher_roles"], c["fresher_share"], c["junior_asking_3plus"], c["years_stated_share"]]
              for c in company_stats(jobs)]  # companies.json rows: name, open roles, fresher roles, share, junior asking 3+ yrs, years-stated share
 (out / "companies.json").write_text(json.dumps(companies, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
-print(f"{len(rows)} of {len(jobs)} open jobs -> _site/jobs.json, {len(companies)} companies -> _site/companies.json")
+print(f"{len(rows)} of {len(jobs)} open jobs -> _site/jobs.json ({min(FEED_SIZE, len(rows))} -> _site/feed.json), {len(companies)} companies -> _site/companies.json")
 rates = fetch_rates()
 if rates:
     (out / "rates.json").write_text(json.dumps({"date": rates[1], "rates": rates[0]}, separators=(",", ":")), encoding="utf-8")
     print(f"{len(rates[0])} exchange rates ({rates[1]}) -> _site/rates.json")
+

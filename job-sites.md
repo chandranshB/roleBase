@@ -17,6 +17,7 @@ Legal, stable, no scraping needed. Mostly plain `requests` + JSON.
 | SmartRecruiters | `api.smartrecruiters.com/v1/companies/<co>/postings` | Mid and large companies |
 | Workable | `apply.workable.com/api/v1/widget/accounts/<co>` | SMBs |
 | Recruitee, Personio, Teamtailor | Public JSON/XML feed per company | Europe |
+| Pinpoint, Breezy HR | Public JSON feed per company (`postings.json`, `json`) | UK/US/Global |
 | USAJOBS | Free API key, developer.usajobs.gov | All US federal jobs |
 | Canada Job Bank | Open data, open.canada.ca | Canada |
 | Arbeitnow | arbeitnow.com/api/job-board-api | Germany / EU |

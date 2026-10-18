@@ -1213,5 +1213,21 @@
  },
  "apple": {
   "apple": "Apple"
+ },
+ "pinpoint": {
+  "kempinski": "Kempinski Hotels",
+  "davies": "Davies Group",
+  "butlins": "Butlin's",
+  "article": "Article",
+  "grantthornton": "Grant Thornton",
+  "oaknorth": "OakNorth Bank",
+  "cazoo": "Cazoo",
+  "thoughtmachine": "Thought Machine"
+ },
+ "breezy": {
+  "zero-hash": "Zero Hash",
+  "float-health": "Float Health",
+  "almentor": "Almentor",
+  "breezy": "Breezy HR"
  }
 }
