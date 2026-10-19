@@ -209,7 +209,7 @@ def main():
         e = idx.get(name)
         if e and now - e["t"] < (FRESH if e["file"] else RETRY) and (e["file"] or e.get("v") == VER):  # misses from an older lookup recipe are retried
             return name, e
-        domain = domain or (e or {}).get("domain") or guess_domain(name) or (re.sub(r"[^a-z0-9]", "", name.lower()) + ".com" if name in seen else None)  # curated names: plain .com is a safe last guess
+        domain = domain or (e or {}).get("domain") or guess_domain(name)
         got = find_logo(name, slug, lever, domain) or (time.sleep(2), find_logo(name, slug, lever, domain))[1]  # one retry for flaky networks
         if got:
             (CACHE / f"{slug}.{got[1]}").write_bytes(got[0])

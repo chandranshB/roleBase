@@ -1,7 +1,7 @@
 import datetime as dt
 
-from scraper import (ATS, CAPPED, FEEDS, apple, breezy, category, clean_company, company_stats, employment, find_pay, fresher_ok, ghost_flags, level, merge, skills, slim,
-                     phenom_job, pinpoint, run_all, themuse, url_of, usajobs_job, verdict, wd_posted, years_req)
+from scraper import (ATS, CAPPED, FEEDS, apple, bamboohr, breezy, category, clean_company, company_stats, employment, find_pay, fresher_ok, ghost_flags, level, merge, skills, slim,
+                     phenom_job, pinpoint, rippling, run_all, themuse, url_of, usajobs_job, verdict, wd_posted, years_req)
 from update_about import about_text
 
 
@@ -94,8 +94,10 @@ assert url_of("remotive:7") is None
 assert url_of("apple:apple:200313970") == "https://jobs.apple.com/en-us/details/200313970"
 assert url_of("pinpoint:article:c5a4fa70-cb2d") == "https://article.pinpointhq.com/en/postings/c5a4fa70-cb2d"
 assert url_of("breezy:zero-hash:cd390cdcd5ca") == "https://zero-hash.breezy.hr/p/cd390cdcd5ca"
+assert url_of("bamboohr:acme:123") == "https://acme.bamboohr.com/careers/123"
+assert url_of("rippling:acme:abc") == "https://ats.rippling.com/acme/jobs/abc"
 assert "apple" in CAPPED and ATS["apple"] == apple
-assert ATS["pinpoint"] == pinpoint and ATS["breezy"] == breezy
+assert ATS["pinpoint"] == pinpoint and ATS["breezy"] == breezy and ATS["bamboohr"] == bamboohr and ATS["rippling"] == rippling
 assert "themuse" in FEEDS and FEEDS["themuse"] == themuse and "themuse" in CAPPED
 
 # --- logos: icon detection and ordering ---

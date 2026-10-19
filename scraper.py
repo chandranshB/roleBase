@@ -42,7 +42,7 @@ class Client(requests.Session):
 
 S = Client()
 S.headers["User-Agent"] = "roleBase-job-scraper"
-S.headers["Accept-Encoding"] = "gzip, deflate, br"
+S.headers["Accept-Encoding"] = "gzip, deflate"
 S.mount("https://", HTTPAdapter(pool_maxsize=128, max_retries=Retry(total=5, backoff_factor=2, status_forcelist=[429, 500, 502, 503, 504],
                                                                     allowed_methods=None)))  # None = retry POST too (Workday searches are read-only)
 TIMEOUT = (10, 45)  # connect, read
@@ -774,9 +774,51 @@ def breezy(s, name):  # <slug>.breezy.hr/json
     return out
 
 
+def bamboohr(s, name):  # <slug>.bamboohr.com/careers/list
+    d = get(f"https://{s}.bamboohr.com/careers/list")
+    out = []
+    for j in d.get("result", []):
+        if not j.get("id") or not j.get("jobOpeningName"):
+            continue
+        loc_obj = j.get("location") or {}
+        loc = ", ".join(filter(None, [loc_obj.get("city"), loc_obj.get("state")]))
+        remote = bool(j.get("isRemote") or j.get("locationType") == "1")
+        url = f"https://{s}.bamboohr.com/careers/{j['id']}"
+        out.append(job("bamboohr", f"bamboohr:{s}", str(j["id"]), name or s, j["jobOpeningName"],
+                       url, loc, remote, team=j.get("departmentLabel") or "",
+                       emp=[j.get("employmentStatusLabel")]))
+    return out
+
+
+def rippling(s, name):  # ats.rippling.com/<slug>/jobs
+    r = S.get(f"https://ats.rippling.com/{s}/jobs", timeout=TIMEOUT)
+    r.raise_for_status()
+    m = re.search(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', r.text)
+    if not m:
+        return []
+    data = json.loads(m.group(1))
+    queries = data.get("props", {}).get("pageProps", {}).get("dehydratedState", {}).get("queries", [])
+    out = []
+    for q in queries:
+        if "job-posts" in q.get("queryKey", []):
+            items = q.get("state", {}).get("data", {}).get("items", [])
+            for j in items:
+                jid = j.get("id")
+                title = j.get("name")
+                if not jid or not title:
+                    continue
+                locs = j.get("locations") or []
+                loc = ", ".join(filter(None, [locs[0].get("city"), locs[0].get("stateCode") or locs[0].get("countryCode")])) if locs else ""
+                remote = any(l.get("workplaceType") in ("REMOTE", "HYBRID") for l in locs)
+                url = j.get("url") or f"https://ats.rippling.com/{s}/jobs/{jid}"
+                team = (j.get("department") or {}).get("name") or ""
+                out.append(job("rippling", f"rippling:{s}", str(jid), name or s, title, url, loc, remote, team=team))
+    return out
+
+
 ATS = dict(greenhouse=greenhouse, lever=lever, ashby=ashby, smartrecruiters=smartrecruiters, workday=workday, microsoft=microsoft, eightfold=eightfold,
            amazon=amazon, apple=apple, teamtailor=teamtailor, personio=personio, recruitee=recruitee, oracle=oracle, workable=workable, phenom=phenom,
-           pinpoint=pinpoint, breezy=breezy)
+           pinpoint=pinpoint, breezy=breezy, bamboohr=bamboohr, rippling=rippling)
 FEEDS = dict(remotive=remotive, remoteok=remoteok, arbeitnow=arbeitnow, himalayas=himalayas, jobicy=jobicy, weworkremotely=weworkremotely,
              getonbrd=getonbrd, workingnomads=workingnomads, jobtech=jobtech, cryptojobs=cryptojobs, themuse=themuse)
 if os.environ.get("USAJOBS_API_KEY") and os.environ.get("USAJOBS_EMAIL"):  # optional: skipped (not failed) without a key
@@ -789,7 +831,9 @@ URLS = dict(greenhouse="https://job-boards.greenhouse.io/{s}/jobs/{r}", lever="h
             workday="https://{s}{r}", microsoft="https://apply.careers.microsoft.com/careers/job/{r}",
             apple="https://jobs.apple.com/en-us/details/{r}",
             pinpoint="https://{s}.pinpointhq.com/en/postings/{r}",
-            breezy="https://{s}.breezy.hr/p/{r}")
+            breezy="https://{s}.breezy.hr/p/{r}",
+            bamboohr="https://{s}.bamboohr.com/careers/{r}",
+            rippling="https://ats.rippling.com/{s}/jobs/{r}")
 DEFAULTS = dict(closed_at=None, location="", team="", remote=False, years=None, skills=[], pay=None, employment="", posted=None, reposts=0)
 
 
@@ -943,7 +987,7 @@ def verdict(jobs, err, prev, strikes):
 # The number is how many boards of that provider are fetched at the same time (conservative defaults, not published limits); a provider not listed
 # here (Arbeitnow, every feed, Amazon, Microsoft...) gets one worker, i.e. one board at a time. Workable and Arbeitnow also pause a second between requests.
 LANE_OF = {"microsoft": "eightfold"}  # Microsoft's careers site is Eightfold-hosted: one lane, one site at a time, so their bot protection never sees a burst
-LANES = {"greenhouse": 24, "lever": 16, "ashby": 16, "smartrecruiters": 12, "workday": 32, "teamtailor": 4, "oracle": 4, "workable": 2, "personio": 2, "recruitee": 2, "phenom": 4, "apple": 1, "pinpoint": 8, "breezy": 8}
+LANES = {"greenhouse": 24, "lever": 16, "ashby": 16, "smartrecruiters": 12, "workday": 32, "teamtailor": 4, "oracle": 4, "workable": 2, "personio": 12, "recruitee": 2, "phenom": 4, "apple": 1, "pinpoint": 8, "breezy": 8, "bamboohr": 16, "rippling": 8}
 RUN_BUDGET = 26 * 60  # seconds (the deep crawl takes 13 minutes here, 17 on GitHub's runners). A hung source is cut off and keeps its old jobs; the Actions job times out at 30 minutes
 
 
