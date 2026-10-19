@@ -8,7 +8,7 @@
 {"company":"Cabify","first_seen":"2026-10-19","id":"greenhouse:cabify:8558042002","location":"Buenos Aires","posted":"2026-05-20","skills":["tableau"],"team":"Growth","title":"Growth Rider Manager"}
 {"company":"Cabify","first_seen":"2026-10-19","id":"greenhouse:cabify:8559735002","location":"Chile","posted":"2026-05-22","skills":["jira","python"],"team":"Technology","title":"IT Analyst"}
 {"company":"Cabify","first_seen":"2026-10-19","id":"greenhouse:cabify:8563903002","location":"Lima","posted":"2026-05-25","skills":["excel","tableau"],"team":"Cabify Logistics","title":"Liveops associate"}
-{"company":"Cabify","first_seen":"2026-10-19","id":"greenhouse:cabify:8566778002","location":"Buenos Aires","posted":"2026-05-27","skills":["tableau"],"team":"Customer Experience & Operations","title":"Operational Excellence Coordinator"}
+{"closed_at":"2026-10-19","company":"Cabify","first_seen":"2026-10-19","id":"greenhouse:cabify:8566778002","location":"Buenos Aires","posted":"2026-05-27","skills":["tableau"],"team":"Customer Experience & Operations","title":"Operational Excellence Coordinator"}
 {"company":"Cabify","first_seen":"2026-10-19","id":"greenhouse:cabify:8581941002","location":"Lima","posted":"2026-06-08","skills":["excel","tableau"],"team":"Cabify Logistics","title":"Agente de soporte operacional"}
 {"company":"Cabify","first_seen":"2026-10-19","id":"greenhouse:cabify:8581943002","location":"Lima","posted":"2026-06-08","skills":["excel","tableau"],"team":"Cabify Logistics","title":"Asistente de Operaciones Logísticas"}
 {"company":"Cabify","first_seen":"2026-10-19","id":"greenhouse:cabify:8586054002","location":"Lima","posted":"2026-06-10","skills":["excel"],"team":"B2B","title":"Customer Success Executive"}
@@ -32,7 +32,7 @@
 {"company":"Cabify","first_seen":"2026-10-19","id":"greenhouse:cabify:8789229002","location":"Santiago de Chile","posted":"2026-09-09","skills":["crm","salesforce","six_sigma"],"team":"People","title":"Customer Support Analyst - Operaciones"}
 {"company":"Cabify","first_seen":"2026-10-19","id":"greenhouse:cabify:8795509002","location":"Madrid","posted":"2026-09-10","skills":["crm","salesforce"],"team":"B2B","title":"Sales Executive"}
 {"company":"Cabify","first_seen":"2026-10-19","id":"greenhouse:cabify:8795592002","location":"Madrid","posted":"2026-09-10","skills":["crm","salesforce"],"team":"B2B","title":"SDR Lead"}
-{"company":"Cabify","first_seen":"2026-10-19","id":"greenhouse:cabify:8810551002","location":"Bogotá","posted":"2026-09-15","skills":["crm","salesforce","hubspot"],"team":"Cabify Logistics","title":"Sales Development Representative Sr"}
+{"closed_at":"2026-10-19","company":"Cabify","first_seen":"2026-10-19","id":"greenhouse:cabify:8810551002","location":"Bogotá","posted":"2026-09-15","skills":["crm","salesforce","hubspot"],"team":"Cabify Logistics","title":"Sales Development Representative Sr"}
 {"company":"Cabify","first_seen":"2026-10-19","id":"greenhouse:cabify:8814530002","location":"Santiago de Chile","posted":"2026-09-16","skills":["python"],"team":"Finance","title":"Finance Analyst (Reemplazo)"}
 {"company":"Cabify","first_seen":"2026-10-19","id":"greenhouse:cabify:8817887002","location":"Madrid","posted":"2026-09-17","team":"Product","title":"Senior Product Manager","years":5}
 {"company":"Cabify","first_seen":"2026-10-19","id":"greenhouse:cabify:8819697002","location":"Bogotá","posted":"2026-09-18","team":"People","title":"Legal Trainee"}
