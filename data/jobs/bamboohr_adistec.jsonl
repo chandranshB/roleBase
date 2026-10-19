@@ -1,6 +1,6 @@
 {"company":"Adistec","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:adistec:688","location":"São Paulo, São Paulo","team":"Sales","title":"Product Sales Manager - BR"}
 {"company":"Adistec","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:adistec:708","location":"São Paulo, São Paulo","team":"HR","title":"HR Specialist - BR (PCD)"}
-{"company":"Adistec","employment":"internship","first_seen":"2026-10-19","id":"bamboohr:adistec:733","location":"São Paulo, São Paulo","team":"Sales","title":"Estagiário Comercial"}
+{"closed_at":"2026-10-19","company":"Adistec","employment":"internship","first_seen":"2026-10-19","id":"bamboohr:adistec:733","location":"São Paulo, São Paulo","team":"Sales","title":"Estagiário Comercial"}
 {"company":"Adistec","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:adistec:743","location":"Mexico, CDMX","team":"Consulting","title":"Solutions Architect"}
 {"company":"Adistec","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:adistec:751","remote":true,"team":"Engineering","title":"Engineering Sales Specialist"}
 {"company":"Adistec","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:adistec:761","location":"Buenos Aires, Buenos Aires","team":"Internal Training","title":"Learning & Development Coordinator"}
@@ -10,7 +10,7 @@
 {"company":"Adistec","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:adistec:792","location":"Miami, Florida","team":"Operations","title":"Operations Coordinator"}
 {"company":"Adistec","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:adistec:798","location":"São Paulo, São Paulo","team":"Administration","title":"Accounting Specialist - BR"}
 {"company":"Adistec","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:adistec:801","location":"São Paulo, São Paulo","team":"HR","title":"HR Specialist - BR"}
-{"company":"Adistec","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:adistec:802","location":"Buenos Aires, Buenos Aires","skills":["java"],"team":"IS","title":"Junior Java Developer"}
+{"closed_at":"2026-10-19","company":"Adistec","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:adistec:802","location":"Buenos Aires, Buenos Aires","skills":["java"],"team":"IS","title":"Junior Java Developer"}
 {"company":"Adistec","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:adistec:803","location":"São Paulo, São Paulo","team":"Engineering","title":"Engineering Sales Specialist - BR"}
 {"company":"Adistec","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:adistec:806","location":"Bogota, Bogota","team":"Consulting","title":"Semi Senior Oracle NetSuite Developer"}
 {"company":"Adistec","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:adistec:813","location":"santiago, Región Metropolitana","team":"Sales","title":"Product Sales Specialist"}
@@ -22,3 +22,5 @@
 {"company":"Adistec","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:adistec:824","location":"Buenos Aires, Buenos Aires","team":"Marketing","title":"Graphic Design Specialist"}
 {"company":"Adistec","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:adistec:825","location":"Bogota, Bogota","team":"Sales","title":"Product Sales Manager"}
 {"company":"Adistec","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:adistec:826","location":"Buenos Aires, Buenos Aires","team":"IS","title":"Junior QA"}
+{"company":"Adistec","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:adistec:828","location":"santiago, Región Metropolitana","team":"Sales","title":"Inside Sales"}
+{"company":"Adistec","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:adistec:829","location":"santiago, Región Metropolitana","team":"Engineering","title":"Engineering Sales Specialist"}
