@@ -4,6 +4,7 @@
 Every job is enriched from its title/description: level, category, employment type, years of experience,
 skills and pay. Only those facts are stored (never the description), and empty values are left out of the files.
 """
+import argparse
 import csv
 import datetime as dt
 import html
@@ -40,9 +41,10 @@ class Client(requests.Session):
 
 S = Client()
 S.headers["User-Agent"] = "roleBase-job-scraper"
-S.mount("https://", HTTPAdapter(pool_maxsize=64, max_retries=Retry(total=5, backoff_factor=2, status_forcelist=[429, 500, 502, 503, 504],
+S.headers["Accept-Encoding"] = "gzip, deflate, br"
+S.mount("https://", HTTPAdapter(pool_maxsize=128, max_retries=Retry(total=5, backoff_factor=2, status_forcelist=[429, 500, 502, 503, 504],
                                                                     allowed_methods=None)))  # None = retry POST too (Workday searches are read-only)
-TIMEOUT = (10, 60)  # connect, read
+TIMEOUT = (10, 45)  # connect, read
 
 # ---------- understanding a posting ----------
 LEVELS = [  # first match wins
@@ -824,18 +826,29 @@ def slim(j):  # drop empty values and anything derivable from other fields (load
     return r
 
 
-def save(db):  # one file per board; sorted + compact + LF => small files, diffs show only real changes
+def save(db, target_scopes=None):  # one file per board; sorted + compact + LF => small files, diffs show only real changes
     DIR.mkdir(parents=True, exist_ok=True)
     shards = {}
     for i in sorted(db):
         name = i.rsplit(":", 1)[0].replace(":", "_").replace("/", "_")
         shards.setdefault(name, []).append(json.dumps(slim(db[i]), sort_keys=True, ensure_ascii=False, separators=(",", ":")))
-    for f in DIR.glob("*.jsonl"):
-        if f.stem not in shards:
-            f.unlink()
-    for name, lines in shards.items():
-        with open(DIR / f"{name}.jsonl", "w", encoding="utf-8", newline="\n") as f:
-            f.write("\n".join(lines) + "\n")
+    if target_scopes is None:
+        for f in DIR.glob("*.jsonl"):
+            if f.stem not in shards:
+                f.unlink()
+        for name, lines in shards.items():
+            with open(DIR / f"{name}.jsonl", "w", encoding="utf-8", newline="\n") as f:
+                f.write("\n".join(lines) + "\n")
+    else:
+        target_names = {s.replace(":", "_").replace("/", "_") for s in target_scopes}
+        for name in target_names:
+            lines = shards.get(name, [])
+            target_file = DIR / f"{name}.jsonl"
+            if lines:
+                with open(target_file, "w", encoding="utf-8", newline="\n") as f:
+                    f.write("\n".join(lines) + "\n")
+            elif target_file.exists():
+                target_file.unlink()
 
 
 def merge(db, fetched, today, pruned=None):
@@ -918,7 +931,7 @@ def verdict(jobs, err, prev, strikes):
 # The number is how many boards of that provider are fetched at the same time (conservative defaults, not published limits); a provider not listed
 # here (Arbeitnow, every feed, Amazon, Microsoft...) gets one worker, i.e. one board at a time. Workable and Arbeitnow also pause a second between requests.
 LANE_OF = {"microsoft": "eightfold"}  # Microsoft's careers site is Eightfold-hosted: one lane, one site at a time, so their bot protection never sees a burst
-LANES = {"greenhouse": 8, "lever": 6, "ashby": 6, "smartrecruiters": 4, "workday": 24, "teamtailor": 4, "oracle": 4, "workable": 2, "personio": 2, "recruitee": 2, "phenom": 4, "apple": 1, "pinpoint": 4, "breezy": 4}
+LANES = {"greenhouse": 24, "lever": 16, "ashby": 16, "smartrecruiters": 12, "workday": 32, "teamtailor": 4, "oracle": 4, "workable": 2, "personio": 2, "recruitee": 2, "phenom": 4, "apple": 1, "pinpoint": 8, "breezy": 8}
 RUN_BUDGET = 26 * 60  # seconds (the deep crawl takes 13 minutes here, 17 on GitHub's runners). A hung source is cut off and keeps its old jobs; the Actions job times out at 30 minutes
 
 
@@ -946,7 +959,42 @@ def run_all(tasks, budget=RUN_BUDGET):
 
 
 def main():
+    parser = argparse.ArgumentParser(description="RoleBase job scraper")
+    parser.add_argument("--shard", type=int, default=0, help="Shard index (0-based)")
+    parser.add_argument("--total-shards", type=int, default=1, help="Total number of parallel shards")
+    parser.add_argument("--consolidate", action="store_true", help="Merge shards, prune, and log history")
+    args, _ = parser.parse_known_args()
+
     t_start = time.time()
+    today = dt.date.today().isoformat()
+
+    if args.consolidate:
+        print("Consolidating shards...")
+        db = load()
+        cutoff = (dt.date.fromisoformat(today) - dt.timedelta(KEEP_CLOSED_DAYS)).isoformat()
+        pruned = [o for o in db.values() if o["closed_at"] and o["closed_at"] < cutoff]
+        if pruned:
+            db = {i: o for i, o in db.items() if not (o["closed_at"] and o["closed_at"] < cutoff)}
+            save(db)
+        log_history(db, pruned, today)
+        all_health = {}
+        if HEALTH.exists():
+            for line in HEALTH.read_text(encoding="utf-8").splitlines():
+                if line.strip():
+                    r = json.loads(line)
+                    all_health[r.pop("b")] = r
+        for hf in Path("data").glob("health-*.json"):
+            for line in hf.read_text(encoding="utf-8").splitlines():
+                if line.strip():
+                    r = json.loads(line)
+                    all_health[r.pop("b")] = r
+            hf.unlink(missing_ok=True)
+        if all_health:
+            HEALTH.write_text("\n".join(json.dumps({"b": k, **v}, sort_keys=True) for k, v in sorted(all_health.items())) + "\n", encoding="utf-8", newline="\n")
+        n_open = sum(o["closed_at"] is None for o in db.values())
+        print(f"Consolidation complete: {n_open:,} active jobs, {len(db) - n_open:,} closed jobs | {time.time() - t_start:.1f}s")
+        return
+
     cfg = json.loads(COMPANIES.read_text(encoding="utf-8"))
     tasks = [(f"{k}:{s}", lambda k=k, s=s, n=n: ATS[k](s, n)) for k, boards in cfg.items() for s, n in boards.items()] + list(FEEDS.items())
     db = load()
@@ -955,12 +1003,18 @@ def main():
         if o["closed_at"] is None:
             open_n[i.rsplit(":", 1)[0]] = open_n.get(i.rsplit(":", 1)[0], 0) + 1
     tasks.sort(key=lambda t: -open_n.get(t[0], 0))  # biggest boards first, so the pool never ends waiting on one slow giant
+
+    target_scopes = None
+    if args.total_shards > 1:
+        tasks = [t for i, t in enumerate(tasks) if i % args.total_shards == args.shard]
+        target_scopes = {t[0] for t in tasks}
+        print(f"Shard {args.shard + 1}/{args.total_shards}: assigned {len(tasks)} boards")
+
     lines = [l for l in HEALTH.read_text(encoding="utf-8").split(chr(10)) if l] if HEALTH.exists() else []
     health = {r.pop("b"): r for r in map(json.loads, lines)}
 
     results, unfinished = run_all(tasks)
 
-    today = dt.date.today().isoformat()
     fetched, ats_keys, failed = {}, set(), []
     norm = lambda j: re.sub(r"\W", "", clean_company(j["company"]) + j["title"]).lower()
     new_health = {}
@@ -979,7 +1033,7 @@ def main():
         fetched[scope] = [j for j in jobs if j["title"]]  # a posting with no title is not a posting
 
     known = {t[0] for t in tasks}  # boards removed from companies.json: close their jobs instead of leaving them open forever
-    for scope in open_n:
+    for scope in (target_scopes if target_scopes is not None else open_n):
         if scope not in known:
             fetched[scope] = []
 
@@ -991,8 +1045,8 @@ def main():
     for r in results:
         busy[r[0].split(":")[0]] = busy.get(r[0].split(":")[0], 0) + r[3]
     print("busy per lane (seconds of work / workers): " + ", ".join(f"{k} {v:.0f}/{LANES.get(k, 1)}" for k, v in sorted(busy.items(), key=lambda kv: -kv[1])[:6]))
-    if not fetched:
-        sys.exit("all sources failed")
+    if not fetched and tasks:
+        sys.exit("all assigned sources failed")
 
     before, pruned = set(db), []
     db = merge(db, fetched, today, pruned)
@@ -1000,9 +1054,12 @@ def main():
     db = {i: o for i, o in db.items() if not (o["closed_at"] and i.split(":")[0] in CAPPED)}
     n_open = sum(o["closed_at"] is None for o in db.values())
     print(f"sources ok={len(fetched)} failed={len(failed)} | new={len(set(db) - before)} open={n_open} closed={len(db) - n_open} | {time.time() - t_start:.0f}s")
-    save(db)
-    log_history(db, pruned, today)
-    HEALTH.write_text(chr(10).join(json.dumps({"b": k, **v}, sort_keys=True) for k, v in sorted(new_health.items())) + chr(10), encoding="utf-8", newline=chr(10))  # one board per line
+    save(db, target_scopes)
+    if target_scopes is None:
+        log_history(db, pruned, today)
+    combined_health = {**health, **new_health}
+    health_file = Path(f"data/health-{args.shard}.json") if args.total_shards > 1 else HEALTH
+    health_file.write_text(chr(10).join(json.dumps({"b": k, **v}, sort_keys=True) for k, v in sorted(combined_health.items())) + chr(10), encoding="utf-8", newline=chr(10))  # one board per line
     if unfinished:  # everything is saved; threads stuck in a slow request must not keep the process (and the Actions job) alive
         print(f"::warning title=scrape timed out::{len(unfinished)} sources did not finish: {', '.join(unfinished[:10])}")
         sys.stdout.flush()
