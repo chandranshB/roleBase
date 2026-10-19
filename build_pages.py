@@ -176,9 +176,13 @@ def main():
          [home, ("Companies", f"{BASE}/companies/")])
 
     # one page per company
+    by_company = {}
+    for j in jobs:
+        by_company.setdefault(j["company"], []).append(j)
+
     for c in cs:
         name, s = c["company"], cmap[c["company"]]
-        js = [j for j in jobs if j["company"] == name]
+        js = by_company.get(name, [])
         text, _, short = stats_text(js, "job", name)
         cats = Counter(j["category"] for j in js)
         byf = join(('<a href="%s/fields/%s/">%s</a> (%d)' % (BASE, c, esc(FIELDS[c].lower()), v)) if c in FIELDS else "other (%d)" % v for c, v in cats.most_common(4))

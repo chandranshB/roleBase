@@ -11,6 +11,7 @@ import html
 import json
 import os
 import re
+import shutil
 import sys
 import time
 import xml.etree.ElementTree as ET
@@ -799,16 +800,27 @@ def url_of(id):  # apply URL is derivable for ATS jobs, so it is only stored whe
 
 def load():
     # split("\n"), not splitlines(): titles can contain U+2028 etc., which splitlines() would cut on
-    rows = (l for f in DIR.glob("*.jsonl") for l in f.read_text(encoding="utf-8").split("\n") if l)
     db = {}
-    for j in map(json.loads, rows):
-        j.setdefault("source", j["id"].split(":")[0])
-        j.setdefault("url", url_of(j["id"]))
-        j.setdefault("level", level(j["title"], j.get("years")))  # derived, so a better classifier fixes old rows too
-        j.setdefault("category", category(j["title"], j.get("team")))
-        for k, v in DEFAULTS.items():
-            j.setdefault(k, list(v) if isinstance(v, list) else v)
-        db[j["id"]] = j
+    for f in DIR.glob("*.jsonl"):
+        try:
+            content = f.read_text(encoding="utf-8")
+        except Exception:
+            continue
+        for l in content.split("\n"):
+            l = l.strip()
+            if not l:
+                continue
+            try:
+                j = json.loads(l)
+            except Exception:
+                continue
+            j.setdefault("source", j["id"].split(":")[0])
+            j.setdefault("url", url_of(j["id"]))
+            j.setdefault("level", level(j["title"], j.get("years")))  # derived, so a better classifier fixes old rows too
+            j.setdefault("category", category(j["title"], j.get("team")))
+            for k, v in DEFAULTS.items():
+                j.setdefault(k, list(v) if isinstance(v, list) else v)
+            db[j["id"]] = j
     return db
 
 
@@ -970,6 +982,34 @@ def main():
 
     if args.consolidate:
         print("Consolidating shards...")
+        shards_dir = Path("data/shards")
+        if shards_dir.exists():
+            for sdir in sorted(shards_dir.glob("shard-*")):
+                for jf in sdir.glob("*.jsonl"):
+                    shutil.copy(jf, DIR / jf.name)
+        all_health = {}
+        if HEALTH.exists():
+            for line in HEALTH.read_text(encoding="utf-8").splitlines():
+                if line.strip():
+                    try:
+                        r = json.loads(line)
+                        all_health[r.pop("b")] = r
+                    except Exception:
+                        pass
+        health_sources = list(shards_dir.glob("shard-*/health.json")) + list(Path("data").glob("health-*.json"))
+        for hf in health_sources:
+            for line in hf.read_text(encoding="utf-8").splitlines():
+                if line.strip():
+                    try:
+                        r = json.loads(line)
+                        all_health[r.pop("b")] = r
+                    except Exception:
+                        pass
+        if all_health:
+            HEALTH.write_text("\n".join(json.dumps({"b": k, **v}, sort_keys=True) for k, v in sorted(all_health.items())) + "\n", encoding="utf-8", newline="\n")
+        shutil.rmtree(shards_dir, ignore_errors=True)
+        for hf in Path("data").glob("health-*.json"):
+            hf.unlink(missing_ok=True)
         db = load()
         cutoff = (dt.date.fromisoformat(today) - dt.timedelta(KEEP_CLOSED_DAYS)).isoformat()
         pruned = [o for o in db.values() if o["closed_at"] and o["closed_at"] < cutoff]
@@ -977,20 +1017,6 @@ def main():
             db = {i: o for i, o in db.items() if not (o["closed_at"] and o["closed_at"] < cutoff)}
             save(db)
         log_history(db, pruned, today)
-        all_health = {}
-        if HEALTH.exists():
-            for line in HEALTH.read_text(encoding="utf-8").splitlines():
-                if line.strip():
-                    r = json.loads(line)
-                    all_health[r.pop("b")] = r
-        for hf in Path("data").glob("health-*.json"):
-            for line in hf.read_text(encoding="utf-8").splitlines():
-                if line.strip():
-                    r = json.loads(line)
-                    all_health[r.pop("b")] = r
-            hf.unlink(missing_ok=True)
-        if all_health:
-            HEALTH.write_text("\n".join(json.dumps({"b": k, **v}, sort_keys=True) for k, v in sorted(all_health.items())) + "\n", encoding="utf-8", newline="\n")
         n_open = sum(o["closed_at"] is None for o in db.values())
         print(f"Consolidation complete: {n_open:,} active jobs, {len(db) - n_open:,} closed jobs | {time.time() - t_start:.1f}s")
         return
@@ -1060,6 +1086,18 @@ def main():
     combined_health = {**health, **new_health}
     health_file = Path(f"data/health-{args.shard}.json") if args.total_shards > 1 else HEALTH
     health_file.write_text(chr(10).join(json.dumps({"b": k, **v}, sort_keys=True) for k, v in sorted(combined_health.items())) + chr(10), encoding="utf-8", newline=chr(10))  # one board per line
+    if target_scopes is not None and args.total_shards > 1:
+        shard_out = Path(f"data/shards/shard-{args.shard}")
+        shard_out.mkdir(parents=True, exist_ok=True)
+        target_names = {s.replace(":", "_").replace("/", "_") for s in target_scopes}
+        for name in target_names:
+            src = DIR / f"{name}.jsonl"
+            if src.exists():
+                shutil.copy(src, shard_out / f"{name}.jsonl")
+        (shard_out / "health.json").write_text(
+            chr(10).join(json.dumps({"b": k, **v}, sort_keys=True) for k, v in sorted(combined_health.items())) + chr(10),
+            encoding="utf-8", newline=chr(10)
+        )
     if unfinished:  # everything is saved; threads stuck in a slow request must not keep the process (and the Actions job) alive
         print(f"::warning title=scrape timed out::{len(unfinished)} sources did not finish: {', '.join(unfinished[:10])}")
         sys.stdout.flush()

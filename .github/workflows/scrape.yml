@@ -31,8 +31,8 @@ jobs:
       - name: Upload Shard Artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: jobs-shard-${{ matrix.shard }}
-          path: data/
+          name: shard-${{ matrix.shard }}
+          path: data/shards/shard-${{ matrix.shard }}
           retention-days: 1
 
   consolidate:
@@ -49,9 +49,8 @@ jobs:
       - name: Download all shard artifacts
         uses: actions/download-artifact@v4
         with:
-          pattern: jobs-shard-*
-          merge-multiple: true
-          path: data/
+          pattern: shard-*
+          path: data/shards
       - name: Consolidate data and generate charts
         run: python scraper.py --consolidate && python make_charts.py
       - name: Commit data
