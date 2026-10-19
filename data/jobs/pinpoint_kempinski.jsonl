@@ -220,7 +220,7 @@
 {"company":"Kempinski Hotels","first_seen":"2026-10-18","id":"pinpoint:kempinski:bb465780-3ec0-4b73-9af1-2620b66cdf00","location":"Austria - Kitzbuehel","title":"Technik Mitarbeiter/in (m/w/x)"}
 {"company":"Kempinski Hotels","employment":"internship","first_seen":"2026-10-18","id":"pinpoint:kempinski:bbe2d31f-0cb4-4976-b409-06825239de5d","location":"Hungary - Budapest","title":"Front Office Intern"}
 {"company":"Kempinski Hotels","first_seen":"2026-10-18","id":"pinpoint:kempinski:bc8a8857-0c88-4dfc-a586-29599a862875","location":"China - Chongqing","skills":["social_media","customer_service","budgeting","ms_office"],"title":"Director of Rooms"}
-{"company":"Kempinski Hotels","first_seen":"2026-10-18","id":"pinpoint:kempinski:bd63a8cc-afd7-42a4-83f5-e5f520338bbd","location":"Egypt - Safaga","skills":["ms_office"],"title":"Reservation Agent (Egyptian Only)"}
+{"closed_at":"2026-10-19","company":"Kempinski Hotels","first_seen":"2026-10-18","id":"pinpoint:kempinski:bd63a8cc-afd7-42a4-83f5-e5f520338bbd","location":"Egypt - Safaga","skills":["ms_office"],"title":"Reservation Agent (Egyptian Only)"}
 {"company":"Kempinski Hotels","first_seen":"2026-10-18","id":"pinpoint:kempinski:bd9208af-e67d-4532-b070-0646644ce938","location":"United Arab Emirates - Dubai","title":"Waiter - K West Bar","years":1}
 {"company":"Kempinski Hotels","first_seen":"2026-10-18","id":"pinpoint:kempinski:be6cf744-0943-4831-9016-3c51f739aadd","location":"Oman - Muscat","skills":["haccp"],"title":"Room Service Order Taker"}
 {"company":"Kempinski Hotels","first_seen":"2026-10-18","id":"pinpoint:kempinski:beca5f92-e15a-4532-9647-084370997ed2","location":"Egypt - Cairo","skills":["haccp","food_safety","time_management","ms_office"],"title":"Sous Chef - Egyptians Only","years":5}
@@ -237,6 +237,7 @@
 {"company":"Kempinski Hotels","first_seen":"2026-10-18","id":"pinpoint:kempinski:cd904fcb-2a3e-4c67-8fe0-d66228fc232c","location":"United Arab Emirates - Dubai","skills":["haccp"],"title":"Restaurant General Manager (Beach)","years":4}
 {"company":"Kempinski Hotels","first_seen":"2026-10-18","id":"pinpoint:kempinski:d12f192c-dcb5-4724-9a15-90fc87a05854","location":"Ghana - Accra","skills":["time_management"],"title":"In-Room Dinning Order Taker (Local Hire)","years":3}
 {"company":"Kempinski Hotels","first_seen":"2026-10-18","id":"pinpoint:kempinski:d1617743-e781-480f-b242-4813765cf8de","location":"Ghana - Accra","skills":["customer_service","budgeting","ms_office"],"title":"Hotel Manager"}
+{"company":"Kempinski Hotels","first_seen":"2026-10-19","id":"pinpoint:kempinski:d2fad77b-e26f-4171-8086-e9328c6dc1d4","location":"United Arab Emirates - Dubai","title":"Resident Manager"}
 {"company":"Kempinski Hotels","first_seen":"2026-10-18","id":"pinpoint:kempinski:d3a4f8e1-0adf-4424-a833-dd2406d1667b","location":"United Arab Emirates - Dubai","skills":["crm","budgeting","forecasting"],"title":"CRM Manager","years":5}
 {"company":"Kempinski Hotels","first_seen":"2026-10-18","id":"pinpoint:kempinski:d524aff0-b4c6-49a0-a4b7-ccdda6b64734","location":"Lebanon - Beirut","skills":["customer_service"],"title":"Spa Receptionist"}
 {"company":"Kempinski Hotels","first_seen":"2026-10-18","id":"pinpoint:kempinski:d5e6d350-b8be-4f6f-b514-2faf4f5b10f4","location":"Prague","title":"BARTENDER"}

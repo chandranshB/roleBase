@@ -108,7 +108,7 @@
 {"b": "ashby:brigit", "last_ok": "", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
 {"b": "ashby:brinc", "last_ok": "", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
 {"b": "ashby:bronxton", "last_ok": "", "strikes": 0, "why": "error: 404 Client Error: Not Found for url: https://api.ashbyhq.com/posting-api/job-board/bronxton?includeCompensation=true"}
-{"b": "ashby:brooklinen", "last_ok": "2026-10-19", "strikes": 0}
+{"b": "ashby:brooklinen", "last_ok": "2026-10-19", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
 {"b": "ashby:bubble", "last_ok": "", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
 {"b": "ashby:buffer", "last_ok": "", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
 {"b": "ashby:buildout", "last_ok": "", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
@@ -183,7 +183,7 @@
 {"b": "ashby:cubesoftware", "last_ok": "", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
 {"b": "ashby:cubic3", "last_ok": "", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
 {"b": "ashby:cuesta-partners", "last_ok": "", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
-{"b": "ashby:cursor", "last_ok": "2026-10-19", "strikes": 0}
+{"b": "ashby:cursor", "last_ok": "2026-10-19", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
 {"b": "ashby:cyberhaven", "last_ok": "", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
 {"b": "ashby:cytora.com", "last_ok": "", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
 {"b": "ashby:dailypay", "last_ok": "", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
@@ -220,7 +220,7 @@
 {"b": "ashby:ekumenlabs", "last_ok": "", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
 {"b": "ashby:electric", "last_ok": "2026-10-19", "strikes": 0}
 {"b": "ashby:element451", "last_ok": "", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
-{"b": "ashby:elevenlabs", "last_ok": "2026-10-19", "strikes": 0}
+{"b": "ashby:elevenlabs", "last_ok": "2026-10-19", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
 {"b": "ashby:eliseai", "last_ok": "", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
 {"b": "ashby:elliptic", "last_ok": "", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
 {"b": "ashby:enpal", "last_ok": "2026-10-19", "strikes": 0}
@@ -249,7 +249,7 @@
 {"b": "ashby:fnatic", "last_ok": "", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
 {"b": "ashby:fonoa", "last_ok": "", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
 {"b": "ashby:forma", "last_ok": "", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
-{"b": "ashby:formenergy", "last_ok": "2026-10-19", "strikes": 0}
+{"b": "ashby:formenergy", "last_ok": "2026-10-19", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
 {"b": "ashby:forto", "last_ok": "", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
 {"b": "ashby:fortreum", "last_ok": "", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
 {"b": "ashby:found", "last_ok": "", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
@@ -314,7 +314,7 @@
 {"b": "ashby:holywater", "last_ok": "", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
 {"b": "ashby:homebase", "last_ok": "", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
 {"b": "ashby:homebot", "last_ok": "2026-10-19", "strikes": 0}
-{"b": "ashby:hopper", "last_ok": "2026-10-19", "strikes": 0}
+{"b": "ashby:hopper", "last_ok": "2026-10-19", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
 {"b": "ashby:horizon3ai", "last_ok": "", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
 {"b": "ashby:hubstaff", "last_ok": "", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
 {"b": "ashby:humaans", "last_ok": "", "strikes": 0, "why": "error: Expecting value: line 1 column 2 (char 1)"}
@@ -388,7 +388,7 @@
 {"b": "ashby:leapsome", "last_ok": "", "strikes": 0, "why": "error: 404 Client Error: Not Found for url: https://api.ashbyhq.com/posting-api/job-board/leapsome?includeCompensation=true"}
 {"b": "ashby:leavitt", "last_ok": "", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
 {"b": "ashby:ledger", "last_ok": "2026-10-19", "strikes": 0}
-{"b": "ashby:lemonade", "last_ok": "2026-10-19", "strikes": 0}
+{"b": "ashby:lemonade", "last_ok": "2026-10-19", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
 {"b": "ashby:lendable", "last_ok": "", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
 {"b": "ashby:levelpath", "last_ok": "", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
 {"b": "ashby:lgads", "last_ok": "", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
@@ -434,10 +434,10 @@
 {"b": "ashby:method-crm", "last_ok": "", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
 {"b": "ashby:miaplaza", "last_ok": "", "strikes": 0, "why": "error: 404 Client Error: Not Found for url: https://api.ashbyhq.com/posting-api/job-board/miaplaza?includeCompensation=true"}
 {"b": "ashby:middesk", "last_ok": "", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
-{"b": "ashby:midjourney", "last_ok": "2026-10-19", "strikes": 0}
+{"b": "ashby:midjourney", "last_ok": "2026-10-19", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
 {"b": "ashby:mindvalley", "last_ok": "", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
 {"b": "ashby:mirage", "last_ok": "", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
-{"b": "ashby:miro", "last_ok": "2026-10-19", "strikes": 0}
+{"b": "ashby:miro", "last_ok": "2026-10-19", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
 {"b": "ashby:miso", "last_ok": "", "strikes": 0, "why": "error: 404 Client Error: Not Found for url: https://api.ashbyhq.com/posting-api/job-board/miso?includeCompensation=true"}
 {"b": "ashby:miter", "last_ok": "", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
 {"b": "ashby:modal", "last_ok": "2026-10-19", "strikes": 0}
@@ -499,7 +499,7 @@
 {"b": "ashby:protegrity", "last_ok": "", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
 {"b": "ashby:provenirinc", "last_ok": "", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
 {"b": "ashby:publiccloudgroup", "last_ok": "2026-10-19", "strikes": 0}
-{"b": "ashby:qonto", "last_ok": "2026-10-19", "strikes": 0}
+{"b": "ashby:qonto", "last_ok": "2026-10-19", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
 {"b": "ashby:quantcast", "last_ok": "2026-10-19", "strikes": 0}
 {"b": "ashby:quora", "last_ok": "", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
 {"b": "ashby:quorum", "last_ok": "", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
@@ -548,7 +548,7 @@
 {"b": "ashby:stickermule", "last_ok": "", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
 {"b": "ashby:strava", "last_ok": "2026-10-19", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
 {"b": "ashby:substack", "last_ok": "2026-10-19", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
-{"b": "ashby:suno", "last_ok": "2026-10-19", "strikes": 0}
+{"b": "ashby:suno", "last_ok": "2026-10-19", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
 {"b": "ashby:supabase", "last_ok": "2026-10-19", "strikes": 0}
 {"b": "ashby:super.com", "last_ok": "", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
 {"b": "ashby:supercell", "last_ok": "2026-10-19", "strikes": 0}
@@ -592,7 +592,7 @@
 {"b": "ashby:watershed", "last_ok": "2026-10-19", "strikes": 0}
 {"b": "ashby:wayflyer", "last_ok": "", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
 {"b": "ashby:wayve", "last_ok": "2026-10-19", "strikes": 0}
-{"b": "ashby:wealthsimple", "last_ok": "2026-10-19", "strikes": 0}
+{"b": "ashby:wealthsimple", "last_ok": "2026-10-19", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
 {"b": "ashby:weave", "last_ok": "", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
 {"b": "ashby:webflow", "last_ok": "2026-10-19", "strikes": 0}
 {"b": "ashby:welltech", "last_ok": "", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
@@ -814,8 +814,8 @@
 {"b": "breezy:wongnai-media-co-ltd", "last_ok": "", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
 {"b": "breezy:yardiromania", "last_ok": "", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
 {"b": "breezy:zameen", "last_ok": "", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
-{"b": "breezy:zero-hash", "last_ok": "2026-10-19", "strikes": 0}
-{"b": "cryptojobs", "last_ok": "2026-10-19", "strikes": 0}
+{"b": "breezy:zero-hash", "last_ok": "2026-10-19", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "cryptojobs", "last_ok": "2026-10-19", "strikes": 0, "why": "error: not well-formed (invalid token): line 1, column 0"}
 {"b": "eightfold:apply.starbucks.com/starbucks.com", "last_ok": "2026-10-19", "strikes": 0}
 {"b": "eightfold:bostonscientific.eightfold.ai/bostonscientific.com", "last_ok": "2026-10-19", "strikes": 0}
 {"b": "eightfold:careers.qualcomm.com/qualcomm.com", "last_ok": "2026-10-19", "strikes": 0}
