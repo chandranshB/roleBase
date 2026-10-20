@@ -36,4 +36,6 @@
 {"company":"Capital on Tap","first_seen":"2026-10-19","id":"greenhouse:capitalontap:8867733002","location":"Cardiff","pay":[30000,34000,"GBP"],"posted":"2026-10-05","team":"Customer Operations","title":"Fraud Investigator"}
 {"company":"Capital on Tap","first_seen":"2026-10-19","id":"greenhouse:capitalontap:8870821002","location":"London","posted":"2026-10-06","team":"Compliance","title":"Financial Crime Compliance Specialist (Advisory)"}
 {"company":"Capital on Tap","first_seen":"2026-10-19","id":"greenhouse:capitalontap:8883499002","location":"London","posted":"2026-10-12","skills":["llm","c#","azure"],"team":"IT","title":"Head of AI Enablement & Engineering"}
-{"company":"Capital on Tap","first_seen":"2026-10-19","id":"greenhouse:capitalontap:8895613002","location":"London","posted":"2026-10-16","skills":["sql"],"team":"Operations","title":"AI Specialist"}
+{"closed_at":"2026-10-20","company":"Capital on Tap","first_seen":"2026-10-19","id":"greenhouse:capitalontap:8895613002","location":"London","posted":"2026-10-16","skills":["sql"],"team":"Operations","title":"AI Specialist"}
+{"company":"Capital on Tap","first_seen":"2026-10-20","id":"greenhouse:capitalontap:8900288002","location":"Cardiff","posted":"2026-10-19","title":"Express your interest in Capital on Tap"}
+{"company":"Capital on Tap","first_seen":"2026-10-20","id":"greenhouse:capitalontap:8901912002","location":"London","posted":"2026-10-20","skills":["azure"],"team":"IT","title":"Team Lead Platform Engineering"}

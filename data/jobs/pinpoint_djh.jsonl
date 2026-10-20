@@ -10,7 +10,7 @@
 {"company":"DJH","first_seen":"2026-10-19","id":"pinpoint:djh:25cfbb10-6ae4-445d-885c-1d7609c0e2b9","location":"Bexley","title":"Tax Trainee"}
 {"company":"DJH","first_seen":"2026-10-19","id":"pinpoint:djh:2953fbf5-79d1-413b-9e1e-e73e4be41bfa","location":"Walsall","title":"Trainee Accountant"}
 {"company":"DJH","employment":"full_time","first_seen":"2026-10-19","id":"pinpoint:djh:2e101dab-942f-4d33-9e3a-89c44d008c78","location":"Manchester","title":"Private Client Solicitor"}
-{"company":"DJH","employment":"full_time","first_seen":"2026-10-19","id":"pinpoint:djh:2e1673e3-f30f-4beb-ac45-61c414a81bea","location":"Bury","title":"Audit Senior"}
+{"closed_at":"2026-10-20","company":"DJH","employment":"full_time","first_seen":"2026-10-19","id":"pinpoint:djh:2e1673e3-f30f-4beb-ac45-61c414a81bea","location":"Bury","title":"Audit Senior"}
 {"company":"DJH","employment":"full_time","first_seen":"2026-10-19","id":"pinpoint:djh:3756e0a5-dc51-4cec-b57c-33b14583be9e","location":"Manchester","skills":["budgeting"],"title":"Transaction Services Associate Director / Director","years":10}
 {"company":"DJH","first_seen":"2026-10-19","id":"pinpoint:djh:3a5ae24c-8031-48fa-807a-4551a444e3ef","location":"Maidstone","title":"Audit Trainee"}
 {"company":"DJH","first_seen":"2026-10-19","id":"pinpoint:djh:3c448d33-8b88-4551-93d0-db9a3578b6bb","location":"Manchester","title":"Audit Trainee"}
@@ -21,6 +21,7 @@
 {"company":"DJH","first_seen":"2026-10-19","id":"pinpoint:djh:534e9a7e-9b37-46ba-a0c1-e9da1b7eee89","location":"Hereford","title":"Audit Trainee"}
 {"company":"DJH","employment":"full_time","first_seen":"2026-10-19","id":"pinpoint:djh:5530bcb9-0a91-4f02-b89e-5fdca8123186","location":"Liverpool","title":"Private Client Solicitor"}
 {"company":"DJH","first_seen":"2026-10-19","id":"pinpoint:djh:56986556-f5e2-47c3-8ed4-383902e00e21","location":"Halesowen","title":"Accounts & Audit Trainee"}
+{"company":"DJH","employment":"full_time","first_seen":"2026-10-20","id":"pinpoint:djh:5cc65b53-c940-4eaf-9fba-6a4a931a64de","location":"Derby","title":"Senior Accountant"}
 {"company":"DJH","employment":"full_time","first_seen":"2026-10-19","id":"pinpoint:djh:613b588f-6449-4bd5-961f-ed15e0602bd2","location":"Stoke on Trent","skills":["forecasting","budgeting"],"title":"Management Accountant"}
 {"company":"DJH","first_seen":"2026-10-19","id":"pinpoint:djh:6724e928-69a1-48de-85b7-ab9da78f8894","location":"Dublin","title":"Trainee Accountant"}
 {"company":"DJH","first_seen":"2026-10-19","id":"pinpoint:djh:706dbe24-ce4b-4b3d-bc9c-6b7baac4d4b3","location":"Trowbridge","title":"Trainee Accountant"}
@@ -55,7 +56,10 @@
 {"company":"DJH","employment":"full_time","first_seen":"2026-10-19","id":"pinpoint:djh:bc8eac89-aba7-4cfd-9174-fa52a27b7bd5","location":"Bury","title":"Audit & Accounts Semi Senior"}
 {"company":"DJH","first_seen":"2026-10-19","id":"pinpoint:djh:c306c9bd-a958-4a5c-9a3d-e76705c60d8f","location":"Manchester","title":"Trainee Accountant"}
 {"company":"DJH","first_seen":"2026-10-19","id":"pinpoint:djh:c8cda895-3cb3-459d-a2bb-93702b1505d8","location":"Bexley","title":"Trainee Accountant"}
+{"company":"DJH","employment":"full_time","first_seen":"2026-10-20","id":"pinpoint:djh:ca14d4bf-6026-4a93-9a2e-a8178d7f1024","location":"Derby","title":"Semi Senior Accountant"}
+{"company":"DJH","employment":"full_time","first_seen":"2026-10-20","id":"pinpoint:djh:cd90a93a-fe04-4ef0-b559-2e33d44eb0f7","location":"Derby","title":"Audit Semi Senior"}
 {"company":"DJH","employment":"full_time","first_seen":"2026-10-19","id":"pinpoint:djh:d1664b1a-3e30-4b99-8b8f-8dbb8e4349b2","location":"Hereford","skills":["payroll"],"title":"Bookkeeper","years":2}
+{"company":"DJH","employment":"full_time","first_seen":"2026-10-20","id":"pinpoint:djh:d2d22b97-bf0f-4fb6-a9ae-6538d713b357","location":"Derby","title":"Audit Senior"}
 {"company":"DJH","first_seen":"2026-10-19","id":"pinpoint:djh:d353d749-c046-40e9-a64d-693a9e9d4e7a","location":"Bury","skills":["data_entry","payroll"],"title":"Tax Trainee"}
 {"company":"DJH","employment":"full_time","first_seen":"2026-10-19","id":"pinpoint:djh:d3c6b82c-33cc-4a85-9beb-4b7032928891","location":"Dublin","skills":["ms_office"],"title":"Office Manager"}
 {"company":"DJH","first_seen":"2026-10-19","id":"pinpoint:djh:d41ba671-ebb9-4a32-bd1f-e7a16821e428","location":"Altrincham","title":"Audit Trainee"}
@@ -64,5 +68,5 @@
 {"company":"DJH","first_seen":"2026-10-19","id":"pinpoint:djh:da8e3cd5-62ac-464d-b93b-ede1f010e469","location":"Halesowen","title":"Accounts & Audit Trainee"}
 {"company":"DJH","employment":"full_time","first_seen":"2026-10-19","id":"pinpoint:djh:df6942d9-aceb-4587-822b-9163e36032ea","location":"Halesowen","skills":["gaap"],"title":"Audit & Accounts Senior"}
 {"company":"DJH","first_seen":"2026-10-19","id":"pinpoint:djh:ef144021-1472-4c3e-aea0-7c59eda7f2a4","location":"Bexley","title":"Audit Trainee"}
-{"company":"DJH","employment":"full_time","first_seen":"2026-10-19","id":"pinpoint:djh:f0187d49-355e-403d-a9f6-f770702e7358","location":"Stoke on Trent","title":"Audit Senior"}
+{"closed_at":"2026-10-20","company":"DJH","employment":"full_time","first_seen":"2026-10-19","id":"pinpoint:djh:f0187d49-355e-403d-a9f6-f770702e7358","location":"Stoke on Trent","title":"Audit Senior"}
 {"company":"DJH","employment":"full_time","first_seen":"2026-10-19","id":"pinpoint:djh:f23295a6-40dc-454d-80ab-7a9e8b624823","location":"Manchester","title":"Assistant Client Manager"}
