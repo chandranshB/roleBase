@@ -41,7 +41,7 @@
 {"company":"Enva","first_seen":"2026-10-19","id":"pinpoint:enva:cd6f9900-3efa-45b0-8b57-3432b2c3b56c","location":"Colwick","title":"Yard Marshall"}
 {"company":"Enva","first_seen":"2026-10-19","id":"pinpoint:enva:cdc1900e-4656-4e6e-a416-a942249afa65","location":"Rathcoole","title":"Packaging General Operative"}
 {"company":"Enva","first_seen":"2026-10-19","id":"pinpoint:enva:ce392149-88d6-4860-befb-fc01f1082675","location":"Colwick","pay":[40000,45000,"GBP"],"skills":["customer_service"],"title":"HGV driver Nottingham"}
-{"company":"Enva","first_seen":"2026-10-19","id":"pinpoint:enva:ce4857c3-23e6-4cd6-94f8-c2cd4c207a2e","location":"Linwood","title":"Mobile Plant Operative - Nightshift"}
+{"closed_at":"2026-10-20","company":"Enva","first_seen":"2026-10-19","id":"pinpoint:enva:ce4857c3-23e6-4cd6-94f8-c2cd4c207a2e","location":"Linwood","title":"Mobile Plant Operative - Nightshift"}
 {"company":"Enva","first_seen":"2026-10-19","id":"pinpoint:enva:d2f69542-dd2d-4979-9bc1-c60de9c84e99","location":"Linwood","skills":["procurement"],"title":"Fleet Maintenance Planning Supervisor"}
 {"company":"Enva","first_seen":"2026-10-19","id":"pinpoint:enva:db10a6d4-4dff-4e05-86ac-3444055812ce","location":"Enniscorthy","title":"Trainee Industrial Services Jet Vac Operative /Driver"}
 {"company":"Enva","first_seen":"2026-10-19","id":"pinpoint:enva:db7d3b83-9f3e-48ad-99ff-057949cab049","location":"Perth","title":"General Operator - Nights"}
@@ -50,7 +50,7 @@
 {"company":"Enva","first_seen":"2026-10-19","id":"pinpoint:enva:e31c7d65-15f4-444c-bb7f-82bcd14b3cd6","location":"Carryduff [IW]","title":"Jet Vac Operative"}
 {"company":"Enva","first_seen":"2026-10-19","id":"pinpoint:enva:e4a3c50e-9b42-43f2-bd59-c0de4fac1814","location":"Grantham","title":"General Operative"}
 {"company":"Enva","first_seen":"2026-10-19","id":"pinpoint:enva:e93952ba-5f24-4bf9-8b49-82331b0acf4a","location":"Portlaoise","skills":["customer_service","crm","time_management"],"title":"Customer Service Administrator","years":2}
-{"company":"Enva","first_seen":"2026-10-19","id":"pinpoint:enva:e94c953f-50ba-415d-ba33-77a79e4354da","location":"Grantham","pay":[27000,31000,"GBP"],"skills":["payroll"],"title":"Operations Administrator"}
+{"closed_at":"2026-10-20","company":"Enva","first_seen":"2026-10-19","id":"pinpoint:enva:e94c953f-50ba-415d-ba33-77a79e4354da","location":"Grantham","pay":[27000,31000,"GBP"],"skills":["payroll"],"title":"Operations Administrator"}
 {"company":"Enva","first_seen":"2026-10-19","id":"pinpoint:enva:ef8dde07-7cbe-426b-856f-d7ce542e3710","location":"Carryduff [IW]","skills":["customer_service"],"title":"Jet Vac Driver"}
 {"company":"Enva","first_seen":"2026-10-19","id":"pinpoint:enva:fc28510e-1829-4de2-acdb-c775afe04f23","location":"Colwick","skills":["supply_chain","negotiation"],"title":"National Service Partner Manager"}
 {"company":"Enva","first_seen":"2026-10-19","id":"pinpoint:enva:fc9a5daf-b0a7-4f7a-b0dc-157a2a789a6e","location":"Portlaoise","skills":["procurement","ms_office","powerpoint","autocad"],"title":"Project Engineer","years":1}
