@@ -10,11 +10,12 @@
 {"company":"Acino","first_seen":"2026-10-19","id":"bamboohr:acino:1021","location":"Cairo, Cairo","team":"General Admin","title":"Temp. Office Manager"}
 {"company":"Acino","first_seen":"2026-10-19","id":"bamboohr:acino:1024","location":"Dubai","team":"Engineering","title":"Engineering Technician"}
 {"company":"Acino","first_seen":"2026-10-19","id":"bamboohr:acino:1025","location":"Cairo, Cairo","team":"Finance","title":"Account Receivable Section Head"}
-{"company":"Acino","first_seen":"2026-10-19","id":"bamboohr:acino:1026","location":"Egypt","team":"Legal","title":"Legal Counsel - Technical Operations & Manufacturing, Egypt"}
+{"closed_at":"2026-10-20","company":"Acino","first_seen":"2026-10-19","id":"bamboohr:acino:1026","location":"Egypt","team":"Legal","title":"Legal Counsel - Technical Operations & Manufacturing, Egypt"}
 {"closed_at":"2026-10-19","company":"Acino","first_seen":"2026-10-19","id":"bamboohr:acino:1027","location":"München, Bavaria","team":"Quality Assurance","title":"QA Manager 100% (w/m/d)"}
 {"company":"Acino","first_seen":"2026-10-19","id":"bamboohr:acino:1029","location":"Cairo, Cairo","team":"Quality Control","title":"Quality Control Sr. Specialist (IRM / IPM)"}
 {"company":"Acino","first_seen":"2026-10-19","id":"bamboohr:acino:1030","location":"Cairo, Cairo","team":"Quality Control","title":"QC Incoming Materials Sampling Senior Specialist"}
 {"company":"Acino","employment":"contract","first_seen":"2026-10-19","id":"bamboohr:acino:1031","location":"Dubai","team":"Finance","title":"Financial Controller - 1 Year Contract"}
+{"company":"Acino","first_seen":"2026-10-20","id":"bamboohr:acino:1032","location":"Dubai","skills":["supply_chain"],"team":"Supply Chain","title":"Supply Chain Executive - Logistics"}
 {"company":"Acino","first_seen":"2026-10-19","id":"bamboohr:acino:784","location":"Liesberg, Baselland","team":"Electric and Automation","title":"Elektriker 100 % (m/w/d)"}
 {"company":"Acino","first_seen":"2026-10-19","id":"bamboohr:acino:800","location":"Egypt","team":"Quality Control","title":"Quality Control Specialist - (Incoming Materials)"}
 {"company":"Acino","first_seen":"2026-10-19","id":"bamboohr:acino:803","location":"Egypt","team":"Quality Control","title":"Quality Control Senior Specialist - Finished Products"}
@@ -47,7 +48,7 @@
 {"company":"Acino","first_seen":"2026-10-19","id":"bamboohr:acino:987","location":"Dubai","team":"Production","title":"Production Operator - 9 Positions"}
 {"company":"Acino","first_seen":"2026-10-19","id":"bamboohr:acino:989","location":"Liesberg, Baselland","title":"Initiativbewerbung (w/m/d)"}
 {"company":"Acino","first_seen":"2026-10-19","id":"bamboohr:acino:990","location":"Dubai","team":"Production","title":"Production Supervisor - 2 Positions"}
-{"company":"Acino","first_seen":"2026-10-19","id":"bamboohr:acino:993","location":"Cairo, Cairo","team":"Commercial Operations","title":"Digital Marketing and Customer Engagement Head"}
+{"closed_at":"2026-10-20","company":"Acino","first_seen":"2026-10-19","id":"bamboohr:acino:993","location":"Cairo, Cairo","team":"Commercial Operations","title":"Digital Marketing and Customer Engagement Head"}
 {"company":"Acino","first_seen":"2026-10-19","id":"bamboohr:acino:994","location":"Cairo, Cairo","team":"Sales","title":"Medical Representative - Luxor & Hurghada (same territory)"}
 {"company":"Acino","first_seen":"2026-10-19","id":"bamboohr:acino:997","location":"Dubai, Dubai","team":"Commercial Operations","title":"Business Unit Head (Gastro), Gulf Region"}
 {"company":"Acino","first_seen":"2026-10-19","id":"bamboohr:acino:998","location":"Dubai, Dubai","skills":["supply_chain"],"team":"Supply Chain","title":"Senior Supply Chain Officer"}
