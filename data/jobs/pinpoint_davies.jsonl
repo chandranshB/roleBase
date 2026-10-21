@@ -270,7 +270,7 @@
 {"company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:d8c81366-3e89-49c0-ac8e-7b63cd837e7d","location":"Leeds","title":"Crime & Regulatory - Solicitor"}
 {"company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:dcdf6418-5851-4de2-8ba0-a6873c235395","location":"Toronto","pay":[50000,65000,"CAD"],"skills":["ms_office"],"title":"Staff Accountant- Toronto","years":3}
 {"company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:dd46a0e9-a14d-4524-a923-d573eff9e54e","location":"Pune","skills":["accounts_payable","procurement","supply_chain","erp","customer_service"],"title":"Associate AP","years":2}
-{"company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:ddde370c-3ae8-4975-b943-0a37cf458d6a","location":"Bolton","skills":["negotiation"],"title":"Costs Negotiator"}
+{"closed_at":"2026-10-21","company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:ddde370c-3ae8-4975-b943-0a37cf458d6a","location":"Bolton","skills":["negotiation"],"title":"Costs Negotiator"}
 {"company":"Davies Group","first_seen":"2026-10-19","id":"pinpoint:davies:dec006be-b6a2-472d-9390-ddc813f4e31e","location":"Bolton","title":"Casualty NDA File Handler"}
 {"company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:dfca4019-6dc0-4512-aefa-6ba6f77d7dc7","location":"Pune","skills":["azure","sql"],"title":"Senior Associate - Security Engineering"}
 {"company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:e04fe77b-c5d6-4ecd-8650-771ca0962e50","location":"London UK","title":"Senior Recruitment Consultant (Perm)"}
