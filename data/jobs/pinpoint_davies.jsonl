@@ -6,7 +6,7 @@
 {"company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:0720e09f-c01f-491c-8215-52ad192711d9","location":"Pune","skills":["agile","ml","databricks","azure","aws","gcp","python","git"],"title":"Senior Associate - AI"}
 {"company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:07ce264f-bc62-45a8-9daf-256ee927ad7b","location":"Home United Kingdom","remote":true,"title":"Senior Manager - Major Complex Loss","years":10}
 {"company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:07f0f836-0d33-496b-99c0-0232411666d1","location":"Pune","skills":["hipaa"],"title":"Domain Expert","years":5}
-{"company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:0938d515-e14e-40c5-859e-72526f87620c","location":"Belfast","title":"Paralegal - Team 6"}
+{"closed_at":"2026-10-21","company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:0938d515-e14e-40c5-859e-72526f87620c","location":"Belfast","title":"Paralegal - Team 6"}
 {"company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:093b4700-257f-4e45-9665-a833fc1dd9ba","location":"Pune","skills":["ml","sql"],"title":"Manager - Data / AI","years":7}
 {"company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:09922ca0-50a9-4d2a-8839-24a46809a86c","location":"Stoke","skills":["customer_service"],"title":"Senior Claims Handler EL/PL"}
 {"company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:09f6618a-dd6a-43f1-ada0-61dd95aec0c8","location":"Home United States","pay":[110000,135000,"USD"],"remote":true,"skills":["negotiation"],"title":"Senior Complex Claims Consultant / Claims Counsel","years":7}
@@ -290,7 +290,7 @@
 {"company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:e2026afb-05b0-4907-9e53-3840eebf0cd2","location":"Bolton","skills":["negotiation"],"title":"File Handler Pre-Litigated Complex"}
 {"company":"Davies Group","first_seen":"2026-10-20","id":"pinpoint:davies:e34fe8ec-fe0c-4564-b45f-89f500c79519","location":"New York, NY","pay":[70000,75000,"USD"],"skills":["negotiation","crm"],"title":"Senior Recruiting Consultant"}
 {"company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:e386f435-3c38-44b0-afe3-9f3494142beb","location":"Pune","skills":["agile","scrum","c#","react","azure","sql","javascript"],"title":"CQLC: Senior Associate - (.NET)"}
-{"company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:e42fe542-d387-41ba-b937-291591a375ee","location":"Calgary","skills":["ms_office"],"title":"Senior Accountant, Forensic Accounting"}
+{"closed_at":"2026-10-21","company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:e42fe542-d387-41ba-b937-291591a375ee","location":"Calgary","skills":["ms_office"],"title":"Senior Accountant, Forensic Accounting"}
 {"company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:e4a83ff0-02c1-4864-8e7f-5e4b1c28427d","location":"Liverpool","skills":["negotiation"],"title":"Motor Claims Handler CH3"}
 {"company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:e59c01ff-011e-45d1-b373-a092b2e95472","location":"Bolton","pay":[25000,100000,"GBP"],"title":"EL/PL Litigation Supervisor"}
 {"company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:e637b350-f05f-43f5-9fad-369335596f6b","location":"Milton Keynes","remote":true,"skills":["customer_service"],"title":"Casualty Field Loss Adjuster - Bedfordshire and Buckinghamshire"}

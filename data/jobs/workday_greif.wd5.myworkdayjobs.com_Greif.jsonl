@@ -56,6 +56,7 @@
 {"company":"Greif","first_seen":"2026-10-12","id":"workday:greif.wd5.myworkdayjobs.com/Greif:/job/Castenedolo-ITA/Assistente-capoturno_034537","location":"Castenedolo-ITA","title":"Assistente capoturno"}
 {"company":"Greif","first_seen":"2026-10-12","id":"workday:greif.wd5.myworkdayjobs.com/Greif:/job/Centerville-IA/Maintenance-Apprentice_035220","location":"Centerville-IA","title":"Maintenance Apprentice"}
 {"company":"Greif","first_seen":"2026-10-06","id":"workday:greif.wd5.myworkdayjobs.com/Greif:/job/Centerville-IA/Maintenance-Planner_035716","location":"Centerville-IA","posted":"2026-10-06","title":"Maintenance Planner"}
+{"company":"Greif","first_seen":"2026-10-21","id":"workday:greif.wd5.myworkdayjobs.com/Greif:/job/Centerville-IA/XMLNAME-1st-Shift---Line-Operator_035439","location":"Centerville-IA","posted":"2026-10-21","title":"1st Shift - Line Operator"}
 {"company":"Greif","first_seen":"2026-10-13","id":"workday:greif.wd5.myworkdayjobs.com/Greif:/job/Centerville-IA/XMLNAME-2nd-Shift--Forklift-Operator_035749","location":"Centerville-IA","posted":"2026-10-13","skills":["forklift"],"title":"2nd Shift: Forklift Operator"}
 {"company":"Greif","first_seen":"2026-10-12","id":"workday:greif.wd5.myworkdayjobs.com/Greif:/job/Centerville-IA/XMLNAME-2nd-Shift--Line-Operator_035438-1","location":"Centerville-IA","title":"2nd Shift: Line Operator"}
 {"company":"Greif","first_seen":"2026-10-12","id":"workday:greif.wd5.myworkdayjobs.com/Greif:/job/Centerville-IA/XMLNAME-3rd-Shift---Line-Operator_033827","location":"Centerville-IA","title":"3rd Shift - Line Operator"}
@@ -185,7 +186,6 @@
 {"company":"Greif","first_seen":"2026-10-13","id":"workday:greif.wd5.myworkdayjobs.com/Greif:/job/Mt-Sterling-KY/Industrial-Multi-Craft-Maintenance-Technician---1st-Shift_035652","location":"Mt Sterling-KY","posted":"2026-10-12","title":"Industrial Multi-Craft Maintenance Technician - 1st Shift"}
 {"company":"Greif","first_seen":"2026-10-12","id":"workday:greif.wd5.myworkdayjobs.com/Greif:/job/Mt-Sterling-KY/Machine-Operator---2nd-Shift_035480","location":"Mt Sterling-KY","title":"Machine Operator - 2nd Shift"}
 {"company":"Greif","first_seen":"2026-10-12","id":"workday:greif.wd5.myworkdayjobs.com/Greif:/job/Mt-Sterling-KY/Machine-Operator---3rd-Shift_035479","location":"Mt Sterling-KY","title":"Machine Operator - 3rd Shift"}
-{"company":"Greif","first_seen":"2026-10-20","id":"workday:greif.wd5.myworkdayjobs.com/Greif:/job/Murray-KY/Machine-Operator---1st-Shift_035875","location":"Murray-KY","posted":"2026-10-20","title":"Machine Operator - 1st Shift"}
 {"company":"Greif","first_seen":"2026-10-19","id":"workday:greif.wd5.myworkdayjobs.com/Greif:/job/Murray-KY/Machine-Operator---2nd-Shift_035877","location":"Murray-KY","posted":"2026-10-19","title":"Machine Operator - 2nd Shift"}
 {"company":"Greif","first_seen":"2026-10-20","id":"workday:greif.wd5.myworkdayjobs.com/Greif:/job/Murray-KY/Machine-Operator---3rd-Shift_035880","location":"Murray-KY","posted":"2026-10-20","title":"Machine Operator - 3rd Shift"}
 {"company":"Greif","first_seen":"2026-10-12","id":"workday:greif.wd5.myworkdayjobs.com/Greif:/job/Nacogdoches-TX/Apprentice_035222","location":"Nacogdoches-TX","title":"Maintenance Apprentice"}
@@ -216,7 +216,6 @@
 {"company":"Greif","first_seen":"2026-10-12","id":"workday:greif.wd5.myworkdayjobs.com/Greif:/job/San-Jose-CRI/Tcnico-de-Mantenimiento_032237","location":"San Jose-CRI","title":"Técnico de Mantenimiento"}
 {"company":"Greif","first_seen":"2026-10-21","id":"workday:greif.wd5.myworkdayjobs.com/Greif:/job/San-Jose-CRI/operador_035911","location":"San Jose-CRI","posted":"2026-10-21","title":"operador"}
 {"company":"Greif","first_seen":"2026-10-12","id":"workday:greif.wd5.myworkdayjobs.com/Greif:/job/San-Juan-ARG/Maintenance-Leader_033463","location":"San Juan-ARG","title":"Maintenance Leader"}
-{"company":"Greif","first_seen":"2026-10-16","id":"workday:greif.wd5.myworkdayjobs.com/Greif:/job/Santiago-CHL/Operador-Nivel-1_035776","location":"Santiago-CHL","posted":"2026-10-16","title":"Operador Nivel 1"}
 {"company":"Greif","first_seen":"2026-10-05","id":"workday:greif.wd5.myworkdayjobs.com/Greif:/job/Santiago-CHL/Plant-Manager_035685","location":"Santiago-CHL","posted":"2026-10-01","title":"Plant Manager"}
 {"company":"Greif","first_seen":"2026-10-12","id":"workday:greif.wd5.myworkdayjobs.com/Greif:/job/Santo-Amaro-BRA/Auxiliar-de-Carga_035027-1","location":"Santo Amaro-BRA","title":"Auxiliar de Carga"}
 {"company":"Greif","first_seen":"2026-10-12","id":"workday:greif.wd5.myworkdayjobs.com/Greif:/job/Santo-Amaro-BRA/Auxiliar-de-Carga_035135","location":"Santo Amaro-BRA","title":"Auxiliar de Carga"}
@@ -256,6 +255,8 @@
 {"company":"Greif","first_seen":"2026-10-12","id":"workday:greif.wd5.myworkdayjobs.com/Greif:/job/Warminster-PA/Reliability-Manager---Steel_034858","location":"Warminster-PA","title":"North America Reliability Manager"}
 {"company":"Greif","first_seen":"2026-10-12","id":"workday:greif.wd5.myworkdayjobs.com/Greif:/job/Warminster-PA/Senior-Maintenance-Technician---1st-shift_035378-1","location":"Warminster-PA","title":"Senior Maintenance Technician - 1st shift"}
 {"company":"Greif","first_seen":"2026-10-05","id":"workday:greif.wd5.myworkdayjobs.com/Greif:/job/Warminster-PA/Sr-Maintenance-Technician---2nd-shift_035670","location":"Warminster-PA","posted":"2026-10-17","title":"Senior Maintenance Technician - 1st shift"}
+{"company":"Greif","first_seen":"2026-10-21","id":"workday:greif.wd5.myworkdayjobs.com/Greif:/job/Welcome-NC/Forklift-Operator-Night-Shift_035894","location":"Welcome-NC","posted":"2026-10-21","skills":["forklift"],"title":"Forklift Operator Night Shift"}
+{"company":"Greif","first_seen":"2026-10-21","id":"workday:greif.wd5.myworkdayjobs.com/Greif:/job/Welcome-NC/Forklift-Operator_035284","location":"Welcome-NC","posted":"2026-10-21","skills":["forklift"],"title":"Forklift Operator"}
 {"company":"Greif","first_seen":"2026-10-12","id":"workday:greif.wd5.myworkdayjobs.com/Greif:/job/Welcome-NC/Saw-Operator---Night--_035532","location":"Welcome-NC","posted":"2026-10-17","title":"Night shift Saw Operator"}
 {"company":"Greif","first_seen":"2026-10-12","id":"workday:greif.wd5.myworkdayjobs.com/Greif:/job/Welcome-NC/Saw-Operator_035528","location":"Welcome-NC","title":"Saw Operator"}
 {"company":"Greif","first_seen":"2026-10-12","id":"workday:greif.wd5.myworkdayjobs.com/Greif:/job/Welcome-NC/Set-Up-Operator_035431","location":"Welcome-NC","posted":"2026-09-25","title":"Set Up Operator"}
