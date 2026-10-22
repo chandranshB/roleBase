@@ -22,7 +22,7 @@
 {"company":"Alfred H Knight","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:ahkgroup:1876","location":"South Jakarta, South Jakarta","title":"Quality Assurance Manager"}
 {"company":"Alfred H Knight","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:ahkgroup:1881","location":"Moerdijk","team":"Inspection","title":"Medewerker smelterij"}
 {"company":"Alfred H Knight","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:ahkgroup:1889","location":"Liverpool, Merseyside","team":"UK Group Technical & Quality Laboratory - O03","title":"Internal Audit Technician (Apprentice)"}
-{"company":"Alfred H Knight","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:ahkgroup:1903","remote":true,"team":"UK Group Technical & Quality Laboratory - O03","title":"Group Quality Coordinator (Geochemistry)"}
+{"closed_at":"2026-10-22","company":"Alfred H Knight","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:ahkgroup:1903","remote":true,"team":"UK Group Technical & Quality Laboratory - O03","title":"Group Quality Coordinator (Geochemistry)"}
 {"company":"Alfred H Knight","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:ahkgroup:1910","location":"South Jakarta, South Jakarta","title":"Administration Officer"}
 {"company":"Alfred H Knight","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:ahkgroup:1911","location":"Kecamatan Bahodopi, Sulawesi Tengah","title":"HSE Officer"}
 {"company":"Alfred H Knight","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:ahkgroup:1912","location":"Balikpapan, East Kalimantan","title":"Quality Officer"}
@@ -56,4 +56,8 @@
 {"company":"Alfred H Knight","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:ahkgroup:2034","location":"Port Elizabeth, Eastern Cape","team":"Operations","title":"Inspector"}
 {"company":"Alfred H Knight","employment":"contract","first_seen":"2026-10-19","id":"bamboohr:ahkgroup:2035","location":"Richards Bay, KZN","team":"Laboratory","title":"Laboratory Analyst"}
 {"company":"Alfred H Knight","employment":"full_time","first_seen":"2026-10-20","id":"bamboohr:ahkgroup:2036","location":"Netherlands, Raamsdonksveer","team":"LMA Laboratory","title":"(Startend) Chemisch analist"}
+{"company":"Alfred H Knight","employment":"full_time","first_seen":"2026-10-22","id":"bamboohr:ahkgroup:2037","location":"Rustenburg, North West","title":"Client Services Administrator"}
+{"company":"Alfred H Knight","employment":"full_time","first_seen":"2026-10-22","id":"bamboohr:ahkgroup:2038","location":"Johannesburg, Gauteng","title":"Operations Support Coordinator"}
+{"company":"Alfred H Knight","employment":"full_time","first_seen":"2026-10-22","id":"bamboohr:ahkgroup:2039","location":"Richards Bay, KZN","title":"Operations Coordinator"}
+{"company":"Alfred H Knight","employment":"full_time","first_seen":"2026-10-22","id":"bamboohr:ahkgroup:2040","location":"Liverpool, Merseyside","team":"UK Laboratory Management - B25","title":"Laboratory Quality Manager (UK)"}
 {"company":"Alfred H Knight","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:ahkgroup:909","location":"Balikpapan, East Kalimantan","title":"Chemist"}

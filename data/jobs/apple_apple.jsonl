@@ -90,7 +90,6 @@
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200598720","location":"Saudi Arabia","posted":"2026-10-22","team":"Apple Retail","title":"SA-Expert (Saudi and GCC Nationals)"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200604125","location":"China","posted":"2026-09-23","team":"Operations and Supply Chain","title":"Enclosure Global Supply Manager"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200607540","location":"Canada","posted":"2026-10-05","team":"Apple Retail","title":"CA-Manager"}
-{"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200608835","location":"China","posted":"2026-09-17","team":"Hardware","title":"Product Design Engineer - Vision Pro"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200613553","location":"United States of America","posted":"2026-10-01","team":"Software and Services","title":"Senior OS Engineer, Media Playback - Media, Graphics & Compute Technologies"}
 {"company":"Apple","first_seen":"2026-10-20","id":"apple:apple:200616389","location":"Singapore","posted":"2026-10-20","team":"Students","title":"University Recruitment - Singapore 2026"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200616613","location":"United States of America","posted":"2026-10-12","team":"Hardware","title":"PCB Designer"}
@@ -158,6 +157,7 @@
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200658703","location":"Japan","posted":"2026-10-09","team":"Software and Services","title":"Security Software Engineer - Platform and Frameworks"}
 {"company":"Apple","employment":"contract","first_seen":"2026-10-15","id":"apple:apple:200658765","location":"Singapore","posted":"2026-10-05","skills":["supply_chain","project_management"],"team":"Operations and Supply Chain","title":"Business System and Process Manager (12 Month Contract)"}
 {"company":"Apple","first_seen":"2026-10-16","id":"apple:apple:200658959","location":"United States of America","posted":"2026-10-15","team":"Hardware","title":"Touch HW EE Validation Engineer"}
+{"company":"Apple","first_seen":"2026-10-22","id":"apple:apple:200659325","location":"China","posted":"2026-10-22","team":"Hardware","title":"Audio & Acoustic Instrumentation Systems Engineer"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200659354","location":"Singapore","posted":"2026-10-07","skills":["ml","supply_chain"],"team":"Support and Service","title":"Machine Learning Engineer, Strategic Data Solutions"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200659417","location":"United States of America","posted":"2026-10-01","skills":["ml"],"team":"Machine Learning and AI","title":"Sr. Machine Learning Engineer"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200660885","location":"United States of America","posted":"2026-10-13","team":"Corporate Functions","title":"Business Process Transformation Program Lead  - WW Sales & Sales Finance"}
@@ -175,11 +175,9 @@
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200664385","location":"United States of America","posted":"2026-10-01","team":"Software and Services","title":"AIML Sr. Privacy & Data Governance Engineer, Evaluation"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200664400","location":"Singapore","posted":"2026-09-23","team":"Software and Services","title":"Software Development Engineering Manager"}
 {"company":"Apple","first_seen":"2026-10-19","id":"apple:apple:200665390","location":"Vietnam","posted":"2026-10-19","team":"Operations and Supply Chain","title":"Advanced Manufacturing Engineer, Core Tech"}
-{"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200665547","location":"United States of America","posted":"2026-09-17","team":"Software and Services","title":"Quality Engineer, Rights & Pricing"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200665728","location":"United States of America","posted":"2026-09-28","skills":["supply_chain"],"team":"Corporate Functions","title":"Security Business Partner Lead - Product Ops & Supply Chain, AIS"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200666137","location":"United States of America","posted":"2026-10-12","team":"Apple Retail","title":"US-Operations Specialist"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200666295","location":"France","posted":"2026-09-17","skills":["customer_service"],"team":"Apple Retail","title":"Specialist (RQTH opportunities) - France"}
-{"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200666441","location":"United States of America","posted":"2026-09-28","team":"Machine Learning and AI","title":"Senior Data Scientist, Experimentation & Causal Inference"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200666777","location":"United States of America","posted":"2026-09-24","team":"Corporate Functions","title":"Senior QA Automation Architect, Apple Store Online"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200667076","location":"United States of America","posted":"2026-10-15","team":"Operations and Supply Chain","title":"MDE - Additive Manufacturing CAD Engineer"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200667273","location":"United States of America","posted":"2026-09-28","skills":["ml"],"team":"Software and Services","title":"AI Security Architect - ARC, AIS"}
@@ -363,7 +361,6 @@
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200682614","location":"Japan","posted":"2026-09-28","team":"Machine Learning and AI","title":"Software Development Engineer in Test, Siri AI QE"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200682703","location":"India","posted":"2026-10-12","team":"Corporate Functions","title":"Employee & Labour Relations Leader, India"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200682875","location":"China","posted":"2026-09-30","skills":["supply_chain"],"team":"Operations and Supply Chain","title":"Operations Program Manager"}
-{"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200682876","location":"China","posted":"2026-09-17","team":"Marketing","title":"Campaign Operations Specialist"}
 {"company":"Apple","employment":"internship","first_seen":"2026-10-15","id":"apple:apple:200682900","location":"China","posted":"2026-09-29","team":"Students","title":"AI & Project Operations Intern – Managing Director Office, Greater China"}
 {"company":"Apple","employment":"internship","first_seen":"2026-10-15","id":"apple:apple:200682902","location":"China","posted":"2026-10-09","team":"Students","title":"AI & Project Operations Intern – Managing Director Office, Greater China"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200682909","location":"Ireland","posted":"2026-10-02","team":"Corporate Functions","title":"People Analytics Full Stack Developer"}
@@ -408,7 +405,6 @@
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200683717","location":"Philippines","posted":"2026-09-23","team":"Sales and Business Development","title":"Sales - Channel Manager, Enterprise"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200683721","location":"United States of America","posted":"2026-09-17","team":"Hardware","title":"Custom Silicon Architect - Camera Hardware"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200683731","location":"China","posted":"2026-09-29","team":"Operations and Supply Chain","title":"Manufacturing Design Engineer, Brittles"}
-{"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200683744","location":"India","posted":"2026-09-17","team":"Software and Services","title":"Sr. DevOps Engineer"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200683761","location":"United States of America","posted":"2026-10-01","team":"Corporate Functions","title":"People Analytics Full Stack Developer"}
 {"company":"Apple","first_seen":"2026-10-16","id":"apple:apple:200683772","location":"United States of America","posted":"2026-10-16","team":"Marketing","title":"Senior Producer, Interactive Experiences"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200683800","location":"United States of America","posted":"2026-09-18","team":"Apple Retail","title":"US-Manager"}
@@ -425,7 +421,6 @@
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200683981","location":"United States of America","posted":"2026-10-01","team":"Hardware","title":"NAND Product Engineer"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200683990","location":"United States of America","posted":"2026-10-21","team":"Corporate Functions","title":"Political Compliance Program Specialist"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200683995","location":"United States of America","posted":"2026-10-09","team":"Marketing","title":"Director, Marketing Strategy and Planning"}
-{"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200683999","location":"United States of America","posted":"2026-09-17","skills":["ml"],"team":"Machine Learning and AI","title":"Sr. Machine Learning Engineer - Answers, Knowledge & Information (AKI)"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200684034","location":"United States of America","posted":"2026-10-01","skills":["supply_chain"],"team":"Corporate Functions","title":"ASO Readiness Program Manager"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200684049","location":"China","posted":"2026-09-17","team":"Sales and Business Development","title":"Sr. Project Manager - Digital Commerce (ASO)"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200684052","location":"China","posted":"2026-09-17","team":"Sales and Business Development","title":"Sr. Project Manager - Digital Commerce (ASO)"}
@@ -445,7 +440,6 @@
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200684236","location":"United States of America","posted":"2026-09-24","team":"Marketing","title":"Managing Producer, Channel 3D Experience Design"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200684253","location":"United States of America","posted":"2026-09-24","team":"Hardware","title":"Embedded Firmware Verification Engineer"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200684255","location":"United States of America","posted":"2026-09-17","team":"Hardware","title":"Camera SIPI Engineer"}
-{"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200684258","location":"United States of America","posted":"2026-09-17","team":"Hardware","title":"Engineering Program Manager, Acoustics"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200684260","location":"United States of America","posted":"2026-09-24","team":"Marketing","title":"Associate Creative Director, Art"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200684265","location":"United States of America","posted":"2026-09-18","team":"Software and Services","title":"Software Engineer, Finance Engineering"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200684272","location":"United States of America","posted":"2026-09-17","team":"Hardware","title":"Haptics Product Design Engineer"}
@@ -458,19 +452,14 @@
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200684288","location":"United States of America","posted":"2026-09-17","team":"Hardware","title":"Sensing HW - Algorithm Systems Engineer"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200684303","location":"United States of America","posted":"2026-10-21","skills":["ml"],"team":"Machine Learning and AI","title":"Senior Exercise Physiologist - Health AIML"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200684348","location":"United States of America","posted":"2026-09-17","team":"Machine Learning and AI","title":"Data Products & Business Intelligence Lead - Wallet, Payments & Commerce"}
-{"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200684351","location":"United States of America","posted":"2026-09-17","team":"Corporate Functions","title":"Site Services Manager, Data Center Operations"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200684361","location":"United States of America","posted":"2026-09-21","team":"Corporate Functions","title":"Event Safety Manager - Content and Events Production EHS"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200684364","location":"China","posted":"2026-09-18","team":"Software and Services","title":"Site Reliability Engineer, Enterprise Technology Services"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200684365","location":"China","posted":"2026-09-18","team":"Software and Services","title":"Site Reliability Engineer, Enterprise Technology Services"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200684367","location":"United States of America","posted":"2026-09-22","team":"Apple Retail","title":"US-Senior Manager"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200684368","location":"United States of America","posted":"2026-09-18","team":"Software and Services","title":"Senior Software Engineer, Capacity & Efficiency Engineering"}
-{"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200684373","location":"United States of America","posted":"2026-09-17","team":"Corporate Functions","title":"Critical Facilities Operations Center Operator, Data Center Operations"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200684375","location":"India","posted":"2026-09-18","skills":["java","sql"],"team":"Software and Services","title":"Integration Engineering - Software Engineer"}
-{"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200684376","location":"United States of America","posted":"2026-09-17","team":"Corporate Functions","title":"Critical Facilities Operations Center Operator, Data Center Operations"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200684378","location":"United States of America","posted":"2026-09-24","team":"Corporate Functions","title":"Critical Facilities Operations Center Operator, Data Center Operations"}
-{"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200684386","location":"China","posted":"2026-09-17","team":"Support and Service","title":"Quality Program Manager, Retail Customer Care"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200684387","location":"China","posted":"2026-09-28","skills":["supply_chain","ml"],"team":"Software and Services","title":"Site Reliability Engineer - eBusiness Services"}
-{"company":"Apple","employment":"contract","first_seen":"2026-10-15","id":"apple:apple:200684389","location":"India","posted":"2026-09-17","skills":["agile"],"team":"Corporate Functions","title":"Technical Recruiter (Contract)"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200684393","location":"China","posted":"2026-09-28","skills":["supply_chain","ml"],"team":"Software and Services","title":"Site Reliability Engineer"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200684394","location":"China","posted":"2026-09-28","team":"Software and Services","title":"Functional Integration Engineer - Software Engineer"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200684399","location":"China","posted":"2026-09-29","team":"Operations and Supply Chain","title":"NPI Operations Program Manager, iPhone"}
@@ -484,7 +473,6 @@
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200684435","location":"United States of America","posted":"2026-09-25","team":"Corporate Functions","title":"Senior Program Manager O2C, Finance Transformation"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200684436","location":"United Kingdom","posted":"2026-09-17","team":"Machine Learning and AI","title":"Benchmarking Project Lead, Siri Evaluation"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200684437","location":"Germany","posted":"2026-10-14","team":"Apple Retail","title":"DE-Senior Manager (m/f/d)"}
-{"company":"Apple","employment":"internship","first_seen":"2026-10-15","id":"apple:apple:200684438","location":"Germany","posted":"2026-09-17","team":"Hardware","title":"SoC Physical Design Intern (m/f/d)"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200684451","location":"United States of America","posted":"2026-09-28","team":"Corporate Functions","title":"Finance Data Engineer"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200684454","location":"United States of America","posted":"2026-10-05","team":"Corporate Functions","title":"iCup Supply Specialist"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200684457","location":"United States of America","posted":"2026-09-18","team":"Software and Services","title":"Senior Product Manager, Commerce"}
@@ -641,6 +629,7 @@
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200685553","location":"United States of America","posted":"2026-09-26","team":"Corporate Functions","title":"Manager, Critical Facilities Chief Engineer - Data Center Operations"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200685554","location":"United States of America","posted":"2026-09-28","team":"Hardware","title":"SerDes Micro Architect"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200685569","location":"United States of America","posted":"2026-10-05","team":"Design","title":"Senior Product Designer"}
+{"company":"Apple","first_seen":"2026-10-22","id":"apple:apple:200685575","location":"China","posted":"2026-10-22","team":"Software and Services","title":"Privacy Compliance Engineer"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200685577","location":"Japan","posted":"2026-09-28","team":"Marketing","title":"Senior Designer"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200685581","location":"China","posted":"2026-09-24","skills":["kubernetes"],"team":"Software and Services","title":"Software Engineer - Cloud Services Engineering"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200685582","location":"United States of America","posted":"2026-09-24","skills":["ml"],"team":"Software and Services","title":"Software Engineer, Reliability Engineering, AiDP"}
@@ -683,7 +672,6 @@
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200685730","location":"United States of America","posted":"2026-09-24","team":"Software and Services","title":"Senior Manager, Engineering Program Management - cloudOS"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200685733","location":"United States of America","posted":"2026-10-01","team":"Design","title":"Senior Design Engineer, iOS"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200685738","location":"United States of America","posted":"2026-09-28","team":"Sales and Business Development","title":"Senior Product Manager, Executive Reporting & Business Intelligence"}
-{"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200685739","location":"Germany","posted":"2026-09-30","team":"Software and Services","title":"Embedded Software Engineer - Cellular Layer1 Control , Wireless technology and Ecosystems"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200685751","location":"United States of America","posted":"2026-09-24","team":"Apple Retail","title":"US-Technical Specialist"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200685752","location":"United States of America","posted":"2026-09-24","skills":["ml"],"team":"Machine Learning and AI","title":"Machine Learning Engineer, Advanced Analytics"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200685766","location":"United States of America","posted":"2026-09-25","skills":["ml","agile"],"team":"Software and Services","title":"Senior Staff Machine Learning Engineer, ML Platform"}
@@ -707,7 +695,6 @@
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200685843","location":"Germany","posted":"2026-09-25","team":"Apple Retail","title":"DE-Genius (m/f/d)"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200685844","location":"United Kingdom","posted":"2026-09-29","skills":["social_media"],"team":"Marketing","title":"Corporate PR Manager, UK"}
 {"company":"Apple","employment":"internship","first_seen":"2026-10-15","id":"apple:apple:200685852","location":"Germany","posted":"2026-09-25","team":"Hardware","title":"Analog IC Design Intern"}
-{"company":"Apple","employment":"contract","first_seen":"2026-10-15","id":"apple:apple:200685861","location":"United Kingdom","posted":"2026-10-07","skills":["employee_relations"],"team":"Corporate Functions","title":"Employee Relations Business Partner (fixed term contract)"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200685862","location":"Ireland","posted":"2026-09-30","team":"Corporate Functions","title":"Senior Network Engineer, Backbone and Internet Edge"}
 {"company":"Apple","employment":"contract","first_seen":"2026-10-15","id":"apple:apple:200685866","location":"Spain","posted":"2026-10-07","skills":["employee_relations"],"team":"Corporate Functions","title":"Employee & Labour Relations Business Partner (fixed term contract)"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200685870","location":"United States of America","posted":"2026-09-25","skills":["ml","llm"],"team":"Hardware","title":"Gate-level IR/EM CAD/NLP Engineer"}
@@ -860,6 +847,7 @@
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200686704","location":"India","posted":"2026-10-09","skills":["java","sql"],"team":"Software and Services","title":"Integration Engineering - Software Engineer"}
 {"company":"Apple","employment":"internship","first_seen":"2026-10-15","id":"apple:apple:200686707","location":"China","posted":"2026-10-08","team":"Hardware","title":"Mac Hardware System Design Engineer Intern (AI Tools for Hardware Engineering)"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200686713","location":"United States of America","posted":"2026-10-02","team":"Corporate Functions","title":"Digital Experience Strategist"}
+{"company":"Apple","first_seen":"2026-10-22","id":"apple:apple:200686731","location":"United Kingdom","posted":"2026-10-22","team":"Software and Services","title":"Principal Software Engineer - Marketing Technology"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200686732","location":"United Kingdom","posted":"2026-10-01","team":"Hardware","title":"PMU Silicon Validation Engineer"}
 {"company":"Apple","employment":"internship","first_seen":"2026-10-15","id":"apple:apple:200686742","location":"Germany","posted":"2026-10-01","team":"Hardware","title":"AMS Lab Validation Intern"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200686744","location":"India","posted":"2026-10-05","team":"Software and Services","title":"Senior Data & AI Engineer - Find My"}
@@ -901,7 +889,6 @@
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200686934","location":"Singapore","posted":"2026-10-02","team":"Sales and Business Development","title":"Apple Ads - Client Strategist"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200686940","location":"United States of America","posted":"2026-10-02","team":"Software and Services","title":"Senior Software Engineer - Compute"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200686948","location":"Singapore","posted":"2026-10-02","team":"Hardware","title":"Process Development Engineer, Laser Process"}
-{"company":"Apple","employment":"internship","first_seen":"2026-10-15","id":"apple:apple:200686958","location":"Germany","posted":"2026-10-06","skills":["ml"],"team":"Machine Learning and AI","title":"Internship - Software Engineering - Wireless Data Science"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200686966","location":"United Kingdom","posted":"2026-10-06","team":"Software and Services","title":"Core Distributed Systems Database Engineer"}
 {"company":"Apple","employment":"internship","first_seen":"2026-10-15","id":"apple:apple:200686968","location":"Singapore","posted":"2026-10-02","team":"Marketing","title":"Services Marketing Internship"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200686969","location":"United Kingdom","posted":"2026-10-06","team":"Software and Services","title":"Business Development Manager, Apple Wallet"}
@@ -1262,7 +1249,7 @@
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200688822","location":"United States of America","posted":"2026-10-13","team":"Hardware","title":"Display Engineer"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200688827","location":"United States of America","posted":"2026-10-14","team":"Hardware","title":"Ergonomics Product Design Engineering Program Manager, Vision Products Group"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200688838","location":"United States of America","posted":"2026-10-13","team":"Software and Services","title":"Build Security Engineer"}
-{"company":"Apple","first_seen":"2026-10-22","id":"apple:apple:200688845","location":"United States of America","posted":"2026-10-21","team":"Software and Services","title":"Manager, Engineering Program Management - WPC"}
+{"company":"Apple","first_seen":"2026-10-22","id":"apple:apple:200688845","location":"United States of America","posted":"2026-10-21","team":"Software and Services","title":"Manager, Engineering Program Management - Cloud Infrastructure, WPC"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200688846","location":"United States of America","posted":"2026-10-14","skills":["ml"],"team":"Machine Learning and AI","title":"Machine Learning Engineer, Data for Foundation Models"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200688855","location":"United States of America","posted":"2026-10-15","team":"Software and Services","title":"Systems Engineer - Camera & Edit, Apple Reference Image"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200688858","location":"United States of America","posted":"2026-10-13","team":"Hardware","title":"Embedded Software Engineer - Biophotonics"}
@@ -1417,6 +1404,7 @@
 {"company":"Apple","first_seen":"2026-10-17","id":"apple:apple:200689634","location":"United States of America","posted":"2026-10-16","team":"Software and Services","title":"Senior Security Engineer - Strategic Risk"}
 {"company":"Apple","first_seen":"2026-10-16","id":"apple:apple:200689638","location":"United States of America","posted":"2026-10-16","skills":["ml"],"team":"Machine Learning and AI","title":"Machine Learning Engineer, System Experience - Proactive"}
 {"company":"Apple","first_seen":"2026-10-17","id":"apple:apple:200689643","location":"United States of America","posted":"2026-10-16","team":"Hardware","title":"Digital Mixed-Signal Modeling Engineer"}
+{"company":"Apple","first_seen":"2026-10-22","id":"apple:apple:200689654","location":"India","posted":"2026-10-22","team":"Software and Services","title":"PMO Program Manager"}
 {"company":"Apple","first_seen":"2026-10-20","id":"apple:apple:200689656","location":"India","posted":"2026-10-20","skills":["java"],"team":"Software and Services","title":"Software Application Support Engineer (Java)"}
 {"company":"Apple","first_seen":"2026-10-19","id":"apple:apple:200689657","location":"China","posted":"2026-10-19","team":"Sales and Business Development","title":"Retail Online Production Support Analyst"}
 {"company":"Apple","first_seen":"2026-10-19","id":"apple:apple:200689660","location":"United Kingdom","posted":"2026-10-19","team":"Software and Services","title":"EMEIA Fraud Manager - Apple Wallet, Payments & Commerce"}
@@ -1543,6 +1531,7 @@
 {"company":"Apple","first_seen":"2026-10-20","id":"apple:apple:200690335","location":"United States of America","posted":"2026-10-20","team":"Sales and Business Development","title":"Growth Accounts: Associate Client Strategist, Ads on Apple Maps"}
 {"company":"Apple","first_seen":"2026-10-20","id":"apple:apple:200690336","location":"Japan","posted":"2026-10-20","team":"Corporate Functions","title":"Head of Facilities Operations - North Asia"}
 {"company":"Apple","first_seen":"2026-10-20","id":"apple:apple:200690337","location":"Israel","posted":"2026-10-20","team":"Hardware","title":"Automation Engineer - HW Validation Group"}
+{"company":"Apple","employment":"part_time","first_seen":"2026-10-22","id":"apple:apple:200690338","location":"Australia","posted":"2026-10-22","skills":["customer_service"],"team":"Sales and Business Development","title":"Sales - Community Specialist - Multi-locations in Western Australia (Full-time / Part-time)"}
 {"company":"Apple","first_seen":"2026-10-20","id":"apple:apple:200690340","location":"United States of America","posted":"2026-10-20","team":"Sales and Business Development","title":"Client Strategist Manager, Ads on Apple Maps"}
 {"company":"Apple","first_seen":"2026-10-21","id":"apple:apple:200690343","location":"United States of America","posted":"2026-10-21","team":"Software and Services","title":"Coordination SRE"}
 {"company":"Apple","first_seen":"2026-10-20","id":"apple:apple:200690350","location":"United States of America","posted":"2026-10-20","team":"Software and Services","title":"Storage Systems Engineer, Software Delivery & Technologies"}
@@ -1579,6 +1568,7 @@
 {"company":"Apple","first_seen":"2026-10-21","id":"apple:apple:200690555","location":"United States of America","posted":"2026-10-21","team":"Software and Services","title":"Engineering Program Manager, Siri AI Performance & Reliability"}
 {"company":"Apple","first_seen":"2026-10-22","id":"apple:apple:200690563","location":"United States of America","posted":"2026-10-22","team":"Software and Services","title":"Fitness Tools & Automation Engineer, Watch Software, Sensing & Connectivity"}
 {"company":"Apple","first_seen":"2026-10-21","id":"apple:apple:200690570","location":"United States of America","posted":"2026-10-21","team":"Marketing","title":"Technical Product Marketing Specialist, Canada & Latin America"}
+{"company":"Apple","first_seen":"2026-10-22","id":"apple:apple:200690575","location":"United States of America","posted":"2026-10-22","team":"Corporate Functions","title":"Clean Energy Expert, Global Energy and Sustainability"}
 {"company":"Apple","first_seen":"2026-10-21","id":"apple:apple:200690578","location":"United States of America","posted":"2026-10-20","team":"Software and Services","title":"Apple Business Partnerships - Special Projects"}
 {"company":"Apple","first_seen":"2026-10-21","id":"apple:apple:200690585","location":"United States of America","posted":"2026-10-21","team":"Machine Learning and AI","title":"Computer Vision and Inertial Sensing Engineer"}
 {"company":"Apple","first_seen":"2026-10-21","id":"apple:apple:200690588","location":"United States of America","posted":"2026-10-21","team":"Marketing","title":"Apple Developer App Engineer, WWDR"}
@@ -1614,6 +1604,9 @@
 {"company":"Apple","first_seen":"2026-10-21","id":"apple:apple:200690810","location":"United States of America","posted":"2026-10-21","team":"Hardware","title":"Simulation and Control Systems Design Engineer"}
 {"company":"Apple","first_seen":"2026-10-21","id":"apple:apple:200690815","location":"United States of America","posted":"2026-10-21","team":"Apple Retail","title":"US-Expert"}
 {"company":"Apple","first_seen":"2026-10-21","id":"apple:apple:200690818","location":"United States of America","posted":"2026-10-21","skills":["ml"],"team":"Machine Learning and AI","title":"Machine Learning Research Engineer, Pretraining Data — Foundation Models"}
+{"company":"Apple","first_seen":"2026-10-22","id":"apple:apple:200690824","location":"Italy","posted":"2026-10-22","team":"Apple Retail","title":"IT-Business Pro"}
 {"company":"Apple","first_seen":"2026-10-22","id":"apple:apple:200690825","location":"United States of America","posted":"2026-10-21","team":"Hardware","title":"Simulation and Control Systems Design Engineer"}
 {"company":"Apple","first_seen":"2026-10-22","id":"apple:apple:200690852","location":"United States of America","posted":"2026-10-22","team":"Hardware","title":"Wireless Systems Engineer"}
 {"company":"Apple","first_seen":"2026-10-22","id":"apple:apple:200690854","location":"United States of America","posted":"2026-10-21","team":"Machine Learning and AI","title":"Data Scientist, Apple Pay"}
+{"company":"Apple","first_seen":"2026-10-22","id":"apple:apple:200690953","location":"Germany","posted":"2026-10-22","team":"Hardware","title":"Experienced SoC Digital Design Engineer (M, F, D)"}
+{"company":"Apple","first_seen":"2026-10-22","id":"apple:apple:200690954","location":"Germany","posted":"2026-10-22","team":"Hardware","title":"Early Career - SoC Digital Design Engineer (M, F, D)"}

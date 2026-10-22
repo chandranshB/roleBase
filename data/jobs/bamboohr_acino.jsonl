@@ -17,6 +17,7 @@
 {"company":"Acino","employment":"contract","first_seen":"2026-10-19","id":"bamboohr:acino:1031","location":"Dubai","team":"Finance","title":"Financial Controller - 1 Year Contract"}
 {"company":"Acino","first_seen":"2026-10-20","id":"bamboohr:acino:1032","location":"Dubai","skills":["supply_chain"],"team":"Supply Chain","title":"Supply Chain Executive - Logistics"}
 {"company":"Acino","first_seen":"2026-10-21","id":"bamboohr:acino:1033","location":"Dubai","skills":["supply_chain"],"team":"Supply Chain","title":"Supply Chain Planner"}
+{"company":"Acino","first_seen":"2026-10-22","id":"bamboohr:acino:1034","location":"Dubai, Dubai","team":"Commercial Operations","title":"Regional Market Access Director, META"}
 {"company":"Acino","first_seen":"2026-10-19","id":"bamboohr:acino:784","location":"Liesberg, Baselland","team":"Electric and Automation","title":"Elektriker 100 % (m/w/d)"}
 {"company":"Acino","first_seen":"2026-10-19","id":"bamboohr:acino:800","location":"Egypt","team":"Quality Control","title":"Quality Control Specialist - (Incoming Materials)"}
 {"company":"Acino","first_seen":"2026-10-19","id":"bamboohr:acino:803","location":"Egypt","team":"Quality Control","title":"Quality Control Senior Specialist - Finished Products"}
@@ -29,13 +30,13 @@
 {"company":"Acino","first_seen":"2026-10-19","id":"bamboohr:acino:891","location":"Cairo, Cairo","team":"Finance","title":"Financial Planning & Analysis Manager"}
 {"company":"Acino","first_seen":"2026-10-19","id":"bamboohr:acino:892","location":"Cairo, Cairo","team":"Finance","title":"Head of Accounting & Tax"}
 {"company":"Acino","first_seen":"2026-10-19","id":"bamboohr:acino:893","location":"Cairo, Cairo","team":"Finance","title":"Costing Section Head (Manufacturing)"}
-{"company":"Acino","first_seen":"2026-10-19","id":"bamboohr:acino:901","location":"Dubai","team":"Quality Assurance","title":"Quality Assurance Specialist"}
+{"closed_at":"2026-10-22","company":"Acino","first_seen":"2026-10-19","id":"bamboohr:acino:901","location":"Dubai","team":"Quality Assurance","title":"Quality Assurance Specialist"}
 {"company":"Acino","first_seen":"2026-10-19","id":"bamboohr:acino:902","location":"München, Bavaria","team":"Quality Assurance","title":"Qualified Person 100% (w/m/d)"}
-{"company":"Acino","first_seen":"2026-10-19","id":"bamboohr:acino:906","location":"Dubai","team":"Engineering","title":"Engineering Technician  - Facilities & Mechanical"}
+{"closed_at":"2026-10-22","company":"Acino","first_seen":"2026-10-19","id":"bamboohr:acino:906","location":"Dubai","team":"Engineering","title":"Engineering Technician  - Facilities & Mechanical"}
 {"company":"Acino","first_seen":"2026-10-19","id":"bamboohr:acino:907","location":"Turkey","team":"People & Culture","title":"Technical Maintenance Manager"}
-{"company":"Acino","first_seen":"2026-10-19","id":"bamboohr:acino:909","location":"Dubai","team":"Warehouse","title":"Warehouse Operator"}
+{"closed_at":"2026-10-22","company":"Acino","first_seen":"2026-10-19","id":"bamboohr:acino:909","location":"Dubai","team":"Warehouse","title":"Warehouse Operator"}
 {"company":"Acino","first_seen":"2026-10-19","id":"bamboohr:acino:916","location":"Dubai, Dubai","team":"Finance","title":"Finance Manager, Gulf Region"}
-{"company":"Acino","first_seen":"2026-10-19","id":"bamboohr:acino:923","location":"Dubai, Dubai","team":"Commercial Operations","title":"Regional Market Access Manager, META"}
+{"closed_at":"2026-10-22","company":"Acino","first_seen":"2026-10-19","id":"bamboohr:acino:923","location":"Dubai, Dubai","team":"Commercial Operations","title":"Regional Market Access Manager, META"}
 {"company":"Acino","first_seen":"2026-10-19","id":"bamboohr:acino:924","location":"Liesberg, Baselland","team":"Direct Labour BU AL","title":"Production Worker"}
 {"company":"Acino","first_seen":"2026-10-19","id":"bamboohr:acino:930","location":"Turkey","title":"Purchasing Executive"}
 {"company":"Acino","first_seen":"2026-10-19","id":"bamboohr:acino:941","location":"Cairo, Cairo","team":"Legal","title":"Legal Manager"}
@@ -48,7 +49,7 @@
 {"company":"Acino","first_seen":"2026-10-19","id":"bamboohr:acino:983","remote":true,"team":"Sales","title":"Full Time /Medical Representatives, Iraq / Hilla"}
 {"company":"Acino","first_seen":"2026-10-19","id":"bamboohr:acino:987","location":"Dubai","team":"Production","title":"Production Operator - 9 Positions"}
 {"company":"Acino","first_seen":"2026-10-19","id":"bamboohr:acino:989","location":"Liesberg, Baselland","title":"Initiativbewerbung (w/m/d)"}
-{"company":"Acino","first_seen":"2026-10-19","id":"bamboohr:acino:990","location":"Dubai","team":"Production","title":"Production Supervisor - 2 Positions"}
+{"closed_at":"2026-10-22","company":"Acino","first_seen":"2026-10-19","id":"bamboohr:acino:990","location":"Dubai","team":"Production","title":"Production Supervisor - 2 Positions"}
 {"closed_at":"2026-10-20","company":"Acino","first_seen":"2026-10-19","id":"bamboohr:acino:993","location":"Cairo, Cairo","team":"Commercial Operations","title":"Digital Marketing and Customer Engagement Head"}
 {"company":"Acino","first_seen":"2026-10-19","id":"bamboohr:acino:994","location":"Cairo, Cairo","team":"Sales","title":"Medical Representative - Luxor & Hurghada (same territory)"}
 {"company":"Acino","first_seen":"2026-10-19","id":"bamboohr:acino:997","location":"Dubai, Dubai","team":"Commercial Operations","title":"Business Unit Head (Gastro), Gulf Region"}
