@@ -32,10 +32,10 @@
 {"company":"Wolt","first_seen":"2026-10-05","id":"greenhouse:wolt:6694824","location":"Malta","posted":"2025-05-13","team":"Order Fulfillment","title":"Grocery Store Assistant"}
 {"company":"Wolt","first_seen":"2026-10-05","id":"greenhouse:wolt:6694874","location":"Budapest, Hungary","posted":"2026-02-02","team":"Merchant onboarding","title":"Restaurant and Retail Administrator (Finnish Speaking)"}
 {"company":"Wolt","first_seen":"2026-10-05","id":"greenhouse:wolt:6694889","location":"Trnava, Slovakia","posted":"2026-07-07","team":"Wolt Market","title":"Grocery Associate"}
-{"closed_at":"2026-10-16","company":"Wolt","first_seen":"2026-10-12","id":"greenhouse:wolt:6694964","location":"Stockholm, Sweden","posted":"2025-04-16","reposts":1,"team":"Wolt Market","title":"Grocery Associate - Youth Workers"}
+{"company":"Wolt","first_seen":"2026-10-12","id":"greenhouse:wolt:6694964","location":"Stockholm, Sweden","posted":"2025-04-16","reposts":1,"team":"Wolt Market","title":"Grocery Associate - Youth Workers"}
 {"company":"Wolt","first_seen":"2026-10-05","id":"greenhouse:wolt:6694988","location":"Prague, Czechia","posted":"2025-03-10","team":"Order Fulfillment","title":"Grocery Associate - Praha"}
 {"company":"Wolt","first_seen":"2026-10-05","id":"greenhouse:wolt:6699197","location":"Budapest, Hungary","posted":"2025-03-11","team":"Merchant onboarding","title":"Restaurant and Retail Administrator, Swedish speaking"}
-{"company":"Wolt","first_seen":"2026-10-05","id":"greenhouse:wolt:6735470","location":"Athens, Greece","posted":"2025-03-21","team":"Wolt Market","title":"Shift Lead - Wolt Market Marousi"}
+{"closed_at":"2026-10-22","company":"Wolt","first_seen":"2026-10-05","id":"greenhouse:wolt:6735470","location":"Athens, Greece","posted":"2025-03-21","team":"Wolt Market","title":"Shift Lead - Wolt Market Marousi"}
 {"closed_at":"2026-10-15","company":"Wolt","first_seen":"2026-10-05","id":"greenhouse:wolt:6739378","location":"Rehovot, Israel","posted":"2025-08-10","team":"Order Fulfillment","title":"מלקטים- וולט מרקט- רחובות"}
 {"company":"Wolt","first_seen":"2026-10-05","id":"greenhouse:wolt:6739407","location":"Kfar Saba, Israel","posted":"2026-02-24","team":"Order Fulfillment","title":"מלקטים - וולט מרקט - כפר סבא"}
 {"company":"Wolt","first_seen":"2026-10-05","id":"greenhouse:wolt:6739427","location":"Tel Aviv, Israel","posted":"2025-04-22","team":"Order Fulfillment","title":"מלקטים- וולט מרקט- מודיעין"}
@@ -61,7 +61,7 @@
 {"company":"Wolt","first_seen":"2026-10-05","id":"greenhouse:wolt:7547321","location":"Düsseldorf, Germany","posted":"2026-01-19","team":"Order Fulfillment","title":"Grocery Associate"}
 {"company":"Wolt","first_seen":"2026-10-13","id":"greenhouse:wolt:7559951","location":"Stockholm, Sweden","posted":"2026-01-28","team":"Order Fulfillment","title":"Grocery Shift Lead"}
 {"company":"Wolt","first_seen":"2026-10-05","id":"greenhouse:wolt:7564553","location":"Cyprus","posted":"2026-01-27","team":"Order Fulfillment","title":"Grocery Shift Lead"}
-{"company":"Wolt","first_seen":"2026-10-05","id":"greenhouse:wolt:7571072","location":"Athens, Greece","posted":"2026-02-06","team":"Order Fulfillment","title":"Shift Lead - Wolt Market Glyfada"}
+{"closed_at":"2026-10-22","company":"Wolt","first_seen":"2026-10-05","id":"greenhouse:wolt:7571072","location":"Athens, Greece","posted":"2026-02-06","team":"Order Fulfillment","title":"Shift Lead - Wolt Market Glyfada"}
 {"company":"Wolt","first_seen":"2026-10-20","id":"greenhouse:wolt:7618157","location":"Belgrade, Serbia","posted":"2026-02-17","skills":["customer_service"],"team":"Shared Service Center","title":"Support Team Lead"}
 {"company":"Wolt","first_seen":"2026-10-09","id":"greenhouse:wolt:7636484","location":"Nuremberg, Germany","posted":"2026-02-23","team":"Order Fulfillment","title":"Grocery Shift Lead"}
 {"closed_at":"2026-10-06","company":"Wolt","first_seen":"2026-10-05","id":"greenhouse:wolt:7653853","location":"Berlin, Germany; Stockholm, Sweden","posted":"2026-03-11","team":"Product Management","title":"Product Manager, Courier Delivery Experience"}
@@ -279,3 +279,5 @@
 {"closed_at":"2026-10-22","company":"Wolt","first_seen":"2026-10-21","id":"greenhouse:wolt:8305699","location":"Nur-Sultan, Kazakhstan","posted":"2026-10-21","skills":["negotiation"],"team":"Merchant account management SMB","title":"Account Development Manager","years":3}
 {"closed_at":"2026-10-21","company":"Wolt","first_seen":"2026-10-21","id":"greenhouse:wolt:8305857","location":"London, United Kingdom","posted":"2026-10-21","skills":["sql"],"team":"Sustainability","title":"Strategy Lead, Sustainable Delivery"}
 {"company":"Wolt","first_seen":"2026-10-22","id":"greenhouse:wolt:8306176","location":"Athens, Greece; Belgrade, Serbia; Bratislava, Slovakia; Budapest, Hungary; Warsaw, Poland; Zagreb, Croatia","posted":"2026-10-22","skills":["project_management","sql","snowflake"],"team":"Global Merchant Strategy and Operations","title":"Menu Growth Senior Specialist"}
+{"company":"Wolt","first_seen":"2026-10-22","id":"greenhouse:wolt:8314029","location":"Almaty, Kazakhstan","posted":"2026-10-22","reposts":1,"skills":["supply_chain","excel"],"team":"Wolt Market Country Admin","title":"Category Specialist (WM)","years":1}
+{"company":"Wolt","first_seen":"2026-10-22","id":"greenhouse:wolt:8314175","location":"Helsinki, Finland","posted":"2026-10-22","team":"Consumer Business Strategy & Operations","title":"Senior Associate - Subscription Performance","years":2}
