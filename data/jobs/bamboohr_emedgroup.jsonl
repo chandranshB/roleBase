@@ -14,7 +14,7 @@
 {"company":"EMED Group","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:emedgroup:2678","location":"Keynsham, Bristol, City of","team":"Operations","title":"Ambulance Care Assistant"}
 {"company":"EMED Group","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:emedgroup:2695","location":"Cambridge, Cambridgeshire","team":"Operations","title":"Ambulance Care Assistant"}
 {"company":"EMED Group","first_seen":"2026-10-19","id":"bamboohr:emedgroup:2705","location":"Stoke, Staffordshire","team":"Operations","title":"HCPC Registered Paramedic (Bank)"}
-{"company":"EMED Group","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:emedgroup:2727","location":"Redhill, Surrey","team":"Central Ops","title":"Call Handler"}
+{"closed_at":"2026-10-23","company":"EMED Group","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:emedgroup:2727","location":"Redhill, Surrey","team":"Central Ops","title":"Call Handler"}
 {"company":"EMED Group","first_seen":"2026-10-19","id":"bamboohr:emedgroup:2729","location":"Salisbury, Wiltshire","team":"Operations","title":"Ambulance Care Assistant (Bank)"}
 {"company":"EMED Group","employment":"part_time","first_seen":"2026-10-20","id":"bamboohr:emedgroup:2736","location":"Crewe, Cheshire East","team":"Operations","title":"Courier Driver"}
 {"company":"EMED Group","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:emedgroup:2744","location":"Guildford, Surrey","team":"Operations","title":"Ambulance Care Assistant Bank - Mental Health"}
@@ -23,6 +23,7 @@
 {"closed_at":"2026-10-22","company":"EMED Group","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:emedgroup:2752","location":"Bristol, Bristol, City of","team":"Fleet","title":"Mechanic (Fleet)"}
 {"company":"EMED Group","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:emedgroup:2760","location":"Bristol, Bristol, City of","team":"Operations","title":"Retrieval Care Assistant"}
 {"company":"EMED Group","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:emedgroup:2762","location":"Shrewsbury, Shropshire","team":"Central Ops","title":"Transport Controller/Planner (Night)"}
+{"company":"EMED Group","employment":"full_time","first_seen":"2026-10-23","id":"bamboohr:emedgroup:2763","remote":true,"team":"HR","title":"HR Business Partner"}
 {"company":"EMED Group","employment":"full_time","first_seen":"2026-10-22","id":"bamboohr:emedgroup:2765","location":"Banbury, Oxfordshire","team":"Central Ops","title":"Controller/Planner"}
 {"company":"EMED Group","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:emedgroup:2766","location":"Rotherham, South Yorkshire","team":"Central Ops","title":"Controller/Planner"}
 {"closed_at":"2026-10-20","company":"EMED Group","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:emedgroup:2770","location":"Leicester, Leicestershire","team":"Fleet","title":"Fleet Assistant (Leicestershire and Nottinghamshire)"}
@@ -83,3 +84,4 @@
 {"company":"EMED Group","employment":"full_time","first_seen":"2026-10-22","id":"bamboohr:emedgroup:2844","location":"Stoke-on-Trent, Staffordshire","team":"Central Ops","title":"Controller/Planner"}
 {"company":"EMED Group","employment":"full_time","first_seen":"2026-10-23","id":"bamboohr:emedgroup:2845","location":"Banbury, Oxfordshire","reposts":3,"team":"Operations","title":"Ambulance Care Assistant"}
 {"company":"EMED Group","employment":"full_time","first_seen":"2026-10-23","id":"bamboohr:emedgroup:2846","location":"Stoke-on-Trent, Staffordshire","team":"Operations","title":"Patient Transport Liaison Officer (Royal Stoke Hospital)"}
+{"company":"EMED Group","employment":"full_time","first_seen":"2026-10-23","id":"bamboohr:emedgroup:2847","remote":true,"team":"Learning & Dev","title":"Group Head of Learning & Development, Communications and Partnership Engagement"}
