@@ -3,8 +3,8 @@
 {"closed_at":"2026-10-22","company":"Depaul","first_seen":"2026-10-19","id":"bamboohr:depaul:516","location":"Belfast","team":"Family Floating Support (Belf)","title":"Family Services Floating Support Case Worker (FTC)"}
 {"company":"Depaul","first_seen":"2026-10-19","id":"bamboohr:depaul:518","location":"Cork, Munster","title":"Health Care Assistant - Cork"}
 {"company":"Depaul","first_seen":"2026-10-19","id":"bamboohr:depaul:521","location":"Belfast","team":"Women's Community Transition","title":"Community Transition Service - Support Worker"}
-{"company":"Depaul","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:depaul:535","location":"Dublin, Leinster","team":"Housing First (Dublin)","title":"Intensive Case Manager - Housing First"}
-{"company":"Depaul","first_seen":"2026-10-19","id":"bamboohr:depaul:540","location":"Dublin, Leinster","team":"Sundial House","title":"Relief Health Care Assistant - Dublin"}
+{"closed_at":"2026-10-23","company":"Depaul","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:depaul:535","location":"Dublin, Leinster","team":"Housing First (Dublin)","title":"Intensive Case Manager - Housing First"}
+{"closed_at":"2026-10-23","company":"Depaul","first_seen":"2026-10-19","id":"bamboohr:depaul:540","location":"Dublin, Leinster","team":"Sundial House","title":"Relief Health Care Assistant - Dublin"}
 {"company":"Depaul","first_seen":"2026-10-19","id":"bamboohr:depaul:549","location":"Galway, Connacht","team":"Cosan Nua West","title":"Case Management Worker - Cosan Nua West"}
 {"company":"Depaul","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:depaul:559","location":"Dublin, Leinster","team":"Suaimhneas","title":"Project Worker - Suaimhneas"}
 {"company":"Depaul","first_seen":"2026-10-19","id":"bamboohr:depaul:560","location":"Dublin, Leinster","team":"Graduate Programme","title":"Support Worker - Graduate Programme Dublin: 2027 Graduate Programme"}
@@ -12,7 +12,7 @@
 {"company":"Depaul","first_seen":"2026-10-19","id":"bamboohr:depaul:562","location":"Westport, Connaught","team":"Graduate Programme","title":"Support Worker - Graduate Programme Mayo: 2027 Graduate Programme"}
 {"company":"Depaul","first_seen":"2026-10-19","id":"bamboohr:depaul:563","location":"Belfast","team":"Graduate Programme","title":"Support Worker - Graduate Programme Northern Ireland: 2027 Graduate Programme"}
 {"company":"Depaul","first_seen":"2026-10-19","id":"bamboohr:depaul:565","location":"Dublin, Leinster","team":"Moore Haven","title":"Deputy Manager - Moore Haven"}
-{"company":"Depaul","first_seen":"2026-10-19","id":"bamboohr:depaul:566","location":"Cork, Munster","team":"Deerpark (Cork)","title":"Case Worker - Maternity Cover, Cork"}
+{"closed_at":"2026-10-23","company":"Depaul","first_seen":"2026-10-19","id":"bamboohr:depaul:566","location":"Cork, Munster","team":"Deerpark (Cork)","title":"Case Worker - Maternity Cover, Cork"}
 {"company":"Depaul","first_seen":"2026-10-19","id":"bamboohr:depaul:568","location":"Cork, Munster","title":"Support Worker - West Cork Services"}
 {"company":"Depaul","first_seen":"2026-10-19","id":"bamboohr:depaul:576","location":"Cork, Munster","title":"Night Support Worker - West Cork Services"}
 {"company":"Depaul","first_seen":"2026-10-19","id":"bamboohr:depaul:585","location":"Cork, Munster","title":"Relief Worker - Cork Services"}
@@ -23,7 +23,7 @@
 {"company":"Depaul","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:depaul:594","location":"Belfast","team":"Stella Maris","title":"Stella Maris - Night Support Worker"}
 {"company":"Depaul","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:depaul:595","location":"Belfast","team":"Stella Maris","title":"Stella Maris - Support Worker"}
 {"company":"Depaul","first_seen":"2026-10-19","id":"bamboohr:depaul:597","location":"Waterford, Leinster","team":"Manor House (Waterford)","title":"Night Deputy Manager - Manor House, Waterford"}
-{"company":"Depaul","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:depaul:598","location":"Cork, Munster","team":"St Vincent's (Cork)","title":"Support Worker - Cork Services"}
+{"closed_at":"2026-10-23","company":"Depaul","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:depaul:598","location":"Cork, Munster","team":"St Vincent's (Cork)","title":"Support Worker - Cork Services"}
 {"company":"Depaul","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:depaul:599","location":"Belfast","team":"Cloverhill","title":"Cloverhill - Support Worker"}
 {"company":"Depaul","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:depaul:600","location":"Belfast","team":"Castlehill","title":"Castlehill - Support Worker"}
 {"company":"Depaul","first_seen":"2026-10-19","id":"bamboohr:depaul:601","location":"Belfast","team":"Women's Community Transition","title":"Deputy Manager (Community Transition Service & Bail Support Pilot)"}
@@ -34,3 +34,6 @@
 {"company":"Depaul","first_seen":"2026-10-20","id":"bamboohr:depaul:607","location":"Dublin, Leinster","title":"Deputy Manager - Dublin"}
 {"company":"Depaul","first_seen":"2026-10-21","id":"bamboohr:depaul:608","location":"Wexford, Leinster","team":"Ozanam House (Wexford)","title":"Relief Worker - Wexford"}
 {"company":"Depaul","employment":"full_time","first_seen":"2026-10-22","id":"bamboohr:depaul:609","location":"Belfast","team":"Castlehill","title":"Castlehill - Case Worker"}
+{"company":"Depaul","first_seen":"2026-10-23","id":"bamboohr:depaul:611","location":"Carlow, Leinster","team":"Barrow Place (Carlow)","title":"Night Deputy Manager - Carlow (CWI)"}
+{"company":"Depaul","first_seen":"2026-10-23","id":"bamboohr:depaul:612","location":"Carlow, Leinster","team":"Barrow Place (Carlow)","title":"Night Support Worker - Carlow (CWI)"}
+{"company":"Depaul","first_seen":"2026-10-23","id":"bamboohr:depaul:613","location":"Wexford, Leinster","team":"Ozanam House (Wexford)","title":"Night Support Worker - Wexford (CWI)"}
