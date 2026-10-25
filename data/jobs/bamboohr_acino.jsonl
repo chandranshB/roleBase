@@ -25,9 +25,12 @@
 {"company":"Acino","first_seen":"2026-10-25","id":"bamboohr:acino:1040","remote":true,"team":"Sales","title":"Medical Representatives, Iraq /Al-Diwaniyah"}
 {"company":"Acino","first_seen":"2026-10-25","id":"bamboohr:acino:1041","remote":true,"team":"Sales","title":"Medical Representatives, Iraq /Nasiriyah"}
 {"company":"Acino","first_seen":"2026-10-25","id":"bamboohr:acino:1042","remote":true,"team":"Sales","title":"Medical Representatives, Iraq /Basra"}
+{"company":"Acino","first_seen":"2026-10-25","id":"bamboohr:acino:1044","remote":true,"team":"Sales","title":"Medical Representatives, Iraq /Najaf"}
+{"company":"Acino","first_seen":"2026-10-25","id":"bamboohr:acino:1045","remote":true,"team":"Sales","title":"Medical Representatives, Iraq /Karbala"}
 {"company":"Acino","first_seen":"2026-10-19","id":"bamboohr:acino:784","location":"Liesberg, Baselland","team":"Electric and Automation","title":"Elektriker 100 % (m/w/d)"}
 {"company":"Acino","first_seen":"2026-10-19","id":"bamboohr:acino:800","location":"Egypt","team":"Quality Control","title":"Quality Control Specialist - (Incoming Materials)"}
 {"company":"Acino","first_seen":"2026-10-19","id":"bamboohr:acino:803","location":"Egypt","team":"Quality Control","title":"Quality Control Senior Specialist - Finished Products"}
+{"company":"Acino","first_seen":"2026-10-25","id":"bamboohr:acino:828","location":"Cairo, Cairo","team":"Quality Assurance","title":"QA Sr. Specialist (Sterile Area)"}
 {"company":"Acino","first_seen":"2026-10-19","id":"bamboohr:acino:832","location":"Cairo, Cairo","team":"Corporate Legal & Compliance","title":"Integrity and Compliance Manager"}
 {"company":"Acino","first_seen":"2026-10-19","id":"bamboohr:acino:847","location":"Cairo, Cairo","skills":["crm"],"team":"Sales","title":"CRM Analyst"}
 {"company":"Acino","first_seen":"2026-10-19","id":"bamboohr:acino:880","location":"Riyadh, -","team":"Sales","title":"Product Specialist KSA"}
@@ -51,9 +54,9 @@
 {"company":"Acino","first_seen":"2026-10-19","id":"bamboohr:acino:945","location":"Liesberg, Baselland","team":"Engineering","title":"Technician Infrastructure 100% (m/w/d)"}
 {"company":"Acino","first_seen":"2026-10-19","id":"bamboohr:acino:956","location":"Cairo, Cairo","team":"Sales","title":"Medical Representative -Giza"}
 {"company":"Acino","first_seen":"2026-10-19","id":"bamboohr:acino:977","location":"Dubai","team":"Finance","title":"Finance Specialist"}
-{"company":"Acino","first_seen":"2026-10-19","id":"bamboohr:acino:980","remote":true,"team":"Sales","title":"Medical Representatives, Iraq / Erbil"}
-{"company":"Acino","first_seen":"2026-10-19","id":"bamboohr:acino:982","remote":true,"team":"Sales","title":"Sales Expert, Najaf/ Region / Full Time"}
-{"company":"Acino","first_seen":"2026-10-19","id":"bamboohr:acino:983","remote":true,"team":"Sales","title":"Full Time /Medical Representatives, Iraq / Hilla"}
+{"closed_at":"2026-10-25","company":"Acino","first_seen":"2026-10-19","id":"bamboohr:acino:980","remote":true,"team":"Sales","title":"Medical Representatives, Iraq / Erbil"}
+{"closed_at":"2026-10-25","company":"Acino","first_seen":"2026-10-19","id":"bamboohr:acino:982","remote":true,"team":"Sales","title":"Sales Expert, Najaf/ Region / Full Time"}
+{"closed_at":"2026-10-25","company":"Acino","first_seen":"2026-10-19","id":"bamboohr:acino:983","remote":true,"team":"Sales","title":"Full Time /Medical Representatives, Iraq / Hilla"}
 {"company":"Acino","first_seen":"2026-10-19","id":"bamboohr:acino:987","location":"Dubai","team":"Production","title":"Production Operator - 9 Positions"}
 {"company":"Acino","first_seen":"2026-10-19","id":"bamboohr:acino:989","location":"Liesberg, Baselland","title":"Initiativbewerbung (w/m/d)"}
 {"closed_at":"2026-10-22","company":"Acino","first_seen":"2026-10-19","id":"bamboohr:acino:990","location":"Dubai","team":"Production","title":"Production Supervisor - 2 Positions"}
