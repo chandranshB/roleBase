@@ -9,7 +9,7 @@
 {"company":"CFC","first_seen":"2026-10-19","id":"pinpoint:cfc:0f4a91cb-d3aa-4d1e-b2c1-7aeba0a584fc","location":"UK - London","title":"Senior Underwriter"}
 {"company":"CFC","first_seen":"2026-10-19","id":"pinpoint:cfc:1429f9e0-1083-4cf0-acab-2dfe920e5f7e","location":"UK - London","skills":["procurement","databricks"],"title":"Finance Systems Business Analyst"}
 {"company":"CFC","first_seen":"2026-10-19","id":"pinpoint:cfc:165b0eb3-8444-4e76-b1e8-484b8e68dac1","location":"UK - London","skills":["project_management","budgeting","forecasting"],"title":"Project Manager"}
-{"company":"CFC","first_seen":"2026-10-19","id":"pinpoint:cfc:1914f594-f2fd-4d86-8d37-aa9d6e174150","location":"UK - London","skills":["agile"],"title":"Product Analyst"}
+{"closed_at":"2026-10-27","company":"CFC","first_seen":"2026-10-19","id":"pinpoint:cfc:1914f594-f2fd-4d86-8d37-aa9d6e174150","location":"UK - London","skills":["agile"],"title":"Product Analyst"}
 {"closed_at":"2026-10-19","company":"CFC","first_seen":"2026-10-19","id":"pinpoint:cfc:1ca25f6d-8bcb-4d6f-a09c-b49101d630ea","location":"UK - London","title":"Senior Assistant Company Secretary (12 month FTC)"}
 {"company":"CFC","first_seen":"2026-10-19","id":"pinpoint:cfc:1f4933b2-3cc8-445f-b855-fa95b8f71822","location":"UK - London","title":"Portfolio Partnerships Account Executive"}
 {"company":"CFC","first_seen":"2026-10-19","id":"pinpoint:cfc:21172dcb-aa55-4e82-8310-5e26846cfad9","location":"AU - Melbourne","skills":["customer_service","time_management","ms_office"],"title":"Platform Support Specialist"}
@@ -27,11 +27,13 @@
 {"company":"CFC","first_seen":"2026-10-19","id":"pinpoint:cfc:56938c7b-c85e-4d62-a277-b2fff5b68dcf","location":"UK - London","skills":["angular","azure","agile","sql","ci/cd"],"title":"Software Engineer"}
 {"company":"CFC","first_seen":"2026-10-19","id":"pinpoint:cfc:572284ba-bf05-44c2-aa52-cb0cd01520a1","location":"UK - London","skills":["salesforce","ci/cd","azure"],"title":"Senior Salesforce Administrator"}
 {"company":"CFC","first_seen":"2026-10-19","id":"pinpoint:cfc:5bb3787a-8b04-47d7-9321-2020320507e7","location":"UK - London","title":"Senior DFIR Investigator"}
+{"company":"CFC","first_seen":"2026-10-27","id":"pinpoint:cfc:5d86caa9-184b-4d7c-9d8f-7377ba85608c","location":"UK - London","skills":["project_management"],"title":"Cyber Incident Manager"}
 {"company":"CFC","first_seen":"2026-10-19","id":"pinpoint:cfc:67d079a1-5bcc-4b31-9041-e34c3c006343","location":"Remote","remote":true,"skills":["aws","azure","python","linux"],"title":"Service Reliability Engineer","years":3}
 {"company":"CFC","first_seen":"2026-10-19","id":"pinpoint:cfc:7bad9fcc-08f0-4c88-adbe-99524c2554cc","location":"CA - Ontario","pay":[160000,220000,"CAD"],"title":"Assistant General Counsel","years":10}
 {"company":"CFC","first_seen":"2026-10-19","id":"pinpoint:cfc:8bd8c371-27e3-4891-9971-b412f1ff8192","location":"UK - London","title":"Talent & Development Partner"}
 {"company":"CFC","first_seen":"2026-10-19","id":"pinpoint:cfc:8daf71db-74f0-4904-90a9-91a93a4ffa02","location":"UK - London","title":"Quality Assurance & Controls Team Lead"}
 {"company":"CFC","first_seen":"2026-10-19","id":"pinpoint:cfc:8e5675f0-78bd-4af7-9e7d-02aa7955a6a5","location":"US - Texas","skills":["time_management","ms_office"],"title":"Executive Assistant"}
+{"company":"CFC","first_seen":"2026-10-27","id":"pinpoint:cfc:8f5a8895-d2ba-424b-8ae1-f6537000f503","location":"UK - London","skills":["project_management"],"title":"Cyber Incident Manager"}
 {"company":"CFC","first_seen":"2026-10-19","id":"pinpoint:cfc:8f6fa87c-8318-4a0a-9a3c-442f7df0588c","location":"UK - London","skills":["time_management"],"title":"Senior Product Developer (Wordings)"}
 {"company":"CFC","first_seen":"2026-10-19","id":"pinpoint:cfc:8f8dd2e0-d66c-42cf-899e-e4e67c4f7f62","location":"UK - London","skills":["agile"],"title":"Product Manager - 12-month FTC"}
 {"company":"CFC","first_seen":"2026-10-19","id":"pinpoint:cfc:92875b89-b60c-4626-928c-3c97b980d262","location":"AU - Melbourne","skills":["excel","time_management"],"title":"Operations Analyst"}
