@@ -17,7 +17,7 @@
 {"closed_at":"2026-10-26","company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:0ca8c891-8528-41a7-9eaa-b0a9366cb0e2","location":"Home United States","pay":[82500,92500,"USD"],"remote":true,"title":"P&C Liability Supervisor (East Coast - Remote)","years":5}
 {"company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:0d1fdb94-e68f-441a-82ed-bc7d43489c25","location":"Liverpool","skills":["negotiation"],"title":"Claim Handler CH3"}
 {"company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:0db81c43-7c15-4103-9c08-7d2ae062605e","location":"Bolton","skills":["negotiation"],"title":"Small Claims File Handler"}
-{"company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:0e56ebaa-a8f6-45f0-b2ae-43fcff6dc243","location":"Bolton","title":"Large & Complex Loss Paralegal"}
+{"closed_at":"2026-10-27","company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:0e56ebaa-a8f6-45f0-b2ae-43fcff6dc243","location":"Bolton","title":"Large & Complex Loss Paralegal"}
 {"company":"Davies Group","first_seen":"2026-10-21","id":"pinpoint:davies:0e5adb02-0a47-4677-9c76-1da42c5639ef","location":"Liverpool","skills":["negotiation","customer_service"],"title":"NIHL Claims Handler"}
 {"company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:0e892517-328b-4cdb-9b5a-a024b056a568","location":"Stoke","title":"Customer Support Technician","years":2}
 {"company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:0f5bcbbc-3422-427b-bfee-ee2e5b3db605","location":"Pune","skills":["project_management","pmp","agile","six_sigma","ms_office","powerpoint"],"title":"Senior Associate - Project Management","years":3}
@@ -30,6 +30,7 @@
 {"company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:127940a4-6a5a-485a-8c64-5eb8b5f71b18","location":"Birmingham","title":"Noise Induced Hearing Loss - File Handler"}
 {"company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:12846650-4f8d-44d0-b896-553b40fbafa8","location":"Bolton","skills":["negotiation"],"title":"Litigated EL/PL Claims Handler"}
 {"closed_at":"2026-10-19","company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:141b456b-1867-4ed7-a45c-e51807b27ec2","location":"Pune","skills":["forecasting","accounts_payable","accounts_receivable","erp"],"title":"Sr Associate- Treasury"}
+{"company":"Davies Group","first_seen":"2026-10-27","id":"pinpoint:davies:1592bb30-b606-47b1-9472-942b8ebe5c3c","location":"Bolton","title":"Assistant File Handler"}
 {"company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:15bf8b7d-07a3-4fe3-924d-a0b97cb005fb","location":"Pune","skills":["azure","ci/cd","terraform","git"],"title":"CQLC: Lead Associate-DevOps"}
 {"closed_at":"2026-10-22","company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:16181ecb-0ce5-42cd-8cbe-8a7bb648adfc","location":"Pune","skills":["ci/cd","agile"],"title":"Manager - QA","years":8}
 {"company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:16d677b8-7dfd-4060-8598-ae8ae4e82268","location":"Pune","title":"Specialist - ITSM Major Incident Management","years":15}
@@ -54,6 +55,7 @@
 {"company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:23cb7713-fc1f-4cd7-9be7-30a68d8f88ee","location":"Remote, NM","pay":[85000,92000,"USD"],"remote":true,"title":"New Mexico Workers' Compensation Adjuster (Remote in NM)","years":5}
 {"company":"Davies Group","first_seen":"2026-10-26","id":"pinpoint:davies:249ad043-5541-42ef-80f9-0e11e5a4bf07","location":"Bolton","skills":["negotiation"],"title":"Pre Litigated Credit Hire Handler"}
 {"company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:24edc394-8528-4cff-b9b9-175e28e7530a","location":"Home United States","pay":[60000,75000,"USD"],"remote":true,"skills":["negotiation","ms_office","time_management"],"title":"TPA Casualty Transportation Adjuster","years":4}
+{"company":"Davies Group","first_seen":"2026-10-27","id":"pinpoint:davies:2522afea-5f59-4b62-9f1e-0160685928fd","location":"Leeds","skills":["negotiation","customer_service"],"title":"Graduate Claims Handler"}
 {"company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:255dfe6d-19bc-494a-a128-61854fadffa1","location":"London UK","title":"Quantitative Risk Analyst (12 month FTC)"}
 {"company":"Davies Group","first_seen":"2026-10-20","id":"pinpoint:davies:256ee7ca-b7d4-4e84-b552-4588eeaa906c","location":"Home United States","pay":[80000,93000,"USD"],"remote":true,"skills":["time_management"],"title":"Commercial Liability Claim Adjuster"}
 {"company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:272c727f-eeef-45a2-a35c-31b118fe4395","location":"Bolton","title":"Solicitor (1PQE - 6PQE)  - Policy Coverage"}
@@ -67,7 +69,7 @@
 {"company":"Davies Group","first_seen":"2026-10-26","id":"pinpoint:davies:2c928fbf-3f51-41b0-b454-f2e95ca07de6","location":"Belfast","title":"Solicitor - Motor Role"}
 {"company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:2eba4e9e-904f-4f3c-8a9b-6c2b4a7c7cc5","location":"Home United Kingdom","remote":true,"title":"Head of Proposition - Motor"}
 {"company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:2edd6664-c3f6-467c-b473-76245a95e159","location":"Preston","title":"Senior Complaint Handler"}
-{"company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:2ef73d28-5862-4910-b6a7-20951f67503c","location":"Home Spain","pay":[35000,60000,"EUR"],"skills":["agile"],"title":"Business Analyst (Banking experience)"}
+{"company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:2ef73d28-5862-4910-b6a7-20951f67503c","location":"Home Spain","pay":[28000,60000,"EUR"],"skills":["agile"],"title":"Business Analyst (Banking experience)"}
 {"company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:2f18f0f9-66fd-4699-aed2-428f3c410107","location":"Pune","skills":["forecasting","agile"],"title":"Manager - Engineering","years":5}
 {"company":"Davies Group","first_seen":"2026-10-21","id":"pinpoint:davies:2f45dfbb-595d-4031-9b3a-8e524f4b2e2a","location":"Belfast","skills":["agile"],"title":"Solicitor - Motor Role","years":2}
 {"company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:2ff6496d-5a7e-408c-aa51-2b04a9bb18ab","location":"Home Spain","pay":[35000,50000,"EUR"],"remote":true,"skills":["sql","python","mongodb"],"title":"Systems Analyst (Insurance experience)","years":3}
@@ -96,7 +98,7 @@
 {"company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:3ec21ae8-c78a-4129-aaa5-e88878957bce","location":"Bolton","title":"Divisional Chief Risk & Compliance Officer"}
 {"company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:3fa795b0-150a-4c94-ae3e-5dd7e9cfbfec","location":"Kingston","pay":[95000,140000,"CAD"],"skills":["ms_office"],"title":"Manager, Forensic Accounting - Kingston/Ottawa","years":5}
 {"company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:401bd3f6-77c8-4c9f-86d4-ddb3897bbe16","location":"Pune","skills":["azure","sql","ci/cd"],"title":"Senior Associate - Data"}
-{"company":"Davies Group","first_seen":"2026-10-26","id":"pinpoint:davies:408de220-070b-49fc-8f12-83bab2c53edd","location":"Liverpool","reposts":1,"title":"Fast Track File Handler"}
+{"closed_at":"2026-10-27","company":"Davies Group","first_seen":"2026-10-26","id":"pinpoint:davies:408de220-070b-49fc-8f12-83bab2c53edd","location":"Liverpool","reposts":1,"title":"Fast Track File Handler"}
 {"company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:41190ba7-1777-4d07-b3c4-276bef3a1f91","location":"Remote, FL","pay":[47500,52500,"USD"],"remote":true,"skills":["ms_office","time_management"],"title":"P&C Property Damage Adjuster (Remote)"}
 {"closed_at":"2026-10-21","company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:42076ca3-8cce-4c74-8288-ca7515809394","location":"Home United States","pay":[145000,155000,"USD"],"remote":true,"skills":["agile","scrum","forecasting"],"title":"Application Owner- Field & Risk","years":5}
 {"company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:426b2cb7-d01b-45e9-9f4a-0628b81e22d2","location":"Home Spain","pay":[30000,50000,"EUR"],"skills":["agile","ci/cd"],"title":"Fenergo (FenX) Configuration Analyst","years":2}
@@ -163,7 +165,7 @@
 {"company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:6aa5bda5-b308-4662-8601-d7fd47bdaf5f","location":"Liverpool","remote":true,"skills":["time_management"],"title":"Property Loss Adjuster Liverpool"}
 {"company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:6b902e18-23c4-4f73-a4d7-6dc656d6ff58","location":"Bolton","title":"Assistant Lawyer"}
 {"closed_at":"2026-10-22","company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:6cf5839c-9ec9-4c23-aec8-098af43313c6","location":"Madrid","pay":[33500,40000,"EUR"],"skills":["spanish","ms_office"],"title":"Forensic Accountant"}
-{"closed_at":"2026-10-27","company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:6f786dd6-6ba9-44e1-8dee-4c67953aa9a1","location":"Bolton","skills":["social_media","customer_service"],"title":"Technical Manager","years":5}
+{"company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:6f786dd6-6ba9-44e1-8dee-4c67953aa9a1","location":"Bolton","skills":["social_media","customer_service"],"title":"Technical Manager","years":5}
 {"company":"Davies Group","first_seen":"2026-10-20","id":"pinpoint:davies:6f8def28-a320-4600-ba0b-2bbc7c343840","location":"Home United States","pay":[82000,86000,"USD"],"remote":true,"skills":["customer_service"],"title":"Senior Liability Claims Adjuster - Municipal Claims (FL License)"}
 {"company":"Davies Group","first_seen":"2026-10-26","id":"pinpoint:davies:7009ef7a-f21f-4570-8d06-10a84d36303b","location":"Toronto","pay":[65000,90000,"CAD"],"reposts":1,"skills":["ms_office"],"title":"Senior Accountant, Forensic Accounting"}
 {"closed_at":"2026-10-20","company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:713cc82a-f142-4dc1-ae9e-48a28907092b","location":"Pune","skills":["accounts_receivable","erp"],"title":"Senior Associate AR","years":3}
@@ -184,7 +186,7 @@
 {"company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:7e099265-7f79-40e3-9b38-ed5f94047b40","location":"Home United States","pay":[58000,63000,"USD"],"remote":true,"skills":["ms_office"],"title":"Property Damage Casualty Adjuster","years":2}
 {"company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:7ee01af9-a623-4e74-abb6-bbe1e0af29e3","location":"London UK","title":"Senior Accountant - German Speaking"}
 {"company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:7ef6b82b-cdb4-4db6-a56e-750de17e4dc4","location":"Liverpool","skills":["negotiation","ms_office"],"title":"Intermediate Track File Handler"}
-{"company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:7fa2d05c-8dba-4001-9e03-c8e1dd008f49","location":"Liverpool","title":"Team Leader"}
+{"closed_at":"2026-10-27","company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:7fa2d05c-8dba-4001-9e03-c8e1dd008f49","location":"Liverpool","title":"Team Leader"}
 {"company":"Davies Group","first_seen":"2026-10-26","id":"pinpoint:davies:7fd01d57-afb3-4482-8f9f-67faad3bdcfa","location":"Bolton","reposts":1,"skills":["negotiation"],"title":"Costs Negotiator"}
 {"company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:829515fe-04de-4a57-a124-fe588e0ceacf","location":"Pune","skills":["react","typescript","c#","sql","azure","agile","ci/cd","javascript"],"title":"Senior Associate - Full Stack","years":6}
 {"company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:82f7a745-f110-46a3-b31c-73fcdaf6c82e","location":"Birmingham","title":"Motor Crime - Solicitor"}
@@ -206,6 +208,7 @@
 {"closed_at":"2026-10-19","company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:8fcfd733-209c-437a-84b7-3ce9760319aa","location":"Pune","skills":["azure","ml","python","pytorch","sql"],"title":"Senior Associate - AI / Data"}
 {"company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:916dba78-1436-42bd-bc8c-5c96e5b4d158","location":"Stoke","title":"Customer Support Technician","years":1}
 {"company":"Davies Group","first_seen":"2026-10-20","id":"pinpoint:davies:91d3fd77-7415-4391-b7b5-aca412330301","location":"Pune","skills":["agile","scrum","ci/cd"],"title":"CQLC: Senior Associate - Quality (Automation)"}
+{"company":"Davies Group","employment":"part_time","first_seen":"2026-10-27","id":"pinpoint:davies:923803db-b4a3-48de-b963-761da8241df4","location":"Home United States","remote":true,"skills":["ms_office","customer_service","time_management"],"title":"Premium Audit Coordinator (Part-Time, Remote)"}
 {"company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:927a5d91-0d70-4916-ba5b-355bb4dcde10","location":"Bolton","title":"Property Risks and Coverage Paralegal"}
 {"company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:92876c15-ae4b-410a-a1b3-de4f045d4e8a","location":"Preston","skills":["customer_service"],"title":"Customer Service Advisor - Evenings FTC"}
 {"company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:92dbf375-d27d-4658-b9ac-9615a12bce4e","location":"Remote, FL","pay":[80000,85000,"USD"],"remote":true,"skills":["customer_service"],"title":"Senior Excess Adjuster (Florida - Remote)"}
@@ -280,7 +283,7 @@
 {"closed_at":"2026-10-24","company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:bdae77b7-a557-493e-a47f-d93559bb8d96","location":"Home United Kingdom","pay":[70000,90000,"GBP"],"remote":true,"skills":["react","typescript","ci/cd","azure","terraform","c#","sql"],"title":"Software Development Lead"}
 {"company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:bde15931-37e9-4b3c-aa8b-87b3aa312155","location":"Birmingham","title":"Professional Indemnity - Senior Associate"}
 {"company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:bdfc45b5-fd57-45cb-b23e-88d5e4f8ee25","location":"Liverpool","skills":["negotiation"],"title":"Claim Handler CH3"}
-{"company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:be58ff78-c810-4350-9130-d340bfbb2efb","location":"Bolton","title":"Credit Hire Technical Supervisor"}
+{"company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:be58ff78-c810-4350-9130-d340bfbb2efb","location":"Bolton","title":"Credit Hire Technical Lead"}
 {"company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:be7e707e-ac0f-48b6-8587-0aafad70e2a6","location":"Belfast","title":"Solicitor - Disease Team","years":2}
 {"closed_at":"2026-10-27","company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:bed9da9b-8cbb-4b30-b75c-328ead540e32","location":"Liverpool","skills":["negotiation"],"title":"File Handler Pre Litigated Complex"}
 {"company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:bfbec0c7-3323-48c9-baac-c027e19b5313","location":"London UK","title":"Property Risks and Coverage Solicitor"}
@@ -294,7 +297,7 @@
 {"company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:c7c7aedc-cbd9-4c67-9744-d316d1c0ee41","location":"Home United States","remote":true,"skills":["python"],"title":"Allocation Manager"}
 {"company":"Davies Group","first_seen":"2026-10-22","id":"pinpoint:davies:c8c866e4-2142-454c-b6ae-a4fb69266b29","location":"Liverpool","title":"Lead File Handler"}
 {"company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:cadf8662-1745-4c01-a17e-ba879a00eb74","location":"Home United Kingdom","remote":true,"title":"Senior Property Loss Adjuster  MCL  North"}
-{"company":"Davies Group","first_seen":"2026-10-19","id":"pinpoint:davies:caf5df47-dbad-482b-a080-ea5c97a2a5d7","location":"Liverpool","title":"Team Leader"}
+{"company":"Davies Group","first_seen":"2026-10-19","id":"pinpoint:davies:caf5df47-dbad-482b-a080-ea5c97a2a5d7","location":"Liverpool","title":"Team Leader- EL/PL"}
 {"company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:cb626449-1f74-49e9-9511-ae0be939b34f","location":"Bolton","title":"EL/PL Litigation Executive"}
 {"closed_at":"2026-10-26","company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:cbd8f128-3d73-406d-97c9-6a8d7c8c2c3b","location":"Baltimore, MD","pay":[71760,77250,"USD"],"skills":["negotiation","customer_service","time_management","ms_office"],"title":"P&C Claim Representative III","years":2}
 {"company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:cbfcaeba-1208-44f5-912b-eb26f2edb857","location":"Pune","skills":["sql","time_management"],"title":"Senior Applications Developer"}
@@ -302,7 +305,9 @@
 {"company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:ccc2ccb8-e62c-423c-b12a-814cbed43549","location":"Home United States","pay":[45000,60000,"USD"],"remote":true,"skills":["customer_service"],"title":"Workers' Compensation Excess/SDF Claims Specialist (Remote)","years":1}
 {"company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:cd1d5f77-5b4a-45a2-b3c5-9db8a52374b2","location":"Home United Kingdom","remote":true,"skills":["time_management","ms_office","excel"],"title":"Casualty QA Internal Auditor"}
 {"company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:cd8f5228-164a-42e1-931f-b0ba2cc38855","location":"Bolton","skills":["agile","cpr"],"title":"NDA Litigated File Handler"}
+{"company":"Davies Group","first_seen":"2026-10-27","id":"pinpoint:davies:d0b7935e-e5a4-4d89-af97-c5fb05c43c24","location":"Birmingham","skills":["negotiation","cpr"],"title":"Junior Costs Negotiator"}
 {"company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:d12d3017-f1bb-4efd-b633-91dfae423f6c","location":"Home United States","pay":[75000,95500,"USD"],"remote":true,"skills":["negotiation"],"title":"Transportation Adjuster (Michigan)","years":5}
+{"company":"Davies Group","first_seen":"2026-10-27","id":"pinpoint:davies:d1635934-6794-4616-8d13-0424384ea47e","location":"Bolton","skills":["time_management"],"title":"NIHL File Handler"}
 {"closed_at":"2026-10-24","company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:d3a530c3-fae5-4a7e-9ec3-7a003f3b748f","location":"Bolton","title":"Crime & Regulatory Paralegal"}
 {"closed_at":"2026-10-21","company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:d3bdcbdc-b9f1-4f60-8e03-ecb7b26f468c","location":"Bolton","title":"EL/PL Lawyer"}
 {"company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:d3ee4448-4b43-4a9d-b158-45879e90a25f","location":"Cherry Hill, NJ","pay":[145000,175000,"USD"],"skills":["excel"],"title":"Senior Surety Manager","years":8}
@@ -316,7 +321,7 @@
 {"company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:dfca4019-6dc0-4512-aefa-6ba6f77d7dc7","location":"Pune","skills":["azure","sql"],"title":"Senior Associate - Security Engineering"}
 {"closed_at":"2026-10-21","company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:e04fe77b-c5d6-4ecd-8650-771ca0962e50","location":"London UK","title":"Senior Recruitment Consultant (Perm)"}
 {"company":"Davies Group","first_seen":"2026-10-21","id":"pinpoint:davies:e099c25d-c625-42a7-8c51-704e8e83012f","location":"Stoke","skills":["negotiation","customer_service"],"title":"NIHL Claims Handler"}
-{"closed_at":"2026-10-27","company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:e2026afb-05b0-4907-9e53-3840eebf0cd2","location":"Bolton","skills":["negotiation"],"title":"File Handler Pre-Litigated Complex"}
+{"company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:e2026afb-05b0-4907-9e53-3840eebf0cd2","location":"Bolton","skills":["negotiation"],"title":"File Handler Pre-Litigated Complex"}
 {"company":"Davies Group","first_seen":"2026-10-20","id":"pinpoint:davies:e34fe8ec-fe0c-4564-b45f-89f500c79519","location":"New York, NY","pay":[70000,75000,"USD"],"skills":["negotiation","crm"],"title":"Senior Recruiting Consultant"}
 {"company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:e386f435-3c38-44b0-afe3-9f3494142beb","location":"Pune","skills":["agile","scrum","c#","react","azure","sql","javascript"],"title":"CQLC: Senior Associate - (.NET)"}
 {"closed_at":"2026-10-21","company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:e42fe542-d387-41ba-b937-291591a375ee","location":"Calgary","skills":["ms_office"],"title":"Senior Accountant, Forensic Accounting"}
@@ -339,6 +344,7 @@
 {"closed_at":"2026-10-26","company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:f4595e19-e41c-43db-bd03-4a7884b74ce2","location":"Pune","skills":["time_management"],"title":"Sr. Associate - P&C Transcription","years":1}
 {"company":"Davies Group","first_seen":"2026-10-20","id":"pinpoint:davies:f585b2f2-ae51-49f1-a531-f66b36f492be","location":"Home United States","pay":[62000,68000,"USD"],"remote":true,"skills":["customer_service","negotiation"],"title":"Liability Associate Claim Adjuster (Florida)"}
 {"closed_at":"2026-10-22","company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:f59eca98-6d20-4de3-9bc1-c3ca3bc2c412","location":"Home United States","pay":[85000,110000,"USD"],"remote":true,"skills":["time_management"],"title":"General Liability Claims Representative"}
+{"company":"Davies Group","first_seen":"2026-10-27","id":"pinpoint:davies:f5a4ae0c-5368-4834-82de-8fa2c59db9c8","location":"Bolton","skills":["negotiation"],"title":"Junior Costs Draftsperson"}
 {"company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:f69a08f3-c3a4-42e3-a7a0-66980e43e166","location":"Preston","title":"Niche Claims Handlers"}
 {"closed_at":"2026-10-23","company":"Davies Group","first_seen":"2026-10-22","id":"pinpoint:davies:f7d78c7f-39c6-433f-98cb-587f76e4040f","location":"Bolton","skills":["negotiation"],"title":"Small Claims File Handler"}
 {"company":"Davies Group","first_seen":"2026-10-18","id":"pinpoint:davies:f7d90956-bfee-488d-9051-9d540c703e7a","location":"London UK","skills":["negotiation"],"title":"Legal Claims Handler - Healthcare London"}
