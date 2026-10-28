@@ -10,10 +10,10 @@
 {"company":"BibliU","first_seen":"2026-10-19","id":"bamboohr:bibliu:499","location":"Sanford, North Carolina","team":"Regional Managers","title":"Regional Manager (North Carolina)"}
 {"company":"BibliU","first_seen":"2026-10-19","id":"bamboohr:bibliu:501","location":"Statesville, North Carolina","team":"MTCC - 110","title":"Store Manager"}
 {"closed_at":"2026-10-26","company":"BibliU","first_seen":"2026-10-19","id":"bamboohr:bibliu:502","location":"Miami Shores, Florida","team":"BU - 143","title":"Store Manager"}
-{"company":"BibliU","first_seen":"2026-10-19","id":"bamboohr:bibliu:504","location":"Henderson, Nevada","skills":["customer_service"],"team":"CSN-2002","title":"Customer Service Manager"}
+{"closed_at":"2026-10-28","company":"BibliU","first_seen":"2026-10-19","id":"bamboohr:bibliu:504","location":"Henderson, Nevada","skills":["customer_service"],"team":"CSN-2002","title":"Customer Service Manager"}
 {"closed_at":"2026-10-20","company":"BibliU","first_seen":"2026-10-19","id":"bamboohr:bibliu:506","remote":true,"team":"Supply Chain Operations","title":"Commercial Partnerships Lead"}
 {"company":"BibliU","first_seen":"2026-10-20","id":"bamboohr:bibliu:507","location":"Lexington, Kentucky","team":"Regional Managers","title":"Regional Manager East Kentucky"}
-{"company":"BibliU","first_seen":"2026-10-19","id":"bamboohr:bibliu:510","location":"Tulsa, Oklahoma","team":"TCC-2013","title":"Sales Support"}
+{"closed_at":"2026-10-28","company":"BibliU","first_seen":"2026-10-19","id":"bamboohr:bibliu:510","location":"Tulsa, Oklahoma","team":"TCC-2013","title":"Sales Support"}
 {"company":"BibliU","first_seen":"2026-10-19","id":"bamboohr:bibliu:511","location":"Tulsa, Oklahoma","team":"TCC-2013","title":"Cashier"}
 {"company":"BibliU","first_seen":"2026-10-19","id":"bamboohr:bibliu:513","location":"Tulsa, Oklahoma","team":"TCC-2013","title":"Sales Support"}
 {"company":"BibliU","first_seen":"2026-10-19","id":"bamboohr:bibliu:514","location":"Tulsa, Oklahoma","team":"TCC-2013","title":"Cashier"}
@@ -27,3 +27,6 @@
 {"company":"BibliU","first_seen":"2026-10-19","id":"bamboohr:bibliu:524","location":"Clarkesville, Georgia","team":"2015 - NGTC","title":"Store Manager"}
 {"company":"BibliU","first_seen":"2026-10-19","id":"bamboohr:bibliu:525","location":"Cisco, Texas","skills":["customer_service"],"team":"CCB-103","title":"Customer Service Manager"}
 {"closed_at":"2026-10-26","company":"BibliU","first_seen":"2026-10-20","id":"bamboohr:bibliu:526","location":"Florence, Kentucky","team":"2060 - GCTC","title":"Store Manager"}
+{"company":"BibliU","first_seen":"2026-10-28","id":"bamboohr:bibliu:527","location":"Wilkesboro, North Carolina","reposts":2,"team":"WILK-112","title":"Store Manager"}
+{"company":"BibliU","first_seen":"2026-10-28","id":"bamboohr:bibliu:528","location":"Cisco, Texas","skills":["customer_service"],"team":"CCB-103","title":"Customer Service Manager"}
+{"company":"BibliU","first_seen":"2026-10-28","id":"bamboohr:bibliu:529","location":"Lake Charles, Louisiana","team":"SOWELA-820","title":"Lead Cashier"}
