@@ -6,7 +6,7 @@
 {"closed_at":"2026-10-27","company":"Fessler & Bowman","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:fesslerbowman:737","location":"Charlotte, North Carolina","team":"Foreman - Civil","title":"Civil Foreman"}
 {"company":"Fessler & Bowman","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:fesslerbowman:748","location":"Charlotte, North Carolina","team":"Project Management - Civil","title":"Project Manager - Civil (Travel)"}
 {"company":"Fessler & Bowman","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:fesslerbowman:779","location":"Charlotte, North Carolina","team":"Foreman - Civil","title":"Foreman-Grading & Utilities"}
-{"closed_at":"2026-10-27","company":"Fessler & Bowman","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:fesslerbowman:789","location":"Raleigh, North Carolina","team":"Field - Non-Union","title":"Laborer"}
+{"company":"Fessler & Bowman","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:fesslerbowman:789","location":"Raleigh, North Carolina","team":"Field - Non-Union","title":"Laborer"}
 {"company":"Fessler & Bowman","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:fesslerbowman:792","location":"Charlotte, North Carolina","team":"Safety","title":"Safety Manager"}
 {"company":"Fessler & Bowman","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:fesslerbowman:793","location":"Greenville, South Carolina","team":"Project Management - Concrete","title":"Assistant Project Manager"}
 {"company":"Fessler & Bowman","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:fesslerbowman:800","location":"Grand Rapids, Michigan","team":"Field - Union","title":"Heavy Equipment Operator"}
@@ -31,7 +31,7 @@
 {"company":"Fessler & Bowman","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:fesslerbowman:852","location":"Smyrna, Tennessee","team":"Field - Non-Union","title":"Concrete Laborer"}
 {"company":"Fessler & Bowman","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:fesslerbowman:853","location":"Smyrna, Tennessee","team":"Field - Non-Union","title":"Heavy Equipment Operator"}
 {"company":"Fessler & Bowman","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:fesslerbowman:855","location":"Grand Rapids, Michigan","team":"Project Management - Concrete","title":"Concrete Project Manager"}
-{"company":"Fessler & Bowman","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:fesslerbowman:858","location":"Smyrna, Tennessee","team":"Field - Non-Union","title":"Foreman - Concrete"}
+{"closed_at":"2026-10-28","company":"Fessler & Bowman","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:fesslerbowman:858","location":"Smyrna, Tennessee","team":"Field - Non-Union","title":"Foreman - Concrete"}
 {"company":"Fessler & Bowman","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:fesslerbowman:859","location":"Holly, Michigan","team":"Estimating - Civil","title":"Chief Estimator - Civil"}
 {"company":"Fessler & Bowman","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:fesslerbowman:860","location":"Holly, Michigan","team":"Estimating - Civil","title":"Civil Estimator"}
 {"company":"Fessler & Bowman","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:fesslerbowman:866","location":"Charlotte, North Carolina","team":"Project Management - Concrete","title":"Travel Project Manager"}
@@ -77,6 +77,7 @@
 {"company":"Fessler & Bowman","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:fesslerbowman:947","location":"De Moines, Iowa","team":"Superintendent - Non-Union","title":"Superintendent Concrete"}
 {"company":"Fessler & Bowman","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:fesslerbowman:949","location":"Amarillo, Texas","team":"Yard","title":"Heavy Equipment Mechanic"}
 {"company":"Fessler & Bowman","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:fesslerbowman:950","location":"Holly, Michigan","team":"Operations","title":"Director of Internal Operations"}
+{"company":"Fessler & Bowman","employment":"full_time","first_seen":"2026-10-28","id":"bamboohr:fesslerbowman:953","location":"Raleigh, North Carolina","team":"Field - Non-Union","title":"Heavy Equipment Operator"}
 {"company":"Fessler & Bowman","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:fesslerbowman:954","location":"Holly, Michigan","team":"IT","title":"Network Administrator"}
 {"company":"Fessler & Bowman","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:fesslerbowman:955","location":"Raleigh, North Carolina","team":"Project Management","title":"Project Engineer"}
 {"company":"Fessler & Bowman","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:fesslerbowman:956","location":"Knoxville, Tennessee","team":"Layout","title":"Construction Surveyor"}
@@ -98,3 +99,6 @@
 {"company":"Fessler & Bowman","employment":"full_time","first_seen":"2026-10-23","id":"bamboohr:fesslerbowman:973","location":"Charlotte, North Carolina","team":"Foreman - Non-Union","title":"Concrete Foreman"}
 {"company":"Fessler & Bowman","employment":"full_time","first_seen":"2026-10-23","id":"bamboohr:fesslerbowman:974","location":"Knoxville, Tennessee","team":"Layout","title":"Layout/Surveyor"}
 {"company":"Fessler & Bowman","employment":"full_time","first_seen":"2026-10-27","id":"bamboohr:fesslerbowman:975","location":"Holly, Michigan","team":"Operations","title":"Director of Field Operations"}
+{"company":"Fessler & Bowman","employment":"full_time","first_seen":"2026-10-28","id":"bamboohr:fesslerbowman:976","location":"Smyrna, Tennessee","team":"Foreman - Non-Union","title":"Concrete Foreman"}
+{"company":"Fessler & Bowman","employment":"full_time","first_seen":"2026-10-28","id":"bamboohr:fesslerbowman:977","location":"Raleigh, North Carolina","team":"Superintendent - Non-Union","title":"Place and Finish Superintendent"}
+{"company":"Fessler & Bowman","employment":"full_time","first_seen":"2026-10-28","id":"bamboohr:fesslerbowman:978","location":"Smyrna, Tennessee","team":"Superintendent - Non-Union","title":"Concrete Superintendent"}

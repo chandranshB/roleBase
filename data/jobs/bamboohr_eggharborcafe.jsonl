@@ -3,7 +3,7 @@
 {"company":"Egg Harbor Cafe","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:eggharborcafe:120","location":"Lake Geneva, Wisconsin","team":"Hospitality","title":"Busser/Cleaner Full-Time Lake Geneva"}
 {"company":"Egg Harbor Cafe","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:eggharborcafe:127","location":"Alpharetta, Georgia","team":"Hospitality","title":"Busser/Cleaner Full-time Alpharetta"}
 {"company":"Egg Harbor Cafe","employment":"full_time","first_seen":"2026-10-22","id":"bamboohr:eggharborcafe:132","location":"Lake Forest, Illinois","team":"Culinary","title":"Line Cook Full-Time Lake Forest"}
-{"company":"Egg Harbor Cafe","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:eggharborcafe:136","location":"Naperville, Illinois","team":"Culinary","title":"Line Cook Full-Time Naperville"}
+{"closed_at":"2026-10-28","company":"Egg Harbor Cafe","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:eggharborcafe:136","location":"Naperville, Illinois","team":"Culinary","title":"Line Cook Full-Time Naperville"}
 {"company":"Egg Harbor Cafe","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:eggharborcafe:142","location":"Libertyville, Illinois","team":"Culinary","title":"Line Cook Full-Time Libertyville"}
 {"company":"Egg Harbor Cafe","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:eggharborcafe:149","location":"Deerfield, Illinois","team":"Culinary","title":"Line Cook Full-Time Deerfield"}
 {"closed_at":"2026-10-24","company":"Egg Harbor Cafe","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:eggharborcafe:164","location":"Sandy Springs, Georgia","team":"Culinary","title":"Prep Cook Full-Time Sandy Springs"}
@@ -14,6 +14,7 @@
 {"closed_at":"2026-10-20","company":"Egg Harbor Cafe","employment":"part_time","first_seen":"2026-10-19","id":"bamboohr:eggharborcafe:259","location":"Alpharetta, Georgia","team":"Hospitality","title":"Host Part-Time Alpharetta"}
 {"company":"Egg Harbor Cafe","employment":"part_time","first_seen":"2026-10-19","id":"bamboohr:eggharborcafe:260","location":"Sandy Springs, Georgia","team":"Hospitality","title":"Food/Drink Runner Part-Time Sandy Springs"}
 {"company":"Egg Harbor Cafe","employment":"part_time","first_seen":"2026-10-22","id":"bamboohr:eggharborcafe:265","location":"Schaumburg, Illinois","team":"Hospitality","title":"Food/Drink Runner Schaumburg *Weekends Only*"}
+{"company":"Egg Harbor Cafe","employment":"part_time","first_seen":"2026-10-28","id":"bamboohr:eggharborcafe:275","location":"Elmhurst, Illinois","team":"Culinary","title":"Dishwasher Part-Time Elmhurst"}
 {"company":"Egg Harbor Cafe","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:eggharborcafe:280","location":"Deerfield, Illinois","team":"Hospitality","title":"Barista Part-Time Deerfield"}
 {"company":"Egg Harbor Cafe","employment":"part_time","first_seen":"2026-10-19","id":"bamboohr:eggharborcafe:285","location":"Deerfield, Illinois","team":"Culinary","title":"Prep Cook Part-Time Deerfield"}
 {"company":"Egg Harbor Cafe","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:eggharborcafe:286","location":"Deerfield, Illinois","team":"Culinary","title":"Line Cook Part-Time Deerfield"}
@@ -22,10 +23,11 @@
 {"company":"Egg Harbor Cafe","employment":"part_time","first_seen":"2026-10-19","id":"bamboohr:eggharborcafe:323","location":"Downers Grove, Illinois","team":"Hospitality","title":"Barista/Bar Part-Time Downers Grove"}
 {"company":"Egg Harbor Cafe","employment":"part_time","first_seen":"2026-10-19","id":"bamboohr:eggharborcafe:324","location":"Downers Grove, Illinois","team":"Hospitality","title":"Host Part-Time Downers Grove"}
 {"company":"Egg Harbor Cafe","employment":"part_time","first_seen":"2026-10-19","id":"bamboohr:eggharborcafe:325","location":"Downers Grove, Illinois","team":"Hospitality","title":"Food/Drink Runner Part-Time Downers Grove"}
+{"company":"Egg Harbor Cafe","employment":"part_time","first_seen":"2026-10-28","id":"bamboohr:eggharborcafe:329","location":"Downers Grove, Illinois","team":"Culinary","title":"Line Cook Part-Time Downers Grove *Weekends Only*"}
 {"company":"Egg Harbor Cafe","employment":"part_time","first_seen":"2026-10-22","id":"bamboohr:eggharborcafe:349","location":"Naperville, Illinois","team":"Hospitality","title":"Food/Drink Runner Part-Time Naperville"}
 {"company":"Egg Harbor Cafe","employment":"part_time","first_seen":"2026-10-22","id":"bamboohr:eggharborcafe:350","location":"Naperville, Illinois","team":"Hospitality","title":"Busser/Cleaner Part-Time Naperville"}
-{"company":"Egg Harbor Cafe","employment":"part_time","first_seen":"2026-10-19","id":"bamboohr:eggharborcafe:351","location":"Naperville, Illinois","team":"Culinary","title":"Dishwasher Part-Time Naperville"}
-{"company":"Egg Harbor Cafe","employment":"part_time","first_seen":"2026-10-19","id":"bamboohr:eggharborcafe:352","location":"Naperville, Illinois","team":"Culinary","title":"Prep Cook Part-Time Naperville"}
+{"closed_at":"2026-10-28","company":"Egg Harbor Cafe","employment":"part_time","first_seen":"2026-10-19","id":"bamboohr:eggharborcafe:351","location":"Naperville, Illinois","team":"Culinary","title":"Dishwasher Part-Time Naperville"}
+{"closed_at":"2026-10-28","company":"Egg Harbor Cafe","employment":"part_time","first_seen":"2026-10-19","id":"bamboohr:eggharborcafe:352","location":"Naperville, Illinois","team":"Culinary","title":"Prep Cook Part-Time Naperville"}
 {"company":"Egg Harbor Cafe","employment":"part_time","first_seen":"2026-10-19","id":"bamboohr:eggharborcafe:355","location":"Geneva, Illinois","team":"Hospitality","title":"Host Part-Time Geneva"}
 {"company":"Egg Harbor Cafe","employment":"part_time","first_seen":"2026-10-19","id":"bamboohr:eggharborcafe:356","location":"Geneva, Illinois","team":"Hospitality","title":"Food/Drink Runner Part-Time Geneva"}
 {"company":"Egg Harbor Cafe","employment":"part_time","first_seen":"2026-10-19","id":"bamboohr:eggharborcafe:358","location":"Geneva, Illinois","team":"Culinary","title":"Dishwasher Part-Time Geneva"}
@@ -68,8 +70,8 @@
 {"company":"Egg Harbor Cafe","employment":"part_time","first_seen":"2026-10-19","id":"bamboohr:eggharborcafe:535","location":"Denver, Colorado","team":"Hospitality","title":"Barista Full-Time Belleview Station, CO"}
 {"company":"Egg Harbor Cafe","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:eggharborcafe:54","location":"Geneva, Illinois","team":"Hospitality","title":"Food/Drink Runner Full-Time Geneva"}
 {"company":"Egg Harbor Cafe","employment":"part_time","first_seen":"2026-10-19","id":"bamboohr:eggharborcafe:542","location":"Denver, Colorado","team":"Hospitality","title":"Host Part-Time Belleview Station, CO"}
-{"company":"Egg Harbor Cafe","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:eggharborcafe:544","location":"Bannockburn, Illinois","team":"Store Management","title":"General Manager- All Locations"}
-{"company":"Egg Harbor Cafe","employment":"part_time","first_seen":"2026-10-19","id":"bamboohr:eggharborcafe:549","location":"Naperville, Illinois","team":"Culinary","title":"Line Cook Part-Time Naperville"}
+{"company":"Egg Harbor Cafe","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:eggharborcafe:544","location":"Bannockburn, Illinois","team":"Store Management","title":"General Manager Talent Pool- All Locations"}
+{"closed_at":"2026-10-28","company":"Egg Harbor Cafe","employment":"part_time","first_seen":"2026-10-19","id":"bamboohr:eggharborcafe:549","location":"Naperville, Illinois","team":"Culinary","title":"Line Cook Part-Time Naperville"}
 {"company":"Egg Harbor Cafe","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:eggharborcafe:56","location":"Lake Geneva, Wisconsin","team":"Hospitality","title":"Food/Drink Runner Full-Time Lake Geneva"}
 {"company":"Egg Harbor Cafe","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:eggharborcafe:58","location":"Johns Creek, Georgia","team":"Hospitality","title":"Food/Drink Runner Full-Time Johns Creek"}
 {"company":"Egg Harbor Cafe","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:eggharborcafe:59","location":"Sandy Springs, Georgia","team":"Hospitality","title":"Food/Drink Runner Full-Time Sandy Springs"}

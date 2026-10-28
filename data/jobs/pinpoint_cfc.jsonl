@@ -35,13 +35,14 @@
 {"company":"CFC","first_seen":"2026-10-19","id":"pinpoint:cfc:8e5675f0-78bd-4af7-9e7d-02aa7955a6a5","location":"US - Texas","skills":["time_management","ms_office"],"title":"Executive Assistant"}
 {"company":"CFC","first_seen":"2026-10-27","id":"pinpoint:cfc:8f5a8895-d2ba-424b-8ae1-f6537000f503","location":"UK - London","skills":["project_management"],"title":"Cyber Incident Manager"}
 {"company":"CFC","first_seen":"2026-10-19","id":"pinpoint:cfc:8f6fa87c-8318-4a0a-9a3c-442f7df0588c","location":"UK - London","skills":["time_management"],"title":"Senior Product Developer (Wordings)"}
-{"company":"CFC","first_seen":"2026-10-19","id":"pinpoint:cfc:8f8dd2e0-d66c-42cf-899e-e4e67c4f7f62","location":"UK - London","skills":["agile"],"title":"Product Manager - 12-month FTC"}
+{"closed_at":"2026-10-28","company":"CFC","first_seen":"2026-10-19","id":"pinpoint:cfc:8f8dd2e0-d66c-42cf-899e-e4e67c4f7f62","location":"UK - London","skills":["agile"],"title":"Product Manager - 12-month FTC"}
 {"company":"CFC","first_seen":"2026-10-19","id":"pinpoint:cfc:92875b89-b60c-4626-928c-3c97b980d262","location":"AU - Melbourne","skills":["excel","time_management"],"title":"Operations Analyst"}
 {"company":"CFC","first_seen":"2026-10-19","id":"pinpoint:cfc:941d1626-8a4f-4bd7-bee4-76fad6cf9ad3","location":"AU - Sydney","title":"Senior Underwriter - Financial Lines","years":4}
 {"company":"CFC","first_seen":"2026-10-19","id":"pinpoint:cfc:971f1dcc-f54d-4d06-9bcd-d8732766b98a","location":"UK - London","title":"Compliance Manager - Conduct"}
 {"company":"CFC","first_seen":"2026-10-19","id":"pinpoint:cfc:a3b8ef3d-a9a9-4a9f-8b7f-1812c6e0b289","location":"CA - Ontario","skills":["customer_service"],"title":"Claims Specialist, P&C"}
 {"company":"CFC","first_seen":"2026-10-19","id":"pinpoint:cfc:a42a9825-7eec-4ee0-9362-3cc1188ee470","location":"US - California","pay":[120000,165000,"USD"],"title":"Underwriter - US Professions"}
 {"company":"CFC","first_seen":"2026-10-19","id":"pinpoint:cfc:a6dde5cf-99ee-43a3-b1ea-05f8df072cfb","location":"UK - London","title":"Business Resumption Engineer","years":3}
+{"company":"CFC","first_seen":"2026-10-28","id":"pinpoint:cfc:a725875c-2262-4197-b18b-4f121a36b161","location":"US - Texas","skills":["azure"],"title":"Infrastructure Operations Engineer"}
 {"company":"CFC","first_seen":"2026-10-19","id":"pinpoint:cfc:b420c1a4-4109-4980-8e5e-21ec82d41af1","location":"UK - London","skills":["sql","tableau","snowflake","databricks"],"title":"Business Analyst"}
 {"company":"CFC","first_seen":"2026-10-19","id":"pinpoint:cfc:b782d60c-a34a-4402-b8a7-0a103e3d424f","location":"US - New York","pay":[130000,165000,"USD"],"skills":["customer_service"],"title":"Claims Specialist, Cyber/Tech"}
 {"company":"CFC","first_seen":"2026-10-19","id":"pinpoint:cfc:b8f67d29-d795-473c-929e-c73444749ea5","location":"US - New York","pay":[120000,160000,"USD"],"skills":["customer_service"],"title":"Claims Specialist, Medical Malpractice/Negligence"}
@@ -71,5 +72,5 @@
 {"company":"CFC","first_seen":"2026-10-19","id":"pinpoint:cfc:f3aabe89-dd3f-40c0-9bfe-456e19f53a2b","location":"US - New York","pay":[125000,135000,"USD"],"skills":["customer_service","azure","jira"],"title":"End User Technology (EUT) – Services Engineer, US","years":7}
 {"company":"CFC","first_seen":"2026-10-19","id":"pinpoint:cfc:f5263bf0-ccef-4703-930b-4d2baa8fc782","location":"UK - London","skills":["ci/cd","supply_chain"],"title":"Principal Product Security Engineer"}
 {"company":"CFC","first_seen":"2026-10-19","id":"pinpoint:cfc:f93f6bc2-386b-4234-852f-843da308c7d2","location":"UK - London","skills":["ci/cd"],"title":"Senior Security Engineer"}
-{"company":"CFC","first_seen":"2026-10-20","id":"pinpoint:cfc:fd372995-d0ee-4fac-b0e4-f5afd9cc3992","location":"UK - London","title":"Operations Assistant - Transaction Liability"}
+{"closed_at":"2026-10-28","company":"CFC","first_seen":"2026-10-20","id":"pinpoint:cfc:fd372995-d0ee-4fac-b0e4-f5afd9cc3992","location":"UK - London","title":"Operations Assistant - Transaction Liability"}
 {"company":"CFC","first_seen":"2026-10-19","id":"pinpoint:cfc:ff74dc93-03fa-4e83-983f-b87b5e63041d","location":"US - Texas","skills":["python","spark","sql","azure","aws","gcp"],"title":"Lead Data Engineer (Hybrid, office is based in Austin, Texas)"}

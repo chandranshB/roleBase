@@ -30,7 +30,7 @@
 {"company":"Asure","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:asuresoftware:1111","location":"Nashville, Tennessee","skills":["payroll"],"team":"Operations","title":"Payroll Specialist II"}
 {"closed_at":"2026-10-19","company":"Asure","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:asuresoftware:1114","location":"Santa Ana, California","team":"Operations","title":"Tax Filing Manager"}
 {"company":"Asure","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:asuresoftware:1118","location":"Cherry Hill, New Jersey","skills":["payroll"],"team":"Operations","title":"Payroll Specialist"}
-{"company":"Asure","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:asuresoftware:1119","location":"Nashville, Tennessee","team":"Sales & Marketing","title":"HCM Sales Executive"}
+{"company":"Asure","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:asuresoftware:1119","remote":true,"team":"Sales & Marketing","title":"HCM Sales Executive"}
 {"company":"Asure","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:asuresoftware:1121","location":"Nashville, Tennessee","team":"Sales & Marketing","title":"HR Sales Executive"}
 {"closed_at":"2026-10-26","company":"Asure","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:asuresoftware:1124","remote":true,"skills":["payroll"],"team":"Operations","title":"Payroll Implementation Specialist, SMB"}
 {"company":"Asure","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:asuresoftware:1125","location":"Tampa, Florida","team":"Sales & Marketing","title":"Digital Sales Executive"}
@@ -46,7 +46,7 @@
 {"company":"Asure","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:asuresoftware:1152","remote":true,"team":"Sales & Marketing","title":"HCM Sales Executive"}
 {"company":"Asure","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:asuresoftware:1153","remote":true,"team":"Sales & Marketing","title":"HCM Sales Executive"}
 {"company":"Asure","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:asuresoftware:1154","location":"Santa Ana, California","team":"Sales & Marketing","title":"Enterprise Sales Executive"}
-{"company":"Asure","employment":"full_time","first_seen":"2026-10-20","id":"bamboohr:asuresoftware:1157","location":"Rochester, New York","skills":["payroll"],"team":"Operations","title":"Payroll Implementation Specialist, SMB"}
+{"company":"Asure","employment":"full_time","first_seen":"2026-10-20","id":"bamboohr:asuresoftware:1157","remote":true,"skills":["payroll"],"team":"Operations","title":"Payroll Implementation Specialist, SMB"}
 {"company":"Asure","employment":"full_time","first_seen":"2026-10-23","id":"bamboohr:asuresoftware:1161","remote":true,"reposts":1,"team":"Sales & Marketing","title":"HCM Sales Executive"}
 {"company":"Asure","employment":"full_time","first_seen":"2026-10-23","id":"bamboohr:asuresoftware:1162","remote":true,"reposts":1,"team":"Sales & Marketing","title":"HCM Sales Executive"}
 {"company":"Asure","employment":"full_time","first_seen":"2026-10-26","id":"bamboohr:asuresoftware:1164","location":"Tampa, Florida","team":"Sales & Marketing","title":"Digital Sales Coach"}
@@ -56,7 +56,7 @@
 {"company":"Asure","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:asuresoftware:911","location":"Tampa, Florida","team":"Sales & Marketing","title":"ASO Sales Executive - AsureWorks"}
 {"company":"Asure","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:asuresoftware:944","location":"Rochester, New York","team":"Sales & Marketing","title":"Enterprise Sales Executive"}
 {"company":"Asure","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:asuresoftware:966","location":"Austin, Texas","team":"Finance & Accounting","title":"Accounting Manager SEC"}
-{"company":"Asure","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:asuresoftware:977","remote":true,"team":"Sales & Marketing","title":"ASO Sales Executive - AsureWorks"}
+{"closed_at":"2026-10-28","company":"Asure","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:asuresoftware:977","remote":true,"team":"Sales & Marketing","title":"ASO Sales Executive - AsureWorks"}
 {"company":"Asure","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:asuresoftware:981","location":"Tampa, Florida","team":"Sales & Marketing","title":"HR Sales Executive"}
 {"company":"Asure","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:asuresoftware:984","location":"Rochester, New York","team":"Sales & Marketing","title":"ASO Sales Executive - AsureWorks"}
 {"company":"Asure","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:asuresoftware:989","location":"Toledo, Ohio","team":"Sales & Marketing","title":"HCM Sales Executive"}
