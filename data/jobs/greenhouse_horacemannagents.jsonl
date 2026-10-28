@@ -76,7 +76,7 @@
 {"closed_at":"2026-10-21","company":"Horace Mann","first_seen":"2026-10-19","id":"greenhouse:horacemannagents:6195846004","location":"Springfield, MA","posted":"2026-09-16","team":"Field Sales","title":"Insurance Producer - Springfield, MA"}
 {"closed_at":"2026-10-21","company":"Horace Mann","first_seen":"2026-10-19","id":"greenhouse:horacemannagents:6195937004","location":"Wellesley, MA","posted":"2026-09-16","team":"Field Sales","title":"Insurance Producer - Wellesley, MA"}
 {"closed_at":"2026-10-21","company":"Horace Mann","first_seen":"2026-10-19","id":"greenhouse:horacemannagents:6195940004","location":"Weymouth, MA","posted":"2026-09-16","team":"Field Sales","title":"Insurance Producer - Weymouth, MA"}
-{"company":"Horace Mann","first_seen":"2026-10-19","id":"greenhouse:horacemannagents:6195942004","location":"Brunswick, ME","posted":"2026-09-16","team":"Field Sales","title":"Insurance Producer - Brunswick, ME"}
+{"closed_at":"2026-10-28","company":"Horace Mann","first_seen":"2026-10-19","id":"greenhouse:horacemannagents:6195942004","location":"Brunswick, ME","posted":"2026-09-16","team":"Field Sales","title":"Insurance Producer - Brunswick, ME"}
 {"company":"Horace Mann","first_seen":"2026-10-19","id":"greenhouse:horacemannagents:6195968004","location":"Blacksburg, VA","posted":"2026-09-16","team":"Field Sales","title":"Insurance Producer - Blacksburg, VA"}
 {"company":"Horace Mann","first_seen":"2026-10-19","id":"greenhouse:horacemannagents:6196032004","location":"Chesapeake, VA","posted":"2026-09-16","team":"Field Sales","title":"Insurance Producer - Chesapeake, VA"}
 {"company":"Horace Mann","first_seen":"2026-10-19","id":"greenhouse:horacemannagents:6196055004","location":"Danville, VA","posted":"2026-09-16","team":"Field Sales","title":"Insurance Producer - Danville, VA"}
@@ -97,8 +97,8 @@
 {"closed_at":"2026-10-21","company":"Horace Mann","first_seen":"2026-10-19","id":"greenhouse:horacemannagents:6196217004","location":"Worcester, MA","posted":"2026-09-16","team":"Field Sales","title":"Insurance Agent - Worcester , MA","years":2}
 {"closed_at":"2026-10-21","company":"Horace Mann","first_seen":"2026-10-19","id":"greenhouse:horacemannagents:6196218004","location":"Pittsfield, MA","posted":"2026-09-16","team":"Field Sales","title":"Insurance Producer - Pittsfield, MA"}
 {"closed_at":"2026-10-21","company":"Horace Mann","first_seen":"2026-10-19","id":"greenhouse:horacemannagents:6196219004","location":"Waltham, MA","posted":"2026-09-16","team":"Field Sales","title":"Insurance Producer - Waltham, MA"}
-{"company":"Horace Mann","first_seen":"2026-10-19","id":"greenhouse:horacemannagents:6196234004","location":"Belfast, ME","posted":"2026-09-16","team":"Field Sales","title":"Insurance Producer - Belfast, ME"}
-{"company":"Horace Mann","first_seen":"2026-10-19","id":"greenhouse:horacemannagents:6196235004","location":"Portland, ME","posted":"2026-09-16","team":"Field Sales","title":"Insurance Producer - Portland, ME"}
+{"closed_at":"2026-10-28","company":"Horace Mann","first_seen":"2026-10-19","id":"greenhouse:horacemannagents:6196234004","location":"Belfast, ME","posted":"2026-09-16","team":"Field Sales","title":"Insurance Producer - Belfast, ME"}
+{"closed_at":"2026-10-28","company":"Horace Mann","first_seen":"2026-10-19","id":"greenhouse:horacemannagents:6196235004","location":"Portland, ME","posted":"2026-09-16","team":"Field Sales","title":"Insurance Producer - Portland, ME"}
 {"company":"Horace Mann","first_seen":"2026-10-19","id":"greenhouse:horacemannagents:6196237004","location":"Nashua, NH","posted":"2026-09-16","team":"Field Sales","title":"Insurance Agent - Nashua, NH"}
 {"company":"Horace Mann","first_seen":"2026-10-19","id":"greenhouse:horacemannagents:6196239004","location":"Concord, NH","posted":"2026-09-16","team":"Field Sales","title":"Insurance Agent - Concord, NH","years":2}
 {"company":"Horace Mann","first_seen":"2026-10-19","id":"greenhouse:horacemannagents:6196240004","location":"Derry, NH","posted":"2026-09-16","team":"Field Sales","title":"Insurance Producer - Derry, NH"}
@@ -544,3 +544,6 @@
 {"company":"Horace Mann","first_seen":"2026-10-27","id":"greenhouse:horacemannagents:6236159004","location":"Dover, DE","posted":"2026-10-27","team":"Field Sales","title":"Insurance Agent - Dover, DE"}
 {"company":"Horace Mann","first_seen":"2026-10-27","id":"greenhouse:horacemannagents:6236163004","location":"Middletown, DE","posted":"2026-10-27","team":"Field Sales","title":"Insurance Agent - Middletown, DE","years":2}
 {"company":"Horace Mann","first_seen":"2026-10-27","id":"greenhouse:horacemannagents:6236195004","location":"Burlington, NC","posted":"2026-10-27","team":"Field Sales","title":"Insurance Producer - Burlington, NC"}
+{"company":"Horace Mann","first_seen":"2026-10-28","id":"greenhouse:horacemannagents:6237035004","location":"Brunswick, ME","posted":"2026-10-27","team":"Field Sales","title":"Insurance Producer - Brunswick, ME"}
+{"company":"Horace Mann","first_seen":"2026-10-28","id":"greenhouse:horacemannagents:6237036004","location":"Belfast, ME","posted":"2026-10-27","team":"Field Sales","title":"Insurance Producer - Belfast, ME"}
+{"company":"Horace Mann","first_seen":"2026-10-28","id":"greenhouse:horacemannagents:6237037004","location":"Portland, ME","posted":"2026-10-27","team":"Field Sales","title":"Insurance Producer - Portland, ME"}
