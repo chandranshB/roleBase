@@ -12,9 +12,9 @@
 {"company":"Forest Home","first_seen":"2026-10-19","id":"bamboohr:foho:325","location":"Forest Falls, California","team":"First Aid","title":"Health Tech Winter Camp 2027"}
 {"company":"Forest Home","first_seen":"2026-10-19","id":"bamboohr:foho:326","location":"Forest Falls, California","team":"Children's Program","title":"Children's Winter Camp 2027"}
 {"company":"Forest Home","first_seen":"2026-10-19","id":"bamboohr:foho:327","location":"Forest Falls, California","team":"Youth Program","title":"Youth Winter Camp 2027"}
-{"company":"Forest Home","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:foho:328","location":"Forest Falls, California","team":"Buildings & Grounds","title":"Facilities Administrative Assistant"}
-{"company":"Forest Home","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:foho:331","location":"Forest Falls, California","team":"Accommodations","title":"Housekeeping Supervisor"}
-{"company":"Forest Home","employment":"part_time","first_seen":"2026-10-19","id":"bamboohr:foho:332","location":"Oak View, California","team":"Administration","title":"Guest Retreats Host Ojai"}
+{"closed_at":"2026-10-29","company":"Forest Home","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:foho:328","location":"Forest Falls, California","team":"Buildings & Grounds","title":"Facilities Administrative Assistant"}
+{"closed_at":"2026-10-29","company":"Forest Home","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:foho:331","location":"Forest Falls, California","team":"Accommodations","title":"Housekeeping Supervisor"}
+{"closed_at":"2026-10-29","company":"Forest Home","employment":"part_time","first_seen":"2026-10-19","id":"bamboohr:foho:332","location":"Oak View, California","team":"Administration","title":"Guest Retreats Host Ojai"}
 {"company":"Forest Home","first_seen":"2026-10-19","id":"bamboohr:foho:333","location":"Forest Falls, California","team":"Guest Dining","title":"Kitchen Utility"}
 {"company":"Forest Home","employment":"part_time","first_seen":"2026-10-19","id":"bamboohr:foho:334","location":"Forest Falls, California","team":"Accommodations","title":"Service Technician"}
 {"company":"Forest Home","employment":"part_time","first_seen":"2026-10-19","id":"bamboohr:foho:337","location":"Oak View, California","team":"Recreation","title":"Recreation Staff Ojai Valley"}
@@ -42,3 +42,6 @@
 {"company":"Forest Home","employment":"part_time","first_seen":"2026-10-28","id":"bamboohr:foho:361","location":"Oak View, California","team":"Recreation","title":"Pool Lifeguard Ojai Valley"}
 {"company":"Forest Home","employment":"full_time","first_seen":"2026-10-28","id":"bamboohr:foho:362","location":"Forest Falls, California","team":"Buildings & Grounds","title":"Maintenance Technician"}
 {"company":"Forest Home","employment":"part_time","first_seen":"2026-10-28","id":"bamboohr:foho:363","location":"Forest Falls, California","team":"Buildings & Grounds","title":"Groundskeeper"}
+{"company":"Forest Home","employment":"full_time","first_seen":"2026-10-29","id":"bamboohr:foho:367","location":"Forest Falls, California","team":"Buildings & Grounds","title":"Facilities Administrative Assistant"}
+{"company":"Forest Home","employment":"full_time","first_seen":"2026-10-29","id":"bamboohr:foho:368","location":"Forest Falls, California","team":"Accommodations","title":"House Keeping Supervisor"}
+{"company":"Forest Home","employment":"part_time","first_seen":"2026-10-29","id":"bamboohr:foho:369","location":"Oak View, California","team":"Guest Retreats","title":"Guest Retreats Host Ojai"}
