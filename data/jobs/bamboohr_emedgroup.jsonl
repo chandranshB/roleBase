@@ -23,7 +23,7 @@
 {"closed_at":"2026-10-21","company":"EMED Group","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:emedgroup:2750","location":"Redhill, Surrey","team":"Operations","title":"Ambulance Care Assistant"}
 {"closed_at":"2026-10-22","company":"EMED Group","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:emedgroup:2752","location":"Bristol, Bristol, City of","team":"Fleet","title":"Mechanic (Fleet)"}
 {"company":"EMED Group","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:emedgroup:2760","location":"Bristol, Bristol, City of","team":"Operations","title":"Retrieval Care Assistant"}
-{"company":"EMED Group","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:emedgroup:2762","location":"Shrewsbury, Shropshire","team":"Central Ops","title":"Transport Controller/Planner (Night)"}
+{"closed_at":"2026-10-29","company":"EMED Group","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:emedgroup:2762","location":"Shrewsbury, Shropshire","team":"Central Ops","title":"Transport Controller/Planner (Night)"}
 {"closed_at":"2026-10-27","company":"EMED Group","employment":"full_time","first_seen":"2026-10-23","id":"bamboohr:emedgroup:2763","remote":true,"team":"HR","title":"HR Business Partner"}
 {"closed_at":"2026-10-28","company":"EMED Group","employment":"full_time","first_seen":"2026-10-22","id":"bamboohr:emedgroup:2765","location":"Banbury, Oxfordshire","team":"Central Ops","title":"Controller/Planner"}
 {"company":"EMED Group","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:emedgroup:2766","location":"Rotherham, South Yorkshire","team":"Central Ops","title":"Controller/Planner"}
@@ -37,7 +37,7 @@
 {"closed_at":"2026-10-27","company":"EMED Group","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:emedgroup:2785","location":"London, Hammersmith and Fulham","team":"Operations","title":"Courier Driver - Days"}
 {"closed_at":"2026-10-28","company":"EMED Group","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:emedgroup:2787","location":"Bristol, Bristol, City of","team":"Operations","title":"Senior Operations Lead - NEPTS"}
 {"closed_at":"2026-10-28","company":"EMED Group","employment":"full_time","first_seen":"2026-10-22","id":"bamboohr:emedgroup:2788","location":"London, Hammersmith and Fulham","team":"Operations","title":"Operations Manager - Courier Division"}
-{"company":"EMED Group","first_seen":"2026-10-19","id":"bamboohr:emedgroup:2789","location":"London, Greater London","team":"Operations","title":"Ambulance Technician (ECA) - Bank"}
+{"closed_at":"2026-10-29","company":"EMED Group","first_seen":"2026-10-19","id":"bamboohr:emedgroup:2789","location":"London, Greater London","team":"Operations","title":"Ambulance Technician (ECA) - Bank"}
 {"company":"EMED Group","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:emedgroup:2790","location":"Wellington, Somerset","team":"Operations","title":"Ambulance Care Assistant"}
 {"company":"EMED Group","first_seen":"2026-10-19","id":"bamboohr:emedgroup:2793","location":"Bristol, Bristol, City of","team":"Operations","title":"Retrieval Care Assistant (Bank)"}
 {"company":"EMED Group","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:emedgroup:2796","location":"Shrewsbury, Shropshire","team":"Central Ops","title":"Call Handler"}
@@ -91,3 +91,6 @@
 {"company":"EMED Group","employment":"full_time","first_seen":"2026-10-28","id":"bamboohr:emedgroup:2849","location":"Banbury, Oxfordshire","reposts":1,"team":"Central Ops","title":"Controller/Planner"}
 {"company":"EMED Group","employment":"full_time","first_seen":"2026-10-28","id":"bamboohr:emedgroup:2851","location":"Bristol, Bristol, City of","team":"Operations","title":"Scheduling Administrator"}
 {"company":"EMED Group","employment":"full_time","first_seen":"2026-10-28","id":"bamboohr:emedgroup:2852","location":"Cambridge, Cambridgeshire","reposts":1,"team":"Operations","title":"Patient Transport Liaison Officer"}
+{"company":"EMED Group","employment":"full_time","first_seen":"2026-10-29","id":"bamboohr:emedgroup:2853","location":"Leicester, Leicestershire","team":"Central Ops","title":"Transport Controller / Planner"}
+{"company":"EMED Group","employment":"full_time","first_seen":"2026-10-29","id":"bamboohr:emedgroup:2854","location":"Reading, Berkshire","reposts":7,"team":"Operations","title":"Ambulance Care Assistant"}
+{"company":"EMED Group","employment":"full_time","first_seen":"2026-10-29","id":"bamboohr:emedgroup:2855","location":"Reading, Berkshire","reposts":7,"team":"Operations","title":"Ambulance Care Assistant"}

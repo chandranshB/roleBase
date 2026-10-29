@@ -32,7 +32,7 @@
 {"company":"Clopay","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:clopay:434","location":"Troy, Ohio","title":"Door Builders (CWD)"}
 {"company":"Clopay","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:clopay:435","location":"Troy, Ohio","title":"Machine Operator Level II"}
 {"company":"Clopay","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:clopay:438","location":"Mason, Ohio","title":"Senior Product Engineer"}
-{"company":"Clopay","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:clopay:439","location":"Mason, Ohio","title":"New Product Development Supervisor"}
+{"closed_at":"2026-10-29","company":"Clopay","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:clopay:439","location":"Mason, Ohio","title":"New Product Development Supervisor"}
 {"company":"Clopay","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:clopay:442","location":"Mendota Heights, Minnesota","title":"Local Truck Driver"}
 {"company":"Clopay","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:clopay:443","location":"Troy, Ohio","title":"Maintenance Planner"}
 {"closed_at":"2026-10-28","company":"Clopay","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:clopay:445","location":"Riverside, California","title":"Warehouse Worker"}
@@ -72,4 +72,7 @@
 {"company":"Clopay","employment":"part_time","first_seen":"2026-10-28","id":"bamboohr:clopay:486","location":"Mountaintop, Pennsylvania","title":"Financial Assistant - Part Time"}
 {"company":"Clopay","employment":"full_time","first_seen":"2026-10-28","id":"bamboohr:clopay:487","location":"South Salt Lake City, Utah","reposts":1,"title":"Distribution Center Supervisor"}
 {"company":"Clopay","employment":"full_time","first_seen":"2026-10-29","id":"bamboohr:clopay:488","location":"Earth City, Missouri","reposts":1,"title":"Warehouse Worker"}
+{"company":"Clopay","employment":"full_time","first_seen":"2026-10-29","id":"bamboohr:clopay:490","location":"Mason, Ohio","title":"Electrical Engineer Product Development"}
+{"company":"Clopay","employment":"full_time","first_seen":"2026-10-29","id":"bamboohr:clopay:491","location":"Mason, Ohio","title":"Electrical Engineer Prototyping"}
+{"company":"Clopay","employment":"full_time","first_seen":"2026-10-29","id":"bamboohr:clopay:492","location":"Troy, Ohio","title":"Regional Sales Coordinator"}
 {"company":"Clopay","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:clopay:51","location":"Troy, Ohio","skills":["cdl"],"title":"Regional CDL A Driver"}
