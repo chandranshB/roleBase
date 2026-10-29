@@ -25,7 +25,7 @@
 {"company":"Hudson Group","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:hudson:326","location":"Malta, /","team":"Tommy Hilfiger Sliema","title":"Sales Assistant - Tommy Hilfiger The Point"}
 {"company":"Hudson Group","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:hudson:327","location":"Malta, /","team":"Tommy Hilfiger Sliema","title":"Sales Assistant - Tommy Hilfiger Valletta"}
 {"company":"Hudson Group","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:hudson:329","location":"Malta, /","team":"Sports Direct Qormi","title":"Supervisor - Sports Direct (Qormi)"}
-{"company":"Hudson Group","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:hudson:331","location":"Malta, /","team":"Other Sports Brands","title":"Marketing Specialist - Sports Brands"}
+{"closed_at":"2026-10-29","company":"Hudson Group","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:hudson:331","location":"Malta, /","team":"Other Sports Brands","title":"Marketing Specialist - Sports Brands"}
 {"company":"Hudson Group","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:hudson:332","location":"Malta, /","team":"Kiabi Sliema","title":"Assistant Store Manager - Kiabi (Sliema)"}
 {"company":"Hudson Group","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:hudson:333","location":"Malta, /","team":"General Management","title":"Maintenance Person"}
 {"company":"Hudson Group","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:hudson:335","location":"Malta, /","team":"Marketing","title":"Group Head of Marketing - Sports"}
@@ -44,7 +44,7 @@
 {"company":"Hudson Group","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:hudson:366","location":"Nicosia, /","team":"Kiabi - Nicosia Mall of Cyprus","title":"E-Comm Picker"}
 {"company":"Hudson Group","employment":"full_time","first_seen":"2026-10-20","id":"bamboohr:hudson:367","location":"Malta, /","team":"Operations - Logistics","title":"Warehouse Assistant"}
 {"company":"Hudson Group","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:hudson:369","location":"Malta, /","team":"Kiabi Qormi","title":"Security Guard - Qormi (Kiabi)"}
-{"company":"Hudson Group","first_seen":"2026-10-19","id":"bamboohr:hudson:370","location":"Morocco","team":"Tommy Hilfiger Socco Alto","title":"Sales Assistant - PVH (Tangier)"}
+{"closed_at":"2026-10-29","company":"Hudson Group","first_seen":"2026-10-19","id":"bamboohr:hudson:370","location":"Morocco","team":"Tommy Hilfiger Socco Alto","title":"Sales Assistant - PVH (Tangier)"}
 {"company":"Hudson Group","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:hudson:372","location":"Malta, /","team":"Sports Brands","title":"Sales Assistant (Part-Time)  - Columbia (The Point)"}
 {"company":"Hudson Group","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:hudson:373","location":"Malta, /","team":"Kiabi Gozo","title":"Sales Assistant - Kiabi (Gozo)"}
 {"closed_at":"2026-10-22","company":"Hudson Group","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:hudson:374","location":"Malta, /","team":"Nike Mercury","title":"Assistant Store Manager - Nike (Mercury)"}
@@ -55,3 +55,5 @@
 {"company":"Hudson Group","employment":"full_time","first_seen":"2026-10-26","id":"bamboohr:hudson:379","location":"Malta, /","team":"Urban Bratz Baystreet","title":"Store Manager - Urban Bratz (Baystreet)"}
 {"company":"Hudson Group","employment":"full_time","first_seen":"2026-10-26","id":"bamboohr:hudson:380","location":"Malta, /","team":"Sports Direct Qormi","title":"Security Guard - Qormi (Sports Direct)"}
 {"company":"Hudson Group","employment":"full_time","first_seen":"2026-10-26","id":"bamboohr:hudson:381","location":"Nicosia, /","team":"Kiabi - Larnaca Metropolis Mall","title":"Team Leader - KIABI Metropolis Mall"}
+{"company":"Hudson Group","employment":"part_time","first_seen":"2026-10-29","id":"bamboohr:hudson:382","location":"Malta, /","team":"Tommy Hilfiger Mercury","title":"(Part-Time) Sales Assistant - Tommy Hilfiger (Mercury)"}
+{"company":"Hudson Group","employment":"part_time","first_seen":"2026-10-29","id":"bamboohr:hudson:383","location":"Malta, /","team":"Tommy Hilfiger Valletta","title":"(Part-Time) Sales Assistant - Tommy Hilfiger (Valetta)"}

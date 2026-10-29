@@ -49,8 +49,8 @@
 {"company":"Animal Trust","first_seen":"2026-10-19","id":"bamboohr:animaltrust:1171","location":"Blackburn, Lancashire","team":"Reception and Administration","title":"Veterinary Receptionist"}
 {"company":"Animal Trust","first_seen":"2026-10-19","id":"bamboohr:animaltrust:1174","location":"Blackburn, Lancashire","team":"Nursing Team - RVN","title":"Registered Veterinary Nurse"}
 {"company":"Animal Trust","first_seen":"2026-10-19","id":"bamboohr:animaltrust:1176","location":"Ellesmere Port, Cheshire","team":"Nursing Team - RVN","title":"Roving Registered Veterinary Nurse"}
-{"company":"Animal Trust","employment":"part_time","first_seen":"2026-10-19","id":"bamboohr:animaltrust:1177","location":"Glasgow, Glasgow City","team":"Nursing Team - RVN","title":"Registered Veterinary Nurse - Part Time"}
-{"company":"Animal Trust","first_seen":"2026-10-19","id":"bamboohr:animaltrust:1178","location":"Glasgow, Glasgow City","team":"Nursing Team - RVN","title":"Registered Veterinary Nurse"}
+{"closed_at":"2026-10-29","company":"Animal Trust","employment":"part_time","first_seen":"2026-10-19","id":"bamboohr:animaltrust:1177","location":"Glasgow, Glasgow City","team":"Nursing Team - RVN","title":"Registered Veterinary Nurse - Part Time"}
+{"closed_at":"2026-10-29","company":"Animal Trust","first_seen":"2026-10-19","id":"bamboohr:animaltrust:1178","location":"Glasgow, Glasgow City","team":"Nursing Team - RVN","title":"Registered Veterinary Nurse"}
 {"company":"Animal Trust","first_seen":"2026-10-19","id":"bamboohr:animaltrust:1183","location":"Dewsbury, West Yorkshire","team":"Vets","title":"Veterinary Surgeon"}
 {"company":"Animal Trust","first_seen":"2026-10-19","id":"bamboohr:animaltrust:1184","location":"Birkenhead, Wirral","team":"Vets","title":"Veterinary Surgeon"}
 {"closed_at":"2026-10-21","company":"Animal Trust","first_seen":"2026-10-19","id":"bamboohr:animaltrust:1185","location":"Ellesmere Port","team":"Finance and Facilities","title":"Facilities Maintenance and Compliance Manager"}
@@ -84,5 +84,7 @@
 {"company":"Animal Trust","first_seen":"2026-10-28","id":"bamboohr:animaltrust:1219","location":"Warrington, Cheshire","reposts":3,"team":"Reception and Administration","title":"Veterinary Receptionist"}
 {"company":"Animal Trust","first_seen":"2026-10-28","id":"bamboohr:animaltrust:1222","location":"Teesside, Stockton-on-Tees","reposts":1,"team":"Vets","title":"Veterinary Surgeon"}
 {"company":"Animal Trust","first_seen":"2026-10-28","id":"bamboohr:animaltrust:1223","location":"Wrexham, Wrexham","reposts":3,"team":"Reception and Administration","title":"Veterinary Receptionist"}
+{"company":"Animal Trust","first_seen":"2026-10-29","id":"bamboohr:animaltrust:1224","location":"Glasgow, Glasgow City","team":"Nursing Team - RVN","title":"Registered Veterinary Nurse"}
+{"company":"Animal Trust","employment":"part_time","first_seen":"2026-10-29","id":"bamboohr:animaltrust:1225","location":"Glasgow, Glasgow City","team":"Nursing Team - RVN","title":"Registered Veterinary Nurse - Part Time"}
 {"company":"Animal Trust","first_seen":"2026-10-19","id":"bamboohr:animaltrust:971","location":"Failsworth, Greater Manchester","team":"Nursing Team - Non Clinical","title":"Registered Veterinary Nurse – Reception & Client Experience"}
 {"company":"Animal Trust","first_seen":"2026-10-19","id":"bamboohr:animaltrust:997","location":"Telford","team":"Leadership","title":"Lead Veterinary Surgeon"}
