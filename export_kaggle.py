@@ -191,7 +191,7 @@ Refreshed automatically once a day by GitHub Actions; the scraper itself runs ev
 ## Limitations
 
 - `level`, `category`, `employment`, `years_experience`, `skills` and pay are inferred from posting text, so expect some errors. Pay is only filled when the posting states a yearly range.
-- Very large employers contribute their newest postings only: up to 2,000 each on Workday, 3,000 on Eightfold, 10,000 on Amazon and Phenom. Workday and Oracle postings carry no years, skills or pay because their list endpoint has no description.
+- Very large employers contribute their newest postings only: up to 2,000 each on Workday, 3,000 on Eightfold, 10,000 on Phenom. Workday and Oracle postings carry no years, skills or pay because their list endpoint has no description.
 - Company coverage is a large sample, not the whole market. Companies that forbid automated collection (for example Google, Meta and Apple) are not included.
 - Postings belong to their employers. Use the apply link to apply on the employer's own page.
 

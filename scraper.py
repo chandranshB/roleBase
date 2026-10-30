@@ -364,14 +364,13 @@ def workday(s, name):  # s = "<tenant>.<pod>.myworkdayjobs.com/<site>"; the list
                  for d in [first, *rest] for j in d.get("jobPostings", []) if j.get("externalPath") and j.get("title")}.values())  # entries with no link or no title exist (KBR has one): skip them, not the board
 
 
-CAPPED = {"workday", "eightfold", "amazon", "himalayas", "jobicy", "jobtech", "usajobs", "oracle", "phenom", "apple", "themuse"}
+CAPPED = {"workday", "eightfold", "himalayas", "jobicy", "jobtech", "usajobs", "oracle", "phenom", "apple", "themuse"}
 HIM_CAP = 400  # newest N Himalayas jobs (of 100k+)
 MUSE_CAP = 400  # newest N jobs from The Muse (of 400k+)
 ORA_CAP = 2000  # newest N per Oracle career site
 USAJOBS_CAP = 2000  # newest N federal postings (of ~15k)
 JT_CAP = 500  # newest N Swedish public-employment ads (of ~40k)
 EF_CAP = 2000  # newest N per Eightfold site (Starbucks alone lists 20k+ store jobs, 10 per request)
-AMZ_CAP = 10000  # amazon.jobs' search stops at 10,000 results
 APPLE_CAP = 2000  # newest N Apple jobs (Apple lists ~6,000)
 
 
@@ -400,22 +399,54 @@ def eightfold(s, name):  # s = "<careers host>/<domain>", e.g. "apply.starbucks.
     return pcsx(host, domain, "eightfold", f"eightfold:{s}", name, EF_CAP)
 
 
-def amazon(s, name):  # amazon.jobs' own search endpoint (robots.txt only blocks /internal); newest first
-    def page(off):
-        return get("https://www.amazon.jobs/en/search.json", params={"offset": off, "result_limit": 100, "sort": "recent"})["jobs"]
-
+def amazon(s, name):  # amazon.jobs' search endpoint; partitioned by category to bypass Elasticsearch 10k window
     def posted(t):
         try:
             return dt.datetime.strptime(" ".join(t.split()), "%B %d, %Y").date().isoformat()
         except (ValueError, AttributeError):
             return None
 
-    return list({j["id_icims"]: job("amazon", f"amazon:{s}", j["id_icims"], name, j["title"], "https://www.amazon.jobs" + j["job_path"],
-                                    j.get("normalized_location") or j.get("location"), False, posted(j.get("posted_date")),
-                                    desc=text(" ".join(filter(None, [j.get("description"), j.get("basic_qualifications"), j.get("preferred_qualifications")]))),
-                                    team=j.get("job_family") or j.get("job_category"), emp=[j.get("job_schedule_type")],
-                                    hint="intern" if j.get("is_intern") else None)
-                 for p in pmap(page, range(0, AMZ_CAP, 100), 3) for j in p}.values())
+    try:
+        facet_res = get("https://www.amazon.jobs/en/search.json", params={"facets[]": "category", "result_limit": 1})
+        cat_facets = facet_res.get("facets", {}).get("category_facet") or []
+    except Exception:
+        cat_facets = []
+
+    pages = []
+    if cat_facets:
+        for item in cat_facets:
+            for cat_name, count in item.items():
+                for off in range(0, min(count, 10000), 100):
+                    pages.append((cat_name, off))
+    else:
+        for off in range(0, 10000, 100):
+            pages.append((None, off))
+
+    def fetch_page(arg):
+        cat_name, off = arg
+        params = {"offset": off, "result_limit": 100, "sort": "recent"}
+        if cat_name:
+            params["category[]"] = cat_name
+        res = get("https://www.amazon.jobs/en/search.json", params=params)
+        return res.get("jobs") or []
+
+    out = {}
+    for p in pmap(fetch_page, pages, workers=8):
+        for j in p:
+            jid = j.get("id_icims")
+            if not jid or jid in out:
+                continue
+            loc = j.get("normalized_location") or j.get("location") or ""
+            desc = text(" ".join(filter(None, [j.get("description"), j.get("basic_qualifications"), j.get("preferred_qualifications")])))
+            team = j.get("job_family") or j.get("job_category")
+            emp = [j.get("job_schedule_type")] if j.get("job_schedule_type") else []
+            hint = "intern" if j.get("is_intern") else None
+            path = j.get("job_path") or f"/en/jobs/{jid}"
+            url = f"https://www.amazon.jobs{path}" if path.startswith("/") else path
+            out[jid] = job("amazon", f"amazon:{s}", str(jid), name or "Amazon", j.get("title") or "",
+                           url, loc, False, posted(j.get("posted_date")),
+                           desc=desc, team=team, emp=emp, hint=hint)
+    return list(out.values())
 
 
 def apple(s, name):  # Apple careers API (jobs.apple.com)
