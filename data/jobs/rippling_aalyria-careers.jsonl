@@ -5,6 +5,7 @@
 {"company":"Aalyria","first_seen":"2026-10-19","id":"rippling:aalyria-careers:31eafdd0-f84e-45a5-a5c6-e6a4cacc6b32","location":"US","remote":true,"team":"Spacetime","title":"Senior Software Engineer, API & Data Modeling"}
 {"company":"Aalyria","first_seen":"2026-10-19","id":"rippling:aalyria-careers:43bec03f-bb97-409a-8bd9-adb7f325eb58","location":"San Francisco, CA","remote":true,"team":"General & Administrative","title":"Recruiting Coordinator"}
 {"company":"Aalyria","first_seen":"2026-10-19","id":"rippling:aalyria-careers:4f793cc5-b5c4-42d4-bee9-1a5c9a5c8b75","location":"US","remote":true,"team":"Spacetime","title":"Mission Engineer, Cleared"}
+{"company":"Aalyria","first_seen":"2026-10-30","id":"rippling:aalyria-careers:53013f09-5725-4375-a221-c04fa0d36ca6","location":"US","remote":true,"team":"Spacetime","title":"Senior Software Engineer, Simulation System"}
 {"company":"Aalyria","first_seen":"2026-10-19","id":"rippling:aalyria-careers:567d442a-efb3-4bdf-b5b1-9e8ff4aaf9f7","location":"Ottawa, ON","remote":true,"team":"Spacetime","title":"Mission Engineer"}
 {"company":"Aalyria","first_seen":"2026-10-19","id":"rippling:aalyria-careers:7b7e20b9-0b65-422a-87f3-7fd740bdbaf7","location":"London, ENG","remote":true,"team":"Spacetime","title":"Senior Software Engineer, Backend"}
 {"company":"Aalyria","first_seen":"2026-10-19","id":"rippling:aalyria-careers:8a76a852-0e19-4b7b-9dbe-56f840e760b6","location":"Livermore, CA","remote":true,"team":"Internal Engineering","title":"IT Support Specialist"}
@@ -17,4 +18,4 @@
 {"company":"Aalyria","first_seen":"2026-10-19","id":"rippling:aalyria-careers:ec174d0c-0ceb-40ba-abc3-5a8549e38730","location":"US","remote":true,"team":"Spacetime","title":"Mission Engineer"}
 {"company":"Aalyria","first_seen":"2026-10-19","id":"rippling:aalyria-careers:fa4ea761-4739-4ba8-a19b-6ec70b3c993d","location":"US","remote":true,"team":"Internal Engineering","title":"Lead Product Security Engineer"}
 {"company":"Aalyria","first_seen":"2026-10-19","id":"rippling:aalyria-careers:fba79811-bcca-4048-b117-1b49f246084c","location":"US","remote":true,"team":"Spacetime","title":"Senior Software Engineer, Backend"}
-{"company":"Aalyria","first_seen":"2026-10-19","id":"rippling:aalyria-careers:fc03b5d5-a6a1-4255-92f9-3ceb2a62fedb","location":"London, ENG","remote":true,"skills":["ml"],"team":"Spacetime","title":"Machine Learning Engineer - Spacetime UK"}
+{"closed_at":"2026-10-30","company":"Aalyria","first_seen":"2026-10-19","id":"rippling:aalyria-careers:fc03b5d5-a6a1-4255-92f9-3ceb2a62fedb","location":"London, ENG","remote":true,"skills":["ml"],"team":"Spacetime","title":"Machine Learning Engineer - Spacetime UK"}
