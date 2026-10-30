@@ -9,7 +9,11 @@ from scraper import load
 
 
 def about_text(n):
-    return (f"Free, open job search and job-market dataset: ~{round(n, -4) // 1000}k open jobs from employers' own career pages across "
+    if n >= 1_000_000:
+        count = f"{n / 1_000_000:.2f}M"
+    else:
+        count = f"{round(n, -4) // 1000}k"
+    return (f"Free, open job search and job-market dataset: ~{count} open jobs from employers' own career pages across "
             "healthcare, retail, finance, education, tech and more. Entry-level, remote and ghost-job filters.")
 
 
