@@ -342,7 +342,7 @@ def wd_posted(t):  # "Posted 3 Days Ago" / "Posted Today" / "Posted 30+ Days Ago
     return (dt.date.today() - dt.timedelta(days=n)).isoformat()
 
 
-WD_CAP = 2000  # newest N per tenant: Workday refuses offsets past 2000. The site shows each employer's newest SITE_PER_COMPANY only (build_site.py)
+WD_CAP = 10000  # newest N per tenant: Workday refuses offsets past 2000 on some views, up to 10k on others. The site shows each employer's newest SITE_PER_COMPANY only (build_site.py)
 
 
 def pmap(fn, xs, workers=4):  # a few pages at a time: fast, but polite to one host. Own pool, so no deadlock inside main()'s pool
@@ -367,11 +367,11 @@ def workday(s, name):  # s = "<tenant>.<pod>.myworkdayjobs.com/<site>"; the list
 CAPPED = {"workday", "eightfold", "himalayas", "jobicy", "jobtech", "usajobs", "oracle", "phenom", "apple", "themuse"}
 HIM_CAP = 400  # newest N Himalayas jobs (of 100k+)
 MUSE_CAP = 400  # newest N jobs from The Muse (of 400k+)
-ORA_CAP = 2000  # newest N per Oracle career site
-USAJOBS_CAP = 2000  # newest N federal postings (of ~15k)
+ORA_CAP = 10000  # newest N per Oracle career site (uncapped for large enterprises)
+USAJOBS_CAP = 15000  # newest N federal postings (uncapped to capture full federal directory)
 JT_CAP = 500  # newest N Swedish public-employment ads (of ~40k)
-EF_CAP = 2000  # newest N per Eightfold site (Starbucks alone lists 20k+ store jobs, 10 per request)
-APPLE_CAP = 2000  # newest N Apple jobs (Apple lists ~6,000)
+EF_CAP = 10000  # newest N per Eightfold site (Starbucks, Microsoft, etc.)
+APPLE_CAP = 10000  # newest N Apple jobs (Apple lists ~6,000)
 
 
 def pcsx(host, domain, source, scope, name, cap=None):  # Eightfold "PCSX" search API behind a careers site; their robots.txt allows /api/pcsx
@@ -966,9 +966,110 @@ def trakstar_hire(s, name):  # <slug>.hire.trakstar.com/jobs
     return out
 
 
+def jobscore(s, name):  # hire.jobscore.com/jobs/<slug>/feed.atom
+    r = S.get(f"https://hire.jobscore.com/jobs/{s}/feed.atom", timeout=TIMEOUT)
+    if not r.ok:
+        return []
+    ns = {"atom": "http://www.w3.org/2005/Atom"}
+    try:
+        root = ET.fromstring(r.content)
+    except Exception:
+        return []
+    out = []
+    for entry in root.findall("atom:entry", ns):
+        jid = entry.findtext("atom:id", "", ns).rsplit("/", 1)[-1]
+        title = entry.findtext("atom:title", "", ns)
+        if not jid or not title:
+            continue
+        link = f"https://careers.jobscore.com/jobs/{s}"
+        for l in entry.findall("atom:link", ns):
+            if l.get("rel") == "alternate" or not l.get("rel"):
+                link = l.get("href") or link
+        loc, dept, emp_type = "", "", []
+        for cat in entry.findall("atom:category", ns):
+            scheme = cat.get("scheme", "")
+            term = cat.get("term", "")
+            if "location" in scheme:
+                loc = term
+            elif "department" in scheme:
+                dept = term
+            elif "job_type" in scheme:
+                emp_type.append(term)
+        pub = entry.findtext("atom:updated", "", ns)
+        pub_date = pub[:10] if pub and len(pub) >= 10 else None
+        content = text(entry.findtext("atom:content", "", ns))
+        out.append(job("jobscore", f"jobscore:{s}", jid, name or s, title, link, loc,
+                       remote=False, posted=pub_date, desc=content, team=dept, emp=emp_type))
+    return out
+
+
+def zoho(s, name):  # <host>/jobs/Careers/rss
+    r = S.get(f"https://{s}/jobs/Careers/rss", timeout=TIMEOUT)
+    if not r.ok:
+        return []
+    try:
+        root = ET.fromstring(r.content)
+    except Exception:
+        return []
+    channel = root.find("channel")
+    if channel is None:
+        return []
+    out = []
+    for item in channel.findall("item"):
+        jid = item.findtext("guid")
+        title = item.findtext("title")
+        if not jid or not title:
+            continue
+        link = item.findtext("link") or f"https://{s}/jobs/Careers/{jid}"
+        desc_raw = item.findtext("description") or ""
+        loc = ""
+        m_loc = re.search(r"Location:\s*([^<]+)", desc_raw)
+        if m_loc:
+            loc = m_loc.group(1).strip()
+        m_cat = re.search(r"Category:\s*([^<]+)", desc_raw)
+        dept = m_cat.group(1).strip() if m_cat else ""
+        pub = item.findtext("pubDate")
+        pub_date = None
+        if pub:
+            try:
+                pub_date = parsedate_to_datetime(pub).date().isoformat()
+            except Exception:
+                pub_date = day(pub)
+        desc_clean = text(desc_raw)
+        out.append(job("zoho", f"zoho:{s}", jid, name or s, title, link, loc,
+                       remote=False, posted=pub_date, desc=desc_clean, team=dept))
+    return out
+
+
+def icims(s, name):  # s = "<subdomain>.icims.com"
+    out = []
+    page = 0
+    seen = set()
+    while page < 50:
+        r = S.get(f"https://{s}/jobs/search", params={"pr": page, "in_iframe": "1"}, timeout=TIMEOUT)
+        if not r.ok or "iCIMS_Anchor" not in r.text:
+            break
+        matches = re.findall(r'<a\s+[^>]*href=["\']([^"\']*/jobs/(\d+)/[^"\']*)["\'][^>]*class=["\']iCIMS_Anchor["\'][^>]*title=["\']([^"\']+)["\']', r.text)
+        if not matches:
+            break
+        new_jobs = 0
+        for href, jid, title_attr in matches:
+            if jid in seen:
+                continue
+            seen.add(jid)
+            new_jobs += 1
+            title = re.sub(r'^\d+\s*-\s*', '', title_attr).strip()
+            clean_url = href.split("?")[0]
+            out.append(job("icims", f"icims:{s}", jid, name or s, title, clean_url, ""))
+        if new_jobs == 0:
+            break
+        page += 1
+    return out
+
+
 ATS = dict(greenhouse=greenhouse, lever=lever, ashby=ashby, smartrecruiters=smartrecruiters, workday=workday, microsoft=microsoft, eightfold=eightfold,
            amazon=amazon, apple=apple, teamtailor=teamtailor, personio=personio, recruitee=recruitee, oracle=oracle, workable=workable, phenom=phenom,
-           pinpoint=pinpoint, breezy=breezy, bamboohr=bamboohr, rippling=rippling, join=join, adp=adp, jazzhr=jazzhr, jobvite=jobvite, trakstar_hire=trakstar_hire)
+           pinpoint=pinpoint, breezy=breezy, bamboohr=bamboohr, rippling=rippling, join=join, adp=adp, jazzhr=jazzhr, jobvite=jobvite, trakstar_hire=trakstar_hire, jobscore=jobscore, zoho=zoho, icims=icims)
 FEEDS = dict(remotive=remotive, remoteok=remoteok, arbeitnow=arbeitnow, himalayas=himalayas, jobicy=jobicy, weworkremotely=weworkremotely,
              getonbrd=getonbrd, workingnomads=workingnomads, jobtech=jobtech, cryptojobs=cryptojobs, themuse=themuse)
 if os.environ.get("USAJOBS_API_KEY") and os.environ.get("USAJOBS_EMAIL"):  # optional: skipped (not failed) without a key
@@ -988,7 +1089,10 @@ URLS = dict(greenhouse="https://job-boards.greenhouse.io/{s}/jobs/{r}", lever="h
             adp="https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid={s}&jobId={r}",
             jazzhr="https://{s}.applytojob.com/apply/{r}",
             jobvite="https://jobs.jobvite.com/{s}/job/{r}",
-            trakstar_hire="https://{s}.hire.trakstar.com/jobs/{r}")
+            trakstar_hire="https://{s}.hire.trakstar.com/jobs/{r}",
+            jobscore="https://careers.jobscore.com/jobs/{s}/{r}",
+            zoho="https://{s}/jobs/Careers/{r}",
+            icims="https://{s}/jobs/{r}/job")
 DEFAULTS = dict(closed_at=None, location="", team="", remote=False, years=None, skills=[], pay=None, employment="", posted=None, reposts=0)
 
 
@@ -1142,7 +1246,7 @@ def verdict(jobs, err, prev, strikes):
 # The number is how many boards of that provider are fetched at the same time (conservative defaults, not published limits); a provider not listed
 # here (Arbeitnow, every feed, Amazon, Microsoft...) gets one worker, i.e. one board at a time. Workable and Arbeitnow also pause a second between requests.
 LANE_OF = {"microsoft": "eightfold"}  # Microsoft's careers site is Eightfold-hosted: one lane, one site at a time, so their bot protection never sees a burst
-LANES = {"greenhouse": 24, "lever": 16, "ashby": 16, "smartrecruiters": 12, "workday": 32, "teamtailor": 4, "oracle": 4, "workable": 2, "personio": 12, "recruitee": 2, "phenom": 4, "apple": 1, "pinpoint": 8, "breezy": 8, "bamboohr": 16, "rippling": 8, "join": 16, "adp": 16, "jazzhr": 16, "jobvite": 8, "trakstar_hire": 8}
+LANES = {"greenhouse": 24, "lever": 16, "ashby": 16, "smartrecruiters": 12, "workday": 32, "teamtailor": 4, "oracle": 8, "workable": 2, "personio": 12, "recruitee": 2, "phenom": 4, "apple": 1, "pinpoint": 8, "breezy": 8, "bamboohr": 16, "rippling": 8, "join": 16, "adp": 16, "jazzhr": 16, "jobvite": 8, "trakstar_hire": 8, "jobscore": 8, "zoho": 16, "icims": 8, "oracle": 8}
 RUN_BUDGET = 26 * 60  # seconds (the deep crawl takes 13 minutes here, 17 on GitHub's runners). A hung source is cut off and keeps its old jobs; the Actions job times out at 30 minutes
 
 
