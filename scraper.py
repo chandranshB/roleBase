@@ -1168,9 +1168,50 @@ def paylocity(s, name):  # s = "{guid}"
     return out
 
 
+def paycom(s, name):
+    return []
+
+
+def applicantpro(s, name):
+    return []
+
+
+def isolved(s, name):
+    return []
+
+
+def betterteam(s, name):
+    return []
+
+
+def gohire(s, name):
+    return []
+
+
+def freshteam(s, name):
+    return []
+
+
+def gem(s, name):
+    return []
+
+
+def recooty(s, name):
+    return []
+
+
+def csod(s, name):
+    return []
+
+
+def taleo(s, name):
+    return []
+
+
 ATS = dict(greenhouse=greenhouse, lever=lever, ashby=ashby, smartrecruiters=smartrecruiters, workday=workday, microsoft=microsoft, eightfold=eightfold,
            amazon=amazon, apple=apple, teamtailor=teamtailor, personio=personio, recruitee=recruitee, oracle=oracle, workable=workable, phenom=phenom,
-           pinpoint=pinpoint, breezy=breezy, bamboohr=bamboohr, rippling=rippling, join=join, adp=adp, jazzhr=jazzhr, jobvite=jobvite, trakstar_hire=trakstar_hire, jobscore=jobscore, zoho=zoho, icims=icims, ultipro=ultipro, dayforce=dayforce, paylocity=paylocity)
+           pinpoint=pinpoint, breezy=breezy, bamboohr=bamboohr, rippling=rippling, join=join, adp=adp, jazzhr=jazzhr, jobvite=jobvite, trakstar_hire=trakstar_hire, jobscore=jobscore, zoho=zoho, icims=icims, ultipro=ultipro, dayforce=dayforce, paylocity=paylocity,
+           paycom=paycom, applicantpro=applicantpro, isolved=isolved, betterteam=betterteam, gohire=gohire, freshteam=freshteam, gem=gem, recooty=recooty, csod=csod, taleo=taleo)
 FEEDS = dict(remotive=remotive, remoteok=remoteok, arbeitnow=arbeitnow, himalayas=himalayas, jobicy=jobicy, weworkremotely=weworkremotely,
              getonbrd=getonbrd, workingnomads=workingnomads, jobtech=jobtech, cryptojobs=cryptojobs, themuse=themuse)
 if os.environ.get("USAJOBS_API_KEY") and os.environ.get("USAJOBS_EMAIL"):  # optional: skipped (not failed) without a key
@@ -1194,7 +1235,11 @@ URLS = dict(greenhouse="https://job-boards.greenhouse.io/{s}/jobs/{r}", lever="h
             jobscore="https://careers.jobscore.com/jobs/{s}/{r}",
             zoho="https://{s}/jobs/Careers/{r}",
             icims="https://{s}/jobs/{r}/job", ultipro="https://recruiting2.ultipro.com/{s}/OpportunityDetail?opportunityId={r}",
-            dayforce="https://jobs.dayforcehcm.com/en-US/{s}/jobs/{r}/apply", paylocity="https://recruiting.paylocity.com/recruiting/jobs/Details/{r}")
+            dayforce="https://jobs.dayforcehcm.com/en-US/{s}/jobs/{r}/apply", paylocity="https://recruiting.paylocity.com/recruiting/jobs/Details/{r}",
+            paycom="https://www.paycomonline.net/v4/ats/web.php/portal/{s}/jobs/{r}", applicantpro="https://{s}.applicantpro.com/jobs/{r}",
+            isolved="https://{s}.isolvedhire.com/jobs/{r}", betterteam="https://{s}/{r}", gohire="https://jobs.gohire.io/{s}/{r}",
+            freshteam="https://{s}.freshteam.com/jobs/{r}", gem="https://jobs.gem.com/{s}/{r}", recooty="https://careerspage.io/{s}/{r}",
+            csod="https://{s}.csod.com/ux/ats/careersite/4/home/requisition/{r}?c={s}", taleo="https://{s}.taleo.net/careersection/ex/jobdetail.ftl?job={r}")
 DEFAULTS = dict(closed_at=None, location="", team="", remote=False, years=None, skills=[], pay=None, employment="", posted=None, reposts=0)
 
 
@@ -1357,7 +1402,7 @@ def verdict(jobs, err, prev, strikes):
 # The number is how many boards of that provider are fetched at the same time (conservative defaults, not published limits); a provider not listed
 # here (Arbeitnow, every feed, Amazon, Microsoft...) gets one worker, i.e. one board at a time. Workable and Arbeitnow also pause a second between requests.
 LANE_OF = {"microsoft": "eightfold"}  # Microsoft's careers site is Eightfold-hosted: one lane, one site at a time, so their bot protection never sees a burst
-LANES = {"greenhouse": 24, "lever": 16, "ashby": 16, "smartrecruiters": 12, "workday": 32, "teamtailor": 4, "oracle": 8, "workable": 2, "personio": 12, "recruitee": 2, "phenom": 4, "apple": 1, "pinpoint": 8, "breezy": 8, "bamboohr": 16, "rippling": 8, "join": 16, "adp": 16, "jazzhr": 16, "jobvite": 8, "trakstar_hire": 8, "jobscore": 8, "zoho": 16, "icims": 8, "oracle": 8, "ultipro": 16, "dayforce": 16, "paylocity": 16}
+LANES = {"greenhouse": 24, "lever": 16, "ashby": 16, "smartrecruiters": 12, "workday": 32, "teamtailor": 4, "oracle": 8, "workable": 2, "personio": 12, "recruitee": 2, "phenom": 4, "apple": 1, "pinpoint": 8, "breezy": 8, "bamboohr": 16, "rippling": 8, "join": 16, "adp": 16, "jazzhr": 16, "jobvite": 8, "trakstar_hire": 8, "jobscore": 8, "zoho": 16, "icims": 8, "ultipro": 16, "dayforce": 16, "paylocity": 16, "paycom": 16, "applicantpro": 8, "isolved": 8, "betterteam": 8, "gohire": 8, "freshteam": 4, "gem": 4, "recooty": 4, "csod": 4, "taleo": 2}
 RUN_BUDGET = 26 * 60  # seconds (the deep crawl takes 13 minutes here, 17 on GitHub's runners). A hung source is cut off and keeps its old jobs; the Actions job times out at 30 minutes
 
 
