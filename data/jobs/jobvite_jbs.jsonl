@@ -5,7 +5,7 @@
 {"company":"JBS","employment":"contract","first_seen":"2026-10-30","id":"jobvite:jbs:o0q0AfwK","title":"Corporate Cafe Cook - Temporary Position"}
 {"company":"JBS","first_seen":"2026-10-30","id":"jobvite:jbs:o0xEAfwv","skills":["cdl"],"title":"CDL Driver - Live Haul First Shift"}
 {"company":"JBS","first_seen":"2026-10-30","id":"jobvite:jbs:o0yZAfwR","title":"East Division Controller"}
-{"company":"JBS","first_seen":"2026-10-30","id":"jobvite:jbs:o16YAfwp","title":"Maintenance Hourly"}
+{"closed_at":"2026-10-30","company":"JBS","first_seen":"2026-10-30","id":"jobvite:jbs:o16YAfwp","title":"Maintenance Hourly"}
 {"company":"JBS","first_seen":"2026-10-30","id":"jobvite:jbs:o1G0Afw1","title":"RENDERING/WASTEWATER MAINTENANCE SUPERVISOR"}
 {"company":"JBS","first_seen":"2026-10-30","id":"jobvite:jbs:o1aYAfwt","title":"Refrigeration Technician"}
 {"company":"JBS","first_seen":"2026-10-30","id":"jobvite:jbs:o1i0AfwD","title":"ASSISTANT FARM MANAGER| INDIAN CREEK SOW FARM| COLUMBUS JUNCTION, IA"}
@@ -15,7 +15,7 @@
 {"company":"JBS","first_seen":"2026-10-30","id":"jobvite:jbs:o2e1AfwB","title":"Hatchery-Embrex Laborer"}
 {"company":"JBS","first_seen":"2026-10-30","id":"jobvite:jbs:o2jWAfwB","title":"Occupational Health Specialist- LPN/ RN 3rd Shift"}
 {"company":"JBS","first_seen":"2026-10-30","id":"jobvite:jbs:o2o0AfwK","title":"HAM BONING PRODUCTION SUPERVISOR"}
-{"company":"JBS","first_seen":"2026-10-30","id":"jobvite:jbs:o3g0AfwD","title":"Maintenance Mechanic - 1st Shift - Protein Conversion"}
+{"closed_at":"2026-10-30","company":"JBS","first_seen":"2026-10-30","id":"jobvite:jbs:o3g0AfwD","title":"Maintenance Mechanic - 1st Shift - Protein Conversion"}
 {"company":"JBS","first_seen":"2026-10-30","id":"jobvite:jbs:o3jWAfwC","title":"Occupational Health Specialist- LPN/ RN Split Shift"}
 {"company":"JBS","first_seen":"2026-10-30","id":"jobvite:jbs:o3kYAfwF","title":"Bacon Quality Assurance Technician 2nd shift"}
 {"company":"JBS","first_seen":"2026-10-30","id":"jobvite:jbs:o3nXAfwH","title":"PLANT CONTROLLER"}
@@ -112,7 +112,7 @@
 {"company":"JBS","first_seen":"2026-10-30","id":"jobvite:jbs:oKoyAfw0","title":"Occupational Health Specialist 3rd Shift"}
 {"company":"JBS","first_seen":"2026-10-30","id":"jobvite:jbs:oKyWAfwy","title":"RETAIL SALES ASSOCIATE"}
 {"company":"JBS","first_seen":"2026-10-30","id":"jobvite:jbs:oL6jAfwu","title":"Retail Store Manager"}
-{"company":"JBS","first_seen":"2026-10-30","id":"jobvite:jbs:oLE0AfwJ","title":"Utilities Hatchery (weekends)"}
+{"closed_at":"2026-10-30","company":"JBS","first_seen":"2026-10-30","id":"jobvite:jbs:oLE0AfwJ","title":"Utilities Hatchery (weekends)"}
 {"company":"JBS","employment":"part_time","first_seen":"2026-10-30","id":"jobvite:jbs:oLMvAfwm","title":"Part-time Chick Delivery Driver - Lufkin"}
 {"company":"JBS","first_seen":"2026-10-30","id":"jobvite:jbs:oLOeAfw7","skills":["cdl"],"title":"CDL Shipping Driver (3rd Shift)"}
 {"company":"JBS","first_seen":"2026-10-30","id":"jobvite:jbs:oLmZAfwq","title":"SANITATION"}
@@ -202,6 +202,7 @@
 {"company":"JBS","first_seen":"2026-10-30","id":"jobvite:jbs:oZbZAfwt","title":"JBS SANITATION SUPERINTENDENT"}
 {"company":"JBS","first_seen":"2026-10-30","id":"jobvite:jbs:oZf7zfwE","title":"HEAD OF CATEGORY STRATEGY, DEVELOPMENT AND ENABLEMENT"}
 {"company":"JBS","first_seen":"2026-10-30","id":"jobvite:jbs:oZt0AfwM","title":"Garage Mechanic 2nd Shift"}
+{"company":"JBS","first_seen":"2026-10-30","id":"jobvite:jbs:oa92AfwF","title":"PRODUCTION HOURLY"}
 {"company":"JBS","first_seen":"2026-10-30","id":"jobvite:jbs:oaJYAfwb","title":"FLOATING ACCOUNTING CLERK"}
 {"company":"JBS","first_seen":"2026-10-30","id":"jobvite:jbs:oaXXAfwo","title":"Store Team Lead – Clermont"}
 {"company":"JBS","first_seen":"2026-10-30","id":"jobvite:jbs:oaXZAfwq","title":"MAINTENANCE HOURLY - Pilgrims Prepared Second Shift"}
@@ -212,6 +213,7 @@
 {"company":"JBS","first_seen":"2026-10-30","id":"jobvite:jbs:obPXAfwh","title":"Retail Sales Associate"}
 {"company":"JBS","first_seen":"2026-10-30","id":"jobvite:jbs:obp0AfwU","title":"Retail Sales Associate - South Tampa"}
 {"company":"JBS","first_seen":"2026-10-30","id":"jobvite:jbs:oc6QAfws","title":"SUPERVISOR DEVELOPMENT PROGRAM-MAINTENANCE"}
+{"company":"JBS","first_seen":"2026-10-30","id":"jobvite:jbs:oc92AfwH","title":"3RD SHIFT SANITATION HOURLY"}
 {"company":"JBS","first_seen":"2026-10-30","id":"jobvite:jbs:ocFYAfw9","title":"DRIVER MANAGER"}
 {"company":"JBS","first_seen":"2026-10-30","id":"jobvite:jbs:ocNZAfwi","title":"WASTEWATER TECHNICIAN"}
 {"company":"JBS","first_seen":"2026-10-30","id":"jobvite:jbs:ocWZAfwr","title":"BROILER SERVICE TECHNICIAN"}
@@ -219,6 +221,7 @@
 {"company":"JBS","first_seen":"2026-10-30","id":"jobvite:jbs:ocy1Afw5","title":"GREASE RECOVERY OPERATOR"}
 {"company":"JBS","first_seen":"2026-10-30","id":"jobvite:jbs:od30zfwz","title":"Maintenance Support Coordinator"}
 {"company":"JBS","first_seen":"2026-10-30","id":"jobvite:jbs:od5ZAfwB","title":"Retail Sales Associate"}
+{"company":"JBS","first_seen":"2026-10-30","id":"jobvite:jbs:od92AfwI","title":"MAINTENANCE HOURLY"}
 {"company":"JBS","first_seen":"2026-10-30","id":"jobvite:jbs:odNCAfwW","skills":["cdl"],"title":"CDL Shipping Driver"}
 {"company":"JBS","first_seen":"2026-10-30","id":"jobvite:jbs:oe3WAfwx","title":"FIELD MANAGER I- Northeast Iowa"}
 {"company":"JBS","first_seen":"2026-10-30","id":"jobvite:jbs:oeBXAfw6","title":"Bacon Production Supervisor"}
@@ -255,6 +258,7 @@
 {"company":"JBS","first_seen":"2026-10-30","id":"jobvite:jbs:oiuZzfw4","title":"Store Team Lead"}
 {"company":"JBS","first_seen":"2026-10-30","id":"jobvite:jbs:oj5ZAfwH","title":"QA Supervisor - Night Shift"}
 {"company":"JBS","first_seen":"2026-10-30","id":"jobvite:jbs:oj8WAfwH","title":"Food Labeling & Regulatory Specialist II"}
+{"company":"JBS","first_seen":"2026-10-30","id":"jobvite:jbs:oj92AfwO","title":"PRODUCTION HOURLY"}
 {"company":"JBS","first_seen":"2026-10-30","id":"jobvite:jbs:ojKXAfwk","title":"Sanitation Laborer - 2nd shift"}
 {"company":"JBS","first_seen":"2026-10-30","id":"jobvite:jbs:ojT0Afww","title":"MAINTENANCE BOILER AND REFRIGERATION SUPERINTENDENT"}
 {"company":"JBS","first_seen":"2026-10-30","id":"jobvite:jbs:ojXXAfwx","title":"Retail Store Manager"}
@@ -342,6 +346,7 @@
 {"company":"JBS","first_seen":"2026-10-30","id":"jobvite:jbs:oxMOAfwr","skills":["cdl"],"title":"LIVE HAUL-ANIMAL TRANSPORT CDL DRIVER| JBS LIVE PORK| Oakville, IA"}
 {"company":"JBS","first_seen":"2026-10-30","id":"jobvite:jbs:oxS1AfwK","title":"Broiler Service Technician"}
 {"company":"JBS","first_seen":"2026-10-30","id":"jobvite:jbs:oxYZzfwN","title":"Wastewater Supervisor"}
+{"company":"JBS","first_seen":"2026-10-30","id":"jobvite:jbs:oxa2Afw3","title":"MAINTENANCE HOURLY (MECHANICS, TECHNICIANS & PROJECTS)"}
 {"company":"JBS","first_seen":"2026-10-30","id":"jobvite:jbs:oxeZAfw4","title":"Security Guard- 3rd Shift"}
 {"company":"JBS","first_seen":"2026-10-30","id":"jobvite:jbs:oxm1Afwe","title":"FAB QA TECHNICIAN A-SHIFT"}
 {"company":"JBS","first_seen":"2026-10-30","id":"jobvite:jbs:oxnNAfw1","title":"Occupational Health Specialist (Nurse- LPN) 2nd Shift"}
@@ -358,7 +363,7 @@
 {"company":"JBS","employment":"part_time","first_seen":"2026-10-30","id":"jobvite:jbs:ozFXAfwv","title":"Part Time Feed Mill Lab Technician - Hedrick IA"}
 {"company":"JBS","first_seen":"2026-10-30","id":"jobvite:jbs:ozH1AfwB","title":"QUALITY ASSURANCE TECHNICIAN"}
 {"company":"JBS","first_seen":"2026-10-30","id":"jobvite:jbs:ozI0AfwB","title":"HARVEST SUPERVISOR"}
-{"company":"JBS","first_seen":"2026-10-30","id":"jobvite:jbs:ozL0AfwE","title":"Live Receiving - Days"}
+{"closed_at":"2026-10-30","company":"JBS","first_seen":"2026-10-30","id":"jobvite:jbs:ozL0AfwE","title":"Live Receiving - Days"}
 {"company":"JBS","first_seen":"2026-10-30","id":"jobvite:jbs:ozVVAfwJ","title":"HR Hiring Coordinator"}
 {"company":"JBS","first_seen":"2026-10-30","id":"jobvite:jbs:ozY2AfwT","title":"BOAR STUD DRIVER"}
 {"company":"JBS","first_seen":"2026-10-30","id":"jobvite:jbs:ozoKAfw1","title":"EMT 2ND SHIFT (EMERGENCY MEDICAL TECHNICIAN)"}

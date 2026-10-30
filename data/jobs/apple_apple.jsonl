@@ -36,7 +36,6 @@
 {"company":"Apple","first_seen":"2026-10-22","id":"apple:apple:114438209","location":"Italy","posted":"2026-10-30","team":"Apple Retail","title":"IT-Technical Specialist"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:114438210","location":"Japan","posted":"2026-10-30","team":"Apple Retail","title":"JP-Technical Specialist"}
 {"company":"Apple","first_seen":"2026-10-24","id":"apple:apple:114438211","location":"Netherlands","posted":"2026-10-30","team":"Apple Retail","title":"NL-Technical Specialist"}
-{"company":"Apple","employment":"contract","first_seen":"2026-10-26","id":"apple:apple:114438212","location":"Spain","posted":"2026-10-30","team":"Apple Retail","title":"ES - Technical Specialist: Full-Time, Part-Time, and Part-Time Temporary"}
 {"company":"Apple","first_seen":"2026-10-16","id":"apple:apple:114438216","location":"United Arab Emirates","posted":"2026-10-30","team":"Apple Retail","title":"UAE-Business Expert"}
 {"company":"Apple","first_seen":"2026-10-30","id":"apple:apple:114438217","location":"United Arab Emirates","posted":"2026-10-30","team":"Apple Retail","title":"UAE-Creative"}
 {"company":"Apple","first_seen":"2026-10-26","id":"apple:apple:114438218","location":"United Arab Emirates","posted":"2026-10-30","team":"Apple Retail","title":"UAE-Expert"}
@@ -404,7 +403,6 @@
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200686075","location":"India","posted":"2026-10-06","team":"Software and Services","title":"Software Engineer - Digital Asset Management"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200686077","location":"India","posted":"2026-10-13","skills":["java"],"team":"Software and Services","title":"Senior Software Engineer (Java Backend) ,Retail Engineering"}
 {"company":"Apple","employment":"internship","first_seen":"2026-10-15","id":"apple:apple:200686080","location":"China","posted":"2026-10-12","team":"Operations and Supply Chain","title":"Manufacturing Design Program Manager - Intern"}
-{"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200686084","location":"China","posted":"2026-09-30","team":"Students","title":"UR Events Attendees-FY27"}
 {"company":"Apple","employment":"internship","first_seen":"2026-10-15","id":"apple:apple:200686088","location":"China","posted":"2026-10-06","team":"Operations and Supply Chain","title":"Manufacturing Design Engineer - Intern"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200686090","location":"Ireland","posted":"2026-09-30","team":"Corporate Functions","title":"Network Engineer, Core Network Services Operations"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200686139","location":"United States of America","posted":"2026-10-01","team":"Apple Retail","title":"US-Manager"}
@@ -1473,6 +1471,7 @@
 {"company":"Apple","first_seen":"2026-10-29","id":"apple:apple:200691870","location":"China","posted":"2026-10-29","team":"Hardware","title":"RFIC Validation and Characterization Engineer"}
 {"company":"Apple","first_seen":"2026-10-27","id":"apple:apple:200691871","location":"Japan","posted":"2026-10-27","team":"Hardware","title":"Optical Coating and Process Engineer (Yokohama Technology Center)"}
 {"company":"Apple","first_seen":"2026-10-27","id":"apple:apple:200691875","location":"United Kingdom","posted":"2026-10-27","skills":["ml"],"team":"Machine Learning and AI","title":"AIML - Machine Learning Research (Speech-to-Speech Translation) - TMI"}
+{"company":"Apple","employment":"internship","first_seen":"2026-10-30","id":"apple:apple:200691892","location":"United Kingdom","posted":"2026-10-30","team":"Software and Services","title":"Intern, Site Reliability Engineer, iCloud"}
 {"company":"Apple","first_seen":"2026-10-27","id":"apple:apple:200691897","location":"Spain","posted":"2026-10-27","skills":["ml","python","java"],"team":"Software and Services","title":"Media Intelligence Quality Engineer"}
 {"company":"Apple","first_seen":"2026-10-28","id":"apple:apple:200691903","location":"United States of America","posted":"2026-10-28","team":"Apple Retail","title":"US-Lead"}
 {"company":"Apple","first_seen":"2026-10-27","id":"apple:apple:200691907","location":"United Kingdom","posted":"2026-10-27","team":"Hardware","title":"Experienced CAD Automation Engineer (Design Verification)"}
