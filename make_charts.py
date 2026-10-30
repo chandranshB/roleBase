@@ -3,10 +3,12 @@ The scrape workflow runs this after every scrape and commits docs/charts/ (SVGs 
 import csv
 import datetime as dt
 import html
+import json
 from collections import Counter
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
-from scraper import company_stats, load
+from scraper import DIR, category, level
 
 OUT = Path("docs/charts")
 W = 720
@@ -107,28 +109,97 @@ def skill_trends():
     return [(SK.get(s, s.capitalize()), i + 1, share[s]) for i, s in enumerate(top)]
 
 
+def _process_file(f):
+    open_jobs = 0
+    levels = Counter()
+    categories = Counter()
+    skills = Counter()
+    companies = Counter()
+    company_fresh = Counter()
+
+    try:
+        content = f.read_text(encoding="utf-8")
+    except Exception:
+        return None
+
+    for line in content.split("\n"):
+        line = line.strip()
+        if not line:
+            continue
+        try:
+            j = json.loads(line)
+        except Exception:
+            continue
+
+        if j.get("closed_at") is not None:
+            continue
+
+        open_jobs += 1
+        y = j.get("years")
+        lvl = j.get("level") or level(j.get("title", ""), y)
+        levels[lvl] += 1
+
+        cat = j.get("category") or category(j.get("title", ""), j.get("team"))
+        categories[cat] += 1
+
+        comp = j.get("company", "Unknown")
+        companies[comp] += 1
+
+        is_fresh = (lvl in ("intern", "junior", "mid")) and (y <= 2 if y is not None else lvl != "mid")
+        if is_fresh:
+            company_fresh[comp] += 1
+
+        for s in j.get("skills", []):
+            skills[s] += 1
+
+    return (open_jobs, levels, categories, skills, companies, company_fresh)
+
+
 def main():
-    jobs = [j for j in load().values() if j["closed_at"] is None]
-    stamp = f"{len(jobs):,} open jobs · updated {dt.date.today()}"
-    levels = Counter(j["level"] for j in jobs)
-    skills = Counter(s for j in jobs for s in j["skills"])
-    fresh = company_stats(jobs, min_roles=20)
+    files = list(DIR.glob("*.jsonl"))
+    tot_open = 0
+    all_levels = Counter()
+    all_categories = Counter()
+    all_skills = Counter()
+    all_companies = Counter()
+    all_comp_fresh = Counter()
+
+    with ThreadPoolExecutor(max_workers=32) as ex:
+        for res in ex.map(_process_file, files):
+            if not res:
+                continue
+            o_jobs, lvls, cats, sks, comps, c_fresh = res
+            tot_open += o_jobs
+            all_levels.update(lvls)
+            all_categories.update(cats)
+            all_skills.update(sks)
+            all_companies.update(comps)
+            all_comp_fresh.update(c_fresh)
+
+    stamp = f"{tot_open:,} open jobs · updated {dt.date.today()}"
+    fresh_list = []
+    for c, n in all_companies.items():
+        if n >= 20:
+            f = all_comp_fresh[c]
+            fresh_list.append(dict(company=c, open_roles=n, fresher_roles=f, fresher_share=round(f / n, 3)))
+    fresh_sorted = sorted(fresh_list, key=lambda r: (-r["fresher_share"], -r["open_roles"]))
+
     open_pts, fresher_pts = pulse()
     charts = {
-        "jobs_by_level": bars("Open jobs by level", stamp, [(l, levels[l]) for l in ("intern", "junior", "mid", "senior", "lead", "staff+", "manager+")]),
-        "jobs_by_field": bars("Open jobs by field", stamp, Counter(j["category"] for j in jobs).most_common()),
-        "top_skills": bars("Most requested skills", stamp, [(SK.get(s, s.capitalize()), n) for s, n in skills.most_common(15)]),
-        "top_companies": bars("Companies with the most open jobs", stamp, Counter(j["company"] for j in jobs).most_common(12)),
+        "jobs_by_level": bars("Open jobs by level", stamp, [(l, all_levels[l]) for l in ("intern", "junior", "mid", "senior", "lead", "staff+", "manager+")]),
+        "jobs_by_field": bars("Open jobs by field", stamp, all_categories.most_common()),
+        "top_skills": bars("Most requested skills", stamp, [(SK.get(s, s.capitalize()), n) for s, n in all_skills.most_common(15)]),
+        "top_companies": bars("Companies with the most open jobs", stamp, all_companies.most_common(12)),
         "fresher_friendly": bars("Most fresher-friendly companies (roles open to 0–2 years)", f"companies with 20+ open jobs · {stamp}",
                                  [(f"{c['company']} ({c['fresher_roles']}/{c['open_roles']})", c["fresher_share"] * 100)
-                                  for c in fresh[:12]], fmt=lambda v: f"{v:.0f}%"),
+                                  for c in fresh_sorted[:12]], fmt=lambda v: f"{v:.0f}%"),
         "skill_trends": lines("Skill demand trend", "share of skill-tagged open postings that mention each skill: the 3 leading non-IT and 3 leading IT skills · " + stamp, skill_trends(), w=1200, unit="%"),
         "open_jobs_over_time": lines("Open jobs over time", stamp, [("Open jobs", 1, open_pts), ("Fresher-friendly", 2, fresher_pts)]),
     }
     OUT.mkdir(parents=True, exist_ok=True)
     for name, s in charts.items():
         f = OUT / f"{name}.svg"
-        if not f.exists() or f.read_text(encoding="utf-8") != s:  # leave unchanged files alone so git sees no diff
+        if not f.exists() or f.read_text(encoding="utf-8") != s:
             with open(f, "w", encoding="utf-8", newline="\n") as fh:
                 fh.write(s)
     print(f"{len(charts)} charts -> {OUT}")

@@ -174,7 +174,9 @@ def find_pay(t):  # yearly pay range written in the text -> [min, max, currency]
 
 
 def clean_company(n):  # "Stripe, Inc." -> "Stripe"
-    n = " ".join((n or "").split())
+    if not n or not isinstance(n, str):
+        return ""
+    n = " ".join(n.split())
     while (m := LEGAL_RX.sub("", n)) != n and m:
         n = m
     return n
@@ -1067,9 +1069,108 @@ def icims(s, name):  # s = "<subdomain>.icims.com"
     return out
 
 
+def ultipro(s, name):  # s = "{tenant}/JobBoard/{guid}" or "{tenant}/{guid}"
+    out = []
+    parts = s.split("/")
+    tenant = parts[0]
+    guid = parts[-1]
+    scope_slug = f"{tenant}/JobBoard/{guid}"
+    url = f"https://recruiting2.ultipro.com/{tenant}/JobBoard/{guid}/JobBoardView/LoadSearchResults"
+    page = 0
+    page_size = 50
+    seen = set()
+    headers = {
+        "Content-Type": "application/json; charset=utf-8",
+        "Accept": "application/json, text/javascript, */*; q=0.01",
+        "X-Requested-With": "XMLHttpRequest",
+    }
+    while page < 50:
+        payload = {"opportunitySearch": {"Top": page_size, "Skip": page * page_size}}
+        try:
+            r = S.post(url, json=payload, headers=headers, timeout=TIMEOUT)
+            if not r.ok:
+                break
+            data = r.json()
+        except Exception:
+            break
+        opps = data.get("opportunities") or []
+        if not opps:
+            break
+        for o in opps:
+            jid = o.get("Id")
+            if not jid or jid in seen:
+                continue
+            seen.add(jid)
+            title = (o.get("Title") or "").strip()
+            if not title:
+                continue
+            loc_parts = []
+            for loc_obj in o.get("Locations") or []:
+                addr = loc_obj.get("Address") or {}
+                city = addr.get("City") or ""
+                state = (addr.get("State") or {}).get("Code") or ""
+                country = (addr.get("Country") or {}).get("Name") or ""
+                p = ", ".join(filter(None, [city, state, country]))
+                if p:
+                    loc_parts.append(p)
+            loc = "; ".join(loc_parts)
+            dept = o.get("JobCategoryName") or ""
+            posted_date = str(o.get("PostedDate") or "")[:10] or None
+            emp = ["full_time"] if o.get("FullTime") is True else ["part_time"] if o.get("FullTime") is False else []
+            desc = o.get("BriefDescription") or ""
+            apply_url = f"https://recruiting2.ultipro.com/{tenant}/JobBoard/{guid}/OpportunityDetail?opportunityId={jid}"
+            out.append(job("ultipro", f"ultipro:{scope_slug}", jid, name or tenant, title,
+                           apply_url, loc, posted=posted_date, desc=desc, team=dept, emp=emp))
+        if len(opps) < page_size:
+            break
+        page += 1
+    return out
+
+
+def dayforce(s, name):  # s = "{client}/{board_code}"
+    parts = s.split("/")
+    client = parts[0]
+    board_code = parts[1] if len(parts) > 1 else "candidateportal"
+    data = get(f"https://www.dayforcehcm.com/api/{client}/V1/JobFeeds",
+               params=dict(internalJobBoardCode=board_code, includeActivePostingOnly="true"))
+    out = []
+    for j in (data if isinstance(data, list) else []):
+        rid = str(j.get("ReferenceNumber") or "")
+        title = (j.get("Title") or "").strip()
+        if not rid or not title:
+            continue
+        comp = name or j.get("CompanyName") or client
+        apply_url = j.get("ApplyUrl") or j.get("JobDetailsUrl") or f"https://jobs.dayforcehcm.com/en-US/{client}/{board_code}/jobs/{rid}/apply"
+        desc = text(j.get("Description"))
+        remote = bool(j.get("IsVirtualLocation")) or "remote" in title.lower()
+        loc = (j.get("ClientSiteName") or "").strip()
+        out.append(job("dayforce", f"dayforce:{s}", rid, comp, title, apply_url,
+                       location=loc, remote=remote, posted=str(j.get("DatePosted") or "")[:10] or None,
+                       desc=desc, team=j.get("ParentRequisitionCode") or ""))
+    return out
+
+
+def paylocity(s, name):  # s = "{guid}"
+    data = get(f"https://recruiting.paylocity.com/recruiting/v2/api/feed/jobs/{s}")
+    out = []
+    comp = name or (data.get("displayName") if isinstance(data, dict) else "") or s
+    for j in (data.get("jobs", []) if isinstance(data, dict) else []):
+        rid = str(j.get("jobId") or j.get("publicJobId") or "")
+        title = (j.get("title") or "").strip()
+        if not rid or not title:
+            continue
+        apply_url = j.get("applyUrl") or f"https://recruiting.paylocity.com/recruiting/jobs/Details/{rid}"
+        desc = text(j.get("description"))
+        loc = (j.get("location") or "").strip()
+        remote = "remote" in loc.lower() or "remote" in title.lower()
+        out.append(job("paylocity", f"paylocity:{s}", rid, comp, title, apply_url,
+                       location=loc, remote=remote, desc=desc, team=j.get("department") or ""))
+    return out
+
+
 ATS = dict(greenhouse=greenhouse, lever=lever, ashby=ashby, smartrecruiters=smartrecruiters, workday=workday, microsoft=microsoft, eightfold=eightfold,
            amazon=amazon, apple=apple, teamtailor=teamtailor, personio=personio, recruitee=recruitee, oracle=oracle, workable=workable, phenom=phenom,
-           pinpoint=pinpoint, breezy=breezy, bamboohr=bamboohr, rippling=rippling, join=join, adp=adp, jazzhr=jazzhr, jobvite=jobvite, trakstar_hire=trakstar_hire, jobscore=jobscore, zoho=zoho, icims=icims)
+           pinpoint=pinpoint, breezy=breezy, bamboohr=bamboohr, rippling=rippling, join=join, adp=adp, jazzhr=jazzhr, jobvite=jobvite, trakstar_hire=trakstar_hire, jobscore=jobscore, zoho=zoho, icims=icims, ultipro=ultipro, dayforce=dayforce, paylocity=paylocity)
 FEEDS = dict(remotive=remotive, remoteok=remoteok, arbeitnow=arbeitnow, himalayas=himalayas, jobicy=jobicy, weworkremotely=weworkremotely,
              getonbrd=getonbrd, workingnomads=workingnomads, jobtech=jobtech, cryptojobs=cryptojobs, themuse=themuse)
 if os.environ.get("USAJOBS_API_KEY") and os.environ.get("USAJOBS_EMAIL"):  # optional: skipped (not failed) without a key
@@ -1092,7 +1193,8 @@ URLS = dict(greenhouse="https://job-boards.greenhouse.io/{s}/jobs/{r}", lever="h
             trakstar_hire="https://{s}.hire.trakstar.com/jobs/{r}",
             jobscore="https://careers.jobscore.com/jobs/{s}/{r}",
             zoho="https://{s}/jobs/Careers/{r}",
-            icims="https://{s}/jobs/{r}/job")
+            icims="https://{s}/jobs/{r}/job", ultipro="https://recruiting2.ultipro.com/{s}/OpportunityDetail?opportunityId={r}",
+            dayforce="https://jobs.dayforcehcm.com/en-US/{s}/jobs/{r}/apply", paylocity="https://recruiting.paylocity.com/recruiting/jobs/Details/{r}")
 DEFAULTS = dict(closed_at=None, location="", team="", remote=False, years=None, skills=[], pay=None, employment="", posted=None, reposts=0)
 
 
@@ -1104,11 +1206,14 @@ def url_of(id):  # apply URL is derivable for ATS jobs, so it is only stored whe
 def load():
     # split("\n"), not splitlines(): titles can contain U+2028 etc., which splitlines() would cut on
     db = {}
-    for f in DIR.glob("*.jsonl"):
+    files = list(DIR.glob("*.jsonl"))
+
+    def read_one(f):
+        items = []
         try:
             content = f.read_text(encoding="utf-8")
         except Exception:
-            continue
+            return items
         for l in content.split("\n"):
             l = l.strip()
             if not l:
@@ -1123,7 +1228,13 @@ def load():
             j.setdefault("category", category(j["title"], j.get("team")))
             for k, v in DEFAULTS.items():
                 j.setdefault(k, list(v) if isinstance(v, list) else v)
-            db[j["id"]] = j
+            items.append((j["id"], j))
+        return items
+
+    with ThreadPoolExecutor(max_workers=32) as ex:
+        for batch in ex.map(read_one, files):
+            for jid, j in batch:
+                db[jid] = j
     return db
 
 
@@ -1246,7 +1357,7 @@ def verdict(jobs, err, prev, strikes):
 # The number is how many boards of that provider are fetched at the same time (conservative defaults, not published limits); a provider not listed
 # here (Arbeitnow, every feed, Amazon, Microsoft...) gets one worker, i.e. one board at a time. Workable and Arbeitnow also pause a second between requests.
 LANE_OF = {"microsoft": "eightfold"}  # Microsoft's careers site is Eightfold-hosted: one lane, one site at a time, so their bot protection never sees a burst
-LANES = {"greenhouse": 24, "lever": 16, "ashby": 16, "smartrecruiters": 12, "workday": 32, "teamtailor": 4, "oracle": 8, "workable": 2, "personio": 12, "recruitee": 2, "phenom": 4, "apple": 1, "pinpoint": 8, "breezy": 8, "bamboohr": 16, "rippling": 8, "join": 16, "adp": 16, "jazzhr": 16, "jobvite": 8, "trakstar_hire": 8, "jobscore": 8, "zoho": 16, "icims": 8, "oracle": 8}
+LANES = {"greenhouse": 24, "lever": 16, "ashby": 16, "smartrecruiters": 12, "workday": 32, "teamtailor": 4, "oracle": 8, "workable": 2, "personio": 12, "recruitee": 2, "phenom": 4, "apple": 1, "pinpoint": 8, "breezy": 8, "bamboohr": 16, "rippling": 8, "join": 16, "adp": 16, "jazzhr": 16, "jobvite": 8, "trakstar_hire": 8, "jobscore": 8, "zoho": 16, "icims": 8, "oracle": 8, "ultipro": 16, "dayforce": 16, "paylocity": 16}
 RUN_BUDGET = 26 * 60  # seconds (the deep crawl takes 13 minutes here, 17 on GitHub's runners). A hung source is cut off and keeps its old jobs; the Actions job times out at 30 minutes
 
 

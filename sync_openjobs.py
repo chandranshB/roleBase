@@ -32,7 +32,7 @@ def fetch_shard(shard_idx, company_lookup):
     url = f"{HF_BASE}/data/active/minimal/current/{shard_str}"
     req = urllib.request.Request(url, headers={"User-Agent": "roleBase-sync"})
     try:
-        with urllib.request.urlopen(req, timeout=30) as resp:
+        with urllib.request.urlopen(req, timeout=45) as resp:
             buf = io.BytesIO(resp.read())
         table = pq.read_table(buf)
         df = table.to_pandas()
@@ -42,21 +42,23 @@ def fetch_shard(shard_idx, company_lookup):
 
     converted = []
     for _, row in df.iterrows():
-        pid = row["posting_id"]
-        if not pid:
+        raw_pid = row.get("posting_id")
+        if not raw_pid or pd.isna(raw_pid):
             continue
+        pid = str(raw_pid).strip()
 
         cid = row.get("company_id")
         c_info = company_lookup.get(cid)
         if not c_info:
             continue
         cname, cslug, cats = c_info
+        cname = str(cname).strip() if pd.notna(cname) else ""
 
-        title = (row.get("title") or "").strip()
+        title = str(row.get("title") or "").strip()
         if not title:
             continue
 
-        apply_url = row.get("apply_url") or ""
+        apply_url = str(row.get("apply_url") or "").strip()
         loc_parts = [str(p).strip() for p in [row.get("location_city"), row.get("location_region"), row.get("country")]
                      if pd.notna(p) and str(p).strip()]
         loc = ", ".join(loc_parts)
@@ -147,7 +149,10 @@ def main():
                         seen_urls.add(url)
                     seen_norm.add(n_sig)
 
-                    bname = pid.rsplit(":", 1)[0].replace(":", "_").replace("/", "_")
+                    raw_bname = pid.rsplit(":", 1)[0]
+                    bname = re.sub(r'[<>:"/\\|?*\x00-\x1f]', '_', raw_bname).strip('. ')
+                    if not bname:
+                        bname = "unknown"
                     boards_to_write.setdefault(bname, []).append(j)
                     added_this_shard += 1
 
@@ -155,12 +160,11 @@ def main():
             except Exception as e:
                 print(f"  Shard {shard_idx:02d} error: {e}", flush=True)
 
-    print(f"\nMerging {len(seen_ids):,} new unique jobs into target boards on disk (checking board files for disk dedup)...", flush=True)
+    print(f"\nMerging {len(seen_ids):,} new unique jobs into {len(boards_to_write):,} target boards (32 parallel disk workers)...", flush=True)
     DIR.mkdir(parents=True, exist_ok=True)
-    total_written = 0
-    total_skipped_on_disk = 0
 
-    for bname, new_jobs in boards_to_write.items():
+    def write_board(item):
+        bname, new_jobs = item
         bfile = DIR / f"{bname}.jsonl"
         board_ids = set()
         board_urls = set()
@@ -185,12 +189,13 @@ def main():
                 pass
 
         new_for_board = 0
+        skipped = 0
         for j in new_jobs:
             if j["id"] in board_ids:
-                total_skipped_on_disk += 1
+                skipped += 1
                 continue
             if j.get("url") and j["url"] in board_urls:
-                total_skipped_on_disk += 1
+                skipped += 1
                 continue
             board_ids.add(j["id"])
             if j.get("url"):
@@ -200,11 +205,21 @@ def main():
 
         if new_for_board > 0:
             board_lines = sorted(set(board_lines))
-            with open(bfile, "w", encoding="utf-8", newline="\n") as fp:
-                fp.write("\n".join(board_lines) + "\n")
-            total_written += new_for_board
+            try:
+                with open(bfile, "w", encoding="utf-8", newline="\n") as fp:
+                    fp.write("\n".join(board_lines) + "\n")
+            except Exception:
+                return 0, skipped
+        return new_for_board, skipped
 
-    print(f"\nZero-redundancy sync complete in {time.time() - t0:.1f}s!", flush=True)
+    t_merge = time.time()
+    with ThreadPoolExecutor(max_workers=32) as ex:
+        results = list(ex.map(write_board, boards_to_write.items()))
+
+    total_written = sum(r[0] for r in results)
+    total_skipped_on_disk = sum(r[1] for r in results)
+
+    print(f"\nZero-redundancy sync complete in {time.time() - t0:.1f}s (disk merge took {time.time() - t_merge:.1f}s)!", flush=True)
     print(f"  Downloaded from canonical shards: {total_downloaded:,}", flush=True)
     print(f"  Unique stream items:              {len(seen_ids):,}", flush=True)
     print(f"  Skipped as already on disk:       {total_skipped_on_disk:,}", flush=True)
