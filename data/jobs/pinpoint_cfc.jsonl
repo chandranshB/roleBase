@@ -30,6 +30,7 @@
 {"company":"CFC","first_seen":"2026-10-19","id":"pinpoint:cfc:5bb3787a-8b04-47d7-9321-2020320507e7","location":"UK - London","title":"Senior DFIR Investigator"}
 {"company":"CFC","first_seen":"2026-10-27","id":"pinpoint:cfc:5d86caa9-184b-4d7c-9d8f-7377ba85608c","location":"UK - London","skills":["project_management"],"title":"Cyber Incident Manager"}
 {"company":"CFC","first_seen":"2026-10-19","id":"pinpoint:cfc:67d079a1-5bcc-4b31-9041-e34c3c006343","location":"Remote","remote":true,"skills":["aws","azure","python","linux"],"title":"Service Reliability Engineer","years":3}
+{"company":"CFC","first_seen":"2026-10-30","id":"pinpoint:cfc:79c9e444-ad98-4c3b-a705-0cc62f7ea4ab","location":"UK - London","title":"Senior DFIR Investigator"}
 {"company":"CFC","first_seen":"2026-10-19","id":"pinpoint:cfc:7bad9fcc-08f0-4c88-adbe-99524c2554cc","location":"CA - Ontario","pay":[160000,220000,"CAD"],"title":"Assistant General Counsel","years":10}
 {"company":"CFC","first_seen":"2026-10-19","id":"pinpoint:cfc:8bd8c371-27e3-4891-9971-b412f1ff8192","location":"UK - London","title":"Talent & Development Partner"}
 {"company":"CFC","first_seen":"2026-10-19","id":"pinpoint:cfc:8daf71db-74f0-4904-90a9-91a93a4ffa02","location":"UK - London","title":"Quality Assurance & Controls Team Lead"}
@@ -45,9 +46,11 @@
 {"company":"CFC","first_seen":"2026-10-19","id":"pinpoint:cfc:a6dde5cf-99ee-43a3-b1ea-05f8df072cfb","location":"UK - London","title":"Business Resumption Engineer","years":3}
 {"company":"CFC","first_seen":"2026-10-28","id":"pinpoint:cfc:a725875c-2262-4197-b18b-4f121a36b161","location":"US - Texas","skills":["azure"],"title":"Infrastructure Operations Engineer"}
 {"company":"CFC","first_seen":"2026-10-19","id":"pinpoint:cfc:b420c1a4-4109-4980-8e5e-21ec82d41af1","location":"UK - London","skills":["sql","tableau","snowflake","databricks"],"title":"Business Analyst"}
+{"company":"CFC","first_seen":"2026-10-30","id":"pinpoint:cfc:b47e0b98-a67c-4248-a52c-c23c764acc40","location":"AU - Gold Coast","skills":["customer_service"],"title":"EUT Engineer"}
 {"company":"CFC","first_seen":"2026-10-19","id":"pinpoint:cfc:b782d60c-a34a-4402-b8a7-0a103e3d424f","location":"US - New York","pay":[130000,165000,"USD"],"skills":["customer_service"],"title":"Claims Specialist, Cyber/Tech"}
 {"company":"CFC","first_seen":"2026-10-19","id":"pinpoint:cfc:b8f67d29-d795-473c-929e-c73444749ea5","location":"US - New York","pay":[120000,160000,"USD"],"skills":["customer_service"],"title":"Claims Specialist, Medical Malpractice/Negligence"}
 {"company":"CFC","first_seen":"2026-10-19","id":"pinpoint:cfc:bb2b2f14-98d5-4d98-b6fa-2ae70800409a","location":"UK - London","skills":["customer_service"],"title":"Claims Adjuster, Emerging Risks"}
+{"company":"CFC","first_seen":"2026-10-30","id":"pinpoint:cfc:bb44d077-a58c-4850-9b2c-ac49605688f7","location":"US - New York","pay":[90000,105000,"USD"],"title":"Cyber & Tech Underwriter"}
 {"company":"CFC","first_seen":"2026-10-19","id":"pinpoint:cfc:bbdbbf2a-102e-4a36-89f1-146d0a769bf1","location":"UK - London","skills":["customer_service"],"title":"Claims Adjuster, Cyber"}
 {"closed_at":"2026-10-29","company":"CFC","first_seen":"2026-10-19","id":"pinpoint:cfc:bd58dc95-61d4-4994-8139-85ad5e0cf15e","location":"UK - London","skills":["ml","llm","python","sql","git","ci/cd"],"title":"Associate Data Scientist"}
 {"company":"CFC","first_seen":"2026-10-19","id":"pinpoint:cfc:bdb54b95-2c68-4462-96fb-9e3315161e35","location":"UK - London","title":"Lead Security Engineer (Data)"}
