@@ -189,10 +189,12 @@ def tidy(b):
 def main():
     cfg = json.loads(Path("companies.json").read_text(encoding="utf-8"))
     domains = json.loads(Path("domains.json").read_text(encoding="utf-8"))
+    db_jobs = list(load().values())
+    live_companies = {j["company"] for j in db_jobs if j.get("closed_at") is None}
     todo = [(n, re.sub(r"\W+", "-", n.lower()).strip("-"), s if src == "lever" else None, domains.get(n))
-            for src, boards in cfg.items() for s, n in boards.items()]
+            for src, boards in cfg.items() for s, n in boards.items() if n in live_companies or n in domains]
     seen, counts = {t[0] for t in todo}, {}
-    for j in load().values():  # employers that only come from the open job feeds (Arbeitnow etc.), with 3+ open jobs
+    for j in db_jobs:  # employers that only come from the open job feeds (Arbeitnow etc.), with 3+ open jobs
         if j["closed_at"] is None and j["company"] not in seen:
             counts[j["company"]] = counts.get(j["company"], 0) + 1
     for n, c in counts.items():
@@ -236,7 +238,7 @@ def main():
             shutil.copy(CACHE / f, out / f)
             mapping[name] = f"logos/{f}"
     cats = {}  # company -> {field: open jobs}
-    for j in load().values():
+    for j in db_jobs:
         if j["closed_at"] is None:
             c = cats.setdefault(j["company"], {})
             c[j["category"]] = c.get(j["category"], 0) + 1

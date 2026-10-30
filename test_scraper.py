@@ -1,7 +1,7 @@
 import datetime as dt
 
 from scraper import (ATS, CAPPED, FEEDS, apple, bamboohr, breezy, category, clean_company, company_stats, employment, find_pay, fresher_ok, ghost_flags, level, merge, skills, slim,
-                     phenom_job, pinpoint, rippling, run_all, themuse, url_of, usajobs_job, verdict, wd_posted, years_req)
+                     phenom_job, pinpoint, rippling, run_all, themuse, url_of, usajobs_job, verdict, wd_posted, years_req, adp, jazzhr, jobvite, join, trakstar_hire)
 from update_about import about_text
 
 
@@ -96,8 +96,13 @@ assert url_of("pinpoint:article:c5a4fa70-cb2d") == "https://article.pinpointhq.c
 assert url_of("breezy:zero-hash:cd390cdcd5ca") == "https://zero-hash.breezy.hr/p/cd390cdcd5ca"
 assert url_of("bamboohr:acme:123") == "https://acme.bamboohr.com/careers/123"
 assert url_of("rippling:acme:abc") == "https://ats.rippling.com/acme/jobs/abc"
+assert url_of("join:acme:123") == "https://join.com/companies/acme/jobs/123"
+assert url_of("adp:acme:123") == "https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=acme&jobId=123"
+assert url_of("jazzhr:acme:123") == "https://acme.applytojob.com/apply/123"
+assert url_of("jobvite:acme:123") == "https://jobs.jobvite.com/acme/job/123"
+assert url_of("trakstar_hire:acme:123") == "https://acme.hire.trakstar.com/jobs/123"
 assert "apple" in CAPPED and ATS["apple"] == apple
-assert ATS["pinpoint"] == pinpoint and ATS["breezy"] == breezy and ATS["bamboohr"] == bamboohr and ATS["rippling"] == rippling
+assert ATS["pinpoint"] == pinpoint and ATS["breezy"] == breezy and ATS["bamboohr"] == bamboohr and ATS["rippling"] == rippling and ATS["join"] == join and ATS["adp"] == adp and ATS["jazzhr"] == jazzhr and ATS["jobvite"] == jobvite and ATS["trakstar_hire"] == trakstar_hire
 assert "themuse" in FEEDS and FEEDS["themuse"] == themuse and "themuse" in CAPPED
 
 # --- logos: icon detection and ordering ---

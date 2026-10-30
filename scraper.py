@@ -815,10 +815,129 @@ def rippling(s, name):  # ats.rippling.com/<slug>/jobs
                 out.append(job("rippling", f"rippling:{s}", str(jid), name or s, title, url, loc, remote, team=team))
     return out
 
+def join(s, name):  # join.com/companies/<slug>
+    r = S.get(f"https://join.com/companies/{s}", timeout=TIMEOUT)
+    r.raise_for_status()
+    m = re.search(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', r.text)
+    if not m:
+        return []
+    try:
+        d = json.loads(m.group(1))
+    except Exception:
+        return []
+    items = d.get("props", {}).get("pageProps", {}).get("pageData", {}).get("jobs", {}).get("items") or []
+    out = []
+    for j in items:
+        jid = j.get("idParam") or j.get("id")
+        title = j.get("title")
+        if not jid or not title:
+            continue
+        city = (j.get("city") or {}).get("cityName")
+        country = (j.get("city") or {}).get("countryName") or (j.get("country") or {}).get("iso3166")
+        loc = ", ".join(filter(None, [city, country]))
+        wp = (j.get("workplaceType") or "").upper()
+        remote = wp in ("REMOTE", "HYBRID")
+        url = f"https://join.com/companies/{s}/jobs/{jid}"
+        category_name = (j.get("category") or {}).get("name")
+        emp = [(j.get("employmentType") or {}).get("name")] if (j.get("employmentType") or {}).get("name") else []
+        posted = (j.get("createdAt") or "")[:10] or None
+        out.append(job("join", f"join:{s}", str(jid), name or s, title, url, loc, remote, posted, team=category_name, emp=emp))
+    return out
+
+
+def adp(s, name):  # workforcenow.adp.com career center
+    d = get(f"https://workforcenow.adp.com/mascsr/default/careercenter/public/events/staffing/v1/job-requisitions?cid={s}&timeStamp=1")
+    out = []
+    for r in d.get("jobRequisitions") or []:
+        jid = r.get("itemID")
+        title = r.get("requisitionTitle")
+        if not jid or not title:
+            continue
+        locs = []
+        for l in r.get("requisitionLocations") or []:
+            addr = l.get("address") or {}
+            parts = filter(None, [addr.get("cityName"), (addr.get("countrySubdivisionLevel1") or {}).get("codeValue"), addr.get("countryCode")])
+            loc_str = ", ".join(parts) or (l.get("nameCode") or {}).get("shortName") or ""
+            if loc_str and loc_str.strip() not in locs:
+                locs.append(loc_str.strip())
+        loc = "; ".join(locs)
+        post_date = (r.get("postDate") or "")[:10] or None
+        url = f"https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid={s}&jobId={jid}"
+        pay = None
+        pgr = r.get("payGradeRange") or {}
+        min_rate = (pgr.get("minimumRate") or {}).get("amountValue")
+        max_rate = (pgr.get("maximumRate") or {}).get("amountValue")
+        curr = (pgr.get("minimumRate") or {}).get("currencyCode") or (pgr.get("maximumRate") or {}).get("currencyCode") or "USD"
+        if min_rate is not None and max_rate is not None and min_rate > 0 and max_rate > 0:
+            if min_rate >= 1000 and max_rate >= 1000:
+                pay = [int(min_rate), int(max_rate), curr]
+            elif min_rate < 500 and max_rate < 500:
+                pay = [int(min_rate * 2080), int(max_rate * 2080), curr]
+        out.append(job("adp", f"adp:{s}", str(jid), name or s, title, url, loc, False, post_date, pay=pay))
+    return out
+
+
+def jazzhr(s, name):  # <slug>.applytojob.com/apply
+    r = S.get(f"https://{s}.applytojob.com/apply", timeout=TIMEOUT)
+    r.raise_for_status()
+    out = []
+    seen = set()
+    for m in re.finditer(r'<a\s+[^>]*href=["\'](?:https://[^/]+)?/apply/([a-zA-Z0-9]+)(?:/([^"\']*))?["\'][^>]*>(.*?)</a>', r.text, re.DOTALL | re.I):
+        jid, slug, raw_title = m.groups()
+        if jid in seen or jid in ("apply", "v2", "jobs"):
+            continue
+        seen.add(jid)
+        title = html.unescape(re.sub(r'<[^>]+>', ' ', raw_title)).strip()
+        if not title:
+            continue
+        url = f"https://{s}.applytojob.com/apply/{jid}"
+        out.append(job("jazzhr", f"jazzhr:{s}", jid, name or s, title, url, "", False))
+    return out
+
+
+def jobvite(s, name):  # jobs.jobvite.com/<slug>/jobs
+    r = S.get(f"https://jobs.jobvite.com/{s}/jobs", timeout=TIMEOUT)
+    r.raise_for_status()
+    out = []
+    seen = set()
+    for m in re.finditer(r'<a\s+[^>]*href=["\'](?:https://jobs\.jobvite\.com)?/[^/]+/job/([a-zA-Z0-9]+)["\'][^>]*>(.*?)</a>', r.text, re.DOTALL | re.I):
+        jid, raw_title = m.groups()
+        if jid in seen:
+            continue
+        seen.add(jid)
+        title = html.unescape(re.sub(r'<[^>]+>', ' ', raw_title)).strip()
+        if not title:
+            continue
+        url = f"https://jobs.jobvite.com/{s}/job/{jid}"
+        out.append(job("jobvite", f"jobvite:{s}", jid, name or s, title, url, "", False))
+    return out
+
+
+def trakstar_hire(s, name):  # <slug>.hire.trakstar.com/jobs
+    r = S.get(f"https://{s}.hire.trakstar.com/jobs", timeout=TIMEOUT)
+    r.raise_for_status()
+    out = []
+    seen = set()
+    for m in re.finditer(r'<a\s+[^>]*href=["\'](?:https://[^/]+)?/jobs/([a-zA-Z0-9]+)/?["\'][^>]*>(.*?)</a>', r.text, re.DOTALL | re.I):
+        jid, raw_title = m.groups()
+        if jid in seen or jid.lower() in ("jobs", "apply"):
+            continue
+        seen.add(jid)
+        raw_text = html.unescape(re.sub(r'<[^>]+>', '\n', raw_title))
+        parts = [p.strip() for p in raw_text.split('\n') if p.strip()]
+        if not parts:
+            continue
+        title = parts[0]
+        loc = ", ".join(parts[1:]) if len(parts) > 1 else ""
+        remote = "remote" in loc.lower() or "hybrid" in loc.lower()
+        url = f"https://{s}.hire.trakstar.com/jobs/{jid}"
+        out.append(job("trakstar_hire", f"trakstar_hire:{s}", jid, name or s, title, url, loc, remote))
+    return out
+
 
 ATS = dict(greenhouse=greenhouse, lever=lever, ashby=ashby, smartrecruiters=smartrecruiters, workday=workday, microsoft=microsoft, eightfold=eightfold,
            amazon=amazon, apple=apple, teamtailor=teamtailor, personio=personio, recruitee=recruitee, oracle=oracle, workable=workable, phenom=phenom,
-           pinpoint=pinpoint, breezy=breezy, bamboohr=bamboohr, rippling=rippling)
+           pinpoint=pinpoint, breezy=breezy, bamboohr=bamboohr, rippling=rippling, join=join, adp=adp, jazzhr=jazzhr, jobvite=jobvite, trakstar_hire=trakstar_hire)
 FEEDS = dict(remotive=remotive, remoteok=remoteok, arbeitnow=arbeitnow, himalayas=himalayas, jobicy=jobicy, weworkremotely=weworkremotely,
              getonbrd=getonbrd, workingnomads=workingnomads, jobtech=jobtech, cryptojobs=cryptojobs, themuse=themuse)
 if os.environ.get("USAJOBS_API_KEY") and os.environ.get("USAJOBS_EMAIL"):  # optional: skipped (not failed) without a key
@@ -833,7 +952,12 @@ URLS = dict(greenhouse="https://job-boards.greenhouse.io/{s}/jobs/{r}", lever="h
             pinpoint="https://{s}.pinpointhq.com/en/postings/{r}",
             breezy="https://{s}.breezy.hr/p/{r}",
             bamboohr="https://{s}.bamboohr.com/careers/{r}",
-            rippling="https://ats.rippling.com/{s}/jobs/{r}")
+            rippling="https://ats.rippling.com/{s}/jobs/{r}",
+            join="https://join.com/companies/{s}/jobs/{r}",
+            adp="https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid={s}&jobId={r}",
+            jazzhr="https://{s}.applytojob.com/apply/{r}",
+            jobvite="https://jobs.jobvite.com/{s}/job/{r}",
+            trakstar_hire="https://{s}.hire.trakstar.com/jobs/{r}")
 DEFAULTS = dict(closed_at=None, location="", team="", remote=False, years=None, skills=[], pay=None, employment="", posted=None, reposts=0)
 
 
@@ -987,7 +1111,7 @@ def verdict(jobs, err, prev, strikes):
 # The number is how many boards of that provider are fetched at the same time (conservative defaults, not published limits); a provider not listed
 # here (Arbeitnow, every feed, Amazon, Microsoft...) gets one worker, i.e. one board at a time. Workable and Arbeitnow also pause a second between requests.
 LANE_OF = {"microsoft": "eightfold"}  # Microsoft's careers site is Eightfold-hosted: one lane, one site at a time, so their bot protection never sees a burst
-LANES = {"greenhouse": 24, "lever": 16, "ashby": 16, "smartrecruiters": 12, "workday": 32, "teamtailor": 4, "oracle": 4, "workable": 2, "personio": 12, "recruitee": 2, "phenom": 4, "apple": 1, "pinpoint": 8, "breezy": 8, "bamboohr": 16, "rippling": 8}
+LANES = {"greenhouse": 24, "lever": 16, "ashby": 16, "smartrecruiters": 12, "workday": 32, "teamtailor": 4, "oracle": 4, "workable": 2, "personio": 12, "recruitee": 2, "phenom": 4, "apple": 1, "pinpoint": 8, "breezy": 8, "bamboohr": 16, "rippling": 8, "join": 16, "adp": 16, "jazzhr": 16, "jobvite": 8, "trakstar_hire": 8}
 RUN_BUDGET = 26 * 60  # seconds (the deep crawl takes 13 minutes here, 17 on GitHub's runners). A hung source is cut off and keeps its old jobs; the Actions job times out at 30 minutes
 
 
