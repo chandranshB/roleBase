@@ -66,7 +66,7 @@ def candidates(html, base):
 
 
 def fetch(url):
-    r = requests.get(url, headers=HEADERS, timeout=15, allow_redirects=True)
+    r = requests.get(url, headers=HEADERS, timeout=8, allow_redirects=True)
     if not r.ok and "google.com/s2" in url and len(BAD) < 5:
         BAD.append(f"{r.status_code} {url}")  # shown at the end, to tell "no icon" from "we are being blocked"
     return r.content if r.ok and len(r.content) <= MAX_BYTES else None
@@ -76,23 +76,7 @@ TLDS = (".com", ".io", ".co", ".ai", ".org", ".de", ".net")
 
 
 def guess_domain(name):
-    """Companies we have no domain for (job-feed employers): try <name>.<tld>, accept only if the homepage's title / site name
-    contains the name, so a squatter or a different company with the same word never gets its icon on someone else's jobs."""
-    base = re.sub(r"[^a-z0-9]", "", name.lower())
-    if len(base) < 8:  # short names are usually common words (Kraken, Sierra, Moss): a wrong logo is worse than a letter
-        return None
-    for tld in TLDS:
-        try:
-            r = requests.get(f"https://{base}{tld}/", headers=HEADERS, timeout=8, allow_redirects=True)
-        except Exception:
-            continue
-        if not r.ok:
-            continue
-        head = r.text[:60000]
-        found = re.findall(r"<title[^>]*>(.*?)</title>", head, re.I | re.S) + re.findall(r"og:site_name[^>]*content=[\"']([^\"']*)", head, re.I)
-        if base in re.sub(r"[^a-z0-9]", "", " ".join(found).lower()):
-            return f"{base}{tld}"
-
+    return None
 
 _SI = {}
 
@@ -143,12 +127,12 @@ def find_logo(name, slug, lever_slug, domain):
     """-> (bytes, ext) or None"""
     try:
         if lever_slug:
-            m = re.search(r'<img[^>]+src="(https://lever-client-logos[^"]+)"', requests.get(f"https://jobs.lever.co/{lever_slug}", headers=HEADERS, timeout=15).text)
+            m = re.search(r'<img[^>]+src="(https://lever-client-logos[^"]+)"', requests.get(f"https://jobs.lever.co/{lever_slug}", headers=HEADERS, timeout=8).text)
             b = m and fetch(m[1])
             if b and kind(b) == "png" and max(struct.unpack(">II", b[16:24])) >= MIN and wide(b) < 1.6:  # wordmarks are unreadable in a small square
                 return b, "png"
         if domain:
-            page = requests.get(f"https://{domain}/", headers=HEADERS, timeout=15, allow_redirects=True)
+            page = requests.get(f"https://{domain}/", headers=HEADERS, timeout=8, allow_redirects=True)
             for u in candidates(page.text if page.ok else "", page.url)[:5]:
                 b = fetch(u)
                 if b and kind(b) and size(b, kind(b)) >= MIN:
@@ -191,16 +175,24 @@ def main():
     domains = json.loads(Path("domains.json").read_text(encoding="utf-8"))
     db_jobs = list(load().values())
     live_companies = {j["company"] for j in db_jobs if j.get("closed_at") is None}
-    todo = [(n, re.sub(r"\W+", "-", n.lower()).strip("-"), s if src == "lever" else None, domains.get(n))
-            for src, boards in cfg.items() for s, n in boards.items() if n in live_companies or n in domains]
-    seen, counts = {t[0] for t in todo}, {}
-    for j in db_jobs:  # employers that only come from the open job feeds (Arbeitnow etc.), with 3+ open jobs
-        if j["closed_at"] is None and j["company"] not in seen:
+    todo, seen = [], set()
+    for s, n in cfg.get("lever", {}).items():
+        if (n in live_companies or n in domains) and n not in seen:
+            todo.append((n, re.sub(r"\W+", "-", n.lower()).strip("-"), s, domains.get(n)))
+            seen.add(n)
+    for n, dom in domains.items():
+        if n not in seen:
+            todo.append((n, re.sub(r"\W+", "-", n.lower()).strip("-"), None, dom))
+            seen.add(n)
+    counts = {}
+    for j in db_jobs:
+        if j.get("closed_at") is None and j["company"] not in seen:
             counts[j["company"]] = counts.get(j["company"], 0) + 1
     for n, c in counts.items():
         slug = re.sub(r"\W+", "-", n.lower()).strip("-")
         if c >= 3 and slug:
-            todo.append((n, slug, None, domains.get(n)))
+            todo.append((n, slug, None, None))
+            seen.add(n)
     CACHE.mkdir(exist_ok=True)
     idx_file = CACHE / "index.json"
     idx = json.loads(idx_file.read_text(encoding="utf-8")) if idx_file.exists() else {}
@@ -211,12 +203,11 @@ def main():
         e = idx.get(name)
         if e and now - e["t"] < (FRESH if e["file"] else RETRY) and (e["file"] or e.get("v") == VER):  # misses from an older lookup recipe are retried
             return name, e
-        domain = domain or (e or {}).get("domain") or guess_domain(name)
-        got = find_logo(name, slug, lever, domain) or (time.sleep(2), find_logo(name, slug, lever, domain))[1]  # one retry for flaky networks
+        domain = domain or (e or {}).get("domain")
+        got = find_logo(name, slug, lever, domain)
         if got:
             (CACHE / f"{slug}.{got[1]}").write_bytes(got[0])
         return name, {"file": f"{slug}.{got[1]}" if got else None, "t": now, "v": VER, **({"domain": domain} if domain else {})}
-
     with ThreadPoolExecutor(16) as ex:
         idx.update(dict(ex.map(one, todo)))
     idx_file.write_text(json.dumps(idx, indent=1), encoding="utf-8")
