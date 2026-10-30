@@ -2,7 +2,7 @@
 
 # RoleBase: open job search and job-market data for every field
 
-RoleBase is a free, open job board and job-market dataset that updates itself. It collects around 480,000 open jobs, 470,000 of them straight from about 1,100 employers' own career pages and the rest from open job feeds, in nursing, retail, finance, education, manufacturing, logistics, engineering and many other fields, and lets you filter for entry-level, remote and salary-listed roles. Postings are kept in git, tagged with level, field, skills and pay, and tracked until they disappear, so you can also see which listings look like ghost jobs. The result is published as a searchable website and a Kaggle dataset, and everything runs on GitHub Actions.
+RoleBase is a free, open job board and job-market dataset that updates itself. It collects over 1.57 million open jobs directly from more than 71,000 employers' career boards across 24 ATS platforms (Workday, Greenhouse, Lever, Ashby, SmartRecruiters, ADP, Join, Personio, BambooHR, Rippling, Oracle, JazzHR, Jobvite, and more) and from open job feeds, in nursing, retail, finance, education, manufacturing, logistics, engineering and many other fields, and lets you filter for entry-level, remote and salary-listed roles. Postings are kept in git, tagged with level, field, skills and pay, and tracked until they disappear, so you can also see which listings look like ghost jobs. The result is published as a searchable website and a Kaggle dataset, and everything runs on GitHub Actions.
 
 **[Search the jobs](https://chandranshb.github.io/roleBase/)** · **[Kaggle dataset](https://www.kaggle.com/datasets/chandranshbinjola/job-listings)** · **[Roadmap](../../issues)**
 
@@ -32,19 +32,19 @@ Queries can also include a place, a pay floor or an exclusion, for example `remo
 
 <table>
   <tr>
-    <td><img src="docs/charts/jobs_by_level.svg" alt="Open jobs by seniority level, from internships to management"></td>
-    <td><img src="docs/charts/jobs_by_field.svg" alt="Number of open jobs by field, from healthcare and retail to engineering"></td>
+    <td><img src="docs/charts/jobs_by_level.svg?v=20261030" alt="Open jobs by seniority level, from internships to management"></td>
+    <td><img src="docs/charts/jobs_by_field.svg?v=20261030" alt="Number of open jobs by field, from healthcare and retail to engineering"></td>
   </tr>
   <tr>
-    <td><img src="docs/charts/top_skills.svg" alt="Most requested skills in job postings, technical and non-technical"></td>
-    <td><img src="docs/charts/top_companies.svg" alt="Employers with the most open job listings"></td>
+    <td><img src="docs/charts/top_skills.svg?v=20261030" alt="Most requested skills in job postings, technical and non-technical"></td>
+    <td><img src="docs/charts/top_companies.svg?v=20261030" alt="Employers with the most open job listings"></td>
   </tr>
   <tr>
-    <td><img src="docs/charts/fresher_friendly.svg" alt="Companies with the most entry-level, fresher-friendly roles"></td>
-    <td><img src="docs/charts/open_jobs_over_time.svg" alt="Open jobs and fresher-friendly jobs over time"></td>
+    <td><img src="docs/charts/fresher_friendly.svg?v=20261030" alt="Companies with the most entry-level, fresher-friendly roles"></td>
+    <td><img src="docs/charts/open_jobs_over_time.svg?v=20261030" alt="Open jobs and fresher-friendly jobs over time"></td>
   </tr>
   <tr>
-    <td colspan="2"><img src="docs/charts/skill_trends.svg" alt="Skill demand trend over time: share of postings that mention each skill" width="100%"></td>
+    <td colspan="2"><img src="docs/charts/skill_trends.svg?v=20261030" alt="Skill demand trend over time: share of postings that mention each skill" width="100%"></td>
   </tr>
 </table>
 
@@ -70,7 +70,7 @@ All of this is read from posting text with simple rules, so expect mistakes. Lev
 
 ```mermaid
 flowchart LR
-  A["Public job-board APIs<br/>Greenhouse, Lever, Ashby, SmartRecruiters,<br/>Teamtailor, Personio, Recruitee, Workable, Workday, Oracle,<br/>Phenom, Eightfold, Amazon, Apple, Pinpoint, Breezy HR + feeds"] --> B[scraper.py]
+  A["Public job-board APIs<br/>Greenhouse, Lever, Ashby, SmartRecruiters,<br/>Teamtailor, Personio, Recruitee, Workable, Workday, Oracle,<br/>Phenom, Eightfold, Amazon, Apple, Pinpoint, Breezy HR, Join, ADP, JazzHR, Jobvite + feeds"] --> B[scraper.py]
   B --> C[("data/jobs/*.jsonl<br/>data/pulse.csv<br/>data/archive.csv")]
   C -->|commit| G[(git history)]
   C --> D[build_site.py + build_logos.py] --> E[GitHub Pages site]
