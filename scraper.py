@@ -1288,7 +1288,7 @@ def slim(j):  # drop empty values and anything derivable from other fields (load
     r.pop("source", None)
     if not r.get("reposts"):
         r.pop("reposts", None)
-    if r.get("url") == url_of(j["id"]):
+    if "url" in r and r["url"] == url_of(j["id"]):
         del r["url"]
     if r.get("level") == level(j["title"], j.get("years")):
         del r["level"]
