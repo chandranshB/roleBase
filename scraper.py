@@ -1561,20 +1561,22 @@ def taleo(s, name):
         return []
     inputs = {i.get("name"): i.get("value", "") for i in form.find_all("input") if i.get("name")}
     raw = inputs.get("initialHistory", "")
-    decoded = urllib.parse.unquote(raw)
-    jobs = re.findall(r"!(\d+)!\|!\s*([^!|]+?)\s*!\|!\1!\|!\s*([^!|]+?)\s*!\|!\1!\|!([^!|]+)!\|!Apply!", decoded)
+    decoded = urllib.parse.unquote(urllib.parse.unquote(raw))
+    jobs = re.findall(r'!(\d+)!\|!([^!|]+)!\|!\1!\|!\2!\|!(?:\1!\|!)+([^!|]+)!\|!([^!|]+)!', decoded)
+    if not jobs:
+        jobs = [(m[0], m[1], "", "") for m in re.findall(r'!(\d+)!\|!([^!|]+)!\|!\1!\|!\2!', decoded)]
     out = []
     comp = name or company
     seen = set()
-    for jid, t1, t2, req_code in jobs:
-        rid = str(jid).strip()
-        title = t1.strip()
-        if not rid or not title or rid in seen:
+    for match in jobs:
+        jid, title = match[0].strip(), match[1].strip()
+        loc = match[3].strip() if len(match) > 3 and match[3].strip() != match[2].strip() else ""
+        if not jid or not title or jid == title or jid in seen:
             continue
-        seen.add(rid)
-        apply_url = f"https://{company}.taleo.net/careersection/{section}/jobdetail.ftl?job={rid}"
-        remote = "remote" in title.lower()
-        out.append(job("taleo", f"taleo:{s}", rid, comp, title, apply_url, remote=remote))
+        seen.add(jid)
+        apply_url = f"https://{company}.taleo.net/careersection/{section}/jobdetail.ftl?job={jid}"
+        remote = "remote" in title.lower() or "remote" in loc.lower()
+        out.append(job("taleo", f"taleo:{s}", jid, comp, title, apply_url, location=loc, remote=remote))
     return out
 
 
@@ -1824,7 +1826,7 @@ def verdict(jobs, err, prev, strikes):
 # The number is how many boards of that provider are fetched at the same time (conservative defaults, not published limits); a provider not listed
 # here (Arbeitnow, every feed, Amazon, Microsoft...) gets one worker, i.e. one board at a time. Workable and Arbeitnow also pause a second between requests.
 LANE_OF = {"microsoft": "eightfold"}  # Microsoft's careers site is Eightfold-hosted: one lane, one site at a time, so their bot protection never sees a burst
-LANES = {"greenhouse": 24, "lever": 16, "ashby": 16, "smartrecruiters": 12, "workday": 32, "teamtailor": 4, "oracle": 8, "workable": 2, "personio": 12, "recruitee": 2, "phenom": 4, "apple": 1, "pinpoint": 8, "breezy": 8, "bamboohr": 16, "rippling": 8, "join": 16, "adp": 16, "jazzhr": 16, "jobvite": 8, "trakstar_hire": 8, "jobscore": 8, "zoho": 16, "icims": 8, "ultipro": 16, "dayforce": 16, "paylocity": 16, "paycom": 16, "applicantpro": 8, "isolved": 8, "betterteam": 8, "gohire": 8, "freshteam": 4, "gem": 4, "recooty": 4, "csod": 4, "taleo": 2}
+LANES = {"greenhouse": 24, "lever": 16, "ashby": 16, "smartrecruiters": 12, "workday": 32, "teamtailor": 4, "oracle": 8, "workable": 2, "personio": 12, "recruitee": 2, "phenom": 4, "apple": 1, "pinpoint": 8, "breezy": 8, "bamboohr": 16, "rippling": 8, "join": 16, "adp": 16, "jazzhr": 16, "jobvite": 8, "trakstar_hire": 8, "jobscore": 8, "zoho": 16, "icims": 8, "ultipro": 16, "dayforce": 16, "paylocity": 16, "paycom": 16, "applicantpro": 8, "isolved": 8, "betterteam": 8, "gohire": 8, "freshteam": 4, "gem": 4, "recooty": 4, "csod": 4, "taleo": 2, "bullhorn": 8}
 RUN_BUDGET = 26 * 60  # seconds (the deep crawl takes 13 minutes here, 17 on GitHub's runners). A hung source is cut off and keeps its old jobs; the Actions job times out at 30 minutes
 
 
