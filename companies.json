@@ -15533,7 +15533,11 @@
     "zyphra": "Zyphra"
   },
   "avature": {
-    "bloomberg": "Bloomberg"
+    "bloomberg": "Bloomberg",
+    "deloittebe": "Deloitte Belgium",
+    "koch": "Koch Industries",
+    "synopsys": "Synopsys",
+    "totalenergies": "TotalEnergies"
   },
   "bamboohr": {
     "100percentgroup": "100% Group",
@@ -29952,12 +29956,28 @@
     "41/DJVM1": "Optomi"
   },
   "careerplug": {
-    "mathnasium": "Mathnasium"
+    "alwaysbestcare": "Always Best Care Senior Services",
+    "crunch": "Crunch Fitness",
+    "maidpro": "MaidPro",
+    "mathnasium": "Mathnasium",
+    "midas": "Midas",
+    "puroclean": "PuroClean",
+    "sportclips": "Sport Clips",
+    "sylvan": "Sylvan Learning",
+    "take5oilchange": "Take 5 Oil Change"
   },
   "clearcompany": {
-    "9ccf1803-e140-ad0f-cc68-e22b431cc5e7": "ClearCompany"
+    "9ccf1803-e140-ad0f-cc68-e22b431cc5e7": "ClearCompany",
+    "cf48ff22-f52b-3490-d624-b98f50812821": "DaySmart"
   },
   "comeet": {
+    "09.00A/90A363C515A03F4601B1E2D32515A2D32": "Island",
+    "2A.007/A2747111E755B5F0513847114711A274711": "KELA Technologies",
+    "59.004/954414C02550414C4AA01BFC12A81BFC2550": "Port",
+    "61.003/16358C6EF2C61631639B558C0429": "Team8",
+    "62.002/262988131015727264C41572E4C10AE10AE": "Global-e",
+    "76.008/67826D067833C0CF002D48020581368": "Comm-IT",
+    "98.008/89833903C282AF8044C011303C283C2819C8": "TripleTen",
     "E5.007/5E7236A0BCE5E7295111B55E70BCE": "Comeet Sandbox"
   },
   "crelate": {
@@ -69269,6 +69289,7 @@
     "loxo": "Loxo"
   },
   "manatal": {
+    "careers": "Careers International",
     "manatal": "Manatal"
   },
   "microsoft": {
@@ -71081,9 +71102,34 @@
     "wearememorial-ibrkjb.fa.ocs.oraclecloud.com/CX": "Memorial Health System"
   },
   "pageup": {
+    "391": "Melbourne Water",
+    "434": "CPB Contractors",
+    "438": "Myer",
+    "504": "Airservices Australia",
     "517": "PageUp Careers",
+    "527": "Asahi Beverages",
+    "533": "La Trobe University",
+    "543": "UNICEF",
     "546": "Calor Gas",
-    "595": "Flogas Britain"
+    "595": "Flogas Britain",
+    "600": "AquaCorp",
+    "601": "Jobs NSW",
+    "615": "WorkCover Queensland",
+    "621": "Cleanaway Waste Management",
+    "676": "Pepperdine University",
+    "739": "Harvey Norman",
+    "763": "Seton Hall University",
+    "774": "Imagination Technologies",
+    "795": "NSW Government",
+    "798": "Bank of China (Hong Kong)",
+    "851": "Universal Orlando",
+    "871": "Quinnipiac University",
+    "876": "Yeshiva University",
+    "887": "City of Greater Geelong",
+    "903": "Catholic Diocese of Wollongong",
+    "941": "Linfox Logistics NZ",
+    "994": "Tarrant County College District",
+    "995": "Colorado State University"
   },
   "paycom": {
     "0012604C8F3328EF1785C7189F1333B7": "Community Housing Opportunities Corporation",
@@ -90010,7 +90056,10 @@
     "bunq": "bunq"
   },
   "recruiterflow": {
-    "recruiterflow": "Recruiterflow"
+    "hireintegrated": "Hire Integrated",
+    "recruiterflow": "Recruiterflow",
+    "scaleup-jobopportunities": "ScaleUp",
+    "wishup": "Wishup"
   },
   "rippling": {
     "10-west-reg": "10 West Real Estate Group",
