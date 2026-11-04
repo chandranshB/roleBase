@@ -3,7 +3,8 @@ import datetime as dt
 from scraper import (ATS, CAPPED, FEEDS, apple, bamboohr, breezy, category, clean_company, company_stats, employment, find_pay, fresher_ok, ghost_flags, level, merge, skills, slim,
                      phenom_job, pinpoint, rippling, run_all, themuse, url_of, usajobs_job, verdict, wd_posted, years_req, adp, jazzhr, jobvite, join, trakstar_hire, jobscore, zoho, icims, ultipro, dayforce, paylocity,
                      paycom, applicantpro, isolved, betterteam, gohire, freshteam, gem, recooty, csod, taleo, bullhorn,
-                     successfactors, avature, recruiterflow, manatal, loxo, careerplug, comeet)
+                     successfactors, avature, recruiterflow, manatal, loxo, careerplug, comeet,
+                     crelate, clearcompany, pageup)
 from update_about import about_text
 
 
@@ -127,10 +128,14 @@ assert url_of("manatal:manatal:123") == "https://www.careers-page.com/manatal/jo
 assert url_of("loxo:loxo:123") == "https://app.loxo.co/job/123"
 assert url_of("careerplug:mathnasium:123") == "https://mathnasium.careerplug.com/jobs/123"
 assert url_of("comeet:E5.007/token:123") == "https://www.comeet.com/jobs/E5.007/token/123"
+assert url_of("crelate:enhancerecruiting:123") == "https://jobs.crelate.com/portal/enhancerecruiting/job/123"
+assert url_of("clearcompany:9ccf1803:123") == "https://apply.clearcompany.com/jobs?jobId=123"
+assert url_of("pageup:595:123") == "http://careers.pageuppeople.com/595/caw/en/job/123"
 assert "apple" in CAPPED and ATS["apple"] == apple
 assert ATS["pinpoint"] == pinpoint and ATS["breezy"] == breezy and ATS["bamboohr"] == bamboohr and ATS["rippling"] == rippling and ATS["join"] == join and ATS["adp"] == adp and ATS["jazzhr"] == jazzhr and ATS["jobvite"] == jobvite and ATS["trakstar_hire"] == trakstar_hire and ATS["jobscore"] == jobscore and ATS["zoho"] == zoho and ATS["icims"] == icims and ATS["ultipro"] == ultipro and ATS["dayforce"] == dayforce and ATS["paylocity"] == paylocity
 assert ATS["paycom"] == paycom and ATS["applicantpro"] == applicantpro and ATS["isolved"] == isolved and ATS["betterteam"] == betterteam and ATS["gohire"] == gohire and ATS["freshteam"] == freshteam and ATS["gem"] == gem and ATS["recooty"] == recooty and ATS["csod"] == csod and ATS["taleo"] == taleo and ATS["bullhorn"] == bullhorn
 assert ATS["successfactors"] == successfactors and ATS["avature"] == avature and ATS["recruiterflow"] == recruiterflow and ATS["manatal"] == manatal and ATS["loxo"] == loxo and ATS["careerplug"] == careerplug and ATS["comeet"] == comeet
+assert ATS["crelate"] == crelate and ATS["clearcompany"] == clearcompany and ATS["pageup"] == pageup
 assert "themuse" in FEEDS and FEEDS["themuse"] == themuse and "themuse" in CAPPED
 
 # --- logos: icon detection and ordering ---

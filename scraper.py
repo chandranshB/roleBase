@@ -1885,11 +1885,125 @@ def comeet(s, name):
     return out
 
 
+def crelate(s, name):  # RSS feed: https://jobs.crelate.com/portal/{s}/rss
+    try:
+        r = S.get(f"https://jobs.crelate.com/portal/{s}/rss", timeout=TIMEOUT)
+        if not r.ok:
+            return []
+        root = ET.fromstring(r.content)
+    except Exception:
+        return []
+    channel = root.find("channel")
+    if channel is None:
+        return []
+    out = []
+    comp = name or s
+    ns = f"https://jobs.crelate.com/portal/{s}"
+    seen = set()
+    for item in channel.findall("item"):
+        guid = item.findtext("guid") or item.findtext("link") or ""
+        rid = guid.rstrip("/").split("/")[-1] if guid else ""
+        title = (item.findtext("title") or "").strip()
+        if not rid or not title or rid in seen:
+            continue
+        seen.add(rid)
+        link = item.findtext("link") or guid
+        desc = text(item.findtext("description") or "")
+        cat = (item.findtext("category") or "").strip()
+        pub = item.findtext("pubDate") or ""
+        loc = (item.findtext(f"{{{ns}}}location") or "").strip()
+        if not loc:
+            for child in item:
+                if "location" in child.tag.lower() and child.text:
+                    loc = child.text.strip()
+                    break
+        remote = "remote" in loc.lower() or "remote" in title.lower()
+        out.append(job("crelate", f"crelate:{s}", rid, comp, title, link, loc, remote=remote, posted=pub, desc=desc, team=cat))
+    return out
+
+
+def clearcompany(s, name):  # REST API: https://careers-api.clearcompany.com/v1/{s}
+    out = []
+    try:
+        data = get(f"https://careers-api.clearcompany.com/v1/{s}")
+    except Exception:
+        return []
+    results = data.get("results") or []
+    comp = name or s
+    seen = set()
+    for j in results:
+        rid = str(j.get("id") or j.get("userDefinedId") or "")
+        title = (j.get("positionTitle") or "").strip()
+        if not rid or not title or rid in seen:
+            continue
+        seen.add(rid)
+        cname = name or j.get("brandName") or comp
+        link = j.get("applyLink") or f"https://apply.clearcompany.com/jobs?jobId={rid}"
+        loc = (j.get("location") or "").strip()
+        remote = "remote" in loc.lower() or "remote" in title.lower()
+        team = (j.get("departmentName") or "").strip()
+        desc = text(j.get("description") or "")
+        posted = j.get("postedDate") or j.get("openDate") or ""
+        pay = None
+        s_low = j.get("salaryRangeLow")
+        s_high = j.get("salaryRangeHigh")
+        s_type = j.get("salaryType")
+        if s_low and s_high:
+            try:
+                pay = [int(float(s_low)), int(float(s_high)), s_type or "USD"]
+            except (ValueError, TypeError):
+                pay = None
+        out.append(job("clearcompany", f"clearcompany:{s}", rid, cname, title, link, loc, remote=remote, posted=posted, desc=desc, team=team, pay=pay))
+    return out
+
+
+def pageup(s, name):  # http://careers.pageuppeople.com/{s}/caw/en/
+    out = []
+    try:
+        r = S.get(f"http://careers.pageuppeople.com/{s}/caw/en/", timeout=TIMEOUT)
+        if not r.ok:
+            return []
+        soup = BeautifulSoup(r.text, "html.parser")
+    except Exception:
+        return []
+    comp = name or s
+    seen = set()
+    for a in soup.select("a.job-link"):
+        href = a.get("href") or ""
+        title = a.get_text(strip=True)
+        if not href or not title:
+            continue
+        parts = [p for p in href.split("/") if p]
+        rid = ""
+        for i, p in enumerate(parts):
+            if p == "job" and i + 1 < len(parts):
+                rid = parts[i + 1]
+                break
+        if not rid:
+            rid = href
+        if rid in seen:
+            continue
+        seen.add(rid)
+        full_url = f"http://careers.pageuppeople.com{href}" if href.startswith("/") else href
+        tr = a.find_parent("tr") or a.find_parent("li")
+        team = ""
+        posted = ""
+        if tr:
+            cells = tr.find_all("td")
+            if len(cells) >= 3:
+                team = cells[1].get_text(strip=True)
+                posted = cells[-1].get_text(strip=True)
+        remote = "remote" in title.lower()
+        out.append(job("pageup", f"pageup:{s}", rid, comp, title, full_url, location="", remote=remote, posted=posted, team=team))
+    return out
+
+
 ATS = dict(greenhouse=greenhouse, lever=lever, ashby=ashby, smartrecruiters=smartrecruiters, workday=workday, microsoft=microsoft, eightfold=eightfold,
            amazon=amazon, apple=apple, teamtailor=teamtailor, personio=personio, recruitee=recruitee, oracle=oracle, workable=workable, phenom=phenom,
            pinpoint=pinpoint, breezy=breezy, bamboohr=bamboohr, rippling=rippling, join=join, adp=adp, jazzhr=jazzhr, jobvite=jobvite, trakstar_hire=trakstar_hire, jobscore=jobscore, zoho=zoho, icims=icims, ultipro=ultipro, dayforce=dayforce, paylocity=paylocity,
            paycom=paycom, applicantpro=applicantpro, isolved=isolved, betterteam=betterteam, gohire=gohire, freshteam=freshteam, gem=gem, recooty=recooty, csod=csod, taleo=taleo, bullhorn=bullhorn,
-           successfactors=successfactors, avature=avature, recruiterflow=recruiterflow, manatal=manatal, loxo=loxo, careerplug=careerplug, comeet=comeet)
+           successfactors=successfactors, avature=avature, recruiterflow=recruiterflow, manatal=manatal, loxo=loxo, careerplug=careerplug, comeet=comeet,
+           crelate=crelate, clearcompany=clearcompany, pageup=pageup)
 FEEDS = dict(remotive=remotive, remoteok=remoteok, arbeitnow=arbeitnow, himalayas=himalayas, jobicy=jobicy, weworkremotely=weworkremotely,
              getonbrd=getonbrd, workingnomads=workingnomads, jobtech=jobtech, cryptojobs=cryptojobs, themuse=themuse)
 if os.environ.get("USAJOBS_API_KEY") and os.environ.get("USAJOBS_EMAIL"):  # optional: skipped (not failed) without a key
@@ -1925,7 +2039,10 @@ URLS = dict(greenhouse="https://job-boards.greenhouse.io/{s}/jobs/{r}", lever="h
             manatal="https://www.careers-page.com/{s}/job/{r}",
             loxo="https://app.loxo.co/job/{r}",
             careerplug="https://{s}.careerplug.com/jobs/{r}",
-            comeet="https://www.comeet.com/jobs/{s}/{r}")
+            comeet="https://www.comeet.com/jobs/{s}/{r}",
+            crelate="https://jobs.crelate.com/portal/{s}/job/{r}",
+            clearcompany="https://apply.clearcompany.com/jobs?jobId={r}",
+            pageup="http://careers.pageuppeople.com/{s}/caw/en/job/{r}")
 DEFAULTS = dict(closed_at=None, location="", team="", remote=False, years=None, skills=[], pay=None, employment="", posted=None, reposts=0)
 
 
@@ -2088,7 +2205,7 @@ def verdict(jobs, err, prev, strikes):
 # The number is how many boards of that provider are fetched at the same time (conservative defaults, not published limits); a provider not listed
 # here (Arbeitnow, every feed, Amazon, Microsoft...) gets one worker, i.e. one board at a time. Workable and Arbeitnow also pause a second between requests.
 LANE_OF = {"microsoft": "eightfold"}  # Microsoft's careers site is Eightfold-hosted: one lane, one site at a time, so their bot protection never sees a burst
-LANES = {"greenhouse": 24, "lever": 16, "ashby": 16, "smartrecruiters": 12, "workday": 32, "teamtailor": 4, "oracle": 8, "workable": 2, "personio": 12, "recruitee": 2, "phenom": 4, "apple": 1, "pinpoint": 8, "breezy": 8, "bamboohr": 16, "rippling": 8, "join": 16, "adp": 16, "jazzhr": 16, "jobvite": 8, "trakstar_hire": 8, "jobscore": 8, "zoho": 16, "icims": 8, "ultipro": 16, "dayforce": 16, "paylocity": 16, "paycom": 16, "applicantpro": 8, "isolved": 8, "betterteam": 8, "gohire": 8, "freshteam": 4, "gem": 4, "recooty": 4, "csod": 4, "taleo": 2, "bullhorn": 8, "successfactors": 8, "avature": 8, "recruiterflow": 8, "manatal": 8, "loxo": 8, "careerplug": 8, "comeet": 8}
+LANES = {"greenhouse": 24, "lever": 16, "ashby": 16, "smartrecruiters": 12, "workday": 32, "teamtailor": 4, "oracle": 8, "workable": 2, "personio": 12, "recruitee": 2, "phenom": 4, "apple": 1, "pinpoint": 8, "breezy": 8, "bamboohr": 16, "rippling": 8, "join": 16, "adp": 16, "jazzhr": 16, "jobvite": 8, "trakstar_hire": 8, "jobscore": 8, "zoho": 16, "icims": 8, "ultipro": 16, "dayforce": 16, "paylocity": 16, "paycom": 16, "applicantpro": 8, "isolved": 8, "betterteam": 8, "gohire": 8, "freshteam": 4, "gem": 4, "recooty": 4, "csod": 4, "taleo": 2, "bullhorn": 8, "successfactors": 8, "avature": 8, "recruiterflow": 8, "manatal": 8, "loxo": 8, "careerplug": 8, "comeet": 8, "crelate": 8, "clearcompany": 8, "pageup": 8}
 RUN_BUDGET = 26 * 60  # seconds (the deep crawl takes 13 minutes here, 17 on GitHub's runners). A hung source is cut off and keeps its old jobs; the Actions job times out at 30 minutes
 
 
