@@ -14,11 +14,13 @@ import re
 import shutil
 import sys
 import time
+import urllib.parse
 import xml.etree.ElementTree as ET
 from concurrent.futures import ThreadPoolExecutor, wait
 from email.utils import parsedate_to_datetime
 from pathlib import Path
 
+from bs4 import BeautifulSoup
 import requests
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
@@ -1168,50 +1170,469 @@ def paylocity(s, name):  # s = "{guid}"
     return out
 
 
-def paycom(s, name):
-    return []
+def paycom(s, name):  # s = "{clientkey}"
+    url = f"https://www.paycomonline.net/v4/ats/web.php/jobs?clientkey={s}"
+    r = S.get(url, timeout=TIMEOUT)
+    if not r.ok:
+        return []
+    soup = BeautifulSoup(r.text, "html.parser")
+    out = []
+    comp = name or s
+    seen = set()
+    for a in soup.find_all("a", href=lambda h: h and ("jobId=" in h or "/jobs/" in h)):
+        href = a.get("href") or ""
+        m = re.search(r"jobId=(\d+)", href) or re.search(r"/jobs/(\d+)", href)
+        if not m:
+            continue
+        rid = m.group(1)
+        if rid in seen:
+            continue
+        seen.add(rid)
+        title = a.get_text(strip=True)
+        if not title:
+            continue
+        apply_url = f"https://www.paycomonline.net/v4/ats/web.php/portal/{s}/jobs/{rid}"
+        out.append(job("paycom", f"paycom:{s}", rid, comp, title, apply_url))
+    return out
 
 
 def applicantpro(s, name):
-    return []
+    r = S.get(f"https://{s}.applicantpro.com/jobs/", timeout=TIMEOUT)
+    if not r.ok:
+        return []
+    m = re.search(r"domainId\s*:\s*\[?'?(\d+)", r.text)
+    if not m:
+        return []
+    domain_id = m.group(1)
+    data = get(f"https://{s}.applicantpro.com/core/jobs/{domain_id}", params={"getParams": "{}"})
+    jobs_list = data.get("data", {}).get("jobs", []) if isinstance(data, dict) else []
+    out = []
+    comp = name or s
+    for j in jobs_list:
+        rid = str(j.get("id") or "")
+        title = (j.get("title") or "").strip()
+        if not rid or not title:
+            continue
+        loc = (j.get("jobLocation") or "").strip()
+        wpt = (j.get("workplaceType") or "").lower()
+        remote = wpt == "remote" or "remote" in loc.lower() or "remote" in title.lower()
+        posted = None
+        if j.get("startDateRef"):
+            try:
+                posted = dt.datetime.strptime(j["startDateRef"].strip(), "%b %d, %Y").date().isoformat()
+            except Exception:
+                posted = None
+        pay = None
+        min_sal = j.get("minSalary")
+        max_sal = j.get("maxSalary") or min_sal
+        pay_type = (j.get("payType") or "").lower()
+        if min_sal:
+            try:
+                lo = float(str(min_sal).replace(",", "").strip())
+                hi = float(str(max_sal).replace(",", "").strip())
+                if pay_type == "hourly":
+                    lo, hi = lo * 2080, hi * 2080
+                if 20000 <= lo <= hi <= 2_000_000:
+                    pay = [int(lo), int(hi), "USD"]
+            except Exception:
+                pay = None
+        emp = (j.get("employmentType") or "",)
+        team = j.get("classification") or j.get("orgTitle") or ""
+        apply_url = j.get("jobUrl") or f"https://{s}.applicantpro.com/jobs/{rid}"
+        out.append(job("applicantpro", f"applicantpro:{s}", rid, comp, title, apply_url,
+                       location=loc, remote=remote, posted=posted, pay=pay, team=team, emp=emp))
+    return out
 
 
 def isolved(s, name):
-    return []
+    r = S.get(f"https://{s}.isolvedhire.com/jobs/", timeout=TIMEOUT)
+    if not r.ok:
+        return []
+    m = re.search(r"domainId\s*:\s*\[?'?(\d+)", r.text)
+    if not m:
+        return []
+    domain_id = m.group(1)
+    data = get(f"https://{s}.isolvedhire.com/core/jobs/{domain_id}", params={"getParams": "{}"})
+    jobs_list = data.get("data", {}).get("jobs", []) if isinstance(data, dict) else []
+    out = []
+    comp = name or s
+    for j in jobs_list:
+        rid = str(j.get("id") or "")
+        title = (j.get("title") or "").strip()
+        if not rid or not title:
+            continue
+        loc = (j.get("jobLocation") or "").strip()
+        wpt = (j.get("workplaceType") or "").lower()
+        remote = wpt == "remote" or "remote" in loc.lower() or "remote" in title.lower()
+        posted = None
+        if j.get("startDateRef"):
+            try:
+                posted = dt.datetime.strptime(j["startDateRef"].strip(), "%b %d, %Y").date().isoformat()
+            except Exception:
+                posted = None
+        pay = None
+        min_sal = j.get("minSalary")
+        max_sal = j.get("maxSalary") or min_sal
+        pay_type = (j.get("payType") or "").lower()
+        if min_sal:
+            try:
+                lo = float(str(min_sal).replace(",", "").strip())
+                hi = float(str(max_sal).replace(",", "").strip())
+                if pay_type == "hourly":
+                    lo, hi = lo * 2080, hi * 2080
+                if 20000 <= lo <= hi <= 2_000_000:
+                    pay = [int(lo), int(hi), "USD"]
+            except Exception:
+                pay = None
+        emp = (j.get("employmentType") or "",)
+        team = j.get("classification") or j.get("orgTitle") or ""
+        apply_url = j.get("jobUrl") or f"https://{s}.isolvedhire.com/jobs/{rid}"
+        out.append(job("isolved", f"isolved:{s}", rid, comp, title, apply_url,
+                       location=loc, remote=remote, posted=posted, pay=pay, team=team, emp=emp))
+    return out
 
 
-def betterteam(s, name):
-    return []
+def betterteam(s, name):  # s = "{subdomain}" or "{domain}"
+    base = f"https://{s}" if "." in s else f"https://{s}.betterteam.com"
+    r = S.get(base, timeout=TIMEOUT)
+    if not r.ok:
+        return []
+    soup = BeautifulSoup(r.text, "html.parser")
+    out = []
+    comp = name or s
+    seen = set()
+    for a in soup.select("a[href*='/jobs/'], a[href*='betterteam.com/']"):
+        href = a.get("href") or ""
+        m = re.search(r"/([a-zA-Z0-9_\-]+)/?$", href)
+        if not m:
+            continue
+        rid = m.group(1)
+        if rid in seen or rid in ("jobs", "apply", "contact"):
+            continue
+        seen.add(rid)
+        title = a.get_text(strip=True)
+        if not title:
+            continue
+        apply_url = href if href.startswith("http") else f"{base}/{rid}"
+        out.append(job("betterteam", f"betterteam:{s}", rid, comp, title, apply_url))
+    return out
 
 
 def gohire(s, name):
-    return []
+    r = S.get(f"https://jobs.gohire.io/{s}", timeout=TIMEOUT)
+    if not r.ok:
+        return []
+    soup = BeautifulSoup(r.text, "html.parser")
+    out = []
+    comp = name or s
+    hdr = soup.select_one(".job-header-left")
+    if hdr and not name:
+        comp_text = hdr.get_text(strip=True)
+        comp = re.sub(r"^Jobs at\s+", "", comp_text).strip() or s
+    seen = set()
+    for a in soup.select("a.gohire-job, a[href*='jobs.gohire.io']"):
+        href = a.get("href") or ""
+        m = re.search(r"-(\d+)/?$", href) or re.search(r"/(\d+)/?$", href)
+        if not m:
+            continue
+        rid = m.group(1)
+        if rid in seen:
+            continue
+        seen.add(rid)
+        title_el = a.select_one(".job-title, h3, h2")
+        title = title_el.get_text(strip=True) if title_el else a.get_text(strip=True)
+        if not title:
+            continue
+        loc_el = a.select_one(".careers-location, .location")
+        loc = loc_el.get_text(strip=True) if loc_el else ""
+        remote = "remote" in loc.lower() or "remote" in title.lower()
+        posted_el = a.select_one(".date-posted")
+        posted = None
+        if posted_el:
+            m_date = re.search(r"Posted\s+(.+)$", posted_el.get_text(strip=True), re.IGNORECASE)
+            if m_date:
+                for fmt in ("%d %B, %Y", "%d %b, %Y", "%B %d, %Y", "%b %d, %Y"):
+                    try:
+                        posted = dt.datetime.strptime(m_date.group(1).strip(), fmt).date().isoformat()
+                        break
+                    except Exception:
+                        pass
+        apply_url = href if href.startswith("http") else f"https://jobs.gohire.io{href}"
+        out.append(job("gohire", f"gohire:{s}", rid, comp, title, apply_url,
+                       location=loc, remote=remote, posted=posted))
+    return out
 
 
 def freshteam(s, name):
-    return []
+    r = S.get(f"https://{s}.freshteam.com/jobs", timeout=TIMEOUT)
+    if not r.ok:
+        return []
+    soup = BeautifulSoup(r.text, "html.parser")
+    out = []
+    comp = name or s
+    seen = set()
+    for a in soup.select("a[href*='/jobs/']"):
+        href = a.get("href") or ""
+        m = re.search(r"/jobs/([a-zA-Z0-9_\-]+)", href)
+        if not m:
+            continue
+        rid = m.group(1)
+        if rid in seen or (rid.isdigit() and int(rid) < 10):
+            continue
+        seen.add(rid)
+        title_el = a.select_one(".job-title") or a
+        title = title_el.get_text(strip=True)
+        if not title:
+            continue
+        loc = a.get("data-portal-location") or ""
+        if not loc:
+            loc_el = a.find_parent("li")
+            if loc_el:
+                loc_sub = loc_el.select_one(".location, .job-location, .branch")
+                if loc_sub:
+                    loc = loc_sub.get_text(strip=True)
+        remote = a.get("data-portal-remote-location") == "true" or "remote" in loc.lower() or "remote" in title.lower()
+        role_group = a.find_parent(class_=re.compile(r"job-role|department|branch"))
+        team = ""
+        if role_group:
+            role_title = role_group.select_one(".job-role, .group-title, h2, h3")
+            if role_title:
+                team = role_title.get_text(strip=True)
+        apply_url = f"https://{s}.freshteam.com/jobs/{rid}"
+        out.append(job("freshteam", f"freshteam:{s}", rid, comp, title, apply_url,
+                       location=loc, remote=remote, team=team))
+    return out
 
 
 def gem(s, name):
-    return []
+    data = get(f"https://api.gem.com/job_board/v0/{s}/job_posts/")
+    out = []
+    comp = name or s
+    for j in (data if isinstance(data, list) else []):
+        rid = str(j.get("id") or "")
+        title = (j.get("title") or "").strip()
+        if not rid or not title:
+            continue
+        apply_url = j.get("absolute_url") or f"https://jobs.gem.com/{s}/{rid}"
+        loc_obj = j.get("location")
+        loc = loc_obj.get("name", "") if isinstance(loc_obj, dict) else str(loc_obj or "")
+        loc_type = str(j.get("location_type") or "").lower()
+        remote = loc_type == "remote" or "remote" in loc.lower() or "remote" in title.lower()
+        depts = [d.get("name") for d in j.get("departments", []) if isinstance(d, dict) and d.get("name")]
+        dept = depts[0] if depts else ""
+        emp = j.get("employment_type") or ""
+        desc = j.get("content_plain") or text(j.get("content"))
+        posted = str(j.get("first_published_at") or j.get("created_at") or "")[:10] or None
+        out.append(job("gem", f"gem:{s}", rid, comp, title, apply_url,
+                       location=loc, remote=remote, posted=posted, desc=desc,
+                       team=dept, emp=(emp,) if emp else ()))
+    return out
 
 
 def recooty(s, name):
-    return []
+    r = S.get(f"https://careerspage.io/{s}", timeout=TIMEOUT)
+    if not r.ok:
+        return []
+    soup = BeautifulSoup(r.text, "html.parser")
+    out = []
+    comp = name or s
+    seen = set()
+    for a in soup.find_all("a", href=lambda h: h and f"careerspage.io/{s}/" in h):
+        href = a.get("href") or ""
+        path = href.split(f"careerspage.io/{s}/")[-1].strip("/")
+        if not path or path in ("report", "login", "#"):
+            continue
+        rid = path
+        if rid in seen:
+            continue
+        seen.add(rid)
+        title = a.get_text(strip=True)
+        if not title:
+            continue
+        card = a
+        for _ in range(5):
+            if card.parent:
+                card = card.parent
+                if "card" in " ".join(card.get("class", [])):
+                    break
+        card_text = card.get_text(separator=" | ", strip=True) if card else ""
+        remote = "remote" in card_text.lower() or "remote" in title.lower()
+        emp = ()
+        for et in ("full time", "part time", "internship", "contract"):
+            if et in card_text.lower():
+                emp = (et,)
+                break
+        loc = "Remote" if remote else ""
+        out.append(job("recooty", f"recooty:{s}", rid, comp, title, href,
+                       location=loc, remote=remote, emp=emp))
+    return out
 
 
 def csod(s, name):
-    return []
+    parts = s.split("/")
+    tenant = parts[0]
+    site_id = int(parts[1]) if len(parts) > 1 and parts[1].isdigit() else 1
+    r = S.get(f"https://{tenant}.csod.com/ux/ats/careersite/{site_id}/home?c={tenant}", timeout=TIMEOUT)
+    if not r.ok or "csod.context" not in r.text:
+        if site_id == 1:
+            site_id = 2
+            r = S.get(f"https://{tenant}.csod.com/ux/ats/careersite/{site_id}/home?c={tenant}", timeout=TIMEOUT)
+    if not r.ok or "csod.context" not in r.text:
+        return []
+    m = re.search(r"csod\.context\s*=\s*(\{.*?\});", r.text, re.DOTALL)
+    if not m:
+        return []
+    try:
+        ctx = json.loads(m.group(1))
+    except Exception:
+        return []
+    token = ctx.get("token")
+    if not token:
+        return []
+    headers = {
+        "Authorization": f"Bearer {token}",
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+    }
+    culture_name = ctx.get("cultureName", "en-US")
+    culture_id = ctx.get("cultureID", 1)
+    page = 1
+    page_size = 50
+    out = []
+    comp = name or tenant
+    seen = set()
+    while page <= 20:
+        payload = {
+            "careerSiteId": site_id,
+            "pageNumber": page,
+            "pageSize": page_size,
+            "cultureId": culture_id,
+            "cultureName": culture_name,
+            "searchText": "",
+        }
+        try:
+            res = S.post(f"https://{tenant}.csod.com/services/x/career-site/v1/search", headers=headers, json=payload, timeout=TIMEOUT)
+            if not res.ok:
+                break
+            d = res.json()
+        except Exception:
+            break
+        reqs = d.get("data", {}).get("requisitions", [])
+        if not reqs:
+            break
+        for req in reqs:
+            rid = str(req.get("requisitionId") or "")
+            title = (req.get("displayJobTitle") or "").strip()
+            if not rid or not title or rid in seen:
+                continue
+            seen.add(rid)
+            locs = req.get("locations") or []
+            loc_parts = []
+            for l in locs:
+                if isinstance(l, dict):
+                    loc_parts.append(", ".join(filter(None, [l.get("city"), l.get("state"), l.get("country")])))
+            loc = "; ".join(loc_parts)
+            remote = "remote" in loc.lower() or "remote" in title.lower()
+            posted = None
+            if req.get("postingEffectiveDate"):
+                try:
+                    posted = dt.datetime.strptime(req["postingEffectiveDate"].strip(), "%m/%d/%Y").date().isoformat()
+                except Exception:
+                    posted = None
+            apply_url = f"https://{tenant}.csod.com/ux/ats/careersite/4/home/requisition/{rid}?c={tenant}"
+            out.append(job("csod", f"csod:{s}", rid, comp, title, apply_url,
+                           location=loc, remote=remote, posted=posted))
+        if len(reqs) < page_size:
+            break
+        page += 1
+    return out
 
 
 def taleo(s, name):
-    return []
+    parts = s.split("/")
+    company = parts[0]
+    section = parts[1] if len(parts) > 1 else "ex"
+    r = S.get(f"https://{company}.taleo.net/careersection/{section}/joblist.ftl?lang=en", timeout=TIMEOUT)
+    if not r.ok or "ftlform" not in r.text:
+        return []
+    soup = BeautifulSoup(r.text, "html.parser")
+    form = soup.find("form")
+    if not form:
+        return []
+    inputs = {i.get("name"): i.get("value", "") for i in form.find_all("input") if i.get("name")}
+    raw = inputs.get("initialHistory", "")
+    decoded = urllib.parse.unquote(raw)
+    jobs = re.findall(r"!(\d+)!\|!\s*([^!|]+?)\s*!\|!\1!\|!\s*([^!|]+?)\s*!\|!\1!\|!([^!|]+)!\|!Apply!", decoded)
+    out = []
+    comp = name or company
+    seen = set()
+    for jid, t1, t2, req_code in jobs:
+        rid = str(jid).strip()
+        title = t1.strip()
+        if not rid or not title or rid in seen:
+            continue
+        seen.add(rid)
+        apply_url = f"https://{company}.taleo.net/careersection/{section}/jobdetail.ftl?job={rid}"
+        remote = "remote" in title.lower()
+        out.append(job("taleo", f"taleo:{s}", rid, comp, title, apply_url, remote=remote))
+    return out
+
+
+def bullhorn(s, name):  # s = "{cls}/{token}"
+    parts = s.split("/")
+    cls = parts[0]
+    token = parts[1] if len(parts) > 1 else s
+    out = []
+    comp = name or token
+    start = 0
+    page_size = 100
+    seen = set()
+    while start < 500:
+        url = f"https://public-rest{cls}.bullhornstaffing.com/rest-services/{token}/search/JobOrder"
+        params = {
+            "query": "(isOpen:1)",
+            "fields": "id,title,publishedCategory(id,name),address(city,state),employmentType,dateLastPublished,publicDescription",
+            "count": page_size,
+            "start": start,
+        }
+        try:
+            r = S.get(url, params=params, timeout=TIMEOUT)
+            if not r.ok:
+                break
+            d = r.json()
+        except Exception:
+            break
+        data_list = d.get("data", [])
+        if not data_list:
+            break
+        for j in data_list:
+            rid = str(j.get("id") or "")
+            title = (j.get("title") or "").strip()
+            if not rid or not title or rid in seen:
+                continue
+            seen.add(rid)
+            addr = j.get("address") or {}
+            loc = ", ".join(filter(None, [addr.get("city"), addr.get("state")]))
+            remote = "remote" in loc.lower() or "remote" in title.lower()
+            cat = j.get("publishedCategory") or {}
+            dept = cat.get("name") or ""
+            emp = (j.get("employmentType") or "",)
+            desc = text(j.get("publicDescription"))
+            posted = day(j.get("dateLastPublished"))
+            apply_url = f"https://careers.bullhornstaffing.com/{s}/jobs/{rid}"
+            out.append(job("bullhorn", f"bullhorn:{s}", rid, comp, title, apply_url,
+                           location=loc, remote=remote, posted=posted, desc=desc,
+                           team=dept, emp=emp))
+        if len(data_list) < page_size:
+            break
+        start += page_size
+    return out
 
 
 ATS = dict(greenhouse=greenhouse, lever=lever, ashby=ashby, smartrecruiters=smartrecruiters, workday=workday, microsoft=microsoft, eightfold=eightfold,
            amazon=amazon, apple=apple, teamtailor=teamtailor, personio=personio, recruitee=recruitee, oracle=oracle, workable=workable, phenom=phenom,
            pinpoint=pinpoint, breezy=breezy, bamboohr=bamboohr, rippling=rippling, join=join, adp=adp, jazzhr=jazzhr, jobvite=jobvite, trakstar_hire=trakstar_hire, jobscore=jobscore, zoho=zoho, icims=icims, ultipro=ultipro, dayforce=dayforce, paylocity=paylocity,
-           paycom=paycom, applicantpro=applicantpro, isolved=isolved, betterteam=betterteam, gohire=gohire, freshteam=freshteam, gem=gem, recooty=recooty, csod=csod, taleo=taleo)
+           paycom=paycom, applicantpro=applicantpro, isolved=isolved, betterteam=betterteam, gohire=gohire, freshteam=freshteam, gem=gem, recooty=recooty, csod=csod, taleo=taleo, bullhorn=bullhorn)
 FEEDS = dict(remotive=remotive, remoteok=remoteok, arbeitnow=arbeitnow, himalayas=himalayas, jobicy=jobicy, weworkremotely=weworkremotely,
              getonbrd=getonbrd, workingnomads=workingnomads, jobtech=jobtech, cryptojobs=cryptojobs, themuse=themuse)
 if os.environ.get("USAJOBS_API_KEY") and os.environ.get("USAJOBS_EMAIL"):  # optional: skipped (not failed) without a key
@@ -1239,7 +1660,8 @@ URLS = dict(greenhouse="https://job-boards.greenhouse.io/{s}/jobs/{r}", lever="h
             paycom="https://www.paycomonline.net/v4/ats/web.php/portal/{s}/jobs/{r}", applicantpro="https://{s}.applicantpro.com/jobs/{r}",
             isolved="https://{s}.isolvedhire.com/jobs/{r}", betterteam="https://{s}/{r}", gohire="https://jobs.gohire.io/{s}/{r}",
             freshteam="https://{s}.freshteam.com/jobs/{r}", gem="https://jobs.gem.com/{s}/{r}", recooty="https://careerspage.io/{s}/{r}",
-            csod="https://{s}.csod.com/ux/ats/careersite/4/home/requisition/{r}?c={s}", taleo="https://{s}.taleo.net/careersection/ex/jobdetail.ftl?job={r}")
+            csod="https://{s}.csod.com/ux/ats/careersite/4/home/requisition/{r}?c={s}", taleo="https://{s}.taleo.net/careersection/ex/jobdetail.ftl?job={r}",
+            bullhorn="https://careers.bullhornstaffing.com/{s}/jobs/{r}")
 DEFAULTS = dict(closed_at=None, location="", team="", remote=False, years=None, skills=[], pay=None, employment="", posted=None, reposts=0)
 
 
