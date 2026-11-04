@@ -32,19 +32,19 @@ Queries can also include a place, a pay floor or an exclusion, for example `remo
 
 <table>
   <tr>
-    <td><img src="docs/charts/jobs_by_level.svg?v=20261103_fixed" alt="Open jobs by seniority level, from internships to management"></td>
-    <td><img src="docs/charts/jobs_by_field.svg?v=20261103_fixed" alt="Number of open jobs by field, from healthcare and retail to engineering"></td>
+    <td><img src="docs/charts/jobs_by_level.svg?v=20261104_quality" alt="Open jobs by seniority level, from internships to management"></td>
+    <td><img src="docs/charts/jobs_by_field.svg?v=20261104_quality" alt="Number of open jobs by field, from healthcare and retail to engineering"></td>
   </tr>
   <tr>
-    <td><img src="docs/charts/top_skills.svg?v=20261103_fixed" alt="Most requested skills in job postings, technical and non-technical"></td>
-    <td><img src="docs/charts/top_companies.svg?v=20261103_fixed" alt="Employers with the most open job listings"></td>
+    <td><img src="docs/charts/top_skills.svg?v=20261104_quality" alt="Most requested skills in job postings, technical and non-technical"></td>
+    <td><img src="docs/charts/top_companies.svg?v=20261104_quality" alt="Employers with the most open job listings"></td>
   </tr>
   <tr>
-    <td><img src="docs/charts/fresher_friendly.svg?v=20261103_fixed" alt="Companies with the most entry-level, fresher-friendly roles"></td>
-    <td><img src="docs/charts/open_jobs_over_time.svg?v=20261103_fixed" alt="Open jobs and fresher-friendly jobs over time"></td>
+    <td><img src="docs/charts/fresher_friendly.svg?v=20261104_quality" alt="Companies with the most entry-level, fresher-friendly roles"></td>
+    <td><img src="docs/charts/open_jobs_over_time.svg?v=20261104_quality" alt="Open jobs and fresher-friendly jobs over time"></td>
   </tr>
   <tr>
-    <td colspan="2"><img src="docs/charts/skill_trends.svg?v=20261103_fixed" alt="Skill demand trend over time: share of postings that mention each skill" width="100%"></td>
+    <td colspan="2"><img src="docs/charts/skill_trends.svg?v=20261104_quality" alt="Skill demand trend over time: share of postings that mention each skill" width="100%"></td>
   </tr>
 </table>
 

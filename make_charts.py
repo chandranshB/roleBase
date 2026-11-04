@@ -8,7 +8,7 @@ from collections import Counter
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
-from scraper import DIR, category, level
+from scraper import DIR, category, level, clean_company
 
 OUT = Path("docs/charts")
 W = 720
@@ -142,12 +142,12 @@ def _process_file(f):
         cat = j.get("category") or category(j.get("title", ""), j.get("team"))
         categories[cat] += 1
 
-        comp = j.get("company", "Unknown")
-        companies[comp] += 1
-
         is_fresh = (lvl in ("intern", "junior", "mid")) and (y <= 2 if y is not None else lvl != "mid")
-        if is_fresh:
-            company_fresh[comp] += 1
+        comp = clean_company(j.get("company", ""))
+        if comp and comp.lower() not in ("unknown", "none", "non renseigné", "non renseigne", "not specified", "null", "n/a"):
+            companies[comp] += 1
+            if is_fresh:
+                company_fresh[comp] += 1
 
         for s in j.get("skills", []):
             skills[s] += 1
@@ -179,7 +179,7 @@ def main():
     stamp = f"{tot_open:,} open jobs · updated {dt.date.today()}"
     fresh_list = []
     for c, n in all_companies.items():
-        if n >= 20:
+        if n >= 20 and c.lower() not in ("unknown", "none", "non renseigné", "non renseigne", "not specified", "null", "n/a"):
             f = all_comp_fresh[c]
             fresh_list.append(dict(company=c, open_roles=n, fresher_roles=f, fresher_share=round(f / n, 3)))
     fresh_sorted = sorted(fresh_list, key=lambda r: (-r["fresher_share"], -r["open_roles"]))
