@@ -1631,10 +1631,265 @@ def bullhorn(s, name):  # s = "{cls}/{token}"
     return out
 
 
+def successfactors(s, name):
+    parts = s.split("/")
+    cls = parts[0]
+    company = parts[1] if len(parts) > 1 else s
+    url = f"https://career{cls}.successfactors.com/career?company={company}&career_ns=job_listing_summary&navBarLevel=JOB_SEARCH"
+    try:
+        r = S.get(url, timeout=TIMEOUT)
+        if not r.ok:
+            return []
+    except Exception:
+        return []
+    soup = BeautifulSoup(r.text, "html.parser")
+    rows = soup.find_all("tr", class_=lambda c: c and "data-row" in c.lower())
+    out = []
+    comp = name or company
+    seen = set()
+    for tr in rows:
+        a = tr.find("a", class_=lambda c: c and "jobtitle" in c.lower())
+        if not a:
+            continue
+        title = a.text.strip()
+        href = a.get("href") or ""
+        jid = href.strip("/").split("/")[-1] if href else ""
+        if not jid or not title or jid in seen:
+            continue
+        seen.add(jid)
+        dept_el = tr.find(class_=lambda c: c and "department" in c.lower())
+        team = dept_el.text.strip() if dept_el else ""
+        loc_el = tr.find(class_=lambda c: c and "location" in c.lower())
+        loc = loc_el.text.strip() if loc_el else ""
+        date_el = tr.find(class_=lambda c: c and "date" in c.lower())
+        date_str = date_el.text.strip() if date_el else ""
+        posted = None
+        if date_str:
+            try:
+                posted = dt.datetime.strptime(date_str, "%b %d, %Y").date().isoformat()
+            except Exception:
+                posted = None
+        apply_url = href if href.startswith("http") else f"https://career{cls}.successfactors.com{href}"
+        remote = "remote" in loc.lower() or "remote" in title.lower()
+        out.append(job("successfactors", f"successfactors:{s}", jid, comp, title, apply_url, location=loc, remote=remote, team=team, posted=posted))
+    return out
+
+
+def avature(s, name):
+    comp = name or s
+    out = []
+    seen = set()
+    offset = 0
+    limit = 50
+    while offset < 500:
+        url = f"https://{s}.avature.net/careers/SearchJobs/?jobRecordsPerPage={limit}&jobOffset={offset}"
+        try:
+            r = S.get(url, timeout=TIMEOUT)
+            if not r.ok:
+                break
+        except Exception:
+            break
+        soup = BeautifulSoup(r.text, "html.parser")
+        links = soup.find_all("a", href=re.compile(r"/JobDetail/"))
+        new_jobs = 0
+        for a in links:
+            href = a.get("href") or ""
+            title = a.text.strip()
+            if not title or title.lower() == "apply":
+                continue
+            jid = href.strip("/").split("/")[-1]
+            if not jid or not title or jid in seen:
+                continue
+            seen.add(jid)
+            parent = a.find_parent("li") or a.find_parent("div")
+            loc = ""
+            if parent:
+                loc_el = parent.find(class_=lambda c: c and ("location" in c.lower() or "subtitle" in c.lower() or "meta" in c.lower()))
+                if loc_el:
+                    loc = loc_el.text.strip().replace("\n", " ")
+            apply_url = href if href.startswith("http") else f"https://{s}.avature.net{href}"
+            remote = "remote" in loc.lower() or "remote" in title.lower()
+            out.append(job("avature", f"avature:{s}", jid, comp, title, apply_url, location=loc, remote=remote))
+            new_jobs += 1
+        if new_jobs == 0:
+            break
+        offset += limit
+    return out
+
+
+def recruiterflow(s, name):
+    try:
+        r = S.get(f"https://recruiterflow.com/{s}/jobs", timeout=TIMEOUT)
+        if not r.ok or "jobsList" not in r.text:
+            return []
+    except Exception:
+        return []
+    m = re.search(r"window\.jobsList\s*=\s*(\{.*?\});", r.text, re.DOTALL)
+    if not m:
+        return []
+    try:
+        data = json.loads(m.group(1))
+    except Exception:
+        return []
+    out = []
+    comp = name or s
+    seen = set()
+    for dept, jobs in data.get("department", []):
+        for j in jobs:
+            jid = str(j.get("job_id") or "")
+            title = (j.get("job_name") or "").strip()
+            if not jid or not title or jid in seen:
+                continue
+            seen.add(jid)
+            loc = (j.get("details") or "").strip()
+            rel_link = j.get("apply_link") or f"{s}/jobs/{jid}"
+            url = rel_link if rel_link.startswith("http") else f"https://recruiterflow.com/{rel_link.lstrip('/')}"
+            remote_type = str(j.get("remote_type") or "").lower()
+            remote = "remote" in remote_type or "remote" in title.lower() or "remote" in loc.lower()
+            posted = None
+            if j.get("last_opened"):
+                try:
+                    posted = j["last_opened"].split("T")[0]
+                except Exception:
+                    posted = None
+            out.append(job("recruiterflow", f"recruiterflow:{s}", jid, comp, title, url, location=loc, remote=remote, team=dept or "", posted=posted))
+    return out
+
+
+def manatal(s, name):
+    comp = name or s
+    out = []
+    seen = set()
+    url = f"https://api.manatal.com/open/v3/career-page/{s}/jobs/?page_size=100"
+    while url and len(out) < 500:
+        try:
+            r = S.get(url, timeout=TIMEOUT)
+            if not r.ok:
+                break
+            data = r.json()
+        except Exception:
+            break
+        results = data.get("results") or []
+        if not results:
+            break
+        for j in results:
+            jid = str(j.get("id") or "")
+            title = (j.get("position_name") or "").strip()
+            if not jid or not title or jid in seen:
+                continue
+            seen.add(jid)
+            loc = (j.get("location_display") or "").strip()
+            hash_id = j.get("hash") or jid
+            apply_url = f"https://www.careers-page.com/{s}/job/{hash_id}"
+            remote = bool(j.get("is_remote")) or "remote" in loc.lower() or "remote" in title.lower()
+            team = (j.get("organization_name") or "").strip()
+            out.append(job("manatal", f"manatal:{s}", jid, comp, title, apply_url, location=loc, remote=remote, team=team))
+        url = data.get("next")
+    return out
+
+
+def loxo(s, name):
+    try:
+        r = S.get(f"https://app.loxo.co/{s}", timeout=TIMEOUT)
+        if not r.ok:
+            return []
+    except Exception:
+        return []
+    soup = BeautifulSoup(r.text, "html.parser")
+    cards = soup.find_all(class_="jobs-listing-card")
+    out = []
+    comp = name or s
+    seen = set()
+    for card in cards:
+        t_el = card.find(class_="job-title")
+        if not t_el:
+            continue
+        title = t_el.text.strip()
+        href = t_el.get("href") or ""
+        jid = href.strip("/").split("/")[-1] if href else ""
+        if not jid or not title or jid in seen:
+            continue
+        seen.add(jid)
+        loc_el = card.find(class_="job-location")
+        loc = loc_el.text.replace("location_on", "").strip() if loc_el else ""
+        type_el = card.find(class_="job-type")
+        emp = (type_el.text.strip(),) if type_el else ()
+        remote = "remote" in loc.lower() or "remote" in title.lower()
+        apply_url = f"https://app.loxo.co{href}" if href.startswith("/") else href
+        out.append(job("loxo", f"loxo:{s}", jid, comp, title, apply_url, location=loc, remote=remote, emp=emp))
+    return out
+
+
+def careerplug(s, name):
+    try:
+        r = S.get(f"https://{s}.careerplug.com/jobs", timeout=TIMEOUT)
+        if not r.ok:
+            return []
+    except Exception:
+        return []
+    soup = BeautifulSoup(r.text, "html.parser")
+    links = soup.find_all("a", href=re.compile(r"/jobs/\d+"))
+    out = []
+    comp = name or s
+    seen = set()
+    for a in links:
+        href = a.get("href") or ""
+        m = re.search(r"/jobs/(\d+)", href)
+        if not m:
+            continue
+        jid = m.group(1)
+        if jid in seen:
+            continue
+        seen.add(jid)
+        text_lines = [l.strip() for l in a.text.splitlines() if l.strip()]
+        title = text_lines[0] if text_lines else "Open Role"
+        if title.lower() in ("español", "apply", "view job"):
+            continue
+        loc = ""
+        for i, line in enumerate(text_lines):
+            if "location:" in line.lower() and i + 1 < len(text_lines):
+                loc = text_lines[i + 1]
+        remote = "remote" in loc.lower() or "remote" in title.lower()
+        apply_url = f"https://{s}.careerplug.com/jobs/{jid}"
+        out.append(job("careerplug", f"careerplug:{s}", jid, comp, title, apply_url, location=loc, remote=remote))
+    return out
+
+
+def comeet(s, name):
+    parts = s.split("/")
+    uid = parts[0]
+    token = parts[1] if len(parts) > 1 else ""
+    url = f"https://www.comeet.co/careers-api/2.0/company/{uid}/positions?token={token}&details=false" if token else f"https://www.comeet.co/careers-api/2.0/company/{uid}/positions"
+    try:
+        r = S.get(url, timeout=TIMEOUT)
+        if not r.ok:
+            return []
+        data = r.json()
+    except Exception:
+        return []
+    out = []
+    comp = name or uid
+    seen = set()
+    for j in data:
+        jid = str(j.get("uid") or "")
+        title = (j.get("name") or "").strip()
+        if not jid or not title or jid in seen:
+            continue
+        seen.add(jid)
+        loc_data = j.get("location") or {}
+        loc = ", ".join(filter(None, [loc_data.get("city"), loc_data.get("state"), loc_data.get("country")])) if isinstance(loc_data, dict) else ""
+        remote = bool(loc_data.get("is_remote")) if isinstance(loc_data, dict) else False
+        apply_url = j.get("url_active_page") or j.get("url_comeet_hosted_page") or f"https://www.comeet.com/jobs/{uid}/{jid}"
+        team = (j.get("department") or "").strip()
+        out.append(job("comeet", f"comeet:{s}", jid, comp, title, apply_url, location=loc, remote=remote, team=team))
+    return out
+
+
 ATS = dict(greenhouse=greenhouse, lever=lever, ashby=ashby, smartrecruiters=smartrecruiters, workday=workday, microsoft=microsoft, eightfold=eightfold,
            amazon=amazon, apple=apple, teamtailor=teamtailor, personio=personio, recruitee=recruitee, oracle=oracle, workable=workable, phenom=phenom,
            pinpoint=pinpoint, breezy=breezy, bamboohr=bamboohr, rippling=rippling, join=join, adp=adp, jazzhr=jazzhr, jobvite=jobvite, trakstar_hire=trakstar_hire, jobscore=jobscore, zoho=zoho, icims=icims, ultipro=ultipro, dayforce=dayforce, paylocity=paylocity,
-           paycom=paycom, applicantpro=applicantpro, isolved=isolved, betterteam=betterteam, gohire=gohire, freshteam=freshteam, gem=gem, recooty=recooty, csod=csod, taleo=taleo, bullhorn=bullhorn)
+           paycom=paycom, applicantpro=applicantpro, isolved=isolved, betterteam=betterteam, gohire=gohire, freshteam=freshteam, gem=gem, recooty=recooty, csod=csod, taleo=taleo, bullhorn=bullhorn,
+           successfactors=successfactors, avature=avature, recruiterflow=recruiterflow, manatal=manatal, loxo=loxo, careerplug=careerplug, comeet=comeet)
 FEEDS = dict(remotive=remotive, remoteok=remoteok, arbeitnow=arbeitnow, himalayas=himalayas, jobicy=jobicy, weworkremotely=weworkremotely,
              getonbrd=getonbrd, workingnomads=workingnomads, jobtech=jobtech, cryptojobs=cryptojobs, themuse=themuse)
 if os.environ.get("USAJOBS_API_KEY") and os.environ.get("USAJOBS_EMAIL"):  # optional: skipped (not failed) without a key
@@ -1663,7 +1918,14 @@ URLS = dict(greenhouse="https://job-boards.greenhouse.io/{s}/jobs/{r}", lever="h
             isolved="https://{s}.isolvedhire.com/jobs/{r}", betterteam="https://{s}/{r}", gohire="https://jobs.gohire.io/{s}/{r}",
             freshteam="https://{s}.freshteam.com/jobs/{r}", gem="https://jobs.gem.com/{s}/{r}", recooty="https://careerspage.io/{s}/{r}",
             csod="https://{s}.csod.com/ux/ats/careersite/4/home/requisition/{r}?c={s}", taleo="https://{s}.taleo.net/careersection/ex/jobdetail.ftl?job={r}",
-            bullhorn="https://careers.bullhornstaffing.com/{s}/jobs/{r}")
+            bullhorn="https://careers.bullhornstaffing.com/{s}/jobs/{r}",
+            successfactors="https://career{s}.successfactors.com/job/{r}",
+            avature="https://{s}.avature.net/careers/JobDetail/{r}",
+            recruiterflow="https://recruiterflow.com/{s}/jobs/{r}",
+            manatal="https://www.careers-page.com/{s}/job/{r}",
+            loxo="https://app.loxo.co/job/{r}",
+            careerplug="https://{s}.careerplug.com/jobs/{r}",
+            comeet="https://www.comeet.com/jobs/{s}/{r}")
 DEFAULTS = dict(closed_at=None, location="", team="", remote=False, years=None, skills=[], pay=None, employment="", posted=None, reposts=0)
 
 
@@ -1826,7 +2088,7 @@ def verdict(jobs, err, prev, strikes):
 # The number is how many boards of that provider are fetched at the same time (conservative defaults, not published limits); a provider not listed
 # here (Arbeitnow, every feed, Amazon, Microsoft...) gets one worker, i.e. one board at a time. Workable and Arbeitnow also pause a second between requests.
 LANE_OF = {"microsoft": "eightfold"}  # Microsoft's careers site is Eightfold-hosted: one lane, one site at a time, so their bot protection never sees a burst
-LANES = {"greenhouse": 24, "lever": 16, "ashby": 16, "smartrecruiters": 12, "workday": 32, "teamtailor": 4, "oracle": 8, "workable": 2, "personio": 12, "recruitee": 2, "phenom": 4, "apple": 1, "pinpoint": 8, "breezy": 8, "bamboohr": 16, "rippling": 8, "join": 16, "adp": 16, "jazzhr": 16, "jobvite": 8, "trakstar_hire": 8, "jobscore": 8, "zoho": 16, "icims": 8, "ultipro": 16, "dayforce": 16, "paylocity": 16, "paycom": 16, "applicantpro": 8, "isolved": 8, "betterteam": 8, "gohire": 8, "freshteam": 4, "gem": 4, "recooty": 4, "csod": 4, "taleo": 2, "bullhorn": 8}
+LANES = {"greenhouse": 24, "lever": 16, "ashby": 16, "smartrecruiters": 12, "workday": 32, "teamtailor": 4, "oracle": 8, "workable": 2, "personio": 12, "recruitee": 2, "phenom": 4, "apple": 1, "pinpoint": 8, "breezy": 8, "bamboohr": 16, "rippling": 8, "join": 16, "adp": 16, "jazzhr": 16, "jobvite": 8, "trakstar_hire": 8, "jobscore": 8, "zoho": 16, "icims": 8, "ultipro": 16, "dayforce": 16, "paylocity": 16, "paycom": 16, "applicantpro": 8, "isolved": 8, "betterteam": 8, "gohire": 8, "freshteam": 4, "gem": 4, "recooty": 4, "csod": 4, "taleo": 2, "bullhorn": 8, "successfactors": 8, "avature": 8, "recruiterflow": 8, "manatal": 8, "loxo": 8, "careerplug": 8, "comeet": 8}
 RUN_BUDGET = 26 * 60  # seconds (the deep crawl takes 13 minutes here, 17 on GitHub's runners). A hung source is cut off and keeps its old jobs; the Actions job times out at 30 minutes
 
 

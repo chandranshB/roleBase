@@ -2,7 +2,8 @@ import datetime as dt
 
 from scraper import (ATS, CAPPED, FEEDS, apple, bamboohr, breezy, category, clean_company, company_stats, employment, find_pay, fresher_ok, ghost_flags, level, merge, skills, slim,
                      phenom_job, pinpoint, rippling, run_all, themuse, url_of, usajobs_job, verdict, wd_posted, years_req, adp, jazzhr, jobvite, join, trakstar_hire, jobscore, zoho, icims, ultipro, dayforce, paylocity,
-                     paycom, applicantpro, isolved, betterteam, gohire, freshteam, gem, recooty, csod, taleo, bullhorn)
+                     paycom, applicantpro, isolved, betterteam, gohire, freshteam, gem, recooty, csod, taleo, bullhorn,
+                     successfactors, avature, recruiterflow, manatal, loxo, careerplug, comeet)
 from update_about import about_text
 
 
@@ -119,9 +120,17 @@ assert url_of("recooty:acme:123") == "https://careerspage.io/acme/123"
 assert url_of("csod:acme:123") == "https://acme.csod.com/ux/ats/careersite/4/home/requisition/123?c=acme"
 assert url_of("taleo:acme:123") == "https://acme.taleo.net/careersection/ex/jobdetail.ftl?job=123"
 assert url_of("bullhorn:21/corp123:456") == "https://careers.bullhornstaffing.com/21/corp123/jobs/456"
+assert url_of("successfactors:4/Tenaris:123") == "https://career4/Tenaris.successfactors.com/job/123"
+assert url_of("avature:bloomberg:123") == "https://bloomberg.avature.net/careers/JobDetail/123"
+assert url_of("recruiterflow:recruiterflow:123") == "https://recruiterflow.com/recruiterflow/jobs/123"
+assert url_of("manatal:manatal:123") == "https://www.careers-page.com/manatal/job/123"
+assert url_of("loxo:loxo:123") == "https://app.loxo.co/job/123"
+assert url_of("careerplug:mathnasium:123") == "https://mathnasium.careerplug.com/jobs/123"
+assert url_of("comeet:E5.007/token:123") == "https://www.comeet.com/jobs/E5.007/token/123"
 assert "apple" in CAPPED and ATS["apple"] == apple
 assert ATS["pinpoint"] == pinpoint and ATS["breezy"] == breezy and ATS["bamboohr"] == bamboohr and ATS["rippling"] == rippling and ATS["join"] == join and ATS["adp"] == adp and ATS["jazzhr"] == jazzhr and ATS["jobvite"] == jobvite and ATS["trakstar_hire"] == trakstar_hire and ATS["jobscore"] == jobscore and ATS["zoho"] == zoho and ATS["icims"] == icims and ATS["ultipro"] == ultipro and ATS["dayforce"] == dayforce and ATS["paylocity"] == paylocity
 assert ATS["paycom"] == paycom and ATS["applicantpro"] == applicantpro and ATS["isolved"] == isolved and ATS["betterteam"] == betterteam and ATS["gohire"] == gohire and ATS["freshteam"] == freshteam and ATS["gem"] == gem and ATS["recooty"] == recooty and ATS["csod"] == csod and ATS["taleo"] == taleo and ATS["bullhorn"] == bullhorn
+assert ATS["successfactors"] == successfactors and ATS["avature"] == avature and ATS["recruiterflow"] == recruiterflow and ATS["manatal"] == manatal and ATS["loxo"] == loxo and ATS["careerplug"] == careerplug and ATS["comeet"] == comeet
 assert "themuse" in FEEDS and FEEDS["themuse"] == themuse and "themuse" in CAPPED
 
 # --- logos: icon detection and ordering ---
