@@ -156,25 +156,41 @@ def _process_file(f):
 
 
 def main():
-    files = list(DIR.glob("*.jsonl"))
-    tot_open = 0
-    all_levels = Counter()
-    all_categories = Counter()
-    all_skills = Counter()
-    all_companies = Counter()
-    all_comp_fresh = Counter()
+    cache_file = Path("data/charts_cache.json")
+    loaded_from_cache = False
+    if cache_file.exists():
+        try:
+            cache = json.loads(cache_file.read_text(encoding="utf-8"))
+            tot_open = cache["tot_open"]
+            all_levels = Counter(cache["levels"])
+            all_categories = Counter(cache["categories"])
+            all_skills = Counter(cache["skills"])
+            all_companies = Counter(cache["companies"])
+            all_comp_fresh = Counter(cache.get("comp_fresh", {}))
+            loaded_from_cache = True
+        except Exception:
+            loaded_from_cache = False
 
-    with ThreadPoolExecutor(max_workers=32) as ex:
-        for res in ex.map(_process_file, files):
-            if not res:
-                continue
-            o_jobs, lvls, cats, sks, comps, c_fresh = res
-            tot_open += o_jobs
-            all_levels.update(lvls)
-            all_categories.update(cats)
-            all_skills.update(sks)
-            all_companies.update(comps)
-            all_comp_fresh.update(c_fresh)
+    if not loaded_from_cache:
+        files = list(DIR.glob("*.jsonl"))
+        tot_open = 0
+        all_levels = Counter()
+        all_categories = Counter()
+        all_skills = Counter()
+        all_companies = Counter()
+        all_comp_fresh = Counter()
+
+        with ThreadPoolExecutor(max_workers=32) as ex:
+            for res in ex.map(_process_file, files):
+                if not res:
+                    continue
+                o_jobs, lvls, cats, sks, comps, c_fresh = res
+                tot_open += o_jobs
+                all_levels.update(lvls)
+                all_categories.update(cats)
+                all_skills.update(sks)
+                all_companies.update(comps)
+                all_comp_fresh.update(c_fresh)
 
     stamp = f"{tot_open:,} open jobs · updated {dt.date.today()}"
     fresh_list = []

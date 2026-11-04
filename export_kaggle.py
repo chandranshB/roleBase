@@ -138,8 +138,8 @@ TITLE = "Job Listings: Open Jobs in Every Field (Daily)"
 SUBTITLE = "Daily-updated open jobs with apply links, level, field, skills and pay"
 assert 6 <= len(TITLE) <= 50 and len(SUBTITLE) <= 80, (len(TITLE), len(SUBTITLE))
 SOURCES = ("Public job-board APIs and feeds of Greenhouse, Lever, Ashby, SmartRecruiters, Workday, BambooHR, Rippling, Join.com, ADP Workforce Now, JazzHR, Jobvite, Trakstar Hire, Teamtailor, Personio, Recruitee, Workable, Pinpoint, Breezy HR, Oracle Recruiting and Phenom, plus the careers search APIs of Microsoft, Amazon and "
-           "Eightfold-powered sites, the Arbeitnow job API, Sweden's open JobTech job-ad API and USAJOBS (company list: https://github.com/chandranshB/roleBase/blob/main/companies.json). "
-           "Collected by https://github.com/chandranshB/roleBase with GitHub Actions; no logins, no private data.")
+           "Eightfold-powered sites, the Arbeitnow job API, Sweden's open JobTech job-ad API and USAJOBS. "
+           "Collected with automated tooling; no logins, no private data.")
 # Kaggle's API accepts the per-column descriptions below but its server drops them (https://github.com/Kaggle/kaggle-cli/issues/1207), so they are also
 # written into the description itself, where they always show. The metadata is still sent: it starts to count as soon as Kaggle fixes that.
 COLUMN_TABLE = "\n\n".join(f"**`{name}`**\n\n| Column | Type | Meaning |\n|---|---|---|\n" + "\n".join(f"| `{c}` | {t} | {d.replace('|', '/')} |" for c, (t, d) in cols.items())
@@ -197,7 +197,7 @@ Refreshed automatically once a day by GitHub Actions; the scraper itself runs ev
 
 ## Links
 
-Search the same data as a website: https://chandranshb.github.io/roleBase/ . Code, history and issues: https://github.com/chandranshB/roleBase . Starter notebook: https://www.kaggle.com/code/chandranshbinjola/job-listings-explorer
+Search the same data as a website: https://chandranshb.github.io/roleBase/ . Starter notebook: https://www.kaggle.com/code/chandranshbinjola/job-listings-explorer
 
 ## How to cite
 
