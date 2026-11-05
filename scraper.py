@@ -265,12 +265,143 @@ def day(v):  # epoch ms / epoch s / ISO string -> YYYY-MM-DD
     return str(v)[:10]
 
 
+US_STATES = {
+    "AL": "Alabama", "AK": "Alaska", "AZ": "Arizona", "AR": "Arkansas", "CA": "California",
+    "CO": "Colorado", "CT": "Connecticut", "DE": "Delaware", "FL": "Florida", "GA": "Georgia",
+    "HI": "Hawaii", "ID": "Idaho", "IL": "Illinois", "IN": "Indiana", "IA": "Iowa",
+    "KS": "Kansas", "KY": "Kentucky", "LA": "Louisiana", "ME": "Maine", "MD": "Maryland",
+    "MA": "Massachusetts", "MI": "Michigan", "MN": "Minnesota", "MS": "Mississippi", "MO": "Missouri",
+    "MT": "Montana", "NE": "Nebraska", "NV": "Nevada", "NH": "New Hampshire", "NJ": "New Jersey",
+    "NM": "New Mexico", "NY": "New York", "NC": "North Carolina", "ND": "North Dakota", "OH": "Ohio",
+    "OK": "Oklahoma", "OR": "Oregon", "PA": "Pennsylvania", "RI": "Rhode Island", "SC": "South Carolina",
+    "SD": "South Dakota", "TN": "Tennessee", "TX": "Texas", "UT": "Utah", "VT": "Vermont",
+    "VA": "Virginia", "WA": "Washington", "WV": "West Virginia", "WI": "Wisconsin", "WY": "Wyoming",
+    "DC": "District of Columbia", "PR": "Puerto Rico", "GU": "Guam", "VI": "Virgin Islands"
+}
+
+CA_PROVINCES = {
+    "AB": "Alberta", "BC": "British Columbia", "MB": "Manitoba", "NB": "New Brunswick",
+    "NL": "Newfoundland and Labrador", "NS": "Nova Scotia", "NT": "Northwest Territories",
+    "NU": "Nunavut", "ON": "Ontario", "PE": "Prince Edward Island", "QC": "Quebec",
+    "SK": "Saskatchewan", "YT": "Yukon"
+}
+
+AU_STATES = {
+    "NSW": "New South Wales", "VIC": "Victoria", "QLD": "Queensland", "WA": "Western Australia",
+    "SA": "South Australia", "TAS": "Tasmania", "ACT": "Australian Capital Territory", "NT": "Northern Territory"
+}
+
+COUNTRY_MAP = {
+    "united states": "United States", "usa": "United States", "u.s.a.": "United States", "u.s.": "United States", "us": "United States",
+    "united kingdom": "United Kingdom", "uk": "United Kingdom", "u.k.": "United Kingdom", "great britain": "United Kingdom",
+    "england": "United Kingdom", "scotland": "United Kingdom", "wales": "United Kingdom", "northern ireland": "United Kingdom",
+    "canada": "Canada", "australia": "Australia", "germany": "Germany", "deutschland": "Germany",
+    "india": "India", "france": "France", "netherlands": "Netherlands", "holland": "Netherlands",
+    "spain": "Spain", "espana": "Spain", "españa": "Spain", "italy": "Italy", "italia": "Italy",
+    "brazil": "Brazil", "brasil": "Brazil", "japan": "Japan", "singapore": "Singapore",
+    "ireland": "Ireland", "switzerland": "Switzerland", "sweden": "Sweden", "poland": "Poland",
+    "mexico": "Mexico", "israel": "Israel", "united arab emirates": "United Arab Emirates", "uae": "United Arab Emirates",
+    "south africa": "South Africa", "new zealand": "New Zealand", "belgium": "Belgium", "austria": "Austria",
+    "denmark": "Denmark", "norway": "Norway", "finland": "Finland", "portugal": "Portugal",
+    "greece": "Greece", "czech republic": "Czech Republic", "czechia": "Czech Republic",
+    "romania": "Romania", "hungary": "Hungary", "philippines": "Philippines", "indonesia": "Indonesia",
+    "malaysia": "Malaysia", "thailand": "Thailand", "vietnam": "Vietnam", "south korea": "South Korea",
+    "korea": "South Korea", "argentina": "Argentina", "chile": "Chile", "colombia": "Colombia",
+    "peru": "Peru", "nigeria": "Nigeria", "kenya": "Kenya", "egypt": "Egypt", "saudi arabia": "Saudi Arabia",
+    "turkey": "Turkey", "türkiye": "Turkey", "ukraine": "Ukraine", "pakistan": "Pakistan",
+    "bangladesh": "Bangladesh", "taiwan": "Taiwan", "hong kong": "Hong Kong", "luxembourg": "Luxembourg"
+}
+
+MAJOR_CITIES = {
+    "london": "United Kingdom", "manchester": "United Kingdom", "birmingham": "United Kingdom", "edinburgh": "United Kingdom",
+    "paris": "France", "lyon": "France", "marseille": "France",
+    "berlin": "Germany", "munich": "Germany", "frankfurt": "Germany", "hamburg": "Germany", "cologne": "Germany",
+    "tokyo": "Japan", "osaka": "Japan", "kyoto": "Japan",
+    "toronto": "Canada", "vancouver": "Canada", "montreal": "Canada", "ottawa": "Canada", "calgary": "Canada",
+    "sydney": "Australia", "melbourne": "Australia", "brisbane": "Australia", "perth": "Australia", "adelaide": "Australia",
+    "dublin": "Ireland", "cork": "Ireland",
+    "amsterdam": "Netherlands", "rotterdam": "Netherlands", "the hague": "Netherlands",
+    "bengaluru": "India", "bangalore": "India", "mumbai": "India", "delhi": "India", "new delhi": "India",
+    "hyderabad": "India", "pune": "India", "chennai": "India", "gurgaon": "India", "gurugram": "India", "noida": "India",
+    "madrid": "Spain", "barcelona": "Spain", "valencia": "Spain",
+    "rome": "Italy", "milan": "Italy",
+    "zurich": "Switzerland", "geneva": "Switzerland", "basel": "Switzerland",
+    "stockholm": "Sweden", "gothenburg": "Sweden",
+    "warsaw": "Poland", "krakow": "Poland", "wroclaw": "Poland",
+    "tel aviv": "Israel", "jerusalem": "Israel", "herzliya": "Israel",
+    "dubai": "United Arab Emirates", "abu dhabi": "United Arab Emirates",
+    "são paulo": "Brazil", "sao paulo": "Brazil", "rio de janeiro": "Brazil",
+    "mexico city": "Mexico", "guadalajara": "Mexico", "monterrey": "Mexico",
+    "buenos aires": "Argentina", "santiago": "Chile", "bogota": "Colombia", "lima": "Peru",
+    "seoul": "South Korea", "singapore": "Singapore", "hong kong": "Hong Kong"
+}
+
+RE_US_STATE_END = re.compile(r'(?:,\s*|\s+)([A-Z]{2})(?:\s*;\s*|\s*$)', re.IGNORECASE)
+RE_COUNTRY_SPLIT = re.compile(r'[,;/|\-]+')
+
+
+def country(loc: str) -> str:
+    if not loc:
+        return ""
+    loc_clean = loc.strip()
+    loc_lower = loc_clean.lower()
+
+    # 1. Check delimiter-separated tokens from the right (e.g. "City, State/Country" or "City, Country")
+    parts = [p.strip().lower() for p in RE_COUNTRY_SPLIT.split(loc_clean) if p.strip()]
+    if parts:
+        last = parts[-1]
+        if last in COUNTRY_MAP:
+            return COUNTRY_MAP[last]
+        last_u = last.upper()
+        if last_u in US_STATES:
+            return "United States"
+        if last_u in CA_PROVINCES:
+            return "Canada"
+        if last_u in AU_STATES and any(c in loc_lower for c in ["sydney", "melbourne", "brisbane", "perth", "adelaide", "australia"]):
+            return "Australia"
+
+    # 2. Check full country names anywhere in string
+    for k, v in COUNTRY_MAP.items():
+        if re.search(r'\b' + re.escape(k) + r'\b', loc_lower):
+            return v
+
+    # 3. Check US full state names
+    for code, state_name in US_STATES.items():
+        if re.search(r'\b' + re.escape(state_name.lower()) + r'\b', loc_lower):
+            return "United States"
+
+    # 4. Check Canadian province names
+    for code, prov_name in CA_PROVINCES.items():
+        if re.search(r'\b' + re.escape(prov_name.lower()) + r'\b', loc_lower):
+            return "Canada"
+
+    # 5. Check major world cities
+    for city, cntry in MAJOR_CITIES.items():
+        if re.search(r'\b' + re.escape(city) + r'\b', loc_lower):
+            return cntry
+
+    # 6. Check regex ending with US state or Canadian province
+    m = RE_US_STATE_END.search(loc_clean)
+    if m:
+        st = m.group(1).upper()
+        if st in US_STATES:
+            return "United States"
+        if st in CA_PROVINCES:
+            return "Canada"
+
+    return ""
+
+
+infer_country = country
+
+
 def job(source, scope, rid, company, title, url, location="", remote=False, posted=None,
-        desc="", team="", emp=(), pay=None, tags=(), hint=None):
+        desc="", team="", emp=(), pay=None, tags=(), hint=None, country=None):
     location, team, title = (location or "").strip(), (team or "").strip(), (title or "").strip()
     yrs = years_req(desc)
+    cntry = (country or "").strip() or infer_country(location)
     return dict(id=f"{scope}:{rid}", source=source, company=company, title=title, team=team, location=location,
-                remote=bool(remote) or "remote" in location.lower(), level=level(title, yrs, hint),
+                country=cntry, remote=bool(remote) or "remote" in location.lower(), level=level(title, yrs, hint),
                 category=category(title, team), employment=employment(title, *emp), years=yrs,
                 skills=skills(f"{title} {' '.join(tags)} {desc}"), pay=pay or find_pay(desc), url=url, posted=day(posted))
 
@@ -2043,7 +2174,7 @@ URLS = dict(greenhouse="https://job-boards.greenhouse.io/{s}/jobs/{r}", lever="h
             crelate="https://jobs.crelate.com/portal/{s}/job/{r}",
             clearcompany="https://apply.clearcompany.com/jobs?jobId={r}",
             pageup="http://careers.pageuppeople.com/{s}/caw/en/job/{r}")
-DEFAULTS = dict(closed_at=None, location="", team="", remote=False, years=None, skills=[], pay=None, employment="", posted=None, reposts=0)
+DEFAULTS = dict(closed_at=None, location="", country="", team="", remote=False, years=None, skills=[], pay=None, employment="", posted=None, reposts=0)
 
 
 def url_of(id):  # apply URL is derivable for ATS jobs, so it is only stored when it differs
@@ -2074,6 +2205,7 @@ def load():
             j.setdefault("url", url_of(j["id"]))
             j.setdefault("level", level(j["title"], j.get("years")))  # derived, so a better classifier fixes old rows too
             j.setdefault("category", category(j["title"], j.get("team")))
+            j.setdefault("country", country(j.get("location", "")))
             for k, v in DEFAULTS.items():
                 j.setdefault(k, list(v) if isinstance(v, list) else v)
             items.append((j["id"], j))
@@ -2097,6 +2229,8 @@ def slim(j):  # drop empty values and anything derivable from other fields (load
         del r["level"]
     if r.get("category") == category(j["title"], j.get("team")):
         del r["category"]
+    if r.get("country") == country(j.get("location", "")):
+        del r["country"]
     return r
 
 

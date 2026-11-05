@@ -7,7 +7,7 @@ import shutil
 from collections import Counter
 from pathlib import Path
 
-from scraper import company_stats, fresher_ok, ghost_flags, load
+from scraper import company_stats, country, fresher_ok, ghost_flags, load
 
 # These boards' terms are about attribution and display, so they stay out of a republished dataset.
 SKIP = {"remotive", "remoteok", "himalayas", "jobicy", "weworkremotely", "getonbrd", "workingnomads", "cryptojobs", "themuse"}
@@ -24,6 +24,7 @@ COLUMNS = {  # name -> (type, description); also the CSV column order
     "employment": ("string", "Employment type arrangement: full_time, part_time, contract, or internship (empty if not specified)."),
     "remote": ("boolean", "Boolean flag indicating whether the position offers remote work (True) or requires in-person attendance (False)."),
     "location": ("string", "Geographic location text as published by the employer (e.g. 'New York, NY', 'London, UK; Remote', or 'Hybrid')."),
+    "country": ("string", "Country of the position or employment jurisdiction (e.g. 'United States', 'United Kingdom', 'Germany', 'India', 'Canada')."),
     "skills": ("string", "Up to 8 normalized technical and domain skills detected in the posting, separated by semicolons (e.g. 'python;aws;sql')."),
     "pay_min": ("number", "Lower bound of the stated annual salary or compensation in the specified currency (empty if no pay is stated)."),
     "pay_max": ("number", "Upper bound of the stated annual salary or compensation in the specified currency (empty if no pay is stated)."),
@@ -71,7 +72,8 @@ flags = ghost_flags([j for j in jobs if j["closed_at"] is None])  # closed jobs 
 def flat(j):
     lo, hi, cur = j["pay"] or ("", "", "")
     f = flags.get(j["id"])
-    return {**j, "years_experience": "" if j["years"] is None else j["years"], "skills": ";".join(j["skills"]),
+    c = j.get("country") or country(j.get("location", ""))
+    return {**j, "country": c, "years_experience": "" if j["years"] is None else j["years"], "skills": ";".join(j["skills"]),
             "pay_min": lo, "pay_max": hi, "pay_currency": cur,
             "ghost_score": "" if f is None else sum(p for _, p in f), "ghost_reasons": "; ".join(r for r, _ in f or []),
             "fresher_friendly": fresher_ok(j)}
@@ -147,7 +149,7 @@ DESCRIPTION = f"""# Job Listings: open jobs in every field, updated daily
 
 {len(live):,} open job postings from {n_companies:,} employers, collected straight from their own career pages and refreshed every day. Unlike most job datasets, it is **not limited to tech**: healthcare, retail, finance and banking, education, manufacturing, logistics, sales, marketing, engineering and more are all in here, so you can compare the job market across fields, not just inside one.
 
-Every row has the **apply link**, the level (intern to manager+), the field, the minimum years of experience when the posting states it, skills, employment type, remote flag, location, pay where the employer publishes a yearly range, and the dates the job was posted, first seen and (if it disappeared) closed. A transparent ghost-job score flags listings that look like they are not really being hired for.
+Every row has the **apply link**, the level (intern to manager+), the field, the minimum years of experience when the posting states it, skills, employment type, remote flag, location and country, pay where the employer publishes a yearly range, and the dates the job was posted, first seen and (if it disappeared) closed. A transparent ghost-job score flags listings that look like they are not really being hired for.
 
 ## What's inside
 
