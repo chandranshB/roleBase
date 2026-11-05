@@ -193,6 +193,7 @@ assert u["id"] == "usajobs:123" and u["category"] == "healthcare" and u["pay"] =
 # --- companies.json: no two boards of a system differ only by letter case (same jobs twice on Linux, one shared data file on Windows) ---
 import json
 for system, boards in json.load(open("companies.json", encoding="utf-8")).items():
+    assert isinstance(boards, dict), f"{system} boards in companies.json must be a dict"
     keys = [k.lower() for k in boards]
     assert len(keys) == len(set(keys)), (system, sorted(k for k in set(keys) if keys.count(k) > 1))
 

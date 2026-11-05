@@ -2418,7 +2418,7 @@ def main():
         return
 
     cfg = json.loads(COMPANIES.read_text(encoding="utf-8"))
-    tasks = [(f"{k}:{s}", lambda k=k, s=s, n=n: ATS[k](s, n)) for k, boards in cfg.items() for s, n in boards.items()] + list(FEEDS.items())
+    tasks = [(f"{k}:{s}", lambda k=k, s=s, n=n: ATS[k](s, n)) for k, boards in cfg.items() for s, n in (boards.items() if isinstance(boards, dict) else [(x, "") for x in boards])] + list(FEEDS.items())
     db = load()
     open_n = {}
     for i, o in db.items():
