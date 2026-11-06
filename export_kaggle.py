@@ -70,10 +70,11 @@ flags = ghost_flags([j for j in jobs if j["closed_at"] is None])  # closed jobs 
 
 
 def flat(j):
-    lo, hi, cur = j["pay"] or ("", "", "")
-    f = flags.get(j["id"])
+    lo, hi, cur = j.get("pay") or ("", "", "")
+    f = flags.get(j.get("id"))
     c = j.get("country") or country(j.get("location", ""))
-    return {**j, "country": c, "years_experience": "" if j["years"] is None else j["years"], "skills": ";".join(j["skills"]),
+    y = j.get("years")
+    return {**j, "country": c, "years_experience": "" if y is None else y, "skills": ";".join(j.get("skills") or []),
             "pay_min": lo, "pay_max": hi, "pay_currency": cur,
             "ghost_score": "" if f is None else sum(p for _, p in f), "ghost_reasons": "; ".join(r for r, _ in f or []),
             "fresher_friendly": fresher_ok(j)}
