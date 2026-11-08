@@ -28,14 +28,14 @@ def load(scopes: Optional[Set[str]] = None, open_only: bool = False) -> Dict[str
             content = f.read_text(encoding="utf-8")
         except Exception:
             return items
-        for l in content.split("\n"):
-            l = l.strip()
-            if not l:
+        for line in content.split("\n"):
+            line = line.strip()
+            if not line:
                 continue
-            if open_only and '"closed_at":' in l:
+            if open_only and '"closed_at":' in line:
                 continue
             try:
-                j = json.loads(l)
+                j = json.loads(line)
             except Exception:
                 continue
             if open_only and j.get("closed_at") is not None:
@@ -114,7 +114,8 @@ def merge(db: Dict[str, Dict[str, Any]], fetched: Dict[str, List[Dict[str, Any]]
           pruned: Optional[List[Dict[str, Any]]] = None) -> Dict[str, Dict[str, Any]]:
     """Merge newly crawled board jobs into current state; track closures and reposts."""
     seen = {j["id"] for jobs in fetched.values() for j in jobs}
-    tkey = lambda i, o: (i.rsplit(":", 1)[0], re.sub(r"\W", "", o["title"].lower()))
+    def tkey(i: str, o: Dict[str, Any]) -> tuple:
+        return (i.rsplit(":", 1)[0], re.sub(r"\W", "", o["title"].lower()))
     closed = {}
     for i, o in db.items():
         if o["closed_at"]:
@@ -170,7 +171,7 @@ def append_csv(path: Path, header: List[str], rows: List[List[Any]]) -> None:
 def log_history(db: Dict[str, Dict[str, Any]], pruned: List[Dict[str, Any]], today: str) -> None:
     """Log daily metrics snapshot to pulse.csv and skills.csv, and pruned jobs to archive.csv."""
     pulse = Path("data/pulse.csv")
-    if not (pulse.exists() and any(l.startswith(today + ",") for l in pulse.read_text(encoding="utf-8").split("\n") if l)):
+    if not (pulse.exists() and any(line.startswith(today + ",") for line in pulse.read_text(encoding="utf-8").split("\n") if line)):
         counts = {}
         for i, o in db.items():
             if o["closed_at"] is None:
@@ -180,7 +181,7 @@ def log_history(db: Dict[str, Dict[str, Any]], pruned: List[Dict[str, Any]], tod
         append_csv(pulse, ["date", "board", "open", "fresher"], [[today, b, n, f] for b, (n, f) in sorted(counts.items())])
 
     skills_path = Path("data/skills.csv")
-    if not (skills_path.exists() and any(l.startswith(today + ",") for l in skills_path.read_text(encoding="utf-8").split("\n") if l)):
+    if not (skills_path.exists() and any(line.startswith(today + ",") for line in skills_path.read_text(encoding="utf-8").split("\n") if line)):
         live = [o for o in db.values() if o["closed_at"] is None]
         tagged = sum(bool(o["skills"]) for o in live)
         n = {}

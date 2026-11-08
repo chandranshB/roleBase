@@ -1,9 +1,9 @@
 """Normalization, classification, entity extraction, and heuristics."""
 import functools
 import re
-from typing import Any, Dict, List, Optional, Tuple, Union
+from typing import Any, Dict, List, Optional, Union
 
-from rolebase.client import day, text
+from rolebase.client import day
 from rolebase.config import (
     ALIAS,
     AU_STATES,
@@ -12,7 +12,6 @@ from rolebase.config import (
     EMP,
     LEGAL_RX,
     LEVELS,
-    MAJOR_CITIES,
     PAY_RX,
     RE_CA_PROVINCES,
     RE_CATEGORIES,

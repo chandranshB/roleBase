@@ -3,7 +3,6 @@ from typing import Callable, Dict
 
 import scraper
 
-
 # Dictionary mapping ATS platform slug -> crawler function(board_slug, company_display_name)
 ATS: Dict[str, Callable] = scraper.ATS
 

@@ -1,5 +1,4 @@
 """Ghost job heuristics, repost auditing, and staleness detection."""
-from collections import Counter
 import datetime as dt
 from typing import Any, Dict, List, Optional, Tuple
 
@@ -9,7 +8,7 @@ from rolebase.normalize import _clean_title
 
 def ghost_flags(jobs: List[Dict[str, Any]], today: Optional[dt.date] = None) -> Dict[str, List[Tuple[str, int]]]:
     """Calculate ghost risk triggers and point penalties per job id.
-    
+
     Points scale:
       0 = standard posting
       2 = possibly stale/ghost

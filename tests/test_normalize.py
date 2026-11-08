@@ -2,8 +2,8 @@
 import unittest
 
 from rolebase.normalize import (
-    clean_company,
     category,
+    clean_company,
     country,
     employment,
     find_pay,
@@ -11,7 +11,6 @@ from rolebase.normalize import (
     job,
     level,
     skills,
-    url_of,
     years_req,
 )
 

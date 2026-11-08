@@ -1,5 +1,4 @@
 """Configuration, constants, regexes, and lookup tables for RoleBase."""
-import os
 import re
 from pathlib import Path
 

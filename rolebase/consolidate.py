@@ -1,13 +1,13 @@
 """Consolidation of shard artifacts, analytics precomputation, and metrics caching."""
-from collections import Counter
 import datetime as dt
 import json
 import os
-from pathlib import Path
 import shutil
 import sys
 import time
+from collections import Counter
 from concurrent.futures import ThreadPoolExecutor
+from pathlib import Path
 from typing import Any, Dict, List
 
 from rolebase.config import DIR, HEALTH, KEEP_CLOSED_DAYS
@@ -80,9 +80,9 @@ def consolidate_shards(today: str = None) -> None:
 
     cutoff = (dt.date.fromisoformat(today) - dt.timedelta(KEEP_CLOSED_DAYS)).isoformat()
     pulse = Path("data/pulse.csv")
-    pulse_exists_today = pulse.exists() and any(l.startswith(today + ",") for l in pulse.read_text(encoding="utf-8").split("\n") if l)
+    pulse_exists_today = pulse.exists() and any(line.startswith(today + ",") for line in pulse.read_text(encoding="utf-8").split("\n") if line)
     skills_path = Path("data/skills.csv")
-    skills_exists_today = skills_path.exists() and any(l.startswith(today + ",") for l in skills_path.read_text(encoding="utf-8").split("\n") if l)
+    skills_exists_today = skills_path.exists() and any(line.startswith(today + ",") for line in skills_path.read_text(encoding="utf-8").split("\n") if line)
 
     pulse_counts = {}
     all_skills = Counter()

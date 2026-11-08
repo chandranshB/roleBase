@@ -1,9 +1,9 @@
 """Unit tests for pipeline orchestration, scrape guard verdicts, and company analytics."""
 import unittest
 
+import scraper
 from rolebase.consolidate import company_stats
 from rolebase.normalize import url_of
-import scraper
 
 
 class TestPipeline(unittest.TestCase):

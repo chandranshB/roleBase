@@ -3,7 +3,7 @@ import datetime as dt
 import html
 import re
 import time
-from typing import Any, Callable, Dict, Optional, Union
+from typing import Any, Callable, Optional
 
 import requests
 from requests.adapters import HTTPAdapter
