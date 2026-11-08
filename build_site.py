@@ -58,7 +58,7 @@ def process_board_file(fpath):
             continue
         board_jobs.append(j)
 
-    board_jobs.sort(key=lambda j: j.get("posted") or j.get("first_seen") or "", reverse=True)
+    board_jobs.sort(key=lambda j: str(j.get("posted") or j.get("first_seen") or ""), reverse=True)
     return board_jobs[:SITE_PER_COMPANY]
 
 
@@ -73,7 +73,7 @@ with ThreadPoolExecutor(max_workers=8) as ex:
             sys.stdout.flush()
 
 # Select each employer's newest 35
-candidate_jobs.sort(key=lambda j: j.get("posted") or j.get("first_seen") or "", reverse=True)
+candidate_jobs.sort(key=lambda j: str(j.get("posted") or j.get("first_seen") or ""), reverse=True)
 shown, per = [], {}
 for j in candidate_jobs:
     comp = j.get("company", "")
@@ -100,13 +100,13 @@ def row(j):
     score = sum(p for _, p in flags.get(j["id"], []))
     lvl = levels_map.get(j.get("level"), 2)
     src = sources_map.get(j.get("source"), 0)
-    return [j["title"], j["company"], j["location"], int(j["remote"]), lvl, src,
-            j["posted"] or j["first_seen"], j["url"], j["category"], j["employment"], -1 if j["years"] is None else j["years"],
-            lo, hi, cur, ",".join(j["skills"]), j["team"], score, "; ".join(r for r, _ in flags.get(j["id"], [])) if score >= 2 else "",
+    return [j["title"], j["company"], j["location"], int(bool(j.get("remote"))), lvl, src,
+            str(j.get("posted") or j.get("first_seen") or ""), j["url"], j["category"], j["employment"], -1 if j.get("years") is None else j["years"],
+            lo, hi, cur, ",".join(j.get("skills") or []), j.get("team") or "", score, "; ".join(r for r, _ in flags.get(j["id"], [])) if score >= 2 else "",
             int(fresher_ok(j))]
 
 
-rows = sorted(map(row, shown), key=lambda r: r[6], reverse=True)
+rows = sorted(map(row, shown), key=lambda r: str(r[6]), reverse=True)
 
 
 def fetch_rates():

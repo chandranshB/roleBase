@@ -74,7 +74,7 @@ def join(xs):
 def listing(jobs, cmap, per_company=3, limit=60):
     """Newest first, at most `per_company` per employer, so one big employer doesn't fill the page."""
     out, seen = [], Counter()
-    for j in sorted(jobs, key=lambda j: j["posted"] or j["first_seen"], reverse=True):
+    for j in sorted(jobs, key=lambda j: str(j.get("posted") or j.get("first_seen") or ""), reverse=True):
         if seen[j["company"]] >= per_company:
             continue
         seen[j["company"]] += 1

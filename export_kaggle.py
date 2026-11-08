@@ -5,6 +5,7 @@ import json
 import os
 import shutil
 from collections import Counter
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 from scraper import (
@@ -127,13 +128,47 @@ def flat(j, flags):
 def collapse(rows):
     """Identical postings (same company, title, team, location, open/closed) become one row with `openings`, so bulk-posted roles don't pad the file."""
     g = {}
-    for r in sorted(rows, key=lambda r: (r.get("first_seen") or "", r.get("url") or "")):
-        k = (r.get("company", ""), (r.get("title") or "").lower().strip(), (r.get("team") or "").lower(), (r.get("location") or "").lower().strip(), bool(r.get("closed_at")))
+    for r in sorted(rows, key=lambda r: (str(r.get("first_seen") or ""), str(r.get("url") or ""))):
+        k = (str(r.get("company") or ""), str(r.get("title") or "").lower().strip(), str(r.get("team") or "").lower(), str(r.get("location") or "").lower().strip(), bool(r.get("closed_at")))
         if k in g:
             g[k]["openings"] += 1
         else:
             g[k] = {**r, "openings": 1}
-    return sorted(g.values(), key=lambda r: (r.get("company", ""), r.get("title", ""), r.get("url", "")))
+    return sorted(g.values(), key=lambda r: (str(r.get("company") or ""), str(r.get("title") or ""), str(r.get("url") or "")))
+
+
+def process_board(fpath):
+    src = fpath.stem.split("_")[0]
+    if src in SKIP:
+        return None
+    try:
+        content = fpath.read_text(encoding="utf-8")
+    except Exception:
+        return None
+
+    board_jobs = []
+    for line in content.split("\n"):
+        line = line.strip()
+        if not line:
+            continue
+        try:
+            j = json.loads(line)
+        except Exception:
+            continue
+        j.setdefault("source", src)
+        j.setdefault("url", url_of(j.get("id", "")))
+        j.setdefault("level", level(j.get("title", ""), j.get("years")))
+        j.setdefault("category", category(j.get("title", ""), j.get("team")))
+        for k, v in DEFAULTS.items():
+            j.setdefault(k, list(v) if isinstance(v, list) else v)
+        board_jobs.append(j)
+
+    if not board_jobs:
+        return None
+
+    flags = board_ghost_flags([j for j in board_jobs if j.get("closed_at") is None])
+    b_rows = collapse(map(lambda j: flat(j, flags), board_jobs))
+    return b_rows
 
 
 files = [DIR / f for f in os.listdir(DIR) if f.endswith(".jsonl")] if DIR.exists() else []
@@ -147,49 +182,22 @@ with open(out / "jobs.csv", "w", encoding="utf-8", newline="") as f_jobs:
     w = csv.DictWriter(f_jobs, list(COLUMNS), extrasaction="ignore")
     w.writeheader()
 
-    for fpath in files:
-        src = fpath.stem.split("_")[0]
-        if src in SKIP:
-            continue
-        try:
-            content = fpath.read_text(encoding="utf-8")
-        except Exception:
-            continue
-
-        board_jobs = []
-        for line in content.split("\n"):
-            line = line.strip()
-            if not line:
+    with ThreadPoolExecutor(max_workers=8) as ex:
+        for b_rows in ex.map(process_board, files, chunksize=100):
+            if not b_rows:
                 continue
-            try:
-                j = json.loads(line)
-            except Exception:
-                continue
-            j.setdefault("source", src)
-            j.setdefault("url", url_of(j["id"]))
-            j.setdefault("level", level(j["title"], j.get("years")))
-            j.setdefault("category", category(j["title"], j.get("team")))
-            for k, v in DEFAULTS.items():
-                j.setdefault(k, list(v) if isinstance(v, list) else v)
-            board_jobs.append(j)
+            w.writerows(b_rows)
+            total_rows += len(b_rows)
 
-        if not board_jobs:
-            continue
-
-        flags = board_ghost_flags([j for j in board_jobs if j.get("closed_at") is None])
-        b_rows = collapse(map(lambda j: flat(j, flags), board_jobs))
-        w.writerows(b_rows)
-        total_rows += len(b_rows)
-
-        for r in b_rows:
-            if not r.get("closed_at"):
-                live_count += 1
-                c = r.get("company")
-                if c:
-                    live_companies.add(c)
-                cat = r.get("category")
-                if cat and cat != "other":
-                    fields_counter[cat] += 1
+            for r in b_rows:
+                if not r.get("closed_at"):
+                    live_count += 1
+                    c = r.get("company")
+                    if c:
+                        live_companies.add(c)
+                    cat = r.get("category")
+                    if cat and cat != "other":
+                        fields_counter[cat] += 1
 
 # Company stats
 cached_comp = None
