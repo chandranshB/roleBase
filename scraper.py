@@ -2312,10 +2312,10 @@ def merge(db, fetched, today, pruned=None):
     """db: id->job. fetched: scope->jobs, ONLY scopes that fetched OK (so failures never close jobs).
     Rows that age out are appended to `pruned` if given, so the caller can archive them."""
     seen = {j["id"] for jobs in fetched.values() for j in jobs}
-    tkey = lambda i, o: (i.rsplit(":", 1)[0], re.sub(r"\W", "", o["title"].lower()))
+    tkey = lambda i, o: (i.rsplit(":", 1)[0], re.sub(r"\W", "", str(o.get("title") or "").lower()))
     closed = {}  # (board, title) -> how many jobs with that title already closed there: a new one is a repost
     for i, o in db.items():
-        if o["closed_at"]:
+        if o.get("closed_at"):
             closed[tkey(i, o)] = closed.get(tkey(i, o), 0) + 1
     for jobs in fetched.values():
         for j in jobs:
@@ -2323,10 +2323,10 @@ def merge(db, fetched, today, pruned=None):
             db[j["id"]] = {**j, "first_seen": old["first_seen"] if old else today, "closed_at": None,
                            "reposts": old.get("reposts", 0) if old else closed.get(tkey(j["id"], j), 0)}
     for i, o in db.items():
-        if o["closed_at"] is None and i not in seen and i.rsplit(":", 1)[0] in fetched:
+        if o.get("closed_at") is None and i not in seen and i.rsplit(":", 1)[0] in fetched:
             o["closed_at"] = today
     cutoff = (dt.date.fromisoformat(today) - dt.timedelta(KEEP_CLOSED_DAYS)).isoformat()
-    keep = {i: o for i, o in db.items() if not (o["closed_at"] and o["closed_at"] < cutoff)}
+    keep = {i: o for i, o in db.items() if not (o.get("closed_at") and isinstance(o["closed_at"], str) and o["closed_at"] < cutoff)}
     if pruned is not None:
         pruned.extend(o for i, o in db.items() if i not in keep)
     return keep
@@ -2508,7 +2508,7 @@ def main():
                     continue
 
                 closed_at = j.get("closed_at")
-                if closed_at and closed_at < cutoff:
+                if closed_at and isinstance(closed_at, str) and closed_at < cutoff:
                     modified = True
                     b_pruned.append([
                         j.get("id", ""), j.get("company", ""), j.get("level", ""), j.get("category", ""),

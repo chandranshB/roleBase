@@ -96,14 +96,35 @@ flags = ghost_flags(shown)
 
 
 def row(j):
-    lo, hi, cur = j["pay"] or (0, 0, "")
-    score = sum(p for _, p in flags.get(j["id"], []))
+    pay = j.get("pay")
+    if pay and len(pay) >= 3:
+        lo, hi, cur = pay[0], pay[1], pay[2]
+    else:
+        lo, hi, cur = 0, 0, ""
+    score = sum(p for _, p in flags.get(j.get("id", ""), []))
     lvl = levels_map.get(j.get("level"), 2)
     src = sources_map.get(j.get("source"), 0)
-    return [j["title"], j["company"], j["location"], int(bool(j.get("remote"))), lvl, src,
-            str(j.get("posted") or j.get("first_seen") or ""), j["url"], j["category"], j["employment"], -1 if j.get("years") is None else j["years"],
-            lo, hi, cur, ",".join(j.get("skills") or []), j.get("team") or "", score, "; ".join(r for r, _ in flags.get(j["id"], [])) if score >= 2 else "",
-            int(fresher_ok(j))]
+    return [
+        str(j.get("title") or ""),
+        str(j.get("company") or ""),
+        str(j.get("location") or ""),
+        int(bool(j.get("remote"))),
+        lvl,
+        src,
+        str(j.get("posted") or j.get("first_seen") or ""),
+        str(j.get("url") or ""),
+        str(j.get("category") or ""),
+        str(j.get("employment") or ""),
+        -1 if j.get("years") is None else j["years"],
+        lo,
+        hi,
+        cur,
+        ",".join(j.get("skills") or []),
+        str(j.get("team") or ""),
+        score,
+        "; ".join(r for r, _ in flags.get(j.get("id", ""), [])) if score >= 2 else "",
+        int(fresher_ok(j))
+    ]
 
 
 rows = sorted(map(row, shown), key=lambda r: str(r[6]), reverse=True)

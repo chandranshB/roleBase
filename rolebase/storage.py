@@ -115,10 +115,10 @@ def merge(db: Dict[str, Dict[str, Any]], fetched: Dict[str, List[Dict[str, Any]]
     """Merge newly crawled board jobs into current state; track closures and reposts."""
     seen = {j["id"] for jobs in fetched.values() for j in jobs}
     def tkey(i: str, o: Dict[str, Any]) -> tuple:
-        return (i.rsplit(":", 1)[0], re.sub(r"\W", "", o["title"].lower()))
+        return (i.rsplit(":", 1)[0], re.sub(r"\W", "", str(o.get("title") or "").lower()))
     closed = {}
     for i, o in db.items():
-        if o["closed_at"]:
+        if o.get("closed_at"):
             closed[tkey(i, o)] = closed.get(tkey(i, o), 0) + 1
     for jobs in fetched.values():
         for j in jobs:
@@ -130,10 +130,10 @@ def merge(db: Dict[str, Dict[str, Any]], fetched: Dict[str, List[Dict[str, Any]]
                 "reposts": old.get("reposts", 0) if old else closed.get(tkey(j["id"], j), 0)
             }
     for i, o in db.items():
-        if o["closed_at"] is None and i not in seen and i.rsplit(":", 1)[0] in fetched:
+        if o.get("closed_at") is None and i not in seen and i.rsplit(":", 1)[0] in fetched:
             o["closed_at"] = today
     cutoff = (dt.date.fromisoformat(today) - dt.timedelta(KEEP_CLOSED_DAYS)).isoformat()
-    keep = {i: o for i, o in db.items() if not (o["closed_at"] and o["closed_at"] < cutoff)}
+    keep = {i: o for i, o in db.items() if not (o.get("closed_at") and isinstance(o["closed_at"], str) and o["closed_at"] < cutoff)}
     if pruned is not None:
         pruned.extend(o for i, o in db.items() if i not in keep)
     return keep

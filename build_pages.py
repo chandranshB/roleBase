@@ -75,30 +75,35 @@ def listing(jobs, cmap, per_company=3, limit=60):
     """Newest first, at most `per_company` per employer, so one big employer doesn't fill the page."""
     out, seen = [], Counter()
     for j in sorted(jobs, key=lambda j: str(j.get("posted") or j.get("first_seen") or ""), reverse=True):
-        if seen[j["company"]] >= per_company:
+        comp = j.get("company", "")
+        if seen[comp] >= per_company:
             continue
-        seen[j["company"]] += 1
+        seen[comp] += 1
         out.append(j)
         if len(out) >= limit:
             break
     items = []
     for j in out:
-        co = esc(j["company"])
-        co = f'<a href="{BASE}/companies/{cmap[j["company"]]}/">{co}</a>' if j["company"] in cmap else co
-        bits = [b for b in (j["location"], j["level"].capitalize() + " level", j["posted"] or j["first_seen"]) if b]
-        items.append(f'<li><b>{esc(j["title"])}</b>{co}<br><small>{esc(" · ".join(bits))} · '
-                     f'<a href="{esc(j["url"])}" rel="nofollow noopener">View the original posting</a></small></li>')
+        comp_name = j.get("company", "")
+        co = esc(comp_name)
+        co = f'<a href="{BASE}/companies/{cmap[comp_name]}/">{co}</a>' if comp_name in cmap else co
+        lvl_str = (j.get("level") or "mid").capitalize() + " level"
+        bits = [b for b in (j.get("location"), lvl_str, j.get("posted") or j.get("first_seen")) if b]
+        items.append(f'<li><b>{esc(j.get("title", ""))}</b>{co}<br><small>{esc(" · ".join(bits))} · '
+                     f'<a href="{esc(j.get("url", ""))}" rel="nofollow noopener">View the original posting</a></small></li>')
     return '<ul class="jobs">' + "".join(items) + "</ul>"
 
 
 def stats_text(jobs, label, company=None):
     n = len(jobs)
+    if not n:
+        return "", Counter(), ""
     fresh = sum(map(fresher_ok, jobs))
-    remote = sum(bool(j["remote"]) for j in jobs)
-    paid = sum(bool(j["pay"]) for j in jobs)
-    emp = Counter(j["company"] for j in jobs)
-    loc = Counter(j["location"].split(",")[0].strip() for j in jobs if j["location"] and not re.search(r"remote|locations?|^[0-9]", j["location"].lower()))
-    sk = Counter(s for j in jobs for s in j["skills"])
+    remote = sum(bool(j.get("remote")) for j in jobs)
+    paid = sum(bool(j.get("pay")) for j in jobs)
+    emp = Counter(j.get("company", "") for j in jobs if j.get("company"))
+    loc = Counter(str(j.get("location", "")).split(",")[0].strip() for j in jobs if j.get("location") and not re.search(r"remote|locations?|^[0-9]", str(j.get("location", "")).lower()))
+    sk = Counter(s for j in jobs for s in (j.get("skills") or []))
     who = f"at {company}" if company else f"from {len(emp):,} employers"
     t = (f"{n:,} open {label} listings {who}, as of {TODAY}. {100 * fresh // n}% are open to people with up to two years of experience, "
          f"{100 * remote // n}% can be done remotely and {100 * paid // n}% state a salary.")
@@ -154,14 +159,15 @@ def main():
     home = ("RoleBase", f"{BASE}/")
     by_cat = {}
     for j in jobs:
-        by_cat.setdefault(j["category"], []).append(j)
+        cat_key = j.get("category") or ""
+        by_cat.setdefault(cat_key, []).append(j)
 
     # collections people actually search for, then every field
     special = [
         ("entry-level-jobs", "Entry-level jobs", "entry-level", [j for j in jobs if fresher_ok(j)],
          "Roles open to people with up to two years of experience: stated as two years or less, or intern and junior roles that state nothing. Junior roles that quietly ask for three or more years are left out."),
-        ("remote-jobs", "Remote jobs", "remote", [j for j in jobs if j["remote"]], "Roles the employer lists as remote or work-from-anywhere."),
-        ("internships", "Internships", "internship", [j for j in jobs if j["level"] == "intern" or j["employment"] == "internship"],
+        ("remote-jobs", "Remote jobs", "remote", [j for j in jobs if j.get("remote")], "Roles the employer lists as remote or work-from-anywhere."),
+        ("internships", "Internships", "internship", [j for j in jobs if j.get("level") == "intern" or j.get("employment") == "internship"],
          "Internships, co-ops and student placements."),
     ]
     pages = [(s, t, lab, js, intro, None) for s, t, lab, js, intro in special]
@@ -199,13 +205,14 @@ def main():
     # one page per company
     by_company = {}
     for j in jobs:
-        by_company.setdefault(j["company"], []).append(j)
+        comp_key = j.get("company") or ""
+        by_company.setdefault(comp_key, []).append(j)
 
     for c in cs:
         name, s = c["company"], cmap[c["company"]]
         js = by_company.get(name, [])
         text, _, short = stats_text(js, "job", name)
-        cats = Counter(j["category"] for j in js)
+        cats = Counter(j.get("category") or "" for j in js)
         byf = join(('<a href="%s/fields/%s/">%s</a> (%d)' % (BASE, c, esc(FIELDS[c].lower()), v)) if c in FIELDS else "other (%d)" % v for c, v in cats.most_common(4))
         logo = f'<img class="lg" src="{BASE}/{logos[name].split("#")[0]}" alt="{esc(name)} logo" width="40" height="40">' if name in logos else ""
         body = (f"<h1>{logo}Jobs at {esc(name)}</h1><p class='lead'>{esc(text)} By field: {byf}.</p>"

@@ -130,7 +130,7 @@ def consolidate_shards(today: str = None) -> None:
                 continue
 
             closed_at = j.get("closed_at")
-            if closed_at and closed_at < cutoff:
+            if closed_at and isinstance(closed_at, str) and closed_at < cutoff:
                 modified = True
                 b_pruned.append([
                     j.get("id", ""), j.get("company", ""), j.get("level", ""), j.get("category", ""),

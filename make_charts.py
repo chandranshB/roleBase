@@ -61,12 +61,36 @@ def bars(title, sub, rows, fmt=lambda v: f"{v:,}"):
 
 def lines(title, sub, series, w=W, unit=""):
     """series: [(name, css index, [(date, value)])]; x positions follow the dates, so gaps in history show as gaps."""
-    days = sorted({d for _, _, p in series for d, _ in p})
-    top = max((v for _, _, p in series for _, v in p), default=0) or 1
-    x0, x1, y0, y1 = 64, w - 30, (118 if len(series) > 2 else 96), 250
-    days_n = [dt.date.fromisoformat(d).toordinal() for d in days]
-    span = (days_n[-1] - days_n[0]) if days else 0
-    gx = lambda d: x0 + (x1 - x0) * ((dt.date.fromisoformat(d).toordinal() - days_n[0]) / span if span else 0.5)
+    def _safe_date(d):
+        try:
+            return dt.date.fromisoformat(str(d).strip()[:10])
+        except Exception:
+            return None
+
+    clean_series = []
+    all_days = set()
+    for name, c, pts in series:
+        c_pts = []
+        for d, v in pts:
+            sd = _safe_date(d)
+            if sd is not None:
+                iso = sd.isoformat()
+                c_pts.append((iso, float(v)))
+                all_days.add(iso)
+        clean_series.append((name, c, c_pts))
+
+    days = sorted(all_days)
+    top = max((v for _, _, p in clean_series for _, v in p), default=0) or 1
+    x0, x1, y0, y1 = 64, w - 30, (118 if len(clean_series) > 2 else 96), 250
+    days_n = [_safe_date(d).toordinal() for d in days if _safe_date(d)]
+    span = (days_n[-1] - days_n[0]) if len(days_n) > 1 else 0
+
+    def gx(d):
+        sd = _safe_date(d)
+        if not sd or not days_n:
+            return x0
+        return x0 + (x1 - x0) * ((sd.toordinal() - days_n[0]) / span if span else 0.5)
+
     gy = lambda v: y1 - (y1 - y0) * v / top
     body = ""
     for k in range(5):
@@ -75,12 +99,12 @@ def lines(title, sub, series, w=W, unit=""):
                  f'<text class="axis" x="{x0 - 8}" y="{gy(v) + 4:.1f}" font-size="11" text-anchor="end">{v:,.0f}{unit}</text>')
     for d in (days[:1] + days[-1:] if len(days) > 1 else days):
         body += f'<text class="axis" x="{gx(d):.1f}" y="{y1 + 20}" font-size="11" text-anchor="middle">{d}</text>'
-    for i, (name, c, pts) in enumerate(series):
+    for i, (name, c, pts) in enumerate(clean_series):
         xy = [(gx(d), gy(v)) for d, v in pts]
         if len(xy) > 1:
             body += f'<polyline class="l{c}" points="{" ".join(f"{x:.1f},{y:.1f}" for x, y in xy)}"/>'
         body += "".join(f'<circle class="d{c}" cx="{x:.1f}" cy="{y:.1f}" r="3.5"/>' for x, y in xy)
-        lx, ly = (24 + i * 130, 82) if len(series) > 2 else (W - 230 + i * 120, 46)  # many series: legend on its own row under the subtitle
+        lx, ly = (24 + i * 130, 82) if len(clean_series) > 2 else (W - 230 + i * 120, 46)  # many series: legend on its own row under the subtitle
         body += (f'<circle class="d{c}" cx="{lx + 5}" cy="{ly}" r="5"/>'
                  f'<text x="{lx + 16}" y="{ly + 4}" font-size="12">{esc(name)}</text>')
     if len(days) < 2:
@@ -91,9 +115,19 @@ def lines(title, sub, series, w=W, unit=""):
 def pulse():
     p, open_, fresher = Path("data/pulse.csv"), Counter(), Counter()
     if p.exists():
-        for r in csv.DictReader(open(p, encoding="utf-8")):
-            open_[r["date"]] += int(r["open"])
-            fresher[r["date"]] += int(r["fresher"])
+        try:
+            with open(p, encoding="utf-8") as f:
+                for r in csv.DictReader(f):
+                    d = str(r.get("date") or "").strip()[:10]
+                    if not d:
+                        continue
+                    try:
+                        open_[d] += int(r.get("open") or 0)
+                        fresher[d] += int(r.get("fresher") or 0)
+                    except (ValueError, TypeError):
+                        continue
+        except Exception:
+            pass
     return sorted(open_.items()), sorted(fresher.items())
 
 
@@ -101,10 +135,23 @@ def skill_trends():
     """Share of skill-tagged open postings that mention each skill, per day (data/skills.csv); the 6 skills that lead today."""
     p, share = Path("data/skills.csv"), {}
     if p.exists():
-        for r in csv.DictReader(open(p, encoding="utf-8")):
-            if int(r["tagged"]):
-                share.setdefault(r["skill"], []).append((r["date"], 100 * int(r["jobs"]) / int(r["tagged"])))
-    lead = sorted(share, key=lambda s: -share[s][-1][1])
+        try:
+            with open(p, encoding="utf-8") as f:
+                for r in csv.DictReader(f):
+                    d = str(r.get("date") or "").strip()[:10]
+                    skill = str(r.get("skill") or "").strip()
+                    if not d or not skill:
+                        continue
+                    try:
+                        tagged = int(r.get("tagged") or 0)
+                        jobs = int(r.get("jobs") or 0)
+                        if tagged > 0:
+                            share.setdefault(skill, []).append((d, 100 * jobs / tagged))
+                    except (ValueError, TypeError):
+                        continue
+        except Exception:
+            pass
+    lead = sorted(share, key=lambda s: -share[s][-1][1] if share[s] else 0)
     top = [s for s in lead if s not in TECH][:3] + [s for s in lead if s in TECH][:3]  # three non-IT skills and three IT ones, so no field drowns the chart
     return [(SK.get(s, s.capitalize()), i + 1, share[s]) for i, s in enumerate(top)]
 
