@@ -5,6 +5,7 @@ Every job is enriched from its title/description: level, category, employment ty
 skills and pay. Only those facts are stored (never the description), and empty values are left out of the files.
 """
 import argparse
+from collections import Counter
 import csv
 import datetime as dt
 import functools
@@ -2455,9 +2456,46 @@ def main():
         cutoff = (dt.date.fromisoformat(today) - dt.timedelta(KEEP_CLOSED_DAYS)).isoformat()
         pruned = [o for o in db.values() if o["closed_at"] and o["closed_at"] < cutoff]
         if pruned:
+            pruned_scopes = {o["id"].rsplit(":", 1)[0] for o in pruned}
             db = {i: o for i, o in db.items() if not (o["closed_at"] and o["closed_at"] < cutoff)}
-            save(db)
+            save(db, target_scopes=pruned_scopes)
         log_history(db, pruned, today)
+
+        # Pre-compute charts cache so make_charts.py doesn't re-read 100k files
+        open_jobs = 0
+        levels_c = Counter()
+        categories_c = Counter()
+        skills_c = Counter()
+        companies_c = Counter()
+        comp_fresh_c = Counter()
+        for j in db.values():
+            if j.get("closed_at") is not None:
+                continue
+            open_jobs += 1
+            y = j.get("years")
+            lvl = j.get("level") or level(j.get("title", ""), y)
+            levels_c[lvl] += 1
+            cat = j.get("category") or category(j.get("title", ""), j.get("team"))
+            categories_c[cat] += 1
+            is_fresh = (lvl in ("intern", "junior", "mid")) and (y <= 2 if y is not None else lvl != "mid")
+            comp = clean_company(j.get("company", ""))
+            if comp and comp.lower() not in ("unknown", "none", "non renseigné", "non renseigne", "not specified", "null", "n/a"):
+                companies_c[comp] += 1
+                if is_fresh:
+                    comp_fresh_c[comp] += 1
+            for s in j.get("skills", []):
+                skills_c[s] += 1
+
+        charts_cache = {
+            "tot_open": open_jobs,
+            "levels": dict(levels_c),
+            "categories": dict(categories_c),
+            "skills": dict(skills_c),
+            "companies": dict(companies_c),
+            "comp_fresh": dict(comp_fresh_c),
+        }
+        Path("data/charts_cache.json").write_text(json.dumps(charts_cache), encoding="utf-8")
+
         n_open = sum(o["closed_at"] is None for o in db.values())
         print(f"Consolidation complete: {n_open:,} active jobs, {len(db) - n_open:,} closed jobs | {time.time() - t_start:.1f}s")
         return
@@ -2533,7 +2571,8 @@ def main():
     if target_scopes is not None and args.total_shards > 1:
         shard_out = Path(f"data/shards/shard-{args.shard}")
         shard_out.mkdir(parents=True, exist_ok=True)
-        target_names = {s.replace(":", "_").replace("/", "_") for s in target_scopes}
+        modified_scopes = set(fetched.keys())
+        target_names = {s.replace(":", "_").replace("/", "_") for s in modified_scopes}
         for name in target_names:
             src = DIR / f"{name}.jsonl"
             if src.exists():
