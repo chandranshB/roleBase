@@ -1,6 +1,6 @@
 import datetime as dt
 
-from scraper import (ATS, CAPPED, FEEDS, apple, bamboohr, breezy, category, clean_company, company_stats, country, employment, find_pay, fresher_ok, ghost_flags, level, merge, skills, slim,
+from scraper import (ATS, CAPPED, FEEDS, apple, bamboohr, breezy, category, clean_company, company_stats, country, employment, find_pay, fresher_ok, ghost_flags, level, load, merge, save, skills, slim,
                      phenom_job, pinpoint, rippling, run_all, themuse, url_of, usajobs_job, verdict, wd_posted, years_req, adp, jazzhr, jobvite, join, trakstar_hire, jobscore, zoho, icims, ultipro, dayforce, paylocity,
                      paycom, applicantpro, isolved, betterteam, gohire, freshteam, gem, recooty, csod, taleo, bullhorn,
                      successfactors, avature, recruiterflow, manatal, loxo, careerplug, comeet,
@@ -92,6 +92,8 @@ assert country("New York, NY") == "United States" and country("London, UK") == "
 assert country("Berlin, Germany") == "Germany" and country("Toronto, ON, Canada") == "Canada"
 assert country("Bengaluru, Karnataka, India") == "India" and country("Sydney, Australia") == "Australia"
 assert country("Calgary, AB") == "Canada" and country("Remote") == ""
+# load with target_scopes loads only those boards
+assert load(scopes=["nonexistent:test_scope"]) == {}
 
 # --- storage: slim drops empties and derivable bits, load() would restore them ---
 row = {"id": "ashby:acme:u1", "source": "ashby", "url": url_of("ashby:acme:u1"), "remote": False, "years": 0, "skills": [], "team": "",

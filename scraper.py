@@ -7,6 +7,7 @@ skills and pay. Only those facts are stored (never the description), and empty v
 import argparse
 import csv
 import datetime as dt
+import functools
 import html
 import json
 import os
@@ -114,20 +115,29 @@ def text(h):  # HTML (possibly entity-escaped) -> plain text
     return html.unescape(re.sub(r"<[^>]+>", " ", html.unescape(h or "")))
 
 
+RE_LEVELS = [(name, re.compile(rx, re.IGNORECASE)) for name, rx in LEVELS]
+RE_CATEGORIES = [(name, re.compile(rx, re.IGNORECASE)) for name, rx in CATEGORIES]
+
+
+@functools.lru_cache(maxsize=32768)
 def level(title, years=None, hint=None):
-    t = title.lower()
-    for name, rx in LEVELS:
-        if re.search(rx, t):
+    t = (title or "").lower()
+    for name, rx in RE_LEVELS:
+        if rx.search(t):
             return name
     if hint:
         return hint
     return "mid" if years is None else "junior" if years <= 1 else "mid" if years <= 4 else "senior"
 
 
+@functools.lru_cache(maxsize=32768)
 def category(*texts):  # title first, then team/department
     for t in texts:
-        for name, rx in CATEGORIES:
-            if re.search(rx, (t or "").lower()):
+        if not t:
+            continue
+        tl = t.lower()
+        for name, rx in RE_CATEGORIES:
+            if rx.search(tl):
                 return name
     return "other"
 
@@ -189,6 +199,11 @@ EVERGREEN_RX = re.compile(r"talent (community|network|pool|pipeline)|general app
 HIDDEN_RX = re.compile(r"confidential|stealth|undisclosed|anonymous|our client|staffing|recruit(er|ing|ment)|talent (solutions|partners)", re.I)
 
 
+@functools.lru_cache(maxsize=32768)
+def _clean_title(t):
+    return re.sub(r"\W", "", (t or "").lower())
+
+
 def ghost_flags(jobs, today=None):
     """id -> [(reason, points)] for open jobs. Heuristics for *possible* ghost jobs (no real vacancy, resume farming), never proof.
     2+ points = possibly ghost, 3+ = likely. Needs no stored data except `reposts`, which builds up as the scraper keeps running."""
@@ -196,18 +211,24 @@ def ghost_flags(jobs, today=None):
     same = {}
     for j in jobs:
         c = j.get("company", "")
-        t = re.sub(r"\W", "", (j.get("title") or "").lower())
+        t = _clean_title(j.get("title"))
         k = (c, t)
         same[k] = same.get(k, 0) + 1
     out = {}
     for j in jobs:
         c = j.get("company", "")
-        t = re.sub(r"\W", "", (j.get("title") or "").lower())
-        r, age = [], (today - dt.date.fromisoformat(j["posted"] or j["first_seen"])).days
-        if age >= 365:
-            r.append(("open for over a year", 2))
-        elif age >= 180:
-            r.append(("open for over 6 months", 1))
+        t = _clean_title(j.get("title"))
+        r = []
+        posted = j.get("posted") or j.get("first_seen")
+        if posted:
+            try:
+                age = (today - dt.date.fromisoformat(posted)).days
+                if age >= 365:
+                    r.append(("open for over a year", 2))
+                elif age >= 180:
+                    r.append(("open for over 6 months", 1))
+            except Exception:
+                pass
         if EVERGREEN_RX.search(j.get("title", "")):
             r.append(("talent-pool / expression-of-interest wording", 3))
         if HIDDEN_RX.search(c):
@@ -345,8 +366,13 @@ MAJOR_CITIES = {
 
 RE_US_STATE_END = re.compile(r'(?:,\s*|\s+)([A-Z]{2})(?:\s*;\s*|\s*$)', re.IGNORECASE)
 RE_COUNTRY_SPLIT = re.compile(r'[,;/|\-]+')
+RE_COUNTRY_MAP = [(re.compile(r'\b' + re.escape(k) + r'\b', re.IGNORECASE), v) for k, v in COUNTRY_MAP.items()]
+RE_US_STATES = [(re.compile(r'\b' + re.escape(state_name.lower()) + r'\b', re.IGNORECASE), "United States") for code, state_name in US_STATES.items()]
+RE_CA_PROVINCES = [(re.compile(r'\b' + re.escape(prov_name.lower()) + r'\b', re.IGNORECASE), "Canada") for code, prov_name in CA_PROVINCES.items()]
+RE_MAJOR_CITIES = [(re.compile(r'\b' + re.escape(city) + r'\b', re.IGNORECASE), cntry) for city, cntry in MAJOR_CITIES.items()]
 
 
+@functools.lru_cache(maxsize=32768)
 def country(loc: str) -> str:
     if not loc:
         return ""
@@ -368,23 +394,23 @@ def country(loc: str) -> str:
             return "Australia"
 
     # 2. Check full country names anywhere in string
-    for k, v in COUNTRY_MAP.items():
-        if re.search(r'\b' + re.escape(k) + r'\b', loc_lower):
+    for rx, v in RE_COUNTRY_MAP:
+        if rx.search(loc_lower):
             return v
 
     # 3. Check US full state names
-    for code, state_name in US_STATES.items():
-        if re.search(r'\b' + re.escape(state_name.lower()) + r'\b', loc_lower):
-            return "United States"
+    for rx, v in RE_US_STATES:
+        if rx.search(loc_lower):
+            return v
 
     # 4. Check Canadian province names
-    for code, prov_name in CA_PROVINCES.items():
-        if re.search(r'\b' + re.escape(prov_name.lower()) + r'\b', loc_lower):
-            return "Canada"
+    for rx, v in RE_CA_PROVINCES:
+        if rx.search(loc_lower):
+            return v
 
     # 5. Check major world cities
-    for city, cntry in MAJOR_CITIES.items():
-        if re.search(r'\b' + re.escape(city) + r'\b', loc_lower):
+    for rx, cntry in RE_MAJOR_CITIES:
+        if rx.search(loc_lower):
             return cntry
 
     # 6. Check regex ending with US state or Canadian province
@@ -2189,10 +2215,15 @@ def url_of(id):  # apply URL is derivable for ATS jobs, so it is only stored whe
     return URLS[src].format(s=rest[0], r=":".join(rest[1:])) if src in URLS else None
 
 
-def load():
+def load(scopes=None):
     # split("\n"), not splitlines(): titles can contain U+2028 etc., which splitlines() would cut on
     db = {}
-    files = list(DIR.glob("*.jsonl"))
+    if scopes is not None:
+        existing = set(os.listdir(DIR)) if DIR.exists() else set()
+        target_names = {s.replace(":", "_").replace("/", "_") + ".jsonl" for s in scopes}
+        files = [DIR / name for name in (target_names & existing)]
+    else:
+        files = [DIR / f for f in os.listdir(DIR) if f.endswith(".jsonl")] if DIR.exists() else []
 
     def read_one(f):
         items = []
@@ -2243,19 +2274,13 @@ def slim(j):  # drop empty values and anything derivable from other fields (load
 
 def save(db, target_scopes=None):  # one file per board; sorted + compact + LF => small files, diffs show only real changes
     DIR.mkdir(parents=True, exist_ok=True)
-    shards = {}
-    for i in sorted(db):
-        name = i.rsplit(":", 1)[0].replace(":", "_").replace("/", "_")
-        shards.setdefault(name, []).append(json.dumps(slim(db[i]), sort_keys=True, ensure_ascii=False, separators=(",", ":")))
-    if target_scopes is None:
-        for f in DIR.glob("*.jsonl"):
-            if f.stem not in shards:
-                f.unlink()
-        for name, lines in shards.items():
-            with open(DIR / f"{name}.jsonl", "w", encoding="utf-8", newline="\n") as f:
-                f.write("\n".join(lines) + "\n")
-    else:
+    if target_scopes is not None:
         target_names = {s.replace(":", "_").replace("/", "_") for s in target_scopes}
+        shards = {}
+        for i in sorted(db):
+            name = i.rsplit(":", 1)[0].replace(":", "_").replace("/", "_")
+            if name in target_names:
+                shards.setdefault(name, []).append(json.dumps(slim(db[i]), sort_keys=True, ensure_ascii=False, separators=(",", ":")))
         for name in target_names:
             lines = shards.get(name, [])
             target_file = DIR / f"{name}.jsonl"
@@ -2264,6 +2289,18 @@ def save(db, target_scopes=None):  # one file per board; sorted + compact + LF =
                     f.write("\n".join(lines) + "\n")
             elif target_file.exists():
                 target_file.unlink()
+        return
+
+    shards = {}
+    for i in sorted(db):
+        name = i.rsplit(":", 1)[0].replace(":", "_").replace("/", "_")
+        shards.setdefault(name, []).append(json.dumps(slim(db[i]), sort_keys=True, ensure_ascii=False, separators=(",", ":")))
+    for f in DIR.glob("*.jsonl"):
+        if f.stem not in shards:
+            f.unlink()
+    for name, lines in shards.items():
+        with open(DIR / f"{name}.jsonl", "w", encoding="utf-8", newline="\n") as f:
+            f.write("\n".join(lines) + "\n")
 
 
 def merge(db, fetched, today, pruned=None):
@@ -2378,6 +2415,7 @@ def main():
     parser.add_argument("--shard", type=int, default=0, help="Shard index (0-based)")
     parser.add_argument("--total-shards", type=int, default=1, help="Total number of parallel shards")
     parser.add_argument("--consolidate", action="store_true", help="Merge shards, prune, and log history")
+    parser.add_argument("--budget", type=int, default=RUN_BUDGET, help="Run budget in seconds")
     args, _ = parser.parse_known_args()
 
     t_start = time.time()
@@ -2426,12 +2464,6 @@ def main():
 
     cfg = json.loads(COMPANIES.read_text(encoding="utf-8"))
     tasks = [(f"{k}:{s}", lambda k=k, s=s, n=n: ATS[k](s, n)) for k, boards in cfg.items() for s, n in (boards.items() if isinstance(boards, dict) else [(x, "") for x in boards])] + list(FEEDS.items())
-    db = load()
-    open_n = {}
-    for i, o in db.items():
-        if o["closed_at"] is None:
-            open_n[i.rsplit(":", 1)[0]] = open_n.get(i.rsplit(":", 1)[0], 0) + 1
-    tasks.sort(key=lambda t: -open_n.get(t[0], 0))  # biggest boards first, so the pool never ends waiting on one slow giant
 
     target_scopes = None
     if args.total_shards > 1:
@@ -2439,10 +2471,17 @@ def main():
         target_scopes = {t[0] for t in tasks}
         print(f"Shard {args.shard + 1}/{args.total_shards}: assigned {len(tasks)} boards")
 
+    db = load(target_scopes)
+    open_n = {}
+    for i, o in db.items():
+        if o["closed_at"] is None:
+            open_n[i.rsplit(":", 1)[0]] = open_n.get(i.rsplit(":", 1)[0], 0) + 1
+    tasks.sort(key=lambda t: -open_n.get(t[0], 0))  # biggest boards first, so the pool never ends waiting on one slow giant
+
     lines = [l for l in HEALTH.read_text(encoding="utf-8").split(chr(10)) if l] if HEALTH.exists() else []
     health = {r.pop("b"): r for r in map(json.loads, lines)}
 
-    results, unfinished = run_all(tasks)
+    results, unfinished = run_all(tasks, budget=args.budget)
 
     fetched, ats_keys, failed = {}, set(), []
     norm = lambda j: re.sub(r"\W", "", clean_company(j["company"]) + j["title"]).lower()
@@ -2475,7 +2514,9 @@ def main():
         busy[r[0].split(":")[0]] = busy.get(r[0].split(":")[0], 0) + r[3]
     print("busy per lane (seconds of work / workers): " + ", ".join(f"{k} {v:.0f}/{LANES.get(k, 1)}" for k, v in sorted(busy.items(), key=lambda kv: -kv[1])[:6]))
     if not fetched and tasks:
-        sys.exit("all assigned sources failed")
+        print("all assigned sources failed")
+        sys.stdout.flush()
+        os._exit(1)
 
     before, pruned = set(db), []
     db = merge(db, fetched, today, pruned)
@@ -2503,8 +2544,8 @@ def main():
         )
     if unfinished:  # everything is saved; threads stuck in a slow request must not keep the process (and the Actions job) alive
         print(f"::warning title=scrape timed out::{len(unfinished)} sources did not finish: {', '.join(unfinished[:10])}")
-        sys.stdout.flush()
-        os._exit(0)
+    sys.stdout.flush()
+    os._exit(0)
 
 
 if __name__ == "__main__":

@@ -15,17 +15,21 @@ from pathlib import Path
 from scraper import company_stats, fresher_ok, ghost_flags, load
 
 levels = ["intern", "junior", "mid", "senior", "lead", "staff+", "manager+"]  # menu order, low to high
+levels_map = {l: i for i, l in enumerate(levels)}
 jobs = [j for j in load().values() if j["closed_at"] is None]
 sources = sorted({j["source"] for j in jobs})
+sources_map = {s: i for i, s in enumerate(sources)}
 flags = ghost_flags(jobs)
 
 
 def row(j):
     lo, hi, cur = j["pay"] or (0, 0, "")
-    score = sum(p for _, p in flags[j["id"]])
-    return [j["title"], j["company"], j["location"], int(j["remote"]), levels.index(j["level"]), sources.index(j["source"]),
+    score = sum(p for _, p in flags.get(j["id"], []))
+    lvl = levels_map.get(j.get("level"), 2)
+    src = sources_map.get(j.get("source"), 0)
+    return [j["title"], j["company"], j["location"], int(j["remote"]), lvl, src,
             j["posted"] or j["first_seen"], j["url"], j["category"], j["employment"], -1 if j["years"] is None else j["years"],
-            lo, hi, cur, ",".join(j["skills"]), j["team"], score, "; ".join(r for r, _ in flags[j["id"]]) if score >= 2 else "",
+            lo, hi, cur, ",".join(j["skills"]), j["team"], score, "; ".join(r for r, _ in flags.get(j["id"], [])) if score >= 2 else "",
             int(fresher_ok(j))]
 
 

@@ -29,6 +29,7 @@ jobs:
           USAJOBS_EMAIL: ${{ secrets.USAJOBS_EMAIL }}
         run: python test_scraper.py && python scraper.py --shard ${{ matrix.shard }} --total-shards ${{ matrix.total }}
       - name: Upload Shard Artifacts
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: shard-${{ matrix.shard }}
@@ -37,7 +38,7 @@ jobs:
 
   consolidate:
     needs: scrape
-    if: github.event_name != 'push'
+    if: ${{ always() && !cancelled() && github.event_name != 'push' }}
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
@@ -70,7 +71,7 @@ jobs:
 
   deploy: # rebuild the Pages site from the freshly committed data
     needs: [scrape, consolidate]
-    if: ${{ !cancelled() && !contains(needs.*.result, 'failure') }} # a push skips the scrape job; a failed scrape still stops the deploy
+    if: ${{ !cancelled() && (github.event_name == 'push' || needs.consolidate.result == 'success') }} # a push skips the scrape job; a failed scrape still stops the deploy
     runs-on: ubuntu-latest
     permissions: { pages: write, id-token: write, contents: read }
     environment:

@@ -83,13 +83,13 @@ def flat(j):
 def collapse(rows):
     """Identical postings (same company, title, team, location, open/closed) become one row with `openings`, so bulk-posted roles don't pad the file."""
     g = {}
-    for r in sorted(rows, key=lambda r: (r["first_seen"], r["url"])):
-        k = (r["company"], r["title"].lower().strip(), (r["team"] or "").lower(), r["location"].lower().strip(), bool(r["closed_at"]))
+    for r in sorted(rows, key=lambda r: (r.get("first_seen") or "", r.get("url") or "")):
+        k = (r.get("company", ""), (r.get("title") or "").lower().strip(), (r.get("team") or "").lower(), (r.get("location") or "").lower().strip(), bool(r.get("closed_at")))
         if k in g:
             g[k]["openings"] += 1
         else:
             g[k] = {**r, "openings": 1}
-    return sorted(g.values(), key=lambda r: (r["company"], r["title"], r["url"]))
+    return sorted(g.values(), key=lambda r: (r.get("company", ""), r.get("title", ""), r.get("url", "")))
 
 
 rows = collapse(map(flat, jobs))
