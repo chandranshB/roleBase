@@ -1,6 +1,22 @@
+# Python runtime and bytecode
 __pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+
+# Testing and linting caches
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Local artifacts and temporary output
 kaggle/
 _site/
 logo-cache/
-.claude/
 scratch/
+.claude/
+.gemini/
+.env

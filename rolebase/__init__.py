@@ -1,0 +1,86 @@
+"""RoleBase: High-throughput job scraping, normalization, and dataset generation engine."""
+
+__version__ = "2.0.0"
+
+from rolebase.client import Client, S, body, day, get, text
+from rolebase.config import (
+    CAPPED,
+    COMPANIES,
+    DEFAULTS,
+    DIR,
+    HEALTH,
+    KEEP_CLOSED_DAYS,
+    LANE_OF,
+    LANES,
+    PATIENCE,
+    RUN_BUDGET,
+    SKIP,
+    TIMEOUT,
+    URLS,
+)
+from rolebase.consolidate import company_stats, consolidate_shards
+from rolebase.crawlers import ATS, FEEDS, get_crawler
+from rolebase.ghost import board_ghost_flags, ghost_flags
+from rolebase.normalize import (
+    category,
+    clean_company,
+    country,
+    employment,
+    find_pay,
+    fresher_ok,
+    infer_country,
+    job,
+    level,
+    skills,
+    url_of,
+    years_req,
+)
+from rolebase.storage import append_csv, collapse, load, log_history, merge, save, slim
+
+__all__ = [
+    "Client",
+    "S",
+    "body",
+    "get",
+    "text",
+    "day",
+    "DIR",
+    "COMPANIES",
+    "HEALTH",
+    "KEEP_CLOSED_DAYS",
+    "PATIENCE",
+    "RUN_BUDGET",
+    "TIMEOUT",
+    "URLS",
+    "DEFAULTS",
+    "CAPPED",
+    "SKIP",
+    "LANES",
+    "LANE_OF",
+    "clean_company",
+    "level",
+    "category",
+    "years_req",
+    "skills",
+    "employment",
+    "find_pay",
+    "country",
+    "infer_country",
+    "fresher_ok",
+    "url_of",
+    "job",
+    "ghost_flags",
+    "board_ghost_flags",
+    "load",
+    "slim",
+    "save",
+    "merge",
+    "collapse",
+    "append_csv",
+    "log_history",
+    "company_stats",
+    "consolidate_shards",
+    "ATS",
+    "FEEDS",
+    "get_crawler",
+]

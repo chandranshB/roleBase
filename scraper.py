@@ -365,7 +365,7 @@ MAJOR_CITIES = {
     "seoul": "South Korea", "singapore": "Singapore", "hong kong": "Hong Kong"
 }
 
-RE_US_STATE_END = re.compile(r'(?:,\s*|\s+)([A-Z]{2})(?:\s*;\s*|\s*$)', re.IGNORECASE)
+RE_US_STATE_END = re.compile(r'(?:,\s*|\s+)([A-Z]{2})(?:\s+\d{5}(?:-\d{4})?)?(?:\s*;\s*|\s*$)', re.IGNORECASE)
 RE_COUNTRY_SPLIT = re.compile(r'[,;/|\-]+')
 RE_COUNTRY_MAP = [(re.compile(r'\b' + re.escape(k) + r'\b', re.IGNORECASE), v) for k, v in COUNTRY_MAP.items()]
 RE_US_STATES = [(re.compile(r'\b' + re.escape(state_name.lower()) + r'\b', re.IGNORECASE), "United States") for code, state_name in US_STATES.items()]

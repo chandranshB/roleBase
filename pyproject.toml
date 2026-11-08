@@ -1,0 +1,55 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rolebase"
+version = "2.0.0"
+description = "High-throughput, distributed job scraping and aggregation engine indexing 50+ enterprise ATS platforms."
+readme = "README.md"
+authors = [{ name = "Chandransh Binjola" }]
+license = { file = "LICENSE" }
+requires-python = ">=3.10"
+dependencies = [
+    "requests>=2.28.0",
+    "beautifulsoup4>=4.11.0",
+    "pillow>=10.0.0",
+    "six>=1.16.0",
+    "kaggle>=1.6.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-cov>=4.1.0",
+    "ruff>=0.4.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["rolebase*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests", "test_scraper.py"]
+python_files = ["test_*.py"]
+addopts = "-v --tb=short"
+
+[tool.ruff]
+line-length = 130
+target-version = "py312"
+exclude = [
+    ".git",
+    "__pycache__",
+    "data",
+    "scratch",
+    "_site",
+    "kaggle",
+    "logo-cache",
+]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "B", "I"]
+ignore = ["E501", "B008", "B905"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["rolebase", "scraper"]
