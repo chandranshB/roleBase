@@ -2216,7 +2216,7 @@ def url_of(id):  # apply URL is derivable for ATS jobs, so it is only stored whe
     return URLS[src].format(s=rest[0], r=":".join(rest[1:])) if src in URLS else None
 
 
-def load(scopes=None):
+def load(scopes=None, open_only=False):
     # split("\n"), not splitlines(): titles can contain U+2028 etc., which splitlines() would cut on
     db = {}
     if scopes is not None:
@@ -2236,9 +2236,13 @@ def load(scopes=None):
             l = l.strip()
             if not l:
                 continue
+            if open_only and '"closed_at":' in l:
+                continue
             try:
                 j = json.loads(l)
             except Exception:
+                continue
+            if open_only and j.get("closed_at") is not None:
                 continue
             j.setdefault("source", j["id"].split(":")[0])
             j.setdefault("url", url_of(j["id"]))

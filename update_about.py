@@ -18,6 +18,6 @@ def about_text(n):
 
 
 if __name__ == "__main__":
-    n = sum(j["closed_at"] is None for j in load().values())
+    n = len(load(open_only=True))
     subprocess.run(["gh", "repo", "edit", "--description", about_text(n)], check=True)  # repo from GH_REPO or the git remote
     print(f"About text set: {n} open jobs")

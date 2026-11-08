@@ -115,7 +115,7 @@ def stats_text(jobs, label, company=None):
 
 
 def main():
-    jobs = [j for j in load().values() if j["closed_at"] is None]
+    jobs = list(load(open_only=True).values())
     flags = ghost_flags(jobs)
     jobs = [j for j in jobs if sum(p for _, p in flags.get(j["id"], [])) < 2 and j["url"]]  # no likely ghost jobs on pages we want indexed
     cs = company_stats(jobs, min_roles=5)

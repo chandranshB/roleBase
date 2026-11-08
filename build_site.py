@@ -16,7 +16,7 @@ from scraper import company_stats, fresher_ok, ghost_flags, load
 
 levels = ["intern", "junior", "mid", "senior", "lead", "staff+", "manager+"]  # menu order, low to high
 levels_map = {l: i for i, l in enumerate(levels)}
-jobs = [j for j in load().values() if j["closed_at"] is None]
+jobs = list(load(open_only=True).values())
 sources = sorted({j["source"] for j in jobs})
 sources_map = {s: i for i, s in enumerate(sources)}
 flags = ghost_flags(jobs)

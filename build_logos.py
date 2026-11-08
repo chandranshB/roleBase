@@ -173,8 +173,8 @@ def tidy(b):
 def main():
     cfg = json.loads(Path("companies.json").read_text(encoding="utf-8"))
     domains = json.loads(Path("domains.json").read_text(encoding="utf-8"))
-    db_jobs = list(load().values())
-    live_companies = {j["company"] for j in db_jobs if j.get("closed_at") is None}
+    db_jobs = list(load(open_only=True).values())
+    live_companies = {j["company"] for j in db_jobs}
     todo, seen = [], set()
     for s, n in cfg.get("lever", {}).items():
         if (n in live_companies or n in domains) and n not in seen:
