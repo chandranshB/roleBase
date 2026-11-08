@@ -1,169 +1,193 @@
-<p><img src="docs/logo.svg" alt="RoleBase" height="48"></p>
+<p align="center">
+  <img src="docs/logo.svg" alt="RoleBase" height="56">
+</p>
 
-# RoleBase: open job search and job-market data for every field
+<h1 align="center">RoleBase</h1>
 
-RoleBase is a free, open job board and job-market dataset that updates itself. It collects over 10.05 million active open jobs (and over 16.25 million cumulative tracked jobs) directly from more than 110,000 employers' and recruiters' career boards across 51 enterprise ATS platforms (Workday, Greenhouse, Lever, Ashby, SmartRecruiters, ADP, UKG Pro / UltiPro, Dayforce, Paylocity, Paycom, ApplicantPro, iSolved, Betterteam, GoHire, Freshteam, Gem, Recooty, CSOD, Taleo, Bullhorn, SAP SuccessFactors, Avature, Recruiterflow, Manatal, Loxo, CareerPlug, Comeet, Crelate, ClearCompany, PageUp People, Join, Personio, BambooHR, Rippling, Oracle HCM, JazzHR, Jobvite, JobScore, Zoho Recruit, iCIMS, and more) and from open job feeds, in nursing, retail, finance, education, manufacturing, logistics, engineering and many other fields, and lets you filter for entry-level, remote and salary-listed roles. Postings are kept in git, tagged with level, field, skills and pay, and tracked until they disappear, so you can also see which listings look like ghost jobs. The result is published as a searchable website and a Kaggle dataset, and everything runs on GitHub Actions.
+<p align="center">
+  <strong>Automated, distributed open job index and labor-market dataset across 50+ enterprise ATS platforms.</strong>
+</p>
 
-**[Search the jobs](https://chandranshb.github.io/roleBase/)** · **[Kaggle dataset](https://www.kaggle.com/datasets/chandranshbinjola/job-listings)** · **[Roadmap](../../issues)**
+<p align="center">
+  <a href="https://github.com/chandranshB/roleBase/actions/workflows/ci.yml"><img src="https://github.com/chandranshB/roleBase/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
+  <a href="https://github.com/chandranshB/roleBase/actions/workflows/scrape.yml"><img src="https://github.com/chandranshB/roleBase/actions/workflows/scrape.yml/badge.svg" alt="Scrape & Deploy"></a>
+  <a href="https://github.com/chandranshB/roleBase/actions/workflows/kaggle.yml"><img src="https://github.com/chandranshB/roleBase/actions/workflows/kaggle.yml/badge.svg" alt="Kaggle Export"></a>
+  <a href="https://www.kaggle.com/datasets/chandranshbinjola/job-listings"><img src="https://img.shields.io/badge/Kaggle-Dataset-20BEFF?logo=kaggle&logoColor=white" alt="Kaggle"></a>
+  <a href="https://chandranshb.github.io/roleBase/"><img src="https://img.shields.io/badge/Web-Live%20Search-success" alt="Live Site"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-AGPL--3.0-blue.svg" alt="License: AGPL-3.0"></a>
+</p>
 
-## Who it's for
+---
 
-- **People looking for work**, including students and new graduates. Turn on "fresher-friendly" to see roles that ask for two years of experience or less, or browse the companies that hire the most of them.
-- **Career changers** who want to see what a field actually asks for: level, years of experience, skills and, where employers state it, pay.
-- **Researchers, analysts and journalists** who need a job market dataset with history: when postings appear, how long they stay open and which companies repost the same role.
+## Overview
 
-## Find jobs by field
+RoleBase continuously aggregates, enriches, and archives open job vacancies directly from over **110,000 employer career portals** across **51 applicant tracking systems** (Workday, Greenhouse, Lever, Ashby, SmartRecruiters, ADP, UKG Pro, Dayforce, Paylocity, Oracle HCM, Eightfold, and more).
 
-The site is a plain search box that understands everyday phrases. A few starting points:
+Every posting is parsed and normalized with seniority level, professional field, required years of experience, yearly salary ranges, and technical/domain skills. Historical job closures are tracked to detect stale listings and ghost jobs.
 
-| Looking for | Try |
-|---|---|
-| Healthcare and care work | [nursing jobs](https://chandranshb.github.io/roleBase/#q=nurse&all=1) · [pharmacy and clinical roles](https://chandranshb.github.io/roleBase/#q=pharmacist&all=1) |
-| Retail, food and hospitality | [store and restaurant jobs](https://chandranshb.github.io/roleBase/#q=retail&all=1) · [part-time work](https://chandranshb.github.io/roleBase/#q=part-time&all=1) |
-| Banking, finance and insurance | [finance jobs](https://chandranshb.github.io/roleBase/#q=finance&all=1) · [accounting roles](https://chandranshb.github.io/roleBase/#q=accountant&all=1) |
-| Manufacturing, trades and logistics | [warehouse jobs](https://chandranshb.github.io/roleBase/#q=warehouse&all=1) · [production roles](https://chandranshb.github.io/roleBase/#q=production&all=1) |
-| Sales, marketing and support | [sales jobs](https://chandranshb.github.io/roleBase/#q=sales&all=1) · [customer support](https://chandranshb.github.io/roleBase/#q=customer%20support&all=1) |
-| Software, data and design | [engineering jobs](https://chandranshb.github.io/roleBase/#q=engineer&all=1) · [data roles](https://chandranshb.github.io/roleBase/#q=data&all=1) |
-| Work from anywhere | [remote jobs](https://chandranshb.github.io/roleBase/#q=remote&all=1) · [internships](https://chandranshb.github.io/roleBase/#q=internship&all=1) |
+* 🌐 **Live Web Search**: [chandranshb.github.io/roleBase](https://chandranshb.github.io/roleBase/)
+* 📊 **Kaggle Relational Dataset**: [kaggle.com/datasets/chandranshbinjola/job-listings](https://www.kaggle.com/datasets/chandranshbinjola/job-listings)
+* 📓 **Starter Analysis Notebook**: [Job Listings Explorer](https://www.kaggle.com/code/chandranshbinjola/job-listings-explorer)
+* 🤖 **AI Agent & Developer Guide**: [AGENTS.md](AGENTS.md) · [ARCHITECTURE.md](docs/ARCHITECTURE.md)
 
-Queries can also include a place, a pay floor or an exclusion, for example `remote jobs for freshers in berlin`, `$100k+` or `-sales`.
+---
 
-## What's in it right now
+## Key Features
+
+* **10M+ Active Listings**: Deep index refreshed every 6 hours across 16 parallel runner shards; not restricted to tech (covers healthcare, manufacturing, finance, retail, logistics, education, and legal).
+* **Early-Career ("Fresher-Friendly") Filter**: Isolates roles genuinely accessible to candidates with 0–2 years of experience; automatically flags and filters out "junior" titles quietly asking for 3+ years.
+* **Ghost Job Risk Scoring**: Transparent heuristic audit flagging perpetual talent pools, undisclosed staffing agencies, serial reposts, and listings open >6–12 months.
+* **Longitudinal Labor Market Metrics**: Daily snapshots tracking global open job volume, early-career hiring share, and daily demand shares across 80+ technical and non-technical skills.
+* **100% Serverless & Open**: Fully automated on GitHub Actions; persists state in Git, publishes static indices to GitHub Pages, and updates Kaggle daily.
+
+---
+
+## Market Snapshot
 
 <table>
   <tr>
-    <td><img src="docs/charts/jobs_by_level.svg?v=20261104_10m" alt="Open jobs by seniority level, from internships to management"></td>
-    <td><img src="docs/charts/jobs_by_field.svg?v=20261104_10m" alt="Number of open jobs by field, from healthcare and retail to engineering"></td>
+    <td><img src="docs/charts/jobs_by_level.svg?v=20261104_10m" alt="Open jobs by seniority level"></td>
+    <td><img src="docs/charts/jobs_by_field.svg?v=20261104_10m" alt="Number of open jobs by field"></td>
   </tr>
   <tr>
-    <td><img src="docs/charts/top_skills.svg?v=20261104_10m" alt="Most requested skills in job postings, technical and non-technical"></td>
-    <td><img src="docs/charts/top_companies.svg?v=20261104_10m" alt="Employers with the most open job listings"></td>
+    <td><img src="docs/charts/top_skills.svg?v=20261104_10m" alt="Most requested skills in job postings"></td>
+    <td><img src="docs/charts/top_companies.svg?v=20261104_10m" alt="Employers with the most open listings"></td>
   </tr>
   <tr>
-    <td><img src="docs/charts/fresher_friendly.svg?v=20261104_10m" alt="Companies with the most entry-level, fresher-friendly roles"></td>
+    <td><img src="docs/charts/fresher_friendly.svg?v=20261104_10m" alt="Companies with the most entry-level roles"></td>
     <td><img src="docs/charts/open_jobs_over_time.svg?v=20261104_10m" alt="Open jobs and fresher-friendly jobs over time"></td>
   </tr>
   <tr>
-    <td colspan="2"><img src="docs/charts/skill_trends.svg?v=20261104_10m" alt="Skill demand trend over time: share of postings that mention each skill" width="100%"></td>
+    <td colspan="2"><img src="docs/charts/skill_trends.svg?v=20261104_10m" alt="Skill demand trend over time" width="100%"></td>
   </tr>
 </table>
 
-The charts are regenerated after every scrape by [`make_charts.py`](make_charts.py), which writes plain SVG with the standard library. No plotting package and no outside service is involved. The "over time" and "skill demand trend" charts start with the first day of tracking and fill in as the scraper keeps running. The trend chart shows, for the three most requested non-IT skills (Excel, customer service, project management and so on) and the three most requested IT skills, the share of skill-tagged postings that mention each one, from the daily snapshot in `data/skills.csv`.
+---
 
-## What it figures out for each job
+## Data Schemas
 
-| Field | How |
-|---|---|
-| **Company** | Display name from [`companies.json`](companies.json); feed names are cleaned ("Stripe, Inc." becomes "Stripe") |
-| **Level** | Intern, junior, mid, senior, lead, staff+ or manager+, from the title, then from years of experience, then from the board's own label |
-| **Field** | Engineering, data, design, product, sales, marketing, healthcare, retail, manufacturing, education, science and so on, from the title and team |
-| **Years of experience** | First "N years ... experience" after the requirements heading; empty if not stated |
-| **Skills** | Up to 8 technologies from a fixed keyword list |
-| **Pay** | Yearly range, from the board's data or written in the posting |
-| **Fresher-friendly** | Open to 0–2 years: states 2 years or less, or is an intern/junior role that states nothing. A "junior" job asking 3+ years does not count |
-| **Ghost-job flag** | Points for age, talent-pool wording, agencies, many identical postings and reposts. A guess, never proof |
-| **Open or closed** | A job missing from a board that fetched successfully gets a `closed_at` date |
+### 1. Kaggle Relational CSVs (`kaggle/`)
 
-All of this is read from posting text with simple rules, so expect mistakes. Level and field are the most reliable. Pay and years are only filled when a posting states them.
+| File | Description | Key Fields |
+| :--- | :--- | :--- |
+| **`jobs.csv`** | Primary job database (open & closed <90 days) | `url`, `company`, `title`, `level`, `category`, `years_experience`, `skills`, `pay_min`, `pay_max`, `pay_currency`, `remote`, `ghost_score`, `first_seen`, `closed_at` |
+| **`jobs_by_company.csv`** | Early-career hiring index by employer (5+ roles) | `company`, `open_roles`, `fresher_roles`, `fresher_share`, `junior_asking_3plus`, `years_stated_share` |
+| **`open_jobs_daily.csv`** | Daily active and fresher job counts | `date`, `open_jobs`, `fresher_friendly_jobs` |
+| **`skill_demand_daily.csv`** | Skill frequency time series | `date`, `skill`, `jobs`, `tagged`, `share_pct` |
 
-## How it works
+### 2. Internal JSONL Store (`data/jobs/*.jsonl`)
+
+One compact, sorted JSONL file per employer board. Empty and derivable values are omitted to minimize storage and diff size:
+
+```json
+{
+  "id": "greenhouse:stripe:12345",
+  "company": "Stripe",
+  "title": "Software Engineer, Infrastructure",
+  "location": "Seattle, WA",
+  "country": "United States",
+  "remote": true,
+  "level": "senior",
+  "category": "engineering",
+  "employment": "full_time",
+  "years": 5,
+  "skills": ["python", "aws", "kubernetes"],
+  "pay": [180000, 240000, "USD"],
+  "posted": "2026-11-01",
+  "first_seen": "2026-11-01",
+  "closed_at": null,
+  "reposts": 0
+}
+```
+
+---
+
+## Architecture
 
 ```mermaid
 flowchart LR
-  A["Public job-board APIs<br/>Greenhouse, Lever, Ashby, SmartRecruiters, Workday, ADP,<br/>Paycom, ApplicantPro, iSolved, Betterteam, GoHire, Freshteam,<br/>Gem, CSOD, Taleo, Recooty, Teamtailor, Personio, Recruitee, Workable,<br/>Oracle, Phenom, Eightfold, Amazon, Apple, Pinpoint, Breezy HR, Join, JazzHR, Jobvite + feeds"] --> B[scraper.py]
-  B --> C[("data/jobs/*.jsonl<br/>data/pulse.csv<br/>data/archive.csv")]
-  C -->|commit| G[(git history)]
-  C --> D[build_site.py + build_logos.py] --> E[GitHub Pages site]
-  C --> F[export_kaggle.py] --> H[Kaggle dataset]
-  C --> I[make_charts.py] --> J[docs/charts/*.svg]
-  C --> K[build_pages.py] --> L[field, company and entry-level pages + sitemap]
+    A["50+ ATS Platforms<br/>(Workday, Greenhouse, Lever, etc.)"] --> B["16 Parallel Shards<br/>(scrape.yml matrix 0..15)"]
+    B --> C["Consolidation Engine<br/>(scraper.py --consolidate)"]
+    C --> D[("data/jobs/*.jsonl<br/>data/pulse.csv<br/>data/skills.csv")]
+    D --> E["Site & Pages Generator<br/>(build_site.py, build_pages.py)"]
+    D --> F["Dataset Exporter<br/>(export_kaggle.py)"]
+    E --> G["GitHub Pages<br/>chandranshb.github.io/roleBase"]
+    F --> H["Kaggle Datasets & Notebooks"]
 ```
 
-- [`scrape.yml`](.github/workflows/scrape.yml) runs every 6 hours: tests, scrape, charts, commit the changes, deploy the site. A push that changes `web/` or the site builders redeploys the site on its own, without a scrape.
-- [`kaggle.yml`](.github/workflows/kaggle.yml) runs daily: builds the four dataset CSVs, publishes a new version, waits until Kaggle has built it, then syncs the description, tags and the public starter notebook, retrying the flaky Kaggle calls. Column descriptions go out in the dataset metadata too, but Kaggle's server currently drops them ([kaggle-cli#1207](https://github.com/Kaggle/kaggle-cli/issues/1207)), so they are also written as a table in the dataset description; the export fails before publishing if those descriptions and the CSV headers ever differ.
-- A failed source never closes its jobs. An empty answer, or one that is suddenly under 40% of the board's previous size, is distrusted too and only believed if it repeats on a third run in a row, so real shutdowns still close their jobs. [`data/health.json`](data/health.json) lists every board with its last good day and bad-run count, and failures show up as warnings on the Actions run.
-- Every provider is its own lane and all lanes run at once: Greenhouse, Lever, Workday, Workable and the rest each fetch their boards at their own polite pace (a handful at a time, one board at a time for the feeds and Arbeitnow, a second's pause between Workable and Arbeitnow requests), so a slow or rate-limited provider only delays its own boards. The big paged APIs (Workday, Microsoft) also fetch their pages in parallel. A source still running after 22 minutes is cut off and keeps its old jobs. A full run takes about 15 minutes (the deep Workday crawl and Arbeitnow's one-page-per-second limit set the pace).
-- Big employers are read deep, newest first: Workday sites up to 2,000 jobs each (`WD_CAP`, the most its API returns), Phenom sites and Amazon up to 10,000, Eightfold sites 2,000 (one site at a time, they answer a burst with a block) and Oracle Recruiting sites 2,000. Where a list endpoint has no description (Workday, Oracle), years, skills and pay are empty. The website lists each employer's newest 200 (`SITE_PER_COMPANY` in `build_site.py`) so the page stays fast; `data/` and the Kaggle dataset keep every job.
-- US federal jobs (every occupation) come from USAJOBS when `USAJOBS_API_KEY` and `USAJOBS_EMAIL` are set as repository secrets (free key at developer.usajobs.gov); without them that source is simply skipped.
-- The open-job figure in the repository's About text updates itself after each deploy when an `ABOUT_TOKEN` repository secret is set (a fine-grained personal access token with Administration: read and write on this repository, because the built-in token may not edit repository settings); without it the text is left alone.
-- Company icons (`build_logos.py`) come from each company's own site first, then the [Simple Icons](https://simpleicons.org) library (CC0 files, exact name matches only), then Google's icon service as a build-time fallback. A company with no usable logo gets a generic sector icon from Tabler Icons (chosen by the field most of its jobs are in) rather than a guessed or wrong logo. Brand names and marks belong to their owners and are shown only to identify who posted a job.
-- Jobs that closed more than 90 days ago are dropped from the live files. Their lifetime is kept in `data/archive.csv`, and open and fresher counts per board are logged daily in `data/pulse.csv`. Both are append-only, so git stores only new lines.
+* **Crawl Pipeline**: 16 parallel runner shards partition the 110,000 employer boards with per-provider rate limiting and lane concurrency (`LANES`).
+* **Consolidation**: Downloads shard artifacts, prunes jobs closed >90 days into `data/archive.csv`, and precomputes hiring analytics into `data/charts_cache.json`.
+* **Zero-RAM Bottleneck**: Processing loops stream files using chunked iterators to operate strictly within standard GitHub Actions runner memory limits (<7 GB).
 
-### Why the data stays small in git
+---
 
-- One file per board, sorted and compact, so a change touches only the boards that changed.
-- Empty values are not stored. The apply link, level and field are rebuilt on load when they can be derived.
-- Descriptions are read and thrown away; only the extracted facts are kept.
+## Local Development
 
-## On the website
+### Prerequisites
+* Python 3.10+
+* Git
 
-- **Best for you** ranks search results by match, freshness and completeness, plus what you have saved, applied to or hidden. A sort menu also offers newest and highest pay.
-- **Companies** ranks employers by fresher-friendly roles (smoothed so tiny boards don't win on 5 of 5), how many roles, whether years are actually stated, junior roles that ask for 3+ years, ghost-job signals, and how well their jobs match what you save. Sort by best match, most fresher-friendly, most roles, hiring most this week, pay transparency or fewest ghost jobs, and filter with quick chips.
-- **Saved** keeps both jobs and companies you starred, on your device.
-- **Pay in your currency**: pick a display currency in preferences and amounts are converted with the day's exchange rates (marked with `~` because they are estimates). Without a choice, pay shows as posted.
-- **Crawlable pages**: [`build_pages.py`](build_pages.py) writes plain HTML pages per field and company, plus entry-level, remote and internship pages, a sitemap and structured data, so search engines can index what the single-page app shows.
-- **Preferences** (display currency, fields, experience, job type, remote, pay, optional tech skills) and everything learned from your clicks stay in your browser's storage. Nothing is sent anywhere.
-
-## Data
-
-`data/jobs/<source>_<board>.jsonl` has one JSON object per line. Empty fields are left out.
-
-| Key | Meaning |
-|---|---|
-| `id` | `<source>:<board>:<id on that board>` |
-| `company`, `title`, `team`, `location`, `remote` | As posted |
-| `level`, `category`, `employment` | Inferred (see above); `level` and `category` are only stored when they differ from what the title implies |
-| `years`, `skills`, `pay` | Years of experience, skill list, `[min, max, currency]` |
-| `url` | Apply link (left out when it follows the board's standard pattern) |
-| `posted`, `first_seen`, `closed_at` | Dates; empty `closed_at` means still open |
-| `reposts` | Earlier closed jobs with the same title on the same board |
-
-The Kaggle dataset has the same data as flat CSV, plus `jobs_by_company.csv` (open roles and fresher share per company), `open_jobs_daily.csv` and `skill_demand_daily.csv` (two time series that grow daily), and a public [starter notebook](https://www.kaggle.com/code/chandranshbinjola/job-listings-explorer). To keep `jobs.csv` lean, `url` (the apply link, unique per row) is the key and there is no `id` column, and identical postings (same company, title, team and location) are merged into one row with an `openings` count.
-
-## Run it yourself
-
+### Setup
 ```bash
-pip install requests pillow beautifulsoup4
-python test_scraper.py     # self-checks, no network
-python scraper.py          # fetch everything and update data/
-python make_charts.py      # redraw docs/charts/
-python build_site.py       # build _site/ for GitHub Pages
-python build_logos.py      # fetch company icons into _site/logos (slow the first time, cached after)
-python build_pages.py      # crawlable field and company pages, sitemap.xml (needs the two steps above)
+git clone https://github.com/chandranshB/roleBase.git
+cd roleBase
+pip install -r requirements-dev.txt
 ```
 
-**Add a company:** find its board slug (the last part of `boards.greenhouse.io/<slug>`, `jobs.lever.co/<slug>`, `jobs.ashbyhq.com/<slug>` or `jobs.smartrecruiters.com/<slug>`) and add `"slug": "Display Name"` under the right key in [`companies.json`](companies.json). For a Workday employer use `"<tenant>.<pod>.myworkdayjobs.com/<site>"` as the key (the host and first path part of its careers URL), for example `"adobe.wd5.myworkdayjobs.com/external_experienced"`. Add its website to [`domains.json`](domains.json) so it gets an icon. Dead slugs show up as warnings in the log and never close anything.
+### Running Tests & Linting
+```bash
+# Run unit test suite
+python -m unittest discover tests -v
 
-**Not covered:** companies with no public jobs API, such as Google and Netflix, are not scraped. Sites that need a login or forbid scraping are out on purpose.
+# Run legacy integration checks
+python test_scraper.py
 
-## Good citizen
+# Run linter
+ruff check rolebase tests
+```
 
-- Only public job-board APIs and feeds are used (Microsoft's careers search API is allowed by its robots.txt). Sites that forbid scraping (LinkedIn, Indeed, Naukri and similar) are left out on purpose.
-- Every listing belongs to its employer and links back to the original posting. Remotive, RemoteOK, Himalayas, Jobicy, We Work Remotely, Get on Board and The Muse entries link to their own pages as their terms ask, and are left out of the Kaggle dataset.
-- The scraper identifies itself with a user agent and backs off on rate limits.
+### Crawl & Site Build Commands
+```bash
+# Run single-shard crawl test
+python scraper.py --shard 0 --total-shards 16
 
-## Questions people ask
+# Consolidate artifacts & precalculate analytics
+python scraper.py --consolidate
 
-**How do I find entry-level jobs when I have no experience?**
-Switch on "Fresher-friendly" in the search. It keeps roles that state two years of experience or less, and intern or junior roles that state nothing. A "junior" job that asks for three or more years is not counted, which is the most common trap in entry-level listings. The Companies tab ranks employers by how many of their open roles qualify.
+# Generate static search indices (_site/)
+python build_site.py
 
-**What is a ghost job, and how are they flagged?**
-A ghost job is a listing that is not really being hired for, such as an evergreen "talent pool" post or a role open for over a year. RoleBase adds points for age, talent-pool wording, recruiting agencies, many identical postings and reposts, and shows the reason. It is a guess, not proof.
+# Fetch company icons (cached in logo-cache/)
+python build_logos.py
 
-**Where do the listings come from?**
-Directly from employers' own application systems (Greenhouse, Lever, Ashby, SmartRecruiters, Teamtailor, Personio, Recruitee, Workable, Oracle Recruiting, Workday, Phenom, Pinpoint, Breezy HR and company career sites) and from open feeds. Every job links back to the original posting, so you apply on the employer's page.
+# Generate static SEO HTML pages
+python build_pages.py
 
-**Is there a free job postings dataset I can use for analysis?**
-Yes. The [Kaggle dataset](https://www.kaggle.com/datasets/chandranshbinjola/job-listings) has the same data as flat CSV, with the apply link, level, field, skills, pay where stated and open or closed dates.
+# Export Kaggle relational CSVs (kaggle/)
+python export_kaggle.py
+```
 
-## Roadmap
+---
 
-Things that need weeks or months of history first, such as how long postings stay open, hiring freezes, skill trends and seasonality, are tracked as [issues](../../issues?q=label%3Aneeds-history).
+## Adding an Employer Board
 
-## Credits
+1. Find the employer's ATS identifier:
+   * **Greenhouse / Lever / Ashby / SmartRecruiters**: board slug from career page URL (e.g. `boards.greenhouse.io/<slug>`).
+   * **Workday**: `<tenant>.<pod>.myworkdayjobs.com/<site>` (e.g. `adobe.wd5.myworkdayjobs.com/external_experienced`).
+2. Add `"slug": "Company Name"` under the respective ATS key in [`companies.json`](companies.json).
+3. *(Optional)* Add the company's domain to [`domains.json`](domains.json) for high-resolution logo resolution.
 
-Code is released under the [AGPL-3.0 License](LICENSE). See [CONTRIBUTING](CONTRIBUTING.md) to help out.
+---
 
-Interface and sector icons are from [Tabler Icons](https://tabler.io/icons) (MIT, © Paweł Kuna). Brand marks, where used, come from [Simple Icons](https://simpleicons.org) (CC0). The Instrument Sans font is bundled under the SIL Open Font License.
+## Principles & Ethics
 
-Exchange rates come from the European Central Bank via [Frankfurter](https://frankfurter.dev), with [Exchange Rate API](https://www.exchangerate-api.com) filling currencies the ECB does not publish. They are fetched when the site is built.
+* **Official First-Party Sources Only**: Postings are fetched exclusively from public company ATS feeds and open APIs. Aggregators that restrict scraping (LinkedIn, Indeed, Naukri) are omitted on purpose.
+* **No Wall Gardens**: Every search result links directly back to the employer's official job portal.
+* **Polite Crawling**: Per-provider concurrency limits (`LANES`), exponential backoff on HTTP 429/5xx, and descriptive User-Agent headers.
+
+---
+
+## License
+
+This project is licensed under the [GNU Affero General Public License v3.0](LICENSE).
+Company names, logos, and trademarks belong to their respective employers and are used strictly for identification purposes.
