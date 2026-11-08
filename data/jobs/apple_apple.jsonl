@@ -30,16 +30,13 @@
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:114438165","location":"Türkiye","posted":"2026-11-08","team":"Apple Retail","title":"TR-Expert"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:114438203","location":"Türkiye","posted":"2026-11-08","team":"Apple Retail","title":"TR-Technical Specialist"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:114438204","location":"Switzerland","posted":"2026-11-08","team":"Apple Retail","title":"CH-Technical Specialist (m/f/d)"}
-{"company":"Apple","first_seen":"2026-10-22","id":"apple:apple:114438205","location":"Sweden","posted":"2026-11-08","team":"Apple Retail","title":"SE-Technical Specialist"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:114438206","location":"France","posted":"2026-11-08","team":"Apple Retail","title":"FR-Technical Specialist"}
 {"company":"Apple","first_seen":"2026-10-22","id":"apple:apple:114438207","location":"Germany","posted":"2026-11-08","team":"Apple Retail","title":"DE-Technical Specialist (m/f/d)"}
 {"company":"Apple","first_seen":"2026-10-22","id":"apple:apple:114438209","location":"Italy","posted":"2026-11-08","team":"Apple Retail","title":"IT-Technical Specialist"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:114438210","location":"Japan","posted":"2026-11-08","team":"Apple Retail","title":"JP-Technical Specialist"}
-{"company":"Apple","first_seen":"2026-10-24","id":"apple:apple:114438211","location":"Netherlands","posted":"2026-11-08","team":"Apple Retail","title":"NL-Technical Specialist"}
 {"company":"Apple","employment":"contract","first_seen":"2026-11-08","id":"apple:apple:114438212","location":"Spain","posted":"2026-11-08","team":"Apple Retail","title":"ES - Technical Specialist: Full-Time, Part-Time, and Part-Time Temporary"}
 {"company":"Apple","first_seen":"2026-10-16","id":"apple:apple:114438216","location":"United Arab Emirates","posted":"2026-11-08","team":"Apple Retail","title":"UAE-Business Expert"}
 {"company":"Apple","first_seen":"2026-10-30","id":"apple:apple:114438217","location":"United Arab Emirates","posted":"2026-11-08","team":"Apple Retail","title":"UAE-Creative"}
-{"company":"Apple","first_seen":"2026-10-26","id":"apple:apple:114438218","location":"United Arab Emirates","posted":"2026-11-08","team":"Apple Retail","title":"UAE-Expert"}
 {"company":"Apple","first_seen":"2026-10-24","id":"apple:apple:114438219","location":"United Arab Emirates","posted":"2026-11-08","team":"Apple Retail","title":"UAE-Genius"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:114438224","location":"United Arab Emirates","posted":"2026-11-08","team":"Apple Retail","title":"UAE-Technical Specialist"}
 {"company":"Apple","employment":"part_time","first_seen":"2026-10-15","id":"apple:apple:114438225","location":"United Arab Emirates","posted":"2026-11-08","skills":["customer_service"],"team":"Apple Retail","title":"UAE - Specialist: Seasonal, Part-time"}
@@ -3780,7 +3777,6 @@
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200687651","location":"United States of America","posted":"2026-10-07","team":"Software and Services","title":"Backend System Engineer, Insights & Release Technologies"}
 {"company":"Apple","first_seen":"2026-10-20","id":"apple:apple:200687653","location":"Japan","posted":"2026-10-20","team":"Support and Service","title":"RCC Business Expert, Retail Customer Care"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200687658","location":"Israel","posted":"2026-10-07","team":"Hardware","title":"Wireless Testing Engineer"}
-{"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200687675","location":"Israel","posted":"2026-10-07","team":"Hardware","title":"Cellular SW Tools Engineer"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200687696","location":"Israel","posted":"2026-10-07","team":"Hardware","title":"Senior Wireless SoC Design Verification Engineer"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200687699","location":"France","posted":"2026-10-07","team":"Machine Learning and AI","title":"Offensive Security Researcher - Userland & Kernel Security"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200687704","location":"Germany","posted":"2026-10-07","team":"Hardware","title":"Experienced ESD Engineer (m/f/d)"}
@@ -5130,3 +5126,4 @@
 {"company":"Apple","first_seen":"2026-11-08","id":"apple:apple:200693964","location":"United States of America","posted":"2026-11-06","team":"Hardware","title":"Hardware System Engineer - AirPods System Technologies"}
 {"company":"Apple","first_seen":"2026-11-08","id":"apple:apple:200693967","location":"United States of America","posted":"2026-11-06","skills":["ml"],"team":"Software and Services","title":"Engineering Program Manager, Responsible AI, Safety"}
 {"company":"Apple","first_seen":"2026-11-08","id":"apple:apple:200693977","location":"United States of America","posted":"2026-11-07","team":"Software and Services","title":"Senior Software Developer in Test - Embedded Sensors QE, Core OS"}
+{"company":"Apple","first_seen":"2026-11-08","id":"apple:apple:200694001","location":"Israel","posted":"2026-11-08","team":"Hardware","title":"Cellular SW Tools & Automation Engineering Manager"}

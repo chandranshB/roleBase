@@ -136,7 +136,6 @@
 {"company":"Wegmans","first_seen":"2026-11-08","id":"workday:wegmans.wd1.myworkdayjobs.com/wegmans:/job/Dick-Road/Store-Associate_R0301059","location":"Dick Road","posted":"2026-11-02","title":"Store Associate"}
 {"company":"Wegmans","first_seen":"2026-11-08","id":"workday:wegmans.wd1.myworkdayjobs.com/wegmans:/job/Downingtown/Cashier_R0302050","location":"Downingtown","posted":"2026-11-02","title":"Cashier"}
 {"company":"Wegmans","first_seen":"2026-11-08","id":"workday:wegmans.wd1.myworkdayjobs.com/wegmans:/job/Downingtown/Food-Service-Worker_R0302656","location":"Downingtown","posted":"2026-11-05","title":"Food Service Worker"}
-{"company":"Wegmans","first_seen":"2026-11-08","id":"workday:wegmans.wd1.myworkdayjobs.com/wegmans:/job/Downingtown/Overnight-Stocker_R0302636","location":"Downingtown","posted":"2026-11-05","title":"Overnight Stocker"}
 {"company":"Wegmans","employment":"part_time","first_seen":"2026-11-08","id":"workday:wegmans.wd1.myworkdayjobs.com/wegmans:/job/Downingtown/Part-Time-Jobs_R0302616","location":"Downingtown","posted":"2026-11-05","title":"Part Time Jobs"}
 {"company":"Wegmans","first_seen":"2026-11-08","id":"workday:wegmans.wd1.myworkdayjobs.com/wegmans:/job/Downingtown/Receiver_R0302745","location":"Downingtown","posted":"2026-11-06","title":"Receiver"}
 {"company":"Wegmans","first_seen":"2026-11-08","id":"workday:wegmans.wd1.myworkdayjobs.com/wegmans:/job/Downingtown/Shift-Leader_R0302624","location":"Downingtown","posted":"2026-11-05","title":"Shift Leader"}
@@ -270,7 +269,7 @@
 {"company":"Wegmans","first_seen":"2026-10-30","id":"workday:wegmans.wd1.myworkdayjobs.com/wegmans:/job/Malvern/Overnight-Dairy-Stocking_R0300171","location":"Malvern","posted":"2026-10-18","title":"Overnight Dairy Stocking"}
 {"company":"Wegmans","employment":"part_time","first_seen":"2026-10-30","id":"workday:wegmans.wd1.myworkdayjobs.com/wegmans:/job/Malvern/Part-Time-Jobs_R0300659","location":"Malvern","posted":"2026-10-22","title":"Part Time Jobs"}
 {"company":"Wegmans","first_seen":"2026-10-30","id":"workday:wegmans.wd1.myworkdayjobs.com/wegmans:/job/Malvern/Store-Shopper_R0301643","location":"Malvern","posted":"2026-10-29","title":"Store Shopper"}
-{"company":"Wegmans","first_seen":"2026-11-08","id":"workday:wegmans.wd1.myworkdayjobs.com/wegmans:/job/Manalapan/Produce-Team-Member_R0301400","location":"Manalapan","posted":"2026-11-04","title":"Produce Team Member"}
+{"company":"Wegmans","first_seen":"2026-11-08","id":"workday:wegmans.wd1.myworkdayjobs.com/wegmans:/job/Manalapan/Cashier_R0299174","location":"Manalapan","posted":"2026-11-08","title":"Cashier"}
 {"company":"Wegmans","first_seen":"2026-10-30","id":"workday:wegmans.wd1.myworkdayjobs.com/wegmans:/job/Manalapan/Seafood-Team-Member_R0301131","location":"Manalapan","posted":"2026-10-26","title":"Seafood Team Member"}
 {"company":"Wegmans","first_seen":"2026-10-30","id":"workday:wegmans.wd1.myworkdayjobs.com/wegmans:/job/Manalapan/Store-Shopper_R0300988","location":"Manalapan","posted":"2026-11-07","title":"Store Shopper"}
 {"company":"Wegmans","first_seen":"2026-11-08","id":"workday:wegmans.wd1.myworkdayjobs.com/wegmans:/job/Manalapan/Sushi-Line-Cook_R0301803","location":"Manalapan","posted":"2026-10-30","title":"Sushi Line Cook"}
@@ -282,6 +281,7 @@
 {"company":"Wegmans","first_seen":"2026-10-30","id":"workday:wegmans.wd1.myworkdayjobs.com/wegmans:/job/McKinley/Shift-Leader_R0299324","location":"McKinley","posted":"2026-10-12","title":"Shift Leader"}
 {"company":"Wegmans","first_seen":"2026-11-08","id":"workday:wegmans.wd1.myworkdayjobs.com/wegmans:/job/McKinley/Shift-Leader_R0299635","location":"McKinley","posted":"2026-10-14","title":"Shift Leader"}
 {"company":"Wegmans","first_seen":"2026-10-30","id":"workday:wegmans.wd1.myworkdayjobs.com/wegmans:/job/McKinley/Shift-Manager_R0301310","location":"McKinley","posted":"2026-10-27","title":"Shift Manager"}
+{"company":"Wegmans","first_seen":"2026-11-08","id":"workday:wegmans.wd1.myworkdayjobs.com/wegmans:/job/McKinley/Team-Member_R0301778","location":"McKinley","posted":"2026-11-08","title":"Team Member"}
 {"company":"Wegmans","first_seen":"2026-11-08","id":"workday:wegmans.wd1.myworkdayjobs.com/wegmans:/job/Medford/Cart-Collector_R0302373","location":"Medford","posted":"2026-11-03","title":"Cart Collector"}
 {"company":"Wegmans","first_seen":"2026-11-08","id":"workday:wegmans.wd1.myworkdayjobs.com/wegmans:/job/Medford/Cashier_R0301804","location":"Medford","posted":"2026-10-31","title":"Cashier"}
 {"company":"Wegmans","first_seen":"2026-11-08","id":"workday:wegmans.wd1.myworkdayjobs.com/wegmans:/job/Medford/Custodian_R0302376","location":"Medford","posted":"2026-11-03","title":"Custodian"}
@@ -290,7 +290,8 @@
 {"company":"Wegmans","first_seen":"2026-10-30","id":"workday:wegmans.wd1.myworkdayjobs.com/wegmans:/job/Midlothian/Deli-Team-Member_R0294089","location":"Midlothian","posted":"2026-10-12","title":"Deli Team Member"}
 {"company":"Wegmans","first_seen":"2026-11-08","id":"workday:wegmans.wd1.myworkdayjobs.com/wegmans:/job/Midlothian/Lead-Cook_R0300026","location":"Midlothian","posted":"2026-10-30","title":"Lead Cook"}
 {"company":"Wegmans","first_seen":"2026-10-30","id":"workday:wegmans.wd1.myworkdayjobs.com/wegmans:/job/Midlothian/Pizza-Cook_R0300548","location":"Midlothian","posted":"2026-10-21","title":"Pizza Cook"}
-{"company":"Wegmans","first_seen":"2026-10-30","id":"workday:wegmans.wd1.myworkdayjobs.com/wegmans:/job/Military-Road/Overnight-Baker_R0298754","location":"Military Road","posted":"2026-10-31","title":"Overnight Baker"}
+{"company":"Wegmans","first_seen":"2026-11-08","id":"workday:wegmans.wd1.myworkdayjobs.com/wegmans:/job/Military-Road/Cashier_R0299205","location":"Military Road","posted":"2026-11-08","title":"Cashier"}
+{"company":"Wegmans","first_seen":"2026-11-08","id":"workday:wegmans.wd1.myworkdayjobs.com/wegmans:/job/Military-Road/Food-Service-Worker_R0302897","location":"Military Road","posted":"2026-11-08","title":"Food Service Worker"}
 {"company":"Wegmans","first_seen":"2026-11-08","id":"workday:wegmans.wd1.myworkdayjobs.com/wegmans:/job/Montgomeryville/Cashier_R0300526","location":"Montgomeryville","posted":"2026-11-01","title":"Cashier"}
 {"company":"Wegmans","first_seen":"2026-11-08","id":"workday:wegmans.wd1.myworkdayjobs.com/wegmans:/job/Montgomeryville/Food-Service-Worker_R0301873","location":"Montgomeryville","posted":"2026-11-01","title":"Food Service Worker"}
 {"company":"Wegmans","first_seen":"2026-11-08","id":"workday:wegmans.wd1.myworkdayjobs.com/wegmans:/job/Montgomeryville/Hiring-Event_R0300018","location":"Montgomeryville","posted":"2026-10-30","title":"Hiring Event"}
@@ -320,7 +321,6 @@
 {"company":"Wegmans","first_seen":"2026-11-08","id":"workday:wegmans.wd1.myworkdayjobs.com/wegmans:/job/Niagara-Falls-Blvd/Shift-Leader_R0299632","location":"Niagara Falls Blvd","posted":"2026-10-14","title":"Shift Leader"}
 {"company":"Wegmans","first_seen":"2026-10-30","id":"workday:wegmans.wd1.myworkdayjobs.com/wegmans:/job/Niagara-Falls-Blvd/Sushi-Line-Cook_R0301326","location":"Niagara Falls Blvd","posted":"2026-10-27","title":"Sushi Line Cook"}
 {"company":"Wegmans","first_seen":"2026-11-08","id":"workday:wegmans.wd1.myworkdayjobs.com/wegmans:/job/Northborough/Cook_R0301761","location":"Northborough","posted":"2026-11-01","title":"Cook"}
-{"company":"Wegmans","first_seen":"2026-11-08","id":"workday:wegmans.wd1.myworkdayjobs.com/wegmans:/job/Northborough/Custodian_R0301754","location":"Northborough","posted":"2026-11-01","title":"Custodian"}
 {"company":"Wegmans","first_seen":"2026-11-08","id":"workday:wegmans.wd1.myworkdayjobs.com/wegmans:/job/Northborough/Meat-Clerk_R0301744","location":"Northborough","posted":"2026-11-01","title":"Meat Clerk"}
 {"company":"Wegmans","first_seen":"2026-11-08","id":"workday:wegmans.wd1.myworkdayjobs.com/wegmans:/job/Northborough/Overnight-Associate_R0301742","location":"Northborough","posted":"2026-11-01","title":"Overnight Associate"}
 {"company":"Wegmans","first_seen":"2026-11-08","id":"workday:wegmans.wd1.myworkdayjobs.com/wegmans:/job/Northborough/Prep-Cook_R0301746","location":"Northborough","posted":"2026-11-01","title":"Prep Cook"}
