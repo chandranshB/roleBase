@@ -10,7 +10,7 @@ concurrency: kaggle
 jobs:
   publish:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 35
     env:
       KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
       KAGGLE_API_TOKEN: ${{ secrets.KAGGLE_API_TOKEN }} # new-style KGAT_ token
@@ -18,7 +18,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with: { python-version: "3.12" }
-      - run: pip install requests kaggle beautifulsoup4 pillow
+      - run: pip install requests kaggle beautifulsoup4 pillow six
       - run: python export_kaggle.py
       - name: Publish new dataset version (creates it, private, on first run)
         if: env.KAGGLE_API_TOKEN != '' && !inputs.sync_only
