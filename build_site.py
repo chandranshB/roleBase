@@ -8,18 +8,91 @@ jobs.json rows are arrays, newest first:
 """
 import datetime as dt
 import json
+import os
 import shutil
+import sys
+import time
 import urllib.request
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
-from scraper import company_stats, fresher_ok, ghost_flags, load
+from scraper import (
+    DIR,
+    DEFAULTS,
+    category,
+    fresher_ok,
+    ghost_flags,
+    level,
+    url_of,
+)
 
+t_start = time.time()
 levels = ["intern", "junior", "mid", "senior", "lead", "staff+", "manager+"]  # menu order, low to high
 levels_map = {l: i for i, l in enumerate(levels)}
-jobs = list(load(open_only=True).values())
-sources = sorted({j["source"] for j in jobs})
+SITE_PER_COMPANY = 35  # the page downloads every row, so it lists each employer's newest 35; data/ and the Kaggle dataset keep all of them
+
+files = [DIR / f for f in os.listdir(DIR) if f.endswith(".jsonl")] if DIR.exists() else []
+
+
+def process_board_file(fpath):
+    try:
+        content = fpath.read_text(encoding="utf-8")
+    except Exception:
+        return []
+
+    c_id = content.count('"id":')
+    c_closed = content.count('"closed_at":')
+    if c_id > 0 and c_id == c_closed:
+        return []
+
+    board_jobs = []
+    for line in content.split("\n"):
+        line = line.strip()
+        if not line or '"closed_at":' in line:
+            continue
+        try:
+            j = json.loads(line)
+        except Exception:
+            continue
+        if j.get("closed_at") is not None:
+            continue
+        board_jobs.append(j)
+
+    board_jobs.sort(key=lambda j: j.get("posted") or j.get("first_seen") or "", reverse=True)
+    return board_jobs[:SITE_PER_COMPANY]
+
+
+candidate_jobs = []
+print(f"Streaming {len(files)} board files for site build...")
+sys.stdout.flush()
+with ThreadPoolExecutor(max_workers=8) as ex:
+    for idx, b_jobs in enumerate(ex.map(process_board_file, files, chunksize=100)):
+        candidate_jobs.extend(b_jobs)
+        if (idx + 1) % 25000 == 0:
+            print(f"  {idx + 1}/{len(files)} boards streamed ({time.time() - t_start:.1f}s, {len(candidate_jobs)} candidates)...")
+            sys.stdout.flush()
+
+# Select each employer's newest 35
+candidate_jobs.sort(key=lambda j: j.get("posted") or j.get("first_seen") or "", reverse=True)
+shown, per = [], {}
+for j in candidate_jobs:
+    comp = j.get("company", "")
+    per[comp] = per.get(comp, 0) + 1
+    if per[comp] <= SITE_PER_COMPANY:
+        shown.append(j)
+
+# Hydrate only shown jobs
+for j in shown:
+    j.setdefault("source", j["id"].split(":")[0])
+    j.setdefault("url", url_of(j["id"]))
+    j["level"] = j.get("level") or level(j["title"], j.get("years"))
+    j.setdefault("category", category(j["title"], j.get("team")))
+    for k, v in DEFAULTS.items():
+        j.setdefault(k, list(v) if isinstance(v, list) else v)
+
+sources = sorted({j["source"] for j in shown})
 sources_map = {s: i for i, s in enumerate(sources)}
-flags = ghost_flags(jobs)
+flags = ghost_flags(shown)
 
 
 def row(j):
@@ -33,13 +106,9 @@ def row(j):
             int(fresher_ok(j))]
 
 
-SITE_PER_COMPANY = 35  # the page downloads every row, so it lists each employer's newest 35; data/ and the Kaggle dataset keep all of them
-shown, per = [], {}
-for j in sorted(jobs, key=lambda j: j["posted"] or j["first_seen"], reverse=True):
-    per[j["company"]] = per.get(j["company"], 0) + 1
-    if per[j["company"]] <= SITE_PER_COMPANY:
-        shown.append(j)
 rows = sorted(map(row, shown), key=lambda r: r[6], reverse=True)
+
+
 def fetch_rates():
     """Free, no key: ECB rates from frankfurter.dev, with open.er-api.com filling any code the ECB does not publish (e.g. KHR).
     Fetched at build time, so the page never calls a rates API itself and the site still works if both are down."""
@@ -71,12 +140,31 @@ updated_str = dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
 (out / "jobs.json").write_text(json.dumps(
     {"updated": updated_str, "levels": levels, "sources": sources, "rows": rows, "total": len(rows)},
     ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
-companies = [[c["company"], c["open_roles"], c["fresher_roles"], c["fresher_share"], c["junior_asking_3plus"], c["years_stated_share"]]
-             for c in company_stats(jobs)]  # companies.json rows: name, open roles, fresher roles, share, junior asking 3+ yrs, years-stated share
+
+# Companies stats from charts_cache
+cache_path = Path("data/charts_cache.json")
+cached_comp = None
+total_open_count = len(rows)
+if cache_path.exists():
+    try:
+        d = json.loads(cache_path.read_text(encoding="utf-8"))
+        total_open_count = d.get("tot_open", total_open_count)
+        cached_comp = d.get("company_stats")
+        if not cached_comp and "companies" in d:
+            comps = d["companies"]
+            fresh = d.get("comp_fresh", {})
+            cached_comp = [
+                [c, n, fresh.get(c, 0), round(fresh.get(c, 0) / n, 3), 0, 0]
+                for c, n in comps.items() if n >= 5
+            ]
+            cached_comp.sort(key=lambda r: (-r[3], -r[1]))
+    except Exception:
+        pass
+
+companies = cached_comp or []
 (out / "companies.json").write_text(json.dumps(companies, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
-print(f"{len(rows)} of {len(jobs)} open jobs -> _site/jobs.json ({min(FEED_SIZE, len(rows))} -> _site/feed.json), {len(companies)} companies -> _site/companies.json")
+print(f"{len(rows)} of {total_open_count:,} open jobs -> _site/jobs.json ({min(FEED_SIZE, len(rows))} -> _site/feed.json), {len(companies):,} companies -> _site/companies.json | {time.time()-t_start:.1f}s")
 rates = fetch_rates()
 if rates:
     (out / "rates.json").write_text(json.dumps({"date": rates[1], "rates": rates[0]}, separators=(",", ":")), encoding="utf-8")
     print(f"{len(rates[0])} exchange rates ({rates[1]}) -> _site/rates.json")
-

@@ -2254,7 +2254,7 @@ def load(scopes=None, open_only=False):
             items.append((j["id"], j))
         return items
 
-    with ThreadPoolExecutor(max_workers=32) as ex:
+    with ThreadPoolExecutor(max_workers=8) as ex:
         for batch in ex.map(read_one, files):
             for jid, j in batch:
                 db[jid] = j
@@ -2472,6 +2472,8 @@ def main():
         all_categories = Counter()
         all_companies = Counter()
         all_comp_fresh = Counter()
+        all_comp_jr3 = Counter()
+        all_comp_years = Counter()
 
         files = [DIR / f for f in os.listdir(DIR) if f.endswith(".jsonl")] if DIR.exists() else []
 
@@ -2491,6 +2493,8 @@ def main():
             b_categories = Counter()
             b_companies = Counter()
             b_comp_fresh = Counter()
+            b_comp_jr3 = Counter()
+            b_comp_years = Counter()
             b_skills = Counter()
             b_tagged = 0
 
@@ -2529,6 +2533,10 @@ def main():
                         b_companies[comp] += 1
                         if is_fresh:
                             b_comp_fresh[comp] += 1
+                        if lvl in ("intern", "junior") and (y or 0) >= 3:
+                            b_comp_jr3[comp] += 1
+                        if y is not None:
+                            b_comp_years[comp] += 1
                     sks = j.get("skills", [])
                     if sks:
                         b_tagged += 1
@@ -2543,7 +2551,7 @@ def main():
                 else:
                     fpath.unlink(missing_ok=True)
 
-            return (board, b_open, b_fresher, b_closed, b_pruned, b_levels, b_categories, b_companies, b_comp_fresh, b_skills, b_tagged)
+            return (board, b_open, b_fresher, b_closed, b_pruned, b_levels, b_categories, b_companies, b_comp_fresh, b_comp_jr3, b_comp_years, b_skills, b_tagged)
 
         print(f"Processing {len(files)} boards for pruning, metrics, and charts...")
         sys.stdout.flush()
@@ -2551,13 +2559,15 @@ def main():
             for res in ex.map(process_board_file, files):
                 if not res:
                     continue
-                board, b_open, b_fresher, b_closed, b_pruned, b_levels, b_categories, b_companies, b_comp_fresh, b_skills, b_tagged = res
+                board, b_open, b_fresher, b_closed, b_pruned, b_levels, b_categories, b_companies, b_comp_fresh, b_comp_jr3, b_comp_years, b_skills, b_tagged = res
                 tot_open += b_open
                 tot_closed += b_closed
                 all_levels.update(b_levels)
                 all_categories.update(b_categories)
                 all_companies.update(b_companies)
                 all_comp_fresh.update(b_comp_fresh)
+                all_comp_jr3.update(b_comp_jr3)
+                all_comp_years.update(b_comp_years)
                 all_skills.update(b_skills)
                 tagged_total += b_tagged
                 if b_pruned:
@@ -2574,6 +2584,11 @@ def main():
         if pruned_rows:
             append_csv(Path("data/archive.csv"), ["id", "company", "level", "category", "posted", "first_seen", "closed_at"], pruned_rows)
 
+        company_stats_list = [
+            [c, n, all_comp_fresh.get(c, 0), round(all_comp_fresh.get(c, 0) / n, 3), all_comp_jr3.get(c, 0), round(all_comp_years.get(c, 0) / n, 2)]
+            for c, n in all_companies.items() if n >= 5
+        ]
+        company_stats_list.sort(key=lambda r: (-r[3], -r[1]))
         charts_cache = {
             "tot_open": tot_open,
             "levels": dict(all_levels),
@@ -2581,6 +2596,7 @@ def main():
             "skills": dict(all_skills),
             "companies": dict(all_companies),
             "comp_fresh": dict(all_comp_fresh),
+            "company_stats": company_stats_list,
         }
         Path("data/charts_cache.json").write_text(json.dumps(charts_cache), encoding="utf-8")
 

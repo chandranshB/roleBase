@@ -115,9 +115,30 @@ def stats_text(jobs, label, company=None):
 
 
 def main():
-    jobs = list(load(open_only=True).values())
-    flags = ghost_flags(jobs)
-    jobs = [j for j in jobs if sum(p for _, p in flags.get(j["id"], [])) < 2 and j["url"]]  # no likely ghost jobs on pages we want indexed
+    site_jobs_file = SITE / "jobs.json"
+    if site_jobs_file.exists():
+        d = json.loads(site_jobs_file.read_text(encoding="utf-8"))
+        levels = d.get("levels", [])
+        sources = d.get("sources", [])
+        jobs = []
+        for r in d.get("rows", []):
+            if r[16] >= 2 or not r[7]:  # score >= 2 or no url
+                continue
+            lvl = levels[r[4]] if 0 <= r[4] < len(levels) else "mid"
+            pay = (r[11], r[12], r[13]) if (r[11] or r[12]) else None
+            skills = r[14].split(",") if r[14] else []
+            jobs.append({
+                "title": r[0], "company": r[1], "location": r[2], "remote": bool(r[3]),
+                "level": lvl, "source": sources[r[5]] if 0 <= r[5] < len(sources) else "",
+                "posted": r[6], "first_seen": r[6], "url": r[7], "category": r[8],
+                "employment": r[9], "years": None if r[10] == -1 else r[10],
+                "pay": pay, "skills": skills, "team": r[15],
+                "closed_at": None,
+            })
+    else:
+        jobs = list(load(open_only=True).values())
+        flags = ghost_flags(jobs)
+        jobs = [j for j in jobs if sum(p for _, p in flags.get(j["id"], [])) < 2 and j["url"]]  # no likely ghost jobs on pages we want indexed
     cs = company_stats(jobs, min_roles=5)
     cmap, used = {}, set()
     for c in cs:

@@ -173,8 +173,28 @@ def tidy(b):
 def main():
     cfg = json.loads(Path("companies.json").read_text(encoding="utf-8"))
     domains = json.loads(Path("domains.json").read_text(encoding="utf-8"))
-    db_jobs = list(load(open_only=True).values())
-    live_companies = {j["company"] for j in db_jobs}
+    site_jobs_file = SITE / "jobs.json"
+    site_comp_file = SITE / "companies.json"
+    cats = {}
+    if site_jobs_file.exists() and site_comp_file.exists():
+        site_jobs = json.loads(site_jobs_file.read_text(encoding="utf-8")).get("rows", [])
+        site_comp = json.loads(site_comp_file.read_text(encoding="utf-8"))
+        live_companies = {r[1] for r in site_jobs}
+        counts = {c[0]: c[1] for c in site_comp}
+        for r in site_jobs:
+            comp, cat = r[1], r[8]
+            c = cats.setdefault(comp, {})
+            c[cat] = c.get(cat, 0) + 1
+    else:
+        db_jobs = list(load(open_only=True).values())
+        live_companies = {j["company"] for j in db_jobs}
+        counts = {}
+        for j in db_jobs:
+            if j.get("closed_at") is None:
+                counts[j["company"]] = counts.get(j["company"], 0) + 1
+                c = cats.setdefault(j["company"], {})
+                c[j.get("category", "other")] = c.get(j.get("category", "other"), 0) + 1
+
     todo, seen = [], set()
     for s, n in cfg.get("lever", {}).items():
         if (n in live_companies or n in domains) and n not in seen:
@@ -184,10 +204,6 @@ def main():
         if n not in seen:
             todo.append((n, re.sub(r"\W+", "-", n.lower()).strip("-"), None, dom))
             seen.add(n)
-    counts = {}
-    for j in db_jobs:
-        if j.get("closed_at") is None and j["company"] not in seen:
-            counts[j["company"]] = counts.get(j["company"], 0) + 1
     for n, c in counts.items():
         slug = re.sub(r"\W+", "-", n.lower()).strip("-")
         if c >= 3 and slug:
@@ -209,7 +225,7 @@ def main():
             (CACHE / f"{slug}.{got[1]}").write_bytes(got[0])
         return name, {"file": f"{slug}.{got[1]}" if got else None, "t": now, "v": VER, **({"domain": domain} if domain else {})}
     with ThreadPoolExecutor(16) as ex:
-        idx.update(dict(ex.map(one, todo)))
+        idx.update(dict(ex.map(one, todo, chunksize=100)))
     idx_file.write_text(json.dumps(idx, indent=1), encoding="utf-8")
 
     out = SITE / "logos"
@@ -228,11 +244,7 @@ def main():
                     print(f"  {name}: tidy {type(e).__name__}")
             shutil.copy(CACHE / f, out / f)
             mapping[name] = f"logos/{f}"
-    cats = {}  # company -> {field: open jobs}
-    for j in db_jobs:
-        if j["closed_at"] is None:
-            c = cats.setdefault(j["company"], {})
-            c[j["category"]] = c.get(j["category"], 0) + 1
+    # cats dictionary was already populated above
     real = len(mapping)
     for name, *_ in todo:
         if name in mapping or name not in cats:
@@ -245,7 +257,8 @@ def main():
             print(f"  sector icon {top}: {type(e).__name__}")
             f = None
         if f:
-            shutil.copy(f, out / f.name)
+            if not (out / f.name).exists():
+                shutil.copy(f, out / f.name)
             mapping[name] = f"logos/{f.name}"
     (SITE / "logos.json").write_text(json.dumps(mapping, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     print(f"logos: {real} real logos + {len(mapping) - real} sector icons of {len(todo)} companies; letter avatar for the other {len(todo) - len(mapping)}")

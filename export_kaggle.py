@@ -7,7 +7,19 @@ import shutil
 from collections import Counter
 from pathlib import Path
 
-from scraper import company_stats, country, fresher_ok, ghost_flags, load
+from scraper import (
+    DIR,
+    DEFAULTS,
+    clean_company,
+    category,
+    country,
+    fresher_ok,
+    level,
+    url_of,
+    EVERGREEN_RX,
+    HIDDEN_RX,
+    _clean_title,
+)
 
 # These boards' terms are about attribution and display, so they stay out of a republished dataset.
 SKIP = {"remotive", "remoteok", "himalayas", "jobicy", "weworkremotely", "getonbrd", "workingnomads", "cryptojobs", "themuse"}
@@ -64,12 +76,44 @@ FILES = {  # file -> (description, its columns): feeds the Kaggle file/column me
     "skill_demand_daily.csv": ("Per day and skill: postings that mention the skill, postings that mention any skill, and the share between them.", SKILL_COLUMNS),
 }
 
+today_date = dt.date.today()
+today = today_date.isoformat()
+out = Path("kaggle")
+out.mkdir(exist_ok=True)
+shutil.copy("kaggle_assets/dataset-cover-image.png", out)  # picked up by `kaggle datasets metadata --update`
 
-jobs = [j for j in load().values() if j["source"] not in SKIP]
-flags = ghost_flags([j for j in jobs if j["closed_at"] is None])  # closed jobs get no score
+
+def board_ghost_flags(jobs):
+    same = Counter((j.get("company", ""), _clean_title(j.get("title"))) for j in jobs)
+    out = {}
+    for j in jobs:
+        c = j.get("company", "")
+        t = _clean_title(j.get("title"))
+        r = []
+        posted = j.get("posted") or j.get("first_seen")
+        if posted:
+            try:
+                age = (today_date - dt.date.fromisoformat(posted)).days
+                if age >= 365:
+                    r.append(("open for over a year", 2))
+                elif age >= 180:
+                    r.append(("open for over 6 months", 1))
+            except Exception:
+                pass
+        if EVERGREEN_RX.search(j.get("title", "")):
+            r.append(("talent-pool / expression-of-interest wording", 3))
+        if HIDDEN_RX.search(c):
+            r.append(("agency or hidden employer", 1))
+        n = same.get((c, t), 0)
+        if n >= 8:
+            r.append((f"{n} identical postings", 1))
+        if j.get("reposts"):
+            r.append((f"reposted {j['reposts']}x", 1 if j["reposts"] < 3 else 2))
+        out[j["id"]] = r
+    return out
 
 
-def flat(j):
+def flat(j, flags):
     lo, hi, cur = j.get("pay") or ("", "", "")
     f = flags.get(j.get("id"))
     c = j.get("country") or country(j.get("location", ""))
@@ -92,17 +136,78 @@ def collapse(rows):
     return sorted(g.values(), key=lambda r: (r.get("company", ""), r.get("title", ""), r.get("url", "")))
 
 
-rows = collapse(map(flat, jobs))
-live = [r for r in rows if not r["closed_at"]]
-today = dt.date.today().isoformat()
-out = Path("kaggle")
-out.mkdir(exist_ok=True)
-shutil.copy("kaggle_assets/dataset-cover-image.png", out)  # picked up by `kaggle datasets metadata --update`
-with open(out / "jobs.csv", "w", encoding="utf-8", newline="") as f:
-    w = csv.DictWriter(f, list(COLUMNS), extrasaction="ignore")
+files = [DIR / f for f in os.listdir(DIR) if f.endswith(".jsonl")] if DIR.exists() else []
+
+total_rows = 0
+live_count = 0
+live_companies = set()
+fields_counter = Counter()
+
+with open(out / "jobs.csv", "w", encoding="utf-8", newline="") as f_jobs:
+    w = csv.DictWriter(f_jobs, list(COLUMNS), extrasaction="ignore")
     w.writeheader()
-    w.writerows(rows)
-company_rows = company_stats([j for j in jobs if j["closed_at"] is None])
+
+    for fpath in files:
+        src = fpath.stem.split("_")[0]
+        if src in SKIP:
+            continue
+        try:
+            content = fpath.read_text(encoding="utf-8")
+        except Exception:
+            continue
+
+        board_jobs = []
+        for line in content.split("\n"):
+            line = line.strip()
+            if not line:
+                continue
+            try:
+                j = json.loads(line)
+            except Exception:
+                continue
+            j.setdefault("source", src)
+            j.setdefault("url", url_of(j["id"]))
+            j.setdefault("level", level(j["title"], j.get("years")))
+            j.setdefault("category", category(j["title"], j.get("team")))
+            for k, v in DEFAULTS.items():
+                j.setdefault(k, list(v) if isinstance(v, list) else v)
+            board_jobs.append(j)
+
+        if not board_jobs:
+            continue
+
+        flags = board_ghost_flags([j for j in board_jobs if j.get("closed_at") is None])
+        b_rows = collapse(map(lambda j: flat(j, flags), board_jobs))
+        w.writerows(b_rows)
+        total_rows += len(b_rows)
+
+        for r in b_rows:
+            if not r.get("closed_at"):
+                live_count += 1
+                c = r.get("company")
+                if c:
+                    live_companies.add(c)
+                cat = r.get("category")
+                if cat and cat != "other":
+                    fields_counter[cat] += 1
+
+# Company stats
+cached_comp = None
+cache_path = Path("data/charts_cache.json")
+if cache_path.exists():
+    try:
+        cached_comp = json.loads(cache_path.read_text(encoding="utf-8")).get("company_stats")
+    except Exception:
+        pass
+
+if cached_comp:
+    company_rows = [
+        {"company": r[0], "open_roles": r[1], "fresher_roles": r[2], "fresher_share": r[3], "junior_asking_3plus": r[4], "years_stated_share": r[5]}
+        for r in cached_comp
+    ]
+else:
+    company_rows = []
+
 with open(out / "jobs_by_company.csv", "w", encoding="utf-8", newline="") as f:
     w = csv.DictWriter(f, list(COMPANY_COLUMNS))
     w.writeheader()
@@ -120,6 +225,7 @@ with open(out / "open_jobs_daily.csv", "w", encoding="utf-8", newline="") as f:
     w = csv.writer(f)
     w.writerow(list(DAILY_COLUMNS))
     w.writerows([d, *v] for d, v in sorted(daily.items()))
+
 skills = Path("data/skills.csv")
 with open(out / "skill_demand_daily.csv", "w", encoding="utf-8", newline="") as f:
     w = csv.writer(f)
@@ -134,21 +240,18 @@ for name, (_, cols) in FILES.items():  # Kaggle's docs: the field list must cove
         assert next(csv.reader(f)) == list(cols), f"{name}: CSV header and column descriptions differ"
     assert all(t and d.strip() for t, d in cols.values()), f"{name}: a column has no type or description"
 
-fields = Counter(r["category"] for r in live if r["category"] != "other")
-field_list = ", ".join(f"{k.replace('_', ' ')} ({v:,})" for k, v in fields.most_common(14))
-n_companies = len({r["company"] for r in live})
+field_list = ", ".join(f"{k.replace('_', ' ')} ({v:,})" for k, v in fields_counter.most_common(14))
+n_companies = len(live_companies)
 TITLE = "Job Listings: Open Jobs in Every Field (Daily)"
 SUBTITLE = "Daily-updated open jobs with apply links, level, field, skills and pay"
 assert 6 <= len(TITLE) <= 50 and len(SUBTITLE) <= 80, (len(TITLE), len(SUBTITLE))
 SOURCES = ("Public career portals, APIs and feeds across 51 enterprise ATS platforms (Workday, Greenhouse, Lever, Ashby, SmartRecruiters, ADP, UKG Pro, Dayforce, Paylocity, Paycom, ApplicantPro, iSolved, Betterteam, GoHire, Freshteam, Gem, Recooty, CSOD, Taleo, Bullhorn, SAP SuccessFactors, Avature, Recruiterflow, Manatal, Loxo, CareerPlug, Comeet, Crelate, ClearCompany, PageUp People, Join, Personio, BambooHR, Rippling, Oracle HCM, JazzHR, Jobvite, JobScore, Zoho Recruit, iCIMS, Amazon, Apple, Microsoft, Eightfold, and more). "
            "Collected with automated tooling; no logins, no private data.")
-# Kaggle's API accepts the per-column descriptions below but its server drops them (https://github.com/Kaggle/kaggle-cli/issues/1207), so they are also
-# written into the description itself, where they always show. The metadata is still sent: it starts to count as soon as Kaggle fixes that.
 COLUMN_TABLE = "\n\n".join(f"**`{name}`**\n\n| Column | Type | Meaning |\n|---|---|---|\n" + "\n".join(f"| `{c}` | {t} | {d.replace('|', '/')} |" for c, (t, d) in cols.items())
                            for name, (_, cols) in FILES.items())
 DESCRIPTION = f"""# Job Listings: open jobs in every field, updated daily
 
-{len(live):,} open job postings from {n_companies:,} employers, collected straight from their own career pages and refreshed every day. Unlike most job datasets, it is **not limited to tech**: healthcare, retail, finance and banking, education, manufacturing, logistics, sales, marketing, engineering and more are all in here, so you can compare the job market across fields, not just inside one.
+{live_count:,} open job postings from {n_companies:,} employers, collected straight from their own career pages and refreshed every day. Unlike most job datasets, it is **not limited to tech**: healthcare, retail, finance and banking, education, manufacturing, logistics, sales, marketing, engineering and more are all in here, so you can compare the job market across fields, not just inside one.
 
 Every row has the **apply link**, the level (intern to manager+), the field, the minimum years of experience when the posting states it, skills, employment type, remote flag, location and country, pay where the employer publishes a yearly range, and the dates the job was posted, first seen and (if it disappeared) closed. A transparent ghost-job score flags listings that look like they are not really being hired for.
 
@@ -156,7 +259,7 @@ Every row has the **apply link**, the level (intern to manager+), the field, the
 
 | File | What it is |
 |---|---|
-| `jobs.csv` | One row per posting (open, or closed in the last 90 days): {len(rows):,} rows. Identical postings are merged into one row with an `openings` count. |
+| `jobs.csv` | One row per posting (open, or closed in the last 90 days): {total_rows:,} rows. Identical postings are merged into one row with an `openings` count. |
 | `jobs_by_company.csv` | One row per employer with 5+ open jobs ({len(company_rows):,} employers): how many of its roles are open to people with 0-2 years of experience, and how many "junior" roles quietly ask for 3+. |
 | `open_jobs_daily.csv` | Open and fresher-friendly job counts per day since tracking began. |
 | `skill_demand_daily.csv` | For every skill, the share of skill-tagged postings that mention it, per day. Technical and non-technical skills (Excel, customer service, project management, CPR, forklift and more). |
@@ -218,4 +321,4 @@ Binjola, C. ({today[:4]}). RoleBase Job Listings: Open Jobs in Every Field. Kagg
     "resources": [{"path": name, "description": desc, "schema": {"fields": [{"name": n, "description": d, "type": t} for n, (t, d) in cols.items()]}}
                   for name, (desc, cols) in FILES.items()],
 }, indent=2), encoding="utf-8")
-print(f"{len(rows)} rows -> kaggle/jobs.csv (+ jobs_by_company.csv, open_jobs_daily.csv, skill_demand_daily.csv); description {len(DESCRIPTION):,} chars")
+print(f"{total_rows} rows -> kaggle/jobs.csv (+ jobs_by_company.csv, open_jobs_daily.csv, skill_demand_daily.csv); description {len(DESCRIPTION):,} chars")

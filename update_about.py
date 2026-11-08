@@ -3,7 +3,9 @@
 GITHUB_TOKEN cannot edit repository settings, so scrape.yml runs this only when the ABOUT_TOKEN secret is set
 (a fine-grained token with Administration: read and write on this repository).
 """
+import json
 import subprocess
+from pathlib import Path
 
 from scraper import load
 
@@ -18,6 +20,15 @@ def about_text(n):
 
 
 if __name__ == "__main__":
-    n = len(load(open_only=True))
+    cache_path = Path("data/charts_cache.json")
+    if cache_path.exists():
+        try:
+            n = json.loads(cache_path.read_text(encoding="utf-8")).get("tot_open", 0)
+        except Exception:
+            n = 0
+    else:
+        n = 0
+    if not n:
+        n = len(load(open_only=True))
     subprocess.run(["gh", "repo", "edit", "--description", about_text(n)], check=True)  # repo from GH_REPO or the git remote
     print(f"About text set: {n} open jobs")
