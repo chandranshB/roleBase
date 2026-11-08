@@ -4,6 +4,7 @@ import datetime as dt
 import json
 import os
 import shutil
+import time
 from collections import Counter
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
@@ -79,9 +80,6 @@ FILES = {  # file -> (description, its columns): feeds the Kaggle file/column me
 
 today_date = dt.date.today()
 today = today_date.isoformat()
-out = Path("kaggle")
-out.mkdir(exist_ok=True)
-shutil.copy("kaggle_assets/dataset-cover-image.png", out)  # picked up by `kaggle datasets metadata --update`
 
 
 def board_ghost_flags(jobs):
@@ -119,7 +117,20 @@ def flat(j, flags):
     f = flags.get(j.get("id"))
     c = j.get("country") or country(j.get("location", ""))
     y = j.get("years")
-    return {**j, "country": c, "years_experience": "" if y is None else y, "skills": ";".join(j.get("skills") or []),
+    if y is not None:
+        try:
+            if isinstance(y, (int, float)):
+                import math
+                y = "" if math.isnan(y) else int(y)
+            elif str(y).isdigit():
+                y = int(y)
+            else:
+                y = ""
+        except Exception:
+            y = ""
+    else:
+        y = ""
+    return {**j, "country": c, "years_experience": y, "skills": ";".join(j.get("skills") or []),
             "pay_min": lo, "pay_max": hi, "pay_currency": cur,
             "ghost_score": "" if f is None else sum(p for _, p in f), "ghost_reasons": "; ".join(r for r, _ in f or []),
             "fresher_friendly": fresher_ok(j)}
@@ -171,93 +182,119 @@ def process_board(fpath):
     return b_rows
 
 
-files = [DIR / f for f in os.listdir(DIR) if f.endswith(".jsonl")] if DIR.exists() else []
+def main():
+    out = Path("kaggle")
+    out.mkdir(exist_ok=True)
+    shutil.copy("kaggle_assets/dataset-cover-image.png", out)  # picked up by `kaggle datasets metadata --update`
 
-total_rows = 0
-live_count = 0
-live_companies = set()
-fields_counter = Counter()
+    files = [DIR / f for f in os.listdir(DIR) if f.endswith(".jsonl")] if DIR.exists() else []
 
-with open(out / "jobs.csv", "w", encoding="utf-8", newline="") as f_jobs:
-    w = csv.DictWriter(f_jobs, list(COLUMNS), extrasaction="ignore")
-    w.writeheader()
+    total_rows = 0
+    live_count = 0
+    live_companies = set()
+    fields_counter = Counter()
 
-    with ThreadPoolExecutor(max_workers=8) as ex:
-        for b_rows in ex.map(process_board, files, chunksize=100):
-            if not b_rows:
-                continue
-            w.writerows(b_rows)
-            total_rows += len(b_rows)
+    BATCH_SIZE = 2000
+    t_start = time.time()
 
-            for r in b_rows:
-                if not r.get("closed_at"):
-                    live_count += 1
-                    c = r.get("company")
-                    if c:
-                        live_companies.add(c)
-                    cat = r.get("category")
-                    if cat and cat != "other":
-                        fields_counter[cat] += 1
+    with open(out / "jobs.csv", "w", encoding="utf-8", newline="") as f_jobs:
+        w = csv.DictWriter(f_jobs, list(COLUMNS), extrasaction="ignore")
+        w.writeheader()
 
-# Company stats
-cached_comp = None
-cache_path = Path("data/charts_cache.json")
-if cache_path.exists():
-    try:
-        cached_comp = json.loads(cache_path.read_text(encoding="utf-8")).get("company_stats")
-    except Exception:
-        pass
+        with ThreadPoolExecutor(max_workers=8) as ex:
+            for i in range(0, len(files), BATCH_SIZE):
+                batch = files[i:i + BATCH_SIZE]
+                for b_rows in ex.map(process_board, batch, chunksize=50):
+                    if not b_rows:
+                        continue
+                    w.writerows(b_rows)
+                    total_rows += len(b_rows)
 
-if cached_comp:
-    company_rows = [
-        {"company": r[0], "open_roles": r[1], "fresher_roles": r[2], "fresher_share": r[3], "junior_asking_3plus": r[4], "years_stated_share": r[5]}
-        for r in cached_comp
-    ]
-else:
-    company_rows = []
+                    for r in b_rows:
+                        if not r.get("closed_at"):
+                            live_count += 1
+                            c = r.get("company")
+                            if c:
+                                live_companies.add(c)
+                            cat = r.get("category")
+                            if cat and cat != "other":
+                                fields_counter[cat] += 1
+                f_jobs.flush()
+                elapsed = time.time() - t_start
+                done_files = min(i + BATCH_SIZE, len(files))
+                speed = done_files / elapsed if elapsed > 0 else 0
+                eta = (len(files) - done_files) / speed if speed > 0 else 0
+                print(f"[{elapsed:6.1f}s] Exported {done_files:,}/{len(files):,} boards ({total_rows:,} rows, {speed:.1f} b/s, ETA {eta/60:.1f}m)...", flush=True)
 
-with open(out / "jobs_by_company.csv", "w", encoding="utf-8", newline="") as f:
-    w = csv.DictWriter(f, list(COMPANY_COLUMNS))
-    w.writeheader()
-    w.writerows(company_rows)
+    # Company stats
+    cached_comp = None
+    cache_path = Path("data/charts_cache.json")
+    if cache_path.exists():
+        try:
+            cached_comp = json.loads(cache_path.read_text(encoding="utf-8")).get("company_stats")
+        except Exception:
+            pass
 
-# two small time series, so the dataset answers "how is it changing" and not only "what is open now"
-daily = {}
-pulse = Path("data/pulse.csv")
-if pulse.exists():
-    for r in csv.DictReader(open(pulse, encoding="utf-8")):
-        d = daily.setdefault(r["date"], [0, 0])
-        d[0] += int(r["open"])
-        d[1] += int(r["fresher"])
-with open(out / "open_jobs_daily.csv", "w", encoding="utf-8", newline="") as f:
-    w = csv.writer(f)
-    w.writerow(list(DAILY_COLUMNS))
-    w.writerows([d, *v] for d, v in sorted(daily.items()))
+    if cached_comp:
+        company_rows = [
+            {"company": r[0], "open_roles": r[1], "fresher_roles": r[2], "fresher_share": r[3], "junior_asking_3plus": r[4], "years_stated_share": r[5]}
+            for r in cached_comp
+        ]
+    else:
+        company_rows = []
 
-skills = Path("data/skills.csv")
-with open(out / "skill_demand_daily.csv", "w", encoding="utf-8", newline="") as f:
-    w = csv.writer(f)
-    w.writerow(list(SKILL_COLUMNS))
-    if skills.exists():
-        for r in csv.DictReader(open(skills, encoding="utf-8")):
-            if int(r["tagged"]):
-                w.writerow([r["date"], r["skill"], r["jobs"], r["tagged"], round(100 * int(r["jobs"]) / int(r["tagged"]), 2)])
+    with open(out / "jobs_by_company.csv", "w", encoding="utf-8", newline="") as f:
+        w = csv.DictWriter(f, list(COMPANY_COLUMNS))
+        w.writeheader()
+        w.writerows(company_rows)
 
-for name, (_, cols) in FILES.items():  # Kaggle's docs: the field list must cover every CSV column, in order, or descriptions "will not be matched up correctly": fail here, before anything is published
-    with open(out / name, encoding="utf-8", newline="") as f:
-        assert next(csv.reader(f)) == list(cols), f"{name}: CSV header and column descriptions differ"
-    assert all(t and d.strip() for t, d in cols.values()), f"{name}: a column has no type or description"
+    # two small time series, so the dataset answers "how is it changing" and not only "what is open now"
+    daily = {}
+    pulse = Path("data/pulse.csv")
+    if pulse.exists():
+        with open(pulse, encoding="utf-8") as f_pulse:
+            for r in csv.DictReader(f_pulse):
+                try:
+                    d = daily.setdefault(r["date"], [0, 0])
+                    d[0] += int(r.get("open") or 0)
+                    d[1] += int(r.get("fresher") or 0)
+                except Exception:
+                    pass
+    with open(out / "open_jobs_daily.csv", "w", encoding="utf-8", newline="") as f:
+        w = csv.writer(f)
+        w.writerow(list(DAILY_COLUMNS))
+        w.writerows([d, *v] for d, v in sorted(daily.items()))
 
-field_list = ", ".join(f"{k.replace('_', ' ')} ({v:,})" for k, v in fields_counter.most_common(14))
-n_companies = len(live_companies)
-TITLE = "Job Listings: Open Jobs in Every Field (Daily)"
-SUBTITLE = "Daily-updated open jobs with apply links, level, field, skills and pay"
-assert 6 <= len(TITLE) <= 50 and len(SUBTITLE) <= 80, (len(TITLE), len(SUBTITLE))
-SOURCES = ("Public career portals, APIs and feeds across 51 enterprise ATS platforms (Workday, Greenhouse, Lever, Ashby, SmartRecruiters, ADP, UKG Pro, Dayforce, Paylocity, Paycom, ApplicantPro, iSolved, Betterteam, GoHire, Freshteam, Gem, Recooty, CSOD, Taleo, Bullhorn, SAP SuccessFactors, Avature, Recruiterflow, Manatal, Loxo, CareerPlug, Comeet, Crelate, ClearCompany, PageUp People, Join, Personio, BambooHR, Rippling, Oracle HCM, JazzHR, Jobvite, JobScore, Zoho Recruit, iCIMS, Amazon, Apple, Microsoft, Eightfold, and more). "
-           "Collected with automated tooling; no logins, no private data.")
-COLUMN_TABLE = "\n\n".join(f"**`{name}`**\n\n| Column | Type | Meaning |\n|---|---|---|\n" + "\n".join(f"| `{c}` | {t} | {d.replace('|', '/')} |" for c, (t, d) in cols.items())
-                           for name, (_, cols) in FILES.items())
-DESCRIPTION = f"""# Job Listings: open jobs in every field, updated daily
+    skills = Path("data/skills.csv")
+    with open(out / "skill_demand_daily.csv", "w", encoding="utf-8", newline="") as f:
+        w = csv.writer(f)
+        w.writerow(list(SKILL_COLUMNS))
+        if skills.exists():
+            with open(skills, encoding="utf-8") as f_skills:
+                for r in csv.DictReader(f_skills):
+                    try:
+                        tagged = int(r.get("tagged") or 0)
+                        jobs_count = int(r.get("jobs") or 0)
+                        if tagged > 0:
+                            w.writerow([r.get("date", ""), r.get("skill", ""), jobs_count, tagged, round(100 * jobs_count / tagged, 2)])
+                    except Exception:
+                        pass
+
+    for name, (_, cols) in FILES.items():  # Kaggle's docs: the field list must cover every CSV column, in order, or descriptions "will not be matched up correctly": fail here, before anything is published
+        with open(out / name, encoding="utf-8", newline="") as f:
+            assert next(csv.reader(f)) == list(cols), f"{name}: CSV header and column descriptions differ"
+        assert all(t and d.strip() for t, d in cols.values()), f"{name}: a column has no type or description"
+
+    field_list = ", ".join(f"{k.replace('_', ' ')} ({v:,})" for k, v in fields_counter.most_common(14))
+    n_companies = len(live_companies)
+    TITLE = "Job Listings: Open Jobs in Every Field (Daily)"
+    SUBTITLE = "Daily-updated open jobs with apply links, level, field, skills and pay"
+    assert 6 <= len(TITLE) <= 50 and len(SUBTITLE) <= 80, (len(TITLE), len(SUBTITLE))
+    SOURCES = ("Public career portals, APIs and feeds across 51 enterprise ATS platforms (Workday, Greenhouse, Lever, Ashby, SmartRecruiters, ADP, UKG Pro, Dayforce, Paylocity, Paycom, ApplicantPro, iSolved, Betterteam, GoHire, Freshteam, Gem, Recooty, CSOD, Taleo, Bullhorn, SAP SuccessFactors, Avature, Recruiterflow, Manatal, Loxo, CareerPlug, Comeet, Crelate, ClearCompany, PageUp People, Join, Personio, BambooHR, Rippling, Oracle HCM, JazzHR, Jobvite, JobScore, Zoho Recruit, iCIMS, Amazon, Apple, Microsoft, Eightfold, and more). "
+               "Collected with automated tooling; no logins, no private data.")
+    COLUMN_TABLE = "\n\n".join(f"**`{name}`**\n\n| Column | Type | Meaning |\n|---|---|---|\n" + "\n".join(f"| `{c}` | {t} | {d.replace('|', '/')} |" for c, (t, d) in cols.items())
+                               for name, (_, cols) in FILES.items())
+    DESCRIPTION = f"""# Job Listings: open jobs in every field, updated daily
 
 {live_count:,} open job postings from {n_companies:,} employers, collected straight from their own career pages and refreshed every day. Unlike most job datasets, it is **not limited to tech**: healthcare, retail, finance and banking, education, manufacturing, logistics, sales, marketing, engineering and more are all in here, so you can compare the job market across fields, not just inside one.
 
@@ -317,16 +354,20 @@ Search the same data as a website: https://chandranshb.github.io/roleBase/ . Sta
 Binjola, C. ({today[:4]}). RoleBase Job Listings: Open Jobs in Every Field. Kaggle. https://www.kaggle.com/datasets/chandranshbinjola/job-listings
 """
 
-(out / "dataset-metadata.json").write_text(json.dumps({
-    "title": TITLE,
-    "subtitle": SUBTITLE,
-    "id": f"{os.environ.get('KAGGLE_USERNAME', 'user')}/job-listings",
-    "licenses": [{"name": "other"}],
-    "keywords": ["jobs and career", "employment", "business", "healthcare", "finance"],  # Kaggle allows only a few tags: more fails the whole version ("max category limit")
-    "expectedUpdateFrequency": "daily",
-    "userSpecifiedSources": SOURCES,
-    "description": DESCRIPTION,
-    "resources": [{"path": name, "description": desc, "schema": {"fields": [{"name": n, "description": d, "type": t} for n, (t, d) in cols.items()]}}
-                  for name, (desc, cols) in FILES.items()],
-}, indent=2), encoding="utf-8")
-print(f"{total_rows} rows -> kaggle/jobs.csv (+ jobs_by_company.csv, open_jobs_daily.csv, skill_demand_daily.csv); description {len(DESCRIPTION):,} chars")
+    (out / "dataset-metadata.json").write_text(json.dumps({
+        "title": TITLE,
+        "subtitle": SUBTITLE,
+        "id": f"{os.environ.get('KAGGLE_USERNAME', 'user')}/job-listings",
+        "licenses": [{"name": "other"}],
+        "keywords": ["jobs and career", "employment", "business", "healthcare", "finance"],  # Kaggle allows only a few tags: more fails the whole version ("max category limit")
+        "expectedUpdateFrequency": "daily",
+        "userSpecifiedSources": SOURCES,
+        "description": DESCRIPTION,
+        "resources": [{"path": name, "description": desc, "schema": {"fields": [{"name": n, "description": d, "type": t} for n, (t, d) in cols.items()]}}
+                      for name, (desc, cols) in FILES.items()],
+    }, indent=2), encoding="utf-8")
+    print(f"\nCompleted in {time.time() - t_start:.1f}s: {total_rows:,} rows -> kaggle/jobs.csv (+ jobs_by_company.csv, open_jobs_daily.csv, skill_demand_daily.csv); description {len(DESCRIPTION):,} chars", flush=True)
+
+
+if __name__ == "__main__":
+    main()
