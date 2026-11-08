@@ -207,7 +207,13 @@ URLS = dict(
     comeet="https://www.comeet.com/jobs/{s}/{r}",
     crelate="https://jobs.crelate.com/portal/{s}/job/{r}",
     clearcompany="https://apply.clearcompany.com/jobs?jobId={r}",
-    pageup="http://careers.pageuppeople.com/{s}/caw/en/job/{r}"
+    pageup="http://careers.pageuppeople.com/{s}/caw/en/job/{r}",
+    catsone="https://{s}.catsone.com/careers/{r}",
+    talentlyft="https://{s}.talentlyft.com/o/{r}",
+    jobadder="https://clientapps.jobadder.com/{s}/{r}",
+    jobsoid="https://{s}.jobsoid.com/apply/{r}",
+    tribepad="https://{s}.tribepad.com/members/modules/job/detail.php?record={r}",
+    applicantstack="https://{s}.applicantstack.com/x/detail/{r}"
 )
 
 DEFAULTS = dict(company="", closed_at=None, location="", country="", team="", remote=False, years=None, skills=[], pay=None, employment="", posted=None, reposts=0)
@@ -226,7 +232,8 @@ LANES = {
     "adp": 16, "jazzhr": 16, "jobvite": 8, "trakstar_hire": 8, "jobscore": 8, "zoho": 16, "icims": 8, "ultipro": 16, "dayforce": 16,
     "paylocity": 16, "paycom": 16, "applicantpro": 8, "isolved": 8, "betterteam": 8, "gohire": 8, "freshteam": 4, "gem": 4,
     "recooty": 4, "csod": 4, "taleo": 2, "bullhorn": 8, "successfactors": 8, "avature": 8, "recruiterflow": 8, "manatal": 8,
-    "loxo": 8, "careerplug": 8, "comeet": 8, "crelate": 8, "clearcompany": 8, "pageup": 8
+    "loxo": 8, "careerplug": 8, "comeet": 8, "crelate": 8, "clearcompany": 8, "pageup": 8,
+    "catsone": 8, "talentlyft": 8, "jobadder": 8, "jobsoid": 8, "tribepad": 8, "applicantstack": 8
 }
 
 # Crawl limits

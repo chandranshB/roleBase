@@ -21,7 +21,7 @@
 
 ## Overview
 
-RoleBase continuously aggregates, enriches, and archives open job vacancies directly from over **110,000 employer career portals** across **51 applicant tracking systems** (Workday, Greenhouse, Lever, Ashby, SmartRecruiters, ADP, UKG Pro, Dayforce, Paylocity, Oracle HCM, Eightfold, and more).
+RoleBase continuously aggregates, enriches, and archives open job vacancies directly from over **110,000 employer career portals** across **57 applicant tracking systems** (Workday, Greenhouse, Lever, Ashby, SmartRecruiters, ADP, UKG Pro, Dayforce, Paylocity, Oracle HCM, Eightfold, and more).
 
 Every posting is parsed and normalized with seniority level, professional field, required years of experience, yearly salary ranges, and technical/domain skills. Historical job closures are tracked to detect stale listings and ghost jobs.
 

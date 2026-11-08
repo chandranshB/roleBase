@@ -15,6 +15,12 @@ class TestPipeline(unittest.TestCase):
             ("smartrecruiters:visa:abc", "https://jobs.smartrecruiters.com/visa/abc"),
             ("workday:myworkdayjobs.com/acme:/job/123", "https://myworkdayjobs.com/acme/job/123"),
             ("apple:apple:200313970", "https://jobs.apple.com/en-us/details/200313970"),
+            ("catsone:brainsworkgroup:9549/jobs/123", "https://brainsworkgroup.catsone.com/careers/9549/jobs/123"),
+            ("talentlyft:bornfight:tNLagN", "https://bornfight.talentlyft.com/o/tNLagN"),
+            ("jobadder:84381/eq8-recruit:619389", "https://clientapps.jobadder.com/84381/eq8-recruit/619389"),
+            ("jobsoid:demo:135389", "https://demo.jobsoid.com/apply/135389"),
+            ("tribepad:twinkl:1624", "https://twinkl.tribepad.com/members/modules/job/detail.php?record=1624"),
+            ("applicantstack:gnostech:a27b9ukxyj7o", "https://gnostech.applicantstack.com/x/detail/a27b9ukxyj7o"),
             ("remotive:7", None),  # Non-derivable feed URL
         ]
         for jid, expected in cases:

@@ -26,7 +26,7 @@ from scraper import (
 # These boards' terms are about attribution and display, so they stay out of a republished dataset.
 SKIP = {"remotive", "remoteok", "himalayas", "jobicy", "weworkremotely", "getonbrd", "workingnomads", "cryptojobs", "themuse"}
 COLUMNS = {  # name -> (type, description); also the CSV column order
-    "source": ("string", "Job board or applicant tracking system (ATS) feed where the posting was detected across 51 enterprise ATS platforms (e.g. workday, greenhouse, lever, ashby, smartrecruiters, adp, ultipro, dayforce, paylocity, paycom, applicantpro, isolved, betterteam, gohire, freshteam, gem, recooty, csod, taleo, bullhorn, successfactors, avature, recruiterflow, manatal, loxo, careerplug, comeet, crelate, clearcompany, pageup, join, personio, bamboohr, rippling, oracle, jazzhr, jobvite, jobscore, zoho, icims, or public feeds)."),
+    "source": ("string", "Job board or applicant tracking system (ATS) feed where the posting was detected across 57 enterprise ATS platforms (e.g. workday, greenhouse, lever, ashby, smartrecruiters, adp, ultipro, dayforce, paylocity, paycom, applicantpro, isolved, betterteam, gohire, freshteam, gem, recooty, csod, taleo, bullhorn, successfactors, avature, recruiterflow, manatal, loxo, careerplug, comeet, crelate, clearcompany, pageup, catsone, talentlyft, jobadder, jobsoid, tribepad, applicantstack, join, personio, bamboohr, rippling, oracle, jazzhr, jobvite, jobscore, zoho, icims, or public feeds)."),
     "company": ("string", "Employer or hiring organization name advertising the job vacancy."),
     "title": ("string", "Official job title as published on the employer's career portal."),
     "url": ("string", "Direct apply link on the employer's official job board (unique primary key per row)."),
@@ -290,7 +290,7 @@ def main():
     TITLE = "Job Listings: Open Jobs in Every Field (Daily)"
     SUBTITLE = "Daily-updated open jobs with apply links, level, field, skills and pay"
     assert 6 <= len(TITLE) <= 50 and len(SUBTITLE) <= 80, (len(TITLE), len(SUBTITLE))
-    SOURCES = ("Public career portals, APIs and feeds across 51 enterprise ATS platforms (Workday, Greenhouse, Lever, Ashby, SmartRecruiters, ADP, UKG Pro, Dayforce, Paylocity, Paycom, ApplicantPro, iSolved, Betterteam, GoHire, Freshteam, Gem, Recooty, CSOD, Taleo, Bullhorn, SAP SuccessFactors, Avature, Recruiterflow, Manatal, Loxo, CareerPlug, Comeet, Crelate, ClearCompany, PageUp People, Join, Personio, BambooHR, Rippling, Oracle HCM, JazzHR, Jobvite, JobScore, Zoho Recruit, iCIMS, Amazon, Apple, Microsoft, Eightfold, and more). "
+    SOURCES = ("Public career portals, APIs and feeds across 57 enterprise ATS platforms (Workday, Greenhouse, Lever, Ashby, SmartRecruiters, ADP, UKG Pro, Dayforce, Paylocity, Paycom, ApplicantPro, iSolved, Betterteam, GoHire, Freshteam, Gem, Recooty, CSOD, Taleo, Bullhorn, SAP SuccessFactors, Avature, Recruiterflow, Manatal, Loxo, CareerPlug, Comeet, Crelate, ClearCompany, PageUp People, CATS, TalentLyft, JobAdder, Jobsoid, Tribepad, ApplicantStack, Join, Personio, BambooHR, Rippling, Oracle HCM, JazzHR, Jobvite, JobScore, Zoho Recruit, iCIMS, Amazon, Apple, Microsoft, Eightfold, and more). "
                "Collected with automated tooling; no logins, no private data.")
     COLUMN_TABLE = "\n\n".join(f"**`{name}`**\n\n| Column | Type | Meaning |\n|---|---|---|\n" + "\n".join(f"| `{c}` | {t} | {d.replace('|', '/')} |" for c, (t, d) in cols.items())
                                for name, (_, cols) in FILES.items())

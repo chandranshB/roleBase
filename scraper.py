@@ -2163,12 +2163,240 @@ def pageup(s, name):  # http://careers.pageuppeople.com/{s}/caw/en/
     return out
 
 
+def catsone(s, name):  # https://{s}.catsone.com/careers
+    url = f"https://{s}.catsone.com/careers" if "." not in s else f"https://{s}/careers"
+    try:
+        r = S.get(url, timeout=TIMEOUT)
+        if not r.ok:
+            return []
+        soup = BeautifulSoup(r.text, "html.parser")
+    except Exception:
+        return []
+    comp = name or s
+    out = []
+    seen = set()
+    for a in soup.select("a.table-row, a[href*='/jobs/']"):
+        href = a.get("href") or ""
+        if "/jobs/" not in href or "/careers/" not in href:
+            continue
+        r_part = href.split("/careers/", 1)[1].split("?")[0]
+        rid = r_part.split("-")[0].strip("/")
+        if not rid or rid in seen:
+            continue
+        seen.add(rid)
+        t_el = a.find(class_="title-cell") or a.find("div", class_=lambda c: c and "title" in c)
+        title = (t_el.get_text(strip=True) if t_el else a.get_text(strip=True)).strip()
+        if not title:
+            continue
+        cat_el = a.find("div", attrs={"data-label": "Category"})
+        team = cat_el.get_text(strip=True) if cat_el else ""
+        loc_el = a.find("div", attrs={"data-label": "Location"})
+        loc = loc_el.get_text(strip=True) if loc_el else ""
+        remote = "remote" in loc.lower() or "remote" in title.lower()
+        apply_url = f"https://{s}.catsone.com/careers/{rid}" if "." not in s else f"https://{s}/careers/{rid}"
+        out.append(job("catsone", f"catsone:{s}", rid, comp, title, apply_url, location=loc, remote=remote, team=team))
+    return out
+
+
+def talentlyft(s, name):  # https://api.talentlyft.com/v2/public/{s}/jobs
+    out = []
+    comp = name or s
+    page = 1
+    seen = set()
+    while True:
+        try:
+            r = S.get(f"https://api.talentlyft.com/v2/public/{s}/jobs", params={"page": page, "perPage": 100}, timeout=TIMEOUT)
+            if not r.ok:
+                break
+            data = r.json()
+        except Exception:
+            break
+        results = data.get("Results") or []
+        if not results:
+            break
+        for j in results:
+            shortlink = j.get("ShortlinkUrl") or ""
+            rid = shortlink.strip("/").split("/")[-1] if shortlink else str(j.get("Id") or "")
+            title = (j.get("Title") or "").strip()
+            if not rid or not title or rid in seen:
+                continue
+            seen.add(rid)
+            loc = ", ".join(filter(None, [j.get("City"), j.get("Country")]))
+            team = (j.get("Department") or "").strip()
+            tags = j.get("JobTags") or []
+            apply_url = shortlink or f"https://{s}.talentlyft.com/o/{rid}"
+            remote = "remote" in loc.lower() or "remote" in title.lower() or any("remote" in str(t).lower() for t in tags)
+            out.append(job("talentlyft", f"talentlyft:{s}", rid, comp, title, apply_url, location=loc, remote=remote, team=team, tags=tags, country=j.get("Country")))
+        pages = data.get("Pages") or {}
+        if not pages.get("Next") or page >= 10:
+            break
+        page += 1
+    return out
+
+
+def jobadder(s, name):  # https://clientapps.jobadder.com/{s}
+    try:
+        r = S.get(f"https://clientapps.jobadder.com/{s}", timeout=TIMEOUT)
+        if not r.ok:
+            return []
+        soup = BeautifulSoup(r.text, "html.parser")
+    except Exception:
+        return []
+    comp = name or s.split("/")[-1]
+    s_parts = set(s.split("/"))
+    out = []
+    seen = set()
+    for a in soup.find_all("a", class_="viewjob"):
+        href = a.get("href") or ""
+        parts = [p for p in href.split("/") if p]
+        digits = [p for p in parts if p.isdigit() and p not in s_parts]
+        rid = digits[-1] if digits else parts[-1]
+        if not rid or rid in seen:
+            continue
+        seen.add(rid)
+        title = a.get_text(strip=True)
+        if not title:
+            continue
+        card = a.find_parent(class_="pricing-item") or a.find_parent("div")
+        posted = ""
+        team = ""
+        loc = ""
+        if card:
+            date_el = card.find("sub")
+            posted = date_el.get_text(strip=True) if date_el else ""
+            items = [li.get_text(strip=True) for li in card.find_all("li") if li.get_text(strip=True)]
+            team = items[0] if len(items) >= 1 else ""
+            loc = items[2] if len(items) >= 3 else (items[1] if len(items) >= 2 else "")
+        apply_url = f"https://clientapps.jobadder.com/{s}/{rid}"
+        remote = "remote" in loc.lower() or "remote" in title.lower()
+        out.append(job("jobadder", f"jobadder:{s}", rid, comp, title, apply_url, location=loc, remote=remote, posted=posted, team=team))
+    return out
+
+
+def jobsoid(s, name):  # https://{s}.jobsoid.com
+    try:
+        r = S.get(f"https://{s}.jobsoid.com", timeout=TIMEOUT)
+        if not r.ok:
+            return []
+        soup = BeautifulSoup(r.text, "html.parser")
+    except Exception:
+        return []
+    comp = name or s
+    out = []
+    seen = set()
+    for a in soup.find_all("a", class_="jobDetailsLink"):
+        href = a.get("href") or ""
+        parts = [p for p in href.split("/") if p]
+        digits = [p for p in parts if p.isdigit()]
+        rid = digits[0] if digits else (parts[1] if len(parts) > 1 else "")
+        if not rid or rid in seen:
+            continue
+        seen.add(rid)
+        title = a.get_text(strip=True)
+        if not title:
+            continue
+        card = a.find_parent("div", class_="row") or a.find_parent("li")
+        loc = ""
+        if card:
+            sub = card.find(class_="sub-title")
+            if sub:
+                loc = sub.get_text(strip=True)
+        apply_url = f"https://{s}.jobsoid.com/apply/{rid}"
+        remote = "remote" in loc.lower() or "remote" in title.lower()
+        out.append(job("jobsoid", f"jobsoid:{s}", rid, comp, title, apply_url, location=loc, remote=remote))
+    return out
+
+
+def tribepad(s, name):  # https://{s}.tribepad.com/v2/jobs
+    try:
+        r = S.get(f"https://{s}.tribepad.com/v2/jobs", timeout=TIMEOUT)
+        if not r.ok:
+            return []
+        soup = BeautifulSoup(r.text, "html.parser")
+    except Exception:
+        return []
+    comp = name or s
+    out = []
+    seen = set()
+    for a in soup.find_all("a", href=lambda h: h and "record=" in h):
+        href = a.get("href") or ""
+        m = re.search(r"record=(\d+)", href)
+        if not m:
+            continue
+        rid = m.group(1)
+        if rid in seen:
+            continue
+        seen.add(rid)
+        t_el = a.find(class_="sitebuilder-job-results-item-title") or a.find("h3")
+        title = t_el.get_text(strip=True) if t_el else ""
+        if not title:
+            continue
+        meta = a.find(class_="sitebuilder-job-results-item-meta")
+        loc = ""
+        team = ""
+        emp = ()
+        pay = None
+        if meta:
+            for div in meta.find_all("div"):
+                txt = div.get_text(strip=True)
+                if div.find("i", class_=lambda c: c and "map-marker" in c):
+                    loc = txt
+                elif div.find("i", class_=lambda c: c and "wallet" in c):
+                    pay = find_pay(txt)
+                elif div.find("i", class_=lambda c: c and "tag" in c):
+                    team = txt
+                elif div.find("i", class_=lambda c: c and "clock" in c):
+                    emp = (txt,)
+        apply_url = f"https://{s}.tribepad.com/members/modules/job/detail.php?record={rid}"
+        remote = "remote" in loc.lower() or "remote" in title.lower()
+        out.append(job("tribepad", f"tribepad:{s}", rid, comp, title, apply_url, location=loc, remote=remote, team=team, emp=emp, pay=pay))
+    return out
+
+
+def applicantstack(s, name):  # https://{s}.applicantstack.com/x/openings
+    try:
+        r = S.get(f"https://{s}.applicantstack.com/x/openings", timeout=TIMEOUT)
+        if not r.ok:
+            return []
+        soup = BeautifulSoup(r.text, "html.parser")
+    except Exception:
+        return []
+    comp = name or s
+    out = []
+    seen = set()
+    for a in soup.find_all("a", href=lambda h: h and "/x/detail/" in h):
+        href = a.get("href") or ""
+        parts = [p for p in href.split("/") if p]
+        rid = parts[-1]
+        if not rid or rid in seen:
+            continue
+        seen.add(rid)
+        title = a.get_text(strip=True)
+        if not title:
+            continue
+        tr = a.find_parent("tr")
+        loc = ""
+        team = ""
+        if tr:
+            tds = [td.get_text(strip=True) for td in tr.find_all("td")]
+            if len(tds) >= 3:
+                team = tds[1]
+                loc = tds[2]
+            elif len(tds) == 2:
+                loc = tds[1]
+        apply_url = f"https://{s}.applicantstack.com/x/detail/{rid}"
+        remote = "remote" in loc.lower() or "remote" in title.lower()
+        out.append(job("applicantstack", f"applicantstack:{s}", rid, comp, title, apply_url, location=loc, remote=remote, team=team))
+    return out
+
+
 ATS = dict(greenhouse=greenhouse, lever=lever, ashby=ashby, smartrecruiters=smartrecruiters, workday=workday, microsoft=microsoft, eightfold=eightfold,
            amazon=amazon, apple=apple, teamtailor=teamtailor, personio=personio, recruitee=recruitee, oracle=oracle, workable=workable, phenom=phenom,
            pinpoint=pinpoint, breezy=breezy, bamboohr=bamboohr, rippling=rippling, join=join, adp=adp, jazzhr=jazzhr, jobvite=jobvite, trakstar_hire=trakstar_hire, jobscore=jobscore, zoho=zoho, icims=icims, ultipro=ultipro, dayforce=dayforce, paylocity=paylocity,
            paycom=paycom, applicantpro=applicantpro, isolved=isolved, betterteam=betterteam, gohire=gohire, freshteam=freshteam, gem=gem, recooty=recooty, csod=csod, taleo=taleo, bullhorn=bullhorn,
            successfactors=successfactors, avature=avature, recruiterflow=recruiterflow, manatal=manatal, loxo=loxo, careerplug=careerplug, comeet=comeet,
-           crelate=crelate, clearcompany=clearcompany, pageup=pageup)
+           crelate=crelate, clearcompany=clearcompany, pageup=pageup,
+           catsone=catsone, talentlyft=talentlyft, jobadder=jobadder, jobsoid=jobsoid, tribepad=tribepad, applicantstack=applicantstack)
 FEEDS = dict(remotive=remotive, remoteok=remoteok, arbeitnow=arbeitnow, himalayas=himalayas, jobicy=jobicy, weworkremotely=weworkremotely,
              getonbrd=getonbrd, workingnomads=workingnomads, jobtech=jobtech, cryptojobs=cryptojobs, themuse=themuse)
 if os.environ.get("USAJOBS_API_KEY") and os.environ.get("USAJOBS_EMAIL"):  # optional: skipped (not failed) without a key
@@ -2207,7 +2435,13 @@ URLS = dict(greenhouse="https://job-boards.greenhouse.io/{s}/jobs/{r}", lever="h
             comeet="https://www.comeet.com/jobs/{s}/{r}",
             crelate="https://jobs.crelate.com/portal/{s}/job/{r}",
             clearcompany="https://apply.clearcompany.com/jobs?jobId={r}",
-            pageup="http://careers.pageuppeople.com/{s}/caw/en/job/{r}")
+            pageup="http://careers.pageuppeople.com/{s}/caw/en/job/{r}",
+            catsone="https://{s}.catsone.com/careers/{r}",
+            talentlyft="https://{s}.talentlyft.com/o/{r}",
+            jobadder="https://clientapps.jobadder.com/{s}/{r}",
+            jobsoid="https://{s}.jobsoid.com/apply/{r}",
+            tribepad="https://{s}.tribepad.com/members/modules/job/detail.php?record={r}",
+            applicantstack="https://{s}.applicantstack.com/x/detail/{r}")
 DEFAULTS = dict(company="", closed_at=None, location="", country="", team="", remote=False, years=None, skills=[], pay=None, employment="", posted=None, reposts=0)
 
 
