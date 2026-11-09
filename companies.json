@@ -15549,6 +15549,7 @@
     "totalenergies": "TotalEnergies"
   },
   "bamboohr": {
+    "bookingsync": "BookingSync",
     "100percentgroup": "100% Group",
     "1010games": "10:10 Games",
     "10squared": "10 Squared",
@@ -35540,6 +35541,10 @@
     "zyphRo1A": "PT. Dwitama Gemilang Abadi"
   },
   "greenhouse": {
+    "thorn": "Thorn",
+    "crometrics": "CRO Metrics",
+    "ceros": "Ceros",
+    "beyond": "BeyondPricing",
     "10alabs": "10a Labs",
     "10beauty": "10Beauty",
     "10xgenomics": "10x Genomics",
@@ -40160,6 +40165,9 @@
     "valimail": "Valimail"
   },
   "icims": {
+    "careers-granicus": "Granicus",
+    "careers-ebscoind": "EBSCO Information Services",
+    "careers-daktronics": "Daktronics",
     "abudhabi-nyu.icims.com": "New York University Abu Dhabi",
     "academiccareers-udst.icims.com": "University of Doha for Science and Technology",
     "accesssolutions-skyclimber.icims.com": "Sky Climber Access Solutions",
@@ -45080,6 +45088,7 @@
     "zumapayroll": "Zuma Payroll & Processing"
   },
   "jazzhr": {
+    "roadtrippers": "Roadpass Digital",
     "10pearls": "10Pearls",
     "10xhealthsystem": "10X Health System",
     "11residential": "11Residential",
@@ -50092,6 +50101,7 @@
     "xoitechnologies": "XOi"
   },
   "jobvite": {
+    "crowdstrike": "Crowdstrike",
     "2b-residential": "2B Residential",
     "2x": "2X",
     "3rs-early-learning-center": "3 R's Early Childhood Learning Center",
@@ -67345,6 +67355,7 @@
     "zzf-potsdamde": "Leibniz-Zentrum für Zeithistorische Forschung Potsdam"
   },
   "lever": {
+    "appen-2": "Appen",
     "100ms": "100ms",
     "11855760-canada-inc": "Tali AI",
     "15five": "15Five",
@@ -90081,6 +90092,8 @@
     "zipplead": "Zipplead"
   },
   "recruitee": {
+    "kodify": "Kodify",
+    "crazygames": "CrazyGames",
     "bitfinex": "Bitfinex",
     "bunq": "bunq",
     "madewithlove": "madewithlove",
@@ -96743,6 +96756,8 @@
     "umb": "University of Maryland, Baltimore"
   },
   "teamtailor": {
+    "varnish-software": "Varnish Software",
+    "thecasumolimited": "Casumo",
     "anyfin": "Anyfin",
     "deezer": "Deezer",
     "funnel": "Funnel",
@@ -96761,6 +96776,7 @@
     "vipps": "Vipps"
   },
   "trakstar_hire": {
+    "testdouble": "Test Double",
     "1000megabytes": "1000megabytes",
     "100marks": "100Marks",
     "104ha": "104 Corporation",
