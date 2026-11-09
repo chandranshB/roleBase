@@ -1,6 +1,7 @@
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:114437988","location":"Australia","posted":"2026-11-09","team":"Apple Retail","title":"AU-Manager"}
 {"company":"Apple","employment":"contract","first_seen":"2026-10-15","id":"apple:apple:114437991","location":"Australia","posted":"2026-11-09","skills":["customer_service"],"team":"Apple Retail","title":"AU - Specialist: Seasonal Contract - Full Time or Part Time"}
 {"company":"Apple","employment":"part_time","first_seen":"2026-10-15","id":"apple:apple:114438004","location":"Canada","posted":"2026-11-09","skills":["customer_service"],"team":"Apple Retail","title":"CA - Specialist: Seasonal, Part-time"}
+{"company":"Apple","first_seen":"2026-11-09","id":"apple:apple:114438011","location":"Switzerland","posted":"2026-11-09","team":"Apple Retail","title":"CH-Operations Expert (m/f/d)"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:114438017","location":"Switzerland","posted":"2026-11-09","skills":["customer_service"],"team":"Apple Retail","title":"CH-Specialist (m/f/d)"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:114438027","location":"China","posted":"2026-11-09","team":"Apple Retail","title":"CN-Manager"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:114438029","location":"China","posted":"2026-11-09","team":"Apple Retail","title":"CN-Store Leader"}
@@ -28,6 +29,7 @@
 {"company":"Apple","employment":"part_time","first_seen":"2026-10-15","id":"apple:apple:114438164","location":"Türkiye","posted":"2026-11-09","skills":["customer_service"],"team":"Apple Retail","title":"TR - Specialist: Seasonal, Part-time"}
 {"company":"Apple","first_seen":"2026-11-09","id":"apple:apple:114438165","location":"Türkiye","posted":"2026-11-09","team":"Apple Retail","title":"TR-Expert"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:114438203","location":"Türkiye","posted":"2026-11-09","team":"Apple Retail","title":"TR-Technical Specialist"}
+{"company":"Apple","first_seen":"2026-11-09","id":"apple:apple:114438204","location":"Switzerland","posted":"2026-11-09","team":"Apple Retail","title":"CH-Technical Specialist (m/f/d)"}
 {"company":"Apple","first_seen":"2026-11-08","id":"apple:apple:114438205","location":"Sweden","posted":"2026-11-09","team":"Apple Retail","title":"SE-Technical Specialist"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:114438206","location":"France","posted":"2026-11-09","team":"Apple Retail","title":"FR-Technical Specialist"}
 {"company":"Apple","first_seen":"2026-11-09","id":"apple:apple:114438207","location":"Germany","posted":"2026-11-09","team":"Apple Retail","title":"DE-Technical Specialist (m/f/d)"}
@@ -38,6 +40,7 @@
 {"company":"Apple","first_seen":"2026-10-16","id":"apple:apple:114438216","location":"United Arab Emirates","posted":"2026-11-09","team":"Apple Retail","title":"UAE-Business Expert"}
 {"company":"Apple","first_seen":"2026-10-30","id":"apple:apple:114438217","location":"United Arab Emirates","posted":"2026-11-09","team":"Apple Retail","title":"UAE-Creative"}
 {"company":"Apple","first_seen":"2026-11-08","id":"apple:apple:114438218","location":"United Arab Emirates","posted":"2026-11-09","team":"Apple Retail","title":"UAE-Expert"}
+{"company":"Apple","first_seen":"2026-11-09","id":"apple:apple:114438219","location":"United Arab Emirates","posted":"2026-11-09","team":"Apple Retail","title":"UAE-Genius"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:114438224","location":"United Arab Emirates","posted":"2026-11-09","team":"Apple Retail","title":"UAE-Technical Specialist"}
 {"company":"Apple","employment":"part_time","first_seen":"2026-10-15","id":"apple:apple:114438225","location":"United Arab Emirates","posted":"2026-11-09","skills":["customer_service"],"team":"Apple Retail","title":"UAE - Specialist: Seasonal, Part-time"}
 {"company":"Apple","employment":"part_time","first_seen":"2026-10-15","id":"apple:apple:114438238","location":"Singapore","posted":"2026-11-09","skills":["customer_service"],"team":"Apple Retail","title":"SG - Specialist: Part-Time, Seasonal"}
@@ -49,6 +52,8 @@
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:114438255","location":"China","posted":"2026-11-09","team":"Apple Retail","title":"CN-Senior Manager"}
 {"company":"Apple","employment":"contract","first_seen":"2026-10-15","id":"apple:apple:114438282","location":"Macao","posted":"2026-11-09","skills":["customer_service"],"team":"Apple Retail","title":"MO - Specialist: Full Time, Temporary"}
 {"company":"Apple","employment":"part_time","first_seen":"2026-10-15","id":"apple:apple:114438297","location":"Mexico","posted":"2026-11-09","skills":["customer_service"],"team":"Apple Retail","title":"MX - Specialist: Seasonal, Part-time"}
+{"company":"Apple","first_seen":"2026-11-09","id":"apple:apple:114438307","location":"Taiwan","posted":"2026-11-09","team":"Apple Retail","title":"TW-Operations Expert"}
+{"company":"Apple","employment":"part_time","first_seen":"2026-11-09","id":"apple:apple:114438311","location":"Taiwan","posted":"2026-11-09","skills":["customer_service"],"team":"Apple Retail","title":"TW-Specialist: Full-Time and Part-time"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:114438339","location":"Austria","posted":"2026-11-09","team":"Apple Retail","title":"AT-Technical Specialist (m/f/d)"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:114438340","location":"Austria","posted":"2026-11-09","skills":["customer_service"],"team":"Apple Retail","title":"AT-Specialist (m/f/d)"}
 {"company":"Apple","employment":"part_time","first_seen":"2026-10-15","id":"apple:apple:114438346","location":"Thailand","posted":"2026-11-09","skills":["customer_service"],"team":"Apple Retail","title":"TH - Specialist: Part-Time, Seasonal"}
@@ -1987,6 +1992,7 @@
 {"company":"Apple","first_seen":"2026-11-08","id":"apple:apple:200674440","location":"United States of America","posted":"2026-07-27","skills":["ml"],"team":"Machine Learning and AI","title":"Applied AI Scientist - Multimodal Intelligence"}
 {"company":"Apple","first_seen":"2026-11-08","id":"apple:apple:200674463","location":"United States of America","posted":"2026-07-28","team":"Hardware","title":"Hardware Systems Integration Engineer"}
 {"company":"Apple","first_seen":"2026-11-08","id":"apple:apple:200674465","location":"United States of America","posted":"2026-07-28","skills":["ml"],"team":"Machine Learning and AI","title":"Senior Machine Learning Software Engineer - Computer Vision"}
+{"company":"Apple","first_seen":"2026-11-09","id":"apple:apple:200674479","location":"China","posted":"2026-11-09","team":"Sales and Business Development","title":"Client Partner, Games Export, Apple Ads Partner Development, Greater China"}
 {"company":"Apple","first_seen":"2026-11-08","id":"apple:apple:200674481","location":"China","posted":"2026-07-29","team":"Software and Services","title":"Senior Site Reliability Engineer - ASE / iCloud"}
 {"company":"Apple","first_seen":"2026-11-08","id":"apple:apple:200674488","location":"China","posted":"2026-07-28","skills":["ml","forecasting"],"team":"Software and Services","title":"Senior ML Optimization Engineer, iCloud"}
 {"company":"Apple","first_seen":"2026-11-08","id":"apple:apple:200674496","location":"United States of America","posted":"2026-08-12","team":"Hardware","title":"Hardware Reliability Engineer - Mac System Reliability"}
