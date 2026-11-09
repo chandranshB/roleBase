@@ -1,6 +1,7 @@
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:114437988","location":"Australia","posted":"2026-11-09","team":"Apple Retail","title":"AU-Manager"}
 {"company":"Apple","employment":"contract","first_seen":"2026-10-15","id":"apple:apple:114437991","location":"Australia","posted":"2026-11-09","skills":["customer_service"],"team":"Apple Retail","title":"AU - Specialist: Seasonal Contract - Full Time or Part Time"}
 {"company":"Apple","employment":"part_time","first_seen":"2026-10-15","id":"apple:apple:114438004","location":"Canada","posted":"2026-11-09","skills":["customer_service"],"team":"Apple Retail","title":"CA - Specialist: Seasonal, Part-time"}
+{"company":"Apple","first_seen":"2026-11-09","id":"apple:apple:114438011","location":"Switzerland","posted":"2026-11-09","team":"Apple Retail","title":"CH-Operations Expert (m/f/d)"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:114438017","location":"Switzerland","posted":"2026-11-09","skills":["customer_service"],"team":"Apple Retail","title":"CH-Specialist (m/f/d)"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:114438027","location":"China","posted":"2026-11-09","team":"Apple Retail","title":"CN-Manager"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:114438029","location":"China","posted":"2026-11-09","team":"Apple Retail","title":"CN-Store Leader"}
@@ -28,6 +29,7 @@
 {"company":"Apple","employment":"part_time","first_seen":"2026-10-15","id":"apple:apple:114438164","location":"Türkiye","posted":"2026-11-09","skills":["customer_service"],"team":"Apple Retail","title":"TR - Specialist: Seasonal, Part-time"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:114438165","location":"Türkiye","posted":"2026-11-09","team":"Apple Retail","title":"TR-Expert"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:114438203","location":"Türkiye","posted":"2026-11-09","team":"Apple Retail","title":"TR-Technical Specialist"}
+{"company":"Apple","first_seen":"2026-11-09","id":"apple:apple:114438204","location":"Switzerland","posted":"2026-11-09","team":"Apple Retail","title":"CH-Technical Specialist (m/f/d)"}
 {"company":"Apple","first_seen":"2026-11-08","id":"apple:apple:114438205","location":"Sweden","posted":"2026-11-09","team":"Apple Retail","title":"SE-Technical Specialist"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:114438206","location":"France","posted":"2026-11-09","team":"Apple Retail","title":"FR-Technical Specialist"}
 {"company":"Apple","first_seen":"2026-10-22","id":"apple:apple:114438207","location":"Germany","posted":"2026-11-09","team":"Apple Retail","title":"DE-Technical Specialist (m/f/d)"}
@@ -38,6 +40,7 @@
 {"company":"Apple","first_seen":"2026-10-16","id":"apple:apple:114438216","location":"United Arab Emirates","posted":"2026-11-09","team":"Apple Retail","title":"UAE-Business Expert"}
 {"company":"Apple","first_seen":"2026-10-30","id":"apple:apple:114438217","location":"United Arab Emirates","posted":"2026-11-09","team":"Apple Retail","title":"UAE-Creative"}
 {"company":"Apple","first_seen":"2026-11-08","id":"apple:apple:114438218","location":"United Arab Emirates","posted":"2026-11-09","team":"Apple Retail","title":"UAE-Expert"}
+{"company":"Apple","first_seen":"2026-11-09","id":"apple:apple:114438219","location":"United Arab Emirates","posted":"2026-11-09","team":"Apple Retail","title":"UAE-Genius"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:114438224","location":"United Arab Emirates","posted":"2026-11-09","team":"Apple Retail","title":"UAE-Technical Specialist"}
 {"company":"Apple","employment":"part_time","first_seen":"2026-10-15","id":"apple:apple:114438225","location":"United Arab Emirates","posted":"2026-11-09","skills":["customer_service"],"team":"Apple Retail","title":"UAE - Specialist: Seasonal, Part-time"}
 {"company":"Apple","employment":"part_time","first_seen":"2026-10-15","id":"apple:apple:114438238","location":"Singapore","posted":"2026-11-09","skills":["customer_service"],"team":"Apple Retail","title":"SG - Specialist: Part-Time, Seasonal"}
@@ -49,6 +52,8 @@
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:114438255","location":"China","posted":"2026-11-09","team":"Apple Retail","title":"CN-Senior Manager"}
 {"company":"Apple","employment":"contract","first_seen":"2026-10-15","id":"apple:apple:114438282","location":"Macao","posted":"2026-11-09","skills":["customer_service"],"team":"Apple Retail","title":"MO - Specialist: Full Time, Temporary"}
 {"company":"Apple","employment":"part_time","first_seen":"2026-10-15","id":"apple:apple:114438297","location":"Mexico","posted":"2026-11-09","skills":["customer_service"],"team":"Apple Retail","title":"MX - Specialist: Seasonal, Part-time"}
+{"company":"Apple","first_seen":"2026-11-09","id":"apple:apple:114438307","location":"Taiwan","posted":"2026-11-09","team":"Apple Retail","title":"TW-Operations Expert"}
+{"company":"Apple","employment":"part_time","first_seen":"2026-11-09","id":"apple:apple:114438311","location":"Taiwan","posted":"2026-11-09","skills":["customer_service"],"team":"Apple Retail","title":"TW-Specialist: Full-Time and Part-time"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:114438339","location":"Austria","posted":"2026-11-09","team":"Apple Retail","title":"AT-Technical Specialist (m/f/d)"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:114438340","location":"Austria","posted":"2026-11-09","skills":["customer_service"],"team":"Apple Retail","title":"AT-Specialist (m/f/d)"}
 {"company":"Apple","employment":"part_time","first_seen":"2026-10-15","id":"apple:apple:114438346","location":"Thailand","posted":"2026-11-09","skills":["customer_service"],"team":"Apple Retail","title":"TH - Specialist: Part-Time, Seasonal"}
@@ -109,7 +114,7 @@
 {"company":"Apple","first_seen":"2026-11-08","id":"apple:apple:200564601","location":"China","posted":"2024-08-23","team":"Hardware","title":"Product Design Engineer (Home & Ecosystem)"}
 {"company":"Apple","first_seen":"2026-11-08","id":"apple:apple:200565362","location":"United States of America","posted":"2026-06-01","team":"Software and Services","title":"Systems & Kernel Software Engineer, SEAR"}
 {"company":"Apple","first_seen":"2026-11-08","id":"apple:apple:200565756","location":"United States of America","posted":"2025-06-24","team":"Machine Learning and AI","title":"Senior Software Engineer, Middleware - Special Projects"}
-{"company":"Apple","first_seen":"2026-11-08","id":"apple:apple:200565793","location":"China","posted":"2024-08-30","team":"Hardware","title":"Vision Pro Hardware System Engineer"}
+{"company":"Apple","first_seen":"2026-11-08","id":"apple:apple:200565793","location":"China","posted":"2024-08-30","team":"Hardware","title":"Vision Products Hardware System Engineer"}
 {"company":"Apple","first_seen":"2026-11-08","id":"apple:apple:200565999","location":"China","posted":"2024-09-04","team":"Students","title":"Materials Engineer-Ink, Coating(Packaging)"}
 {"company":"Apple","first_seen":"2026-11-08","id":"apple:apple:200566862","location":"United States of America","posted":"2025-04-11","team":"Hardware","title":"Product Design Engineer"}
 {"company":"Apple","first_seen":"2026-11-08","id":"apple:apple:200566920","location":"India","posted":"2024-09-11","team":"Operations and Supply Chain","title":"Operations NPI Test Engineer"}
@@ -2362,7 +2367,6 @@
 {"company":"Apple","first_seen":"2026-11-08","id":"apple:apple:200677867","location":"China","posted":"2026-09-04","team":"Corporate Functions","title":"Manager, Payment Acceptance -- China"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200677872","location":"Spain","posted":"2026-10-09","skills":["customer_service"],"team":"Sales and Business Development","title":"Apple Channel Store Advisor, Madrid"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200677874","location":"India","posted":"2026-10-08","team":"Operations and Supply Chain","title":"Supply Demand Management Planner"}
-{"company":"Apple","first_seen":"2026-11-08","id":"apple:apple:200677888","location":"China","posted":"2026-08-18","team":"Software and Services","title":"Software Engineering Manager - eBusiness"}
 {"company":"Apple","first_seen":"2026-11-08","id":"apple:apple:200677892","location":"Japan","posted":"2026-08-16","team":"Marketing","title":"Promotional Artwork Coordinator, App Store - Japan"}
 {"company":"Apple","first_seen":"2026-11-08","id":"apple:apple:200677894","location":"India","posted":"2026-08-13","team":"Software and Services","title":"Data Engineer - Ads"}
 {"company":"Apple","first_seen":"2026-11-08","id":"apple:apple:200677895","location":"United States of America","posted":"2026-08-13","team":"Hardware","title":"TFT Process Engineer"}
@@ -3335,7 +3339,6 @@
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200684990","location":"United States of America","posted":"2026-10-05","skills":["javascript"],"team":"Software and Services","title":"Front End Web Accessibility Engineer, Retail Engineering"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200685001","location":"India","posted":"2026-10-14","team":"Software and Services","title":"Senior Software Engineer, Find My"}
 {"company":"Apple","first_seen":"2026-10-28","id":"apple:apple:200685003","location":"United States of America","posted":"2026-10-27","team":"Software and Services","title":"Senior Search Engineer - Services Special Projects"}
-{"company":"Apple","first_seen":"2026-10-20","id":"apple:apple:200685008","location":"United States of America","posted":"2026-10-20","team":"Software and Services","title":"Senior Distributed Systems Engineer - Services Special Projects"}
 {"company":"Apple","first_seen":"2026-11-08","id":"apple:apple:200685011","location":"United States of America","posted":"2026-09-22","team":"Hardware","title":"Product Design Engineering Lead - Applied Research and Characterization"}
 {"company":"Apple","first_seen":"2026-11-08","id":"apple:apple:200685012","location":"China","posted":"2026-09-22","team":"Hardware","title":"Hardware Test Engineer - iPhone"}
 {"company":"Apple","employment":"internship","first_seen":"2026-11-08","id":"apple:apple:200685016","location":"China","posted":"2026-09-24","team":"Hardware","title":"Tooling Engineering Intern - iPhone"}
