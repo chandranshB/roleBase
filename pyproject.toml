@@ -16,6 +16,7 @@ dependencies = [
     "pillow>=10.0.0",
     "six>=1.16.0",
     "kaggle>=1.6.0",
+    "cryptography>=41.0.0",
 ]
 
 [project.optional-dependencies]

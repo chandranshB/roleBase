@@ -2631,6 +2631,539 @@ def golangprojects():  # Go language remote developer listings
                        None, True, rss_day(i.findtext("pubDate")), desc=text(i.findtext("description"))))
     return out
 
+
+
+# ---------- New ATS Crawlers ----------
+def hireology(s, name):
+    out = []
+    page = 1
+    while page <= 40:
+        d = get(f"https://api.hireology.com/v2/public/careers/{s}", params={"page": page, "page_size": 100})
+        rows = d.get("data") or []
+        if not rows:
+            break
+        for j in rows:
+            jid = str(j.get("id") or "")
+            if not jid or not j.get("name"):
+                continue
+            locs = []
+            for l in j.get("locations") or []:
+                if isinstance(l, dict):
+                    parts = filter(None, [l.get("city"), l.get("state")])
+                    loc_str = ", ".join(parts)
+                    if loc_str and loc_str not in locs:
+                        locs.append(loc_str)
+            comp_obj = j.get("compensation") or {}
+            pay = None
+            if isinstance(comp_obj, dict):
+                min_c = comp_obj.get("comp_range_min")
+                max_c = comp_obj.get("comp_range_max")
+                if min_c and max_c:
+                    try:
+                        pay = [int(float(min_c)), int(float(max_c)), "USD"]
+                    except (ValueError, TypeError):
+                        pass
+            desc = text(j.get("job_description") or "")
+            team = (j.get("job_family") or {}).get("name") if isinstance(j.get("job_family"), dict) else ""
+            emp_status = j.get("employment_status") or ""
+            emp = [emp_status] if emp_status else None
+            out.append(job("hireology", f"hireology:{s}", jid, name or (j.get("organization") or {}).get("name") or s,
+                           j["name"], j.get("career_site_url") or f"https://careers.hireology.com/{s}/{jid}/description",
+                           location="; ".join(locs), remote=j.get("remote") is True, posted=j.get("created_at"),
+                           desc=desc, team=team, emp=emp, pay=pay))
+        if len(rows) < 100 or len(out) >= int(d.get("count") or 0):
+            break
+        page += 1
+    return out
+
+
+FEISHU_BROWSER_UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+
+def feishu(s, name):
+    forced = ""
+    host = s
+    if "/" in host:
+        host, forced = host.split("/", 1)
+        forced = forced.strip("/")
+    if "." not in host:
+        host = f"{host}.jobs.feishu.cn"
+
+    path = forced
+    if not path:
+        try:
+            r = S.get(f"https://{host}/", headers={"User-Agent": FEISHU_BROWSER_UA, "Accept-Language": "zh-CN,zh;q=0.9"}, timeout=TIMEOUT)
+            m = re.search(r'id="js-websiteInfo"[^>]*>(.*?)</script>', r.text, re.S)
+            if m:
+                path = ((json.loads(m.group(1)).get("website_info")) or {}).get("path", "")
+        except Exception:
+            pass
+    if not path:
+        path = "index"
+
+    headers = {
+        "User-Agent": FEISHU_BROWSER_UA,
+        "Origin": f"https://{host}",
+        "Referer": f"https://{host}/",
+        "Portal-Channel": "office",
+        "Portal-Platform": "pc",
+        "website-path": path,
+        "Content-Type": "application/json"
+    }
+
+    out = []
+    limit = 50
+    for page in range(25):
+        body_payload = {
+            "keyword": "", "limit": limit, "offset": page * limit, "portal_type": 2,
+            "job_category_id_list": [], "location_code_list": [], "subject_id_list": [],
+            "recruitment_id_list": [], "job_function_id_list": []
+        }
+        try:
+            res = body(lambda: S.post(f"https://{host}/api/v1/search/job/posts", json=body_payload, headers=headers, timeout=TIMEOUT))
+        except Exception:
+            break
+        data = (res.get("data") or {}) if isinstance(res, dict) else {}
+        posts = data.get("job_post_list") or []
+        if not posts:
+            break
+        for j in posts:
+            jid = str(j.get("id") or "")
+            if not jid or not j.get("title"):
+                continue
+            cities = ", ".join(c.get("name", "") for c in (j.get("city_list") or []) if isinstance(c, dict) and c.get("name"))
+            jf = j.get("job_function") or {}
+            team = jf.get("name", "") if isinstance(jf, dict) else ""
+            desc = text("\n\n".join(x for x in [j.get("description", ""), j.get("requirement", "")] if x))
+            post_time = j.get("publish_time")
+            posted_date = None
+            if post_time:
+                try:
+                    posted_date = time.strftime("%Y-%m-%d", time.gmtime(int(post_time) / 1000))
+                except Exception:
+                    posted_date = str(post_time)[:10]
+            url = f"https://{host}/{path}/position/{jid}/detail"
+            out.append(job("feishu", f"feishu:{s}", jid, name or s.split(".")[0], j["title"], url,
+                           location=cities, posted=posted_date, desc=desc, team=team))
+        if len(posts) < limit or len(out) >= int(data.get("count") or 0):
+            break
+    return out
+
+
+def _decrypt_moka(resp):
+    if isinstance(resp, dict) and "data" in resp and "necromancer" in resp:
+        try:
+            from cryptography.hazmat.primitives.ciphers import Cipher, algorithms, modes
+            from cryptography.hazmat.primitives import padding
+            import base64
+            key = resp["necromancer"].encode("utf-8")
+            iv = b"de7c21ed8d6f50fe"
+            cipher = Cipher(algorithms.AES(key), modes.CBC(iv))
+            decryptor = cipher.decryptor()
+            pt = decryptor.update(base64.b64decode(resp["data"])) + decryptor.finalize()
+            unpadder = padding.PKCS7(128).unpadder()
+            dec = unpadder.update(pt) + unpadder.finalize()
+            return json.loads(dec.decode("utf-8"))
+        except Exception:
+            return resp
+    return resp
+
+
+def moka(s, name):
+    delim = "/" if "/" in s else ":"
+    parts = s.split(delim, 1)
+    org_id = parts[0]
+    site_id = int(parts[1]) if len(parts) > 1 and parts[1].isdigit() else None
+    if not site_id:
+        return []
+
+    headers = {"Origin": "https://app.mokahr.com", "Content-Type": "application/json"}
+    out = []
+    limit = 50
+    for page in range(25):
+        payload = {"orgId": org_id, "siteId": site_id, "locale": "zh-CN", "limit": limit, "offset": page * limit}
+        try:
+            raw = body(lambda: S.post("https://app.mokahr.com/api/outer/ats-apply/website/jobs/v2", json=payload, headers=headers, timeout=TIMEOUT))
+        except Exception:
+            break
+        dec = _decrypt_moka(raw)
+        data = (dec.get("data") or {}) if isinstance(dec, dict) else {}
+        jobs = data.get("jobs") or data.get("list") or []
+        if not jobs:
+            break
+        for j in jobs:
+            jid = str(j.get("id") or "")
+            if not jid or not j.get("title"):
+                continue
+            locs = ", ".join(x.get("cityName", "") for x in (j.get("locations") or []) if isinstance(x, dict) and x.get("cityName"))
+            dep = j.get("department") or {}
+            team = dep.get("name", "") if isinstance(dep, dict) else ""
+            desc = text(j.get("jobDescription") or "")
+            posted_date = j.get("publishedAt") or j.get("createdAt")
+            if posted_date and len(str(posted_date)) >= 10:
+                posted_date = str(posted_date)[:10]
+            pay = None
+            mn, mx = j.get("minSalary"), j.get("maxSalary")
+            if mn and mx:
+                try:
+                    pay = [int(mn), int(mx), "CNY"]
+                except (ValueError, TypeError):
+                    pass
+            url = f"https://app.mokahr.com/social-recruitment/{org_id}/{site_id}/job/{jid}"
+            out.append(job("moka", f"moka:{s}", jid, name or org_id, j["title"], url,
+                           location=locs, posted=posted_date, desc=desc, team=team, pay=pay))
+        if len(jobs) < limit:
+            break
+    return out
+
+
+def beisen(s, name):
+    slug = s.replace(".zhiye.com", "").strip()
+    headers = {
+        "Origin": f"https://{slug}.zhiye.com",
+        "Referer": f"https://{slug}.zhiye.com/social/jobs",
+        "Content-Type": "application/json"
+    }
+    out = []
+    limit = 50
+    for page in range(25):
+        body_payload = {
+            "PageIndex": page, "PageSize": limit, "LocId": [], "Category": ["1"],
+            "KeyWords": "", "SpecialType": 0, "PortalId": "",
+            "DisplayFields": ["Category", "Kind", "LocId", "PostDate", "Salary"]
+        }
+        try:
+            res = body(lambda: S.post(f"https://{slug}.zhiye.com/api/Jobad/GetJobAdPageList", json=body_payload, headers=headers, timeout=TIMEOUT))
+        except Exception:
+            break
+        posts = (res.get("Data") or []) if isinstance(res, dict) else []
+        if not posts:
+            break
+        for j in posts:
+            jid = str(j.get("JobAdId") or j.get("Id") or "")
+            title = j.get("JobAdName") or ""
+            if not jid or not title:
+                continue
+            locs = ", ".join(j.get("LocNames") or [])
+            post_date = j.get("PostDate")
+            date_str = str(post_date)[:10] if post_date and len(str(post_date)) >= 10 else None
+            desc = text(j.get("Duty") or "")
+            url = f"https://{slug}.zhiye.com/social/jobs"
+            out.append(job("beisen", f"beisen:{s}", jid, name or slug, title, url,
+                           location=locs, posted=date_str, desc=desc))
+        if len(posts) < limit or len(out) >= int(res.get("Count") or 0):
+            break
+    return out
+
+
+def tencent(s, name):
+    out = []
+    size = 100
+    for page in range(1, 30):
+        d = get("https://careers.tencent.com/tencentcareer/api/post/Query",
+                params={"pageSize": size, "pageIndex": page, "language": "zh-cn"})
+        data = d.get("Data") or {}
+        posts = data.get("Posts") or []
+        if not posts:
+            break
+        for j in posts:
+            jid = str(j.get("PostId") or "")
+            title = j.get("RecruitPostName") or ""
+            if not jid or not title:
+                continue
+            loc = j.get("LocationName") or ""
+            team = j.get("CategoryName") or j.get("BGName") or ""
+            desc = text(j.get("Responsibility") or "")
+            update_time = j.get("LastUpdateTime") or ""
+            posted_date = None
+            m = re.search(r"(\d{4})年(\d{2})月(\d{2})日", update_time)
+            if m:
+                posted_date = f"{m.group(1)}-{m.group(2)}-{m.group(3)}"
+            url = j.get("PostURL") or f"https://careers.tencent.com/jobdesc.html?postId={jid}"
+            out.append(job("tencent", f"tencent:{s}", jid, name or "Tencent", title, url,
+                           location=loc, posted=posted_date, desc=desc, team=team))
+        if len(posts) < size or len(out) >= int(data.get("Count") or 0):
+            break
+    return out
+
+
+def bytedance(s, name):
+    headers = {"User-Agent": FEISHU_BROWSER_UA, "portal-channel": "office", "portal-platform": "pc", "Content-Type": "application/json"}
+    out = []
+    limit = 50
+    for page in range(25):
+        body_payload = {
+            "keyword": "", "limit": limit, "offset": page * limit,
+            "job_category_id_list": [], "location_code_list": [],
+            "subject_id_list": [], "recruitment_id_list": []
+        }
+        try:
+            res = body(lambda: S.post("https://jobs.bytedance.com/api/v1/search/job/posts", json=body_payload, headers=headers, timeout=TIMEOUT))
+        except Exception:
+            break
+        data = (res.get("data") or {}) if isinstance(res, dict) else {}
+        posts = data.get("job_post_list") or []
+        if not posts:
+            break
+        for j in posts:
+            jid = str(j.get("id") or "")
+            title = j.get("title") or ""
+            if not jid or not title:
+                continue
+            city = (j.get("city_info") or {}).get("name", "") if isinstance(j.get("city_info"), dict) else ""
+            cat = j.get("job_category") or {}
+            team = cat.get("name", "") if isinstance(cat, dict) else ""
+            desc = text("\n\n".join(x for x in [j.get("description", ""), j.get("requirement", "")] if x))
+            post_time = j.get("publish_time")
+            posted_date = None
+            if post_time:
+                try:
+                    posted_date = time.strftime("%Y-%m-%d", time.gmtime(int(post_time) / 1000))
+                except Exception:
+                    posted_date = str(post_time)[:10]
+            url = f"https://jobs.bytedance.com/experienced/position/{jid}/detail"
+            out.append(job("bytedance", f"bytedance:{s}", jid, name or "ByteDance", title, url,
+                           location=city, posted=posted_date, desc=desc, team=team))
+        if len(posts) < limit or len(out) >= int(data.get("count") or 0):
+            break
+    return out
+
+
+def netease(s, name):
+    headers = {"Content-Type": "application/json"}
+    out = []
+    size = 100
+    for page in range(1, 30):
+        payload = {"currentPage": page, "pageSize": size, "keyword": ""}
+        try:
+            res = body(lambda: S.post("https://hr.163.com/api/hr163/position/queryPage", json=payload, headers=headers, timeout=TIMEOUT))
+        except Exception:
+            break
+        data = (res.get("data") or {}) if isinstance(res, dict) else {}
+        posts = data.get("list") or []
+        if not posts:
+            break
+        for j in posts:
+            jid = str(j.get("id") or "")
+            title = j.get("name") or ""
+            if not jid or not title:
+                continue
+            locs = ", ".join(j.get("workPlaceNameList") or [])
+            team = j.get("firstDepName") or j.get("firstPostTypeName") or ""
+            desc = text(j.get("description") or j.get("requirement") or "")
+            up_time = j.get("updateTime")
+            posted_date = None
+            if up_time:
+                try:
+                    posted_date = time.strftime("%Y-%m-%d", time.gmtime(int(up_time) / 1000))
+                except Exception:
+                    pass
+            url = f"https://hr.163.com/position/detail?id={jid}"
+            out.append(job("netease", f"netease:{s}", jid, name or "NetEase", title, url,
+                           location=locs, posted=posted_date, desc=desc, team=team))
+        if len(out) >= int(data.get("total") or 0):
+            break
+    return out
+
+
+def jd(s, name):
+    headers = {"Referer": "https://zhaopin.jd.com/web/job/job_info_list/3", "X-Requested-With": "XMLHttpRequest"}
+    out = []
+    size = 50
+    for page in range(1, 30):
+        form = {"pageIndex": page, "pageSize": size, "jobType": 3}
+        try:
+            res = body(lambda: S.post("https://zhaopin.jd.com/web/job/job_list", data=form, headers=headers, timeout=TIMEOUT))
+        except Exception:
+            break
+        rows = res if isinstance(res, list) else (res.get("data") or res.get("list") or [])
+        if not rows:
+            break
+        for j in rows:
+            jid = str(j.get("positionId") or "")
+            title = j.get("positionName") or ""
+            if not jid or not title:
+                continue
+            loc = j.get("workCity") or ""
+            team = j.get("positionDeptName") or ""
+            desc = text(j.get("qualification") or j.get("workContent") or "")
+            pub = j.get("formatPublishTime") or j.get("publishTime") or ""
+            posted_date = str(pub)[:10] if len(str(pub)) >= 10 else None
+            url = f"https://zhaopin.jd.com/web/job/job_detail/{jid}"
+            out.append(job("jd", f"jd:{s}", jid, name or "JD.com", title, url,
+                           location=loc, posted=posted_date, desc=desc, team=team))
+        if len(rows) < size:
+            break
+    return out
+
+
+def unitree(s, name):
+    import unicodedata
+    headers = {"Accept-Language": "zh-CN,zh;q=0.9", "Origin": "https://www.unitree.com", "Referer": "https://www.unitree.com/"}
+    try:
+        d = get("https://api.unitree.com/website/job/list", params={"perPage": 300}, headers=headers)
+    except Exception:
+        return []
+    items = ((d.get("data") or {}).get("items")) or []
+    out = []
+    for j in items:
+        jid = str(j.get("id") or "")
+        title = unicodedata.normalize("NFKC", j.get("title") or "")
+        if not jid or not title:
+            continue
+        jd_desc = unicodedata.normalize("NFKC", "\n\n".join(x for x in [j.get("duty", ""), j.get("ability", "")] if x))
+        sal = (j.get("salary") or "").strip()
+        pay = None
+        m = re.match(r"(\d+)-(\d+)", sal)
+        if m:
+            pay = [int(m.group(1)) * 1000 * 12, int(m.group(2)) * 1000 * 12, "CNY"]
+        post_time = j.get("postTime") or ""
+        posted_date = post_time.replace("/", "-") if post_time else None
+        url = f"https://www.unitree.com/cn/position/{jid}"
+        out.append(job("unitree", f"unitree:{s}", jid, name or "Unitree Robotics", title, url,
+                       location=str(j.get("cityId") or ""), posted=posted_date, desc=text(jd_desc), pay=pay))
+    return out
+
+
+def baidu(s, name):
+    headers = {
+        "User-Agent": FEISHU_BROWSER_UA,
+        "Referer": "https://talent.baidu.com/jobs/social",
+        "Accept": "application/json, text/plain, */*",
+    }
+    out = []
+    size = 20
+    for page in range(1, 101):
+        form = {"recruitType": "SOCIAL", "pageSize": size, "keyWord": "", "curPage": page}
+        try:
+            res = body(lambda: S.post("https://talent.baidu.com/httservice/getPostListNew", data=form, headers=headers, timeout=TIMEOUT))
+        except Exception:
+            break
+        data = res.get("data") or {}
+        rows = data.get("list") or []
+        if not rows:
+            break
+        for j in rows:
+            jid = str(j.get("postId") or "")
+            title = j.get("name") or ""
+            if not jid or not title:
+                continue
+            dept = j.get("orgName") or j.get("bgShortName") or ""
+            loc = j.get("workPlace") or ""
+            posted_date = j.get("publishDate") or j.get("updateDate") or None
+            jd_desc = "\n\n".join(x for x in [j.get("workContent", ""), j.get("serviceCondition", "")] if x)
+            url = f"https://talent.baidu.com/jobs/social-detail/{jid}"
+            out.append(job("baidu", f"baidu:{s}", jid, name or "Baidu", title, url,
+                           location=loc, team=dept, posted=posted_date, desc=text(jd_desc)))
+        total = int(data.get("total") or 0)
+        if len(out) >= total or len(rows) < size:
+            break
+    return out
+
+
+# ---------- New Feeds ----------
+def arbeitsagentur():
+    headers = {"X-API-Key": "jobboerse-jobsuche"}
+    out = []
+    size = 100
+    for page in range(1, 51):
+        d = get("https://rest.arbeitsagentur.de/jobboerse/jobsuche-service/pc/v6/jobs",
+                params={"page": page, "size": size}, headers=headers)
+        rows = d.get("ergebnisliste") or []
+        if not rows:
+            break
+        for j in rows:
+            refnr = j.get("referenznummer")
+            title = j.get("stellenangebotsTitel")
+            if not refnr or not title:
+                continue
+            company = j.get("firma") or "Bundesagentur für Arbeit"
+            loc_list = []
+            for loc in j.get("stellenlokationen") or []:
+                if isinstance(loc, dict) and loc.get("ort"):
+                    loc_list.append(loc["ort"])
+            location = ", ".join(loc_list) or "Germany"
+            posted_date = j.get("datumErsteVeroeffentlichung")
+            date_str = str(posted_date)[:10] if posted_date and len(str(posted_date)) >= 10 else None
+            url = f"https://www.arbeitsagentur.de/jobsuche/jobdetail/{refnr}"
+            out.append(job("arbeitsagentur", "arbeitsagentur", refnr, clean_company(company), title, url,
+                           location=location, posted=date_str, country="Germany"))
+        if len(rows) < size:
+            break
+    return out
+
+
+def mycareersfuture():
+    headers = {"Content-Type": "application/json"}
+    out = []
+    limit = 100
+    for page in range(50):
+        payload = {"limit": limit, "page": page}
+        res = body(lambda: S.post("https://api.mycareersfuture.gov.sg/v2/search", json=payload, headers=headers, timeout=TIMEOUT))
+        rows = (res.get("results") or []) if isinstance(res, dict) else []
+        if not rows:
+            break
+        for j in rows:
+            uuid = j.get("uuid")
+            title = j.get("title")
+            if not uuid or not title:
+                continue
+            company = (j.get("postedCompany") or {}).get("name") or (j.get("hiringCompany") or {}).get("name") or "Employer"
+            sal = j.get("salary") or {}
+            pay = None
+            if sal.get("minimum") and sal.get("maximum"):
+                try:
+                    mult = 12 if (sal.get("type") or {}).get("salaryType") == "Monthly" else 1
+                    pay = [int(sal["minimum"]) * mult, int(sal["maximum"]) * mult, "SGD"]
+                except (ValueError, TypeError):
+                    pass
+            meta = j.get("metadata") or {}
+            posted_date = meta.get("originalPostingDate")
+            date_str = str(posted_date)[:10] if posted_date and len(str(posted_date)) >= 10 else None
+            cat = ", ".join(c.get("category", "") for c in (j.get("categories") or []) if isinstance(c, dict))
+            url = f"https://www.mycareersfuture.gov.sg/job/{uuid}"
+            out.append(job("mycareersfuture", "mycareersfuture", uuid, clean_company(company), title, url,
+                           location="Singapore", posted=date_str, country="Singapore", team=cat, pay=pay))
+        if len(rows) < limit:
+            break
+    return out
+
+
+def freehire():
+    out = []
+    limit = 100
+    for offset in range(0, 5000, limit):
+        d = get("https://freehire.me/api/v1/agent/jobs/search", params={"limit": limit, "offset": offset})
+        rows = d.get("data") or []
+        if not rows:
+            break
+        for j in rows:
+            slug = j.get("public_slug")
+            title = j.get("title")
+            if not slug or not title:
+                continue
+            company = j.get("company") or j.get("company_slug") or "Employer"
+            url = j.get("url") or f"https://freehire.me/job/{slug}"
+            loc = j.get("location") or ", ".join(j.get("cities") or [])
+            enrich = j.get("enrichment") or {}
+            pay = None
+            if enrich.get("salary_min") and enrich.get("salary_max"):
+                try:
+                    curr = enrich.get("salary_currency") or "USD"
+                    pay = [int(enrich["salary_min"]), int(enrich["salary_max"]), curr]
+                except (ValueError, TypeError):
+                    pass
+            posted = j.get("posted_at")
+            date_str = str(posted)[:10] if posted and len(str(posted)) >= 10 else None
+            desc = text(j.get("description") or "")
+            team = enrich.get("category") or ""
+            out.append(job("freehire", "freehire", slug, clean_company(company), title, url,
+                           location=loc, remote=bool(j.get("work_mode") == "remote"), posted=date_str,
+                           desc=desc, team=team, pay=pay))
+        if len(rows) < limit:
+            break
+    return out
+
+
 ATS = dict(greenhouse=greenhouse, lever=lever, ashby=ashby, smartrecruiters=smartrecruiters, workday=workday, microsoft=microsoft, eightfold=eightfold,
            amazon=amazon, apple=apple, teamtailor=teamtailor, personio=personio, recruitee=recruitee, oracle=oracle, workable=workable, phenom=phenom,
            pinpoint=pinpoint, breezy=breezy, bamboohr=bamboohr, rippling=rippling, join=join, adp=adp, jazzhr=jazzhr, jobvite=jobvite, trakstar_hire=trakstar_hire, jobscore=jobscore, zoho=zoho, icims=icims, ultipro=ultipro, dayforce=dayforce, paylocity=paylocity,
@@ -2638,10 +3171,10 @@ ATS = dict(greenhouse=greenhouse, lever=lever, ashby=ashby, smartrecruiters=smar
            successfactors=successfactors, avature=avature, recruiterflow=recruiterflow, manatal=manatal, loxo=loxo, careerplug=careerplug, comeet=comeet,
            crelate=crelate, clearcompany=clearcompany, pageup=pageup,
            catsone=catsone, talentlyft=talentlyft, jobadder=jobadder, jobsoid=jobsoid, tribepad=tribepad, applicantstack=applicantstack,
-           factorial=factorial)
+           factorial=factorial, hireology=hireology, feishu=feishu, moka=moka, beisen=beisen, tencent=tencent, bytedance=bytedance, netease=netease, jd=jd, unitree=unitree, baidu=baidu)
 FEEDS = dict(remotive=remotive, remoteok=remoteok, arbeitnow=arbeitnow, himalayas=himalayas, jobicy=jobicy, weworkremotely=weworkremotely,
              getonbrd=getonbrd, workingnomads=workingnomads, jobtech=jobtech, cryptojobs=cryptojobs, themuse=themuse,
-             aidevboard=aidevboard, larajobs=larajobs, fourdayweek=fourdayweek, nodesk=nodesk, remotepython=remotepython, nofluffjobs=nofluffjobs, landingjobs=landingjobs, cryptocurrencyjobs=cryptocurrencyjobs, cryptojobslist=cryptojobslist, golangprojects=golangprojects)
+             aidevboard=aidevboard, larajobs=larajobs, fourdayweek=fourdayweek, nodesk=nodesk, remotepython=remotepython, nofluffjobs=nofluffjobs, landingjobs=landingjobs, cryptocurrencyjobs=cryptocurrencyjobs, cryptojobslist=cryptojobslist, golangprojects=golangprojects, arbeitsagentur=arbeitsagentur, mycareersfuture=mycareersfuture, freehire=freehire)
 if os.environ.get("USAJOBS_API_KEY") and os.environ.get("USAJOBS_EMAIL"):  # optional: skipped (not failed) without a key
     FEEDS["usajobs"] = usajobs
 
@@ -2685,7 +3218,19 @@ URLS = dict(greenhouse="https://job-boards.greenhouse.io/{s}/jobs/{r}", lever="h
             jobsoid="https://{s}.jobsoid.com/apply/{r}",
             tribepad="https://{s}.tribepad.com/members/modules/job/detail.php?record={r}",
             applicantstack="https://{s}.applicantstack.com/x/detail/{r}",
-            factorial="https://{s}.factorial.com/job_posting/{r}")
+            factorial="https://{s}.factorial.com/job_posting/{r}",
+            hireology="https://careers.hireology.com/{s}/{r}/description",
+            feishu="https://{s}/position/{r}/detail",
+            moka="https://app.mokahr.com/social-recruitment/{s}/job/{r}",
+            beisen="https://{s}.zhiye.com/social/jobs",
+            tencent="https://careers.tencent.com/jobdesc.html?postId={r}",
+            bytedance="https://jobs.bytedance.com/experienced/position/{r}/detail",
+            netease="https://hr.163.com/position/detail?id={r}",
+            jd="https://zhaopin.jd.com/web/job/job_detail/{r}",
+            unitree="https://www.unitree.com/cn/position/{r}",
+            baidu="https://talent.baidu.com/jobs/social-detail/{r}",
+            arbeitsagentur="https://www.arbeitsagentur.de/jobsuche/jobdetail/{r}",
+            mycareersfuture="https://www.mycareersfuture.gov.sg/job/{r}")
 DEFAULTS = dict(company="", closed_at=None, location="", country="", team="", remote=False, years=None, skills=[], pay=None, employment="", posted=None, reposts=0)
 
 

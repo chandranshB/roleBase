@@ -214,16 +214,28 @@ URLS = dict(
     jobsoid="https://{s}.jobsoid.com/apply/{r}",
     tribepad="https://{s}.tribepad.com/members/modules/job/detail.php?record={r}",
     applicantstack="https://{s}.applicantstack.com/x/detail/{r}",
-    factorial="https://{s}.factorial.com/job_posting/{r}"
+    factorial="https://{s}.factorial.com/job_posting/{r}",
+    hireology="https://careers.hireology.com/{s}/{r}/description",
+    feishu="https://{s}/position/{r}/detail",
+    moka="https://app.mokahr.com/social-recruitment/{s}/job/{r}",
+    beisen="https://{s}.zhiye.com/social/jobs",
+    tencent="https://careers.tencent.com/jobdesc.html?postId={r}",
+    bytedance="https://jobs.bytedance.com/experienced/position/{r}/detail",
+    netease="https://hr.163.com/position/detail?id={r}",
+    jd="https://zhaopin.jd.com/web/job/job_detail/{r}",
+    unitree="https://www.unitree.com/cn/position/{r}",
+    baidu="https://talent.baidu.com/jobs/social-detail/{r}",
+    arbeitsagentur="https://www.arbeitsagentur.de/jobsuche/jobdetail/{r}",
+    mycareersfuture="https://www.mycareersfuture.gov.sg/job/{r}"
 )
 
 DEFAULTS = dict(company="", closed_at=None, location="", country="", team="", remote=False, years=None, skills=[], pay=None, employment="", posted=None, reposts=0)
 
 # Capped / windowed feeds where missing postings cannot be assumed closed
-CAPPED = {"workday", "eightfold", "himalayas", "jobicy", "jobtech", "usajobs", "oracle", "phenom", "apple", "themuse", "aidevboard", "nofluffjobs"}
+CAPPED = {"workday", "eightfold", "himalayas", "jobicy", "jobtech", "usajobs", "oracle", "phenom", "apple", "themuse", "aidevboard", "nofluffjobs", "arbeitsagentur", "mycareersfuture", "freehire"}
 
 # Public feeds skipped during Kaggle export
-SKIP = {"remotive", "remoteok", "himalayas", "jobicy", "weworkremotely", "getonbrd", "workingnomads", "cryptojobs", "themuse", "aidevboard", "larajobs", "fourdayweek", "nodesk", "remotepython", "nofluffjobs", "landingjobs", "cryptocurrencyjobs", "cryptojobslist", "golangprojects"}
+SKIP = {"remotive", "remoteok", "himalayas", "jobicy", "weworkremotely", "getonbrd", "workingnomads", "cryptojobs", "themuse", "aidevboard", "larajobs", "fourdayweek", "nodesk", "remotepython", "nofluffjobs", "landingjobs", "cryptocurrencyjobs", "cryptojobslist", "golangprojects", "arbeitsagentur", "mycareersfuture", "freehire"}
 
 # Lane concurrency defaults (boards fetched in parallel per provider)
 LANE_OF = {"microsoft": "eightfold"}
@@ -235,7 +247,9 @@ LANES = {
     "recooty": 4, "csod": 4, "taleo": 2, "bullhorn": 8, "successfactors": 8, "avature": 8, "recruiterflow": 8, "manatal": 8,
     "loxo": 8, "careerplug": 8, "comeet": 8, "crelate": 8, "clearcompany": 8, "pageup": 8,
     "catsone": 8, "talentlyft": 8, "jobadder": 8, "jobsoid": 8, "tribepad": 8, "applicantstack": 8,
-    "factorial": 4, "aidevboard": 2, "larajobs": 2, "fourdayweek": 2, "nodesk": 2, "remotepython": 2,
+    "factorial": 4, "hireology": 8, "feishu": 8, "moka": 8, "beisen": 8, "tencent": 4, "bytedance": 4, "netease": 4, "jd": 4, "unitree": 2, "baidu": 4,
+    "arbeitsagentur": 4, "mycareersfuture": 4, "freehire": 4,
+    "aidevboard": 2, "larajobs": 2, "fourdayweek": 2, "nodesk": 2, "remotepython": 2,
     "nofluffjobs": 2, "landingjobs": 2, "cryptocurrencyjobs": 2, "cryptojobslist": 2, "golangprojects": 2
 }
 

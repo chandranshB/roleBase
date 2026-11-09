@@ -5,7 +5,7 @@
 <h1 align="center">RoleBase</h1>
 
 <p align="center">
-  <strong>Automated, distributed open job index and labor-market dataset across 50+ enterprise ATS platforms.</strong>
+  <strong>Automated, distributed open job index and labor-market dataset across 68 enterprise ATS platforms and 24 job feeds.</strong>
 </p>
 
 <p align="center">
@@ -21,7 +21,7 @@
 
 ## Overview
 
-RoleBase continuously aggregates, enriches, and archives open job vacancies directly from over **110,000 employer career portals** across **58 applicant tracking systems** (Workday, Greenhouse, Lever, Ashby, SmartRecruiters, ADP, UKG Pro, Dayforce, Paylocity, Oracle HCM, Eightfold, and more).
+RoleBase continuously aggregates, enriches, and archives open job vacancies directly from over **112,600+ employer career portals** across **68 applicant tracking systems** (Workday, Greenhouse, Lever, Ashby, SmartRecruiters, ADP, UKG Pro, Dayforce, Paylocity, Oracle HCM, Hireology, Feishu/Lark, Moka HR, Beisen i-Talent, Baidu, Tencent, ByteDance, NetEase, JD.com, Unitree, and more) plus **24 curated job feeds and governmental portals** (German Federal Employment Agency *Arbeitsagentur*, Singapore WSG *MyCareersFuture*, *FreeHire*, etc.).
 
 Every posting is parsed and normalized with seniority level, professional field, required years of experience, yearly salary ranges, and technical/domain skills. Historical job closures are tracked to detect stale listings and ghost jobs.
 
@@ -34,6 +34,7 @@ Every posting is parsed and normalized with seniority level, professional field,
 
 ## Key Features
 
+* **Reverse-Engineered ATS Protocol Support**: Direct native APIs and decrypted endpoints across 68 ATS vendors, including dynamic AES-128-CBC payload decryption for Moka HR, automated path probing for Feishu/Lark Hire, NFKC Unicode normalization for Kangxi radicals, and direct enterprise career feeds.
 * **10M+ Active Listings**: Deep index refreshed every 6 hours across 16 parallel runner shards; not restricted to tech (covers healthcare, manufacturing, finance, retail, logistics, education, and legal).
 * **Early-Career ("Fresher-Friendly") Filter**: Isolates roles genuinely accessible to candidates with 0–2 years of experience; automatically flags and filters out "junior" titles quietly asking for 3+ years.
 * **Ghost Job Risk Scoring**: Transparent heuristic audit flagging perpetual talent pools, undisclosed staffing agencies, serial reposts, and listings open >6–12 months.
@@ -106,7 +107,7 @@ One compact, sorted JSONL file per employer board. Empty and derivable values ar
 
 ```mermaid
 flowchart LR
-    A["50+ ATS Platforms<br/>(Workday, Greenhouse, Lever, etc.)"] --> B["16 Parallel Shards<br/>(scrape.yml matrix 0..15)"]
+    A["68 ATS Platforms & 24 Feeds<br/>(Workday, Feishu, Moka, etc.)"] --> B["16 Parallel Shards<br/>(scrape.yml matrix 0..15)"]
     B --> C["Consolidation Engine<br/>(scraper.py --consolidate)"]
     C --> D[("data/jobs/*.jsonl<br/>data/pulse.csv<br/>data/skills.csv")]
     D --> E["Site & Pages Generator<br/>(build_site.py, build_pages.py)"]
@@ -115,7 +116,7 @@ flowchart LR
     F --> H["Kaggle Datasets & Notebooks"]
 ```
 
-* **Crawl Pipeline**: 16 parallel runner shards partition the 110,000 employer boards with per-provider rate limiting and lane concurrency (`LANES`).
+* **Crawl Pipeline**: 16 parallel runner shards partition the 112,600+ employer boards with per-provider rate limiting and lane concurrency (`LANES`).
 * **Consolidation**: Downloads shard artifacts, prunes jobs closed >90 days into `data/archive.csv`, and precomputes hiring analytics into `data/charts_cache.json`.
 * **Zero-RAM Bottleneck**: Processing loops stream files using chunked iterators to operate strictly within standard GitHub Actions runner memory limits (<7 GB).
 
