@@ -166,6 +166,22 @@ class TestClassifiers(unittest.TestCase):
         self.assertEqual(j["pay"], [100000, 120000, "USD"])
         self.assertIn("python", j["skills"])
 
+        # Test type-safety with non-string inputs (e.g. numeric requisition codes from ATS feeds)
+        j_num = job(
+            source="dayforce",
+            scope="dayforce:acme",
+            rid=999,
+            company=None,
+            title=12345,
+            url=None,
+            location=90210,
+            team=404,
+            country=None
+        )
+        self.assertEqual(j_num["title"], "12345")
+        self.assertEqual(j_num["location"], "90210")
+        self.assertEqual(j_num["team"], "404")
+
 
 if __name__ == "__main__":
     unittest.main()

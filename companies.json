@@ -15530,7 +15530,11 @@
     "zippymh": "Zippy",
     "zoe": "ZOE",
     "zydro": "Zydro",
-    "zyphra": "Zyphra"
+    "zyphra": "Zyphra",
+    "consensys": "ConsenSys",
+    "pleo": "Pleo",
+    "toggl": "Toggl",
+    "tribe-xyz": "Tribe"
   },
   "avature": {
     "bloomberg": "Bloomberg",
@@ -23923,7 +23927,8 @@
     "zoonewengland": "Zoo New England",
     "ztr": "ZTR",
     "zulzi": "Zulzi",
-    "zwick": "Zwick Construction"
+    "zwick": "Zwick Construction",
+    "isostech": "Isos Technology"
   },
   "betterteam": {
     "110grill.betterteam.com": "110 Grill",
@@ -40132,7 +40137,11 @@
     "zulualphakilo": "Zulu Alpha Kilo",
     "zuora": "Zuora",
     "zupinnovation": "Zup Innovation",
-    "zyngacareers": "Zynga"
+    "zyngacareers": "Zynga",
+    "ergeon": "Ergeon",
+    "gradle": "Gradle",
+    "launchpotato": "LaunchPotato",
+    "togetherwork": "Jackson River"
   },
   "icims": {
     "abudhabi-nyu.icims.com": "New York University Abu Dhabi",
@@ -89903,7 +89912,8 @@
     "zenergi": "Zenergi",
     "zevohealth": "Zevo Health",
     "zigzag": "Shipup",
-    "zincwork": "Zinc"
+    "zincwork": "Zinc",
+    "ynab": "You Need a Budget"
   },
   "recooty": {
     "59-pines": "ListLab",
@@ -90053,7 +90063,8 @@
   },
   "recruitee": {
     "bitfinex": "Bitfinex",
-    "bunq": "bunq"
+    "bunq": "bunq",
+    "madewithlove": "madewithlove"
   },
   "recruiterflow": {
     "hireintegrated": "Hire Integrated",
@@ -101511,7 +101522,12 @@
     "usa-vein-clinics": "USA Clinics Group",
     "veritas-prep-ma": "Veritas Preparatory Charter School",
     "vgroup": "V.Group",
-    "voulgaris-hospitality-group": "Voulgaris Hospitality Group"
+    "voulgaris-hospitality-group": "Voulgaris Hospitality Group",
+    "avantstay": "AvantStay",
+    "imachines": "Intuition Machines, Inc.",
+    "keepsafe": "Keepsafe",
+    "patients": "Patients Know Best",
+    "recurly": "Recurly"
   },
   "workday": {
     "2020companies.wd1.myworkdayjobs.com/external_careers": "2020 Companies",
@@ -110420,5 +110436,8 @@
     "intellectsolutions": "Intellect Solutions",
     "royjorgensen": "Roy Jorgensen Associates",
     "ruralhealthgroup": "Rural Health Group"
+  },
+  "factorial": {
+    "shippypro": "ShippyPro"
   }
 }

@@ -213,16 +213,17 @@ URLS = dict(
     jobadder="https://clientapps.jobadder.com/{s}/{r}",
     jobsoid="https://{s}.jobsoid.com/apply/{r}",
     tribepad="https://{s}.tribepad.com/members/modules/job/detail.php?record={r}",
-    applicantstack="https://{s}.applicantstack.com/x/detail/{r}"
+    applicantstack="https://{s}.applicantstack.com/x/detail/{r}",
+    factorial="https://{s}.factorial.com/job_posting/{r}"
 )
 
 DEFAULTS = dict(company="", closed_at=None, location="", country="", team="", remote=False, years=None, skills=[], pay=None, employment="", posted=None, reposts=0)
 
 # Capped / windowed feeds where missing postings cannot be assumed closed
-CAPPED = {"workday", "eightfold", "himalayas", "jobicy", "jobtech", "usajobs", "oracle", "phenom", "apple", "themuse"}
+CAPPED = {"workday", "eightfold", "himalayas", "jobicy", "jobtech", "usajobs", "oracle", "phenom", "apple", "themuse", "aidevboard"}
 
 # Public feeds skipped during Kaggle export
-SKIP = {"remotive", "remoteok", "himalayas", "jobicy", "weworkremotely", "getonbrd", "workingnomads", "cryptojobs", "themuse"}
+SKIP = {"remotive", "remoteok", "himalayas", "jobicy", "weworkremotely", "getonbrd", "workingnomads", "cryptojobs", "themuse", "aidevboard", "larajobs", "fourdayweek", "nodesk", "remotepython"}
 
 # Lane concurrency defaults (boards fetched in parallel per provider)
 LANE_OF = {"microsoft": "eightfold"}
@@ -233,7 +234,8 @@ LANES = {
     "paylocity": 16, "paycom": 16, "applicantpro": 8, "isolved": 8, "betterteam": 8, "gohire": 8, "freshteam": 4, "gem": 4,
     "recooty": 4, "csod": 4, "taleo": 2, "bullhorn": 8, "successfactors": 8, "avature": 8, "recruiterflow": 8, "manatal": 8,
     "loxo": 8, "careerplug": 8, "comeet": 8, "crelate": 8, "clearcompany": 8, "pageup": 8,
-    "catsone": 8, "talentlyft": 8, "jobadder": 8, "jobsoid": 8, "tribepad": 8, "applicantstack": 8
+    "catsone": 8, "talentlyft": 8, "jobadder": 8, "jobsoid": 8, "tribepad": 8, "applicantstack": 8,
+    "factorial": 4, "aidevboard": 2, "larajobs": 2, "fourdayweek": 2, "nodesk": 2, "remotepython": 2
 }
 
 # Crawl limits
@@ -244,6 +246,7 @@ HIM_CAP = 1000
 MUSE_CAP = 1000
 APPLE_CAP = 2000
 JT_CAP = 1000
+AIDEV_CAP = 500
 
 PERSONIO_LEVEL = {
     "entry-level": "junior", "trainee": "junior", "working student": "intern",

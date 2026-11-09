@@ -201,9 +201,11 @@ def job(source: str, scope: str, rid: Any, company: Optional[str], title: Option
         emp: Any = (), pay: Any = None, tags: Any = (), hint: Optional[str] = None,
         country: Optional[str] = None) -> Dict[str, Any]:
     """Construct an enriched, validated job record dictionary."""
-    location, team, title = (location or "").strip(), (team or "").strip(), (title or "").strip()
+    location = str(location or "").strip()
+    team = str(team or "").strip()
+    title = str(title or "").strip()
     yrs = years_req(desc)
-    cntry = (country or "").strip() or infer_country(location)
+    cntry = str(country or "").strip() or infer_country(location)
     return dict(
         id=f"{scope}:{rid}",
         source=source,

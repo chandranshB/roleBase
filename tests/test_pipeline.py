@@ -21,7 +21,13 @@ class TestPipeline(unittest.TestCase):
             ("jobsoid:demo:135389", "https://demo.jobsoid.com/apply/135389"),
             ("tribepad:twinkl:1624", "https://twinkl.tribepad.com/members/modules/job/detail.php?record=1624"),
             ("applicantstack:gnostech:a27b9ukxyj7o", "https://gnostech.applicantstack.com/x/detail/a27b9ukxyj7o"),
+            ("factorial:shippypro:324080", "https://shippypro.factorial.com/job_posting/324080"),
             ("remotive:7", None),  # Non-derivable feed URL
+            ("aidevboard:123", None),
+            ("larajobs:456", None),
+            ("fourdayweek:789", None),
+            ("nodesk:abc", None),
+            ("remotepython:def", None),
         ]
         for jid, expected in cases:
             with self.subTest(jid=jid):

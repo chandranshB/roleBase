@@ -431,9 +431,11 @@ infer_country = country
 
 def job(source, scope, rid, company, title, url, location="", remote=False, posted=None,
         desc="", team="", emp=(), pay=None, tags=(), hint=None, country=None):
-    location, team, title = (location or "").strip(), (team or "").strip(), (title or "").strip()
+    location = str(location or "").strip()
+    team = str(team or "").strip()
+    title = str(title or "").strip()
     yrs = years_req(desc)
-    cntry = (country or "").strip() or infer_country(location)
+    cntry = str(country or "").strip() or infer_country(location)
     return dict(id=f"{scope}:{rid}", source=source, company=company, title=title, team=team, location=location,
                 country=cntry, remote=bool(remote) or "remote" in location.lower(), level=level(title, yrs, hint),
                 category=category(title, team), employment=employment(title, *emp), years=yrs,
@@ -533,7 +535,8 @@ def workday(s, name):  # s = "<tenant>.<pod>.myworkdayjobs.com/<site>"; the list
                  for d in [first, *rest] for j in d.get("jobPostings", []) if j.get("externalPath") and j.get("title")}.values())  # entries with no link or no title exist (KBR has one): skip them, not the board
 
 
-CAPPED = {"workday", "eightfold", "himalayas", "jobicy", "jobtech", "usajobs", "oracle", "phenom", "apple", "themuse"}
+CAPPED = {"workday", "eightfold", "himalayas", "jobicy", "jobtech", "usajobs", "oracle", "phenom", "apple", "themuse", "aidevboard"}
+AIDEV_CAP = 500  # newest N AI Dev Jobs
 HIM_CAP = 400  # newest N Himalayas jobs (of 100k+)
 MUSE_CAP = 400  # newest N jobs from The Muse (of 400k+)
 ORA_CAP = 10000  # newest N per Oracle career site (uncapped for large enterprises)
@@ -1303,17 +1306,17 @@ def dayforce(s, name):  # s = "{client}/{board_code}"
     out = []
     for j in (data if isinstance(data, list) else []):
         rid = str(j.get("ReferenceNumber") or "")
-        title = (j.get("Title") or "").strip()
+        title = str(j.get("Title") or "").strip()
         if not rid or not title:
             continue
-        comp = name or j.get("CompanyName") or client
+        comp = name or str(j.get("CompanyName") or "") or client
         apply_url = j.get("ApplyUrl") or j.get("JobDetailsUrl") or f"https://jobs.dayforcehcm.com/en-US/{client}/{board_code}/jobs/{rid}/apply"
         desc = text(j.get("Description"))
         remote = bool(j.get("IsVirtualLocation")) or "remote" in title.lower()
-        loc = (j.get("ClientSiteName") or "").strip()
+        loc = str(j.get("ClientSiteName") or "").strip()
         out.append(job("dayforce", f"dayforce:{s}", rid, comp, title, apply_url,
                        location=loc, remote=remote, posted=str(j.get("DatePosted") or "")[:10] or None,
-                       desc=desc, team=j.get("ParentRequisitionCode") or ""))
+                       desc=desc, team=str(j.get("ParentRequisitionCode") or "")))
     return out
 
 
@@ -2390,15 +2393,144 @@ def applicantstack(s, name):  # https://{s}.applicantstack.com/x/openings
     return out
 
 
+def factorial(s, name):  # Factorial HR public career portal
+    try:
+        r = S.get(f"https://{s}.factorial.com/", timeout=TIMEOUT)
+        if not r.ok:
+            r = S.get(f"https://{s}.factorialhr.com/", timeout=TIMEOUT)
+        if not r.ok:
+            return []
+        soup = BeautifulSoup(r.text, "html.parser")
+    except Exception:
+        return []
+    comp = name or s
+    out = []
+    seen = set()
+    for a in soup.find_all("a", href=re.compile(r"/job_posting/")):
+        href = a.get("href") or ""
+        m = re.search(r"/job_posting/(?:.+?-)?([a-zA-Z0-9]+)$", href.rstrip("/"))
+        if not m:
+            continue
+        jid = m.group(1)
+        if jid in seen:
+            continue
+        seen.add(jid)
+        parent = a.find_parent(class_=re.compile(r"card|posting|job|item|row|container", re.I)) or a.parent
+        t_items = [part.strip() for part in parent.get_text(separator="\n", strip=True).split("\n") if part.strip()]
+        title = t_items[0] if t_items else a.get_text(strip=True)
+        dept, workplace = None, None
+        for item in t_items[1:]:
+            low = item.lower()
+            if low in ("remote", "hybrid", "on-site", "onsite"):
+                workplace = item
+            elif low not in ("apply now", "view offer", "apply", "view"):
+                if not dept:
+                    dept = item
+        is_remote = (workplace and "remote" in workplace.lower()) or ("remote" in title.lower())
+        out.append(job("factorial", f"factorial:{s}", jid, comp, title, href,
+                       location=workplace, remote=is_remote, team=dept))
+    return out
+
+
+def aidevboard():  # 8,400+ AI/ML engineering roles from 489 AI-first companies
+    out = []
+    page = 1
+    while len(out) < AIDEV_CAP:
+        d = get("https://aidevboard.com/api/v1/jobs", params={"per_page": 50, "page": page})
+        jobs = d.get("jobs", [])
+        if not jobs:
+            break
+        for j in jobs:
+            pay = ([int(j["salary_min"]), int(j["salary_max"]), "USD"]
+                   if j.get("salary_min") and j.get("salary_max") else None)
+            out.append(job("aidevboard", "aidevboard", j["id"], clean_company(j.get("company_name")),
+                           j.get("title"), j.get("apply_url") or j.get("url"), j.get("location"),
+                           j.get("workplace") == "remote", j.get("published_at"),
+                           desc=text(j.get("description")), tags=j.get("tags") or [], pay=pay))
+        if page >= d.get("pages", 1):
+            break
+        page += 1
+    return out
+
+
+def larajobs():  # curated remote/hybrid Laravel and PHP community jobs
+    out = []
+    d = get("https://larajobs.com/api/jobs")
+    for j in d:
+        tags = [t.get("name") or t.get("slug") for t in (j.get("tags") or []) if isinstance(t, dict)]
+        out.append(job("larajobs", "larajobs", str(j["id"]), clean_company(j.get("organization")),
+                       j.get("title"), j.get("url"), j.get("location"),
+                       "remote" in (j.get("location") or "").lower(), j.get("published_at"),
+                       emp=[j.get("type")] if j.get("type") else None, tags=tags))
+    return out
+
+
+def fourdayweek():  # 4-day work week and flexible remote jobs via RSS feed
+    r = S.get("https://4dayweek.io/feed", timeout=TIMEOUT)
+    r.raise_for_status()
+    out = []
+    clean_xml = re.sub(r"&(?!(?:amp|lt|gt|quot|apos);)[a-zA-Z0-9#]+;", " ", r.text)
+    for i in ET.fromstring(clean_xml).iter("item"):
+        author = i.findtext("author") or i.findtext("{http://purl.org/dc/elements/1.1/}creator") or ""
+        title = i.findtext("title") or ""
+        suffix = f" at {author}"
+        if author and title.endswith(suffix):
+            title = title[:-len(suffix)].strip()
+        link = i.findtext("link") or ""
+        job_id = link.rstrip("/").rsplit("-", 1)[-1] or link.rstrip("/").rsplit("/", 1)[-1]
+        out.append(job("fourdayweek", "fourdayweek", job_id, clean_company(author), title, link,
+                       None, True, rss_day(i.findtext("pubDate")),
+                       desc=text(i.findtext("description"))))
+    return out
+
+
+def nodesk():  # curated remote jobs RSS feed; titles formatted as 'Role at Company'
+    r = S.get("https://nodesk.co/remote-jobs/index.xml", timeout=TIMEOUT)
+    r.raise_for_status()
+    out = []
+    clean_xml = re.sub(r"&(?!(?:amp|lt|gt|quot|apos);)[a-zA-Z0-9#]+;", " ", r.text)
+    for i in ET.fromstring(clean_xml).iter("item"):
+        raw_title = i.findtext("title") or ""
+        parts = raw_title.rsplit(" at ", 1)
+        title = parts[0].strip() if len(parts) == 2 else raw_title
+        company = parts[1].strip() if len(parts) == 2 else ""
+        link = i.findtext("link") or ""
+        job_id = link.rstrip("/").rsplit("/", 1)[-1]
+        out.append(job("nodesk", "nodesk", job_id, clean_company(company), title, link,
+                       None, True, rss_day(i.findtext("pubDate")),
+                       desc=text(i.findtext("description"))))
+    return out
+
+
+def remotepython():  # remote Python engineering jobs RSS feed; titles formatted as 'Role at Company'
+    r = S.get("https://www.remotepython.com/latest/jobs/feed/", timeout=TIMEOUT)
+    r.raise_for_status()
+    out = []
+    clean_xml = re.sub(r"&(?!(?:amp|lt|gt|quot|apos);)[a-zA-Z0-9#]+;", " ", r.text)
+    for i in ET.fromstring(clean_xml).iter("item"):
+        raw_title = i.findtext("title") or ""
+        parts = raw_title.rsplit(" at ", 1)
+        title = parts[0].strip() if len(parts) == 2 else raw_title
+        company = parts[1].strip() if len(parts) == 2 else ""
+        link = i.findtext("link") or ""
+        job_id = link.rstrip("/").rsplit("/", 1)[-1]
+        out.append(job("remotepython", "remotepython", job_id, clean_company(company), title, link,
+                       None, True, rss_day(i.findtext("pubDate")),
+                       desc=text(i.findtext("description"))))
+    return out
+
+
 ATS = dict(greenhouse=greenhouse, lever=lever, ashby=ashby, smartrecruiters=smartrecruiters, workday=workday, microsoft=microsoft, eightfold=eightfold,
            amazon=amazon, apple=apple, teamtailor=teamtailor, personio=personio, recruitee=recruitee, oracle=oracle, workable=workable, phenom=phenom,
            pinpoint=pinpoint, breezy=breezy, bamboohr=bamboohr, rippling=rippling, join=join, adp=adp, jazzhr=jazzhr, jobvite=jobvite, trakstar_hire=trakstar_hire, jobscore=jobscore, zoho=zoho, icims=icims, ultipro=ultipro, dayforce=dayforce, paylocity=paylocity,
            paycom=paycom, applicantpro=applicantpro, isolved=isolved, betterteam=betterteam, gohire=gohire, freshteam=freshteam, gem=gem, recooty=recooty, csod=csod, taleo=taleo, bullhorn=bullhorn,
            successfactors=successfactors, avature=avature, recruiterflow=recruiterflow, manatal=manatal, loxo=loxo, careerplug=careerplug, comeet=comeet,
            crelate=crelate, clearcompany=clearcompany, pageup=pageup,
-           catsone=catsone, talentlyft=talentlyft, jobadder=jobadder, jobsoid=jobsoid, tribepad=tribepad, applicantstack=applicantstack)
+           catsone=catsone, talentlyft=talentlyft, jobadder=jobadder, jobsoid=jobsoid, tribepad=tribepad, applicantstack=applicantstack,
+           factorial=factorial)
 FEEDS = dict(remotive=remotive, remoteok=remoteok, arbeitnow=arbeitnow, himalayas=himalayas, jobicy=jobicy, weworkremotely=weworkremotely,
-             getonbrd=getonbrd, workingnomads=workingnomads, jobtech=jobtech, cryptojobs=cryptojobs, themuse=themuse)
+             getonbrd=getonbrd, workingnomads=workingnomads, jobtech=jobtech, cryptojobs=cryptojobs, themuse=themuse,
+             aidevboard=aidevboard, larajobs=larajobs, fourdayweek=fourdayweek, nodesk=nodesk, remotepython=remotepython)
 if os.environ.get("USAJOBS_API_KEY") and os.environ.get("USAJOBS_EMAIL"):  # optional: skipped (not failed) without a key
     FEEDS["usajobs"] = usajobs
 
@@ -2441,7 +2573,8 @@ URLS = dict(greenhouse="https://job-boards.greenhouse.io/{s}/jobs/{r}", lever="h
             jobadder="https://clientapps.jobadder.com/{s}/{r}",
             jobsoid="https://{s}.jobsoid.com/apply/{r}",
             tribepad="https://{s}.tribepad.com/members/modules/job/detail.php?record={r}",
-            applicantstack="https://{s}.applicantstack.com/x/detail/{r}")
+            applicantstack="https://{s}.applicantstack.com/x/detail/{r}",
+            factorial="https://{s}.factorial.com/job_posting/{r}")
 DEFAULTS = dict(company="", closed_at=None, location="", country="", team="", remote=False, years=None, skills=[], pay=None, employment="", posted=None, reposts=0)
 
 
@@ -2622,7 +2755,7 @@ def verdict(jobs, err, prev, strikes):
 # The number is how many boards of that provider are fetched at the same time (conservative defaults, not published limits); a provider not listed
 # here (Arbeitnow, every feed, Amazon, Microsoft...) gets one worker, i.e. one board at a time. Workable and Arbeitnow also pause a second between requests.
 LANE_OF = {"microsoft": "eightfold"}  # Microsoft's careers site is Eightfold-hosted: one lane, one site at a time, so their bot protection never sees a burst
-LANES = {"greenhouse": 24, "lever": 16, "ashby": 16, "smartrecruiters": 12, "workday": 32, "teamtailor": 4, "oracle": 8, "workable": 2, "personio": 12, "recruitee": 2, "phenom": 4, "apple": 1, "pinpoint": 8, "breezy": 8, "bamboohr": 16, "rippling": 8, "join": 16, "adp": 16, "jazzhr": 16, "jobvite": 8, "trakstar_hire": 8, "jobscore": 8, "zoho": 16, "icims": 8, "ultipro": 16, "dayforce": 16, "paylocity": 16, "paycom": 16, "applicantpro": 8, "isolved": 8, "betterteam": 8, "gohire": 8, "freshteam": 4, "gem": 4, "recooty": 4, "csod": 4, "taleo": 2, "bullhorn": 8, "successfactors": 8, "avature": 8, "recruiterflow": 8, "manatal": 8, "loxo": 8, "careerplug": 8, "comeet": 8, "crelate": 8, "clearcompany": 8, "pageup": 8}
+LANES = {"greenhouse": 24, "lever": 16, "ashby": 16, "smartrecruiters": 12, "workday": 32, "teamtailor": 4, "oracle": 8, "workable": 2, "personio": 12, "recruitee": 2, "phenom": 4, "apple": 1, "pinpoint": 8, "breezy": 8, "bamboohr": 16, "rippling": 8, "join": 16, "adp": 16, "jazzhr": 16, "jobvite": 8, "trakstar_hire": 8, "jobscore": 8, "zoho": 16, "icims": 8, "ultipro": 16, "dayforce": 16, "paylocity": 16, "paycom": 16, "applicantpro": 8, "isolved": 8, "betterteam": 8, "gohire": 8, "freshteam": 4, "gem": 4, "recooty": 4, "csod": 4, "taleo": 2, "bullhorn": 8, "successfactors": 8, "avature": 8, "recruiterflow": 8, "manatal": 8, "loxo": 8, "careerplug": 8, "comeet": 8, "crelate": 8, "clearcompany": 8, "pageup": 8, "catsone": 8, "talentlyft": 8, "jobadder": 8, "jobsoid": 8, "tribepad": 8, "applicantstack": 8, "factorial": 4, "aidevboard": 2, "larajobs": 2, "fourdayweek": 2, "nodesk": 2, "remotepython": 2}
 RUN_BUDGET = 16 * 60  # seconds: graceful cutoff so in-flight tasks finish, disk saves, and shards exit cleanly within CI limits
 
 

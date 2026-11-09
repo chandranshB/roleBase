@@ -5,7 +5,8 @@ from scraper import (ATS, CAPPED, FEEDS, apple, bamboohr, breezy, category, clea
                      paycom, applicantpro, isolved, betterteam, gohire, freshteam, gem, recooty, csod, taleo, bullhorn,
                      successfactors, avature, recruiterflow, manatal, loxo, careerplug, comeet,
                      crelate, clearcompany, pageup,
-                     catsone, talentlyft, jobadder, jobsoid, tribepad, applicantstack)
+                     catsone, talentlyft, jobadder, jobsoid, tribepad, applicantstack,
+                     factorial, aidevboard, larajobs, fourdayweek, nodesk, remotepython)
 from update_about import about_text
 
 
@@ -145,13 +146,19 @@ assert url_of("jobadder:84381/eq8-recruit:619389") == "https://clientapps.jobadd
 assert url_of("jobsoid:demo:135389") == "https://demo.jobsoid.com/apply/135389"
 assert url_of("tribepad:twinkl:1624") == "https://twinkl.tribepad.com/members/modules/job/detail.php?record=1624"
 assert url_of("applicantstack:gnostech:a27b9ukxyj7o") == "https://gnostech.applicantstack.com/x/detail/a27b9ukxyj7o"
+assert url_of("factorial:shippypro:324080") == "https://shippypro.factorial.com/job_posting/324080"
 assert "apple" in CAPPED and ATS["apple"] == apple
 assert ATS["pinpoint"] == pinpoint and ATS["breezy"] == breezy and ATS["bamboohr"] == bamboohr and ATS["rippling"] == rippling and ATS["join"] == join and ATS["adp"] == adp and ATS["jazzhr"] == jazzhr and ATS["jobvite"] == jobvite and ATS["trakstar_hire"] == trakstar_hire and ATS["jobscore"] == jobscore and ATS["zoho"] == zoho and ATS["icims"] == icims and ATS["ultipro"] == ultipro and ATS["dayforce"] == dayforce and ATS["paylocity"] == paylocity
 assert ATS["paycom"] == paycom and ATS["applicantpro"] == applicantpro and ATS["isolved"] == isolved and ATS["betterteam"] == betterteam and ATS["gohire"] == gohire and ATS["freshteam"] == freshteam and ATS["gem"] == gem and ATS["recooty"] == recooty and ATS["csod"] == csod and ATS["taleo"] == taleo and ATS["bullhorn"] == bullhorn
 assert ATS["successfactors"] == successfactors and ATS["avature"] == avature and ATS["recruiterflow"] == recruiterflow and ATS["manatal"] == manatal and ATS["loxo"] == loxo and ATS["careerplug"] == careerplug and ATS["comeet"] == comeet
 assert ATS["crelate"] == crelate and ATS["clearcompany"] == clearcompany and ATS["pageup"] == pageup
-assert ATS["catsone"] == catsone and ATS["talentlyft"] == talentlyft and ATS["jobadder"] == jobadder and ATS["jobsoid"] == jobsoid and ATS["tribepad"] == tribepad and ATS["applicantstack"] == applicantstack
+assert ATS["catsone"] == catsone and ATS["talentlyft"] == talentlyft and ATS["jobadder"] == jobadder and ATS["jobsoid"] == jobsoid and ATS["tribepad"] == tribepad and ATS["applicantstack"] == applicantstack and ATS["factorial"] == factorial
 assert "themuse" in FEEDS and FEEDS["themuse"] == themuse and "themuse" in CAPPED
+assert "aidevboard" in FEEDS and FEEDS["aidevboard"] == aidevboard and "aidevboard" in CAPPED
+assert "larajobs" in FEEDS and FEEDS["larajobs"] == larajobs
+assert "fourdayweek" in FEEDS and FEEDS["fourdayweek"] == fourdayweek
+assert "nodesk" in FEEDS and FEEDS["nodesk"] == nodesk
+assert "remotepython" in FEEDS and FEEDS["remotepython"] == remotepython
 
 # --- logos: icon detection and ordering ---
 import struct
