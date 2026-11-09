@@ -845,7 +845,7 @@ def usajobs():  # US federal jobs, every occupation; needs a free API key (devel
 
 
 def oracle(s, name):  # Oracle Recruiting Cloud career site, s = "<host>/<site number>", e.g. "ecvz.fa.us2.oraclecloud.com/CX_1"; newest ORA_CAP, no descriptions
-    host, site = s.split("/", 1)
+    host, site = s.split("/", 1) if "/" in s else (s, "CX")
 
     def page(off):
         res = get(f"https://{host}/hcmRestApi/resources/latest/recruitingCEJobRequisitions", params={
@@ -978,7 +978,12 @@ def breezy(s, name):  # <slug>.breezy.hr/json
 
 
 def bamboohr(s, name):  # <slug>.bamboohr.com/careers/list
-    d = get(f"https://{s}.bamboohr.com/careers/list")
+    try:
+        d = get(f"https://{s}.bamboohr.com/careers/list")
+    except Exception:
+        return []
+    if not isinstance(d, dict):
+        return []
     out = []
     for j in d.get("result", []):
         if not j.get("id") or not j.get("jobOpeningName"):
@@ -999,7 +1004,10 @@ def rippling(s, name):  # ats.rippling.com/<slug>/jobs
     m = re.search(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', r.text)
     if not m:
         return []
-    data = json.loads(m.group(1))
+    try:
+        data = json.loads(m.group(1))
+    except Exception:
+        return []
     queries = data.get("props", {}).get("pageProps", {}).get("dehydratedState", {}).get("queries", [])
     out = []
     for q in queries:
@@ -1031,19 +1039,26 @@ def join(s, name):  # join.com/companies/<slug>
     items = d.get("props", {}).get("pageProps", {}).get("pageData", {}).get("jobs", {}).get("items") or []
     out = []
     for j in items:
+        if not isinstance(j, dict):
+            continue
         jid = j.get("idParam") or j.get("id")
         title = j.get("title")
         if not jid or not title:
             continue
-        city = (j.get("city") or {}).get("cityName")
-        country = (j.get("city") or {}).get("countryName") or (j.get("country") or {}).get("iso3166")
+        c_raw = j.get("city")
+        city = c_raw.get("cityName") if isinstance(c_raw, dict) else (c_raw if isinstance(c_raw, str) else "")
+        co_raw = j.get("country")
+        country = (c_raw.get("countryName") if isinstance(c_raw, dict) else "") or (co_raw.get("iso3166") if isinstance(co_raw, dict) else (co_raw if isinstance(co_raw, str) else ""))
         loc = ", ".join(filter(None, [city, country]))
         wp = (j.get("workplaceType") or "").upper()
         remote = wp in ("REMOTE", "HYBRID")
         url = f"https://join.com/companies/{s}/jobs/{jid}"
-        category_name = (j.get("category") or {}).get("name")
-        emp = [(j.get("employmentType") or {}).get("name")] if (j.get("employmentType") or {}).get("name") else []
-        posted = (j.get("createdAt") or "")[:10] or None
+        cat_raw = j.get("category")
+        category_name = cat_raw.get("name") if isinstance(cat_raw, dict) else (cat_raw if isinstance(cat_raw, str) else "")
+        emp_raw = j.get("employmentType")
+        emp_name = emp_raw.get("name") if isinstance(emp_raw, dict) else (emp_raw if isinstance(emp_raw, str) else "")
+        emp = [emp_name] if emp_name else []
+        posted = (str(j.get("createdAt") or ""))[:10] or None
         out.append(job("join", f"join:{s}", str(jid), name or s, title, url, loc, remote, posted, team=category_name, emp=emp))
     return out
 
@@ -1057,20 +1072,28 @@ def adp(s, name):  # workforcenow.adp.com career center
         if not jid or not title:
             continue
         locs = []
-        for l in r.get("requisitionLocations") or []:
-            addr = l.get("address") or {}
-            parts = filter(None, [addr.get("cityName"), (addr.get("countrySubdivisionLevel1") or {}).get("codeValue"), addr.get("countryCode")])
-            loc_str = ", ".join(parts) or (l.get("nameCode") or {}).get("shortName") or ""
+        for l in (r.get("requisitionLocations") or []):
+            if not isinstance(l, dict):
+                continue
+            addr = l.get("address") if isinstance(l.get("address"), dict) else {}
+            subdiv = addr.get("countrySubdivisionLevel1")
+            subdiv_code = subdiv.get("codeValue") if isinstance(subdiv, dict) else (subdiv if isinstance(subdiv, str) else None)
+            parts = filter(None, [addr.get("cityName"), subdiv_code, addr.get("countryCode")])
+            nc = l.get("nameCode")
+            nc_short = nc.get("shortName") if isinstance(nc, dict) else (nc if isinstance(nc, str) else "")
+            loc_str = ", ".join(parts) or nc_short or ""
             if loc_str and loc_str.strip() not in locs:
                 locs.append(loc_str.strip())
         loc = "; ".join(locs)
         post_date = (r.get("postDate") or "")[:10] or None
         url = f"https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid={s}&jobId={jid}"
         pay = None
-        pgr = r.get("payGradeRange") or {}
-        min_rate = (pgr.get("minimumRate") or {}).get("amountValue")
-        max_rate = (pgr.get("maximumRate") or {}).get("amountValue")
-        curr = (pgr.get("minimumRate") or {}).get("currencyCode") or (pgr.get("maximumRate") or {}).get("currencyCode") or "USD"
+        pgr = r.get("payGradeRange") if isinstance(r.get("payGradeRange"), dict) else {}
+        min_obj = pgr.get("minimumRate") if isinstance(pgr.get("minimumRate"), dict) else {}
+        max_obj = pgr.get("maximumRate") if isinstance(pgr.get("maximumRate"), dict) else {}
+        min_rate = min_obj.get("amountValue")
+        max_rate = max_obj.get("amountValue")
+        curr = min_obj.get("currencyCode") or max_obj.get("currencyCode") or "USD"
         if min_rate is not None and max_rate is not None and min_rate > 0 and max_rate > 0:
             if min_rate >= 1000 and max_rate >= 1000:
                 pay = [int(min_rate), int(max_rate), curr]
@@ -2638,7 +2661,12 @@ def hireology(s, name):
     out = []
     page = 1
     while page <= 40:
-        d = get(f"https://api.hireology.com/v2/public/careers/{s}", params={"page": page, "page_size": 100})
+        try:
+            d = get(f"https://api.hireology.com/v2/public/careers/{s}", params={"page": page, "page_size": 100})
+        except Exception:
+            break
+        if not isinstance(d, dict):
+            break
         rows = d.get("data") or []
         if not rows:
             break
@@ -3411,7 +3439,7 @@ def verdict(jobs, err, prev, strikes):
 # The number is how many boards of that provider are fetched at the same time (conservative defaults, not published limits); a provider not listed
 # here (Arbeitnow, every feed, Amazon, Microsoft...) gets one worker, i.e. one board at a time. Workable and Arbeitnow also pause a second between requests.
 LANE_OF = {"microsoft": "eightfold"}  # Microsoft's careers site is Eightfold-hosted: one lane, one site at a time, so their bot protection never sees a burst
-LANES = {"greenhouse": 24, "lever": 16, "ashby": 16, "smartrecruiters": 12, "workday": 32, "teamtailor": 4, "oracle": 8, "workable": 2, "personio": 12, "recruitee": 2, "phenom": 4, "apple": 1, "pinpoint": 8, "breezy": 8, "bamboohr": 16, "rippling": 8, "join": 16, "adp": 16, "jazzhr": 16, "jobvite": 8, "trakstar_hire": 8, "jobscore": 8, "zoho": 16, "icims": 8, "ultipro": 16, "dayforce": 16, "paylocity": 16, "paycom": 16, "applicantpro": 8, "isolved": 8, "betterteam": 8, "gohire": 8, "freshteam": 4, "gem": 4, "recooty": 4, "csod": 4, "taleo": 2, "bullhorn": 8, "successfactors": 8, "avature": 8, "recruiterflow": 8, "manatal": 8, "loxo": 8, "careerplug": 8, "comeet": 8, "crelate": 8, "clearcompany": 8, "pageup": 8, "catsone": 8, "talentlyft": 8, "jobadder": 8, "jobsoid": 8, "tribepad": 8, "applicantstack": 8, "factorial": 4, "aidevboard": 2, "larajobs": 2, "fourdayweek": 2, "nodesk": 2, "remotepython": 2, "nofluffjobs": 2, "landingjobs": 2, "cryptocurrencyjobs": 2, "cryptojobslist": 2, "golangprojects": 2}
+LANES = {"greenhouse": 24, "lever": 16, "ashby": 16, "smartrecruiters": 12, "workday": 32, "teamtailor": 4, "oracle": 8, "workable": 2, "personio": 12, "recruitee": 2, "phenom": 4, "apple": 1, "pinpoint": 8, "breezy": 8, "bamboohr": 16, "rippling": 8, "join": 16, "adp": 16, "jazzhr": 16, "jobvite": 8, "trakstar_hire": 8, "jobscore": 8, "zoho": 16, "icims": 8, "ultipro": 16, "dayforce": 16, "paylocity": 16, "paycom": 16, "applicantpro": 8, "isolved": 8, "betterteam": 8, "gohire": 8, "freshteam": 4, "gem": 4, "recooty": 4, "csod": 4, "taleo": 2, "bullhorn": 8, "successfactors": 8, "avature": 8, "recruiterflow": 8, "manatal": 8, "loxo": 8, "careerplug": 8, "comeet": 8, "crelate": 8, "clearcompany": 8, "pageup": 8, "catsone": 8, "talentlyft": 8, "jobadder": 8, "jobsoid": 8, "tribepad": 8, "applicantstack": 8, "factorial": 4, "hireology": 16, "feishu": 16, "moka": 16, "beisen": 8, "tencent": 4, "bytedance": 4, "netease": 4, "jd": 4, "unitree": 2, "baidu": 4, "arbeitsagentur": 4, "mycareersfuture": 4, "freehire": 4, "aidevboard": 2, "larajobs": 2, "fourdayweek": 2, "nodesk": 2, "remotepython": 2, "nofluffjobs": 2, "landingjobs": 2, "cryptocurrencyjobs": 2, "cryptojobslist": 2, "golangprojects": 2}
 RUN_BUDGET = 16 * 60  # seconds: graceful cutoff so in-flight tasks finish, disk saves, and shards exit cleanly within CI limits
 
 
@@ -3481,9 +3509,7 @@ def main():
             hf.unlink(missing_ok=True)
         cutoff = (dt.date.fromisoformat(today) - dt.timedelta(KEEP_CLOSED_DAYS)).isoformat()
         pulse = Path("data/pulse.csv")
-        pulse_exists_today = pulse.exists() and any(l.startswith(today + ",") for l in pulse.read_text(encoding="utf-8").split("\n") if l)
         skills_path = Path("data/skills.csv")
-        skills_exists_today = skills_path.exists() and any(l.startswith(today + ",") for l in skills_path.read_text(encoding="utf-8").split("\n") if l)
 
         pulse_counts = {}
         all_skills = Counter()
@@ -3595,13 +3621,19 @@ def main():
                 tagged_total += b_tagged
                 if b_pruned:
                     pruned_rows.extend(b_pruned)
-                if not pulse_exists_today and b_open > 0:
+                if b_open > 0:
                     pulse_counts[board] = [b_open, b_fresher]
 
-        if not pulse_exists_today and pulse_counts:
+        if pulse_counts:
+            if pulse.exists():
+                p_lines = [line for line in pulse.read_text(encoding="utf-8").splitlines() if line and not line.startswith(today + ",")]
+                pulse.write_text("\n".join(p_lines) + ("\n" if p_lines else ""), encoding="utf-8")
             append_csv(pulse, ["date", "board", "open", "fresher"], [[today, b, n, f] for b, (n, f) in sorted(pulse_counts.items())])
 
-        if not skills_exists_today and all_skills:
+        if all_skills:
+            if skills_path.exists():
+                s_lines = [line for line in skills_path.read_text(encoding="utf-8").splitlines() if line and not line.startswith(today + ",")]
+                skills_path.write_text("\n".join(s_lines) + ("\n" if s_lines else ""), encoding="utf-8")
             append_csv(skills_path, ["date", "skill", "jobs", "tagged"], [[today, k, c, tagged_total] for k, c in sorted(all_skills.items())])
 
         if pruned_rows:
@@ -3641,7 +3673,15 @@ def main():
     for i, o in db.items():
         if o["closed_at"] is None:
             open_n[i.rsplit(":", 1)[0]] = open_n.get(i.rsplit(":", 1)[0], 0) + 1
-    tasks.sort(key=lambda t: -open_n.get(t[0], 0))  # biggest boards first, so the pool never ends waiting on one slow giant
+    def task_priority(t):
+        scope = t[0]
+        if scope in FEEDS:
+            return -100_000
+        if scope not in open_n:
+            return -50_000
+        return -open_n.get(scope, 0)
+
+    tasks.sort(key=task_priority)  # feeds & new boards first, then biggest boards
 
     lines = [l for l in HEALTH.read_text(encoding="utf-8").split(chr(10)) if l] if HEALTH.exists() else []
     health = {r.pop("b"): r for r in map(json.loads, lines)}

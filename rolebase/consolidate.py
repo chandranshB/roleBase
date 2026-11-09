@@ -80,9 +80,7 @@ def consolidate_shards(today: str = None) -> None:
 
     cutoff = (dt.date.fromisoformat(today) - dt.timedelta(KEEP_CLOSED_DAYS)).isoformat()
     pulse = Path("data/pulse.csv")
-    pulse_exists_today = pulse.exists() and any(line.startswith(today + ",") for line in pulse.read_text(encoding="utf-8").split("\n") if line)
     skills_path = Path("data/skills.csv")
-    skills_exists_today = skills_path.exists() and any(line.startswith(today + ",") for line in skills_path.read_text(encoding="utf-8").split("\n") if line)
 
     pulse_counts = {}
     all_skills = Counter()
@@ -194,13 +192,19 @@ def consolidate_shards(today: str = None) -> None:
             tagged_total += b_tagged
             if b_pruned:
                 pruned_rows.extend(b_pruned)
-            if not pulse_exists_today and b_open > 0:
+            if b_open > 0:
                 pulse_counts[board] = [b_open, b_fresher]
 
-    if not pulse_exists_today and pulse_counts:
+    if pulse_counts:
+        if pulse.exists():
+            p_lines = [line for line in pulse.read_text(encoding="utf-8").splitlines() if line and not line.startswith(today + ",")]
+            pulse.write_text("\n".join(p_lines) + ("\n" if p_lines else ""), encoding="utf-8")
         append_csv(pulse, ["date", "board", "open", "fresher"], [[today, b, n, f] for b, (n, f) in sorted(pulse_counts.items())])
 
-    if not skills_exists_today and all_skills:
+    if all_skills:
+        if skills_path.exists():
+            s_lines = [line for line in skills_path.read_text(encoding="utf-8").splitlines() if line and not line.startswith(today + ",")]
+            skills_path.write_text("\n".join(s_lines) + ("\n" if s_lines else ""), encoding="utf-8")
         append_csv(skills_path, ["date", "skill", "jobs", "tagged"], [[today, k, c, tagged_total] for k, c in sorted(all_skills.items())])
 
     if pruned_rows:
