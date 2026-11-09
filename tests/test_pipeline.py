@@ -28,6 +28,11 @@ class TestPipeline(unittest.TestCase):
             ("fourdayweek:789", None),
             ("nodesk:abc", None),
             ("remotepython:def", None),
+            ("nofluffjobs:123", None),
+            ("landingjobs:456", None),
+            ("cryptocurrencyjobs:789", None),
+            ("cryptojobslist:abc", None),
+            ("golangprojects:def", None),
         ]
         for jid, expected in cases:
             with self.subTest(jid=jid):

@@ -535,7 +535,7 @@ def workday(s, name):  # s = "<tenant>.<pod>.myworkdayjobs.com/<site>"; the list
                  for d in [first, *rest] for j in d.get("jobPostings", []) if j.get("externalPath") and j.get("title")}.values())  # entries with no link or no title exist (KBR has one): skip them, not the board
 
 
-CAPPED = {"workday", "eightfold", "himalayas", "jobicy", "jobtech", "usajobs", "oracle", "phenom", "apple", "themuse", "aidevboard"}
+CAPPED = {"workday", "eightfold", "himalayas", "jobicy", "jobtech", "usajobs", "oracle", "phenom", "apple", "themuse", "aidevboard", "nofluffjobs"}
 AIDEV_CAP = 500  # newest N AI Dev Jobs
 HIM_CAP = 400  # newest N Himalayas jobs (of 100k+)
 MUSE_CAP = 400  # newest N jobs from The Muse (of 400k+)
@@ -2520,6 +2520,117 @@ def remotepython():  # remote Python engineering jobs RSS feed; titles formatted
     return out
 
 
+
+NFJ_CAP = 1000
+
+
+def nofluffjobs():  # 15k+ tech & software engineering jobs across Europe
+    d = get("https://nofluffjobs.com/api/posting")
+    postings = d.get("postings", []) if isinstance(d, dict) else d
+    out = []
+    for p in postings[:NFJ_CAP]:
+        jid = str(p.get("id") or "")
+        title = p.get("title") or ""
+        if not jid or not title:
+            continue
+        sal = p.get("salary") or {}
+        pay = None
+        if sal.get("from") and sal.get("to") and sal.get("currency"):
+            period = str(sal.get("period") or "").lower()
+            low, high = int(sal["from"]), int(sal["to"])
+            curr = sal["currency"]
+            if period == "month":
+                pay = [low * 12, high * 12, curr]
+            elif period in ("year", "annually", "annual"):
+                pay = [low, high, curr]
+        posted = None
+        if p.get("posted"):
+            try:
+                posted = dt.datetime.fromtimestamp(p["posted"] / 1000, tz=dt.timezone.utc).date().isoformat()
+            except Exception:
+                pass
+        url = f"https://nofluffjobs.com/job/{p['url']}" if p.get("url") else None
+        remote = bool(p.get("fullyRemote")) or "remote" in jid.lower()
+        sen = p.get("seniority") or []
+        hint = "junior" if "Junior" in sen or "Trainee" in sen else None
+        out.append(job("nofluffjobs", "nofluffjobs", jid, clean_company(p.get("name")), title, url,
+                       location="Remote" if remote else None, remote=remote, posted=posted,
+                       team=p.get("category"), pay=pay, hint=hint))
+    return out
+
+
+def landingjobs():  # curated tech roles from Landing.jobs
+    d = get("https://landing.jobs/api/v1/jobs")
+    out = []
+    for j in (d if isinstance(d, list) else []):
+        jid = str(j.get("id") or "")
+        title = j.get("title") or ""
+        if not jid or not title:
+            continue
+        low = j.get("gross_salary_low")
+        high = j.get("gross_salary_high")
+        curr = j.get("currency_code") or "EUR"
+        pay = [int(low), int(high), curr] if low and high else None
+        posted = str(j.get("published_at") or "")[:10] or None
+        remote = bool(j.get("remote"))
+        tags = j.get("tags") or []
+        desc = text(j.get("role_description"))
+        out.append(job("landingjobs", "landingjobs", jid, "Landing.jobs Partner", title, j.get("url"),
+                       location="Remote" if remote else None, remote=remote, posted=posted,
+                       desc=desc, tags=tags, pay=pay))
+    return out
+
+
+def cryptocurrencyjobs():  # Web3, DeFi and crypto career postings
+    r = S.get("https://cryptocurrencyjobs.co/index.xml", timeout=TIMEOUT)
+    r.raise_for_status()
+    out = []
+    clean_xml = re.sub(r"&(?!(?:amp|lt|gt|quot|apos);)[a-zA-Z0-9#]+;", " ", r.text)
+    for i in ET.fromstring(clean_xml).iter("item"):
+        raw_title = i.findtext("title") or ""
+        parts = raw_title.rsplit(" at ", 1)
+        title = parts[0].strip() if len(parts) == 2 else raw_title
+        company = parts[1].strip() if len(parts) == 2 else ""
+        link = i.findtext("link") or ""
+        jid = link.rstrip("/").rsplit("/", 1)[-1]
+        out.append(job("cryptocurrencyjobs", "cryptocurrencyjobs", jid, clean_company(company), title, link,
+                       None, True, rss_day(i.findtext("pubDate")), desc=text(i.findtext("description"))))
+    return out
+
+
+def cryptojobslist():  # crypto and blockchain ecosystem positions
+    r = S.get("https://cryptojobslist.com/rss.xml", timeout=TIMEOUT)
+    r.raise_for_status()
+    out = []
+    clean_xml = re.sub(r"&(?!(?:amp|lt|gt|quot|apos);)[a-zA-Z0-9#]+;", " ", r.text)
+    for i in ET.fromstring(clean_xml).iter("item"):
+        raw_title = i.findtext("title") or ""
+        title = raw_title.split(" - ")[0].strip() if " - " in raw_title else raw_title
+        link = i.findtext("link") or ""
+        m = re.search(r"-at-([a-zA-Z0-9\-]+)$", link.rstrip("/"))
+        company = m.group(1).replace("-", " ").title() if m else ""
+        jid = link.rstrip("/").rsplit("/", 1)[-1]
+        out.append(job("cryptojobslist", "cryptojobslist", jid, clean_company(company), title, link,
+                       None, True, rss_day(i.findtext("pubDate")), desc=text(i.findtext("description"))))
+    return out
+
+
+def golangprojects():  # Go language remote developer listings
+    r = S.get("https://www.golangprojects.com/rss.xml", timeout=TIMEOUT)
+    r.raise_for_status()
+    out = []
+    clean_xml = re.sub(r"&(?!(?:amp|lt|gt|quot|apos);)[a-zA-Z0-9#]+;", " ", r.text)
+    for i in ET.fromstring(clean_xml).iter("item"):
+        raw_title = i.findtext("title") or ""
+        parts = re.split(r"[ \s]*[@|at][ \s]*", raw_title, maxsplit=1)
+        title = parts[0].strip() if len(parts) == 2 else raw_title
+        company = parts[1].strip() if len(parts) == 2 else ""
+        link = i.findtext("link") or ""
+        jid = link.rstrip("/").rsplit("/", 1)[-1].replace(".html", "")
+        out.append(job("golangprojects", "golangprojects", jid, clean_company(company), title, link,
+                       None, True, rss_day(i.findtext("pubDate")), desc=text(i.findtext("description"))))
+    return out
+
 ATS = dict(greenhouse=greenhouse, lever=lever, ashby=ashby, smartrecruiters=smartrecruiters, workday=workday, microsoft=microsoft, eightfold=eightfold,
            amazon=amazon, apple=apple, teamtailor=teamtailor, personio=personio, recruitee=recruitee, oracle=oracle, workable=workable, phenom=phenom,
            pinpoint=pinpoint, breezy=breezy, bamboohr=bamboohr, rippling=rippling, join=join, adp=adp, jazzhr=jazzhr, jobvite=jobvite, trakstar_hire=trakstar_hire, jobscore=jobscore, zoho=zoho, icims=icims, ultipro=ultipro, dayforce=dayforce, paylocity=paylocity,
@@ -2530,7 +2641,7 @@ ATS = dict(greenhouse=greenhouse, lever=lever, ashby=ashby, smartrecruiters=smar
            factorial=factorial)
 FEEDS = dict(remotive=remotive, remoteok=remoteok, arbeitnow=arbeitnow, himalayas=himalayas, jobicy=jobicy, weworkremotely=weworkremotely,
              getonbrd=getonbrd, workingnomads=workingnomads, jobtech=jobtech, cryptojobs=cryptojobs, themuse=themuse,
-             aidevboard=aidevboard, larajobs=larajobs, fourdayweek=fourdayweek, nodesk=nodesk, remotepython=remotepython)
+             aidevboard=aidevboard, larajobs=larajobs, fourdayweek=fourdayweek, nodesk=nodesk, remotepython=remotepython, nofluffjobs=nofluffjobs, landingjobs=landingjobs, cryptocurrencyjobs=cryptocurrencyjobs, cryptojobslist=cryptojobslist, golangprojects=golangprojects)
 if os.environ.get("USAJOBS_API_KEY") and os.environ.get("USAJOBS_EMAIL"):  # optional: skipped (not failed) without a key
     FEEDS["usajobs"] = usajobs
 
@@ -2755,7 +2866,7 @@ def verdict(jobs, err, prev, strikes):
 # The number is how many boards of that provider are fetched at the same time (conservative defaults, not published limits); a provider not listed
 # here (Arbeitnow, every feed, Amazon, Microsoft...) gets one worker, i.e. one board at a time. Workable and Arbeitnow also pause a second between requests.
 LANE_OF = {"microsoft": "eightfold"}  # Microsoft's careers site is Eightfold-hosted: one lane, one site at a time, so their bot protection never sees a burst
-LANES = {"greenhouse": 24, "lever": 16, "ashby": 16, "smartrecruiters": 12, "workday": 32, "teamtailor": 4, "oracle": 8, "workable": 2, "personio": 12, "recruitee": 2, "phenom": 4, "apple": 1, "pinpoint": 8, "breezy": 8, "bamboohr": 16, "rippling": 8, "join": 16, "adp": 16, "jazzhr": 16, "jobvite": 8, "trakstar_hire": 8, "jobscore": 8, "zoho": 16, "icims": 8, "ultipro": 16, "dayforce": 16, "paylocity": 16, "paycom": 16, "applicantpro": 8, "isolved": 8, "betterteam": 8, "gohire": 8, "freshteam": 4, "gem": 4, "recooty": 4, "csod": 4, "taleo": 2, "bullhorn": 8, "successfactors": 8, "avature": 8, "recruiterflow": 8, "manatal": 8, "loxo": 8, "careerplug": 8, "comeet": 8, "crelate": 8, "clearcompany": 8, "pageup": 8, "catsone": 8, "talentlyft": 8, "jobadder": 8, "jobsoid": 8, "tribepad": 8, "applicantstack": 8, "factorial": 4, "aidevboard": 2, "larajobs": 2, "fourdayweek": 2, "nodesk": 2, "remotepython": 2}
+LANES = {"greenhouse": 24, "lever": 16, "ashby": 16, "smartrecruiters": 12, "workday": 32, "teamtailor": 4, "oracle": 8, "workable": 2, "personio": 12, "recruitee": 2, "phenom": 4, "apple": 1, "pinpoint": 8, "breezy": 8, "bamboohr": 16, "rippling": 8, "join": 16, "adp": 16, "jazzhr": 16, "jobvite": 8, "trakstar_hire": 8, "jobscore": 8, "zoho": 16, "icims": 8, "ultipro": 16, "dayforce": 16, "paylocity": 16, "paycom": 16, "applicantpro": 8, "isolved": 8, "betterteam": 8, "gohire": 8, "freshteam": 4, "gem": 4, "recooty": 4, "csod": 4, "taleo": 2, "bullhorn": 8, "successfactors": 8, "avature": 8, "recruiterflow": 8, "manatal": 8, "loxo": 8, "careerplug": 8, "comeet": 8, "crelate": 8, "clearcompany": 8, "pageup": 8, "catsone": 8, "talentlyft": 8, "jobadder": 8, "jobsoid": 8, "tribepad": 8, "applicantstack": 8, "factorial": 4, "aidevboard": 2, "larajobs": 2, "fourdayweek": 2, "nodesk": 2, "remotepython": 2, "nofluffjobs": 2, "landingjobs": 2, "cryptocurrencyjobs": 2, "cryptojobslist": 2, "golangprojects": 2}
 RUN_BUDGET = 16 * 60  # seconds: graceful cutoff so in-flight tasks finish, disk saves, and shards exit cleanly within CI limits
 
 

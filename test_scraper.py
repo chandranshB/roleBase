@@ -6,7 +6,7 @@ from scraper import (ATS, CAPPED, FEEDS, apple, bamboohr, breezy, category, clea
                      successfactors, avature, recruiterflow, manatal, loxo, careerplug, comeet,
                      crelate, clearcompany, pageup,
                      catsone, talentlyft, jobadder, jobsoid, tribepad, applicantstack,
-                     factorial, aidevboard, larajobs, fourdayweek, nodesk, remotepython)
+                     factorial, aidevboard, larajobs, fourdayweek, nodesk, remotepython, nofluffjobs, landingjobs, cryptocurrencyjobs, cryptojobslist, golangprojects)
 from update_about import about_text
 
 
@@ -159,6 +159,11 @@ assert "larajobs" in FEEDS and FEEDS["larajobs"] == larajobs
 assert "fourdayweek" in FEEDS and FEEDS["fourdayweek"] == fourdayweek
 assert "nodesk" in FEEDS and FEEDS["nodesk"] == nodesk
 assert "remotepython" in FEEDS and FEEDS["remotepython"] == remotepython
+assert "nofluffjobs" in FEEDS and FEEDS["nofluffjobs"] == nofluffjobs and "nofluffjobs" in CAPPED
+assert "landingjobs" in FEEDS and FEEDS["landingjobs"] == landingjobs
+assert "cryptocurrencyjobs" in FEEDS and FEEDS["cryptocurrencyjobs"] == cryptocurrencyjobs
+assert "cryptojobslist" in FEEDS and FEEDS["cryptojobslist"] == cryptojobslist
+assert "golangprojects" in FEEDS and FEEDS["golangprojects"] == golangprojects
 
 # --- logos: icon detection and ordering ---
 import struct

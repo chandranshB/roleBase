@@ -220,10 +220,10 @@ URLS = dict(
 DEFAULTS = dict(company="", closed_at=None, location="", country="", team="", remote=False, years=None, skills=[], pay=None, employment="", posted=None, reposts=0)
 
 # Capped / windowed feeds where missing postings cannot be assumed closed
-CAPPED = {"workday", "eightfold", "himalayas", "jobicy", "jobtech", "usajobs", "oracle", "phenom", "apple", "themuse", "aidevboard"}
+CAPPED = {"workday", "eightfold", "himalayas", "jobicy", "jobtech", "usajobs", "oracle", "phenom", "apple", "themuse", "aidevboard", "nofluffjobs"}
 
 # Public feeds skipped during Kaggle export
-SKIP = {"remotive", "remoteok", "himalayas", "jobicy", "weworkremotely", "getonbrd", "workingnomads", "cryptojobs", "themuse", "aidevboard", "larajobs", "fourdayweek", "nodesk", "remotepython"}
+SKIP = {"remotive", "remoteok", "himalayas", "jobicy", "weworkremotely", "getonbrd", "workingnomads", "cryptojobs", "themuse", "aidevboard", "larajobs", "fourdayweek", "nodesk", "remotepython", "nofluffjobs", "landingjobs", "cryptocurrencyjobs", "cryptojobslist", "golangprojects"}
 
 # Lane concurrency defaults (boards fetched in parallel per provider)
 LANE_OF = {"microsoft": "eightfold"}
@@ -235,7 +235,8 @@ LANES = {
     "recooty": 4, "csod": 4, "taleo": 2, "bullhorn": 8, "successfactors": 8, "avature": 8, "recruiterflow": 8, "manatal": 8,
     "loxo": 8, "careerplug": 8, "comeet": 8, "crelate": 8, "clearcompany": 8, "pageup": 8,
     "catsone": 8, "talentlyft": 8, "jobadder": 8, "jobsoid": 8, "tribepad": 8, "applicantstack": 8,
-    "factorial": 4, "aidevboard": 2, "larajobs": 2, "fourdayweek": 2, "nodesk": 2, "remotepython": 2
+    "factorial": 4, "aidevboard": 2, "larajobs": 2, "fourdayweek": 2, "nodesk": 2, "remotepython": 2,
+    "nofluffjobs": 2, "landingjobs": 2, "cryptocurrencyjobs": 2, "cryptojobslist": 2, "golangprojects": 2
 }
 
 # Crawl limits
@@ -247,6 +248,7 @@ MUSE_CAP = 1000
 APPLE_CAP = 2000
 JT_CAP = 1000
 AIDEV_CAP = 500
+NFJ_CAP = 1000
 
 PERSONIO_LEVEL = {
     "entry-level": "junior", "trainee": "junior", "working student": "intern",
