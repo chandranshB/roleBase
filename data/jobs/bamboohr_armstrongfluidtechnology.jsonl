@@ -37,7 +37,7 @@
 {"company":"Armstrong Fluid Technology","first_seen":"2026-11-08","id":"bamboohr:armstrongfluidtechnology:1060","remote":true,"team":"Industrial","title":"General Manager, Industrial – EMEA"}
 {"company":"Armstrong Fluid Technology","first_seen":"2026-11-08","id":"bamboohr:armstrongfluidtechnology:1061","location":"Droitwich Spa., Worcestershire","team":"Purchasing","title":"Strategic Sourcing Specialist"}
 {"company":"Armstrong Fluid Technology","first_seen":"2026-11-08","id":"bamboohr:armstrongfluidtechnology:1062","remote":true,"team":"Business Development","title":"Business Development Manager, Optimisation & Energy Upgrades"}
-{"company":"Armstrong Fluid Technology","first_seen":"2026-11-08","id":"bamboohr:armstrongfluidtechnology:1065","location":"Toronto, Ontario","title":"Technical Support Representative – RSEC Team (Canada)"}
+{"company":"Armstrong Fluid Technology","first_seen":"2026-11-08","id":"bamboohr:armstrongfluidtechnology:1065","location":"Toronto, Ontario","team":"Regional Sales Enablement Centre","title":"Technical Support Representative – RSEC Team (Canada)"}
 {"company":"Armstrong Fluid Technology","first_seen":"2026-11-08","id":"bamboohr:armstrongfluidtechnology:1067","location":"Toronto, Ontario","team":"Marketing & Communications","title":"Regional Marketing Communications Manager (US & LATAM)"}
 {"company":"Armstrong Fluid Technology","first_seen":"2026-11-08","id":"bamboohr:armstrongfluidtechnology:1068","location":"Niagara Falls, New York","team":"Quality","title":"Supplier Quality Engineer"}
 {"company":"Armstrong Fluid Technology","first_seen":"2026-11-08","id":"bamboohr:armstrongfluidtechnology:1069","remote":true,"team":"Direct Sales","title":"Regional Sales Manager - South"}
@@ -55,7 +55,7 @@
 {"company":"Armstrong Fluid Technology","first_seen":"2026-11-08","id":"bamboohr:armstrongfluidtechnology:1085","location":"Bengaluru, Karnataka","team":"Direct-Operation","title":"Manager, Stores"}
 {"company":"Armstrong Fluid Technology","first_seen":"2026-11-08","id":"bamboohr:armstrongfluidtechnology:1086","location":"Gurugram, Haryana","team":"Industrial","title":"Sales Representative, India – Industrial"}
 {"company":"Armstrong Fluid Technology","first_seen":"2026-11-08","id":"bamboohr:armstrongfluidtechnology:1087","location":"Manchester, Greater Manchester","skills":["customer_service"],"team":"Customer Service","title":"Customer Service Representative"}
-{"company":"Armstrong Fluid Technology","first_seen":"2026-11-08","id":"bamboohr:armstrongfluidtechnology:1088","remote":true,"team":"Direct Sales","title":"Regional Sales Manager (Dubai)"}
+{"closed_at":"2026-11-09","company":"Armstrong Fluid Technology","first_seen":"2026-11-08","id":"bamboohr:armstrongfluidtechnology:1088","remote":true,"team":"Direct Sales","title":"Regional Sales Manager (Dubai)"}
 {"company":"Armstrong Fluid Technology","first_seen":"2026-11-08","id":"bamboohr:armstrongfluidtechnology:1089","location":"Toronto, Ontario","team":"Direct-Operation","title":"Pump Tester"}
 {"company":"Armstrong Fluid Technology","first_seen":"2026-11-08","id":"bamboohr:armstrongfluidtechnology:1090","location":"Toronto, Ontario","team":"Direct-Operation","title":"Pump Tester - Afternoon"}
 {"company":"Armstrong Fluid Technology","first_seen":"2026-11-08","id":"bamboohr:armstrongfluidtechnology:1091","location":"Toronto, Ontario","team":"Direct-Operation","title":"General Labourer - (12:00am - 7:30am)"}
@@ -68,6 +68,9 @@
 {"company":"Armstrong Fluid Technology","first_seen":"2026-11-08","id":"bamboohr:armstrongfluidtechnology:1098","location":"Niagara Falls, New York","team":"Sourcing / Buying / Planning","title":"Buyer"}
 {"company":"Armstrong Fluid Technology","first_seen":"2026-11-08","id":"bamboohr:armstrongfluidtechnology:1099","location":"Niagara Falls, New York","team":"Manufacturing","title":"Electrician"}
 {"company":"Armstrong Fluid Technology","first_seen":"2026-11-09","id":"bamboohr:armstrongfluidtechnology:1100","remote":true,"team":"Direct Sales","title":"Regional Sales Manager, Fire and Boosters"}
+{"company":"Armstrong Fluid Technology","first_seen":"2026-11-09","id":"bamboohr:armstrongfluidtechnology:1101","location":"Droitwich Spa., Worcestershire","team":"Quality","title":"Supplier Quality Engineer"}
+{"company":"Armstrong Fluid Technology","first_seen":"2026-11-09","id":"bamboohr:armstrongfluidtechnology:1104","location":"Droitwich Spa., Worcestershire","team":"Quality","title":"Lead Quality Inspector"}
+{"company":"Armstrong Fluid Technology","first_seen":"2026-11-09","id":"bamboohr:armstrongfluidtechnology:1105","location":"North Tonawanda, New York","team":"Quality","title":"Product Manager Pumps - OEM"}
 {"company":"Armstrong Fluid Technology","first_seen":"2026-11-08","id":"bamboohr:armstrongfluidtechnology:117","location":"Toronto, Ontario","team":"Configured Building Equipment Offering","title":"Offering Manager, Modular Performance Systems"}
 {"company":"Armstrong Fluid Technology","first_seen":"2026-11-08","id":"bamboohr:armstrongfluidtechnology:411","location":"Toronto, Ontario","team":"Marketing & Communications","title":"Program Manager - Strategic Marketing"}
 {"company":"Armstrong Fluid Technology","first_seen":"2026-11-08","id":"bamboohr:armstrongfluidtechnology:452","location":"Toronto, Ontario","skills":["supply_chain"],"team":"Sales and Ops Support","title":"Armstrong Graduate Development Program – Operations & Supply Chain Stream"}
@@ -125,14 +128,14 @@
 {"company":"Armstrong Fluid Technology","first_seen":"2026-11-08","id":"bamboohr:armstrongfluidtechnology:899","location":"Droitwich Spa., Worcestershire","team":"PEG Administration","title":"Electrical Design Engineer"}
 {"company":"Armstrong Fluid Technology","first_seen":"2026-11-08","id":"bamboohr:armstrongfluidtechnology:902","location":"Scarborough, Ontario","team":"Direct-Operation","title":"Material Handler"}
 {"company":"Armstrong Fluid Technology","first_seen":"2026-11-08","id":"bamboohr:armstrongfluidtechnology:910","location":"North Tonawanda, New York","team":"Field Service","title":"National Service Manager, USA"}
-{"company":"Armstrong Fluid Technology","first_seen":"2026-11-08","id":"bamboohr:armstrongfluidtechnology:911","location":"North Tonawanda, New York","team":"Regional Sales Enablement Centre","title":"Application Engineer (HVAC)"}
+{"closed_at":"2026-11-09","company":"Armstrong Fluid Technology","first_seen":"2026-11-08","id":"bamboohr:armstrongfluidtechnology:911","location":"North Tonawanda, New York","team":"Regional Sales Enablement Centre","title":"Application Engineer (HVAC)"}
 {"company":"Armstrong Fluid Technology","first_seen":"2026-11-08","id":"bamboohr:armstrongfluidtechnology:913","location":"Bengaluru, Karnataka","team":"Engineering","title":"Validation and Compliance Engineer"}
 {"company":"Armstrong Fluid Technology","first_seen":"2026-11-08","id":"bamboohr:armstrongfluidtechnology:914","location":"Bengaluru, Karnataka","team":"Operations Management","title":"Electrical Engineer"}
 {"company":"Armstrong Fluid Technology","first_seen":"2026-11-08","id":"bamboohr:armstrongfluidtechnology:917","location":"Toronto, Ontario","team":"Engineering","title":"Senior Electrical Engineer"}
 {"company":"Armstrong Fluid Technology","first_seen":"2026-11-08","id":"bamboohr:armstrongfluidtechnology:918","location":"Toronto, Ontario","team":"Engineering","title":"Lead Controls Engineer"}
 {"company":"Armstrong Fluid Technology","first_seen":"2026-11-08","id":"bamboohr:armstrongfluidtechnology:919","location":"Toronto, Ontario","team":"Controls Development","title":"Controls Engineer"}
 {"company":"Armstrong Fluid Technology","first_seen":"2026-11-08","id":"bamboohr:armstrongfluidtechnology:920","location":"Toronto, Ontario","title":"Service Coordinator"}
-{"company":"Armstrong Fluid Technology","first_seen":"2026-11-08","id":"bamboohr:armstrongfluidtechnology:924","remote":true,"team":"Regional Sales Enablement Centre","title":"Application Engineering Specialist – Alberta"}
+{"company":"Armstrong Fluid Technology","first_seen":"2026-11-08","id":"bamboohr:armstrongfluidtechnology:924","remote":true,"team":"Regional Sales Enablement Centre","title":"Application Engineering Specialist – Alberta (Remote)"}
 {"company":"Armstrong Fluid Technology","first_seen":"2026-11-08","id":"bamboohr:armstrongfluidtechnology:928","location":"Toronto, Ontario","team":"Leadership Board","title":"Director of Transformation"}
 {"company":"Armstrong Fluid Technology","first_seen":"2026-11-08","id":"bamboohr:armstrongfluidtechnology:930","location":"Niagara Falls, New York","team":"Manufacturing","title":"Material Handler: Niagara Falls, NY"}
 {"company":"Armstrong Fluid Technology","employment":"contract","first_seen":"2026-11-08","id":"bamboohr:armstrongfluidtechnology:940","location":"Bengaluru, Karnataka","team":"Marketing & Communications","title":"Content Operations Specialist (Contract Role)"}

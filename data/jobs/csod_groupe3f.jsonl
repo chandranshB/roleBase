@@ -178,7 +178,7 @@
 {"company":"Groupe 3F","first_seen":"2026-11-08","id":"csod:groupe3f:2460","location":"PONTOISE, FR","posted":"2026-05-11","reposts":1,"title":"Gardien d'immeubles F/H CERGY (95)"}
 {"company":"Groupe 3F","first_seen":"2026-11-08","id":"csod:groupe3f:2548","location":"HALLUIN, HAUTS DE FRANCE, FR","title":"Responsable ressources humaines F/H"}
 {"company":"Groupe 3F","first_seen":"2026-11-08","id":"csod:groupe3f:2551","location":"GRASSE, FR","posted":"2026-11-06","reposts":4,"title":"Assistant commercial F/H"}
-{"company":"Groupe 3F","first_seen":"2026-11-08","id":"csod:groupe3f:2654","location":"LYON, Auvergne Rhône Alpes, FR","title":"Gardien DECINES F/H"}
+{"closed_at":"2026-11-09","company":"Groupe 3F","first_seen":"2026-11-08","id":"csod:groupe3f:2654","location":"LYON, Auvergne Rhône Alpes, FR","title":"Gardien DECINES F/H"}
 {"company":"Groupe 3F","first_seen":"2026-11-08","id":"csod:groupe3f:2662","location":"ROSNY SOUS BOIS, FR","posted":"2026-05-11","reposts":2,"title":"Gardien d'immeubles F/H - Noisy-le-Sec (93)"}
 {"company":"Groupe 3F","first_seen":"2026-11-08","id":"csod:groupe3f:2711","location":"MAZAMET, Occitanie, FR","reposts":3,"title":"Gardien F/H"}
 {"company":"Groupe 3F","first_seen":"2026-11-08","id":"csod:groupe3f:2716","location":"PARIS, FR","title":"Ingénieur d'études F/H"}
@@ -227,7 +227,7 @@
 {"company":"Groupe 3F","first_seen":"2026-11-08","id":"csod:groupe3f:3148","location":"PARIS, FR","title":"Stage - Chargé sûreté et tranquillité résidentielle F/H"}
 {"company":"Groupe 3F","first_seen":"2026-11-08","id":"csod:groupe3f:3163","location":"PARIS, FR","title":"Chargé de développement F/H"}
 {"company":"Groupe 3F","first_seen":"2026-11-08","id":"csod:groupe3f:3171","location":"PARIS, FR","reposts":2,"title":"Chef de projet patrimoine F/H"}
-{"company":"Groupe 3F","first_seen":"2026-11-08","id":"csod:groupe3f:3172","location":"ATHIS MONS, FR","title":"Gardien d'Immeubles F/H - Les Ulis (91)"}
+{"closed_at":"2026-11-09","company":"Groupe 3F","first_seen":"2026-11-08","id":"csod:groupe3f:3172","location":"ATHIS MONS, FR","title":"Gardien d'Immeubles F/H - Les Ulis (91)"}
 {"company":"Groupe 3F","first_seen":"2026-11-08","id":"csod:groupe3f:3178","location":"PARIS, FR","title":"Contrôleur Comptable F/H"}
 {"company":"Groupe 3F","first_seen":"2026-11-08","id":"csod:groupe3f:3180","location":"DIEPPE CEDEX, Normandie, FR","title":"Responsable de site immobilierF/H"}
 {"company":"Groupe 3F","first_seen":"2026-11-08","id":"csod:groupe3f:3181","location":"DIEPPE CEDEX, Normandie, FR","reposts":2,"title":"Employe d'immeuble F/H"}
@@ -238,7 +238,7 @@
 {"company":"Groupe 3F","first_seen":"2026-11-08","id":"csod:groupe3f:3199","location":"NANCY, Grand Est, FR","title":"Gardien F/H, CDD de remplacement"}
 {"company":"Groupe 3F","first_seen":"2026-11-08","id":"csod:groupe3f:3201","location":"LYON, Auvergne Rhône Alpes, FR","title":"Gardien COLLONGE AU MONT D'OR F/H"}
 {"company":"Groupe 3F","first_seen":"2026-11-08","id":"csod:groupe3f:3202","location":"FIRMINY, Auvergne Rhône Alpes, FR","title":"Gardien SAINT CHAMOND F/H"}
-{"company":"Groupe 3F","first_seen":"2026-11-08","id":"csod:groupe3f:3203","location":"BOULOGNE, FR","reposts":1,"title":"Assistant accueil F/H"}
+{"company":"Groupe 3F","first_seen":"2026-11-08","id":"csod:groupe3f:3203","location":"BOULOGNE, FR","posted":"2026-09-11","reposts":1,"title":"Assistant accueil F/H"}
 {"company":"Groupe 3F","first_seen":"2026-11-08","id":"csod:groupe3f:3206","location":"BOULOGNE, FR","title":"Stage - Chargé de pré-contentieux F/H"}
 {"company":"Groupe 3F","first_seen":"2026-11-08","id":"csod:groupe3f:3212","location":"ROSNY SOUS BOIS, FR","reposts":4,"title":"Comptable F/H"}
 {"company":"Groupe 3F","first_seen":"2026-11-08","id":"csod:groupe3f:3213","location":"ROSNY SOUS BOIS, FR","reposts":4,"title":"Comptable F/H"}
@@ -262,3 +262,8 @@
 {"company":"Groupe 3F","first_seen":"2026-11-08","id":"csod:groupe3f:3260","location":"PARIS, FR","posted":"2026-06-11","title":"Technicien micro-informatique F/H"}
 {"company":"Groupe 3F","first_seen":"2026-11-08","id":"csod:groupe3f:3261","location":"PARIS, FR","posted":"2026-06-11","title":"Stage - Chef de projet et de développement F/H"}
 {"company":"Groupe 3F","first_seen":"2026-11-08","id":"csod:groupe3f:3262","location":"MARSEILLE, FR","posted":"2026-06-11","title":"Comptable filiale F/H"}
+{"company":"Groupe 3F","first_seen":"2026-11-09","id":"csod:groupe3f:3266","location":"LYON, Auvergne Rhône Alpes, FR","posted":"2026-09-11","reposts":1,"title":"Cadre comptable F/H"}
+{"company":"Groupe 3F","first_seen":"2026-11-09","id":"csod:groupe3f:3267","location":"PARIS, FR","posted":"2026-09-11","reposts":3,"title":"Comptable F/H"}
+{"company":"Groupe 3F","first_seen":"2026-11-09","id":"csod:groupe3f:3269","location":"ATHIS MONS, Ile-de-France, FR","posted":"2026-09-11","title":"Gardien d'Immeubles F/H - Bruyères-le-Châtel (91)"}
+{"company":"Groupe 3F","first_seen":"2026-11-09","id":"csod:groupe3f:3270","location":"ATHIS MONS, FR","posted":"2026-09-11","title":"Gardien d'immeubles F/H - Sainte-Geneviève-des-Bois (91)"}
+{"company":"Groupe 3F","first_seen":"2026-11-09","id":"csod:groupe3f:3274","location":"PARIS, FR","posted":"2026-09-11","title":"Stage - Chargé d'études data et exploitation  F/H"}

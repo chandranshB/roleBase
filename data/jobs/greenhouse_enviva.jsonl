@@ -56,8 +56,8 @@
 {"closed_at":"2026-09-05","company":"Enviva","first_seen":"2026-09-03","id":"greenhouse:enviva:7984001003","location":"United States","posted":"2026-09-02","team":"Operations","title":"Hammer Mill Operator"}
 {"company":"Enviva","first_seen":"2026-10-19","id":"greenhouse:enviva:7984333003","location":"Epes, AL","posted":"2026-09-02","skills":["preventive_maintenance","welding","osha"],"team":"Operations","title":"Mechanical Technician"}
 {"company":"Enviva","first_seen":"2026-10-19","id":"greenhouse:enviva:7984683003","location":"Epes, AL","posted":"2026-09-04","team":"Operations","title":"Hammer Mill Operator"}
-{"company":"Enviva","first_seen":"2026-10-19","id":"greenhouse:enviva:7985909003","location":"Epes, AL","posted":"2026-09-04","skills":["osha"],"team":"Operations","title":"Electrical Technician"}
-{"company":"Enviva","first_seen":"2026-11-08","id":"greenhouse:enviva:7986969003","location":"Epes, AL","posted":"2026-09-08","reposts":3,"skills":["preventive_maintenance","welding","osha"],"team":"Operations","title":"Mechanical Technician"}
+{"closed_at":"2026-11-09","company":"Enviva","first_seen":"2026-10-19","id":"greenhouse:enviva:7985909003","location":"Epes, AL","posted":"2026-09-04","skills":["osha"],"team":"Operations","title":"Electrical Technician"}
+{"closed_at":"2026-11-09","company":"Enviva","first_seen":"2026-11-08","id":"greenhouse:enviva:7986969003","location":"Epes, AL","posted":"2026-09-08","reposts":3,"skills":["preventive_maintenance","welding","osha"],"team":"Operations","title":"Mechanical Technician"}
 {"closed_at":"2026-10-27","company":"Enviva","first_seen":"2026-10-19","id":"greenhouse:enviva:7989190003","location":"Epes, AL","posted":"2026-09-08","team":"Operations","title":"Pellet Mill Operator"}
 {"company":"Enviva","first_seen":"2026-10-19","id":"greenhouse:enviva:7989261003","location":"Bethesda, MD","pay":[180000,200000,"USD"],"posted":"2026-09-08","skills":["payroll","hris","project_management","budgeting","ms_office","excel"],"team":"Human Resources","title":"Director, Total Rewards","years":10}
 {"company":"Enviva","first_seen":"2026-10-19","id":"greenhouse:enviva:7989262003","location":"Raleigh, NC","pay":[180000,200000,"USD"],"posted":"2026-09-08","skills":["payroll","hris","project_management","budgeting","ms_office","excel"],"team":"Human Resources","title":"Director, Total Rewards","years":10}
@@ -94,6 +94,7 @@
 {"closed_at":"2026-10-22","company":"Enviva","first_seen":"2026-10-20","id":"greenhouse:enviva:8036994003","location":"Lucedale, MS","posted":"2026-10-20","skills":["osha"],"team":"Operations","title":"Electrical Technician"}
 {"closed_at":"2026-11-08","company":"Enviva","first_seen":"2026-10-19","id":"greenhouse:enviva:8037913003","location":"Epes, AL","posted":"2026-10-19","skills":["preventive_maintenance"],"team":"Operations","title":"Chip Mill Operator"}
 {"closed_at":"2026-10-29","company":"Enviva","first_seen":"2026-10-19","id":"greenhouse:enviva:8037917003","location":"Epes, AL","posted":"2026-10-19","team":"Operations","title":"Hammer Mill Operator"}
+{"company":"Enviva","first_seen":"2026-11-09","id":"greenhouse:enviva:8039008003","location":"Franklin, VA","posted":"2026-11-09","reposts":2,"team":"Operations","title":"Mobile Equipment Operator"}
 {"company":"Enviva","first_seen":"2026-11-08","id":"greenhouse:enviva:8040683003","location":"Garysburg, NC","posted":"2026-11-02","reposts":3,"team":"Operations","title":"Shift Supervisor","years":2}
 {"company":"Enviva","first_seen":"2026-10-26","id":"greenhouse:enviva:8044929003","location":"Epes, AL","posted":"2026-10-26","skills":["project_management","excel","powerpoint"],"team":"Operations","title":"Reliability Engineer","years":4}
 {"company":"Enviva","first_seen":"2026-11-08","id":"greenhouse:enviva:8047268003","location":"Epes, AL","posted":"2026-10-29","reposts":3,"team":"Operations","title":"Hammer Mill Operator"}
@@ -107,3 +108,6 @@
 {"company":"Enviva","first_seen":"2026-11-08","id":"greenhouse:enviva:8196605003","location":"Cottondale, FL","posted":"2026-11-06","reposts":2,"team":"Operations","title":"Mobile Equipment Operator"}
 {"company":"Enviva","first_seen":"2026-11-08","id":"greenhouse:enviva:8196620003","location":"Pascagoula, MS","posted":"2026-11-05","team":"Operations","title":"Lead Receiving Operator"}
 {"company":"Enviva","first_seen":"2026-11-08","id":"greenhouse:enviva:8196627003","location":"Pascagoula, MS","posted":"2026-11-05","skills":["preventive_maintenance"],"team":"Operations","title":"Hybrid Operator"}
+{"company":"Enviva","first_seen":"2026-11-09","id":"greenhouse:enviva:8198976003","location":"Garysburg, NC","posted":"2026-11-09","team":"Operations","title":"Tooling Tech"}
+{"company":"Enviva","first_seen":"2026-11-09","id":"greenhouse:enviva:8199032003","location":"Garysburg, NC","posted":"2026-11-09","reposts":5,"team":"Operations","title":"Pellet Mill Operator"}
+{"company":"Enviva","first_seen":"2026-11-09","id":"greenhouse:enviva:8199551003","location":"Epes, AL","posted":"2026-11-09","reposts":5,"team":"Operations","title":"Pellet Mill Operator"}

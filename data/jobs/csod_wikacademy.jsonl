@@ -282,7 +282,7 @@
 {"company":"WIKA","first_seen":"2026-11-08","id":"csod:wikacademy:2351","location":"Dolle, DE","posted":"2026-02-26","title":"Industriemechaniker (m/w/d)"}
 {"company":"WIKA","first_seen":"2026-11-08","id":"csod:wikacademy:2389","location":"Al Khobar, SA","posted":"2026-03-10","title":"Instrumentation CAD designer"}
 {"company":"WIKA","first_seen":"2026-11-08","id":"csod:wikacademy:2402","location":"Lawrenceville, GA, US","posted":"2026-06-05","title":"Financial Data Analyst"}
-{"company":"WIKA","first_seen":"2026-11-08","id":"csod:wikacademy:2444","location":"Hisings Backa, SE","posted":"2026-03-25","title":"Calibration Technician"}
+{"closed_at":"2026-11-09","company":"WIKA","first_seen":"2026-11-08","id":"csod:wikacademy:2444","location":"Hisings Backa, SE","posted":"2026-03-25","title":"Calibration Technician"}
 {"company":"WIKA","first_seen":"2026-11-08","id":"csod:wikacademy:2464","location":"Hitzkirch, CH","posted":"2026-04-07","title":"Lehrstelle als Fachmann/-frau Betriebsunterhalt EFZ (Sommer 2027)"}
 {"company":"WIKA","first_seen":"2026-11-08","id":"csod:wikacademy:2467","location":"Hitzkirch, CH","posted":"2026-04-07","title":"Lehrstelle als Produktionsmechaniker:in EFZ (Sommer 2027)"}
 {"company":"WIKA","first_seen":"2026-11-08","id":"csod:wikacademy:2481","location":"Hitzkirch, CH","posted":"2026-04-08","title":"Lehrstelle als Polymechaniker:in EFZ (Sommer 2027)"}
@@ -296,7 +296,7 @@
 {"company":"WIKA","first_seen":"2026-11-08","id":"csod:wikacademy:2693","location":"Dolle, DE","posted":"2026-07-02","title":"Teamleiter Lager (m/w/d)"}
 {"company":"WIKA","employment":"internship","first_seen":"2026-11-08","id":"csod:wikacademy:2699","location":"Klingenberg/Main, DE","posted":"2026-06-29","title":"Praktikant/Werkstudent Prozessentwicklung (m/w/d)"}
 {"company":"WIKA","first_seen":"2026-11-08","id":"csod:wikacademy:2703","location":"Chennai, Tamil Nadu, IN","posted":"2026-06-30","title":"CNC Turning Setter- Fanuc (Mandatory)"}
-{"company":"WIKA","first_seen":"2026-11-08","id":"csod:wikacademy:2752","location":"Włocławek, PL","posted":"2026-07-16","title":"Mechatronik (Kobieta/Mężczyzna)"}
+{"company":"WIKA","first_seen":"2026-11-08","id":"csod:wikacademy:2752","location":"Włocławek, PL","posted":"2026-07-16","title":"Mechatronik w Dziale Utrzymania Ruchu (Kobieta/Mężczyzna)"}
 {"company":"WIKA","first_seen":"2026-11-08","id":"csod:wikacademy:2756","location":"Dolle, DE","posted":"2026-09-10","reposts":1,"title":"Lagermitarbeiter (m/w/d)"}
 {"company":"WIKA","first_seen":"2026-11-08","id":"csod:wikacademy:2766","location":"Palwal, Haryana, IN","posted":"2026-07-21","title":"Senior Engineer- Quality"}
 {"company":"WIKA","first_seen":"2026-11-08","id":"csod:wikacademy:2776","location":"Klingenberg/Main, DE","posted":"2026-07-28","title":"Zerspanungsmechaniker - Drehtechnik (m/w/d)"}
@@ -316,7 +316,7 @@
 {"company":"WIKA","first_seen":"2026-11-08","id":"csod:wikacademy:2867","location":"Klingenberg/Main, DE","posted":"2026-09-07","title":"Bauleiter / Projektleiter Bauwesen (m/w/d)"}
 {"company":"WIKA","first_seen":"2026-11-08","id":"csod:wikacademy:2877","location":"Pune, Maharashtra, IN","posted":"2026-08-26","title":"Sales Application Specialist - PRP"}
 {"company":"WIKA","first_seen":"2026-11-08","id":"csod:wikacademy:2878","location":"Hitzkirch, CH","posted":"2026-08-26","title":"Technical Inside Sales Engineer / Technische:r Verkaufsberater:in im Innendienst 100% (all genders)"}
-{"company":"WIKA","first_seen":"2026-11-08","id":"csod:wikacademy:2880","location":"Hillerød, DK","posted":"2026-08-28","title":"Internal Sales Engineer"}
+{"closed_at":"2026-11-09","company":"WIKA","first_seen":"2026-11-08","id":"csod:wikacademy:2880","location":"Hillerød, DK","posted":"2026-08-28","title":"Internal Sales Engineer"}
 {"company":"WIKA","employment":"internship","first_seen":"2026-11-08","id":"csod:wikacademy:2885","location":"Offenbach/Main, DE","posted":"2026-08-31","title":"Auszubildender zum Industriemechaniker (m/w/d) Ausbildungsstart 2027"}
 {"company":"WIKA","employment":"internship","first_seen":"2026-11-08","id":"csod:wikacademy:2886","location":"Offenbach/Main, DE","posted":"2026-08-31","title":"Auszubildender zum Zerspanungsmechaniker (m/w/d) - Ausbildungsstart  2027"}
 {"company":"WIKA","employment":"internship","first_seen":"2026-11-08","id":"csod:wikacademy:2887","location":"Offenbach/Main, DE","posted":"2026-08-31","title":"Auszubildender zum Elektroniker (m/w/d) für Geräte und Systeme - Ausbildungsstart 2027"}
@@ -382,6 +382,7 @@
 {"company":"WIKA","first_seen":"2026-11-08","id":"csod:wikacademy:3067","location":"Lewis Center, OH, US","posted":"2026-11-05","title":"CNC Programmer II"}
 {"company":"WIKA","first_seen":"2026-11-08","id":"csod:wikacademy:307","location":"Almaty, KZ","posted":"2023-09-08","reposts":1,"title":"Unsolicited application"}
 {"company":"WIKA","first_seen":"2026-11-08","id":"csod:wikacademy:3070","location":"Włocławek, PL","posted":"2026-11-04","title":"Mechatronik Serwisu w Centrum Logistycznym (Kobieta / Mężczyzna)"}
+{"company":"WIKA","first_seen":"2026-11-09","id":"csod:wikacademy:3071","location":"Klingenberg/Main, Bayern, DE","posted":"2026-11-09","title":"Business Partner Tax (m/w/d)"}
 {"company":"WIKA","first_seen":"2026-11-08","id":"csod:wikacademy:308","location":"Atyrau, The Republic of Kazakhstan, KZ","posted":"2023-09-08","reposts":1,"title":"Unsolicited application"}
 {"company":"WIKA","first_seen":"2026-11-08","id":"csod:wikacademy:309","location":"Tashkent, Mirabad, UZ","posted":"2023-09-08","reposts":1,"title":"Unsolicited application"}
 {"company":"WIKA","first_seen":"2026-11-08","id":"csod:wikacademy:310","location":"Baku, AZ","posted":"2023-09-08","reposts":1,"title":"Unsolicited application"}

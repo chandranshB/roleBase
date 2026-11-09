@@ -14,7 +14,7 @@
 {"company":"Hunt Electric","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:huntelectric:1353","location":"Caldwell, Idaho","team":"Electrical","title":"Electrical Foreman"}
 {"company":"Hunt Electric","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:huntelectric:1354","location":"Caldwell, Idaho","team":"Electrical","title":"Electrical Superintendent"}
 {"company":"Hunt Electric","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:huntelectric:1355","location":"Highlands Ranch, Colorado","team":"Electrical","title":"Journeyman Electrician"}
-{"company":"Hunt Electric","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:huntelectric:1356","location":"St. George, Utah","team":"Service","title":"Electrical Service Apprentice"}
+{"closed_at":"2026-11-09","company":"Hunt Electric","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:huntelectric:1356","location":"St. George, Utah","team":"Service","title":"Electrical Service Apprentice"}
 {"company":"Hunt Electric","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:huntelectric:1358","location":"Salt Lake City, Utah","team":"Electrical","title":"Electrical Assistant Project Manager"}
 {"company":"Hunt Electric","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:huntelectric:1360","location":"Salt Lake City, Utah","team":"Electrical","title":"Senior Electrical Estimator"}
 {"company":"Hunt Electric","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:huntelectric:1362","location":"Salt Lake City, Utah","team":"Electrical","title":"Electrical Project Scheduler"}
@@ -26,6 +26,7 @@
 {"company":"Hunt Electric","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:huntelectric:1370","location":"Salt Lake City, Utah","team":"Traffic","title":"Traffic Signal Electrician"}
 {"company":"Hunt Electric","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:huntelectric:1371","location":"Salt Lake City, Utah","team":"Traffic","title":"Traffic Signal Technician"}
 {"company":"Hunt Electric","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:huntelectric:1372","location":"Salt Lake City, Utah","team":"Traffic","title":"Traffic Signal Worker"}
+{"company":"Hunt Electric","employment":"full_time","first_seen":"2026-11-09","id":"bamboohr:huntelectric:1373","location":"Caldwell, Idaho","team":"Administrative","title":"Office Manager"}
 {"company":"Hunt Electric","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:huntelectric:1374","location":"Salt Lake City, Utah","team":"Industrial","title":"Industrial Electrical Foreman"}
 {"company":"Hunt Electric","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:huntelectric:1375","location":"Highlands Ranch, Colorado","team":"Electrical","title":"Electrical Superintendent"}
 {"company":"Hunt Electric","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:huntelectric:1376","location":"Salt Lake City, Utah","team":"Administrative","title":"Administrative Assistant"}
@@ -33,3 +34,4 @@
 {"company":"Hunt Electric","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:huntelectric:1379","location":"Highlands Ranch, Colorado","team":"Electrical","title":"Electrical Assistant Project Manager"}
 {"company":"Hunt Electric","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:huntelectric:1381","location":"Salt Lake City, Utah","team":"Infrastructure","title":"Hydrovac Truck Operator"}
 {"company":"Hunt Electric","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:huntelectric:1382","location":"Salt Lake City, Utah","team":"Estimation","title":"Electrical Estimator"}
+{"company":"Hunt Electric","employment":"full_time","first_seen":"2026-11-09","id":"bamboohr:huntelectric:1383","location":"Highlands Ranch, Colorado","team":"Service","title":"Electrical Service Department Manager"}

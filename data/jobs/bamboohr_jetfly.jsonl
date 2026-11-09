@@ -1,4 +1,7 @@
 {"company":"Jetfly","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:jetfly:130","remote":true,"team":"Sales","title":"Sales Director - Eastern Europe"}
+{"company":"Jetfly","employment":"full_time","first_seen":"2026-11-09","id":"bamboohr:jetfly:181","location":"Lausanne","team":"Pilot - MGT","title":"Captain PC-12 - LSGL"}
+{"company":"Jetfly","employment":"full_time","first_seen":"2026-11-09","id":"bamboohr:jetfly:182","location":"Lausanne","team":"Pilot - MGT","title":"First Officer PC-12 - LSGL"}
+{"company":"Jetfly","employment":"full_time","first_seen":"2026-11-09","id":"bamboohr:jetfly:241","remote":true,"team":"Pilot - MGT","title":"Rated PC-24 Captain - Geneva"}
 {"company":"Jetfly","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:jetfly:243","remote":true,"team":"Sales","title":"Sales Executive - German Market"}
 {"company":"Jetfly","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:jetfly:250","location":"London, London, City of","team":"Sales","title":"Sales Executive UK - Based in London"}
 {"company":"Jetfly","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:jetfly:251","remote":true,"team":"Sales","title":"Sales Executive - Danish Market"}
@@ -8,5 +11,5 @@
 {"company":"Jetfly","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:jetfly:261","location":"Zweibrücken","team":"DE - Maintenance Center","title":"Aircraft Painter"}
 {"company":"Jetfly","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:jetfly:266","location":"Zweibrücken","team":"DE - Maintenance Center","title":"Technical Equipment & Facility Coordinator"}
 {"company":"Jetfly","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:jetfly:268","location":"Senningerberg","team":"Travel","title":"Travel Manager (m/f/d)"}
-{"company":"Jetfly","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:jetfly:269","location":"Lausanne","team":"Pilot - MGT","title":"PC-12 Crew - Jersey Base"}
-{"company":"Jetfly","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:jetfly:270","location":"Lausanne","team":"Pilot - MGT","title":"PC-24 Crew - Stuttgart Base"}
+{"closed_at":"2026-11-09","company":"Jetfly","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:jetfly:269","location":"Lausanne","team":"Pilot - MGT","title":"PC-12 Crew - Jersey Base"}
+{"closed_at":"2026-11-09","company":"Jetfly","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:jetfly:270","location":"Lausanne","team":"Pilot - MGT","title":"PC-24 Crew - Stuttgart Base"}

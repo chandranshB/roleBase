@@ -41,5 +41,6 @@
 {"company":"MNTN","first_seen":"2026-11-08","id":"greenhouse:mntn:8303230","location":"United States","posted":"2026-11-03","team":"Technology","title":"Senior Sales Engineer","years":6}
 {"company":"MNTN","first_seen":"2026-10-22","id":"greenhouse:mntn:8311470","location":"United States","posted":"2026-10-22","team":"Technology","title":"Principal Strategist, Ad Measurement","years":8}
 {"company":"MNTN","first_seen":"2026-10-26","id":"greenhouse:mntn:8318870","location":"United States","posted":"2026-10-26","skills":["crm","salesforce"],"team":"Revenue","title":"Customer Success Manager, Retail & Consumer Goods","years":3}
-{"company":"MNTN","first_seen":"2026-11-08","id":"greenhouse:mntn:8337519","location":"United States","posted":"2026-10-30","skills":["payroll","excel"],"team":"Finance","title":"Payroll Manager","years":5}
+{"closed_at":"2026-11-09","company":"MNTN","first_seen":"2026-11-08","id":"greenhouse:mntn:8337519","location":"United States","posted":"2026-10-30","skills":["payroll","excel"],"team":"Finance","title":"Payroll Manager","years":5}
 {"company":"MNTN","first_seen":"2026-11-08","id":"greenhouse:mntn:8352910","location":"United States","posted":"2026-11-04","reposts":1,"skills":["forecasting"],"team":"Revenue","title":"Vertical Lead","years":5}
+{"company":"MNTN","first_seen":"2026-11-09","id":"greenhouse:mntn:8357103","location":"United States","posted":"2026-11-09","skills":["gcp","aws","kubernetes","ci/cd"],"team":"Engineering","title":"Chief Information Officer"}

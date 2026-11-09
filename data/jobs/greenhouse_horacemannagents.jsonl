@@ -935,7 +935,7 @@
 {"company":"Horace Mann","first_seen":"2026-10-20","id":"greenhouse:horacemannagents:6229612004","location":"Elko, NV","posted":"2026-10-20","team":"Field Sales","title":"Insurance Agent - Elko, NV","years":2}
 {"company":"Horace Mann","first_seen":"2026-10-20","id":"greenhouse:horacemannagents:6229613004","location":"Durango, Colorado","posted":"2026-10-20","team":"Field Sales","title":"Insurance Agent - Durango, Colorado","years":2}
 {"company":"Horace Mann","first_seen":"2026-10-20","id":"greenhouse:horacemannagents:6229616004","location":"Colorado Springs, CO","posted":"2026-10-20","team":"Field Sales","title":"Insurance Agent - Colorado Springs, CO","years":2}
-{"company":"Horace Mann","first_seen":"2026-10-20","id":"greenhouse:horacemannagents:6229622004","location":"Butte, MT","posted":"2026-10-20","team":"Field Sales","title":"Insurance Agent - Butte, MT","years":2}
+{"company":"Horace Mann","first_seen":"2026-10-20","id":"greenhouse:horacemannagents:6229622004","location":"Belgrade, MT","posted":"2026-10-20","team":"Field Sales","title":"Insurance Agent - Belgrade, MT","years":2}
 {"company":"Horace Mann","first_seen":"2026-10-20","id":"greenhouse:horacemannagents:6229628004","location":"Bozeman, MT","posted":"2026-10-20","team":"Field Sales","title":"Insurance Agent - Bozeman, MT","years":2}
 {"company":"Horace Mann","first_seen":"2026-10-20","id":"greenhouse:horacemannagents:6229635004","location":"Bellingham, WA","posted":"2026-10-20","team":"Field Sales","title":"Insurance Agent - Bellingham, WA","years":2}
 {"company":"Horace Mann","first_seen":"2026-10-20","id":"greenhouse:horacemannagents:6229639004","location":"Bellevue, WA","posted":"2026-10-20","team":"Field Sales","title":"Insurance Agent - Bellevue, WA","years":2}
@@ -975,7 +975,7 @@
 {"company":"Horace Mann","first_seen":"2026-10-21","id":"greenhouse:horacemannagents:6231342004","location":"Lake Oswego, OR","posted":"2026-10-21","team":"Field Sales","title":"Insurance Agent - Lake Oswego, OR","years":2}
 {"company":"Horace Mann","first_seen":"2026-10-21","id":"greenhouse:horacemannagents:6231349004","location":"Kenosha, WI","posted":"2026-10-21","team":"Field Sales","title":"Insurance Agent - Kenosha, WI","years":2}
 {"company":"Horace Mann","first_seen":"2026-10-21","id":"greenhouse:horacemannagents:6231354004","location":"Albany, OR","posted":"2026-10-21","team":"Field Sales","title":"Insurance Agent - Albany, OR","years":2}
-{"company":"Horace Mann","first_seen":"2026-10-21","id":"greenhouse:horacemannagents:6231356004","location":"Medford, OR","posted":"2026-10-21","team":"Field Sales","title":"Insurance Agent - Medford, OR","years":2}
+{"closed_at":"2026-11-09","company":"Horace Mann","first_seen":"2026-10-21","id":"greenhouse:horacemannagents:6231356004","location":"Medford, OR","posted":"2026-10-21","team":"Field Sales","title":"Insurance Agent - Medford, OR","years":2}
 {"closed_at":"2026-11-08","company":"Horace Mann","first_seen":"2026-10-21","id":"greenhouse:horacemannagents:6231358004","location":"Tillamook, OR","posted":"2026-10-21","team":"Field Sales","title":"Insurance Agent - Tillamook, OR","years":2}
 {"company":"Horace Mann","first_seen":"2026-10-21","id":"greenhouse:horacemannagents:6231363004","location":"Appleton, WI","posted":"2026-10-21","team":"Field Sales","title":"Insurance Agent - Appleton, WI","years":2}
 {"company":"Horace Mann","first_seen":"2026-10-21","id":"greenhouse:horacemannagents:6231364004","location":"Green Bay, WI","posted":"2026-10-21","team":"Field Sales","title":"Insurance Agent - Green Bay, WI","years":2}
@@ -1037,6 +1037,7 @@
 {"company":"Horace Mann","first_seen":"2026-10-28","id":"greenhouse:horacemannagents:6237035004","location":"Brunswick, ME","posted":"2026-10-27","team":"Field Sales","title":"Insurance Producer - Brunswick, ME"}
 {"company":"Horace Mann","first_seen":"2026-10-28","id":"greenhouse:horacemannagents:6237036004","location":"Belfast, ME","posted":"2026-10-27","team":"Field Sales","title":"Insurance Producer - Belfast, ME"}
 {"company":"Horace Mann","first_seen":"2026-10-28","id":"greenhouse:horacemannagents:6237037004","location":"Portland, ME","posted":"2026-10-27","team":"Field Sales","title":"Insurance Producer - Portland, ME"}
+{"company":"Horace Mann","first_seen":"2026-11-09","id":"greenhouse:horacemannagents:6237497004","location":"Dallas, TX","posted":"2026-11-09","team":"Field Sales","title":"Insurance Producer - Dallas, TX"}
 {"closed_at":"2026-11-08","company":"Horace Mann","first_seen":"2026-10-28","id":"greenhouse:horacemannagents:6238035004","location":"Winder, GA","posted":"2026-10-28","team":"Field Sales","title":"Insurance Producer - Winder, GA"}
 {"closed_at":"2026-11-08","company":"Horace Mann","first_seen":"2026-10-29","id":"greenhouse:horacemannagents:6238091004","location":"Springfield, MO","posted":"2026-10-28","team":"Field Sales","title":"Insurance Agent - Springfield, MO"}
 {"company":"Horace Mann","first_seen":"2026-10-29","id":"greenhouse:horacemannagents:6238104004","location":"Nashua, NH","posted":"2026-10-28","team":"Field Sales","title":"Insurance Agent - Nashua, NH"}
@@ -1187,3 +1188,7 @@
 {"company":"Horace Mann","first_seen":"2026-11-08","id":"greenhouse:horacemannagents:6252118004","location":"Glendale, CA","posted":"2026-11-06","reposts":3,"team":"Field Sales","title":"Insurance Agent - Glendale, CA"}
 {"company":"Horace Mann","first_seen":"2026-11-08","id":"greenhouse:horacemannagents:6252122004","location":"Modesto, CA","posted":"2026-11-06","reposts":2,"team":"Field Sales","title":"Insurance Agent - Modesto, CA","years":2}
 {"company":"Horace Mann","first_seen":"2026-11-08","id":"greenhouse:horacemannagents:6252130004","location":"Merced, CA","posted":"2026-11-06","reposts":2,"team":"Field Sales","title":"Insurance Agent - Merced, CA*","years":2}
+{"company":"Horace Mann","first_seen":"2026-11-09","id":"greenhouse:horacemannagents:6252785004","location":"Missoula, MT","posted":"2026-11-09","reposts":1,"team":"Field Sales","title":"Insurance Agent - Missoula, MT","years":2}
+{"company":"Horace Mann","first_seen":"2026-11-09","id":"greenhouse:horacemannagents:6252787004","location":"Billings, Montana","posted":"2026-11-09","reposts":1,"team":"Field Sales","title":"Insurance Agent - Billings, Montana","years":2}
+{"company":"Horace Mann","first_seen":"2026-11-09","id":"greenhouse:horacemannagents:6252791004","location":"Seattle, WA","posted":"2026-11-09","reposts":1,"team":"Field Sales","title":"Insurance Agent - Seattle, WA","years":2}
+{"company":"Horace Mann","first_seen":"2026-11-09","id":"greenhouse:horacemannagents:6253677004","location":"Medford, OR","posted":"2026-11-09","team":"Field Sales","title":"Insurance Agent - Medford, OR","years":2}

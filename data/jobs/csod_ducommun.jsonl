@@ -242,7 +242,7 @@
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5530","location":"Joplin, MO, US","posted":"2026-03-25","title":"Engineering Technician"}
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5538","location":"Coxsackie, NY, US","posted":"2026-07-10","title":"Cleaning Line Technician - Multiple Shifts"}
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5559","location":"Joplin, MO, US","posted":"2026-05-05","reposts":3,"title":"Quality Engineer"}
-{"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5560","location":"Joplin, MO, US","posted":"2026-06-10","skills":["supply_chain"],"title":"Supply Chain Specialist"}
+{"closed_at":"2026-11-09","company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5560","location":"Joplin, MO, US","posted":"2026-06-10","skills":["supply_chain"],"title":"Supply Chain Specialist"}
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5561","location":"Joplin, MO, US","posted":"2026-04-28","title":"MBE Engineering Technician- Drafting"}
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5574","location":"Joplin, MO, US","posted":"2026-05-05","title":"Accounting Admin"}
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5576","location":"Gardena, CA, US","posted":"2026-05-01","title":"Maintenance Supervisor"}
@@ -254,8 +254,8 @@
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5626","location":"Huntsville, AR, US","posted":"2026-05-29","skills":["supply_chain"],"title":"Sr. Supply Chain Manager"}
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5628","location":"Huntsville, AR, US","posted":"2026-05-29","title":"Flexible Shift Production Supervisor"}
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5636","location":"Joplin, MO, US","posted":"2026-06-10","title":"MBE Engineering Technician- Drafting"}
-{"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5637","location":"Joplin, MO, US","posted":"2026-06-10","title":"Production Supervisor"}
-{"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5638","location":"Gardena, CA, US","posted":"2026-05-27","title":"Assembler - Structural"}
+{"closed_at":"2026-11-09","company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5637","location":"Joplin, MO, US","posted":"2026-06-10","title":"Production Supervisor"}
+{"closed_at":"2026-11-09","company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5638","location":"Gardena, CA, US","posted":"2026-05-27","title":"Assembler - Structural"}
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5641","location":"Parsons, KS, US","posted":"2026-11-04","reposts":2,"title":"Maintenance Technician"}
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5642","location":"Appleton, WI, US","posted":"2026-05-29","reposts":2,"title":"Test Technician"}
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5643","location":"Appleton, WI, US","posted":"2026-05-29","reposts":2,"title":"Hand Solderer"}
@@ -265,7 +265,7 @@
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5661","location":"Joplin, MO, US","posted":"2026-06-09","title":"Entry Level Cable Assembler A/Inspection- 2nd Shift"}
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5676","location":"Gardena, CA, US","posted":"2026-06-17","title":"NC Programmer"}
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5680","location":"Tulsa, OK, US","posted":"2026-06-18","title":"Cost Accountant III"}
-{"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5687","location":"Joplin, MO, US","posted":"2026-06-22","title":"Quality Engineer Technician"}
+{"closed_at":"2026-11-09","company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5687","location":"Joplin, MO, US","posted":"2026-06-22","title":"Quality Engineer Technician"}
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5690","location":"Tulsa, OK, US","posted":"2026-06-23","title":"Surface Mount Technology Operator - 2nd shift"}
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5696","location":"Coxsackie, NY, US","posted":"2026-06-25","title":"Box Builder"}
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5703","location":"Tulsa, OK, US","posted":"2026-06-30","reposts":1,"title":"Circuit Board Assembler - 2nd Shift"}
@@ -386,12 +386,13 @@
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5967","location":"Parsons, KS, US","posted":"2026-10-30","title":"Fabrication - D Shift"}
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5968","location":"Parsons, KS, US","posted":"2026-10-30","title":"Blend Deburr - D Shift"}
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5969","location":"Parsons, KS, US","posted":"2026-10-30","title":"Painter - D Shift"}
+{"company":"Ducommun","first_seen":"2026-11-09","id":"csod:ducommun:5971","location":"Parsons, KS, US","posted":"2026-11-09","reposts":1,"title":"Material & Tool Handler"}
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5972","location":"Carson, CA, US","posted":"2026-10-29","title":"Administrative Assistant - Sales"}
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5973","location":"Carson, CA, US","posted":"2026-10-29","title":"Test Engineer I"}
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5974","location":"Parsons, KS, US","posted":"2026-10-30","title":"Quality Assurance Inspector - D Shift"}
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5975","location":"Coxsackie, NY, US","posted":"2026-10-30","title":"CNC Machinist"}
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5977","location":"Tulsa, OK, US","posted":"2026-10-30","reposts":1,"title":"Plant Controller"}
-{"company":"Ducommun","employment":"internship","first_seen":"2026-11-08","id":"csod:ducommun:5978","location":"Coxsackie, NY, US","posted":"2026-11-03","reposts":2,"title":"Engineering Intern"}
+{"closed_at":"2026-11-09","company":"Ducommun","employment":"internship","first_seen":"2026-11-08","id":"csod:ducommun:5978","location":"Coxsackie, NY, US","posted":"2026-11-03","reposts":2,"title":"Engineering Intern"}
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5979","location":"Carson, CA, US","posted":"2026-11-03","title":"Painter"}
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5980","location":"Carson, CA, US","posted":"2026-11-03","reposts":1,"title":"Sr. Manager, BD & Program Operations"}
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5983","location":"Tulsa, OK, US","posted":"2026-11-04","title":"Maintenance Technician - Weekend Shift"}
