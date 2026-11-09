@@ -14,8 +14,6 @@
 {"company":"Apple","employment":"part_time","first_seen":"2026-10-15","id":"apple:apple:114438056","location":"Spain","posted":"2026-11-09","skills":["customer_service"],"team":"Apple Retail","title":"ES - Specialist: Seasonal, Part-time"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:114438061","location":"France","posted":"2026-11-09","team":"Apple Retail","title":"FR-Expert"}
 {"company":"Apple","employment":"contract","first_seen":"2026-10-15","id":"apple:apple:114438069","location":"France","posted":"2026-11-09","skills":["customer_service"],"team":"Apple Retail","title":"FR - Specialist: Fixed Term Contracts, Full-time and Part-time"}
-{"company":"Apple","employment":"contract","first_seen":"2026-10-26","id":"apple:apple:114438082","location":"Hong Kong","posted":"2026-11-09","skills":["customer_service"],"team":"Apple Retail","title":"HK - Specialist: Part-time, Temporary"}
-{"company":"Apple","first_seen":"2026-10-24","id":"apple:apple:114438087","location":"Italy","posted":"2026-11-09","team":"Apple Retail","title":"IT-Expert"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:114438095","location":"Italy","posted":"2026-11-09","skills":["customer_service"],"team":"Apple Retail","title":"IT - Specialist (Sales)"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:114438102","location":"Japan","posted":"2026-11-09","team":"Apple Retail","title":"JP-Operations Expert"}
 {"company":"Apple","employment":"contract","first_seen":"2026-10-15","id":"apple:apple:114438107","location":"Japan","posted":"2026-11-09","skills":["customer_service"],"team":"Apple Retail","title":"JP-Specialist: Full Time or Part Time, Temporary"}
@@ -27,13 +25,10 @@
 {"company":"Apple","employment":"part_time","first_seen":"2026-10-15","id":"apple:apple:114438145","location":"United Kingdom","posted":"2026-11-09","skills":["customer_service"],"team":"Apple Retail","title":"UK - Specialist: Seasonal, Part-time"}
 {"company":"Apple","employment":"part_time","first_seen":"2026-10-15","id":"apple:apple:114438158","location":"United States of America","posted":"2026-11-09","skills":["customer_service"],"team":"Apple Retail","title":"US - Specialist: Seasonal, Part-time"}
 {"company":"Apple","employment":"part_time","first_seen":"2026-10-15","id":"apple:apple:114438164","location":"Türkiye","posted":"2026-11-09","skills":["customer_service"],"team":"Apple Retail","title":"TR - Specialist: Seasonal, Part-time"}
-{"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:114438165","location":"Türkiye","posted":"2026-11-09","team":"Apple Retail","title":"TR-Expert"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:114438203","location":"Türkiye","posted":"2026-11-09","team":"Apple Retail","title":"TR-Technical Specialist"}
 {"company":"Apple","first_seen":"2026-11-09","id":"apple:apple:114438204","location":"Switzerland","posted":"2026-11-09","team":"Apple Retail","title":"CH-Technical Specialist (m/f/d)"}
 {"company":"Apple","first_seen":"2026-11-08","id":"apple:apple:114438205","location":"Sweden","posted":"2026-11-09","team":"Apple Retail","title":"SE-Technical Specialist"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:114438206","location":"France","posted":"2026-11-09","team":"Apple Retail","title":"FR-Technical Specialist"}
-{"company":"Apple","first_seen":"2026-10-22","id":"apple:apple:114438207","location":"Germany","posted":"2026-11-09","team":"Apple Retail","title":"DE-Technical Specialist (m/f/d)"}
-{"company":"Apple","first_seen":"2026-10-22","id":"apple:apple:114438209","location":"Italy","posted":"2026-11-09","team":"Apple Retail","title":"IT-Technical Specialist"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:114438210","location":"Japan","posted":"2026-11-09","team":"Apple Retail","title":"JP-Technical Specialist"}
 {"company":"Apple","first_seen":"2026-11-08","id":"apple:apple:114438211","location":"Netherlands","posted":"2026-11-09","team":"Apple Retail","title":"NL-Technical Specialist"}
 {"company":"Apple","employment":"contract","first_seen":"2026-11-08","id":"apple:apple:114438212","location":"Spain","posted":"2026-11-09","team":"Apple Retail","title":"ES - Technical Specialist: Full-Time, Part-Time, and Part-Time Temporary"}
@@ -1595,7 +1590,6 @@
 {"company":"Apple","first_seen":"2026-11-08","id":"apple:apple:200668373","location":"China","posted":"2026-06-24","team":"Operations and Supply Chain","title":"Site Technical Manager, iPad"}
 {"company":"Apple","first_seen":"2026-11-08","id":"apple:apple:200668510","location":"United States of America","posted":"2026-06-16","team":"Operations and Supply Chain","title":"Manager- Americas Reseller Operations, Customer Support Account Manager"}
 {"company":"Apple","first_seen":"2026-11-08","id":"apple:apple:200668516","location":"United States of America","posted":"2026-06-16","team":"Software and Services","title":"Senior Software Engineer, System Experience - Calendar Experience"}
-{"company":"Apple","first_seen":"2026-11-08","id":"apple:apple:200668526","location":"Korea, Republic of","posted":"2026-06-16","team":"Operations and Supply Chain","title":"Supplier Quality Engineer (Bare PCB), Korea"}
 {"company":"Apple","first_seen":"2026-11-08","id":"apple:apple:200668535","location":"China","posted":"2026-06-16","team":"Marketing","title":"GCR Field Marketing Lead, Apple Ads"}
 {"company":"Apple","first_seen":"2026-11-08","id":"apple:apple:200668562","location":"China","posted":"2026-06-21","team":"Operations and Supply Chain","title":"Product Manager - APO BPR"}
 {"company":"Apple","first_seen":"2026-11-08","id":"apple:apple:200668601","location":"United States of America","posted":"2026-06-16","team":"Operations and Supply Chain","title":"DFM PCBA Engineer"}
@@ -2543,7 +2537,6 @@
 {"company":"Apple","first_seen":"2026-11-08","id":"apple:apple:200679117","location":"China","posted":"2026-08-24","team":"Software and Services","title":"Site Reliability Engineer, Enterprise Technology Services"}
 {"company":"Apple","first_seen":"2026-11-08","id":"apple:apple:200679122","location":"United States of America","posted":"2026-08-25","team":"Corporate Functions","title":"Account Manager, Retail Business"}
 {"company":"Apple","first_seen":"2026-11-08","id":"apple:apple:200679123","location":"Korea, Republic of","posted":"2026-08-25","skills":["social_media"],"team":"Marketing","title":"Corporate Communications Manager, Korea"}
-{"company":"Apple","first_seen":"2026-11-08","id":"apple:apple:200679139","location":"China","posted":"2026-08-26","team":"Corporate Functions","title":"APAC Executive Relations Senior Representative"}
 {"company":"Apple","first_seen":"2026-11-08","id":"apple:apple:200679140","location":"Singapore","posted":"2026-08-20","team":"Software and Services","title":"Backend Software Engineer, Emerging Technology Solutions"}
 {"company":"Apple","first_seen":"2026-11-08","id":"apple:apple:200679148","location":"Singapore","posted":"2026-08-20","team":"Software and Services","title":"Senior Backend Software Engineer, Emerging Technology Solutions"}
 {"company":"Apple","first_seen":"2026-11-08","id":"apple:apple:200679152","location":"China","posted":"2026-08-25","skills":["project_management"],"team":"Corporate Functions","title":"Program Manager, Retail Customer Experience Survey System"}
