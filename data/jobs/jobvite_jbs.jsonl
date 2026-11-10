@@ -8,6 +8,7 @@
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:o0y2AfwU","title":"MAINTENANCE MECHANIC HOURLY"}
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:o0yZAfwR","title":"East Division Controller"}
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:o124Afwr","title":"2ND SHIFT QA TECH"}
+{"company":"JBS","first_seen":"2026-11-10","id":"jobvite:jbs:o125Afws","title":"PM Scheduler Planner"}
 {"closed_at":"2026-10-30","company":"JBS","first_seen":"2026-10-30","id":"jobvite:jbs:o16YAfwp","title":"Maintenance Hourly"}
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:o1G0Afw1","title":"RENDERING/WASTEWATER MAINTENANCE SUPERVISOR"}
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:o1WOAfw5","title":"3RD SHIFT HUMANE HANDLING TECH"}
@@ -118,6 +119,7 @@
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:oJYXAfwY","title":"Human Resources Director II"}
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:oJb4Afwi","title":"Feed Mill Production Maintenance"}
 {"company":"JBS","first_seen":"2026-11-09","id":"jobvite:jbs:oK05Afw9","title":"Feedmill Maintenance Tech"}
+{"company":"JBS","first_seen":"2026-11-10","id":"jobvite:jbs:oK35Afwc","skills":["payroll"],"title":"PAYROLL SPECIALIST/ HR COORDINATOR"}
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:oKoyAfw0","title":"Occupational Health Specialist 3rd Shift"}
 {"company":"JBS","first_seen":"2026-11-09","id":"jobvite:jbs:oKx4AfwF","title":"SANITATION"}
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:oL6jAfwu","title":"Retail Store Manager"}
@@ -230,7 +232,7 @@
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:obp0AfwU","title":"Retail Sales Associate - South Tampa"}
 {"company":"JBS","first_seen":"2026-10-30","id":"jobvite:jbs:oc92AfwH","title":"3RD SHIFT SANITATION HOURLY"}
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:ocFYAfw9","title":"DRIVER MANAGER"}
-{"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:ocNZAfwi","title":"WASTEWATER TECHNICIAN"}
+{"closed_at":"2026-11-10","company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:ocNZAfwi","title":"WASTEWATER TECHNICIAN"}
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:ocWZAfwr","title":"BROILER SERVICE TECHNICIAN"}
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:od30zfwz","title":"Maintenance Support Coordinator"}
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:od5ZAfwB","title":"Retail Sales Associate"}

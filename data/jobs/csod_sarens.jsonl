@@ -80,7 +80,6 @@
 {"closed_at":"2026-09-02","company":"Sarens","employment":"full_time","first_seen":"2026-07-14","id":"csod:sarens:1/2000","location":"United Kingdom","posted":"2026-07-14","title":"Crane Operator","url":"https://sarens.csod.com/ux/ats/careersite/1/home/requisition/2000?c=sarens"}
 {"closed_at":"2026-11-08","company":"Sarens","employment":"full_time","first_seen":"2026-10-04","id":"csod:sarens:1/2007","location":"KZ","posted":"2026-10-29","title":"Fleet Administrative assistant","url":"https://sarens.csod.com/ux/ats/careersite/1/home/requisition/2007?c=sarens"}
 {"closed_at":"2026-11-08","company":"Sarens","employment":"full_time","first_seen":"2026-10-04","id":"csod:sarens:1/2009","posted":"2026-10-29","title":"CAD Designer","url":"https://sarens.csod.com/ux/ats/careersite/1/home/requisition/2009?c=sarens"}
-{"closed_at":"2026-08-11","company":"Sarens","employment":"full_time","first_seen":"2026-07-13","id":"csod:sarens:1/2011","location":"Belgium","posted":"2026-07-13","title":"Business Unit Manager","url":"https://sarens.csod.com/ux/ats/careersite/1/home/requisition/2011?c=sarens"}
 {"closed_at":"2026-09-02","company":"Sarens","employment":"full_time","first_seen":"2026-07-31","id":"csod:sarens:1/2028","location":"South Africa","posted":"2026-07-31","title":"CI Manager","url":"https://sarens.csod.com/ux/ats/careersite/1/home/requisition/2028?c=sarens"}
 {"closed_at":"2026-11-08","company":"Sarens","employment":"full_time","first_seen":"2026-10-04","id":"csod:sarens:1/2034","location":"United States","posted":"2026-10-29","title":"Tender Engineer","url":"https://sarens.csod.com/ux/ats/careersite/1/home/requisition/2034?c=sarens"}
 {"closed_at":"2026-11-08","company":"Sarens","employment":"full_time","first_seen":"2026-08-18","id":"csod:sarens:1/2036","location":"United States","posted":"2026-08-18","title":"Finance Manager","url":"https://sarens.csod.com/ux/ats/careersite/1/home/requisition/2036?c=sarens"}
@@ -232,6 +231,7 @@
 {"company":"Sarens","first_seen":"2026-11-08","id":"csod:sarens:2207","location":"BC, CA","posted":"2026-10-21","reposts":1,"title":"Planner"}
 {"company":"Sarens","first_seen":"2026-11-08","id":"csod:sarens:2208","location":"Houston, Texas, US","posted":"2026-10-09","skills":["procurement"],"title":"Procurement Coordinator"}
 {"company":"Sarens","first_seen":"2026-11-08","id":"csod:sarens:2217","location":"Subang Jaya, Selangor Darul Ehsan, MY","posted":"2026-10-12","reposts":1,"title":"PROJECT MANAGER"}
+{"company":"Sarens","first_seen":"2026-11-10","id":"csod:sarens:2218","location":"Almaty, Almaty, KZ","posted":"2026-10-12","reposts":2,"title":"SHEQ Coordinator"}
 {"company":"Sarens","first_seen":"2026-11-08","id":"csod:sarens:2223","location":"Karaganda, Karaganda, KZ","posted":"2026-10-15","reposts":2,"title":"Key Account Manager"}
 {"company":"Sarens","first_seen":"2026-11-08","id":"csod:sarens:2224","location":"Karaganda, Karaganda, KZ","posted":"2026-10-15","reposts":2,"title":"Key Account Manager"}
 {"company":"Sarens","first_seen":"2026-11-08","id":"csod:sarens:2225","location":"Almaty, Almaty, KZ","posted":"2026-10-15","title":"Heavy Transport  & Projects Manager"}
@@ -244,6 +244,8 @@
 {"company":"Sarens","first_seen":"2026-11-09","id":"csod:sarens:2251","location":"Dordrecht, Zuid-Holland, NL","posted":"2026-10-27","reposts":2,"title":"Replace with job title"}
 {"company":"Sarens","first_seen":"2026-11-08","id":"csod:sarens:2255","location":"Wolvertem, Vlaams-Brabant, BE","posted":"2026-11-05","title":"Junior Planner"}
 {"company":"Sarens","first_seen":"2026-11-09","id":"csod:sarens:2263","location":"Almaty, Almaty, KZ","posted":"2026-11-08","title":"General Manager -  Khorgos Logistics"}
+{"company":"Sarens","first_seen":"2026-11-10","id":"csod:sarens:2269","location":"Almaty, Almaty, KZ","posted":"2026-11-09","title":"Logistics coordinator"}
+{"company":"Sarens","first_seen":"2026-11-10","id":"csod:sarens:2270","location":"Almaty, Almaty, KZ","posted":"2026-11-09","title":"Logistics coordinator"}
 {"company":"Sarens","first_seen":"2026-11-08","id":"csod:sarens:228","location":"FR","posted":"2024-08-02","title":"Candidature spontanée"}
 {"company":"Sarens","first_seen":"2026-11-08","id":"csod:sarens:241","location":"Sochaczew, Sochaczew County, PL","posted":"2024-02-15","title":"Rigger"}
 {"company":"Sarens","first_seen":"2026-11-08","id":"csod:sarens:304","location":"Sochaczew, Sochaczew County, PL","posted":"2024-03-14","title":"Site Manager"}
