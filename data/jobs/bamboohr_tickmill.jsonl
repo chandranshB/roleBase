@@ -8,7 +8,7 @@
 {"company":"Tickmill","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:tickmill:437","location":"Limassol, Limassol","team":"IT Operations","title":"AI Platform Administrator - Cyprus"}
 {"company":"Tickmill","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:tickmill:438","location":"Tallinn","team":"IT Operations","title":"AI Platform Administrator - Estonia"}
 {"company":"Tickmill","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:tickmill:445","location":"Tallinn","team":"Software Development","title":"Mobile Application Developer (iOS) - Estonia"}
-{"company":"Tickmill","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:tickmill:447","location":"Limassol, Limassol","team":"CFD Brokerage","title":"Junior Trade Support Officer"}
+{"closed_at":"2026-11-10","company":"Tickmill","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:tickmill:447","location":"Limassol, Limassol","team":"CFD Brokerage","title":"Junior Trade Support Officer"}
 {"company":"Tickmill","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:tickmill:450","location":"Tallinn","team":"Software Development","title":"Backend Developer (.NET) - Estonia"}
 {"company":"Tickmill","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:tickmill:452","location":"Warsaw, Warsaw","skills":["ml"],"team":"Data and Analytics","title":"Senior AI/ML Engineer (AI Lead) - Poland"}
 {"company":"Tickmill","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:tickmill:453","location":"Limassol, Limassol","team":"Client Services","title":"Client Services Officer"}
@@ -39,3 +39,4 @@
 {"company":"Tickmill","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:tickmill:506","location":"Limassol, Limassol","team":"Product Management","title":"Head of Product, Exchange-Traded Products"}
 {"company":"Tickmill","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:tickmill:507","location":"Warsaw, Warsaw","team":"Product Management","title":"Lead of Product, Exchange-Traded Products - Poland"}
 {"company":"Tickmill","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:tickmill:508","location":"Limassol, Limassol","team":"Marketing","title":"Performance Marketing Specialist"}
+{"company":"Tickmill","employment":"full_time","first_seen":"2026-11-10","id":"bamboohr:tickmill:509","remote":true,"team":"CFD Brokerage","title":"Junior Trade Support Officer"}

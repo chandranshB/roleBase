@@ -620,7 +620,7 @@
 {"company":"Matheson","first_seen":"2026-11-08","id":"csod:mathesongas:9439","location":"Odessa, TX, US","posted":"2026-10-01","title":"Site Manager - Odessa, TX"}
 {"company":"Matheson","first_seen":"2026-11-08","id":"csod:mathesongas:9440","location":"Denison, IA, US","posted":"2026-10-01","title":"Maintenance Technician - Nights Denison, IA"}
 {"company":"Matheson","first_seen":"2026-11-08","id":"csod:mathesongas:9441","location":"Blue Island, IL, US","posted":"2026-10-07","title":"Assembler - Blue Island, IL"}
-{"company":"Matheson","first_seen":"2026-11-08","id":"csod:mathesongas:9443","location":"Brookhaven, MS, US","posted":"2026-10-02","title":"Distribution Manager - Brookhaven, MS"}
+{"closed_at":"2026-11-10","company":"Matheson","first_seen":"2026-11-08","id":"csod:mathesongas:9443","location":"Brookhaven, MS, US","posted":"2026-10-02","title":"Distribution Manager - Brookhaven, MS"}
 {"company":"Matheson","employment":"contract","first_seen":"2026-11-08","id":"csod:mathesongas:9445","location":"Irving, TX, US","posted":"2026-10-02","title":"Bulk Contract Administrator - Irving TX"}
 {"company":"Matheson","first_seen":"2026-11-08","id":"csod:mathesongas:9446","location":"Omaha, NE, US","posted":"2026-10-05","title":"Specialty Gas Sales Specialist - Omaha, NE"}
 {"company":"Matheson","first_seen":"2026-11-08","id":"csod:mathesongas:9450","location":"Albuquerque, NM, US","posted":"2026-10-05","skills":["customer_service"],"title":"Packaged Gases Customer Service Representative - Albuquerque, NM"}
@@ -647,7 +647,7 @@
 {"company":"Matheson","first_seen":"2026-11-08","id":"csod:mathesongas:9491","location":"Des Moines, IA, US","posted":"2026-10-13","reposts":1,"skills":["customer_service"],"title":"Packaged Gases Customer Service Representative - Des Moines, IA"}
 {"company":"Matheson","first_seen":"2026-11-08","id":"csod:mathesongas:9493","location":"N Kansas, MO, US","posted":"2026-10-13","title":"Package Gas Driver 1 - Kansas City, MO"}
 {"company":"Matheson","first_seen":"2026-11-08","id":"csod:mathesongas:9494","location":"Worcester, MA, US","posted":"2026-11-05","title":"Outside Sales Representative - Worcester"}
-{"closed_at":"2026-11-09","company":"Matheson","first_seen":"2026-11-08","id":"csod:mathesongas:9498","location":"Taylor, TX, US","posted":"2026-10-13","reposts":2,"title":"TGCM Technician I - Taylor, TX"}
+{"company":"Matheson","first_seen":"2026-11-08","id":"csod:mathesongas:9498","location":"Taylor, TX, US","posted":"2026-10-13","reposts":2,"title":"TGCM Technician I - Taylor, TX"}
 {"company":"Matheson","first_seen":"2026-11-08","id":"csod:mathesongas:9499","location":"Taylor, TX, US","posted":"2026-10-13","reposts":2,"title":"TGCM Technician I - Taylor, TX"}
 {"closed_at":"2026-11-09","company":"Matheson","first_seen":"2026-11-08","id":"csod:mathesongas:9500","location":"Taylor, TX, US","posted":"2026-10-13","reposts":2,"title":"TGCM Technician I - Taylor, TX"}
 {"company":"Matheson","first_seen":"2026-11-08","id":"csod:mathesongas:9501","location":"Taylor, TX, US","posted":"2026-10-13","reposts":2,"title":"TGCM Technician I - Taylor, TX"}
@@ -700,3 +700,5 @@
 {"company":"Matheson","first_seen":"2026-11-08","id":"csod:mathesongas:9595","location":"Cohoes, NY, US","posted":"2026-11-06","title":"Package Gas Driver 1 - Cohoes, NY"}
 {"company":"Matheson","first_seen":"2026-11-09","id":"csod:mathesongas:9598","location":"Anacortes, WA, US","posted":"2026-11-09","title":"Instrumentation & Electrical Technician - Anacortes, WA"}
 {"company":"Matheson","first_seen":"2026-11-09","id":"csod:mathesongas:9604","location":"Martinez, CA, US","posted":"2026-11-09","reposts":2,"title":"Team Member - Martinez, CA"}
+{"company":"Matheson","first_seen":"2026-11-10","id":"csod:mathesongas:9608","location":"Clearfield, PA, US","posted":"2026-11-10","reposts":1,"title":"Team Member Nights"}
+{"company":"Matheson","first_seen":"2026-11-10","id":"csod:mathesongas:9609","location":"Clearfield, PA, US","posted":"2026-11-10","reposts":1,"title":"Team Member Nights"}

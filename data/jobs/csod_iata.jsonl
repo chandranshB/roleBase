@@ -102,7 +102,7 @@
 {"company":"IATA","employment":"internship","first_seen":"2026-11-08","id":"csod:iata:3768","location":"Madrid, ES","title":"Intern Standardization Participation"}
 {"company":"IATA","first_seen":"2026-11-08","id":"csod:iata:3781","location":"Montreal, Quebec, CA","skills":["supply_chain"],"title":"Assistant Manager Supply Chain and MRO Operations"}
 {"company":"IATA","first_seen":"2026-11-08","id":"csod:iata:3785","location":"Brussels, BE","title":"Assistant Manager EU Affairs"}
-{"company":"IATA","first_seen":"2026-11-08","id":"csod:iata:3788","location":"Geneva, CH","title":"Senior Manager, Airline Operations & Fuel Efficiency Consulting"}
+{"closed_at":"2026-11-10","company":"IATA","first_seen":"2026-11-08","id":"csod:iata:3788","location":"Geneva, CH","title":"Senior Manager, Airline Operations & Fuel Efficiency Consulting"}
 {"company":"IATA","first_seen":"2026-11-08","id":"csod:iata:3802","location":"Madrid, ES","title":"Head Billing Operations & Data Processing"}
 {"company":"IATA","first_seen":"2026-11-08","id":"csod:iata:3813","location":"Montreal, Quebec, CA","title":"Senior Manager, DDS Operations"}
 {"company":"IATA","first_seen":"2026-11-08","id":"csod:iata:3822","location":"Geneva, CH","posted":"2026-08-10","title":"Senior Product Manager, MRO Smart Hub"}
@@ -117,5 +117,7 @@
 {"company":"IATA","employment":"internship","first_seen":"2026-11-08","id":"csod:iata:3866","location":"Geneva, CH","posted":"2026-02-11","title":"Intern, S&E Services"}
 {"company":"IATA","first_seen":"2026-11-08","id":"csod:iata:3871","location":"Madrid, ES","posted":"2026-05-11","title":"IT Contracts and Vendor Management Specialist"}
 {"company":"IATA","first_seen":"2026-11-08","id":"csod:iata:3872","location":"Montreal, Quebec, CA","posted":"2026-03-11","title":"Head Flight Operations and Crew Training"}
-{"company":"IATA","first_seen":"2026-11-08","id":"csod:iata:3873","location":"Geneva, CH","posted":"2026-04-11","title":"Assistant Manager Data and Analytics"}
+{"closed_at":"2026-11-10","company":"IATA","first_seen":"2026-11-08","id":"csod:iata:3873","location":"Geneva, CH","posted":"2026-04-11","title":"Assistant Manager Data and Analytics"}
 {"company":"IATA","first_seen":"2026-11-08","id":"csod:iata:3875","location":"Montreal, Quebec, CA","posted":"2026-06-11","title":"Senior Manager Crew Training"}
+{"company":"IATA","employment":"internship","first_seen":"2026-11-10","id":"csod:iata:3878","location":"Geneva, CH","posted":"2026-10-11","reposts":1,"title":"Intern Training Center Geneva"}
+{"company":"IATA","first_seen":"2026-11-10","id":"csod:iata:3879","location":"Geneva, CH","posted":"2026-10-11","title":"Senior Enterprise Architect"}

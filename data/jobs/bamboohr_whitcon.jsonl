@@ -9,8 +9,8 @@
 {"company":"Whitaker Construction","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:whitcon:310","location":"Heyburn, Idaho","team":"Heavy Civil","title":"Construction Laborer - Teton Pass, WY"}
 {"company":"Whitaker Construction","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:whitcon:311","location":"Heyburn, Idaho","team":"Heavy Civil","title":"Heavy Equipment Operator - Teton Pass, WY"}
 {"company":"Whitaker Construction","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:whitcon:312","location":"Magna, Utah","team":"Heavy Civil","title":"Concrete Foreman"}
-{"company":"Whitaker Construction","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:whitcon:313","location":"Brigham City, Utah","skills":["cdl"],"team":"Equipment","title":"Fuel & Lube Tech CDL Driver"}
-{"company":"Whitaker Construction","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:whitcon:314","location":"Brigham City, Utah","team":"Equipment","title":"Fuel & Lube Tech Helper"}
+{"closed_at":"2026-11-10","company":"Whitaker Construction","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:whitcon:313","location":"Brigham City, Utah","skills":["cdl"],"team":"Equipment","title":"Fuel & Lube Tech CDL Driver"}
+{"closed_at":"2026-11-10","company":"Whitaker Construction","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:whitcon:314","location":"Brigham City, Utah","team":"Equipment","title":"Fuel & Lube Tech Helper"}
 {"company":"Whitaker Construction","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:whitcon:318","location":"St. George, Utah","team":"Heavy Civil","title":"Heavy Equipment Operator - Heavy Civil"}
 {"company":"Whitaker Construction","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:whitcon:322","location":"Magna, Utah","title":"Heavy Civil Project Engineer"}
 {"company":"Whitaker Construction","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:whitcon:324","location":"Magna, Utah","team":"Equipment","title":"Field Mechanic"}
@@ -38,5 +38,7 @@
 {"company":"Whitaker Construction","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:whitcon:381","location":"Brigham City, Utah","title":"Business Intelligence Analyst"}
 {"company":"Whitaker Construction","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:whitcon:382","location":"Brigham City, Utah","title":"Pipe Layer"}
 {"company":"Whitaker Construction","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:whitcon:383","location":"Magna, Utah","title":"Project Manager"}
+{"company":"Whitaker Construction","employment":"full_time","first_seen":"2026-11-10","id":"bamboohr:whitcon:384","location":"Brigham City, Utah","team":"Water Wastewater","title":"Shoring Manager"}
+{"company":"Whitaker Construction","employment":"full_time","first_seen":"2026-11-10","id":"bamboohr:whitcon:385","location":"Brigham City, Utah","team":"Water Wastewater","title":"Resource Scheduler"}
 {"company":"Whitaker Construction","employment":"full_time","first_seen":"2026-10-30","id":"bamboohr:whitcon:40","location":"Brigham City, Utah","title":"General Application"}
 {"company":"Whitaker Construction","employment":"full_time","first_seen":"2026-10-30","id":"bamboohr:whitcon:71","location":"Ogden, Utah","team":"Natural Gas","title":"Natural Gas Foreman"}

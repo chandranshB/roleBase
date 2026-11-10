@@ -97,7 +97,7 @@
 {"company":"RK Industries","first_seen":"2026-11-08","id":"jobvite:rkmi:oe0uAfw2","title":"Construction - Project Manager"}
 {"company":"RK Industries","first_seen":"2026-11-08","id":"jobvite:rkmi:oe90AfwH","title":"Director of VDC"}
 {"company":"RK Industries","first_seen":"2026-10-30","id":"jobvite:rkmi:oeBrAfwA","title":"Assistant Project Manager"}
-{"closed_at":"2026-11-08","company":"RK Industries","first_seen":"2026-10-30","id":"jobvite:rkmi:oeNVAfwg","title":"Shop Electrician"}
+{"company":"RK Industries","first_seen":"2026-10-30","id":"jobvite:rkmi:oeNVAfwg","title":"Shop Electrician"}
 {"company":"RK Industries","first_seen":"2026-11-08","id":"jobvite:rkmi:oedZAfwK","title":"Commercial Service Plumber"}
 {"company":"RK Industries","first_seen":"2026-11-08","id":"jobvite:rkmi:of8SAfwz","title":"Sheet Metal Fabricator"}
 {"company":"RK Industries","first_seen":"2026-11-08","id":"jobvite:rkmi:ogdWAfwJ","title":"Purchasing Agent"}
@@ -109,6 +109,7 @@
 {"company":"RK Industries","first_seen":"2026-11-08","id":"jobvite:rkmi:oiKOAfwa","title":"Foreman Shop Pipe"}
 {"company":"RK Industries","first_seen":"2026-11-08","id":"jobvite:rkmi:oiQWAfwo","title":"Manager of Operations, Electrical"}
 {"company":"RK Industries","first_seen":"2026-11-08","id":"jobvite:rkmi:oiTPAfwk","title":"Quality Manager"}
+{"company":"RK Industries","first_seen":"2026-11-10","id":"jobvite:rkmi:oid5AfwU","title":"AI Technical Program Manager"}
 {"company":"RK Industries","first_seen":"2026-11-08","id":"jobvite:rkmi:oiySAfw2","title":"Journeyman Sheet Metal"}
 {"company":"RK Industries","first_seen":"2026-11-08","id":"jobvite:rkmi:ok24AfwK","title":"SR Service Coordinator"}
 {"company":"RK Industries","first_seen":"2026-11-08","id":"jobvite:rkmi:ok8SAfwE","skills":["welding"],"title":"Robotics Welding Technician"}
@@ -118,7 +119,7 @@
 {"company":"RK Industries","first_seen":"2026-11-08","id":"jobvite:rkmi:omjZAfwY","title":"Executive Assistant"}
 {"company":"RK Industries","first_seen":"2026-11-08","id":"jobvite:rkmi:omkrAfwr","title":"General Foreman Pipe"}
 {"company":"RK Industries","first_seen":"2026-11-08","id":"jobvite:rkmi:omoUAfwY","title":"Production Welder (Company Paid Relocation to Denver!)"}
-{"company":"RK Industries","first_seen":"2026-11-08","id":"jobvite:rkmi:onDOAfw8","title":"Material Handler"}
+{"closed_at":"2026-11-10","company":"RK Industries","first_seen":"2026-11-08","id":"jobvite:rkmi:onDOAfw8","title":"Material Handler"}
 {"company":"RK Industries","first_seen":"2026-11-08","id":"jobvite:rkmi:onpUAfw0","title":"Fitter Welder (Company Paid Relocation to Denver!)"}
 {"company":"RK Industries","first_seen":"2026-11-08","id":"jobvite:rkmi:opgPAfwO","title":"Operations Manager"}
 {"company":"RK Industries","first_seen":"2026-11-08","id":"jobvite:rkmi:oqIXAfwp","title":"Material Handler Supervisor"}
@@ -132,7 +133,7 @@
 {"company":"RK Industries","first_seen":"2026-11-08","id":"jobvite:rkmi:ouGZAfwt","title":"Production Manager"}
 {"company":"RK Industries","first_seen":"2026-11-08","id":"jobvite:rkmi:ouLNAfwm","title":"Account Executive-Installation Projects"}
 {"company":"RK Industries","first_seen":"2026-11-08","id":"jobvite:rkmi:ouN0AfwB","skills":["cdl"],"title":"CDL Driver"}
-{"company":"RK Industries","first_seen":"2026-11-08","id":"jobvite:rkmi:ouwPAfw9","title":"Facilities Maintenance Technician"}
+{"closed_at":"2026-11-10","company":"RK Industries","first_seen":"2026-11-08","id":"jobvite:rkmi:ouwPAfw9","title":"Facilities Maintenance Technician"}
 {"company":"RK Industries","first_seen":"2026-11-08","id":"jobvite:rkmi:ouzRAfwe","title":"Production Supervisor - Electrician"}
 {"company":"RK Industries","first_seen":"2026-11-08","id":"jobvite:rkmi:ovbSAfwS","title":"General Foreman - Plumbing"}
 {"company":"RK Industries","first_seen":"2026-11-08","id":"jobvite:rkmi:ow7VAfwS","title":"Mechanical Superintendent"}

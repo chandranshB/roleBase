@@ -298,8 +298,8 @@
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5813","location":"St Croix Falls, WI, US","posted":"2026-08-25","title":"Production Assembler - Temp to Hire"}
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5822","location":"Santa Clarita, CA, US","posted":"2026-09-01","title":"Machine Operator"}
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5827","location":"Appleton, WI, US","posted":"2026-09-01","title":"Strategic Sourcing Lead"}
-{"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5830","location":"Tulsa, OK, US","posted":"2026-09-02","title":"Manufacturing Assembler - Weekend Shift"}
-{"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5831","location":"Tulsa, OK, US","posted":"2026-09-02","title":"Manufacturing Assembler - 2nd Shift"}
+{"closed_at":"2026-11-10","company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5830","location":"Tulsa, OK, US","posted":"2026-09-02","title":"Manufacturing Assembler - Weekend Shift"}
+{"closed_at":"2026-11-10","company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5831","location":"Tulsa, OK, US","posted":"2026-09-02","title":"Manufacturing Assembler - 2nd Shift"}
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5832","location":"Carson, CA, US","posted":"2026-09-02","reposts":2,"title":"Hand Solderer"}
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5835","location":"Huntsville, AR, US","posted":"2026-09-02","title":"Master Scheduler"}
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5836","location":"Carson, CA, US","posted":"2026-09-02","reposts":2,"title":"CNC Operator I"}
@@ -352,7 +352,7 @@
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5925","location":"Coxsackie, NY, US","posted":"2026-10-19","title":"Project Engineer"}
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5926","location":"Warren, RI, US","posted":"2026-10-19","title":"Production Scheduler"}
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5927","location":"Tulsa, OK, US","posted":"2026-10-20","title":"Manufacturing Assembler - 1st Shift"}
-{"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5928","location":"Tulsa, OK, US","posted":"2026-10-20","reposts":1,"title":"Hand Solder Operator- 1st Shift"}
+{"closed_at":"2026-11-10","company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5928","location":"Tulsa, OK, US","posted":"2026-10-20","reposts":1,"title":"Hand Solder Operator- 1st Shift"}
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5929","location":"Tulsa, OK, US","posted":"2026-10-20","title":"PCB Manufacturing Operator"}
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5930","location":"Tulsa, OK, US","posted":"2026-10-20","title":"Manufacturing Assembler - Weekend Shift"}
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5931","location":"Carson, CA, US","posted":"2026-10-20","title":"Production Planner I"}

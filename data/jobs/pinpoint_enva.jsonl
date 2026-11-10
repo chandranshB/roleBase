@@ -2,7 +2,7 @@
 {"company":"Enva","first_seen":"2026-11-08","id":"pinpoint:enva:00edb580-1861-43f7-9dfa-61611e5e803a","location":"Colwick","skills":["forklift"],"title":"Baler Operative - Late Shift"}
 {"company":"Enva","first_seen":"2026-11-08","id":"pinpoint:enva:01f4a11a-9642-4900-82f4-c5588ccec159","location":"Stourbridge","title":"Team Leader - SDA Pre Pick"}
 {"closed_at":"2026-10-21","company":"Enva","first_seen":"2026-10-19","id":"pinpoint:enva:022d5a4c-4008-4159-a1f6-00882c8cc88a","location":"Colwick","skills":["customer_service"],"title":"HGV Driver - Trade Waste Driver"}
-{"company":"Enva","first_seen":"2026-11-08","id":"pinpoint:enva:02dd8ddf-a2f0-4fab-ac1b-026b4113aa5e","location":"Colwick","skills":["preventive_maintenance","six_sigma"],"title":"Maintenance Engineer"}
+{"closed_at":"2026-11-10","company":"Enva","first_seen":"2026-11-08","id":"pinpoint:enva:02dd8ddf-a2f0-4fab-ac1b-026b4113aa5e","location":"Colwick","skills":["preventive_maintenance","six_sigma"],"title":"Maintenance Engineer"}
 {"company":"Enva","first_seen":"2026-11-08","id":"pinpoint:enva:079e8440-103f-475f-b575-b384b8c1dacd","location":"Portlaoise","title":"HGV Class C Driver & Industrial Jet Vac Specialist"}
 {"company":"Enva","first_seen":"2026-11-08","id":"pinpoint:enva:0846ff63-f41c-44f2-8db6-3966fd2c23d8","location":"Linwood","skills":["customer_service","time_management"],"title":"HGV Trade Driver"}
 {"company":"Enva","first_seen":"2026-11-08","id":"pinpoint:enva:09c5340e-9bfa-4f73-a624-6981a2b979c4","location":"Portlaoise","skills":["welding"],"title":"Mechanical Maintenance Technician/Fitter"}
@@ -32,6 +32,7 @@
 {"company":"Enva","first_seen":"2026-11-08","id":"pinpoint:enva:6db2800b-37cd-43cd-8e1e-b1e2cee13103","location":"Immingham","skills":["forklift"],"title":"General Operator"}
 {"company":"Enva","first_seen":"2026-11-08","id":"pinpoint:enva:771a7561-2288-4bb2-9d96-2eb471bb789b","location":"Linwood","skills":["customer_service","time_management"],"title":"HGV Driver - Trade Waste"}
 {"company":"Enva","first_seen":"2026-11-08","id":"pinpoint:enva:83fd47bb-c18f-4f24-8ab5-d0c8400cf627","location":"Stourbridge","title":"Fork Lift Driver [SDA Processing]"}
+{"company":"Enva","first_seen":"2026-11-10","id":"pinpoint:enva:8c375d46-41ff-43c0-842a-c48e1a6f81a8","location":"Grantham","skills":["forklift"],"title":"Fork Lift Operative"}
 {"company":"Enva","first_seen":"2026-10-19","id":"pinpoint:enva:93678971-2a54-400e-9523-47a4cd8d1222","location":"Rathcoole","title":"HGV Class C Driver & Industrial Jet Vac Specialist"}
 {"company":"Enva","first_seen":"2026-10-19","id":"pinpoint:enva:94d2b920-da8d-4db0-8ed0-c09333565bce","location":"Dunniflats","skills":["time_management"],"title":"HGV Driver"}
 {"company":"Enva","first_seen":"2026-11-08","id":"pinpoint:enva:98398aea-fe9c-477a-a004-3a2290553329","location":"Carryduff [IW]","skills":["forklift"],"title":"Mechanic"}
@@ -48,6 +49,7 @@
 {"company":"Enva","first_seen":"2026-11-08","id":"pinpoint:enva:d2731cb0-6fdc-4b3e-8486-1a888acbfb93","location":"Stourbridge","title":"General Operative [Pre Pick, 4 on 4 off]"}
 {"company":"Enva","first_seen":"2026-10-19","id":"pinpoint:enva:db10a6d4-4dff-4e05-86ac-3444055812ce","location":"Enniscorthy","title":"Trainee Industrial Services Jet Vac Operative /Driver"}
 {"company":"Enva","first_seen":"2026-10-28","id":"pinpoint:enva:dba0a955-1543-4e4b-a134-92f2053a9367","location":"Wesley Street","pay":[40000,45000,"GBP"],"skills":["time_management"],"title":"HGV DRIVER"}
+{"company":"Enva","first_seen":"2026-11-10","id":"pinpoint:enva:df1bfb24-ed09-4efb-a3f3-71cd43222340","location":"Linwood","title":"Transport Controller - Trade Waste"}
 {"company":"Enva","first_seen":"2026-11-09","id":"pinpoint:enva:dfd885b5-4ebd-4057-994d-3aad7e8d1976","location":"Duncrue [MacNabb]","reposts":1,"title":"Plant Operative"}
 {"company":"Enva","first_seen":"2026-11-08","id":"pinpoint:enva:dfee584d-d481-4edd-bbba-cac5e6e842d7","location":"Portlaoise","title":"Trainee Industrial Services Jet Vac Operative /Driver"}
 {"company":"Enva","first_seen":"2026-11-08","id":"pinpoint:enva:e4451c8f-96c5-455d-8291-e9795ab7171b","location":"Stourbridge","title":"Team Leader - SDA Processing"}

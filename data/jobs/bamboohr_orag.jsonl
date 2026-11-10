@@ -30,7 +30,7 @@
 {"closed_at":"2026-11-09","company":"OpenRoad Auto","first_seen":"2026-11-08","id":"bamboohr:orag:4918","location":"Richmond, British Columbia","team":"Sales","title":"Product Advisor - OpenRoad Toyota Richmond"}
 {"company":"OpenRoad Auto","first_seen":"2026-11-08","id":"bamboohr:orag:4921","location":"Port Moody, British Columbia","team":"Service","title":"Internal Service Advisor/Dispatcher - OpenRoad Toyota Port Moody"}
 {"company":"OpenRoad Auto","first_seen":"2026-11-08","id":"bamboohr:orag:4925","location":"Richmond, British Columbia","team":"Accounting","title":"General Accounting Associate - OpenRoad Auto"}
-{"company":"OpenRoad Auto","first_seen":"2026-11-08","id":"bamboohr:orag:4927","location":"Richmond, British Columbia","team":"Service","title":"Licensed Automotive Technician (Licensed Technician) - Porsche Centre Richmond"}
+{"closed_at":"2026-11-10","company":"OpenRoad Auto","first_seen":"2026-11-08","id":"bamboohr:orag:4927","location":"Richmond, British Columbia","team":"Service","title":"Licensed Automotive Technician (Licensed Technician) - Porsche Centre Richmond"}
 {"company":"OpenRoad Auto","first_seen":"2026-11-08","id":"bamboohr:orag:4928","location":"London, Ontario","title":"Site Manager - Tommy's Express Car Wash"}
 {"company":"OpenRoad Auto","first_seen":"2026-11-08","id":"bamboohr:orag:4932","location":"Burnaby, British Columbia","team":"Sales","title":"Service to Sales Team Member- OpenRoad Volkswagen Burnaby"}
 {"company":"OpenRoad Auto","first_seen":"2026-11-08","id":"bamboohr:orag:4940","location":"Richmond, British Columbia","team":"Service","title":"Licensed Technician - OpenRoad Toyota Richmond"}
@@ -104,6 +104,7 @@
 {"company":"OpenRoad Auto","first_seen":"2026-11-08","id":"bamboohr:orag:5075","location":"Port Moody, British Columbia","team":"Service","title":"Lot Associate OpenRoad Mazda Port Moody"}
 {"company":"OpenRoad Auto","first_seen":"2026-10-30","id":"bamboohr:orag:5076","location":"Brampton, Ontario","team":"Service","title":"Automotive Technician - OpenRoad Honda"}
 {"closed_at":"2026-11-08","company":"OpenRoad Auto","first_seen":"2026-10-30","id":"bamboohr:orag:5077","location":"Langley, British Columbia","team":"Sales","title":"Lot Associate - Porsche Centre Langley"}
+{"company":"OpenRoad Auto","first_seen":"2026-11-10","id":"bamboohr:orag:5078","location":"Surrey, British Columbia","team":"Service","title":"Service Advisor-OpenRoad Toyota Peace Arch"}
 {"company":"OpenRoad Auto","employment":"part_time","first_seen":"2026-11-08","id":"bamboohr:orag:5079","location":"Abbotsford, British Columbia","team":"Service","title":"Part-Time Apprentice Technician- OpenRoad Toyota Abbotsford"}
 {"company":"OpenRoad Auto","first_seen":"2026-11-08","id":"bamboohr:orag:5080","location":"Richmond, British Columbia","team":"Service","title":"Lot Associate - OpenRoad Toyota Richmond"}
 {"company":"OpenRoad Auto","first_seen":"2026-11-08","id":"bamboohr:orag:5083","location":"Langley, British Columbia","team":"Sales","title":"Reception Associate - BMW/MINI Langley"}
@@ -116,3 +117,6 @@
 {"company":"OpenRoad Auto","first_seen":"2026-11-08","id":"bamboohr:orag:5091","location":"Langley, British Columbia","team":"Sales","title":"Sales Manager - BMW/MINI Langley"}
 {"closed_at":"2026-11-09","company":"OpenRoad Auto","first_seen":"2026-11-08","id":"bamboohr:orag:5092","location":"Surrey, British Columbia","team":"Sales","title":"Lot Associate - Surrey Honda"}
 {"company":"OpenRoad Auto","first_seen":"2026-11-09","id":"bamboohr:orag:5093","location":"Richmond, British Columbia","team":"Sales","title":"Lot Associate - Porsche Centre Richmond"}
+{"company":"OpenRoad Auto","first_seen":"2026-11-10","id":"bamboohr:orag:5094","location":"Richmond, British Columbia","team":"Sales","title":"Sales Manager - Porsche Centre Richmond"}
+{"company":"OpenRoad Auto","first_seen":"2026-11-10","id":"bamboohr:orag:5095","location":"Port Moody, British Columbia","team":"Sales - Business Office","title":"Financial Services Manager - OpenRoad Lexus Port Moody"}
+{"company":"OpenRoad Auto","first_seen":"2026-11-10","id":"bamboohr:orag:5096","location":"Richmond, British Columbia","team":"Service","title":"Automotive Technician [NOC-72410] - Porsche Centre Richmond"}

@@ -52355,7 +52355,7 @@
 {"b": "jobvite:cascade", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "jobvite:castlemetals", "last_ok": "2026-11-08", "strikes": 0}
 {"b": "jobvite:ccaandb", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "jobvite:ccsfundraising", "last_ok": "2026-11-10", "strikes": 0}
+{"b": "jobvite:ccsfundraising", "last_ok": "2026-11-10", "strikes": 1, "why": "empty answer"}
 {"b": "jobvite:ccu", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "jobvite:center-for-elders-independence", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "jobvite:cheetah-ad-platform", "last_ok": "2026-10-30", "strikes": 0}
@@ -59060,7 +59060,7 @@
 {"b": "join:gustamansolutions", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "join:gustaveroussyfr", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "join:gusti-leather", "last_ok": "2026-11-08", "strikes": 0}
-{"b": "join:gusti-leder", "last_ok": "2026-11-10", "strikes": 0}
+{"b": "join:gusti-leder", "last_ok": "2026-11-10", "strikes": 1, "why": "empty answer"}
 {"b": "join:gut-haferkorn", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "join:gut-zum-leben", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "join:gutachter-duisburg", "last_ok": "2026-10-30", "strikes": 0}
@@ -71577,7 +71577,7 @@
 {"b": "oracle:alleghenycollege-ibwwjb", "last_ok": "", "strikes": 0, "why": "error: not enough values to unpack (expected 2, got 1)"}
 {"b": "oracle:alleghenycollege-ibwwjb.fa.ocs.oraclecloud.com/CX", "last_ok": "2026-11-08", "strikes": 0}
 {"b": "oracle:bankbtn-hcis-iaadnf", "last_ok": "", "strikes": 0, "why": "error: not enough values to unpack (expected 2, got 1)"}
-{"b": "oracle:bankbtn-hcis-iaadnf.fa.ocs.oraclecloud.com/CX", "last_ok": "2026-11-10", "strikes": 0}
+{"b": "oracle:bankbtn-hcis-iaadnf.fa.ocs.oraclecloud.com/CX", "last_ok": "2026-11-10", "strikes": 0, "why": "error: still running after 960s"}
 {"b": "oracle:bcps-ibohjb", "last_ok": "", "strikes": 0, "why": "error: not enough values to unpack (expected 2, got 1)"}
 {"b": "oracle:bcps-ibohjb.fa.ocs.oraclecloud.com/CX", "last_ok": "2026-11-08", "strikes": 0}
 {"b": "oracle:bun", "last_ok": "", "strikes": 0, "why": "error: not enough values to unpack (expected 2, got 1)"}
@@ -71913,7 +71913,7 @@
 {"b": "oracle:eifl", "last_ok": "", "strikes": 0, "why": "error: not enough values to unpack (expected 2, got 1)"}
 {"b": "oracle:eifl.fa.us6.oraclecloud.com/CX", "last_ok": "2026-11-08", "strikes": 0}
 {"b": "oracle:eifn", "last_ok": "", "strikes": 0, "why": "error: not enough values to unpack (expected 2, got 1)"}
-{"b": "oracle:eifn.fa.us6.oraclecloud.com/CX", "last_ok": "2026-11-09", "strikes": 0, "why": "error: still running after 960s"}
+{"b": "oracle:eifn.fa.us6.oraclecloud.com/CX", "last_ok": "2026-11-10", "strikes": 0}
 {"b": "oracle:eify", "last_ok": "", "strikes": 0, "why": "error: not enough values to unpack (expected 2, got 1)"}
 {"b": "oracle:eify.fa.us6.oraclecloud.com/CX", "last_ok": "2026-11-08", "strikes": 0}
 {"b": "oracle:eigx", "last_ok": "", "strikes": 0, "why": "error: not enough values to unpack (expected 2, got 1)"}
@@ -72297,7 +72297,7 @@
 {"b": "oracle:ernh.fa.us2.oraclecloud.com/CX", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "oracle:erou", "last_ok": "", "strikes": 0, "why": "error: not enough values to unpack (expected 2, got 1)"}
 {"b": "oracle:erou.fa.us2.oraclecloud.com/CX", "last_ok": "2026-11-08", "strikes": 0}
-{"b": "oracle:erqh", "last_ok": "", "strikes": 0, "why": "error: still running after 960s"}
+{"b": "oracle:erqh", "last_ok": "", "strikes": 0, "why": "error: HTTPSConnectionPool(host='erqh', port=443): Max retries exceeded with url: /hcmRestApi/resources/latest/recruitingCEJobRequisitions?onlyData=true&expand=requisitionList.secondaryLocations&finder=findReqs%3BsiteNumber%3DCX%2Climit%3D50%2Coffset%3D0%2CsortBy%3DPOSTING_DATES_DESC (Caused by NameResolutionError(\"HTTPSConnection(host='erqh', port=443): Failed to resolve 'erqh' ([Errno -3] Temporary failure in name resolution)\"))"}
 {"b": "oracle:erqh.fa.us2.oraclecloud.com/CX", "last_ok": "2026-11-08", "strikes": 0}
 {"b": "oracle:ertd", "last_ok": "", "strikes": 0, "why": "error: not enough values to unpack (expected 2, got 1)"}
 {"b": "oracle:ertd.fa.us2.oraclecloud.com/CX", "last_ok": "2026-11-08", "strikes": 0}
@@ -73209,7 +73209,7 @@
 {"b": "oracle:iaagiz", "last_ok": "", "strikes": 0, "why": "error: not enough values to unpack (expected 2, got 1)"}
 {"b": "oracle:iaagiz.fa.ocs.oraclecloud.com/CX", "last_ok": "2026-11-08", "strikes": 0}
 {"b": "oracle:iaagkf", "last_ok": "", "strikes": 0, "why": "error: not enough values to unpack (expected 2, got 1)"}
-{"b": "oracle:iaagkf.fa.ocs.oraclecloud.com/CX", "last_ok": "2026-11-09", "strikes": 0, "why": "error: still running after 960s"}
+{"b": "oracle:iaagkf.fa.ocs.oraclecloud.com/CX", "last_ok": "2026-11-10", "strikes": 0}
 {"b": "oracle:iaajtj", "last_ok": "", "strikes": 0, "why": "error: not enough values to unpack (expected 2, got 1)"}
 {"b": "oracle:iaajtj.fa.ocs.oraclecloud.com/CX", "last_ok": "2026-11-08", "strikes": 0}
 {"b": "oracle:iaakbv", "last_ok": "", "strikes": 0, "why": "error: not enough values to unpack (expected 2, got 1)"}
@@ -88873,7 +88873,7 @@
 {"b": "personio:kj-gmbh", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "personio:kjg-bundesstelle", "last_ok": "", "strikes": 0, "why": "error: 404 Client Error: Not Found for url: https://kjg-bundesstelle.jobs.personio.de/xml"}
 {"b": "personio:kjr-miesbach", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "personio:klara-fardiga-film", "last_ok": "2026-11-10", "strikes": 0}
+{"b": "personio:klara-fardiga-film", "last_ok": "2026-11-10", "strikes": 1, "why": "empty answer"}
 {"b": "personio:klarx", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "personio:klat-system", "last_ok": "2026-10-28", "strikes": 0}
 {"b": "personio:klauke-enterprises", "last_ok": "2026-11-08", "strikes": 0}
@@ -91929,7 +91929,7 @@
 {"b": "pinpoint:made-tech", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "pinpoint:madfishdigital", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "pinpoint:maggies", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "pinpoint:mainstreetanesthesia", "last_ok": "2026-11-09", "strikes": 2, "why": "empty answer"}
+{"b": "pinpoint:mainstreetanesthesia", "last_ok": "2026-11-10", "strikes": 0}
 {"b": "pinpoint:malaa", "last_ok": "2026-10-23", "strikes": 0}
 {"b": "pinpoint:mammoth", "last_ok": "2026-10-27", "strikes": 0}
 {"b": "pinpoint:manhattanyouth", "last_ok": "2026-10-30", "strikes": 0}
@@ -106190,7 +106190,7 @@
 {"b": "workday:lnw.wd5.myworkdayjobs.com/lightwonderexternalcareers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:lnw.wd5.myworkdayjobs.com/sciplayexternalcareerssite", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:loewshotels.wd5.myworkdayjobs.com/loewshotels", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:loganhealth.wd1.myworkdayjobs.com/logan_careers", "last_ok": "2026-11-10", "strikes": 0}
+{"b": "workday:loganhealth.wd1.myworkdayjobs.com/logan_careers", "last_ok": "2026-11-10", "strikes": 0, "why": "error: 404 Client Error: Not Found for url: https://loganhealth.wd1.myworkdayjobs.com/wday/cxs/loganhealth/logan_careers/jobs"}
 {"b": "workday:logicalis.wd3.myworkdayjobs.com/izenocareers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:logicalis.wd3.myworkdayjobs.com/logicaliscareers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:logitech.wd5.myworkdayjobs.com/Logitech", "last_ok": "2026-10-23", "strikes": 0}
