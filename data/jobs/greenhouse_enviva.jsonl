@@ -74,7 +74,7 @@
 {"company":"Enviva","first_seen":"2026-10-19","id":"greenhouse:enviva:8004671003","location":"Cottondale, FL","posted":"2026-09-24","skills":["forklift"],"team":"Operations","title":"Trainee"}
 {"company":"Enviva","first_seen":"2026-11-08","id":"greenhouse:enviva:8004675003","location":"Cottondale, FL","posted":"2026-09-24","skills":["forklift"],"team":"Operations","title":"Trainee"}
 {"closed_at":"2026-11-08","company":"Enviva","first_seen":"2026-10-19","id":"greenhouse:enviva:8005259003","location":"Cottondale, FL","posted":"2026-09-25","team":"Operations","title":"Shift Supervisor","years":2}
-{"company":"Enviva","first_seen":"2026-10-19","id":"greenhouse:enviva:8008392003","location":"Epes, AL","posted":"2026-09-29","team":"Operations","title":"Shift Supervisor - Woodyard","years":2}
+{"closed_at":"2026-11-11","company":"Enviva","first_seen":"2026-10-19","id":"greenhouse:enviva:8008392003","location":"Epes, AL","posted":"2026-09-29","team":"Operations","title":"Shift Supervisor - Woodyard","years":2}
 {"company":"Enviva","first_seen":"2026-10-19","id":"greenhouse:enviva:8008422003","location":"Garysburg, NC","posted":"2026-09-29","skills":["forklift"],"team":"Operations","title":"Utility Operator"}
 {"company":"Enviva","first_seen":"2026-10-19","id":"greenhouse:enviva:8008590003","location":"Waycross, GA","posted":"2026-09-29","skills":["forecasting","procurement","ms_office","sap","erp"],"team":"Accounting","title":"Controller","years":3}
 {"company":"Enviva","employment":"internship","first_seen":"2026-10-19","id":"greenhouse:enviva:8008751003","location":"Raleigh, NC","posted":"2026-10-02","skills":["procurement","project_management","ms_office"],"team":"Forestry & Fiber","title":"Wood Procurement (Forestry) Intern"}
@@ -113,5 +113,5 @@
 {"company":"Enviva","first_seen":"2026-11-10","id":"greenhouse:enviva:8199021003","location":"Bowdon, GA","posted":"2026-11-10","team":"Operations","title":"Production Coordinator"}
 {"company":"Enviva","first_seen":"2026-11-10","id":"greenhouse:enviva:8199030003","location":"Bowdon, GA","posted":"2026-11-10","skills":["osha","erp","forklift","welding"],"team":"Operations","title":"Processing Lead","years":5}
 {"company":"Enviva","first_seen":"2026-11-09","id":"greenhouse:enviva:8199032003","location":"Garysburg, NC","posted":"2026-11-09","reposts":5,"team":"Operations","title":"Pellet Mill Operator"}
-{"company":"Enviva","first_seen":"2026-11-10","id":"greenhouse:enviva:8199087003","location":"Epes, AL","posted":"2026-11-10","reposts":2,"skills":["spark"],"team":"Operations","title":"Control Room Operator"}
-{"company":"Enviva","first_seen":"2026-11-09","id":"greenhouse:enviva:8199551003","location":"Epes, AL","posted":"2026-11-09","reposts":5,"team":"Operations","title":"Pellet Mill Operator"}
+{"closed_at":"2026-11-11","company":"Enviva","first_seen":"2026-11-10","id":"greenhouse:enviva:8199087003","location":"Epes, AL","posted":"2026-11-10","reposts":2,"skills":["spark"],"team":"Operations","title":"Control Room Operator"}
+{"closed_at":"2026-11-11","company":"Enviva","first_seen":"2026-11-09","id":"greenhouse:enviva:8199551003","location":"Epes, AL","posted":"2026-11-09","reposts":5,"team":"Operations","title":"Pellet Mill Operator"}

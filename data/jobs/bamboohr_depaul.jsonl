@@ -10,7 +10,7 @@
 {"company":"Depaul","first_seen":"2026-11-08","id":"bamboohr:depaul:565","location":"Dublin, Leinster","team":"Moore Haven","title":"Deputy Manager - Moore Haven"}
 {"company":"Depaul","first_seen":"2026-11-08","id":"bamboohr:depaul:568","location":"Cork, Munster","title":"Support Worker - West Cork Services"}
 {"company":"Depaul","first_seen":"2026-11-08","id":"bamboohr:depaul:570","location":"Dublin, Leinster","team":"Housing First (Meath)","title":"Relief Worker - Housing First (Meath)"}
-{"company":"Depaul","first_seen":"2026-11-08","id":"bamboohr:depaul:576","location":"Cork, Munster","title":"Night Support Worker - West Cork Services"}
+{"closed_at":"2026-11-11","company":"Depaul","first_seen":"2026-11-08","id":"bamboohr:depaul:576","location":"Cork, Munster","title":"Night Support Worker - West Cork Services"}
 {"closed_at":"2026-11-09","company":"Depaul","first_seen":"2026-11-08","id":"bamboohr:depaul:585","location":"Cork, Munster","title":"Relief Worker - Cork Services"}
 {"company":"Depaul","first_seen":"2026-11-08","id":"bamboohr:depaul:586","location":"Cork, Munster","title":"Relief Worker - West Cork Service"}
 {"company":"Depaul","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:depaul:590","location":"Londonderry","team":"Foyle Haven Day Centre","title":"Foyle Haven - Part Time Cook"}
@@ -25,7 +25,8 @@
 {"company":"Depaul","first_seen":"2026-11-08","id":"bamboohr:depaul:608","location":"Wexford, Leinster","team":"Ozanam House (Wexford)","title":"Relief Worker - Wexford"}
 {"company":"Depaul","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:depaul:609","location":"Belfast","team":"Castlehill","title":"Castlehill - Case Worker X2"}
 {"closed_at":"2026-11-09","company":"Depaul","first_seen":"2026-11-08","id":"bamboohr:depaul:611","location":"Carlow, Leinster","team":"Barrow Place (Carlow)","title":"Night Deputy Manager - Carlow (CWI)"}
-{"company":"Depaul","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:depaul:614","location":"Dublin, Leinster","team":"Facilities","title":"Health & Safety Coordinator"}
+{"company":"Depaul","first_seen":"2026-11-11","id":"bamboohr:depaul:612","location":"Carlow, Leinster","team":"Barrow Place (Carlow)","title":"Night Support Worker - Carlow (CWI)"}
+{"closed_at":"2026-11-11","company":"Depaul","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:depaul:614","location":"Dublin, Leinster","team":"Facilities","title":"Health & Safety Coordinator"}
 {"closed_at":"2026-11-09","company":"Depaul","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:depaul:615","location":"Dublin, Leinster","team":"Back lane","title":"Part Time Kitchen Assistant - Back Lane, Dublin"}
 {"company":"Depaul","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:depaul:616","location":"Cork, Munster","team":"Deerpark (Cork)","title":"Support Worker - Cork Services"}
 {"company":"Depaul","first_seen":"2026-11-08","id":"bamboohr:depaul:618","location":"Belfast","team":"Castlehill","title":"Castlehill Bank/Relief Worker"}

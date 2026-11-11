@@ -54,7 +54,7 @@
 {"company":"阶跃星辰","first_seen":"2026-11-09","id":"moka:step/94904:23041318-9361-46b4-8872-44e222f06e09","location":"海淀区, 徐汇区","posted":"2026-11-02","skills":["kubernetes","linux","python"],"title":"基础安全工程师"}
 {"company":"阶跃星辰","first_seen":"2026-11-09","id":"moka:step/94904:237d5dd5-4201-40b5-879f-d84715e4f5e1","location":"徐汇区","posted":"2026-08-25","title":"Agent研发工程师"}
 {"company":"阶跃星辰","first_seen":"2026-11-09","id":"moka:step/94904:270d6556-1f21-47c3-b63e-aff185be8e71","location":"海淀区, 徐汇区","posted":"2026-08-26","skills":["llm","sql","python"],"title":"AI搜索产品经理"}
-{"company":"阶跃星辰","first_seen":"2026-11-09","id":"moka:step/94904:27f7d32e-e11f-4358-8619-85032d03dc24","location":"徐汇区","posted":"2026-10-26","skills":["llm","c++","python"],"title":"推理引擎研发工程师-ToB业务"}
+{"company":"阶跃星辰","first_seen":"2026-11-09","id":"moka:step/94904:27f7d32e-e11f-4358-8619-85032d03dc24","location":"徐汇区","posted":"2026-10-26","skills":["llm"],"title":"推理引擎研发工程师（ToB项目）"}
 {"company":"阶跃星辰","first_seen":"2026-11-09","id":"moka:step/94904:28387f16-cbe4-486a-8cce-a2219ae8ab10","location":"海淀区, 徐汇区","posted":"2026-09-08","skills":["java","python","linux"],"title":"大数据平台 SRE 工程师"}
 {"company":"阶跃星辰","first_seen":"2026-11-09","id":"moka:step/94904:283ff2c6-dcc1-4f2e-b1ed-b36bf5b2c26b","location":"徐汇区, 海淀区","posted":"2026-03-28","title":"大模型AI Coding工程师/专家"}
 {"company":"阶跃星辰","first_seen":"2026-11-09","id":"moka:step/94904:2919ede2-f6e4-4745-8354-e4ce07958771","location":"徐汇区, 海淀区","posted":"2026-02-28","title":"Personal/Working Agent研究员"}
@@ -154,7 +154,7 @@
 {"company":"阶跃星辰","first_seen":"2026-11-09","id":"moka:step/94904:7bd29cb9-efc7-40f0-a6a2-098de19a79c8","location":"徐汇区","posted":"2026-09-23","title":"政府事务高级经理（网信 / 网安 / 党工团）"}
 {"company":"阶跃星辰","first_seen":"2026-11-09","id":"moka:step/94904:7bedd341-0a78-4632-8085-b9c6c75d5142","location":"海淀区, 徐汇区","posted":"2025-07-16","title":"高性能网络工程师"}
 {"company":"阶跃星辰","first_seen":"2026-11-09","id":"moka:step/94904:7c8f07d5-787c-4502-9722-d8b9fcdce37e","location":"海淀区, 徐汇区","posted":"2026-03-26","skills":["kubernetes","python","java","c++"],"title":"高级推理平台工程师（大模型推理云平台基础设施）"}
-{"company":"阶跃星辰","first_seen":"2026-11-09","id":"moka:step/94904:7cb98a5e-4f70-406f-9fd4-5bb5fc4bb8e1","location":"徐汇区","posted":"2026-09-22","title":"BSP 软件测试专家"}
+{"company":"阶跃星辰","first_seen":"2026-11-09","id":"moka:step/94904:7cb98a5e-4f70-406f-9fd4-5bb5fc4bb8e1","location":"徐汇区","posted":"2026-09-22","title":"BSP软件测试专家"}
 {"company":"阶跃星辰","first_seen":"2026-11-09","id":"moka:step/94904:7d39db55-7da3-49e0-a1a8-2e31e6f5f75d","location":"徐汇区, 南山区","posted":"2026-10-14","skills":["linux"],"title":"底软/驱动开发工程师（BSP)"}
 {"company":"阶跃星辰","first_seen":"2026-11-09","id":"moka:step/94904:7d7fd502-8c8d-4301-9515-6f5edd40a10e","location":"徐汇区","posted":"2026-08-25","skills":["c++","linux","redis","mysql","kafka"],"title":"音视频传输研发工程师(RTC链路优化方向)"}
 {"company":"阶跃星辰","first_seen":"2026-11-09","id":"moka:step/94904:7d854195-6f72-4ed9-9ad8-30c7fbd6cc20","location":"南山区, 徐汇区","posted":"2026-08-14","skills":["linux"],"title":"功耗工程师"}
@@ -278,7 +278,7 @@
 {"company":"阶跃星辰","first_seen":"2026-11-09","id":"moka:step/94904:d2a17ffa-e23c-4d37-96a5-2199a0f77ba8","location":"徐汇区, 海淀区","posted":"2026-08-13","skills":["llm","java","python","rust","mysql","postgres","redis"],"title":"Agent Infra开发工程师/架构师(企业工作台)"}
 {"company":"阶跃星辰","first_seen":"2026-11-09","id":"moka:step/94904:d3d6ed86-abd3-4448-a211-a86b91477a66","location":"徐汇区","posted":"2026-11-05","title":"产品营销经理(MO)"}
 {"company":"阶跃星辰","first_seen":"2026-11-09","id":"moka:step/94904:d42faa18-3120-4a8a-93b3-9af749982386","location":"徐汇区","posted":"2026-06-04","skills":["java","llm","ci/cd"],"title":"AI应用测试开发工程师"}
-{"company":"阶跃星辰","first_seen":"2026-11-09","id":"moka:step/94904:d46f1940-7cc3-4bf6-9fdb-af4c78e4addd","location":"南山区, 徐汇区","posted":"2026-09-22","skills":["java","python"],"title":"功耗温升测试"}
+{"company":"阶跃星辰","first_seen":"2026-11-09","id":"moka:step/94904:d46f1940-7cc3-4bf6-9fdb-af4c78e4addd","location":"南山区, 徐汇区","posted":"2026-09-22","skills":["java","python"],"title":"功耗温升测试工程师"}
 {"company":"阶跃星辰","first_seen":"2026-11-09","id":"moka:step/94904:d48f5bc9-d743-42bc-b7d2-37388a2a5081","location":"徐汇区, 海淀区","posted":"2026-08-03","skills":["python"],"title":"高级网络工程师"}
 {"company":"阶跃星辰","first_seen":"2026-11-09","id":"moka:step/94904:d5969cf7-33f2-4ddc-906d-ce3119eb4585","location":"徐汇区","posted":"2026-10-14","title":"产品经理"}
 {"company":"阶跃星辰","first_seen":"2026-11-09","id":"moka:step/94904:d6a826bb-8a72-474e-99d6-a6aec95a107c","location":"海淀区, 徐汇区","posted":"2026-08-24","skills":["figma","photoshop"],"title":"产品体验设计师"}

@@ -43,8 +43,8 @@
 {"company":"Madera Community Hospital","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:maderach:470","location":"Madera, California","team":"Family Health Center","title":"Family Nurse Practitioner (FNP)"}
 {"company":"Madera Community Hospital","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:maderach:471","location":"Madera, California","team":"Information Technology","title":"IT Support Specialist"}
 {"company":"Madera Community Hospital","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:maderach:473","location":"Madera, California","team":"Surgical Services","title":"Sterile Processing Technician"}
-{"company":"Madera Community Hospital","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:maderach:478","location":"Madera, California","skills":["patient_care"],"team":"Emergency Department","title":"Patient Care Technician-Nights"}
-{"company":"Madera Community Hospital","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:maderach:479","location":"Madera, California","skills":["patient_care"],"team":"Emergency Department","title":"Patient Care Technician-Days"}
+{"closed_at":"2026-11-11","company":"Madera Community Hospital","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:maderach:478","location":"Madera, California","skills":["patient_care"],"team":"Emergency Department","title":"Patient Care Technician-Nights"}
+{"closed_at":"2026-11-11","company":"Madera Community Hospital","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:maderach:479","location":"Madera, California","skills":["patient_care"],"team":"Emergency Department","title":"Patient Care Technician-Days"}
 {"company":"Madera Community Hospital","first_seen":"2026-11-08","id":"bamboohr:maderach:480","location":"Madera, California","team":"Pharmacy","title":"Pharmacist"}
 {"company":"Madera Community Hospital","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:maderach:481","location":"Madera, California","team":"Case Management","title":"Licensed Clinical Social Worker (LCSW)"}
 {"company":"Madera Community Hospital","first_seen":"2026-11-08","id":"bamboohr:maderach:483","location":"Madera, California","team":"Administration","title":"Director of Clinical Services"}
@@ -62,4 +62,5 @@
 {"company":"Madera Community Hospital","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:maderach:496","location":"Madera, California","team":"Administration","title":"Marketing Assistant"}
 {"company":"Madera Community Hospital","first_seen":"2026-11-08","id":"bamboohr:maderach:497","location":"Madera, California","team":"Plant Facilities","title":"Maintenance Worker"}
 {"company":"Madera Community Hospital","first_seen":"2026-11-11","id":"bamboohr:maderach:498","location":"Madera, California","team":"Emergency Department","title":"Scribe"}
+{"company":"Madera Community Hospital","employment":"full_time","first_seen":"2026-11-11","id":"bamboohr:maderach:499","location":"Madera, California","team":"Laboratory","title":"Phlebotomist-PM Shift"}
 {"company":"Madera Community Hospital","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:maderach:55","location":"Madera, California","team":"Diagnostic Imaging","title":"CT Technologist"}

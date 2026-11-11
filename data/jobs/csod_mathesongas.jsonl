@@ -443,9 +443,9 @@
 {"company":"Matheson","first_seen":"2026-11-08","id":"csod:mathesongas:8651","location":"Willmar, MN, US","posted":"2026-05-20","skills":["customer_service"],"title":"Packaged Gases Customer Service Representative - Willmar, MN"}
 {"company":"Matheson","first_seen":"2026-11-08","id":"csod:mathesongas:8676","location":"Burlington, WI, US","posted":"2026-05-29","title":"Bulk Regional Sales Manager - Home office Burlington, WI"}
 {"company":"Matheson","first_seen":"2026-11-08","id":"csod:mathesongas:8705","location":"Long Beach, CA, US","posted":"2026-06-03","title":"Outside Sales Representative - Long Beach, CA"}
-{"company":"Matheson","first_seen":"2026-11-09","id":"csod:mathesongas:8722","location":"Portland, OR, US","posted":"2026-06-08","remote":true,"reposts":1,"title":"Strategic Accounts Manager - Remote Position"}
+{"company":"Matheson","first_seen":"2026-11-09","id":"csod:mathesongas:8722","location":"Portland, OR, US","posted":"2026-06-08","remote":true,"reposts":1,"title":"Strategic Account Manager - Remote Position"}
 {"company":"Matheson","first_seen":"2026-11-08","id":"csod:mathesongas:8728","location":"Irving, TX, US","posted":"2026-06-08","title":"Cryogenic Service Technician- Dallas TX"}
-{"company":"Matheson","first_seen":"2026-11-08","id":"csod:mathesongas:8740","location":"New Johnsonville, TN, US","posted":"2026-08-25","title":"Lab Technician - New Johnsonville"}
+{"company":"Matheson","first_seen":"2026-11-08","id":"csod:mathesongas:8740","location":"New Johnsonville, TN, US","posted":"2026-08-25","title":"Lab Technician - New Johnsonville, TN"}
 {"company":"Matheson","first_seen":"2026-11-08","id":"csod:mathesongas:8752","location":"Odessa, TX, US","posted":"2026-06-12","reposts":1,"title":"Package Gas Driver 1 - Odessa, TX"}
 {"company":"Matheson","first_seen":"2026-11-08","id":"csod:mathesongas:8753","location":"Waverly, NE, US","posted":"2026-06-12","title":"Automation Specialist - Waverly, NE"}
 {"company":"Matheson","first_seen":"2026-11-08","id":"csod:mathesongas:8755","location":"Orlando, FL, US","posted":"2026-06-15","skills":["welding"],"title":"Welding Sales Specialist - Orlando, FL"}
@@ -511,7 +511,7 @@
 {"company":"Matheson","first_seen":"2026-11-08","id":"csod:mathesongas:9177","location":"Houston, TX, US","posted":"2026-08-24","title":"Specialty Gas Sales Manager - Houston, TX"}
 {"company":"Matheson","first_seen":"2026-11-08","id":"csod:mathesongas:9180","location":"Wixom, MI, US","posted":"2026-08-24","title":"Outside Sales Representative Wixom, MI"}
 {"company":"Matheson","first_seen":"2026-11-08","id":"csod:mathesongas:9182","location":"Greensburg, PA, US","posted":"2026-09-09","title":"Packaged Gases Inside Sales Representative -Greensburg"}
-{"company":"Matheson","first_seen":"2026-11-08","id":"csod:mathesongas:9183","location":"Waverly, NE, US","posted":"2026-08-25","title":"ASU Plant Manager - Waverly, NE"}
+{"closed_at":"2026-11-11","company":"Matheson","first_seen":"2026-11-08","id":"csod:mathesongas:9183","location":"Waverly, NE, US","posted":"2026-08-25","title":"ASU Plant Manager - Waverly, NE"}
 {"company":"Matheson","first_seen":"2026-11-08","id":"csod:mathesongas:9184","location":"Irving, TX, US","posted":"2026-08-25","reposts":2,"title":"Sourcing Manager - Irving, TX"}
 {"company":"Matheson","first_seen":"2026-11-08","id":"csod:mathesongas:9188","location":"Miami Beach, FL, US","posted":"2026-08-26","title":"2nd Shift Cylinder Filler - Miami, FL"}
 {"company":"Matheson","first_seen":"2026-11-08","id":"csod:mathesongas:9199","location":"Martinez, CA, US","posted":"2026-08-27","title":"Maintenance Technician - Martinez, CA"}
@@ -653,7 +653,7 @@
 {"company":"Matheson","first_seen":"2026-11-08","id":"csod:mathesongas:9502","location":"Houston, TX, US","posted":"2026-10-13","title":"Outside Sales Representative - Houston"}
 {"closed_at":"2026-11-09","company":"Matheson","first_seen":"2026-11-08","id":"csod:mathesongas:9503","location":"Brookhaven, MS, US","posted":"2026-10-14","reposts":4,"title":"Team Member, Nights - Brookhaven, MS"}
 {"company":"Matheson","first_seen":"2026-11-08","id":"csod:mathesongas:9506","location":"Lihue, HI, US","posted":"2026-11-04","skills":["customer_service"],"title":"Packaged Gases Customer Service Representative"}
-{"company":"Matheson","first_seen":"2026-11-08","id":"csod:mathesongas:9508","location":"Irving, TX, US","posted":"2026-10-19","title":"Mailroom Clerk - Irving TX"}
+{"company":"Matheson","first_seen":"2026-11-08","id":"csod:mathesongas:9508","location":"Irving, TX, US","posted":"2026-10-19","title":"Mailroom Clerk"}
 {"company":"Matheson","first_seen":"2026-11-08","id":"csod:mathesongas:9518","location":"Brookhaven, MS, US","posted":"2026-10-16","reposts":4,"title":"Team Member, Nights - Brookhaven, MS"}
 {"company":"Matheson","first_seen":"2026-11-08","id":"csod:mathesongas:9519","location":"Manassas Park, VA, US","posted":"2026-11-05","title":"Outside Sales Representative"}
 {"company":"Matheson","first_seen":"2026-11-08","id":"csod:mathesongas:9524","location":"Pekin, IL, US","posted":"2026-10-20","title":"Team Member Nights - Pekin, IL"}
@@ -687,6 +687,8 @@
 {"company":"Matheson","first_seen":"2026-11-08","id":"csod:mathesongas:9569","location":"Taylor, TX, US","posted":"2026-10-31","reposts":2,"title":"TGCM Technician I - Taylor, TX"}
 {"company":"Matheson","first_seen":"2026-11-08","id":"csod:mathesongas:9571","location":"Denison, IA, US","posted":"2026-11-02","title":"Maintenance Technician - Nights Denison, IA"}
 {"company":"Matheson","first_seen":"2026-11-08","id":"csod:mathesongas:9573","location":"Ft Lauderdale, FL, US","posted":"2026-11-02","reposts":1,"skills":["customer_service"],"title":"Packaged Gases Customer Service Representative -Ft. Lauderdale, FL"}
+{"company":"Matheson","first_seen":"2026-11-11","id":"csod:mathesongas:9577","location":"Manassas Park, VA, US","posted":"2026-11-05","reposts":2,"skills":["customer_service"],"title":"Customer Service Representative"}
+{"company":"Matheson","first_seen":"2026-11-11","id":"csod:mathesongas:9578","location":"Twinsburg, OH, US","posted":"2026-11-05","reposts":2,"skills":["customer_service"],"title":"Customer Service Representative"}
 {"company":"Matheson","first_seen":"2026-11-08","id":"csod:mathesongas:9579","location":"Kyle, TX, US","posted":"2026-11-03","title":"Customer Support Specialist - Kyle, TX"}
 {"company":"Matheson","first_seen":"2026-11-08","id":"csod:mathesongas:9581","location":"Irwindale, CA, US","posted":"2026-11-03","reposts":2,"title":"ASU Production Technician - Irwindale, CA"}
 {"company":"Matheson","first_seen":"2026-11-08","id":"csod:mathesongas:9582","location":"Beatrice, NE, US","posted":"2026-11-04","title":"Team Member - Nights- Beatrice, NE"}
@@ -701,3 +703,4 @@
 {"company":"Matheson","first_seen":"2026-11-09","id":"csod:mathesongas:9604","location":"Martinez, CA, US","posted":"2026-11-09","reposts":2,"title":"Team Member - Martinez, CA"}
 {"company":"Matheson","first_seen":"2026-11-10","id":"csod:mathesongas:9608","location":"Clearfield, PA, US","posted":"2026-11-10","reposts":1,"title":"Team Member Nights"}
 {"company":"Matheson","first_seen":"2026-11-10","id":"csod:mathesongas:9609","location":"Clearfield, PA, US","posted":"2026-11-10","reposts":1,"title":"Team Member Nights"}
+{"company":"Matheson","first_seen":"2026-11-11","id":"csod:mathesongas:9610","location":"Vacaville, CA, US","posted":"2026-11-11","title":"ASU Maintenance Technician - Vacaville, CA"}

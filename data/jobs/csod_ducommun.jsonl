@@ -262,6 +262,7 @@
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5680","location":"Tulsa, OK, US","posted":"2026-06-18","title":"Cost Accountant III"}
 {"closed_at":"2026-11-09","company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5687","location":"Joplin, MO, US","posted":"2026-06-22","title":"Quality Engineer Technician"}
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5690","location":"Tulsa, OK, US","posted":"2026-06-23","title":"Surface Mount Technology Operator - 2nd shift"}
+{"company":"Ducommun","first_seen":"2026-11-11","id":"csod:ducommun:5693","location":"Tulsa, OK, US","posted":"2026-06-23","title":"Surface Mount Technology Operator - WKD Shift"}
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5696","location":"Coxsackie, NY, US","posted":"2026-06-25","title":"Box Builder"}
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5703","location":"Tulsa, OK, US","posted":"2026-06-30","reposts":1,"title":"Circuit Board Assembler - 2nd Shift"}
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5717","location":"Carson, CA, US","posted":"2026-07-02","reposts":2,"title":"Maintenance Technician"}
@@ -270,6 +271,7 @@
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5737","location":"Coxsackie, NY, US","posted":"2026-07-21","reposts":2,"skills":["supply_chain"],"title":"Supply Chain Manager"}
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5738","location":"Coxsackie, NY, US","posted":"2026-07-21","reposts":1,"title":"Bonded Assembly Technician"}
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5740","location":"Coxsackie, NY, US","posted":"2026-07-22","title":"TEMP Shipper/Receiver"}
+{"company":"Ducommun","first_seen":"2026-11-11","id":"csod:ducommun:5743","location":"Tulsa, OK, US","posted":"2026-07-22","title":"Quality Inspector - 2nd Shift"}
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5744","location":"Parsons, KS, US","posted":"2026-09-21","title":"Process Line Operator - B Shift"}
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5748","location":"Orange, CA, US","posted":"2026-11-09","title":"Production Lead Temp to Hire"}
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5750","location":"Tulsa, OK, US","posted":"2026-07-24","title":"Manufacturing Assembler - 2nd Shift"}
@@ -318,7 +320,7 @@
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5871","location":"Coxsackie, NY, US","posted":"2026-10-12","title":"Engineering Manager"}
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5873","location":"Santa Clarita, CA, US","posted":"2026-09-18","title":"Machine Operator"}
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5875","location":"Carson, CA, US","posted":"2026-09-22","title":"Production Manager"}
-{"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5879","location":"Tulsa, OK, US","posted":"2026-09-24","title":"Quality Inspector - 1st Shift"}
+{"closed_at":"2026-11-11","company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5879","location":"Tulsa, OK, US","posted":"2026-09-24","title":"Quality Inspector - 1st Shift"}
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5880","location":"Tulsa, OK, US","posted":"2026-09-24","title":"Receiving Inspector - 1st Shift"}
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5881","location":"Tulsa, OK, US","posted":"2026-09-24","title":"Material Handler - 1st Shift"}
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5884","location":"Joplin, MO, US","posted":"2026-10-06","skills":["supply_chain"],"title":"Supply Chain Specialist"}
@@ -335,10 +337,12 @@
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5899","location":"Joplin, MO, US","posted":"2026-10-16","title":"Facilities Manager"}
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5901","location":"Appleton, WI, US","posted":"2026-10-26","reposts":2,"skills":["supply_chain"],"title":"Supply Chain Manager"}
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5902","location":"Gardena, CA, US","posted":"2026-10-07","reposts":1,"title":"NC Operator"}
+{"company":"Ducommun","first_seen":"2026-11-11","id":"csod:ducommun:5903","location":"Tulsa, OK, US","posted":"2026-10-07","reposts":1,"title":"Surface Mount Technology Operator - 1st shift"}
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5905","location":"Carson, CA, US","posted":"2026-10-07","title":"Stockroom Clerk"}
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5906","location":"Huntsville, AR, US","posted":"2026-10-08","title":"Painter"}
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5908","location":"Orange, CA, US","posted":"2026-11-04","title":"General Helper Temp to Hire"}
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5910","location":"Coxsackie, NY, US","posted":"2026-10-14","reposts":2,"title":"Quality Inspector"}
+{"company":"Ducommun","first_seen":"2026-11-11","id":"csod:ducommun:5912","location":"Appleton, WI, US","posted":"2026-11-11","reposts":2,"title":"Program Manager Analyst"}
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5913","location":"Coxsackie, NY, US","posted":"2026-10-15","title":"Program Management Analyst"}
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5914","location":"Parsons, KS, US","posted":"2026-10-20","title":"CNC Machinist - B Shift"}
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5915","location":"Huntsville, AR, US","posted":"2026-10-15","title":"Material Handler"}
@@ -372,6 +376,7 @@
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5954","location":"Tulsa, OK, US","posted":"2026-10-26","reposts":2,"title":"Sr. Program Manager"}
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5958","location":"Carson, CA, US","posted":"2026-10-27","reposts":1,"title":"Shipping & Receiving Clerk"}
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5959","location":"Appleton, WI, US","posted":"2026-10-28","reposts":3,"title":"Quality Engineer"}
+{"company":"Ducommun","first_seen":"2026-11-11","id":"csod:ducommun:5960","location":"Joplin, MO, US","posted":"2026-11-11","reposts":1,"title":"Production Supervisor - 2nd Shift"}
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5961","location":"Appleton, WI, US","posted":"2026-10-28","title":"Material Handler"}
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5962","location":"Carson, CA, US","posted":"2026-10-28","reposts":1,"title":"Quality Manager"}
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5963","location":"Carson, CA, US","posted":"2026-10-28","reposts":1,"title":"Design Engineer III"}
@@ -392,3 +397,4 @@
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5980","location":"Carson, CA, US","posted":"2026-11-03","reposts":1,"title":"Sr. Manager, BD & Program Operations"}
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5983","location":"Tulsa, OK, US","posted":"2026-11-04","title":"Maintenance Technician - Weekend Shift"}
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5987","location":"Huntington Beach, CA, US","posted":"2026-11-05","title":"Quality Engineer I"}
+{"company":"Ducommun","first_seen":"2026-11-11","id":"csod:ducommun:5990","location":"Parsons, KS, US","posted":"2026-11-11","title":"Process Line Operator - C Shift"}

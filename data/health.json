@@ -13033,7 +13033,7 @@
 {"b": "ashby:8returns", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "ashby:8vc", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "ashby:9fin", "last_ok": "2026-10-25", "strikes": 0}
-{"b": "ashby:a-place-for-mom", "last_ok": "2026-11-10", "strikes": 1, "why": "dropped from 26 to 8"}
+{"b": "ashby:a-place-for-mom", "last_ok": "2026-11-10", "strikes": 2, "why": "dropped from 26 to 8"}
 {"b": "ashby:a-team", "last_ok": "2026-10-28", "strikes": 0}
 {"b": "ashby:a1%20garage%20door%20service", "last_ok": "2026-10-19", "strikes": 0}
 {"b": "ashby:aaron-school", "last_ok": "2026-10-29", "strikes": 0}
@@ -37748,7 +37748,7 @@
 {"b": "greenhouse:ispottv", "last_ok": "2026-10-20", "strikes": 0}
 {"b": "greenhouse:issoft", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "greenhouse:itcss", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "greenhouse:iterable", "last_ok": "2026-11-11", "strikes": 0}
+{"b": "greenhouse:iterable", "last_ok": "2026-11-11", "strikes": 0, "why": "error: 404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/iterable/jobs?content=true"}
 {"b": "greenhouse:iterativehealth", "last_ok": "2026-10-28", "strikes": 0}
 {"b": "greenhouse:itero-group", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "greenhouse:itftherapeutics", "last_ok": "2026-10-30", "strikes": 0}
@@ -41538,7 +41538,7 @@
 {"b": "hireology:leifjohnsonford", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "hireology:lemenparentaccount", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "hireology:leomartinchevrolet", "last_ok": "2026-11-09", "strikes": 0}
-{"b": "hireology:lexusofbrookfield", "last_ok": "2026-11-11", "strikes": 0}
+{"b": "hireology:lexusofbrookfield", "last_ok": "2026-11-11", "strikes": 1, "why": "empty answer"}
 {"b": "hireology:lexusofmaplewood", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "hireology:lexusofvirginiabeach", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "hireology:lexusofwayzata", "last_ok": "2026-11-09", "strikes": 0}
@@ -52355,7 +52355,7 @@
 {"b": "jobvite:cascade", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "jobvite:castlemetals", "last_ok": "2026-11-08", "strikes": 0}
 {"b": "jobvite:ccaandb", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "jobvite:ccsfundraising", "last_ok": "2026-11-10", "strikes": 2, "why": "empty answer"}
+{"b": "jobvite:ccsfundraising", "last_ok": "2026-11-11", "strikes": 0}
 {"b": "jobvite:ccu", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "jobvite:center-for-elders-independence", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "jobvite:cheetah-ad-platform", "last_ok": "2026-10-30", "strikes": 0}
@@ -52836,7 +52836,7 @@
 {"b": "join:10xakquisede", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "join:10zigcom", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "join:113", "last_ok": "2026-11-08", "strikes": 0}
-{"b": "join:11plusmedia", "last_ok": "2026-11-11", "strikes": 0}
+{"b": "join:11plusmedia", "last_ok": "2026-11-11", "strikes": 1, "why": "empty answer"}
 {"b": "join:11teamsportsat", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "join:123fit-rahlstedt", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "join:123zahnspange", "last_ok": "2026-10-30", "strikes": 0}
@@ -57796,7 +57796,7 @@
 {"b": "join:fbu", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "join:fcffoxcorporatefinance", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "join:fcopch", "last_ok": "2026-11-08", "strikes": 0}
-{"b": "join:fcr-immobilien", "last_ok": "2026-11-10", "strikes": 1, "why": "empty answer"}
+{"b": "join:fcr-immobilien", "last_ok": "2026-11-11", "strikes": 0}
 {"b": "join:fcviktoria", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "join:fd-steuerberatungde", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "join:fda-softwarecom", "last_ok": "2026-10-30", "strikes": 0}
@@ -60820,7 +60820,7 @@
 {"b": "join:kargl-haustechnik", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "join:kargl-stb", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "join:karikaala", "last_ok": "2026-11-08", "strikes": 0}
-{"b": "join:karinsschwestercom", "last_ok": "", "strikes": 0, "why": "error: 410 Client Error: Gone for url: https://join.com/companies/karinsschwestercom"}
+{"b": "join:karinsschwestercom", "last_ok": "", "strikes": 0, "why": "error: 404 Client Error: Not Found for url: https://join.com/companies/karinsschwestercom"}
 {"b": "join:karius-feinstahlbaude", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "join:karl-schick", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "join:karl-schubert-schule", "last_ok": "2026-10-30", "strikes": 0}
@@ -88873,7 +88873,7 @@
 {"b": "personio:kj-gmbh", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "personio:kjg-bundesstelle", "last_ok": "", "strikes": 0, "why": "error: 404 Client Error: Not Found for url: https://kjg-bundesstelle.jobs.personio.de/xml"}
 {"b": "personio:kjr-miesbach", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "personio:klara-fardiga-film", "last_ok": "2026-11-10", "strikes": 2, "why": "empty answer"}
+{"b": "personio:klara-fardiga-film", "last_ok": "2026-11-11", "strikes": 0}
 {"b": "personio:klarx", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "personio:klat-system", "last_ok": "2026-10-28", "strikes": 0}
 {"b": "personio:klauke-enterprises", "last_ok": "2026-11-08", "strikes": 0}

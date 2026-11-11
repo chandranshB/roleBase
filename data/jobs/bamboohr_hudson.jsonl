@@ -2,14 +2,14 @@
 {"company":"Hudson Group","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:hudson:195","location":"Malta, /","team":"Retail Operations","title":"Section Leader / Kiabi - Burmarrad"}
 {"company":"Hudson Group","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:hudson:203","location":"Malta, /","team":"Retail Operations","title":"Sales Assistant - Arkadia, Gozo"}
 {"closed_at":"2026-11-10","company":"Hudson Group","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:hudson:246","location":"Malta, /","team":"Sports Brands - General","title":"Buyer - Sports Direct"}
-{"company":"Hudson Group","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:hudson:254","location":"Malta, /","team":"Sports Brands - General","title":"Commercial Director - Sports"}
+{"closed_at":"2026-11-11","company":"Hudson Group","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:hudson:254","location":"Malta, /","team":"Sports Brands - General","title":"Commercial Director - Sports"}
 {"company":"Hudson Group","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:hudson:262","location":"Malta, /","team":"Hudson Arkadia","title":"Store Manager - Sports (Arkadia Gozo)"}
 {"company":"Hudson Group","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:hudson:263","location":"Malta, /","team":"Hudson Arkadia","title":"Section Leader - Sports (Arkadia Gozo)"}
 {"company":"Hudson Group","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:hudson:276","location":"Nicosia, /","team":"Kiabi - Nicosia Mall of Cyprus","title":"Sales Assistant - Kiabi Mall of Cyprus"}
 {"company":"Hudson Group","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:hudson:278","location":"Malta, /","team":"Sport House Sliema - Piazzetta","title":"Sales Assistant (Full-Time) - Sports Direct (Piazzetta)"}
 {"company":"Hudson Group","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:hudson:280","location":"Nicosia, /","team":"Kiabi - Larnaca Metropolis Mall","title":"Sales Assistant - Kiabi Metropolis Mall FT"}
-{"company":"Hudson Group","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:hudson:281","location":"Malta, /","team":"H&M","title":"Sales Advisor - H&M - Sliema"}
-{"company":"Hudson Group","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:hudson:286","location":"Malta, /","team":"Urban Bratz Baystreet","title":"Assistant Store Manager - Urban Bratz (Baystreet)"}
+{"closed_at":"2026-11-11","company":"Hudson Group","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:hudson:281","location":"Malta, /","team":"H&M","title":"Sales Advisor - H&M - Sliema"}
+{"closed_at":"2026-11-11","company":"Hudson Group","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:hudson:286","location":"Malta, /","team":"Urban Bratz Baystreet","title":"Assistant Store Manager - Urban Bratz (Baystreet)"}
 {"company":"Hudson Group","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:hudson:304","location":"Malta, /","team":"NIKE","title":"Category Sales Specialist - Running, Training and ACG"}
 {"company":"Hudson Group","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:hudson:306","location":"Morocco","team":"General Management","title":"Regional Legal Counsel - Africa"}
 {"company":"Hudson Group","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:hudson:307","location":"Malta, /","skills":["payroll"],"team":"HR","title":"HR & Payroll Administrator"}
@@ -53,3 +53,8 @@
 {"company":"Hudson Group","employment":"full_time","first_seen":"2026-10-30","id":"bamboohr:hudson:385","location":"Malta, /","team":"NIKE","title":"Category Sales Specialist – Nike Sportswear and Jordan Brand"}
 {"company":"Hudson Group","first_seen":"2026-11-08","id":"bamboohr:hudson:386","location":"Morocco","team":"PVH","title":"Sales Assistant - Tommy Hilfiger (Arribat Center)"}
 {"company":"Hudson Group","first_seen":"2026-11-08","id":"bamboohr:hudson:388","location":"Malta, /","title":"(Full Time)  Sales Assistant - Calvin Klein (Mercury)"}
+{"company":"Hudson Group","first_seen":"2026-11-11","id":"bamboohr:hudson:389","location":"Morocco","team":"Crocs","title":"Store Manager - Crocs (Rabat)"}
+{"company":"Hudson Group","first_seen":"2026-11-11","id":"bamboohr:hudson:390","location":"Morocco","team":"Crocs","title":"Sales Assistant - Crocs (Rabat)"}
+{"company":"Hudson Group","employment":"full_time","first_seen":"2026-11-11","id":"bamboohr:hudson:391","location":"Malta, /","reposts":1,"title":"Buyer - Sports Direct"}
+{"company":"Hudson Group","first_seen":"2026-11-11","id":"bamboohr:hudson:392","location":"Morocco","team":"Crocs","title":"Store Manager -Crocs (Fez)"}
+{"company":"Hudson Group","first_seen":"2026-11-11","id":"bamboohr:hudson:393","location":"Morocco","team":"Crocs","title":"Sales Assistant - Crocs (Fez)"}

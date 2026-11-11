@@ -18,10 +18,10 @@
 {"closed_at":"2026-11-08","company":"Firematic","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:firematic:256","location":"Le Roy, New York","team":"TSLE Shop - T","title":"Diesel Mechanic"}
 {"closed_at":"2026-11-08","company":"Firematic","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:firematic:257","location":"East Yaphank, New York","team":"COLI Office","title":"Vice President, Human Resources"}
 {"closed_at":"2026-10-21","company":"Firematic","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:firematic:258","location":"East Yaphank, New York","team":"TSLI Shop - U","title":"Fabricator"}
-{"company":"Firematic","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:firematic:259","location":"Flemington, New Jersey","team":"RSNJ Shop-T","title":"Service Writer"}
-{"company":"Firematic","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:firematic:260","location":"Flemington, New Jersey","team":"RSNJ Shop-T","title":"Mobile Mechanic"}
-{"company":"Firematic","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:firematic:261","location":"Flemington, New Jersey","team":"RSNJ Warehouse","title":"Shipping/Receiving Clerk"}
-{"company":"Firematic","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:firematic:262","location":"Flemington, New Jersey","team":"RSNJ Warehouse","title":"Parts Specialist"}
+{"closed_at":"2026-11-11","company":"Firematic","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:firematic:259","location":"Flemington, New Jersey","team":"RSNJ Shop-T","title":"Service Writer"}
+{"closed_at":"2026-11-11","company":"Firematic","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:firematic:260","location":"Flemington, New Jersey","team":"RSNJ Shop-T","title":"Mobile Mechanic"}
+{"closed_at":"2026-11-11","company":"Firematic","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:firematic:261","location":"Flemington, New Jersey","team":"RSNJ Warehouse","title":"Shipping/Receiving Clerk"}
+{"closed_at":"2026-11-11","company":"Firematic","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:firematic:262","location":"Flemington, New Jersey","team":"RSNJ Warehouse","title":"Parts Specialist"}
 {"closed_at":"2026-10-21","company":"Firematic","employment":"part_time","first_seen":"2026-10-19","id":"bamboohr:firematic:264","location":"East Yaphank, New York","team":"TSLI Shop - T","title":"Automotive Electrician/Installer"}
 {"company":"Firematic","employment":"full_time","first_seen":"2026-10-21","id":"bamboohr:firematic:265","location":"Churchville, New York","team":"RSNY Shop - T","title":"Mobile Mechanic"}
 {"company":"Firematic","employment":"full_time","first_seen":"2026-10-21","id":"bamboohr:firematic:266","location":"East Syracuse, New York","team":"TSSY Shop - T","title":"Diesel Mechanic"}
@@ -37,3 +37,4 @@
 {"company":"Firematic","employment":"full_time","first_seen":"2026-10-28","id":"bamboohr:firematic:276","location":"Tonawanda, New York","team":"ESCV Service Tech","title":"Service Technician - Rescue Tool Specialist (Service Only)"}
 {"closed_at":"2026-11-09","company":"Firematic","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:firematic:277","location":"Le Roy, New York","reposts":4,"team":"TSLE Shop - T","title":"Diesel Mechanic"}
 {"company":"Firematic","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:firematic:278","location":"East Yaphank, New York","team":"COLI Office","title":"Vice President, Operations & HR"}
+{"company":"Firematic","employment":"full_time","first_seen":"2026-11-11","id":"bamboohr:firematic:279","location":"East Syracuse, New York","reposts":2,"team":"RSNY Shop - T","title":"Mobile Mechanic"}
