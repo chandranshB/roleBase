@@ -1,6 +1,6 @@
 {"company":"CarePros","employment":"contract","first_seen":"2026-11-08","id":"bamboohr:carepros:630","remote":true,"team":"Service Delivery SHO","title":"Foster Care Family Contractor (Edmonton)"}
-{"company":"CarePros","employment":"contract","first_seen":"2026-11-08","id":"bamboohr:carepros:686","remote":true,"skills":["typescript"],"team":"Service Delivery SHO","title":"Foster Care Family Contractor (TS)"}
-{"company":"CarePros","employment":"contract","first_seen":"2026-11-08","id":"bamboohr:carepros:696","remote":true,"team":"Service Delivery SHO","title":"Family Caregiver (Siblings) Contractor"}
+{"closed_at":"2026-11-11","company":"CarePros","employment":"contract","first_seen":"2026-11-08","id":"bamboohr:carepros:686","remote":true,"skills":["typescript"],"team":"Service Delivery SHO","title":"Foster Care Family Contractor (TS)"}
+{"closed_at":"2026-11-11","company":"CarePros","employment":"contract","first_seen":"2026-11-08","id":"bamboohr:carepros:696","remote":true,"team":"Service Delivery SHO","title":"Family Caregiver (Siblings) Contractor"}
 {"closed_at":"2026-10-24","company":"CarePros","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:carepros:708","location":"Edmonton, Alberta","team":"Service Delivery","title":"Child and Youth Care Worker (Full-Time)"}
 {"company":"CarePros","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:carepros:711","location":"Edmonton, Alberta","team":"Service Delivery","title":"Lead Child and Youth Care Worker"}
 {"company":"CarePros","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:carepros:713","location":"Edmonton, Alberta","team":"Service Delivery","title":"Lead Community Support Worker"}
@@ -11,7 +11,7 @@
 {"closed_at":"2026-10-27","company":"CarePros","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:carepros:755","location":"Grande Prairie, Alberta","team":"Service Delivery","title":"Child and Youth Care Worker (Full-Time)"}
 {"closed_at":"2026-10-27","company":"CarePros","first_seen":"2026-10-19","id":"bamboohr:carepros:756","location":"Edmonton, Alberta","team":"Service Delivery","title":"Child and Youth Care Worker (Casual)"}
 {"company":"CarePros","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:carepros:757","location":"Grande Prairie, Alberta","team":"Service Delivery","title":"Senior Lead Child and Youth Care Worker"}
-{"company":"CarePros","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:carepros:759","location":"Edmonton, Alberta","team":"Service Delivery","title":"Community Support Worker"}
+{"closed_at":"2026-11-11","company":"CarePros","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:carepros:759","location":"Edmonton, Alberta","team":"Service Delivery","title":"Community Support Worker"}
 {"closed_at":"2026-11-08","company":"CarePros","employment":"full_time","first_seen":"2026-10-24","id":"bamboohr:carepros:761","location":"Edmonton, Alberta","team":"Service Delivery","title":"Child and Youth Care Worker (Full-Time)"}
 {"company":"CarePros","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:carepros:763","location":"Edmonton, Alberta","team":"Service Delivery","title":"Child and Youth Care Worker (Evenings)"}
 {"company":"CarePros","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:carepros:764","location":"Red Deer, Alberta","reposts":4,"team":"Service Delivery","title":"Child and Youth Care Worker (Full-Time)"}
@@ -25,6 +25,7 @@
 {"company":"CarePros","employment":"full_time","first_seen":"2026-10-29","id":"bamboohr:carepros:773","location":"Leduc, Alberta","team":"Service Delivery","title":"Child and Youth Care Worker Full-Time, Evenings: 3 p.m. - 11 p.m."}
 {"company":"CarePros","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:carepros:775","location":"Stony Plain, Alberta","team":"Service Delivery","title":"Child and Youth Care Worker Full-Time, 8:00 a.m. - 4:00 p.m."}
 {"company":"CarePros","employment":"part_time","first_seen":"2026-11-08","id":"bamboohr:carepros:776","location":"Edmonton, Alberta","team":"Service Delivery","title":"Child and Youth Care Worker (Part-Time)"}
-{"company":"CarePros","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:carepros:777","location":"Red Deer, Alberta","team":"Service Delivery","title":"In-ratio Program Supervisor"}
+{"company":"CarePros","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:carepros:777","location":"Red Deer, Alberta","team":"Service Delivery","title":"In-ratio Program Supervisor (Red Deer)"}
 {"company":"CarePros","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:carepros:778","location":"Edmonton, Alberta","reposts":4,"team":"Service Delivery","title":"Child and Youth Care Worker (Full-Time)"}
 {"company":"CarePros","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:carepros:779","location":"Edmonton, Alberta","team":"Service Delivery","title":"Child and Youth Care Worker - Male Presenting Only (Full-Time)"}
+{"company":"CarePros","employment":"full_time","first_seen":"2026-11-11","id":"bamboohr:carepros:780","location":"Edmonton, Alberta","team":"Service Delivery","title":"Community Support Worker"}
