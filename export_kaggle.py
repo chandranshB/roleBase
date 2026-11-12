@@ -345,6 +345,12 @@ Refreshed automatically once a day by GitHub Actions; the scraper itself runs ev
 - Company coverage is a large sample, not the whole market. Companies that forbid automated collection (for example Google, Meta and Apple) are not included.
 - Postings belong to their employers. Use the apply link to apply on the employer's own page.
 
+## License
+
+- **Compilation, schema, derived fields & aggregates** (`category`, `level`, `years_experience`, `skills`, `ghost_score`, `fresher_friendly`, and the company/daily CSVs): released under **CC BY 4.0**.
+- **Underlying job titles, company names, and apply URLs**: remain the property of their respective employers.
+- **Opt-out / removal**: employers who want their listings excluded from this dataset can open an issue at https://github.com/chandranshB/roleBase/issues.
+
 ## Links
 
 Search the same data as a website: https://chandranshb.github.io/roleBase/ . Starter notebook: https://www.kaggle.com/code/chandranshbinjola/job-listings-explorer
