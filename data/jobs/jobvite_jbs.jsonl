@@ -17,12 +17,13 @@
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:o1i0AfwD","title":"ASSISTANT FARM MANAGER| INDIAN CREEK SOW FARM| COLUMBUS JUNCTION, IA"}
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:o1jWAfwA","title":"EMT: Prepared Foods 3rd Shift"}
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:o1p4AfwO","title":"PRODUCTION HOURLY"}
+{"company":"JBS","first_seen":"2026-11-12","id":"jobvite:jbs:o2K5Afwb","title":"SECURITY GUARD FLOATER - 1ST SHIFT"}
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:o2XlAfwE","title":"Retail Store Associate ($1,000 Sign On Bonus!)"}
 {"closed_at":"2026-11-11","company":"JBS","first_seen":"2026-11-10","id":"jobvite:jbs:o2c5AfwD","title":"HOG ALLEY BUYER - 3RD SHIFT"}
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:o2cWAfwu","title":"ACCOUNTING PAYABLE CLERK A"}
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:o2jWAfwB","title":"Occupational Health Specialist - LPN/RN 3rd Shift"}
 {"company":"JBS","first_seen":"2026-11-09","id":"jobvite:jbs:o2oNAfwx","title":"Animal Welfare and Biosecurity Superintendent"}
-{"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:o394AfwA","title":"Protein Conversion Raw Material 3rd Shift"}
+{"closed_at":"2026-11-12","company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:o394AfwA","title":"Protein Conversion Raw Material 3rd Shift"}
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:o3C2Afw1","title":"Sanitation Hourly - 2nd & 3rd Shift"}
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:o3j4AfwK","skills":["cdl"],"title":"Cullman Egg Truck Driver - CDL"}
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:o3jWAfwC","title":"Occupational Health Specialist- LPN/ RN Split Shift"}
@@ -50,6 +51,7 @@
 {"closed_at":"2026-11-11","company":"JBS","first_seen":"2026-11-09","id":"jobvite:jbs:o6x4Afw1","title":"GROUND BEEF INVENTORY SPECIALIST A SHIFT"}
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:o72TAfwm","title":"FROZEN FOODS SELECTOR AND CASE PICKER"}
 {"closed_at":"2026-11-11","company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:o7BXAfwZ","title":"MID DAY- WAREHOUSE CLERK"}
+{"company":"JBS","first_seen":"2026-11-12","id":"jobvite:jbs:o7L5Afwh","skills":["forklift"],"title":"High Reach/Forklift Operator 2nd and 3rd Shift"}
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:o7hmAfw4","title":"Retail Store Associate"}
 {"company":"JBS","first_seen":"2026-11-09","id":"jobvite:jbs:o7z4Afw4","title":"Broiler Service Technician"}
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:o8C1Afw5","title":"FAB QA TECHNICIAN B-SHIFT"}
@@ -61,7 +63,7 @@
 {"company":"JBS","first_seen":"2026-11-09","id":"jobvite:jbs:o9Q4Afwn","title":"3RD SHIFT SANITATION SUPERVISOR"}
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:o9aYAfwB","title":"FABRICATION FLOOR SUPERVISOR"}
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:o9bZAfwD","skills":["procurement"],"title":"GLOBAL PROCUREMENT DIRECTOR"}
-{"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:o9n1AfwR","title":"DRIVER MANAGER"}
+{"closed_at":"2026-11-12","company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:o9n1AfwR","title":"DRIVER MANAGER"}
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:oAE3AfwB","title":"SANITATION"}
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:oAM2AfwI","title":"Operario Sanitation"}
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:oAN3AfwK","title":"Sanitation Hourly - 3rd Shift"}
@@ -109,7 +111,7 @@
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:oGW3AfwZ","title":"Maintenance Supervisor 3rd Shift"}
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:oGa2Afwc","title":"SANITATION CLEAN UP 3RD SHIFT"}
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:oGdYAfwb","title":"Accounting Specialist"}
-{"closed_at":"2026-11-09","company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:oGr4Afwv","title":"Pet Food"}
+{"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:oGr4Afwv","title":"Pet Food"}
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:oGs4Afww","title":"COMPLEX SAFETY AND HEALTH MANAGER"}
 {"closed_at":"2026-11-09","company":"JBS","first_seen":"2026-10-30","id":"jobvite:jbs:oH52Afw8","title":"Harvest Scale Operator - A Shift"}
 {"company":"JBS","first_seen":"2026-11-10","id":"jobvite:jbs:oH75Afwd","title":"Maintenance Supervisor 3rd Shift"}
@@ -123,22 +125,23 @@
 {"company":"JBS","first_seen":"2026-11-11","id":"jobvite:jbs:oHyZAfwy","reposts":2,"title":"Retail Sales Associate"}
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:oI2NAfwR","title":"Retail Store Associate"}
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:oI9WAfw7","title":"JBS SANITATION SUPERVISOR"}
+{"company":"JBS","first_seen":"2026-11-12","id":"jobvite:jbs:oIL5AfwS","title":"DC MAINTENANCE SUPERVISOR - 3RD SHIFT"}
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:oIO3AfwT","title":"LIVE PORK FEED MILL SUPERVISOR"}
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:oIfXAfwe","title":"WASTEWATER OPERATOR"}
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:oIgWAfwe","title":"Broiler Service Technician"}
 {"company":"JBS","first_seen":"2026-11-10","id":"jobvite:jbs:oIi5Afwp","title":"FACILITIES MAINTENANCE TECH- 3RD SHIFT- $25-$35"}
 {"company":"JBS","first_seen":"2026-11-10","id":"jobvite:jbs:oIj5Afwq","title":"Hatchery Embrex Crew Operator 3rd Shift"}
-{"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:oJ3GAfwM","title":"SAFETY COORDINATOR- 3rd Shift"}
+{"closed_at":"2026-11-12","company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:oJ3GAfwM","title":"SAFETY COORDINATOR- 3rd Shift"}
 {"company":"JBS","first_seen":"2026-11-10","id":"jobvite:jbs:oJ75Afwf","title":"SHIPPING LOADER/PICKER 1ST SHIFT"}
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:oJA2AfwF","title":"Feed Mill Maintenance Hourly 2nd shift"}
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:oJAyAfwb","title":"MAINTENANCE SUPERVISOR"}
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:oJC2AfwH","title":"Diesel / Vehicle Mechanic"}
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:oJYXAfwY","title":"Human Resources Director II"}
-{"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:oJb4Afwi","title":"Feed Mill Maintenance Tech"}
+{"closed_at":"2026-11-12","company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:oJb4Afwi","title":"Feed Mill Maintenance Tech"}
 {"company":"JBS","first_seen":"2026-11-09","id":"jobvite:jbs:oK05Afw9","title":"Feedmill Maintenance Tech"}
 {"company":"JBS","first_seen":"2026-11-10","id":"jobvite:jbs:oK35Afwc","skills":["payroll"],"title":"PAYROLL SPECIALIST/ HR COORDINATOR"}
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:oKoyAfw0","title":"Occupational Health Specialist 3rd Shift"}
-{"company":"JBS","first_seen":"2026-11-09","id":"jobvite:jbs:oKx4AfwF","title":"SANITATION"}
+{"closed_at":"2026-11-12","company":"JBS","first_seen":"2026-11-09","id":"jobvite:jbs:oKx4AfwF","title":"SANITATION"}
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:oL6jAfwu","title":"Retail Store Manager"}
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:oLA2AfwH","reposts":1,"title":"MAINTENANCE HOURLY"}
 {"company":"JBS","employment":"part_time","first_seen":"2026-11-08","id":"jobvite:jbs:oLMvAfwm","title":"Part-time Chick Delivery Driver - Lufkin"}
@@ -146,7 +149,7 @@
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:oLR3AfwZ","title":"Production Superintendent - Dark Meat"}
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:oLn4Afww","title":"INDUSTRIAL ELECTRICIAN"}
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:oLnZAfwr","title":"FIELD MANAGER  - Southeast IA to Northeast MO"}
-{"closed_at":"2026-11-09","company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:oLtWAfwu","title":"Live Hang Supervisor"}
+{"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:oLtWAfwu","title":"Live Hang Supervisor"}
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:oLxZAfwB","title":"PURCHASING ASSISTANT WAREHOUSE - AM 8 HOURS"}
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:oM5RAfw2","title":"Plant Scheduler"}
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:oMJ2AfwR","title":"PRODUCT MANAGER 2ND SHIFT"}
@@ -159,8 +162,8 @@
 {"company":"JBS","first_seen":"2026-11-10","id":"jobvite:jbs:oN75Afwj","title":"SHIPPING LOADER/PICKER 3RD SHIFT"}
 {"company":"JBS","first_seen":"2026-11-10","id":"jobvite:jbs:oN85Afwk","title":"Production Superintendent"}
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:oNBfAfwX","title":"WAREHOUSE ATTENDANT"}
-{"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:oNJZAfwP","title":"Retail Sales Associate"}
-{"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:oNO1AfwW","title":"ELECTRO MAINTENANCE SUPERVISOR"}
+{"closed_at":"2026-11-12","company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:oNJZAfwP","title":"Retail Sales Associate"}
+{"closed_at":"2026-11-12","company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:oNO1AfwW","title":"ELECTRO MAINTENANCE SUPERVISOR"}
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:oNgWAfwj","title":"QA Technician"}
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:oNi3Afws","title":"TANNERY MAINTENANCE D-SHIFT ($6,000 BONUS)"}
 {"company":"JBS","first_seen":"2026-11-11","id":"jobvite:jbs:oNo5AfwA","reposts":1,"title":"Protein HR Coordinator - RE"}
@@ -188,6 +191,7 @@
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:oQw3AfwJ","title":"Quality Assurance Technician"}
 {"closed_at":"2026-11-08","company":"JBS","first_seen":"2026-10-30","id":"jobvite:jbs:oR72Afwk","title":"GROUND BEEF MAINTENANCE SUPERINTENDENT"}
 {"closed_at":"2026-11-11","company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:oRFDAfwt","title":"INVENTORY ASSISTANT - C Shift"}
+{"company":"JBS","first_seen":"2026-11-12","id":"jobvite:jbs:oRN5Afw3","title":"Occupational Health Specialist - LPN/RN 2nd Shift"}
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:oRZ0Afwa","title":"Production Supervisor - Deli Wog 1st Shift"}
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:oRZXAfw7","title":"Sanitation Supervisor"}
 {"closed_at":"2026-11-09","company":"JBS","employment":"part_time","first_seen":"2026-11-08","id":"jobvite:jbs:oRe3Afws","title":"SECURITY GUARD (TEMP PART-TIME B SHIFT)"}
@@ -209,8 +213,9 @@
 {"closed_at":"2026-11-11","company":"JBS","first_seen":"2026-11-09","id":"jobvite:jbs:oUv2AfwL","title":"Sanitation Laborer - Hourly"}
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:oUxsAfwd","title":"Retail Store Associate"}
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:oV24Afwl","title":"2ND SHIFT MAINTENANCE SUPERVISOR"}
-{"closed_at":"2026-11-10","company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:oVC0AfwR","title":"Retail Sales Associate"}
+{"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:oVC0AfwR","title":"Retail Sales Associate"}
 {"company":"JBS","first_seen":"2026-11-11","id":"jobvite:jbs:oVC5AfwW","title":"RENDERING UTILITY"}
+{"company":"JBS","first_seen":"2026-11-12","id":"jobvite:jbs:oVN5Afw7","title":"EMT: Prepared Foods 2nd Shift"}
 {"company":"JBS","first_seen":"2026-11-09","id":"jobvite:jbs:oVS4Afwb","title":"Retail Sales Associate - Coral Gables"}
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:oVY1Afwe","skills":["cdl"],"title":"Breeder Driver - CDL"}
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:oVfZAfwt","title":"3RD SHIFT SANITATION TEAM MEMBER $19.55/HR"}
@@ -221,7 +226,7 @@
 {"closed_at":"2026-11-09","company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:oWEZAfwT","title":"Breeder Service Technician"}
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:oWdUAfwn","title":"Occupational Health Manager-RN"}
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:oWj2AfwB","skills":["cdl"],"title":"CDL Driver - Feed Haul"}
-{"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:oWqqAfw6","title":"Occupational Health Specialist - LPN 2nd shift"}
+{"closed_at":"2026-11-12","company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:oWqqAfw6","title":"Occupational Health Specialist - LPN 2nd shift"}
 {"closed_at":"2026-11-09","company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:oWv2AfwN","reposts":1,"title":"Maintenance Hourly"}
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:oWvXAfwI","title":"Veterinarian"}
 {"company":"JBS","first_seen":"2026-11-09","id":"jobvite:jbs:oX05Afwm","reposts":1,"title":"MAINTENANCE HOURLY"}
@@ -231,7 +236,7 @@
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:oXF2AfwY","title":"Store Team Lead - Pinecrest"}
 {"company":"JBS","first_seen":"2026-11-11","id":"jobvite:jbs:oXH5Afw3","title":"SHIPPING SUPERVISOR-2ND SHIFT"}
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:oXIBAfwA","title":"PSM SUPERVISOR"}
-{"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:oXMWAfwZ","title":"Receiving Supply Specialist"}
+{"closed_at":"2026-11-12","company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:oXMWAfwZ","title":"Receiving Supply Specialist"}
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:oXgJAfwg","skills":["cdl"],"title":"CDL Driver - Live Haul"}
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:oXgNAfwk","title":"Nurse- LPN 2nd Shift"}
 {"closed_at":"2026-11-10","company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:oXq3AfwK","title":"MACHINE OPERATOR GL3 (GRINDS) VEMAG 1ST SHIFT-$20"}
@@ -250,7 +255,7 @@
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:oZw3AfwS","title":"Quality Assurance Technician"}
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:oa63AfwD","title":"Store Team Lead - Davie"}
 {"closed_at":"2026-11-08","company":"JBS","first_seen":"2026-10-30","id":"jobvite:jbs:oa92AfwF","title":"PRODUCTION HOURLY"}
-{"company":"JBS","first_seen":"2026-11-11","id":"jobvite:jbs:oaXXAfwo","title":"Store Team Lead – Clermont"}
+{"closed_at":"2026-11-12","company":"JBS","first_seen":"2026-11-11","id":"jobvite:jbs:oaXXAfwo","title":"Store Team Lead – Clermont"}
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:oac3AfwJ","title":"Unloader Feed Mill"}
 {"closed_at":"2026-11-09","company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:oap4AfwX","title":"TRANSFER LABORER- ATHENS HATCHERY"}
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:oau2Afw0","title":"Sanitation Hourly"}
@@ -266,12 +271,13 @@
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:odI3Afwi","title":"PLANT MECHANIC - (Case Ready - Denver)"}
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:odJ3Afwj","title":"Occupational Nurse - LPN 2nd Shift"}
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:odNCAfwW","skills":["cdl"],"title":"CDL Shipping Driver"}
+{"company":"JBS","first_seen":"2026-11-12","id":"jobvite:jbs:odO5Afwq","title":"COOLERS SUPERVISOR B SHIFT"}
 {"company":"JBS","first_seen":"2026-11-11","id":"jobvite:jbs:odk5AfwW","title":"Assistant Broiler Manager"}
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:odo3AfwY","title":"Sanitation"}
 {"company":"JBS","first_seen":"2026-11-11","id":"jobvite:jbs:odt5Afw5","title":"Production Hourly 1st/2nd Shift"}
 {"closed_at":"2026-11-11","company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:odw3Afw6","title":"2ND SHIFT MAINTENANCE MECHANIC WAGE RANGE $23-$33"}
 {"closed_at":"2026-11-10","company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:odx2Afw6","reposts":1,"title":"MAINTENANCE HOURLY"}
-{"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:oeh2AfwR","title":"Fabrication Superintendent B Shift"}
+{"closed_at":"2026-11-12","company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:oeh2AfwR","title":"Fabrication Superintendent B Shift"}
 {"company":"JBS","first_seen":"2026-11-11","id":"jobvite:jbs:oen5Afw0","title":"CORPORATE EXPENSE MANAGER"}
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:oev1Afw4","title":"NIGHT SHIFT HUMAN RESOURCES GENERALIST"}
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:ofM2Afwn","skills":["cdl"],"title":"CDL Driver - Equipment Transport"}
@@ -301,6 +307,7 @@
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:oiF2Afwj","reposts":1,"title":"Maintenance Hourly"}
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:oiJ2Afwn","title":"Pullet Crew Supervisor"}
 {"company":"JBS","first_seen":"2026-11-10","id":"jobvite:jbs:oiJJAfw4","title":"Onboarding Coordinator"}
+{"company":"JBS","first_seen":"2026-11-12","id":"jobvite:jbs:oiO5Afwv","title":"Network Engineer"}
 {"closed_at":"2026-11-11","company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:oiR3Afww","title":"Hourly Production - Nights"}
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:oiU0Afww","title":"HR Coordinator II - Benefits Specialist"}
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:oiaVAfwH","title":"PURCHASING ASSISTANT WAREHOUSE - 12 HR ROTATING SHIFT 6AM - 6PM"}
@@ -330,7 +337,7 @@
 {"company":"JBS","first_seen":"2026-11-09","id":"jobvite:jbs:olz4Afwi","title":"SECURITY GUARD"}
 {"company":"JBS","first_seen":"2026-10-30","id":"jobvite:jbs:om02AfwI","title":"QA SUPERVISOR I"}
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:om43AfwN","title":"Production Superintendent"}
-{"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:om83AfwR","title":"Protein Maintenance Mechanic - RE"}
+{"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:om83AfwR","title":"Protein Maintenance Electrician - RE"}
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:omX4AfwH","title":"REFRIGERATION AND BOILER TECH"}
 {"closed_at":"2026-11-10","company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:omeZAfwT","title":"HOG ALLEY BUYER - 2ND SHIFT"}
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:omm0Afw2","title":"ZBB ANALYST"}
@@ -375,6 +382,7 @@
 {"company":"JBS","first_seen":"2026-11-09","id":"jobvite:jbs:os15AfwS","title":"1st SHIFT MAINTENANCE HOURLY"}
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:os3TAfwI","title":"REACHTRUCK DRIVER"}
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:osH1Afwu","title":"Complex Human Resources Manager"}
+{"company":"JBS","first_seen":"2026-11-12","id":"jobvite:jbs:osK5AfwB","title":"Store Team Leader"}
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:osNVAfwu","title":"Retail Category Specialist"}
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:osVSAfwz","title":"HUMAN RESOURCES MANAGER (CB2)"}
 {"closed_at":"2026-11-09","company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:osh3Afw6","title":"Security Guard"}
@@ -401,6 +409,7 @@
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:ovL2AfwC","title":"Electrical Maintenance Mechanic 1st Shift"}
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:ovM2AfwD","title":"TECNICO DE REFRIGERACION TEMP"}
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:ovNJAfwl","title":"Associate Category Manager"}
+{"company":"JBS","first_seen":"2026-11-12","id":"jobvite:jbs:ovP5AfwJ","title":"Full-Stack Engineer, eCommerce Platform (Technical Lead)"}
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:ovQQAfwv","title":"Senior R&D Director of User Experience, Culinary & Sensory"}
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:ovU2AfwL","skills":["payroll"],"title":"Payroll Specialist I"}
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:ovYXAfwK","title":"Store Team Lead – Cutler Bay"}
@@ -415,7 +424,7 @@
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:oxS1AfwK","title":"Broiler Service Technician"}
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:oxYZzfwN","title":"Wastewater Supervisor"}
 {"closed_at":"2026-11-08","company":"JBS","first_seen":"2026-10-30","id":"jobvite:jbs:oxa2Afw3","title":"MAINTENANCE HOURLY (MECHANICS, TECHNICIANS & PROJECTS)"}
-{"company":"JBS","first_seen":"2026-11-11","id":"jobvite:jbs:oxhTAfw1","title":"FINANCIAL ANALYST - CB1"}
+{"closed_at":"2026-11-12","company":"JBS","first_seen":"2026-11-11","id":"jobvite:jbs:oxhTAfw1","title":"FINANCIAL ANALYST - CB1"}
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:oxn3Afwh","title":"SANITATION"}
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:oxoKAfwZ","title":"EMT 3RD SHIFT (EMERGENCY MEDICAL TECHNICIAN)"}
 {"company":"JBS","first_seen":"2026-11-08","id":"jobvite:jbs:oxoYAfwd","title":"Corporate Captain Pilot - Challenger 3500"}

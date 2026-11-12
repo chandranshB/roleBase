@@ -74,7 +74,7 @@
 {"company":"Kennards Hire","first_seen":"2026-11-08","id":"csod:kennardshire:5831","location":"Wagga Wagga, NSW, AU","reposts":4,"title":"Casual Service Person Driver"}
 {"company":"Kennards Hire","first_seen":"2026-11-08","id":"csod:kennardshire:5873","location":"Redcliffe, QLD, AU","posted":"2026-06-11","reposts":11,"title":"Service Person/Driver"}
 {"company":"Kennards Hire","first_seen":"2026-11-08","id":"csod:kennardshire:5877","location":"Dubbo, NSW, AU","reposts":11,"title":"Service Person Driver"}
-{"company":"Kennards Hire","first_seen":"2026-11-08","id":"csod:kennardshire:5889","location":"Bowen Hills, QLD, AU","reposts":4,"title":"Hire Controller"}
+{"closed_at":"2026-11-12","company":"Kennards Hire","first_seen":"2026-11-08","id":"csod:kennardshire:5889","location":"Bowen Hills, QLD, AU","reposts":4,"title":"Hire Controller"}
 {"company":"Kennards Hire","first_seen":"2026-11-08","id":"csod:kennardshire:5904","location":"NSW, AUS, AU","reposts":11,"title":"Service Person Driver"}
 {"company":"Kennards Hire","first_seen":"2026-11-08","id":"csod:kennardshire:5930","location":"Crestmead, QLD, AU","posted":"2026-07-09","reposts":1,"title":"Field Service Mechanic"}
 {"company":"Kennards Hire","first_seen":"2026-11-08","id":"csod:kennardshire:5942","location":"Caloundra West, QLD, AU","posted":"2026-08-09","reposts":11,"title":"Service Person Driver"}
@@ -135,3 +135,5 @@
 {"company":"Kennards Hire","first_seen":"2026-11-09","id":"csod:kennardshire:6115","location":"Clayton, VIC, AU","posted":"2026-08-11","reposts":8,"title":"Service Person Driver"}
 {"company":"Kennards Hire","first_seen":"2026-11-09","id":"csod:kennardshire:6116","location":"Balcatta, WA, AU","posted":"2026-09-11","reposts":3,"title":"Equipment Co-ordinator"}
 {"company":"Kennards Hire","first_seen":"2026-11-11","id":"csod:kennardshire:6122","location":"Regency Park, SA, AU","posted":"2026-10-11","title":"Operations Product Specialist - PWM"}
+{"company":"Kennards Hire","first_seen":"2026-11-12","id":"csod:kennardshire:6123","location":"Mandurah, WA, AU","posted":"2026-12-11","reposts":11,"title":"Service Person Driver"}
+{"company":"Kennards Hire","first_seen":"2026-11-12","id":"csod:kennardshire:6124","location":"East Tāmaki, Auckland, NZ","posted":"2026-11-11","reposts":2,"skills":["customer_service"],"title":"Customer Service Agent"}

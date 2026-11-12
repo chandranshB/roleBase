@@ -72,6 +72,7 @@
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:09c7dfb4-df72-49c1-aadf-f08497fdd663","location":"北京市","posted":"2026-01-22","team":"PSIG","title":"百度网盘APP-用户产品经理（IM及智能化方向）（J96912）"}
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:09eea5c3-f14c-48dd-bca3-49dedbcc7e21","location":"北京市","posted":"2025-06-05","skills":["go","php","java","python","c++","linux","redis","kafka"],"team":"PSIG","title":"服务端GO/PHP研发工程师（J70799）"}
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:0a033273-5338-4674-8a4b-62c688825b37","location":"北京市,上海市","posted":"2026-11-05","team":"MEG","title":"销售（J107131）"}
+{"company":"Baidu","first_seen":"2026-11-12","id":"baidu:baidu:0a125468-5662-4ea2-bcfd-4a4193bbdb89","location":"北京市","posted":"2026-11-11","skills":["react","typescript","javascript","node.js","git"],"team":"ACG","title":"全栈开发工程师（J107271）"}
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:0a128933-37c5-4ee6-997e-37c01c862f44","location":"北京市","posted":"2026-11-09","team":"MEG","title":"电商广告数据分析师（J107211）"}
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:0a281c80-cf25-4fda-809d-65df6dd0f315","location":"北京市","posted":"2025-02-18","team":"MEG","title":"商业运营（J82555）"}
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:0a3d7dab-0214-4035-9459-ab3c36340c9b","location":"新加坡共和国","posted":"2026-05-15","skills":["ml","python"],"team":"MEG","title":"Ad Strategy Algorithm Engineer（J100050）"}
@@ -119,7 +120,7 @@
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:11d37e8c-4512-499f-9892-cc265eefd46a","location":"北京市","posted":"2025-10-23","team":"公共事务体系","title":"公共事务经理（网信方向）（J94846）"}
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:11df100e-b7c1-40c1-aba7-7e4c404e0b85","location":"北京市,上海市,深圳市,广州市","posted":"2026-10-27","team":"ACG","title":"汽车行业大客户销售经理（J106908）"}
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:11eec262-3524-43e7-9e45-1fbeb9364a67","location":"北京市","posted":"2026-08-03","team":"ACG","title":"CDN专项销售（J104052）"}
-{"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:120c16df-990a-4bf3-b3a0-7fedd8740ba9","location":"北京市","posted":"2026-09-02","skills":["sql","spark"],"team":"MEG","title":"算法工程师（J105297）"}
+{"closed_at":"2026-11-12","company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:120c16df-990a-4bf3-b3a0-7fedd8740ba9","location":"北京市","posted":"2026-09-02","skills":["sql","spark"],"team":"MEG","title":"算法工程师（J105297）"}
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:12154105-a49f-494f-9695-636146c976cc","location":"杭州市","posted":"2025-08-14","team":"MEG","title":"达人运营（J91807）"}
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:126d67de-084e-477c-b3f9-409374ac260a","location":"上海市","posted":"2026-09-10","skills":["crm","java","spring-boot","redis"],"team":"ACG","title":"Java开发工程师（J105747）"}
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:12e1409e-f4d0-42fb-86e2-0ddf66e6b5de","location":"北京市","posted":"2026-10-12","team":"ACG","title":"能源行业公有云与大模型解决方案（J106471）"}
@@ -242,7 +243,7 @@
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:26bf1cc2-13a8-494d-ac75-2b179e908b3c","location":"北京市","posted":"2025-04-28","team":"MEG","title":"电商大促活动运营（J84704）"}
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:26d30283-d2e5-4b10-a435-b5c5463acd00","location":"北京市","posted":"2026-10-20","skills":["c++","mysql","redis","llm","kafka"],"team":"IDG","title":"百度地图-后端研发工程师（J106728）"}
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:26d987d2-82fb-4fce-84e2-019a0aaf53ed","location":"北京市","posted":"2025-10-30","skills":["aws","azure","python","java","docker","kubernetes"],"team":"ACG","title":"用户上云方案工程师（J82498）"}
-{"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:2757d867-bb54-43de-8d14-d835e8559836","location":"北京市","posted":"2026-05-28","skills":["social_media"],"team":"公关部","title":"Global Communications Manager（J100146）","years":5}
+{"closed_at":"2026-11-12","company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:2757d867-bb54-43de-8d14-d835e8559836","location":"北京市","posted":"2026-05-28","skills":["social_media"],"team":"公关部","title":"Global Communications Manager（J100146）","years":5}
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:277e81f9-e0e6-4ee5-a379-3bfa0b636a8c","location":"北京市","posted":"2026-09-20","skills":["sql","python","tableau"],"team":"MEG","title":"经营分析师（J106081）"}
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:2782a41a-9624-4351-9090-fda0b300aa95","location":"深圳市","posted":"2026-08-12","team":"ACG","title":"云及大模型泛科技行业销售经理（J103531）"}
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:27f6383b-7d0e-4cfa-a1ff-2e56b77b7b6e","location":"横琴粤澳深度合作区","posted":"2025-11-20","team":"MEG","title":"客服（J93013）"}
@@ -307,6 +308,7 @@
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:2effd4e2-5a62-487c-8a02-54ed5928513e","location":"北京市","posted":"2026-01-09","team":"PSIG","title":"AI生态产品经理（J96518）"}
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:2f34ee33-18aa-4d44-97d1-7451f186f6d1","location":"北京市","posted":"2025-09-18","team":"ACG","title":"后端研发工程师（J93812）"}
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:2f3b6038-e43b-4561-9d3b-e3b0fc54b834","location":"北京市","posted":"2025-07-23","team":"小度科技","title":"产品营销经理(J13904)"}
+{"company":"Baidu","first_seen":"2026-11-12","id":"baidu:baidu:2f3eed75-ace7-49d0-95de-efa352bc40c8","location":"横琴粤澳深度合作区","posted":"2026-11-12","team":"PSIG","title":"海外服务顾问（J107080）"}
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:2f4826a0-c703-4de5-a75b-15120ee1e6d7","location":"北京市","posted":"2025-10-29","team":"MEG","title":"AI原生视频运营（J95020）"}
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:2f4aa04e-4184-47db-b7fb-da8be8b50ee9","location":"北京市","posted":"2026-08-24","team":"PSIG","title":"策略产品经理（内容推荐）（J104841）"}
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:2f7fdee8-b722-4246-8f0e-67e9c0eb536f","location":"北京市","posted":"2026-09-07","skills":["javascript","node.js","react","vue"],"team":"PSIG","title":"Windows客户端研发工程师（J96520）"}
@@ -499,7 +501,7 @@
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:495f5822-a881-4285-bf30-3bc5b1e376b1","location":"北京市,上海市,深圳市","posted":"2026-01-28","skills":["python","pytorch"],"team":"基础模型研发部","title":"大模型推理架构研发工程师（J95970）"}
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:497bea64-3c74-457e-8702-a511021f0576","location":"北京市","posted":"2026-08-12","team":"MEG","title":"ACG垂类运营（J104474）"}
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:499e4a87-b8ba-408c-9813-e6fc5a39cfd0","location":"北京市,上海市","posted":"2024-08-19","team":"昆仑芯-芯片研发部","title":"SoC设计工程师（J78465）"}
-{"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:49c7179e-ab14-4508-96f9-bdde7c300d6d","location":"北京市","posted":"2025-06-26","team":"ACG","title":"大模型AI算法工程师（J82518）"}
+{"closed_at":"2026-11-12","company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:49c7179e-ab14-4508-96f9-bdde7c300d6d","location":"北京市","posted":"2025-06-26","team":"ACG","title":"大模型AI算法工程师（J82518）"}
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:49d0b820-c2ff-4673-a47c-c764663c680f","location":"北京市","posted":"2026-07-20","team":"ACG","title":"大模型战略规划专家（J103354）"}
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:49ed0fd1-5d93-4837-b842-d70506bc5404","location":"北京市","posted":"2026-10-15","skills":["mysql","linux"],"team":"IDG","title":"公共出行服务端研发工程师（J106619）"}
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:49f6b192-cedf-4a5a-961d-5c28104f0953","location":"北京市","posted":"2026-01-15","team":"PSIG","title":"百度网盘B端iOS研发工程师（J96721）"}
@@ -642,7 +644,7 @@
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:5d5bde63-bbc6-41de-8773-48a329822dc8","location":"北京市","posted":"2025-12-22","skills":["kubernetes"],"team":"应用模型研发部","title":"Go研发工程师（J96054）"}
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:5d67c41e-c320-4bf3-ae7e-8b74a0ca7cda","location":"北京市","posted":"2026-10-09","skills":["c++","ci/cd"],"team":"ACG","title":"后端研发工程师（J106380）"}
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:5d707692-5e94-4925-a222-cdde6f36a287","location":"北京市","posted":"2025-01-02","skills":["php"],"team":"MEG","title":"开发测试工程师（服务端方向）（J81982）"}
-{"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:5d74fef3-d4b6-4e38-b292-c4f5b7009033","location":"北京市","posted":"2026-08-19","skills":["c++"],"team":"MEG","title":"C++/Golang高级研发工程师（J104800）"}
+{"closed_at":"2026-11-12","company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:5d74fef3-d4b6-4e38-b292-c4f5b7009033","location":"北京市","posted":"2026-08-19","skills":["c++"],"team":"MEG","title":"C++/Golang高级研发工程师（J104800）"}
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:5da20abe-b4f7-4f49-aa9d-71880db3bced","location":"北京市","posted":"2025-08-14","team":"MEG","title":"推荐策略产品（J91827）"}
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:5da2aaf3-21a7-4c96-8e3d-e07caa9819de","location":"北京市","posted":"2026-04-23","team":"IDG","title":"用户体验分析师（J99549）"}
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:5dc32d11-a9d1-4690-8a1d-55b3c82a7a97","location":"济南市","posted":"2025-05-27","skills":["c++","python"],"team":"ACG","title":"服务器硬件研发工程师（J85545）"}
@@ -668,7 +670,7 @@
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:60ad8fff-472c-4ba5-9a7c-f756b7c13147","location":"北京市","posted":"2026-11-03","skills":["linux"],"team":"IDG","title":"嵌入式软件工程师（J105936）"}
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:60c85b29-7004-4067-a08f-010bf5c28b61","location":"北京市","posted":"2025-10-15","team":"IDG","title":"无人车整车信息安全工程师（J94061）"}
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:60dfca98-e68d-4a93-98ab-f2d145b7a15e","location":"北京市","posted":"2026-09-20","team":"ACG","title":"能源电力解决方案架构师（J106073）"}
-{"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:612b7a29-88b0-4565-9f0e-38d5fe817709","location":"北京市","posted":"2026-09-04","team":"ACG","title":"AI漫剧产品经理（J105403）"}
+{"closed_at":"2026-11-12","company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:612b7a29-88b0-4565-9f0e-38d5fe817709","location":"北京市","posted":"2026-09-04","team":"ACG","title":"AI漫剧产品经理（J105403）"}
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:61448cf8-99ff-4265-b7dd-719f1f1b3cc9","location":"南昌市","posted":"2026-09-17","team":"IDG","title":"设备电气工程师（J105376）"}
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:614b68a5-87d1-4384-b201-c86205a812e5","location":"北京市","posted":"2026-07-01","team":"PSIG","title":"商业增长产品经理（J101334）"}
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:6182a4d3-51af-4396-af24-a3d690326bff","location":"北京市","posted":"2026-01-16","team":"PSIG","title":"AI产品经理（J96736）"}
@@ -806,7 +808,7 @@
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:74d632ec-090c-4c79-886c-eba14d2708f4","location":"北京市","posted":"2026-01-26","team":"PSIG","title":"百度网盘APP-AI产品经理（工具体验方向）（J97004）"}
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:74dcb328-91db-41e7-adb3-d695fa3cb1e7","location":"北京市","posted":"2026-10-21","team":"ACG","title":"秒哒-AI产品经理（用户增长）（J98908）"}
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:74dd4108-b77c-4cf8-b46c-9af8581e8356","location":"北京市,深圳市","posted":"2026-03-05","skills":["python"],"team":"ACG","title":"分布式计算研发工程师（J92969）"}
-{"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:752919be-3d22-4efb-ac17-81ead71bd278","location":"北京市","posted":"2026-09-22","team":"MEG","title":"AI生态运营（J106141）"}
+{"closed_at":"2026-11-12","company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:752919be-3d22-4efb-ac17-81ead71bd278","location":"北京市","posted":"2026-09-22","team":"MEG","title":"AI生态运营（J106141）"}
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:755092f4-16c7-4c3b-b87d-3f6e3b99e089","location":"深圳市","posted":"2026-11-03","skills":["pytorch","tensorflow","python","sql","spark"],"team":"MEG","title":"广告算法工程师（J107071）"}
 {"company":"Baidu","first_seen":"2026-11-10","id":"baidu:baidu:75a66775-748e-4db0-8279-59c9f40bae31","location":"深圳市,广州市","posted":"2026-11-10","team":"ACG","title":"大模型即云计算大客户销售-华南游戏方向（J107254）"}
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:75d3af47-7f79-4d71-862b-6fbca577bb19","location":"北京市","posted":"2026-04-23","skills":["go","python","kubernetes"],"team":"ACG","title":"伐谋-Agent研发工程师（J99560）"}
@@ -1047,7 +1049,7 @@
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:9419e4f6-ed8d-46a7-8d55-08f17b488283","location":"北京市","posted":"2026-10-10","team":"IDG","title":"用户增长产品经理（J106413）"}
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:94a34253-f5c2-4f19-bdb2-e89861d090cd","location":"北京市","posted":"2026-02-12","team":"PSIG","title":"用户增长（媒体商务）（J97375）"}
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:94ae343d-0673-40ab-98a3-99c723690c37","location":"北京市","posted":"2026-07-17","skills":["pytorch","llm"],"team":"PSIG","title":"智能体算法工程师（J102787）"}
-{"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:95107363-3953-4833-a386-91191e712180","location":"北京市","posted":"2026-09-24","team":"PSIG","title":"海外产品运营（内容方向）（J106248）"}
+{"closed_at":"2026-11-12","company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:95107363-3953-4833-a386-91191e712180","location":"北京市","posted":"2026-09-24","team":"PSIG","title":"海外产品运营（内容方向）（J106248）"}
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:9513a943-675e-4f2e-bf3b-c8c359ecd8e7","location":"上海市","posted":"2025-06-05","skills":["node.js","mysql","redis"],"team":"MEG","title":"NodeJS 工程师（J85364）"}
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:951f9ec6-6ca0-44bc-9dc3-ba85f493bb44","location":"北京市","posted":"2023-08-02","skills":["c++","linux","python","java"],"team":"小度科技","title":"小度质量部_客户端测试开发工程师(J18687)"}
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:9537268b-19a6-4838-8d34-c320741a693b","location":"新加坡共和国","posted":"2026-01-26","team":"MEG","title":"国际化业务合规专家（J97016）"}
@@ -1133,7 +1135,7 @@
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:a3365fbd-7903-4e3f-af5e-9eeab289b224","location":"深圳市,广州市","posted":"2026-07-09","team":"ACG","title":"渠道经理（J102257）"}
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:a3496738-4765-45a1-9b8f-11180f75b7ae","location":"北京市","posted":"2026-10-14","team":"MEG","title":"AIGC策略产品经理（J106581）"}
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:a3b8af55-1cc7-4636-bcb3-dae45364880e","location":"北京市","posted":"2025-04-09","team":"MEG","title":"Java工程师（J84154）"}
-{"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:a3cc9e9f-6cea-453d-8c44-e7790cdc9b83","location":"北京市","posted":"2026-08-05","skills":["python","mysql","redis","kafka"],"team":"ACG","title":"DuMate后端研发工程师（生态机制 / 增长运营方向）（J104121）"}
+{"closed_at":"2026-11-12","company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:a3cc9e9f-6cea-453d-8c44-e7790cdc9b83","location":"北京市","posted":"2026-08-05","skills":["python","mysql","redis","kafka"],"team":"ACG","title":"DuMate后端研发工程师（生态机制 / 增长运营方向）（J104121）"}
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:a3ce7118-c8c6-40c1-a929-e7e7a98b34b9","location":"北京市,杭州市","posted":"2025-08-21","team":"MEG","title":"商家运营（直播&短视频方向）（J92145）"}
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:a3eb8e4a-4d97-42a7-8447-601c3b643198","location":"北京市","posted":"2026-01-20","team":"基础模型研发部","title":"Java开发工程师（J95420）"}
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:a3f6bc10-d2ea-4476-aff6-93701b59f5e4","location":"北京市","posted":"2025-10-23","skills":["python"],"team":"IDG","title":"平台开发及部署工程师（J88831）"}
@@ -1147,7 +1149,7 @@
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:a4a1cbaf-3d96-40d1-8799-cbddebc90168","location":"北京市","posted":"2025-07-13","team":"MEG","title":"AIGC应用算法leader（J89867）"}
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:a4be70c8-b1dd-4f7a-8fba-8b6c1266f14f","location":"北京市","posted":"2026-03-17","team":"IDG","title":"百度地图 2G 商务负责人（出行生态 / 政府事务方向）（J98313）"}
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:a4d419b5-2e22-4800-8bd7-c93e56cdfe6e","location":"北京市,上海市,深圳市,广州市","posted":"2026-06-09","team":"PSIG","title":"金融行业BD（J100591）"}
-{"closed_at":"2026-11-11","company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:a4f2ee40-0a28-4365-bd43-4273a9eb9fb7","location":"北京市","posted":"2024-08-08","skills":["mongodb","react","angular","spark"],"team":"MEG","title":"风控平台后端研发工程师（J78163）"}
+{"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:a4f2ee40-0a28-4365-bd43-4273a9eb9fb7","location":"北京市","posted":"2024-08-08","skills":["mongodb","react","angular","spark"],"team":"MEG","title":"风控平台后端研发工程师（J78163）"}
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:a4fa53c5-0360-4033-849b-f24b4b001c6a","location":"北京市","posted":"2024-09-05","skills":["c++","python","redis"],"team":"IDG","title":"C++研发工程师（路线&数据)（J79136）"}
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:a515eb61-f75d-4a39-b156-ffd8bb1bc6dd","location":"北京市","posted":"2026-04-01","skills":["azure"],"team":"ACG","title":"公有云解决方案架构师（J96957）"}
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:a523a1f4-536a-4c9e-8b2c-6e6a9d71be92","location":"北京市,上海市","posted":"2026-01-22","team":"MEG","title":"出海AI创新产品美学中心负责人（J96938）"}
@@ -1311,6 +1313,7 @@
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:bfaaad26-6e70-408a-8169-79ed20ddcc6b","location":"北京市","posted":"2026-11-03","team":"MEG","title":"健康AI产品经理（J106859）"}
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:bfc48fb5-5eee-46b7-a03f-5e8529b49277","location":"北京市","posted":"2026-04-17","skills":["llm"],"team":"MEG","title":"Agent产品经理（电商方向）（J99416）"}
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:bfdfca73-14ff-4a49-9ec0-9c546e195e06","location":"北京市","posted":"2025-09-03","skills":["javascript","typescript","react","vue"],"team":"基础模型研发部","title":"飞桨平台前端研发工程师（J93118）"}
+{"company":"Baidu","first_seen":"2026-11-12","id":"baidu:baidu:bff5b7bd-372b-4c3d-aeb0-eeb663fdea8c","location":"北京市","posted":"2026-11-11","team":"IDG","title":"打车业务高级运营（B端方向）（J107275）"}
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:c026b4e1-5d61-4337-8338-ef563c6a2c38","location":"北京市","posted":"2026-03-09","team":"PSIG","title":"AI 生态方向 Go 后端开发工程师（J97847）"}
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:c0720c1e-458c-4b19-bf46-8406c3cc47aa","location":"北京市","posted":"2025-07-10","team":"MEG","title":"iOS开发工程师-绘想APP（J89268）"}
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:c07aa652-06b5-401d-99e2-38d8dcd2d993","location":"北京市","posted":"2024-04-02","team":"IDG","title":"高级电源设计工程师（J70706）"}
@@ -1384,7 +1387,7 @@
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:ca96c9c5-b629-4b78-a129-7a7fae722d5b","location":"澄迈县","posted":"2026-06-23","team":"MEG","title":"内容风控与数据标注专员（J101010）"}
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:caa67375-d95c-4329-8d1f-42de27293da5","location":"上海市,广州市","posted":"2024-09-10","team":"IDG","title":"Android开发（J72908）"}
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:cabdeed5-43d6-465b-be82-cb77740634fd","location":"北京市","posted":"2026-03-04","skills":["javascript","typescript","vue","node.js","ci/cd"],"team":"PSIG","title":"前端开发工程师（J97790）"}
-{"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:cb3a8aef-0b37-4bfb-b818-ac1396422f69","location":"北京市","posted":"2026-09-04","team":"财务与投资体系","title":"市场服务-采购经理（J105339）"}
+{"closed_at":"2026-11-12","company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:cb3a8aef-0b37-4bfb-b818-ac1396422f69","location":"北京市","posted":"2026-09-04","team":"财务与投资体系","title":"市场服务-采购经理（J105339）"}
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:cb740936-7299-45f0-a4a1-76d00ef049b9","location":"北京市","posted":"2025-04-10","team":"IDG","title":"策略产品经理（J84330）"}
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:cb813c3a-f041-4bbe-b06f-8dc2c62e6aaf","location":"北京市","posted":"2026-03-11","team":"MEG","title":"AI产品经理（J98328）"}
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:cb926e4a-080d-4b79-a088-957ecf4d5bda","location":"北京市","posted":"2026-10-29","team":"PSIG","title":"后端研发Leader—文档引擎方向（J106800）"}
@@ -1402,7 +1405,7 @@
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:cd17ce10-24b7-4ef3-a391-87fa2da719bb","location":"北京市","posted":"2026-01-27","team":"ACG","title":"项目采购经理（J97056）"}
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:cd247ef2-eb4a-41be-8cb6-9ea9166ba1f4","location":"北京市","posted":"2025-05-09","team":"技术中台群组","title":"生态合作方案专家（J85042）"}
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:cd2e9804-6efb-4a08-becb-c605dc90ffda","location":"北京市","posted":"2026-10-22","team":"ACG","title":"解决方案售前工程师-物理AI数据服务方向（J106810）"}
-{"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:cd461e75-80c6-4b58-ac1a-01c8f8ef7927","location":"北京市","posted":"2026-09-14","skills":["spark","kafka"],"team":"ACG","title":"Java研发工程师（J105837）"}
+{"closed_at":"2026-11-12","company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:cd461e75-80c6-4b58-ac1a-01c8f8ef7927","location":"北京市","posted":"2026-09-14","skills":["spark","kafka"],"team":"ACG","title":"Java研发工程师（J105837）"}
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:cda9bc35-badd-4a93-a65d-1ad1dad95d62","location":"北京市,杭州市","posted":"2025-08-14","team":"MEG","title":"电商行业运营（大服饰方向）（J91571）"}
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:cdb4ac09-6ab8-4045-a71a-275af2900859","location":"北京市","posted":"2025-06-23","team":"MEG","title":"AI搜索产品经理（J86573）"}
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:cdcb79d0-9879-4d08-8506-905b197264fb","location":"深圳市,新加坡共和国","posted":"2025-09-22","skills":["python","redis","kafka","kubernetes","spark"],"team":"MEG","title":"Backend Software Engineer（J93905）"}
@@ -1425,9 +1428,9 @@
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:d0ac3b91-9f24-40a6-b2bb-31dd4d36167f","location":"北京市","posted":"2025-08-28","team":"MEG","title":"AIGC 用户运营（J92828）"}
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:d0bbccde-0bb9-45a3-843a-548f7257415c","location":"北京市","posted":"2024-07-01","skills":["c++","java","linux","python","php","javascript","mysql"],"team":"IDG","title":"感知测试（J73458）"}
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:d0d2ba59-2c95-4c18-a785-c52b0e62537c","location":"北京市","posted":"2026-10-14","skills":["c++","python"],"team":"应用模型研发部","title":"大模型推理研发工程师（J106548）"}
-{"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:d0e121e6-2546-49d9-8ef6-d41d4f43faa6","location":"北京市","posted":"2026-04-15","team":"ACG","title":"渠道销售-SaaS拓展方向（J99330）"}
+{"closed_at":"2026-11-12","company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:d0e121e6-2546-49d9-8ef6-d41d4f43faa6","location":"北京市","posted":"2026-04-15","team":"ACG","title":"渠道销售-SaaS拓展方向（J99330）"}
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:d12574c4-09ae-48de-832c-69c49399c408","location":"北京市","posted":"2023-04-10","team":"ACG","title":"采购与供应管理专员/主管-IDC设备方向（ToB/ToG）（J57831）"}
-{"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:d1267d6c-8748-44d6-a40f-84a51ba59b06","location":"北京市","posted":"2026-08-05","team":"PSIG","title":"海外内容消费产品经理（J103811）"}
+{"closed_at":"2026-11-12","company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:d1267d6c-8748-44d6-a40f-84a51ba59b06","location":"北京市","posted":"2026-08-05","team":"PSIG","title":"海外内容消费产品经理（J103811）"}
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:d15a7913-31cb-4eb8-a1a3-944b831d34cc","location":"深圳市,新加坡共和国","posted":"2025-09-22","skills":["python"],"team":"MEG","title":"Agent Research and Development Engineer（J93903）"}
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:d16b195d-394e-44e1-9612-38d351f3ffa2","location":"北京市,上海市,深圳市","posted":"2025-07-15","skills":["c++","pytorch","tensorflow"],"team":"昆仑芯-平台软件研发部","title":"昆仑芯-深度学习高性能计算研发工程师（J90411）"}
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:d16d9b60-63db-43c1-a72c-3c53b678a970","location":"北京市","posted":"2025-09-17","team":"IDG","title":"无人车车身网联域控系统工程师（J91956）"}
@@ -1497,7 +1500,7 @@
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:dc42bf8c-6653-4182-841c-ded2ff031ab1","location":"深圳市","posted":"2026-03-20","team":"MEG","title":"国际化商业化产品经理（J98667）"}
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:dc4991b3-0497-4539-bd8b-0e8baf6ee5be","location":"北京市,上海市,深圳市","posted":"2026-09-09","skills":["erp","crm","python","java","linux"],"team":"ACG","title":"DuMate智能体前沿部署工程师FDE（J105691）"}
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:dc56babb-f97a-45d5-be88-d0249572707a","location":"北京市","posted":"2024-11-21","team":"MEG","title":"策略运营专家（J77992）"}
-{"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:dc59decc-d2d4-4f68-aa30-d1d91c7986cc","location":"深圳市","posted":"2026-06-10","team":"MEG","title":"商务拓展经理（J100622）"}
+{"closed_at":"2026-11-12","company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:dc59decc-d2d4-4f68-aa30-d1d91c7986cc","location":"深圳市","posted":"2026-06-10","team":"MEG","title":"商务拓展经理（J100622）"}
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:dc8f28f4-eba7-481b-b9f7-a354f4f1c2d6","location":"北京市","posted":"2026-01-20","skills":["redis"],"team":"PSIG","title":"后端高级工程师（J96723）"}
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:dcb5a6dc-f99a-4350-a39e-f123c57aa4bd","location":"北京市","posted":"2025-07-02","team":"MEG","title":"搜索产品经理（J86928）"}
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:dcbeadf8-988e-41a3-a572-952e0dfdf8e6","location":"北京市","posted":"2026-02-06","skills":["javascript","typescript","react","vue"],"team":"基础模型研发部","title":"飞桨平台前端研发工程师（J93118）"}
@@ -1612,7 +1615,7 @@
 {"closed_at":"2026-11-10","company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:f0cd063a-8421-4864-aeab-626f999930bd","location":"北京市","posted":"2026-10-08","team":"IDG","title":"IDG海外业务供应链采购经理（J106116）"}
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:f0cec391-aad2-4d3e-a230-043f184511c3","location":"北京市","posted":"2026-03-25","team":"MEG","title":"机构产品运营（J98806）"}
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:f0d81ef5-1de4-4374-a38a-bead73fd835d","location":"北京市","posted":"2026-03-03","skills":["javascript","vue","ci/cd","typescript","node.js"],"team":"PSIG","title":"web前端工程师（J97442）"}
-{"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:f0fec2cc-c934-4b02-90a8-49012ba06b76","location":"北京市","posted":"2026-07-20","team":"PSIG","title":"交互体验设计师（J103365）"}
+{"closed_at":"2026-11-12","company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:f0fec2cc-c934-4b02-90a8-49012ba06b76","location":"北京市","posted":"2026-07-20","team":"PSIG","title":"交互体验设计师（J103365）"}
 {"closed_at":"2026-11-10","company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:f13c1479-fa9d-4298-b330-7d8d3d2d37e2","location":"深圳市","posted":"2026-08-10","team":"ACG","title":"渠道解决方案架构师（J104308）"}
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:f1452f19-76b8-4736-b26a-b6f403fa1c7f","location":"北京市","posted":"2025-07-02","team":"MEG","title":"电商视觉大模型算法工程师（J86922）"}
 {"company":"Baidu","first_seen":"2026-11-09","id":"baidu:baidu:f1e9cdf3-2974-4210-ab20-f256c697b8cc","location":"北京市,上海市","posted":"2026-10-14","team":"ACG","title":"解决方案架构师（J106298）"}

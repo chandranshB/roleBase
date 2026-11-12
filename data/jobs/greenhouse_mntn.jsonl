@@ -1,6 +1,5 @@
 {"closed_at":"2026-08-27","company":"MNTN","first_seen":"2026-05-28","id":"greenhouse:mntn:7961425","location":"REMOTE","posted":"2026-05-27","remote":true,"team":"Engineering","title":"Senior Software Engineer - CDS"}
 {"closed_at":"2026-08-19","company":"MNTN","first_seen":"2026-06-26","id":"greenhouse:mntn:8029500","location":"United States","posted":"2026-06-25","team":"Engineering","title":"Senior Data Analyst - Data Monitoring"}
-{"closed_at":"2026-08-13","company":"MNTN","first_seen":"2026-07-03","id":"greenhouse:mntn:8029744","location":"United States","posted":"2026-07-02","team":"Engineering","title":"Senior Security Operations Engineer"}
 {"closed_at":"2026-08-15","company":"MNTN","first_seen":"2026-07-07","id":"greenhouse:mntn:8047145","location":"United States","posted":"2026-07-06","team":"Engineering","title":"Solutions Architect"}
 {"closed_at":"2026-08-27","company":"MNTN","first_seen":"2026-07-10","id":"greenhouse:mntn:8054134","location":"United States","posted":"2026-07-09","team":"Engineering","title":"IT Systems Administrator"}
 {"closed_at":"2026-11-08","company":"MNTN","employment":"contract","first_seen":"2026-10-19","id":"greenhouse:mntn:8055442","location":"United States","posted":"2026-07-10","skills":["figma"],"team":"Marketing","title":"Contractor - Email Designer"}
@@ -37,7 +36,7 @@
 {"closed_at":"2026-11-11","company":"MNTN","first_seen":"2026-10-20","id":"greenhouse:mntn:8302372","location":"United States","posted":"2026-10-20","team":"Technology","title":"Digital Strategy Manager - Support Experience","years":2}
 {"company":"MNTN","first_seen":"2026-11-08","id":"greenhouse:mntn:8303230","location":"United States","posted":"2026-11-03","team":"Technology","title":"Senior Sales Engineer","years":6}
 {"company":"MNTN","first_seen":"2026-10-22","id":"greenhouse:mntn:8311470","location":"United States","posted":"2026-10-22","team":"Technology","title":"Principal Strategist, Ad Measurement","years":8}
-{"company":"MNTN","first_seen":"2026-10-26","id":"greenhouse:mntn:8318870","location":"United States","posted":"2026-10-26","skills":["crm","salesforce"],"team":"Revenue","title":"Customer Success Manager, Retail & Consumer Goods","years":3}
+{"closed_at":"2026-11-12","company":"MNTN","first_seen":"2026-10-26","id":"greenhouse:mntn:8318870","location":"United States","posted":"2026-10-26","skills":["crm","salesforce"],"team":"Revenue","title":"Customer Success Manager, Retail & Consumer Goods","years":3}
 {"closed_at":"2026-11-09","company":"MNTN","first_seen":"2026-11-08","id":"greenhouse:mntn:8337519","location":"United States","posted":"2026-10-30","skills":["payroll","excel"],"team":"Finance","title":"Payroll Manager","years":5}
 {"company":"MNTN","first_seen":"2026-11-08","id":"greenhouse:mntn:8352910","location":"United States","posted":"2026-11-04","reposts":1,"skills":["forecasting"],"team":"Revenue","title":"Vertical Lead","years":5}
 {"company":"MNTN","first_seen":"2026-11-09","id":"greenhouse:mntn:8357103","location":"United States","posted":"2026-11-09","skills":["gcp","aws","kubernetes","ci/cd"],"team":"Engineering","title":"Chief Information Officer"}

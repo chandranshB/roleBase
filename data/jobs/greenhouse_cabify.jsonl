@@ -4,7 +4,6 @@
 {"closed_at":"2026-10-23","company":"Cabify","first_seen":"2026-10-19","id":"greenhouse:cabify:8454680002","location":"Madrid","posted":"2026-03-09","team":"Finance","title":"Treasury Analyst"}
 {"company":"Cabify","first_seen":"2026-10-19","id":"greenhouse:cabify:8497876002","location":"Madrid","posted":"2026-04-08","skills":["sap","tableau","sql"],"team":"Finance","title":"Finance Systems Specialist"}
 {"company":"Cabify","first_seen":"2026-10-19","id":"greenhouse:cabify:8534443002","location":"Madrid","posted":"2026-05-04","skills":["ml","python","sql"],"team":"Technology","title":"Senior Data Scientist","years":5}
-{"closed_at":"2026-08-13","company":"Cabify","first_seen":"2026-05-24","id":"greenhouse:cabify:8542583002","location":"Madrid","posted":"2026-05-11","team":"Technology","title":"Senior Product Designer"}
 {"company":"Cabify","first_seen":"2026-10-19","id":"greenhouse:cabify:8549431002","location":"Madrid","posted":"2026-05-14","skills":["ml","python","sql"],"team":"Technology","title":"Data Scientist, Applied Science","years":3}
 {"company":"Cabify","first_seen":"2026-10-19","id":"greenhouse:cabify:8558042002","location":"Buenos Aires","posted":"2026-05-20","skills":["tableau"],"team":"Growth","title":"Growth Rider Manager"}
 {"company":"Cabify","first_seen":"2026-10-19","id":"greenhouse:cabify:8559735002","location":"Chile","posted":"2026-05-22","skills":["jira","python"],"team":"Technology","title":"IT Analyst"}
@@ -86,7 +85,7 @@
 {"closed_at":"2026-10-28","company":"Cabify","first_seen":"2026-10-19","id":"greenhouse:cabify:8859197002","location":"Santiago, Chile","posted":"2026-09-30","skills":["salesforce","six_sigma"],"team":"People","title":"Analista de Soporte y Automatización CX"}
 {"closed_at":"2026-10-28","company":"Cabify","first_seen":"2026-10-19","id":"greenhouse:cabify:8859206002","location":"Santiago, Chile","posted":"2026-09-30","skills":["salesforce","six_sigma"],"team":"People","title":"ANALISTA DE SOPORTE & AUTOMATIZACIÓN (B2B)"}
 {"company":"Cabify","first_seen":"2026-10-19","id":"greenhouse:cabify:8859717002","location":"Lima","posted":"2026-10-01","team":"Customer Experience & Operations","title":"Customer Excellence Associate - Live Ops"}
-{"company":"Cabify","first_seen":"2026-10-19","id":"greenhouse:cabify:8861749002","location":"Santiago de Chile","posted":"2026-10-01","skills":["sql","python"],"team":"Customer Experience & Operations","title":"Operational Excellence Specialist"}
+{"company":"Cabify","first_seen":"2026-10-19","id":"greenhouse:cabify:8861749002","location":"Santiago de Chile","posted":"2026-10-01","skills":["sql","python"],"team":"Customer Experience & Operations","title":"Especialista de Excelencia Operacional"}
 {"closed_at":"2026-10-23","company":"Cabify","first_seen":"2026-10-19","id":"greenhouse:cabify:8863024002","location":"Madrid","posted":"2026-10-02","skills":["procurement"],"team":"Finance","title":"Procurement Analyst Trainee"}
 {"closed_at":"2026-11-08","company":"Cabify","first_seen":"2026-10-19","id":"greenhouse:cabify:8868269002","location":"Lima","posted":"2026-10-05","skills":["sql"],"team":"Growth","title":"Growth Specialist"}
 {"closed_at":"2026-11-08","company":"Cabify","first_seen":"2026-10-19","id":"greenhouse:cabify:8870926002","location":"Santiago de Chile","posted":"2026-10-06","skills":["python"],"team":"Finance","title":"Analista contable (Reemplazo)"}
@@ -130,3 +129,4 @@
 {"company":"Cabify","first_seen":"2026-11-11","id":"greenhouse:cabify:8937455002","location":"Madrid","posted":"2026-11-11","team":"Legal","title":"Legal Analyst (Temporal)"}
 {"company":"Cabify","first_seen":"2026-11-11","id":"greenhouse:cabify:8937520002","location":"Bogotá","posted":"2026-11-11","skills":["tableau","sql","llm"],"team":"Customer Experience & Operations","title":"Practicante de Ingeniería Industrial – Operaciones y Customer Support"}
 {"company":"Cabify","first_seen":"2026-11-11","id":"greenhouse:cabify:8937906002","location":"Lima","posted":"2026-11-11","skills":["crm"],"team":"Marketing","title":"Brand & Performance Specialist"}
+{"company":"Cabify","first_seen":"2026-11-12","id":"greenhouse:cabify:8938546002","location":"Bogotá","posted":"2026-11-11","skills":["crm","salesforce"],"team":"B2B","title":"Sales Development Representative (B2B)"}
