@@ -33,7 +33,7 @@
 {"company":"Youth Opportunity","employment":"full_time","first_seen":"2026-10-30","id":"bamboohr:youthopportunity:628","location":"Rockwood, Tennessee","team":"Operations","title":"Youth Care Specialist"}
 {"company":"Youth Opportunity","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:youthopportunity:638","location":"Nashville, Tennessee","team":"Operations","title":"Transporter"}
 {"company":"Youth Opportunity","employment":"full_time","first_seen":"2026-10-30","id":"bamboohr:youthopportunity:641","location":"Crestview, Florida","team":"Clinical Services","title":"Case Manager"}
-{"company":"Youth Opportunity","employment":"full_time","first_seen":"2026-10-30","id":"bamboohr:youthopportunity:649","location":"Nashville, Tennessee","team":"Administration","title":"Assistant Facility Administrator"}
+{"closed_at":"2026-11-12","company":"Youth Opportunity","employment":"full_time","first_seen":"2026-10-30","id":"bamboohr:youthopportunity:649","location":"Nashville, Tennessee","team":"Administration","title":"Assistant Facility Administrator"}
 {"company":"Youth Opportunity","employment":"full_time","first_seen":"2026-10-30","id":"bamboohr:youthopportunity:667","location":"Bartlett, Tennessee","team":"Operations","title":"Mental Health Tech"}
 {"closed_at":"2026-11-08","company":"Youth Opportunity","employment":"full_time","first_seen":"2026-10-30","id":"bamboohr:youthopportunity:669","location":"Kissimmee, Florida","team":"Clinical Services","title":"Mental Health Therapist"}
 {"company":"Youth Opportunity","employment":"full_time","first_seen":"2026-10-30","id":"bamboohr:youthopportunity:675","location":"Brooksville, Florida","team":"Operations","title":"Mental Health Tech"}
@@ -50,7 +50,7 @@
 {"company":"Youth Opportunity","employment":"full_time","first_seen":"2026-10-30","id":"bamboohr:youthopportunity:741","location":"Kissimmee, Florida","team":"8000 Health Services","title":"Registered Nurse - RN"}
 {"company":"Youth Opportunity","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:youthopportunity:760","location":"Bartlett, Tennessee","team":"Health Services","title":"Licensed Practical Nurse"}
 {"company":"Youth Opportunity","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:youthopportunity:763","location":"Rockwood, Tennessee","team":"10000 Operation Serv","title":"Assistant Facility Administrator"}
-{"company":"Youth Opportunity","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:youthopportunity:764","location":"Nashville, Tennessee","team":"Health Services","title":"Health Services Administrator - Charge RN"}
+{"closed_at":"2026-11-12","company":"Youth Opportunity","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:youthopportunity:764","location":"Nashville, Tennessee","team":"Health Services","title":"Health Services Administrator - Charge RN"}
 {"company":"Youth Opportunity","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:youthopportunity:766","location":"Hastings, Florida","team":"8000 Health Services","title":"Registered Nurse - RN"}
 {"company":"Youth Opportunity","employment":"full_time","first_seen":"2026-10-30","id":"bamboohr:youthopportunity:767","location":"Nashville, Tennessee","team":"Operations","title":"Residential Shift Supervisor"}
 {"closed_at":"2026-11-08","company":"Youth Opportunity","employment":"full_time","first_seen":"2026-10-30","id":"bamboohr:youthopportunity:768","location":"Memphis, Tennessee","team":"Clinical Services","title":"Mental Health Therapist"}
@@ -63,8 +63,8 @@
 {"closed_at":"2026-11-10","company":"Youth Opportunity","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:youthopportunity:782","location":"Nashville, Tennessee","team":"Human Resource","title":"HR Business Manager"}
 {"company":"Youth Opportunity","employment":"full_time","first_seen":"2026-10-30","id":"bamboohr:youthopportunity:783","location":"Lebanon, Tennessee","team":"Clinical Services","title":"Clinical Director"}
 {"company":"Youth Opportunity","first_seen":"2026-10-30","id":"bamboohr:youthopportunity:784","location":"Lebanon, Tennessee","team":"Clinical Services","title":"Mental Health Therapist"}
-{"company":"Youth Opportunity","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:youthopportunity:786","location":"Troy, Ohio","title":"Facility Administrator"}
-{"company":"Youth Opportunity","employment":"full_time","first_seen":"2026-10-30","id":"bamboohr:youthopportunity:787","location":"Troy, Ohio","title":"HR Business Manager"}
+{"closed_at":"2026-11-12","company":"Youth Opportunity","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:youthopportunity:786","location":"Troy, Ohio","title":"Facility Administrator"}
+{"closed_at":"2026-11-12","company":"Youth Opportunity","employment":"full_time","first_seen":"2026-10-30","id":"bamboohr:youthopportunity:787","location":"Troy, Ohio","title":"HR Business Manager"}
 {"company":"Youth Opportunity","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:youthopportunity:788","location":"Troy, Ohio","title":"Staff Development Trainer"}
 {"closed_at":"2026-11-11","company":"Youth Opportunity","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:youthopportunity:789","location":"Troy, Ohio","title":"Clinical Director"}
 {"company":"Youth Opportunity","employment":"full_time","first_seen":"2026-10-30","id":"bamboohr:youthopportunity:790","location":"Troy, Ohio","title":"Mental Health Therapist"}
@@ -94,3 +94,4 @@
 {"company":"Youth Opportunity","employment":"full_time","first_seen":"2026-11-12","id":"bamboohr:youthopportunity:818","location":"Kissimmee, Florida","team":"Health Services","title":"Licensed Practical Nurse (LPN)"}
 {"company":"Youth Opportunity","employment":"full_time","first_seen":"2026-11-11","id":"bamboohr:youthopportunity:819","location":"Memphis, Tennessee","team":"Education Services","title":"Teachers Assistant (Paraprofessional)"}
 {"company":"Youth Opportunity","employment":"full_time","first_seen":"2026-11-12","id":"bamboohr:youthopportunity:820","location":"Kissimmee, Florida","team":"Operations","title":"Residential Shift Supervisor"}
+{"company":"Youth Opportunity","employment":"full_time","first_seen":"2026-11-12","id":"bamboohr:youthopportunity:821","location":"Brooksville, Florida","team":"5000 Education Servi","title":"Director of Education"}

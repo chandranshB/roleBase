@@ -56,6 +56,7 @@
 {"company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:c986d7b0-ff38-4ccb-a5bf-aafa576a69a5","location":"US - New York","pay":[180000,220000,"USD"],"skills":["excel","sql","python"],"title":"Pricing Manager"}
 {"company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:ca06a7ac-4bfb-4f1a-93bb-cf3af5fd3edc","location":"UK - London","skills":["ml","llm","ci/cd","python","sql","azure","databricks","docker"],"title":"Data Scientist"}
 {"company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:cc5fa3d0-058b-4efd-a6b0-1a5df4a03d4c","location":"UK - London","title":"Senior Reporting Accountant"}
+{"company":"CFC","first_seen":"2026-11-12","id":"pinpoint:cfc:d0013fbb-45d3-4f7b-a798-559c75b5ac88","location":"US - New York","pay":[68000,90000,"USD"],"skills":["ms_office"],"title":"Transaction Liability Underwriting Assistant"}
 {"company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:d79607fb-62fc-4827-89eb-b544cd9c34ea","location":"US - New York","pay":[120000,160000,"USD"],"title":"Life Science Underwriter"}
 {"company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:dbcd3571-1a6b-4d18-9cc9-1ee629a9e4c8","location":"AU - Melbourne","skills":["customer_service"],"title":"Claims Specialist","years":3}
 {"company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:de43b1e1-b78c-463e-a755-0593c117db00","location":"US - New York","pay":[90000,100000,"USD"],"skills":["ms_office"],"title":"Cyber SME Underwriter"}
@@ -67,6 +68,6 @@
 {"company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:ebed4854-3838-461c-912c-ab58e2eb5328","location":"UK - London","title":"Underwriter, Portfolio Partnerships"}
 {"company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:f1e906ba-a1c0-4129-8dfe-f323d86c4abc","location":"US - New York","pay":[110000,130000,"USD"],"title":"Insurance Paralegal, US Legal & Compliance"}
 {"company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:f2bac3d3-aa22-46e2-8219-dbb0df0e55dc","location":"UK - London","skills":["budgeting","forecasting","financial_modeling","excel"],"title":"Senior FP&A Manager"}
-{"company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:f3aabe89-dd3f-40c0-9bfe-456e19f53a2b","location":"US - New York","pay":[125000,135000,"USD"],"skills":["customer_service","azure","jira"],"title":"End User Technology (EUT) – Services Engineer, US","years":7}
+{"closed_at":"2026-11-12","company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:f3aabe89-dd3f-40c0-9bfe-456e19f53a2b","location":"US - New York","pay":[125000,135000,"USD"],"skills":["customer_service","azure","jira"],"title":"End User Technology (EUT) – Services Engineer, US","years":7}
 {"company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:f5263bf0-ccef-4703-930b-4d2baa8fc782","location":"UK - London","skills":["ci/cd","supply_chain"],"title":"Principal Product Security Engineer"}
 {"company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:f93f6bc2-386b-4234-852f-843da308c7d2","location":"UK - London","skills":["ci/cd"],"title":"Senior Security Engineer"}

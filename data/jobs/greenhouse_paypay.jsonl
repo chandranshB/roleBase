@@ -1,5 +1,6 @@
 {"company":"PayPay Corporation","first_seen":"2026-11-09","id":"greenhouse:paypay:4089245004","location":"Hybrid","posted":"2021-09-03","skills":["ms_office"],"team":"法人/加盟店営業","title":"エンタープライズ営業担当"}
 {"company":"PayPay Corporation","first_seen":"2026-11-09","id":"greenhouse:paypay:4089251004","location":"Hybrid","posted":"2021-09-03","skills":["typescript","javascript","vue","react","docker","kubernetes","aws","terraform"],"team":"Product Engineering","title":"Frontend Engineer","years":5}
+{"company":"PayPay Corporation","first_seen":"2026-11-12","id":"greenhouse:paypay:4089330004","location":"Hybrid","posted":"2021-09-03","skills":["javascript","sql"],"team":"Enterprise Engineering (Japanese Speaker)","title":"業務改善エンジニア（ローコード開発・業務自動化）"}
 {"company":"PayPay Corporation","first_seen":"2026-11-09","id":"greenhouse:paypay:4090172004","location":"Hybrid","posted":"2021-09-03","skills":["llm","ml","ci/cd","agile","docker","kubernetes","payroll"],"team":"Quality Assurance","title":"Automation QA Engineer","years":5}
 {"company":"PayPay Corporation","first_seen":"2026-11-09","id":"greenhouse:paypay:4092131004","location":"Hybrid","posted":"2021-09-03","team":"HR","title":"障がい者採用(事務スタッフ/全国勤務可)"}
 {"company":"PayPay Corporation","first_seen":"2026-11-09","id":"greenhouse:paypay:4182995004","location":"Hybrid","posted":"2021-11-22","skills":["figma","llm","payroll"],"team":"Product Manager / Project Manager / Product Design","title":"Product Designer / プロダクトデザイナー (UX/UI)","years":3}
@@ -74,7 +75,7 @@
 {"company":"PayPay Corporation","first_seen":"2026-11-09","id":"greenhouse:paypay:6177337004","location":"Hybrid","posted":"2026-09-01","team":"Product Manager / Project Manager / Product Design","title":"シニアプロダクトマネージャー"}
 {"company":"PayPay Corporation","first_seen":"2026-11-09","id":"greenhouse:paypay:6177368004","location":"Hybrid","posted":"2026-09-09","team":"HR","title":"人事制度企画"}
 {"closed_at":"2026-11-12","company":"PayPay Corporation","first_seen":"2026-11-09","id":"greenhouse:paypay:6212790004","location":"Hybrid","posted":"2026-10-01","skills":["aws","gcp"],"team":"CISO","title":"CSIRTエンジニア"}
-{"company":"PayPay Corporation","first_seen":"2026-11-09","id":"greenhouse:paypay:6215248004","location":"Hybrid","posted":"2026-10-02","team":"HR","title":"社内保健師"}
+{"closed_at":"2026-11-12","company":"PayPay Corporation","first_seen":"2026-11-09","id":"greenhouse:paypay:6215248004","location":"Hybrid","posted":"2026-10-02","team":"HR","title":"社内保健師"}
 {"company":"PayPay Corporation","first_seen":"2026-11-09","id":"greenhouse:paypay:6215253004","location":"福岡県福岡市","posted":"2026-10-02","team":"CS/CX","title":"CX業務推進（業務管理・改善推進担当）/博多センター勤務"}
 {"company":"PayPay Corporation","first_seen":"2026-11-09","id":"greenhouse:paypay:6215254004","location":"Hybrid","posted":"2026-10-02","skills":["tableau"],"team":"CS/CX","title":"CSシステム企画（データ基盤推進・分析推進担当）"}
 {"company":"PayPay Corporation","first_seen":"2026-11-09","id":"greenhouse:paypay:6216626004","location":"Remote","posted":"2026-10-05","remote":true,"team":"政策企画","title":"政策企画担当"}

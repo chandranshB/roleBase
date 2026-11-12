@@ -7,6 +7,7 @@
 {"company":"Enva","first_seen":"2026-11-08","id":"pinpoint:enva:0846ff63-f41c-44f2-8db6-3966fd2c23d8","location":"Linwood","skills":["customer_service","time_management"],"title":"HGV Trade Driver"}
 {"company":"Enva","first_seen":"2026-11-08","id":"pinpoint:enva:09c5340e-9bfa-4f73-a624-6981a2b979c4","location":"Portlaoise","skills":["welding"],"title":"Mechanical Maintenance Technician/Fitter"}
 {"company":"Enva","first_seen":"2026-11-08","id":"pinpoint:enva:0acc1dc1-6a04-4cd2-8d09-ac6f9b105eab","location":"Colwick","skills":["time_management"],"title":"HGV Mechanic","years":3}
+{"company":"Enva","first_seen":"2026-11-12","id":"pinpoint:enva:132d3285-0beb-481e-8dec-17167c7fbf65","location":"Colwick","pay":[30000,35000,"GBP"],"skills":["customer_service","procurement"],"title":"Asset Coordinator"}
 {"closed_at":"2026-11-11","company":"Enva","first_seen":"2026-11-08","id":"pinpoint:enva:1413a9e4-39e1-48f3-a7f4-5f56a0fd818b","location":"Carryduff [IW]","skills":["employee_relations","payroll","ms_office","powerpoint","hris"],"title":"HR Advisor"}
 {"company":"Enva","first_seen":"2026-11-08","id":"pinpoint:enva:16e5a277-cbbe-44b2-8066-b418dd5642b9","location":"Immingham","skills":["procurement"],"title":"Receptionist and Accounts Administrator"}
 {"company":"Enva","first_seen":"2026-11-08","id":"pinpoint:enva:1c449837-91ca-4fdb-8de8-fbb0b5992b80","location":"Colwick","title":"Late Shift Redox Picker"}
@@ -17,6 +18,7 @@
 {"company":"Enva","first_seen":"2026-11-08","id":"pinpoint:enva:26efa4af-5a41-4dd6-a774-70e545b6fa4d","location":"Portlaoise","skills":["autocad"],"title":"CCTV/Drainage Technician"}
 {"company":"Enva","first_seen":"2026-11-11","id":"pinpoint:enva:28364fd8-2471-443e-b474-55aef3415c70","location":"Linwood","skills":["forecasting","procurement"],"title":"Fleet Compliance Manager"}
 {"company":"Enva","first_seen":"2026-11-08","id":"pinpoint:enva:3dddfac0-e28e-49dc-b94e-e7b194ceee94","location":"Colwick","skills":["data_entry"],"title":"Transport coordinator/Admin"}
+{"company":"Enva","first_seen":"2026-11-12","id":"pinpoint:enva:4063cf34-b644-461a-9d0c-552ede0bce85","location":"Duncrue [MacNabb]","title":"HGV Class 2 Driver"}
 {"company":"Enva","first_seen":"2026-11-11","id":"pinpoint:enva:41c89541-3bbb-4838-baee-c51ac4492609","location":"Grantham","title":"Telehandler"}
 {"company":"Enva","first_seen":"2026-11-08","id":"pinpoint:enva:42ce9915-0c02-489c-9334-c063cc3b6099","location":"Perth","skills":["customer_service"],"title":"HGV Driver/Loader"}
 {"company":"Enva","first_seen":"2026-11-08","id":"pinpoint:enva:440d5f5e-2dd9-4d46-a233-e6c594fcd0c8","location":"Portlaoise","skills":["powerpoint"],"title":"Health and Safety Officer","years":2}
@@ -32,7 +34,7 @@
 {"company":"Enva","first_seen":"2026-11-08","id":"pinpoint:enva:653cd4a6-2632-4cf5-a208-16c8b1370aba","location":"Portlaoise","title":"Rigid  Truck driver"}
 {"company":"Enva","first_seen":"2026-11-08","id":"pinpoint:enva:65818772-4589-4639-ac7b-34d6f0456e02","location":"Grantham","pay":[35000,35000,"GBP"],"title":"HSE Advisor"}
 {"company":"Enva","first_seen":"2026-10-28","id":"pinpoint:enva:6aa69a6e-c6a0-4650-bfff-6b3663247b71","location":"Stourbridge","pay":[30000,35000,"GBP"],"title":"SHEQ Advisor"}
-{"company":"Enva","first_seen":"2026-11-12","id":"pinpoint:enva:6af53cca-c79e-4384-a5a6-ab5cc4ced7e5","location":"Perth","title":"General Operative (Pre Pick)"}
+{"closed_at":"2026-11-12","company":"Enva","first_seen":"2026-11-12","id":"pinpoint:enva:6af53cca-c79e-4384-a5a6-ab5cc4ced7e5","location":"Perth","title":"General Operative (Pre Pick)"}
 {"company":"Enva","first_seen":"2026-11-08","id":"pinpoint:enva:6db2800b-37cd-43cd-8e1e-b1e2cee13103","location":"Immingham","skills":["forklift"],"title":"General Operator"}
 {"closed_at":"2026-11-11","company":"Enva","first_seen":"2026-11-08","id":"pinpoint:enva:771a7561-2288-4bb2-9d96-2eb471bb789b","location":"Linwood","skills":["customer_service","time_management"],"title":"HGV Driver - Trade Waste"}
 {"company":"Enva","first_seen":"2026-11-08","id":"pinpoint:enva:83fd47bb-c18f-4f24-8ab5-d0c8400cf627","location":"Stourbridge","title":"Fork Lift Driver [SDA Processing]"}
@@ -43,7 +45,7 @@
 {"company":"Enva","first_seen":"2026-11-08","id":"pinpoint:enva:9fb764aa-efa8-4702-9479-19e40c141645","location":"Bilsthorpe","skills":["time_management"],"title":"HGV Driver – Class 2"}
 {"company":"Enva","first_seen":"2026-11-08","id":"pinpoint:enva:a481b0d4-0647-4e3f-ae82-d37ce0d9fe38","location":"Stourbridge","title":"General Operative [SDA Processing]"}
 {"company":"Enva","first_seen":"2026-11-08","id":"pinpoint:enva:aad253ed-3713-4bc9-8bfb-545713d445dc","location":"Portlaoise","skills":["project_management","procurement"],"title":"Project Manager - Engineering or Construction","years":5}
-{"company":"Enva","first_seen":"2026-11-08","id":"pinpoint:enva:b6ce34a9-4420-4131-873b-2d82937dbabb","location":"Grantham","title":"Recycling Cleaner"}
+{"closed_at":"2026-11-12","company":"Enva","first_seen":"2026-11-08","id":"pinpoint:enva:b6ce34a9-4420-4131-873b-2d82937dbabb","location":"Grantham","title":"Recycling Cleaner"}
 {"company":"Enva","first_seen":"2026-11-08","id":"pinpoint:enva:b9dbfa74-96c3-4365-8608-aeed8c1eca70","location":"Portlaoise","skills":["project_management","ms_office","powerpoint","autocad"],"title":"Expression of Interest Graduate Engineer"}
 {"company":"Enva","first_seen":"2026-11-08","id":"pinpoint:enva:b9e80f0c-19e1-4d0e-8e30-e6d0144d7840","location":"Dartford","pay":[30000,36000,"GBP"],"title":"HSE Advisor"}
 {"company":"Enva","first_seen":"2026-11-08","id":"pinpoint:enva:bc538e22-e744-44a4-9695-9576533b0dd0","location":"Cork","skills":["project_management"],"title":"Environmental Engineer ( Water & Wastewater)","years":2}

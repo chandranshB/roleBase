@@ -238,7 +238,7 @@
 {"company":"吉利","first_seen":"2026-11-09","id":"moka:geely/102042:3187937f-f037-4d70-8261-7926b8670833","location":"徐汇区","pay":[25,50,"CNY"],"posted":"2026-09-19","skills":["linux"],"team":"吉利汽车集团","title":"操作系统开发专家"}
 {"company":"吉利","first_seen":"2026-11-09","id":"moka:geely/102042:31da6181-9361-4d61-b1b9-f97cb4fa411f","location":"萧山区","pay":[25,30,"CNY"],"posted":"2026-09-19","team":"吉利汽车集团","title":"服务策略经理/高级经理-极氪"}
 {"closed_at":"2026-11-11","company":"吉利","first_seen":"2026-11-09","id":"moka:geely/102042:31dff2e9-94ad-4d3d-884c-cac397caa7f8","location":"慈溪市","posted":"2026-09-19","skills":["c++"],"team":"吉利汽车集团","title":"前瞻技术研究岗（极限车辆动力学与控制）"}
-{"company":"吉利","first_seen":"2026-11-09","id":"moka:geely/102042:321530b1-c85c-4cb1-bada-23c798b3add7","location":"慈溪市","posted":"2026-09-19","team":"吉利汽车集团","title":"前瞻技术运营岗（座舱领域价值分析专家）"}
+{"closed_at":"2026-11-12","company":"吉利","first_seen":"2026-11-09","id":"moka:geely/102042:321530b1-c85c-4cb1-bada-23c798b3add7","location":"慈溪市","posted":"2026-09-19","team":"吉利汽车集团","title":"前瞻技术运营岗（座舱领域价值分析专家）"}
 {"company":"吉利","first_seen":"2026-11-09","id":"moka:geely/102042:322f6a11-145e-4d21-86b5-1b2ef6b03da9","location":"慈溪市","posted":"2026-10-20","team":"吉利汽车集团","title":"电驱系统开发专家/工程师"}
 {"company":"吉利","first_seen":"2026-11-09","id":"moka:geely/102042:32456109-4643-4004-8514-d505de40a16e","location":"雨湖区","pay":[8,20,"CNY"],"posted":"2026-07-08","team":"吉利汽车集团","title":"焊装尺寸工艺岗"}
 {"company":"吉利","first_seen":"2026-11-09","id":"moka:geely/102042:32952279-adfa-4707-be15-31eff2f17845","location":"宁波市","pay":[20,40,"CNY"],"posted":"2026-11-04","team":"吉利汽车集团","title":"视觉交互设计岗"}
@@ -253,7 +253,7 @@
 {"company":"吉利","first_seen":"2026-11-09","id":"moka:geely/102042:35435d89-e144-43e7-b6d2-02cf79c9aee1","location":"滨江区","posted":"2026-10-28","team":"吉利汽车集团","title":"海外国家销售经理/高级经理"}
 {"company":"吉利","first_seen":"2026-11-09","id":"moka:geely/102042:3559f190-f452-4ccb-b42d-5646ceedcb99","location":"长春市, 哈尔滨市","posted":"2026-10-14","team":"吉利汽车集团","title":"（哈尔滨、长春）高级/资深体验顾问&体验主管"}
 {"company":"吉利","first_seen":"2026-11-11","id":"moka:geely/102042:358c63fa-7c34-4a57-a17e-241dd09eb0e1","location":"慈溪市","posted":"2026-07-28","team":"吉利汽车集团","title":"前瞻技术研究岗"}
-{"company":"吉利","first_seen":"2026-11-09","id":"moka:geely/102042:35af701a-7415-4562-b4c5-dfe50bbae3c0","location":"慈溪市","posted":"2026-09-17","team":"吉利汽车集团","title":"前瞻技术研究岗（底盘主动安全拓展）"}
+{"closed_at":"2026-11-12","company":"吉利","first_seen":"2026-11-09","id":"moka:geely/102042:35af701a-7415-4562-b4c5-dfe50bbae3c0","location":"慈溪市","posted":"2026-09-17","team":"吉利汽车集团","title":"前瞻技术研究岗（底盘主动安全拓展）"}
 {"company":"吉利","first_seen":"2026-11-09","id":"moka:geely/102042:35e8c000-4f73-497b-bb8e-4bdc143a017d","location":"慈溪市","pay":[25,65,"CNY"],"posted":"2026-09-19","team":"吉利汽车集团","title":"人形机器人机械臂VLA算法工程师"}
 {"closed_at":"2026-11-11","company":"吉利","first_seen":"2026-11-09","id":"moka:geely/102042:3603ae90-8cd0-4a20-8b05-18a2b6c0f941","location":"霹雳州江沙","posted":"2026-09-19","team":"吉利汽车集团","title":"涂装工艺专家"}
 {"company":"吉利","first_seen":"2026-11-09","id":"moka:geely/102042:360ec2d3-317e-4fd1-910b-3aab0521f112","location":"宁波市","posted":"2026-09-19","team":"吉利汽车集团","title":"OTA业务管理总监"}
@@ -607,7 +607,7 @@
 {"company":"吉利","first_seen":"2026-11-09","id":"moka:geely/102042:7b962c62-d7cd-4328-bfbe-a780a700015d","location":"徐汇区, 宁波市","posted":"2026-09-08","skills":["linux"],"team":"吉利汽车集团","title":"软件架构师"}
 {"company":"吉利","first_seen":"2026-11-09","id":"moka:geely/102042:7bbef90b-bba9-4f2b-9f0d-e759729282f6","location":"滨江区","posted":"2026-11-03","skills":["sql"],"team":"吉利汽车集团","title":"国际化数据产品经理-数智化"}
 {"company":"吉利","first_seen":"2026-11-09","id":"moka:geely/102042:7bd8752d-d2c1-4860-90e9-143fa207fa3f","location":"萧山区","pay":[16,30,"CNY"],"posted":"2026-11-04","team":"吉利汽车集团","title":"能碳数字化负责人"}
-{"company":"吉利","first_seen":"2026-11-09","id":"moka:geely/102042:7c03bda0-18ae-4db1-86d5-adbb86e9e9a8","location":"宁波市","pay":[20,40,"CNY"],"posted":"2026-11-08","team":"吉利汽车集团","title":"项目管理经理/高级经理"}
+{"company":"吉利","first_seen":"2026-11-09","id":"moka:geely/102042:7c03bda0-18ae-4db1-86d5-adbb86e9e9a8","location":"宁波市","pay":[20,40,"CNY"],"posted":"2026-11-12","team":"吉利汽车集团","title":"项目管理经理/高级经理"}
 {"company":"吉利","first_seen":"2026-11-09","id":"moka:geely/102042:7c37272f-eef2-4bb2-b34f-1e9dfc70e1b0","location":"宁波市","posted":"2026-09-19","team":"吉利汽车集团","title":"环境适应性开发岗"}
 {"company":"吉利","first_seen":"2026-11-09","id":"moka:geely/102042:7c8cd3e6-93bb-4f7c-b973-86e51f16ef67","location":"慈溪市","posted":"2026-09-22","team":"吉利汽车集团","title":"底盘电控性能开发-极氪院"}
 {"company":"吉利","first_seen":"2026-11-09","id":"moka:geely/102042:7c975ee3-1832-4437-9657-2e2eea4d11e5","location":"宁波市","posted":"2026-09-17","team":"吉利汽车集团","title":"数字化实施顾问"}
@@ -826,6 +826,7 @@
 {"company":"吉利","first_seen":"2026-11-09","id":"moka:geely/102042:a62e7960-8fe9-426e-bb6a-f3d9719af907","location":"普陀区","pay":[20,40,"CNY"],"posted":"2026-09-19","team":"吉利汽车集团","title":"泊车控制算法工程师（中阶产品开发部）"}
 {"company":"吉利","first_seen":"2026-11-09","id":"moka:geely/102042:a66b9c04-c048-443a-88a8-13716c3ae4f2","location":"滨江区","posted":"2026-09-16","team":"吉利汽车集团","title":"营销策划经理（精品）"}
 {"company":"吉利","first_seen":"2026-11-09","id":"moka:geely/102042:a69110a6-daae-41a6-a687-d4bf8410ebed","location":"慈溪市","posted":"2026-09-19","team":"吉利汽车集团","title":"电软-电气架构开发岗"}
+{"company":"吉利","first_seen":"2026-11-12","id":"moka:geely/102042:a6a87ec6-e998-49e1-9fce-7bd499864346","location":"霹雳州江沙, 莎亚南, 宁波市","posted":"2026-11-12","skills":["scrum"],"team":"吉利汽车集团","title":"项目管理岗"}
 {"company":"吉利","first_seen":"2026-11-09","id":"moka:geely/102042:a7047652-3edc-47a3-9b91-d9673db23088","location":"海淀区, 慈溪市","pay":[20,40,"CNY"],"posted":"2026-09-17","team":"吉利汽车集团","title":"智能驾驶场景定义岗(体验运营)"}
 {"company":"吉利","first_seen":"2026-11-09","id":"moka:geely/102042:a7426f31-f9f4-49f0-af3f-17c0c0033ff8","location":"慈溪市","pay":[20,50,"CNY"],"posted":"2026-09-19","team":"吉利汽车集团","title":"电池结构设计岗"}
 {"company":"吉利","first_seen":"2026-11-09","id":"moka:geely/102042:a77b6a47-4a2b-4dcf-8d8b-29f7a2750792","location":"滨江区","posted":"2026-09-17","team":"吉利汽车集团","title":"金融产品经理-（海外汽车金融）"}
@@ -901,7 +902,7 @@
 {"company":"吉利","first_seen":"2026-11-09","id":"moka:geely/102042:b567610d-5c18-46ab-90be-a3e04611cd86","location":"慈溪市","posted":"2026-09-16","team":"吉利汽车集团","title":"电驱工艺开发岗"}
 {"company":"吉利","first_seen":"2026-11-09","id":"moka:geely/102042:b571f015-a6c6-4451-bdd4-d7a2474cfb3e","location":"徐汇区","pay":[25,50,"CNY"],"posted":"2026-09-19","team":"吉利汽车集团","title":"车载软件测试开发工程师"}
 {"company":"吉利","first_seen":"2026-11-09","id":"moka:geely/102042:b58012ad-86d3-4675-afa1-abfca839f19b","location":"徐汇区, 慈溪市","posted":"2026-09-17","team":"吉利汽车集团","title":"车身域子系统开发岗"}
-{"closed_at":"2026-11-12","company":"吉利","first_seen":"2026-11-11","id":"moka:geely/102042:b5ac4ae3-8a57-4c15-9175-c4fc0988d0e5","location":"萧山区","posted":"2026-07-23","team":"吉利汽车集团","title":"诊断系统工程师"}
+{"company":"吉利","first_seen":"2026-11-11","id":"moka:geely/102042:b5ac4ae3-8a57-4c15-9175-c4fc0988d0e5","location":"萧山区","posted":"2026-07-23","team":"吉利汽车集团","title":"诊断系统工程师"}
 {"company":"吉利","first_seen":"2026-11-09","id":"moka:geely/102042:b5d5cb28-0a72-4155-9ebe-8a353518fd85","location":"普陀区, 慈溪市","posted":"2026-08-25","skills":["c++","python","docker"],"team":"吉利汽车集团","title":"智能驾驶传感器驱动开发岗"}
 {"company":"吉利","first_seen":"2026-11-09","id":"moka:geely/102042:b5f9e64e-afd1-41b8-af18-359e5eb67e22","location":"徐汇区","posted":"2026-09-19","team":"吉利汽车集团","title":"PCB单板互连工程师"}
 {"company":"吉利","first_seen":"2026-11-09","id":"moka:geely/102042:b62d4b9f-cf1d-4b54-bf5c-7da97fec4655","location":"萧山区","posted":"2026-10-13","team":"吉利汽车集团","title":"政企大客户开发经理"}

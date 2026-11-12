@@ -575,7 +575,7 @@
 {"company":"Transdev","first_seen":"2026-11-08","id":"csod:transdev:10771","location":"Provence Alpes Côte d'Azur, FR","title":"Conducteur-receveur en CDD"}
 {"company":"Transdev","first_seen":"2026-11-08","id":"csod:transdev:10773","location":"Villepinte, Ile de France, FR","title":"Agent de Médiation (H/F)"}
 {"company":"Transdev","first_seen":"2026-11-08","id":"csod:transdev:10794","location":"Issy Les Moulineaux, FR","title":"Analyste SOC N3 (H/F)"}
-{"company":"Transdev","first_seen":"2026-11-08","id":"csod:transdev:10852","location":"Auvergne Rhône Alpes, FR","reposts":1,"title":"Conducteur de Bus (H/F)"}
+{"closed_at":"2026-11-12","company":"Transdev","first_seen":"2026-11-08","id":"csod:transdev:10852","location":"Auvergne Rhône Alpes, FR","reposts":1,"title":"Conducteur de Bus (H/F)"}
 {"company":"Transdev","first_seen":"2026-11-08","id":"csod:transdev:10868","location":"Rouen, Normandie, FR","posted":"2026-05-03","title":"Contrôleur de Gestion Sénior Transdev Rouen(H/F/X)"}
 {"company":"Transdev","first_seen":"2026-11-08","id":"csod:transdev:10875","location":"Nemours, Ile de france, FR","posted":"2026-06-03","title":"Conducteur Receveur Bus/Car POEI (H/F)"}
 {"company":"Transdev","first_seen":"2026-11-08","id":"csod:transdev:10882","location":"FR","title":"Planificateur Infrastructure (H/F)"}
@@ -623,7 +623,7 @@
 {"company":"Transdev","first_seen":"2026-11-08","id":"csod:transdev:11298","location":"Issy les Moulineaux, FR","posted":"2026-07-07","title":"Stage - Chargé.e de Communication Digitale & Projets IT H/F"}
 {"company":"Transdev","first_seen":"2026-11-08","id":"csod:transdev:11309","location":"SAINT DIE DES VOSGES, Grand Est, FR","title":"Conductrice/Conducteur de Car (H/F) - Saint Dié des Vosges"}
 {"company":"Transdev","first_seen":"2026-11-08","id":"csod:transdev:11312","location":"Estrées St Denis, Hauts de France, FR","title":"Conducteur - conductrice car H/F Estrées St denis"}
-{"company":"Transdev","first_seen":"2026-11-08","id":"csod:transdev:11317","location":"Chateau La Vallière, FR","title":"Conducteur de car - Château La Vallière H/F"}
+{"closed_at":"2026-11-12","company":"Transdev","first_seen":"2026-11-08","id":"csod:transdev:11317","location":"Chateau La Vallière, FR","title":"Conducteur de car - Château La Vallière H/F"}
 {"company":"Transdev","first_seen":"2026-11-08","id":"csod:transdev:11322","location":"BAR LE DUC, Grand Est, FR","title":"Contrôleur d'exploitation H/F - Bar le Duc"}
 {"company":"Transdev","first_seen":"2026-11-08","id":"csod:transdev:11323","location":"Versailles, Ile de France, FR","title":"Formation Conducteur H/F"}
 {"company":"Transdev","first_seen":"2026-11-08","id":"csod:transdev:11325","location":"Versailles, Ile de France, FR","reposts":1,"title":"Manager de Proximité H/F"}
@@ -660,8 +660,8 @@
 {"company":"Transdev","first_seen":"2026-11-08","id":"csod:transdev:11466","location":"REIMS, Grand Est, FR","title":"Directeur Finance et performance H/F"}
 {"company":"Transdev","first_seen":"2026-11-08","id":"csod:transdev:11469","location":"TULLE, Nouvelle Aquitaine, FR","reposts":1,"title":"RESPONSABLE PLANNING / ADJT RESP PLANNING"}
 {"company":"Transdev","first_seen":"2026-11-08","id":"csod:transdev:11471","location":"Toulouse, Occitanie, FR","reposts":1,"title":"Conducteur de bus (H/F)"}
-{"company":"Transdev","first_seen":"2026-11-08","id":"csod:transdev:11474","location":"Parcay Meslay, Centre Val De Loire, FR","reposts":2,"title":"Devenez Conducteur de Car pour Transdev Touraine - Formation (H/F)"}
-{"company":"Transdev","first_seen":"2026-11-08","id":"csod:transdev:11475","location":"Savigné sur Lathan, Centre Val De Loire, FR","title":"Conducteur de Car pour Transdev Touraine - Formation (H/F)"}
+{"closed_at":"2026-11-12","company":"Transdev","first_seen":"2026-11-08","id":"csod:transdev:11474","location":"Parcay Meslay, Centre Val De Loire, FR","reposts":2,"title":"Devenez Conducteur de Car pour Transdev Touraine - Formation (H/F)"}
+{"closed_at":"2026-11-12","company":"Transdev","first_seen":"2026-11-08","id":"csod:transdev:11475","location":"Savigné sur Lathan, Centre Val De Loire, FR","title":"Conducteur de Car pour Transdev Touraine - Formation (H/F)"}
 {"company":"Transdev","first_seen":"2026-11-08","id":"csod:transdev:11498","location":"BERGERAC, Nouvelle Aquitaine, FR","reposts":3,"title":"CONDUCTEUR RECEVEUR H/F"}
 {"company":"Transdev","first_seen":"2026-11-08","id":"csod:transdev:11502","location":"COULOMMIERS, Ile de France, FR","reposts":1,"title":"RESPONSABLE PCC (H/F)"}
 {"company":"Transdev","first_seen":"2026-11-08","id":"csod:transdev:11504","location":"Guérande, Pays de La Loire, FR","title":"Mécanicien Poids Lourds (H/F) - Guérande"}
@@ -673,11 +673,11 @@
 {"company":"Transdev","first_seen":"2026-11-08","id":"csod:transdev:11525","location":"NANTES, Pays de La Loire, FR","posted":"2026-03-07","title":"Conducteur de car scolaire (H/F) à Legé (44)"}
 {"company":"Transdev","first_seen":"2026-11-08","id":"csod:transdev:11526","location":"NANTES, Pays de La Loire, FR","posted":"2026-03-07","title":"Conducteur de car scolaire (H/F) à Clisson (44)"}
 {"company":"Transdev","first_seen":"2026-11-08","id":"csod:transdev:11533","location":"Epinal, Grand Est, FR","posted":"2026-07-07","title":"Alternant QSE (H/F) - Epinal"}
-{"company":"Transdev","first_seen":"2026-11-08","id":"csod:transdev:11537","location":"ANNECY, Auvergne Rhône Alpes, FR","posted":"2026-08-07","title":"Futur(e)s conducteurs(rices) de bus/car"}
+{"closed_at":"2026-11-12","company":"Transdev","first_seen":"2026-11-08","id":"csod:transdev:11537","location":"ANNECY, Auvergne Rhône Alpes, FR","posted":"2026-08-07","title":"Futur(e)s conducteurs(rices) de bus/car"}
 {"company":"Transdev","first_seen":"2026-11-08","id":"csod:transdev:11538","location":"PAVILLONS SOUS BOIS, FR","posted":"2026-08-07","title":"Responsable Infrastructure (H/F)"}
 {"company":"Transdev","first_seen":"2026-11-08","id":"csod:transdev:11539","location":"Les Pavillons-sous-Bois, FR","posted":"2026-08-07","title":"Technicien Supérieur Maintenance (H/F)"}
 {"company":"Transdev","first_seen":"2026-11-08","id":"csod:transdev:11545","location":"Manchester, GB","posted":"2026-09-07","title":"V.I.E Bid Network Planner (M/F)"}
-{"company":"Transdev","first_seen":"2026-11-08","id":"csod:transdev:11559","location":"ANNECY, Auvergne Rhône Alpes, FR","title":"Conducteurs saisonniers polyvalents - Annecy -H/F"}
+{"closed_at":"2026-11-12","company":"Transdev","first_seen":"2026-11-08","id":"csod:transdev:11559","location":"ANNECY, Auvergne Rhône Alpes, FR","title":"Conducteurs saisonniers polyvalents - Annecy -H/F"}
 {"company":"Transdev","first_seen":"2026-11-08","id":"csod:transdev:11560","location":"Saint-Sulpice-de-Royan, Nouvelle Aquitaine, FR","title":"Mécanicien bus et car F/H"}
 {"company":"Transdev","first_seen":"2026-11-08","id":"csod:transdev:11561","location":"Saintes, Nouvelle Aquitaine, FR","reposts":1,"title":"Conducteur de car (H/F)"}
 {"company":"Transdev","first_seen":"2026-11-08","id":"csod:transdev:11568","location":"Versailles, FR","title":"Mécanicien polyvalent informatique/gestion de stocks H/F"}
@@ -757,7 +757,7 @@
 {"company":"Transdev","first_seen":"2026-11-08","id":"csod:transdev:11805","location":"ISSY LES MOULINEAUX, Ile de France, FR","title":"Chef(fe) de Projet BI & Data"}
 {"closed_at":"2026-11-09","company":"Transdev","first_seen":"2026-11-08","id":"csod:transdev:11806","location":"Issy les Moulineaux, FR","title":"Stagiaire élève-avocat (PPI / Alternance) – Direction Juridique Groupe – Projets Internationaux H/F"}
 {"company":"Transdev","first_seen":"2026-11-08","id":"csod:transdev:11807","location":"SCIONZIER, Auvergne Rhône Alpes, FR","title":"FORMATION TITRE PROFESSIONNEL TRANSPORT DE VOYAGEURS"}
-{"company":"Transdev","first_seen":"2026-11-08","id":"csod:transdev:11810","location":"Tours, Centre-Val de Loire, FR","title":"Conducteur VL -Tours H/F"}
+{"closed_at":"2026-11-12","company":"Transdev","first_seen":"2026-11-08","id":"csod:transdev:11810","location":"Tours, Centre-Val de Loire, FR","title":"Conducteur VL -Tours H/F"}
 {"company":"Transdev","first_seen":"2026-11-08","id":"csod:transdev:11811","location":"Chemillé, Bretagne / Pays de Loire, FR","title":"Conducteur H/F à temps partiel à Chemillé"}
 {"company":"Transdev","first_seen":"2026-11-08","id":"csod:transdev:11812","location":"Tiercé, Bretagne / Pays de Loire, FR","title":"Conducteur H/F à temps partiel Tiercé / Châteauneuf H/F"}
 {"company":"Transdev","first_seen":"2026-11-08","id":"csod:transdev:11814","location":"St Gemmes d'Andigné, Bretagne / Pays de Loire, FR","title":"Conducteur à temps partiel St Gemmes d'Andigné H/F"}
@@ -815,7 +815,7 @@
 {"company":"Transdev","first_seen":"2026-11-08","id":"csod:transdev:11890","location":"Bretagne / Pays de Loire, FR","posted":"2026-02-10","title":"Technicien Méthodes Maintenance"}
 {"company":"Transdev","first_seen":"2026-11-08","id":"csod:transdev:11893","location":"Issy les Moulineaux, FR","posted":"2026-05-10","title":"Consolideur Confirmé ( H/F)"}
 {"company":"Transdev","first_seen":"2026-11-08","id":"csod:transdev:11896","location":"AIX-EN-PROVENCE, Provence Alpes Côte d'Azur, FR","posted":"2026-06-10","title":"Superviseur F/H"}
-{"company":"Transdev","first_seen":"2026-11-10","id":"csod:transdev:11900","location":"Versailles, Ile de France, FR","reposts":1,"title":"Chargé(e) de mission QSE/RSE / Préventeur (H/F)"}
+{"closed_at":"2026-11-12","company":"Transdev","first_seen":"2026-11-10","id":"csod:transdev:11900","location":"Versailles, Ile de France, FR","reposts":1,"title":"Chargé(e) de mission QSE/RSE / Préventeur (H/F)"}
 {"company":"Transdev","first_seen":"2026-11-08","id":"csod:transdev:11901","location":"CHATEAULIN, Bretagne / Pays de Loire, FR","posted":"2026-07-10","title":"Conducteur(trice) scolaire – CDI / Temps partiel"}
 {"company":"Transdev","first_seen":"2026-11-08","id":"csod:transdev:11902","location":"ISSY LES MOULINEAUX, FR","posted":"2026-07-10","title":"Stage - Juriste Droit des sociétés et immobilier H/F"}
 {"closed_at":"2026-11-09","company":"Transdev","first_seen":"2026-11-08","id":"csod:transdev:11904","location":"Issy les Moulineaux, FR","posted":"2026-07-10","title":"Stagiaire chargé(e) d’études Développement Territorial"}
@@ -864,13 +864,13 @@
 {"company":"Transdev","first_seen":"2026-11-08","id":"csod:transdev:11969","location":"MORLAIX, Bretagne / Pays de Loire, FR","title":"Projet de reconversion : devenez conducteur / conductrice de car"}
 {"company":"Transdev","first_seen":"2026-11-08","id":"csod:transdev:11970","location":"Morlaix, Bretagne / Pays de Loire, FR","reposts":1,"title":"Conducteur de Car Ligne Régulière H/F – Morlaix (29)"}
 {"company":"Transdev","first_seen":"2026-11-09","id":"csod:transdev:11971","location":"Bassens, Nouvelle Aquitaine, FR","reposts":1,"title":"Assistante ou Assistant Commercial(e) & Marketing H/F"}
-{"company":"Transdev","first_seen":"2026-11-08","id":"csod:transdev:11975","location":"Blois, FR","title":"Gestionnaire Planning en CDD H/F"}
-{"company":"Transdev","first_seen":"2026-11-08","id":"csod:transdev:11976","location":"Château La Vallière, Centre-Val de Loire, FR","reposts":2,"title":"Devenez Conducteur de Car pour Transdev Touraine - Formation (H/F)"}
+{"closed_at":"2026-11-12","company":"Transdev","first_seen":"2026-11-08","id":"csod:transdev:11975","location":"Blois, FR","title":"Gestionnaire Planning en CDD H/F"}
+{"closed_at":"2026-11-12","company":"Transdev","first_seen":"2026-11-08","id":"csod:transdev:11976","location":"Château La Vallière, Centre-Val de Loire, FR","reposts":2,"title":"Devenez Conducteur de Car pour Transdev Touraine - Formation (H/F)"}
 {"company":"Transdev","first_seen":"2026-11-08","id":"csod:transdev:11978","location":"Doué la Fontaine, Bretagne / Pays de Loire, FR","title":"Conducteur H/F à temps partiel Doué la Fontaine H/F -"}
 {"company":"Transdev","first_seen":"2026-11-08","id":"csod:transdev:11979","location":"Doué la Fontaine, Bretagne / Pays de Loire, FR","title":"Conducteur H/F à temps partiel Doué la Fontaine H/F -"}
 {"company":"Transdev","first_seen":"2026-11-08","id":"csod:transdev:11980","location":"JONZAC, Nouvelle Aquitaine, FR","title":"Conducteur de car scolaire CPS F/H"}
 {"company":"Transdev","first_seen":"2026-11-08","id":"csod:transdev:11981","location":"Château Renault, Centre Val de Loire, FR","reposts":2,"title":"Electromécanicien H/F"}
-{"company":"Transdev","first_seen":"2026-11-09","id":"csod:transdev:11982","location":"FR","posted":"2026-09-11","title":"Consultant(e) junior ingénieur essai d'intégration H/F"}
+{"company":"Transdev","first_seen":"2026-11-09","id":"csod:transdev:11982","location":"Issy-les-Moulineaux, FR","posted":"2026-09-11","title":"Consultant(e) junior ingénieur essai d'intégration H/F"}
 {"company":"Transdev","first_seen":"2026-11-09","id":"csod:transdev:11983","location":"Issy-les Moulineaux, FR","posted":"2026-09-11","title":"Responsable de mission en assistance à maîtrise d’ouvrage (AMO) – G Metro (F/H)"}
 {"company":"Transdev","first_seen":"2026-11-08","id":"csod:transdev:11984","location":"Vourles, Auvergne Rhône Alpes, FR","title":"Responsable Parc & Maintenance Territoire (H/F)"}
 {"company":"Transdev","first_seen":"2026-11-08","id":"csod:transdev:11985","location":"Limeil Brévannes, Ile de France, FR","title":"Responsable QSE et Sécurité du Câble 1 (H/F)"}
@@ -888,14 +888,14 @@
 {"company":"Transdev","first_seen":"2026-11-08","id":"csod:transdev:11997","location":"SCIONZIER, Auvergne Rhône Alpes, FR","title":"Responsable d'Atelier H/F"}
 {"company":"Transdev","first_seen":"2026-11-08","id":"csod:transdev:11998","location":"Moutiers, Auvergne Rhône Alpes, FR","reposts":1,"title":"Mécanicien H/F"}
 {"company":"Transdev","first_seen":"2026-11-08","id":"csod:transdev:12000","location":"Chambéry, Auvergne Rhône Alpes, FR","reposts":1,"title":"Mécanicien H/F"}
-{"company":"Transdev","first_seen":"2026-11-08","id":"csod:transdev:12001","location":"Bléré, Centre-Val de Loire, FR","reposts":2,"title":"Devenez Conducteur de Car pour Transdev Touraine - Formation (H/F)"}
+{"company":"Transdev","first_seen":"2026-11-08","id":"csod:transdev:12001","location":"Bléré, Centre-Val de Loire, FR","reposts":2,"title":"Devenez Conducteur de Car - Bléré (H/F)"}
 {"company":"Transdev","first_seen":"2026-11-08","id":"csod:transdev:12002","location":"Nice, Provence Alpes Côte d'Azur, FR","title":"Coordinateur de mouvements/ exploitation ferroviaire H/F"}
 {"company":"Transdev","first_seen":"2026-11-08","id":"csod:transdev:12003","location":"Parramatta, AU","posted":"2026-02-11","reposts":1,"title":"V.I.E. Junior Infrastructure Engineer (M/F)"}
 {"company":"Transdev","first_seen":"2026-11-08","id":"csod:transdev:12005","location":"St Jean de Braye, FR","posted":"2026-02-11","title":"Conducteur(trice) de car - secteur St Jean de Braye(H/F)"}
 {"company":"Transdev","first_seen":"2026-11-08","id":"csod:transdev:12006","location":"Beaugency, FR","posted":"2026-02-11","title":"Conducteur(trice) de car - secteur Beaugency (H/F)"}
 {"company":"Transdev","first_seen":"2026-11-08","id":"csod:transdev:12007","location":"Meung sur Loire, FR","posted":"2026-02-11","title":"Conducteur(trice) de car - secteur Meung sur Loire (H/F)"}
 {"company":"Transdev","first_seen":"2026-11-08","id":"csod:transdev:12008","location":"Gien, FR","posted":"2026-02-11","title":"Conducteur(trice) de car - secteur Gien (H/F)"}
-{"company":"Transdev","first_seen":"2026-11-08","id":"csod:transdev:12009","location":"Blois, FR","posted":"2026-02-11","title":"Gestionnaire autopartage flotte automobile (H/F) - Blois"}
+{"closed_at":"2026-11-12","company":"Transdev","first_seen":"2026-11-08","id":"csod:transdev:12009","location":"Blois, FR","posted":"2026-02-11","title":"Gestionnaire autopartage flotte automobile (H/F) - Blois"}
 {"company":"Transdev","first_seen":"2026-11-08","id":"csod:transdev:12010","location":"St Jean de Braye, FR","posted":"2026-02-11","title":"Gestionnaire autopartage flotte automobile (H/F) - St Jean de Braye"}
 {"company":"Transdev","first_seen":"2026-11-08","id":"csod:transdev:12011","location":"le havre, Normandie, FR","posted":"2026-03-11","title":"chargé communication interne F/H/X"}
 {"company":"Transdev","first_seen":"2026-11-08","id":"csod:transdev:12012","location":"Poincy, Ile de France, FR","posted":"2026-05-11","title":"Planificateur H/F"}
@@ -915,12 +915,23 @@
 {"company":"Transdev","first_seen":"2026-11-09","id":"csod:transdev:12026","location":"Saint Avé, Bretagne / Pays de Loire, FR","posted":"2026-09-11","title":"Référent d'exploitation (H/F)"}
 {"company":"Transdev","first_seen":"2026-11-10","id":"csod:transdev:12027","location":"GERARDMER, FR","posted":"2026-09-11","title":"Conductrice/Conducteur de Car (H/F) - Gérardmer"}
 {"company":"Transdev","first_seen":"2026-11-10","id":"csod:transdev:12028","location":"BaillyRomainvilliers, FR","posted":"2026-10-11","title":"AGENT DE PREPAIE et PLANNING (H/F)"}
-{"company":"Transdev","first_seen":"2026-11-10","id":"csod:transdev:12030","location":"Ile de France, FR","posted":"2026-10-11","title":"OPERATEUR SIGNALETIQUE RESEAU (H/F)"}
+{"closed_at":"2026-11-12","company":"Transdev","first_seen":"2026-11-10","id":"csod:transdev:12030","location":"Ile de France, FR","posted":"2026-10-11","title":"OPERATEUR SIGNALETIQUE RESEAU (H/F)"}
 {"company":"Transdev","first_seen":"2026-11-10","id":"csod:transdev:12031","location":"Issy les Moulineaux, FR","posted":"2026-10-11","title":"Chargé de la Transformation Maintenance - Excellence Opérationnelle H/F"}
 {"company":"Transdev","first_seen":"2026-11-10","id":"csod:transdev:12032","location":"BaillyRomainvilliers, FR","posted":"2026-10-11","title":"REGULATEUR (H/F)"}
 {"company":"Transdev","first_seen":"2026-11-10","id":"csod:transdev:12033","location":"Nice - La Trinite, Provence Alpes Côte d'Azur, FR","posted":"2026-10-11","title":"Régulateur – Contrôleur de Trafic  H/F"}
 {"company":"Transdev","first_seen":"2026-11-11","id":"csod:transdev:12035","location":"Hauts de France, FR","posted":"2026-11-11","title":"Chef d'équipe maintenance F.H"}
 {"company":"Transdev","first_seen":"2026-11-11","id":"csod:transdev:12036","location":"Amblainville, Hauts de France, FR","posted":"2026-11-11","title":"Devenir Conducteur.trice (H/F) - Amblainville"}
+{"company":"Transdev","first_seen":"2026-11-12","id":"csod:transdev:12037","location":"Bezannes, Grand Est, FR","posted":"2026-12-11","title":"Agent d'exploitation H/F"}
+{"company":"Transdev","first_seen":"2026-11-12","id":"csod:transdev:12039","location":"Auvergne Rhône Alpes, FR","posted":"2026-12-11","title":"Chef de Projet Études et Méthodes Exploitation H/F"}
+{"company":"Transdev","first_seen":"2026-11-12","id":"csod:transdev:12040","location":"ivry-sur-seine, Ile de France, FR","posted":"2026-12-11","title":"RESPONSABLE FINANCIER (H/F)"}
+{"company":"Transdev","first_seen":"2026-11-12","id":"csod:transdev:12041","location":"Tours, Centre-Val de Loire, FR","posted":"2026-12-11","reposts":1,"title":"Conducteur VL -Tours H/F -"}
+{"company":"Transdev","first_seen":"2026-11-12","id":"csod:transdev:12042","location":"Romorantin, Loir et Cher, FR","posted":"2026-12-11","title":"Devenez Conducteur de Car - Romorantin H/F"}
+{"company":"Transdev","first_seen":"2026-11-12","id":"csod:transdev:12043","location":"Montrichard, Loir et Cher, FR","posted":"2026-12-11","title":"Devenez Conducteur de Car - Montrichard"}
+{"company":"Transdev","first_seen":"2026-11-12","id":"csod:transdev:12044","location":"Selles sur Cher, Loir et Cher, FR","posted":"2026-12-11","title":"Devenez Conducteur de Car - Selles sur Cher"}
+{"company":"Transdev","first_seen":"2026-11-12","id":"csod:transdev:12045","location":"Contres, Loir et Cher, FR","posted":"2026-12-11","title":"Devenez Conducteur de Car - Contres"}
+{"company":"Transdev","first_seen":"2026-11-12","id":"csod:transdev:12046","location":"Tours, Centre-Val de Loire, FR","posted":"2026-12-11","title":"Devenez Conducteur de Car - Tours (H/F)"}
+{"company":"Transdev","first_seen":"2026-11-12","id":"csod:transdev:12047","location":"Romorantin, Loir et Cher, FR","posted":"2026-12-11","title":"Conducteur Polyvalent H/F"}
+{"company":"Transdev","first_seen":"2026-11-12","id":"csod:transdev:12048","location":"Villepinte, Ile de France, FR","posted":"2026-12-11","title":"Technicien Matériel Embarqué (H/F)"}
 {"company":"Transdev","first_seen":"2026-11-08","id":"csod:transdev:1395","location":"Sotteville-lès-Rouen, Normandie, FR","posted":"2022-07-02","title":"Rejoignez-nous chez Transdev Normandie !"}
 {"company":"Transdev","first_seen":"2026-11-08","id":"csod:transdev:210","location":"FR","posted":"2021-06-04","title":"Candidature spontanée"}
 {"company":"Transdev","first_seen":"2026-11-08","id":"csod:transdev:277","location":"FR","title":"Vivier HRMatch"}
