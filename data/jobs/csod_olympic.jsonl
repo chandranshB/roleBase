@@ -47,12 +47,12 @@
 {"company":"Olympic Entertainment Group","first_seen":"2026-11-08","id":"csod:olympic:16","location":"Tallinn, EE","title":"VIP Account Manager (Dummy)"}
 {"company":"Olympic Entertainment Group","first_seen":"2026-11-08","id":"csod:olympic:40","location":"Tallinn, EE","title":"Join Our Talent Pool"}
 {"company":"Olympic Entertainment Group","first_seen":"2026-11-08","id":"csod:olympic:5","location":"Bratislava, SK","title":"Casino Operations Manager (Dummy)"}
-{"company":"Olympic Entertainment Group","first_seen":"2026-11-08","id":"csod:olympic:532","location":"Tallinn, EE","title":"Digital Marketing Manager"}
+{"closed_at":"2026-11-13","company":"Olympic Entertainment Group","first_seen":"2026-11-08","id":"csod:olympic:532","location":"Tallinn, EE","title":"Digital Marketing Manager"}
 {"company":"Olympic Entertainment Group","first_seen":"2026-11-08","id":"csod:olympic:533","location":"Riga, Elizabetes iela 55, Latvia, LV","reposts":1,"title":"Waiter/Waitress"}
 {"closed_at":"2026-11-09","company":"Olympic Entertainment Group","first_seen":"2026-11-08","id":"csod:olympic:534","location":"Riga, A.Dombrovska iela 23, Latvia, LV","reposts":1,"skills":["customer_service"],"title":"Customer Service Attendant"}
 {"company":"Olympic Entertainment Group","first_seen":"2026-11-08","id":"csod:olympic:538","location":"Tallinn, EE","title":"System Analyst"}
 {"company":"Olympic Entertainment Group","first_seen":"2026-11-08","id":"csod:olympic:540","location":"Rīga, LV","posted":"2026-08-10","title":"Customer Support Administrator"}
-{"company":"Olympic Entertainment Group","first_seen":"2026-11-08","id":"csod:olympic:541","location":"Riga, Elizabetes iela 55, Latvia, LV","posted":"2026-09-10","reposts":1,"title":"Poker Dealer"}
+{"closed_at":"2026-11-13","company":"Olympic Entertainment Group","first_seen":"2026-11-08","id":"csod:olympic:541","location":"Riga, Elizabetes iela 55, Latvia, LV","posted":"2026-09-10","reposts":1,"title":"Poker Dealer"}
 {"company":"Olympic Entertainment Group","first_seen":"2026-11-08","id":"csod:olympic:542","location":"Riga. Elizabetes iela 55, Latvia, LV","reposts":1,"title":"Cook"}
 {"company":"Olympic Entertainment Group","first_seen":"2026-11-08","id":"csod:olympic:543","location":"Tallinn, EE","reposts":1,"title":"Customer Support Specialist"}
 {"company":"Olympic Entertainment Group","first_seen":"2026-11-08","id":"csod:olympic:545","location":"LT","title":"System Analyst"}
@@ -65,4 +65,5 @@
 {"company":"Olympic Entertainment Group","first_seen":"2026-11-12","id":"csod:olympic:552","location":"Riga, Elizabetes iela 55, Latvia, LV","posted":"2026-11-11","reposts":1,"title":"Bartender"}
 {"company":"Olympic Entertainment Group","first_seen":"2026-11-12","id":"csod:olympic:553","location":"Riga, Aspazijas bulvaris 22, Latvia, LV","posted":"2026-12-11","title":"Receptionist"}
 {"company":"Olympic Entertainment Group","first_seen":"2026-11-12","id":"csod:olympic:554","location":"Rīga, Brīvības gatve 432, LV","posted":"2026-12-11","reposts":2,"skills":["customer_service"],"title":"Customer Service Specialist"}
+{"company":"Olympic Entertainment Group","first_seen":"2026-11-13","id":"csod:olympic:555","location":"Jelgava, Pasta iela 51/1, LV","reposts":2,"skills":["customer_service"],"title":"Customer Service Specialist"}
 {"company":"Olympic Entertainment Group","first_seen":"2026-11-08","id":"csod:olympic:6","location":"Vilnius, LT","title":"Digital Marketing Director (Dummy)"}

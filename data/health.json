@@ -31933,7 +31933,7 @@
 {"b": "dayforce:spring/leportmontessoriportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:springbrook/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:squiresgc1936/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
-{"b": "dayforce:ssc/bartlett", "last_ok": "2026-11-10", "strikes": 0, "why": "error: 403 Client Error: Forbidden for url: https://us262-services.dayforcehcm.com/api/ssc/V1/JobFeeds?internalJobBoardCode=bartlett&includeActivePostingOnly=true"}
+{"b": "dayforce:ssc/bartlett", "last_ok": "2026-11-13", "strikes": 0}
 {"b": "dayforce:ssc/texon", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:sscc/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:ssfoc/candidateportalv1", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
@@ -55028,7 +55028,7 @@
 {"b": "join:breakthrough-consult", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "join:breakthroughblueprintcomau", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "join:breakwaterla", "last_ok": "2026-11-08", "strikes": 0}
-{"b": "join:bredenoord", "last_ok": "2026-11-12", "strikes": 1, "why": "empty answer"}
+{"b": "join:bredenoord", "last_ok": "2026-11-13", "strikes": 0}
 {"b": "join:bredstedt-bike", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "join:breggfast", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "join:breinederat", "last_ok": "2026-10-30", "strikes": 0}
@@ -57796,7 +57796,7 @@
 {"b": "join:fbu", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "join:fcffoxcorporatefinance", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "join:fcopch", "last_ok": "2026-11-08", "strikes": 0}
-{"b": "join:fcr-immobilien", "last_ok": "2026-11-12", "strikes": 1, "why": "empty answer"}
+{"b": "join:fcr-immobilien", "last_ok": "2026-11-13", "strikes": 0}
 {"b": "join:fcviktoria", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "join:fd-steuerberatungde", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "join:fda-softwarecom", "last_ok": "2026-10-30", "strikes": 0}
@@ -58468,7 +58468,7 @@
 {"b": "join:gebaeudereinigung11de", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "join:gebr-hollweg", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "join:geco-gardens", "last_ok": "2026-11-08", "strikes": 0}
-{"b": "join:gecode", "last_ok": "2026-11-12", "strikes": 1, "why": "empty answer"}
+{"b": "join:gecode", "last_ok": "2026-11-12", "strikes": 2, "why": "empty answer"}
 {"b": "join:gedu", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "join:gedufa", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "join:geestferkel", "last_ok": "2026-10-30", "strikes": 0}
@@ -59060,7 +59060,7 @@
 {"b": "join:gustamansolutions", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "join:gustaveroussyfr", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "join:gusti-leather", "last_ok": "2026-11-08", "strikes": 0}
-{"b": "join:gusti-leder", "last_ok": "2026-11-12", "strikes": 1, "why": "empty answer"}
+{"b": "join:gusti-leder", "last_ok": "2026-11-13", "strikes": 0}
 {"b": "join:gut-haferkorn", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "join:gut-zum-leben", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "join:gutachter-duisburg", "last_ok": "2026-10-30", "strikes": 0}
@@ -60820,7 +60820,7 @@
 {"b": "join:kargl-haustechnik", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "join:kargl-stb", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "join:karikaala", "last_ok": "2026-11-08", "strikes": 0}
-{"b": "join:karinsschwestercom", "last_ok": "", "strikes": 0, "why": "error: 404 Client Error: Not Found for url: https://join.com/companies/karinsschwestercom"}
+{"b": "join:karinsschwestercom", "last_ok": "", "strikes": 0, "why": "error: 410 Client Error: Gone for url: https://join.com/companies/karinsschwestercom"}
 {"b": "join:karius-feinstahlbaude", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "join:karl-schick", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "join:karl-schubert-schule", "last_ok": "2026-10-30", "strikes": 0}
@@ -67700,7 +67700,7 @@
 {"b": "join:therealestateconnect", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "join:thermaltake", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "join:thermeeins", "last_ok": "2026-11-08", "strikes": 0}
-{"b": "join:thermeleon", "last_ok": "2026-11-12", "strikes": 1, "why": "empty answer"}
+{"b": "join:thermeleon", "last_ok": "2026-11-13", "strikes": 0}
 {"b": "join:thescon", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "join:thescope", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "join:thesession", "last_ok": "2026-10-30", "strikes": 0}
@@ -72313,7 +72313,7 @@
 {"b": "oracle:eswt", "last_ok": "", "strikes": 0, "why": "error: not enough values to unpack (expected 2, got 1)"}
 {"b": "oracle:eswt.fa.us6.oraclecloud.com/CX", "last_ok": "2026-11-08", "strikes": 0}
 {"b": "oracle:eswt.fa.us6.oraclecloud.com/CX_1001", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "oracle:etgi", "last_ok": "", "strikes": 0, "why": "error: HTTPSConnectionPool(host='etgi', port=443): Max retries exceeded with url: /hcmRestApi/resources/latest/recruitingCEJobRequisitions?onlyData=true&expand=requisitionList.secondaryLocations&finder=findReqs%3BsiteNumber%3DCX%2Climit%3D50%2Coffset%3D0%2CsortBy%3DPOSTING_DATES_DESC (Caused by NameResolutionError(\"HTTPSConnection(host='etgi', port=443): Failed to resolve 'etgi' ([Errno -3] Temporary failure in name resolution)\"))"}
+{"b": "oracle:etgi", "last_ok": "", "strikes": 0, "why": "error: still running after 960s"}
 {"b": "oracle:etgi.fa.us8.oraclecloud.com/CX", "last_ok": "2026-11-08", "strikes": 0}
 {"b": "oracle:etihadrail-iaalbv", "last_ok": "", "strikes": 0, "why": "error: not enough values to unpack (expected 2, got 1)"}
 {"b": "oracle:etihadrail-iaalbv.fa.ocs.oraclecloud.com/CX", "last_ok": "2026-11-08", "strikes": 0}
@@ -93500,7 +93500,7 @@
 {"b": "rippling:silvercrest-asset-management-group", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "rippling:simeon-global-consulting", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "rippling:simplex-health", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "rippling:simplexwellness", "last_ok": "2026-11-13", "strikes": 0}
+{"b": "rippling:simplexwellness", "last_ok": "2026-11-13", "strikes": 1, "why": "empty answer"}
 {"b": "rippling:simply-solar", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "rippling:singularity-defense", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "rippling:sipcam-agro-solutions-llc", "last_ok": "2026-10-30", "strikes": 0}
@@ -105806,7 +105806,7 @@
 {"b": "workday:hyvee.wd1.myworkdayjobs.com/amberspecialtypharmacyhy-veepharmacysolutions", "last_ok": "2026-10-28", "strikes": 0}
 {"b": "workday:hyvee.wd1.myworkdayjobs.com/fdicareers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:hyvee.wd1.myworkdayjobs.com/midwestheritagecareers", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:hyvee.wd1.myworkdayjobs.com/pdicareers", "last_ok": "2026-11-12", "strikes": 1, "why": "empty answer"}
+{"b": "workday:hyvee.wd1.myworkdayjobs.com/pdicareers", "last_ok": "2026-11-13", "strikes": 0}
 {"b": "workday:ia.wd3.myworkdayjobs.com/professional_us", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:iaggbs.wd103.myworkdayjobs.com/iag_transform", "last_ok": "2026-10-29", "strikes": 0}
 {"b": "workday:iaggbs.wd103.myworkdayjobs.com/iaggbs", "last_ok": "2026-10-29", "strikes": 0}
@@ -105982,7 +105982,7 @@
 {"b": "workday:javararesearch.wd12.myworkdayjobs.com/external_career_site", "last_ok": "2026-10-27", "strikes": 0}
 {"b": "workday:javer.wd12.myworkdayjobs.com/bolsa_de_trabajo_javer", "last_ok": "2026-10-26", "strikes": 0}
 {"b": "workday:jbhunt.wd501.myworkdayjobs.com/Careers", "last_ok": "2026-10-20", "strikes": 0}
-{"b": "workday:jci.wd5.myworkdayjobs.com/JCI", "last_ok": "2026-11-13", "strikes": 0}
+{"b": "workday:jci.wd5.myworkdayjobs.com/JCI", "last_ok": "2026-11-13", "strikes": 0, "why": "error: still running after 960s"}
 {"b": "workday:jcorp.wd102.myworkdayjobs.com/kpj", "last_ok": "2026-10-19", "strikes": 0, "why": "error: 403 Client Error: Forbidden for url: https://jcorp.wd102.myworkdayjobs.com/wday/cxs/jcorp/kpj/jobs"}
 {"b": "workday:jcrew.wd1.myworkdayjobs.com/jcrewcareers", "last_ok": "2026-10-24", "strikes": 0}
 {"b": "workday:jcrew.wd1.myworkdayjobs.com/madewellcareers", "last_ok": "2026-10-30", "strikes": 0}

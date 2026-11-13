@@ -93,9 +93,9 @@
 {"company":"Hubo","first_seen":"2026-11-08","id":"csod:hubo:1108","location":"RETIE, Antwerpen, BE","reposts":1,"title":"Verkoper / Magazijnier / Kassa - Hubo Retie"}
 {"company":"Hubo","first_seen":"2026-11-08","id":"csod:hubo:1109","location":"ARENDONK, Antwerpen, BE","reposts":1,"title":"Verkoper / Magazijnier / Kassa - Hubo Arendonk"}
 {"company":"Hubo","first_seen":"2026-11-08","id":"csod:hubo:1110","location":"Veurne, West-Vlaanderen, BE","title":"Polyvalent Kassamedewerker (25u) - Hubo Veurne"}
-{"company":"Hubo","first_seen":"2026-11-08","id":"csod:hubo:1112","location":"HAMME, Oost-Vlaanderen, BE","title":"Kassamedewerker - Hubo Hamme"}
+{"closed_at":"2026-11-13","company":"Hubo","first_seen":"2026-11-08","id":"csod:hubo:1112","location":"HAMME, Oost-Vlaanderen, BE","title":"Kassamedewerker - Hubo Hamme"}
 {"company":"Hubo","first_seen":"2026-11-08","id":"csod:hubo:1113","location":"BRASSCHAAT, Antwerpen, BE","title":"Kassamedewerker - Hubo Brasschaat"}
-{"company":"Hubo","first_seen":"2026-11-08","id":"csod:hubo:1114","location":"HAMME, Oost-Vlaanderen, BE","title":"Verkoper / Aanvuller - Hubo Hamme"}
+{"closed_at":"2026-11-13","company":"Hubo","first_seen":"2026-11-08","id":"csod:hubo:1114","location":"HAMME, Oost-Vlaanderen, BE","title":"Verkoper / Aanvuller - Hubo Hamme"}
 {"closed_at":"2026-11-09","company":"Hubo","first_seen":"2026-11-08","id":"csod:hubo:1115","location":"Willebroek, Antwerpen, BE","title":"Magazijnier - Plafomat Willebroek"}
 {"company":"Hubo","first_seen":"2026-11-08","id":"csod:hubo:1116","location":"HAACHT, Vlaams-Brabant, BE","reposts":1,"title":"Flexi Winkelmedewerker - Hubo Haacht"}
 {"company":"Hubo","first_seen":"2026-11-08","id":"csod:hubo:1118","location":"STABROEK, Antwerpen, BE","title":"Verkoper / Aanvuller - Hubo Stabroek"}
@@ -104,6 +104,9 @@
 {"closed_at":"2026-11-09","company":"Hubo","first_seen":"2026-11-08","id":"csod:hubo:1122","location":"Chenee, Liège, BE","title":"Vendeur / Réassortisseur - Hubo Chênée"}
 {"company":"Hubo","first_seen":"2026-11-08","id":"csod:hubo:1123","location":"Wommelgem, Antwerpen, BE","title":"CISO"}
 {"company":"Hubo","first_seen":"2026-11-10","id":"csod:hubo:1124","location":"Wilrijk (Antwerpen), Antwerpen, BE","title":"Assistent-Winkelverantwoordelijke - Hubo Wilrijk"}
+{"company":"Hubo","first_seen":"2026-11-13","id":"csod:hubo:1127","location":"GENT, Oost-Vlaanderen, BE","title":"Verkoper / Aanvuller - Hubo Gent UZ"}
+{"company":"Hubo","first_seen":"2026-11-13","id":"csod:hubo:1128","location":"ZELZATE, Oost-Vlaanderen, BE","title":"Flexi Kassamedewerk(st)er (tijdelijk) - Hubo Zelzate"}
+{"company":"Hubo","first_seen":"2026-11-13","id":"csod:hubo:1129","location":"LEDE, Oost-Vlaanderen, BE","reposts":2,"title":"Verkoper / Aanvuller - Hubo Lede"}
 {"company":"Hubo","first_seen":"2026-11-08","id":"csod:hubo:383","location":"EDEGEM, Antwerpen, BE","title":"Trainee Assistent Winkelverantwoordelijke - Provincie Antwerpen"}
 {"company":"Hubo","first_seen":"2026-11-08","id":"csod:hubo:497","location":"Wommelgem, Antwerpen, BE","title":"Stagiair(e)"}
 {"company":"Hubo","first_seen":"2026-11-08","id":"csod:hubo:645","location":"Wommelgem, Antwerpen, BE","title":"Stagiair(e) Inkoopassistent"}

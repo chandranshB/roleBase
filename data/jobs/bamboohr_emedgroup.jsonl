@@ -42,7 +42,7 @@
 {"closed_at":"2026-11-08","company":"EMED Group","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:emedgroup:2814","location":"Crewe, Cheshire East","team":"Operations","title":"Ambulance Care Assistant"}
 {"closed_at":"2026-10-20","company":"EMED Group","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:emedgroup:2816","location":"Abingdon, Oxfordshire","team":"Operations","title":"Ambulance Care Assistant"}
 {"closed_at":"2026-11-12","company":"EMED Group","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:emedgroup:2817","location":"Oxford, South East","team":"Operations","title":"Ambulance Care Assistant"}
-{"company":"EMED Group","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:emedgroup:2818","location":"Aylesbury, Buckinghamshire","team":"Operations","title":"Ambulance Care Assistant"}
+{"closed_at":"2026-11-13","company":"EMED Group","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:emedgroup:2818","location":"Aylesbury, Buckinghamshire","team":"Operations","title":"Ambulance Care Assistant"}
 {"closed_at":"2026-10-23","company":"EMED Group","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:emedgroup:2819","location":"Reading, Berkshire","team":"Operations","title":"Ambulance Care Assistant"}
 {"closed_at":"2026-10-23","company":"EMED Group","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:emedgroup:2820","location":"Slough, Berkshire","team":"Operations","title":"Ambulance Care Assistant"}
 {"company":"EMED Group","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:emedgroup:2825","location":"Cannock, Staffordshire","team":"Operations","title":"Ambulance Care Assistant"}
@@ -57,7 +57,7 @@
 {"company":"EMED Group","first_seen":"2026-10-19","id":"bamboohr:emedgroup:2838","location":"Shepton Mallet, Somerset","team":"Operations","title":"Ambulance Care Assistant (Bank)"}
 {"company":"EMED Group","first_seen":"2026-10-19","id":"bamboohr:emedgroup:2839","location":"Guildford, Surrey","team":"Operations","title":"Ambulance Care Assistant (Bank)"}
 {"closed_at":"2026-11-08","company":"EMED Group","employment":"full_time","first_seen":"2026-10-20","id":"bamboohr:emedgroup:2840","location":"Nottingham, Nottingham","team":"Central Ops","title":"Call Handler"}
-{"company":"EMED Group","employment":"full_time","first_seen":"2026-10-20","id":"bamboohr:emedgroup:2841","location":"Farnborough, Hampshire","team":"Operations","title":"Ambulance Care Assistant"}
+{"closed_at":"2026-11-13","company":"EMED Group","employment":"full_time","first_seen":"2026-10-20","id":"bamboohr:emedgroup:2841","location":"Farnborough, Hampshire","team":"Operations","title":"Ambulance Care Assistant"}
 {"company":"EMED Group","employment":"full_time","first_seen":"2026-11-12","id":"bamboohr:emedgroup:2842","location":"Redhill, Surrey","team":"Operations","title":"Fleet Administrator"}
 {"closed_at":"2026-10-26","company":"EMED Group","employment":"full_time","first_seen":"2026-10-22","id":"bamboohr:emedgroup:2844","location":"Stoke-on-Trent, Staffordshire","team":"Central Ops","title":"Controller/Planner"}
 {"closed_at":"2026-11-08","company":"EMED Group","employment":"full_time","first_seen":"2026-10-23","id":"bamboohr:emedgroup:2845","location":"Banbury, Oxfordshire","reposts":3,"team":"Operations","title":"Ambulance Care Assistant"}
@@ -92,3 +92,4 @@
 {"company":"EMED Group","employment":"part_time","first_seen":"2026-11-12","id":"bamboohr:emedgroup:2878","location":"Crewe, Cheshire East","team":"Operations","title":"Courier Driver"}
 {"company":"EMED Group","employment":"full_time","first_seen":"2026-11-12","id":"bamboohr:emedgroup:2879","location":"Crewe, Cheshire East","team":"Operations","title":"Courier Driver"}
 {"company":"EMED Group","employment":"full_time","first_seen":"2026-11-12","id":"bamboohr:emedgroup:2880","remote":true,"team":"Learning & Dev","title":"Learning and Development Business Partner"}
+{"company":"EMED Group","employment":"part_time","first_seen":"2026-11-13","id":"bamboohr:emedgroup:2882","location":"Crewe, Cheshire East","reposts":1,"team":"Operations","title":"Courier Driver"}

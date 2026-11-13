@@ -30,7 +30,7 @@
 {"company":"Nutanix","first_seen":"2026-10-30","id":"jobvite:nutanix:oAyWAfwo","title":"Senior Administrative Assistant"}
 {"company":"Nutanix","first_seen":"2026-11-08","id":"jobvite:nutanix:oB4zAfwy","title":"Staff Consulting Architect - Cloud Native (NKP)"}
 {"company":"Nutanix","first_seen":"2026-10-30","id":"jobvite:nutanix:oBVXAfwN","title":"Senior Manufacturing Test Development Engineer"}
-{"company":"Nutanix","first_seen":"2026-11-13","id":"jobvite:nutanix:oByQAfwj","title":"Territory Inside Account Executive"}
+{"closed_at":"2026-11-13","company":"Nutanix","first_seen":"2026-11-13","id":"jobvite:nutanix:oByQAfwj","title":"Territory Inside Account Executive"}
 {"company":"Nutanix","first_seen":"2026-10-30","id":"jobvite:nutanix:oCf0Afwb","title":"Senior Technical Account Manager"}
 {"company":"Nutanix","first_seen":"2026-11-08","id":"jobvite:nutanix:oD3mAfwm","title":"Resident Consultant"}
 {"company":"Nutanix","first_seen":"2026-11-08","id":"jobvite:nutanix:oD5xAfwz","title":"Sr. Manager, Analytics Engineering"}
@@ -95,7 +95,7 @@
 {"company":"Nutanix","first_seen":"2026-11-08","id":"jobvite:nutanix:oYJVAfwW","title":"SRE II Enterprise Tech Support (Virtualization & Networking)"}
 {"company":"Nutanix","first_seen":"2026-10-30","id":"jobvite:nutanix:oYPRAfwY","title":"Sr. Staff Consulting Architect – AI"}
 {"company":"Nutanix","first_seen":"2026-10-30","id":"jobvite:nutanix:oZRWAfw6","title":"Sr. Business Systems Analyst"}
-{"closed_at":"2026-11-12","company":"Nutanix","first_seen":"2026-11-09","id":"jobvite:nutanix:oZlaAfwO","title":"Senior Enterprise Account Manager"}
+{"company":"Nutanix","first_seen":"2026-11-09","id":"jobvite:nutanix:oZlaAfwO","title":"Senior Enterprise Account Manager"}
 {"company":"Nutanix","first_seen":"2026-11-11","id":"jobvite:nutanix:ob35AfwD","title":"Member of Technical Staff 3"}
 {"company":"Nutanix","first_seen":"2026-11-08","id":"jobvite:nutanix:obJVAfw9","title":"SRE II Enterprise Tech Support (Virtualization & Networking)"}
 {"company":"Nutanix","first_seen":"2026-11-08","id":"jobvite:nutanix:obKVAfwa","title":"MTS 2: NC2 Engineering Operations"}
@@ -107,7 +107,7 @@
 {"closed_at":"2026-11-08","company":"Nutanix","first_seen":"2026-10-30","id":"jobvite:nutanix:odIEAfwT","title":"Channel Chief - APJ"}
 {"company":"Nutanix","first_seen":"2026-10-30","id":"jobvite:nutanix:odbWAfwE","title":"Technical Program Manager - Customer Trust & Governance - Public Sector/Government"}
 {"company":"Nutanix","first_seen":"2026-10-30","id":"jobvite:nutanix:odlQAfwI","title":"Commercial Account Manager (Milwaukee or Madison)"}
-{"closed_at":"2026-11-12","company":"Nutanix","first_seen":"2026-10-30","id":"jobvite:nutanix:oeJFAfwW","title":"Enterprise Account Manager - Strategic Infrastructure Transformation"}
+{"company":"Nutanix","first_seen":"2026-10-30","id":"jobvite:nutanix:oeJFAfwW","title":"Enterprise Account Manager - Strategic Infrastructure Transformation"}
 {"closed_at":"2026-11-08","company":"Nutanix","first_seen":"2026-10-30","id":"jobvite:nutanix:oesMAfwM","title":"Resource Coordinator"}
 {"company":"Nutanix","first_seen":"2026-10-30","id":"jobvite:nutanix:oet0Afw1","skills":["payroll"],"title":"LATAM Accounting & Payroll Operations Specialist"}
 {"closed_at":"2026-11-09","company":"Nutanix","first_seen":"2026-11-08","id":"jobvite:nutanix:ofCWAfw7","title":"Sales Development Representative"}
@@ -124,17 +124,18 @@
 {"company":"Nutanix","first_seen":"2026-10-30","id":"jobvite:nutanix:oiWRAfwp","skills":["talent_acquisition"],"title":"Senior Manager, Talent Acquisition"}
 {"company":"Nutanix","first_seen":"2026-11-08","id":"jobvite:nutanix:ojXqAfw0","title":"SRE Enterprise Tech Support (Virtualization & Networking)"}
 {"company":"Nutanix","first_seen":"2026-11-08","id":"jobvite:nutanix:ojY3AfwE","title":"Senior Resident Consultant"}
-{"company":"Nutanix","first_seen":"2026-11-13","id":"jobvite:nutanix:ojjIAfwE","title":"Senior Systems Engineer - Service Providers"}
+{"closed_at":"2026-11-13","company":"Nutanix","first_seen":"2026-11-13","id":"jobvite:nutanix:ojjIAfwE","title":"Senior Systems Engineer - Service Providers"}
 {"closed_at":"2026-11-08","company":"Nutanix","first_seen":"2026-10-30","id":"jobvite:nutanix:ojpGAfwI","skills":["kubernetes"],"title":"Senior Staff Engineer - Nutanix Kubernetes Platform (NKP)"}
 {"company":"Nutanix","first_seen":"2026-11-10","id":"jobvite:nutanix:ok15AfwK","title":"Sr. Staff Consultant - AI"}
 {"company":"Nutanix","first_seen":"2026-11-08","id":"jobvite:nutanix:okvTAfw2","title":"Member of Technical Staff 1- Core Data Path"}
+{"company":"Nutanix","first_seen":"2026-11-13","id":"jobvite:nutanix:olAZAfwe","reposts":1,"title":"Sr. Systems Sales Engineer"}
 {"company":"Nutanix","first_seen":"2026-10-30","id":"jobvite:nutanix:olJUAfwi","title":"Financial Analyst"}
 {"company":"Nutanix","first_seen":"2026-11-08","id":"jobvite:nutanix:olfIAfwC","title":"SRE II Enterprise Tech Support (Virtualization & Networking)"}
 {"closed_at":"2026-10-30","company":"Nutanix","first_seen":"2026-10-30","id":"jobvite:nutanix:ollSAfwS","title":"Systems Sales Engineer"}
 {"company":"Nutanix","first_seen":"2026-11-08","id":"jobvite:nutanix:on39AfwT","title":"Senior Technical Account Manager (Tokyo or Osaka）"}
 {"company":"Nutanix","first_seen":"2026-10-30","id":"jobvite:nutanix:onANAfw4","title":"Manager, Service Strategy and Enablement"}
 {"closed_at":"2026-11-09","company":"Nutanix","first_seen":"2026-11-08","id":"jobvite:nutanix:onT0AfwA","title":"Principal Talent Advisor"}
-{"company":"Nutanix","first_seen":"2026-11-08","id":"jobvite:nutanix:ona2AfwT","title":"Director, Systems Engineering - EMEA South"}
+{"closed_at":"2026-11-13","company":"Nutanix","first_seen":"2026-11-08","id":"jobvite:nutanix:ona2AfwT","title":"Director, Systems Engineering - EMEA South"}
 {"closed_at":"2026-11-12","company":"Nutanix","first_seen":"2026-11-08","id":"jobvite:nutanix:oncCAfwv","title":"Senior Enterprise Account Manager - Public Sector, Saudi Arabia"}
 {"closed_at":"2026-11-08","company":"Nutanix","first_seen":"2026-10-30","id":"jobvite:nutanix:onxRAfw5","title":"Commission Analyst"}
 {"company":"Nutanix","first_seen":"2026-10-30","id":"jobvite:nutanix:ooeNAfwJ","title":"Sr. Customer Experience Manager"}

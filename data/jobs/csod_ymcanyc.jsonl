@@ -627,7 +627,7 @@
 {"company":"YMCA of Greater New York","first_seen":"2026-11-08","id":"csod:ymcanyc:1197","location":"Brooklyn, NY","posted":"2022-09-09","title":"Dance Instructor - Youth Ballet (Park Slope Armory YMCA)"}
 {"company":"YMCA of Greater New York","first_seen":"2026-11-08","id":"csod:ymcanyc:1212","location":"New York, NY","posted":"2022-09-15","title":"Child Watch Aide (McBurney YMCA)"}
 {"company":"YMCA of Greater New York","first_seen":"2026-11-08","id":"csod:ymcanyc:1221","location":"Brooklyn, NY","posted":"2022-09-26","title":"Activity Specialist - Track & Field (Park Slope Armory YMCA)"}
-{"company":"YMCA of Greater New York","first_seen":"2026-11-08","id":"csod:ymcanyc:1266","location":"Brooklyn, NY","posted":"2026-10-13","title":"Group Exercise Instructor - Spin Instructor (Park Slope Armory YMCA)"}
+{"company":"YMCA of Greater New York","first_seen":"2026-11-08","id":"csod:ymcanyc:1266","location":"Brooklyn, NY","posted":"2026-10-13","title":"Group Exercise Instructor (Park Slope Armory YMCA)"}
 {"company":"YMCA of Greater New York","first_seen":"2026-11-08","id":"csod:ymcanyc:1267","location":"Brooklyn, NY","posted":"2022-11-03","title":"Group Exercise Instructor (Prospect Park YMCA)"}
 {"company":"YMCA of Greater New York","first_seen":"2026-11-08","id":"csod:ymcanyc:1280","location":"Arverne, NY","posted":"2022-11-07","title":"Child Watch Aide (Rockaway YMCA)"}
 {"company":"YMCA of Greater New York","first_seen":"2026-11-08","id":"csod:ymcanyc:1284","location":"Brooklyn, NY","posted":"2022-11-29","title":"Personal Trainer (Coney Island YMCA)"}
@@ -804,7 +804,7 @@
 {"company":"YMCA of Greater New York","first_seen":"2026-11-08","id":"csod:ymcanyc:2997","location":"Jamaica, NY","posted":"2026-03-17","title":"Mechanic II (Jamaica YMCA)"}
 {"company":"YMCA of Greater New York","first_seen":"2026-11-08","id":"csod:ymcanyc:3004","location":"New York, NY","posted":"2026-03-19","title":"Summer Camp Basketball Coach (Vanderbilt YMCA)"}
 {"company":"YMCA of Greater New York","first_seen":"2026-11-08","id":"csod:ymcanyc:3005","location":"Bronx, NY","posted":"2026-03-18","title":"Summer Camp Basketball Coach (La Central YMCA)"}
-{"company":"YMCA of Greater New York","first_seen":"2026-11-08","id":"csod:ymcanyc:3015","location":"Staten Island, NY","posted":"2026-03-31","title":"Summer Camp Soccer Coach (Broadway YMCA)"}
+{"closed_at":"2026-11-13","company":"YMCA of Greater New York","first_seen":"2026-11-08","id":"csod:ymcanyc:3015","location":"Staten Island, NY","posted":"2026-03-31","title":"Summer Camp Soccer Coach (Broadway YMCA)"}
 {"company":"YMCA of Greater New York","first_seen":"2026-11-08","id":"csod:ymcanyc:3042","location":"Jamaica, NY","posted":"2026-04-27","title":"Director of Special Projects (Jamaica YMCA)"}
 {"company":"YMCA of Greater New York","first_seen":"2026-11-08","id":"csod:ymcanyc:3051","location":"Bronx, NY","posted":"2026-04-30","title":"Member Experience Representative I (La Central YMCA)"}
 {"company":"YMCA of Greater New York","first_seen":"2026-11-08","id":"csod:ymcanyc:3052","location":"Bronx, NY","posted":"2026-04-30","title":"Child Watch Aide (La Central YMCA)"}
@@ -964,7 +964,7 @@
 {"company":"YMCA of Greater New York","first_seen":"2026-11-08","id":"csod:ymcanyc:3294","location":"Staten Island, NY","posted":"2026-09-02","title":"Activity Specialist: Art (Staten Island South Shore YMCA)"}
 {"company":"YMCA of Greater New York","first_seen":"2026-11-08","id":"csod:ymcanyc:3296","location":"Staten Island, NY","posted":"2026-09-10","title":"Activity Specialist: Leadership & College Readiness (Staten Island South Shore YMCA)"}
 {"company":"YMCA of Greater New York","first_seen":"2026-11-08","id":"csod:ymcanyc:3302","location":"Bronx, NY, US","posted":"2026-08-18","title":"Community School Director (Northeast Bronx YMCA)"}
-{"company":"YMCA of Greater New York","first_seen":"2026-11-08","id":"csod:ymcanyc:3305","location":"Bronx, NY","posted":"2026-08-21","title":"Afterschool Coordinator (La Central YMCA)"}
+{"closed_at":"2026-11-13","company":"YMCA of Greater New York","first_seen":"2026-11-08","id":"csod:ymcanyc:3305","location":"Bronx, NY","posted":"2026-08-21","title":"Afterschool Coordinator (La Central YMCA)"}
 {"company":"YMCA of Greater New York","first_seen":"2026-11-08","id":"csod:ymcanyc:3306","location":"New York, NY","posted":"2026-08-21","reposts":1,"title":"Sports Instructor (Vanderbilt YMCA)"}
 {"company":"YMCA of Greater New York","first_seen":"2026-11-08","id":"csod:ymcanyc:3311","location":"Queens, NY","posted":"2026-08-21","title":"Content Specialist (Flushing YMCA)"}
 {"company":"YMCA of Greater New York","first_seen":"2026-11-08","id":"csod:ymcanyc:3312","location":"Queens, NY","posted":"2026-08-26","title":"Inclusion Specialist (Flushing YMCA)"}
@@ -1028,11 +1028,12 @@
 {"company":"YMCA of Greater New York","first_seen":"2026-11-08","id":"csod:ymcanyc:3419","location":"Bronx, NY","posted":"2026-10-30","title":"Business Office HR Coordinator (La Central YMCA)"}
 {"company":"YMCA of Greater New York","first_seen":"2026-11-08","id":"csod:ymcanyc:3420","location":"Brooklyn, NY","posted":"2026-11-04","title":"Sports Instructor (Flatbush YMCA)"}
 {"company":"YMCA of Greater New York","first_seen":"2026-11-08","id":"csod:ymcanyc:3421","location":"New York, NY","posted":"2026-10-29","reposts":1,"title":"New Americans Initiative Coordinator (Chinatown YMCA)"}
-{"company":"YMCA of Greater New York","first_seen":"2026-11-08","id":"csod:ymcanyc:3423","location":"Manhattan, NY","posted":"2026-11-03","title":"Senior Director of Financial Planning & Reporting (Association Office)"}
+{"company":"YMCA of Greater New York","first_seen":"2026-11-08","id":"csod:ymcanyc:3423","location":"New York, NY","posted":"2026-11-03","title":"Senior Director of Financial Planning & Reporting (Association Office)"}
 {"company":"YMCA of Greater New York","first_seen":"2026-11-08","id":"csod:ymcanyc:3425","location":"Manhattan, NY","posted":"2026-11-05","reposts":1,"title":"Business Office HR Coordinator (Harlem YMCA)"}
 {"company":"YMCA of Greater New York","first_seen":"2026-11-12","id":"csod:ymcanyc:3426","location":"Queens, NY","posted":"2026-11-12","title":"Child Watch Aide (Cross Island YMCA)"}
 {"company":"YMCA of Greater New York","first_seen":"2026-11-09","id":"csod:ymcanyc:3427","location":"Queens, NY, US","posted":"2026-11-09","reposts":1,"title":"Member Experience Representative I (Cross IslandYMCA)"}
 {"company":"YMCA of Greater New York","first_seen":"2026-11-10","id":"csod:ymcanyc:3428","location":"Brooklyn, NY","posted":"2026-11-10","title":"Member Experience Director (Park Slope Armory YMCA)"}
+{"company":"YMCA of Greater New York","first_seen":"2026-11-13","id":"csod:ymcanyc:3429","location":"Brooklyn, NY, US","posted":"2026-11-13","title":"Business Office Coordinator (Coney Island YMCA)"}
 {"company":"YMCA of Greater New York","first_seen":"2026-11-08","id":"csod:ymcanyc:355","location":"Staten Island, NY","posted":"2021-07-07","title":"Youth Coach - Saturday Night Lights Teens Program (Broadway YMCA)"}
 {"company":"YMCA of Greater New York","first_seen":"2026-11-08","id":"csod:ymcanyc:357","location":"Brooklyn, NY","posted":"2026-03-09","title":"Youth Coach - Saturday Night Lights Teen Program (Coney Island YMCA)"}
 {"company":"YMCA of Greater New York","first_seen":"2026-11-08","id":"csod:ymcanyc:361","location":"Brooklyn, NY","posted":"2021-07-07","title":"Youth Coach - Saturday Night Lights Teens Program (Flatbush YMCA)"}

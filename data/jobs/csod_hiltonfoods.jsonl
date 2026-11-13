@@ -100,7 +100,7 @@
 {"company":"Hilton Food Group","first_seen":"2026-11-08","id":"csod:hiltonfoods:1134","location":"Kolt, Hasselager, DK","title":"Facility tekniker"}
 {"company":"Hilton Food Group","first_seen":"2026-11-08","id":"csod:hiltonfoods:1159","location":"Tychy, PL","title":"KOORDYNATOR PRODUKCJI (K/M)"}
 {"company":"Hilton Food Group","first_seen":"2026-11-08","id":"csod:hiltonfoods:1169","location":"Tychy, PL","title":"KONTROLER JAKOŚCI (K/M)"}
-{"company":"Hilton Food Group","first_seen":"2026-11-08","id":"csod:hiltonfoods:1184","location":"GB","reposts":2,"title":"Nawi Operative"}
+{"closed_at":"2026-11-13","company":"Hilton Food Group","first_seen":"2026-11-08","id":"csod:hiltonfoods:1184","location":"GB","reposts":2,"title":"Nawi Operative"}
 {"company":"Hilton Food Group","first_seen":"2026-11-08","id":"csod:hiltonfoods:1188","location":"Tychy, PL","posted":"2026-04-09","title":"Key Account Manager (K/M)"}
 {"company":"Hilton Food Group","first_seen":"2026-11-08","id":"csod:hiltonfoods:1189","location":"Tychy, PL","posted":"2026-04-09","title":"Koordynator ds. Projektów (K/M)"}
 {"company":"Hilton Food Group","first_seen":"2026-11-08","id":"csod:hiltonfoods:1202","location":"GB","reposts":2,"title":"Nawi Operative"}
@@ -120,7 +120,7 @@
 {"company":"Hilton Food Group","first_seen":"2026-11-08","id":"csod:hiltonfoods:1321","location":"Huntingdon, Cambridgeshire, GB","reposts":2,"title":"Machine Operator"}
 {"company":"Hilton Food Group","first_seen":"2026-11-08","id":"csod:hiltonfoods:1322","location":"Huntingdon, Cambridgeshire, GB","reposts":1,"title":"Production Operative"}
 {"company":"Hilton Food Group","first_seen":"2026-11-08","id":"csod:hiltonfoods:1324","location":"Kolt, Hasselager, DK","title":"Title"}
-{"company":"Hilton Food Group","first_seen":"2026-11-08","id":"csod:hiltonfoods:1337","location":"Bunbury, WA, AU","title":"Safety - Wellbeing Manager"}
+{"closed_at":"2026-11-13","company":"Hilton Food Group","first_seen":"2026-11-08","id":"csod:hiltonfoods:1337","location":"Bunbury, WA, AU","title":"Safety - Wellbeing Manager"}
 {"company":"Hilton Food Group","first_seen":"2026-11-08","id":"csod:hiltonfoods:1338","location":"Huntingdon, Cambridgeshire, GB","title":"Warehouse Operative"}
 {"company":"Hilton Food Group","first_seen":"2026-11-08","id":"csod:hiltonfoods:1345","location":"Wiri, Auckland, NZ","title":"Logistics Team Leader"}
 {"company":"Hilton Food Group","first_seen":"2026-11-08","id":"csod:hiltonfoods:1348","location":"Huntingdon, Cambridgeshire, GB","title":"Dayshift Engineer"}
@@ -140,7 +140,7 @@
 {"company":"Hilton Food Group","first_seen":"2026-11-08","id":"csod:hiltonfoods:1386","location":"Brantford, Ontario, CA","title":"Warehouse Automation Lead"}
 {"company":"Hilton Food Group","first_seen":"2026-11-08","id":"csod:hiltonfoods:1387","location":"Truganina, VIC, AU","posted":"2026-01-11","title":"Finance Partner - Customer"}
 {"company":"Hilton Food Group","first_seen":"2026-11-08","id":"csod:hiltonfoods:1388","location":"Huntingdon, Cambridgeshire, GB","posted":"2026-02-11","title":"IT Project Accountant"}
-{"company":"Hilton Food Group","first_seen":"2026-11-08","id":"csod:hiltonfoods:1389","location":"Brantford, Ontario, CA","posted":"2026-02-11","title":"Crate Inbound Operator"}
+{"closed_at":"2026-11-13","company":"Hilton Food Group","first_seen":"2026-11-08","id":"csod:hiltonfoods:1389","location":"Brantford, Ontario, CA","posted":"2026-02-11","title":"Crate Inbound Operator"}
 {"company":"Hilton Food Group","first_seen":"2026-11-08","id":"csod:hiltonfoods:1390","location":"Brantford, Ontario, CA","posted":"2026-02-11","title":"Crate Wash Lead"}
 {"company":"Hilton Food Group","first_seen":"2026-11-09","id":"csod:hiltonfoods:1391","location":"Brantford, Ontario, CA","posted":"2026-09-11","reposts":1,"title":"Warehouse Automation Specialist"}
 {"company":"Hilton Food Group","first_seen":"2026-11-08","id":"csod:hiltonfoods:1394","location":"Brantford, Ontario, CA","posted":"2026-03-11","title":"Line Runner"}
@@ -158,6 +158,7 @@
 {"company":"Hilton Food Group","first_seen":"2026-11-11","id":"csod:hiltonfoods:1429","location":"Huntingdon, Cambridgeshire, GB","posted":"2026-11-11","title":"Group Ethics Senior Manager"}
 {"company":"Hilton Food Group","first_seen":"2026-11-12","id":"csod:hiltonfoods:1432","location":"Melbourne, Victoria, AU","posted":"2026-11-11","title":"Production Manager - Afternoon shift"}
 {"company":"Hilton Food Group","first_seen":"2026-11-13","id":"csod:hiltonfoods:1433","location":"Brantford, Ontario, CA","posted":"2026-12-11","reposts":1,"title":"Forecast Planner"}
+{"company":"Hilton Food Group","first_seen":"2026-11-13","id":"csod:hiltonfoods:1435","location":"Kolt, Hasselager, DK","posted":"2026-12-11","reposts":1,"title":"Title"}
 {"company":"Hilton Food Group","first_seen":"2026-11-08","id":"csod:hiltonfoods:764","location":"Oosterhout, NL","posted":"2026-12-03","title":"Werkvoorbereider Technische Dienst"}
 {"company":"Hilton Food Group","first_seen":"2026-11-08","id":"csod:hiltonfoods:766","location":"Oosterhout, NL","posted":"2026-12-03","title":"Allround monteur"}
 {"company":"Hilton Food Group","first_seen":"2026-11-08","id":"csod:hiltonfoods:830","location":"Zaandam, NL","title":"Kwaliteitsspecialist Operations"}

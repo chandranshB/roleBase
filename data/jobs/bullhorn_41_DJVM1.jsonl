@@ -24,7 +24,7 @@
 {"company":"Optomi","first_seen":"2026-11-08","id":"bullhorn:41/DJVM1:45038","location":"Whiteville , North Carolina","posted":"2026-11-10","skills":["crm","customer_service","ms_office"],"team":"Whiteville, NC","title":"CX Team Lead","years":5}
 {"company":"Optomi","employment":"contract","first_seen":"2026-11-08","id":"bullhorn:41/DJVM1:45075","location":"walnut creek, California","skills":["linux","kubernetes"],"title":"Production Support Engineer L1/L2"}
 {"closed_at":"2026-11-11","company":"Optomi","employment":"contract","first_seen":"2026-11-08","id":"bullhorn:41/DJVM1:45197","location":"Plano, Texas","title":"Fiserv FCRM Developer"}
-{"company":"Optomi","employment":"contract","first_seen":"2026-11-08","id":"bullhorn:41/DJVM1:45226","location":"Sunnyvale, California","skills":["jira","python","ruby","javascript","java","linux","llm","customer_service"],"title":"Bug Bounty Analyst","years":2}
+{"closed_at":"2026-11-13","company":"Optomi","employment":"contract","first_seen":"2026-11-08","id":"bullhorn:41/DJVM1:45226","location":"Sunnyvale, California","skills":["jira","python","ruby","javascript","java","linux","llm","customer_service"],"title":"Bug Bounty Analyst","years":2}
 {"company":"Optomi","first_seen":"2026-11-08","id":"bullhorn:41/DJVM1:45287","location":"Brewton, Georgia","posted":"2026-11-01","team":"Brewton, AL","title":"NOC Analyst"}
 {"company":"Optomi","first_seen":"2026-11-08","id":"bullhorn:41/DJVM1:45343","location":"New York, NY","title":"Engineering Manager"}
 {"company":"Optomi","first_seen":"2026-11-08","id":"bullhorn:41/DJVM1:45409","location":"Reston, Virginia","skills":["terraform","git","ci/cd","aws","azure"],"title":"Sr Security Okta Consultant","years":7}
@@ -34,7 +34,7 @@
 {"company":"Optomi","first_seen":"2026-11-08","id":"bullhorn:41/DJVM1:45459","location":"West Plains, Missouri","posted":"2026-10-05","skills":["social_media","ms_office"],"team":"West Plains, MO","title":"Talent Sourcer/Recruiter"}
 {"company":"Optomi","first_seen":"2026-11-08","id":"bullhorn:41/DJVM1:45463","location":"reston, Virginia","skills":["aws","azure","gcp","python","terraform"],"title":"Senior Access Management Engineer — Duo","years":5}
 {"company":"Optomi","employment":"contract","first_seen":"2026-11-08","id":"bullhorn:41/DJVM1:45478","location":"Raleigh, North Carolina","skills":["ms_office","powerpoint"],"title":"HEADS UP - Fiber Engineer (2)"}
-{"company":"Optomi","first_seen":"2026-11-08","id":"bullhorn:41/DJVM1:45479","location":"Brewton, Alabama","posted":"2026-10-14","team":"Brewton, AL","title":"SOC Analyst"}
+{"closed_at":"2026-11-13","company":"Optomi","first_seen":"2026-11-08","id":"bullhorn:41/DJVM1:45479","location":"Brewton, Alabama","posted":"2026-10-14","team":"Brewton, AL","title":"SOC Analyst"}
 {"company":"Optomi","first_seen":"2026-11-08","id":"bullhorn:41/DJVM1:45494","location":"Ann Arbor, Michigan","skills":["ml"],"title":"Sr. Technology Enablement Engineer"}
 {"company":"Optomi","first_seen":"2026-11-08","id":"bullhorn:41/DJVM1:45525","location":"Miami, Florida","title":"Kahua Business Analyst","years":3}
 {"company":"Optomi","employment":"contract","first_seen":"2026-11-08","id":"bullhorn:41/DJVM1:45535","skills":["jira","agile","project_management"],"title":"Technical Project Manager P3 5711-1"}
@@ -46,13 +46,13 @@
 {"company":"Optomi","first_seen":"2026-11-12","id":"bullhorn:41/DJVM1:45679","location":"New York, New York","skills":["ci/cd","llm","kubernetes","python","javascript","typescript","java","c#"],"title":"Senior Application Security Engineer","years":3}
 {"closed_at":"2026-11-10","company":"Optomi","first_seen":"2026-11-08","id":"bullhorn:41/DJVM1:45683","location":"Crockett, Texas","posted":"2026-10-16","skills":["customer_service","ms_office","crm","time_management"],"team":"Crockett, TX","title":"Tech Foundry Analyst"}
 {"closed_at":"2026-11-12","company":"Optomi","first_seen":"2026-11-08","id":"bullhorn:41/DJVM1:45688","location":"Fort Worth, Texas","skills":["aws","azure"],"title":"Application Pen Tester"}
-{"company":"Optomi","first_seen":"2026-11-08","id":"bullhorn:41/DJVM1:45725","location":"North Wilkesboro, North Carolina","skills":["negotiation","crm","react"],"title":"Tech Foundry Analyst","years":2}
+{"closed_at":"2026-11-13","company":"Optomi","first_seen":"2026-11-08","id":"bullhorn:41/DJVM1:45725","location":"North Wilkesboro, North Carolina","skills":["negotiation","crm","react"],"title":"Tech Foundry Analyst","years":2}
 {"closed_at":"2026-11-11","company":"Optomi","first_seen":"2026-11-08","id":"bullhorn:41/DJVM1:45726","location":"Edenton, North Carolina","skills":["crm"],"title":"CX Team Lead","years":3}
 {"company":"Optomi","first_seen":"2026-11-08","id":"bullhorn:41/DJVM1:45751","location":"Jasper, Texas","posted":"2026-10-26","skills":["jira","customer_service","python"],"team":"Jasper, TX","title":"NOC Analyst"}
 {"company":"Optomi","first_seen":"2026-11-08","id":"bullhorn:41/DJVM1:45753","location":"Henderson, Texas","posted":"2026-10-26","skills":["customer_service","crm","bilingual"],"team":"Henderson, TX","title":"CX Analyst | NFCU ATO","years":0}
 {"company":"Optomi","first_seen":"2026-11-08","id":"bullhorn:41/DJVM1:45792","location":"Whiteville, North Carolina","posted":"2026-11-12","skills":["customer_service","data_entry","crm"],"team":"Whiteville, NC","title":"CX Analyst"}
 {"company":"Optomi","first_seen":"2026-11-08","id":"bullhorn:41/DJVM1:45840","location":"Brewton, Texas","title":"CX Analyst"}
-{"company":"Optomi","first_seen":"2026-11-12","id":"bullhorn:41/DJVM1:45875","location":"Brewton, Alabama","posted":"2026-11-12","skills":["azure","python","project_management"],"team":"Other","title":"IT Systems Administrator","years":4}
+{"company":"Optomi","first_seen":"2026-11-12","id":"bullhorn:41/DJVM1:45875","location":"Edenton, North Carolina","posted":"2026-11-12","skills":["azure","python","project_management"],"team":"Other","title":"IT Systems Administrator","years":4}
 {"company":"Optomi","first_seen":"2026-11-08","id":"bullhorn:41/DJVM1:45876","location":"Whiteville, North Carolina","posted":"2026-10-29","skills":["data_entry","customer_service","hipaa","crm"],"team":"Whiteville, NC","title":"Tech Foundry Analyst"}
 {"company":"Optomi","first_seen":"2026-11-08","id":"bullhorn:41/DJVM1:45877","location":"North Wilksboro, North Carolina","posted":"2026-10-29","skills":["data_entry","customer_service","hipaa","crm"],"team":"North Wilkesboro, NC","title":"CX Analyst"}
 {"company":"Optomi","first_seen":"2026-11-08","id":"bullhorn:41/DJVM1:45879","location":"Edenton, North Carolina","posted":"2026-10-29","skills":["data_entry","customer_service","hipaa","crm"],"team":"Edenton, NC","title":"CX Analyst"}
@@ -68,8 +68,11 @@
 {"company":"Optomi","first_seen":"2026-11-08","id":"bullhorn:41/DJVM1:45993","location":"Reston, Virginia","title":"Sr Security Engineer"}
 {"company":"Optomi","first_seen":"2026-11-12","id":"bullhorn:41/DJVM1:46019","location":"Dallas, Texas","skills":["python"],"title":"Sr Security Engineer","years":5}
 {"closed_at":"2026-11-12","company":"Optomi","first_seen":"2026-11-11","id":"bullhorn:41/DJVM1:46086","location":"Brewton, Georgia","posted":"2026-11-10","skills":["customer_service","jira","salesforce","azure"],"team":"Brewton, AL","title":"SD Analyst"}
-{"company":"Optomi","first_seen":"2026-11-12","id":"bullhorn:41/DJVM1:46128","location":"Whiteville, North Carolina","posted":"2026-11-12","skills":["data_entry","customer_service","hipaa","crm","react"],"team":"North Wilkesboro, NC","title":"CX Team Lead | JHP CX Claims Support","years":3}
+{"company":"Optomi","first_seen":"2026-11-12","id":"bullhorn:41/DJVM1:46128","location":"Whiteville, North Carolina","posted":"2026-11-13","skills":["data_entry","customer_service","hipaa","crm","react"],"team":"North Wilkesboro, NC","title":"CX Team Lead | JHP CX Claims Support","years":3}
 {"company":"Optomi","first_seen":"2026-11-13","id":"bullhorn:41/DJVM1:46144","location":"Crockett, Texas","posted":"2026-11-12","reposts":1,"skills":["customer_service","data_entry","hipaa","crm"],"team":"Crockett, TX","title":"Tech Foundry Analyst"}
+{"company":"Optomi","first_seen":"2026-11-13","id":"bullhorn:41/DJVM1:46148","location":"Jasper, Texas","posted":"2026-11-13","reposts":1,"team":"Jasper, TX","title":"SD Analyst","years":2}
+{"company":"Optomi","first_seen":"2026-11-13","id":"bullhorn:41/DJVM1:46151","location":"Tahlequah, Oklahoma","posted":"2026-11-13","skills":["customer_service","ms_office"],"team":"Tahlequah, OK","title":"Service Desk Analyst","years":0}
+{"company":"Optomi","first_seen":"2026-11-13","id":"bullhorn:41/DJVM1:46153","location":"Tahlequah, Texas","posted":"2026-11-13","reposts":1,"skills":["customer_service","data_entry","hipaa","crm"],"team":"Tahlequah, OK","title":"Tech Foundry Analyst"}
 {"company":"Optomi","employment":"contract","first_seen":"2026-11-08","id":"bullhorn:41/DJVM1:462","location":"Dallas, Texas","skills":["sql","jira"],"title":"QA Engineer","years":5}
 {"company":"Optomi","first_seen":"2026-11-08","id":"bullhorn:41/DJVM1:463","location":"Dallas, Texas","skills":["project_management","pmp"],"title":"Senior Project Manager"}
 {"company":"Optomi","employment":"contract","first_seen":"2026-11-08","id":"bullhorn:41/DJVM1:464","location":"Dallas, Texas","skills":["sql","jira"],"title":".NET Developer","years":5}

@@ -14,11 +14,11 @@
 {"company":"Questel","first_seen":"2026-11-08","id":"bamboohr:questel:1050","remote":true,"team":"Sales","title":"Sales Operations Manager F/H"}
 {"company":"Questel","first_seen":"2026-10-30","id":"bamboohr:questel:1053","location":"Tunis, North-East","team":"R&D SaaS-CDQ-Patent","title":"QA Specialist - Manuel & Auto"}
 {"closed_at":"2026-11-10","company":"Questel","first_seen":"2026-11-08","id":"bamboohr:questel:1056","location":"Tunis, North-East","team":"Operations-Legal consulting-UK-NVG-Patent","title":"Patent Paralegal"}
-{"company":"Questel","first_seen":"2026-11-08","id":"bamboohr:questel:1057","location":"Paris, Ile-de-France","team":"Sales","title":"Key Account Manager - Translation & Filing F/H"}
+{"closed_at":"2026-11-13","company":"Questel","first_seen":"2026-11-08","id":"bamboohr:questel:1057","location":"Paris, Ile-de-France","team":"Sales","title":"Key Account Manager - Translation & Filing F/H"}
 {"company":"Questel","first_seen":"2026-11-08","id":"bamboohr:questel:1059","location":"Valbonne, Alpes-Maritimes","title":"Finance AI Transformation Lead F/H"}
 {"company":"Questel","first_seen":"2026-10-30","id":"bamboohr:questel:1060","location":"Paris, Ile-de-France","title":"Finance AI Transformation Lead F/H"}
 {"company":"Questel","first_seen":"2026-11-08","id":"bamboohr:questel:1061","location":"Valbonne, Alpes-Maritimes","title":"Sales AI Transformation Lead F/H"}
-{"company":"Questel","first_seen":"2026-10-30","id":"bamboohr:questel:1062","location":"Paris, Ile-de-France","title":"Sales AI Transformation Lead F/H"}
+{"closed_at":"2026-11-13","company":"Questel","first_seen":"2026-10-30","id":"bamboohr:questel:1062","location":"Paris, Ile-de-France","title":"Sales AI Transformation Lead F/H"}
 {"company":"Questel","first_seen":"2026-11-08","id":"bamboohr:questel:1063","location":"Valbonne, Alpes-Maritimes","title":"General Accountant F/H"}
 {"company":"Questel","first_seen":"2026-11-08","id":"bamboohr:questel:1064","location":"London","team":"Sales","title":"Key Account Manager - Translation & Filing (UK & Nordics)"}
 {"company":"Questel","first_seen":"2026-11-08","id":"bamboohr:questel:1065","remote":true,"title":"Linguist - German to English"}
@@ -39,7 +39,10 @@
 {"company":"Questel","first_seen":"2026-11-12","id":"bamboohr:questel:1081","remote":true,"title":"Key Account Manager - Intellectual Property Services"}
 {"company":"Questel","first_seen":"2026-11-10","id":"bamboohr:questel:1082","location":"Tunis, North-East","skills":["php"],"team":"R&D Services-BI-Patent-M1","title":"Back-end Developer – PHP"}
 {"company":"Questel","first_seen":"2026-11-10","id":"bamboohr:questel:1083","location":"Tunis, North-East","skills":["php","python"],"team":"R&D SaaS-Markify-Trademark","title":"Senior Back end Developer - PHP & Python"}
-{"company":"Questel","first_seen":"2026-11-12","id":"bamboohr:questel:1084","location":"Munich","title":"Customer Success Manager - Intellectual Property Software"}
+{"company":"Questel","first_seen":"2026-11-12","id":"bamboohr:questel:1084","location":"Munich","title":"Customer Success Manager - Intellectual Property Software / German speaking"}
+{"company":"Questel","first_seen":"2026-11-13","id":"bamboohr:questel:1085","location":"Munich","title":"Customer Success Manager - IP Intelligence Software / German speaking"}
+{"company":"Questel","first_seen":"2026-11-13","id":"bamboohr:questel:1086","remote":true,"title":"Customer Success Manager - IP Intelligence Software / French speaking"}
+{"company":"Questel","first_seen":"2026-11-13","id":"bamboohr:questel:1087","remote":true,"title":"IP Intelligence Software Specialist / Italian speaking"}
 {"company":"Questel","first_seen":"2026-11-08","id":"bamboohr:questel:812","location":"Tokyo, Chiyoda-ku","team":"R&D SaaS-CP-Patent-Executive","title":"インフラエンジニア"}
 {"company":"Questel","first_seen":"2026-11-08","id":"bamboohr:questel:883","location":"Tianjin City, Tianjin","team":"Operations-QTS-Engineering & Formatting-Patent","title":"File Formatting Engineer 排版专员"}
 {"company":"Questel","first_seen":"2026-11-08","id":"bamboohr:questel:891","remote":true,"team":"Operations-QFS-Patent","title":"IP Client Solutions Representative"}

@@ -364,7 +364,7 @@
 {"company":"ANSON'S","first_seen":"2026-11-08","id":"csod:puc:20206","location":"Vilnius, VILNIUS, LT","reposts":2,"title":"Department Manager Sales (m/f/d)"}
 {"company":"ANSON'S","first_seen":"2026-11-08","id":"csod:puc:20214","location":"Wien, WIEN, AT","title":"Trainee Buying (m/w/d)"}
 {"company":"ANSON'S","first_seen":"2026-11-08","id":"csod:puc:20216","location":"Düsseldorf, NORDRHEIN-WESTFALEN, DE","title":"Technical Product Owner Corporate Services Finance (m/w/d)"}
-{"company":"ANSON'S","employment":"internship","first_seen":"2026-11-08","id":"csod:puc:20220","location":"Düsseldorf, NORDRHEIN-WESTFALEN, DE","reposts":1,"title":"Praktikum Sales & Performance Management  (m/w/d)"}
+{"closed_at":"2026-11-13","company":"ANSON'S","employment":"internship","first_seen":"2026-11-08","id":"csod:puc:20220","location":"Düsseldorf, NORDRHEIN-WESTFALEN, DE","reposts":1,"title":"Praktikum Sales & Performance Management  (m/w/d)"}
 {"company":"ANSON'S","first_seen":"2026-11-08","id":"csod:puc:20221","location":"Madrid, MADRID, ES","title":"Patronista Men (m/f/d)"}
 {"company":"ANSON'S","first_seen":"2026-11-08","id":"csod:puc:20223","location":"Madrid, MADRID, ES","title":"Designer Light Woven Women (m/f/d)"}
 {"company":"ANSON'S","first_seen":"2026-11-08","id":"csod:puc:20224","location":"Saarlouis, SAARLAND, DE","reposts":13,"title":"Aushilfe Verkauf (m/w/d)"}
@@ -432,7 +432,7 @@
 {"company":"ANSON'S","first_seen":"2026-11-08","id":"csod:puc:20338","location":"Bedburg, NORDRHEIN-WESTFALEN, DE","reposts":1,"title":"Lagermitarbeiter (m/w/d)"}
 {"company":"ANSON'S","first_seen":"2026-11-08","id":"csod:puc:20339","location":"Vilnius, VILNIUS, LT","reposts":2,"title":"Pardavimų konsultantas (-ė)"}
 {"company":"ANSON'S","first_seen":"2026-11-08","id":"csod:puc:20340","location":"Madrid, MADRID, ES","title":"Buyer Quick Response (m/f/d)"}
-{"company":"ANSON'S","employment":"internship","first_seen":"2026-11-08","id":"csod:puc:20341","location":"Düsseldorf, NORDRHEIN-WESTFALEN, DE","title":"Werkstudent AI Hub (m/w/d)"}
+{"closed_at":"2026-11-13","company":"ANSON'S","employment":"internship","first_seen":"2026-11-08","id":"csod:puc:20341","location":"Düsseldorf, NORDRHEIN-WESTFALEN, DE","title":"Werkstudent AI Hub (m/w/d)"}
 {"company":"ANSON'S","employment":"internship","first_seen":"2026-11-08","id":"csod:puc:20343","location":"Düsseldorf, NORDRHEIN-WESTFALEN, DE","title":"Praktikum Projekt & Performance Management (m/w/d)"}
 {"company":"ANSON'S","first_seen":"2026-11-08","id":"csod:puc:20347","location":"Düsseldorf, NORDRHEIN-WESTFALEN, DE","skills":["supply_chain"],"title":"Associate Manager Supply Chain Services / Order and Distribution Management (m/w/d)"}
 {"company":"ANSON'S","first_seen":"2026-11-08","id":"csod:puc:20349","location":"Wien, WIEN, AT","title":"Mitarbeiter Dekoration (m/w/d)"}
@@ -497,6 +497,9 @@
 {"company":"ANSON'S","first_seen":"2026-11-12","id":"csod:puc:20419","location":"Den Haag, ZUID-HOLLAND, NL","reposts":2,"title":"Sales Assistant"}
 {"company":"ANSON'S","first_seen":"2026-11-12","id":"csod:puc:20421","location":"Mannheim, BADEN-WÜRTTEMBERG, DE","reposts":5,"title":"Schülerpraktikant (m/w/d)"}
 {"company":"ANSON'S","first_seen":"2026-11-12","id":"csod:puc:20423","location":"Dornbirn, VORARLBERG, AT","title":"Stellvertretender Abteilungsleiter Hauptkasse (m/w/d)"}
+{"company":"ANSON'S","employment":"internship","first_seen":"2026-11-13","id":"csod:puc:20424","location":"Düsseldorf, NORDRHEIN-WESTFALEN, DE","title":"Werkstudent Brand Management (m/w/d)"}
+{"company":"ANSON'S","first_seen":"2026-11-13","id":"csod:puc:20425","location":"Düsseldorf, NORDRHEIN-WESTFALEN, DE","title":"Marketing Operations Manager (m/w/d)"}
+{"company":"ANSON'S","first_seen":"2026-11-13","id":"csod:puc:20426","location":"Potsdam, BRANDENBURG, DE","reposts":2,"title":"Mitarbeiter Instore Logistik (m/w/d)"}
 {"closed_at":"2026-11-08","company":"ANSON'S","employment":"full_time","first_seen":"2026-10-04","id":"csod:puc:8/19178","location":"United States","posted":"2026-10-29","title":"Schülerpraktikant (m/w/d)","url":"https://puc.csod.com/ux/ats/careersite/8/home/requisition/19178?c=puc"}
 {"closed_at":"2026-10-11","company":"ANSON'S","employment":"full_time","first_seen":"2026-10-04","id":"csod:puc:8/19249","location":"United States","posted":"2026-10-10","title":"Schülerpraktikant (m/w/d)","url":"https://puc.csod.com/ux/ats/careersite/8/home/requisition/19249?c=puc"}
 {"closed_at":"2026-08-20","company":"ANSON'S","employment":"full_time","first_seen":"2026-05-24","id":"csod:puc:8/19423","location":"United States","posted":"2026-05-24","title":"Schülerpraktikant (m/w/d)","url":"https://puc.csod.com/ux/ats/careersite/8/home/requisition/19423?c=puc"}

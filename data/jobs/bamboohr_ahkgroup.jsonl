@@ -25,14 +25,14 @@
 {"company":"Alfred H Knight","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:ahkgroup:1911","location":"Kecamatan Bahodopi, Sulawesi Tengah","title":"HSE Officer"}
 {"company":"Alfred H Knight","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:ahkgroup:1912","location":"Balikpapan, East Kalimantan","title":"Quality Officer"}
 {"company":"Alfred H Knight","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:ahkgroup:1926","location":"Selangor Darul Ehsan, N/A","team":"Administration","title":"Administrator (Agriculture)"}
-{"company":"Alfred H Knight","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:ahkgroup:1941","location":"Liverpool, Merseyside","skills":["agile"],"team":"UK Business Systems - N01","title":"Agile Delivery Manager"}
+{"closed_at":"2026-11-13","company":"Alfred H Knight","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:ahkgroup:1941","location":"Liverpool, Merseyside","skills":["agile"],"team":"UK Business Systems - N01","title":"Agile Delivery Manager"}
 {"closed_at":"2026-11-11","company":"Alfred H Knight","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:ahkgroup:1943","location":"Liverpool, Merseyside","team":"UK Client Services - D03","title":"Client Services Coordinator"}
 {"company":"Alfred H Knight","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:ahkgroup:1944","location":"Liverpool, Merseyside","team":"UK Group Technical & Quality Laboratory - O03","title":"Senior Technical Specialist - Global Laboratories"}
 {"company":"Alfred H Knight","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:ahkgroup:1955","location":"Kitwe, Copperbelt","title":"Head of Department - Geochemistry"}
 {"company":"Alfred H Knight","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:ahkgroup:1959","location":"Liverpool, Merseyside","team":"UK Group Technical & Quality Laboratory - O03","title":"Group XRF Technical Support"}
 {"company":"Alfred H Knight","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:ahkgroup:1969","location":"Port Allen, Louisiana","title":"General Inspector"}
 {"company":"Alfred H Knight","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:ahkgroup:1971","location":"Tanzania, Dar es Salaam","team":"HR","title":"Human Resources & Administration Officer"}
-{"company":"Alfred H Knight","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:ahkgroup:1973","location":"Liverpool, Merseyside","team":"UK Business Systems - N01","title":"IT Service Desk Analyst"}
+{"closed_at":"2026-11-13","company":"Alfred H Knight","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:ahkgroup:1973","location":"Liverpool, Merseyside","team":"UK Business Systems - N01","title":"IT Service Desk Analyst"}
 {"company":"Alfred H Knight","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:ahkgroup:1976","location":"Spartanburg, South Carolina","title":"Laboratory Technician"}
 {"company":"Alfred H Knight","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:ahkgroup:1983","location":"Liverpool, Merseyside","team":"UK Business Systems - N01","title":"Business Analyst"}
 {"company":"Alfred H Knight","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:ahkgroup:1985","location":"Liverpool, Merseyside","team":"UK Group Technical & Quality Laboratory - O03","title":"Group Quality Apprentice - Level 4"}
@@ -44,7 +44,7 @@
 {"company":"Alfred H Knight","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:ahkgroup:2016","location":"Liverpool, Merseyside","team":"UK ICP Laboratory JKL - A05","title":"ICP Laboratory Technician"}
 {"company":"Alfred H Knight","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:ahkgroup:2023","location":"Bintulu, Sarawak","team":"Administration","title":"Operations Administrator"}
 {"company":"Alfred H Knight","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:ahkgroup:2024","location":"Balikpapan, East Kalimantan","title":"HSE Coordinator"}
-{"closed_at":"2026-11-12","company":"Alfred H Knight","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:ahkgroup:2032","location":"Dundonald, South Ayrshire","title":"Health & Safety Coordinator - INTERNAL ONLY"}
+{"company":"Alfred H Knight","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:ahkgroup:2032","location":"Dundonald, South Ayrshire","title":"Health & Safety Advisor"}
 {"closed_at":"2026-11-12","company":"Alfred H Knight","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:ahkgroup:2036","location":"Netherlands, Raamsdonksveer","team":"LMA Laboratory","title":"(Startend) Chemisch analist"}
 {"company":"Alfred H Knight","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:ahkgroup:2040","location":"Liverpool, Merseyside","team":"UK Laboratory Management - B25","title":"Laboratory Quality Manager (UK)"}
 {"company":"Alfred H Knight","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:ahkgroup:2043","location":"Santiago, Las Condes","team":"Quality","title":"Supervisor Auditor Antofagasta"}
@@ -61,4 +61,6 @@
 {"company":"Alfred H Knight","employment":"full_time","first_seen":"2026-11-10","id":"bamboohr:ahkgroup:2070","location":"Burgersfort, Mpumalanga","title":"Branch Coordinator"}
 {"company":"Alfred H Knight","employment":"full_time","first_seen":"2026-11-11","id":"bamboohr:ahkgroup:2071","location":"Tanzania, Dar es Salaam","title":"Finance Manager"}
 {"company":"Alfred H Knight","employment":"full_time","first_seen":"2026-11-12","id":"bamboohr:ahkgroup:2072","location":"Liverpool, Merseyside","team":"UK Group Technical & Quality Laboratory - O03","title":"Group QHSE Compliance Manager"}
+{"company":"Alfred H Knight","employment":"full_time","first_seen":"2026-11-13","id":"bamboohr:ahkgroup:2073","location":"Richards Bay, KZN","title":"Client Liaison / Invoicing Administrator"}
+{"company":"Alfred H Knight","employment":"full_time","first_seen":"2026-11-13","id":"bamboohr:ahkgroup:2074","location":"Manzanillo, Colima","team":"CC016 Administración de Operaciones","title":"COORDINADOR DE OPERACIONES FORÁNEAS"}
 {"company":"Alfred H Knight","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:ahkgroup:909","location":"Balikpapan, East Kalimantan","title":"Chemist"}
