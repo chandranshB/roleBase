@@ -38,8 +38,8 @@
 {"company":"Ace Electric","first_seen":"2026-10-20","id":"bamboohr:aceelectric:1070","location":"Savannah, Georgia","team":"STB","title":"Safety Technician"}
 {"company":"Ace Electric","first_seen":"2026-11-08","id":"bamboohr:aceelectric:1072","location":"VALDOSTA, Georgia","skills":["welding"],"team":"E&F","title":"Welding Shop Lead"}
 {"company":"Ace Electric","first_seen":"2026-11-08","id":"bamboohr:aceelectric:1075","location":"Moultrie, Georgia","team":"VLD","title":"Electrical Superintendent"}
-{"company":"Ace Electric","first_seen":"2026-11-08","id":"bamboohr:aceelectric:1076","location":"Greensboro, North Carolina","team":"NC","title":"Electrical Superintendent"}
-{"company":"Ace Electric","first_seen":"2026-11-08","id":"bamboohr:aceelectric:1077","location":"Greensboro, North Carolina","team":"NC","title":"Site Safety Technician"}
+{"closed_at":"2026-11-13","company":"Ace Electric","first_seen":"2026-11-08","id":"bamboohr:aceelectric:1076","location":"Greensboro, North Carolina","team":"NC","title":"Electrical Superintendent"}
+{"closed_at":"2026-11-13","company":"Ace Electric","first_seen":"2026-11-08","id":"bamboohr:aceelectric:1077","location":"Greensboro, North Carolina","team":"NC","title":"Site Safety Technician"}
 {"company":"Ace Electric","first_seen":"2026-11-08","id":"bamboohr:aceelectric:1078","location":"JACKSON, Georgia","team":"TN","title":"Site Safety Manager"}
 {"company":"Ace Electric","first_seen":"2026-11-08","id":"bamboohr:aceelectric:1079","location":"COVINGTON, Georgia","team":"TN","title":"Site Safety Manager"}
 {"company":"Ace Electric","first_seen":"2026-11-08","id":"bamboohr:aceelectric:1080","location":"JACKSON, Georgia","team":"TN","title":"Electrical Quality Control Specialist"}
@@ -87,7 +87,7 @@
 {"company":"Ace Electric","first_seen":"2026-11-08","id":"bamboohr:aceelectric:983","location":"Atlanta, Georgia","skills":["cdl"],"team":"TN","title":"CDL Driver/Warehouse"}
 {"company":"Ace Electric","first_seen":"2026-11-08","id":"bamboohr:aceelectric:984","location":"New Albany, Ohio","team":"OH","title":"Commercial Electrician"}
 {"company":"Ace Electric","first_seen":"2026-10-19","id":"bamboohr:aceelectric:988","location":"SANFORD, North Carolina","team":"NC","title":"Electrical Project Manager"}
-{"company":"Ace Electric","first_seen":"2026-10-19","id":"bamboohr:aceelectric:989","location":"Greensboro, North Carolina","team":"NC","title":"Electrical QA/QC Technician"}
+{"closed_at":"2026-11-13","company":"Ace Electric","first_seen":"2026-10-19","id":"bamboohr:aceelectric:989","location":"Greensboro, North Carolina","team":"NC","title":"Electrical QA/QC Technician"}
 {"company":"Ace Electric","first_seen":"2026-10-19","id":"bamboohr:aceelectric:991","location":"Jackson, Tennessee","team":"TN","title":"Senior Electrical Project Manager"}
 {"company":"Ace Electric","first_seen":"2026-11-08","id":"bamboohr:aceelectric:993","location":"Kennesaw, Georgia","team":"E&F","title":"Electrical Designer"}
 {"company":"Ace Electric","first_seen":"2026-10-19","id":"bamboohr:aceelectric:994","location":"VALDOSTA, Georgia","team":"E&F","title":"Electrical Designer"}

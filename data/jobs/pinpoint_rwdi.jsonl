@@ -31,7 +31,7 @@
 {"company":"RWDI","first_seen":"2026-11-08","id":"pinpoint:rwdi:e94892d4-50c2-4656-803f-8ea492af594d","location":"Guelph, ON","pay":[110000,150000,"CAD"],"title":"Environmental Geoscientist - Senior","years":15}
 {"company":"RWDI","first_seen":"2026-11-08","id":"pinpoint:rwdi:ed419802-7f39-4068-9d2d-659d1da7c3e9","location":"Sherbrooke, QC","pay":[90000,130000,"CAD"],"skills":["budgeting"],"title":"AM - Source - Senior Field Technician"}
 {"company":"RWDI","first_seen":"2026-11-08","id":"pinpoint:rwdi:f2dfcd49-20f9-4f1a-952b-a8014afc149c","location":"Emeryville, CA","pay":[100000,140000,"USD"],"skills":["project_management"],"title":"Project Manager"}
-{"company":"RWDI","first_seen":"2026-11-08","id":"pinpoint:rwdi:f614ce2e-6469-4eaa-ab70-659cbc13e809","location":"Warren, MI","title":"Field Technician - Air Emissions"}
+{"closed_at":"2026-11-13","company":"RWDI","first_seen":"2026-11-08","id":"pinpoint:rwdi:f614ce2e-6469-4eaa-ab70-659cbc13e809","location":"Warren, MI","title":"Field Technician - Air Emissions"}
 {"closed_at":"2026-11-11","company":"RWDI","first_seen":"2026-11-08","id":"pinpoint:rwdi:f689ae82-6d5b-4269-aeca-fcee02c3c01c","location":"Guelph, ON","pay":[62000,75000,"CAD"],"skills":["excel","python","c++","c#","linux"],"title":"Building Performance Engineer - EIT"}
 {"company":"RWDI","first_seen":"2026-11-08","id":"pinpoint:rwdi:f89ff666-9373-4930-b763-7af85b06d251","location":"Trivandrum, IND","skills":["negotiation"],"title":"Market Development Manager"}
 {"company":"RWDI","first_seen":"2026-11-08","id":"pinpoint:rwdi:fce56bff-6497-4867-a07c-1cd7eba7c28a","location":"Philadelphia, PA","pay":[100000,150000,"USD"],"remote":true,"skills":["budgeting"],"title":"Air Emission Monitoring Specialist  - Remote"}
