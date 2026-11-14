@@ -29322,7 +29322,7 @@
 {"b": "breezy:santa-barbara-sparky", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "breezy:saota", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "breezy:sasco", "last_ok": "2026-10-24", "strikes": 0}
-{"b": "breezy:saving-punjab", "last_ok": "2026-11-14", "strikes": 0}
+{"b": "breezy:saving-punjab", "last_ok": "2026-11-14", "strikes": 0, "why": "error: 404 Client Error: Not Found for url: https://saving-punjab.breezy.hr/json"}
 {"b": "breezy:sayway-gmbh", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "breezy:sbc-performance", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "breezy:scandinavian-building-services", "last_ok": "2026-11-09", "strikes": 0}
@@ -46946,7 +46946,7 @@
 {"b": "isolved:traditionsatsherman", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "isolved:traditionshhs", "last_ok": "2026-11-08", "strikes": 0}
 {"b": "isolved:trailblazerfoods", "last_ok": "2026-11-08", "strikes": 0}
-{"b": "isolved:trajanwealth", "last_ok": "2026-11-13", "strikes": 1, "why": "empty answer"}
+{"b": "isolved:trajanwealth", "last_ok": "2026-11-13", "strikes": 2, "why": "empty answer"}
 {"b": "isolved:transbridgelines", "last_ok": "2026-11-08", "strikes": 0}
 {"b": "isolved:transglobalus", "last_ok": "2026-11-08", "strikes": 0}
 {"b": "isolved:transmotion", "last_ok": "2026-11-08", "strikes": 0}
@@ -57796,7 +57796,7 @@
 {"b": "join:fbu", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "join:fcffoxcorporatefinance", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "join:fcopch", "last_ok": "2026-11-08", "strikes": 0}
-{"b": "join:fcr-immobilien", "last_ok": "2026-11-13", "strikes": 1, "why": "empty answer"}
+{"b": "join:fcr-immobilien", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "join:fcviktoria", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "join:fd-steuerberatungde", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "join:fda-softwarecom", "last_ok": "2026-10-30", "strikes": 0}
@@ -60820,7 +60820,7 @@
 {"b": "join:kargl-haustechnik", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "join:kargl-stb", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "join:karikaala", "last_ok": "2026-11-08", "strikes": 0}
-{"b": "join:karinsschwestercom", "last_ok": "", "strikes": 0, "why": "error: 404 Client Error: Not Found for url: https://join.com/companies/karinsschwestercom"}
+{"b": "join:karinsschwestercom", "last_ok": "", "strikes": 0, "why": "error: 410 Client Error: Gone for url: https://join.com/companies/karinsschwestercom"}
 {"b": "join:karius-feinstahlbaude", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "join:karl-schick", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "join:karl-schubert-schule", "last_ok": "2026-10-30", "strikes": 0}
@@ -72233,7 +72233,7 @@
 {"b": "oracle:eofe.fa.us2.oraclecloud.com/CX", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "oracle:eoff", "last_ok": "", "strikes": 0, "why": "error: not enough values to unpack (expected 2, got 1)"}
 {"b": "oracle:eoff.fa.em1.ukg.oraclecloud.com/CX", "last_ok": "2026-11-08", "strikes": 0}
-{"b": "oracle:eohh", "last_ok": "", "strikes": 0, "why": "error: still running after 960s"}
+{"b": "oracle:eohh", "last_ok": "", "strikes": 0, "why": "error: HTTPSConnectionPool(host='eohh', port=443): Max retries exceeded with url: /hcmRestApi/resources/latest/recruitingCEJobRequisitions?onlyData=true&expand=requisitionList.secondaryLocations&finder=findReqs%3BsiteNumber%3DCX%2Climit%3D50%2Coffset%3D0%2CsortBy%3DPOSTING_DATES_DESC (Caused by NameResolutionError(\"HTTPSConnection(host='eohh', port=443): Failed to resolve 'eohh' ([Errno -3] Temporary failure in name resolution)\"))"}
 {"b": "oracle:eohh.fa.us2.oraclecloud.com/CX", "last_ok": "2026-10-22", "strikes": 0}
 {"b": "oracle:eohm", "last_ok": "", "strikes": 0, "why": "error: not enough values to unpack (expected 2, got 1)"}
 {"b": "oracle:eohm.fa.us2.oraclecloud.com/CX", "last_ok": "2026-11-08", "strikes": 0}
@@ -72313,7 +72313,7 @@
 {"b": "oracle:eswt", "last_ok": "", "strikes": 0, "why": "error: not enough values to unpack (expected 2, got 1)"}
 {"b": "oracle:eswt.fa.us6.oraclecloud.com/CX", "last_ok": "2026-11-08", "strikes": 0}
 {"b": "oracle:eswt.fa.us6.oraclecloud.com/CX_1001", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "oracle:etgi", "last_ok": "", "strikes": 0, "why": "error: still running after 960s"}
+{"b": "oracle:etgi", "last_ok": "", "strikes": 0, "why": "error: HTTPSConnectionPool(host='etgi', port=443): Max retries exceeded with url: /hcmRestApi/resources/latest/recruitingCEJobRequisitions?onlyData=true&expand=requisitionList.secondaryLocations&finder=findReqs%3BsiteNumber%3DCX%2Climit%3D50%2Coffset%3D0%2CsortBy%3DPOSTING_DATES_DESC (Caused by NameResolutionError(\"HTTPSConnection(host='etgi', port=443): Failed to resolve 'etgi' ([Errno -3] Temporary failure in name resolution)\"))"}
 {"b": "oracle:etgi.fa.us8.oraclecloud.com/CX", "last_ok": "2026-11-08", "strikes": 0}
 {"b": "oracle:etihadrail-iaalbv", "last_ok": "", "strikes": 0, "why": "error: not enough values to unpack (expected 2, got 1)"}
 {"b": "oracle:etihadrail-iaalbv.fa.ocs.oraclecloud.com/CX", "last_ok": "2026-11-08", "strikes": 0}
@@ -93500,7 +93500,7 @@
 {"b": "rippling:silvercrest-asset-management-group", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "rippling:simeon-global-consulting", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "rippling:simplex-health", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "rippling:simplexwellness", "last_ok": "2026-11-13", "strikes": 2, "why": "empty answer"}
+{"b": "rippling:simplexwellness", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "rippling:simply-solar", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "rippling:singularity-defense", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "rippling:sipcam-agro-solutions-llc", "last_ok": "2026-10-30", "strikes": 0}
@@ -98956,7 +98956,7 @@
 {"b": "smartrecruiters:thresholdworld", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "smartrecruiters:tminetwork2", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "smartrecruiters:wuestpartner", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "successfactors:4/Tenaris", "last_ok": "2026-11-13", "strikes": 1, "why": "empty answer"}
+{"b": "successfactors:4/Tenaris", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "talentlyft:bornfight", "last_ok": "2026-11-08", "strikes": 0}
 {"b": "taleo:ansell", "last_ok": "", "strikes": 2, "why": "dropped from 89 to 25"}
 {"b": "taleo:cookcountyil", "last_ok": "", "strikes": 1, "why": "empty answer"}
@@ -103822,7 +103822,7 @@
 {"b": "workday:abbott.wd5.myworkdayjobs.com/AbbottCareers", "last_ok": "2026-10-29", "strikes": 0}
 {"b": "workday:abcfinancial.wd5.myworkdayjobs.com/abcfinancialservices", "last_ok": "2026-10-26", "strikes": 0}
 {"b": "workday:abcfws.wd1.myworkdayjobs.com/abcfws", "last_ok": "2026-10-28", "strikes": 0}
-{"b": "workday:abcsupply.wd1.myworkdayjobs.com/abcsupplycareers", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://abcsupply.wd1.myworkdayjobs.com/wday/cxs/abcsupply/abcsupplycareers/jobs"}
+{"b": "workday:abcsupply.wd1.myworkdayjobs.com/abcsupplycareers", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:abcsupply.wd1.myworkdayjobs.com/acmcareers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:abcsupply.wd1.myworkdayjobs.com/mulehidecareers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:abeilleassurances.wd103.myworkdayjobs.com/aema_groupe", "last_ok": "2026-10-29", "strikes": 0}
@@ -103886,7 +103886,7 @@
 {"b": "workday:aep.wd1.myworkdayjobs.com/AEPCareerSite", "last_ok": "2026-10-29", "strikes": 0}
 {"b": "workday:aer.wd3.myworkdayjobs.com/aer", "last_ok": "2026-10-28", "strikes": 0}
 {"b": "workday:aero.wd5.myworkdayjobs.com/External", "last_ok": "2026-10-19", "strikes": 0}
-{"b": "workday:aersale.wd5.myworkdayjobs.com/aer1001", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://aersale.wd5.myworkdayjobs.com/wday/cxs/aersale/aer1001/jobs"}
+{"b": "workday:aersale.wd5.myworkdayjobs.com/aer1001", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:aes.wd1.myworkdayjobs.com/aes_andes", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:aes.wd1.myworkdayjobs.com/aes_elsalvador", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:aes.wd1.myworkdayjobs.com/aes_us", "last_ok": "2026-10-28", "strikes": 0}
@@ -103902,7 +103902,7 @@
 {"b": "workday:agecare.wd10.myworkdayjobs.com/agecare_careers_external", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:agf.wd3.myworkdayjobs.com/linkedin_careers", "last_ok": "2026-10-29", "strikes": 0}
 {"b": "workday:aggreko.wd3.myworkdayjobs.com/aggreko_careers_1", "last_ok": "2026-10-26", "strikes": 0}
-{"b": "workday:agilent.wd5.myworkdayjobs.com/Agilent_Careers", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://agilent.wd5.myworkdayjobs.com/wday/cxs/agilent/Agilent_Careers/jobs"}
+{"b": "workday:agilent.wd5.myworkdayjobs.com/Agilent_Careers", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:agilent.wd5.myworkdayjobs.com/agilent_student_careers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:agilitas.wd503.myworkdayjobs.com/lmc", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:agiliti.wd5.myworkdayjobs.com/careers", "last_ok": "2026-10-24", "strikes": 0}
@@ -103918,7 +103918,7 @@
 {"b": "workday:aia.wd3.myworkdayjobs.com/External", "last_ok": "2026-10-23", "strikes": 0}
 {"b": "workday:aia.wd3.myworkdayjobs.com/amplifyhealthexternal", "last_ok": "2026-10-26", "strikes": 0}
 {"b": "workday:aig.wd1.myworkdayjobs.com/aig", "last_ok": "2026-10-26", "strikes": 0}
-{"b": "workday:aig.wd1.myworkdayjobs.com/japan", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://aig.wd1.myworkdayjobs.com/wday/cxs/aig/japan/jobs"}
+{"b": "workday:aig.wd1.myworkdayjobs.com/japan", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:aimco.wd10.myworkdayjobs.com/aimcocareers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:aims.wd1.myworkdayjobs.com/Jobs", "last_ok": "2026-10-28", "strikes": 0}
 {"b": "workday:airasia.wd3.myworkdayjobs.com/careers", "last_ok": "2026-10-23", "strikes": 0}
@@ -103982,7 +103982,7 @@
 {"b": "workday:allina.wd5.myworkdayjobs.com/external", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:allisontransmission.wd1.myworkdayjobs.com/ATI-External", "last_ok": "2026-10-24", "strikes": 0}
 {"b": "workday:allofiber.wd501.myworkdayjobs.com/careers", "last_ok": "2026-10-25", "strikes": 0}
-{"b": "workday:allstate.wd5.myworkdayjobs.com/allstate_careers", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://allstate.wd5.myworkdayjobs.com/wday/cxs/allstate/allstate_careers/jobs"}
+{"b": "workday:allstate.wd5.myworkdayjobs.com/allstate_careers", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:ally.wd1.myworkdayjobs.com/Ally", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:almirall.wd3.myworkdayjobs.com/external", "last_ok": "2026-10-28", "strikes": 0}
 {"b": "workday:alphia.wd12.myworkdayjobs.com/alphiacareers", "last_ok": "2026-10-30", "strikes": 0}
@@ -103998,7 +103998,7 @@
 {"b": "workday:alterra.wd1.myworkdayjobs.com/alterramountaincompany", "last_ok": "2026-10-21", "strikes": 0}
 {"b": "workday:alterra.wd1.myworkdayjobs.com/arapahoebasin", "last_ok": "2026-10-26", "strikes": 0}
 {"b": "workday:alterra.wd1.myworkdayjobs.com/cmhheli-skiing", "last_ok": "2026-10-23", "strikes": 0}
-{"b": "workday:alterra.wd1.myworkdayjobs.com/crystalmountain", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://alterra.wd1.myworkdayjobs.com/wday/cxs/alterra/crystalmountain/jobs"}
+{"b": "workday:alterra.wd1.myworkdayjobs.com/crystalmountain", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:alterra.wd1.myworkdayjobs.com/mikewiegelehelicopterskiing", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:alterra.wd1.myworkdayjobs.com/mont-tremblant", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:alterra.wd1.myworkdayjobs.com/palisadestahoe", "last_ok": "2026-10-29", "strikes": 0}
@@ -104030,7 +104030,7 @@
 {"b": "workday:ameresco.wd5.myworkdayjobs.com/Ameresco", "last_ok": "2026-10-23", "strikes": 0}
 {"b": "workday:american.wd1.myworkdayjobs.com/au", "last_ok": "2026-10-29", "strikes": 0}
 {"b": "workday:americancentury.wd5.myworkdayjobs.com/americancenturyinvestments", "last_ok": "2026-10-19", "strikes": 0}
-{"b": "workday:americanfidelity.wd5.myworkdayjobs.com/external", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://americanfidelity.wd5.myworkdayjobs.com/wday/cxs/americanfidelity/external/jobs"}
+{"b": "workday:americanfidelity.wd5.myworkdayjobs.com/external", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:americanglobal.wd108.myworkdayjobs.com/american_global_careers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:americanregent.wd1.myworkdayjobs.com/american_regent_careers", "last_ok": "2026-10-27", "strikes": 0}
 {"b": "workday:amerilife.wd5.myworkdayjobs.com/crumpexternal", "last_ok": "2026-10-30", "strikes": 0}
@@ -104046,7 +104046,7 @@
 {"b": "workday:amherst.wd5.myworkdayjobs.com/amherst_jobs", "last_ok": "2026-10-29", "strikes": 0}
 {"b": "workday:amherst.wd5.myworkdayjobs.com/fsl_employment_opportunities", "last_ok": "2026-10-24", "strikes": 0}
 {"b": "workday:amherstgroup.wd1.myworkdayjobs.com/amherst_holdings_careers", "last_ok": "2026-10-21", "strikes": 0}
-{"b": "workday:amli.wd5.myworkdayjobs.com/amli_careers", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://amli.wd5.myworkdayjobs.com/wday/cxs/amli/amli_careers/jobs"}
+{"b": "workday:amli.wd5.myworkdayjobs.com/amli_careers", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:amlrightsource.wd1.myworkdayjobs.com/amlrightsource", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:amn.wd1.myworkdayjobs.com/amn_careers", "last_ok": "2026-10-25", "strikes": 0}
 {"b": "workday:amor.wd103.myworkdayjobs.com/amor_careers", "last_ok": "2026-10-25", "strikes": 0}
@@ -104062,7 +104062,7 @@
 {"b": "workday:anchorglass.wd1.myworkdayjobs.com/careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:andersonauto.wd5.myworkdayjobs.com/external", "last_ok": "2026-10-20", "strikes": 0}
 {"b": "workday:andersonsinc.wd1.myworkdayjobs.com/theandersonscareers", "last_ok": "2026-10-19", "strikes": 0}
-{"b": "workday:andrewsdistributing.wd5.myworkdayjobs.com/andrewsdistributing", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://andrewsdistributing.wd5.myworkdayjobs.com/wday/cxs/andrewsdistributing/andrewsdistributing/jobs"}
+{"b": "workday:andrewsdistributing.wd5.myworkdayjobs.com/andrewsdistributing", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:angc.wd5.myworkdayjobs.com/angc", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:anglefinance.wd105.myworkdayjobs.com/angle_auto_career_opportunities", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:anglefinance.wd105.myworkdayjobs.com/angle_finance_careers", "last_ok": "2026-10-26", "strikes": 0}
@@ -104078,7 +104078,7 @@
 {"b": "workday:anticimexinc.wd1.myworkdayjobs.com/jp_mchale_pest_management_external_careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:anticimexinc.wd1.myworkdayjobs.com/modern_pest_services_external_careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:anticimexinc.wd1.myworkdayjobs.com/northwest_exterminating_external_careers", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:anticimexinc.wd1.myworkdayjobs.com/waynes_pest_control_service_external_careers", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://anticimexinc.wd1.myworkdayjobs.com/wday/cxs/anticimexinc/waynes_pest_control_service_external_careers/jobs"}
+{"b": "workday:anticimexinc.wd1.myworkdayjobs.com/waynes_pest_control_service_external_careers", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:aoins.wd5.myworkdayjobs.com/autoowners", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:aoins.wd5.myworkdayjobs.com/concord", "last_ok": "2026-10-29", "strikes": 0}
 {"b": "workday:aoncology.wd12.myworkdayjobs.com/aoncology_careers", "last_ok": "2026-10-29", "strikes": 0}
@@ -104094,7 +104094,7 @@
 {"b": "workday:appliedis.wd5.myworkdayjobs.com/ais_careers_india", "last_ok": "2026-10-24", "strikes": 0}
 {"b": "workday:applyboard.wd3.myworkdayjobs.com/applyboardnh", "last_ok": "2026-10-29", "strikes": 0}
 {"b": "workday:aptiagroup.wd3.myworkdayjobs.com/opportunities", "last_ok": "2026-10-27", "strikes": 0}
-{"b": "workday:aptiv.wd5.myworkdayjobs.com/APTIV_CAREERS", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://aptiv.wd5.myworkdayjobs.com/wday/cxs/aptiv/APTIV_CAREERS/jobs"}
+{"b": "workday:aptiv.wd5.myworkdayjobs.com/APTIV_CAREERS", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:aptiv.wd5.myworkdayjobs.com/VERSIGENT_CAREERS", "last_ok": "2026-10-29", "strikes": 0, "why": "error: 403 Client Error: Forbidden for url: https://aptiv.wd5.myworkdayjobs.com/wday/cxs/aptiv/VERSIGENT_CAREERS/jobs"}
 {"b": "workday:aptive.wd1.myworkdayjobs.com/aptive", "last_ok": "2026-10-25", "strikes": 0}
 {"b": "workday:aptos.wd108.myworkdayjobs.com/aptos", "last_ok": "2026-10-27", "strikes": 0}
@@ -104110,7 +104110,7 @@
 {"b": "workday:archildrens.wd1.myworkdayjobs.com/External_Career_Site", "last_ok": "2026-10-29", "strikes": 0}
 {"b": "workday:archwellessentials.wd1.myworkdayjobs.com/archwellessentialscareers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:archwellessentials.wd1.myworkdayjobs.com/careers", "last_ok": "2026-10-22", "strikes": 0}
-{"b": "workday:archwellessentials.wd1.myworkdayjobs.com/nestorcareers", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://archwellessentials.wd1.myworkdayjobs.com/wday/cxs/archwellessentials/nestorcareers/jobs"}
+{"b": "workday:archwellessentials.wd1.myworkdayjobs.com/nestorcareers", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:archwellessentials.wd1.myworkdayjobs.com/xpansecareers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:arcis.wd12.myworkdayjobs.com/extna", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:arcticwolf.wd1.myworkdayjobs.com/external", "last_ok": "2026-10-28", "strikes": 0}
@@ -104126,7 +104126,7 @@
 {"b": "workday:arienscompany.wd5.myworkdayjobs.com/external", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:aristocrat.wd3.myworkdayjobs.com/aristocratexternalcareerssite", "last_ok": "2026-10-29", "strikes": 0}
 {"b": "workday:aritzia.wd3.myworkdayjobs.com/external", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:arkbluecross.wd1.myworkdayjobs.com/abcbs_external_careers", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://arkbluecross.wd1.myworkdayjobs.com/wday/cxs/arkbluecross/abcbs_external_careers/jobs"}
+{"b": "workday:arkbluecross.wd1.myworkdayjobs.com/abcbs_external_careers", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:arlingtontx.wd503.myworkdayjobs.com/cityofarlingtoncareers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:arlo.wd12.myworkdayjobs.com/external_careers", "last_ok": "2026-10-28", "strikes": 0}
 {"b": "workday:armacell.wd3.myworkdayjobs.com/career-armacell", "last_ok": "2026-10-26", "strikes": 0}
@@ -104142,7 +104142,7 @@
 {"b": "workday:ascentgl.wd1.myworkdayjobs.com/ASG", "last_ok": "2026-10-25", "strikes": 0}
 {"b": "workday:ascentgl.wd1.myworkdayjobs.com/usj", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:ascentsolutions.wd1.myworkdayjobs.com/external", "last_ok": "", "strikes": 0, "why": "error: 401 Client Error: Unauthorized for url: https://ascentsolutions.wd1.myworkdayjobs.com/wday/cxs/ascentsolutions/external/jobs"}
-{"b": "workday:asco.wd5.myworkdayjobs.com/asco", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://asco.wd5.myworkdayjobs.com/wday/cxs/asco/asco/jobs"}
+{"b": "workday:asco.wd5.myworkdayjobs.com/asco", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:asd.wd5.myworkdayjobs.com/ASD20", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:asda.wd103.myworkdayjobs.com/AsdaJobs", "last_ok": "2026-10-23", "strikes": 0}
 {"b": "workday:ashealthnet.wd1.myworkdayjobs.com/ashn", "last_ok": "2026-10-30", "strikes": 0}
@@ -104174,7 +104174,7 @@
 {"b": "workday:asuep.wd5.myworkdayjobs.com/asuep", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:asuep.wd5.myworkdayjobs.com/asufoundation", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:asuep.wd5.myworkdayjobs.com/newswell", "last_ok": "2026-10-28", "strikes": 0}
-{"b": "workday:asurion.wd5.myworkdayjobs.com/USExtPrivate", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://asurion.wd5.myworkdayjobs.com/wday/cxs/asurion/USExtPrivate/jobs"}
+{"b": "workday:asurion.wd5.myworkdayjobs.com/USExtPrivate", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:asurion.wd5.myworkdayjobs.com/ac_ext_japan", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:asurion.wd5.myworkdayjobs.com/asurion_careers", "last_ok": "2026-10-28", "strikes": 0}
 {"b": "workday:asx.wd105.myworkdayjobs.com/asx_careers", "last_ok": "2026-10-30", "strikes": 0}
@@ -104190,7 +104190,7 @@
 {"b": "workday:atlanticmedia.wd1.myworkdayjobs.com/careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:atltechnology.wd501.myworkdayjobs.com/atl", "last_ok": "2026-10-29", "strikes": 0}
 {"b": "workday:atmosenergy.wd5.myworkdayjobs.com/external_career_site", "last_ok": "", "strikes": 0, "why": "error: 422 Client Error: Unprocessable Entity for url: https://atmosenergy.wd5.myworkdayjobs.com/wday/cxs/atmosenergy/external_career_site/jobs"}
-{"b": "workday:atriumhospitality.wd5.myworkdayjobs.com/atriumhospitality", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://atriumhospitality.wd5.myworkdayjobs.com/wday/cxs/atriumhospitality/atriumhospitality/jobs"}
+{"b": "workday:atriumhospitality.wd5.myworkdayjobs.com/atriumhospitality", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:atsg.wd108.myworkdayjobs.com/xtiumcareers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:att.wd1.myworkdayjobs.com/ATTGeneral", "last_ok": "2026-10-27", "strikes": 0}
 {"b": "workday:att.wd1.myworkdayjobs.com/cricket", "last_ok": "2026-10-19", "strikes": 0}
@@ -104222,7 +104222,7 @@
 {"b": "workday:aveva.wd3.myworkdayjobs.com/rib_careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:aviagen.wd1.myworkdayjobs.com/aviagen-careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:avid.wd5.myworkdayjobs.com/avid", "last_ok": "2026-10-28", "strikes": 0}
-{"b": "workday:avisbudget.wd1.myworkdayjobs.com/abg_careers", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://avisbudget.wd1.myworkdayjobs.com/wday/cxs/avisbudget/abg_careers/jobs"}
+{"b": "workday:avisbudget.wd1.myworkdayjobs.com/abg_careers", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:avisbudget.wd1.myworkdayjobs.com/zipcar_careers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:aviva.wd1.myworkdayjobs.com/External", "last_ok": "2026-10-27", "strikes": 0}
 {"b": "workday:aviva.wd1.myworkdayjobs.com/aviva_investors_external", "last_ok": "2026-10-20", "strikes": 0}
@@ -104238,7 +104238,7 @@
 {"b": "workday:axcelis.wd1.myworkdayjobs.com/axcelis", "last_ok": "2026-10-24", "strikes": 0}
 {"b": "workday:axiomspace.wd5.myworkdayjobs.com/external_career_site", "last_ok": "2026-10-24", "strikes": 0}
 {"b": "workday:axis.wd3.myworkdayjobs.com/external_career_site", "last_ok": "2026-10-26", "strikes": 0}
-{"b": "workday:axiscapital.wd1.myworkdayjobs.com/axiscareers", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://axiscapital.wd1.myworkdayjobs.com/wday/cxs/axiscapital/axiscareers/jobs"}
+{"b": "workday:axiscapital.wd1.myworkdayjobs.com/axiscareers", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:axos.wd5.myworkdayjobs.com/Axos", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:ayvens.wd3.myworkdayjobs.com/ayvenscareers", "last_ok": "2026-10-22", "strikes": 0}
 {"b": "workday:azelis.wd3.myworkdayjobs.com/azelis_careers", "last_ok": "2026-10-22", "strikes": 0}
@@ -104302,7 +104302,7 @@
 {"b": "workday:bcbskc.wd1.myworkdayjobs.com/spira_care_external_career_site", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:bcbsks.wd1.myworkdayjobs.com/external", "last_ok": "2026-10-22", "strikes": 0}
 {"b": "workday:bcbsla.wd1.myworkdayjobs.com/generation_blue", "last_ok": "2026-10-21", "strikes": 0}
-{"b": "workday:bcbsma.wd5.myworkdayjobs.com/bcbsma", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://bcbsma.wd5.myworkdayjobs.com/wday/cxs/bcbsma/bcbsma/jobs"}
+{"b": "workday:bcbsma.wd5.myworkdayjobs.com/bcbsma", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:bcbsmn.wd5.myworkdayjobs.com/bluecrossmn", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:bcbsmn.wd5.myworkdayjobs.com/coupehealth", "last_ok": "2026-10-28", "strikes": 0}
 {"b": "workday:bcbsms.wd5.myworkdayjobs.com/bcbsms", "last_ok": "2026-10-29", "strikes": 0}
@@ -104334,7 +104334,7 @@
 {"b": "workday:belkin.wd5.myworkdayjobs.com/belkin_careers", "last_ok": "2026-10-28", "strikes": 0}
 {"b": "workday:belkin.wd5.myworkdayjobs.com/fit_careers", "last_ok": "2026-10-27", "strikes": 0}
 {"b": "workday:bellcounty.wd12.myworkdayjobs.com/bellcountyexternalcareersite", "last_ok": "2026-10-26", "strikes": 0}
-{"b": "workday:bellpartnersinc.wd5.myworkdayjobs.com/careers", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://bellpartnersinc.wd5.myworkdayjobs.com/wday/cxs/bellpartnersinc/careers/jobs"}
+{"b": "workday:bellpartnersinc.wd5.myworkdayjobs.com/careers", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:belron.wd3.myworkdayjobs.com/belron_canada_careers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:belron.wd3.myworkdayjobs.com/belron_new_zealand_careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:belron.wd3.myworkdayjobs.com/carglass_careers", "last_ok": "2026-10-28", "strikes": 0}
@@ -104350,7 +104350,7 @@
 {"b": "workday:bernco.wd1.myworkdayjobs.com/berncocareers", "last_ok": "2026-10-28", "strikes": 0}
 {"b": "workday:bernergroup.wd3.myworkdayjobs.com/careers_berner_group", "last_ok": "2026-10-28", "strikes": 0}
 {"b": "workday:bestbuycanada.wd3.myworkdayjobs.com/bestbuyca_career", "last_ok": "2026-10-27", "strikes": 0}
-{"b": "workday:bestcare.wd1.myworkdayjobs.com/bestcare", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://bestcare.wd1.myworkdayjobs.com/wday/cxs/bestcare/bestcare/jobs"}
+{"b": "workday:bestcare.wd1.myworkdayjobs.com/bestcare", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:bestfriends.wd1.myworkdayjobs.com/bestfriendscareers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:bestwestern.wd1.myworkdayjobs.com/careers", "last_ok": "2026-10-29", "strikes": 0}
 {"b": "workday:betmgminc.wd5.myworkdayjobs.com/betmgm", "last_ok": "2026-10-28", "strikes": 0}
@@ -104366,7 +104366,7 @@
 {"b": "workday:binus.wd3.myworkdayjobs.com/lifeatbinus", "last_ok": "2026-10-27", "strikes": 0}
 {"b": "workday:biocodex.wd502.myworkdayjobs.com/biocodex_careers", "last_ok": "2026-10-25", "strikes": 0}
 {"b": "workday:biomarpeople.wd3.myworkdayjobs.com/biomar", "last_ok": "2026-10-19", "strikes": 0}
-{"b": "workday:biotechne.wd5.myworkdayjobs.com/biotechne", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://biotechne.wd5.myworkdayjobs.com/wday/cxs/biotechne/biotechne/jobs"}
+{"b": "workday:biotechne.wd5.myworkdayjobs.com/biotechne", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:birch.wd1.myworkdayjobs.com/fusioncareers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:bird.wd3.myworkdayjobs.com/birdconstructioncareers", "last_ok": "2026-10-29", "strikes": 0}
 {"b": "workday:bird.wd3.myworkdayjobs.com/canemcareers", "last_ok": "2026-10-29", "strikes": 0}
@@ -104382,7 +104382,7 @@
 {"b": "workday:blackstone.wd1.myworkdayjobs.com/Blackstone_Campus_Careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:blackstone.wd1.myworkdayjobs.com/Blackstone_Careers", "last_ok": "2026-10-26", "strikes": 0}
 {"b": "workday:blankfactor.wd12.myworkdayjobs.com/blankfactor_external", "last_ok": "", "strikes": 0, "why": "error: 422 Client Error: Unprocessable Entity for url: https://blankfactor.wd12.myworkdayjobs.com/wday/cxs/blankfactor/blankfactor_external/jobs"}
-{"b": "workday:blattner.wd5.myworkdayjobs.com/blattnercompany", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://blattner.wd5.myworkdayjobs.com/wday/cxs/blattner/blattnercompany/jobs"}
+{"b": "workday:blattner.wd5.myworkdayjobs.com/blattnercompany", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:blgllp.wd10.myworkdayjobs.com/blg-external", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:bloomberg.wd1.myworkdayjobs.com/Bloombergindustrygroup_External_Career_Site", "last_ok": "2026-10-19", "strikes": 0}
 {"b": "workday:bloomenergy.wd1.myworkdayjobs.com/bloomenergycareers", "last_ok": "2026-10-28", "strikes": 0}
@@ -104398,7 +104398,7 @@
 {"b": "workday:bnl.wd1.myworkdayjobs.com/externa", "last_ok": "2026-10-26", "strikes": 0}
 {"b": "workday:boarshead.wd1.myworkdayjobs.com/bhc", "last_ok": "", "strikes": 0, "why": "error: 403 Client Error: Forbidden for url: https://boarshead.wd1.myworkdayjobs.com/wday/cxs/boarshead/bhc/jobs"}
 {"b": "workday:bobsdf.wd1.myworkdayjobs.com/bobs_careers", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:boeing.wd1.myworkdayjobs.com/EXTERNAL_CAREERS", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://boeing.wd1.myworkdayjobs.com/wday/cxs/boeing/EXTERNAL_CAREERS/jobs"}
+{"b": "workday:boeing.wd1.myworkdayjobs.com/EXTERNAL_CAREERS", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:boliden.wd3.myworkdayjobs.com/bolidenjobs", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:bonadio.wd503.myworkdayjobs.com/bonadio_careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:bonterra.wd1.myworkdayjobs.com/bonterratech", "last_ok": "2026-10-26", "strikes": 0}
@@ -104446,7 +104446,7 @@
 {"b": "workday:brinks.wd5.myworkdayjobs.com/brinkscareerscanada", "last_ok": "2026-10-22", "strikes": 0}
 {"b": "workday:bristolmyerssquibb.wd5.myworkdayjobs.com/BMS", "last_ok": "2026-10-23", "strikes": 0}
 {"b": "workday:bristow.wd1.myworkdayjobs.com/airnorth", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:bristow.wd1.myworkdayjobs.com/careers", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://bristow.wd1.myworkdayjobs.com/wday/cxs/bristow/careers/jobs"}
+{"b": "workday:bristow.wd1.myworkdayjobs.com/careers", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:broadcom.wd1.myworkdayjobs.com/External_Career", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:broadlawns.wd501.myworkdayjobs.com/broadlawns_careers", "last_ok": "2026-10-21", "strikes": 0}
 {"b": "workday:broadridge.wd5.myworkdayjobs.com/Careers", "last_ok": "2026-10-26", "strikes": 0}
@@ -104494,7 +104494,7 @@
 {"b": "workday:caa.wd1.myworkdayjobs.com/Careers", "last_ok": "2026-10-25", "strikes": 0}
 {"b": "workday:caaquebec.wd3.myworkdayjobs.com/carrierescaa-quebec", "last_ok": "2026-10-27", "strikes": 0}
 {"b": "workday:caatpension.wd10.myworkdayjobs.com/careers", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:cabinetworksgroup.wd1.myworkdayjobs.com/cabinetworksgroupcareers", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://cabinetworksgroup.wd1.myworkdayjobs.com/wday/cxs/cabinetworksgroup/cabinetworksgroupcareers/jobs"}
+{"b": "workday:cabinetworksgroup.wd1.myworkdayjobs.com/cabinetworksgroupcareers", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:cableone.wd1.myworkdayjobs.com/cable_one_external_careers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:cabotcorp.wd12.myworkdayjobs.com/Careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:cabrini.wd3.myworkdayjobs.com/cabrini", "last_ok": "2026-10-25", "strikes": 0}
@@ -104510,7 +104510,7 @@
 {"b": "workday:calix.wd1.myworkdayjobs.com/external", "last_ok": "2026-10-29", "strikes": 0}
 {"b": "workday:callaghaninnovation.wd105.myworkdayjobs.com/external", "last_ok": "2026-10-19", "strikes": 0}
 {"b": "workday:calvertcountymd.wd1.myworkdayjobs.com/calvertcountymdemploymentopportunities", "last_ok": "2026-10-28", "strikes": 0}
-{"b": "workday:calvin.wd5.myworkdayjobs.com/calvinuniversitycareers", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://calvin.wd5.myworkdayjobs.com/wday/cxs/calvin/calvinuniversitycareers/jobs"}
+{"b": "workday:calvin.wd5.myworkdayjobs.com/calvinuniversitycareers", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:calwatergroup.wd5.myworkdayjobs.com/CWSG", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:calyx.wd1.myworkdayjobs.com/perceptive", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:cambiumlearning.wd1.myworkdayjobs.com/camb", "last_ok": "2026-10-29", "strikes": 0}
@@ -104590,7 +104590,7 @@
 {"b": "workday:cboe.wd1.myworkdayjobs.com/External_Career_CBOE", "last_ok": "2026-10-19", "strikes": 0}
 {"b": "workday:cbrands.wd5.myworkdayjobs.com/cbi_external_careers", "last_ok": "2026-10-19", "strikes": 0}
 {"b": "workday:cc.wd3.myworkdayjobs.com/chanelcareers", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:cca.wd5.myworkdayjobs.com/cca", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://cca.wd5.myworkdayjobs.com/wday/cxs/cca/cca/jobs"}
+{"b": "workday:cca.wd5.myworkdayjobs.com/cca", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:ccc.wd5.myworkdayjobs.com/ccc_External", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:ccf.wd1.myworkdayjobs.com/clevelandcliniccareersuk", "last_ok": "2026-10-27", "strikes": 0}
 {"b": "workday:ccitc.wd1.myworkdayjobs.com/marathon_county_careers", "last_ok": "2026-10-30", "strikes": 0}
@@ -104606,7 +104606,7 @@
 {"b": "workday:cefcu.wd5.myworkdayjobs.com/cefcu", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:ceh.wd3.myworkdayjobs.com/ceh_careers", "last_ok": "2026-10-29", "strikes": 0}
 {"b": "workday:celltrionhealthcare.wd3.myworkdayjobs.com/celltrionglobal", "last_ok": "2026-10-24", "strikes": 0}
-{"b": "workday:cemstone.wd1.myworkdayjobs.com/cemstonecareers", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://cemstone.wd1.myworkdayjobs.com/wday/cxs/cemstone/cemstonecareers/jobs"}
+{"b": "workday:cemstone.wd1.myworkdayjobs.com/cemstonecareers", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:cemstone.wd1.myworkdayjobs.com/tccmaterialscareers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:cengage.wd5.myworkdayjobs.com/cengagenorthamericacareers", "last_ok": "2026-10-25", "strikes": 0}
 {"b": "workday:cenhud.wd5.myworkdayjobs.com/cenhud", "last_ok": "2026-10-28", "strikes": 0}
@@ -104654,7 +104654,7 @@
 {"b": "workday:charlestonsc.wd5.myworkdayjobs.com/external", "last_ok": "2026-10-26", "strikes": 0}
 {"b": "workday:charlottenc.wd12.myworkdayjobs.com/citgov", "last_ok": "2026-10-28", "strikes": 0}
 {"b": "workday:charterhall.wd3.myworkdayjobs.com/careers", "last_ok": "2026-10-25", "strikes": 0}
-{"b": "workday:chartermfg.wd5.myworkdayjobs.com/charter_careers", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://chartermfg.wd5.myworkdayjobs.com/wday/cxs/chartermfg/charter_careers/jobs"}
+{"b": "workday:chartermfg.wd5.myworkdayjobs.com/charter_careers", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:chas.wd1.myworkdayjobs.com/chashealth", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:chatham.wd12.myworkdayjobs.com/chathamuniversity", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:chaucergroup.wd3.myworkdayjobs.com/chaucer_group_careers", "last_ok": "2026-10-27", "strikes": 0}
@@ -104670,7 +104670,7 @@
 {"b": "workday:chess.wd1.myworkdayjobs.com/sjc", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:chevron.wd5.myworkdayjobs.com/jobs", "last_ok": "2026-10-27", "strikes": 0}
 {"b": "workday:chg.wd5.myworkdayjobs.com/US_External_Career_Site", "last_ok": "2026-10-24", "strikes": 0}
-{"b": "workday:chg.wd5.myworkdayjobs.com/can_external_career_site", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://chg.wd5.myworkdayjobs.com/wday/cxs/chg/can_external_career_site/jobs"}
+{"b": "workday:chg.wd5.myworkdayjobs.com/can_external_career_site", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:chghealthcare.wd1.myworkdayjobs.com/external", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:childrensinstitute.wd5.myworkdayjobs.com/cii", "last_ok": "2026-10-27", "strikes": 0}
 {"b": "workday:childrensplace.wd1.myworkdayjobs.com/tcp02", "last_ok": "2026-10-29", "strikes": 0}
@@ -104686,7 +104686,7 @@
 {"b": "workday:chukchansigold.wd503.myworkdayjobs.com/cgrccareers", "last_ok": "2026-10-22", "strikes": 0}
 {"b": "workday:churchdwight.wd1.myworkdayjobs.com/chdcanadacareers", "last_ok": "2026-10-28", "strikes": 0}
 {"b": "workday:churchdwight.wd1.myworkdayjobs.com/chdcareers", "last_ok": "2026-10-25", "strikes": 0}
-{"b": "workday:churchdwight.wd1.myworkdayjobs.com/chdukcareers", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://churchdwight.wd1.myworkdayjobs.com/wday/cxs/churchdwight/chdukcareers/jobs"}
+{"b": "workday:churchdwight.wd1.myworkdayjobs.com/chdukcareers", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:churchs.wd1.myworkdayjobs.com/field", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:ci.wd3.myworkdayjobs.com/ci_financial_external_career-site", "last_ok": "2026-10-28", "strikes": 0}
 {"b": "workday:ci.wd3.myworkdayjobs.com/corient_external_career-site", "last_ok": "2026-10-30", "strikes": 0}
@@ -104718,7 +104718,7 @@
 {"b": "workday:cityofgalveston.wd12.myworkdayjobs.com/cityofgalvestontexascareers", "last_ok": "2026-10-26", "strikes": 0}
 {"b": "workday:cityofkent.wd1.myworkdayjobs.com/external", "last_ok": "2026-10-26", "strikes": 0}
 {"b": "workday:cityofls.wd12.myworkdayjobs.com/cols", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:cityoforlando.wd5.myworkdayjobs.com/CityofOrlandoCareers", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://cityoforlando.wd5.myworkdayjobs.com/wday/cxs/cityoforlando/CityofOrlandoCareers/jobs"}
+{"b": "workday:cityoforlando.wd5.myworkdayjobs.com/CityofOrlandoCareers", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:cityofvancouver.wd5.myworkdayjobs.com/cov", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:cityutilities.wd5.myworkdayjobs.com/careers", "last_ok": "2026-10-28", "strikes": 0}
 {"b": "workday:cityyear.wd5.myworkdayjobs.com/cityyear", "last_ok": "2026-10-28", "strikes": 0}
@@ -104782,7 +104782,7 @@
 {"b": "workday:cngholdingsinc.wd5.myworkdayjobs.com/cng", "last_ok": "2026-10-23", "strikes": 0}
 {"b": "workday:cni.wd503.myworkdayjobs.com/cni", "last_ok": "2026-10-27", "strikes": 0}
 {"b": "workday:cnoinc.wd5.myworkdayjobs.com/bankersfield", "last_ok": "2026-10-28", "strikes": 0}
-{"b": "workday:cnx.wd1.myworkdayjobs.com/external_global", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://cnx.wd1.myworkdayjobs.com/wday/cxs/cnx/external_global/jobs"}
+{"b": "workday:cnx.wd1.myworkdayjobs.com/external_global", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:coaction.wd1.myworkdayjobs.com/coaction", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:coal.wd1.myworkdayjobs.com/warrior_met_coal", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:cochlear.wd3.myworkdayjobs.com/cochlear_careers", "last_ok": "2026-10-28", "strikes": 0}
@@ -104814,7 +104814,7 @@
 {"b": "workday:comfortsystemsusa.wd1.myworkdayjobs.com/corpcareers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:comfortsystemsusa.wd1.myworkdayjobs.com/design_mechanical", "last_ok": "2026-10-27", "strikes": 0}
 {"b": "workday:comfortsystemsusa.wd1.myworkdayjobs.com/dynaten", "last_ok": "2026-10-28", "strikes": 0}
-{"b": "workday:comfortsystemsusa.wd1.myworkdayjobs.com/ivey", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://comfortsystemsusa.wd1.myworkdayjobs.com/wday/cxs/comfortsystemsusa/ivey/jobs"}
+{"b": "workday:comfortsystemsusa.wd1.myworkdayjobs.com/ivey", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:comfortsystemsusa.wd1.myworkdayjobs.com/midsouth", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:comfortsystemsusa.wd1.myworkdayjobs.com/quality-air-heating-cooling-inc", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:comfortsystemsusa.wd1.myworkdayjobs.com/riddleberger", "last_ok": "2026-10-30", "strikes": 0}
@@ -104830,7 +104830,7 @@
 {"b": "workday:confluentmedical.wd503.myworkdayjobs.com/confluent_medical", "last_ok": "2026-10-28", "strikes": 0}
 {"b": "workday:conmed.wd5.myworkdayjobs.com/conmed", "last_ok": "2026-10-24", "strikes": 0}
 {"b": "workday:connect.wd1.myworkdayjobs.com/ztsystemscareers", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:connexuscu.wd1.myworkdayjobs.com/connexuscareers", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://connexuscu.wd1.myworkdayjobs.com/wday/cxs/connexuscu/connexuscareers/jobs"}
+{"b": "workday:connexuscu.wd1.myworkdayjobs.com/connexuscareers", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:conning.wd503.myworkdayjobs.com/conningcareers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:connorgp.wd12.myworkdayjobs.com/cg", "last_ok": "2026-10-26", "strikes": 0}
 {"b": "workday:conocophillips.wd1.myworkdayjobs.com/External", "last_ok": "2026-10-27", "strikes": 0}
@@ -104846,7 +104846,7 @@
 {"b": "workday:copeland.wd5.myworkdayjobs.com/copeland_external_careers_page", "last_ok": "2026-10-22", "strikes": 0}
 {"b": "workday:coreandmain.wd1.myworkdayjobs.com/coreandmain", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:corebridgefinancial.wd1.myworkdayjobs.com/corebridgefinancial", "last_ok": "2026-10-25", "strikes": 0}
-{"b": "workday:corebridgefinancial.wd1.myworkdayjobs.com/laya", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://corebridgefinancial.wd1.myworkdayjobs.com/wday/cxs/corebridgefinancial/laya/jobs"}
+{"b": "workday:corebridgefinancial.wd1.myworkdayjobs.com/laya", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:corelab.wd12.myworkdayjobs.com/clb", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:corespecialtyinsurance.wd1.myworkdayjobs.com/core_specialty", "last_ok": "2026-10-27", "strikes": 0}
 {"b": "workday:cornerstone.wd501.myworkdayjobs.com/cornerstoneresearch_careers", "last_ok": "2026-10-23", "strikes": 0}
@@ -104910,7 +104910,7 @@
 {"b": "workday:cubic.wd1.myworkdayjobs.com/cubic_usa_careers", "last_ok": "2026-10-28", "strikes": 0}
 {"b": "workday:cultura.wd3.myworkdayjobs.com/cultura", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:curemd.wd1.myworkdayjobs.com/curemd", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:curriculumassociates.wd5.myworkdayjobs.com/external", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://curriculumassociates.wd5.myworkdayjobs.com/wday/cxs/curriculumassociates/external/jobs"}
+{"b": "workday:curriculumassociates.wd5.myworkdayjobs.com/external", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:curtisswright.wd1.myworkdayjobs.com/CW_External_Career_Site", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:customersbank.wd1.myworkdayjobs.com/customersbankcareers", "last_ok": "2026-10-29", "strikes": 0}
 {"b": "workday:customink.wd5.myworkdayjobs.com/customink", "last_ok": "2026-10-30", "strikes": 0}
@@ -104958,7 +104958,7 @@
 {"b": "workday:db.wd3.myworkdayjobs.com/DWSWebsite", "last_ok": "2026-10-23", "strikes": 0}
 {"b": "workday:db.wd3.myworkdayjobs.com/PBWebsite", "last_ok": "2026-10-29", "strikes": 0}
 {"b": "workday:dcsd.wd5.myworkdayjobs.com/DCSD", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:dealertire.wd5.myworkdayjobs.com/ami", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://dealertire.wd5.myworkdayjobs.com/wday/cxs/dealertire/ami/jobs"}
+{"b": "workday:dealertire.wd5.myworkdayjobs.com/ami", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:dealertire.wd5.myworkdayjobs.com/dealertirellc-careers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:dealertire.wd5.myworkdayjobs.com/sonsio", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:debeka.wd3.myworkdayjobs.com/karriere", "last_ok": "2026-10-26", "strikes": 0}
@@ -105006,7 +105006,7 @@
 {"b": "workday:disney.wd5.myworkdayjobs.com/disneycareerdc", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:distributionnow.wd5.myworkdayjobs.com/dnow_careers", "last_ok": "2026-10-29", "strikes": 0}
 {"b": "workday:djeholdings.wd5.myworkdayjobs.com/edelman-careers-e200", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:djeholdings.wd5.myworkdayjobs.com/zenocareers", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://djeholdings.wd5.myworkdayjobs.com/wday/cxs/djeholdings/zenocareers/jobs"}
+{"b": "workday:djeholdings.wd5.myworkdayjobs.com/zenocareers", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:dlg.wd3.myworkdayjobs.com/dlgcareers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:dmainc.wd5.myworkdayjobs.com/dma", "last_ok": "2026-10-22", "strikes": 0}
 {"b": "workday:dnli.wd1.myworkdayjobs.com/technical_operations_manufacturing", "last_ok": "2026-10-30", "strikes": 0}
@@ -105022,7 +105022,7 @@
 {"b": "workday:dongwha.wd3.myworkdayjobs.com/dongwhacareers", "last_ok": "2026-10-28", "strikes": 0}
 {"b": "workday:doterra.wd1.myworkdayjobs.com/doterracareers", "last_ok": "2026-10-29", "strikes": 0}
 {"b": "workday:dover.wd103.myworkdayjobs.com/Dover", "last_ok": "2026-10-19", "strikes": 0}
-{"b": "workday:dow.wd1.myworkdayjobs.com/ExternalCareers", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://dow.wd1.myworkdayjobs.com/wday/cxs/dow/ExternalCareers/jobs"}
+{"b": "workday:dow.wd1.myworkdayjobs.com/ExternalCareers", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:dowjones.wd1.myworkdayjobs.com/new_york_post_careers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:dowjones.wd1.myworkdayjobs.com/news_corp_australia_careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:dowjones.wd1.myworkdayjobs.com/news_corp_careers", "last_ok": "2026-10-30", "strikes": 0}
@@ -105038,7 +105038,7 @@
 {"b": "workday:driscolls.wd5.myworkdayjobs.com/driscolls", "last_ok": "2026-10-28", "strikes": 0}
 {"b": "workday:drivenbrands.wd1.myworkdayjobs.com/drivenbrandscareersite", "last_ok": "2026-10-24", "strikes": 0}
 {"b": "workday:drivetime.wd1.myworkdayjobs.com/drivetime", "last_ok": "2026-10-28", "strikes": 0}
-{"b": "workday:druryhotels.wd5.myworkdayjobs.com/druryjobs", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://druryhotels.wd5.myworkdayjobs.com/wday/cxs/druryhotels/druryjobs/jobs"}
+{"b": "workday:druryhotels.wd5.myworkdayjobs.com/druryjobs", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:dsj.wd5.myworkdayjobs.com/dsj_careers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:dssmith.wd3.myworkdayjobs.com/careers", "last_ok": "2026-10-25", "strikes": 0}
 {"b": "workday:dsvgruppe.wd103.myworkdayjobs.com/dsv", "last_ok": "2026-10-30", "strikes": 0}
@@ -105070,7 +105070,7 @@
 {"b": "workday:easyservice.wd5.myworkdayjobs.com/mercyhealthcareers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:easyservice.wd5.myworkdayjobs.com/roperstfrancishealthcare", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:ebay.wd5.myworkdayjobs.com/apply", "last_ok": "2026-10-29", "strikes": 0}
-{"b": "workday:ebay.wd5.myworkdayjobs.com/tcgplayer_external_career", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://ebay.wd5.myworkdayjobs.com/wday/cxs/ebay/tcgplayer_external_career/jobs"}
+{"b": "workday:ebay.wd5.myworkdayjobs.com/tcgplayer_external_career", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:ebi.wd5.myworkdayjobs.com/accratronicscareers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:ebi.wd5.myworkdayjobs.com/afbcareers", "last_ok": "2026-10-23", "strikes": 0}
 {"b": "workday:ebi.wd5.myworkdayjobs.com/cawood", "last_ok": "2026-10-22", "strikes": 0}
@@ -105134,7 +105134,7 @@
 {"b": "workday:encova.wd1.myworkdayjobs.com/search", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:endemolshine.wd3.myworkdayjobs.com/banijay_global_career_site", "last_ok": "2026-10-20", "strikes": 0}
 {"b": "workday:endemolshine.wd3.myworkdayjobs.com/external_career_site_bd_mexico", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:endicott.wd1.myworkdayjobs.com/endicott", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://endicott.wd1.myworkdayjobs.com/wday/cxs/endicott/endicott/jobs"}
+{"b": "workday:endicott.wd1.myworkdayjobs.com/endicott", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:endo.wd1.myworkdayjobs.com/external", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:endurance.wd103.myworkdayjobs.com/sompointernational", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:enercity.wd3.myworkdayjobs.com/enercity_extern", "last_ok": "2026-10-30", "strikes": 0}
@@ -105150,7 +105150,7 @@
 {"b": "workday:ensign.wd1.myworkdayjobs.com/aspenhealthandwellnesscareersite", "last_ok": "2026-10-29", "strikes": 0}
 {"b": "workday:ensign.wd1.myworkdayjobs.com/camarillohealthcarecareersite", "last_ok": "2026-10-27", "strikes": 0}
 {"b": "workday:ensign.wd1.myworkdayjobs.com/championshealthcareatwillowbrookcareersite", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:ensign.wd1.myworkdayjobs.com/crestwoodhealthandrehabilitationcentercareersite", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://ensign.wd1.myworkdayjobs.com/wday/cxs/ensign/crestwoodhealthandrehabilitationcentercareersite/jobs"}
+{"b": "workday:ensign.wd1.myworkdayjobs.com/crestwoodhealthandrehabilitationcentercareersite", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:ensign.wd1.myworkdayjobs.com/goldenacrescareersite", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:ensign.wd1.myworkdayjobs.com/goldenpalmsrehabcareersite", "last_ok": "2026-10-22", "strikes": 0}
 {"b": "workday:ensign.wd1.myworkdayjobs.com/masoncreektransitionalcareofkatycareersite", "last_ok": "2026-10-30", "strikes": 0}
@@ -105166,7 +105166,7 @@
 {"b": "workday:ensigninfosecurity.wd3.myworkdayjobs.com/ensign_careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:entandallergy.wd501.myworkdayjobs.com/careers", "last_ok": "2026-10-25", "strikes": 0}
 {"b": "workday:entegris.wd1.myworkdayjobs.com/entegriscareers", "last_ok": "2026-10-21", "strikes": 0}
-{"b": "workday:enterprisecommunity.wd5.myworkdayjobs.com/enterprisecareers", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://enterprisecommunity.wd5.myworkdayjobs.com/wday/cxs/enterprisecommunity/enterprisecareers/jobs"}
+{"b": "workday:enterprisecommunity.wd5.myworkdayjobs.com/enterprisecareers", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:entrust.wd1.myworkdayjobs.com/entrustcareers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:envea.wd103.myworkdayjobs.com/externalcareersite", "last_ok": "2026-10-27", "strikes": 0}
 {"b": "workday:envista.wd1.myworkdayjobs.com/envistacareers", "last_ok": "2026-10-30", "strikes": 0}
@@ -105214,7 +105214,7 @@
 {"b": "workday:evergreen.wd501.myworkdayjobs.com/evergreen_careers", "last_ok": "2026-10-29", "strikes": 0}
 {"b": "workday:evergreenix.wd1.myworkdayjobs.com/external-careers2", "last_ok": "2026-10-28", "strikes": 0}
 {"b": "workday:eversource.wd1.myworkdayjobs.com/externalsite", "last_ok": "2026-10-28", "strikes": 0}
-{"b": "workday:everythingbutwater.wd5.myworkdayjobs.com/external", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://everythingbutwater.wd5.myworkdayjobs.com/wday/cxs/everythingbutwater/external/jobs"}
+{"b": "workday:everythingbutwater.wd5.myworkdayjobs.com/external", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:evolent.wd1.myworkdayjobs.com/external", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:evolito.wd3.myworkdayjobs.com/evolito_career_site", "last_ok": "2026-10-22", "strikes": 0}
 {"b": "workday:evonik.wd3.myworkdayjobs.com/External_Careers", "last_ok": "2026-10-30", "strikes": 0}
@@ -105246,7 +105246,7 @@
 {"b": "workday:fastretailing.wd3.myworkdayjobs.com/headquarters_eu_uniqlo", "last_ok": "2026-10-26", "strikes": 0}
 {"b": "workday:fastretailing.wd3.myworkdayjobs.com/retail_us_Uniqlo", "last_ok": "2026-10-27", "strikes": 0}
 {"b": "workday:fastretailing.wd3.myworkdayjobs.com/retail_us_theory", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:fau.wd1.myworkdayjobs.com/fau", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://fau.wd1.myworkdayjobs.com/wday/cxs/fau/fau/jobs"}
+{"b": "workday:fau.wd1.myworkdayjobs.com/fau", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:fbhwa.wd503.myworkdayjobs.com/search", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:fca.wd3.myworkdayjobs.com/FCA_Careers", "last_ok": "2026-10-23", "strikes": 0}
 {"b": "workday:fccenvironmental.wd12.myworkdayjobs.com/fcc_environmental_services", "last_ok": "2026-10-30", "strikes": 0}
@@ -105262,7 +105262,7 @@
 {"b": "workday:fei.wd5.myworkdayjobs.com/external", "last_ok": "2026-10-27", "strikes": 0}
 {"b": "workday:fenwick.wd1.myworkdayjobs.com/fenwick_external_careers", "last_ok": "2026-10-28", "strikes": 0}
 {"b": "workday:ferguson.wd1.myworkdayjobs.com/Ferguson_Experienced", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:ferguson.wd1.myworkdayjobs.com/safe_step_walk_in_tub", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://ferguson.wd1.myworkdayjobs.com/wday/cxs/ferguson/safe_step_walk_in_tub/jobs"}
+{"b": "workday:ferguson.wd1.myworkdayjobs.com/safe_step_walk_in_tub", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:fermilab.wd5.myworkdayjobs.com/fermilabcareers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:ferring.wd3.myworkdayjobs.com/ferring", "last_ok": "2026-10-29", "strikes": 0}
 {"b": "workday:ferro.wd503.myworkdayjobs.com/vibrantzcareers", "last_ok": "", "strikes": 0, "why": "error: 422 Client Error: Unprocessable Entity for url: https://ferro.wd503.myworkdayjobs.com/wday/cxs/ferro/vibrantzcareers/jobs"}
@@ -105278,7 +105278,7 @@
 {"b": "workday:fhiworks.wd1.myworkdayjobs.com/fhi-corporate", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:fhlb.wd1.myworkdayjobs.com/fhlb_careers", "last_ok": "2026-10-29", "strikes": 0}
 {"b": "workday:fhlbatl.wd1.myworkdayjobs.com/fhlbatl", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:fhlbc.wd1.myworkdayjobs.com/search", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://fhlbc.wd1.myworkdayjobs.com/wday/cxs/fhlbc/search/jobs"}
+{"b": "workday:fhlbc.wd1.myworkdayjobs.com/search", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:fhlbi.wd1.myworkdayjobs.com/fhlbi_careers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:fhlbny.wd1.myworkdayjobs.com/fhlbny", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:fhlbpgh.wd503.myworkdayjobs.com/fhlb-pgh", "last_ok": "2026-10-28", "strikes": 0}
@@ -105310,7 +105310,7 @@
 {"b": "workday:firstquality.wd5.myworkdayjobs.com/firstquality", "last_ok": "2026-10-21", "strikes": 0}
 {"b": "workday:firstquantum.wd3.myworkdayjobs.com/first_quantum_careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:firstrand.wd3.myworkdayjobs.com/frb", "last_ok": "2026-10-24", "strikes": 0}
-{"b": "workday:firststudent.wd1.myworkdayjobs.com/firststudent", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://firststudent.wd1.myworkdayjobs.com/wday/cxs/firststudent/firststudent/jobs"}
+{"b": "workday:firststudent.wd1.myworkdayjobs.com/firststudent", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:fis.wd5.myworkdayjobs.com/SearchJobs", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:fiserv.wd5.myworkdayjobs.com/EXT", "last_ok": "2026-10-27", "strikes": 0}
 {"b": "workday:fiskars.wd3.myworkdayjobs.com/fiskarsgroup", "last_ok": "2026-10-30", "strikes": 0}
@@ -105326,7 +105326,7 @@
 {"b": "workday:flexerasoftware.wd1.myworkdayjobs.com/revenera", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:flexigroup.wd105.myworkdayjobs.com/careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:flextronics.wd1.myworkdayjobs.com/Careers", "last_ok": "2026-10-26", "strikes": 0}
-{"b": "workday:flextronics.wd1.myworkdayjobs.com/anord_mardix_careers", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://flextronics.wd1.myworkdayjobs.com/wday/cxs/flextronics/anord_mardix_careers/jobs"}
+{"b": "workday:flextronics.wd1.myworkdayjobs.com/anord_mardix_careers", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:flg.wd105.myworkdayjobs.com/flg", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:flinders.wd3.myworkdayjobs.com/flinders_employment", "last_ok": "2026-10-28", "strikes": 0}
 {"b": "workday:flindersports.wd105.myworkdayjobs.com/fph_current_opportunities", "last_ok": "2026-10-30", "strikes": 0}
@@ -105438,7 +105438,7 @@
 {"b": "workday:gandwukeurope.wd3.myworkdayjobs.com/freightliner", "last_ok": "2026-10-28", "strikes": 0}
 {"b": "workday:gandwukeurope.wd3.myworkdayjobs.com/pentalver", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:gapinc.wd1.myworkdayjobs.com/GAPINC", "last_ok": "2026-10-23", "strikes": 0}
-{"b": "workday:garlandtx.wd1.myworkdayjobs.com/garlandcareers", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://garlandtx.wd1.myworkdayjobs.com/wday/cxs/garlandtx/garlandcareers/jobs"}
+{"b": "workday:garlandtx.wd1.myworkdayjobs.com/garlandcareers", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:garrigues.wd103.myworkdayjobs.com/garrigues_talento", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:gartner.wd5.myworkdayjobs.com/ext", "last_ok": "2026-10-29", "strikes": 0}
 {"b": "workday:garvan.wd3.myworkdayjobs.com/garvan_institute", "last_ok": "2026-10-23", "strikes": 0}
@@ -105454,7 +105454,7 @@
 {"b": "workday:gcu.wd1.myworkdayjobs.com/gce", "last_ok": "2026-10-27", "strikes": 0}
 {"b": "workday:gcu.wd1.myworkdayjobs.com/gcuc", "last_ok": "2026-10-23", "strikes": 0}
 {"b": "workday:gcu.wd1.myworkdayjobs.com/orbis", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:gdit.wd5.myworkdayjobs.com/external_career_site", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://gdit.wd5.myworkdayjobs.com/wday/cxs/gdit/external_career_site/jobs"}
+{"b": "workday:gdit.wd5.myworkdayjobs.com/external_career_site", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:gdt.wd1.myworkdayjobs.com/gdt_careers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:gea.wd3.myworkdayjobs.com/geacareers", "last_ok": "2026-10-19", "strikes": 0}
 {"b": "workday:geaerospace.wd5.myworkdayjobs.com/ge_externalsite", "last_ok": "2026-10-30", "strikes": 0}
@@ -105470,7 +105470,7 @@
 {"b": "workday:generac.wd5.myworkdayjobs.com/external", "last_ok": "2026-10-20", "strikes": 0}
 {"b": "workday:generac.wd5.myworkdayjobs.com/externalcareers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:generaliespana.wd3.myworkdayjobs.com/redclick_external_career_site", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:generalmotors.wd5.myworkdayjobs.com/Careers_GM", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://generalmotors.wd5.myworkdayjobs.com/wday/cxs/generalmotors/Careers_GM/jobs"}
+{"b": "workday:generalmotors.wd5.myworkdayjobs.com/Careers_GM", "last_ok": "2026-11-13", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
 {"b": "workday:genesishcs.wd1.myworkdayjobs.com/genesishcs", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:genesisminerals.wd103.myworkdayjobs.com/genesiscareers", "last_ok": "2026-10-26", "strikes": 0}
 {"b": "workday:genesys.wd1.myworkdayjobs.com/genesys", "last_ok": "2026-10-27", "strikes": 0}
@@ -105502,7 +105502,7 @@
 {"b": "workday:ghc.wd1.myworkdayjobs.com/kaplan_careers", "last_ok": "2026-10-26", "strikes": 0}
 {"b": "workday:ghc.wd1.myworkdayjobs.com/kaplan_international_careers", "last_ok": "2026-10-29", "strikes": 0}
 {"b": "workday:ghc.wd1.myworkdayjobs.com/residential_careers", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:ghc.wd1.myworkdayjobs.com/sbh_careers", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://ghc.wd1.myworkdayjobs.com/wday/cxs/ghc/sbh_careers/jobs"}
+{"b": "workday:ghc.wd1.myworkdayjobs.com/sbh_careers", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:gi.wd1.myworkdayjobs.com/global_infrastructure", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:gia.wd1.myworkdayjobs.com/gia", "last_ok": "2026-10-29", "strikes": 0}
 {"b": "workday:gianteagle.wd503.myworkdayjobs.com/GEExternalcareers", "last_ok": "2026-10-27", "strikes": 0}
@@ -105518,7 +105518,7 @@
 {"b": "workday:global.wd1.myworkdayjobs.com/globalpartnerscareers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:globalblue.wd3.myworkdayjobs.com/external", "last_ok": "", "strikes": 0, "why": "error: 403 Client Error: Forbidden for url: https://globalblue.wd3.myworkdayjobs.com/wday/cxs/globalblue/external/jobs"}
 {"b": "workday:globalfoundries.wd1.myworkdayjobs.com/external", "last_ok": "2026-10-27", "strikes": 0}
-{"b": "workday:globalhr.wd5.myworkdayjobs.com/REC_RTX_Ext_Gateway", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://globalhr.wd5.myworkdayjobs.com/wday/cxs/globalhr/REC_RTX_Ext_Gateway/jobs"}
+{"b": "workday:globalhr.wd5.myworkdayjobs.com/REC_RTX_Ext_Gateway", "last_ok": "2026-11-13", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
 {"b": "workday:globalswitch.wd103.myworkdayjobs.com/external_careers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:globe.wd3.myworkdayjobs.com/glb_careers", "last_ok": "2026-10-23", "strikes": 0}
 {"b": "workday:globe.wd3.myworkdayjobs.com/mynt", "last_ok": "2026-10-30", "strikes": 0}
@@ -105566,7 +105566,7 @@
 {"b": "workday:graybar.wd1.myworkdayjobs.com/shepherd_careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:graybar.wd1.myworkdayjobs.com/shingle_careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:graybar.wd1.myworkdayjobs.com/steven_careers", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:graybar.wd1.myworkdayjobs.com/valin_careers", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://graybar.wd1.myworkdayjobs.com/wday/cxs/graybar/valin_careers/jobs"}
+{"b": "workday:graybar.wd1.myworkdayjobs.com/valin_careers", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:grda.wd12.myworkdayjobs.com/external", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:greatamerica.wd12.myworkdayjobs.com/greatamericacareers", "last_ok": "2026-10-29", "strikes": 0}
 {"b": "workday:greatriverhealth.wd5.myworkdayjobs.com/external", "last_ok": "2026-10-27", "strikes": 0}
@@ -105582,7 +105582,7 @@
 {"b": "workday:groendyke.wd5.myworkdayjobs.com/gti", "last_ok": "2026-10-25", "strikes": 0}
 {"b": "workday:grosvenor.wd3.myworkdayjobs.com/external_careers_site_grosvenor", "last_ok": "2026-10-23", "strikes": 0}
 {"b": "workday:groundswell.wd12.myworkdayjobs.com/groundswell", "last_ok": "2026-10-27", "strikes": 0}
-{"b": "workday:groundworks.wd1.myworkdayjobs.com/groundworks", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://groundworks.wd1.myworkdayjobs.com/wday/cxs/groundworks/groundworks/jobs"}
+{"b": "workday:groundworks.wd1.myworkdayjobs.com/groundworks", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:group1001wd.wd5.myworkdayjobs.com/careers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:groupefdj.wd103.myworkdayjobs.com/fdj-united", "last_ok": "2026-10-26", "strikes": 0}
 {"b": "workday:grpr.wd3.myworkdayjobs.com/parques_reunidos", "last_ok": "2026-10-30", "strikes": 0}
@@ -105598,7 +105598,7 @@
 {"b": "workday:gtt.wd3.myworkdayjobs.com/external", "last_ok": "2026-10-27", "strikes": 0}
 {"b": "workday:gtweed.wd1.myworkdayjobs.com/careers", "last_ok": "2026-10-27", "strikes": 0}
 {"b": "workday:guardiandentistry.wd501.myworkdayjobs.com/external_careers", "last_ok": "2026-10-21", "strikes": 0}
-{"b": "workday:guardianlife.wd5.myworkdayjobs.com/guardian-life-careers", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://guardianlife.wd5.myworkdayjobs.com/wday/cxs/guardianlife/guardian-life-careers/jobs"}
+{"b": "workday:guardianlife.wd5.myworkdayjobs.com/guardian-life-careers", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:guardianpharmacy.wd5.myworkdayjobs.com/Guardian_Pharmacy", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:guestservices.wd5.myworkdayjobs.com/gsi", "last_ok": "2026-10-28", "strikes": 0}
 {"b": "workday:guggenheim.wd1.myworkdayjobs.com/guggenheim_careers_campus", "last_ok": "2026-10-25", "strikes": 0}
@@ -105614,7 +105614,7 @@
 {"b": "workday:gundersenhealth.wd5.myworkdayjobs.com/gundersen", "last_ok": "2026-10-28", "strikes": 0}
 {"b": "workday:gunvor.wd3.myworkdayjobs.com/gunvor_careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:gutor.wd3.myworkdayjobs.com/gutor_career_site", "last_ok": "2026-10-29", "strikes": 0}
-{"b": "workday:gvsu.wd1.myworkdayjobs.com/careers", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://gvsu.wd1.myworkdayjobs.com/wday/cxs/gvsu/careers/jobs"}
+{"b": "workday:gvsu.wd1.myworkdayjobs.com/careers", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:gxs.wd3.myworkdayjobs.com/gx_bank", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:gxs.wd3.myworkdayjobs.com/gxs", "last_ok": "2026-10-27", "strikes": 0}
 {"b": "workday:haemonetics.wd5.myworkdayjobs.com/hae", "last_ok": "2026-10-29", "strikes": 0}
@@ -105710,7 +105710,7 @@
 {"b": "workday:herbertsmithfreehills.wd3.myworkdayjobs.com/hbt_careers_site", "last_ok": "2026-10-19", "strikes": 0}
 {"b": "workday:herbertsmithfreehills.wd3.myworkdayjobs.com/kewei_careers_site", "last_ok": "2026-10-28", "strikes": 0}
 {"b": "workday:heritagecommercecorp.wd108.myworkdayjobs.com/heritagebankcareers", "last_ok": "2026-10-19", "strikes": 0}
-{"b": "workday:hexcel.wd5.myworkdayjobs.com/hexcelcareers", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://hexcel.wd5.myworkdayjobs.com/wday/cxs/hexcel/hexcelcareers/jobs"}
+{"b": "workday:hexcel.wd5.myworkdayjobs.com/hexcelcareers", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:hffoodsgroup.wd5.myworkdayjobs.com/hffoodscareers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:hfsc.wd503.myworkdayjobs.com/careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:hhc.wd5.myworkdayjobs.com/hhc", "last_ok": "2026-10-23", "strikes": 0}
@@ -105742,7 +105742,7 @@
 {"b": "workday:hoganlovells.wd3.myworkdayjobs.com/search", "last_ok": "2026-10-28", "strikes": 0}
 {"b": "workday:hollandhospital.wd1.myworkdayjobs.com/external", "last_ok": "2026-10-27", "strikes": 0}
 {"b": "workday:holmanautogroup.wd1.myworkdayjobs.com/holmanenterprisescareers", "last_ok": "2026-10-28", "strikes": 0}
-{"b": "workday:holmesmurphy.wd1.myworkdayjobs.com/creativerisksolutionscareers", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://holmesmurphy.wd1.myworkdayjobs.com/wday/cxs/holmesmurphy/creativerisksolutionscareers/jobs"}
+{"b": "workday:holmesmurphy.wd1.myworkdayjobs.com/creativerisksolutionscareers", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:holmesmurphy.wd1.myworkdayjobs.com/innovativecaptivestrategiescareers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:holycross.wd12.myworkdayjobs.com/careers", "last_ok": "2026-10-26", "strikes": 0}
 {"b": "workday:homedepot.wd5.myworkdayjobs.com/careerdepot", "last_ok": "2026-10-30", "strikes": 0}
@@ -105758,7 +105758,7 @@
 {"b": "workday:hp.wd5.myworkdayjobs.com/ExternalCareerSite", "last_ok": "2026-10-29", "strikes": 0}
 {"b": "workday:hp.wd5.myworkdayjobs.com/exteu-ac-careersite", "last_ok": "2026-10-28", "strikes": 0}
 {"b": "workday:hpe.wd5.myworkdayjobs.com/Jobsathpe", "last_ok": "2026-10-28", "strikes": 0}
-{"b": "workday:hpe.wd5.myworkdayjobs.com/wfmathpe", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://hpe.wd5.myworkdayjobs.com/wday/cxs/hpe/wfmathpe/jobs"}
+{"b": "workday:hpe.wd5.myworkdayjobs.com/wfmathpe", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:hpinc.wd5.myworkdayjobs.com/hpinc", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:hq.wd12.myworkdayjobs.com/securian_external", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:hrhs.wd1.myworkdayjobs.com/careers", "last_ok": "2026-10-30", "strikes": 0}
@@ -105774,7 +105774,7 @@
 {"b": "workday:hrone.wd1.myworkdayjobs.com/pam_transport", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:hrone.wd1.myworkdayjobs.com/trg", "last_ok": "2026-10-28", "strikes": 0}
 {"b": "workday:hrone.wd1.myworkdayjobs.com/uacl_logistics", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:hrsystem.wd1.myworkdayjobs.com/careers", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://hrsystem.wd1.myworkdayjobs.com/wday/cxs/hrsystem/careers/jobs"}
+{"b": "workday:hrsystem.wd1.myworkdayjobs.com/careers", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:hshs.wd1.myworkdayjobs.com/hshscareers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:hss.wd1.myworkdayjobs.com/hss_careers", "last_ok": "2026-10-29", "strikes": 0}
 {"b": "workday:htsc.wd102.myworkdayjobs.com/huatai_careers", "last_ok": "2026-10-21", "strikes": 0}
@@ -105790,7 +105790,7 @@
 {"b": "workday:huntingtonhospital.wd5.myworkdayjobs.com/huntingtonhospitalcareers", "last_ok": "2026-10-19", "strikes": 0}
 {"b": "workday:huntingtonlibrary.wd1.myworkdayjobs.com/HuntingtonCareers", "last_ok": "2026-10-25", "strikes": 0}
 {"b": "workday:huntsman.wd1.myworkdayjobs.com/huntsman", "last_ok": "2026-10-28", "strikes": 0}
-{"b": "workday:huron.wd1.myworkdayjobs.com/huroncareers", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://huron.wd1.myworkdayjobs.com/wday/cxs/huron/huroncareers/jobs"}
+{"b": "workday:huron.wd1.myworkdayjobs.com/huroncareers", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:husqvarnagroup.wd3.myworkdayjobs.com/external_career_site", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:hydroottawa.wd3.myworkdayjobs.com/hydro_ottawa_careersite", "last_ok": "2026-10-29", "strikes": 0}
 {"b": "workday:hydroottawa.wd3.myworkdayjobs.com/portage_power_careersite", "last_ok": "2026-10-30", "strikes": 0}
@@ -105806,7 +105806,7 @@
 {"b": "workday:hyvee.wd1.myworkdayjobs.com/amberspecialtypharmacyhy-veepharmacysolutions", "last_ok": "2026-10-28", "strikes": 0}
 {"b": "workday:hyvee.wd1.myworkdayjobs.com/fdicareers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:hyvee.wd1.myworkdayjobs.com/midwestheritagecareers", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:hyvee.wd1.myworkdayjobs.com/pdicareers", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://hyvee.wd1.myworkdayjobs.com/wday/cxs/hyvee/pdicareers/jobs"}
+{"b": "workday:hyvee.wd1.myworkdayjobs.com/pdicareers", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:ia.wd3.myworkdayjobs.com/professional_us", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:iaggbs.wd103.myworkdayjobs.com/iag_transform", "last_ok": "2026-10-29", "strikes": 0}
 {"b": "workday:iaggbs.wd103.myworkdayjobs.com/iaggbs", "last_ok": "2026-10-29", "strikes": 0}
@@ -105854,7 +105854,7 @@
 {"b": "workday:ilitch.wd5.myworkdayjobs.com/313-presents", "last_ok": "2026-10-26", "strikes": 0}
 {"b": "workday:ilitch.wd5.myworkdayjobs.com/Ilitch-Sports-Entertainment", "last_ok": "2026-10-23", "strikes": 0}
 {"b": "workday:ilitch.wd5.myworkdayjobs.com/champion-foods", "last_ok": "2026-10-28", "strikes": 0}
-{"b": "workday:ilitch.wd5.myworkdayjobs.com/lc", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://ilitch.wd5.myworkdayjobs.com/wday/cxs/ilitch/lc/jobs"}
+{"b": "workday:ilitch.wd5.myworkdayjobs.com/lc", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:ilitch.wd5.myworkdayjobs.com/odm", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:iljini.wd102.myworkdayjobs.com/alpinion", "last_ok": "2026-10-29", "strikes": 0}
 {"b": "workday:iljini.wd102.myworkdayjobs.com/diamond", "last_ok": "2026-10-27", "strikes": 0}
@@ -105870,7 +105870,7 @@
 {"b": "workday:imerys.wd3.myworkdayjobs.com/IMERYS-Careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:imerys.wd3.myworkdayjobs.com/imerys_career2", "last_ok": "2026-10-29", "strikes": 0}
 {"b": "workday:imf.wd5.myworkdayjobs.com/world_bank", "last_ok": "2026-10-25", "strikes": 0}
-{"b": "workday:imh.wd108.myworkdayjobs.com/IntermountainCareers", "last_ok": "2026-11-13", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:imh.wd108.myworkdayjobs.com/IntermountainCareers", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:immatics.wd3.myworkdayjobs.com/immatics_us", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:impactps.wd501.myworkdayjobs.com/impact_public_schools_external_careers", "last_ok": "2026-10-29", "strikes": 0}
 {"b": "workday:imperativelogistics.wd5.myworkdayjobs.com/ilg", "last_ok": "2026-10-27", "strikes": 0}
@@ -105902,7 +105902,7 @@
 {"b": "workday:innocap.wd10.myworkdayjobs.com/innocap-external-career-site", "last_ok": "2026-10-22", "strikes": 0}
 {"b": "workday:inotivco.wd5.myworkdayjobs.com/ext", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:insbrk.wd5.myworkdayjobs.com/one80careers", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:insbrk.wd5.myworkdayjobs.com/rscareers", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://insbrk.wd5.myworkdayjobs.com/wday/cxs/insbrk/rscareers/jobs"}
+{"b": "workday:insbrk.wd5.myworkdayjobs.com/rscareers", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:insitu.wd1.myworkdayjobs.com/careers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:insmed.wd5.myworkdayjobs.com/external", "last_ok": "", "strikes": 0, "why": "error: 422 Client Error: Unprocessable Entity for url: https://insmed.wd5.myworkdayjobs.com/wday/cxs/insmed/external/jobs"}
 {"b": "workday:insperity.wd12.myworkdayjobs.com/NSP", "last_ok": "2026-10-30", "strikes": 0}
@@ -105918,7 +105918,7 @@
 {"b": "workday:integralife.wd1.myworkdayjobs.com/careers", "last_ok": "2026-10-26", "strikes": 0}
 {"b": "workday:integritymarketing.wd1.myworkdayjobs.com/integrity", "last_ok": "2026-10-27", "strikes": 0}
 {"b": "workday:integritymarketing.wd1.myworkdayjobs.com/phpagency", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:integritymarketing.wd1.myworkdayjobs.com/ritterinsurancemarketing", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://integritymarketing.wd1.myworkdayjobs.com/wday/cxs/integritymarketing/ritterinsurancemarketing/jobs"}
+{"b": "workday:integritymarketing.wd1.myworkdayjobs.com/ritterinsurancemarketing", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:intel.wd1.myworkdayjobs.com/External", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:intelcomgroup.wd3.myworkdayjobs.com/dragonfly_career_site_aus", "last_ok": "2026-10-28", "strikes": 0}
 {"b": "workday:intelcomgroup.wd3.myworkdayjobs.com/intelcom", "last_ok": "2026-10-25", "strikes": 0}
@@ -105934,7 +105934,7 @@
 {"b": "workday:intive.wd3.myworkdayjobs.com/intive", "last_ok": "2026-10-29", "strikes": 0}
 {"b": "workday:intrepidgs.wd108.myworkdayjobs.com/people_careers", "last_ok": "2026-10-19", "strikes": 0}
 {"b": "workday:intrum.wd3.myworkdayjobs.com/external", "last_ok": "2026-10-19", "strikes": 0}
-{"b": "workday:intuitive.wd1.myworkdayjobs.com/irtc_careers", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://intuitive.wd1.myworkdayjobs.com/wday/cxs/intuitive/irtc_careers/jobs"}
+{"b": "workday:intuitive.wd1.myworkdayjobs.com/irtc_careers", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:invenergyllc.wd1.myworkdayjobs.com/invenergycareers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:invesco.wd1.myworkdayjobs.com/IVZ", "last_ok": "2026-10-29", "strikes": 0}
 {"b": "workday:investpsp.wd3.myworkdayjobs.com/psp_careers", "last_ok": "2026-10-30", "strikes": 0}
@@ -105950,7 +105950,7 @@
 {"b": "workday:irhythmtech.wd5.myworkdayjobs.com/irhythm", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:irobot.wd503.myworkdayjobs.com/irobot", "last_ok": "2026-10-29", "strikes": 0}
 {"b": "workday:ironmountain.wd5.myworkdayjobs.com/iron-mountain-jobs", "last_ok": "2026-10-29", "strikes": 0}
-{"b": "workday:irsc.wd5.myworkdayjobs.com/external", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://irsc.wd5.myworkdayjobs.com/wday/cxs/irsc/external/jobs"}
+{"b": "workday:irsc.wd5.myworkdayjobs.com/external", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:irvingoil.wd3.myworkdayjobs.com/iol_careers_primary", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:isc.wd10.myworkdayjobs.com/isc", "last_ok": "2026-10-27", "strikes": 0}
 {"b": "workday:islamicreliefcanada.wd3.myworkdayjobs.com/islamic_relief_canada", "last_ok": "2026-10-22", "strikes": 0}
@@ -105966,7 +105966,7 @@
 {"b": "workday:iyuno.wd3.myworkdayjobs.com/careers", "last_ok": "2026-10-20", "strikes": 0}
 {"b": "workday:jabil.wd5.myworkdayjobs.com/jabil_careers", "last_ok": "2026-10-22", "strikes": 0}
 {"b": "workday:jackson.wd1.myworkdayjobs.com/jackson_careers", "last_ok": "2026-10-28", "strikes": 0}
-{"b": "workday:jackson.wd1.myworkdayjobs.com/ppma_careers", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://jackson.wd1.myworkdayjobs.com/wday/cxs/jackson/ppma_careers/jobs"}
+{"b": "workday:jackson.wd1.myworkdayjobs.com/ppma_careers", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:jacksongov.wd5.myworkdayjobs.com/coj", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:jacksongov.wd5.myworkdayjobs.com/court", "last_ok": "2026-10-29", "strikes": 0}
 {"b": "workday:jacksonhealthcare.wd1.myworkdayjobs.com/careers-healthcareworkforcelogistics", "last_ok": "2026-10-19", "strikes": 0}
@@ -105982,7 +105982,7 @@
 {"b": "workday:javararesearch.wd12.myworkdayjobs.com/external_career_site", "last_ok": "2026-10-27", "strikes": 0}
 {"b": "workday:javer.wd12.myworkdayjobs.com/bolsa_de_trabajo_javer", "last_ok": "2026-10-26", "strikes": 0}
 {"b": "workday:jbhunt.wd501.myworkdayjobs.com/Careers", "last_ok": "2026-10-20", "strikes": 0}
-{"b": "workday:jci.wd5.myworkdayjobs.com/JCI", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://jci.wd5.myworkdayjobs.com/wday/cxs/jci/JCI/jobs"}
+{"b": "workday:jci.wd5.myworkdayjobs.com/JCI", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:jcorp.wd102.myworkdayjobs.com/kpj", "last_ok": "2026-10-19", "strikes": 0, "why": "error: 403 Client Error: Forbidden for url: https://jcorp.wd102.myworkdayjobs.com/wday/cxs/jcorp/kpj/jobs"}
 {"b": "workday:jcrew.wd1.myworkdayjobs.com/jcrewcareers", "last_ok": "2026-10-24", "strikes": 0}
 {"b": "workday:jcrew.wd1.myworkdayjobs.com/madewellcareers", "last_ok": "2026-10-30", "strikes": 0}
@@ -106078,7 +106078,7 @@
 {"b": "workday:kognitivinc.wd1.myworkdayjobs.com/kognitiv-careers", "last_ok": "2026-10-29", "strikes": 0}
 {"b": "workday:kohls.wd1.myworkdayjobs.com/kohlscareers", "last_ok": "", "strikes": 0, "why": "error: 422 Client Error: Unprocessable Entity for url: https://kohls.wd1.myworkdayjobs.com/wday/cxs/kohls/kohlscareers/jobs"}
 {"b": "workday:kokosing.wd5.myworkdayjobs.com/ck_construction_external_career_site", "last_ok": "2026-10-27", "strikes": 0}
-{"b": "workday:kokosing.wd5.myworkdayjobs.com/kokosing_external_career_site", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://kokosing.wd5.myworkdayjobs.com/wday/cxs/kokosing/kokosing_external_career_site/jobs"}
+{"b": "workday:kokosing.wd5.myworkdayjobs.com/kokosing_external_career_site", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:kone.wd3.myworkdayjobs.com/Careers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:konectagroup.wd3.myworkdayjobs.com/konecta", "last_ok": "2026-10-21", "strikes": 0}
 {"b": "workday:koppers.wd5.myworkdayjobs.com/Koppers", "last_ok": "2026-10-30", "strikes": 0}
@@ -106094,7 +106094,7 @@
 {"b": "workday:kwai.wd3.myworkdayjobs.com/kuaishou_external", "last_ok": "2026-10-23", "strikes": 0}
 {"b": "workday:kyndryl.wd5.myworkdayjobs.com/KyndrylProfessionalCareers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:kyriba.wd5.myworkdayjobs.com/kyriba-careers", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:laalliance.wd5.myworkdayjobs.com/alliance_careers", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://laalliance.wd5.myworkdayjobs.com/wday/cxs/laalliance/alliance_careers/jobs"}
+{"b": "workday:laalliance.wd5.myworkdayjobs.com/alliance_careers", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:labcorp.wd1.myworkdayjobs.com/External", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:lakewood.wd503.myworkdayjobs.com/careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:lancastercountypa.wd12.myworkdayjobs.com/lanco", "last_ok": "2026-10-30", "strikes": 0}
@@ -106126,7 +106126,7 @@
 {"b": "workday:lego.wd103.myworkdayjobs.com/lego_executive", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:leidos.wd5.myworkdayjobs.com/External", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:lendingclub.wd1.myworkdayjobs.com/External", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:lendio.wd1.myworkdayjobs.com/lendio", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://lendio.wd1.myworkdayjobs.com/wday/cxs/lendio/lendio/jobs"}
+{"b": "workday:lendio.wd1.myworkdayjobs.com/lendio", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:lendlease.wd3.myworkdayjobs.com/lendleasecareers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:lendmarkfinancial.wd1.myworkdayjobs.com/search", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:lennar.wd1.myworkdayjobs.com/Early_Careers", "last_ok": "2026-10-22", "strikes": 0}
@@ -106158,7 +106158,7 @@
 {"b": "workday:lighting.wd3.myworkdayjobs.com/jobs-and-careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:likewize.wd1.myworkdayjobs.com/external", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:lilly.wd5.myworkdayjobs.com/lly", "last_ok": "", "strikes": 0, "why": "error: 422 Client Error: Unprocessable Entity for url: https://lilly.wd5.myworkdayjobs.com/wday/cxs/lilly/lly/jobs"}
-{"b": "workday:lindenwood.wd1.myworkdayjobs.com/CareerOpportunities", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://lindenwood.wd1.myworkdayjobs.com/wday/cxs/lindenwood/CareerOpportunities/jobs"}
+{"b": "workday:lindenwood.wd1.myworkdayjobs.com/CareerOpportunities", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:lindenwood.wd1.myworkdayjobs.com/dorsey_college_external_careers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:lindtspruengli.wd103.myworkdayjobs.com/LindtSpruengliGroupCareers", "last_ok": "2026-10-28", "strikes": 0}
 {"b": "workday:linklaters.wd3.myworkdayjobs.com/linklaters", "last_ok": "2026-10-30", "strikes": 0}
@@ -106174,7 +106174,7 @@
 {"b": "workday:livenation.wd503.myworkdayjobs.com/insomniacexternalsite", "last_ok": "2026-10-26", "strikes": 0}
 {"b": "workday:livenation.wd503.myworkdayjobs.com/rnexternalsite", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:liveoakbancshares.wd1.myworkdayjobs.com/live_oak", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:liveramp.wd5.myworkdayjobs.com/liverampcareers", "last_ok": "", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://liveramp.wd5.myworkdayjobs.com/wday/cxs/liveramp/liverampcareers/jobs"}
+{"b": "workday:liveramp.wd5.myworkdayjobs.com/liverampcareers", "last_ok": "", "strikes": 0, "why": "error: 403 Client Error: Forbidden for url: https://liveramp.wd5.myworkdayjobs.com/wday/cxs/liveramp/liverampcareers/jobs"}
 {"b": "workday:liverangewater.wd1.myworkdayjobs.com/rangewaterrealestate", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:livingspaces.wd5.myworkdayjobs.com/ls", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:ljbtc.wd501.myworkdayjobs.com/ljbtc", "last_ok": "2026-10-30", "strikes": 0}
@@ -106190,7 +106190,7 @@
 {"b": "workday:lnw.wd5.myworkdayjobs.com/lightwonderexternalcareers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:lnw.wd5.myworkdayjobs.com/sciplayexternalcareerssite", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:loewshotels.wd5.myworkdayjobs.com/loewshotels", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:loganhealth.wd1.myworkdayjobs.com/logan_careers", "last_ok": "2026-11-10", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://loganhealth.wd1.myworkdayjobs.com/wday/cxs/loganhealth/logan_careers/jobs"}
+{"b": "workday:loganhealth.wd1.myworkdayjobs.com/logan_careers", "last_ok": "2026-11-10", "strikes": 0, "why": "error: 404 Client Error: Not Found for url: https://loganhealth.wd1.myworkdayjobs.com/wday/cxs/loganhealth/logan_careers/jobs"}
 {"b": "workday:logicalis.wd3.myworkdayjobs.com/izenocareers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:logicalis.wd3.myworkdayjobs.com/logicaliscareers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:logitech.wd5.myworkdayjobs.com/Logitech", "last_ok": "2026-10-23", "strikes": 0}
@@ -106206,7 +106206,7 @@
 {"b": "workday:loyola.wd5.myworkdayjobs.com/external", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:lozier.wd5.myworkdayjobs.com/lozier_careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:lplfinancial.wd1.myworkdayjobs.com/external", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:lplfinancial.wd1.myworkdayjobs.com/university", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://lplfinancial.wd1.myworkdayjobs.com/wday/cxs/lplfinancial/university/jobs"}
+{"b": "workday:lplfinancial.wd1.myworkdayjobs.com/university", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:lseg.wd3.myworkdayjobs.com/careers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:lsi.wd3.myworkdayjobs.com/arxada_careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:lssliving.wd1.myworkdayjobs.com/lss_external", "last_ok": "2026-10-30", "strikes": 0}
@@ -106238,7 +106238,7 @@
 {"b": "workday:lyten.wd503.myworkdayjobs.com/lyten_external_career_site", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:lytx.wd1.myworkdayjobs.com/lytx", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:mabanaft.wd3.myworkdayjobs.com/mabanaft", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:macfound.wd1.myworkdayjobs.com/mac_found_ext_careers", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://macfound.wd1.myworkdayjobs.com/wday/cxs/macfound/mac_found_ext_careers/jobs"}
+{"b": "workday:macfound.wd1.myworkdayjobs.com/mac_found_ext_careers", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:macombgov.wd1.myworkdayjobs.com/external", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:macu.wd5.myworkdayjobs.com/macu_careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:madixinc.wd12.myworkdayjobs.com/madix", "last_ok": "2026-10-30", "strikes": 0}
@@ -106270,7 +106270,7 @@
 {"b": "workday:maricopa.wd1.myworkdayjobs.com/mcso_external", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:marinabaysands.wd102.myworkdayjobs.com/External", "last_ok": "2026-10-28", "strikes": 0}
 {"b": "workday:marinabaysands.wd102.myworkdayjobs.com/externalcampaign", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:maritz.wd1.myworkdayjobs.com/unpbl", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://maritz.wd1.myworkdayjobs.com/wday/cxs/maritz/unpbl/jobs"}
+{"b": "workday:maritz.wd1.myworkdayjobs.com/unpbl", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:markelcorp.wd5.myworkdayjobs.com/globalcareers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:marmon.wd501.myworkdayjobs.com/marmon_careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:marquardbahls.wd3.myworkdayjobs.com/advario", "last_ok": "2026-10-30", "strikes": 0}
@@ -106286,7 +106286,7 @@
 {"b": "workday:marylandconnect.wd1.myworkdayjobs.com/su_careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:marylandconnect.wd1.myworkdayjobs.com/ubaltcareers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:marylanning.wd1.myworkdayjobs.com/marylanningcareers", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:marymount.wd5.myworkdayjobs.com/careers", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://marymount.wd5.myworkdayjobs.com/wday/cxs/marymount/careers/jobs"}
+{"b": "workday:marymount.wd5.myworkdayjobs.com/careers", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:marywashingtonhealthcare.wd5.myworkdayjobs.com/externalcareers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:maschmeyer.wd12.myworkdayjobs.com/mcc", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:masco.wd1.myworkdayjobs.com/behr", "last_ok": "2026-10-28", "strikes": 0}
@@ -106302,7 +106302,7 @@
 {"b": "workday:massgeneralbrigham.wd1.myworkdayjobs.com/physicianorganization", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:massmutual.wd1.myworkdayjobs.com/mmascendcareers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:massmutual.wd1.myworkdayjobs.com/mmcareers", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:mastercard.wd1.myworkdayjobs.com/CorporateCareers", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://mastercard.wd1.myworkdayjobs.com/wday/cxs/mastercard/CorporateCareers/jobs"}
+{"b": "workday:mastercard.wd1.myworkdayjobs.com/CorporateCareers", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:mastercardfoundation.wd10.myworkdayjobs.com/mastercardfdn", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:mastercorp.wd1.myworkdayjobs.com/mc", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:material.wd1.myworkdayjobs.com/material_external_career_site", "last_ok": "2026-10-30", "strikes": 0}
@@ -106366,7 +106366,7 @@
 {"b": "workday:memorialhealthcare.wd1.myworkdayjobs.com/mhs_careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:memorialhermann.wd5.myworkdayjobs.com/external", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:menasha.wd12.myworkdayjobs.com/menashacorp", "last_ok": "2026-10-25", "strikes": 0}
-{"b": "workday:meowwolf.wd1.myworkdayjobs.com/meowwolf", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://meowwolf.wd1.myworkdayjobs.com/wday/cxs/meowwolf/meowwolf/jobs"}
+{"b": "workday:meowwolf.wd1.myworkdayjobs.com/meowwolf", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:merative.wd12.myworkdayjobs.com/external_career_site", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:mercedesbenztechinnovation.wd3.myworkdayjobs.com/mbti_jobportal", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:merceruniversity.wd1.myworkdayjobs.com/student", "last_ok": "2026-10-30", "strikes": 0}
@@ -106382,7 +106382,7 @@
 {"b": "workday:methode.wd5.myworkdayjobs.com/methode", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:methodisthealth.wd5.myworkdayjobs.com/mlh", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:methodisthealthsystem.wd1.myworkdayjobs.com/MHS_Careers", "last_ok": "2026-10-29", "strikes": 0}
-{"b": "workday:metmuseum.wd5.myworkdayjobs.com/metmuseumcareers", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://metmuseum.wd5.myworkdayjobs.com/wday/cxs/metmuseum/metmuseumcareers/jobs"}
+{"b": "workday:metmuseum.wd5.myworkdayjobs.com/metmuseumcareers", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:metrocareservices.wd501.myworkdayjobs.com/metrocare_careers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:mfs.wd1.myworkdayjobs.com/mfs-careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:mgahomecare.wd12.myworkdayjobs.com/mgahomecare2embeded", "last_ok": "2026-10-30", "strikes": 0}
@@ -106462,7 +106462,7 @@
 {"b": "workday:morningstar.wd5.myworkdayjobs.com/MorningstarDBRS", "last_ok": "2026-10-24", "strikes": 0}
 {"b": "workday:morningstar.wd5.myworkdayjobs.com/morningstar", "last_ok": "2026-10-28", "strikes": 0}
 {"b": "workday:morsco.wd5.myworkdayjobs.com/reece_careers", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:mosaic.wd5.myworkdayjobs.com/mosaic", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://mosaic.wd5.myworkdayjobs.com/wday/cxs/mosaic/mosaic/jobs"}
+{"b": "workday:mosaic.wd5.myworkdayjobs.com/mosaic", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:mosscm.wd1.myworkdayjobs.com/moss_careers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:mosscm.wd1.myworkdayjobs.com/solar_moss_careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:motiva.wd1.myworkdayjobs.com/motivacareers", "last_ok": "2026-10-30", "strikes": 0}
@@ -106494,7 +106494,7 @@
 {"b": "workday:msmu.wd1.myworkdayjobs.com/mount_summer", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:mssg.wd503.myworkdayjobs.com/mssg", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:msssecurity.wd105.myworkdayjobs.com/mss", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:msudenver.wd1.myworkdayjobs.com/msudenver", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://msudenver.wd1.myworkdayjobs.com/wday/cxs/msudenver/msudenver/jobs"}
+{"b": "workday:msudenver.wd1.myworkdayjobs.com/msudenver", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:mtb.wd5.myworkdayjobs.com/MTB", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:mtholyoke.wd5.myworkdayjobs.com/external", "last_ok": "", "strikes": 0, "why": "error: 422 Client Error: Unprocessable Entity for url: https://mtholyoke.wd5.myworkdayjobs.com/wday/cxs/mtholyoke/external/jobs"}
 {"b": "workday:mtminc.wd1.myworkdayjobs.com/mtm_external", "last_ok": "2026-10-30", "strikes": 0}
@@ -106542,7 +106542,7 @@
 {"b": "workday:mywdhr.wd1.myworkdayjobs.com/hudsonsbay_careers", "last_ok": "2026-10-19", "strikes": 0}
 {"b": "workday:mywdhr.wd1.myworkdayjobs.com/saks_offfifth_careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:myworkdaycenter.wd5.myworkdayjobs.com/MNG", "last_ok": "2026-10-19", "strikes": 0}
-{"b": "workday:myworkdaycenter.wd5.myworkdayjobs.com/tpco", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://myworkdaycenter.wd5.myworkdayjobs.com/wday/cxs/myworkdaycenter/tpco/jobs"}
+{"b": "workday:myworkdaycenter.wd5.myworkdayjobs.com/tpco", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:nab.wd3.myworkdayjobs.com/bnz_careers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:nab.wd3.myworkdayjobs.com/nab_careers", "last_ok": "2026-10-19", "strikes": 0}
 {"b": "workday:nabancard.wd1.myworkdayjobs.com/nab", "last_ok": "2026-10-30", "strikes": 0}
@@ -106558,7 +106558,7 @@
 {"b": "workday:nandosanz.wd3.myworkdayjobs.com/nandosanz", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:nanfung.wd3.myworkdayjobs.com/nf_career", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:nant.wd5.myworkdayjobs.com/immunitybio", "last_ok": "2026-10-27", "strikes": 0}
-{"b": "workday:napaanesthesia.wd1.myworkdayjobs.com/napa_careers", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://napaanesthesia.wd1.myworkdayjobs.com/wday/cxs/napaanesthesia/napa_careers/jobs"}
+{"b": "workday:napaanesthesia.wd1.myworkdayjobs.com/napa_careers", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:nas.wd1.myworkdayjobs.com/nas_careers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:nasdaq.wd1.myworkdayjobs.com/Global_External_Site", "last_ok": "2026-10-25", "strikes": 0}
 {"b": "workday:natgasoline.wd1.myworkdayjobs.com/natgasoline", "last_ok": "2026-10-30", "strikes": 0}
@@ -106574,7 +106574,7 @@
 {"b": "workday:nature.wd108.myworkdayjobs.com/externalcareers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:navcanada.wd10.myworkdayjobs.com/nav_careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:navient.wd1.myworkdayjobs.com/navient_jobs", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:navigators.wd1.myworkdayjobs.com/inviteonly", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://navigators.wd1.myworkdayjobs.com/wday/cxs/navigators/inviteonly/jobs"}
+{"b": "workday:navigators.wd1.myworkdayjobs.com/inviteonly", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:nba.wd108.myworkdayjobs.com/nbacareers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:nbn.wd3.myworkdayjobs.com/nbncareers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:nbtbancorp.wd12.myworkdayjobs.com/nbt-b", "last_ok": "2026-10-30", "strikes": 0}
@@ -106590,7 +106590,7 @@
 {"b": "workday:nebraskablue.wd1.myworkdayjobs.com/bcbsne", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:nebraskamed.wd5.myworkdayjobs.com/clarkson", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:nebraskamed.wd5.myworkdayjobs.com/nm", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:neighborlybrands.wd1.myworkdayjobs.com/neighbourlycareers", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://neighborlybrands.wd1.myworkdayjobs.com/wday/cxs/neighborlybrands/neighbourlycareers/jobs"}
+{"b": "workday:neighborlybrands.wd1.myworkdayjobs.com/neighbourlycareers", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:neiu.wd1.myworkdayjobs.com/neiu", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:nelnet.wd1.myworkdayjobs.com/MyNelnet", "last_ok": "2026-10-29", "strikes": 0}
 {"b": "workday:neogen.wd5.myworkdayjobs.com/neogencareers", "last_ok": "2026-10-30", "strikes": 0}
@@ -106670,7 +106670,7 @@
 {"b": "workday:novavax.wd1.myworkdayjobs.com/careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:novozymes.wd103.myworkdayjobs.com/novonesis_careers", "last_ok": "", "strikes": 0, "why": "error: 422 Client Error: Unprocessable Entity for url: https://novozymes.wd103.myworkdayjobs.com/wday/cxs/novozymes/novonesis_careers/jobs"}
 {"b": "workday:nphosting.wd5.myworkdayjobs.com/bvtcareers", "last_ok": "2026-10-28", "strikes": 0}
-{"b": "workday:nphosting.wd5.myworkdayjobs.com/cc_careers", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://nphosting.wd5.myworkdayjobs.com/wday/cxs/nphosting/cc_careers/jobs"}
+{"b": "workday:nphosting.wd5.myworkdayjobs.com/cc_careers", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:nphosting.wd5.myworkdayjobs.com/fdfcareers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:nphosting.wd5.myworkdayjobs.com/hhscareers", "last_ok": "2026-10-26", "strikes": 0}
 {"b": "workday:nphosting.wd5.myworkdayjobs.com/inkcareers", "last_ok": "2026-10-25", "strikes": 0}
@@ -106686,7 +106686,7 @@
 {"b": "workday:nshe.wd1.myworkdayjobs.com/nsu-external", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:nshe.wd1.myworkdayjobs.com/tmcc-external", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:nshe.wd1.myworkdayjobs.com/unlv-external", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:nshe.wd1.myworkdayjobs.com/unr-external", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://nshe.wd1.myworkdayjobs.com/wday/cxs/nshe/unr-external/jobs"}
+{"b": "workday:nshe.wd1.myworkdayjobs.com/unr-external", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:nshe.wd1.myworkdayjobs.com/wnc-external", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:nshs.wd1.myworkdayjobs.com/ns-eeh", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:ntc.wd1.myworkdayjobs.com/ntc", "last_ok": "2026-10-30", "strikes": 0}
@@ -106702,7 +106702,7 @@
 {"b": "workday:nutraceutical.wd501.myworkdayjobs.com/betterbeingexternalcareersite", "last_ok": "2026-10-24", "strikes": 0}
 {"b": "workday:nutreco.wd3.myworkdayjobs.com/nutreco_external", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:nvent.wd5.myworkdayjobs.com/nvent", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://nvidia.wd5.myworkdayjobs.com/wday/cxs/nvidia/NVIDIAExternalCareerSite/jobs"}
+{"b": "workday:nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:nwacc.wd1.myworkdayjobs.com/nwacc_external_career_site", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:nwhreit.wd3.myworkdayjobs.com/jobs", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:nwis.wd12.myworkdayjobs.com/nw", "last_ok": "2026-10-30", "strikes": 0}
@@ -106750,7 +106750,7 @@
 {"b": "workday:onedigital.wd5.myworkdayjobs.com/centro", "last_ok": "", "strikes": 0, "why": "error: 422 Client Error: Unprocessable Entity for url: https://onedigital.wd5.myworkdayjobs.com/wday/cxs/onedigital/centro/jobs"}
 {"b": "workday:onedigital.wd5.myworkdayjobs.com/onedigital", "last_ok": "", "strikes": 0, "why": "error: 422 Client Error: Unprocessable Entity for url: https://onedigital.wd5.myworkdayjobs.com/wday/cxs/onedigital/onedigital/jobs"}
 {"b": "workday:onehealthineers.wd3.myworkdayjobs.com/shsjb", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:onelineage.wd1.myworkdayjobs.com/external", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://onelineage.wd1.myworkdayjobs.com/wday/cxs/onelineage/external/jobs"}
+{"b": "workday:onelineage.wd1.myworkdayjobs.com/external", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:onelinxens.wd3.myworkdayjobs.com/external_careers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:oneok.wd1.myworkdayjobs.com/ONEOK", "last_ok": "2026-10-29", "strikes": 0}
 {"b": "workday:oneoncology.wd1.myworkdayjobs.com/abcs", "last_ok": "2026-10-27", "strikes": 0}
@@ -106766,7 +106766,7 @@
 {"b": "workday:oneoncology.wd1.myworkdayjobs.com/nyh", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:oneoncology.wd1.myworkdayjobs.com/nyi", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:oneoncology.wd1.myworkdayjobs.com/nyoh", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:oneoncology.wd1.myworkdayjobs.com/pcc", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://oneoncology.wd1.myworkdayjobs.com/wday/cxs/oneoncology/pcc/jobs"}
+{"b": "workday:oneoncology.wd1.myworkdayjobs.com/pcc", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:oneoncology.wd1.myworkdayjobs.com/pci", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:oneoncology.wd1.myworkdayjobs.com/tsc", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:oneoncology.wd1.myworkdayjobs.com/uug", "last_ok": "2026-10-30", "strikes": 0}
@@ -106798,7 +106798,7 @@
 {"b": "workday:orix.wd5.myworkdayjobs.com/external_orix", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:orix.wd5.myworkdayjobs.com/lument", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:orthoclinical.wd1.myworkdayjobs.com/search", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:orthofix.wd1.myworkdayjobs.com/external_careers", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://orthofix.wd1.myworkdayjobs.com/wday/cxs/orthofix/external_careers/jobs"}
+{"b": "workday:orthofix.wd1.myworkdayjobs.com/external_careers", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:osc.wd3.myworkdayjobs.com/osccareers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:osfglobal.wd5.myworkdayjobs.com/osf", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:oshkoshcorporation.wd5.myworkdayjobs.com/oshkosh", "last_ok": "2026-10-30", "strikes": 0}
@@ -106830,7 +106830,7 @@
 {"b": "workday:oxford.wd5.myworkdayjobs.com/johnnywas", "last_ok": "2026-10-26", "strikes": 0}
 {"b": "workday:oxford.wd5.myworkdayjobs.com/lillypulitzer", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:oxford.wd5.myworkdayjobs.com/thebeaufortbonnetcompany", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:oxford.wd5.myworkdayjobs.com/tommybahamaus", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://oxford.wd5.myworkdayjobs.com/wday/cxs/oxford/tommybahamaus/jobs"}
+{"b": "workday:oxford.wd5.myworkdayjobs.com/tommybahamaus", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:oxy.wd5.myworkdayjobs.com/Corporate", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:oxy.wd5.myworkdayjobs.com/UniversityRelations", "last_ok": "2026-10-29", "strikes": 0}
 {"b": "workday:pacbio.wd12.myworkdayjobs.com/PacBio-", "last_ok": "2026-10-30", "strikes": 0}
@@ -106846,7 +106846,7 @@
 {"b": "workday:pacourts.wd5.myworkdayjobs.com/pacourts", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:pacs.wd108.myworkdayjobs.com/pacs", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:pae.wd1.myworkdayjobs.com/Amentum_Careers", "last_ok": "2026-10-21", "strikes": 0}
-{"b": "workday:pae.wd1.myworkdayjobs.com/pae_antarcticsupportcontract", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://pae.wd1.myworkdayjobs.com/wday/cxs/pae/pae_antarcticsupportcontract/jobs"}
+{"b": "workday:pae.wd1.myworkdayjobs.com/pae_antarcticsupportcontract", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:paho.wd5.myworkdayjobs.com/pahocareers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:palig.wd5.myworkdayjobs.com/palig", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:palmbeachstate.wd1.myworkdayjobs.com/external", "last_ok": "2026-10-30", "strikes": 0}
@@ -106862,7 +106862,7 @@
 {"b": "workday:parklandhospital.wd12.myworkdayjobs.com/parkland_careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:parsons.wd5.myworkdayjobs.com/Search", "last_ok": "2026-10-19", "strikes": 0}
 {"b": "workday:patagonia.wd503.myworkdayjobs.com/PWCareers", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:path.wd1.myworkdayjobs.com/external", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://path.wd1.myworkdayjobs.com/wday/cxs/path/external/jobs"}
+{"b": "workday:path.wd1.myworkdayjobs.com/external", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:patientfirst.wd5.myworkdayjobs.com/patientfirst", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:patrizia.wd502.myworkdayjobs.com/patrizia", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:pattersoncompanies.wd501.myworkdayjobs.com/pdco", "last_ok": "2026-10-30", "strikes": 0}
@@ -106878,7 +106878,7 @@
 {"b": "workday:pciservices.wd1.myworkdayjobs.com/external", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:peak6group.wd1.myworkdayjobs.com/apexfintechsolutions", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:peak6group.wd1.myworkdayjobs.com/peak6", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:peak6group.wd1.myworkdayjobs.com/tfig", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://peak6group.wd1.myworkdayjobs.com/wday/cxs/peak6group/tfig/jobs"}
+{"b": "workday:peak6group.wd1.myworkdayjobs.com/tfig", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:peak6group.wd1.myworkdayjobs.com/weinsure", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:peckham.wd503.myworkdayjobs.com/staff_external_career_site", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:peets.wd12.myworkdayjobs.com/intelligentsia", "last_ok": "2026-10-29", "strikes": 0}
@@ -106894,7 +106894,7 @@
 {"b": "workday:pennant.wd1.myworkdayjobs.com/brenwoodparkcareersite", "last_ok": "2026-10-21", "strikes": 0}
 {"b": "workday:pennant.wd1.myworkdayjobs.com/customcarecareersite", "last_ok": "2026-10-29", "strikes": 0}
 {"b": "workday:pennant.wd1.myworkdayjobs.com/desertspringsslcareersite", "last_ok": "2026-10-26", "strikes": 0}
-{"b": "workday:pennant.wd1.myworkdayjobs.com/excellhomecareandhospicecareersite", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://pennant.wd1.myworkdayjobs.com/wday/cxs/pennant/excellhomecareandhospicecareersite/jobs"}
+{"b": "workday:pennant.wd1.myworkdayjobs.com/excellhomecareandhospicecareersite", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:pennant.wd1.myworkdayjobs.com/harvesthomeinwoodcrossing", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:pennant.wd1.myworkdayjobs.com/honeycreekheights", "last_ok": "2026-10-24", "strikes": 0}
 {"b": "workday:pennant.wd1.myworkdayjobs.com/hospiceofthepinescareersite", "last_ok": "2026-10-30", "strikes": 0}
@@ -106910,7 +106910,7 @@
 {"b": "workday:pennant.wd1.myworkdayjobs.com/parksideslcareersite", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:pennant.wd1.myworkdayjobs.com/pleasantpointseniorlivingcareersite", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:pennant.wd1.myworkdayjobs.com/preceptorhccareersite", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:pennant.wd1.myworkdayjobs.com/riversidehhcareersite", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://pennant.wd1.myworkdayjobs.com/wday/cxs/pennant/riversidehhcareersite/jobs"}
+{"b": "workday:pennant.wd1.myworkdayjobs.com/riversidehhcareersite", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:pennant.wd1.myworkdayjobs.com/rosecourtalcareersite", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:pennant.wd1.myworkdayjobs.com/sacredhearthomehealthcarecareersite", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:pennant.wd1.myworkdayjobs.com/seaporthealthcareersite", "last_ok": "", "strikes": 0, "why": "error: 404 Client Error: Not Found for url: https://pennant.wd1.myworkdayjobs.com/wday/cxs/pennant/seaporthealthcareersite/jobs"}
@@ -106974,7 +106974,7 @@
 {"b": "workday:pibgroup.wd3.myworkdayjobs.com/pib", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:picknpay.wd3.myworkdayjobs.com/pnp_careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:pierrefabre.wd3.myworkdayjobs.com/external_career_site", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:pillsburylaw.wd5.myworkdayjobs.com/external", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://pillsburylaw.wd5.myworkdayjobs.com/wday/cxs/pillsburylaw/external/jobs"}
+{"b": "workday:pillsburylaw.wd5.myworkdayjobs.com/external", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:pilotdelivers.wd1.myworkdayjobs.com/pilotcareers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:pimacounty.wd5.myworkdayjobs.com/pimacareers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:pimco.wd1.myworkdayjobs.com/pimco-careers", "last_ok": "2026-10-25", "strikes": 0}
@@ -106990,7 +106990,7 @@
 {"b": "workday:pjm.wd5.myworkdayjobs.com/pjmcareers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:pjtpartners.wd1.myworkdayjobs.com/careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:pladis.wd3.myworkdayjobs.com/pladis_careers", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:plains.wd1.myworkdayjobs.com/plains", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://plains.wd1.myworkdayjobs.com/wday/cxs/plains/plains/jobs"}
+{"b": "workday:plains.wd1.myworkdayjobs.com/plains", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:plantemoran.wd1.myworkdayjobs.com/opportunity", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:plastipak.wd1.myworkdayjobs.com/absopure", "last_ok": "2026-10-26", "strikes": 0}
 {"b": "workday:plastipak.wd1.myworkdayjobs.com/cleantech", "last_ok": "2026-10-25", "strikes": 0}
@@ -107006,7 +107006,7 @@
 {"b": "workday:pnc.wd5.myworkdayjobs.com/harriswilliams", "last_ok": "2026-10-28", "strikes": 0}
 {"b": "workday:poet.wd1.myworkdayjobs.com/poet", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:point32health.wd5.myworkdayjobs.com/thp", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:pointloma.wd1.myworkdayjobs.com/plnucareers", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://pointloma.wd1.myworkdayjobs.com/wday/cxs/pointloma/plnucareers/jobs"}
+{"b": "workday:pointloma.wd1.myworkdayjobs.com/plnucareers", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:polaris.wd5.myworkdayjobs.com/polarisjobs", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:polaris.wd5.myworkdayjobs.com/tetonjobs", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:polarsemi.wd501.myworkdayjobs.com/polar", "last_ok": "2026-10-30", "strikes": 0}
@@ -107038,7 +107038,7 @@
 {"b": "workday:pressganey.wd1.myworkdayjobs.com/careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:pretiumenterpriseservices.wd1.myworkdayjobs.com/anchorloans", "last_ok": "2026-10-28", "strikes": 0}
 {"b": "workday:pretiumenterpriseservices.wd1.myworkdayjobs.com/deephaven", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:pretiumenterpriseservices.wd1.myworkdayjobs.com/pretium-enterprise-services", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://pretiumenterpriseservices.wd1.myworkdayjobs.com/wday/cxs/pretiumenterpriseservices/pretium-enterprise-services/jobs"}
+{"b": "workday:pretiumenterpriseservices.wd1.myworkdayjobs.com/pretium-enterprise-services", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:pretiumenterpriseservices.wd1.myworkdayjobs.com/selene", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:priceline.wd1.myworkdayjobs.com/priceline", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:prim.wd108.myworkdayjobs.com/Primoris", "last_ok": "2026-10-30", "strikes": 0}
@@ -107054,7 +107054,7 @@
 {"b": "workday:procore.wd12.myworkdayjobs.com/Procore_External_Careers", "last_ok": "2026-10-25", "strikes": 0}
 {"b": "workday:progleasing.wd5.myworkdayjobs.com/progleasingcareers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:progyny.wd5.myworkdayjobs.com/progyny", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:prologis.wd5.myworkdayjobs.com/Prologis_External_Careers", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://prologis.wd5.myworkdayjobs.com/wday/cxs/prologis/Prologis_External_Careers/jobs"}
+{"b": "workday:prologis.wd5.myworkdayjobs.com/Prologis_External_Careers", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:promedica.wd12.myworkdayjobs.com/external_careers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:prometeia.wd3.myworkdayjobs.com/prometeia_external_career_portal", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:promutuel.wd3.myworkdayjobs.com/promutuel_carrieres", "last_ok": "2026-10-30", "strikes": 0}
@@ -107086,7 +107086,7 @@
 {"b": "workday:puma.wd502.myworkdayjobs.com/jobs_at_puma", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:puma.wd502.myworkdayjobs.com/work_at_stichd", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:pureinsurance.wd5.myworkdayjobs.com/pure", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:purple.wd1.myworkdayjobs.com/purplecareers", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://purple.wd1.myworkdayjobs.com/wday/cxs/purple/purplecareers/jobs"}
+{"b": "workday:purple.wd1.myworkdayjobs.com/purplecareers", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:pursuitcollection.wd501.myworkdayjobs.com/pursuit", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:pvh.wd1.myworkdayjobs.com/PVH_Careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:pwc.wd3.myworkdayjobs.com/Global_Experienced_Careers", "last_ok": "2026-10-30", "strikes": 0}
@@ -107102,7 +107102,7 @@
 {"b": "workday:qburger.impl-wd102.myworkdayjobs.com/qburger", "last_ok": "", "strikes": 0, "why": "error: 403 Client Error: Forbidden for url: https://qburger.impl-wd102.myworkdayjobs.com/wday/cxs/qburger/qburger/jobs"}
 {"b": "workday:qlar.wd3.myworkdayjobs.com/qlar_careers", "last_ok": "", "strikes": 0, "why": "error: 403 Client Error: Forbidden for url: https://qlar.wd3.myworkdayjobs.com/wday/cxs/qlar/qlar_careers/jobs"}
 {"b": "workday:qnity.wd503.myworkdayjobs.com/jobs", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:qtsdatacenters.wd5.myworkdayjobs.com/qts", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://qtsdatacenters.wd5.myworkdayjobs.com/wday/cxs/qtsdatacenters/qts/jobs"}
+{"b": "workday:qtsdatacenters.wd5.myworkdayjobs.com/qts", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:quadreal.wd10.myworkdayjobs.com/parkbridge", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:quadreal.wd10.myworkdayjobs.com/quadreal", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:qualifacts.wd5.myworkdayjobs.com/qualifacts_external_careers", "last_ok": "2026-10-30", "strikes": 0}
@@ -107134,7 +107134,7 @@
 {"b": "workday:ramsayhealthcare.wd3.myworkdayjobs.com/ramsay_careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:rand.wd5.myworkdayjobs.com/external_career_site", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:randstadgroepnl.wd3.myworkdayjobs.com/werken-bij-tempo-team", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:rangersmlb.wd5.myworkdayjobs.com/reventertainmentcareers", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://rangersmlb.wd5.myworkdayjobs.com/wday/cxs/rangersmlb/reventertainmentcareers/jobs"}
+{"b": "workday:rangersmlb.wd5.myworkdayjobs.com/reventertainmentcareers", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:rappi.wd12.myworkdayjobs.com/rappi_jobs", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:ratp.wd3.myworkdayjobs.com/ratp_externe", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:ratp.wd3.myworkdayjobs.com/ratp_groupe", "last_ok": "", "strikes": 0, "why": "error: 404 Client Error: Not Found for url: https://ratp.wd3.myworkdayjobs.com/wday/cxs/ratp/ratp_groupe/jobs"}
@@ -107214,7 +107214,7 @@
 {"b": "workday:rewa.wd1.myworkdayjobs.com/rewa", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:reworld.wd5.myworkdayjobs.com/external", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:rfcuny.wd108.myworkdayjobs.com/rfcuny", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:rgare.wd1.myworkdayjobs.com/careers", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://rgare.wd1.myworkdayjobs.com/wday/cxs/rgare/careers/jobs"}
+{"b": "workday:rgare.wd1.myworkdayjobs.com/careers", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:rhahealthservices.wd1.myworkdayjobs.com/1", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:rhb.wd102.myworkdayjobs.com/rhbexternalcareersite", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:rhe.wd3.myworkdayjobs.com/r1111", "last_ok": "2026-10-30", "strikes": 0}
@@ -107278,7 +107278,7 @@
 {"b": "workday:royalihc.wd103.myworkdayjobs.com/external_career", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:rpcinc.wd1.myworkdayjobs.com/cpc", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:rpcinc.wd1.myworkdayjobs.com/patterson", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:rpcinc.wd1.myworkdayjobs.com/thrutubing", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://rpcinc.wd1.myworkdayjobs.com/wday/cxs/rpcinc/thrutubing/jobs"}
+{"b": "workday:rpcinc.wd1.myworkdayjobs.com/thrutubing", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:rrhs.wd5.myworkdayjobs.com/acm", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:rrhs.wd5.myworkdayjobs.com/rrh", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:rrts.wd1.myworkdayjobs.com/linkedin", "last_ok": "2026-10-30", "strikes": 0}
@@ -107342,7 +107342,7 @@
 {"b": "workday:sanford.wd5.myworkdayjobs.com/sanfordhealth", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:sanger.wd103.myworkdayjobs.com/wellcomesangerinstitute", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:sanimax.wd3.myworkdayjobs.com/sanimaxext", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:sanmanuel.wd1.myworkdayjobs.com/SMGHANevada", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://sanmanuel.wd1.myworkdayjobs.com/wday/cxs/sanmanuel/SMGHANevada/jobs"}
+{"b": "workday:sanmanuel.wd1.myworkdayjobs.com/SMGHANevada", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:sanmanuel.wd1.myworkdayjobs.com/san_manuel", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:sanofi.wd3.myworkdayjobs.com/SanofiCareers", "last_ok": "2026-10-27", "strikes": 0}
 {"b": "workday:sanofi.wd3.myworkdayjobs.com/opellacareers", "last_ok": "", "strikes": 0, "why": "error: 404 Client Error: Not Found for url: https://sanofi.wd3.myworkdayjobs.com/wday/cxs/sanofi/opellacareers/jobs"}
@@ -107358,7 +107358,7 @@
 {"b": "workday:sarepta.wd5.myworkdayjobs.com/sarepta_external", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:sartorius.wd3.myworkdayjobs.com/sartoriuscareers", "last_ok": "2026-10-27", "strikes": 0}
 {"b": "workday:saskenergy.wd10.myworkdayjobs.com/saskenergy", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:sasllc.wd1.myworkdayjobs.com/careers", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://sasllc.wd1.myworkdayjobs.com/wday/cxs/sasllc/careers/jobs"}
+{"b": "workday:sasllc.wd1.myworkdayjobs.com/careers", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:saukprairiehealthcare.wd12.myworkdayjobs.com/sauk_prairie_healthcare_careers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:saulsbury.wd5.myworkdayjobs.com/si", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:savista.wd1.myworkdayjobs.com/savista", "last_ok": "2026-10-30", "strikes": 0}
@@ -107374,7 +107374,7 @@
 {"b": "workday:schnucks.wd5.myworkdayjobs.com/schnuckscareers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:scholastic.wd5.myworkdayjobs.com/external", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:schomp.wd5.myworkdayjobs.com/fairfieldcareer", "last_ok": "2026-10-24", "strikes": 0}
-{"b": "workday:schomp.wd5.myworkdayjobs.com/faymyerscareer", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://schomp.wd5.myworkdayjobs.com/wday/cxs/schomp/faymyerscareer/jobs"}
+{"b": "workday:schomp.wd5.myworkdayjobs.com/faymyerscareer", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:schomp.wd5.myworkdayjobs.com/schompcareer", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:schumacher.wd1.myworkdayjobs.com/corporate-careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:schwaebisch.wd103.myworkdayjobs.com/karriere", "last_ok": "", "strikes": 0, "why": "error: 422 Client Error: Unprocessable Entity for url: https://schwaebisch.wd103.myworkdayjobs.com/wday/cxs/schwaebisch/karriere/jobs"}
@@ -107422,7 +107422,7 @@
 {"b": "workday:servicesourceinc.wd1.myworkdayjobs.com/servicesource_staff", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:servicestream.wd3.myworkdayjobs.com/servicestream_careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:servicetitan.wd1.myworkdayjobs.com/ServiceTitan", "last_ok": "2026-10-28", "strikes": 0}
-{"b": "workday:sevencounties.wd5.myworkdayjobs.com/sevencountiescareers", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://sevencounties.wd5.myworkdayjobs.com/wday/cxs/sevencounties/sevencountiescareers/jobs"}
+{"b": "workday:sevencounties.wd5.myworkdayjobs.com/sevencountiescareers", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:seweurodrive.wd5.myworkdayjobs.com/sew", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:sfc.wd3.myworkdayjobs.com/sfccareersite", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:sfcollege.wd5.myworkdayjobs.com/SFcareers", "last_ok": "2026-10-27", "strikes": 0}
@@ -107438,7 +107438,7 @@
 {"b": "workday:shawinc.wd1.myworkdayjobs.com/external", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:shell.wd3.myworkdayjobs.com/shellcareers", "last_ok": "2026-10-28", "strikes": 0}
 {"b": "workday:shellenergy.impl-wd105.myworkdayjobs.com/shellenergy-aus", "last_ok": "", "strikes": 0, "why": "error: 403 Client Error: Forbidden for url: https://shellenergy.impl-wd105.myworkdayjobs.com/wday/cxs/shellenergy/shellenergy-aus/jobs"}
-{"b": "workday:shelterinsurance.wd5.myworkdayjobs.com/careers", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://shelterinsurance.wd5.myworkdayjobs.com/wday/cxs/shelterinsurance/careers/jobs"}
+{"b": "workday:shelterinsurance.wd5.myworkdayjobs.com/careers", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:shepherd.wd5.myworkdayjobs.com/shepherdcenter", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:shhotelsandresorts.wd12.myworkdayjobs.com/shg", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:shi.wd12.myworkdayjobs.com/shicareers", "last_ok": "2026-10-30", "strikes": 0}
@@ -107454,7 +107454,7 @@
 {"b": "workday:sierraspace.wd1.myworkdayjobs.com/sierra_space_external_career_site", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:sifive.wd1.myworkdayjobs.com/sifivecareers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:signetjewelers.wd1.myworkdayjobs.com/bluenile", "last_ok": "2026-10-23", "strikes": 0}
-{"b": "workday:signetjewelers.wd1.myworkdayjobs.com/diamonds_direct", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://signetjewelers.wd1.myworkdayjobs.com/wday/cxs/signetjewelers/diamonds_direct/jobs"}
+{"b": "workday:signetjewelers.wd1.myworkdayjobs.com/diamonds_direct", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:signetjewelers.wd1.myworkdayjobs.com/signetjeweleryretailsales", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:sih.wd5.myworkdayjobs.com/sih_external", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:sikarin.wd3.myworkdayjobs.com/skrjob", "last_ok": "2026-10-30", "strikes": 0}
@@ -107502,7 +107502,7 @@
 {"b": "workday:smiinc.wd108.myworkdayjobs.com/smicareers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:smithcollege.wd5.myworkdayjobs.com/smithcollege", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:smithfieldfoods.wd1.myworkdayjobs.com/careers", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:smithnephew.wd5.myworkdayjobs.com/external", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://smithnephew.wd5.myworkdayjobs.com/wday/cxs/smithnephew/external/jobs"}
+{"b": "workday:smithnephew.wd5.myworkdayjobs.com/external", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:smithweb.wd108.myworkdayjobs.com/servermonkeycareers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:smithweb.wd108.myworkdayjobs.com/smith2", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:smt.wd502.myworkdayjobs.com/external_career_site", "last_ok": "2026-10-30", "strikes": 0}
@@ -107518,7 +107518,7 @@
 {"b": "workday:solenis.wd1.myworkdayjobs.com/solenis", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:solera.wd5.myworkdayjobs.com/global_career_site", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:solina.wd502.myworkdayjobs.com/sol_ext_car", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:solutionhealth.wd1.myworkdayjobs.com/careers", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://solutionhealth.wd1.myworkdayjobs.com/wday/cxs/solutionhealth/careers/jobs"}
+{"b": "workday:solutionhealth.wd1.myworkdayjobs.com/careers", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:solvenergy.wd1.myworkdayjobs.com/solv_external_career", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:som.wd5.myworkdayjobs.com/External", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:son.wd108.myworkdayjobs.com/nebraskastatecareers", "last_ok": "2026-10-30", "strikes": 0}
@@ -107582,7 +107582,7 @@
 {"b": "workday:standardmeat.wd1.myworkdayjobs.com/smc", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:standardtextile.wd5.myworkdayjobs.com/standardtextile", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:standoutforgood.wd12.myworkdayjobs.com/standoutforgood", "last_ok": "2026-10-29", "strikes": 0}
-{"b": "workday:stanfordhealthcare.wd5.myworkdayjobs.com/shc_tri-valley_external_careers", "last_ok": "", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://stanfordhealthcare.wd5.myworkdayjobs.com/wday/cxs/stanfordhealthcare/shc_tri-valley_external_careers/jobs"}
+{"b": "workday:stanfordhealthcare.wd5.myworkdayjobs.com/shc_tri-valley_external_careers", "last_ok": "", "strikes": 0, "why": "error: 422 Client Error: Unprocessable Entity for url: https://stanfordhealthcare.wd5.myworkdayjobs.com/wday/cxs/stanfordhealthcare/shc_tri-valley_external_careers/jobs"}
 {"b": "workday:stanfordhealthcare.wd5.myworkdayjobs.com/uha_external_careers", "last_ok": "", "strikes": 0, "why": "error: 422 Client Error: Unprocessable Entity for url: https://stanfordhealthcare.wd5.myworkdayjobs.com/wday/cxs/stanfordhealthcare/uha_external_careers/jobs"}
 {"b": "workday:starfish.wd501.myworkdayjobs.com/careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:starfish.wd501.myworkdayjobs.com/freedomrealestate", "last_ok": "2026-10-30", "strikes": 0}
@@ -107598,7 +107598,7 @@
 {"b": "workday:starz.wd5.myworkdayjobs.com/starz", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:statestreet.wd1.myworkdayjobs.com/Global", "last_ok": "2026-10-21", "strikes": 0}
 {"b": "workday:statestreet.wd1.myworkdayjobs.com/equest", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:stbancorp.wd5.myworkdayjobs.com/st_bank_careers", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://stbancorp.wd5.myworkdayjobs.com/wday/cxs/stbancorp/st_bank_careers/jobs"}
+{"b": "workday:stbancorp.wd5.myworkdayjobs.com/st_bank_careers", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:stblaw.wd1.myworkdayjobs.com/careers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:stcharles.wd1.myworkdayjobs.com/external", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:steamboatsprings.wd12.myworkdayjobs.com/external", "last_ok": "2026-10-30", "strikes": 0}
@@ -107614,7 +107614,7 @@
 {"b": "workday:stevenstransport.wd503.myworkdayjobs.com/stevenstransportinc", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:stewart.wd1.myworkdayjobs.com/external", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:stibosystems.wd3.myworkdayjobs.com/careers-at-stibo-systems", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:stjude.wd1.myworkdayjobs.com/stjude", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://stjude.wd1.myworkdayjobs.com/wday/cxs/stjude/stjude/jobs"}
+{"b": "workday:stjude.wd1.myworkdayjobs.com/stjude", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:stmonicatrust.wd103.myworkdayjobs.com/external", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:stnorbert.wd1.myworkdayjobs.com/snc_careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:stoel.wd1.myworkdayjobs.com/stoelrivescareers", "last_ok": "2026-10-30", "strikes": 0}
@@ -107630,7 +107630,7 @@
 {"b": "workday:strayer.wd1.myworkdayjobs.com/anz_direct_applicants1", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:strayer.wd1.myworkdayjobs.com/anz_mds_external1", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:strayer.wd1.myworkdayjobs.com/careers", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:strayer.wd1.myworkdayjobs.com/sei", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://strayer.wd1.myworkdayjobs.com/wday/cxs/strayer/sei/jobs"}
+{"b": "workday:strayer.wd1.myworkdayjobs.com/sei", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:streamlinehealthcare.wd501.myworkdayjobs.com/streamline_healthcare_external_careers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:strideinc.wd1.myworkdayjobs.com/sk", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:strongtie.wd1.myworkdayjobs.com/external", "last_ok": "2026-10-30", "strikes": 0}
@@ -107678,7 +107678,7 @@
 {"b": "workday:swarovski.wd3.myworkdayjobs.com/swarovski", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:swbc.wd1.myworkdayjobs.com/swbccareers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:swbc.wd1.myworkdayjobs.com/swbcmortgagecareers", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:swbc.wd1.myworkdayjobs.com/swivel", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://swbc.wd1.myworkdayjobs.com/wday/cxs/swbc/swivel/jobs"}
+{"b": "workday:swbc.wd1.myworkdayjobs.com/swivel", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:swib.wd12.myworkdayjobs.com/ext", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:swift.wd3.myworkdayjobs.com/join-swift", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:swinerton.wd1.myworkdayjobs.com/sak_builders", "last_ok": "2026-10-30", "strikes": 0}
@@ -107694,7 +107694,7 @@
 {"b": "workday:syfanlogistics.wd12.myworkdayjobs.com/syfan", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:synechron.wd1.myworkdayjobs.com/synechroncareers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:syneoshealth.wd12.myworkdayjobs.com/syneos_health_external_site", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:syniverse.wd1.myworkdayjobs.com/syniversecareers", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://syniverse.wd1.myworkdayjobs.com/wday/cxs/syniverse/syniversecareers/jobs"}
+{"b": "workday:syniverse.wd1.myworkdayjobs.com/syniversecareers", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:synnex.wd5.myworkdayjobs.com/hyvecareers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:synnex.wd5.myworkdayjobs.com/tdsynnexcareers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:synthomer.wd3.myworkdayjobs.com/synthomercareers", "last_ok": "2026-10-30", "strikes": 0}
@@ -107742,7 +107742,7 @@
 {"b": "workday:tamus.wd1.myworkdayjobs.com/tamucc_external", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:tamus.wd1.myworkdayjobs.com/tamuct_external", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:tamus.wd1.myworkdayjobs.com/tamug_external", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:tamus.wd1.myworkdayjobs.com/tamuk_external", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://tamus.wd1.myworkdayjobs.com/wday/cxs/tamus/tamuk_external/jobs"}
+{"b": "workday:tamus.wd1.myworkdayjobs.com/tamuk_external", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:tamus.wd1.myworkdayjobs.com/tamut_external", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:tamus.wd1.myworkdayjobs.com/tamuv_external", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:tamus.wd1.myworkdayjobs.com/tarleton_external", "last_ok": "2026-10-30", "strikes": 0}
@@ -107758,7 +107758,7 @@
 {"b": "workday:taxwell.wd1.myworkdayjobs.com/taxwell", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:taylor.wd1.myworkdayjobs.com/external", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:taylormadegolf.wd5.myworkdayjobs.com/taylormadegolf", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:taylormorrison.wd1.myworkdayjobs.com/TaylorMorrisonCareers", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://taylormorrison.wd1.myworkdayjobs.com/wday/cxs/taylormorrison/TaylorMorrisonCareers/jobs"}
+{"b": "workday:taylormorrison.wd1.myworkdayjobs.com/TaylorMorrisonCareers", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:tbc.wd12.myworkdayjobs.com/LyricCareers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:tbinstitute.wd3.myworkdayjobs.com/tbi", "last_ok": "2026-10-27", "strikes": 0}
 {"b": "workday:tbkbank.wd1.myworkdayjobs.com/tbk", "last_ok": "2026-10-30", "strikes": 0}
@@ -107774,7 +107774,7 @@
 {"b": "workday:tcsedsystem.wd1.myworkdayjobs.com/tcses", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:tcsedsystem.wd1.myworkdayjobs.com/uws", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:td.wd3.myworkdayjobs.com/TD_Bank_Careers", "last_ok": "2026-10-28", "strikes": 0}
-{"b": "workday:tdecu.wd1.myworkdayjobs.com/tdecu", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://tdecu.wd1.myworkdayjobs.com/wday/cxs/tdecu/tdecu/jobs"}
+{"b": "workday:tdecu.wd1.myworkdayjobs.com/tdecu", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:tdorg.wd5.myworkdayjobs.com/atd_external", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:tdwilliamson.wd1.myworkdayjobs.com/tdwcareers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:teachforamerica.wd1.myworkdayjobs.com/tfa_pre-service_careers", "last_ok": "2026-10-30", "strikes": 0}
@@ -107790,7 +107790,7 @@
 {"b": "workday:tegria.wd12.myworkdayjobs.com/ext", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:tel.wd3.myworkdayjobs.com/tel-careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:teladoc.wd503.myworkdayjobs.com/teladochealth_is_hiring", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:teleperformance.wd1.myworkdayjobs.com/allianceone", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://teleperformance.wd1.myworkdayjobs.com/wday/cxs/teleperformance/allianceone/jobs"}
+{"b": "workday:teleperformance.wd1.myworkdayjobs.com/allianceone", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:telesure.wd3.myworkdayjobs.com/wday", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:teliacompany.wd3.myworkdayjobs.com/telia_careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:telpark.wd103.myworkdayjobs.com/telpark_external", "last_ok": "2026-10-30", "strikes": 0}
@@ -107806,7 +107806,7 @@
 {"b": "workday:terminix.wd1.myworkdayjobs.com/ambius", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:terminix.wd1.myworkdayjobs.com/floridapest", "last_ok": "2026-10-27", "strikes": 0}
 {"b": "workday:terminix.wd1.myworkdayjobs.com/gregory", "last_ok": "2026-10-28", "strikes": 0}
-{"b": "workday:terminix.wd1.myworkdayjobs.com/rentokilnorthamerica", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://terminix.wd1.myworkdayjobs.com/wday/cxs/terminix/rentokilnorthamerica/jobs"}
+{"b": "workday:terminix.wd1.myworkdayjobs.com/rentokilnorthamerica", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:terminix.wd1.myworkdayjobs.com/solitude", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:terminix.wd1.myworkdayjobs.com/steritech", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:terminix.wd1.myworkdayjobs.com/targetspecialtyproducts", "last_ok": "2026-10-30", "strikes": 0}
@@ -107822,7 +107822,7 @@
 {"b": "workday:theahsg.wd5.myworkdayjobs.com/careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:theapexgroup.wd3.myworkdayjobs.com/apexgroupcareers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:theclaremontcolleges.wd1.myworkdayjobs.com/cgu_careers", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:theclaremontcolleges.wd1.myworkdayjobs.com/cmc_staff", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://theclaremontcolleges.wd1.myworkdayjobs.com/wday/cxs/theclaremontcolleges/cmc_staff/jobs"}
+{"b": "workday:theclaremontcolleges.wd1.myworkdayjobs.com/cmc_staff", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:theclaremontcolleges.wd1.myworkdayjobs.com/hmc_careers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:theclaremontcolleges.wd1.myworkdayjobs.com/kgi_careers", "last_ok": "2026-10-19", "strikes": 0}
 {"b": "workday:theclaremontcolleges.wd1.myworkdayjobs.com/pit_staff", "last_ok": "2026-10-30", "strikes": 0}
@@ -107838,7 +107838,7 @@
 {"b": "workday:thehartford.wd5.myworkdayjobs.com/Careers_External", "last_ok": "2026-10-23", "strikes": 0}
 {"b": "workday:theirc.wd1.myworkdayjobs.com/external_careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:thejacksonlaboratory.wd503.myworkdayjobs.com/external_jax", "last_ok": "2026-10-26", "strikes": 0}
-{"b": "workday:thekey.wd1.myworkdayjobs.com/thekey", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://thekey.wd1.myworkdayjobs.com/wday/cxs/thekey/thekey/jobs"}
+{"b": "workday:thekey.wd1.myworkdayjobs.com/thekey", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:thekineticgroup.wd1.myworkdayjobs.com/external_fed", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:theocc.wd5.myworkdayjobs.com/careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:theoutlawgroup.wd501.myworkdayjobs.com/theoutlawgroupcareers", "last_ok": "2026-10-30", "strikes": 0}
@@ -107854,7 +107854,7 @@
 {"b": "workday:thinkbrg.wd5.myworkdayjobs.com/BRG_External_Career_Site", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:thisisglobal.wd3.myworkdayjobs.com/global", "last_ok": "2026-10-23", "strikes": 0}
 {"b": "workday:thomsonreuters.wd5.myworkdayjobs.com/External_Career_Site", "last_ok": "2026-10-28", "strikes": 0}
-{"b": "workday:thoughtspot.wd5.myworkdayjobs.com/careers", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://thoughtspot.wd5.myworkdayjobs.com/wday/cxs/thoughtspot/careers/jobs"}
+{"b": "workday:thoughtspot.wd5.myworkdayjobs.com/careers", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:thrivent.wd5.myworkdayjobs.com/external", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:thriveworks.wd5.myworkdayjobs.com/thriveworks", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:ths.wd1.myworkdayjobs.com/orthocarolina", "last_ok": "", "strikes": 0, "why": "error: 422 Client Error: Unprocessable Entity for url: https://ths.wd1.myworkdayjobs.com/wday/cxs/ths/orthocarolina/jobs"}
@@ -107886,7 +107886,7 @@
 {"b": "workday:tollgroup.wd5.myworkdayjobs.com/tollgroup", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:tomtailorgroup.wd502.myworkdayjobs.com/tomtailor", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:tootntotum.wd1.myworkdayjobs.com/tnt", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:topbloc.wd5.myworkdayjobs.com/topbloc_careers", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://topbloc.wd5.myworkdayjobs.com/wday/cxs/topbloc/topbloc_careers/jobs"}
+{"b": "workday:topbloc.wd5.myworkdayjobs.com/topbloc_careers", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:topbuild.wd501.myworkdayjobs.com/di_external", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:topcon.wd1.myworkdayjobs.com/topconhealthcarecareers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:topcon.wd1.myworkdayjobs.com/topconpositioningcareers", "last_ok": "2026-10-30", "strikes": 0}
@@ -107950,7 +107950,7 @@
 {"b": "workday:trustmark.wd1.myworkdayjobs.com/healthfitnesscareers", "last_ok": "2026-10-19", "strikes": 0}
 {"b": "workday:trustmark.wd1.myworkdayjobs.com/trustmarkcareers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:trwd.wd1.myworkdayjobs.com/TRWDCareers", "last_ok": "2026-10-29", "strikes": 0}
-{"b": "workday:ts.wd5.myworkdayjobs.com/rainbowroom", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://ts.wd5.myworkdayjobs.com/wday/cxs/ts/rainbowroom/jobs"}
+{"b": "workday:ts.wd5.myworkdayjobs.com/rainbowroom", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:ts.wd5.myworkdayjobs.com/tishmanspeyer", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:tsc.wd12.myworkdayjobs.com/tsc-careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:tscfl.wd12.myworkdayjobs.com/tsc_external_career_site", "last_ok": "2026-10-27", "strikes": 0}
@@ -107982,7 +107982,7 @@
 {"b": "workday:uaa.wd12.myworkdayjobs.com/ext", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:uakron.wd1.myworkdayjobs.com/uacareers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:uasys.wd5.myworkdayjobs.com/UASYS", "last_ok": "2026-10-26", "strikes": 0}
-{"b": "workday:uasys.wd5.myworkdayjobs.com/uaccht_external_career_site", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://uasys.wd5.myworkdayjobs.com/wday/cxs/uasys/uaccht_external_career_site/jobs"}
+{"b": "workday:uasys.wd5.myworkdayjobs.com/uaccht_external_career_site", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:uasys.wd5.myworkdayjobs.com/uada_external_career_site", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:uasys.wd5.myworkdayjobs.com/uaf_external_career_site", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:uasys.wd5.myworkdayjobs.com/uag_external-career_site", "last_ok": "2026-10-30", "strikes": 0}
@@ -108014,7 +108014,7 @@
 {"b": "workday:umchealthsystem.wd1.myworkdayjobs.com/External", "last_ok": "2026-10-24", "strikes": 0}
 {"b": "workday:umd.wd1.myworkdayjobs.com/umces", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:umd.wd1.myworkdayjobs.com/umcp", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:umd.wd1.myworkdayjobs.com/umes", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://umd.wd1.myworkdayjobs.com/wday/cxs/umd/umes/jobs"}
+{"b": "workday:umd.wd1.myworkdayjobs.com/umes", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:umgc.wd1.myworkdayjobs.com/umgc_careers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:umiami.wd1.myworkdayjobs.com/umcareerstaff", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:ummc.wd5.myworkdayjobs.com/UMCCareers", "last_ok": "2026-10-28", "strikes": 0}
@@ -108046,7 +108046,7 @@
 {"b": "workday:uoflhealth.wd1.myworkdayjobs.com/uoflhealthcareers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:uoh.wd103.myworkdayjobs.com/university_of_hull_careers", "last_ok": "2026-10-26", "strikes": 0}
 {"b": "workday:uottawa.wd3.myworkdayjobs.com/uOttawa_External_Career_Site", "last_ok": "2026-10-19", "strikes": 0}
-{"b": "workday:upenn.wd1.myworkdayjobs.com/careers-at-penn", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://upenn.wd1.myworkdayjobs.com/wday/cxs/upenn/careers-at-penn/jobs"}
+{"b": "workday:upenn.wd1.myworkdayjobs.com/careers-at-penn", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:upm.wd103.myworkdayjobs.com/Careers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:upp.wd3.myworkdayjobs.com/upp-careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:uq.wd3.myworkdayjobs.com/uqcareers", "last_ok": "2026-10-30", "strikes": 0}
@@ -108078,7 +108078,7 @@
 {"b": "workday:utampa.wd1.myworkdayjobs.com/faculty", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:utaustin.wd1.myworkdayjobs.com/UTstaff", "last_ok": "2026-10-26", "strikes": 0}
 {"b": "workday:utaustin.wd1.myworkdayjobs.com/utstudent", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:uva.wd1.myworkdayjobs.com/UVAStudentJobs", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://uva.wd1.myworkdayjobs.com/wday/cxs/uva/UVAStudentJobs/jobs"}
+{"b": "workday:uva.wd1.myworkdayjobs.com/UVAStudentJobs", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:uvmhealth.wd1.myworkdayjobs.com/ahmc", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:uvmhealth.wd1.myworkdayjobs.com/external", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:uw.wd5.myworkdayjobs.com/UWHires", "last_ok": "2026-10-23", "strikes": 0}
@@ -108094,7 +108094,7 @@
 {"b": "workday:valorhospitality.wd503.myworkdayjobs.com/who-we-are", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:vanderlande.wd3.myworkdayjobs.com/careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:vandrunenfarms.wd1.myworkdayjobs.com/vdfcareers", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:vanguard.wd5.myworkdayjobs.com/vanguard_external", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://vanguard.wd5.myworkdayjobs.com/wday/cxs/vanguard/vanguard_external/jobs"}
+{"b": "workday:vanguard.wd5.myworkdayjobs.com/vanguard_external", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:vanleeuwen.wd3.myworkdayjobs.com/fh_nld", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:vantage.wd1.myworkdayjobs.com/vantage_careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:vantagebank.wd108.myworkdayjobs.com/vantage_bank", "last_ok": "2026-10-30", "strikes": 0}
@@ -108110,7 +108110,7 @@
 {"b": "workday:vca.wd1.myworkdayjobs.com/bluepearlcareers", "last_ok": "", "strikes": 0, "why": "error: 422 Client Error: Unprocessable Entity for url: https://vca.wd1.myworkdayjobs.com/wday/cxs/vca/bluepearlcareers/jobs"}
 {"b": "workday:vca.wd1.myworkdayjobs.com/careers", "last_ok": "", "strikes": 0, "why": "error: 422 Client Error: Unprocessable Entity for url: https://vca.wd1.myworkdayjobs.com/wday/cxs/vca/careers/jobs"}
 {"b": "workday:vca.wd1.myworkdayjobs.com/lncareers", "last_ok": "", "strikes": 0, "why": "error: 422 Client Error: Unprocessable Entity for url: https://vca.wd1.myworkdayjobs.com/wday/cxs/vca/lncareers/jobs"}
-{"b": "workday:vca.wd1.myworkdayjobs.com/mvhscareers", "last_ok": "", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://vca.wd1.myworkdayjobs.com/wday/cxs/vca/mvhscareers/jobs"}
+{"b": "workday:vca.wd1.myworkdayjobs.com/mvhscareers", "last_ok": "", "strikes": 0, "why": "error: 422 Client Error: Unprocessable Entity for url: https://vca.wd1.myworkdayjobs.com/wday/cxs/vca/mvhscareers/jobs"}
 {"b": "workday:vca.wd1.myworkdayjobs.com/vencarreers", "last_ok": "", "strikes": 0, "why": "error: 422 Client Error: Unprocessable Entity for url: https://vca.wd1.myworkdayjobs.com/wday/cxs/vca/vencarreers/jobs"}
 {"b": "workday:vcuhealth.wd1.myworkdayjobs.com/vcuhealth_careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:veitusa.wd503.myworkdayjobs.com/veit", "last_ok": "2026-10-30", "strikes": 0}
@@ -108126,7 +108126,7 @@
 {"b": "workday:verabradley.wd5.myworkdayjobs.com/vbcareers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:veradigm.wd12.myworkdayjobs.com/VR", "last_ok": "2026-10-29", "strikes": 0}
 {"b": "workday:veralto.wd1.myworkdayjobs.com/EskoJobs", "last_ok": "2026-10-28", "strikes": 0}
-{"b": "workday:veralto.wd1.myworkdayjobs.com/alltecfobacareersite", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://veralto.wd1.myworkdayjobs.com/wday/cxs/veralto/alltecfobacareersite/jobs"}
+{"b": "workday:veralto.wd1.myworkdayjobs.com/alltecfobacareersite", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:veralto.wd1.myworkdayjobs.com/chemtreatjobs", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:veralto.wd1.myworkdayjobs.com/hachjobs", "last_ok": "2026-10-27", "strikes": 0}
 {"b": "workday:veralto.wd1.myworkdayjobs.com/linxjobs", "last_ok": "2026-10-30", "strikes": 0}
@@ -108158,7 +108158,7 @@
 {"b": "workday:vetsource.wd1.myworkdayjobs.com/vetsource_careers", "last_ok": "", "strikes": 0, "why": "error: 422 Client Error: Unprocessable Entity for url: https://vetsource.wd1.myworkdayjobs.com/wday/cxs/vetsource/vetsource_careers/jobs"}
 {"b": "workday:vfc.wd5.myworkdayjobs.com/altra_careers", "last_ok": "2026-10-27", "strikes": 0}
 {"b": "workday:vfc.wd5.myworkdayjobs.com/timberland_careers", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:vfc.wd5.myworkdayjobs.com/vfc_careers", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://vfc.wd5.myworkdayjobs.com/wday/cxs/vfc/vfc_careers/jobs"}
+{"b": "workday:vfc.wd5.myworkdayjobs.com/vfc_careers", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:vhaca.wd10.myworkdayjobs.com/vha", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:vhchealth.wd1.myworkdayjobs.com/vhchealth", "last_ok": "", "strikes": 0, "why": "error: 422 Client Error: Unprocessable Entity for url: https://vhchealth.wd1.myworkdayjobs.com/wday/cxs/vhchealth/vhchealth/jobs"}
 {"b": "workday:vialto.wd107.myworkdayjobs.com/vialtoexternalcareers", "last_ok": "2026-10-30", "strikes": 0}
@@ -108174,7 +108174,7 @@
 {"b": "workday:virtus.wd5.myworkdayjobs.com/duffphelpscareers", "last_ok": "2026-10-22", "strikes": 0}
 {"b": "workday:virtus.wd5.myworkdayjobs.com/kaynecareers", "last_ok": "2026-10-25", "strikes": 0}
 {"b": "workday:virtus.wd5.myworkdayjobs.com/virtuscareers", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:visa.wd5.myworkdayjobs.com/Visa", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://visa.wd5.myworkdayjobs.com/wday/cxs/visa/Visa/jobs"}
+{"b": "workday:visa.wd5.myworkdayjobs.com/Visa", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:visa.wd5.myworkdayjobs.com/Visa_Early_Careers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:vishay.wd3.myworkdayjobs.com/vishaycareers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:visitcatalinaisland.wd12.myworkdayjobs.com/ico", "last_ok": "2026-10-30", "strikes": 0}
@@ -108270,7 +108270,7 @@
 {"b": "workday:weleda.wd3.myworkdayjobs.com/weleda_jobs", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:wellcarehealth.wd1.myworkdayjobs.com/external", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:wellcome.wd3.myworkdayjobs.com/wellcome", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:wellesley.wd1.myworkdayjobs.com/wellesley-staff", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://wellesley.wd1.myworkdayjobs.com/wday/cxs/wellesley/wellesley-staff/jobs"}
+{"b": "workday:wellesley.wd1.myworkdayjobs.com/wellesley-staff", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:wellington.wd5.myworkdayjobs.com/External", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:wellington.wd5.myworkdayjobs.com/efc", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:wellsky.wd1.myworkdayjobs.com/wellskycareers", "last_ok": "2026-10-30", "strikes": 0}
@@ -108302,7 +108302,7 @@
 {"b": "workday:whitby.wd10.myworkdayjobs.com/ext", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:whitecap.wd1.myworkdayjobs.com/Careers", "last_ok": "2026-10-29", "strikes": 0}
 {"b": "workday:whoi.wd5.myworkdayjobs.com/whoi-external", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:wiley.wd1.myworkdayjobs.com/wiley_careers", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://wiley.wd1.myworkdayjobs.com/wday/cxs/wiley/wiley_careers/jobs"}
+{"b": "workday:wiley.wd1.myworkdayjobs.com/wiley_careers", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:wilhelmsen.wd3.myworkdayjobs.com/norsea_norway", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:wilhelmsen.wd3.myworkdayjobs.com/wilhelmsen", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:willamette.wd501.myworkdayjobs.com/willametteuniversityjobs", "last_ok": "2026-10-30", "strikes": 0}
@@ -108318,7 +108318,7 @@
 {"b": "workday:wisconsin.wd1.myworkdayjobs.com/uw_comprehensives", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:wisconsin.wd1.myworkdayjobs.com/uw_milwaukee", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:wisk.wd108.myworkdayjobs.com/Wisk_Careers", "last_ok": "2026-10-19", "strikes": 0}
-{"b": "workday:wit.wd1.myworkdayjobs.com/wit", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://wit.wd1.myworkdayjobs.com/wday/cxs/wit/wit/jobs"}
+{"b": "workday:wit.wd1.myworkdayjobs.com/wit", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:witherslackgroup.wd3.myworkdayjobs.com/witherslack", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:wittobriens.wd12.myworkdayjobs.com/careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:wje.wd1.myworkdayjobs.com/Careers", "last_ok": "2026-10-28", "strikes": 0}
@@ -108350,7 +108350,7 @@
 {"b": "workday:worldpay.wd5.myworkdayjobs.com/Worldpay_External_Careers_Site", "last_ok": "2026-10-19", "strikes": 0}
 {"b": "workday:worldvision.wd1.myworkdayjobs.com/worldvisioninternational", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:worldwide.wd1.myworkdayjobs.com/external", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:woundedwarriorproject.wd5.myworkdayjobs.com/wwp", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://woundedwarriorproject.wd5.myworkdayjobs.com/wday/cxs/woundedwarriorproject/wwp/jobs"}
+{"b": "workday:woundedwarriorproject.wd5.myworkdayjobs.com/wwp", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:wow.wd503.myworkdayjobs.com/wowcareers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:wpengine.wd1.myworkdayjobs.com/wp_engine", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:wpi.wd5.myworkdayjobs.com/wpi_external_career_site", "last_ok": "2026-10-30", "strikes": 0}
@@ -108382,7 +108382,7 @@
 {"b": "workday:xavier.wd108.myworkdayjobs.com/xaviercareers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:xcelenergy.wd1.myworkdayjobs.com/External", "last_ok": "2026-10-25", "strikes": 0}
 {"b": "workday:xenergy.wd5.myworkdayjobs.com/x-energyus", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:xpel.wd5.myworkdayjobs.com/xpel_careers", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://xpel.wd5.myworkdayjobs.com/wday/cxs/xpel/xpel_careers/jobs"}
+{"b": "workday:xpel.wd5.myworkdayjobs.com/xpel_careers", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:xylem.wd5.myworkdayjobs.com/xylem-careers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:yai.wd5.myworkdayjobs.com/Careers", "last_ok": "2026-10-19", "strikes": 0}
 {"b": "workday:yakimacounty.wd5.myworkdayjobs.com/YakimaCountyWA", "last_ok": "2026-10-23", "strikes": 0}
@@ -108398,7 +108398,7 @@
 {"b": "workday:yougov.wd103.myworkdayjobs.com/LinkedIn", "last_ok": "2026-10-27", "strikes": 0}
 {"b": "workday:younglife.wd5.myworkdayjobs.com/YoungLife_Careers", "last_ok": "2026-10-27", "strikes": 0}
 {"b": "workday:youthvillages.wd1.myworkdayjobs.com/youthvillagescareers", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:ypo.wd1.myworkdayjobs.com/ypo_external", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 521 Server Error: <none> for url: https://ypo.wd1.myworkdayjobs.com/wday/cxs/ypo/ypo_external/jobs"}
+{"b": "workday:ypo.wd1.myworkdayjobs.com/ypo_external", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:zalando.wd3.myworkdayjobs.com/ZalandoSiteWD", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:zayo.wd1.myworkdayjobs.com/zayo_careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:zayo.wd1.myworkdayjobs.com/zayoeurope_careers", "last_ok": "2026-10-30", "strikes": 0}
