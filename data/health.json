@@ -31933,7 +31933,7 @@
 {"b": "dayforce:spring/leportmontessoriportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:springbrook/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:squiresgc1936/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
-{"b": "dayforce:ssc/bartlett", "last_ok": "2026-11-13", "strikes": 0, "why": "error: 403 Client Error: Forbidden for url: https://us262-services.dayforcehcm.com/api/ssc/V1/JobFeeds?internalJobBoardCode=bartlett&includeActivePostingOnly=true"}
+{"b": "dayforce:ssc/bartlett", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "dayforce:ssc/texon", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:sscc/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:ssfoc/candidateportalv1", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
@@ -46946,7 +46946,7 @@
 {"b": "isolved:traditionsatsherman", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "isolved:traditionshhs", "last_ok": "2026-11-08", "strikes": 0}
 {"b": "isolved:trailblazerfoods", "last_ok": "2026-11-08", "strikes": 0}
-{"b": "isolved:trajanwealth", "last_ok": "2026-11-13", "strikes": 2, "why": "empty answer"}
+{"b": "isolved:trajanwealth", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "isolved:transbridgelines", "last_ok": "2026-11-08", "strikes": 0}
 {"b": "isolved:transglobalus", "last_ok": "2026-11-08", "strikes": 0}
 {"b": "isolved:transmotion", "last_ok": "2026-11-08", "strikes": 0}
@@ -72233,7 +72233,7 @@
 {"b": "oracle:eofe.fa.us2.oraclecloud.com/CX", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "oracle:eoff", "last_ok": "", "strikes": 0, "why": "error: not enough values to unpack (expected 2, got 1)"}
 {"b": "oracle:eoff.fa.em1.ukg.oraclecloud.com/CX", "last_ok": "2026-11-08", "strikes": 0}
-{"b": "oracle:eohh", "last_ok": "", "strikes": 0, "why": "error: HTTPSConnectionPool(host='eohh', port=443): Max retries exceeded with url: /hcmRestApi/resources/latest/recruitingCEJobRequisitions?onlyData=true&expand=requisitionList.secondaryLocations&finder=findReqs%3BsiteNumber%3DCX%2Climit%3D50%2Coffset%3D0%2CsortBy%3DPOSTING_DATES_DESC (Caused by NameResolutionError(\"HTTPSConnection(host='eohh', port=443): Failed to resolve 'eohh' ([Errno -3] Temporary failure in name resolution)\"))"}
+{"b": "oracle:eohh", "last_ok": "", "strikes": 0, "why": "error: still running after 960s"}
 {"b": "oracle:eohh.fa.us2.oraclecloud.com/CX", "last_ok": "2026-10-22", "strikes": 0}
 {"b": "oracle:eohm", "last_ok": "", "strikes": 0, "why": "error: not enough values to unpack (expected 2, got 1)"}
 {"b": "oracle:eohm.fa.us2.oraclecloud.com/CX", "last_ok": "2026-11-08", "strikes": 0}
@@ -72313,7 +72313,7 @@
 {"b": "oracle:eswt", "last_ok": "", "strikes": 0, "why": "error: not enough values to unpack (expected 2, got 1)"}
 {"b": "oracle:eswt.fa.us6.oraclecloud.com/CX", "last_ok": "2026-11-08", "strikes": 0}
 {"b": "oracle:eswt.fa.us6.oraclecloud.com/CX_1001", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "oracle:etgi", "last_ok": "", "strikes": 0, "why": "error: HTTPSConnectionPool(host='etgi', port=443): Max retries exceeded with url: /hcmRestApi/resources/latest/recruitingCEJobRequisitions?onlyData=true&expand=requisitionList.secondaryLocations&finder=findReqs%3BsiteNumber%3DCX%2Climit%3D50%2Coffset%3D0%2CsortBy%3DPOSTING_DATES_DESC (Caused by NameResolutionError(\"HTTPSConnection(host='etgi', port=443): Failed to resolve 'etgi' ([Errno -3] Temporary failure in name resolution)\"))"}
+{"b": "oracle:etgi", "last_ok": "", "strikes": 0, "why": "error: still running after 960s"}
 {"b": "oracle:etgi.fa.us8.oraclecloud.com/CX", "last_ok": "2026-11-08", "strikes": 0}
 {"b": "oracle:etihadrail-iaalbv", "last_ok": "", "strikes": 0, "why": "error: not enough values to unpack (expected 2, got 1)"}
 {"b": "oracle:etihadrail-iaalbv.fa.ocs.oraclecloud.com/CX", "last_ok": "2026-11-08", "strikes": 0}
@@ -105470,7 +105470,7 @@
 {"b": "workday:generac.wd5.myworkdayjobs.com/external", "last_ok": "2026-10-20", "strikes": 0}
 {"b": "workday:generac.wd5.myworkdayjobs.com/externalcareers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:generaliespana.wd3.myworkdayjobs.com/redclick_external_career_site", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:generalmotors.wd5.myworkdayjobs.com/Careers_GM", "last_ok": "2026-11-13", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:generalmotors.wd5.myworkdayjobs.com/Careers_GM", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:genesishcs.wd1.myworkdayjobs.com/genesishcs", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:genesisminerals.wd103.myworkdayjobs.com/genesiscareers", "last_ok": "2026-10-26", "strikes": 0}
 {"b": "workday:genesys.wd1.myworkdayjobs.com/genesys", "last_ok": "2026-10-27", "strikes": 0}
@@ -105518,7 +105518,7 @@
 {"b": "workday:global.wd1.myworkdayjobs.com/globalpartnerscareers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:globalblue.wd3.myworkdayjobs.com/external", "last_ok": "", "strikes": 0, "why": "error: 403 Client Error: Forbidden for url: https://globalblue.wd3.myworkdayjobs.com/wday/cxs/globalblue/external/jobs"}
 {"b": "workday:globalfoundries.wd1.myworkdayjobs.com/external", "last_ok": "2026-10-27", "strikes": 0}
-{"b": "workday:globalhr.wd5.myworkdayjobs.com/REC_RTX_Ext_Gateway", "last_ok": "2026-11-13", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:globalhr.wd5.myworkdayjobs.com/REC_RTX_Ext_Gateway", "last_ok": "2026-11-14", "strikes": 0}
 {"b": "workday:globalswitch.wd103.myworkdayjobs.com/external_careers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:globe.wd3.myworkdayjobs.com/glb_careers", "last_ok": "2026-10-23", "strikes": 0}
 {"b": "workday:globe.wd3.myworkdayjobs.com/mynt", "last_ok": "2026-10-30", "strikes": 0}
