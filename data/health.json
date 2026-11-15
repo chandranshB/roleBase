@@ -31933,7 +31933,7 @@
 {"b": "dayforce:spring/leportmontessoriportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:springbrook/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:squiresgc1936/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
-{"b": "dayforce:ssc/bartlett", "last_ok": "2026-11-14", "strikes": 0, "why": "error: 403 Client Error: Forbidden for url: https://us262-services.dayforcehcm.com/api/ssc/V1/JobFeeds?internalJobBoardCode=bartlett&includeActivePostingOnly=true"}
+{"b": "dayforce:ssc/bartlett", "last_ok": "2026-11-15", "strikes": 0}
 {"b": "dayforce:ssc/texon", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:sscc/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:ssfoc/candidateportalv1", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
@@ -72297,7 +72297,7 @@
 {"b": "oracle:ernh.fa.us2.oraclecloud.com/CX", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "oracle:erou", "last_ok": "", "strikes": 0, "why": "error: not enough values to unpack (expected 2, got 1)"}
 {"b": "oracle:erou.fa.us2.oraclecloud.com/CX", "last_ok": "2026-11-08", "strikes": 0}
-{"b": "oracle:erqh", "last_ok": "", "strikes": 0, "why": "error: HTTPSConnectionPool(host='erqh', port=443): Max retries exceeded with url: /hcmRestApi/resources/latest/recruitingCEJobRequisitions?onlyData=true&expand=requisitionList.secondaryLocations&finder=findReqs%3BsiteNumber%3DCX%2Climit%3D50%2Coffset%3D0%2CsortBy%3DPOSTING_DATES_DESC (Caused by NameResolutionError(\"HTTPSConnection(host='erqh', port=443): Failed to resolve 'erqh' ([Errno -3] Temporary failure in name resolution)\"))"}
+{"b": "oracle:erqh", "last_ok": "", "strikes": 0, "why": "error: still running after 960s"}
 {"b": "oracle:erqh.fa.us2.oraclecloud.com/CX", "last_ok": "2026-11-08", "strikes": 0}
 {"b": "oracle:ertd", "last_ok": "", "strikes": 0, "why": "error: not enough values to unpack (expected 2, got 1)"}
 {"b": "oracle:ertd.fa.us2.oraclecloud.com/CX", "last_ok": "2026-11-08", "strikes": 0}
@@ -72601,7 +72601,7 @@
 {"b": "oracle:fa-etnv-saasfaprod1", "last_ok": "", "strikes": 0, "why": "error: not enough values to unpack (expected 2, got 1)"}
 {"b": "oracle:fa-etnv-saasfaprod1.fa.ocs.oraclecloud.com/CX", "last_ok": "2026-11-08", "strikes": 0}
 {"b": "oracle:fa-etol-saasfaprod1", "last_ok": "", "strikes": 0, "why": "error: not enough values to unpack (expected 2, got 1)"}
-{"b": "oracle:fa-etol-saasfaprod1.fa.ocs.oraclecloud.com/CX", "last_ok": "2026-11-15", "strikes": 0}
+{"b": "oracle:fa-etol-saasfaprod1.fa.ocs.oraclecloud.com/CX", "last_ok": "2026-11-15", "strikes": 0, "why": "error: still running after 960s"}
 {"b": "oracle:fa-etoy-saasfaprod1", "last_ok": "", "strikes": 0, "why": "error: not enough values to unpack (expected 2, got 1)"}
 {"b": "oracle:fa-etoy-saasfaprod1.fa.ocs.oraclecloud.com/CX", "last_ok": "2026-11-08", "strikes": 0}
 {"b": "oracle:fa-etqd-saasfaprod1", "last_ok": "", "strikes": 0, "why": "error: not enough values to unpack (expected 2, got 1)"}
