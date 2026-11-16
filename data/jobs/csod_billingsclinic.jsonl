@@ -623,6 +623,9 @@
 {"closed_at":"2026-11-14","company":"Billings Clinic","first_seen":"2026-11-08","id":"csod:billingsclinic:11882","location":"BILLINGS, MT, US","posted":"2026-11-05","title":"CNA, Hospital - Inpatient Surgical (per diem)"}
 {"company":"Billings Clinic","first_seen":"2026-11-08","id":"csod:billingsclinic:11894","location":"BOZEMAN, MT, US","posted":"2026-07-15","title":"RN - Operating Room/Surgery Center - Bozeman"}
 {"company":"Billings Clinic","first_seen":"2026-11-08","id":"csod:billingsclinic:11915","location":"Billings, MT, US","posted":"2026-06-01","title":"OR/Radiology Technologist III"}
+{"company":"Billings Clinic","employment":"part_time","first_seen":"2026-11-16","id":"csod:billingsclinic:11919","location":"Billings, MT, US","posted":"2026-11-16","reposts":1,"title":"RN, Hospital - Inpatient Cardiovascular Unit (part-time)"}
+{"company":"Billings Clinic","first_seen":"2026-11-16","id":"csod:billingsclinic:11921","location":"Billings, MT, US","posted":"2026-11-16","skills":["patient_care"],"title":"Patient Care Technician (per diem)"}
+{"company":"Billings Clinic","first_seen":"2026-11-16","id":"csod:billingsclinic:11967","location":"BILLINGS, MT, US","posted":"2026-11-16","title":"RN, Hospital - ICU (per diem)"}
 {"company":"Billings Clinic","first_seen":"2026-11-08","id":"csod:billingsclinic:11971","location":"BILLINGS, MT, US","posted":"2026-05-18","title":"Cardiovascular Radiology Technologist"}
 {"company":"Billings Clinic","first_seen":"2026-11-08","id":"csod:billingsclinic:11979","location":"KALISPELL, MT, US","posted":"2026-05-19","skills":["erp"],"title":"Senior Applications Specialist | Enterprise Resource Planning (ERP)"}
 {"company":"Billings Clinic","first_seen":"2026-11-08","id":"csod:billingsclinic:11988","location":"BILLINGS, MT, US","posted":"2026-10-13","title":"Head Athletic Trainer - MSU Billings"}
@@ -742,12 +745,12 @@
 {"company":"Billings Clinic","first_seen":"2026-11-08","id":"csod:billingsclinic:12651","location":"Billings, MT, US","posted":"2026-10-29","title":"CNA, Critical Care Float Pool (per diem)"}
 {"closed_at":"2026-11-13","company":"Billings Clinic","first_seen":"2026-11-08","id":"csod:billingsclinic:12652","location":"BILLINGS, MT, US","posted":"2026-08-31","title":"UNIT CLERK MONITORED IP ICU (.9 FTE)"}
 {"company":"Billings Clinic","first_seen":"2026-11-08","id":"csod:billingsclinic:12661","location":"BILLINGS, MT, US","posted":"2026-08-25","title":"Manager Cardiology"}
-{"company":"Billings Clinic","first_seen":"2026-11-08","id":"csod:billingsclinic:12673","location":"BILLINGS, MT, US","posted":"2026-08-25","title":"Medical Assistant - Clinic Float Pool (1.0 FTE)"}
+{"closed_at":"2026-11-16","company":"Billings Clinic","first_seen":"2026-11-08","id":"csod:billingsclinic:12673","location":"BILLINGS, MT, US","posted":"2026-08-25","title":"Medical Assistant - Clinic Float Pool (1.0 FTE)"}
 {"company":"Billings Clinic","first_seen":"2026-11-08","id":"csod:billingsclinic:12678","location":"Billings, MT, US","posted":"2026-08-26","title":"Maintenance Painter (1.0 FTE)"}
 {"closed_at":"2026-11-10","company":"Billings Clinic","first_seen":"2026-11-08","id":"csod:billingsclinic:12679","location":"Billings, MT, US","posted":"2026-09-23","title":"Psychiatric Tech - .6"}
 {"company":"Billings Clinic","first_seen":"2026-11-08","id":"csod:billingsclinic:12680","location":"Billings, MT, US","posted":"2026-09-01","title":"Psychiatric Tech - .6"}
 {"company":"Billings Clinic","first_seen":"2026-11-08","id":"csod:billingsclinic:12687","location":"BOZEMAN, MT, US","posted":"2026-10-19","reposts":1,"title":"Appointment Representative - Scheduling - Bozeman"}
-{"company":"Billings Clinic","first_seen":"2026-11-08","id":"csod:billingsclinic:12691","location":"Billings, MT, US","posted":"2026-08-28","title":"NP or PA - Endocrinology/Diabetes"}
+{"closed_at":"2026-11-16","company":"Billings Clinic","first_seen":"2026-11-08","id":"csod:billingsclinic:12691","location":"Billings, MT, US","posted":"2026-08-28","title":"NP or PA - Endocrinology/Diabetes"}
 {"company":"Billings Clinic","first_seen":"2026-11-08","id":"csod:billingsclinic:12692","location":"Billings, MT, US","posted":"2026-09-29","title":"Manager - Utilization Review and Denials"}
 {"closed_at":"2026-11-11","company":"Billings Clinic","first_seen":"2026-11-08","id":"csod:billingsclinic:12693","location":"BILLINGS, MT, US","posted":"2026-10-09","reposts":2,"title":"Appointment Representative - Scheduling"}
 {"company":"Billings Clinic","first_seen":"2026-11-08","id":"csod:billingsclinic:12694","location":"BILLINGS, MT, US","posted":"2026-09-09","title":"Manager, HIM/ROI"}
@@ -805,7 +808,7 @@
 {"company":"Billings Clinic","employment":"part_time","first_seen":"2026-11-08","id":"csod:billingsclinic:12826","location":"Billings, MT, US","posted":"2026-09-18","reposts":1,"title":"Patient Access Specialist - Registration (Part-time)"}
 {"company":"Billings Clinic","first_seen":"2026-11-08","id":"csod:billingsclinic:12828","location":"Billings, MT, US","posted":"2026-09-24","title":"UNIT CLERK MONITORED EMERGENCY (.9 FTE)"}
 {"closed_at":"2026-11-09","company":"Billings Clinic","first_seen":"2026-11-08","id":"csod:billingsclinic:12829","location":"BILLINGS, MT, US","posted":"2026-10-05","reposts":1,"title":"Radiology Access Specialist"}
-{"company":"Billings Clinic","first_seen":"2026-11-08","id":"csod:billingsclinic:12835","location":"BILLINGS, MT, US","posted":"2026-10-06","reposts":2,"title":"Phlebotomist I"}
+{"closed_at":"2026-11-16","company":"Billings Clinic","first_seen":"2026-11-08","id":"csod:billingsclinic:12835","location":"BILLINGS, MT, US","posted":"2026-10-06","reposts":2,"title":"Phlebotomist I"}
 {"company":"Billings Clinic","first_seen":"2026-11-08","id":"csod:billingsclinic:12837","location":"TOWNSEND, MT, US","posted":"2026-09-29","reposts":1,"title":"Nursing Assistant or CNA (Full-time/Townsend)"}
 {"company":"Billings Clinic","first_seen":"2026-11-08","id":"csod:billingsclinic:12838","location":"BILLINGS, MT, US","posted":"2026-10-01","title":"Athletic Trainer (1.0 FTE)"}
 {"company":"Billings Clinic","first_seen":"2026-11-08","id":"csod:billingsclinic:12839","location":"BILLINGS, MT, US","posted":"2026-09-22","title":"Regional System Executive Director Clinical Services"}
@@ -818,10 +821,10 @@
 {"company":"Billings Clinic","first_seen":"2026-11-10","id":"csod:billingsclinic:12850","location":"BILLINGS, MT, US","posted":"2026-11-09","title":"Regional Provider Recruiter"}
 {"company":"Billings Clinic","first_seen":"2026-11-08","id":"csod:billingsclinic:12853","location":"BILLINGS, MT, US","posted":"2026-10-12","title":"LPN Care Manager - Outpatient"}
 {"company":"Billings Clinic","first_seen":"2026-11-08","id":"csod:billingsclinic:12854","location":"Billings, MT, US","posted":"2026-09-29","title":"Manager - Specialty Clinics"}
-{"company":"Billings Clinic","first_seen":"2026-11-08","id":"csod:billingsclinic:12855","location":"Billings, MT, US","posted":"2026-09-25","title":"RN, Hospital - Nursing Resources/Float Pool (0.9 FTE, Nights)"}
-{"company":"Billings Clinic","first_seen":"2026-11-08","id":"csod:billingsclinic:12856","location":"Billings, MT, US","posted":"2026-09-25","title":"RN, Hospital - Nursing Resources/Float Pool (0.9 FTE, Nights)"}
-{"company":"Billings Clinic","first_seen":"2026-11-08","id":"csod:billingsclinic:12860","location":"Billings, MT, US","posted":"2026-09-25","title":"RN, Hospital - Nursing Resources/Float Pool (0.9 FTE, Nights)"}
-{"company":"Billings Clinic","first_seen":"2026-11-08","id":"csod:billingsclinic:12861","location":"Billings, MT, US","posted":"2026-10-14","title":"RN, Hospital - Nursing Resources/Float Pool (0.9 FTE, Days)"}
+{"company":"Billings Clinic","first_seen":"2026-11-08","id":"csod:billingsclinic:12855","location":"Billings, MT, US","posted":"2026-11-16","title":"RN, Hospital - Nursing Resources/Float Pool (0.9 FTE, Nights)"}
+{"company":"Billings Clinic","first_seen":"2026-11-08","id":"csod:billingsclinic:12856","location":"Billings, MT, US","posted":"2026-11-16","title":"RN, Hospital - Nursing Resources/Float Pool (0.9 FTE, Nights)"}
+{"company":"Billings Clinic","first_seen":"2026-11-08","id":"csod:billingsclinic:12860","location":"Billings, MT, US","posted":"2026-11-16","title":"RN, Hospital - Nursing Resources/Float Pool (0.9 FTE, Nights)"}
+{"company":"Billings Clinic","first_seen":"2026-11-08","id":"csod:billingsclinic:12861","location":"Billings, MT, US","posted":"2026-11-16","title":"RN, Hospital - Nursing Resources/Float Pool (0.9 FTE, Days)"}
 {"company":"Billings Clinic","first_seen":"2026-11-08","id":"csod:billingsclinic:12866","location":"BILLINGS, MT, US","posted":"2026-11-02","reposts":2,"title":"Appointment Representative - Cardiology Scheduling"}
 {"company":"Billings Clinic","first_seen":"2026-11-08","id":"csod:billingsclinic:12868","location":"BILLINGS, MT, US","posted":"2026-10-05","title":"UNIT CLERK MONITORED IP ICU (per diem)"}
 {"company":"Billings Clinic","first_seen":"2026-11-08","id":"csod:billingsclinic:12869","location":"BILLINGS, MT, US","posted":"2026-09-28","title":"RN Hospital (per diem) - Recovery Room"}
@@ -890,7 +893,7 @@
 {"company":"Billings Clinic","first_seen":"2026-11-08","id":"csod:billingsclinic:13030","location":"Billings, MT, US","posted":"2026-10-19","title":"RN (.6) - Inpatient Psychiatric Services"}
 {"closed_at":"2026-11-09","company":"Billings Clinic","first_seen":"2026-11-08","id":"csod:billingsclinic:13031","location":"Billings, MT, US","posted":"2026-10-13","title":"Unit Clerk (.6) Pre-Post"}
 {"company":"Billings Clinic","first_seen":"2026-11-08","id":"csod:billingsclinic:13032","location":"Billings, MT, US","posted":"2026-10-13","title":"Manager of Radiation Oncology and Naturopathic Medicine"}
-{"company":"Billings Clinic","first_seen":"2026-11-08","id":"csod:billingsclinic:13034","location":"Billings, MT, US","posted":"2026-10-14","reposts":2,"title":"Security Officer (1.0 FTE)"}
+{"closed_at":"2026-11-16","company":"Billings Clinic","first_seen":"2026-11-08","id":"csod:billingsclinic:13034","location":"Billings, MT, US","posted":"2026-10-14","reposts":2,"title":"Security Officer (1.0 FTE)"}
 {"company":"Billings Clinic","first_seen":"2026-11-08","id":"csod:billingsclinic:13035","location":"BILLINGS, MT, US","posted":"2026-10-14","title":"Certified Medical Assistant - West End Primary Care (1.0 FTE)"}
 {"company":"Billings Clinic","first_seen":"2026-11-08","id":"csod:billingsclinic:13036","location":"BILLINGS, MT, US","posted":"2026-10-14","reposts":1,"title":"Ophthalmic Technician (Full-time)"}
 {"company":"Billings Clinic","first_seen":"2026-11-08","id":"csod:billingsclinic:13037","location":"BILLINGS, MT, US","posted":"2026-10-14","title":"Respiratory Therapist (.9 FTE)"}
@@ -898,7 +901,7 @@
 {"company":"Billings Clinic","first_seen":"2026-11-08","id":"csod:billingsclinic:13039","location":"BILLINGS, MT, US","posted":"2026-10-14","reposts":1,"title":"Patient Access Specialist - Registration (Full-time/Float)"}
 {"closed_at":"2026-11-16","company":"Billings Clinic","first_seen":"2026-11-08","id":"csod:billingsclinic:13041","location":"BILLINGS, MT, US","posted":"2026-10-27","title":"IT Applications Analyst - Revenue Cycle"}
 {"company":"Billings Clinic","first_seen":"2026-11-08","id":"csod:billingsclinic:13042","location":"TOWNSEND, MT, US","posted":"2026-10-14","title":"EMT/AEMT - Full Time (Townsend, MT)"}
-{"company":"Billings Clinic","first_seen":"2026-11-08","id":"csod:billingsclinic:13045","location":"Billings, MT, US","posted":"2026-10-19","reposts":2,"title":"CNA, Hospital - Nursing Resources (0.9 FTE)"}
+{"company":"Billings Clinic","first_seen":"2026-11-08","id":"csod:billingsclinic:13045","location":"Billings, MT, US","posted":"2026-11-16","reposts":2,"title":"CNA, Hospital - Nursing Resources (0.9 FTE)"}
 {"company":"Billings Clinic","first_seen":"2026-11-08","id":"csod:billingsclinic:13049","location":"Billings, MT, US","posted":"2026-10-15","title":"Pharmacy Technician - Specialty Pharmacy (Certified or Non-certified) - On the job training availabl"}
 {"company":"Billings Clinic","first_seen":"2026-11-08","id":"csod:billingsclinic:13057","location":"BILLINGS, MT, US","posted":"2026-10-16","title":"RN, Hospital - Inpatient Cancer Care (0.9 FTE, Night)"}
 {"company":"Billings Clinic","first_seen":"2026-11-08","id":"csod:billingsclinic:13058","location":"Billings, MT, US","posted":"2026-10-18","title":"Nurse Practitioner - Psychiatric Services (0.6 FTE)"}
@@ -965,6 +968,7 @@
 {"company":"Billings Clinic","first_seen":"2026-11-09","id":"csod:billingsclinic:13178","location":"BILLINGS, MT, US","posted":"2026-11-04","title":"Inpatient Occupational Therapist - $10,000 Sign-On Bonus (1.0 FTE)"}
 {"company":"Billings Clinic","first_seen":"2026-11-08","id":"csod:billingsclinic:13180","location":"Billings, MT, US","posted":"2026-11-04","reposts":2,"title":"Security Officer (1.0 FTE)"}
 {"company":"Billings Clinic","first_seen":"2026-11-14","id":"csod:billingsclinic:13191","location":"BILLINGS, MT, US","posted":"2026-11-05","title":"Cardiovascular Scrub Tech (1.0)"}
+{"company":"Billings Clinic","first_seen":"2026-11-16","id":"csod:billingsclinic:13195","location":"BOZEMAN, MT, US","posted":"2026-11-16","title":"Clinic LPN (0.9 FTE) - OBGYN - Bozeman"}
 {"company":"Billings Clinic","first_seen":"2026-11-15","id":"csod:billingsclinic:13200","location":"COLUMBUS, MT, US","posted":"2026-11-15","title":"Per Diem RN Hospital (Columbus, MT)"}
 {"company":"Billings Clinic","first_seen":"2026-11-15","id":"csod:billingsclinic:13201","location":"BILLINGS, MT, US","posted":"2026-11-15","reposts":1,"title":"Per Diem RN - Surgery Center (Pre/Post Op)"}
 {"company":"Billings Clinic","first_seen":"2026-11-16","id":"csod:billingsclinic:13204","location":"BILLINGS, MT, US","posted":"2026-11-15","title":"Sterile Processing Tech - Surgery Center"}
@@ -972,13 +976,18 @@
 {"company":"Billings Clinic","employment":"part_time","first_seen":"2026-11-16","id":"csod:billingsclinic:13206","location":"TOWNSEND, MT, US","posted":"2026-11-15","title":"Part Time Nursing Assistant - Townsend, MT"}
 {"company":"Billings Clinic","first_seen":"2026-11-09","id":"csod:billingsclinic:13208","location":"RIVERTON, WY, US","posted":"2026-11-09","title":"IT Network and End User Support Engineer -  Riverton, Wyoming"}
 {"company":"Billings Clinic","first_seen":"2026-11-09","id":"csod:billingsclinic:13209","location":"RIVERTON, WY, US","posted":"2026-11-09","title":"IT Nursing Informaticist - Riverton, Wyoming"}
+{"company":"Billings Clinic","first_seen":"2026-11-16","id":"csod:billingsclinic:13210","location":"BILLINGS, MT, US","posted":"2026-11-16","title":"LDRP RN (.9 FTE)"}
 {"company":"Billings Clinic","first_seen":"2026-11-16","id":"csod:billingsclinic:13213","location":"TOWNSEND, MT, US","posted":"2026-11-15","title":"Per Diem CNA (Townsend, MT)"}
 {"company":"Billings Clinic","first_seen":"2026-11-14","id":"csod:billingsclinic:13224","location":"Billings, MT, US","posted":"2026-11-11","title":"Social Services Care Manager- 36 hours/week (.9 FTE)"}
+{"company":"Billings Clinic","first_seen":"2026-11-16","id":"csod:billingsclinic:13226","location":"BILLINGS, MT, US","posted":"2026-11-11","title":"Manager - Downtown Primary Care"}
 {"company":"Billings Clinic","first_seen":"2026-11-14","id":"csod:billingsclinic:13228","location":"BILLINGS, MT, US","posted":"2026-11-11","title":"Surgical Scheduling and Data Assistant II"}
+{"company":"Billings Clinic","first_seen":"2026-11-16","id":"csod:billingsclinic:13230","location":"BOZEMAN, MT, US","posted":"2026-11-16","reposts":1,"title":"Clinic RN (0.5 FTE) - Pediatrics - Bozeman"}
 {"company":"Billings Clinic","first_seen":"2026-11-12","id":"csod:billingsclinic:13232","location":"COLUMBUS, MT, US","posted":"2026-11-11","title":"Nursing Assistant - (Full-Time/Columbus, Montana)"}
+{"company":"Billings Clinic","first_seen":"2026-11-16","id":"csod:billingsclinic:13233","location":"BILLINGS, MT, US","posted":"2026-11-16","title":"Manager, Ambulatory Telehealth"}
 {"company":"Billings Clinic","first_seen":"2026-11-16","id":"csod:billingsclinic:13237","location":"BILLINGS, MT, US","posted":"2026-11-15","title":"Medical Assistant - Allergy"}
 {"company":"Billings Clinic","first_seen":"2026-11-14","id":"csod:billingsclinic:13244","location":"BILLINGS, MT, US","posted":"2026-11-13","title":"NP or PA per diem - Urgent Care"}
 {"company":"Billings Clinic","first_seen":"2026-11-16","id":"csod:billingsclinic:13245","location":"TOWNSEND, MT, US","posted":"2026-11-15","title":"Per Diem Nursing Assistant (Townsend, MT)"}
+{"company":"Billings Clinic","first_seen":"2026-11-16","id":"csod:billingsclinic:13253","location":"BILLINGS, MT, US","posted":"2026-11-16","reposts":2,"title":"MA General Pediatrics"}
 {"company":"Billings Clinic","first_seen":"2026-11-08","id":"csod:billingsclinic:3595","location":"Billings, MT, US","posted":"2024-01-24","title":"Resident - Physician MFMR"}
 {"company":"Billings Clinic","first_seen":"2026-11-08","id":"csod:billingsclinic:715","location":"Billings, MT, US","posted":"2021-01-06","title":"Student - Pharmacist"}
 {"company":"Billings Clinic","first_seen":"2026-11-08","id":"csod:billingsclinic:7762","location":"Billings, MT, US","posted":"2024-05-08","title":"Resident - Physician - Pediatrics"}

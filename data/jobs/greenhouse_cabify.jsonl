@@ -3,8 +3,8 @@
 {"company":"Cabify","first_seen":"2026-10-19","id":"greenhouse:cabify:8367951002","location":"Madrid","posted":"2026-01-09","skills":["ruby","javascript","python","kubernetes","aws","terraform","sql"],"team":"Engineering","title":"Senior Site Reliability Engineer"}
 {"closed_at":"2026-10-23","company":"Cabify","first_seen":"2026-10-19","id":"greenhouse:cabify:8454680002","location":"Madrid","posted":"2026-03-09","team":"Finance","title":"Treasury Analyst"}
 {"company":"Cabify","first_seen":"2026-10-19","id":"greenhouse:cabify:8497876002","location":"Madrid","posted":"2026-04-08","skills":["sap","tableau","sql"],"team":"Finance","title":"Finance Systems Specialist"}
-{"company":"Cabify","first_seen":"2026-10-19","id":"greenhouse:cabify:8534443002","location":"Madrid","posted":"2026-05-04","skills":["ml","python","sql"],"team":"Technology","title":"Senior Data Scientist","years":5}
-{"company":"Cabify","first_seen":"2026-10-19","id":"greenhouse:cabify:8549431002","location":"Madrid","posted":"2026-05-14","skills":["ml","python","sql"],"team":"Technology","title":"Data Scientist, Applied Science","years":3}
+{"closed_at":"2026-11-16","company":"Cabify","first_seen":"2026-10-19","id":"greenhouse:cabify:8534443002","location":"Madrid","posted":"2026-05-04","skills":["ml","python","sql"],"team":"Technology","title":"Senior Data Scientist","years":5}
+{"closed_at":"2026-11-16","company":"Cabify","first_seen":"2026-10-19","id":"greenhouse:cabify:8549431002","location":"Madrid","posted":"2026-05-14","skills":["ml","python","sql"],"team":"Technology","title":"Data Scientist, Applied Science","years":3}
 {"company":"Cabify","first_seen":"2026-10-19","id":"greenhouse:cabify:8558042002","location":"Buenos Aires","posted":"2026-05-20","skills":["tableau"],"team":"Growth","title":"Growth Rider Manager"}
 {"company":"Cabify","first_seen":"2026-10-19","id":"greenhouse:cabify:8559735002","location":"Chile","posted":"2026-05-22","skills":["jira","python"],"team":"Technology","title":"IT Analyst"}
 {"closed_at":"2026-11-08","company":"Cabify","first_seen":"2026-10-19","id":"greenhouse:cabify:8563903002","location":"Lima","posted":"2026-05-25","skills":["excel","tableau"],"team":"Cabify Logistics","title":"Liveops associate"}
@@ -123,8 +123,8 @@
 {"company":"Cabify","first_seen":"2026-10-28","id":"greenhouse:cabify:8922087002","location":"Santiago Chile","posted":"2026-10-28","team":"Communications and Public Affairs","title":"Práctica Profesional - Prensa y Comunicaciones - Cabify"}
 {"company":"Cabify","first_seen":"2026-11-08","id":"greenhouse:cabify:8928330002","location":"Santiago","posted":"2026-11-03","skills":["erp","python"],"team":"Finance","title":"Analista Contable (Reemplazo)"}
 {"closed_at":"2026-11-09","company":"Cabify","first_seen":"2026-11-08","id":"greenhouse:cabify:8928975002","location":"Santiago, Chile","posted":"2026-11-03","team":"People","title":"Analista de Remuneraciones"}
-{"company":"Cabify","first_seen":"2026-11-08","id":"greenhouse:cabify:8930022002","location":"Santiago de Chile","posted":"2026-11-04","team":"B2B","title":"SDR Team Lead - B2B"}
-{"company":"Cabify","first_seen":"2026-11-08","id":"greenhouse:cabify:8931544002","location":"Lima","posted":"2026-11-05","skills":["sql"],"team":"Growth","title":"Growth Specialist Senior"}
+{"company":"Cabify","first_seen":"2026-11-08","id":"greenhouse:cabify:8930022002","location":"Santiago de Chile","posted":"2026-11-04","team":"B2B","title":"Growth & Prospección Lead B2B"}
+{"company":"Cabify","first_seen":"2026-11-08","id":"greenhouse:cabify:8931544002","location":"Lima","posted":"2026-11-05","skills":["sql"],"team":"Growth","title":"Growth Specialist"}
 {"company":"Cabify","first_seen":"2026-11-09","id":"greenhouse:cabify:8935395002","location":"Santiago, Chile","posted":"2026-11-09","skills":["payroll"],"team":"People","title":"People Analyst - Payroll"}
 {"company":"Cabify","first_seen":"2026-11-11","id":"greenhouse:cabify:8937455002","location":"Madrid","posted":"2026-11-11","team":"Legal","title":"Legal Analyst (Temporal)"}
 {"company":"Cabify","first_seen":"2026-11-11","id":"greenhouse:cabify:8937520002","location":"Bogotá","posted":"2026-11-11","skills":["tableau","sql","llm"],"team":"Customer Experience & Operations","title":"Practicante de Ingeniería Industrial – Operaciones y Customer Support"}

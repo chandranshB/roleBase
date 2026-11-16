@@ -240,7 +240,7 @@
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5585","location":"Santa Clarita, CA, US","posted":"2026-05-04","title":"Tool Design Engineer"}
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5586","location":"Gardena, CA, US","posted":"2026-11-06","reposts":2,"title":"Manufacturing Engineer"}
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5603","location":"Tulsa, OK, US","posted":"2026-05-13","title":"Hand Solder Operator- 2nd Shift"}
-{"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5608","location":"Coxsackie, NY, US","posted":"2026-09-21","reposts":1,"title":"EHS Safety & Environmental Engineer"}
+{"closed_at":"2026-11-16","company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5608","location":"Coxsackie, NY, US","posted":"2026-09-21","reposts":1,"title":"EHS Safety & Environmental Engineer"}
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5611","location":"Tulsa, OK, US","posted":"2026-05-18","reposts":1,"title":"Engineering Supervisor - Electronics Manufacturing"}
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5626","location":"Huntsville, AR, US","posted":"2026-05-29","skills":["supply_chain"],"title":"Sr. Supply Chain Manager"}
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5628","location":"Huntsville, AR, US","posted":"2026-05-29","title":"Flexible Shift Production Supervisor"}
@@ -289,7 +289,7 @@
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5799","location":"Tulsa, OK, US","posted":"2026-08-20","reposts":1,"title":"Program Engineer"}
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5807","location":"Appleton, WI, US","posted":"2026-08-21","reposts":2,"title":"Manufacturing Engineer"}
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5808","location":"Santa Clarita, CA, US","posted":"2026-08-21","title":"Tool Designer II-CA1"}
-{"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5809","location":"Tulsa, OK, US","posted":"2026-08-24","reposts":1,"title":"Sr. Test Engineer"}
+{"closed_at":"2026-11-16","company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5809","location":"Tulsa, OK, US","posted":"2026-08-24","reposts":1,"title":"Sr. Test Engineer"}
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5811","location":"Parsons, KS, US","posted":"2026-08-25","title":"Hot Form Press Operator - B & C Shift"}
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5813","location":"St Croix Falls, WI, US","posted":"2026-08-25","title":"Production Assembler - Temp to Hire"}
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5822","location":"Santa Clarita, CA, US","posted":"2026-09-01","title":"Machine Operator"}
@@ -339,6 +339,7 @@
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5906","location":"Huntsville, AR, US","posted":"2026-10-08","title":"Painter"}
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5908","location":"Orange, CA, US","posted":"2026-11-04","title":"General Helper Temp to Hire"}
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5910","location":"Coxsackie, NY, US","posted":"2026-10-14","reposts":2,"title":"Quality Inspector"}
+{"company":"Ducommun","first_seen":"2026-11-16","id":"csod:ducommun:5911","location":"Coxsackie, NY, US","posted":"2026-11-16","title":"Maintenance Worker - 3rd Shift"}
 {"company":"Ducommun","first_seen":"2026-11-11","id":"csod:ducommun:5912","location":"Appleton, WI, US","posted":"2026-11-11","reposts":2,"title":"Program Manager Analyst"}
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5913","location":"Coxsackie, NY, US","posted":"2026-10-15","title":"Program Management Analyst"}
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5914","location":"Parsons, KS, US","posted":"2026-10-20","title":"CNC Machinist - B Shift"}

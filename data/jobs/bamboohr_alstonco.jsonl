@@ -17,7 +17,7 @@
 {"company":"Alston Construction","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:alstonco:1278","location":"Dallas, Texas","team":"Field Operations","title":"MEP Superintendent - Mission Critical"}
 {"company":"Alston Construction","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:alstonco:1279","location":"Dallas, Texas","team":"Field Operations","title":"MEP Assistant Superintendent - Mission Critical"}
 {"closed_at":"2026-11-12","company":"Alston Construction","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:alstonco:1286","location":"Atlanta, Georgia","team":"Project Management","title":"Assistant Project Manager - Mission Critical"}
-{"company":"Alston Construction","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:alstonco:1291","location":"Houston, Texas","team":"Estimating/Preconstruction","title":"Preconstruction Manager"}
+{"closed_at":"2026-11-16","company":"Alston Construction","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:alstonco:1291","location":"Houston, Texas","team":"Estimating/Preconstruction","title":"Preconstruction Manager"}
 {"company":"Alston Construction","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:alstonco:1293","location":"Tempe, Arizona","team":"Commissioning","title":"Commissioning Manager - Mission Critical"}
 {"company":"Alston Construction","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:alstonco:1294","location":"Dallas, Texas","team":"Commissioning","title":"Commissioning Manager - Mission Critical"}
 {"company":"Alston Construction","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:alstonco:1295","location":"Dallas, Texas","team":"Field Operations","title":"Superintendent - Mission Critical"}
@@ -35,7 +35,7 @@
 {"company":"Alston Construction","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:alstonco:1322","location":"Edison, New Jersey","team":"Field Operations","title":"Traveling Superintendent"}
 {"company":"Alston Construction","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:alstonco:1323","location":"Greenville, South Carolina","team":"Field Operations","title":"Traveling Superintendent"}
 {"company":"Alston Construction","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:alstonco:1325","location":"Greenville, South Carolina","team":"Project Management","title":"Project Manager"}
-{"company":"Alston Construction","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:alstonco:1326","remote":true,"team":"Health and Safety","title":"Regional Safety Manager"}
+{"closed_at":"2026-11-16","company":"Alston Construction","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:alstonco:1326","remote":true,"team":"Health and Safety","title":"Regional Safety Manager"}
 {"company":"Alston Construction","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:alstonco:1327","location":"Dallas, Texas","team":"Project Management","title":"Project Executive - Mission Critical"}
 {"company":"Alston Construction","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:alstonco:1328","location":"Dallas, Texas","team":"Project Management","title":"Senior Project Manager-Mission Critical"}
 {"company":"Alston Construction","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:alstonco:1329","location":"Dallas, Texas","team":"Project Management","title":"Senior Project Manager-Mission Critical"}
@@ -65,7 +65,7 @@
 {"company":"Alston Construction","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:alstonco:1380","location":"Sunrise, Florida","team":"Health and Safety","title":"Regional Safety Manager"}
 {"closed_at":"2026-11-12","company":"Alston Construction","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:alstonco:1382","location":"Tempe, Arizona","team":"Estimating/Preconstruction","title":"Preconstruction Director - Mission Critical"}
 {"closed_at":"2026-11-08","company":"Alston Construction","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:alstonco:1383","location":"Tempe, Arizona","team":"Project Management","title":"Project Manager"}
-{"company":"Alston Construction","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:alstonco:1385","remote":true,"skills":["talent_acquisition"],"team":"Human Resources","title":"Talent Acquisition Specialist"}
+{"closed_at":"2026-11-16","company":"Alston Construction","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:alstonco:1385","remote":true,"skills":["talent_acquisition"],"team":"Human Resources","title":"Talent Acquisition Specialist"}
 {"company":"Alston Construction","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:alstonco:1386","location":"Atlanta, Georgia","team":"Health and Safety","title":"Regional Safety Manager"}
 {"closed_at":"2026-11-12","company":"Alston Construction","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:alstonco:1387","location":"Tempe, Arizona","team":"Estimating/Preconstruction","title":"MEP Preconstruction Director - Mission Critical"}
 {"company":"Alston Construction","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:alstonco:1389","location":"Dublin, Ohio","team":"Marketing","title":"Marketing Manager"}
@@ -84,3 +84,5 @@
 {"closed_at":"2026-11-13","company":"Alston Construction","employment":"full_time","first_seen":"2026-11-12","id":"bamboohr:alstonco:1412","location":"Irvine, California","team":"Project Management","title":"Project Engineer"}
 {"company":"Alston Construction","employment":"full_time","first_seen":"2026-11-13","id":"bamboohr:alstonco:1413","location":"Irvine, California","team":"Project Management","title":"Project Engineer"}
 {"company":"Alston Construction","employment":"full_time","first_seen":"2026-11-13","id":"bamboohr:alstonco:1414","location":"Irvine, California","reposts":1,"team":"Project Management","title":"Project Manager"}
+{"company":"Alston Construction","employment":"full_time","first_seen":"2026-11-16","id":"bamboohr:alstonco:1415","location":"Springfield, Illinois","team":"Health and Safety","title":"EHS Manager - Mission Critical"}
+{"company":"Alston Construction","employment":"full_time","first_seen":"2026-11-16","id":"bamboohr:alstonco:1416","location":"Springfield, Illinois","team":"Health and Safety","title":"EHS Coordinator - Mission Critical"}

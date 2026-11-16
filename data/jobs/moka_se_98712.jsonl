@@ -22,7 +22,7 @@
 {"company":"施耐德电气","first_seen":"2026-11-09","id":"moka:se/98712:07ea3436-08c2-4c2b-bee6-7314621b9dfd","location":"普陀区","posted":"2026-10-22","team":"施耐德电气","title":"销售工程师-上海盘厂"}
 {"company":"施耐德电气","first_seen":"2026-11-09","id":"moka:se/98712:0822e361-452b-4473-93b5-bbb3c87f6b51","location":"北京市","posted":"2026-10-27","skills":["java","c#","python","react","linux","kubernetes","scrum","javascript"],"team":"企业IT/软件开发/技术架构","title":"Software Engineer"}
 {"company":"施耐德电气","first_seen":"2026-11-09","id":"moka:se/98712:083a3bd5-9203-42b8-85a1-3a7f2c5135e9","location":"翔安区","posted":"2026-10-21","team":"智能制造与供应链","title":"Assistant FQC Engineer"}
-{"company":"施耐德电气","first_seen":"2026-11-09","id":"moka:se/98712:08828577-04b5-4b57-93eb-0c6e1e4a3dcf","location":"上海市","posted":"2026-11-09","team":"产品研发创新中心","title":"Cooling Chapter leader"}
+{"company":"施耐德电气","first_seen":"2026-11-09","id":"moka:se/98712:08828577-04b5-4b57-93eb-0c6e1e4a3dcf","location":"上海市","posted":"2026-11-16","team":"产品研发创新中心","title":"Cooling Chapter leader"}
 {"company":"施耐德电气","first_seen":"2026-11-09","id":"moka:se/98712:08b6a53e-48cd-457b-872d-676c8efc8686","location":"翔安区","posted":"2026-10-21","team":"销售/解决方案/售后服务","title":"Project Manager"}
 {"company":"施耐德电气","first_seen":"2026-11-09","id":"moka:se/98712:09d9dc0e-60f3-4435-b637-6bd6e3ad5af0","location":"翔安区","posted":"2026-10-30","team":"销售/解决方案/售后服务","title":"Project Manager"}
 {"company":"施耐德电气","first_seen":"2026-11-09","id":"moka:se/98712:0a2e0f6b-4350-48da-9ebe-deb2a367ba8b","posted":"2026-09-20","team":"产品研发创新中心","title":"博士-电力电子算法软件工程师"}
@@ -339,7 +339,7 @@
 {"company":"施耐德电气","first_seen":"2026-11-09","id":"moka:se/98712:7646b414-b2f6-410f-9a93-ebeb552b33c5","location":"浦东新区","posted":"2025-09-24","skills":["project_management","python","go","java","javascript"],"team":"产品研发创新中心","title":"009IF8-Product Security Expert","years":5}
 {"company":"施耐德电气","first_seen":"2026-11-09","id":"moka:se/98712:7699132a-8637-4bf9-9fa3-f612e322cabd","location":"昌平区","posted":"2024-01-23","team":"智能制造与供应链","title":"测试工程师"}
 {"company":"施耐德电气","first_seen":"2026-11-09","id":"moka:se/98712:77930e08-1610-49b9-9328-940ff6f00d5c","location":"翔安区","posted":"2026-09-04","team":"销售/解决方案/售后服务","title":"Mechanical Design Engineer"}
-{"company":"施耐德电气","first_seen":"2026-11-09","id":"moka:se/98712:7798666c-0d9c-40df-835d-44ea89b93e03","posted":"2026-10-15","team":"施耐德电气","title":"Project Manager"}
+{"company":"施耐德电气","first_seen":"2026-11-09","id":"moka:se/98712:7798666c-0d9c-40df-835d-44ea89b93e03","posted":"2026-10-15","team":"产品研发创新中心","title":"Project Manager"}
 {"company":"施耐德电气","first_seen":"2026-11-09","id":"moka:se/98712:779dace0-8607-4b83-b16b-694af09adf97","location":"浦东新区","posted":"2026-03-05","skills":["procurement","supply_chain","negotiation","project_management"],"team":"智能制造与供应链","title":"009JGM-Offer Procurement Leader","years":5}
 {"company":"施耐德电气","first_seen":"2026-11-09","id":"moka:se/98712:77a40bb3-632e-49ed-84db-b9eb22648d72","location":"浦东新区","posted":"2026-07-02","skills":["agile","solidworks","autocad"],"team":"产品研发创新中心","title":"Senior Plastic Tooling Engineer","years":3}
 {"company":"施耐德电气","first_seen":"2026-11-09","id":"moka:se/98712:7813d9b5-868a-43e9-8ff2-5f837d1108a9","posted":"2023-12-26","team":"职能支持","title":"应用开发工程师-工业软件"}
@@ -675,6 +675,7 @@
 {"company":"施耐德电气","first_seen":"2026-11-13","id":"moka:se/98712:f70ab7d0-4da4-4099-b051-5bea71263d8f","posted":"2026-11-13","team":"施耐德电气","title":"Senior Process & MPH Engineer I"}
 {"company":"施耐德电气","first_seen":"2026-11-12","id":"moka:se/98712:f754ca78-fd6c-4de8-943b-d6eaee5b1d8d","location":"新吴区","posted":"2026-11-12","team":"产品研发创新中心","title":"电气工程师"}
 {"company":"施耐德电气","first_seen":"2026-11-09","id":"moka:se/98712:f7a3b387-8701-4e06-834b-c005dc262158","location":"南山区","posted":"2026-09-23","team":"施耐德电气","title":"Senior Engineer I, Supplier Quality Engineering"}
+{"company":"施耐德电气","first_seen":"2026-11-16","id":"moka:se/98712:f7d38049-8fa9-43d6-afb9-594a9519f77f","location":"浦东新区","posted":"2026-11-16","skills":["git","c++","linux","python"],"team":"产品研发创新中心","title":"Engineer II, Embedded Software Design","years":5}
 {"company":"施耐德电气","first_seen":"2026-11-09","id":"moka:se/98712:f7d398e4-a0e6-4e0a-bd1a-c41936055384","posted":"2023-12-10","team":"职能支持","title":"公众号运营"}
 {"company":"施耐德电气","first_seen":"2026-11-09","id":"moka:se/98712:f819647f-55e4-41fd-bb65-9cef07380c3a","location":"重庆市","posted":"2025-01-21","skills":["supply_chain","sap","procurement","project_management"],"team":"智能制造与供应链","title":"Supply Chain Leader","years":5}
 {"company":"施耐德电气","first_seen":"2026-11-13","id":"moka:se/98712:f846cf28-1cec-48db-bc19-9c93f51764e8","location":"上海市","posted":"2026-11-13","skills":["procurement","pmp"],"team":"施耐德电气","title":"Senior Engineer II, Electronics Component","years":7}

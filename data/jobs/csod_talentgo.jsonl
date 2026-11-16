@@ -160,7 +160,7 @@
 {"company":"Grupo Oesía","first_seen":"2026-11-08","id":"csod:talentgo:2399","location":"Rivas-Vaciamadrid, Madrid, ES; Sevilla, Sevilla, ES","posted":"2026-10-09","title":"Arquitecto/a Software"}
 {"company":"Grupo Oesía","first_seen":"2026-11-08","id":"csod:talentgo:2400","location":"Rivas-Vaciamadrid, Madrid, ES; Sevilla, Sevilla, ES","posted":"2026-10-09","title":"Ingeniero/a Desarrollador de Software"}
 {"company":"Grupo Oesía","first_seen":"2026-11-08","id":"csod:talentgo:2408","location":"Rivas-Vaciamadrid, Madrid, ES","title":"Technical Avionics Lead - Global Opportunity"}
-{"company":"Grupo Oesía","first_seen":"2026-11-08","id":"csod:talentgo:2413","location":"Rivas-Vaciamadrid, Madrid, ES","title":"Arquitecto/a de Cloud y Virtualización"}
+{"closed_at":"2026-11-16","company":"Grupo Oesía","first_seen":"2026-11-08","id":"csod:talentgo:2413","location":"Rivas-Vaciamadrid, Madrid, ES","title":"Arquitecto/a de Cloud y Virtualización"}
 {"company":"Grupo Oesía","first_seen":"2026-11-08","id":"csod:talentgo:2422","location":"Rivas-Vaciamadrid, Madrid, ES","title":"Jefe/a de Proyecto ASIC"}
 {"company":"Grupo Oesía","first_seen":"2026-11-11","id":"csod:talentgo:2429","location":"Rivas-Vaciamadrid, Madrid, ES","posted":"2026-11-11","title":"Ingeniero/a de Software Embebido Sistemas IRST"}
 {"company":"Grupo Oesía","first_seen":"2026-11-08","id":"csod:talentgo:2435","location":"Valdepeñas, Ciudad Real, ES","title":"Ingeniero/a de Fabricación (Tarjetas Electrónicas)"}
@@ -227,7 +227,7 @@
 {"company":"Grupo Oesía","first_seen":"2026-11-08","id":"csod:talentgo:2579","location":"Rivas-Vaciamadrid, Madrid, ES","title":"RTL ASIC Engineer (Global opportunity)"}
 {"company":"Grupo Oesía","first_seen":"2026-11-08","id":"csod:talentgo:2580","location":"Rivas-Vaciamadrid, Madrid, ES","title":"ASIC Verification & Validation Engineer | Semiconductor Technologies"}
 {"company":"Grupo Oesía","first_seen":"2026-11-08","id":"csod:talentgo:2581","location":"Rivas-Vaciamadrid, Madrid, ES","title":"DFT ASIC / SoC Engineer (Global opportunity)"}
-{"company":"Grupo Oesía","first_seen":"2026-11-12","id":"csod:talentgo:2582","location":"Valdepeñas, Ciudad Real, ES","posted":"2026-12-11","title":"Técnico/a Fabricación Senior"}
+{"company":"Grupo Oesía","first_seen":"2026-11-12","id":"csod:talentgo:2582","location":"Valdepeñas, Ciudad Real, ES","posted":"2026-12-11","title":"Manufacturing Technical Leader"}
 {"closed_at":"2026-11-10","company":"Grupo Oesía","first_seen":"2026-11-08","id":"csod:talentgo:2583","location":"Getafe, Madrid, ES","title":"ING. HW-RF - Global Opportunity"}
 {"company":"Grupo Oesía","first_seen":"2026-11-12","id":"csod:talentgo:2584","location":"Valdepeñas, Ciudad Real, ES","posted":"2026-12-11","title":"Gestor/a de equipo"}
 {"company":"Grupo Oesía","first_seen":"2026-11-11","id":"csod:talentgo:2587","location":"Rivas-Vaciamadrid, Madrid, ES","posted":"2026-11-11","title":"Responsable Técnico/a - Sistemas Electroópticos"}
@@ -236,9 +236,9 @@
 {"company":"Grupo Oesía","first_seen":"2026-11-08","id":"csod:talentgo:2600","location":"Rivas-Vaciamadrid, Madrid, ES","posted":"2026-05-11","title":"Consultor/a Data Governance & Analytics"}
 {"company":"Grupo Oesía","first_seen":"2026-11-08","id":"csod:talentgo:2601","location":"Rivas-Vaciamadrid, Madrid, ES","posted":"2026-06-11","title":"Técnico/a de Comunicación Corporativa"}
 {"company":"Grupo Oesía","first_seen":"2026-11-08","id":"csod:talentgo:2607","location":"Rivas-Vaciamadrid, Madrid, ES","posted":"2026-05-11","title":"Category Manager Digital"}
-{"company":"Grupo Oesía","first_seen":"2026-11-13","id":"csod:talentgo:2610","location":"Rivas-Vaciamadrid, Madrid, ES","title":"Técnico/a de seguridad de sistemas"}
-{"company":"Grupo Oesía","first_seen":"2026-11-11","id":"csod:talentgo:2614","location":"Rivas-Vaciamadrid, Madrid, ES","posted":"2026-11-11","title":"Técnico/a de formación"}
-{"company":"Grupo Oesía","first_seen":"2026-11-13","id":"csod:talentgo:2622","location":"Madrid, ES","title":"Técnico/a Soporte CAU - Junior"}
+{"closed_at":"2026-11-16","company":"Grupo Oesía","first_seen":"2026-11-13","id":"csod:talentgo:2610","location":"Rivas-Vaciamadrid, Madrid, ES","title":"Técnico/a de seguridad de sistemas"}
+{"closed_at":"2026-11-16","company":"Grupo Oesía","first_seen":"2026-11-11","id":"csod:talentgo:2614","location":"Rivas-Vaciamadrid, Madrid, ES","posted":"2026-11-11","title":"Técnico/a de formación"}
+{"closed_at":"2026-11-16","company":"Grupo Oesía","first_seen":"2026-11-13","id":"csod:talentgo:2622","location":"Madrid, ES","title":"Técnico/a Soporte CAU - Junior"}
 {"closed_at":"2026-11-12","company":"Grupo Oesía","first_seen":"2026-11-10","id":"csod:talentgo:2624","location":"Rivas-Vaciamadrid, Madrid, ES","posted":"2026-10-11","title":"SOC N1"}
 {"company":"Grupo Oesía","first_seen":"2026-11-12","id":"csod:talentgo:2628","location":"Rivas-Vaciamadrid, Madrid, ES","posted":"2026-12-11","title":"Analista Cirbe"}
 {"closed_at":"2026-11-11","company":"Grupo Oesía","first_seen":"2026-11-10","id":"csod:talentgo:2635","location":"ES","posted":"2026-10-11","title":"Foro de empleo UEM"}

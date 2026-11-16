@@ -9,7 +9,7 @@
 {"company":"Citizens Health","first_seen":"2026-11-08","id":"bamboohr:cmciks:308","location":"Colby, Kansas","team":"010 Operating Room","title":"RN - Surgery"}
 {"company":"Citizens Health","first_seen":"2026-11-08","id":"bamboohr:cmciks:311","location":"Colby, Kansas","team":"002 Acute Care Routine Service","title":"RN  Supervisor - NIghts/Acute Care"}
 {"company":"Citizens Health","first_seen":"2026-11-08","id":"bamboohr:cmciks:319","location":"Colby, Kansas","team":"042 Occupational Therapy","title":"OTA"}
-{"company":"Citizens Health","first_seen":"2026-11-08","id":"bamboohr:cmciks:359","location":"Colby, Kansas","team":"061 Nursing Home Food Services","title":"Diet Aide/Dishwasher - LTC"}
+{"closed_at":"2026-11-16","company":"Citizens Health","first_seen":"2026-11-08","id":"bamboohr:cmciks:359","location":"Colby, Kansas","team":"061 Nursing Home Food Services","title":"Diet Aide/Dishwasher - LTC"}
 {"company":"Citizens Health","first_seen":"2026-11-08","id":"bamboohr:cmciks:365","location":"Colby, Kansas","team":"024 Radiology","title":"Radiologic Technologist/CT"}
 {"company":"Citizens Health","first_seen":"2026-11-08","id":"bamboohr:cmciks:370","location":"Colby, Kansas","team":"062 Plant Operations","title":"Groundskeeper"}
 {"company":"Citizens Health","first_seen":"2026-11-08","id":"bamboohr:cmciks:377","location":"Colby, Kansas","team":"034 FCHC Clinic","title":"Medical Receptionist - FCHC"}
@@ -35,8 +35,8 @@
 {"company":"Citizens Health","first_seen":"2026-10-20","id":"bamboohr:cmciks:417","location":"Colby, Kansas","team":"017 Child Care","title":"Citizens Clubhouse Supervisor"}
 {"company":"Citizens Health","first_seen":"2026-10-20","id":"bamboohr:cmciks:418","location":"Colby, Kansas","team":"017 Child Care","title":"Citizens Clubhouse Lead Teacher"}
 {"company":"Citizens Health","first_seen":"2026-10-21","id":"bamboohr:cmciks:419","location":"Colby, Kansas","team":"044 Specialty Clinic","title":"Certified Ophthalmic Assistant - Specialty Clinic"}
-{"company":"Citizens Health","first_seen":"2026-10-28","id":"bamboohr:cmciks:420","location":"Colby, Kansas","team":"083 Financial Services","title":"Accounting clerk"}
-{"company":"Citizens Health","first_seen":"2026-10-28","id":"bamboohr:cmciks:421","location":"Colby, Kansas","team":"083 Financial Services","title":"Staff Accountant"}
+{"closed_at":"2026-11-16","company":"Citizens Health","first_seen":"2026-10-28","id":"bamboohr:cmciks:420","location":"Colby, Kansas","team":"083 Financial Services","title":"Accounting clerk"}
+{"closed_at":"2026-11-16","company":"Citizens Health","first_seen":"2026-10-28","id":"bamboohr:cmciks:421","location":"Colby, Kansas","team":"083 Financial Services","title":"Staff Accountant"}
 {"company":"Citizens Health","employment":"internship","first_seen":"2026-10-29","id":"bamboohr:cmciks:422","location":"Colby, Kansas","team":"030 Pharmacy","title":"Pharmacy Intern"}
 {"company":"Citizens Health","first_seen":"2026-11-08","id":"bamboohr:cmciks:423","location":"Colby, Kansas","team":"044 Specialty Clinic","title":"Specialty Clinic Scheduler"}
 {"company":"Citizens Health","first_seen":"2026-11-08","id":"bamboohr:cmciks:424","location":"Colby, Kansas","team":"080 Health Information Services","title":"HIM Manager"}

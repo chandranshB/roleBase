@@ -63,7 +63,7 @@
 {"company":"Eurazeo","employment":"internship","first_seen":"2026-11-08","id":"csod:eurazeo:160","location":"Paris, FR","title":"INTERNSHIP – OPERATIONS VENTURE – PORTFOLIO MONITORING – PARIS – S1 2027"}
 {"closed_at":"2026-11-09","company":"Eurazeo","employment":"internship","first_seen":"2026-11-08","id":"csod:eurazeo:161","location":"Paris, FR","title":"INTERNSHIP – PRIVATE DEBT OPERATIONS FM – PARIS – S1 2027"}
 {"company":"Eurazeo","employment":"internship","first_seen":"2026-11-08","id":"csod:eurazeo:164","location":"Paris, FR","title":"INTERNSHIP – ELEVATE (formerly Small-Mid Buyout) – PARIS – S1 2027"}
-{"company":"Eurazeo","employment":"internship","first_seen":"2026-11-08","id":"csod:eurazeo:165","location":"Paris, FR","title":"INTERNSHIP – INVESTOR RELATIONS – DIRECT TRANSACTIONS – PARIS – S1 2027"}
+{"closed_at":"2026-11-16","company":"Eurazeo","employment":"internship","first_seen":"2026-11-08","id":"csod:eurazeo:165","location":"Paris, FR","title":"INTERNSHIP – INVESTOR RELATIONS – DIRECT TRANSACTIONS – PARIS – S1 2027"}
 {"closed_at":"2026-11-10","company":"Eurazeo","employment":"internship","first_seen":"2026-11-08","id":"csod:eurazeo:169","location":"Paris, FR","title":"INTERNSHIP  – RESSOURCES HUMAINES – PARIS – S1 2027"}
 {"company":"Eurazeo","employment":"internship","first_seen":"2026-11-08","id":"csod:eurazeo:170","location":"Singapore, SG","title":"INTERNSHIP – VENTURE – FUTURE INDUSTRIES - SINGAPORE – S1 2027"}
 {"company":"Eurazeo","employment":"internship","first_seen":"2026-11-08","id":"csod:eurazeo:171","location":"Paris, FR","title":"INTERNSHIP – OPERATIONS – PRIVATE DEBT – PORTFOLIO MONITORING – PARIS – S1 2027"}
@@ -96,4 +96,6 @@
 {"company":"Eurazeo","first_seen":"2026-11-08","id":"csod:eurazeo:218","location":"Paris, FR","title":"Principal - Infrastructure"}
 {"closed_at":"2026-11-16","company":"Eurazeo","first_seen":"2026-11-08","id":"csod:eurazeo:219","location":"Londres, GB","title":"Director - EMEA - Investor Relations"}
 {"company":"Eurazeo","employment":"internship","first_seen":"2026-11-08","id":"csod:eurazeo:220","location":"Frankfurt, DE","title":"INTERNSHIP – PRIVATE DEBT – DIRECT LENDING - FRANKFURT – S1 2027"}
-{"company":"Eurazeo","first_seen":"2026-11-10","id":"csod:eurazeo:221","location":"Paris, FR","posted":"2026-10-11","title":"Financial Analyst - Portfolio Monitoring - Venture & Growth"}
+{"closed_at":"2026-11-16","company":"Eurazeo","first_seen":"2026-11-10","id":"csod:eurazeo:221","location":"Paris, FR","posted":"2026-10-11","title":"Financial Analyst - Portfolio Monitoring - Venture & Growth"}
+{"company":"Eurazeo","first_seen":"2026-11-16","id":"csod:eurazeo:224","location":"Luxembourg, LU","title":"Expert - Accounting - EFML - Luxembourg office"}
+{"company":"Eurazeo","first_seen":"2026-11-16","id":"csod:eurazeo:225","location":"Paris, FR","title":"Director - Business Intelligence Data & Projects"}

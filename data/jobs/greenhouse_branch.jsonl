@@ -11,3 +11,4 @@
 {"closed_at":"2026-10-09","company":"Branch","first_seen":"2026-08-29","id":"greenhouse:branch:7978805003","location":"United States","posted":"2026-08-26","team":"Finance","title":"Senior Accountant"}
 {"closed_at":"2026-10-09","company":"Branch","first_seen":"2026-10-01","id":"greenhouse:branch:8009222003","location":"United States","posted":"2026-09-30","team":"Cloud Operations","title":"Staff Cloud Operations Engineer"}
 {"company":"Branch","first_seen":"2026-10-26","id":"greenhouse:branch:8044391003","location":"Remote, US","posted":"2026-10-26","remote":true,"skills":["airflow","kubernetes","python","sql","snowflake","dbt","gcp"],"team":"Data","title":"Data Engineer","years":3}
+{"company":"Branch","first_seen":"2026-11-16","id":"greenhouse:branch:8205839003","location":"Remote, US","posted":"2026-11-16","remote":true,"skills":["sql"],"team":"Risk Analytics","title":"Director of Risk & Recovery Enablement"}

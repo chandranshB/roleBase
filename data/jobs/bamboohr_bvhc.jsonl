@@ -1,7 +1,7 @@
 {"company":"One Health","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:bvhc:1424","location":"Chinook, Montana","team":"Medical Provider","title":"Physician Assistant or Nurse Practitioner"}
 {"company":"One Health","first_seen":"2026-11-08","id":"bamboohr:bvhc:1439","location":"Lewistown, Montana","team":"Public Health","title":"Public Health Nurse (LPN or RN) - CMHD Lewistown"}
 {"company":"One Health","first_seen":"2026-11-08","id":"bamboohr:bvhc:1440","location":"Lewistown, Montana","team":"Pharmacy","title":"PRN - Pharmacist - Lewistown"}
-{"company":"One Health","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:bvhc:1445","location":"Livingston, Montana","team":"Nursing","title":"Medical Assistant I- Livingston"}
+{"company":"One Health","first_seen":"2026-11-08","id":"bamboohr:bvhc:1445","location":"Livingston, Montana","team":"Nursing","title":"Medical Assistant I- Livingston"}
 {"company":"One Health","first_seen":"2026-11-08","id":"bamboohr:bvhc:1446","location":"Livingston, Montana","team":"Dental","title":"Dental Hygienist- Livingston"}
 {"company":"One Health","first_seen":"2026-11-08","id":"bamboohr:bvhc:1448","location":"Bozeman, Montana","team":"Dental","title":"Bozeman- Dental Hygienist"}
 {"closed_at":"2026-11-10","company":"One Health","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:bvhc:1462","location":"Livingston, Montana","team":"Dental","title":"Dental Assistant I- Livingston"}
@@ -21,3 +21,5 @@
 {"company":"One Health","employment":"full_time","first_seen":"2026-11-10","id":"bamboohr:bvhc:1511","location":"Sheridan, Wyoming","team":"Behavioral Health","title":"Behavioral Health Provider (LCSW/LPC)"}
 {"closed_at":"2026-11-12","company":"One Health","employment":"full_time","first_seen":"2026-11-10","id":"bamboohr:bvhc:1512","location":"Livingston, Montana","team":"Dental","title":"Livingston Dental Assistant I"}
 {"company":"One Health","employment":"full_time","first_seen":"2026-11-13","id":"bamboohr:bvhc:1513","location":"Bozeman, Montana","team":"Nursing","title":"Clinic Nurse - Bozeman"}
+{"company":"One Health","first_seen":"2026-11-16","id":"bamboohr:bvhc:1514","location":"Livingston, Montana","skills":["patient_care"],"team":"Dental","title":"Patient Care Dental Assistant - Livingston"}
+{"company":"One Health","employment":"full_time","first_seen":"2026-11-16","id":"bamboohr:bvhc:1515","location":"Glendive, Montana","team":"Medical Support","title":"Intake Coordinator"}
