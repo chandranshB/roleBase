@@ -1,7 +1,7 @@
 {"company":"零跑汽车","first_seen":"2026-11-09","id":"beisen:leapmotor:230530554","location":"浙江省·金华市·婺城区","posted":"2022-05-23","title":"模具工艺技师-电子(J12239)"}
 {"company":"零跑汽车","first_seen":"2026-11-09","id":"beisen:leapmotor:230530572","location":"浙江省·金华市·婺城区","posted":"2022-05-23","title":"注塑技师(J12241)"}
 {"company":"零跑汽车","first_seen":"2026-11-09","id":"beisen:leapmotor:230533120","location":"浙江省·金华市·婺城区","posted":"2022-05-30","title":"设备维修技师(J12392)"}
-{"company":"零跑汽车","first_seen":"2026-11-12","id":"beisen:leapmotor:230689131","location":"浙江省·杭州市","posted":"2024-01-11","title":"平台软件工程师(J13423)"}
+{"company":"零跑汽车","first_seen":"2026-11-12","id":"beisen:leapmotor:230689131","location":"浙江省·杭州市","posted":"2024-01-11","skills":["six_sigma"],"title":"平台软件工程师（软件质量与过程改进）(J13423)"}
 {"company":"零跑汽车","first_seen":"2026-11-09","id":"beisen:leapmotor:230751401","location":"浙江省·杭州市","posted":"2024-09-14","title":"海外试验工程师(J13319)"}
 {"company":"零跑汽车","first_seen":"2026-11-09","id":"beisen:leapmotor:230755039","location":"浙江省·金华市","posted":"2024-09-30","title":"技工(J14616)"}
 {"company":"零跑汽车","first_seen":"2026-11-09","id":"beisen:leapmotor:230755042","location":"浙江省·金华市","posted":"2024-09-30","title":"设备维修岗(J13371)"}
@@ -865,4 +865,6 @@
 {"company":"零跑汽车","first_seen":"2026-11-12","id":"beisen:leapmotor:230954726","location":"浙江省·杭州市","posted":"2026-11-12","title":"算法高级工程师(J14187)"}
 {"company":"零跑汽车","first_seen":"2026-11-12","id":"beisen:leapmotor:230954727","location":"浙江省·杭州市","posted":"2026-11-12","skills":["llm"],"title":"高级测试工程师（安全与 AI 效能）(J18458)"}
 {"company":"零跑汽车","first_seen":"2026-11-13","id":"beisen:leapmotor:230954773","location":"浙江省·杭州市","posted":"2026-11-13","title":"安装工程师(J17760)"}
-{"company":"零跑汽车","first_seen":"2026-11-13","id":"beisen:leapmotor:230954935","location":"浙江省·杭州市·钱塘区","posted":"2026-11-13","title":"综合管理员（食堂）(J17839)"}
+{"closed_at":"2026-11-16","company":"零跑汽车","first_seen":"2026-11-13","id":"beisen:leapmotor:230954935","location":"浙江省·杭州市·钱塘区","posted":"2026-11-13","title":"综合管理员（食堂）(J17839)"}
+{"company":"零跑汽车","first_seen":"2026-11-16","id":"beisen:leapmotor:230955092","location":"浙江省·湖州市·吴兴区","posted":"2026-11-16","title":"综合管理员（食堂）(J17822)"}
+{"company":"零跑汽车","first_seen":"2026-11-16","id":"beisen:leapmotor:230955203","location":"浙江省·杭州市·钱塘区","posted":"2026-11-16","title":"账务员(J17870)"}
