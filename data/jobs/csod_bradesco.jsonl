@@ -861,6 +861,7 @@
 {"company":"Bradesco","first_seen":"2026-11-08","id":"csod:bradesco:80259","location":"OSASCO, SP, BR","posted":"2026-03-02","reposts":9,"title":"Maior Aprendiz"}
 {"company":"Bradesco","first_seen":"2026-11-08","id":"csod:bradesco:80260","location":"OSASCO, SP, BR","posted":"2026-03-02","reposts":4,"title":"Menor Aprendiz"}
 {"company":"Bradesco","first_seen":"2026-11-08","id":"csod:bradesco:80438","location":"BR","title":"Principal I Banco de Talentos"}
+{"company":"Bradesco","first_seen":"2026-11-17","id":"csod:bradesco:82777","location":"OSASCO, SP, BR","reposts":3,"title":"Data Science Manager"}
 {"company":"Bradesco","first_seen":"2026-11-08","id":"csod:bradesco:83548","location":"BR","title":"♿Banco de Talentos Afirmativo PCD - Comercial"}
 {"company":"Bradesco","first_seen":"2026-11-08","id":"csod:bradesco:84395","location":"SÃO PAULO, SP, BR","reposts":8,"title":"Data Scientist III"}
 {"company":"Bradesco","first_seen":"2026-11-08","id":"csod:bradesco:85759","location":"BR","title":"Banco de Talentos - Advisor Investimentos"}
@@ -879,8 +880,9 @@
 {"company":"Bradesco","first_seen":"2026-11-08","id":"csod:bradesco:90776","location":"BR","title":"Banco de Talentos | Atacado"}
 {"closed_at":"2026-11-14","company":"Bradesco","first_seen":"2026-11-13","id":"csod:bradesco:90788","location":"OSASCO, SP, BR","reposts":4,"title":"Data Scientist III"}
 {"company":"Bradesco","first_seen":"2026-11-11","id":"csod:bradesco:90790","location":"CURITIBA, PR, BR; OSASCO, SP, BR","reposts":1,"title":"Data Scientist II - Gestão de Portfólio Crédito Varejo"}
+{"company":"Bradesco","first_seen":"2026-11-17","id":"csod:bradesco:90802","location":"SAO PAULO, SP, BR","reposts":1,"title":"Analista de Produtos SR - Renda Variável"}
 {"company":"Bradesco","first_seen":"2026-11-11","id":"csod:bradesco:90831","location":"OSASCO, SP, BR","posted":"2026-09-10","reposts":1,"title":"Data Senior Manager"}
-{"company":"Bradesco","first_seen":"2026-11-08","id":"csod:bradesco:90939","location":"RECIFE, PE, BR","reposts":11,"title":"Gerente Relacionamento Principal I"}
+{"closed_at":"2026-11-17","company":"Bradesco","first_seen":"2026-11-08","id":"csod:bradesco:90939","location":"RECIFE, PE, BR","reposts":11,"title":"Gerente Relacionamento Principal I"}
 {"company":"Bradesco","first_seen":"2026-11-08","id":"csod:bradesco:90953","location":"BRASILIA, DF, BR","reposts":8,"title":"Gerente Relacionamento Principal II"}
 {"company":"Bradesco","first_seen":"2026-11-08","id":"csod:bradesco:90954","location":"PORTO ALEGRE, RS, BR","reposts":11,"title":"Gerente Relacionamento Principal I"}
 {"company":"Bradesco","first_seen":"2026-11-08","id":"csod:bradesco:90959","location":"PORTO ALEGRE, RS, BR","reposts":8,"title":"Gerente Relacionamento Principal II"}
@@ -943,7 +945,7 @@
 {"company":"Bradesco","first_seen":"2026-11-08","id":"csod:bradesco:92602","location":"OSASCO, SP, BR","reposts":2,"title":"Analista de Estratégia do Cliente SR"}
 {"company":"Bradesco","first_seen":"2026-11-14","id":"csod:bradesco:92603","location":"OSASCO, SP, BR","reposts":2,"title":"Analista de Estratégia do Cliente SR"}
 {"closed_at":"2026-11-13","company":"Bradesco","first_seen":"2026-11-12","id":"csod:bradesco:92609","location":"SAO PAULO, SP, BR","reposts":2,"title":"Analista Pricing SR"}
-{"company":"Bradesco","first_seen":"2026-11-08","id":"csod:bradesco:92641","location":"OSASCO, SP, BR","title":"Pessoa Engenheira de Software SR - Foco em IA"}
+{"closed_at":"2026-11-17","company":"Bradesco","first_seen":"2026-11-08","id":"csod:bradesco:92641","location":"OSASCO, SP, BR","title":"Pessoa Engenheira de Software SR - Foco em IA"}
 {"company":"Bradesco","first_seen":"2026-11-08","id":"csod:bradesco:92642","location":"OSASCO, SP, BR","skills":["java"],"title":"Especialista Java"}
 {"company":"Bradesco","first_seen":"2026-11-08","id":"csod:bradesco:92694","location":"BARUERI, SP, BR; CURITIBA, PR, BR; OSASCO, SP, BR; RECIFE, PE, BR; RIO DE JANEIRO, RJ, BR; UBERLANDIA, MG, BR","posted":"2026-01-10","reposts":4,"skills":["java"],"title":"Tech Lead Backend Java SR"}
 {"company":"Bradesco","first_seen":"2026-11-08","id":"csod:bradesco:92695","location":"BARUERI, SP, BR; CURITIBA, PR, BR; OSASCO, SP, BR; RECIFE, PE, BR; RIO DE JANEIRO, RJ, BR; UBERLANDIA, MG, BR","posted":"2026-02-10","reposts":4,"skills":["java"],"title":"Tech Lead Backend Java SR"}
@@ -955,14 +957,17 @@
 {"company":"Bradesco","first_seen":"2026-11-08","id":"csod:bradesco:92701","location":"OSASCO, SP, BR","title":"Information Security Analyst SR"}
 {"closed_at":"2026-11-09","company":"Bradesco","first_seen":"2026-11-08","id":"csod:bradesco:92715","location":"RECIFE, PE, BR","title":"Banker - Recife"}
 {"company":"Bradesco","first_seen":"2026-11-16","id":"csod:bradesco:92747","location":"SAO PAULO, SP, BR","reposts":2,"title":"Gerente Contas Pessoa Jurídica III"}
+{"company":"Bradesco","first_seen":"2026-11-17","id":"csod:bradesco:92891","location":"OSASCO, SP, BR","reposts":6,"title":"Data Scientist Specialist"}
 {"closed_at":"2026-11-09","company":"Bradesco","first_seen":"2026-11-08","id":"csod:bradesco:92978","location":"OSASCO, SP, BR","posted":"2026-05-10","reposts":1,"title":"Analista de Operações Asset III"}
 {"closed_at":"2026-11-16","company":"Bradesco","first_seen":"2026-11-08","id":"csod:bradesco:92985","location":"OSASCO, SP, BR","posted":"2026-11-11","reposts":1,"title":"Analista de Produtos Corretora SR"}
+{"company":"Bradesco","first_seen":"2026-11-17","id":"csod:bradesco:92994","location":"PASSOS, MG, BR","reposts":2,"title":"Gerente de Agronegócio II"}
 {"company":"Bradesco","first_seen":"2026-11-08","id":"csod:bradesco:93062","location":"Barueri, SP, BR","reposts":11,"title":"Gerente Relacionamento Principal I"}
 {"company":"Bradesco","first_seen":"2026-11-08","id":"csod:bradesco:93236","location":"OSASCO, SP, BR","reposts":2,"title":"Business Intelligence III"}
 {"closed_at":"2026-11-12","company":"Bradesco","first_seen":"2026-11-10","id":"csod:bradesco:93288","location":"SAO PAULO, SP, BR","reposts":5,"title":"Maior Aprendiz"}
 {"closed_at":"2026-11-10","company":"Bradesco","first_seen":"2026-11-08","id":"csod:bradesco:93452","location":"CAMPO GRANDE, MS, BR","posted":"2026-02-10","reposts":8,"title":"Advisor Investimentos PL"}
 {"company":"Bradesco","first_seen":"2026-11-08","id":"csod:bradesco:93479","location":"SAO PAULO, SP, BR","posted":"2026-07-10","reposts":1,"title":"♿Auxiliar Administrativo - PcD"}
 {"company":"Bradesco","first_seen":"2026-11-12","id":"csod:bradesco:93537","location":"SAO PAULO, SP, BR","posted":"2026-12-11","reposts":6,"title":"Gerente Relacionamento Principal II"}
+{"company":"Bradesco","first_seen":"2026-11-17","id":"csod:bradesco:93548","location":"SAO PAULO, SP, BR","title":"Analista Suporte Administrativo II"}
 {"company":"Bradesco","first_seen":"2026-11-14","id":"csod:bradesco:93609","location":"CURITIBA, PR, BR; OSASCO, SP, BR; RECIFE, PE, BR","reposts":4,"title":"Data Engineer III - Portfólio de Crédito"}
 {"company":"Bradesco","first_seen":"2026-11-13","id":"csod:bradesco:93637","location":"OSASCO, SP, BR","reposts":3,"title":"Analista de Projetos SR"}
 {"closed_at":"2026-11-14","company":"Bradesco","first_seen":"2026-11-10","id":"csod:bradesco:93640","location":"OSASCO, SP, BR","reposts":3,"title":"Analista de Produtos SR"}
@@ -976,8 +981,8 @@
 {"company":"Bradesco","first_seen":"2026-11-13","id":"csod:bradesco:93757","location":"OSASCO, SP, BR","reposts":4,"title":"Analista de Produtos SR"}
 {"company":"Bradesco","first_seen":"2026-11-16","id":"csod:bradesco:93770","location":"VITORIA, ES, BR","reposts":3,"title":"Advisor Investimentos JR"}
 {"company":"Bradesco","first_seen":"2026-11-10","id":"csod:bradesco:93774","location":"LIMEIRA, SP, BR","posted":"2026-09-10","reposts":4,"title":"Advisor Investimentos SR"}
-{"company":"Bradesco","first_seen":"2026-11-11","id":"csod:bradesco:93776","location":"CURITIBA, PR, BR; OSASCO, SP, BR","posted":"2026-09-10","reposts":1,"title":"Data Scientist Specialist - Políticas de Crédito"}
-{"company":"Bradesco","first_seen":"2026-11-08","id":"csod:bradesco:93777","location":"RIO DE JANEIRO, RJ, BR","reposts":8,"title":"GERENTE RELACIONAMENTO PRINCIPAL II"}
+{"company":"Bradesco","first_seen":"2026-11-11","id":"csod:bradesco:93776","location":"CURITIBA, PR, BR; OSASCO, SP, BR","reposts":1,"title":"Data Scientist Specialist - Políticas de Crédito"}
+{"closed_at":"2026-11-17","company":"Bradesco","first_seen":"2026-11-08","id":"csod:bradesco:93777","location":"RIO DE JANEIRO, RJ, BR","reposts":8,"title":"GERENTE RELACIONAMENTO PRINCIPAL II"}
 {"company":"Bradesco","first_seen":"2026-11-08","id":"csod:bradesco:93840","location":"OSASCO, SP, BR","reposts":4,"title":"Analista Produtos SR"}
 {"company":"Bradesco","first_seen":"2026-11-08","id":"csod:bradesco:93841","location":"OSASCO, SP, BR","reposts":2,"title":"Analista Planejamento Comercial SR"}
 {"company":"Bradesco","first_seen":"2026-11-11","id":"csod:bradesco:93844","location":"OSASCO, SP, BR","reposts":1,"title":"Analista Jornada de Recuperação de Crédito SR"}
@@ -1054,7 +1059,7 @@
 {"company":"Bradesco","first_seen":"2026-11-08","id":"csod:bradesco:94076","location":"CURITIBA, PR, BR; OSASCO, SP, BR; RECIFE, PE, BR; RIO DE JANEIRO, RJ, BR; UBERLANDIA, MG, BR","reposts":1,"title":"Pessoa Arquiteta de Soluções SR"}
 {"closed_at":"2026-11-09","company":"Bradesco","first_seen":"2026-11-08","id":"csod:bradesco:94077","location":"SANTA MARIA, RS, BR","reposts":3,"title":"Gerente de Negócios e Serviços I"}
 {"company":"Bradesco","first_seen":"2026-11-08","id":"csod:bradesco:94094","location":"OSASCO, SP, BR","reposts":4,"skills":["java"],"title":"Pessoa Desenvolvedora Backend Java SR"}
-{"company":"Bradesco","first_seen":"2026-11-16","id":"csod:bradesco:94116","location":"OSASCO, SP, BR","reposts":2,"title":"Pessoa Arquiteta de Soluções SR"}
+{"closed_at":"2026-11-17","company":"Bradesco","first_seen":"2026-11-16","id":"csod:bradesco:94116","location":"OSASCO, SP, BR","reposts":2,"title":"Pessoa Arquiteta de Soluções SR"}
 {"company":"Bradesco","first_seen":"2026-11-11","id":"csod:bradesco:94153","location":"CURITIBA, PR, BR; OSASCO, SP, BR","reposts":4,"title":"Data Scientist II"}
 {"company":"Bradesco","first_seen":"2026-11-16","id":"csod:bradesco:94158","location":"SAO PAULO, SP, BR","reposts":3,"title":"Gerente de Relacionamento Prime I"}
 {"closed_at":"2026-11-11","company":"Bradesco","first_seen":"2026-11-08","id":"csod:bradesco:94164","location":"OSASCO, SP, BR","reposts":1,"title":"Analista Segurança Corporativa JR"}
@@ -1063,7 +1068,9 @@
 {"company":"Bradesco","first_seen":"2026-11-16","id":"csod:bradesco:94176","location":"VACARIA, RS, BR","reposts":3,"title":"Gerente de Relacionamento Prime I"}
 {"company":"Bradesco","first_seen":"2026-11-16","id":"csod:bradesco:94180","location":"SAO PAULO, SP, BR","reposts":3,"title":"Gerente de Relacionamento Prime I"}
 {"company":"Bradesco","first_seen":"2026-11-16","id":"csod:bradesco:94182","location":"BAGE, RS, BR","reposts":3,"title":"Gerente de Relacionamento Prime I"}
+{"company":"Bradesco","first_seen":"2026-11-17","id":"csod:bradesco:94190","location":"GRAMADO, RS, BR","reposts":5,"title":"Gerente Contas Pessoa Jurídica I"}
 {"company":"Bradesco","first_seen":"2026-11-16","id":"csod:bradesco:94191","location":"MANAUS, AM, BR","reposts":3,"title":"Gerente de Relacionamento Prime I"}
+{"company":"Bradesco","first_seen":"2026-11-17","id":"csod:bradesco:94193","location":"VACARIA, RS, BR","reposts":5,"title":"Gerente Contas Pessoa Jurídica I"}
 {"company":"Bradesco","first_seen":"2026-11-16","id":"csod:bradesco:94194","location":"CURITIBA, PR, BR","reposts":3,"title":"Gerente de Relacionamento Prime I"}
 {"company":"Bradesco","first_seen":"2026-11-16","id":"csod:bradesco:94195","location":"ERECHIM, RS, BR","reposts":5,"title":"Gerente Contas Pessoa Jurídica I"}
 {"company":"Bradesco","first_seen":"2026-11-16","id":"csod:bradesco:94197","location":"SANTA ROSA, RS, BR","reposts":5,"title":"Gerente Contas Pessoa Jurídica I"}
@@ -1073,6 +1080,7 @@
 {"company":"Bradesco","first_seen":"2026-11-16","id":"csod:bradesco:94212","location":"CURITIBA, PR, BR","reposts":5,"title":"Gerente Contas Pessoa Jurídica I"}
 {"company":"Bradesco","first_seen":"2026-11-13","id":"csod:bradesco:94213","location":"CURITIBA, PR, BR","reposts":5,"title":"Gerente Contas Pessoa Jurídica I"}
 {"company":"Bradesco","first_seen":"2026-11-13","id":"csod:bradesco:94214","location":"SAO JOSE DOS PINHAIS, PR, BR","reposts":5,"title":"Gerente Contas Pessoa Jurídica I"}
+{"company":"Bradesco","first_seen":"2026-11-17","id":"csod:bradesco:94235","location":"JUINA, MT, BR","reposts":4,"title":"Gerente de Negócios e Serviços I"}
 {"company":"Bradesco","first_seen":"2026-11-08","id":"csod:bradesco:94270","location":"GOIANIA, GO, BR","reposts":1,"title":"♿ Gerente Assistente Empresas"}
 {"company":"Bradesco","first_seen":"2026-11-08","id":"csod:bradesco:94304","location":"OSASCO, SP, BR","title":"Analista Prevenção a Fraudes SR"}
 {"closed_at":"2026-11-09","company":"Bradesco","first_seen":"2026-11-08","id":"csod:bradesco:94338","location":"OSASCO, SP, BR","posted":"2026-05-11","title":"Analista Negocios Next PL"}
@@ -1117,8 +1125,8 @@
 {"closed_at":"2026-11-13","company":"Bradesco","first_seen":"2026-11-08","id":"csod:bradesco:94876","location":"OSASCO, SP, BR","reposts":2,"title":"Engenheiro de Segurança do Trabalho"}
 {"company":"Bradesco","first_seen":"2026-11-08","id":"csod:bradesco:94879","location":"OSASCO, SP, BR","title":"Enfermeiro do Trabalho I"}
 {"company":"Bradesco","first_seen":"2026-11-08","id":"csod:bradesco:94884","location":"OSASCO, SP, BR","reposts":1,"title":"Auxiliar de Enfermagem do Trabalho"}
-{"closed_at":"2026-11-10","company":"Bradesco","first_seen":"2026-11-08","id":"csod:bradesco:94895","location":"OSASCO, SP, BR","title":"GERENTE USER EXPERIENCE"}
-{"company":"Bradesco","first_seen":"2026-11-12","id":"csod:bradesco:94897","location":"OSASCO, SP, BR","title":"ANALISTA USER EXPERIENCE PL"}
+{"company":"Bradesco","first_seen":"2026-11-08","id":"csod:bradesco:94895","location":"OSASCO, SP, BR","title":"GERENTE USER EXPERIENCE"}
+{"company":"Bradesco","first_seen":"2026-11-12","id":"csod:bradesco:94897","location":"OSASCO, SP, BR","title":"Analista User Experience PL"}
 {"company":"Bradesco","first_seen":"2026-11-08","id":"csod:bradesco:94911","location":"OSASCO, SP, BR","title":"Analista de Inteligência de Negócios e Inovação PL"}
 {"company":"Bradesco","first_seen":"2026-11-16","id":"csod:bradesco:94929","location":"OSASCO, SP, BR","reposts":2,"title":"Analista Produtos PL"}
 {"company":"Bradesco","first_seen":"2026-11-16","id":"csod:bradesco:94930","location":"OSASCO, SP, BR","reposts":4,"title":"Analista Produtos SR"}
@@ -1129,23 +1137,35 @@
 {"company":"Bradesco","first_seen":"2026-11-09","id":"csod:bradesco:95051","location":"CUIABA, MT, BR","posted":"2026-09-11","reposts":4,"title":"Advisor Investimentos SR"}
 {"company":"Bradesco","first_seen":"2026-11-16","id":"csod:bradesco:95069","location":"SÃO PAULO, SP, BR","title":"Analista de Estratégia do Cliente SR - Bradesco Principal"}
 {"company":"Bradesco","first_seen":"2026-11-16","id":"csod:bradesco:95078","location":"SÃO PAULO, SP, BR","title":"Gerente Recuperação de Crédito I"}
+{"company":"Bradesco","first_seen":"2026-11-17","id":"csod:bradesco:95086","location":"SÃO PAULO, SP, BR","title":"Especialista de Recuperação de Crédito - Agronegócio"}
 {"company":"Bradesco","first_seen":"2026-11-16","id":"csod:bradesco:95088","location":"SÃO PAULO, SP, BR","title":"Gerente Recuperação de Crédito III"}
 {"company":"Bradesco","first_seen":"2026-11-16","id":"csod:bradesco:95099","location":"SÃO PAULO, SP, BR","title":"GERENTE RECUPERAÇÃO CRÉDITO II"}
 {"company":"Bradesco","first_seen":"2026-11-14","id":"csod:bradesco:95108","location":"SÃO PAULO, SP, BR","title":"Gerente de Recuperação de Crédito SR"}
 {"company":"Bradesco","first_seen":"2026-11-16","id":"csod:bradesco:95109","location":"BARUERI, SP, BR","reposts":5,"title":"Gerente Relacionamento Principal I"}
-{"company":"Bradesco","first_seen":"2026-11-16","id":"csod:bradesco:95112","location":"PETROPOLIS, RJ, BR","reposts":5,"title":"GERENTE RELACIONAMENTO PRINCIPAL I"}
+{"company":"Bradesco","first_seen":"2026-11-16","id":"csod:bradesco:95112","location":"PETROPOLIS, RJ, BR","reposts":5,"title":"Gerente Relacionamento Principal I"}
 {"company":"Bradesco","first_seen":"2026-11-16","id":"csod:bradesco:95116","location":"BARUERI, SP, BR","reposts":7,"title":"Gerente Relacionamento Principal II"}
+{"company":"Bradesco","first_seen":"2026-11-17","id":"csod:bradesco:95118","location":"CURITIBA, PR, BR","title":"Gerente Negócio Operações Principal"}
+{"company":"Bradesco","first_seen":"2026-11-17","id":"csod:bradesco:95119","location":"FLORIANOPOLIS, SC, BR","title":"Gerente de Negócios e Operações Principal | Florianópolis - SC"}
 {"company":"Bradesco","first_seen":"2026-11-16","id":"csod:bradesco:95120","location":"RIO DE JANEIRO, RJ, BR","title":"GERENTE NEGÓCIO OPERAÇÕES PRINCIPAL"}
-{"company":"Bradesco","first_seen":"2026-11-16","id":"csod:bradesco:95127","location":"Salvador, BA, BR","title":"GERENTE NEGÓCIO OPERAÇÕES PRINCIPAL"}
-{"company":"Bradesco","first_seen":"2026-11-16","id":"csod:bradesco:95128","location":"Vinhedo, SP, BR","title":"GERENTE NEGÓCIO OPERAÇÕES PRINCIPAL"}
-{"company":"Bradesco","first_seen":"2026-11-16","id":"csod:bradesco:95131","location":"FORTALEZA, CE, BR","title":"GERENTE NEGÓCIO OPERAÇÕES PRINCIPAL"}
-{"company":"Bradesco","first_seen":"2026-11-16","id":"csod:bradesco:95135","location":"GOIANIA, GO, BR","title":"GERENTE NEGÓCIO OPERAÇÕES PRINCIPAL"}
+{"company":"Bradesco","first_seen":"2026-11-16","id":"csod:bradesco:95127","location":"Salvador, BA, BR","title":"Gerente Negócio Operações Principal"}
+{"company":"Bradesco","first_seen":"2026-11-16","id":"csod:bradesco:95128","location":"Vinhedo, SP, BR","title":"Gerente Negócio Operações Principal"}
+{"company":"Bradesco","first_seen":"2026-11-17","id":"csod:bradesco:95130","location":"SÃO PAULO, SP, BR","title":"Gerente Negócios e Operações Principal | Edifício Dacon - SP"}
+{"company":"Bradesco","first_seen":"2026-11-16","id":"csod:bradesco:95131","location":"FORTALEZA, CE, BR","title":"Gerente Negócio Operações Principal"}
+{"company":"Bradesco","first_seen":"2026-11-17","id":"csod:bradesco:95132","location":"GOIANIA, GO, BR","title":"Gerente Negócio Operações Principal"}
+{"company":"Bradesco","first_seen":"2026-11-16","id":"csod:bradesco:95135","location":"GOIANIA, GO, BR","title":"Gerente Negócio Operações Principal"}
 {"company":"Bradesco","first_seen":"2026-11-16","id":"csod:bradesco:95136","location":"BARUERI, SP, BR","title":"Gerente Negócio Operações Principal"}
 {"company":"Bradesco","first_seen":"2026-11-16","id":"csod:bradesco:95150","location":"BARUERI, SP, BR","reposts":4,"title":"Gerente de Negócios e Operações Principal"}
-{"company":"Bradesco","first_seen":"2026-11-16","id":"csod:bradesco:95168","location":"BRASILIA, DF, BR","title":"GERENTE NEGÓCIO OPERAÇÕES PRINCIPAL"}
-{"company":"Bradesco","first_seen":"2026-11-16","id":"csod:bradesco:95169","location":"UBERABA, MG, BR","reposts":7,"title":"GERENTE RELACIONAMENTO PRINCIPAL II"}
+{"company":"Bradesco","first_seen":"2026-11-17","id":"csod:bradesco:95167","location":"PETROPOLIS, RJ, BR","reposts":9,"title":"Gerente Relacionamento Principal II"}
+{"company":"Bradesco","first_seen":"2026-11-16","id":"csod:bradesco:95168","location":"BRASILIA, DF, BR","title":"Gerente Negócio Operações Principal"}
+{"company":"Bradesco","first_seen":"2026-11-16","id":"csod:bradesco:95169","location":"UBERABA, MG, BR","reposts":7,"title":"Gerente Relacionamento Principal II"}
 {"company":"Bradesco","first_seen":"2026-11-12","id":"csod:bradesco:95186","location":"BR","posted":"2026-12-11","title":"Banco de Talentos | Gerente de Relacionamento Plataforma Prime I"}
 {"company":"Bradesco","first_seen":"2026-11-16","id":"csod:bradesco:95194","location":"VARGINHA, MG, BR","reposts":4,"title":"Gerente Relacionamento Empresas II"}
+{"company":"Bradesco","first_seen":"2026-11-17","id":"csod:bradesco:95197","location":"MACAE, RJ, BR","reposts":4,"title":"Gerente Relacionamento Empresas II"}
+{"company":"Bradesco","first_seen":"2026-11-17","id":"csod:bradesco:95200","location":"SAO CARLOS, SP, BR","reposts":4,"title":"Gerente Relacionamento Empresas II"}
+{"company":"Bradesco","first_seen":"2026-11-17","id":"csod:bradesco:95202","location":"RIBEIRAO PRETO, SP, BR","reposts":4,"title":"Gerente Relacionamento Empresas II"}
 {"company":"Bradesco","first_seen":"2026-11-16","id":"csod:bradesco:95209","location":"GUARULHOS, SP, BR","reposts":4,"title":"Gerente Relacionamento Empresas II"}
+{"company":"Bradesco","first_seen":"2026-11-17","id":"csod:bradesco:95212","location":"SAO PAULO, SP, BR","reposts":4,"title":"Gerente Relacionamento Empresas II"}
+{"company":"Bradesco","first_seen":"2026-11-17","id":"csod:bradesco:95213","location":"SAO BERNARDO DO CAMPO, SP, BR","reposts":4,"title":"Gerente Relacionamento Empresas II"}
+{"company":"Bradesco","first_seen":"2026-11-17","id":"csod:bradesco:95214","location":"SANTO ANDRE, SP, BR","reposts":4,"title":"Gerente Relacionamento Empresas II"}
 {"company":"Bradesco","first_seen":"2026-11-16","id":"csod:bradesco:95233","location":"SAO PAULO, SP, BR","reposts":6,"title":"Maior Aprendiz"}
 {"company":"Bradesco","first_seen":"2026-11-16","id":"csod:bradesco:95234","location":"SAO PAULO, SP, BR","reposts":6,"title":"Maior Aprendiz"}

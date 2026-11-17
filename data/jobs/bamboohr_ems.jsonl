@@ -34,6 +34,7 @@
 {"company":"Enterprise Management Solutions","employment":"contract","first_seen":"2026-11-08","id":"bamboohr:ems:368","location":"Baltimore, Maryland","title":"Program Assistant Intern 1"}
 {"company":"Enterprise Management Solutions","employment":"contract","first_seen":"2026-11-08","id":"bamboohr:ems:369","location":"Baltimore, Maryland","title":"Program Assistant Intern 2"}
 {"company":"Enterprise Management Solutions","employment":"contract","first_seen":"2026-11-08","id":"bamboohr:ems:383","location":"Baltimore, Maryland","title":"Program Assistant Intern 3"}
+{"company":"Enterprise Management Solutions","employment":"full_time","first_seen":"2026-11-17","id":"bamboohr:ems:392","location":"Baltimore, Maryland","title":"Chief Information Security Officer (CISO)"}
 {"company":"Enterprise Management Solutions","first_seen":"2026-11-08","id":"bamboohr:ems:405","remote":true,"title":"Athlete Representation Sales Consultant"}
 {"company":"Enterprise Management Solutions","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:ems:424","location":"Baltimore, Maryland","team":"Outpatient Mental Health Disorder Treatment","title":"Treatment Coordinator 1"}
 {"company":"Enterprise Management Solutions","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:ems:425","location":"Baltimore, Maryland","team":"Outpatient Mental Health Disorder Treatment","title":"Treatment Coordinator 2"}
@@ -74,7 +75,7 @@
 {"company":"Enterprise Management Solutions","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:ems:578","location":"Baltimore, Maryland","title":"Certified Peer Recovery Specialist"}
 {"company":"Enterprise Management Solutions","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:ems:579","location":"Baltimore, Maryland","team":"Outpatient Mental Health Disorder Treatment","title":"Treatment Coordinator"}
 {"company":"Enterprise Management Solutions","employment":"part_time","first_seen":"2026-11-08","id":"bamboohr:ems:583","location":"Baltimore, Maryland","title":"Operations Manager 12 (Physician/Clinical Director)"}
-{"company":"Enterprise Management Solutions","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:ems:584","location":"Baltimore, Maryland","team":"Psychiatric Rehabilitation","title":"Psychiatric Rehabilitation Specialist"}
+{"closed_at":"2026-11-17","company":"Enterprise Management Solutions","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:ems:584","location":"Baltimore, Maryland","team":"Psychiatric Rehabilitation","title":"Psychiatric Rehabilitation Specialist"}
 {"company":"Enterprise Management Solutions","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:ems:585","remote":true,"title":"Recovery Services Sales Specialist"}
 {"company":"Enterprise Management Solutions","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:ems:590","location":"Baltimore, Maryland","team":"Legal Operations","title":"Paralegal"}
 {"company":"Enterprise Management Solutions","first_seen":"2026-11-08","id":"bamboohr:ems:600","remote":true,"title":"OMHC Prior Authorization Specialist"}
@@ -105,3 +106,4 @@
 {"company":"Enterprise Management Solutions","employment":"full_time","first_seen":"2026-11-11","id":"bamboohr:ems:641","location":"Baltimore, Maryland","team":"Hospitality, Catering, and Food Service Staffing","title":"Operations Manager - Catering Services"}
 {"company":"Enterprise Management Solutions","employment":"full_time","first_seen":"2026-11-14","id":"bamboohr:ems:642","location":"Baltimore, Maryland","title":"Executive Director of Clinical Healthcare Operations"}
 {"company":"Enterprise Management Solutions","employment":"full_time","first_seen":"2026-11-16","id":"bamboohr:ems:643","location":"Baltimore, Maryland","team":"Outpatient Mental Health Disorder Treatment","title":"Counselor & Program Coordinator"}
+{"company":"Enterprise Management Solutions","employment":"full_time","first_seen":"2026-11-17","id":"bamboohr:ems:644","location":"Baltimore, Maryland","title":"Psychiatric Rehabilitation Specialist"}

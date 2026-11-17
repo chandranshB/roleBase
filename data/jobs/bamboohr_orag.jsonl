@@ -51,7 +51,7 @@
 {"company":"OpenRoad Auto","first_seen":"2026-11-08","id":"bamboohr:orag:4980","location":"Burnaby, British Columbia","team":"Service","title":"Service Advisor -OpenRoad Audi Boundary"}
 {"company":"OpenRoad Auto","first_seen":"2026-11-08","id":"bamboohr:orag:4981","location":"Burnaby, British Columbia","team":"Service","title":"Shop Helper- OpenRoad Audi Boundary"}
 {"company":"OpenRoad Auto","first_seen":"2026-11-08","id":"bamboohr:orag:4987","location":"Surrey, British Columbia","team":"Service","title":"Appointment Coordinator-OpenRoad Toyota Peace Arch"}
-{"company":"OpenRoad Auto","first_seen":"2026-11-08","id":"bamboohr:orag:4990","location":"Vancouver, British Columbia","team":"Sales - Business Office","title":"Financial Services Manager - The BMW Store"}
+{"closed_at":"2026-11-17","company":"OpenRoad Auto","first_seen":"2026-11-08","id":"bamboohr:orag:4990","location":"Vancouver, British Columbia","team":"Sales - Business Office","title":"Financial Services Manager - The BMW Store"}
 {"company":"OpenRoad Auto","first_seen":"2026-11-08","id":"bamboohr:orag:4992","location":"London, Ontario","team":"Service","title":"Apprentice Technician - Toyota Town"}
 {"company":"OpenRoad Auto","first_seen":"2026-11-08","id":"bamboohr:orag:4993","location":"Port Moody, British Columbia","team":"Sales","title":"Lot Associate- OpenRoad Lexus Port Moody"}
 {"company":"OpenRoad Auto","first_seen":"2026-11-08","id":"bamboohr:orag:4994","location":"Richmond, British Columbia","team":"Sales","title":"Product Advisor - OpenRoad Richmond Honda"}
@@ -66,7 +66,7 @@
 {"company":"OpenRoad Auto","first_seen":"2026-11-08","id":"bamboohr:orag:5013","location":"Surrey, British Columbia","team":"Service","title":"Technician - Honda Surrey"}
 {"company":"OpenRoad Auto","first_seen":"2026-11-08","id":"bamboohr:orag:5014","location":"Langley, British Columbia","team":"Sales","title":"Product Advisor - Jaguar Land Rover Langley"}
 {"company":"OpenRoad Auto","first_seen":"2026-11-08","id":"bamboohr:orag:5016","location":"Brampton, Ontario","team":"Sales","title":"Product Advisor - Brampton East Toyota"}
-{"company":"OpenRoad Auto","first_seen":"2026-11-08","id":"bamboohr:orag:5017","location":"Langley, British Columbia","team":"Service","title":"Licensed Technician - BMW/MINI Langley"}
+{"closed_at":"2026-11-17","company":"OpenRoad Auto","first_seen":"2026-11-08","id":"bamboohr:orag:5017","location":"Langley, British Columbia","team":"Service","title":"Licensed Technician - BMW/MINI Langley"}
 {"company":"OpenRoad Auto","first_seen":"2026-11-08","id":"bamboohr:orag:5018","location":"Langley, British Columbia","team":"Service","title":"Technician - Jaguar Land Rover Langley Service - Langley, British Columbia"}
 {"company":"OpenRoad Auto","first_seen":"2026-11-08","id":"bamboohr:orag:5019","location":"Surrey, British Columbia","team":"Sales","title":"Product Advisor Surrey Honda"}
 {"company":"OpenRoad Auto","first_seen":"2026-11-08","id":"bamboohr:orag:5021","location":"Vancouver, British Columbia","team":"Sales","title":"Lease Portfolio Specialist - The BMW Store"}
@@ -93,7 +93,7 @@
 {"company":"OpenRoad Auto","first_seen":"2026-11-08","id":"bamboohr:orag:5057","location":"Surrey, British Columbia","team":"Sales","title":"Sales Manager - OpenRoad Toyota Peace Arch"}
 {"closed_at":"2026-11-13","company":"OpenRoad Auto","first_seen":"2026-11-08","id":"bamboohr:orag:5058","location":"Abbotsford, British Columbia","team":"Service","title":"Apprentice Technician- OpenRoad Toyota Abbotsford"}
 {"company":"OpenRoad Auto","first_seen":"2026-11-08","id":"bamboohr:orag:5061","location":"Port Moody, British Columbia","team":"Sales","title":"Sales Manager - Lexus Port Moody"}
-{"company":"OpenRoad Auto","employment":"part_time","first_seen":"2026-11-08","id":"bamboohr:orag:5063","location":"Burnaby, British Columbia","team":"Sales","title":"Part-Time Reception Associate - OpenRoad Subaru Boundary"}
+{"closed_at":"2026-11-17","company":"OpenRoad Auto","employment":"part_time","first_seen":"2026-11-08","id":"bamboohr:orag:5063","location":"Burnaby, British Columbia","team":"Sales","title":"Part-Time Reception Associate - OpenRoad Subaru Boundary"}
 {"company":"OpenRoad Auto","first_seen":"2026-11-08","id":"bamboohr:orag:5064","location":"Brampton, Ontario","team":"Parts","title":"Parts Advisor - OpenRoad Honda"}
 {"company":"OpenRoad Auto","first_seen":"2026-11-08","id":"bamboohr:orag:5066","location":"London, Ontario","team":"Sales - Business Office","title":"Financial Services Manager - Toyota Town"}
 {"company":"OpenRoad Auto","first_seen":"2026-11-08","id":"bamboohr:orag:5067","location":"Burnaby, British Columbia","team":"Sales","title":"Sales Manager - OpenRoad Subaru Boundary"}
@@ -110,7 +110,7 @@
 {"company":"OpenRoad Auto","first_seen":"2026-11-08","id":"bamboohr:orag:5083","location":"Langley, British Columbia","team":"Sales","title":"Reception Associate - BMW/MINI Langley"}
 {"company":"OpenRoad Auto","first_seen":"2026-11-08","id":"bamboohr:orag:5084","location":"Langley, British Columbia","team":"Sales","title":"Sales Executive - Porsche Centre Langley"}
 {"company":"OpenRoad Auto","first_seen":"2026-11-08","id":"bamboohr:orag:5085","location":"Surrey, British Columbia","team":"Sales - Business Office","title":"Financial Services Manager - Mercedes-Benz Surrey"}
-{"company":"OpenRoad Auto","first_seen":"2026-11-08","id":"bamboohr:orag:5086","location":"Burnaby, British Columbia","team":"Service","title":"Car Wash Associate - OpenRoad Audi Boundary"}
+{"closed_at":"2026-11-17","company":"OpenRoad Auto","first_seen":"2026-11-08","id":"bamboohr:orag:5086","location":"Burnaby, British Columbia","team":"Service","title":"Car Wash Associate - OpenRoad Audi Boundary"}
 {"company":"OpenRoad Auto","employment":"part_time","first_seen":"2026-11-09","id":"bamboohr:orag:5088","location":"St Thomas, Ontario","skills":["customer_service"],"title":"Customer Service Associate - Part Time- Tommy's Express Car Wash"}
 {"company":"OpenRoad Auto","employment":"part_time","first_seen":"2026-11-09","id":"bamboohr:orag:5089","location":"St Thomas, Ontario","title":"Wash Technician - Part Time -  Tommy's Express Car Wash"}
 {"company":"OpenRoad Auto","first_seen":"2026-11-08","id":"bamboohr:orag:5090","location":"Richmond, British Columbia","team":"Marketing","title":"Events & Engagement Strategist OpenRoad Auto"}
@@ -127,6 +127,9 @@
 {"company":"OpenRoad Auto","first_seen":"2026-11-12","id":"bamboohr:orag:5103","location":"Burnaby, British Columbia","team":"Sales","title":"Audi Brand Specialist / Product Advisor - OpenRoad Audi Boundary"}
 {"company":"OpenRoad Auto","first_seen":"2026-11-12","id":"bamboohr:orag:5104","location":"Burnaby, British Columbia","team":"Finance","title":"General Accounting Associate - OpenRoad (Burnaby)"}
 {"company":"OpenRoad Auto","first_seen":"2026-11-13","id":"bamboohr:orag:5105","location":"London, Ontario","team":"Service","title":"Detail Associate - Toyota Town"}
-{"company":"OpenRoad Auto","first_seen":"2026-11-13","id":"bamboohr:orag:5106","location":"Surrey, British Columbia","team":"Sales","title":"Lot Associate - Mercedes-Benz Surrey"}
+{"closed_at":"2026-11-17","company":"OpenRoad Auto","first_seen":"2026-11-13","id":"bamboohr:orag:5106","location":"Surrey, British Columbia","team":"Sales","title":"Lot Associate - Mercedes-Benz Surrey"}
 {"closed_at":"2026-11-17","company":"OpenRoad Auto","first_seen":"2026-11-16","id":"bamboohr:orag:5107","location":"Richmond, British Columbia","team":"Sales","title":"Porsche Host - Porsche Centre Richmond"}
 {"company":"OpenRoad Auto","first_seen":"2026-11-17","id":"bamboohr:orag:5108","location":"Surrey, British Columbia","team":"Service","title":"Service Valet - Surrey Honda"}
+{"company":"OpenRoad Auto","first_seen":"2026-11-17","id":"bamboohr:orag:5109","location":"Abbotsford, British Columbia","team":"Sales","title":"Product Advisor - OpenRoad Toyota Abbotsford"}
+{"company":"OpenRoad Auto","first_seen":"2026-11-17","id":"bamboohr:orag:5110","location":"Langley, British Columbia","team":"Service","title":"Licensed Technician - BMW/MINI Langley"}
+{"company":"OpenRoad Auto","first_seen":"2026-11-17","id":"bamboohr:orag:5111","location":"Langley, British Columbia","team":"Service","title":"3rd/4th Year Apprentice - BMW/MINI Langley"}

@@ -15,8 +15,8 @@
 {"closed_at":"2026-10-08","company":"Cobre","first_seen":"2026-09-17","id":"greenhouse:cobre:4395704009","location":"Colombia","posted":"2026-09-17","team":"Cobre Financial","title":"Abogado - Cobre Financial"}
 {"company":"Cobre","first_seen":"2026-10-19","id":"greenhouse:cobre:4396896009","location":"Bogotá, Colombia","posted":"2026-09-04","team":"Contabilidad","title":"Accounting Specialist"}
 {"closed_at":"2026-10-08","company":"Cobre","first_seen":"2026-09-05","id":"greenhouse:cobre:4396899009","location":"México","posted":"2026-09-05","team":"Contabilidad","title":"Senior Accounting Analyst"}
-{"company":"Cobre","first_seen":"2026-10-19","id":"greenhouse:cobre:4396901009","location":"Colombia","posted":"2026-09-04","skills":["excel"],"team":"Compliance","title":"Transactional Monitoring Analyst","years":1}
-{"company":"Cobre","first_seen":"2026-10-19","id":"greenhouse:cobre:4402014009","location":"Bogotá, Colombia","posted":"2026-09-10","team":"Compliance","title":"Compliance & Due Diligence Analyst","years":3}
+{"closed_at":"2026-11-17","company":"Cobre","first_seen":"2026-10-19","id":"greenhouse:cobre:4396901009","location":"Colombia","posted":"2026-09-04","skills":["excel"],"team":"Compliance","title":"Transactional Monitoring Analyst","years":1}
+{"closed_at":"2026-11-17","company":"Cobre","first_seen":"2026-10-19","id":"greenhouse:cobre:4402014009","location":"Bogotá, Colombia","posted":"2026-09-10","team":"Compliance","title":"Compliance & Due Diligence Analyst","years":3}
 {"closed_at":"2026-10-14","company":"Cobre","first_seen":"2026-09-13","id":"greenhouse:cobre:4402066009","location":"Mexico","posted":"2026-09-10","team":"México","title":"Analista de Onboarding"}
 {"company":"Cobre","first_seen":"2026-10-19","id":"greenhouse:cobre:4407828009","location":"Colombia","posted":"2026-09-15","team":"Ciberseguridad","title":"Especialista en Riesgos Operacionales"}
 {"company":"Cobre","first_seen":"2026-10-19","id":"greenhouse:cobre:4423263009","location":"Colombia","posted":"2026-09-28","skills":["ci/cd","aws","kubernetes","git","terraform","python"],"team":"Tesored","title":"DevOps Engineer","years":5}

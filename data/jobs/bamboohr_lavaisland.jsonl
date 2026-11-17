@@ -29,7 +29,7 @@
 {"company":"Lava Island","employment":"full_time","first_seen":"2026-10-30","id":"bamboohr:lavaisland:294","location":"Lawrenceville, Georgia","team":"Leadership Team","title":"Assistant Manager"}
 {"closed_at":"2026-11-08","company":"Lava Island","employment":"full_time","first_seen":"2026-10-30","id":"bamboohr:lavaisland:295","location":"Lewisville, Texas","team":"Leadership Team","title":"Assistant Manager"}
 {"closed_at":"2026-11-08","company":"Lava Island","employment":"full_time","first_seen":"2026-10-30","id":"bamboohr:lavaisland:296","remote":true,"team":"HQ Events","title":"Party Coordinator"}
-{"company":"Lava Island","employment":"full_time","first_seen":"2026-10-30","id":"bamboohr:lavaisland:301","location":"Denver, Colorado","team":"Magma Core Solutions (MCS)","title":"Commercial Project Manager"}
+{"closed_at":"2026-11-17","company":"Lava Island","employment":"full_time","first_seen":"2026-10-30","id":"bamboohr:lavaisland:301","location":"Denver, Colorado","team":"Magma Core Solutions (MCS)","title":"Commercial Project Manager"}
 {"closed_at":"2026-11-16","company":"Lava Island","employment":"full_time","first_seen":"2026-10-30","id":"bamboohr:lavaisland:302","location":"Denver, Colorado","team":"Magma Core Solutions (MCS)","title":"Construction Coordinator"}
 {"closed_at":"2026-11-09","company":"Lava Island","employment":"full_time","first_seen":"2026-10-30","id":"bamboohr:lavaisland:303","location":"Eden Prairie, Minnesota","team":"Leadership Team","title":"Operations Manager"}
 {"closed_at":"2026-11-16","company":"Lava Island","employment":"full_time","first_seen":"2026-10-30","id":"bamboohr:lavaisland:304","location":"Englewood, Colorado","team":"Leadership Team","title":"Operations Manager"}
@@ -44,7 +44,7 @@
 {"company":"Lava Island","employment":"full_time","first_seen":"2026-10-30","id":"bamboohr:lavaisland:317","location":"Alpharetta, Georgia","team":"Leadership Team","title":"Operations Manager"}
 {"company":"Lava Island","employment":"full_time","first_seen":"2026-10-30","id":"bamboohr:lavaisland:318","location":"Aurora, Colorado","team":"HQ Events","title":"Brand Ambassador (Centennial)"}
 {"closed_at":"2026-11-09","company":"Lava Island","employment":"full_time","first_seen":"2026-10-30","id":"bamboohr:lavaisland:319","location":"Englewood, Colorado","team":"HQ Events","title":"Brand Ambassador"}
-{"company":"Lava Island","employment":"full_time","first_seen":"2026-10-30","id":"bamboohr:lavaisland:320","location":"Alpharetta, Georgia","team":"HQ Events","title":"Brand Ambassador"}
+{"closed_at":"2026-11-17","company":"Lava Island","employment":"full_time","first_seen":"2026-10-30","id":"bamboohr:lavaisland:320","location":"Alpharetta, Georgia","team":"HQ Events","title":"Brand Ambassador"}
 {"company":"Lava Island","employment":"full_time","first_seen":"2026-10-30","id":"bamboohr:lavaisland:321","location":"Billings, Montana","team":"HQ Events","title":"Brand Ambassador"}
 {"company":"Lava Island","employment":"full_time","first_seen":"2026-10-30","id":"bamboohr:lavaisland:322","location":"Saint Louis, Missouri","team":"HQ Events","title":"Brand Ambassador"}
 {"closed_at":"2026-11-09","company":"Lava Island","employment":"full_time","first_seen":"2026-10-30","id":"bamboohr:lavaisland:323","location":"Tucson, Arizona","team":"HQ Events","title":"Brand Ambassador"}
@@ -64,6 +64,11 @@
 {"company":"Lava Island","employment":"full_time","first_seen":"2026-11-11","id":"bamboohr:lavaisland:337","location":"The Woodlands, Texas","reposts":2,"team":"Leadership Team","title":"Operations Manager"}
 {"company":"Lava Island","employment":"full_time","first_seen":"2026-11-12","id":"bamboohr:lavaisland:338","remote":true,"reposts":1,"team":"HQ Events","title":"Party Coordinator"}
 {"company":"Lava Island","employment":"part_time","first_seen":"2026-11-12","id":"bamboohr:lavaisland:339","location":"Aurora, Colorado","skills":["bilingual","spanish"],"team":"HQ Events","title":"Brand Ambassador (Bilingual) Spanish"}
+{"company":"Lava Island","employment":"full_time","first_seen":"2026-11-17","id":"bamboohr:lavaisland:340","remote":true,"reposts":2,"team":"Magma Core Solutions (MCS)","title":"Commercial Construction Foreman"}
+{"company":"Lava Island","employment":"full_time","first_seen":"2026-11-17","id":"bamboohr:lavaisland:341","location":"Plano, Texas","reposts":2,"team":"Magma Core Solutions (MCS)","title":"Commercial Construction Foreman"}
+{"company":"Lava Island","employment":"full_time","first_seen":"2026-11-17","id":"bamboohr:lavaisland:342","remote":true,"reposts":2,"team":"Magma Core Solutions (MCS)","title":"Commercial Construction Foreman"}
+{"company":"Lava Island","employment":"full_time","first_seen":"2026-11-17","id":"bamboohr:lavaisland:343","remote":true,"reposts":2,"team":"Magma Core Solutions (MCS)","title":"Commercial Construction Foreman"}
+{"company":"Lava Island","employment":"full_time","first_seen":"2026-11-17","id":"bamboohr:lavaisland:344","location":"Denver, Colorado","team":"HQ Support Team","title":"Director of Real Estate"}
 {"company":"Lava Island","employment":"full_time","first_seen":"2026-10-30","id":"bamboohr:lavaisland:43","location":"Billings, Montana","team":"Facility Team","title":"Deep Clean Team Member"}
 {"company":"Lava Island","employment":"part_time","first_seen":"2026-11-08","id":"bamboohr:lavaisland:46","location":"Aurora, Colorado","team":"Guest Experience Team","title":"Crew Member (Aurora)"}
 {"company":"Lava Island","employment":"part_time","first_seen":"2026-10-30","id":"bamboohr:lavaisland:54","location":"Englewood, Colorado","team":"Guest Experience Team","title":"Crew Member"}

@@ -35,7 +35,7 @@
 {"company":"Carter Lumber","first_seen":"2026-10-30","id":"jazzhr:clumber:6j1yEVdnsC","skills":["cdl"],"title":"CDL Class A/B Driver"}
 {"company":"Carter Lumber","first_seen":"2026-10-30","id":"jazzhr:clumber:6p0uBTdpWe","title":"Yard Specialist - 1st shift"}
 {"company":"Carter Lumber","first_seen":"2026-10-30","id":"jazzhr:clumber:6p8jvkCHL1","title":"Sales Coordinator"}
-{"company":"Carter Lumber","first_seen":"2026-10-30","id":"jazzhr:clumber:6q2jtr23CZ","skills":["cdl"],"title":"Delivery Driver - CDL Class A/B"}
+{"closed_at":"2026-11-17","company":"Carter Lumber","first_seen":"2026-10-30","id":"jazzhr:clumber:6q2jtr23CZ","skills":["cdl"],"title":"Delivery Driver - CDL Class A/B"}
 {"company":"Carter Lumber","first_seen":"2026-11-08","id":"jazzhr:clumber:6qQBzuuhVT","title":"Project Manager"}
 {"company":"Carter Lumber","first_seen":"2026-11-08","id":"jazzhr:clumber:6tafZ0yOEC","title":"Outside Sales Representative"}
 {"company":"Carter Lumber","first_seen":"2026-11-08","id":"jazzhr:clumber:705Vo6MO9P","title":"Inside Sales Representative"}
@@ -75,6 +75,7 @@
 {"company":"Carter Lumber","first_seen":"2026-11-08","id":"jazzhr:clumber:BuqnNJLxH5","skills":["cdl"],"title":"CDL Class A/B Driver"}
 {"company":"Carter Lumber","first_seen":"2026-10-30","id":"jazzhr:clumber:CSMO4vMtSS","title":"Window Sales Specialist"}
 {"company":"Carter Lumber","first_seen":"2026-10-30","id":"jazzhr:clumber:CVJvlc0dey","title":"Dispatcher"}
+{"company":"Carter Lumber","first_seen":"2026-11-17","id":"jazzhr:clumber:CZHXte46XM","skills":["cdl"],"title":"Delivery Driver - CDL Class A/B"}
 {"company":"Carter Lumber","first_seen":"2026-10-30","id":"jazzhr:clumber:CdmS71ltvR","title":"Framing Field Supervisor"}
 {"company":"Carter Lumber","first_seen":"2026-10-30","id":"jazzhr:clumber:D8Ir0nCzfQ","title":"Installed Sales Coordinator"}
 {"company":"Carter Lumber","first_seen":"2026-11-08","id":"jazzhr:clumber:D8m9uRfWIF","skills":["cdl"],"title":"Box Truck Driver - Non CDL"}
@@ -85,12 +86,12 @@
 {"company":"Carter Lumber","first_seen":"2026-11-08","id":"jazzhr:clumber:DcbZdW32HD","skills":["cdl"],"title":"CDL Driver - Class A"}
 {"company":"Carter Lumber","first_seen":"2026-11-08","id":"jazzhr:clumber:E2Mxh9ten9","skills":["cdl"],"title":"Delivery Specialist Non-CDL"}
 {"company":"Carter Lumber","first_seen":"2026-10-30","id":"jazzhr:clumber:E54wIHpGLZ","title":"Window & Door Sales Specialist"}
-{"company":"Carter Lumber","first_seen":"2026-11-08","id":"jazzhr:clumber:EPRMrPShGg","skills":["cdl"],"title":"Delivery Driver - CDL Class A/B"}
+{"closed_at":"2026-11-17","company":"Carter Lumber","first_seen":"2026-11-08","id":"jazzhr:clumber:EPRMrPShGg","skills":["cdl"],"title":"Delivery Driver - CDL Class A/B"}
 {"company":"Carter Lumber","first_seen":"2026-10-30","id":"jazzhr:clumber:EWYc0c3wbA","skills":["cdl"],"title":"Non-CDL Driver"}
 {"closed_at":"2026-11-16","company":"Carter Lumber","first_seen":"2026-11-08","id":"jazzhr:clumber:EWgd0sLNPT","title":"Outside Sales Representative"}
 {"company":"Carter Lumber","first_seen":"2026-11-16","id":"jazzhr:clumber:EcCqI6KgPG","title":"Outside Sales Millwork Specialist"}
 {"company":"Carter Lumber","first_seen":"2026-11-08","id":"jazzhr:clumber:Ee4e7blaT6","title":"Inside Sales Representative"}
-{"company":"Carter Lumber","first_seen":"2026-11-08","id":"jazzhr:clumber:EhHmlCuso3","skills":["cdl"],"title":"Delivery Driver - CDL Class A/B"}
+{"closed_at":"2026-11-17","company":"Carter Lumber","first_seen":"2026-11-08","id":"jazzhr:clumber:EhHmlCuso3","skills":["cdl"],"title":"Delivery Driver - CDL Class A/B"}
 {"company":"Carter Lumber","first_seen":"2026-11-08","id":"jazzhr:clumber:Ei03eprZaJ","title":"Yard Specialist"}
 {"closed_at":"2026-11-09","company":"Carter Lumber","first_seen":"2026-11-08","id":"jazzhr:clumber:Ei4RJepEKY","skills":["cdl"],"title":"CDL Driver - Class A"}
 {"closed_at":"2026-11-16","company":"Carter Lumber","first_seen":"2026-11-08","id":"jazzhr:clumber:ErnH0TkvFG","skills":["cdl"],"title":"Box Truck Driver - Non-CDL"}
@@ -129,7 +130,7 @@
 {"company":"Carter Lumber","first_seen":"2026-11-08","id":"jazzhr:clumber:Ie7ovqRT6A","skills":["cdl"],"title":"Delivery Specialist - Non-CDL"}
 {"company":"Carter Lumber","first_seen":"2026-10-30","id":"jazzhr:clumber:Inx0hC6QS9","skills":["cdl"],"title":"Boom Truck Operator - CDL Class A"}
 {"company":"Carter Lumber","first_seen":"2026-11-16","id":"jazzhr:clumber:IqbdIcJ7rw","title":"Outside Sales Decking Specialist"}
-{"company":"Carter Lumber","first_seen":"2026-11-08","id":"jazzhr:clumber:IwyviZPhLg","skills":["cdl"],"title":"CDL Class B Driver"}
+{"closed_at":"2026-11-17","company":"Carter Lumber","first_seen":"2026-11-08","id":"jazzhr:clumber:IwyviZPhLg","skills":["cdl"],"title":"CDL Class B Driver"}
 {"company":"Carter Lumber","first_seen":"2026-11-08","id":"jazzhr:clumber:J2uMsSV1Sp","title":"Inside Sales Representative"}
 {"closed_at":"2026-11-16","company":"Carter Lumber","first_seen":"2026-11-08","id":"jazzhr:clumber:J2ulKGS7P9","title":"Outside Sales Millwork Specialist"}
 {"company":"Carter Lumber","first_seen":"2026-11-16","id":"jazzhr:clumber:JAcHt2TTgD","reposts":1,"skills":["cdl"],"title":"Delivery Driver - CDL Class A"}
@@ -137,6 +138,7 @@
 {"company":"Carter Lumber","first_seen":"2026-11-08","id":"jazzhr:clumber:JM5h1Xc4pg","title":"Installed Manager"}
 {"company":"Carter Lumber","first_seen":"2026-11-08","id":"jazzhr:clumber:JQs6BIzM8N","title":"Sales Support"}
 {"company":"Carter Lumber","first_seen":"2026-11-08","id":"jazzhr:clumber:JiQoRiSFWd","title":"Kitchen & Bath Designer"}
+{"company":"Carter Lumber","first_seen":"2026-11-17","id":"jazzhr:clumber:JiTG3a7Lth","skills":["cdl"],"title":"Delivery Driver - CDL Class A/B"}
 {"company":"Carter Lumber","first_seen":"2026-11-16","id":"jazzhr:clumber:JpQKdlLktd","title":"Outside Sales Millwork Specialist"}
 {"company":"Carter Lumber","first_seen":"2026-11-08","id":"jazzhr:clumber:JwUY6uSA2Q","title":"Outside Sales Representative"}
 {"company":"Carter Lumber","first_seen":"2026-11-16","id":"jazzhr:clumber:JyOwDiiB9R","title":"Box Truck Driver"}
@@ -204,6 +206,7 @@
 {"company":"Carter Lumber","first_seen":"2026-11-08","id":"jazzhr:clumber:UQCNjtmPf2","title":"Yard Specialist"}
 {"company":"Carter Lumber","first_seen":"2026-11-08","id":"jazzhr:clumber:UTzh3EvOrR","title":"Warehouse Specialist"}
 {"company":"Carter Lumber","first_seen":"2026-11-08","id":"jazzhr:clumber:Ue3mjngdFs","title":"Installed Sales Construction Project Supervisor"}
+{"company":"Carter Lumber","first_seen":"2026-11-17","id":"jazzhr:clumber:V3tTqLMDs6","skills":["cdl"],"title":"Delivery Driver - CDL Class A/B"}
 {"company":"Carter Lumber","first_seen":"2026-11-08","id":"jazzhr:clumber:V8nsIyVFA3","skills":["cdl"],"title":"CDL Driver - Class A"}
 {"company":"Carter Lumber","first_seen":"2026-11-09","id":"jazzhr:clumber:VAs2awDHeS","title":"Truss Assembler - 1st Shift"}
 {"company":"Carter Lumber","first_seen":"2026-11-08","id":"jazzhr:clumber:VG8j0co55S","title":"Installed Manager"}
@@ -336,6 +339,7 @@
 {"company":"Carter Lumber","first_seen":"2026-11-16","id":"jazzhr:clumber:qS9WlohZrI","title":"Components Sales Representative"}
 {"company":"Carter Lumber","first_seen":"2026-11-08","id":"jazzhr:clumber:qdiV9PaBiu","skills":["cdl"],"title":"Delivery Driver - CDL Class A/B"}
 {"company":"Carter Lumber","first_seen":"2026-11-08","id":"jazzhr:clumber:r68GS8k3KP","title":"Inside Sales Representative"}
+{"company":"Carter Lumber","first_seen":"2026-11-17","id":"jazzhr:clumber:rFhYKOHwuA","skills":["cdl"],"title":"Delivery Driver - CDL Class A/B"}
 {"company":"Carter Lumber","first_seen":"2026-11-08","id":"jazzhr:clumber:rZK1JVggWo","title":"Cashier - Building Materials"}
 {"company":"Carter Lumber","first_seen":"2026-11-08","id":"jazzhr:clumber:rhQkiJML5Y","title":"Outside Sales Representative"}
 {"company":"Carter Lumber","first_seen":"2026-11-08","id":"jazzhr:clumber:rpuUoybgPi","skills":["cdl"],"title":"Delivery Driver Non-CDL"}
@@ -348,7 +352,7 @@
 {"company":"Carter Lumber","first_seen":"2026-10-30","id":"jazzhr:clumber:ssYtnfi0O3","title":"EWP Sawyer"}
 {"company":"Carter Lumber","first_seen":"2026-10-30","id":"jazzhr:clumber:t6S97jfaVx","title":"CNC Operator"}
 {"company":"Carter Lumber","first_seen":"2026-11-16","id":"jazzhr:clumber:t77N3cHUw9","reposts":4,"title":"Yard Specialist"}
-{"company":"Carter Lumber","first_seen":"2026-11-08","id":"jazzhr:clumber:tRcoMaU88C","skills":["cdl"],"title":"Delivery Driver - CDL Class A/B"}
+{"closed_at":"2026-11-17","company":"Carter Lumber","first_seen":"2026-11-08","id":"jazzhr:clumber:tRcoMaU88C","skills":["cdl"],"title":"Delivery Driver - CDL Class A/B"}
 {"company":"Carter Lumber","first_seen":"2026-10-30","id":"jazzhr:clumber:tSRP9MKE3y","title":"Outside Sales Representative - Commercial/Multi-Family"}
 {"company":"Carter Lumber","first_seen":"2026-11-08","id":"jazzhr:clumber:tqIcjxwNE0","title":"Inside Sales Representative"}
 {"company":"Carter Lumber","first_seen":"2026-11-08","id":"jazzhr:clumber:tvBGwvadRa","title":"Yard Specialist"}

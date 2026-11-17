@@ -90,12 +90,12 @@
 {"company":"Arizona Western College","first_seen":"2026-11-08","id":"csod:azwestern:5397","location":"Yuma, AZ, US","posted":"2026-07-09","title":"PT - Adjunct Faculty, Mathematics"}
 {"company":"Arizona Western College","first_seen":"2026-11-08","id":"csod:azwestern:5402","location":"Yuma, AZ, US","posted":"2025-06-12","title":"PT - Adjunct Faculty, Computer Information Systems (CIS)"}
 {"company":"Arizona Western College","first_seen":"2026-11-08","id":"csod:azwestern:5410","location":"Yuma, AZ, US","posted":"2025-06-12","title":"PT - Adjunct Faculty, Philosophy"}
-{"company":"Arizona Western College","first_seen":"2026-11-08","id":"csod:azwestern:5413","location":"Yuma, AZ, US","posted":"2025-06-17","title":"PT - Adjunct Faculty, Automotive Technology"}
+{"closed_at":"2026-11-17","company":"Arizona Western College","first_seen":"2026-11-08","id":"csod:azwestern:5413","location":"Yuma, AZ, US","posted":"2025-06-17","title":"PT - Adjunct Faculty, Automotive Technology"}
 {"company":"Arizona Western College","first_seen":"2026-11-08","id":"csod:azwestern:5414","location":"Yuma, AZ, US","posted":"2025-06-17","title":"PT - Adjunct Faculty, Heating, Ventilation and Air Conditioning (HVAC)"}
 {"company":"Arizona Western College","first_seen":"2026-11-08","id":"csod:azwestern:5415","location":"Yuma, AZ, US","posted":"2025-06-17","title":"PT - Adjunct Faculty, Culinary Arts"}
 {"company":"Arizona Western College","first_seen":"2026-11-08","id":"csod:azwestern:5416","location":"Yuma, AZ, US","posted":"2025-06-17","skills":["osha"],"title":"PT - Adjunct Faculty, Technology (OSHA)"}
 {"company":"Arizona Western College","first_seen":"2026-11-08","id":"csod:azwestern:5417","location":"Yuma, AZ, US","posted":"2025-06-17","title":"PT - Adjunct Faculty, Carpentry/Construction"}
-{"company":"Arizona Western College","first_seen":"2026-11-08","id":"csod:azwestern:5418","location":"Yuma, AZ, US","posted":"2025-06-17","skills":["welding"],"title":"PT - Adjunct Faculty, Welding"}
+{"closed_at":"2026-11-17","company":"Arizona Western College","first_seen":"2026-11-08","id":"csod:azwestern:5418","location":"Yuma, AZ, US","posted":"2025-06-17","skills":["welding"],"title":"PT - Adjunct Faculty, Welding"}
 {"company":"Arizona Western College","first_seen":"2026-11-08","id":"csod:azwestern:5445","location":"Yuma, AZ, US","posted":"2025-07-31","title":"PT - Adjunct Faculty, Allied Health"}
 {"company":"Arizona Western College","first_seen":"2026-11-08","id":"csod:azwestern:5477","location":"Yuma, AZ, US","posted":"2025-09-30","title":"PT - Nursing Program Clinical Instructor"}
 {"company":"Arizona Western College","first_seen":"2026-11-08","id":"csod:azwestern:5530","location":"US","posted":"2026-02-10","title":"Adjunct Faculty - Wellness and Physical Education"}
@@ -121,5 +121,6 @@
 {"company":"Arizona Western College","first_seen":"2026-11-08","id":"csod:azwestern:5699","location":"US","posted":"2026-11-04","reposts":1,"title":"PT - Child Development Learning Laboratory (CDLL) Teacher Aide"}
 {"company":"Arizona Western College","first_seen":"2026-11-08","id":"csod:azwestern:5700","location":"Yuma, AZ, US","posted":"2026-11-04","title":"PT - Instructor, Commercial Driver's License"}
 {"company":"Arizona Western College","first_seen":"2026-11-09","id":"csod:azwestern:5701","location":"Yuma, AZ, US","posted":"2026-11-09","title":"PT - Military and Veteran Services Specialist"}
-{"company":"Arizona Western College","first_seen":"2026-11-16","id":"csod:azwestern:5702","location":"Yuma, AZ, US","posted":"2026-11-16","title":"Senior Budget and Financial Analyst"}
+{"closed_at":"2026-11-17","company":"Arizona Western College","first_seen":"2026-11-16","id":"csod:azwestern:5702","location":"Yuma, AZ, US","posted":"2026-11-16","title":"Senior Budget and Financial Analyst"}
 {"company":"Arizona Western College","first_seen":"2026-11-16","id":"csod:azwestern:5703","location":"Yuma, AZ, US","posted":"2026-11-16","title":"Financial Aid Disbursement Senior Accountant"}
+{"company":"Arizona Western College","first_seen":"2026-11-17","id":"csod:azwestern:5708","location":"Yuma, AZ, US","posted":"2026-11-17","title":"PT - Wrap-Around Support Specialist"}

@@ -1,17 +1,18 @@
-{"company":"Towson University","first_seen":"2026-11-17","id":"taleo:towson:176487","location":"2400010X","title":"High Voltage Electrician"}
-{"company":"Towson University","first_seen":"2026-11-17","id":"taleo:towson:180827","location":"Main Campus","title":"Maintenance Mechanic Lead- Night Shift"}
-{"company":"Towson University","first_seen":"2026-11-17","id":"taleo:towson:191709","location":"Main Campus","title":"Assistant Football Coach"}
+{"closed_at":"2026-11-17","company":"Towson University","first_seen":"2026-11-17","id":"taleo:towson:176487","location":"2400010X","title":"High Voltage Electrician"}
+{"closed_at":"2026-11-17","company":"Towson University","first_seen":"2026-11-17","id":"taleo:towson:180827","location":"Main Campus","title":"Maintenance Mechanic Lead- Night Shift"}
+{"closed_at":"2026-11-17","company":"Towson University","first_seen":"2026-11-17","id":"taleo:towson:191709","location":"Main Campus","title":"Assistant Football Coach"}
 {"company":"Towson University","first_seen":"2026-11-08","id":"taleo:towson:193048","location":"Main Campus","title":"University Police Officer III"}
 {"company":"Towson University","first_seen":"2026-11-08","id":"taleo:towson:194390","location":"Main Campus","title":"Postdoctoral Teaching Fellow"}
-{"company":"Towson University","first_seen":"2026-11-10","id":"taleo:towson:194530","location":"Main Campus","title":"Coordinator, New Student and Family Programs"}
+{"closed_at":"2026-11-17","company":"Towson University","first_seen":"2026-11-10","id":"taleo:towson:194530","location":"Main Campus","title":"Coordinator, New Student and Family Programs"}
 {"company":"Towson University","first_seen":"2026-11-10","id":"taleo:towson:194850","location":"Main Campus","title":"Steamfitter"}
 {"company":"Towson University","first_seen":"2026-11-08","id":"taleo:towson:195210","location":"Main Campus","title":"Groundskeeper"}
-{"company":"Towson University","first_seen":"2026-11-17","id":"taleo:towson:197899","location":"260000KD","title":"Electrician"}
+{"closed_at":"2026-11-17","company":"Towson University","first_seen":"2026-11-17","id":"taleo:towson:197899","location":"260000KD","title":"Electrician"}
 {"company":"Towson University","first_seen":"2026-11-10","id":"taleo:towson:198356","location":"Main Campus","skills":["payroll"],"title":"Senior Payroll Processing Supervisor"}
 {"company":"Towson University","first_seen":"2026-11-08","id":"taleo:towson:199097","location":"Main Campus","title":"Lead Teacher"}
 {"company":"Towson University","first_seen":"2026-11-10","id":"taleo:towson:199137","location":"Main Campus","title":"Police Communications Operator"}
 {"closed_at":"2026-11-10","company":"Towson University","first_seen":"2026-11-08","id":"taleo:towson:199339","location":"Main Campus","title":"Staff Psychologist"}
 {"company":"Towson University","first_seen":"2026-11-08","id":"taleo:towson:199559","location":"Main Campus","title":"Athletic Trainer"}
+{"company":"Towson University","first_seen":"2026-11-17","id":"taleo:towson:199759","location":"Main Campus","title":"MT Multi Trades Chief II"}
 {"company":"Towson University","first_seen":"2026-11-08","id":"taleo:towson:199820","location":"260000QW","title":"Director of Research IT"}
 {"company":"Towson University","first_seen":"2026-11-08","id":"taleo:towson:199901","location":"Main Campus","title":"Insurance and Billing Specialist II- Contractual"}
 {"company":"Towson University","first_seen":"2026-11-08","id":"taleo:towson:199919","location":"Main Campus","title":"Plumber"}
@@ -29,11 +30,13 @@
 {"company":"Towson University","first_seen":"2026-11-08","id":"taleo:towson:200459","location":"Main Campus","title":"Public Safety Officer"}
 {"closed_at":"2026-11-14","company":"Towson University","first_seen":"2026-11-08","id":"taleo:towson:200462","location":"Main Campus","title":"Coordinator, Facilities and Events"}
 {"closed_at":"2026-11-17","company":"Towson University","first_seen":"2026-11-08","id":"taleo:towson:200480","location":"Main Campus","title":"Academic Program Specialist, Towson Learning Network"}
-{"closed_at":"2026-11-13","company":"Towson University","first_seen":"2026-11-08","id":"taleo:towson:200520","location":"Main Campus","title":"Stationary Engineer High Temp/Press, 3rd Shift"}
-{"closed_at":"2026-11-13","company":"Towson University","first_seen":"2026-11-08","id":"taleo:towson:200521","location":"Main Campus","title":"Stationary Engineer High Temp/Press 2nd Shift"}
+{"company":"Towson University","first_seen":"2026-11-08","id":"taleo:towson:200520","location":"Main Campus","title":"Stationary Engineer High Temp/Press, 3rd Shift"}
+{"company":"Towson University","first_seen":"2026-11-08","id":"taleo:towson:200521","location":"Main Campus","title":"Stationary Engineer High Temp/Press 2nd Shift"}
 {"company":"Towson University","first_seen":"2026-11-14","id":"taleo:towson:200640","location":"Main Campus","title":"UPO I"}
 {"company":"Towson University","first_seen":"2026-11-11","id":"taleo:towson:200659","location":"Main Campus","title":"Clinic Coordinator"}
 {"company":"Towson University","first_seen":"2026-11-08","id":"taleo:towson:200719","location":"Main Campus","title":"Senior Vice President for Legal Affairs and General Counsel"}
+{"company":"Towson University","first_seen":"2026-11-17","id":"taleo:towson:200819","location":"Main Campus","title":"Senior Maintenance Mechanic"}
+{"company":"Towson University","first_seen":"2026-11-17","id":"taleo:towson:200879","location":"Main Campus","title":"Maintenance Mechanic"}
 {"closed_at":"2026-11-08","company":"Towson University","first_seen":"2026-10-04","id":"taleo:towson:enterprise/ex/176487","title":"176487","url":"https://towson.taleo.net/careersection/ex/jobdetail.ftl?job=2400010X"}
 {"closed_at":"2026-11-08","company":"Towson University","first_seen":"2026-10-04","id":"taleo:towson:enterprise/ex/180827","title":"180827","url":"https://towson.taleo.net/careersection/ex/jobdetail.ftl?job=2500004Q"}
 {"closed_at":"2026-11-08","company":"Towson University","first_seen":"2026-10-04","id":"taleo:towson:enterprise/ex/186227","title":"186227","url":"https://towson.taleo.net/careersection/ex/jobdetail.ftl?job=250000EW"}

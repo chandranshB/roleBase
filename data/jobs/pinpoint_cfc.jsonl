@@ -38,10 +38,12 @@
 {"company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:8e5675f0-78bd-4af7-9e7d-02aa7955a6a5","location":"US - Texas","skills":["time_management","ms_office"],"title":"Executive Assistant"}
 {"company":"CFC","first_seen":"2026-10-27","id":"pinpoint:cfc:8f5a8895-d2ba-424b-8ae1-f6537000f503","location":"UK - London","skills":["project_management"],"title":"Cyber Incident Manager"}
 {"company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:8f6fa87c-8318-4a0a-9a3c-442f7df0588c","location":"UK - London","skills":["time_management"],"title":"Senior Product Developer (Wordings)"}
+{"company":"CFC","first_seen":"2026-11-17","id":"pinpoint:cfc:90ac7d1d-5fed-4cc4-8de4-1ee296364b68","location":"UK - London","skills":["sql","azure","postgres","nosql"],"title":"Database Administrator"}
 {"company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:92875b89-b60c-4626-928c-3c97b980d262","location":"AU - Melbourne","skills":["excel","time_management"],"title":"Operations Analyst"}
 {"company":"CFC","first_seen":"2026-10-19","id":"pinpoint:cfc:941d1626-8a4f-4bd7-bee4-76fad6cf9ad3","location":"AU - Sydney","title":"Senior Underwriter - Financial Lines","years":4}
 {"company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:971f1dcc-f54d-4d06-9bcd-d8732766b98a","location":"UK - London","title":"Compliance Manager - Conduct"}
 {"company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:9a85c34c-c93d-4308-a3a3-5363249dfa1e","location":"UK - London","title":"Threat Intelligence Analyst"}
+{"company":"CFC","first_seen":"2026-11-17","id":"pinpoint:cfc:9f61dc94-a623-4885-b055-e768a886792a","location":"UK - London","skills":["azure","agile","jira"],"title":"Infrastructure Business Analyst"}
 {"company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:a3b8ef3d-a9a9-4a9f-8b7f-1812c6e0b289","location":"CA - Ontario","skills":["customer_service"],"title":"Claims Specialist, P&C"}
 {"company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:a6dde5cf-99ee-43a3-b1ea-05f8df072cfb","location":"UK - London","title":"Business Resumption Engineer","years":3}
 {"company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:a725875c-2262-4197-b18b-4f121a36b161","location":"US - Texas","skills":["azure"],"title":"Infrastructure Operations Engineer"}
@@ -59,6 +61,7 @@
 {"company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:ca06a7ac-4bfb-4f1a-93bb-cf3af5fd3edc","location":"UK - London","skills":["ml","llm","ci/cd","python","sql","azure","databricks","docker"],"title":"Data Scientist"}
 {"company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:cc5fa3d0-058b-4efd-a6b0-1a5df4a03d4c","location":"UK - London","title":"Senior Reporting Accountant"}
 {"company":"CFC","first_seen":"2026-11-12","id":"pinpoint:cfc:d0013fbb-45d3-4f7b-a798-559c75b5ac88","location":"US - New York","pay":[68000,90000,"USD"],"skills":["ms_office"],"title":"Transaction Liability Underwriting Assistant"}
+{"company":"CFC","first_seen":"2026-11-17","id":"pinpoint:cfc:d59f8e7f-8ff0-405e-979f-6566b012e090","location":"UK - London","skills":["databricks","snowflake","sql","python","tableau","azure"],"title":"Principle BI Architect & Engineer"}
 {"company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:d79607fb-62fc-4827-89eb-b544cd9c34ea","location":"US - New York","pay":[120000,160000,"USD"],"title":"Life Science Underwriter"}
 {"company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:dbcd3571-1a6b-4d18-9cc9-1ee629a9e4c8","location":"AU - Melbourne","skills":["customer_service"],"title":"Claims Specialist","years":3}
 {"company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:de43b1e1-b78c-463e-a755-0593c117db00","location":"US - New York","pay":[90000,100000,"USD"],"skills":["ms_office"],"title":"Cyber SME Underwriter"}
@@ -73,3 +76,4 @@
 {"closed_at":"2026-11-12","company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:f3aabe89-dd3f-40c0-9bfe-456e19f53a2b","location":"US - New York","pay":[125000,135000,"USD"],"skills":["customer_service","azure","jira"],"title":"End User Technology (EUT) – Services Engineer, US","years":7}
 {"company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:f5263bf0-ccef-4703-930b-4d2baa8fc782","location":"UK - London","skills":["ci/cd","supply_chain"],"title":"Principal Product Security Engineer"}
 {"company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:f93f6bc2-386b-4234-852f-843da308c7d2","location":"UK - London","skills":["ci/cd"],"title":"Senior Security Engineer"}
+{"company":"CFC","first_seen":"2026-11-17","id":"pinpoint:cfc:ff74dc93-03fa-4e83-983f-b87b5e63041d","location":"US - Texas","skills":["python","spark","sql","azure","aws","gcp"],"title":"Lead Data Engineer (Hybrid, office is based in Austin, Texas)"}

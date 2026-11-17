@@ -8,25 +8,26 @@
 {"company":"Irium","first_seen":"2026-11-08","id":"jazzhr:iriumspain:9xY430MzEs","title":"Técnico Especialista Backup IBM"}
 {"company":"Irium","first_seen":"2026-11-11","id":"jazzhr:iriumspain:AYsC8mu6oY","title":"Senior Project Manager (PMO & Governance)"}
 {"closed_at":"2026-11-10","company":"Irium","first_seen":"2026-11-08","id":"jazzhr:iriumspain:BFheqvJOKO","skills":["postgres"],"title":"Senior PostgreSQL DBA - Madrid / Málaga hybrid"}
-{"company":"Irium","first_seen":"2026-11-10","id":"jazzhr:iriumspain:BgfbNX5UYC","skills":["kubernetes"],"title":"DevSecOps Engineer - Kubernetes"}
+{"closed_at":"2026-11-17","company":"Irium","first_seen":"2026-11-10","id":"jazzhr:iriumspain:BgfbNX5UYC","skills":["kubernetes"],"title":"DevSecOps Engineer - Kubernetes"}
 {"closed_at":"2026-11-08","company":"Irium","first_seen":"2026-10-30","id":"jazzhr:iriumspain:CwholEFDuh","title":"Workplace Administrator Microsoft 365"}
 {"company":"Irium","first_seen":"2026-11-16","id":"jazzhr:iriumspain:DG72sUy0g4","title":"Técnico de Operaciones IT / Application Support (Infraestructura y Sistemas)"}
 {"closed_at":"2026-11-10","company":"Irium","first_seen":"2026-10-30","id":"jazzhr:iriumspain:EY6JgfgS9x","title":"Senior Automation Engineer – AI"}
 {"closed_at":"2026-11-10","company":"Irium","first_seen":"2026-10-30","id":"jazzhr:iriumspain:FoqbhK2KJN","title":"Fullstack Developer"}
 {"closed_at":"2026-11-08","company":"Irium","first_seen":"2026-10-30","id":"jazzhr:iriumspain:GvSP41iFXO","title":"ServiceNow Platform Architect"}
-{"company":"Irium","first_seen":"2026-11-10","id":"jazzhr:iriumspain:IQdLhKaufh","title":"Storage administrator Senior"}
+{"closed_at":"2026-11-17","company":"Irium","first_seen":"2026-11-10","id":"jazzhr:iriumspain:IQdLhKaufh","title":"Storage administrator Senior"}
 {"company":"Irium","first_seen":"2026-11-08","id":"jazzhr:iriumspain:NAnzj7PW0z","title":"Técnico/a CyberArk PAM"}
 {"company":"Irium","first_seen":"2026-11-08","id":"jazzhr:iriumspain:NaGMUb0YzD","title":"Consultor Senior Factura Electrónica"}
 {"company":"Irium","first_seen":"2026-10-30","id":"jazzhr:iriumspain:OyfjXNwKLG","skills":["sap"],"title":"Consultor/a SAP BRIM"}
-{"company":"Irium","first_seen":"2026-11-10","id":"jazzhr:iriumspain:PebWTtoM6g","skills":["postgres"],"title":"PostgreSQL Database Administrator (DBA)"}
+{"company":"Irium","first_seen":"2026-11-17","id":"jazzhr:iriumspain:PZxkqX8ZeE","skills":["salesforce"],"title":"Analista funcional Salesforce"}
+{"closed_at":"2026-11-17","company":"Irium","first_seen":"2026-11-10","id":"jazzhr:iriumspain:PebWTtoM6g","skills":["postgres"],"title":"PostgreSQL Database Administrator (DBA)"}
 {"company":"Irium","first_seen":"2026-10-30","id":"jazzhr:iriumspain:PsiGPgYISi","skills":["aws"],"title":"generative ai engineer/aws architect – madrid"}
-{"closed_at":"2026-11-11","company":"Irium","first_seen":"2026-10-30","id":"jazzhr:iriumspain:QBOp9znWm1","title":"Técnico de Mantenimiento Cobol"}
-{"company":"Irium","first_seen":"2026-11-10","id":"jazzhr:iriumspain:QTntBASQed","skills":["azure"],"title":"Senior DevOps Engineer - Azure"}
+{"company":"Irium","first_seen":"2026-10-30","id":"jazzhr:iriumspain:QBOp9znWm1","title":"Técnico de Mantenimiento Cobol"}
+{"closed_at":"2026-11-17","company":"Irium","first_seen":"2026-11-10","id":"jazzhr:iriumspain:QTntBASQed","skills":["azure"],"title":"Senior DevOps Engineer - Azure"}
 {"closed_at":"2026-11-10","company":"Irium","first_seen":"2026-10-30","id":"jazzhr:iriumspain:SLgHD0VWOr","skills":["aws"],"title":"Generative AI Engineer & AWS Architect"}
 {"closed_at":"2026-11-08","company":"Irium","first_seen":"2026-10-30","id":"jazzhr:iriumspain:SqnvPxoyVq","title":"Temenos Digital Functional Expert"}
 {"company":"Irium","first_seen":"2026-10-30","id":"jazzhr:iriumspain:SypWqCZlMc","skills":["sap"],"title":"Consultor/a sap sd con conocimientos de edi"}
 {"company":"Irium","first_seen":"2026-11-11","id":"jazzhr:iriumspain:T6kFt2Qmzw","title":"Desarrollador IBM Integration Bus (IIB/WMB)"}
-{"company":"Irium","first_seen":"2026-11-10","id":"jazzhr:iriumspain:UWcLFXtLBi","title":"Power Platform Developer"}
+{"closed_at":"2026-11-17","company":"Irium","first_seen":"2026-11-10","id":"jazzhr:iriumspain:UWcLFXtLBi","title":"Power Platform Developer"}
 {"closed_at":"2026-11-11","company":"Irium","first_seen":"2026-10-30","id":"jazzhr:iriumspain:VZxdLv8EBh","title":"Especialista Sterling"}
 {"closed_at":"2026-11-08","company":"Irium","first_seen":"2026-10-30","id":"jazzhr:iriumspain:VbgjDArzIS","title":"COBOL functional analyst – Banking"}
 {"closed_at":"2026-11-11","company":"Irium","first_seen":"2026-11-08","id":"jazzhr:iriumspain:WMOK7Pi95l","skills":["postgres"],"title":"Senior PostgreSQL DBA"}
@@ -36,12 +37,14 @@
 {"closed_at":"2026-11-08","company":"Irium","first_seen":"2026-10-30","id":"jazzhr:iriumspain:XkwvFX8LwP","title":"iOS Developer"}
 {"company":"Irium","first_seen":"2026-10-30","id":"jazzhr:iriumspain:Y7MoTUXF6I","title":"Senior Software Engineer"}
 {"closed_at":"2026-11-08","company":"Irium","first_seen":"2026-10-30","id":"jazzhr:iriumspain:avPUZE1lEd","title":"Especialista Middleware"}
+{"company":"Irium","first_seen":"2026-11-17","id":"jazzhr:iriumspain:cucTg6usEh","title":"IT Continuity Analyst - Business Continuity, DRP, DORA"}
 {"company":"Irium","first_seen":"2026-10-30","id":"jazzhr:iriumspain:eWZSf9NBGI","skills":["crm"],"title":"data engineer – modeling, pricing, crm – remoto"}
+{"company":"Irium","first_seen":"2026-11-17","id":"jazzhr:iriumspain:fgVKUnPkPa","title":"Pega Business Analyst"}
 {"closed_at":"2026-11-08","company":"Irium","first_seen":"2026-10-30","id":"jazzhr:iriumspain:g3cK0d983C","title":"Slicing de Red de Transporte y NTP"}
 {"company":"Irium","first_seen":"2026-11-08","id":"jazzhr:iriumspain:gSMYTAvjYz","skills":["sap"],"title":"SAP S/4HANA Developer"}
 {"closed_at":"2026-11-10","company":"Irium","first_seen":"2026-11-08","id":"jazzhr:iriumspain:hNR0OiacG3","skills":["sap"],"title":"SAP FI consultant – E-invoicing (DRC)"}
 {"closed_at":"2026-11-08","company":"Irium","first_seen":"2026-10-30","id":"jazzhr:iriumspain:hZdMTDxZLo","title":"Devops Engineer"}
-{"company":"Irium","first_seen":"2026-10-30","id":"jazzhr:iriumspain:hz213nU1o9","title":"IDMC Senior Architect"}
+{"closed_at":"2026-11-17","company":"Irium","first_seen":"2026-10-30","id":"jazzhr:iriumspain:hz213nU1o9","title":"IDMC Senior Architect"}
 {"company":"Irium","first_seen":"2026-11-08","id":"jazzhr:iriumspain:iRdAiQt2E8","title":"Business analyst lead expert"}
 {"company":"Irium","first_seen":"2026-10-30","id":"jazzhr:iriumspain:jkR9skWVrF","title":"Ingeniero de Ciberseguridad y Redes 5G"}
 {"closed_at":"2026-11-08","company":"Irium","first_seen":"2026-10-30","id":"jazzhr:iriumspain:jzZkf3aQXR","title":"Devops Engineer Junior"}
@@ -49,6 +52,7 @@
 {"closed_at":"2026-11-08","company":"Irium","first_seen":"2026-10-30","id":"jazzhr:iriumspain:n05C4luiWe","title":"COBOL developer analyst – Banking"}
 {"company":"Irium","first_seen":"2026-11-08","id":"jazzhr:iriumspain:nP0Qv0JWRA","title":"Arquitecto/a de soluciones"}
 {"closed_at":"2026-11-12","company":"Irium","first_seen":"2026-10-30","id":"jazzhr:iriumspain:o3B1HmlhpS","title":"Presales Consultant"}
+{"company":"Irium","first_seen":"2026-11-17","id":"jazzhr:iriumspain:oY9cueSjGe","title":"Arquitecto / Consultor Senior de Automatización de Redes"}
 {"company":"Irium","first_seen":"2026-10-30","id":"jazzhr:iriumspain:pcU3d9iaYf","title":"t24 / temenos technical consultant– ingles - remoto"}
 {"company":"Irium","first_seen":"2026-11-11","id":"jazzhr:iriumspain:pk29cK1u7r","title":"Project Manager DevSecOps"}
 {"company":"Irium","first_seen":"2026-10-30","id":"jazzhr:iriumspain:px0mPPXdAU","title":"Consultor DevSecOps Senior - GenIA"}
@@ -62,7 +66,8 @@
 {"company":"Irium","first_seen":"2026-11-08","id":"jazzhr:iriumspain:wNiXR5hyPT","title":"DevOps Engineer Senior"}
 {"closed_at":"2026-11-08","company":"Irium","first_seen":"2026-10-30","id":"jazzhr:iriumspain:wtrWrJJPwR","title":"Técnico/a de Sistemas Multidisciplinar"}
 {"company":"Irium","first_seen":"2026-10-30","id":"jazzhr:iriumspain:xmqptwd7b9","title":"IT Project Manager - Transición de Servicios"}
-{"company":"Irium","first_seen":"2026-11-10","id":"jazzhr:iriumspain:xxDdYscIrG","title":"PMO Analyst - Telecom"}
+{"closed_at":"2026-11-17","company":"Irium","first_seen":"2026-11-10","id":"jazzhr:iriumspain:xxDdYscIrG","title":"PMO Analyst - Telecom"}
+{"company":"Irium","first_seen":"2026-11-17","id":"jazzhr:iriumspain:xxdfiFc4xB","title":"DevOps Engineer - Ansible, OpenShift, Jenkins"}
 {"closed_at":"2026-11-08","company":"Irium","first_seen":"2026-10-30","id":"jazzhr:iriumspain:z1QEajmhFj","title":"Onsite IT Support Technician"}
 {"company":"Irium","first_seen":"2026-11-08","id":"jazzhr:iriumspain:z5xlxjn1eb","skills":["sap"],"title":"Consultor/a funcional SAP ARIBA"}
-{"company":"Irium","first_seen":"2026-11-08","id":"jazzhr:iriumspain:zvbrzDRFed","title":"Especialista BMC Helix"}
+{"closed_at":"2026-11-17","company":"Irium","first_seen":"2026-11-08","id":"jazzhr:iriumspain:zvbrzDRFed","title":"Especialista BMC Helix"}
