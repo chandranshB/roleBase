@@ -5,7 +5,7 @@
 {"company":"Cassia","first_seen":"2026-10-30","id":"jazzhr:cassia:2C5WVYAOIf","title":"Server"}
 {"company":"Cassia","first_seen":"2026-11-08","id":"jazzhr:cassia:2HlAFaD0TK","title":"Cook/Culinary Assistant On-Call"}
 {"company":"Cassia","first_seen":"2026-10-30","id":"jazzhr:cassia:2IZerb0PDL","title":"Caregiver (CNA, HHA, PCA)"}
-{"company":"Cassia","first_seen":"2026-10-30","id":"jazzhr:cassia:2JZyzvuyzh","title":"Cook/ Culinary Assistant"}
+{"closed_at":"2026-11-17","company":"Cassia","first_seen":"2026-10-30","id":"jazzhr:cassia:2JZyzvuyzh","title":"Cook/ Culinary Assistant"}
 {"closed_at":"2026-11-09","company":"Cassia","first_seen":"2026-11-08","id":"jazzhr:cassia:2KK3EFN1yi","title":"Server"}
 {"company":"Cassia","first_seen":"2026-10-30","id":"jazzhr:cassia:2MWe2fC8JI","title":"Certified Nursing Assistant CNA"}
 {"closed_at":"2026-11-13","company":"Cassia","first_seen":"2026-11-08","id":"jazzhr:cassia:2NX4xcxqqW","title":"Certified Nursing Assistant CNA Lake Ridge"}
@@ -77,6 +77,7 @@
 {"closed_at":"2026-11-11","company":"Cassia","first_seen":"2026-10-30","id":"jazzhr:cassia:I3KhpV9pAc","title":"Scratch Cook"}
 {"company":"Cassia","first_seen":"2026-11-08","id":"jazzhr:cassia:IOyY0r3c0D","title":"Resident Care Assistant (RCA)"}
 {"closed_at":"2026-11-12","company":"Cassia","first_seen":"2026-10-30","id":"jazzhr:cassia:IrYltJAYbW","title":"Trained Medication Aide TMA On-Call"}
+{"company":"Cassia","first_seen":"2026-11-17","id":"jazzhr:cassia:Irt33zsGoz","title":"Caregiver/CMA"}
 {"closed_at":"2026-11-13","company":"Cassia","first_seen":"2026-11-08","id":"jazzhr:cassia:J0IGGWkyqw","title":"Cook Supervisor"}
 {"company":"Cassia","first_seen":"2026-10-30","id":"jazzhr:cassia:J4yN688vVw","title":"Cook On-Call"}
 {"company":"Cassia","first_seen":"2026-11-08","id":"jazzhr:cassia:J6BiODZCBA","title":"Server"}
@@ -118,7 +119,7 @@
 {"company":"Cassia","first_seen":"2026-11-12","id":"jazzhr:cassia:QI54iODYNH","title":"Chaplain"}
 {"company":"Cassia","first_seen":"2026-10-30","id":"jazzhr:cassia:Qq1N4kRbfa","title":"Nurse (RN or LPN) Lake Ridge On-Call"}
 {"company":"Cassia","first_seen":"2026-11-08","id":"jazzhr:cassia:Qxc3jVgBZj","title":"Licensed Practical Nurse LPN"}
-{"company":"Cassia","first_seen":"2026-11-08","id":"jazzhr:cassia:RXNrFN8UJ7","title":"Caregiver (CNA, HHA, PCA)"}
+{"closed_at":"2026-11-17","company":"Cassia","first_seen":"2026-11-08","id":"jazzhr:cassia:RXNrFN8UJ7","title":"Caregiver (CNA, HHA, PCA)"}
 {"closed_at":"2026-11-11","company":"Cassia","first_seen":"2026-11-09","id":"jazzhr:cassia:RgMYPfCx3C","title":"Culinary Float"}
 {"company":"Cassia","first_seen":"2026-11-12","id":"jazzhr:cassia:S7Jk6mNWwW","title":"RN Director of Health Services Float Minnesota 10000 Bonus"}
 {"closed_at":"2026-11-08","company":"Cassia","first_seen":"2026-10-30","id":"jazzhr:cassia:SXPLGZJQ21","title":"Cook/Culinary Assistant On-Call"}
@@ -221,7 +222,7 @@
 {"company":"Cassia","first_seen":"2026-10-30","id":"jazzhr:cassia:pvbPdtWL3B","title":"Certified Occupational Therapist Assistant COTA PRN"}
 {"company":"Cassia","first_seen":"2026-11-11","id":"jazzhr:cassia:q0zlhu1PxV","title":"Certified Nursing Assistant CNA"}
 {"company":"Cassia","first_seen":"2026-11-08","id":"jazzhr:cassia:q1s9IE9DOL","title":"Culinary Assistant"}
-{"company":"Cassia","first_seen":"2026-11-08","id":"jazzhr:cassia:qZFs0Phd5U","title":"Caregiver/CMA"}
+{"closed_at":"2026-11-17","company":"Cassia","first_seen":"2026-11-08","id":"jazzhr:cassia:qZFs0Phd5U","title":"Caregiver/CMA"}
 {"closed_at":"2026-11-08","company":"Cassia","first_seen":"2026-10-30","id":"jazzhr:cassia:qe1LRyhEL1","title":"Culinary Assistant - PT Evenings"}
 {"company":"Cassia","first_seen":"2026-11-08","id":"jazzhr:cassia:quut1t6zoA","title":"RN Director of Health Services DHS 10000 Bonus"}
 {"closed_at":"2026-11-08","company":"Cassia","first_seen":"2026-10-30","id":"jazzhr:cassia:qyIRW6eWsc","skills":["accounts_receivable"],"title":"Accounts Receivable Billing Specialist"}
