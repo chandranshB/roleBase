@@ -36,6 +36,7 @@
 {"company":"CAMBA","first_seen":"2026-10-30","id":"jazzhr:camba:9uiUtyodR9","title":"Client Care Supervisor, Kings Inn Family Shelter"}
 {"closed_at":"2026-11-16","company":"CAMBA","first_seen":"2026-11-08","id":"jazzhr:camba:9zbkqZ4Z7t","title":"Residential Aide, Rising Up Men's Shelter"}
 {"company":"CAMBA","first_seen":"2026-10-30","id":"jazzhr:camba:A5BikYzzmq","title":"SNL Supervisor, Van Dyke (Cornerstone)"}
+{"company":"CAMBA","first_seen":"2026-11-18","id":"jazzhr:camba:AHueVzTYUV","title":"Supervising Attorney Foreclosure Prevention Unit, CAMBA Legal Services"}
 {"company":"CAMBA","first_seen":"2026-10-30","id":"jazzhr:camba:Aa3E5mZzpw","title":"Research Project Recruitment Coordinator, P3"}
 {"company":"CAMBA","first_seen":"2026-10-30","id":"jazzhr:camba:BBIeurxYfm","title":"Residential Aide, Opportunity House Men's Shelter"}
 {"company":"CAMBA","first_seen":"2026-10-30","id":"jazzhr:camba:BRfn3sLmg0","title":"Shift Supervisor, Rising Up Men's Shelter"}
@@ -44,7 +45,7 @@
 {"company":"CAMBA","employment":"part_time","first_seen":"2026-10-30","id":"jazzhr:camba:BpZ1GOsu7S","title":"Case Manager, Prospect Plaza (Part-Time)"}
 {"company":"CAMBA","first_seen":"2026-10-30","id":"jazzhr:camba:C7Oi9VFc3y","title":"Case Manager, Magnolia House Women’s Shelter"}
 {"company":"CAMBA","first_seen":"2026-10-30","id":"jazzhr:camba:CAy5KxjUNi","title":"Program Director, Supportive Housing Services"}
-{"company":"CAMBA","first_seen":"2026-10-30","id":"jazzhr:camba:CGl38IJDpb","title":"Outreach Supervisor, Cure Violence, Youth Enrichment Services (YES)"}
+{"company":"CAMBA","first_seen":"2026-10-30","id":"jazzhr:camba:CGl38IJDpb","title":"Outreach Supervisor, Youth Enrichment Services (YES) (BIVO)"}
 {"company":"CAMBA","first_seen":"2026-10-30","id":"jazzhr:camba:CU441YWUyi","title":"Case Manager, Castleton (Staten Island)"}
 {"closed_at":"2026-11-12","company":"CAMBA","first_seen":"2026-10-30","id":"jazzhr:camba:CaZkHqE2WJ","title":"Assistant Director, Penn-Wortman Cornerstone Program"}
 {"company":"CAMBA","first_seen":"2026-10-30","id":"jazzhr:camba:Cwfa6CKPmx","title":"Assistant Program Director , Magnolia House Women's Shelter"}
@@ -156,8 +157,9 @@
 {"company":"CAMBA","first_seen":"2026-10-30","id":"jazzhr:camba:biyw9CF5Iv","title":"Case Manager, 97 Crooke Ave/Reverend Dan Ramm Residence Supportive Housing"}
 {"company":"CAMBA","first_seen":"2026-10-30","id":"jazzhr:camba:boyjTBu1Xb","title":"Parenting Specialist, SafeCare at Flagstone Family Shelter"}
 {"company":"CAMBA","first_seen":"2026-10-30","id":"jazzhr:camba:bxgC0Z9Sag","title":"Director of Social Services, Kensington Family Shelter"}
-{"company":"CAMBA","first_seen":"2026-10-30","id":"jazzhr:camba:c5qdYEdzK3","title":"Social Worker, BIVO Cure Violence Program"}
+{"closed_at":"2026-11-18","company":"CAMBA","first_seen":"2026-10-30","id":"jazzhr:camba:c5qdYEdzK3","title":"Social Worker, BIVO Cure Violence Program"}
 {"company":"CAMBA","first_seen":"2026-10-30","id":"jazzhr:camba:cFkTu6wgjQ","title":"Advocate Counselor, Learning to Work - Lower East Side Preparatory HS"}
+{"company":"CAMBA","first_seen":"2026-11-18","id":"jazzhr:camba:cIxtnKI6Vm","title":"Senior Case Manager, Case Management and Supportive Services"}
 {"company":"CAMBA","first_seen":"2026-10-30","id":"jazzhr:camba:cJgNFyZUxP","title":"Program Manager, Bronx Grove"}
 {"company":"CAMBA","first_seen":"2026-10-30","id":"jazzhr:camba:chwQxZ2iy0","title":"Assistant Director, Beacon Community Center IS 271"}
 {"company":"CAMBA","employment":"part_time","first_seen":"2026-10-30","id":"jazzhr:camba:dgoRjm3pIk","title":"Part Time Security Guard, Highbridge Overlook Supportive Housing Program"}
@@ -174,16 +176,16 @@
 {"company":"CAMBA","first_seen":"2026-10-30","id":"jazzhr:camba:g8K0CSnHts","title":"Program Supervisor, HomeBase - Fulton St., Brooklyn, NY"}
 {"company":"CAMBA","first_seen":"2026-10-30","id":"jazzhr:camba:gTiFzOgXhr","title":"Facility Coordinator, Broadway House Women’s Shelter"}
 {"company":"CAMBA","first_seen":"2026-10-30","id":"jazzhr:camba:gyT9U305La","title":"Program Supervisor, HomeBase - Eastern Parkway, Brooklyn"}
-{"company":"CAMBA","first_seen":"2026-10-30","id":"jazzhr:camba:h3oQfMHVwg","title":"Program Manager, BIVO (Brownsville In, Violence Out)"}
+{"closed_at":"2026-11-18","company":"CAMBA","first_seen":"2026-10-30","id":"jazzhr:camba:h3oQfMHVwg","title":"Program Manager, BIVO (Brownsville In, Violence Out)"}
 {"company":"CAMBA","first_seen":"2026-10-30","id":"jazzhr:camba:hBR7VzTv6O","title":"Intake Specialist, HomeBase (Fulton St.)"}
 {"closed_at":"2026-11-12","company":"CAMBA","first_seen":"2026-10-30","id":"jazzhr:camba:hxM4ZwnrFd","title":"Receptionist, Stuyvesant Gardens Cornerstone"}
 {"company":"CAMBA","first_seen":"2026-10-30","id":"jazzhr:camba:i09lOP04Ra","title":"Case Work Supervisor, Magnolia House Women’s Shelter"}
 {"company":"CAMBA","first_seen":"2026-10-30","id":"jazzhr:camba:i4IVMXRR5C","title":"Security Guard, The Hart Supportive Housing"}
-{"company":"CAMBA","employment":"part_time","first_seen":"2026-10-30","id":"jazzhr:camba:ileQWcANBg","title":"Part-Time Security Guard, Anna Gonzalez Apartments Supportive Housing"}
+{"closed_at":"2026-11-18","company":"CAMBA","employment":"part_time","first_seen":"2026-10-30","id":"jazzhr:camba:ileQWcANBg","title":"Part-Time Security Guard, Anna Gonzalez Apartments Supportive Housing"}
 {"company":"CAMBA","first_seen":"2026-10-30","id":"jazzhr:camba:it8DYW09Ji","title":"Shift Supervisor, Magnolia House Women's Shelter (Per Diem)"}
 {"company":"CAMBA","employment":"contract","first_seen":"2026-10-30","id":"jazzhr:camba:jS6MqBEjhN","title":"Fiscal Administrator Associate, Grants and Contract Management"}
 {"company":"CAMBA","first_seen":"2026-10-30","id":"jazzhr:camba:jfy4goJIS4","title":"Health Home Plus Coordinator, Health Homes Plus Program"}
-{"company":"CAMBA","first_seen":"2026-10-30","id":"jazzhr:camba:jl9A38ugBD","title":"Maintenance Worker, Broadway House Women’s Shelter"}
+{"closed_at":"2026-11-18","company":"CAMBA","first_seen":"2026-10-30","id":"jazzhr:camba:jl9A38ugBD","title":"Maintenance Worker, Broadway House Women’s Shelter"}
 {"company":"CAMBA","first_seen":"2026-10-30","id":"jazzhr:camba:jlHgEaYcHx","title":"Recreational Aide, Kings Inn Family Shelter P/T"}
 {"company":"CAMBA","employment":"part_time","first_seen":"2026-10-30","id":"jazzhr:camba:jmStgOoxKa","title":"Part-Time Security Guard, Austin 147 Supportive Housing"}
 {"company":"CAMBA","employment":"internship","first_seen":"2026-10-30","id":"jazzhr:camba:jncT4zo1K8","title":"Summer 2027 Intern - CAMBA Legal Services - Consumer Law Unit"}
@@ -211,7 +213,7 @@
 {"company":"CAMBA","employment":"part_time","first_seen":"2026-10-30","id":"jazzhr:camba:oDYLjbPPhW","title":"Residential Aide, Broadway House Women's Shelter (Part-Time)"}
 {"company":"CAMBA","first_seen":"2026-10-30","id":"jazzhr:camba:oPm3y0klGN","title":"Per Diem Shift Supervisor, Park Slope Womens Shelter"}
 {"company":"CAMBA","first_seen":"2026-10-30","id":"jazzhr:camba:orP7Lpps4f","title":"Clinical Supervisor, CAMBA Gardens II Supportive Housing (CGII)"}
-{"company":"CAMBA","first_seen":"2026-10-30","id":"jazzhr:camba:pdAm5PGAG0","title":"YMI Coordinator, Boulevard Cornerstone"}
+{"closed_at":"2026-11-18","company":"CAMBA","first_seen":"2026-10-30","id":"jazzhr:camba:pdAm5PGAG0","title":"YMI Coordinator, Boulevard Cornerstone"}
 {"company":"CAMBA","first_seen":"2026-10-30","id":"jazzhr:camba:pqT9N5Mas5","title":"PT Security Guard, Bergen-Saratoga Supportive Housing"}
 {"company":"CAMBA","first_seen":"2026-10-30","id":"jazzhr:camba:q1tMgLAR5t","title":"Maintenance Worker, HomeBase - Brooklyn"}
 {"company":"CAMBA","first_seen":"2026-10-30","id":"jazzhr:camba:qBzNPd6j3Z","title":"Peer Support Leader, Case Management Enhancement at Van Dyke Cornerstone"}

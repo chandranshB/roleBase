@@ -13803,7 +13803,7 @@
 {"b": "ashby:fluency", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "ashby:fluidstack", "last_ok": "2026-10-28", "strikes": 0}
 {"b": "ashby:flutterflow", "last_ok": "2026-11-16", "strikes": 0}
-{"b": "ashby:flux", "last_ok": "2026-11-17", "strikes": 1, "why": "empty answer"}
+{"b": "ashby:flux", "last_ok": "2026-11-17", "strikes": 2, "why": "empty answer"}
 {"b": "ashby:fnatic", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "ashby:focal", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "ashby:focused", "last_ok": "2026-10-27", "strikes": 0}
@@ -30477,7 +30477,7 @@
 {"b": "dayforce:adcs/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:admoa/adjobsall", "last_ok": "2026-11-08", "strikes": 0}
 {"b": "dayforce:admoa/moajobs", "last_ok": "2026-11-16", "strikes": 0}
-{"b": "dayforce:advansix/candidateportal", "last_ok": "2026-11-17", "strikes": 0, "why": "error: HTTPSConnectionPool(host='us262-services.dayforcehcm.com', port=443): Max retries exceeded with url: /api/advansix/V1/JobFeeds?internalJobBoardCode=candidateportal&includeActivePostingOnly=true (Caused by ResponseError('too many 503 error responses'))"}
+{"b": "dayforce:advansix/candidateportal", "last_ok": "2026-11-18", "strikes": 0}
 {"b": "dayforce:advara/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 400 Client Error: Bad Request for url: https://wkdaus262.dayforcehcm.com/api/advara/V1/JobFeeds?internalJobBoardCode=candidateportal&includeActivePostingOnly=true"}
 {"b": "dayforce:aep/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:aeropostale/aeropostalecorporate", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
@@ -30509,7 +30509,7 @@
 {"b": "dayforce:alvinailey/alvinaileywebsiteparttimepositions", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:americasthrift/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:amhigley/candidateportal", "last_ok": "2026-11-16", "strikes": 0}
-{"b": "dayforce:amphenol/advancedsensorscareers", "last_ok": "2026-11-17", "strikes": 0, "why": "error: HTTPSConnectionPool(host='us262-services.dayforcehcm.com', port=443): Max retries exceeded with url: /api/amphenol/V1/JobFeeds?internalJobBoardCode=advancedsensorscareers&includeActivePostingOnly=true (Caused by ResponseError('too many 503 error responses'))"}
+{"b": "dayforce:amphenol/advancedsensorscareers", "last_ok": "2026-11-18", "strikes": 0}
 {"b": "dayforce:amphenol/amphenolcitcareers", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:amphenol/amphenolcmtcareers", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:amphenol/anscandidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
@@ -30525,7 +30525,7 @@
 {"b": "dayforce:androidind/candidateportal", "last_ok": "", "strikes": 1, "why": "empty answer"}
 {"b": "dayforce:angio/angiocareers", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:angrychickz/angrychickz", "last_ok": "2026-11-16", "strikes": 0}
-{"b": "dayforce:anico/candidateportal", "last_ok": "2026-11-17", "strikes": 0, "why": "error: HTTPSConnectionPool(host='us262-services.dayforcehcm.com', port=443): Max retries exceeded with url: /api/anico/V1/JobFeeds?internalJobBoardCode=candidateportal&includeActivePostingOnly=true (Caused by ResponseError('too many 503 error responses'))"}
+{"b": "dayforce:anico/candidateportal", "last_ok": "2026-11-18", "strikes": 0}
 {"b": "dayforce:aoa/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:apega/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:apgandco/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
@@ -30541,7 +30541,7 @@
 {"b": "dayforce:articlesl/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:ascendance/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:ascendtransport/candidateportal", "last_ok": "2026-11-16", "strikes": 0}
-{"b": "dayforce:ascentaerospace/ascentaerospace", "last_ok": "2026-11-17", "strikes": 0, "why": "error: HTTPSConnectionPool(host='us262-services.dayforcehcm.com', port=443): Max retries exceeded with url: /api/ascentaerospace/V1/JobFeeds?internalJobBoardCode=ascentaerospace&includeActivePostingOnly=true (Caused by ResponseError('too many 503 error responses'))"}
+{"b": "dayforce:ascentaerospace/ascentaerospace", "last_ok": "2026-11-18", "strikes": 0}
 {"b": "dayforce:asci/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:ashbury/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:ashleystewart/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
@@ -30557,7 +30557,7 @@
 {"b": "dayforce:atricure/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 400 Client Error: Bad Request for url: https://wkdus262.dayforcehcm.com/api/atricure/V1/JobFeeds?internalJobBoardCode=candidateportal&includeActivePostingOnly=true"}
 {"b": "dayforce:atrion/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:atsmro/candidateportal", "last_ok": "2026-11-16", "strikes": 0}
-{"b": "dayforce:auarts/candidateportal", "last_ok": "", "strikes": 0, "why": "error: still running after 960s"}
+{"b": "dayforce:auarts/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 403 Client Error: Forbidden for url: https://can262-services.dayforcehcm.com/api/auarts/V1/JobFeeds?internalJobBoardCode=candidateportal&includeActivePostingOnly=true"}
 {"b": "dayforce:aubonpain/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:auction/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:aui/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
@@ -30589,7 +30589,7 @@
 {"b": "dayforce:baycove/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:bbch/bbchcandidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:bcbl/candidateportal", "last_ok": "2026-11-16", "strikes": 0}
-{"b": "dayforce:bcer/candidateportal", "last_ok": "2026-11-17", "strikes": 0, "why": "error: HTTPSConnectionPool(host='can262-services.dayforcehcm.com', port=443): Max retries exceeded with url: /api/bcer/V1/JobFeeds?internalJobBoardCode=candidateportal&includeActivePostingOnly=true (Caused by ResponseError('too many 503 error responses'))"}
+{"b": "dayforce:bcer/candidateportal", "last_ok": "2026-11-18", "strikes": 0}
 {"b": "dayforce:bchf/candidateportal", "last_ok": "2026-11-08", "strikes": 0}
 {"b": "dayforce:bcnursesunion/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:bcr/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
@@ -30605,7 +30605,7 @@
 {"b": "dayforce:berger/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:berkshire/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:beyondenergy/candidateportal", "last_ok": "2026-11-16", "strikes": 0}
-{"b": "dayforce:bgecleanair/candidateportal", "last_ok": "2026-11-17", "strikes": 0, "why": "error: HTTPSConnectionPool(host='can262-services.dayforcehcm.com', port=443): Max retries exceeded with url: /api/bgecleanair/V1/JobFeeds?internalJobBoardCode=candidateportal&includeActivePostingOnly=true (Caused by ResponseError('too many 503 error responses'))"}
+{"b": "dayforce:bgecleanair/candidateportal", "last_ok": "2026-11-18", "strikes": 0}
 {"b": "dayforce:bhafc/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:bhealth/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:bhi/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
@@ -30621,7 +30621,7 @@
 {"b": "dayforce:bluechip/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:bluegreen/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 400 Client Error: Bad Request for url: https://us262-services.dayforcehcm.com/api/bluegreen/V1/JobFeeds?internalJobBoardCode=candidateportal&includeActivePostingOnly=true"}
 {"b": "dayforce:bluelinx/candidateportal", "last_ok": "2026-11-16", "strikes": 0}
-{"b": "dayforce:bmi/candidateportal", "last_ok": "2026-11-17", "strikes": 0, "why": "error: HTTPSConnectionPool(host='us262-services.dayforcehcm.com', port=443): Max retries exceeded with url: /api/bmi/V1/JobFeeds?internalJobBoardCode=candidateportal&includeActivePostingOnly=true (Caused by ResponseError('too many 503 error responses'))"}
+{"b": "dayforce:bmi/candidateportal", "last_ok": "2026-11-18", "strikes": 0}
 {"b": "dayforce:bmsa/bmsacareers", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:bmsa/otracocareers", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:bmsgroup/candidateportal", "last_ok": "2026-11-08", "strikes": 0}
@@ -30637,7 +30637,7 @@
 {"b": "dayforce:brandon/cob", "last_ok": "", "strikes": 1, "why": "empty answer"}
 {"b": "dayforce:brearley/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:briggsequipment/candidateportal", "last_ok": "2026-11-16", "strikes": 0}
-{"b": "dayforce:brightline/blfcareerssite", "last_ok": "2026-11-17", "strikes": 0, "why": "error: HTTPSConnectionPool(host='us262-services.dayforcehcm.com', port=443): Max retries exceeded with url: /api/brightline/V1/JobFeeds?internalJobBoardCode=blfcareerssite&includeActivePostingOnly=true (Caused by ResponseError('too many 503 error responses'))"}
+{"b": "dayforce:brightline/blfcareerssite", "last_ok": "2026-11-18", "strikes": 0}
 {"b": "dayforce:brightline/blwcareerssite", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:briley/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:broadmoor/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
@@ -30653,7 +30653,7 @@
 {"b": "dayforce:brs/sgscandidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:brs/spscandidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:brs/ssdcandidateportal", "last_ok": "2026-11-16", "strikes": 0}
-{"b": "dayforce:brs/ssecandidateportal", "last_ok": "2026-11-17", "strikes": 0, "why": "error: HTTPSConnectionPool(host='us262-services.dayforcehcm.com', port=443): Max retries exceeded with url: /api/brs/V1/JobFeeds?internalJobBoardCode=ssecandidateportal&includeActivePostingOnly=true (Caused by ResponseError('too many 503 error responses'))"}
+{"b": "dayforce:brs/ssecandidateportal", "last_ok": "2026-11-18", "strikes": 0}
 {"b": "dayforce:brs/ssscandidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:brs/tsifederalcandidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:brs/tsisolutionscandidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
@@ -30685,7 +30685,7 @@
 {"b": "dayforce:camd/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:canadore/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:canalriver/120958", "last_ok": "", "strikes": 0, "why": "error: 403 Client Error: Forbidden for url: https://wkdeur262.dayforcehcm.com/api/canalriver/V1/JobFeeds?internalJobBoardCode=120958&includeActivePostingOnly=true"}
-{"b": "dayforce:canderel/candidateportal", "last_ok": "2026-11-17", "strikes": 0, "why": "error: HTTPSConnectionPool(host='can262-services.dayforcehcm.com', port=443): Max retries exceeded with url: /api/canderel/V1/JobFeeds?internalJobBoardCode=candidateportal&includeActivePostingOnly=true (Caused by ResponseError('too many 503 error responses'))"}
+{"b": "dayforce:canderel/candidateportal", "last_ok": "2026-11-18", "strikes": 0}
 {"b": "dayforce:canderel/wilkarcandidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:canmore/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:cap/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
@@ -30701,7 +30701,7 @@
 {"b": "dayforce:carecloud/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:carhartt/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:carltonfields/candidateportal", "last_ok": "2026-11-16", "strikes": 0}
-{"b": "dayforce:carnegie/candidateportal", "last_ok": "2026-11-17", "strikes": 0, "why": "error: HTTPSConnectionPool(host='us262-services.dayforcehcm.com', port=443): Max retries exceeded with url: /api/carnegie/V1/JobFeeds?internalJobBoardCode=candidateportal&includeActivePostingOnly=true (Caused by ResponseError('too many 503 error responses'))"}
+{"b": "dayforce:carnegie/candidateportal", "last_ok": "2026-11-18", "strikes": 0}
 {"b": "dayforce:carolinameadows/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:carsonair/carson-alljob-opportunities", "last_ok": "", "strikes": 1, "why": "empty answer"}
 {"b": "dayforce:carterbank/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
@@ -30749,7 +30749,7 @@
 {"b": "dayforce:cermaq/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:cfibfcei/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:cfs/centennialcareers", "last_ok": "2026-11-16", "strikes": 0}
-{"b": "dayforce:cgs/candidateportal", "last_ok": "2026-11-17", "strikes": 0, "why": "error: HTTPSConnectionPool(host='us262-services.dayforcehcm.com', port=443): Max retries exceeded with url: /api/cgs/V1/JobFeeds?internalJobBoardCode=candidateportal&includeActivePostingOnly=true (Caused by ResponseError('too many 503 error responses'))"}
+{"b": "dayforce:cgs/candidateportal", "last_ok": "2026-11-18", "strikes": 0}
 {"b": "dayforce:challenger/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 403 Client Error: Forbidden for url: https://us262-services.dayforcehcm.com/api/challenger/V1/JobFeeds?internalJobBoardCode=candidateportal&includeActivePostingOnly=true"}
 {"b": "dayforce:chemelex/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:chi/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
@@ -30765,7 +30765,7 @@
 {"b": "dayforce:cityfmaus/105275", "last_ok": "", "strikes": 1, "why": "empty answer"}
 {"b": "dayforce:cityfmaus/70799", "last_ok": "", "strikes": 1, "why": "empty answer"}
 {"b": "dayforce:cityind/candidateportal", "last_ok": "2026-11-16", "strikes": 0}
-{"b": "dayforce:cityofcolumbus/courtjobs", "last_ok": "2026-11-17", "strikes": 0, "why": "error: still running after 960s"}
+{"b": "dayforce:cityofcolumbus/courtjobs", "last_ok": "2026-11-18", "strikes": 0}
 {"b": "dayforce:cityoflawrence/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:clareholdings/islandsaints", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:claridgeriverstone/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
@@ -30797,7 +30797,7 @@
 {"b": "dayforce:colabor/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:colonialgroup/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:colter/candidateportal", "last_ok": "2026-11-16", "strikes": 0}
-{"b": "dayforce:combinedmetal/candidateportal", "last_ok": "2026-11-17", "strikes": 0, "why": "error: HTTPSConnectionPool(host='can262-services.dayforcehcm.com', port=443): Max retries exceeded with url: /api/combinedmetal/V1/JobFeeds?internalJobBoardCode=candidateportal&includeActivePostingOnly=true (Caused by ResponseError('too many 503 error responses'))"}
+{"b": "dayforce:combinedmetal/candidateportal", "last_ok": "2026-11-18", "strikes": 0}
 {"b": "dayforce:cominar/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:commercecasino/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:communitycare/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
@@ -30813,7 +30813,7 @@
 {"b": "dayforce:condado/candidateportal", "last_ok": "2026-11-08", "strikes": 0}
 {"b": "dayforce:confiseriemondoux/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:connective/candidateportal", "last_ok": "2026-11-16", "strikes": 0}
-{"b": "dayforce:connex/candidateportal", "last_ok": "2026-11-17", "strikes": 0, "why": "error: HTTPSConnectionPool(host='can262-services.dayforcehcm.com', port=443): Max retries exceeded with url: /api/connex/V1/JobFeeds?internalJobBoardCode=candidateportal&includeActivePostingOnly=true (Caused by ResponseError('too many 503 error responses'))"}
+{"b": "dayforce:connex/candidateportal", "last_ok": "2026-11-18", "strikes": 0}
 {"b": "dayforce:consol/candidateportal", "last_ok": "", "strikes": 1, "why": "empty answer"}
 {"b": "dayforce:converge/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:convergeuk/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
@@ -30829,7 +30829,7 @@
 {"b": "dayforce:corusent/corus", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:corusortho/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:cosm/candidateportal", "last_ok": "2026-11-16", "strikes": 0}
-{"b": "dayforce:covcareliving/covcarebranding", "last_ok": "", "strikes": 0, "why": "error: HTTPSConnectionPool(host='can262-services.dayforcehcm.com', port=443): Max retries exceeded with url: /api/covcareliving/V1/JobFeeds?internalJobBoardCode=covcarebranding&includeActivePostingOnly=true (Caused by ResponseError('too many 503 error responses'))"}
+{"b": "dayforce:covcareliving/covcarebranding", "last_ok": "", "strikes": 0, "why": "error: 400 Client Error: Bad Request for url: https://can262-services.dayforcehcm.com/api/covcareliving/V1/JobFeeds?internalJobBoardCode=covcarebranding&includeActivePostingOnly=true"}
 {"b": "dayforce:covenant/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:cp87/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:cp87/charlottefcclientcareerssite", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
@@ -30861,7 +30861,7 @@
 {"b": "dayforce:cynosure/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:cypressmtn/candidateportal", "last_ok": "2026-11-08", "strikes": 0}
 {"b": "dayforce:czs/candidateportal", "last_ok": "2026-11-16", "strikes": 0}
-{"b": "dayforce:dbh/candidateportal", "last_ok": "2026-11-17", "strikes": 0, "why": "error: HTTPSConnectionPool(host='us262-services.dayforcehcm.com', port=443): Max retries exceeded with url: /api/dbh/V1/JobFeeds?internalJobBoardCode=candidateportal&includeActivePostingOnly=true (Caused by ResponseError('too many 503 error responses'))"}
+{"b": "dayforce:dbh/candidateportal", "last_ok": "2026-11-18", "strikes": 0}
 {"b": "dayforce:dct/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:deafblindontarioservices/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:decron/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
@@ -30877,7 +30877,7 @@
 {"b": "dayforce:dhm/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:diabetescanada/diabetescanada", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:diamondaircraft/candidateportal", "last_ok": "2026-11-16", "strikes": 0}
-{"b": "dayforce:diamondgen/betmclientcareerssite", "last_ok": "2026-11-17", "strikes": 0, "why": "error: still running after 960s"}
+{"b": "dayforce:diamondgen/betmclientcareerssite", "last_ok": "2026-11-18", "strikes": 0}
 {"b": "dayforce:diamondgen/dcgclientcareersitetemplate", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:diobr/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:directplusdg/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
@@ -30893,7 +30893,7 @@
 {"b": "dayforce:dpi/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:drc/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:drivingforce/hinocentralcareer", "last_ok": "2026-11-16", "strikes": 0}
-{"b": "dayforce:drivingforce/tdfgcareer", "last_ok": "2026-11-17", "strikes": 0, "why": "error: still running after 960s"}
+{"b": "dayforce:drivingforce/tdfgcareer", "last_ok": "2026-11-18", "strikes": 0}
 {"b": "dayforce:drivingforce/tdficareer", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:drphillips/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:drschaer/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
@@ -30909,7 +30909,7 @@
 {"b": "dayforce:eastpenn/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:echinc/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:eclipse/candidateportal", "last_ok": "2026-11-16", "strikes": 0}
-{"b": "dayforce:ecore/candidateportal", "last_ok": "2026-11-17", "strikes": 0, "why": "error: HTTPSConnectionPool(host='us262-services.dayforcehcm.com', port=443): Max retries exceeded with url: /api/ecore/V1/JobFeeds?internalJobBoardCode=candidateportal&includeActivePostingOnly=true (Caused by ResponseError('too many 503 error responses'))"}
+{"b": "dayforce:ecore/candidateportal", "last_ok": "2026-11-18", "strikes": 0}
 {"b": "dayforce:ecyclesolu/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:eddyfi/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:eddyfi/senceive", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
@@ -30925,7 +30925,7 @@
 {"b": "dayforce:eliteparking/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:elrio/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:elt/candidateportal", "last_ok": "2026-11-16", "strikes": 0}
-{"b": "dayforce:emmis/candidateportal", "last_ok": "2026-11-17", "strikes": 0, "why": "error: still running after 960s"}
+{"b": "dayforce:emmis/candidateportal", "last_ok": "2026-11-18", "strikes": 0}
 {"b": "dayforce:empire/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:empower/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:empyrean/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
@@ -30941,7 +30941,7 @@
 {"b": "dayforce:ercoworldwide/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:erdman/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:erskine1916/candidateportal", "last_ok": "2026-11-16", "strikes": 0}
-{"b": "dayforce:esa/esacareersite", "last_ok": "2026-11-17", "strikes": 0, "why": "error: HTTPSConnectionPool(host='us262-services.dayforcehcm.com', port=443): Max retries exceeded with url: /api/esa/V1/JobFeeds?internalJobBoardCode=esacareersite&includeActivePostingOnly=true (Caused by ResponseError('too many 503 error responses'))"}
+{"b": "dayforce:esa/esacareersite", "last_ok": "2026-11-17", "strikes": 1, "why": "empty answer"}
 {"b": "dayforce:esa/kmcareersite", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:esentire/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:esr/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
@@ -30957,7 +30957,7 @@
 {"b": "dayforce:evpeople/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:evtelevate/evt", "last_ok": "", "strikes": 0, "why": "error: 400 Client Error: Bad Request for url: https://aus262.dayforcehcm.com/api/evtelevate/V1/JobFeeds?internalJobBoardCode=evt&includeActivePostingOnly=true"}
 {"b": "dayforce:exceldorfoods478/maintenance", "last_ok": "2026-11-16", "strikes": 0}
-{"b": "dayforce:exchangetech/alljobs", "last_ok": "2026-11-17", "strikes": 0, "why": "error: still running after 960s"}
+{"b": "dayforce:exchangetech/alljobs", "last_ok": "2026-11-18", "strikes": 0}
 {"b": "dayforce:execulink/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:experiencebell/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:explorers/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
@@ -30989,7 +30989,7 @@
 {"b": "dayforce:firstnational/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:firstrust/firstrustcandidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:firstrust/hatchcandidateportal", "last_ok": "2026-11-16", "strikes": 0}
-{"b": "dayforce:flanagan1977/flgncandidateportal", "last_ok": "2026-11-17", "strikes": 0, "why": "error: still running after 960s"}
+{"b": "dayforce:flanagan1977/flgncandidateportal", "last_ok": "2026-11-18", "strikes": 0}
 {"b": "dayforce:flanagan1977/stopcandidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:flexco/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:flowcontrol/candidateportal", "last_ok": "", "strikes": 1, "why": "empty answer"}
@@ -31053,7 +31053,7 @@
 {"b": "dayforce:gfh/lazyacres", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:gfh/newleaf", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:gfh/newseasonsmarketexternalexternal", "last_ok": "2026-11-16", "strikes": 0}
-{"b": "dayforce:ggg/candidateportal", "last_ok": "2026-11-17", "strikes": 0, "why": "error: HTTPSConnectionPool(host='us262-services.dayforcehcm.com', port=443): Max retries exceeded with url: /api/ggg/V1/JobFeeds?internalJobBoardCode=candidateportal&includeActivePostingOnly=true (Caused by ResponseError('too many 503 error responses'))"}
+{"b": "dayforce:ggg/candidateportal", "last_ok": "2026-11-18", "strikes": 0}
 {"b": "dayforce:ggg/cbicareersite", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:ggg/genesishospitalitycareersite", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:ggg/mdlcareersite", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
@@ -31069,7 +31069,7 @@
 {"b": "dayforce:gligroup/gli", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:glock/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 403 Client Error: Forbidden for url: https://us262-services.dayforcehcm.com/api/glock/V1/JobFeeds?internalJobBoardCode=candidateportal&includeActivePostingOnly=true"}
 {"b": "dayforce:glovis/linkedincandidateportal", "last_ok": "2026-11-16", "strikes": 0}
-{"b": "dayforce:gmb/candidateportal", "last_ok": "2026-11-17", "strikes": 0, "why": "error: still running after 960s"}
+{"b": "dayforce:gmb/candidateportal", "last_ok": "2026-11-18", "strikes": 0}
 {"b": "dayforce:gmppu/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:gms1/tamarackmaterials", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:gnc/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
@@ -31085,7 +31085,7 @@
 {"b": "dayforce:gptech/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:graniteclub/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:graniteymca/candidateportal", "last_ok": "2026-11-16", "strikes": 0}
-{"b": "dayforce:graycorp/candidateportal", "last_ok": "2026-11-17", "strikes": 0, "why": "error: HTTPSConnectionPool(host='can262-services.dayforcehcm.com', port=443): Max retries exceeded with url: /api/graycorp/V1/JobFeeds?internalJobBoardCode=candidateportal&includeActivePostingOnly=true (Caused by ResponseError('too many 503 error responses'))"}
+{"b": "dayforce:graycorp/candidateportal", "last_ok": "2026-11-18", "strikes": 0}
 {"b": "dayforce:greatblueresorts/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:greatgulf/gg", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:greatplains/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 400 Client Error: Bad Request for url: https://us262-services.dayforcehcm.com/api/greatplains/V1/JobFeeds?internalJobBoardCode=candidateportal&includeActivePostingOnly=true"}
@@ -31101,7 +31101,7 @@
 {"b": "dayforce:groupemach/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:groupemarcelle/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:groupemediatfo/candidateportal", "last_ok": "2026-11-16", "strikes": 0}
-{"b": "dayforce:groupenorbec/candidateportal", "last_ok": "2026-11-17", "strikes": 0, "why": "error: HTTPSConnectionPool(host='can262-services.dayforcehcm.com', port=443): Max retries exceeded with url: /api/groupenorbec/V1/JobFeeds?internalJobBoardCode=candidateportal&includeActivePostingOnly=true (Caused by ResponseError('too many 503 error responses'))"}
+{"b": "dayforce:groupenorbec/candidateportal", "last_ok": "2026-11-18", "strikes": 0}
 {"b": "dayforce:grouphealth/otherclinicalcandidateportal", "last_ok": "", "strikes": 0, "why": "error: 403 Client Error: Forbidden for url: https://us262-services.dayforcehcm.com/api/grouphealth/V1/JobFeeds?internalJobBoardCode=otherclinicalcandidateportal&includeActivePostingOnly=true"}
 {"b": "dayforce:gscandinave/whistler", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:gscdayforce/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
@@ -31117,7 +31117,7 @@
 {"b": "dayforce:haeco/haecoamericas", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:hajoca/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:halekulani/companywebsite", "last_ok": "2026-11-16", "strikes": 0}
-{"b": "dayforce:hallcon/corporatesupport", "last_ok": "2026-11-17", "strikes": 0, "why": "error: HTTPSConnectionPool(host='us262-services.dayforcehcm.com', port=443): Max retries exceeded with url: /api/hallcon/V1/JobFeeds?internalJobBoardCode=corporatesupport&includeActivePostingOnly=true (Caused by ResponseError('too many 503 error responses'))"}
+{"b": "dayforce:hallcon/corporatesupport", "last_ok": "2026-11-18", "strikes": 0}
 {"b": "dayforce:hamistergroup/healthcare", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:harberco/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:harberco/ravinevineyardestatewinery", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
@@ -31133,7 +31133,7 @@
 {"b": "dayforce:haskins/117271", "last_ok": "", "strikes": 1, "why": "empty answer"}
 {"b": "dayforce:haslamsports/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:haventreebank/candidateportal", "last_ok": "2026-11-16", "strikes": 0}
-{"b": "dayforce:hawktree/pcicareersite", "last_ok": "2026-11-17", "strikes": 0, "why": "error: still running after 960s"}
+{"b": "dayforce:hawktree/pcicareersite", "last_ok": "2026-11-18", "strikes": 0}
 {"b": "dayforce:hawthorn/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:haydon/haydoncareers", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:hazeldenes/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
@@ -31149,7 +31149,7 @@
 {"b": "dayforce:heartland/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:helix/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:hendersonco/candidateportal", "last_ok": "2026-11-16", "strikes": 0}
-{"b": "dayforce:hendersonco/candidateportalhbs", "last_ok": "2026-11-17", "strikes": 0, "why": "error: HTTPSConnectionPool(host='us262-services.dayforcehcm.com', port=443): Max retries exceeded with url: /api/hendersonco/V1/JobFeeds?internalJobBoardCode=candidateportalhbs&includeActivePostingOnly=true (Caused by ResponseError('too many 503 error responses'))"}
+{"b": "dayforce:hendersonco/candidateportalhbs", "last_ok": "2026-11-18", "strikes": 0}
 {"b": "dayforce:herffjones/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:heroal/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:hexo/67394", "last_ok": "2026-11-08", "strikes": 0}
@@ -31165,7 +31165,7 @@
 {"b": "dayforce:hillman/hillmanusjb", "last_ok": "", "strikes": 1, "why": "empty answer"}
 {"b": "dayforce:hitchiner/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:hlna/komyo", "last_ok": "2026-11-16", "strikes": 0}
-{"b": "dayforce:hlna/midwestexpressinc", "last_ok": "2026-11-17", "strikes": 0, "why": "error: still running after 960s"}
+{"b": "dayforce:hlna/midwestexpressinc", "last_ok": "2026-11-18", "strikes": 0}
 {"b": "dayforce:hlna/onesolutionlogistics", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:hlna/oneworldlogisticsofamerica", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:hnbhawaii/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
@@ -31181,7 +31181,7 @@
 {"b": "dayforce:hoteliers/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:hoti/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:houstonzoo/candidateportal", "last_ok": "2026-11-16", "strikes": 0}
-{"b": "dayforce:hr360/candidateportal", "last_ok": "2026-11-17", "strikes": 0, "why": "error: HTTPSConnectionPool(host='us262-services.dayforcehcm.com', port=443): Max retries exceeded with url: /api/hr360/V1/JobFeeds?internalJobBoardCode=candidateportal&includeActivePostingOnly=true (Caused by ResponseError('too many 503 error responses'))"}
+{"b": "dayforce:hr360/candidateportal", "last_ok": "2026-11-18", "strikes": 0}
 {"b": "dayforce:hrconnect/candidateportal", "last_ok": "", "strikes": 1, "why": "empty answer"}
 {"b": "dayforce:hs/candidateportalhsinc", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:hs/clientcareerssitecarpenterpaterson", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
@@ -31197,7 +31197,7 @@
 {"b": "dayforce:htohh/ihc", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:htseng/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:htseng/dxsglobalwebsite1", "last_ok": "2026-11-16", "strikes": 0}
-{"b": "dayforce:htseng/epsilonwebsite", "last_ok": "2026-11-17", "strikes": 0, "why": "error: HTTPSConnectionPool(host='can262-services.dayforcehcm.com', port=443): Max retries exceeded with url: /api/htseng/V1/JobFeeds?internalJobBoardCode=epsilonwebsite&includeActivePostingOnly=true (Caused by ResponseError('too many 503 error responses'))"}
+{"b": "dayforce:htseng/epsilonwebsite", "last_ok": "2026-11-18", "strikes": 0}
 {"b": "dayforce:humaneworld/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:husadayforce/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:hutchens/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
@@ -31213,7 +31213,7 @@
 {"b": "dayforce:ibltogether/winnerssite", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:ibt/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:ibt/ccicareers", "last_ok": "2026-11-16", "strikes": 0}
-{"b": "dayforce:ibt/lawlergear", "last_ok": "2026-11-17", "strikes": 0, "why": "error: still running after 960s"}
+{"b": "dayforce:ibt/lawlergear", "last_ok": "2026-11-18", "strikes": 0}
 {"b": "dayforce:ibt/magnum", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:ibt/vaughncareers", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:icba/candidateportalicba", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
@@ -31229,7 +31229,7 @@
 {"b": "dayforce:impactlife/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 403 Client Error: Forbidden for url: https://us262-services.dayforcehcm.com/api/impactlife/V1/JobFeeds?internalJobBoardCode=candidateportal&includeActivePostingOnly=true"}
 {"b": "dayforce:indel/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:indel/indelservicesllc", "last_ok": "2026-11-16", "strikes": 0}
-{"b": "dayforce:indianapoliscolts/candidateportal", "last_ok": "2026-11-17", "strikes": 0, "why": "error: still running after 960s"}
+{"b": "dayforce:indianapoliscolts/candidateportal", "last_ok": "2026-11-18", "strikes": 0}
 {"b": "dayforce:indwell/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:inframark/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:infrastructureontario/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
@@ -31261,7 +31261,7 @@
 {"b": "dayforce:jadex/lifemadecareers", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:jam/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:jameshall/gem", "last_ok": "2026-11-16", "strikes": 0}
-{"b": "dayforce:janney/candidateportal", "last_ok": "", "strikes": 0, "why": "error: HTTPSConnectionPool(host='us262-services.dayforcehcm.com', port=443): Max retries exceeded with url: /api/janney/V1/JobFeeds?internalJobBoardCode=candidateportal&includeActivePostingOnly=true (Caused by ResponseError('too many 503 error responses'))"}
+{"b": "dayforce:janney/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 403 Client Error: Forbidden for url: https://us262-services.dayforcehcm.com/api/janney/V1/JobFeeds?internalJobBoardCode=candidateportal&includeActivePostingOnly=true"}
 {"b": "dayforce:jbfcs/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:jbpco/candidateportal", "last_ok": "", "strikes": 1, "why": "empty answer"}
 {"b": "dayforce:jbpco/efp", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
@@ -31277,7 +31277,7 @@
 {"b": "dayforce:jet/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:jet/jenkinsplumbing", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:jisc/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 403 Client Error: Forbidden for url: https://wkdeur262.dayforcehcm.com/api/jisc/V1/JobFeeds?internalJobBoardCode=candidateportal&includeActivePostingOnly=true"}
-{"b": "dayforce:jjt/externalcandidateportal-jjt", "last_ok": "2026-11-17", "strikes": 0, "why": "error: HTTPSConnectionPool(host='us262-services.dayforcehcm.com', port=443): Max retries exceeded with url: /api/jjt/V1/JobFeeds?internalJobBoardCode=externalcandidateportal-jjt&includeActivePostingOnly=true (Caused by ResponseError('too many 503 error responses'))"}
+{"b": "dayforce:jjt/externalcandidateportal-jjt", "last_ok": "2026-11-18", "strikes": 0}
 {"b": "dayforce:jjt/nedclientportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:joa/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:joe/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
@@ -31293,7 +31293,7 @@
 {"b": "dayforce:jpla/anguscootewebsite", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:jpla/goldmarkwebsite", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:jpla/proudscareerssite", "last_ok": "2026-11-16", "strikes": 0}
-{"b": "dayforce:jslcarc/jslc", "last_ok": "", "strikes": 0, "why": "error: HTTPSConnectionPool(host='us262-services.dayforcehcm.com', port=443): Max retries exceeded with url: /api/jslcarc/V1/JobFeeds?internalJobBoardCode=jslc&includeActivePostingOnly=true (Caused by ResponseError('too many 503 error responses'))"}
+{"b": "dayforce:jslcarc/jslc", "last_ok": "", "strikes": 0, "why": "error: 403 Client Error: Forbidden for url: https://us262-services.dayforcehcm.com/api/jslcarc/V1/JobFeeds?internalJobBoardCode=jslc&includeActivePostingOnly=true"}
 {"b": "dayforce:jssa/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:jtbamericas/jtbamericasltd-jtbusainc", "last_ok": "", "strikes": 0, "why": "error: 400 Client Error: Bad Request for url: https://us262-services.dayforcehcm.com/api/jtbamericas/V1/JobFeeds?internalJobBoardCode=jtbamericasltd-jtbusainc&includeActivePostingOnly=true"}
 {"b": "dayforce:jtbamericas/jtbhawaiitravel", "last_ok": "", "strikes": 0, "why": "error: 400 Client Error: Bad Request for url: https://us262-services.dayforcehcm.com/api/jtbamericas/V1/JobFeeds?internalJobBoardCode=jtbhawaiitravel&includeActivePostingOnly=true"}
@@ -31309,7 +31309,7 @@
 {"b": "dayforce:kcb/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:kccfc/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:kdcone/candidateportal", "last_ok": "2026-11-16", "strikes": 0}
-{"b": "dayforce:keewatinair/flightops", "last_ok": "2026-11-17", "strikes": 0, "why": "error: HTTPSConnectionPool(host='can262-services.dayforcehcm.com', port=443): Max retries exceeded with url: /api/keewatinair/V1/JobFeeds?internalJobBoardCode=flightops&includeActivePostingOnly=true (Caused by ResponseError('too many 503 error responses'))"}
+{"b": "dayforce:keewatinair/flightops", "last_ok": "2026-11-18", "strikes": 0}
 {"b": "dayforce:kendall/candidateportal", "last_ok": "", "strikes": 1, "why": "empty answer"}
 {"b": "dayforce:kennebunksavings/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:kennedyjc/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
@@ -31325,7 +31325,7 @@
 {"b": "dayforce:kiawah/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:kiddeglobal/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:kidder/candidateportal", "last_ok": "2026-11-16", "strikes": 0}
-{"b": "dayforce:kiinc/candidateportal", "last_ok": "2026-11-17", "strikes": 0, "why": "error: HTTPSConnectionPool(host='us262-services.dayforcehcm.com', port=443): Max retries exceeded with url: /api/kiinc/V1/JobFeeds?internalJobBoardCode=candidateportal&includeActivePostingOnly=true (Caused by ResponseError('too many 503 error responses'))"}
+{"b": "dayforce:kiinc/candidateportal", "last_ok": "2026-11-18", "strikes": 0}
 {"b": "dayforce:kimbel/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:kindeva/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:kinetik/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
@@ -31341,7 +31341,7 @@
 {"b": "dayforce:koch/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:koch/georgekochsonscandidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:koch/kochaircandidateportal", "last_ok": "2026-11-16", "strikes": 0}
-{"b": "dayforce:koch/salcandidateportal", "last_ok": "2026-11-17", "strikes": 0, "why": "error: still running after 960s"}
+{"b": "dayforce:koch/salcandidateportal", "last_ok": "2026-11-18", "strikes": 0}
 {"b": "dayforce:koch/swccandidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:kodakalaris/candidateportalv1", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:krayden/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
@@ -31357,7 +31357,7 @@
 {"b": "dayforce:labconnect/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:lacalbury/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 400 Client Error: Bad Request for url: https://aus262.dayforcehcm.com/api/lacalbury/V1/JobFeeds?internalJobBoardCode=candidateportal&includeActivePostingOnly=true"}
 {"b": "dayforce:lacoccinelle/candidateportal", "last_ok": "2026-11-16", "strikes": 0}
-{"b": "dayforce:lafayette/candidateportal", "last_ok": "2026-11-17", "strikes": 0, "why": "error: HTTPSConnectionPool(host='us262-services.dayforcehcm.com', port=443): Max retries exceeded with url: /api/lafayette/V1/JobFeeds?internalJobBoardCode=candidateportal&includeActivePostingOnly=true (Caused by ResponseError('too many 503 error responses'))"}
+{"b": "dayforce:lafayette/candidateportal", "last_ok": "2026-11-18", "strikes": 0}
 {"b": "dayforce:lakeshore/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:lakesidebook/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:lakesidecontrols/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
@@ -31373,7 +31373,7 @@
 {"b": "dayforce:lavergnetn/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:lavieenrose/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:laxcounty/candidateportal", "last_ok": "2026-11-16", "strikes": 0}
-{"b": "dayforce:lazydog/ldrjobsite", "last_ok": "2026-11-17", "strikes": 0, "why": "error: HTTPSConnectionPool(host='us262-services.dayforcehcm.com', port=443): Max retries exceeded with url: /api/lazydog/V1/JobFeeds?internalJobBoardCode=ldrjobsite&includeActivePostingOnly=true (Caused by ResponseError('too many 503 error responses'))"}
+{"b": "dayforce:lazydog/ldrjobsite", "last_ok": "2026-11-18", "strikes": 0}
 {"b": "dayforce:lci/collcieducationspanish", "last_ok": "2026-11-08", "strikes": 0}
 {"b": "dayforce:lci/lasallecollegevancouver", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:lcm/apexaluminumextrusionspostingsite", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
@@ -31389,7 +31389,7 @@
 {"b": "dayforce:lei/externalcareer", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:lemassif/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:lesymcaquebec/candidateportal", "last_ok": "2026-11-16", "strikes": 0}
-{"b": "dayforce:levittsafety/candidateportal", "last_ok": "2026-11-17", "strikes": 0, "why": "error: HTTPSConnectionPool(host='can262-services.dayforcehcm.com', port=443): Max retries exceeded with url: /api/levittsafety/V1/JobFeeds?internalJobBoardCode=candidateportal&includeActivePostingOnly=true (Caused by ResponseError('too many 503 error responses'))"}
+{"b": "dayforce:levittsafety/candidateportal", "last_ok": "2026-11-18", "strikes": 0}
 {"b": "dayforce:lexitas/lexitas", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:lgs/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:lhs/broadviewmulticarecenter", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
@@ -31405,7 +31405,7 @@
 {"b": "dayforce:lightwavedental/carolinaorthodonticschildrensdentistry", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:lightwavedental/riverrundental", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:lisina/lisiaerospaceclientcareersite", "last_ok": "2026-11-16", "strikes": 0}
-{"b": "dayforce:lisina/termaxclientcareersite", "last_ok": "2026-11-17", "strikes": 0, "why": "error: HTTPSConnectionPool(host='us262-services.dayforcehcm.com', port=443): Max retries exceeded with url: /api/lisina/V1/JobFeeds?internalJobBoardCode=termaxclientcareersite&includeActivePostingOnly=true (Caused by ResponseError('too many 503 error responses'))"}
+{"b": "dayforce:lisina/termaxclientcareersite", "last_ok": "2026-11-18", "strikes": 0}
 {"b": "dayforce:lji/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:lloydsadd/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:lls/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
@@ -31421,7 +31421,7 @@
 {"b": "dayforce:lpwgroup/ladish-jobs", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:lpwgroup/wff-jobs", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:lri/candidateportal", "last_ok": "2026-11-16", "strikes": 0}
-{"b": "dayforce:lri/candidateportalaurora", "last_ok": "2026-11-17", "strikes": 0, "why": "error: still running after 960s"}
+{"b": "dayforce:lri/candidateportalaurora", "last_ok": "2026-11-18", "strikes": 0}
 {"b": "dayforce:lsl/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:lss/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:lssi/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
@@ -31437,7 +31437,7 @@
 {"b": "dayforce:lynden/candidateportal", "last_ok": "", "strikes": 1, "why": "empty answer"}
 {"b": "dayforce:lynxdf/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:mac/candidateportal", "last_ok": "2026-11-16", "strikes": 0}
-{"b": "dayforce:mac/plmfleet", "last_ok": "2026-11-17", "strikes": 0, "why": "error: HTTPSConnectionPool(host='us262-services.dayforcehcm.com', port=443): Max retries exceeded with url: /api/mac/V1/JobFeeds?internalJobBoardCode=plmfleet&includeActivePostingOnly=true (Caused by ResponseError('too many 503 error responses'))"}
+{"b": "dayforce:mac/plmfleet", "last_ok": "2026-11-18", "strikes": 0}
 {"b": "dayforce:maclellanlive/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:maj/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:makeawishca/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
@@ -31453,7 +31453,7 @@
 {"b": "dayforce:mayinstitute/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:maysteel/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:mbg/candidateportal", "last_ok": "2026-11-16", "strikes": 0}
-{"b": "dayforce:mca/micmcacombinedcareersite", "last_ok": "2026-11-17", "strikes": 0, "why": "error: still running after 960s"}
+{"b": "dayforce:mca/micmcacombinedcareersite", "last_ok": "2026-11-18", "strikes": 0}
 {"b": "dayforce:mcelhanney/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:mchhs/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:mcmc/trccandidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
@@ -31485,7 +31485,7 @@
 {"b": "dayforce:mgx/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:mhchealth/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:mib/candidateportal", "last_ok": "2026-11-16", "strikes": 0}
-{"b": "dayforce:microart/candidateportal", "last_ok": "2026-11-17", "strikes": 0, "why": "error: HTTPSConnectionPool(host='can262-services.dayforcehcm.com', port=443): Max retries exceeded with url: /api/microart/V1/JobFeeds?internalJobBoardCode=candidateportal&includeActivePostingOnly=true (Caused by ResponseError('too many 503 error responses'))"}
+{"b": "dayforce:microart/candidateportal", "last_ok": "2026-11-18", "strikes": 0}
 {"b": "dayforce:midwestbankcentre/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:milestones/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:millerwaste/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
@@ -31501,7 +31501,7 @@
 {"b": "dayforce:mlhu/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:mlp/58470", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:mmc/candidateportal", "last_ok": "2026-11-16", "strikes": 0}
-{"b": "dayforce:mmg/candidateportal", "last_ok": "2026-11-17", "strikes": 0, "why": "error: HTTPSConnectionPool(host='us262-services.dayforcehcm.com', port=443): Max retries exceeded with url: /api/mmg/V1/JobFeeds?internalJobBoardCode=candidateportal&includeActivePostingOnly=true (Caused by ResponseError('too many 503 error responses'))"}
+{"b": "dayforce:mmg/candidateportal", "last_ok": "2026-11-18", "strikes": 0}
 {"b": "dayforce:mmgoodwill/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:mmindustries/candidateportal", "last_ok": "", "strikes": 1, "why": "empty answer"}
 {"b": "dayforce:mnufc/mnufccareersportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
@@ -31517,7 +31517,7 @@
 {"b": "dayforce:mriglobal/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:msichoices/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:mti/candidateportal", "last_ok": "2026-11-16", "strikes": 0}
-{"b": "dayforce:muellerindustries/muellerrefrigerationllc", "last_ok": "2026-11-17", "strikes": 0, "why": "error: still running after 960s"}
+{"b": "dayforce:muellerindustries/muellerrefrigerationllc", "last_ok": "2026-11-18", "strikes": 0}
 {"b": "dayforce:mul/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:multitech/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:musashi/productionassociates", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
@@ -31533,7 +31533,7 @@
 {"b": "dayforce:myepay/dmrstandard", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:myers/akro-milsclientcareersite", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:myers/buckhornclientcareersite", "last_ok": "2026-11-16", "strikes": 0}
-{"b": "dayforce:myers/elkhartplasticsclientcareersite", "last_ok": "2026-11-17", "strikes": 0, "why": "error: HTTPSConnectionPool(host='us262-services.dayforcehcm.com', port=443): Max retries exceeded with url: /api/myers/V1/JobFeeds?internalJobBoardCode=elkhartplasticsclientcareersite&includeActivePostingOnly=true (Caused by ResponseError('too many 503 error responses'))"}
+{"b": "dayforce:myers/elkhartplasticsclientcareersite", "last_ok": "2026-11-18", "strikes": 0}
 {"b": "dayforce:myers/jamcoproductsclientcareersite", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:myers/myersindustriesincclientcareersite", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:myhrtempletx/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
@@ -31549,7 +31549,7 @@
 {"b": "dayforce:mytfcuhr/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:mytompsc/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:myvitacress/candidateportal", "last_ok": "2026-11-16", "strikes": 0}
-{"b": "dayforce:nacsb/candidateportal", "last_ok": "2026-11-17", "strikes": 0, "why": "error: HTTPSConnectionPool(host='us262-services.dayforcehcm.com', port=443): Max retries exceeded with url: /api/nacsb/V1/JobFeeds?internalJobBoardCode=candidateportal&includeActivePostingOnly=true (Caused by ResponseError('too many 503 error responses'))"}
+{"b": "dayforce:nacsb/candidateportal", "last_ok": "2026-11-18", "strikes": 0}
 {"b": "dayforce:nam/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:nant/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:nantmedia/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
@@ -31597,7 +31597,7 @@
 {"b": "dayforce:nora/noraportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:noranco/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:norrcion/111414", "last_ok": "2026-11-16", "strikes": 0}
-{"b": "dayforce:norrcion/cioncareers", "last_ok": "2026-11-17", "strikes": 0, "why": "error: still running after 960s"}
+{"b": "dayforce:norrcion/cioncareers", "last_ok": "2026-11-18", "strikes": 0}
 {"b": "dayforce:northlandproperties/grousemountain", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:norwestchc/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:nott/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
@@ -31613,7 +31613,7 @@
 {"b": "dayforce:ntcorp/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:nun/explorerhotel", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:nun/frobisherinn", "last_ok": "2026-11-16", "strikes": 0}
-{"b": "dayforce:nussgrp/candidateportal", "last_ok": "2026-11-17", "strikes": 0, "why": "error: HTTPSConnectionPool(host='us262-services.dayforcehcm.com', port=443): Max retries exceeded with url: /api/nussgrp/V1/JobFeeds?internalJobBoardCode=candidateportal&includeActivePostingOnly=true (Caused by ResponseError('too many 503 error responses'))"}
+{"b": "dayforce:nussgrp/candidateportal", "last_ok": "2026-11-18", "strikes": 0}
 {"b": "dayforce:nuvision/107847", "last_ok": "", "strikes": 1, "why": "empty answer"}
 {"b": "dayforce:nuvision/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:nvsgroup/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
@@ -31629,7 +31629,7 @@
 {"b": "dayforce:odc/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:oec/uscandidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:okigolf/candidateportal", "last_ok": "2026-11-16", "strikes": 0}
-{"b": "dayforce:olivecrest/nevada", "last_ok": "2026-11-17", "strikes": 0, "why": "error: still running after 960s"}
+{"b": "dayforce:olivecrest/nevada", "last_ok": "2026-11-18", "strikes": 0}
 {"b": "dayforce:olt/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:olvhs/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:omega/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
@@ -31645,7 +31645,7 @@
 {"b": "dayforce:onroute/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:ontrac/specialty", "last_ok": "", "strikes": 1, "why": "empty answer"}
 {"b": "dayforce:opalhealthcare/candidateportalnursing", "last_ok": "", "strikes": 0, "why": "error: 400 Client Error: Bad Request for url: https://wkdaus262.dayforcehcm.com/api/opalhealthcare/V1/JobFeeds?internalJobBoardCode=candidateportalnursing&includeActivePostingOnly=true"}
-{"b": "dayforce:opta/candidateportal", "last_ok": "2026-11-17", "strikes": 0, "why": "error: HTTPSConnectionPool(host='us262-services.dayforcehcm.com', port=443): Max retries exceeded with url: /api/opta/V1/JobFeeds?internalJobBoardCode=candidateportal&includeActivePostingOnly=true (Caused by ResponseError('too many 503 error responses'))"}
+{"b": "dayforce:opta/candidateportal", "last_ok": "2026-11-18", "strikes": 0}
 {"b": "dayforce:organigram/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:orionassoc/mscareers", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:orionassoc/oricareers", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
@@ -31661,7 +31661,7 @@
 {"b": "dayforce:otg/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:othhotels/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:ots/candidateportal", "last_ok": "2026-11-16", "strikes": 0}
-{"b": "dayforce:outpost/candidateportal", "last_ok": "2026-11-17", "strikes": 0, "why": "error: HTTPSConnectionPool(host='us262-services.dayforcehcm.com', port=443): Max retries exceeded with url: /api/outpost/V1/JobFeeds?internalJobBoardCode=candidateportal&includeActivePostingOnly=true (Caused by ResponseError('too many 503 error responses'))"}
+{"b": "dayforce:outpost/candidateportal", "last_ok": "2026-11-18", "strikes": 0}
 {"b": "dayforce:ovisllc93023/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:owi/candidateportalowi", "last_ok": "", "strikes": 1, "why": "empty answer"}
 {"b": "dayforce:ozcare/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 400 Client Error: Bad Request for url: https://wkdaus262.dayforcehcm.com/api/ozcare/V1/JobFeeds?internalJobBoardCode=candidateportal&includeActivePostingOnly=true"}
@@ -31677,7 +31677,7 @@
 {"b": "dayforce:paradigm/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:paralosninos/externalsiteposting", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:pasco/pcaclientcareerssite", "last_ok": "2026-11-16", "strikes": 0}
-{"b": "dayforce:passport/candidateportal", "last_ok": "2026-11-17", "strikes": 0, "why": "error: still running after 960s"}
+{"b": "dayforce:passport/candidateportal", "last_ok": "2026-11-18", "strikes": 0}
 {"b": "dayforce:pattisonag/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:pavco/candidateportal", "last_ok": "", "strikes": 1, "why": "empty answer"}
 {"b": "dayforce:paymentscanada/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
@@ -31693,7 +31693,7 @@
 {"b": "dayforce:peavey/candidateportal", "last_ok": "2026-11-08", "strikes": 0}
 {"b": "dayforce:peelcas/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:pelican/candidateportal", "last_ok": "2026-11-16", "strikes": 0}
-{"b": "dayforce:pelicanscu/candidateportal", "last_ok": "2026-11-17", "strikes": 0, "why": "error: still running after 960s"}
+{"b": "dayforce:pelicanscu/candidateportal", "last_ok": "2026-11-18", "strikes": 0}
 {"b": "dayforce:pemco/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:pendalgroup/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 400 Client Error: Bad Request for url: https://wkdeur262.dayforcehcm.com/api/pendalgroup/V1/JobFeeds?internalJobBoardCode=candidateportal&includeActivePostingOnly=true"}
 {"b": "dayforce:pennfostercarrus/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
@@ -31725,7 +31725,7 @@
 {"b": "dayforce:pnt/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:polyinc/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:pompstire/candidateportal", "last_ok": "2026-11-16", "strikes": 0}
-{"b": "dayforce:pondco/candidateportal", "last_ok": "2026-11-17", "strikes": 0, "why": "error: HTTPSConnectionPool(host='us262-services.dayforcehcm.com', port=443): Max retries exceeded with url: /api/pondco/V1/JobFeeds?internalJobBoardCode=candidateportal&includeActivePostingOnly=true (Caused by ResponseError('too many 503 error responses'))"}
+{"b": "dayforce:pondco/candidateportal", "last_ok": "2026-11-18", "strikes": 0}
 {"b": "dayforce:porta/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:portofbellingham/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:postmedia/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
@@ -31741,7 +31741,7 @@
 {"b": "dayforce:ppab1884/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:pplco/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:pprmgu/candidateportal", "last_ok": "2026-11-16", "strikes": 0}
-{"b": "dayforce:pqchc/candidateportal", "last_ok": "2026-11-17", "strikes": 0, "why": "error: HTTPSConnectionPool(host='can262-services.dayforcehcm.com', port=443): Max retries exceeded with url: /api/pqchc/V1/JobFeeds?internalJobBoardCode=candidateportal&includeActivePostingOnly=true (Caused by ResponseError('too many 503 error responses'))"}
+{"b": "dayforce:pqchc/candidateportal", "last_ok": "2026-11-18", "strikes": 0}
 {"b": "dayforce:prclworld/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:pregis/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:premierparks/valcartier", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
@@ -31757,7 +31757,7 @@
 {"b": "dayforce:progressiveae/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:projecthome/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:projectrenewal/candidateportal", "last_ok": "2026-11-16", "strikes": 0}
-{"b": "dayforce:proliance/proliancecareersite", "last_ok": "", "strikes": 0, "why": "error: HTTPSConnectionPool(host='us262-services.dayforcehcm.com', port=443): Max retries exceeded with url: /api/proliance/V1/JobFeeds?internalJobBoardCode=proliancecareersite&includeActivePostingOnly=true (Caused by ResponseError('too many 503 error responses'))"}
+{"b": "dayforce:proliance/proliancecareersite", "last_ok": "", "strikes": 0, "why": "error: 403 Client Error: Forbidden for url: https://us262-services.dayforcehcm.com/api/proliance/V1/JobFeeds?internalJobBoardCode=proliancecareersite&includeActivePostingOnly=true"}
 {"b": "dayforce:prometric/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:prosperity/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:prounlimited/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
@@ -31773,7 +31773,7 @@
 {"b": "dayforce:purposefin/purposeinvestments", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:purposefin/purposeunlimited", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:pviholdings/sis", "last_ok": "2026-11-16", "strikes": 0}
-{"b": "dayforce:pviholdings/vytlcontrolsgroupcareer", "last_ok": "2026-11-17", "strikes": 0, "why": "error: still running after 960s"}
+{"b": "dayforce:pviholdings/vytlcontrolsgroupcareer", "last_ok": "2026-11-18", "strikes": 0}
 {"b": "dayforce:pviholdings/wosupply", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:pvtgroup/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:q2als/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
@@ -31789,7 +31789,7 @@
 {"b": "dayforce:rah/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:raincity/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:rainier/candidateportal", "last_ok": "2026-11-16", "strikes": 0}
-{"b": "dayforce:ravagoamericas/bluepolymerscareers", "last_ok": "2026-11-17", "strikes": 0, "why": "error: HTTPSConnectionPool(host='us262-services.dayforcehcm.com', port=443): Max retries exceeded with url: /api/ravagoamericas/V1/JobFeeds?internalJobBoardCode=bluepolymerscareers&includeActivePostingOnly=true (Caused by ResponseError('too many 503 error responses'))"}
+{"b": "dayforce:ravagoamericas/bluepolymerscareers", "last_ok": "2026-11-18", "strikes": 0}
 {"b": "dayforce:ravagoamericas/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:rcu/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:realstar/headoffice", "last_ok": "2026-11-08", "strikes": 0}
@@ -31805,7 +31805,7 @@
 {"b": "dayforce:regency/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:reliancecomfort/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:remmele/preceramedical", "last_ok": "2026-11-16", "strikes": 0}
-{"b": "dayforce:restorixhealth/candidateportal", "last_ok": "2026-11-17", "strikes": 0, "why": "error: HTTPSConnectionPool(host='us262-services.dayforcehcm.com', port=443): Max retries exceeded with url: /api/restorixhealth/V1/JobFeeds?internalJobBoardCode=candidateportal&includeActivePostingOnly=true (Caused by ResponseError('too many 503 error responses'))"}
+{"b": "dayforce:restorixhealth/candidateportal", "last_ok": "2026-11-18", "strikes": 0}
 {"b": "dayforce:rethink/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:rfrk/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:richardsonwealth/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
@@ -31821,7 +31821,7 @@
 {"b": "dayforce:rmldb/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:rmsijtac/marmot", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:rockler/careers", "last_ok": "2026-11-16", "strikes": 0}
-{"b": "dayforce:rockyview/candidateportal", "last_ok": "2026-11-17", "strikes": 0, "why": "error: still running after 960s"}
+{"b": "dayforce:rockyview/candidateportal", "last_ok": "2026-11-18", "strikes": 0}
 {"b": "dayforce:rohcgf/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:roke/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:romarah/gulephcareersite", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
@@ -31885,7 +31885,7 @@
 {"b": "dayforce:sffit/orangetheorycareers", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:sgggfsi/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:sgi/candidateportal", "last_ok": "2026-11-16", "strikes": 0}
-{"b": "dayforce:sgoc/candidateportal", "last_ok": "2026-11-17", "strikes": 0, "why": "error: HTTPSConnectionPool(host='can262-services.dayforcehcm.com', port=443): Max retries exceeded with url: /api/sgoc/V1/JobFeeds?internalJobBoardCode=candidateportal&includeActivePostingOnly=true (Caused by ResponseError('too many 503 error responses'))"}
+{"b": "dayforce:sgoc/candidateportal", "last_ok": "2026-11-18", "strikes": 0}
 {"b": "dayforce:shawano/shawanocounty", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:shbc/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:shccares/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
@@ -31917,7 +31917,7 @@
 {"b": "dayforce:smcnorthamerica/65333", "last_ok": "", "strikes": 1, "why": "empty answer"}
 {"b": "dayforce:smct/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:smiledoctors/candidateportal", "last_ok": "2026-11-16", "strikes": 0}
-{"b": "dayforce:snl/candidateportal", "last_ok": "2026-11-17", "strikes": 0, "why": "error: HTTPSConnectionPool(host='can262-services.dayforcehcm.com', port=443): Max retries exceeded with url: /api/snl/V1/JobFeeds?internalJobBoardCode=candidateportal&includeActivePostingOnly=true (Caused by ResponseError('too many 503 error responses'))"}
+{"b": "dayforce:snl/candidateportal", "last_ok": "2026-11-18", "strikes": 0}
 {"b": "dayforce:snoisle/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:sny/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:soahac/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
@@ -31933,7 +31933,7 @@
 {"b": "dayforce:spring/leportmontessoriportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:springbrook/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:squiresgc1936/candidateportal", "last_ok": "2026-11-16", "strikes": 0}
-{"b": "dayforce:ssc/bartlett", "last_ok": "2026-11-17", "strikes": 0, "why": "error: HTTPSConnectionPool(host='us262-services.dayforcehcm.com', port=443): Max retries exceeded with url: /api/ssc/V1/JobFeeds?internalJobBoardCode=bartlett&includeActivePostingOnly=true (Caused by ResponseError('too many 503 error responses'))"}
+{"b": "dayforce:ssc/bartlett", "last_ok": "2026-11-18", "strikes": 0}
 {"b": "dayforce:ssc/texon", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:sscc/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:ssfoc/candidateportalv1", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
@@ -31949,7 +31949,7 @@
 {"b": "dayforce:stateslogistics/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:statewindow/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:stbc/candidateportal", "last_ok": "2026-11-16", "strikes": 0}
-{"b": "dayforce:stcam/nursing", "last_ok": "2026-11-17", "strikes": 0, "why": "error: still running after 960s"}
+{"b": "dayforce:stcam/nursing", "last_ok": "2026-11-18", "strikes": 0}
 {"b": "dayforce:stdavids/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:steadfast/candidateportal", "last_ok": "2026-11-08", "strikes": 0}
 {"b": "dayforce:steelreef/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
@@ -31965,7 +31965,7 @@
 {"b": "dayforce:stone/candidateportal", "last_ok": "2026-11-08", "strikes": 0}
 {"b": "dayforce:stoneagehold/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:stonefleming/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 400 Client Error: Bad Request for url: https://wkdeur262.dayforcehcm.com/api/stonefleming/V1/JobFeeds?internalJobBoardCode=candidateportal&includeActivePostingOnly=true"}
-{"b": "dayforce:storagemart/candidateportal", "last_ok": "2026-11-17", "strikes": 0, "why": "error: HTTPSConnectionPool(host='us262-services.dayforcehcm.com', port=443): Max retries exceeded with url: /api/storagemart/V1/JobFeeds?internalJobBoardCode=candidateportal&includeActivePostingOnly=true (Caused by ResponseError('too many 503 error responses'))"}
+{"b": "dayforce:storagemart/candidateportal", "last_ok": "2026-11-18", "strikes": 0}
 {"b": "dayforce:stp/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:strategicgroup/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:stretto/strettocareers", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
@@ -31981,7 +31981,7 @@
 {"b": "dayforce:sunroad/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:sunshine/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:sunwing/candidateportal", "last_ok": "2026-11-16", "strikes": 0}
-{"b": "dayforce:super1/candidateportal", "last_ok": "2026-11-17", "strikes": 0, "why": "error: HTTPSConnectionPool(host='us262-services.dayforcehcm.com', port=443): Max retries exceeded with url: /api/super1/V1/JobFeeds?internalJobBoardCode=candidateportal&includeActivePostingOnly=true (Caused by ResponseError('too many 503 error responses'))"}
+{"b": "dayforce:super1/candidateportal", "last_ok": "2026-11-18", "strikes": 0}
 {"b": "dayforce:superheat/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:superiorplus/spcareers", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:surepoint/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
@@ -31997,7 +31997,7 @@
 {"b": "dayforce:symcor/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 403 Client Error: Forbidden for url: https://can262-services.dayforcehcm.com/api/symcor/V1/JobFeeds?internalJobBoardCode=candidateportal&includeActivePostingOnly=true"}
 {"b": "dayforce:tai/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:taiho/candidateportal", "last_ok": "2026-11-16", "strikes": 0}
-{"b": "dayforce:talcott/talcottcareers", "last_ok": "2026-11-17", "strikes": 0, "why": "error: HTTPSConnectionPool(host='us262-services.dayforcehcm.com', port=443): Max retries exceeded with url: /api/talcott/V1/JobFeeds?internalJobBoardCode=talcottcareers&includeActivePostingOnly=true (Caused by ResponseError('too many 503 error responses'))"}
+{"b": "dayforce:talcott/talcottcareers", "last_ok": "2026-11-18", "strikes": 0}
 {"b": "dayforce:talize/talize", "last_ok": "", "strikes": 1, "why": "empty answer"}
 {"b": "dayforce:tamarackresort/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:tbb/candidateportaltbb", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
@@ -32013,7 +32013,7 @@
 {"b": "dayforce:teeg/zonebowlingcareers", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:tempus/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:teppermans/candidateportal", "last_ok": "2026-11-16", "strikes": 0}
-{"b": "dayforce:terrapure/candidateportal", "last_ok": "2026-11-17", "strikes": 0, "why": "error: still running after 960s"}
+{"b": "dayforce:terrapure/candidateportal", "last_ok": "2026-11-18", "strikes": 0}
 {"b": "dayforce:tesglobal/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:tfehotels/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:tfm/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
@@ -32029,7 +32029,7 @@
 {"b": "dayforce:thepalace/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:thg/allcareers", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:thrift/candidateportal", "last_ok": "2026-11-16", "strikes": 0}
-{"b": "dayforce:thrivespc/candidateportal", "last_ok": "2026-11-17", "strikes": 0, "why": "error: HTTPSConnectionPool(host='us262-services.dayforcehcm.com', port=443): Max retries exceeded with url: /api/thrivespc/V1/JobFeeds?internalJobBoardCode=candidateportal&includeActivePostingOnly=true (Caused by ResponseError('too many 503 error responses'))"}
+{"b": "dayforce:thrivespc/candidateportal", "last_ok": "2026-11-18", "strikes": 0}
 {"b": "dayforce:thundermist/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:tier1energy/canatex", "last_ok": "2026-11-08", "strikes": 0}
 {"b": "dayforce:tilebar11/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
@@ -32045,7 +32045,7 @@
 {"b": "dayforce:tml/tmicandidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:tnhealth/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:tntx/candidateportal", "last_ok": "2026-11-16", "strikes": 0}
-{"b": "dayforce:tog/candidateportal", "last_ok": "2026-11-17", "strikes": 0, "why": "error: HTTPSConnectionPool(host='us262-services.dayforcehcm.com', port=443): Max retries exceeded with url: /api/tog/V1/JobFeeds?internalJobBoardCode=candidateportal&includeActivePostingOnly=true (Caused by ResponseError('too many 503 error responses'))"}
+{"b": "dayforce:tog/candidateportal", "last_ok": "2026-11-18", "strikes": 0}
 {"b": "dayforce:tog/tcrcareers", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:tog/tribe513careers", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:tohr/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
@@ -32061,7 +32061,7 @@
 {"b": "dayforce:tourismholdings/amhcp", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:tourismholdings/cdcp", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:tourismwhistler/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 400 Client Error: Bad Request for url: https://can262-services.dayforcehcm.com/api/tourismwhistler/V1/JobFeeds?internalJobBoardCode=candidateportal&includeActivePostingOnly=true"}
-{"b": "dayforce:tpfinc/candidateportal", "last_ok": "2026-11-17", "strikes": 0, "why": "error: HTTPSConnectionPool(host='us262-services.dayforcehcm.com', port=443): Max retries exceeded with url: /api/tpfinc/V1/JobFeeds?internalJobBoardCode=candidateportal&includeActivePostingOnly=true (Caused by ResponseError('too many 503 error responses'))"}
+{"b": "dayforce:tpfinc/candidateportal", "last_ok": "2026-11-18", "strikes": 0}
 {"b": "dayforce:tpi/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:transpak/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:transtar/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
@@ -32093,7 +32093,7 @@
 {"b": "dayforce:twoharbors/round-point", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:ubt/ubtglobalextclientportal", "last_ok": "", "strikes": 0, "why": "error: 400 Client Error: Bad Request for url: https://wkdaus262.dayforcehcm.com/api/ubt/V1/JobFeeds?internalJobBoardCode=ubtglobalextclientportal&includeActivePostingOnly=true"}
 {"b": "dayforce:uccc/candidateportal", "last_ok": "2026-11-16", "strikes": 0}
-{"b": "dayforce:ultimus/candidateportal", "last_ok": "2026-11-17", "strikes": 0, "why": "error: HTTPSConnectionPool(host='us262-services.dayforcehcm.com', port=443): Max retries exceeded with url: /api/ultimus/V1/JobFeeds?internalJobBoardCode=candidateportal&includeActivePostingOnly=true (Caused by ResponseError('too many 503 error responses'))"}
+{"b": "dayforce:ultimus/candidateportal", "last_ok": "2026-11-18", "strikes": 0}
 {"b": "dayforce:ultimus/ultimusleverpoint", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:unicare/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:unigroup/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
@@ -32125,7 +32125,7 @@
 {"b": "dayforce:vcco/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:venuesnsw/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:veranex/candidateportal", "last_ok": "2026-11-16", "strikes": 0}
-{"b": "dayforce:verisma/candidateportal", "last_ok": "2026-11-17", "strikes": 0, "why": "error: HTTPSConnectionPool(host='us262-services.dayforcehcm.com', port=443): Max retries exceeded with url: /api/verisma/V1/JobFeeds?internalJobBoardCode=candidateportal&includeActivePostingOnly=true (Caused by ResponseError('too many 503 error responses'))"}
+{"b": "dayforce:verisma/candidateportal", "last_ok": "2026-11-18", "strikes": 0}
 {"b": "dayforce:veritas/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:versanthealth/versanthealth", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:vertavahealth/candidateportal", "last_ok": "2026-11-08", "strikes": 0}
@@ -32141,7 +32141,7 @@
 {"b": "dayforce:vmsinc/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 403 Client Error: Forbidden for url: https://us262-services.dayforcehcm.com/api/vmsinc/V1/JobFeeds?internalJobBoardCode=candidateportal&includeActivePostingOnly=true"}
 {"b": "dayforce:voagny/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:vocus/candidateportal", "last_ok": "2026-11-16", "strikes": 0}
-{"b": "dayforce:vonmaur/candidateportaldrygoods", "last_ok": "2026-11-17", "strikes": 0, "why": "error: HTTPSConnectionPool(host='us262-services.dayforcehcm.com', port=443): Max retries exceeded with url: /api/vonmaur/V1/JobFeeds?internalJobBoardCode=candidateportaldrygoods&includeActivePostingOnly=true (Caused by ResponseError('too many 503 error responses'))"}
+{"b": "dayforce:vonmaur/candidateportaldrygoods", "last_ok": "2026-11-18", "strikes": 0}
 {"b": "dayforce:vortex/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:voyant/82887", "last_ok": "", "strikes": 1, "why": "empty answer"}
 {"b": "dayforce:vpne/careers", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
@@ -32157,7 +32157,7 @@
 {"b": "dayforce:watlow/watlowcareersite", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:wayside/clientcareerintern", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:wch/candidateportal", "last_ok": "2026-11-16", "strikes": 0}
-{"b": "dayforce:wdtmilk/candidateportal", "last_ok": "2026-11-17", "strikes": 0, "why": "error: HTTPSConnectionPool(host='us262-services.dayforcehcm.com', port=443): Max retries exceeded with url: /api/wdtmilk/V1/JobFeeds?internalJobBoardCode=candidateportal&includeActivePostingOnly=true (Caused by ResponseError('too many 503 error responses'))"}
+{"b": "dayforce:wdtmilk/candidateportal", "last_ok": "2026-11-18", "strikes": 0}
 {"b": "dayforce:wearegat/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:weberweb/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:wechu/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
@@ -32173,7 +32173,7 @@
 {"b": "dayforce:westerkirk/candidateportal", "last_ok": "", "strikes": 1, "why": "empty answer"}
 {"b": "dayforce:westerkirk/cosmeticacorporatecareers", "last_ok": "2026-11-08", "strikes": 0}
 {"b": "dayforce:westerkirk/dehavillandcorporatecareers", "last_ok": "2026-11-16", "strikes": 0}
-{"b": "dayforce:westerkirk/pacificskycorporatecareers", "last_ok": "2026-11-17", "strikes": 0, "why": "error: HTTPSConnectionPool(host='can262-services.dayforcehcm.com', port=443): Max retries exceeded with url: /api/westerkirk/V1/JobFeeds?internalJobBoardCode=pacificskycorporatecareers&includeActivePostingOnly=true (Caused by ResponseError('too many 503 error responses'))"}
+{"b": "dayforce:westerkirk/pacificskycorporatecareers", "last_ok": "2026-11-18", "strikes": 0}
 {"b": "dayforce:westerkirk/vistaradiocorporatecareers", "last_ok": "", "strikes": 1, "why": "empty answer"}
 {"b": "dayforce:westlandcorp/agileunderwritingsolutions", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:westlandcorp/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
@@ -32189,7 +32189,7 @@
 {"b": "dayforce:wfh/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:whartonsmith/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:wheelabrator/candidateportal", "last_ok": "2026-11-16", "strikes": 0}
-{"b": "dayforce:wheeler/candidateportal", "last_ok": "2026-11-17", "strikes": 0, "why": "error: HTTPSConnectionPool(host='us262-services.dayforcehcm.com', port=443): Max retries exceeded with url: /api/wheeler/V1/JobFeeds?internalJobBoardCode=candidateportal&includeActivePostingOnly=true (Caused by ResponseError('too many 503 error responses'))"}
+{"b": "dayforce:wheeler/candidateportal", "last_ok": "2026-11-18", "strikes": 0}
 {"b": "dayforce:wheelerfleet/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:whitehavencoal/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:whri/tnjobs", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
@@ -32205,7 +32205,7 @@
 {"b": "dayforce:wistar/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:wobgroup/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:wolfmidstream/candidateportal", "last_ok": "2026-11-16", "strikes": 0}
-{"b": "dayforce:woodmenlife/candidateportal", "last_ok": "2026-11-17", "strikes": 0, "why": "error: HTTPSConnectionPool(host='us262-services.dayforcehcm.com', port=443): Max retries exceeded with url: /api/woodmenlife/V1/JobFeeds?internalJobBoardCode=candidateportal&includeActivePostingOnly=true (Caused by ResponseError('too many 503 error responses'))"}
+{"b": "dayforce:woodmenlife/candidateportal", "last_ok": "2026-11-18", "strikes": 0}
 {"b": "dayforce:woodranch/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:woodshomes/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:woodviewhcm/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
@@ -32221,7 +32221,7 @@
 {"b": "dayforce:yes/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:yhata/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:ymaryland/candidateportal", "last_ok": "2026-11-16", "strikes": 0}
-{"b": "dayforce:ymcabuffalo/candidateportal", "last_ok": "2026-11-17", "strikes": 0, "why": "error: HTTPSConnectionPool(host='us262-services.dayforcehcm.com', port=443): Max retries exceeded with url: /api/ymcabuffalo/V1/JobFeeds?internalJobBoardCode=candidateportal&includeActivePostingOnly=true (Caused by ResponseError('too many 503 error responses'))"}
+{"b": "dayforce:ymcabuffalo/candidateportal", "last_ok": "2026-11-18", "strikes": 0}
 {"b": "dayforce:ymcadetroit/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:ymcafw/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
 {"b": "dayforce:ymcametrowash/candidateportal", "last_ok": "", "strikes": 0, "why": "error: 'int' object has no attribute 'strip'"}
@@ -41314,7 +41314,7 @@
 {"b": "hireology:interimhealthcare-chestercounty", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "hireology:interimhealthcare-chesterfieldmo", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "hireology:interimhealthcare-citrusheightsca", "last_ok": "2026-11-16", "strikes": 0}
-{"b": "hireology:interimhealthcare-clearwaterfl", "last_ok": "2026-11-18", "strikes": 0}
+{"b": "hireology:interimhealthcare-clearwaterfl", "last_ok": "2026-11-18", "strikes": 1, "why": "empty answer"}
 {"b": "hireology:interimhealthcare-columbiamd", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "hireology:interimhealthcare-conroetx", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "hireology:interimhealthcare-covingtonla", "last_ok": "2026-11-09", "strikes": 0}
@@ -90553,7 +90553,7 @@
 {"b": "personio:skytanking", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "personio:skyteam", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "personio:skytron", "last_ok": "2026-11-16", "strikes": 0}
-{"b": "personio:sl-rasch-gmbh", "last_ok": "2026-11-18", "strikes": 0}
+{"b": "personio:sl-rasch-gmbh", "last_ok": "2026-11-18", "strikes": 1, "why": "empty answer"}
 {"b": "personio:sla", "last_ok": "", "strikes": 0, "why": "error: 404 Client Error: Not Found for url: https://sla.jobs.personio.de/xml"}
 {"b": "personio:slash-digital", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "personio:slb", "last_ok": "2026-11-08", "strikes": 0}
@@ -104334,7 +104334,7 @@
 {"b": "workday:belkin.wd5.myworkdayjobs.com/belkin_careers", "last_ok": "2026-10-28", "strikes": 0}
 {"b": "workday:belkin.wd5.myworkdayjobs.com/fit_careers", "last_ok": "2026-10-27", "strikes": 0}
 {"b": "workday:bellcounty.wd12.myworkdayjobs.com/bellcountyexternalcareersite", "last_ok": "2026-11-16", "strikes": 0, "why": "error: still running after 960s"}
-{"b": "workday:bellpartnersinc.wd5.myworkdayjobs.com/careers", "last_ok": "2026-11-18", "strikes": 0}
+{"b": "workday:bellpartnersinc.wd5.myworkdayjobs.com/careers", "last_ok": "2026-11-18", "strikes": 0, "why": "error: still running after 960s"}
 {"b": "workday:belron.wd3.myworkdayjobs.com/belron_canada_careers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:belron.wd3.myworkdayjobs.com/belron_new_zealand_careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:belron.wd3.myworkdayjobs.com/carglass_careers", "last_ok": "2026-10-28", "strikes": 0}
@@ -104366,7 +104366,7 @@
 {"b": "workday:binus.wd3.myworkdayjobs.com/lifeatbinus", "last_ok": "2026-10-27", "strikes": 0}
 {"b": "workday:biocodex.wd502.myworkdayjobs.com/biocodex_careers", "last_ok": "2026-10-25", "strikes": 0}
 {"b": "workday:biomarpeople.wd3.myworkdayjobs.com/biomar", "last_ok": "2026-11-16", "strikes": 0, "why": "error: still running after 960s"}
-{"b": "workday:biotechne.wd5.myworkdayjobs.com/biotechne", "last_ok": "2026-11-15", "strikes": 0, "why": "error: still running after 960s"}
+{"b": "workday:biotechne.wd5.myworkdayjobs.com/biotechne", "last_ok": "2026-11-15", "strikes": 0, "why": "error: HTTPSConnectionPool(host='biotechne.wd5.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/biotechne/biotechne/jobs (Caused by ResponseError('too many 429 error responses'))"}
 {"b": "workday:birch.wd1.myworkdayjobs.com/fusioncareers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:bird.wd3.myworkdayjobs.com/birdconstructioncareers", "last_ok": "2026-10-29", "strikes": 0}
 {"b": "workday:bird.wd3.myworkdayjobs.com/canemcareers", "last_ok": "2026-10-29", "strikes": 0}
@@ -104494,7 +104494,7 @@
 {"b": "workday:caa.wd1.myworkdayjobs.com/Careers", "last_ok": "2026-10-25", "strikes": 0}
 {"b": "workday:caaquebec.wd3.myworkdayjobs.com/carrierescaa-quebec", "last_ok": "2026-10-27", "strikes": 0}
 {"b": "workday:caatpension.wd10.myworkdayjobs.com/careers", "last_ok": "2026-10-30", "strikes": 0, "why": "error: still running after 960s"}
-{"b": "workday:cabinetworksgroup.wd1.myworkdayjobs.com/cabinetworksgroupcareers", "last_ok": "2026-11-18", "strikes": 0}
+{"b": "workday:cabinetworksgroup.wd1.myworkdayjobs.com/cabinetworksgroupcareers", "last_ok": "2026-11-18", "strikes": 0, "why": "error: still running after 960s"}
 {"b": "workday:cableone.wd1.myworkdayjobs.com/cable_one_external_careers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:cabotcorp.wd12.myworkdayjobs.com/Careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:cabrini.wd3.myworkdayjobs.com/cabrini", "last_ok": "2026-10-25", "strikes": 0}
@@ -104558,7 +104558,7 @@
 {"b": "workday:careabout.wd5.myworkdayjobs.com/mspb_careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:carecorner.wd102.myworkdayjobs.com/ccs", "last_ok": "2026-10-28", "strikes": 0}
 {"b": "workday:careoregon.wd12.myworkdayjobs.com/co", "last_ok": "2026-11-16", "strikes": 0, "why": "error: still running after 960s"}
-{"b": "workday:careoregon.wd12.myworkdayjobs.com/hso", "last_ok": "2026-11-18", "strikes": 0}
+{"b": "workday:careoregon.wd12.myworkdayjobs.com/hso", "last_ok": "2026-11-18", "strikes": 0, "why": "error: HTTPSConnectionPool(host='careoregon.wd12.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/careoregon/hso/jobs (Caused by ResponseError('too many 429 error responses'))"}
 {"b": "workday:caresource.wd1.myworkdayjobs.com/caresource", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:carilionclinic.wd12.myworkdayjobs.com/external_careers", "last_ok": "2026-10-29", "strikes": 0}
 {"b": "workday:carislifesciences.wd12.myworkdayjobs.com/cls", "last_ok": "2026-10-29", "strikes": 0}
@@ -104654,7 +104654,7 @@
 {"b": "workday:charlestonsc.wd5.myworkdayjobs.com/external", "last_ok": "2026-10-26", "strikes": 0}
 {"b": "workday:charlottenc.wd12.myworkdayjobs.com/citgov", "last_ok": "2026-10-28", "strikes": 0}
 {"b": "workday:charterhall.wd3.myworkdayjobs.com/careers", "last_ok": "2026-11-16", "strikes": 0, "why": "error: still running after 960s"}
-{"b": "workday:chartermfg.wd5.myworkdayjobs.com/charter_careers", "last_ok": "2026-11-15", "strikes": 0, "why": "error: still running after 960s"}
+{"b": "workday:chartermfg.wd5.myworkdayjobs.com/charter_careers", "last_ok": "2026-11-15", "strikes": 0, "why": "error: HTTPSConnectionPool(host='chartermfg.wd5.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/chartermfg/charter_careers/jobs (Caused by ResponseError('too many 429 error responses'))"}
 {"b": "workday:chas.wd1.myworkdayjobs.com/chashealth", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:chatham.wd12.myworkdayjobs.com/chathamuniversity", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:chaucergroup.wd3.myworkdayjobs.com/chaucer_group_careers", "last_ok": "2026-10-27", "strikes": 0}
@@ -104910,7 +104910,7 @@
 {"b": "workday:cubic.wd1.myworkdayjobs.com/cubic_usa_careers", "last_ok": "2026-10-28", "strikes": 0}
 {"b": "workday:cultura.wd3.myworkdayjobs.com/cultura", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:curemd.wd1.myworkdayjobs.com/curemd", "last_ok": "2026-11-16", "strikes": 0, "why": "error: still running after 960s"}
-{"b": "workday:curriculumassociates.wd5.myworkdayjobs.com/external", "last_ok": "2026-11-17", "strikes": 0, "why": "error: still running after 960s"}
+{"b": "workday:curriculumassociates.wd5.myworkdayjobs.com/external", "last_ok": "2026-11-18", "strikes": 0}
 {"b": "workday:curtisswright.wd1.myworkdayjobs.com/CW_External_Career_Site", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:customersbank.wd1.myworkdayjobs.com/customersbankcareers", "last_ok": "2026-10-29", "strikes": 0}
 {"b": "workday:customink.wd5.myworkdayjobs.com/customink", "last_ok": "2026-10-30", "strikes": 0}
@@ -105118,7 +105118,7 @@
 {"b": "workday:emerson.wd5.myworkdayjobs.com/Emerson_College_Staff", "last_ok": "2026-10-29", "strikes": 0}
 {"b": "workday:emerson.wd5.myworkdayjobs.com/emerson_college_ft_faculty", "last_ok": "2026-10-29", "strikes": 0}
 {"b": "workday:emerysapp.wd501.myworkdayjobs.com/agc", "last_ok": "2026-11-16", "strikes": 0, "why": "error: still running after 960s"}
-{"b": "workday:emerysapp.wd501.myworkdayjobs.com/ess", "last_ok": "2026-11-18", "strikes": 0}
+{"b": "workday:emerysapp.wd501.myworkdayjobs.com/ess", "last_ok": "2026-11-18", "strikes": 0, "why": "error: still running after 960s"}
 {"b": "workday:emerysapp.wd501.myworkdayjobs.com/rum", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:eml.wd105.myworkdayjobs.com/eml", "last_ok": "2026-10-23", "strikes": 0}
 {"b": "workday:employeeownedbrands.wd501.myworkdayjobs.com/apache_stainless", "last_ok": "2026-10-24", "strikes": 0}
@@ -105150,7 +105150,7 @@
 {"b": "workday:ensign.wd1.myworkdayjobs.com/aspenhealthandwellnesscareersite", "last_ok": "2026-10-29", "strikes": 0}
 {"b": "workday:ensign.wd1.myworkdayjobs.com/camarillohealthcarecareersite", "last_ok": "2026-10-27", "strikes": 0}
 {"b": "workday:ensign.wd1.myworkdayjobs.com/championshealthcareatwillowbrookcareersite", "last_ok": "2026-11-16", "strikes": 0, "why": "error: still running after 960s"}
-{"b": "workday:ensign.wd1.myworkdayjobs.com/crestwoodhealthandrehabilitationcentercareersite", "last_ok": "2026-11-18", "strikes": 0}
+{"b": "workday:ensign.wd1.myworkdayjobs.com/crestwoodhealthandrehabilitationcentercareersite", "last_ok": "2026-11-18", "strikes": 0, "why": "error: HTTPSConnectionPool(host='ensign.wd1.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/ensign/crestwoodhealthandrehabilitationcentercareersite/jobs (Caused by ResponseError('too many 429 error responses'))"}
 {"b": "workday:ensign.wd1.myworkdayjobs.com/goldenacrescareersite", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:ensign.wd1.myworkdayjobs.com/goldenpalmsrehabcareersite", "last_ok": "2026-10-22", "strikes": 0}
 {"b": "workday:ensign.wd1.myworkdayjobs.com/masoncreektransitionalcareofkatycareersite", "last_ok": "2026-10-30", "strikes": 0}
@@ -105438,7 +105438,7 @@
 {"b": "workday:gandwukeurope.wd3.myworkdayjobs.com/freightliner", "last_ok": "2026-10-28", "strikes": 0}
 {"b": "workday:gandwukeurope.wd3.myworkdayjobs.com/pentalver", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:gapinc.wd1.myworkdayjobs.com/GAPINC", "last_ok": "2026-11-16", "strikes": 0, "why": "error: HTTPSConnectionPool(host='gapinc.wd1.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/gapinc/GAPINC/jobs (Caused by ResponseError('too many 429 error responses'))"}
-{"b": "workday:garlandtx.wd1.myworkdayjobs.com/garlandcareers", "last_ok": "2026-11-18", "strikes": 0}
+{"b": "workday:garlandtx.wd1.myworkdayjobs.com/garlandcareers", "last_ok": "2026-11-18", "strikes": 0, "why": "error: still running after 960s"}
 {"b": "workday:garrigues.wd103.myworkdayjobs.com/garrigues_talento", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:gartner.wd5.myworkdayjobs.com/ext", "last_ok": "2026-10-29", "strikes": 0}
 {"b": "workday:garvan.wd3.myworkdayjobs.com/garvan_institute", "last_ok": "2026-10-23", "strikes": 0}
@@ -105630,7 +105630,7 @@
 {"b": "workday:halifaxhealth.wd12.myworkdayjobs.com/halifaxhealth", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:hallmarkgrp.wd1.myworkdayjobs.com/hallmark_careers", "last_ok": "2026-10-28", "strikes": 0}
 {"b": "workday:halma.wd3.myworkdayjobs.com/halma", "last_ok": "2026-11-16", "strikes": 0, "why": "error: HTTPSConnectionPool(host='halma.wd3.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/halma/halma/jobs (Caused by ResponseError('too many 429 error responses'))"}
-{"b": "workday:hamiltonlane.wd108.myworkdayjobs.com/search", "last_ok": "2026-11-18", "strikes": 0}
+{"b": "workday:hamiltonlane.wd108.myworkdayjobs.com/search", "last_ok": "2026-11-18", "strikes": 0, "why": "error: still running after 960s"}
 {"b": "workday:hamline.wd5.myworkdayjobs.com/default_career_site", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:hammondcare.wd105.myworkdayjobs.com/external_careers", "last_ok": "2026-10-29", "strikes": 0}
 {"b": "workday:hancockwhitney.wd5.myworkdayjobs.com/careers", "last_ok": "2026-10-29", "strikes": 0}
@@ -105838,7 +105838,7 @@
 {"b": "workday:if.wd3.myworkdayjobs.com/careers", "last_ok": "", "strikes": 0, "why": "error: 422 Client Error: Unprocessable Entity for url: https://if.wd3.myworkdayjobs.com/wday/cxs/if/careers/jobs"}
 {"b": "workday:iff.wd5.myworkdayjobs.com/IFF_Careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:ifg.wd1.myworkdayjobs.com/kh", "last_ok": "2026-11-16", "strikes": 0, "why": "error: still running after 960s"}
-{"b": "workday:ig.wd103.myworkdayjobs.com/EXT_IG", "last_ok": "2026-11-15", "strikes": 0, "why": "error: still running after 960s"}
+{"b": "workday:ig.wd103.myworkdayjobs.com/EXT_IG", "last_ok": "2026-11-15", "strikes": 0, "why": "error: HTTPSConnectionPool(host='ig.wd103.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/ig/EXT_IG/jobs (Caused by ResponseError('too many 429 error responses'))"}
 {"b": "workday:iginsure.wd3.myworkdayjobs.com/101", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:igsenergy.wd1.myworkdayjobs.com/igs", "last_ok": "2026-10-19", "strikes": 0}
 {"b": "workday:ih.wd1.myworkdayjobs.com/iha_careers", "last_ok": "2026-10-29", "strikes": 0}
@@ -106078,7 +106078,7 @@
 {"b": "workday:kognitivinc.wd1.myworkdayjobs.com/kognitiv-careers", "last_ok": "2026-10-29", "strikes": 0}
 {"b": "workday:kohls.wd1.myworkdayjobs.com/kohlscareers", "last_ok": "", "strikes": 0, "why": "error: 422 Client Error: Unprocessable Entity for url: https://kohls.wd1.myworkdayjobs.com/wday/cxs/kohls/kohlscareers/jobs"}
 {"b": "workday:kokosing.wd5.myworkdayjobs.com/ck_construction_external_career_site", "last_ok": "2026-11-16", "strikes": 0, "why": "error: still running after 960s"}
-{"b": "workday:kokosing.wd5.myworkdayjobs.com/kokosing_external_career_site", "last_ok": "2026-11-15", "strikes": 0, "why": "error: HTTPSConnectionPool(host='kokosing.wd5.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/kokosing/kokosing_external_career_site/jobs (Caused by ResponseError('too many 429 error responses'))"}
+{"b": "workday:kokosing.wd5.myworkdayjobs.com/kokosing_external_career_site", "last_ok": "2026-11-18", "strikes": 0}
 {"b": "workday:kone.wd3.myworkdayjobs.com/Careers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:konectagroup.wd3.myworkdayjobs.com/konecta", "last_ok": "2026-10-21", "strikes": 0}
 {"b": "workday:koppers.wd5.myworkdayjobs.com/Koppers", "last_ok": "2026-10-30", "strikes": 0}
@@ -106174,7 +106174,7 @@
 {"b": "workday:livenation.wd503.myworkdayjobs.com/insomniacexternalsite", "last_ok": "2026-10-26", "strikes": 0}
 {"b": "workday:livenation.wd503.myworkdayjobs.com/rnexternalsite", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:liveoakbancshares.wd1.myworkdayjobs.com/live_oak", "last_ok": "2026-11-16", "strikes": 0, "why": "error: still running after 960s"}
-{"b": "workday:liveramp.wd5.myworkdayjobs.com/liverampcareers", "last_ok": "", "strikes": 0, "why": "error: 403 Client Error: Forbidden for url: https://liveramp.wd5.myworkdayjobs.com/wday/cxs/liveramp/liverampcareers/jobs"}
+{"b": "workday:liveramp.wd5.myworkdayjobs.com/liverampcareers", "last_ok": "", "strikes": 0, "why": "error: HTTPSConnectionPool(host='liveramp.wd5.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/liveramp/liverampcareers/jobs (Caused by ResponseError('too many 429 error responses'))"}
 {"b": "workday:liverangewater.wd1.myworkdayjobs.com/rangewaterrealestate", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:livingspaces.wd5.myworkdayjobs.com/ls", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:ljbtc.wd501.myworkdayjobs.com/ljbtc", "last_ok": "2026-10-30", "strikes": 0}
@@ -106190,7 +106190,7 @@
 {"b": "workday:lnw.wd5.myworkdayjobs.com/lightwonderexternalcareers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:lnw.wd5.myworkdayjobs.com/sciplayexternalcareerssite", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:loewshotels.wd5.myworkdayjobs.com/loewshotels", "last_ok": "2026-11-16", "strikes": 0, "why": "error: HTTPSConnectionPool(host='loewshotels.wd5.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/loewshotels/loewshotels/jobs (Caused by ResponseError('too many 429 error responses'))"}
-{"b": "workday:loganhealth.wd1.myworkdayjobs.com/logan_careers", "last_ok": "2026-11-10", "strikes": 0, "why": "error: HTTPSConnectionPool(host='loganhealth.wd1.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/loganhealth/logan_careers/jobs (Caused by ResponseError('too many 429 error responses'))"}
+{"b": "workday:loganhealth.wd1.myworkdayjobs.com/logan_careers", "last_ok": "2026-11-10", "strikes": 0, "why": "error: 404 Client Error: Not Found for url: https://loganhealth.wd1.myworkdayjobs.com/wday/cxs/loganhealth/logan_careers/jobs"}
 {"b": "workday:logicalis.wd3.myworkdayjobs.com/izenocareers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:logicalis.wd3.myworkdayjobs.com/logicaliscareers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:logitech.wd5.myworkdayjobs.com/Logitech", "last_ok": "2026-10-23", "strikes": 0}
@@ -106318,7 +106318,7 @@
 {"b": "workday:mazdausa.wd5.myworkdayjobs.com/mazda", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:mbda.wd3.myworkdayjobs.com/mbda-de", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:mbg.wd501.myworkdayjobs.com/mbgcareers", "last_ok": "2026-11-16", "strikes": 0, "why": "error: still running after 960s"}
-{"b": "workday:mbgp.wd3.myworkdayjobs.com/mercedes-amgf1", "last_ok": "2026-11-18", "strikes": 0}
+{"b": "workday:mbgp.wd3.myworkdayjobs.com/mercedes-amgf1", "last_ok": "2026-11-18", "strikes": 0, "why": "error: HTTPSConnectionPool(host='mbgp.wd3.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/mbgp/mercedes-amgf1/jobs (Caused by ResponseError('too many 429 error responses'))"}
 {"b": "workday:mbk.wd5.myworkdayjobs.com/MSLCareers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:mc.wd1.myworkdayjobs.com/external", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:mc2i.wd3.myworkdayjobs.com/talents_mc2i", "last_ok": "2026-10-30", "strikes": 0}
@@ -106350,7 +106350,7 @@
 {"b": "workday:medtronic.wd1.myworkdayjobs.com/MedtronicCareers", "last_ok": "2026-10-29", "strikes": 0}
 {"b": "workday:medtronic.wd1.myworkdayjobs.com/redeploymentmedtroniccareers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:megalabs.wd12.myworkdayjobs.com/externo", "last_ok": "2026-11-16", "strikes": 0, "why": "error: still running after 960s"}
-{"b": "workday:meharrymedicalcollege.wd12.myworkdayjobs.com/external", "last_ok": "2026-11-18", "strikes": 0}
+{"b": "workday:meharrymedicalcollege.wd12.myworkdayjobs.com/external", "last_ok": "2026-11-18", "strikes": 0, "why": "error: still running after 960s"}
 {"b": "workday:mehilainen.wd103.myworkdayjobs.com/familar_careers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:mehilainen.wd103.myworkdayjobs.com/harjun_terveys_careers", "last_ok": "2026-10-26", "strikes": 0}
 {"b": "workday:mehilainen.wd103.myworkdayjobs.com/mainiokodit_careers", "last_ok": "2026-10-30", "strikes": 0}
@@ -106446,7 +106446,7 @@
 {"b": "workday:moneris.wd3.myworkdayjobs.com/moneris", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:monex.wd3.myworkdayjobs.com/careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:monnoyeur.wd103.myworkdayjobs.com/monnoyeur", "last_ok": "2026-10-30", "strikes": 0, "why": "error: HTTPSConnectionPool(host='monnoyeur.wd103.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/monnoyeur/monnoyeur/jobs (Caused by ResponseError('too many 429 error responses'))"}
-{"b": "workday:monolithicpower.wd12.myworkdayjobs.com/mps_careers", "last_ok": "2026-11-18", "strikes": 0}
+{"b": "workday:monolithicpower.wd12.myworkdayjobs.com/mps_careers", "last_ok": "2026-11-18", "strikes": 0, "why": "error: HTTPSConnectionPool(host='monolithicpower.wd12.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/monolithicpower/mps_careers/jobs (Caused by ResponseError('too many 429 error responses'))"}
 {"b": "workday:monotype.wd1.myworkdayjobs.com/monotype", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:monroecountyfl.wd503.myworkdayjobs.com/monroebocc", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:monroecountyfl.wd503.myworkdayjobs.com/monroeclerk", "last_ok": "2026-10-30", "strikes": 0}
@@ -106462,7 +106462,7 @@
 {"b": "workday:morningstar.wd5.myworkdayjobs.com/MorningstarDBRS", "last_ok": "2026-10-24", "strikes": 0}
 {"b": "workday:morningstar.wd5.myworkdayjobs.com/morningstar", "last_ok": "2026-10-28", "strikes": 0}
 {"b": "workday:morsco.wd5.myworkdayjobs.com/reece_careers", "last_ok": "2026-11-16", "strikes": 0}
-{"b": "workday:mosaic.wd5.myworkdayjobs.com/mosaic", "last_ok": "2026-11-18", "strikes": 0}
+{"b": "workday:mosaic.wd5.myworkdayjobs.com/mosaic", "last_ok": "2026-11-18", "strikes": 0, "why": "error: HTTPSConnectionPool(host='mosaic.wd5.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/mosaic/mosaic/jobs (Caused by ResponseError('too many 429 error responses'))"}
 {"b": "workday:mosscm.wd1.myworkdayjobs.com/moss_careers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:mosscm.wd1.myworkdayjobs.com/solar_moss_careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:motiva.wd1.myworkdayjobs.com/motivacareers", "last_ok": "2026-10-30", "strikes": 0}
@@ -106526,7 +106526,7 @@
 {"b": "workday:myhcm.wd3.myworkdayjobs.com/betway", "last_ok": "2026-10-28", "strikes": 0}
 {"b": "workday:myhcm.wd3.myworkdayjobs.com/betway_africa", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:myhcm.wd3.myworkdayjobs.com/digioutsource", "last_ok": "2026-11-16", "strikes": 0, "why": "error: still running after 960s"}
-{"b": "workday:myhr.wd3.myworkdayjobs.com/planseegroup_career", "last_ok": "2026-11-18", "strikes": 0}
+{"b": "workday:myhr.wd3.myworkdayjobs.com/planseegroup_career", "last_ok": "2026-11-18", "strikes": 0, "why": "error: HTTPSConnectionPool(host='myhr.wd3.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/myhr/planseegroup_career/jobs (Caused by ResponseError('too many 429 error responses'))"}
 {"b": "workday:myhrhome.wd1.myworkdayjobs.com/onemaincareers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:mymarinhealth.wd5.myworkdayjobs.com/mhcareers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:mymoose.wd1.myworkdayjobs.com/careers", "last_ok": "2026-10-30", "strikes": 0}
@@ -106734,7 +106734,7 @@
 {"b": "workday:ogmgroup.wd3.myworkdayjobs.com/fpm", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:oh.wd3.myworkdayjobs.com/oh", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:ohiohealth.wd5.myworkdayjobs.com/ohiohealthjobs", "last_ok": "2026-11-16", "strikes": 0, "why": "error: HTTPSConnectionPool(host='ohiohealth.wd5.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/ohiohealth/ohiohealthjobs/jobs (Caused by ResponseError('too many 429 error responses'))"}
-{"b": "workday:ohioliving.wd12.myworkdayjobs.com/OHL", "last_ok": "2026-11-15", "strikes": 0, "why": "error: HTTPSConnectionPool(host='ohioliving.wd12.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/ohioliving/OHL/jobs (Caused by ResponseError('too many 429 error responses'))"}
+{"b": "workday:ohioliving.wd12.myworkdayjobs.com/OHL", "last_ok": "2026-11-18", "strikes": 0}
 {"b": "workday:ohmium.wd12.myworkdayjobs.com/naukri", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:okgov.wd1.myworkdayjobs.com/okgovjobs", "last_ok": "2026-10-28", "strikes": 0}
 {"b": "workday:olatheks.wd1.myworkdayjobs.com/olatheks", "last_ok": "2026-10-30", "strikes": 0}
@@ -106958,7 +106958,7 @@
 {"b": "workday:pgatour.wd5.myworkdayjobs.com/ftfexternal", "last_ok": "2026-10-25", "strikes": 0}
 {"b": "workday:pgatour.wd5.myworkdayjobs.com/hofexternal", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:pgatour.wd5.myworkdayjobs.com/tpcexternal", "last_ok": "2026-11-16", "strikes": 0, "why": "error: still running after 960s"}
-{"b": "workday:pgatoursuperstore.wd12.myworkdayjobs.com/pgat_ss", "last_ok": "2026-11-15", "strikes": 0, "why": "error: HTTPSConnectionPool(host='pgatoursuperstore.wd12.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/pgatoursuperstore/pgat_ss/jobs (Caused by ResponseError('too many 429 error responses'))"}
+{"b": "workday:pgatoursuperstore.wd12.myworkdayjobs.com/pgat_ss", "last_ok": "2026-11-18", "strikes": 0}
 {"b": "workday:phcgroup.wd3.myworkdayjobs.com/ascensia_careers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:phcgroup.wd3.myworkdayjobs.com/direct_employers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:phcgroup.wd3.myworkdayjobs.com/epredia_careers", "last_ok": "2026-10-25", "strikes": 0}
@@ -106990,7 +106990,7 @@
 {"b": "workday:pjm.wd5.myworkdayjobs.com/pjmcareers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:pjtpartners.wd1.myworkdayjobs.com/careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:pladis.wd3.myworkdayjobs.com/pladis_careers", "last_ok": "2026-11-16", "strikes": 0, "why": "error: HTTPSConnectionPool(host='pladis.wd3.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/pladis/pladis_careers/jobs (Caused by ResponseError('too many 429 error responses'))"}
-{"b": "workday:plains.wd1.myworkdayjobs.com/plains", "last_ok": "2026-11-18", "strikes": 0}
+{"b": "workday:plains.wd1.myworkdayjobs.com/plains", "last_ok": "2026-11-18", "strikes": 0, "why": "error: still running after 960s"}
 {"b": "workday:plantemoran.wd1.myworkdayjobs.com/opportunity", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:plastipak.wd1.myworkdayjobs.com/absopure", "last_ok": "2026-10-26", "strikes": 0}
 {"b": "workday:plastipak.wd1.myworkdayjobs.com/cleantech", "last_ok": "2026-10-25", "strikes": 0}
@@ -107166,7 +107166,7 @@
 {"b": "workday:reece.wd105.myworkdayjobs.com/reececareers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:reed.wd3.myworkdayjobs.com/reed_in_partnership_careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:reed.wd3.myworkdayjobs.com/reed_online_careers", "last_ok": "2026-11-16", "strikes": 0, "why": "error: still running after 960s"}
-{"b": "workday:reed.wd3.myworkdayjobs.com/reed_specialist_recruitment_careers", "last_ok": "2026-11-18", "strikes": 0}
+{"b": "workday:reed.wd3.myworkdayjobs.com/reed_specialist_recruitment_careers", "last_ok": "2026-11-18", "strikes": 0, "why": "error: still running after 960s"}
 {"b": "workday:regalrexnord.wd1.myworkdayjobs.com/careers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:regeneron.wd1.myworkdayjobs.com/careers", "last_ok": "2026-10-19", "strikes": 0}
 {"b": "workday:regionalfinance.wd1.myworkdayjobs.com/rmc", "last_ok": "2026-10-30", "strikes": 0}
@@ -107262,7 +107262,7 @@
 {"b": "workday:rockymountain.wd1.myworkdayjobs.com/rmi", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:rogersbh.wd1.myworkdayjobs.com/rbhcareer", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:roguefitness.wd1.myworkdayjobs.com/roguefitness_external_careers", "last_ok": "2026-11-16", "strikes": 0, "why": "error: still running after 960s"}
-{"b": "workday:rollsroyce.wd3.myworkdayjobs.com/Intern_Graduate", "last_ok": "2026-11-17", "strikes": 0, "why": "error: still running after 960s"}
+{"b": "workday:rollsroyce.wd3.myworkdayjobs.com/Intern_Graduate", "last_ok": "2026-11-17", "strikes": 0, "why": "error: HTTPSConnectionPool(host='rollsroyce.wd3.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/rollsroyce/Intern_Graduate/jobs (Caused by ResponseError('too many 429 error responses'))"}
 {"b": "workday:rollsroyce.wd3.myworkdayjobs.com/professional", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:rollsroyce.wd3.myworkdayjobs.com/rrpowersystems", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:rollsroycesmr.wd103.myworkdayjobs.com/rrsmr", "last_ok": "2026-10-30", "strikes": 0}
@@ -107294,7 +107294,7 @@
 {"b": "workday:russell.wd5.myworkdayjobs.com/russellinvestments", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:rwjf.wd1.myworkdayjobs.com/rwjf", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:rwlasvegas.wd501.myworkdayjobs.com/Resorts_World_External_Careers", "last_ok": "2026-10-28", "strikes": 0, "why": "error: still running after 960s"}
-{"b": "workday:rwlasvegas.wd501.myworkdayjobs.com/rwlv_external_careers", "last_ok": "2026-11-18", "strikes": 0}
+{"b": "workday:rwlasvegas.wd501.myworkdayjobs.com/rwlv_external_careers", "last_ok": "2026-11-18", "strikes": 0, "why": "error: still running after 960s"}
 {"b": "workday:rxo.wd501.myworkdayjobs.com/rxojobs", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:ryan.wd1.myworkdayjobs.com/ryancareers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:ryancompanies.wd5.myworkdayjobs.com/ryancompanies", "last_ok": "2026-10-30", "strikes": 0}
@@ -107326,7 +107326,7 @@
 {"b": "workday:salvationarmy.wd3.myworkdayjobs.com/salvos", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:salvationarmyca.wd3.myworkdayjobs.com/tsacb", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:samaritanhealth.wd12.myworkdayjobs.com/shsny", "last_ok": "2026-10-30", "strikes": 0, "why": "error: HTTPSConnectionPool(host='samaritanhealth.wd12.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/samaritanhealth/shsny/jobs (Caused by ResponseError('too many 429 error responses'))"}
-{"b": "workday:samudera.wd3.myworkdayjobs.com/careers", "last_ok": "2026-11-18", "strikes": 0}
+{"b": "workday:samudera.wd3.myworkdayjobs.com/careers", "last_ok": "2026-11-18", "strikes": 0, "why": "error: HTTPSConnectionPool(host='samudera.wd3.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/samudera/careers/jobs (Caused by ResponseError('too many 429 error responses'))"}
 {"b": "workday:samuelmerritt.wd1.myworkdayjobs.com/smucareers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:samyang.wd3.myworkdayjobs.com/samyang", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:sandoz.wd103.myworkdayjobs.com/sandoz_careers", "last_ok": "2026-10-30", "strikes": 0}
@@ -107438,7 +107438,7 @@
 {"b": "workday:shawinc.wd1.myworkdayjobs.com/external", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:shell.wd3.myworkdayjobs.com/shellcareers", "last_ok": "2026-10-28", "strikes": 0}
 {"b": "workday:shellenergy.impl-wd105.myworkdayjobs.com/shellenergy-aus", "last_ok": "", "strikes": 0, "why": "error: 403 Client Error: Forbidden for url: https://shellenergy.impl-wd105.myworkdayjobs.com/wday/cxs/shellenergy/shellenergy-aus/jobs"}
-{"b": "workday:shelterinsurance.wd5.myworkdayjobs.com/careers", "last_ok": "2026-11-18", "strikes": 0}
+{"b": "workday:shelterinsurance.wd5.myworkdayjobs.com/careers", "last_ok": "2026-11-18", "strikes": 0, "why": "error: HTTPSConnectionPool(host='shelterinsurance.wd5.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/shelterinsurance/careers/jobs (Caused by ResponseError('too many 429 error responses'))"}
 {"b": "workday:shepherd.wd5.myworkdayjobs.com/shepherdcenter", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:shhotelsandresorts.wd12.myworkdayjobs.com/shg", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:shi.wd12.myworkdayjobs.com/shicareers", "last_ok": "2026-10-30", "strikes": 0}
@@ -107726,7 +107726,7 @@
 {"b": "workday:talentmanagementsolution.wd3.myworkdayjobs.com/jonassoftwarecanada", "last_ok": "2026-10-28", "strikes": 0}
 {"b": "workday:talentmanagementsolution.wd3.myworkdayjobs.com/leonardo-careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:talentmanagementsolution.wd3.myworkdayjobs.com/ownerrelations", "last_ok": "2026-11-16", "strikes": 0, "why": "error: still running after 960s"}
-{"b": "workday:talentmanagementsolution.wd3.myworkdayjobs.com/paygate", "last_ok": "2026-11-18", "strikes": 0}
+{"b": "workday:talentmanagementsolution.wd3.myworkdayjobs.com/paygate", "last_ok": "2026-11-18", "strikes": 0, "why": "error: HTTPSConnectionPool(host='talentmanagementsolution.wd3.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/talentmanagementsolution/paygate/jobs (Caused by ResponseError('too many 429 error responses'))"}
 {"b": "workday:talentmanagementsolution.wd3.myworkdayjobs.com/perseus-careers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:talentmanagementsolution.wd3.myworkdayjobs.com/rbrosolutions-career", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:talentmanagementsolution.wd3.myworkdayjobs.com/vestauk", "last_ok": "2026-10-30", "strikes": 0}
@@ -107854,7 +107854,7 @@
 {"b": "workday:thinkbrg.wd5.myworkdayjobs.com/BRG_External_Career_Site", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:thisisglobal.wd3.myworkdayjobs.com/global", "last_ok": "2026-10-23", "strikes": 0}
 {"b": "workday:thomsonreuters.wd5.myworkdayjobs.com/External_Career_Site", "last_ok": "2026-11-16", "strikes": 0, "why": "error: HTTPSConnectionPool(host='thomsonreuters.wd5.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/thomsonreuters/External_Career_Site/jobs (Caused by ResponseError('too many 429 error responses'))"}
-{"b": "workday:thoughtspot.wd5.myworkdayjobs.com/careers", "last_ok": "2026-11-18", "strikes": 0}
+{"b": "workday:thoughtspot.wd5.myworkdayjobs.com/careers", "last_ok": "2026-11-18", "strikes": 0, "why": "error: HTTPSConnectionPool(host='thoughtspot.wd5.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/thoughtspot/careers/jobs (Caused by ResponseError('too many 429 error responses'))"}
 {"b": "workday:thrivent.wd5.myworkdayjobs.com/external", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:thriveworks.wd5.myworkdayjobs.com/thriveworks", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:ths.wd1.myworkdayjobs.com/orthocarolina", "last_ok": "", "strikes": 0, "why": "error: 422 Client Error: Unprocessable Entity for url: https://ths.wd1.myworkdayjobs.com/wday/cxs/ths/orthocarolina/jobs"}
@@ -108014,7 +108014,7 @@
 {"b": "workday:umchealthsystem.wd1.myworkdayjobs.com/External", "last_ok": "2026-10-24", "strikes": 0}
 {"b": "workday:umd.wd1.myworkdayjobs.com/umces", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:umd.wd1.myworkdayjobs.com/umcp", "last_ok": "2026-11-16", "strikes": 0, "why": "error: HTTPSConnectionPool(host='umd.wd1.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/umd/umcp/jobs (Caused by ResponseError('too many 429 error responses'))"}
-{"b": "workday:umd.wd1.myworkdayjobs.com/umes", "last_ok": "2026-11-18", "strikes": 0}
+{"b": "workday:umd.wd1.myworkdayjobs.com/umes", "last_ok": "2026-11-18", "strikes": 0, "why": "error: HTTPSConnectionPool(host='umd.wd1.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/umd/umes/jobs (Caused by ResponseError('too many 429 error responses'))"}
 {"b": "workday:umgc.wd1.myworkdayjobs.com/umgc_careers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:umiami.wd1.myworkdayjobs.com/umcareerstaff", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:ummc.wd5.myworkdayjobs.com/UMCCareers", "last_ok": "2026-10-28", "strikes": 0}
@@ -108222,7 +108222,7 @@
 {"b": "workday:walkerdunlop.wd1.myworkdayjobs.com/wd", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:walmart.wd5.myworkdayjobs.com/walmartexternal", "last_ok": "", "strikes": 0, "why": "error: 422 Client Error: Unprocessable Entity for url: https://walmart.wd5.myworkdayjobs.com/wday/cxs/walmart/walmartexternal/jobs"}
 {"b": "workday:walmart.wd504.myworkdayjobs.com/WalmartExternal", "last_ok": "2026-11-16", "strikes": 0}
-{"b": "workday:walshgroup.wd12.myworkdayjobs.com/walshgroup", "last_ok": "2026-11-18", "strikes": 0}
+{"b": "workday:walshgroup.wd12.myworkdayjobs.com/walshgroup", "last_ok": "2026-11-18", "strikes": 0, "why": "error: HTTPSConnectionPool(host='walshgroup.wd12.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/walshgroup/walshgroup/jobs (Caused by ResponseError('too many 429 error responses'))"}
 {"b": "workday:wannamakermc.wd501.myworkdayjobs.com/wannamaker", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:warnerbros.wd5.myworkdayjobs.com/francais", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:warnerbros.wd5.myworkdayjobs.com/global", "last_ok": "2026-10-20", "strikes": 0}

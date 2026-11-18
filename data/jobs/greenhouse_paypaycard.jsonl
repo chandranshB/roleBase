@@ -9,7 +9,7 @@
 {"company":"PayPay Card","first_seen":"2026-10-30","id":"greenhouse:paypaycard:4003024008","location":"Hybrid","posted":"2024-02-21","skills":["spring-boot","java","aws","ci/cd","project_management","jira","docker","kotlin"],"team":"Product Engineering","title":"Senior Backend Engineer","years":5}
 {"company":"PayPay Card","first_seen":"2026-10-30","id":"greenhouse:paypaycard:4003132008","location":"Hybrid","posted":"2024-02-21","team":"09.社員紹介/Referral","title":"社員紹介（リファラル）"}
 {"company":"PayPay Card","first_seen":"2026-10-30","id":"greenhouse:paypaycard:4006367008","location":"Hybrid","posted":"2024-03-21","team":"09.社員紹介/Referral","title":"Employee Referral"}
-{"company":"PayPay Card","first_seen":"2026-10-30","id":"greenhouse:paypaycard:4006896008","location":"Hybrid","posted":"2024-03-20","skills":["salesforce"],"team":"基幹システム・インフラエンジニアリング","title":"Salesforceエンジニア"}
+{"closed_at":"2026-11-18","company":"PayPay Card","first_seen":"2026-10-30","id":"greenhouse:paypaycard:4006896008","location":"Hybrid","posted":"2024-03-20","skills":["salesforce"],"team":"基幹システム・インフラエンジニアリング","title":"Salesforceエンジニア"}
 {"company":"PayPay Card","first_seen":"2026-10-30","id":"greenhouse:paypaycard:4051173008","location":"Tokyo","posted":"2024-06-11","team":"CS/CX","title":"CS / カスタマーサポート担当"}
 {"closed_at":"2026-08-21","company":"PayPay Card","first_seen":"2026-05-24","id":"greenhouse:paypaycard:4058809008","location":"Tokyo/Fukuoka","posted":"2024-06-24","team":"金融事業開発・企画","title":"データサイエンティスト （与信領域）"}
 {"company":"PayPay Card","first_seen":"2026-10-30","id":"greenhouse:paypaycard:4108294008","location":"Hybrid","posted":"2024-08-26","skills":["bilingual","agile","ml","llm"],"team":"Product Manager / Project Manager/Product Design","title":"Bilingual Product Manager","years":3}
@@ -42,3 +42,4 @@
 {"company":"PayPay Card","first_seen":"2026-10-30","id":"greenhouse:paypaycard:5411934008","location":"Hybrid","posted":"2026-09-01","skills":["salesforce","crm"],"team":"プロダクトマネジメント/プロダクトデザイン","title":"プロダクトマネジャー（社内向け業務システム）"}
 {"company":"PayPay Card","first_seen":"2026-10-30","id":"greenhouse:paypaycard:5416192008","location":"Hybrid; Tokyo/Fukuoka","posted":"2026-09-07","skills":["aws","databricks","airflow","kubernetes","docker","terraform","git","jira"],"team":"プロダクトマネジメント/プロダクトデザイン","title":"シニアエンジニアリングマネジャー"}
 {"company":"PayPay Card","first_seen":"2026-10-30","id":"greenhouse:paypaycard:5456411008","location":"Hybrid","posted":"2026-10-21","team":"サイバーセキュリティ","title":"BCM推進担当（事業継続 / DR対策）"}
+{"company":"PayPay Card","first_seen":"2026-11-18","id":"greenhouse:paypaycard:5486066008","location":"Hybrid","posted":"2026-11-18","skills":["sql"],"team":"経営戦略・企画","title":"経営企画（FP&A）／事業分析・経営意思決定支援"}

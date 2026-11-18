@@ -1,7 +1,8 @@
 {"company":"CFC","employment":"contract","first_seen":"2026-11-08","id":"pinpoint:cfc:031b294a-7bea-49fa-9bb8-2507750a3575","location":"UK - London","title":"Risk and Controls Manager - Interim 6 months"}
+{"company":"CFC","first_seen":"2026-11-18","id":"pinpoint:cfc:031beb96-2f18-44b1-8cf8-20275c947d8f","location":"UK - London","skills":["excel"],"title":"Claims Operations Analyst"}
 {"company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:07547fae-4b0e-478c-aac3-1df100b58713","location":"BE - Brussels","skills":["ml","crm","data_entry"],"title":"Senior Underwriter - Financial Lines"}
 {"company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:079f9588-1433-4a8d-a78f-d481c145e671","location":"UK - London","title":"Senior Professional Services Consultant"}
-{"company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:083dc155-31d8-4dde-a64c-262671be29f3","location":"UK - London","skills":["negotiation"],"title":"Underwriter, International Technology"}
+{"closed_at":"2026-11-18","company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:083dc155-31d8-4dde-a64c-262671be29f3","location":"UK - London","skills":["negotiation"],"title":"Underwriter, International Technology"}
 {"company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:0908aa9b-3a12-42d9-ac1b-80ffc10de216","location":"ES - Madrid","title":"International Tax Underwriter"}
 {"closed_at":"2026-11-09","company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:09171b65-736e-4839-831b-f6f69b1d448c","location":"UK - London","skills":["time_management"],"title":"Underwriting Operations Specialist - 12 month FTC"}
 {"company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:097aa176-01d9-48e6-bdd0-f3b2f5c688f6","location":"UK - London","skills":["sql","python"],"title":"Systemic Risk Actuary"}
@@ -12,6 +13,7 @@
 {"company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:1f4933b2-3cc8-445f-b855-fa95b8f71822","location":"UK - London","title":"Portfolio Partnerships Account Executive"}
 {"closed_at":"2026-11-16","company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:21172dcb-aa55-4e82-8310-5e26846cfad9","location":"AU - Melbourne","skills":["customer_service","time_management","ms_office"],"title":"Platform Support Specialist"}
 {"company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:2c94b1ea-5906-4ef5-9bfb-2dddd1f04a34","location":"UK - London","skills":["customer_service"],"title":"Senior Claims Adjuster – (Transaction Liability)"}
+{"company":"CFC","first_seen":"2026-11-18","id":"pinpoint:cfc:308df352-8798-49fd-af0f-a50ae668ad86","location":"UK - London","skills":["ci/cd","c#","azure","docker","kubernetes","nosql","angular"],"title":"Senior Software Engineer"}
 {"company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:32432ed2-c19e-46ae-8f95-46545cb2c783","location":"US - New York","pay":[130000,160000,"USD"],"skills":["budgeting","project_management","hubspot","google_analytics"],"title":"Events Manager"}
 {"company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:371da057-7aa8-4862-acb0-1db391dc9ade","location":"UK - London","title":"Head of Reserving","years":15}
 {"company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:403ecf23-7c7d-4474-9f9f-dea2379bb501","location":"AU - Melbourne","title":"Underwriter - Financial Lines","years":2}
@@ -34,7 +36,7 @@
 {"company":"CFC","first_seen":"2026-11-13","id":"pinpoint:cfc:802cb0cc-d4df-4166-a49d-4502fcc82dd0","location":"AU - Melbourne","skills":["customer_service"],"title":"Technical Business Analyst","years":2}
 {"company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:8630e4b4-6eae-492a-83ff-940871d7ee88","location":"UK - London","title":"Threat Intellience Analyst"}
 {"company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:8bd8c371-27e3-4891-9971-b412f1ff8192","location":"UK - London","title":"Talent & Development Partner"}
-{"company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:8daf71db-74f0-4904-90a9-91a93a4ffa02","location":"UK - London","title":"Quality Assurance & Controls Team Lead"}
+{"closed_at":"2026-11-18","company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:8daf71db-74f0-4904-90a9-91a93a4ffa02","location":"UK - London","title":"Quality Assurance & Controls Team Lead"}
 {"company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:8e5675f0-78bd-4af7-9e7d-02aa7955a6a5","location":"US - Texas","skills":["time_management","ms_office"],"title":"Executive Assistant"}
 {"company":"CFC","first_seen":"2026-10-27","id":"pinpoint:cfc:8f5a8895-d2ba-424b-8ae1-f6537000f503","location":"UK - London","skills":["project_management"],"title":"Cyber Incident Manager"}
 {"company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:8f6fa87c-8318-4a0a-9a3c-442f7df0588c","location":"UK - London","skills":["time_management"],"title":"Senior Product Developer (Wordings)"}
@@ -47,21 +49,21 @@
 {"company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:a3b8ef3d-a9a9-4a9f-8b7f-1812c6e0b289","location":"CA - Ontario","skills":["customer_service"],"title":"Claims Specialist, P&C"}
 {"company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:a6dde5cf-99ee-43a3-b1ea-05f8df072cfb","location":"UK - London","title":"Business Resumption Engineer","years":3}
 {"company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:a725875c-2262-4197-b18b-4f121a36b161","location":"US - Texas","skills":["azure"],"title":"Infrastructure Operations Engineer"}
-{"company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:b420c1a4-4109-4980-8e5e-21ec82d41af1","location":"UK - London","skills":["sql","tableau","snowflake","databricks"],"title":"Business Analyst"}
+{"closed_at":"2026-11-18","company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:b420c1a4-4109-4980-8e5e-21ec82d41af1","location":"UK - London","skills":["sql","tableau","snowflake","databricks"],"title":"Business Analyst"}
 {"company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:b43cc73e-243f-4d25-8e74-59d3a06e018d","location":"UK - London","skills":["customer_service"],"title":"Claims Adjuster, Professions"}
 {"closed_at":"2026-11-13","company":"CFC","first_seen":"2026-10-30","id":"pinpoint:cfc:b47e0b98-a67c-4248-a52c-c23c764acc40","location":"AU - Gold Coast","skills":["customer_service"],"title":"EUT Engineer"}
 {"company":"CFC","first_seen":"2026-10-19","id":"pinpoint:cfc:b782d60c-a34a-4402-b8a7-0a103e3d424f","location":"US - New York","pay":[130000,165000,"USD"],"skills":["customer_service"],"title":"Claims Specialist, Cyber/Tech"}
 {"company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:b8f67d29-d795-473c-929e-c73444749ea5","location":"US - New York","pay":[120000,160000,"USD"],"skills":["customer_service"],"title":"Claims Specialist, Medical Malpractice/Negligence"}
-{"company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:bb2b2f14-98d5-4d98-b6fa-2ae70800409a","location":"UK - London","skills":["customer_service"],"title":"Claims Adjuster, Emerging Risks"}
+{"closed_at":"2026-11-18","company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:bb2b2f14-98d5-4d98-b6fa-2ae70800409a","location":"UK - London","skills":["customer_service"],"title":"Claims Adjuster, Emerging Risks"}
 {"company":"CFC","first_seen":"2026-10-30","id":"pinpoint:cfc:bb44d077-a58c-4850-9b2c-ac49605688f7","location":"US - New York","pay":[90000,105000,"USD"],"title":"Cyber & Tech Underwriter"}
 {"company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:bbdbbf2a-102e-4a36-89f1-146d0a769bf1","location":"UK - London","skills":["customer_service"],"title":"Claims Adjuster, Cyber"}
 {"company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:bdb54b95-2c68-4462-96fb-9e3315161e35","location":"UK - London","title":"Lead Security Engineer (Data)"}
 {"company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:c30496bc-626c-425f-ab72-808f7e44d130","location":"UK - London","skills":["ml","terraform","llm","python","java","c#","postgres","azure"],"title":"Senior Software Engineer (AI & ML)"}
 {"company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:c986d7b0-ff38-4ccb-a5bf-aafa576a69a5","location":"US - New York","pay":[180000,220000,"USD"],"skills":["excel","sql","python"],"title":"Pricing Manager"}
-{"company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:ca06a7ac-4bfb-4f1a-93bb-cf3af5fd3edc","location":"UK - London","skills":["ml","llm","ci/cd","python","sql","azure","databricks","docker"],"title":"Data Scientist"}
+{"closed_at":"2026-11-18","company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:ca06a7ac-4bfb-4f1a-93bb-cf3af5fd3edc","location":"UK - London","skills":["ml","llm","ci/cd","python","sql","azure","databricks","docker"],"title":"Data Scientist"}
 {"company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:cc5fa3d0-058b-4efd-a6b0-1a5df4a03d4c","location":"UK - London","title":"Senior Reporting Accountant"}
 {"company":"CFC","first_seen":"2026-11-12","id":"pinpoint:cfc:d0013fbb-45d3-4f7b-a798-559c75b5ac88","location":"US - New York","pay":[68000,90000,"USD"],"skills":["ms_office"],"title":"Transaction Liability Underwriting Assistant"}
-{"company":"CFC","first_seen":"2026-11-17","id":"pinpoint:cfc:d59f8e7f-8ff0-405e-979f-6566b012e090","location":"UK - London","skills":["databricks","snowflake","sql","python","tableau","azure"],"title":"Principle BI Architect & Engineer"}
+{"company":"CFC","first_seen":"2026-11-17","id":"pinpoint:cfc:d59f8e7f-8ff0-405e-979f-6566b012e090","location":"UK - London","skills":["databricks","snowflake","python","sql","tableau","azure"],"title":"Principal BI Architect & Engineer"}
 {"company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:d79607fb-62fc-4827-89eb-b544cd9c34ea","location":"US - New York","pay":[120000,160000,"USD"],"title":"Life Science Underwriter"}
 {"company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:dbcd3571-1a6b-4d18-9cc9-1ee629a9e4c8","location":"AU - Melbourne","skills":["customer_service"],"title":"Claims Specialist","years":3}
 {"company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:de43b1e1-b78c-463e-a755-0593c117db00","location":"US - New York","pay":[90000,100000,"USD"],"skills":["ms_office"],"title":"Cyber SME Underwriter"}

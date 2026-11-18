@@ -1,11 +1,11 @@
 {"company":"Nourish","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:nourish:1257","location":"Dublin 18, Beacon Court","team":"Beacon Court","title":"Store Manager"}
 {"closed_at":"2026-11-13","company":"Nourish","employment":"full_time","first_seen":"2026-10-30","id":"bamboohr:nourish:1260","location":"Dublin 15, Blanchardstown","team":"Blanchardstown Centre","title":"Store Manager"}
-{"company":"Nourish","employment":"part_time","first_seen":"2026-10-30","id":"bamboohr:nourish:1271","location":"Co. Kerry, Tralee","team":"Tralee","title":"Part Time Store Supervisor"}
+{"closed_at":"2026-11-18","company":"Nourish","employment":"part_time","first_seen":"2026-10-30","id":"bamboohr:nourish:1271","location":"Co. Kerry, Tralee","team":"Tralee","title":"Part Time Store Supervisor"}
 {"closed_at":"2026-11-11","company":"Nourish","employment":"full_time","first_seen":"2026-10-30","id":"bamboohr:nourish:1273","location":"Dublin 17, Airways Industrial Estate","team":"Head Office","title":"Marketing Assistant"}
 {"company":"Nourish","employment":"full_time","first_seen":"2026-10-30","id":"bamboohr:nourish:1276","location":"Dublin 18, Leopardstown","team":"Leopardstown","title":"Store Manager"}
 {"closed_at":"2026-11-09","company":"Nourish","employment":"full_time","first_seen":"2026-10-30","id":"bamboohr:nourish:1277","location":"Dublin 18, Leopardstown","team":"Leopardstown","title":"Full Time Store Supervisor"}
 {"closed_at":"2026-11-12","company":"Nourish","employment":"part_time","first_seen":"2026-11-09","id":"bamboohr:nourish:1281","location":"Dublin 2, Wicklow Street","reposts":1,"team":"Wicklow Street","title":"Part Time Store Supervisor"}
-{"company":"Nourish","employment":"part_time","first_seen":"2026-10-30","id":"bamboohr:nourish:1282","location":"Galway, Knocknacarra","team":"Knocknacarra","title":"Part Time Store Supervisor"}
+{"closed_at":"2026-11-18","company":"Nourish","employment":"part_time","first_seen":"2026-10-30","id":"bamboohr:nourish:1282","location":"Galway, Knocknacarra","team":"Knocknacarra","title":"Part Time Store Supervisor"}
 {"closed_at":"2026-10-30","company":"Nourish","employment":"contract","first_seen":"2026-10-30","id":"bamboohr:nourish:1283","location":"Dublin 17, Airways Industrial Estate","team":"Warehouse","title":"Part Time Seasonal Warehouse Operative"}
 {"company":"Nourish","employment":"contract","first_seen":"2026-10-30","id":"bamboohr:nourish:1286","location":"Co. Kerry, Tralee","team":"Tralee","title":"Part Time Seasonal Sales Assistant"}
 {"closed_at":"2026-11-11","company":"Nourish","employment":"part_time","first_seen":"2026-10-30","id":"bamboohr:nourish:1287","location":"Galway, Knocknacarra","team":"Knocknacarra","title":"Part Time Stockroom Assistant"}
@@ -14,7 +14,7 @@
 {"closed_at":"2026-11-11","company":"Nourish","employment":"part_time","first_seen":"2026-10-30","id":"bamboohr:nourish:1290","location":"Dublin 18, Leopardstown","team":"Leopardstown","title":"Part Time Store Supervisor"}
 {"company":"Nourish","employment":"full_time","first_seen":"2026-10-30","id":"bamboohr:nourish:1291","location":"Dublin 12, Crumlin","team":"Ashleaf S.C.","title":"Assistant Store Manager"}
 {"company":"Nourish","employment":"part_time","first_seen":"2026-10-30","id":"bamboohr:nourish:1292","location":"Dublin 17, Airways Industrial Estate","team":"Warehouse","title":"Part Time Warehouse Operative"}
-{"company":"Nourish","employment":"part_time","first_seen":"2026-10-30","id":"bamboohr:nourish:1293","location":"Co Cork, Bishopstown","team":"Bandon Road","title":"Part Time Store Supervisor"}
+{"closed_at":"2026-11-18","company":"Nourish","employment":"part_time","first_seen":"2026-10-30","id":"bamboohr:nourish:1293","location":"Co Cork, Bishopstown","team":"Bandon Road","title":"Part Time Store Supervisor"}
 {"closed_at":"2026-11-16","company":"Nourish","employment":"part_time","first_seen":"2026-10-30","id":"bamboohr:nourish:1294","location":"Co. Limerick, Limerick","team":"Jetland","title":"Part-Time Store Supervisor"}
 {"company":"Nourish","employment":"full_time","first_seen":"2026-10-30","id":"bamboohr:nourish:1295","location":"Dublin 18, Cornelscourt","team":"Cornelscourt S.C.","title":"Full Time Sales Assistant"}
 {"closed_at":"2026-11-10","company":"Nourish","employment":"contract","first_seen":"2026-11-08","id":"bamboohr:nourish:1296","location":"Co. Limerick, Limerick","team":"Jetland","title":"Part Time Seasonal Sales Assistant"}
@@ -25,5 +25,8 @@
 {"closed_at":"2026-11-16","company":"Nourish","employment":"part_time","first_seen":"2026-11-11","id":"bamboohr:nourish:1302","location":"Dublin 18, Leopardstown","team":"Leopardstown","title":"Part Time Sales Assistant"}
 {"closed_at":"2026-11-16","company":"Nourish","employment":"contract","first_seen":"2026-11-12","id":"bamboohr:nourish:1303","location":"Dublin 1, ILAC Centre","reposts":2,"team":"ILAC Centre","title":"Part Time Seasonal Sales Assistant"}
 {"company":"Nourish","employment":"contract","first_seen":"2026-11-13","id":"bamboohr:nourish:1304","location":"Galway, Knocknacarra","reposts":2,"team":"Knocknacarra","title":"Part Time Seasonal Sales Assistant"}
-{"company":"Nourish","employment":"full_time","first_seen":"2026-11-17","id":"bamboohr:nourish:1305","location":"Galway, Knocknacarra","team":"Knocknacarra","title":"Assistant Store Manager"}
+{"closed_at":"2026-11-18","company":"Nourish","employment":"full_time","first_seen":"2026-11-17","id":"bamboohr:nourish:1305","location":"Galway, Knocknacarra","team":"Knocknacarra","title":"Assistant Store Manager"}
+{"company":"Nourish","employment":"contract","first_seen":"2026-11-18","id":"bamboohr:nourish:1306","location":"Dublin 2, Wicklow Street","title":"Full Time Sales Assistant"}
+{"company":"Nourish","employment":"contract","first_seen":"2026-11-18","id":"bamboohr:nourish:1307","location":"Dublin 18, Cornelscourt","reposts":3,"team":"Cornelscourt S.C.","title":"Part Time Seasonal Sales Assistant"}
+{"company":"Nourish","employment":"full_time","first_seen":"2026-11-18","id":"bamboohr:nourish:1308","location":"Galway, Knocknacarra","title":"Full Time Sales Assistant"}
 {"company":"Nourish","first_seen":"2026-11-08","id":"bamboohr:nourish:733","location":"Ireland , IE","team":"nationwide","title":"Join Our Team!"}
