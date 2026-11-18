@@ -98,7 +98,7 @@
 {"company":"C.A. Fortune","first_seen":"2026-10-28","id":"greenhouse:cafortune:5278573007","location":"Salinas, CA","posted":"2026-10-28","team":"Retail","title":"Grocery Merchandiser - Salinas, CA"}
 {"company":"C.A. Fortune","first_seen":"2026-11-08","id":"greenhouse:cafortune:5278576007","location":"Santa Maria, CA","posted":"2026-10-30","team":"Retail","title":"Grocery Merchandiser - Santa Maria, CA"}
 {"company":"C.A. Fortune","first_seen":"2026-10-28","id":"greenhouse:cafortune:5278578007","location":"Rollingwood, Texas","posted":"2026-10-28","team":"Retail","title":"Grocery Merchandiser - Rollingwood, TX"}
-{"company":"C.A. Fortune","first_seen":"2026-10-29","id":"greenhouse:cafortune:5279020007","location":"Chicago, IL","posted":"2026-10-29","team":"Retail","title":"Full Time Grocery Merchandiser - Chicago, IL"}
+{"closed_at":"2026-11-18","company":"C.A. Fortune","first_seen":"2026-10-29","id":"greenhouse:cafortune:5279020007","location":"Chicago, IL","posted":"2026-10-29","team":"Retail","title":"Full Time Grocery Merchandiser - Chicago, IL"}
 {"closed_at":"2026-11-10","company":"C.A. Fortune","first_seen":"2026-10-29","id":"greenhouse:cafortune:5279756007","location":"Fair Oaks, GA","posted":"2026-10-29","reposts":3,"skills":["bilingual"],"team":"DTH","title":"Grocery Merchandiser"}
 {"company":"C.A. Fortune","first_seen":"2026-11-08","id":"greenhouse:cafortune:5280492007","location":"Chicago Heights, IL","posted":"2026-10-30","team":"Retail","title":"Full Time Grocery Merchandiser - Chicago Heights, IL"}
 {"closed_at":"2026-11-12","company":"C.A. Fortune","first_seen":"2026-11-08","id":"greenhouse:cafortune:5283083007","location":"North Seattle, WA","posted":"2026-11-03","team":"Retail","title":"Grocery Merchandiser - North Seattle, WA"}
@@ -119,3 +119,4 @@
 {"company":"C.A. Fortune","first_seen":"2026-11-14","id":"greenhouse:cafortune:5295219007","location":"Tempe, AZ","posted":"2026-11-13","team":"Retail","title":"Grocery Merchandiser - Tempe, AZ"}
 {"company":"C.A. Fortune","first_seen":"2026-11-16","id":"greenhouse:cafortune:5296203007","location":"Park Ridge, IL","posted":"2026-11-16","skills":["bilingual"],"team":"DTH","title":"Full Time Grocery Merchandiser- Park Ridge, IL"}
 {"company":"C.A. Fortune","first_seen":"2026-11-17","id":"greenhouse:cafortune:5298070007","location":"Reynoldsburg, OH","posted":"2026-11-17","team":"Retail","title":"Full Time Grocery Merchandiser - Reynoldsburg, OH"}
+{"company":"C.A. Fortune","first_seen":"2026-11-18","id":"greenhouse:cafortune:5298853007","location":"Remote","pay":[150000,155000,"USD"],"posted":"2026-11-17","remote":true,"reposts":1,"team":"Club","title":"Director of Sales - Costco","years":5}
