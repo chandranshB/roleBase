@@ -86,8 +86,8 @@
 {"company":"Via","first_seen":"2026-10-05","id":"greenhouse:via:8585305002","location":"New York","pay":[160000,200000,"USD"],"posted":"2026-06-10","skills":["kotlin"],"team":"Engineering","title":"Senior Android Engineer","years":5}
 {"company":"Via","first_seen":"2026-10-05","id":"greenhouse:via:8585306002","location":"Berlin","posted":"2026-06-16","team":"Partner Success","title":"Principal Account Manager","years":7}
 {"company":"Via","first_seen":"2026-10-05","id":"greenhouse:via:8585308002","location":"New York","pay":[160000,200000,"USD"],"posted":"2026-06-10","skills":["kotlin","swift"],"team":"Engineering","title":"Senior Mobile-Cross-Platform Engineer","years":5}
-{"company":"Via","employment":"internship","first_seen":"2026-10-05","id":"greenhouse:via:8585553002","location":"Berlin, Germany","posted":"2026-06-11","team":"Legal","title":"Werkstudent:in, Recht"}
-{"company":"Via","employment":"internship","first_seen":"2026-10-05","id":"greenhouse:via:8585955002","location":"Berlin, Germany","posted":"2026-06-11","team":"Legal","title":"Working Student, Legal (German-speaking)"}
+{"closed_at":"2026-11-19","company":"Via","employment":"internship","first_seen":"2026-10-05","id":"greenhouse:via:8585553002","location":"Berlin, Germany","posted":"2026-06-11","team":"Legal","title":"Werkstudent:in, Recht"}
+{"closed_at":"2026-11-19","company":"Via","employment":"internship","first_seen":"2026-10-05","id":"greenhouse:via:8585955002","location":"Berlin, Germany","posted":"2026-06-11","team":"Legal","title":"Working Student, Legal (German-speaking)"}
 {"company":"Via","first_seen":"2026-10-05","id":"greenhouse:via:8586470002","location":"New York, New York","pay":[215000,265000,"USD"],"posted":"2026-06-10","skills":["ci/cd"],"team":"Engineering","title":"Engineering Manager, Mobile","years":7}
 {"closed_at":"2026-10-07","company":"Via","first_seen":"2026-10-05","id":"greenhouse:via:8587562002","location":"Tel Aviv","posted":"2026-06-11","skills":["python","postgres","java","sql","nosql","aws","kubernetes"],"team":"Engineering","title":"Senior Backend Engineer- Routing Data","years":6}
 {"company":"Via","first_seen":"2026-11-08","id":"greenhouse:via:8592397002","location":"New York City","pay":[130000,165000,"USD"],"posted":"2026-06-15","reposts":2,"team":"Operations","title":"Strategy & Operations Principal","years":6}
@@ -117,7 +117,7 @@
 {"company":"Via","first_seen":"2026-10-05","id":"greenhouse:via:8660386002","location":"London","posted":"2026-08-21","team":"Partnerships","title":"Strategic Partnerships Principal","years":6}
 {"closed_at":"2026-11-08","company":"Via","first_seen":"2026-10-05","id":"greenhouse:via:8677582002","location":"Tulare, CA","posted":"2026-08-04","skills":["customer_service"],"team":"Field Operations","title":"Road Supervisor","years":3}
 {"closed_at":"2026-10-16","company":"Via","first_seen":"2026-10-05","id":"greenhouse:via:8679753002","location":"Tulare, CA","posted":"2026-08-04","team":"Field Operations","title":"Utility Worker"}
-{"company":"Via","first_seen":"2026-10-05","id":"greenhouse:via:8692280002","location":"Baton Rogue, LA","posted":"2026-08-07","team":"Field Operations","title":"Customer Support Agent"}
+{"company":"Via","first_seen":"2026-10-05","id":"greenhouse:via:8692280002","location":"Baton Rogue, LA","posted":"2026-08-07","team":"Field Operations","title":"Dispatcher"}
 {"closed_at":"2026-11-18","company":"Via","first_seen":"2026-10-05","id":"greenhouse:via:8692323002","location":"Tulare, CA","posted":"2026-08-07","skills":["customer_service"],"team":"Field Operations","title":"Customer Service Representative"}
 {"company":"Via","first_seen":"2026-10-05","id":"greenhouse:via:8692342002","location":"Rochester, MN","posted":"2026-08-07","team":"Field Operations","title":"Utility Worker"}
 {"company":"Via","first_seen":"2026-10-05","id":"greenhouse:via:8692357002","location":"Mobile, AL","posted":"2026-08-07","team":"Field Operations","title":"Administrative Specialist"}
@@ -243,3 +243,4 @@
 {"company":"Via","first_seen":"2026-11-13","id":"greenhouse:via:8940944002","location":"Bristol","pay":[40000,45000,"GBP"],"posted":"2026-11-13","skills":["customer_service"],"team":"Field Operations","title":"Field Operations Associate"}
 {"company":"Via","first_seen":"2026-11-17","id":"greenhouse:via:8948520002","location":"Mobile, AL","posted":"2026-11-17","skills":["preventive_maintenance","cdl"],"team":"Field Operations","title":"Class A Mechanic","years":2}
 {"company":"Via","first_seen":"2026-11-18","id":"greenhouse:via:8949350002","location":"London, England","posted":"2026-11-17","skills":["sql","tableau"],"team":"Strategy","title":"Commercial Strategy Associate","years":0}
+{"company":"Via","first_seen":"2026-11-19","id":"greenhouse:via:8951205002","location":"New York City","pay":[160000,220000,"USD"],"posted":"2026-11-19","team":"Product","title":"Senior Product Manager, AI Labs","years":5}

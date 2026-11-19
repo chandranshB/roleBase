@@ -16,7 +16,7 @@
 {"company":"Newmedica","first_seen":"2026-10-30","id":"bamboohr:newmedica:2271","location":"Gloucester, Gloucestershire","team":"OJV","title":"Private Patient Coodinator"}
 {"company":"Newmedica","first_seen":"2026-10-30","id":"bamboohr:newmedica:2272","location":"Leicester","team":"OJV","title":"Ophthalmic Assistant"}
 {"closed_at":"2026-11-08","company":"Newmedica","first_seen":"2026-10-30","id":"bamboohr:newmedica:2273","location":"Barlborough, Derbyshire","team":"OJV","title":"Theatre Runner"}
-{"company":"Newmedica","first_seen":"2026-10-30","id":"bamboohr:newmedica:2275","location":"Northampton, Northamptonshire","team":"OJV","title":"Scrub Nurse/Practitioner"}
+{"closed_at":"2026-11-19","company":"Newmedica","first_seen":"2026-10-30","id":"bamboohr:newmedica:2275","location":"Northampton, Northamptonshire","team":"OJV","title":"Scrub Nurse/Practitioner"}
 {"closed_at":"2026-11-08","company":"Newmedica","first_seen":"2026-10-30","id":"bamboohr:newmedica:2276","location":"Nottingham, Nottingham","team":"Commercial","title":"Head of Commercial Finance"}
 {"company":"Newmedica","first_seen":"2026-10-30","id":"bamboohr:newmedica:2281","location":"Norwich, Norfolk","team":"OJV","title":"Ophthalmic Assistant"}
 {"closed_at":"2026-11-08","company":"Newmedica","first_seen":"2026-10-30","id":"bamboohr:newmedica:2283","location":"Shrewsbury, Shropshire","team":"OJV","title":"HR Administrator"}
@@ -30,3 +30,6 @@
 {"company":"Newmedica","first_seen":"2026-11-08","id":"bamboohr:newmedica:2293","location":"Plymouth, Devon","team":"OJV","title":"Part -time Regional Relationship Manager/Service Engagement Lead"}
 {"closed_at":"2026-11-11","company":"Newmedica","first_seen":"2026-11-08","id":"bamboohr:newmedica:2294","location":"Grimsby / Brigg, Lincolnshire","team":"OJV Bank","title":"Driver Assistant"}
 {"company":"Newmedica","first_seen":"2026-11-18","id":"bamboohr:newmedica:2299","location":"Abingdon, Oxfordshire","reposts":1,"team":"OJV","title":"Patient Administrator"}
+{"company":"Newmedica","first_seen":"2026-11-19","id":"bamboohr:newmedica:2302","remote":true,"team":"Commercial","title":"Senior Project Manager"}
+{"company":"Newmedica","employment":"part_time","first_seen":"2026-11-19","id":"bamboohr:newmedica:2303","location":"Langley, Berkshire","team":"OJV","title":"Part time Patient Administrator"}
+{"company":"Newmedica","first_seen":"2026-11-19","id":"bamboohr:newmedica:2304","location":"Welwyn Garden City, Hertfordshire","team":"OJV","title":"Service Engagement Lead – NHS and Private"}

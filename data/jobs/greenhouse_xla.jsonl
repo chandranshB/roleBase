@@ -45,7 +45,7 @@
 {"company":"XLA","first_seen":"2026-11-08","id":"greenhouse:xla:5475363008","location":"Washington, D.C.","posted":"2026-11-06","team":"DOJ","title":"Budget Analyst"}
 {"company":"XLA","first_seen":"2026-11-18","id":"greenhouse:xla:5475371008","location":"Washington, D.C.","posted":"2026-11-18","skills":["accounts_payable","ml"],"team":"DOJ","title":"Financial Analyst for the Accounting Branch","years":3}
 {"company":"XLA","first_seen":"2026-11-08","id":"greenhouse:xla:5475380008","location":"Washington, D.C.","posted":"2026-11-06","team":"DOJ","title":"Accountant (Property Logistics Division)"}
-{"company":"XLA","first_seen":"2026-11-08","id":"greenhouse:xla:5475590008","location":"Washington, D.C.","posted":"2026-11-06","skills":["budgeting","ml","excel","financial_modeling","forecasting","powerpoint"],"team":"USGPO","title":"Finance Subject Matter Expert","years":15}
+{"closed_at":"2026-11-19","company":"XLA","first_seen":"2026-11-08","id":"greenhouse:xla:5475590008","location":"Washington, D.C.","posted":"2026-11-06","skills":["budgeting","ml","excel","financial_modeling","forecasting","powerpoint"],"team":"USGPO","title":"Finance Subject Matter Expert","years":15}
 {"company":"XLA","first_seen":"2026-11-09","id":"greenhouse:xla:5476901008","location":"Arlington, VA","posted":"2026-11-09","skills":["powerpoint"],"team":"DEA","title":"Intelligence Analyst"}
 {"company":"XLA","first_seen":"2026-11-14","id":"greenhouse:xla:5482152008","location":"Washington, D.C.","posted":"2026-11-13","skills":["project_management","payroll","pmp"],"team":"DOJ","title":"BPA Call Project Manager"}
 {"company":"XLA","first_seen":"2026-11-16","id":"greenhouse:xla:5483161008","location":"Washington, D.C.","posted":"2026-11-16","skills":["payroll"],"team":"DOJ","title":"Senior Payroll Tax Specialist"}
@@ -53,3 +53,5 @@
 {"company":"XLA","first_seen":"2026-11-16","id":"greenhouse:xla:5483326008","location":"Washington, D.C.","posted":"2026-11-16","team":"DOJ","title":"BPA Call Subject Matter Expert – Financial Operations & Reporting"}
 {"company":"XLA","first_seen":"2026-11-16","id":"greenhouse:xla:5483345008","location":"Washington, D.C.","posted":"2026-11-16","team":"DOJ","title":"BPA Call Subject Matter Expert – Financial Policy"}
 {"company":"XLA","first_seen":"2026-11-17","id":"greenhouse:xla:5484969008","location":"College Park, MD","posted":"2026-11-17","skills":["javascript","typescript","python","sql","ci/cd","git"],"team":"NARA","title":"Senior Software Test Engineer"}
+{"company":"XLA","first_seen":"2026-11-19","id":"greenhouse:xla:5489580008","location":"Arlington, VA","posted":"2026-11-19","reposts":2,"skills":["data_entry"],"team":"DEA","title":"Relocation/Financial Assistant"}
+{"company":"XLA","employment":"contract","first_seen":"2026-11-19","id":"greenhouse:xla:5489582008","location":"Arlington, VA","posted":"2026-11-19","reposts":2,"skills":["procurement"],"team":"DEA","title":"Contract Support Specialist","years":5}

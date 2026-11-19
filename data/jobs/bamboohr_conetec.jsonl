@@ -12,8 +12,8 @@
 {"company":"ConeTec","first_seen":"2026-11-08","id":"bamboohr:conetec:418","location":"Salt Lake City, Utah","team":"Production, Works and Project Management","title":"Field Operator (Salt Lake City, UT)"}
 {"company":"ConeTec","first_seen":"2026-11-08","id":"bamboohr:conetec:438","location":"Salt Lake City, Utah","team":"Production, Works and Project Management","title":"Assistant Field Operator"}
 {"company":"ConeTec","first_seen":"2026-11-08","id":"bamboohr:conetec:513","location":"Richmond, California","team":"Production, Works and Project Management","title":"Experienced Geotechnical Driller"}
-{"company":"ConeTec","first_seen":"2026-11-08","id":"bamboohr:conetec:535","location":"Prince George, British Columbia","team":"Facility Management & Work Operation","title":"Warehouse Person/ Shipper Receiver - Geotech Drilling"}
-{"company":"ConeTec","first_seen":"2026-11-08","id":"bamboohr:conetec:536","location":"Prince George, British Columbia","team":"Facility Management & Work Operation","title":"Heavy Duty Mechanic (In Town) - Geotech Drilling"}
+{"closed_at":"2026-11-19","company":"ConeTec","first_seen":"2026-11-08","id":"bamboohr:conetec:535","location":"Prince George, British Columbia","team":"Facility Management & Work Operation","title":"Warehouse Person/ Shipper Receiver - Geotech Drilling"}
+{"closed_at":"2026-11-19","company":"ConeTec","first_seen":"2026-11-08","id":"bamboohr:conetec:536","location":"Prince George, British Columbia","team":"Facility Management & Work Operation","title":"Heavy Duty Mechanic (In Town) - Geotech Drilling"}
 {"company":"ConeTec","first_seen":"2026-11-08","id":"bamboohr:conetec:545","location":"Salt Lake City, Utah","team":"Production, Works and Project Management","title":"Field Engineer or Geologist (Salt Lake City, UT)"}
 {"company":"ConeTec","first_seen":"2026-10-19","id":"bamboohr:conetec:559","location":"Surrey, British Columbia","team":"Production, Works and Project Management","title":"Drillers, Helpers and Drillers in Training"}
 {"company":"ConeTec","first_seen":"2026-11-08","id":"bamboohr:conetec:569","location":"Chorrillos, Lima","team":"Production, Works and Project Management","title":"Analista de Datos"}
@@ -23,8 +23,8 @@
 {"company":"ConeTec","first_seen":"2026-11-08","id":"bamboohr:conetec:611","location":"Brampton, Ontario","team":"Production, Works and Project Management","title":"Driller Assistant"}
 {"company":"ConeTec","first_seen":"2026-11-08","id":"bamboohr:conetec:62","location":"Salt Lake City, Utah","team":"Production, Works and Project Management","title":"Mud Rotary & Auger (Driller)"}
 {"company":"ConeTec","first_seen":"2026-11-08","id":"bamboohr:conetec:622","location":"Airdrie, Alberta","team":"Production, Works and Project Management","title":"Geotechnical Drill Assistant"}
-{"company":"ConeTec","employment":"contract","first_seen":"2026-11-08","id":"bamboohr:conetec:623","location":"Prince George, British Columbia","team":"Assistance & Administration","title":"Temporary Operations Administrative Assistant"}
-{"company":"ConeTec","first_seen":"2026-11-08","id":"bamboohr:conetec:635","location":"Prince George, British Columbia","team":"Equipment & Logistics","title":"Yard Technician"}
+{"closed_at":"2026-11-19","company":"ConeTec","employment":"contract","first_seen":"2026-11-08","id":"bamboohr:conetec:623","location":"Prince George, British Columbia","team":"Assistance & Administration","title":"Temporary Operations Administrative Assistant"}
+{"closed_at":"2026-11-19","company":"ConeTec","first_seen":"2026-11-08","id":"bamboohr:conetec:635","location":"Prince George, British Columbia","team":"Equipment & Logistics","title":"Yard Technician"}
 {"company":"ConeTec","first_seen":"2026-11-08","id":"bamboohr:conetec:651","location":"Chorrillos, Lima","team":"Production, Works and Project Management","title":"OPERADOR DE MINICARGADOR / AYUDANTE"}
 {"company":"ConeTec","first_seen":"2026-11-08","id":"bamboohr:conetec:664","location":"Prince George, British Columbia","team":"Production, Works and Project Management","title":"Geotechnical Driller"}
 {"company":"ConeTec","first_seen":"2026-11-08","id":"bamboohr:conetec:671","location":"Surrey, British Columbia","team":"Production, Works and Project Management","title":"Field Engineer"}
@@ -40,17 +40,20 @@
 {"company":"ConeTec","first_seen":"2026-10-19","id":"bamboohr:conetec:717","remote":true,"team":"Production, Works and Project Management","title":"Geotechnical Drill Assistant"}
 {"company":"ConeTec","first_seen":"2026-11-08","id":"bamboohr:conetec:718","location":"Surrey, British Columbia","team":"Equipment & Logistics","title":"Heavy Duty Mechanic Apprentice - MBD/ConeTec"}
 {"company":"ConeTec","first_seen":"2026-11-08","id":"bamboohr:conetec:719","location":"Surrey, British Columbia","team":"Facility Management & Work Operation","title":"Heavy Duty Mechanic"}
-{"company":"ConeTec","first_seen":"2026-11-08","id":"bamboohr:conetec:721","remote":true,"team":"Production, Works and Project Management","title":"Drill Assistant / Labourer"}
+{"closed_at":"2026-11-19","company":"ConeTec","first_seen":"2026-11-08","id":"bamboohr:conetec:721","remote":true,"team":"Production, Works and Project Management","title":"Drill Assistant / Labourer"}
 {"company":"ConeTec","first_seen":"2026-11-08","id":"bamboohr:conetec:723","location":"Chorrillos, Lima","team":"Production, Works and Project Management","title":"Operador de Bulldozer"}
 {"company":"ConeTec","first_seen":"2026-11-08","id":"bamboohr:conetec:730","location":"Santiago, RM","team":"Quality/Hygiene/Safety/Technology","title":"Prevencionista de Riesgo"}
 {"company":"ConeTec","first_seen":"2026-11-08","id":"bamboohr:conetec:731","location":"Burnaby, British Columbia","team":"Production, Works and Project Management","title":"Field Geophysicist"}
 {"company":"ConeTec","first_seen":"2026-11-08","id":"bamboohr:conetec:734","location":"Calgary, Alberta","skills":["talent_acquisition"],"team":"Human Resources","title":"Lead Talent Acquisition & HR Business Partner"}
 {"company":"ConeTec","first_seen":"2026-11-08","id":"bamboohr:conetec:735","location":"Santiago, RM","team":"Production, Works and Project Management","title":"Ingeniero de Campo- Minería"}
-{"company":"ConeTec","first_seen":"2026-10-23","id":"bamboohr:conetec:736","location":"Fort McMurray, Alberta","team":"Production, Works and Project Management","title":"Geotechnical Field Engineer / Geoscientist"}
+{"closed_at":"2026-11-19","company":"ConeTec","first_seen":"2026-10-23","id":"bamboohr:conetec:736","location":"Fort McMurray, Alberta","team":"Production, Works and Project Management","title":"Geotechnical Field Engineer / Geoscientist"}
 {"company":"ConeTec","first_seen":"2026-11-08","id":"bamboohr:conetec:737","location":"Burnaby, British Columbia","team":"Finance, Accounts, Management, Taxation","title":"Legal Counsel"}
 {"company":"ConeTec","first_seen":"2026-11-08","id":"bamboohr:conetec:738","location":"Burnaby, British Columbia","team":"Engineering, Studies and Methods","title":"AI Product Developer"}
 {"company":"ConeTec","first_seen":"2026-11-08","id":"bamboohr:conetec:740","location":"Chorrillos, Lima","team":"Human Resources","title":"Lider de Recursos Humanos"}
 {"company":"ConeTec","first_seen":"2026-11-08","id":"bamboohr:conetec:741","location":"Surrey, British Columbia","team":"Production, Works and Project Management","title":"Operations Manager - Yard and Asset"}
 {"company":"ConeTec","first_seen":"2026-11-10","id":"bamboohr:conetec:742","location":"Santiago, RM","team":"Production, Works and Project Management","title":"Operador en Geofísica"}
 {"company":"ConeTec","first_seen":"2026-11-16","id":"bamboohr:conetec:745","location":"Burnaby, British Columbia","team":"Human Resources","title":"Lead HR Business Partner & Talent Management"}
+{"company":"ConeTec","first_seen":"2026-11-19","id":"bamboohr:conetec:747","remote":true,"skills":["talent_acquisition"],"team":"Human Resources","title":"Talent Acquisition and HR Business Partner (HRBP)"}
 {"company":"ConeTec","first_seen":"2026-11-18","id":"bamboohr:conetec:748","location":"Burnaby, British Columbia","skills":["azure"],"team":"Engineering, Studies and Methods","title":"Azure Data Developer"}
+{"company":"ConeTec","first_seen":"2026-11-19","id":"bamboohr:conetec:750","location":"Prince George, British Columbia","team":"Equipment & Logistics","title":"Yard Technician"}
+{"company":"ConeTec","first_seen":"2026-11-19","id":"bamboohr:conetec:751","location":"Brampton, Ontario","team":"Production, Works and Project Management","title":"Operations Manager - Yard and Asset"}

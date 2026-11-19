@@ -20,8 +20,8 @@
 {"company":"Vertex Resource Group","first_seen":"2026-11-08","id":"bamboohr:vertexca:1911","location":"Conroe, Texas","team":"Engineering","title":"Geotechnical Engineer"}
 {"company":"Vertex Resource Group","employment":"contract","first_seen":"2026-10-30","id":"bamboohr:vertexca:1913","location":"Sarnia, Ontario","team":"Fluids - Drivers","title":"Lease / Owner Operator"}
 {"company":"Vertex Resource Group","first_seen":"2026-10-30","id":"bamboohr:vertexca:1918","location":"Sherwood Park, Alberta","team":"Environmental","title":"Project Manager - Liability Management"}
-{"company":"Vertex Resource Group","first_seen":"2026-10-30","id":"bamboohr:vertexca:1919","location":"Dawson Creek, British Columbia","team":"Environmental","title":"Project Manager - Liability Management"}
-{"company":"Vertex Resource Group","first_seen":"2026-11-08","id":"bamboohr:vertexca:1920","location":"County of Grande Prairie, Alberta","team":"Environmental","title":"Project Manager - Liability Management"}
+{"closed_at":"2026-11-19","company":"Vertex Resource Group","first_seen":"2026-10-30","id":"bamboohr:vertexca:1919","location":"Dawson Creek, British Columbia","team":"Environmental","title":"Project Manager - Liability Management"}
+{"closed_at":"2026-11-19","company":"Vertex Resource Group","first_seen":"2026-11-08","id":"bamboohr:vertexca:1920","location":"County of Grande Prairie, Alberta","team":"Environmental","title":"Project Manager - Liability Management"}
 {"company":"Vertex Resource Group","first_seen":"2026-11-08","id":"bamboohr:vertexca:1925","location":"Sarnia, Ontario","team":"Engineering","title":"Geotechnical Construction Advisor"}
 {"company":"Vertex Resource Group","first_seen":"2026-11-08","id":"bamboohr:vertexca:1928","location":"Crossfield, Alberta","team":"Vac and Water - Field","title":"Vac Truck Operator"}
 {"company":"Vertex Resource Group","first_seen":"2026-11-08","id":"bamboohr:vertexca:1929","location":"Blackfoot, Alberta","team":"Pressure and Vac - Field","title":"Pressure/Hot Oiler Operator"}
@@ -64,3 +64,5 @@
 {"company":"Vertex Resource Group","first_seen":"2026-11-17","id":"bamboohr:vertexca:1980","location":"Conroe, Texas","team":"Engineering","title":"Construction Materials Testing (CMT) Technician"}
 {"company":"Vertex Resource Group","first_seen":"2026-11-17","id":"bamboohr:vertexca:1981","location":"Whitecourt, Alberta","team":"Rentals - Field","title":"Class 1 or 3 Operator"}
 {"company":"Vertex Resource Group","first_seen":"2026-11-18","id":"bamboohr:vertexca:1982","location":"Nisku, Alberta","reposts":1,"team":"Hydrovac - Field","title":"3rd or 4th Year - Apprentice Heavy Duty Mechanic"}
+{"company":"Vertex Resource Group","first_seen":"2026-11-19","id":"bamboohr:vertexca:1983","location":"Calgary, Alberta","team":"Environmental","title":"Environmental Database Analyst"}
+{"company":"Vertex Resource Group","first_seen":"2026-11-19","id":"bamboohr:vertexca:1984","location":"Sherwood Park, Alberta","team":"Environmental","title":"Environmental Database Analyst"}

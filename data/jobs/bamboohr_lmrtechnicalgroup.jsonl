@@ -52,7 +52,7 @@
 {"company":"LMR Technical Group","employment":"full_time","first_seen":"2026-10-30","id":"bamboohr:lmrtechnicalgroup:1719","location":"Hampton, Virginia","title":"Athletic Trainer"}
 {"company":"LMR Technical Group","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:lmrtechnicalgroup:1724","remote":true,"title":"Logistician (U.S. Coast Guard)"}
 {"company":"LMR Technical Group","employment":"full_time","first_seen":"2026-10-30","id":"bamboohr:lmrtechnicalgroup:1726","location":"Eglin AFB, Florida","title":"Licensed Massage Therapist"}
-{"company":"LMR Technical Group","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:lmrtechnicalgroup:1727","location":"Keyport, Washington","title":"Senior Financial Analyst"}
+{"closed_at":"2026-11-19","company":"LMR Technical Group","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:lmrtechnicalgroup:1727","location":"Keyport, Washington","title":"Senior Financial Analyst"}
 {"company":"LMR Technical Group","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:lmrtechnicalgroup:1728","location":"Keyport, Washington","title":"Financial Analyst"}
 {"company":"LMR Technical Group","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:lmrtechnicalgroup:1729","location":"Fort Walton Beach, Florida","title":"Physical Therapist (Position Located at Kunsan Air Base, Republic of Korea)"}
 {"company":"LMR Technical Group","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:lmrtechnicalgroup:1730","location":"Arlington, Virginia","title":"Paralegal/Legal Assistant II"}
@@ -73,5 +73,7 @@
 {"company":"LMR Technical Group","employment":"full_time","first_seen":"2026-11-18","id":"bamboohr:lmrtechnicalgroup:1745","location":"Moody AFB, Georgia","title":"Aircrew Flight Equipment (AFE) Master Rigger"}
 {"company":"LMR Technical Group","employment":"full_time","first_seen":"2026-11-18","id":"bamboohr:lmrtechnicalgroup:1746","location":"Moody AFB, Georgia","title":"Supply Manager"}
 {"company":"LMR Technical Group","employment":"full_time","first_seen":"2026-11-19","id":"bamboohr:lmrtechnicalgroup:1747","location":"Moody AFB, Georgia","title":"Vehicle Control Manager"}
-{"company":"LMR Technical Group","employment":"full_time","first_seen":"2026-11-19","id":"bamboohr:lmrtechnicalgroup:1748","location":"Keyport, Washington","title":"Accountant"}
+{"closed_at":"2026-11-19","company":"LMR Technical Group","employment":"full_time","first_seen":"2026-11-19","id":"bamboohr:lmrtechnicalgroup:1748","location":"Keyport, Washington","title":"Accountant"}
 {"company":"LMR Technical Group","employment":"full_time","first_seen":"2026-11-19","id":"bamboohr:lmrtechnicalgroup:1750","location":"Laughlin AFB, Texas","title":"Certified Strength and Conditioning Specialist"}
+{"company":"LMR Technical Group","employment":"full_time","first_seen":"2026-11-19","id":"bamboohr:lmrtechnicalgroup:1751","location":"Moody AFB, Georgia","title":"Standardization and Evaluation Administrative Program Assistant (SEAA)"}
+{"company":"LMR Technical Group","employment":"full_time","first_seen":"2026-11-19","id":"bamboohr:lmrtechnicalgroup:1752","location":"Moody AFB, Georgia","reposts":1,"title":"Administrative Assistant"}

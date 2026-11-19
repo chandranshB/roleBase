@@ -24,7 +24,7 @@
 {"company":"Mactac","first_seen":"2026-11-08","id":"applicantpro:mactac:4194919","location":"1896 Moore Duncan Highway, Moore, SC, USA","posted":"2026-10-23","team":"Maintenance","title":"Maintenance Supervisor - Off Shift (2nd or 3rd)"}
 {"company":"Mactac","first_seen":"2026-11-08","id":"applicantpro:mactac:4198614","location":"802 East Corey Street, Moosic, PA, USA","pay":[64480,70720,"USD"],"posted":"2026-09-04","team":"Maintenance","title":"Plant Electrician - 3rd Shift"}
 {"company":"Mactac","first_seen":"2026-11-08","id":"applicantpro:mactac:4216679","location":"802 East Corey Street, Moosic, PA, USA","posted":"2026-09-21","team":"Quality","title":"Manager, Plant Process Technology"}
-{"company":"Mactac","first_seen":"2026-11-08","id":"applicantpro:mactac:4216697","location":"4560 Darrow Road, Stow, OH, USA","posted":"2026-09-21","team":"Sales","title":"Inside Sales Representative"}
+{"closed_at":"2026-11-19","company":"Mactac","first_seen":"2026-11-08","id":"applicantpro:mactac:4216697","location":"4560 Darrow Road, Stow, OH, USA","posted":"2026-09-21","team":"Sales","title":"Inside Sales Representative"}
 {"company":"Mactac","first_seen":"2026-11-08","id":"applicantpro:mactac:4226099","location":"2576 Norcross Drive, Columbus, IN, USA","posted":"2026-09-29","team":"Manufacturing","title":"Maintenance Technician - Weekend 2nd Shift"}
 {"company":"Mactac","first_seen":"2026-11-08","id":"applicantpro:mactac:4227929","location":"2576 Norcross Drive, Columbus, IN, USA","posted":"2026-09-30","team":"Quality","title":"Quality Assurance Specialist"}
 {"company":"Mactac","first_seen":"2026-11-08","id":"applicantpro:mactac:4229281","location":"802 East Corey Street, Moosic, PA, USA","posted":"2026-10-01","team":"IT","title":"IT End User Support Analyst"}
@@ -49,3 +49,4 @@
 {"closed_at":"2026-11-12","company":"Mactac","first_seen":"2026-11-11","id":"applicantpro:mactac:4272953","location":"1896 Moore Duncan Highway, Moore, SC, USA","posted":"2026-11-11","team":"Production","title":"Production Supervisor - Coating (C9) - 3rd Shift"}
 {"company":"Mactac","first_seen":"2026-11-12","id":"applicantpro:mactac:4273273","location":"1896 Moore Duncan Highway, Moore, SC, USA","posted":"2026-11-11","team":"Production","title":"Finishing Manager"}
 {"company":"Mactac","first_seen":"2026-11-18","id":"applicantpro:mactac:4279692","location":"5700 East Airport Drive, Ontario, CA, USA","pay":[49795,53414,"USD"],"posted":"2026-11-17","reposts":1,"team":"Production","title":"Slitting Machine Operator - Converting"}
+{"company":"Mactac","first_seen":"2026-11-19","id":"applicantpro:mactac:4281687","location":"802 East Corey Street, Moosic, PA, USA","posted":"2026-11-19","team":"Manufacturing","title":"Coater Helper  - 4x12 Hour Mon-Thurs"}

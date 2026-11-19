@@ -3,7 +3,7 @@
 {"company":"Questel","first_seen":"2026-11-08","id":"bamboohr:questel:1014","location":"Tunis, North-East","team":"CX-Client Support-ELC","title":"Customer Support Agent"}
 {"company":"Questel","first_seen":"2026-11-08","id":"bamboohr:questel:1018","location":"Tunis, North-East","team":"Finance-Credit Management-Group-Transversal","title":"Senior Billing Associate"}
 {"company":"Questel","first_seen":"2026-11-08","id":"bamboohr:questel:1019","location":"Tunis, North-East","skills":["java"],"team":"R&D SaaS-DaaS-Patent-M1","title":"Ingénieur Expert Elasticsearch /Java"}
-{"company":"Questel","first_seen":"2026-11-08","id":"bamboohr:questel:1022","remote":true,"team":"Operations-QLS-Localization-Non IP","title":"Translation Localization Engineer"}
+{"closed_at":"2026-11-19","company":"Questel","first_seen":"2026-11-08","id":"bamboohr:questel:1022","remote":true,"team":"Operations-QLS-Localization-Non IP","title":"Translation Localization Engineer"}
 {"closed_at":"2026-11-17","company":"Questel","first_seen":"2026-11-08","id":"bamboohr:questel:1026","location":"Valbonne, Alpes-Maritimes","team":"Systems & Technology-Corporate Global Infra-Transversal","title":"System Engineer H/F"}
 {"company":"Questel","first_seen":"2026-11-08","id":"bamboohr:questel:1030","location":"Tunis, North-East","skills":["java"],"team":"R&D SaaS-DaaS-Patent","title":"Développeur/se Back-End Java - Data as a Service (H/F)"}
 {"company":"Questel","first_seen":"2026-11-08","id":"bamboohr:questel:1035","location":"Tunis, North-East","team":"R&D SaaS-CDQ-Patent","title":"QA Automation Specialist"}
@@ -44,9 +44,10 @@
 {"company":"Questel","first_seen":"2026-11-13","id":"bamboohr:questel:1086","remote":true,"title":"Customer Success Manager - IP Intelligence Software / French speaking"}
 {"company":"Questel","first_seen":"2026-11-13","id":"bamboohr:questel:1087","remote":true,"title":"IP Intelligence Software Specialist / Italian speaking"}
 {"company":"Questel","first_seen":"2026-11-18","id":"bamboohr:questel:1088","location":"Tunis, North-East","team":"Integration & Automation-Transversal-M1","title":"AI & Automation Engineer"}
+{"company":"Questel","first_seen":"2026-11-19","id":"bamboohr:questel:1090","remote":true,"team":"Sales-Sales Administration-Services-Transversal","title":"Billing Lead"}
 {"company":"Questel","first_seen":"2026-11-08","id":"bamboohr:questel:812","location":"Tokyo, Chiyoda-ku","team":"R&D SaaS-CP-Patent-Executive","title":"インフラエンジニア"}
 {"company":"Questel","first_seen":"2026-11-08","id":"bamboohr:questel:883","location":"Tianjin City, Tianjin","team":"Operations-QTS-Engineering & Formatting-Patent","title":"File Formatting Engineer 排版专员"}
-{"company":"Questel","first_seen":"2026-11-08","id":"bamboohr:questel:891","remote":true,"team":"Operations-QFS-Patent","title":"IP Client Solutions Representative"}
+{"closed_at":"2026-11-19","company":"Questel","first_seen":"2026-11-08","id":"bamboohr:questel:891","remote":true,"team":"Operations-QFS-Patent","title":"IP Client Solutions Representative"}
 {"company":"Questel","first_seen":"2026-11-08","id":"bamboohr:questel:897","location":"Alexandria, Virginia","team":"Sales-Lead Gen-NOAM-Patent","title":"Business Development Representative - Patent"}
 {"company":"Questel","first_seen":"2026-11-08","id":"bamboohr:questel:917","location":"Tokyo, Chiyoda-ku","skills":["salesforce"],"team":"R&D SaaS-CP-Patent-Executive","title":"Salesforce SIプロジェクトリーダー/メンバー"}
 {"company":"Questel","first_seen":"2026-10-30","id":"bamboohr:questel:937","remote":true,"team":"Sales-Account managers-NOAM-Law Firms-Patent","title":"Key Account Manager"}
@@ -54,7 +55,7 @@
 {"company":"Questel","first_seen":"2026-11-08","id":"bamboohr:questel:941","location":"Tokyo, Chiyoda-ku","team":"R&D SaaS-CPD-Patent","title":"データエンジニア"}
 {"company":"Questel","first_seen":"2026-11-08","id":"bamboohr:questel:948","remote":true,"team":"Sales-Account managers-NOAM-Law Firms-Patent","title":"Sales Development Representative"}
 {"company":"Questel","first_seen":"2026-10-30","id":"bamboohr:questel:952","location":"Alexandria, Virginia","team":"Sales-Account managers-NOAM-Law Firms-Patent","title":"Sales Development Representative"}
-{"company":"Questel","first_seen":"2026-11-08","id":"bamboohr:questel:955","remote":true,"team":"Operations-QTS-Engineering & Formatting-Patent","title":"Associate File Formatting Engineer"}
+{"closed_at":"2026-11-19","company":"Questel","first_seen":"2026-11-08","id":"bamboohr:questel:955","remote":true,"team":"Operations-QTS-Engineering & Formatting-Patent","title":"Associate File Formatting Engineer"}
 {"company":"Questel","first_seen":"2026-11-08","id":"bamboohr:questel:983","location":"Arequipa, Arequipa","team":"Finance-FP&A-Group-Transversal","title":"FP&A Junior Analyst"}
 {"company":"Questel","first_seen":"2026-11-08","id":"bamboohr:questel:984","location":"Arequipa, Arequipa","team":"Finance-FP&A-Group-Transversal","title":"FP&A Analyst"}
 {"company":"Questel","first_seen":"2026-11-08","id":"bamboohr:questel:988","location":"Tunis, North-East","team":"R&D SaaS-J-Saas-Patent","title":"Development Engineer"}

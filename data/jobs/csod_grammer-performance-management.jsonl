@@ -194,7 +194,7 @@
 {"company":"Grammer","first_seen":"2026-11-08","id":"csod:grammer-performance-management:1431","location":"Ceská Lípa, CZ","posted":"2025-11-12","reposts":2,"title":"Quality Engineer"}
 {"company":"Grammer","first_seen":"2026-11-08","id":"csod:grammer-performance-management:1445","location":"Tupelo, US","posted":"2026-01-08","title":"Operations Manager"}
 {"company":"Grammer","first_seen":"2026-11-08","id":"csod:grammer-performance-management:1494","location":"Delphos, US","posted":"2026-03-31","reposts":1,"title":"Maintenance Technician"}
-{"company":"Grammer","employment":"internship","first_seen":"2026-11-08","id":"csod:grammer-performance-management:1532","location":"Immenstetten, DE","posted":"2026-03-02","title":"Praktikum (m/w/d) im Bereich Technischer Versuch Seating"}
+{"closed_at":"2026-11-19","company":"Grammer","employment":"internship","first_seen":"2026-11-08","id":"csod:grammer-performance-management:1532","location":"Immenstetten, DE","posted":"2026-03-02","title":"Praktikum (m/w/d) im Bereich Technischer Versuch Seating"}
 {"company":"Grammer","first_seen":"2026-11-08","id":"csod:grammer-performance-management:1575","location":"Ursensollen, DE","posted":"2026-03-26","title":"Expert Compensation & Benefits EMEA (m/w/d)"}
 {"company":"Grammer","first_seen":"2026-11-08","id":"csod:grammer-performance-management:1588","location":"Atibaia, BR","posted":"2026-05-27","title":"Product Engineer (m/f/d)"}
 {"company":"Grammer","first_seen":"2026-11-08","id":"csod:grammer-performance-management:1593","location":"Delphos, US","posted":"2026-03-31","title":"Continuous Improvement Engineer"}
@@ -225,16 +225,16 @@
 {"company":"Grammer","employment":"internship","first_seen":"2026-11-08","id":"csod:grammer-performance-management:1895","location":"Hardheim, DE","posted":"2026-08-24","title":"Ausbildung zum Industriekaufmann (m/w/d)"}
 {"company":"Grammer","first_seen":"2026-11-08","id":"csod:grammer-performance-management:1900","location":"Nis, RS","posted":"2026-08-17","title":"NPM Buyer"}
 {"company":"Grammer","first_seen":"2026-11-08","id":"csod:grammer-performance-management:1908","location":"CZ","posted":"2026-08-17","skills":["sap"],"title":"System Process Manager - SAP TM"}
-{"company":"Grammer","first_seen":"2026-11-08","id":"csod:grammer-performance-management:1909","location":"Tetla, MX","posted":"2026-09-23","title":"Production Operator (Painting)"}
-{"company":"Grammer","first_seen":"2026-11-08","id":"csod:grammer-performance-management:1911","location":"Tetla, MX","posted":"2026-09-18","reposts":1,"title":"Production Operator"}
+{"closed_at":"2026-11-19","company":"Grammer","first_seen":"2026-11-08","id":"csod:grammer-performance-management:1909","location":"Tetla, MX","posted":"2026-09-23","title":"Production Operator (Painting)"}
+{"closed_at":"2026-11-19","company":"Grammer","first_seen":"2026-11-08","id":"csod:grammer-performance-management:1911","location":"Tetla, MX","posted":"2026-09-18","reposts":1,"title":"Production Operator"}
 {"company":"Grammer","first_seen":"2026-11-08","id":"csod:grammer-performance-management:1913","location":"Tetla, MX","posted":"2026-08-24","title":"INJECTION PROCESS ENGINEER"}
 {"closed_at":"2026-11-12","company":"Grammer","first_seen":"2026-11-08","id":"csod:grammer-performance-management:1925","location":"Tetla, MX","posted":"2026-08-24","reposts":1,"title":"MAINTENANCE TECHNITIAN"}
 {"company":"Grammer","first_seen":"2026-11-08","id":"csod:grammer-performance-management:1928","location":"Tetla, MX","posted":"2026-08-24","title":"MAINTENANCE TECHNITIAN MOLDS"}
 {"closed_at":"2026-11-12","company":"Grammer","first_seen":"2026-11-08","id":"csod:grammer-performance-management:1929","location":"Tetla, MX","posted":"2026-08-24","title":"MAINTENANCE TECHNITIAN MOLDS"}
 {"company":"Grammer","first_seen":"2026-11-08","id":"csod:grammer-performance-management:1932","location":"Tetla, MX","posted":"2026-07-24","reposts":1,"title":"SHIFT LEADER"}
-{"company":"Grammer","first_seen":"2026-11-08","id":"csod:grammer-performance-management:1943","location":"Tetla, MX","posted":"2026-06-10","title":"Industrial Lead Engineer"}
+{"closed_at":"2026-11-19","company":"Grammer","first_seen":"2026-11-08","id":"csod:grammer-performance-management:1943","location":"Tetla, MX","posted":"2026-06-10","title":"Industrial Lead Engineer"}
 {"closed_at":"2026-11-11","company":"Grammer","first_seen":"2026-11-08","id":"csod:grammer-performance-management:1958","location":"Delphos, US","posted":"2026-08-25","reposts":2,"title":"Quality Engineer"}
-{"company":"Grammer","first_seen":"2026-11-08","id":"csod:grammer-performance-management:1962","location":"Tetla, MX","posted":"2026-08-27","title":"Production Operator (Assembly)"}
+{"closed_at":"2026-11-19","company":"Grammer","first_seen":"2026-11-08","id":"csod:grammer-performance-management:1962","location":"Tetla, MX","posted":"2026-08-27","title":"Production Operator (Assembly)"}
 {"company":"Grammer","first_seen":"2026-11-08","id":"csod:grammer-performance-management:1966","location":"Tachov, CZ","posted":"2026-08-28","title":"HR Business Partner junior"}
 {"company":"Grammer","first_seen":"2026-11-08","id":"csod:grammer-performance-management:1967","location":"Shannon, US","posted":"2026-09-22","reposts":2,"title":"Quality Engineer"}
 {"company":"Grammer","first_seen":"2026-11-08","id":"csod:grammer-performance-management:1968","location":"Shannon, US","posted":"2026-09-22","reposts":2,"title":"Quality Engineer"}
@@ -242,9 +242,9 @@
 {"closed_at":"2026-11-12","company":"Grammer","first_seen":"2026-11-08","id":"csod:grammer-performance-management:1997","location":"Tetla, MX","posted":"2026-09-01","reposts":1,"title":"Manufacturing Engineer"}
 {"company":"Grammer","first_seen":"2026-11-08","id":"csod:grammer-performance-management:2006","location":"Tetla, MX","posted":"2026-09-07","reposts":1,"title":"Maintenance Manager"}
 {"company":"Grammer","first_seen":"2026-11-08","id":"csod:grammer-performance-management:2007","location":"Tetla, MX","posted":"2026-09-10","title":"Painting Process Engineer"}
-{"company":"Grammer","first_seen":"2026-11-08","id":"csod:grammer-performance-management:2016","location":"Tetla, MX","posted":"2026-09-11","title":"Production Operator (Assembly)"}
-{"company":"Grammer","first_seen":"2026-11-08","id":"csod:grammer-performance-management:2017","location":"Tetla, MX","posted":"2026-09-11","title":"Production Operator (Injection)"}
-{"company":"Grammer","first_seen":"2026-11-08","id":"csod:grammer-performance-management:2018","location":"Tetla, MX","posted":"2026-09-11","title":"Production Operator (Injection)"}
+{"closed_at":"2026-11-19","company":"Grammer","first_seen":"2026-11-08","id":"csod:grammer-performance-management:2016","location":"Tetla, MX","posted":"2026-09-11","title":"Production Operator (Assembly)"}
+{"closed_at":"2026-11-19","company":"Grammer","first_seen":"2026-11-08","id":"csod:grammer-performance-management:2017","location":"Tetla, MX","posted":"2026-09-11","title":"Production Operator (Injection)"}
+{"closed_at":"2026-11-19","company":"Grammer","first_seen":"2026-11-08","id":"csod:grammer-performance-management:2018","location":"Tetla, MX","posted":"2026-09-11","title":"Production Operator (Injection)"}
 {"company":"Grammer","first_seen":"2026-11-08","id":"csod:grammer-performance-management:2019","location":"Tupelo, US","posted":"2026-09-11","reposts":1,"title":"Maintenance Technician"}
 {"company":"Grammer","first_seen":"2026-11-08","id":"csod:grammer-performance-management:2021","location":"Tetla, MX","posted":"2026-09-14","title":"Quality Planner"}
 {"company":"Grammer","first_seen":"2026-11-08","id":"csod:grammer-performance-management:2023","location":"Tetla, MX","posted":"2026-09-14","title":"Operators. (Warehouse area)"}
@@ -284,7 +284,7 @@
 {"company":"Grammer","first_seen":"2026-11-08","id":"csod:grammer-performance-management:2132","location":"Hefei, CN","posted":"2026-10-15","reposts":1,"title":"Project Manager"}
 {"closed_at":"2026-11-12","company":"Grammer","first_seen":"2026-11-08","id":"csod:grammer-performance-management:2133","location":"Tetla, MX","posted":"2026-10-16","reposts":1,"title":"Setter"}
 {"company":"Grammer","first_seen":"2026-11-16","id":"csod:grammer-performance-management:2134","location":"Tetla, MX","posted":"2026-10-16","reposts":1,"title":"Injection Process Engineer"}
-{"company":"Grammer","first_seen":"2026-11-08","id":"csod:grammer-performance-management:2135","location":"Tetla, MX","posted":"2026-10-16","reposts":1,"title":"Production Operator"}
+{"closed_at":"2026-11-19","company":"Grammer","first_seen":"2026-11-08","id":"csod:grammer-performance-management:2135","location":"Tetla, MX","posted":"2026-10-16","reposts":1,"title":"Production Operator"}
 {"company":"Grammer","first_seen":"2026-11-08","id":"csod:grammer-performance-management:2139","location":"Tianjin, CN","posted":"2026-10-19","title":"CI & Lean Manager"}
 {"company":"Grammer","first_seen":"2026-11-08","id":"csod:grammer-performance-management:2141","location":"Tetla, MX","posted":"2026-10-19","title":"Molds Maintenance Coordinator"}
 {"company":"Grammer","first_seen":"2026-11-08","id":"csod:grammer-performance-management:2142","location":"Tetla, MX","posted":"2026-10-19","title":"Assembly Maintenance Coordinator"}
@@ -306,9 +306,9 @@
 {"company":"Grammer","first_seen":"2026-11-08","id":"csod:grammer-performance-management:2239","location":"Ningbo, CN","posted":"2026-11-05","title":"Customer Planning Supervisor"}
 {"company":"Grammer","first_seen":"2026-11-08","id":"csod:grammer-performance-management:2240","location":"Ningbo, CN","posted":"2026-11-05","title":"Inspector"}
 {"company":"Grammer","first_seen":"2026-11-10","id":"csod:grammer-performance-management:2244","location":"Tetla, MX","posted":"2026-11-06","title":"Incoming Inspection Auditor"}
-{"company":"Grammer","first_seen":"2026-11-10","id":"csod:grammer-performance-management:2245","location":"Tetla, MX","posted":"2026-11-06","reposts":2,"title":"Production Operator"}
+{"closed_at":"2026-11-19","company":"Grammer","first_seen":"2026-11-10","id":"csod:grammer-performance-management:2245","location":"Tetla, MX","posted":"2026-11-06","reposts":2,"title":"Production Operator"}
 {"company":"Grammer","first_seen":"2026-11-16","id":"csod:grammer-performance-management:2251","location":"Delphos, US","posted":"2026-11-11","reposts":5,"title":"Quality Engineer"}
-{"company":"Grammer","first_seen":"2026-11-17","id":"csod:grammer-performance-management:2252","location":"Tetla, MX","posted":"2026-11-11","reposts":3,"title":"Setter"}
+{"closed_at":"2026-11-19","company":"Grammer","first_seen":"2026-11-17","id":"csod:grammer-performance-management:2252","location":"Tetla, MX","posted":"2026-11-11","reposts":3,"title":"Setter"}
 {"company":"Grammer","first_seen":"2026-11-08","id":"csod:grammer-performance-management:269","location":"Ningbo, CN","posted":"2023-09-12","title":"Sales Assistant"}
 {"company":"Grammer","first_seen":"2026-11-08","id":"csod:grammer-performance-management:358","location":"Changchun, CN","posted":"2023-10-20","reposts":1,"title":"Warehouse Supervisor"}
 {"company":"Grammer","first_seen":"2026-11-08","id":"csod:grammer-performance-management:475","location":"Aleksinac, RS","posted":"2023-12-15","skills":["sap"],"title":"SAP ABAP Developer (m/f/d)"}
