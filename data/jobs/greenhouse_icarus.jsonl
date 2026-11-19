@@ -7,7 +7,7 @@
 {"closed_at":"2026-11-08","company":"Icarus","first_seen":"2026-10-30","id":"greenhouse:icarus:5102844008","location":"El Segundo","pay":[100000,160000,"USD"],"posted":"2026-01-30","team":"Operations","title":"Forward Deployed Engineer"}
 {"company":"Icarus","first_seen":"2026-10-30","id":"greenhouse:icarus:5103489008","location":"El Segundo","pay":[100000,250000,"USD"],"posted":"2026-01-30","team":"Business","title":"Dream Job"}
 {"company":"Icarus","first_seen":"2026-10-30","id":"greenhouse:icarus:5232335008","location":"El Segundo","pay":[100000,160000,"USD"],"posted":"2026-05-27","team":"Early Career","title":"Engineer (Formula SAE Track)"}
-{"company":"Icarus","first_seen":"2026-10-30","id":"greenhouse:icarus:5232484008","location":"El Segundo","posted":"2026-05-27","team":"Manufacturing","title":"Technician","years":3}
+{"company":"Icarus","first_seen":"2026-10-30","id":"greenhouse:icarus:5232484008","location":"El Segundo","posted":"2026-05-27","team":"Manufacturing","title":"Build Technician","years":3}
 {"company":"Icarus","first_seen":"2026-06-26","id":"greenhouse:icarus:5281181008","location":"El Segundo","pay":[100000,140000,"USD"],"posted":"2026-06-24","team":"Engineering","title":"GNC Engineer"}
 {"closed_at":"2026-11-08","company":"Icarus","first_seen":"2026-10-30","id":"greenhouse:icarus:5281224008","location":"El Segundo","pay":[100000,160000,"USD"],"posted":"2026-06-24","team":"Manufacturing","title":"Manufacturing Engineer","years":1}
 {"closed_at":"2026-11-08","company":"Icarus","first_seen":"2026-10-30","id":"greenhouse:icarus:5281248008","location":"El Segundo","pay":[100000,160000,"USD"],"posted":"2026-06-25","team":"Engineering","title":"Mechanical Engineer"}
@@ -38,3 +38,6 @@
 {"company":"Icarus","first_seen":"2026-11-08","id":"greenhouse:icarus:5476156008","location":"El Segundo","pay":[120000,160000,"USD"],"posted":"2026-11-06","skills":["python","linux"],"team":"Operations","title":"IT Systems Engineer"}
 {"company":"Icarus","first_seen":"2026-11-12","id":"greenhouse:icarus:5479857008","location":"El Segundo","pay":[120000,160000,"USD"],"posted":"2026-11-11","skills":["python","linux"],"team":"Operations","title":"Tech Ops Lead"}
 {"company":"Icarus","first_seen":"2026-11-14","id":"greenhouse:icarus:5482294008","location":"El Segundo","pay":[100000,140000,"USD"],"posted":"2026-11-13","team":"Engineering","title":"Payload Integration Engineer"}
+{"company":"Icarus","first_seen":"2026-11-19","id":"greenhouse:icarus:5487269008","location":"El Segundo","posted":"2026-11-18","team":"Manufacturing","title":"Avionics Technician","years":3}
+{"company":"Icarus","first_seen":"2026-11-19","id":"greenhouse:icarus:5487279008","location":"El Segundo","posted":"2026-11-18","team":"Manufacturing","title":"Integration Technician","years":3}
+{"company":"Icarus","first_seen":"2026-11-19","id":"greenhouse:icarus:5487284008","location":"El Segundo","posted":"2026-11-18","team":"Manufacturing","title":"Composites Technician","years":3}

@@ -79,7 +79,7 @@
 {"closed_at":"2026-11-18","company":"First National Bank Alaska","first_seen":"2026-11-08","id":"csod:fnbalaska:2501","location":"Fairbanks, AK, US","posted":"2026-05-13","title":"Loan Officer III - Fairbanks"}
 {"closed_at":"2026-11-18","company":"First National Bank Alaska","first_seen":"2026-11-08","id":"csod:fnbalaska:2505","location":"Anchorage, AK, US","posted":"2026-05-22","title":"Loan Servicing Rep/Specialist - Loan Administration"}
 {"company":"First National Bank Alaska","first_seen":"2026-11-08","id":"csod:fnbalaska:2506","location":"Anchorage, AK, US","posted":"2026-07-09","title":"Central Loan Processor IV - Specialty Loans"}
-{"company":"First National Bank Alaska","first_seen":"2026-11-08","id":"csod:fnbalaska:2509","location":"Anchorage, AK, US","posted":"2026-05-28","title":"Personal Banker I - South Center Branch"}
+{"closed_at":"2026-11-19","company":"First National Bank Alaska","first_seen":"2026-11-08","id":"csod:fnbalaska:2509","location":"Anchorage, AK, US","posted":"2026-05-28","title":"Personal Banker I - South Center Branch"}
 {"company":"First National Bank Alaska","first_seen":"2026-11-08","id":"csod:fnbalaska:2511","location":"Anchorage, AK, US","posted":"2026-07-29","title":"Department Representative - Specialty Loan Documentation Unit"}
 {"company":"First National Bank Alaska","first_seen":"2026-11-08","id":"csod:fnbalaska:2536","location":"Anchorage, AK, US","posted":"2026-06-29","title":"Personal Banker I - Anchorage Branch Operations"}
 {"closed_at":"2026-11-17","company":"First National Bank Alaska","first_seen":"2026-11-08","id":"csod:fnbalaska:3548","location":"Bethel, AK, US","posted":"2026-11-06","title":"Universal Teller I/II - Kuskokwim Branch"}
@@ -96,7 +96,7 @@
 {"closed_at":"2026-11-17","company":"First National Bank Alaska","first_seen":"2026-11-08","id":"csod:fnbalaska:3595","location":"Anchorage, AK, US","posted":"2026-09-25","title":"Contact Center Operations Assistant"}
 {"closed_at":"2026-11-17","company":"First National Bank Alaska","first_seen":"2026-11-08","id":"csod:fnbalaska:3597","location":"Anchorage, AK, US","posted":"2026-10-02","title":"Financial Planning & Business Analyst I"}
 {"company":"First National Bank Alaska","first_seen":"2026-11-08","id":"csod:fnbalaska:3598","location":"Anchorage, AK, US","posted":"2026-10-05","title":"Financial Reporting Accountant"}
-{"company":"First National Bank Alaska","first_seen":"2026-11-08","id":"csod:fnbalaska:3599","location":"Juneau, AK, US","posted":"2026-10-06","title":"Operations Supervisor I - Juneau Regional Branch"}
+{"closed_at":"2026-11-19","company":"First National Bank Alaska","first_seen":"2026-11-08","id":"csod:fnbalaska:3599","location":"Juneau, AK, US","posted":"2026-10-06","title":"Operations Supervisor I - Juneau Regional Branch"}
 {"company":"First National Bank Alaska","first_seen":"2026-11-08","id":"csod:fnbalaska:3600","location":"Juneau, AK, US","posted":"2026-10-06","title":"Department Representative - Lending Unit"}
 {"company":"First National Bank Alaska","first_seen":"2026-11-08","id":"csod:fnbalaska:3601","location":"Anchorage, AK, US","posted":"2026-10-20","title":"Card Services Support Representative - ATM/Debit Cards"}
 {"company":"First National Bank Alaska","first_seen":"2026-11-08","id":"csod:fnbalaska:3602","location":"Anchorage, AK, US","posted":"2026-10-07","title":"Personal Banker II/III - Metro Branch"}
@@ -119,3 +119,5 @@
 {"company":"First National Bank Alaska","first_seen":"2026-11-11","id":"csod:fnbalaska:3628","location":"Anchorage, AK, US","posted":"2026-11-10","title":"Loan Officer II/III - Dimond Lending"}
 {"company":"First National Bank Alaska","first_seen":"2026-11-14","id":"csod:fnbalaska:3630","location":"Anchorage, AK, US","posted":"2026-11-13","title":"Chief Financial Officer"}
 {"company":"First National Bank Alaska","employment":"part_time","first_seen":"2026-11-18","id":"csod:fnbalaska:3631","location":"Anchorage, AK, US","posted":"2026-11-17","skills":["customer_service"],"title":"Contact Center Agent - Customer Service (full- or part-time)"}
+{"company":"First National Bank Alaska","first_seen":"2026-11-19","id":"csod:fnbalaska:3632","location":"Anchorage, AK, US","posted":"2026-11-18","reposts":2,"title":"Loan Servicing Rep/Specialist - Loan Administration"}
+{"company":"First National Bank Alaska","first_seen":"2026-11-19","id":"csod:fnbalaska:3633","location":"Anchorage, AK, US","posted":"2026-11-18","reposts":1,"title":"Personal Banker I - South Center Branch"}
