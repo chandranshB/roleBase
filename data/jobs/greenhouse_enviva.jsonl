@@ -70,7 +70,7 @@
 {"company":"Enviva","first_seen":"2026-10-19","id":"greenhouse:enviva:8003942003","location":"Epes, AL","posted":"2026-09-23","team":"Operations","title":"Shift Supervisor","years":2}
 {"company":"Enviva","first_seen":"2026-11-08","id":"greenhouse:enviva:8003946003","location":"Epes, AL","posted":"2026-09-23","reposts":3,"team":"Operations","title":"Shift Supervisor","years":2}
 {"closed_at":"2026-11-19","company":"Enviva","first_seen":"2026-10-19","id":"greenhouse:enviva:8004671003","location":"Cottondale, FL","posted":"2026-09-24","skills":["forklift"],"team":"Operations","title":"Trainee"}
-{"company":"Enviva","first_seen":"2026-11-08","id":"greenhouse:enviva:8004675003","location":"Cottondale, FL","posted":"2026-09-24","skills":["forklift"],"team":"Operations","title":"Trainee"}
+{"closed_at":"2026-11-20","company":"Enviva","first_seen":"2026-11-08","id":"greenhouse:enviva:8004675003","location":"Cottondale, FL","posted":"2026-09-24","skills":["forklift"],"team":"Operations","title":"Trainee"}
 {"closed_at":"2026-11-08","company":"Enviva","first_seen":"2026-10-19","id":"greenhouse:enviva:8005259003","location":"Cottondale, FL","posted":"2026-09-25","team":"Operations","title":"Shift Supervisor","years":2}
 {"closed_at":"2026-11-11","company":"Enviva","first_seen":"2026-10-19","id":"greenhouse:enviva:8008392003","location":"Epes, AL","posted":"2026-09-29","team":"Operations","title":"Shift Supervisor - Woodyard","years":2}
 {"company":"Enviva","first_seen":"2026-10-19","id":"greenhouse:enviva:8008422003","location":"Garysburg, NC","posted":"2026-09-29","skills":["forklift"],"team":"Operations","title":"Utility Operator"}
@@ -83,7 +83,7 @@
 {"company":"Enviva","first_seen":"2026-10-19","id":"greenhouse:enviva:8017091003","location":"Hamlet, NC","posted":"2026-10-10","skills":["ms_office"],"team":"Operations","title":"Shift Electrical Technician"}
 {"closed_at":"2026-11-12","company":"Enviva","first_seen":"2026-10-19","id":"greenhouse:enviva:8023013003","location":"Hamlet, NC","posted":"2026-10-13","skills":["osha"],"team":"Operations","title":"Electrical Technician (Rotating Shifts)"}
 {"closed_at":"2026-10-26","company":"Enviva","first_seen":"2026-10-19","id":"greenhouse:enviva:8031286003","location":"Hamlet, NC","posted":"2026-10-13","skills":["preventive_maintenance","welding","osha"],"team":"Operations","title":"Mechanical Technician (Rotating Shifts)"}
-{"company":"Enviva","first_seen":"2026-10-19","id":"greenhouse:enviva:8033696003","location":"Faison, NC","posted":"2026-10-14","skills":["osha"],"team":"Operations","title":"Crane Operator","years":1}
+{"closed_at":"2026-11-20","company":"Enviva","first_seen":"2026-10-19","id":"greenhouse:enviva:8033696003","location":"Faison, NC","posted":"2026-10-14","skills":["osha"],"team":"Operations","title":"Crane Operator","years":1}
 {"closed_at":"2026-11-12","company":"Enviva","first_seen":"2026-10-19","id":"greenhouse:enviva:8034526003","location":"Franklin, VA","posted":"2026-10-15","skills":["spark"],"team":"Operations","title":"Control Room Operator"}
 {"closed_at":"2026-11-16","company":"Enviva","first_seen":"2026-11-08","id":"greenhouse:enviva:8034538003","location":"Franklin, VA","posted":"2026-10-15","reposts":5,"team":"Operations","title":"Pellet Mill Operator"}
 {"company":"Enviva","first_seen":"2026-10-19","id":"greenhouse:enviva:8034679003","location":"Lucedale, MS","posted":"2026-10-19","team":"Operations","title":"Pellet Mill Operator"}
@@ -94,7 +94,7 @@
 {"company":"Enviva","first_seen":"2026-11-09","id":"greenhouse:enviva:8039008003","location":"Franklin, VA","posted":"2026-11-09","reposts":2,"team":"Operations","title":"Mobile Equipment Operator"}
 {"closed_at":"2026-11-19","company":"Enviva","first_seen":"2026-11-08","id":"greenhouse:enviva:8040683003","location":"Garysburg, NC","posted":"2026-11-02","reposts":3,"team":"Operations","title":"Shift Supervisor","years":2}
 {"company":"Enviva","first_seen":"2026-10-26","id":"greenhouse:enviva:8044929003","location":"Epes, AL","posted":"2026-10-26","skills":["project_management","excel","powerpoint"],"team":"Operations","title":"Reliability Engineer","years":4}
-{"company":"Enviva","first_seen":"2026-11-08","id":"greenhouse:enviva:8047268003","location":"Epes, AL","posted":"2026-10-29","reposts":3,"team":"Operations","title":"Hammer Mill Operator"}
+{"closed_at":"2026-11-20","company":"Enviva","first_seen":"2026-11-08","id":"greenhouse:enviva:8047268003","location":"Epes, AL","posted":"2026-10-29","reposts":3,"team":"Operations","title":"Hammer Mill Operator"}
 {"company":"Enviva","first_seen":"2026-11-08","id":"greenhouse:enviva:8106575003","location":"Chesapeake, VA","posted":"2026-11-02","reposts":3,"skills":["preventive_maintenance","welding","osha"],"team":"Operations","title":"Mechanical Technician"}
 {"closed_at":"2026-11-12","company":"Enviva","first_seen":"2026-11-08","id":"greenhouse:enviva:8106811003","location":"Chesapeake, VA","posted":"2026-11-02","team":"Operations","title":"Receiving Operator"}
 {"closed_at":"2026-11-10","company":"Enviva","first_seen":"2026-11-08","id":"greenhouse:enviva:8178698003","location":"Raleigh, NC","posted":"2026-11-03","skills":["sql"],"team":"Engineering","title":"Senior Operational Technical Engineer","years":5}

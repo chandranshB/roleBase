@@ -15,10 +15,11 @@
 {"company":"JD.com","first_seen":"2026-11-20","id":"jd:jd:220600","location":"湖北省","posted":"2026-08-17","reposts":33,"team":"京东物流","title":"销售岗"}
 {"company":"JD.com","first_seen":"2026-11-09","id":"jd:jd:220637","location":"江西省","posted":"2026-09-21","team":"京东物流","title":"仓经理岗"}
 {"company":"JD.com","first_seen":"2026-11-09","id":"jd:jd:220665","location":"北京市","posted":"2026-10-28","team":"京东零售","title":"算法开发岗"}
+{"company":"JD.com","first_seen":"2026-11-20","id":"jd:jd:220757","location":"北京市","posted":"2026-08-17","reposts":5,"team":"京东零售","title":"产品运营岗"}
 {"company":"JD.com","first_seen":"2026-11-09","id":"jd:jd:221079","location":"北京市","posted":"2026-09-09","team":"京东健康","title":"服务业务运营岗"}
 {"company":"JD.com","first_seen":"2026-11-09","id":"jd:jd:221203","location":"重庆市","posted":"2026-09-24","team":"京东物流","title":"供应链规划岗"}
 {"closed_at":"2026-11-19","company":"JD.com","first_seen":"2026-11-15","id":"jd:jd:221213","location":"上海市","posted":"2026-09-01","team":"京东科技","title":"金融商务拓展岗"}
-{"company":"JD.com","first_seen":"2026-11-09","id":"jd:jd:221288","location":"陕西省","posted":"2026-09-22","team":"京东物流","title":"生产运营岗"}
+{"closed_at":"2026-11-20","company":"JD.com","first_seen":"2026-11-09","id":"jd:jd:221288","location":"陕西省","posted":"2026-09-22","team":"京东物流","title":"生产运营岗"}
 {"company":"JD.com","first_seen":"2026-11-09","id":"jd:jd:221296","location":"湖北省","posted":"2026-09-08","team":"京东物流","title":"销售岗"}
 {"company":"JD.com","first_seen":"2026-11-09","id":"jd:jd:221405","location":"北京市","posted":"2026-09-16","team":"京东物流","title":"仓储运营岗"}
 {"company":"JD.com","first_seen":"2026-11-09","id":"jd:jd:221675","location":"广东省","posted":"2026-10-12","team":"京东零售","title":"软件开发岗"}
@@ -35,6 +36,7 @@
 {"company":"JD.com","first_seen":"2026-11-16","id":"jd:jd:222193","location":"江苏省","posted":"2026-08-25","reposts":1,"team":"京东物流","title":"解决方案岗"}
 {"company":"JD.com","first_seen":"2026-11-16","id":"jd:jd:222249","location":"江苏省","posted":"2026-08-25","team":"京东物流","title":"销售策略岗"}
 {"company":"JD.com","first_seen":"2026-11-15","id":"jd:jd:222334","location":"北京市","posted":"2026-09-01","team":"京东物流","title":"流程优化岗"}
+{"company":"JD.com","first_seen":"2026-11-20","id":"jd:jd:222370","location":"北京市","posted":"2026-08-14","reposts":1,"team":"京东工业","title":"业务经营岗"}
 {"closed_at":"2026-11-15","company":"JD.com","first_seen":"2026-11-09","id":"jd:jd:222447","location":"江西省","posted":"2026-09-21","team":"京东物流","title":"销售岗"}
 {"company":"JD.com","first_seen":"2026-11-18","id":"jd:jd:222455","location":"北京市","posted":"2026-08-21","reposts":8,"skills":["python","c++"],"team":"京东物流","title":"算法开发岗"}
 {"company":"JD.com","first_seen":"2026-11-16","id":"jd:jd:222461","location":"重庆市","posted":"2026-08-21","reposts":25,"team":"京东物流","title":"销售岗"}
@@ -43,6 +45,8 @@
 {"company":"JD.com","first_seen":"2026-11-20","id":"jd:jd:222581","location":"北京市","posted":"2026-08-17","reposts":4,"team":"京东物流","title":"产品规划岗"}
 {"company":"JD.com","first_seen":"2026-11-20","id":"jd:jd:222604","location":"北京市","posted":"2026-08-17","reposts":1,"team":"京东物流","title":"行业仓运营岗"}
 {"company":"JD.com","first_seen":"2026-11-20","id":"jd:jd:222612","location":"广东省","posted":"2026-08-17","team":"京东集团","title":"财务BP岗"}
+{"company":"JD.com","first_seen":"2026-11-20","id":"jd:jd:222626","location":"陕西省","posted":"2026-08-14","reposts":1,"team":"京东物流","title":"骑手副站长岗"}
+{"company":"JD.com","first_seen":"2026-11-20","id":"jd:jd:222644","location":"北京市","posted":"2026-08-17","team":"京东物流","title":"人才储备岗"}
 {"company":"JD.com","first_seen":"2026-11-09","id":"jd:jd:222662","location":"广东省","posted":"2026-09-04","team":"京东物流","title":"销售岗"}
 {"company":"JD.com","first_seen":"2026-11-09","id":"jd:jd:222666","location":"河南省","posted":"2026-10-29","team":"京东物流","title":"销售岗"}
 {"closed_at":"2026-11-13","company":"JD.com","first_seen":"2026-11-09","id":"jd:jd:222669","location":"北京市","posted":"2026-10-10","team":"京东工业","title":"销售提升岗"}
@@ -165,7 +169,7 @@
 {"company":"JD.com","first_seen":"2026-11-15","id":"jd:jd:223409","location":"广东省","posted":"2026-09-01","reposts":4,"team":"京东集团","title":"采销岗"}
 {"company":"JD.com","first_seen":"2026-11-15","id":"jd:jd:223410","location":"上海市","posted":"2026-09-01","reposts":4,"team":"京东零售","title":"采销岗"}
 {"company":"JD.com","first_seen":"2026-11-16","id":"jd:jd:223415","location":"北京市","posted":"2026-08-26","team":"京东零售","title":"门店运营岗"}
-{"company":"JD.com","first_seen":"2026-11-09","id":"jd:jd:223419","location":"北京市","posted":"2026-09-04","team":"京东物流","title":"销售运营岗"}
+{"company":"JD.com","first_seen":"2026-11-09","id":"jd:jd:223419","location":"北京市","posted":"2026-11-20","team":"京东物流","title":"销售运营岗"}
 {"company":"JD.com","first_seen":"2026-11-09","id":"jd:jd:223435","location":"北京市","posted":"2026-09-09","team":"京东物流","title":"产品规划岗"}
 {"company":"JD.com","first_seen":"2026-11-09","id":"jd:jd:223448","location":"北京市","posted":"2026-09-15","team":"京东物流","title":"产品规划岗"}
 {"company":"JD.com","first_seen":"2026-11-09","id":"jd:jd:223454","location":"上海市","posted":"2026-09-21","team":"京东集团","title":"算法开发岗"}
@@ -540,7 +544,7 @@
 {"closed_at":"2026-11-15","company":"JD.com","first_seen":"2026-11-09","id":"jd:jd:224716","location":"北京市","posted":"2026-09-24","skills":["crm"],"team":"京东健康","title":"业务项目经理岗"}
 {"company":"JD.com","first_seen":"2026-11-09","id":"jd:jd:224717","location":"重庆市","posted":"2026-09-15","team":"京东物流","title":"销售岗"}
 {"closed_at":"2026-11-11","company":"JD.com","first_seen":"2026-11-09","id":"jd:jd:224719","location":"海南省","posted":"2026-09-18","team":"京东健康","title":"销售岗"}
-{"company":"JD.com","first_seen":"2026-11-09","id":"jd:jd:224720","location":"广东省","posted":"2026-09-28","team":"京东物流","title":"仓储运营岗"}
+{"closed_at":"2026-11-20","company":"JD.com","first_seen":"2026-11-09","id":"jd:jd:224720","location":"广东省","posted":"2026-09-28","team":"京东物流","title":"仓储运营岗"}
 {"company":"JD.com","first_seen":"2026-11-09","id":"jd:jd:224725","location":"广东省","posted":"2026-09-15","team":"京东物流","title":"精益改善岗(团队负责人)"}
 {"company":"JD.com","first_seen":"2026-11-09","id":"jd:jd:224729","location":"海南省","posted":"2026-09-21","team":"京东健康","title":"业务支持岗"}
 {"company":"JD.com","first_seen":"2026-11-09","id":"jd:jd:224732","location":"北京市","posted":"2026-09-15","team":"京东物流","title":"仓储运营岗"}
@@ -919,7 +923,7 @@
 {"company":"JD.com","first_seen":"2026-11-09","id":"jd:jd:225841","location":"广东省","posted":"2026-09-28","team":"京东物流","title":"公共事务岗"}
 {"company":"JD.com","first_seen":"2026-11-09","id":"jd:jd:225843","location":"广东省","posted":"2026-10-15","team":"京东物流","title":"公共事务岗"}
 {"closed_at":"2026-11-11","company":"JD.com","first_seen":"2026-11-09","id":"jd:jd:225844","location":"北京市","posted":"2026-09-30","team":"京东零售","title":"软件开发岗"}
-{"company":"JD.com","first_seen":"2026-11-09","id":"jd:jd:225851","location":"广东省","posted":"2026-10-09","team":"京东物流","title":"仓经理岗(团队负责人)"}
+{"closed_at":"2026-11-20","company":"JD.com","first_seen":"2026-11-09","id":"jd:jd:225851","location":"广东省","posted":"2026-10-09","team":"京东物流","title":"仓经理岗(团队负责人)"}
 {"company":"JD.com","first_seen":"2026-11-09","id":"jd:jd:225853","location":"北京市","posted":"2026-10-22","team":"京东物流","title":"项目实施岗"}
 {"company":"JD.com","first_seen":"2026-11-09","id":"jd:jd:225858","location":"湖北省","posted":"2026-09-29","team":"京东物流","title":"公路运营岗"}
 {"company":"JD.com","first_seen":"2026-11-09","id":"jd:jd:225873","location":"北京市","posted":"2026-10-22","team":"京东集团","title":"产品经理岗"}
@@ -1047,8 +1051,8 @@
 {"company":"JD.com","first_seen":"2026-11-09","id":"jd:jd:226227","location":"广东省","posted":"2026-10-28","team":"京东物流","title":"销售岗"}
 {"company":"JD.com","first_seen":"2026-11-09","id":"jd:jd:226229","location":"河南省","posted":"2026-10-10","team":"京东物流","title":"销售岗"}
 {"company":"JD.com","first_seen":"2026-11-09","id":"jd:jd:226230","location":"河南省","posted":"2026-10-13","team":"京东物流","title":"销售岗"}
-{"company":"JD.com","first_seen":"2026-11-09","id":"jd:jd:226231","location":"北京市","posted":"2026-10-12","team":"京东物流","title":"软件开发岗"}
-{"company":"JD.com","first_seen":"2026-11-09","id":"jd:jd:226233","location":"北京市","posted":"2026-10-12","team":"京东物流","title":"软件开发岗"}
+{"closed_at":"2026-11-20","company":"JD.com","first_seen":"2026-11-09","id":"jd:jd:226231","location":"北京市","posted":"2026-10-12","team":"京东物流","title":"软件开发岗"}
+{"closed_at":"2026-11-20","company":"JD.com","first_seen":"2026-11-09","id":"jd:jd:226233","location":"北京市","posted":"2026-10-12","team":"京东物流","title":"软件开发岗"}
 {"company":"JD.com","first_seen":"2026-11-09","id":"jd:jd:226236","location":"北京市","posted":"2026-10-12","team":"京东健康","title":"医务岗"}
 {"company":"JD.com","first_seen":"2026-11-09","id":"jd:jd:226243","location":"湖北省","posted":"2026-10-12","team":"京东物流","title":"配送运营岗"}
 {"company":"JD.com","first_seen":"2026-11-09","id":"jd:jd:226247","location":"北京市","posted":"2026-10-15","team":"京东物流","title":"客户运营岗"}
@@ -1507,6 +1511,7 @@
 {"company":"JD.com","first_seen":"2026-11-09","id":"jd:jd:227353","location":"北京市","posted":"2026-11-03","team":"京东零售","title":"商品质量提升岗"}
 {"company":"JD.com","first_seen":"2026-11-09","id":"jd:jd:227354","location":"福建省","posted":"2026-11-03","team":"京东物流","title":"销售岗"}
 {"company":"JD.com","first_seen":"2026-11-09","id":"jd:jd:227357","location":"贵州省","posted":"2026-11-02","team":"京东物流","title":"销售岗"}
+{"company":"JD.com","first_seen":"2026-11-20","id":"jd:jd:227358","location":"广东省","posted":"2026-11-20","reposts":2,"team":"京东物流","title":"仓储运营岗"}
 {"closed_at":"2026-11-10","company":"JD.com","first_seen":"2026-11-09","id":"jd:jd:227360","location":"陕西省","posted":"2026-11-03","team":"京东集团","title":"客户经理岗"}
 {"closed_at":"2026-11-11","company":"JD.com","first_seen":"2026-11-09","id":"jd:jd:227361","location":"北京市","posted":"2026-11-03","team":"京东科技","title":"产研项目经理岗"}
 {"company":"JD.com","first_seen":"2026-11-09","id":"jd:jd:227366","location":"上海市","posted":"2026-11-03","team":"京东零售","title":"软件开发岗"}

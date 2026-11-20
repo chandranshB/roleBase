@@ -58,7 +58,7 @@
 {"company":"Youth Opportunity","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:youthopportunity:769","location":"Rockdale, Texas","team":"Clinical Services","title":"Case Manager"}
 {"company":"Youth Opportunity","employment":"full_time","first_seen":"2026-10-30","id":"bamboohr:youthopportunity:770","location":"Lebanon, Tennessee","team":"Physical Plant Services","title":"Facility Maintenance Manager"}
 {"company":"Youth Opportunity","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:youthopportunity:771","location":"Kissimmee, Florida","team":"Clinical Services","title":"Assistant Clinical Director"}
-{"company":"Youth Opportunity","employment":"full_time","first_seen":"2026-10-30","id":"bamboohr:youthopportunity:776","location":"Mt. Pleasant, Michigan","team":"8000 Health Services","title":"Registered Nurse - RN"}
+{"closed_at":"2026-11-20","company":"Youth Opportunity","employment":"full_time","first_seen":"2026-10-30","id":"bamboohr:youthopportunity:776","location":"Mt. Pleasant, Michigan","team":"8000 Health Services","title":"Registered Nurse - RN"}
 {"closed_at":"2026-11-08","company":"Youth Opportunity","employment":"full_time","first_seen":"2026-10-30","id":"bamboohr:youthopportunity:779","location":"Nashville, Tennessee","title":"Corporate Compliance Manager"}
 {"company":"Youth Opportunity","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:youthopportunity:780","location":"Gallatin, Tennessee","team":"Operations","title":"Residential Shift Supervisor II"}
 {"closed_at":"2026-11-10","company":"Youth Opportunity","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:youthopportunity:782","location":"Nashville, Tennessee","team":"Human Resource","title":"HR Business Manager"}
@@ -80,7 +80,8 @@
 {"closed_at":"2026-11-08","company":"Youth Opportunity","employment":"full_time","first_seen":"2026-10-30","id":"bamboohr:youthopportunity:799","location":"Wimauma, Florida","team":"Clinical Services","title":"Case Manager"}
 {"company":"Youth Opportunity","employment":"full_time","first_seen":"2026-10-30","id":"bamboohr:youthopportunity:802","location":"Pembroke Pines, Florida","title":"Mental Health Therapist"}
 {"company":"Youth Opportunity","first_seen":"2026-10-30","id":"bamboohr:youthopportunity:803","location":"Mt. Juliet, Tennessee","team":"Health Services","title":"Licensed Practical Nurse (LPN)"}
-{"company":"Youth Opportunity","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:youthopportunity:805","location":"Carmel, Indiana","title":"Administrative Assistant"}
+{"company":"Youth Opportunity","employment":"full_time","first_seen":"2026-11-20","id":"bamboohr:youthopportunity:804","location":"Wimauma, Florida","team":"7000 Food Services","title":"Food Service Worker"}
+{"closed_at":"2026-11-20","company":"Youth Opportunity","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:youthopportunity:805","location":"Carmel, Indiana","title":"Administrative Assistant"}
 {"company":"Youth Opportunity","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:youthopportunity:806","location":"Rockdale, Texas","team":"Human Resource","title":"HR Business Manager"}
 {"company":"Youth Opportunity","employment":"full_time","first_seen":"2026-11-10","id":"bamboohr:youthopportunity:808","location":"Gallatin, Tennessee","team":"Health Services","title":"Licensed Practical Nurse (LPN)"}
 {"company":"Youth Opportunity","employment":"full_time","first_seen":"2026-11-10","id":"bamboohr:youthopportunity:809","location":"Bartlett, Tennessee","team":"Clinical Services","title":"Activities Coordinator"}
@@ -102,3 +103,7 @@
 {"company":"Youth Opportunity","employment":"full_time","first_seen":"2026-11-18","id":"bamboohr:youthopportunity:826","location":"Pembroke Pines, Florida","team":"Food Services","title":"Food Service Worker"}
 {"company":"Youth Opportunity","employment":"full_time","first_seen":"2026-11-18","id":"bamboohr:youthopportunity:827","location":"Pembroke Pines, Florida","reposts":2,"team":"Clinical Services","title":"Case Manager"}
 {"company":"Youth Opportunity","employment":"full_time","first_seen":"2026-11-18","id":"bamboohr:youthopportunity:828","location":"Carmel, Indiana","skills":["talent_acquisition"],"team":"Corporate","title":"Talent Acquisition Coordinator"}
+{"company":"Youth Opportunity","employment":"full_time","first_seen":"2026-11-20","id":"bamboohr:youthopportunity:829","location":"Ocala, Florida","team":"Clinical Services","title":"Activities Coordinator"}
+{"company":"Youth Opportunity","employment":"full_time","first_seen":"2026-11-20","id":"bamboohr:youthopportunity:830","location":"Kissimmee, Florida","reposts":2,"team":"Clinical Services","title":"Case Manager"}
+{"company":"Youth Opportunity","employment":"full_time","first_seen":"2026-11-20","id":"bamboohr:youthopportunity:832","location":"Crestview, Florida","reposts":1,"team":"Health Services","title":"Licensed Practical Nurse (LPN)"}
+{"company":"Youth Opportunity","employment":"full_time","first_seen":"2026-11-20","id":"bamboohr:youthopportunity:834","location":"Evart, Michigan","team":"Operations","title":"Mental Health Technician"}

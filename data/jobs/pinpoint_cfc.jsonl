@@ -58,6 +58,7 @@
 {"company":"CFC","first_seen":"2026-10-30","id":"pinpoint:cfc:bb44d077-a58c-4850-9b2c-ac49605688f7","location":"US - New York","pay":[90000,105000,"USD"],"title":"Cyber & Tech Underwriter"}
 {"company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:bbdbbf2a-102e-4a36-89f1-146d0a769bf1","location":"UK - London","skills":["customer_service"],"title":"Claims Adjuster, Cyber"}
 {"company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:bdb54b95-2c68-4462-96fb-9e3315161e35","location":"UK - London","title":"Lead Security Engineer (Data)"}
+{"company":"CFC","first_seen":"2026-11-20","id":"pinpoint:cfc:bf8daa2f-031e-48fb-9e7f-136178f8f280","location":"UK - London","skills":["customer_service","ml"],"title":"Underwriter - UK Management Liability"}
 {"company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:c30496bc-626c-425f-ab72-808f7e44d130","location":"UK - London","skills":["ml","terraform","llm","python","java","c#","postgres","azure"],"title":"Senior Software Engineer (AI & ML)"}
 {"company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:c986d7b0-ff38-4ccb-a5bf-aafa576a69a5","location":"US - New York","pay":[180000,220000,"USD"],"skills":["excel","sql","python"],"title":"Pricing Manager"}
 {"closed_at":"2026-11-18","company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:ca06a7ac-4bfb-4f1a-93bb-cf3af5fd3edc","location":"UK - London","skills":["ml","llm","ci/cd","python","sql","azure","databricks","docker"],"title":"Data Scientist"}

@@ -1,6 +1,6 @@
-{"company":"Waystone","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:waystone:1296","location":"Manila, Makati City","team":"Fund Accounting - CD0105","title":"Senior Associate - Fund Accounting"}
-{"company":"Waystone","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:waystone:1406","location":"Manila, Makati City","team":"Fund Accounting - CD0105","title":"Assistant Vice President - Fund Accounting"}
-{"company":"Waystone","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:waystone:1409","location":"Manila, Makati City","team":"Fund Accounting - CD0105","title":"Associate - Fund Accounting"}
+{"closed_at":"2026-11-20","company":"Waystone","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:waystone:1296","location":"Manila, Makati City","team":"Fund Accounting - CD0105","title":"Senior Associate - Fund Accounting"}
+{"closed_at":"2026-11-20","company":"Waystone","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:waystone:1406","location":"Manila, Makati City","team":"Fund Accounting - CD0105","title":"Assistant Vice President - Fund Accounting"}
+{"closed_at":"2026-11-20","company":"Waystone","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:waystone:1409","location":"Manila, Makati City","team":"Fund Accounting - CD0105","title":"Associate - Fund Accounting"}
 {"company":"Waystone","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:waystone:1470","location":"Cashel, Tipperary","team":"Co-Sec - Centre of Excellence - CD0404","title":"Associate - Corporate Secretarial Services COE"}
 {"company":"Waystone","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:waystone:1514","location":"Dublin, Dublin","team":"Compliance - Local - CI1201","title":"Compliance Officer"}
 {"company":"Waystone","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:waystone:1522","location":"Singapore, Singapore","team":"Compliance Solutions  - CD0201","title":"Senior Associate – Compliance Solutions"}
@@ -25,7 +25,7 @@
 {"closed_at":"2026-11-11","company":"Waystone","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:waystone:1689","location":"Exeter, Devon","team":"Fund Accounting - CD0105","title":"Senior Associate - Fund Accounting"}
 {"company":"Waystone","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:waystone:1693","location":"New York, New York","team":"Sales Operations - Group - UI0504","title":"Sales Operations Senior Analyst"}
 {"company":"Waystone","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:waystone:1694","location":"Dublin, Dublin","team":"Operations - Local - CI1001","title":"RFS Operations – Business Manager"}
-{"company":"Waystone","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:waystone:1695","location":"Dublin, Dublin","team":"COE Board Support Services - CD0405","title":"Senior Associate - Board Support Services"}
+{"closed_at":"2026-11-20","company":"Waystone","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:waystone:1695","location":"Dublin, Dublin","team":"COE Board Support Services - CD0405","title":"Senior Associate - Board Support Services"}
 {"closed_at":"2026-11-19","company":"Waystone","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:waystone:1697","location":"Mumbai, Maharashtra","title":"AML Associate/Senior Associate"}
 {"company":"Waystone","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:waystone:1698","location":"George Town, George Town","team":"ITC - AS - CD0101","title":"Director - AEOI Compliance Group"}
 {"company":"Waystone","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:waystone:1700","location":"Cashel, Tipperary","team":"Director Services - RFS - CD0303","title":"Associate - Economic Substance"}
@@ -87,3 +87,8 @@
 {"company":"Waystone","employment":"full_time","first_seen":"2026-11-18","id":"bamboohr:waystone:1765","location":"Dublin, Dublin","team":"Fund Accounting - CD0105","title":"Vice President - Fund Accounting"}
 {"company":"Waystone","employment":"full_time","first_seen":"2026-11-19","id":"bamboohr:waystone:1766","location":"Dublin, Dublin","reposts":1,"team":"IT Operations - G - UI1306","title":"IT Helpdesk Engineer"}
 {"company":"Waystone","employment":"full_time","first_seen":"2026-11-19","id":"bamboohr:waystone:1767","location":"Cashel, Tipperary","team":"Fund Operations - CD0314","title":"Manager - Fund Operations"}
+{"company":"Waystone","employment":"full_time","first_seen":"2026-11-20","id":"bamboohr:waystone:1768","location":"Dublin, Dublin","team":"Financial Reporting - AS-CD0104","title":"Assistant Vice President - Financial Reporting"}
+{"company":"Waystone","employment":"full_time","first_seen":"2026-11-20","id":"bamboohr:waystone:1769","location":"Mumbai, Maharashtra","title":"Risk Analyst - Enterprise Resilience"}
+{"company":"Waystone","employment":"full_time","first_seen":"2026-11-20","id":"bamboohr:waystone:1770","location":"Mumbai, Maharashtra","title":"AI Governance & Risk Analyst – Enterprise Resilience"}
+{"company":"Waystone","employment":"full_time","first_seen":"2026-11-20","id":"bamboohr:waystone:1772","location":"Mumbai, Maharashtra","title":"Service Desk Engineer"}
+{"company":"Waystone","employment":"full_time","first_seen":"2026-11-20","id":"bamboohr:waystone:1773","location":"Mumbai, Maharashtra","skills":["sql"],"title":"Principal SQL Server DBA (SME)"}

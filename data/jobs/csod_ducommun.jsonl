@@ -251,7 +251,7 @@
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5727","location":"Appleton, WI, US","posted":"2026-07-16","reposts":1,"title":"Production Associate"}
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5733","location":"Huntsville, AR, US","posted":"2026-07-21","title":"Test Operator"}
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5737","location":"Coxsackie, NY, US","posted":"2026-07-21","reposts":2,"skills":["supply_chain"],"title":"Supply Chain Manager"}
-{"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5738","location":"Coxsackie, NY, US","posted":"2026-07-21","reposts":1,"title":"Bonded Assembly Technician"}
+{"closed_at":"2026-11-20","company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5738","location":"Coxsackie, NY, US","posted":"2026-07-21","reposts":1,"title":"Bonded Assembly Technician"}
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5740","location":"Coxsackie, NY, US","posted":"2026-07-22","title":"TEMP Shipper/Receiver"}
 {"company":"Ducommun","first_seen":"2026-11-11","id":"csod:ducommun:5743","location":"Tulsa, OK, US","posted":"2026-07-22","title":"Quality Inspector - 2nd Shift"}
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5744","location":"Parsons, KS, US","posted":"2026-09-21","title":"Process Line Operator - B Shift"}
@@ -298,7 +298,7 @@
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5866","location":"Parsons, KS, US","posted":"2026-09-21","title":"Blend Deburr - B & C Shift"}
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5867","location":"Huntsville, AR, US","posted":"2026-09-17","title":"Electromechanical Assembler"}
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5868","location":"Huntsville, AR, US","posted":"2026-09-17","title":"SMT Operator"}
-{"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5870","location":"Orange, CA, US","posted":"2026-11-18","title":"Scriber Temp to Hire"}
+{"closed_at":"2026-11-20","company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5870","location":"Orange, CA, US","posted":"2026-11-18","title":"Scriber Temp to Hire"}
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5871","location":"Coxsackie, NY, US","posted":"2026-10-12","title":"Engineering Manager"}
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5873","location":"Santa Clarita, CA, US","posted":"2026-09-18","title":"Machine Operator"}
 {"company":"Ducommun","first_seen":"2026-11-08","id":"csod:ducommun:5875","location":"Carson, CA, US","posted":"2026-09-22","title":"Production Manager"}
@@ -391,3 +391,4 @@
 {"company":"Ducommun","first_seen":"2026-11-20","id":"csod:ducommun:5993","location":"Tulsa, OK, US","posted":"2026-11-11","title":"Process Engineer - SMT focus"}
 {"company":"Ducommun","first_seen":"2026-11-19","id":"csod:ducommun:5994","location":"Orange, CA, US","posted":"2026-11-11","title":"Environmental Technician"}
 {"company":"Ducommun","first_seen":"2026-11-18","id":"csod:ducommun:5998","location":"Carson, CA, US","posted":"2026-11-17","title":"Stockroom Lead"}
+{"company":"Ducommun","first_seen":"2026-11-20","id":"csod:ducommun:6001","location":"Coxsackie, NY, US","posted":"2026-11-20","title":"Bonding Technician"}

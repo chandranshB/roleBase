@@ -22,8 +22,8 @@
 {"company":"Depaul","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:depaul:600","location":"Belfast","team":"Castlehill","title":"Castlehill - Support Worker"}
 {"company":"Depaul","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:depaul:602","location":"Londonderry","team":"Foyle Haven Day Centre","title":"Foyle Haven - Case Worker X2"}
 {"company":"Depaul","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:depaul:603","location":"Dublin, Leinster","title":"Housing Development Officer - Depaul Housing"}
-{"company":"Depaul","employment":"full_time","first_seen":"2026-10-30","id":"bamboohr:depaul:606","location":"Belfast","team":"Finance","title":"Finance Officer"}
-{"company":"Depaul","first_seen":"2026-11-08","id":"bamboohr:depaul:608","location":"Wexford, Leinster","team":"Ozanam House (Wexford)","title":"Relief Worker - Wexford"}
+{"closed_at":"2026-11-20","company":"Depaul","employment":"full_time","first_seen":"2026-10-30","id":"bamboohr:depaul:606","location":"Belfast","team":"Finance","title":"Finance Officer"}
+{"closed_at":"2026-11-20","company":"Depaul","first_seen":"2026-11-08","id":"bamboohr:depaul:608","location":"Wexford, Leinster","team":"Ozanam House (Wexford)","title":"Relief Worker - Wexford"}
 {"company":"Depaul","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:depaul:609","location":"Belfast","team":"Castlehill","title":"Castlehill - Case Worker X2"}
 {"closed_at":"2026-11-09","company":"Depaul","first_seen":"2026-11-08","id":"bamboohr:depaul:611","location":"Carlow, Leinster","team":"Barrow Place (Carlow)","title":"Night Deputy Manager - Carlow (CWI)"}
 {"company":"Depaul","first_seen":"2026-11-11","id":"bamboohr:depaul:612","location":"Carlow, Leinster","team":"Barrow Place (Carlow)","title":"Night Support Worker - Carlow (CWI)"}
@@ -34,8 +34,8 @@
 {"company":"Depaul","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:depaul:619","location":"Cork, Munster","team":"St Vincent's (Cork)","title":"Case Worker - B&B Outreach, Cork"}
 {"company":"Depaul","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:depaul:620","location":"Belfast","team":"Housing First (Belfast)","title":"Housing First - Deputy Manager NI"}
 {"company":"Depaul","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:depaul:621","location":"Belfast","team":"Stella Maris","title":"Stella Maris - Part Time Cook"}
-{"company":"Depaul","first_seen":"2026-11-10","id":"bamboohr:depaul:622","location":"Belfast","team":"Women's Community Transition","title":"Community Transition Service - Case Worker"}
-{"company":"Depaul","employment":"full_time","first_seen":"2026-11-10","id":"bamboohr:depaul:623","location":"Waterford, Leinster","team":"McGwire House (Waterford)","title":"Part Time Cleaner - Waterford"}
+{"closed_at":"2026-11-20","company":"Depaul","first_seen":"2026-11-10","id":"bamboohr:depaul:622","location":"Belfast","team":"Women's Community Transition","title":"Community Transition Service - Case Worker"}
+{"closed_at":"2026-11-20","company":"Depaul","employment":"full_time","first_seen":"2026-11-10","id":"bamboohr:depaul:623","location":"Waterford, Leinster","team":"McGwire House (Waterford)","title":"Part Time Cleaner - Waterford"}
 {"closed_at":"2026-11-13","company":"Depaul","employment":"full_time","first_seen":"2026-11-10","id":"bamboohr:depaul:624","location":"Carlow, Leinster","team":"Barrow Place (Carlow)","title":"Support Worker - Carlow"}
 {"company":"Depaul","first_seen":"2026-11-10","id":"bamboohr:depaul:625","location":"Waterford, Leinster","team":"McGwire House (Waterford)","title":"Relief Worker - Waterford"}
 {"company":"Depaul","first_seen":"2026-11-10","id":"bamboohr:depaul:626","location":"Dublin, Leinster","team":"People & Organisation","title":"People Officer - 12 Month Maternity Cover"}

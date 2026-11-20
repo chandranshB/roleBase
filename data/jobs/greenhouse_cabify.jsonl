@@ -75,7 +75,7 @@
 {"company":"Cabify","first_seen":"2026-10-29","id":"greenhouse:cabify:8829910002","location":"Madrid","posted":"2026-10-29","team":"Fleet","title":"Fleet Operations Leader"}
 {"closed_at":"2026-10-10","company":"Cabify","first_seen":"2026-09-24","id":"greenhouse:cabify:8836477002","location":"Madrid","posted":"2026-09-23","team":"Customer Experience & Operations","title":"Customer Support Analyst (Temporal +1 año)"}
 {"closed_at":"2026-10-08","company":"Cabify","first_seen":"2026-09-24","id":"greenhouse:cabify:8837438002","location":"Lima","posted":"2026-09-23","team":"Growth","title":"Partnerships Specialist"}
-{"company":"Cabify","first_seen":"2026-10-19","id":"greenhouse:cabify:8844081002","location":"On-Site - Madrid","posted":"2026-09-25","skills":["ruby","java","llm"],"team":"Engineering","title":"Software Engineer - Backend + AI"}
+{"closed_at":"2026-11-20","company":"Cabify","first_seen":"2026-10-19","id":"greenhouse:cabify:8844081002","location":"On-Site - Madrid","posted":"2026-09-25","skills":["ruby","java","llm"],"team":"Engineering","title":"Software Engineer - Backend + AI"}
 {"closed_at":"2026-10-26","company":"Cabify","employment":"internship","first_seen":"2026-10-19","id":"greenhouse:cabify:8844082002","location":"Madrid","posted":"2026-09-25","team":"Customer Experience & Operations","title":"Customer Experience and Operations Intern"}
 {"closed_at":"2026-11-08","company":"Cabify","first_seen":"2026-10-19","id":"greenhouse:cabify:8844371002","location":"Lima","posted":"2026-09-25","team":"Finance","title":"Asistente de Contabilidad e Impuestos"}
 {"closed_at":"2026-10-30","company":"Cabify","first_seen":"2026-10-19","id":"greenhouse:cabify:8855356002","location":"Uruguay","posted":"2026-09-29","team":"Customer Experience & Operations","title":"Customer Support Associate"}
@@ -104,7 +104,7 @@
 {"closed_at":"2026-11-11","company":"Cabify","first_seen":"2026-10-19","id":"greenhouse:cabify:8895021002","location":"Santiago","posted":"2026-10-16","team":"B2B","title":"Account Manager (Success)"}
 {"closed_at":"2026-10-20","company":"Cabify","first_seen":"2026-10-19","id":"greenhouse:cabify:8899727002","location":"Madrid","posted":"2026-10-19","skills":["sql"],"team":"Growth","title":"Global Growth Analyst"}
 {"closed_at":"2026-11-08","company":"Cabify","first_seen":"2026-10-20","id":"greenhouse:cabify:8901899002","location":"Madrid","posted":"2026-10-20","skills":["crm","salesforce"],"team":"Fleet","title":"Fleet Development Success - Key Accounts Specialist"}
-{"company":"Cabify","first_seen":"2026-10-20","id":"greenhouse:cabify:8902057002","location":"Madrid","posted":"2026-10-20","skills":["salesforce","sql"],"team":"Customer Experience & Operations","title":"Salesforce Senior Specialist"}
+{"closed_at":"2026-11-20","company":"Cabify","first_seen":"2026-10-20","id":"greenhouse:cabify:8902057002","location":"Madrid","posted":"2026-10-20","skills":["salesforce","sql"],"team":"Customer Experience & Operations","title":"Salesforce Senior Specialist"}
 {"closed_at":"2026-10-23","company":"Cabify","first_seen":"2026-10-20","id":"greenhouse:cabify:8902414002","location":"Madrid","posted":"2026-10-20","skills":["sap"],"team":"People","title":"People Service Analyst"}
 {"company":"Cabify","first_seen":"2026-10-20","id":"greenhouse:cabify:8903082002","location":"Lima","posted":"2026-10-20","skills":["payroll"],"team":"People","title":"HR & Payroll Specialist"}
 {"company":"Cabify","first_seen":"2026-10-21","id":"greenhouse:cabify:8906285002","location":"Santiago de Chile","posted":"2026-10-21","team":"Customer Experience & Operations","title":"Supervisor de equipos de venta y atención al cliente (Presencial - Aeropuerto Stgo)"}
@@ -129,3 +129,4 @@
 {"company":"Cabify","first_seen":"2026-11-11","id":"greenhouse:cabify:8937906002","location":"Lima","posted":"2026-11-11","skills":["crm"],"team":"Marketing","title":"Brand & Performance Specialist"}
 {"company":"Cabify","first_seen":"2026-11-12","id":"greenhouse:cabify:8938546002","location":"Bogotá","posted":"2026-11-11","skills":["crm","salesforce"],"team":"B2B","title":"Sales Development Representative (B2B)"}
 {"company":"Cabify","first_seen":"2026-11-19","id":"greenhouse:cabify:8951138002","location":"Madrid","posted":"2026-11-19","team":"Public Affairs","title":"Communications Trainee"}
+{"company":"Cabify","first_seen":"2026-11-20","id":"greenhouse:cabify:8956123002","location":"Madrid","posted":"2026-11-20","skills":["salesforce","sql"],"team":"Customer Experience & Operations","title":"Efficiency Senior Specialist"}

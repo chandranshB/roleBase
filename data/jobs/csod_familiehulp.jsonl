@@ -727,7 +727,7 @@
 {"company":"Familiehulp","first_seen":"2026-11-08","id":"csod:familiehulp:10418","location":"Berlare, Oost-Vlaanderen, BE","title":"Huishoudhulp dienstencheques - regio Berlare (deeltijds)"}
 {"company":"Familiehulp","first_seen":"2026-11-08","id":"csod:familiehulp:10419","location":"Zele, Oost-Vlaanderen, BE","title":"Huishoudhulp dienstencheques - regio Zele (deeltijds)"}
 {"company":"Familiehulp","first_seen":"2026-11-08","id":"csod:familiehulp:10420","location":"Geel, Antwerpen, BE","title":"Verzorgende thuiszorg - regio Geel Larum (deeltijds)"}
-{"company":"Familiehulp","first_seen":"2026-11-08","id":"csod:familiehulp:10421","location":"Gent, Oost-Vlaanderen, BE","title":"Verzorgende thuiszorg - regio Gent Brugse Poort (voltijds)"}
+{"closed_at":"2026-11-20","company":"Familiehulp","first_seen":"2026-11-08","id":"csod:familiehulp:10421","location":"Gent, Oost-Vlaanderen, BE","title":"Verzorgende thuiszorg - regio Gent Brugse Poort (voltijds)"}
 {"company":"Familiehulp","first_seen":"2026-11-08","id":"csod:familiehulp:10424","location":"Weelde, Antwerpen, BE","title":"Verzorgende thuiszorg - regio Weelde (deeltijds)"}
 {"company":"Familiehulp","first_seen":"2026-11-08","id":"csod:familiehulp:10426","location":"Mol, Antwerpen, BE","reposts":2,"title":"Huishoudhulp thuiszorg - regio Mol (deeltijds)"}
 {"company":"Familiehulp","first_seen":"2026-11-08","id":"csod:familiehulp:10428","location":"Gent, Oost-Vlaanderen, BE","title":"Verzorgende thuiszorg - regio Brugse Poort (deeltijds)"}
@@ -832,7 +832,7 @@
 {"company":"Familiehulp","first_seen":"2026-11-12","id":"csod:familiehulp:10538","location":"Zolder, Limburg, BE","title":"Jobstudent verzorgende oproepzorg - regio Zolder (deeltijds)"}
 {"company":"Familiehulp","first_seen":"2026-11-12","id":"csod:familiehulp:10539","location":"Lommel, Limburg, BE","title":"Jobstudent verzorgende oproepzorg - regio Lommel (deeltijds)"}
 {"closed_at":"2026-11-17","company":"Familiehulp","first_seen":"2026-11-12","id":"csod:familiehulp:10541","location":"Mechelen, Antwerpen, BE","reposts":2,"title":"Huishoudhulp dienstencheques - regio Mechelen (deeltijds)"}
-{"company":"Familiehulp","first_seen":"2026-11-12","id":"csod:familiehulp:10542","location":"Puurs-Sint-Amands, Antwerpen, BE","reposts":1,"title":"Huishoudhulp dienstencheques - regio Puurs (deeltijds)"}
+{"closed_at":"2026-11-20","company":"Familiehulp","first_seen":"2026-11-12","id":"csod:familiehulp:10542","location":"Puurs-Sint-Amands, Antwerpen, BE","reposts":1,"title":"Huishoudhulp dienstencheques - regio Puurs (deeltijds)"}
 {"company":"Familiehulp","first_seen":"2026-11-12","id":"csod:familiehulp:10545","location":"Bonheiden, Antwerpen, BE","reposts":1,"title":"Huishoudhulp dienstencheques - regio Bonheiden (deeltijds)"}
 {"company":"Familiehulp","first_seen":"2026-11-12","id":"csod:familiehulp:10546","location":"Duffel, Antwerpen, BE","reposts":1,"title":"Huishoudhulp dienstencheques - regio Duffel (deeltijds)"}
 {"closed_at":"2026-11-17","company":"Familiehulp","first_seen":"2026-11-13","id":"csod:familiehulp:10548","location":"Muizen (2812), Antwerpen, BE","reposts":1,"title":"Huishoudhulp dienstencheques - regio Muizen (deeltijds)"}
@@ -858,10 +858,14 @@
 {"company":"Familiehulp","first_seen":"2026-11-19","id":"csod:familiehulp:10570","location":"Harelbeke, West-Vlaanderen, BE","title":"Huishoudhulp dienstencheques - regio Harelbeke/Kuurne (deeltijds)"}
 {"company":"Familiehulp","first_seen":"2026-11-19","id":"csod:familiehulp:10571","location":"Koekelare, West-Vlaanderen, BE","title":"Verzorgende - regio Koekelare (deeltijds)"}
 {"company":"Familiehulp","first_seen":"2026-11-19","id":"csod:familiehulp:10572","location":"Lochristi, Oost-Vlaanderen, BE","reposts":1,"title":"Huishoudhulp thuiszorg - regio Lochristi (deeltijds)"}
-{"company":"Familiehulp","first_seen":"2026-11-19","id":"csod:familiehulp:10573","location":"Antwerpen (2000), Antwerpen, BE","title":"Huishoudhulp thuiszorg - regio Antwerpen Centrum (deeltijds)"}
+{"closed_at":"2026-11-20","company":"Familiehulp","first_seen":"2026-11-19","id":"csod:familiehulp:10573","location":"Antwerpen (2000), Antwerpen, BE","title":"Huishoudhulp thuiszorg - regio Antwerpen Centrum (deeltijds)"}
 {"company":"Familiehulp","first_seen":"2026-11-19","id":"csod:familiehulp:10574","location":"Merelbeke, Oost-Vlaanderen, BE","reposts":2,"title":"Huishoudhulp dienstencheques - regio Merelbeke (deeltijds)"}
 {"company":"Familiehulp","first_seen":"2026-11-19","id":"csod:familiehulp:10575","location":"Erpe-Mere, Oost-Vlaanderen, BE","reposts":1,"title":"Huishoudhulp dienstencheques - regio Erpe-Mere (deeltijds)"}
 {"company":"Familiehulp","first_seen":"2026-11-19","id":"csod:familiehulp:10576","location":"Ronse, Oost-Vlaanderen, BE","reposts":1,"title":"Huishoudhulp thuiszorg - regio X (deeltijds/voltijds)"}
+{"company":"Familiehulp","first_seen":"2026-11-20","id":"csod:familiehulp:10577","location":"West-Vlaanderen, BE","title":"Verzorgende thuiszorg - regio Veurne (deeltijds)"}
+{"company":"Familiehulp","first_seen":"2026-11-20","id":"csod:familiehulp:10578","location":"Herzele, Oost-Vlaanderen, BE","title":"Verzorgende thuiszorg - regio Herzele (deeltijds of voltijds)"}
+{"company":"Familiehulp","first_seen":"2026-11-20","id":"csod:familiehulp:10579","location":"Ledeberg, Oost-Vlaanderen, BE","title":"Verzorgende thuiszorg - regio Ledeberg (deeltijds)"}
+{"company":"Familiehulp","first_seen":"2026-11-20","id":"csod:familiehulp:10580","location":"Ruddervoorde, West-Vlaanderen, BE","title":"Huishoudhulp thuiszorg - regio Ruddervoorde (deeltijds)"}
 {"company":"Familiehulp","first_seen":"2026-11-08","id":"csod:familiehulp:6949","location":"Knokke-Heist, West-Vlaanderen, BE","title":"Huishoudhulp thuiszorg - regio Knokke centrum (voltijds)"}
 {"company":"Familiehulp","first_seen":"2026-11-08","id":"csod:familiehulp:7035","location":"Knokke-Heist, West-Vlaanderen, BE","title":"Verzorgende Avondzorg - regio Knokke-Heist (voltijds)"}
 {"company":"Familiehulp","first_seen":"2026-11-08","id":"csod:familiehulp:7036","location":"Oostkamp, West-Vlaanderen, BE","reposts":1,"title":"Huishoudhulp thuiszorg - regio Oostkamp (deeltijds)"}
@@ -882,7 +886,7 @@
 {"company":"Familiehulp","first_seen":"2026-11-08","id":"csod:familiehulp:8080","location":"Knokke-Heist, West-Vlaanderen, BE","title":"Huishoudhulp thuiszorg - regio Knokke centrum (deeltijds)"}
 {"closed_at":"2026-11-16","company":"Familiehulp","first_seen":"2026-11-08","id":"csod:familiehulp:8081","location":"Damme, West-Vlaanderen, BE","title":"Huishoudhulp thuiszorg - regio Damme (deeltijds)"}
 {"company":"Familiehulp","first_seen":"2026-11-08","id":"csod:familiehulp:8135","location":"Anzegem, West-Vlaanderen, BE","title":"Huishoudhulp thuiszorg - regio Anzegem (deeltijds)"}
-{"company":"Familiehulp","first_seen":"2026-11-08","id":"csod:familiehulp:8291","location":"De Haan, West-Vlaanderen, BE","title":"Huishoudhulp thuiszorg - regio De Haan (deeltijds)"}
+{"closed_at":"2026-11-20","company":"Familiehulp","first_seen":"2026-11-08","id":"csod:familiehulp:8291","location":"De Haan, West-Vlaanderen, BE","title":"Huishoudhulp thuiszorg - regio De Haan (deeltijds)"}
 {"company":"Familiehulp","first_seen":"2026-11-08","id":"csod:familiehulp:8330","location":"Hulste, West-Vlaanderen, BE","title":"Huishoudhulp thuiszorg - regio Bavikhove (voltijds)"}
 {"closed_at":"2026-11-16","company":"Familiehulp","first_seen":"2026-11-08","id":"csod:familiehulp:8511","location":"Brugge, West-Vlaanderen, BE","title":"Huishoudhulp thuiszorg - regio Sint-Pieters (voltijds)"}
 {"closed_at":"2026-11-18","company":"Familiehulp","first_seen":"2026-11-08","id":"csod:familiehulp:8512","location":"Knokke-Heist, West-Vlaanderen, BE","title":"Verzorgende thuiszorg - regio Knokke Centrum ( deeltijds)"}

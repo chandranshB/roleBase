@@ -12,8 +12,8 @@
 {"company":"Vertex Resource Group","first_seen":"2026-10-30","id":"bamboohr:vertexca:1897","location":"Dawson Creek, British Columbia","team":"Fluids - Drivers","title":"Class 1 Fluids Truck Driver"}
 {"company":"Vertex Resource Group","first_seen":"2026-11-08","id":"bamboohr:vertexca:1898","location":"Sarnia, Ontario","team":"Fluids - Drivers","title":"Class AZ Fluids Truck Driver"}
 {"company":"Vertex Resource Group","first_seen":"2026-11-08","id":"bamboohr:vertexca:1899","location":"Carlsbad, New Mexico","team":"Environmental","title":"Environmental Field Technician"}
-{"company":"Vertex Resource Group","first_seen":"2026-11-08","id":"bamboohr:vertexca:1900","location":"Sherwood Park, Alberta","team":"Land","title":"Land Analyst"}
-{"company":"Vertex Resource Group","first_seen":"2026-10-30","id":"bamboohr:vertexca:1901","location":"Calgary, Alberta","team":"Land","title":"Land Analyst"}
+{"closed_at":"2026-11-20","company":"Vertex Resource Group","first_seen":"2026-11-08","id":"bamboohr:vertexca:1900","location":"Sherwood Park, Alberta","team":"Land","title":"Land Analyst"}
+{"closed_at":"2026-11-20","company":"Vertex Resource Group","first_seen":"2026-10-30","id":"bamboohr:vertexca:1901","location":"Calgary, Alberta","team":"Land","title":"Land Analyst"}
 {"closed_at":"2026-11-13","company":"Vertex Resource Group","first_seen":"2026-11-08","id":"bamboohr:vertexca:1903","location":"Conroe, Texas","team":"Engineering","title":"Construction Material Testing (CMT) Technician"}
 {"company":"Vertex Resource Group","first_seen":"2026-10-30","id":"bamboohr:vertexca:1906","location":"El Paso, Texas","team":"Environmental","title":"Environmental Field Technician"}
 {"company":"Vertex Resource Group","first_seen":"2026-11-08","id":"bamboohr:vertexca:1908","location":"Sarnia, Ontario","team":"Environmental","title":"Intermediate Environmental Scientist"}
@@ -68,3 +68,4 @@
 {"company":"Vertex Resource Group","first_seen":"2026-11-19","id":"bamboohr:vertexca:1984","location":"Sherwood Park, Alberta","team":"Environmental","title":"Environmental Database Analyst"}
 {"company":"Vertex Resource Group","first_seen":"2026-11-20","id":"bamboohr:vertexca:1985","location":"Calgary, Alberta","team":"Environmental","title":"Intermediate Hydrogeologist"}
 {"company":"Vertex Resource Group","first_seen":"2026-11-20","id":"bamboohr:vertexca:1986","location":"Sherwood Park, Alberta","team":"Environmental","title":"Intermediate Hydrogeologist"}
+{"company":"Vertex Resource Group","first_seen":"2026-11-20","id":"bamboohr:vertexca:1987","location":"Sherwood Park, Alberta","team":"Land","title":"Forestry Field Specialist"}

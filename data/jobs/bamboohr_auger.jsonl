@@ -23,7 +23,7 @@
 {"company":"Auger","first_seen":"2026-11-08","id":"bamboohr:auger:1922","location":"Wallasey, Wirral","team":"Engineer Operations Team","title":"Operations Customer Liaison"}
 {"closed_at":"2026-11-17","company":"Auger","first_seen":"2026-11-08","id":"bamboohr:auger:1923","location":"Wallasey, Wirral","team":"Operational Delivery Team","title":"Operational Delivery Agent"}
 {"closed_at":"2026-11-08","company":"Auger","first_seen":"2026-10-26","id":"bamboohr:auger:1926","location":"Southampton, Southampton","team":"Engineer Academy","title":"Groundworks Assistant"}
-{"company":"Auger","first_seen":"2026-11-08","id":"bamboohr:auger:1927","location":"Wallasey, Wirral","team":"Scheduling Team","title":"Scheduling Assistant"}
+{"closed_at":"2026-11-20","company":"Auger","first_seen":"2026-11-08","id":"bamboohr:auger:1927","location":"Wallasey, Wirral","team":"Scheduling Team","title":"Scheduling Assistant"}
 {"closed_at":"2026-11-08","company":"Auger","first_seen":"2026-10-26","id":"bamboohr:auger:1929","location":"Exeter, Devon","team":"Engineer Academy","title":"Groundworks Assistant"}
 {"closed_at":"2026-11-08","company":"Auger","first_seen":"2026-10-26","id":"bamboohr:auger:1930","location":"Oxfordshire, Oxfordshire","team":"Drain Repair Engineering Team","title":"Drain Repair Engineer"}
 {"closed_at":"2026-11-08","company":"Auger","first_seen":"2026-10-26","id":"bamboohr:auger:1931","location":"Guildford, Surrey","team":"Drain Repair Engineering Team","title":"Drain Repair Engineer"}
@@ -36,11 +36,16 @@
 {"closed_at":"2026-11-08","company":"Auger","first_seen":"2026-10-26","id":"bamboohr:auger:1939","location":"Peterborough","team":"Water Mains Engineering Team","title":"Water Mains Engineer"}
 {"closed_at":"2026-11-08","company":"Auger","first_seen":"2026-10-26","id":"bamboohr:auger:1940","location":"Watford, Hertfordshire","team":"SI & Drainage Engineering Team","title":"Drainage Investigation Engineer"}
 {"closed_at":"2026-11-08","company":"Auger","first_seen":"2026-10-26","id":"bamboohr:auger:1941","location":"Darlington, Darlington","team":"Drain Repair Engineering Team","title":"Drain Repair Engineer"}
-{"company":"Auger","first_seen":"2026-11-08","id":"bamboohr:auger:1942","location":"Wallasey, Wirral","team":"Technical","title":"Claims Handler"}
-{"company":"Auger","first_seen":"2026-11-08","id":"bamboohr:auger:1943","location":"Wallasey, Wirral","team":"Finance Team","title":"Finance Assistant"}
-{"company":"Auger","first_seen":"2026-11-08","id":"bamboohr:auger:1948","location":"Wallasey, Wirral","team":"People & Compliance Team","title":"Executive Support & Office Coordinator"}
-{"company":"Auger","first_seen":"2026-11-08","id":"bamboohr:auger:1949","location":"Wallasey, Wirral","team":"Customer Relations Team","title":"Customer Relations Advisor"}
+{"closed_at":"2026-11-20","company":"Auger","first_seen":"2026-11-08","id":"bamboohr:auger:1942","location":"Wallasey, Wirral","team":"Technical","title":"Claims Handler"}
+{"closed_at":"2026-11-20","company":"Auger","first_seen":"2026-11-08","id":"bamboohr:auger:1943","location":"Wallasey, Wirral","team":"Finance Team","title":"Finance Assistant"}
+{"closed_at":"2026-11-20","company":"Auger","first_seen":"2026-11-08","id":"bamboohr:auger:1948","location":"Wallasey, Wirral","team":"People & Compliance Team","title":"Executive Support & Office Coordinator"}
+{"closed_at":"2026-11-20","company":"Auger","first_seen":"2026-11-08","id":"bamboohr:auger:1949","location":"Wallasey, Wirral","team":"Customer Relations Team","title":"Customer Relations Advisor"}
 {"company":"Auger","first_seen":"2026-11-19","id":"bamboohr:auger:1950","location":"Northern Ireland, Northern Ireland","reposts":5,"team":"SI & Drainage Engineering Team","title":"Drainage Investigation Engineer"}
 {"company":"Auger","first_seen":"2026-11-19","id":"bamboohr:auger:1951","location":"Northern Ireland, Northern Ireland","reposts":9,"team":"Drain Repair Engineering Team","title":"Drain Repair Engineer"}
 {"company":"Auger","first_seen":"2026-11-19","id":"bamboohr:auger:1952","location":"Northern Ireland, Northern Ireland","reposts":12,"team":"Water Mains Engineering Team","title":"Water Mains Engineer"}
 {"company":"Auger","first_seen":"2026-11-19","id":"bamboohr:auger:1953","location":"Wallasey, Wirral","team":"Data & BI Team","title":"Data Administrator"}
+{"company":"Auger","first_seen":"2026-11-20","id":"bamboohr:auger:1954","location":"Wallasey, Wirral","team":"Scheduling Team","title":"Scheduling Assistant"}
+{"company":"Auger","first_seen":"2026-11-20","id":"bamboohr:auger:1955","location":"Wallasey, Wirral","team":"Technical","title":"Claims Handler"}
+{"company":"Auger","first_seen":"2026-11-20","id":"bamboohr:auger:1956","location":"Wallasey, Wirral","team":"Finance Team","title":"Finance Assistant"}
+{"company":"Auger","first_seen":"2026-11-20","id":"bamboohr:auger:1957","location":"Wallasey, Wirral","team":"People & Compliance Team","title":"Executive Support & Office Coordinator"}
+{"company":"Auger","first_seen":"2026-11-20","id":"bamboohr:auger:1958","location":"Wallasey, Wirral","team":"Customer Relations Team","title":"Customer Relations Advisor"}
