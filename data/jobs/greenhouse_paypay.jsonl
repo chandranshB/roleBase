@@ -62,7 +62,7 @@
 {"company":"PayPay Corporation","first_seen":"2026-11-09","id":"greenhouse:paypay:6009888004","location":"Hybrid","posted":"2026-06-01","team":"経営戦略・企画","title":"グループビジネスサポート担当"}
 {"company":"PayPay Corporation","first_seen":"2026-11-09","id":"greenhouse:paypay:6011134004","location":"Hybrid","posted":"2026-06-02","team":"金融事業開発","title":"新規事業開発・サービス企画 （金融事業）"}
 {"company":"PayPay Corporation","first_seen":"2026-11-09","id":"greenhouse:paypay:6011176004","location":"Hybrid","posted":"2026-06-08","team":"財務・経理","title":"連結経理（リーダー候補）"}
-{"company":"PayPay Corporation","first_seen":"2026-11-09","id":"greenhouse:paypay:6013725004","location":"Hybrid","posted":"2026-06-04","team":"金融事業開発","title":"保険事業開発（生命保険・運用再保険企画）"}
+{"closed_at":"2026-11-20","company":"PayPay Corporation","first_seen":"2026-11-09","id":"greenhouse:paypay:6013725004","location":"Hybrid","posted":"2026-06-04","team":"金融事業開発","title":"保険事業開発（生命保険・運用再保険企画）"}
 {"company":"PayPay Corporation","first_seen":"2026-11-09","id":"greenhouse:paypay:6013728004","location":"Hybrid","posted":"2026-06-04","team":"金融事業開発","title":"保険事業開発（再保険）"}
 {"company":"PayPay Corporation","first_seen":"2026-11-09","id":"greenhouse:paypay:6014656004","location":"Hybrid","posted":"2026-06-04","team":"金融事業開発","title":"保険事業開発（資産運用／ALM領域）"}
 {"company":"PayPay Corporation","first_seen":"2026-11-09","id":"greenhouse:paypay:6015033004","location":"Hybrid","posted":"2026-06-11","skills":["figma","payroll"],"team":"Product Engineering (New Bank Project)","title":"Senior Product Designer / シニアプロダクトデザイナー"}
@@ -90,4 +90,4 @@
 {"company":"PayPay Corporation","first_seen":"2026-11-11","id":"greenhouse:paypay:6255035004","location":"Hybrid","posted":"2026-11-10","team":"セールスサポート","title":"営業支援担当（人材戦略）"}
 {"company":"PayPay Corporation","first_seen":"2026-11-13","id":"greenhouse:paypay:6255851004","location":"Hybrid","posted":"2026-11-13","skills":["snowflake","aws","python","ci/cd","jira","llm"],"team":"Enterprise Engineering (Japanese Speaker)","title":"Technical Product Manager（AI・社内DX / AI & Internal DX）"}
 {"company":"PayPay Corporation","first_seen":"2026-11-13","id":"greenhouse:paypay:6256015004","location":"Hybrid","posted":"2026-11-13","skills":["aws","php","javascript","node.js","python","ci/cd","jira","figma"],"team":"Enterprise Engineering (Japanese Speaker)","title":"ソフトウェアエンジニア（Web CMS・Web サイト運用基盤開発）"}
-{"company":"PayPay Corporation","first_seen":"2026-11-18","id":"greenhouse:paypay:6263829004","location":"Remote","posted":"2026-11-18","remote":true,"skills":["snowflake","databricks","python","sql","gcp","aws"],"team":"HR","title":"HRシステムエンジニア（AI駆動開発・データ基盤）"}
+{"company":"PayPay Corporation","first_seen":"2026-11-18","id":"greenhouse:paypay:6263829004","location":"Hybrid","posted":"2026-11-18","skills":["snowflake","databricks","python","sql","gcp","aws"],"team":"HR","title":"HRシステムエンジニア（AI駆動開発・データ基盤）"}

@@ -4,7 +4,7 @@
 {"company":"Arctiq","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:arctiq:245","remote":true,"team":"Delivery - MSSP","title":"SOC Analyst (CAN)"}
 {"company":"Arctiq","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:arctiq:246","remote":true,"team":"Delivery - MSSP","title":"SOC Analyst"}
 {"company":"Arctiq","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:arctiq:304","location":"Brentwood, Tennessee","team":"Delivery - MSSP","title":"NOC Specialist"}
-{"company":"Arctiq","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:arctiq:308","remote":true,"team":"Delivery - MSSP","title":"Senior Google SecOps Engineer"}
+{"closed_at":"2026-11-20","company":"Arctiq","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:arctiq:308","remote":true,"team":"Delivery - MSSP","title":"Senior Google SecOps Engineer"}
 {"company":"Arctiq","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:arctiq:317","location":"Montreal, Quebec","skills":["bilingual"],"team":"Pre-Sales","title":"Bilingual Enterprise Solutions Architect"}
 {"company":"Arctiq","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:arctiq:319","location":"Toronto, Ontario","team":"Sales","title":"Client Director"}
 {"company":"Arctiq","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:arctiq:323","remote":true,"team":"Sales","title":"Client Director"}
@@ -30,3 +30,11 @@
 {"company":"Arctiq","employment":"contract","first_seen":"2026-11-10","id":"bamboohr:arctiq:361","location":"Blue Bell, Pennsylvania","team":"Delivery - Staff Aug","title":"Cloud Infrastructure Engineer"}
 {"company":"Arctiq","employment":"full_time","first_seen":"2026-11-11","id":"bamboohr:arctiq:362","location":"Blue Bell, Pennsylvania","skills":["azure"],"team":"Delivery - Staff Aug","title":"Azure Cloud Engineer"}
 {"company":"Arctiq","employment":"contract","first_seen":"2026-11-17","id":"bamboohr:arctiq:363","location":"Blue Bell, Pennsylvania","team":"Delivery - Staff Aug","title":"Virtualization & Systems Engineer"}
+{"company":"Arctiq","employment":"contract","first_seen":"2026-11-20","id":"bamboohr:arctiq:364","location":"Brentwood, Tennessee","team":"Delivery - Staff Aug","title":"Desktop Technician"}
+{"company":"Arctiq","employment":"full_time","first_seen":"2026-11-20","id":"bamboohr:arctiq:365","remote":true,"team":"Delivery - PS - DevOps","title":"Dynatrace Senior Consultant – AI Observability"}
+{"company":"Arctiq","employment":"full_time","first_seen":"2026-11-20","id":"bamboohr:arctiq:366","remote":true,"team":"Delivery - PS - DevOps","title":"Dynatrace Senior Consultant – Application Development"}
+{"company":"Arctiq","employment":"full_time","first_seen":"2026-11-20","id":"bamboohr:arctiq:367","remote":true,"team":"Delivery - PS - DevOps","title":"Dynatrace Senior Consultant – DevOps"}
+{"company":"Arctiq","employment":"full_time","first_seen":"2026-11-20","id":"bamboohr:arctiq:368","remote":true,"team":"Delivery - PS - DevOps","title":"Dynatrace Senior Consultant – Networking"}
+{"company":"Arctiq","employment":"full_time","first_seen":"2026-11-20","id":"bamboohr:arctiq:369","remote":true,"team":"Delivery - PS - DevOps","title":"Dynatrace Senior Consultant – ServiceNow"}
+{"company":"Arctiq","employment":"full_time","first_seen":"2026-11-20","id":"bamboohr:arctiq:370","remote":true,"team":"Delivery - PS - DevOps","title":"Dynatrace Senior Consultant – Site Reliability Engineering"}
+{"company":"Arctiq","employment":"full_time","first_seen":"2026-11-20","id":"bamboohr:arctiq:371","remote":true,"team":"Delivery - PS - DevOps","title":"Dynatrace Delivery Architect"}
