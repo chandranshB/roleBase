@@ -299,6 +299,7 @@
 {"company":"Adyen","first_seen":"2026-10-07","id":"greenhouse:adyen:8188049","location":"Berlin; Munich","posted":"2026-09-09","skills":["procurement"],"team":"Sales","title":"Enterprise Sales Manager"}
 {"company":"Adyen","first_seen":"2026-10-07","id":"greenhouse:adyen:8190516","location":"Warsaw","posted":"2026-09-11","team":"Sales","title":"Enterprise Sales Manager"}
 {"closed_at":"2026-11-09","company":"Adyen","first_seen":"2026-10-07","id":"greenhouse:adyen:8190518","location":"São Paulo","posted":"2026-10-01","skills":["accounts_payable","accounts_receivable","payroll","agile"],"team":"Finance","title":"Accounts Payable Specialist"}
+{"company":"Adyen","first_seen":"2026-11-21","id":"greenhouse:adyen:8192010","location":"New York","pay":[440000,500000,"USD"],"posted":"2026-11-21","team":"Sales","title":"Senior Account Executive, Services & Industries"}
 {"closed_at":"2026-10-12","company":"Adyen","first_seen":"2026-10-07","id":"greenhouse:adyen:8200460","location":"Bengaluru","posted":"2026-09-19","skills":["excel"],"team":"Support","title":"Finance Support Engineer"}
 {"closed_at":"2026-11-20","company":"Adyen","first_seen":"2026-10-07","id":"greenhouse:adyen:8200695","location":"Amsterdam","posted":"2026-09-21","team":"Compliance","title":"Team Lead - Compliance Investigations (EU MLRO)","years":7}
 {"closed_at":"2026-10-26","company":"Adyen","first_seen":"2026-10-07","id":"greenhouse:adyen:8200896","location":"London","posted":"2026-09-16","skills":["python","sql","tableau","spark","airflow","git"],"team":"Data Analytics","title":"Optimization Data Analyst","years":5}
@@ -460,3 +461,4 @@
 {"company":"Adyen","first_seen":"2026-11-18","id":"greenhouse:adyen:8395768","location":"São Paulo","posted":"2026-11-18","skills":["salesforce"],"team":"Sales","title":"Team Lead - Enterprise Business Development LATAM","years":2}
 {"company":"Adyen","first_seen":"2026-11-19","id":"greenhouse:adyen:8397314","location":"Chicago","pay":[145000,195000,"USD"],"posted":"2026-11-18","skills":["spanish"],"team":"People","title":"Senior Employer Brand Program Manager, Events and Partnerships"}
 {"company":"Adyen","first_seen":"2026-11-21","id":"greenhouse:adyen:8399834","location":"New York","pay":[205000,275000,"USD"],"posted":"2026-11-20","reposts":2,"team":"Professional Services","title":"Team Lead - Implementation"}
+{"company":"Adyen","first_seen":"2026-11-21","id":"greenhouse:adyen:8408480","location":"San Francisco","pay":[440000,500000,"USD"],"posted":"2026-11-21","team":"Sales","title":"Senior Account Executive, Services & Industries"}

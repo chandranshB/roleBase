@@ -21847,7 +21847,7 @@
 {"b": "bamboohr:responsebio", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "bamboohr:restlessdevelopment", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "bamboohr:restorativepathways", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "bamboohr:resurgo", "last_ok": "2026-11-20", "strikes": 2, "why": "empty answer"}
+{"b": "bamboohr:resurgo", "last_ok": "2026-11-21", "strikes": 0}
 {"b": "bamboohr:reteckusa", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "bamboohr:rethinkcanada", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "bamboohr:rethinkfood", "last_ok": "2026-10-30", "strikes": 0}
@@ -57389,7 +57389,7 @@
 {"b": "join:eponet", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "join:epos-cat", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "join:epos-liepertz-gmbhde", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "join:epotronic", "last_ok": "2026-11-20", "strikes": 2, "why": "empty answer"}
+{"b": "join:epotronic", "last_ok": "2026-11-21", "strikes": 0}
 {"b": "join:epr06fr", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "join:epro-consult", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "join:eprocessing", "last_ok": "2026-10-30", "strikes": 0}
@@ -103847,7 +103847,7 @@
 {"b": "workday:accenture.wd103.myworkdayjobs.com/avanadecareers", "last_ok": "2026-10-26", "strikes": 0}
 {"b": "workday:accesscu.wd3.myworkdayjobs.com/access_careers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:acciona.wd3.myworkdayjobs.com/acciona_employment_channel", "last_ok": "2026-10-26", "strikes": 0}
-{"b": "workday:accuray.wd5.myworkdayjobs.com/external", "last_ok": "2026-10-29", "strikes": 0, "why": "error: HTTPSConnectionPool(host='accuray.wd5.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/accuray/external/jobs (Caused by ResponseError('too many 429 error responses'))"}
+{"b": "workday:accuray.wd5.myworkdayjobs.com/external", "last_ok": "2026-10-29", "strikes": 0, "why": "error: still running after 960s"}
 {"b": "workday:acehardware.wd1.myworkdayjobs.com/ahhs_external", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:acehardware.wd1.myworkdayjobs.com/ejdexternal", "last_ok": "2026-10-23", "strikes": 0}
 {"b": "workday:acehardware.wd1.myworkdayjobs.com/external", "last_ok": "2026-10-26", "strikes": 0}
@@ -103895,7 +103895,7 @@
 {"b": "workday:aesseal.wd108.myworkdayjobs.com/aesseal_careers", "last_ok": "2026-10-20", "strikes": 0}
 {"b": "workday:aett.wd3.myworkdayjobs.com/versent", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:affinbank.wd3.myworkdayjobs.com/affincareers", "last_ok": "2026-10-28", "strikes": 0}
-{"b": "workday:affinityhospice.wd501.myworkdayjobs.com/affinityhospicecareers", "last_ok": "2026-11-21", "strikes": 0}
+{"b": "workday:affinityhospice.wd501.myworkdayjobs.com/affinityhospicecareers", "last_ok": "2026-11-21", "strikes": 0, "why": "error: still running after 960s"}
 {"b": "workday:ag.wd3.myworkdayjobs.com/Airbus", "last_ok": "2026-10-29", "strikes": 0}
 {"b": "workday:ag2rlamondiale.wd3.myworkdayjobs.com/candidats", "last_ok": "2026-10-29", "strikes": 0}
 {"b": "workday:agcbio.wd5.myworkdayjobs.com/agcbio_careers", "last_ok": "2026-10-26", "strikes": 0}
@@ -103911,7 +103911,7 @@
 {"b": "workday:agloan.wd5.myworkdayjobs.com/americanagcredit", "last_ok": "2026-10-25", "strikes": 0}
 {"b": "workday:agoc.wd5.myworkdayjobs.com/external", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:agp.wd12.myworkdayjobs.com/agp_careers", "last_ok": "2026-10-29", "strikes": 0}
-{"b": "workday:agrana.wd3.myworkdayjobs.com/careers", "last_ok": "2026-10-25", "strikes": 0, "why": "error: HTTPSConnectionPool(host='agrana.wd3.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/agrana/careers/jobs (Caused by ResponseError('too many 429 error responses'))"}
+{"b": "workday:agrana.wd3.myworkdayjobs.com/careers", "last_ok": "2026-10-25", "strikes": 0, "why": "error: still running after 960s"}
 {"b": "workday:agreenspace.wd3.myworkdayjobs.com/global_express_career_site", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:agropur.wd3.myworkdayjobs.com/Agropur_Careers", "last_ok": "2026-10-28", "strikes": 0}
 {"b": "workday:ahri.wd3.myworkdayjobs.com/ahri1", "last_ok": "2026-10-21", "strikes": 0}
@@ -103927,7 +103927,7 @@
 {"b": "workday:airproducts.wd5.myworkdayjobs.com/AP0001", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:airtron.wd108.myworkdayjobs.com/airtron_careers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:airzonecontrol.wd103.myworkdayjobs.com/external_career_site", "last_ok": "2026-10-28", "strikes": 0}
-{"b": "workday:ais.wd3.myworkdayjobs.com/careers", "last_ok": "", "strikes": 0, "why": "error: HTTPSConnectionPool(host='ais.wd3.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/ais/careers/jobs (Caused by ResponseError('too many 429 error responses'))"}
+{"b": "workday:ais.wd3.myworkdayjobs.com/careers", "last_ok": "", "strikes": 0, "why": "error: 422 Client Error: Unprocessable Entity for url: https://ais.wd3.myworkdayjobs.com/wday/cxs/ais/careers/jobs"}
 {"b": "workday:ajax.wd10.myworkdayjobs.com/ajax", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:akamerica.wd501.myworkdayjobs.com/aka", "last_ok": "2026-10-24", "strikes": 0}
 {"b": "workday:aksteel.wd1.myworkdayjobs.com/careers", "last_ok": "2026-10-28", "strikes": 0}
@@ -103959,7 +103959,7 @@
 {"b": "workday:alignmenthealthcare.wd12.myworkdayjobs.com/ahc_external", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:alirahealth.wd3.myworkdayjobs.com/alirahealth", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:alkami.wd12.myworkdayjobs.com/alkami", "last_ok": "2026-10-29", "strikes": 0}
-{"b": "workday:alkegen.wd5.myworkdayjobs.com/alkegen", "last_ok": "2026-10-29", "strikes": 0, "why": "error: HTTPSConnectionPool(host='alkegen.wd5.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/alkegen/alkegen/jobs (Caused by ResponseError('too many 429 error responses'))"}
+{"b": "workday:alkegen.wd5.myworkdayjobs.com/alkegen", "last_ok": "2026-10-29", "strikes": 0, "why": "error: still running after 960s"}
 {"b": "workday:allcatclaims.wd1.myworkdayjobs.com/allcat_external", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:allegion.wd5.myworkdayjobs.com/careers_normbau_germany", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:allegion.wd5.myworkdayjobs.com/careers_simonsvoss", "last_ok": "2026-10-30", "strikes": 0}
@@ -104039,7 +104039,7 @@
 {"b": "workday:ameriprise.wd5.myworkdayjobs.com/ameriprise", "last_ok": "2026-10-25", "strikes": 0}
 {"b": "workday:amerivet.wd5.myworkdayjobs.com/amerivet", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:amesconstruction.wd12.myworkdayjobs.com/ames", "last_ok": "2026-10-29", "strikes": 0}
-{"b": "workday:ametllerorigen.wd3.myworkdayjobs.com/careersite", "last_ok": "2026-10-29", "strikes": 0, "why": "error: HTTPSConnectionPool(host='ametllerorigen.wd3.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/ametllerorigen/careersite/jobs (Caused by ResponseError('too many 429 error responses'))"}
+{"b": "workday:ametllerorigen.wd3.myworkdayjobs.com/careersite", "last_ok": "2026-10-29", "strikes": 0, "why": "error: still running after 960s"}
 {"b": "workday:amfam.wd1.myworkdayjobs.com/careers", "last_ok": "2026-10-29", "strikes": 0}
 {"b": "workday:amgen.wd1.myworkdayjobs.com/careers", "last_ok": "2026-10-29", "strikes": 0}
 {"b": "workday:amh.wd12.myworkdayjobs.com/external_careers", "last_ok": "2026-10-28", "strikes": 0}
@@ -104151,7 +104151,7 @@
 {"b": "workday:askbio.wd12.myworkdayjobs.com/askbio", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:asmglobal.wd1.myworkdayjobs.com/careers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:asml.wd3.myworkdayjobs.com/asmlext1", "last_ok": "2026-10-29", "strikes": 0}
-{"b": "workday:aspca.wd1.myworkdayjobs.com/aspcawebsite", "last_ok": "2026-10-25", "strikes": 0, "why": "error: HTTPSConnectionPool(host='aspca.wd1.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/aspca/aspcawebsite/jobs (Caused by ResponseError('too many 429 error responses'))"}
+{"b": "workday:aspca.wd1.myworkdayjobs.com/aspcawebsite", "last_ok": "2026-10-25", "strikes": 0, "why": "error: still running after 960s"}
 {"b": "workday:aspendental.wd1.myworkdayjobs.com/azpetvet", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:aspendental.wd1.myworkdayjobs.com/careers_aspen_dental", "last_ok": "2026-10-24", "strikes": 0}
 {"b": "workday:aspendental.wd1.myworkdayjobs.com/careers_clearchoice", "last_ok": "2026-10-23", "strikes": 0}
@@ -104279,7 +104279,7 @@
 {"b": "workday:barnhillcontracting.wd503.myworkdayjobs.com/cdl", "last_ok": "2026-10-25", "strikes": 0}
 {"b": "workday:barr.wd1.myworkdayjobs.com/BarrCareers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:barryu.wd5.myworkdayjobs.com/barryu", "last_ok": "2026-10-27", "strikes": 0}
-{"b": "workday:barrywehmiller.wd1.myworkdayjobs.com/bwcareers", "last_ok": "2026-10-28", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:barrywehmiller.wd1.myworkdayjobs.com/bwcareers", "last_ok": "2026-10-28", "strikes": 0, "why": "error: HTTPSConnectionPool(host='barrywehmiller.wd1.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/barrywehmiller/bwcareers/jobs (Caused by ResponseError('too many 429 error responses'))"}
 {"b": "workday:basecamp.wd1.myworkdayjobs.com/ecmc", "last_ok": "2026-10-23", "strikes": 0}
 {"b": "workday:basicfit.wd103.myworkdayjobs.com/basicfit_career_site_france", "last_ok": "2026-10-28", "strikes": 0}
 {"b": "workday:battlemotors.wd12.myworkdayjobs.com/battlemotors", "last_ok": "2026-10-30", "strikes": 0}
@@ -104327,7 +104327,7 @@
 {"b": "workday:beckgroup.wd12.myworkdayjobs.com/beckgroupexternal", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:becu.wd1.myworkdayjobs.com/External", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:beemok.wd5.myworkdayjobs.com/bhc_careers", "last_ok": "2026-10-23", "strikes": 0}
-{"b": "workday:begacheese.wd3.myworkdayjobs.com/bega_careers", "last_ok": "2026-10-25", "strikes": 0, "why": "error: HTTPSConnectionPool(host='begacheese.wd3.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/begacheese/bega_careers/jobs (Caused by ResponseError('too many 429 error responses'))"}
+{"b": "workday:begacheese.wd3.myworkdayjobs.com/bega_careers", "last_ok": "2026-10-25", "strikes": 0, "why": "error: still running after 960s"}
 {"b": "workday:behavioralframework.wd12.myworkdayjobs.com/bf_careers", "last_ok": "2026-10-21", "strikes": 0}
 {"b": "workday:beigene.wd5.myworkdayjobs.com/beigene", "last_ok": "2026-10-29", "strikes": 0}
 {"b": "workday:belk.wd1.myworkdayjobs.com/jobs-stores", "last_ok": "2026-10-24", "strikes": 0}
@@ -104343,7 +104343,7 @@
 {"b": "workday:belron.wd3.myworkdayjobs.com/safelite_careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:belron.wd3.myworkdayjobs.com/spain_carglass_careers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:benchmark.wd1.myworkdayjobs.com/PGH_Careers", "last_ok": "2026-10-22", "strikes": 0}
-{"b": "workday:benchmarkeducation.wd501.myworkdayjobs.com/ext", "last_ok": "2026-11-21", "strikes": 0}
+{"b": "workday:benchmarkeducation.wd501.myworkdayjobs.com/ext", "last_ok": "2026-11-21", "strikes": 0, "why": "error: still running after 960s"}
 {"b": "workday:benefis.wd1.myworkdayjobs.com/bhs", "last_ok": "2026-10-29", "strikes": 0}
 {"b": "workday:beneva.wd10.myworkdayjobs.com/benevasite_carriere", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:berklee.wd1.myworkdayjobs.com/BerkleeCareers", "last_ok": "2026-10-29", "strikes": 0}
@@ -104423,7 +104423,7 @@
 {"b": "workday:bpmb.wd3.myworkdayjobs.com/bpmb_external_career_site", "last_ok": "2026-10-28", "strikes": 0}
 {"b": "workday:bracco.wd103.myworkdayjobs.com/braccocareers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:brambles.wd5.myworkdayjobs.com/brambles_careers", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:brambles.wd5.myworkdayjobs.com/chep_plant_careers", "last_ok": "2026-10-30", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:brambles.wd5.myworkdayjobs.com/chep_plant_careers", "last_ok": "2026-10-30", "strikes": 0, "why": "error: still running after 960s"}
 {"b": "workday:brandeis.wd5.myworkdayjobs.com/jobs", "last_ok": "2026-10-22", "strikes": 0}
 {"b": "workday:braunability.wd503.myworkdayjobs.com/arch_retail_careers", "last_ok": "2026-10-27", "strikes": 0}
 {"b": "workday:braunintertec.wd5.myworkdayjobs.com/brauninterteccareers", "last_ok": "2026-10-29", "strikes": 0}
@@ -104439,7 +104439,7 @@
 {"b": "workday:brighthorizons.wd5.myworkdayjobs.com/external-northamerica", "last_ok": "2026-10-27", "strikes": 0}
 {"b": "workday:brightli.wd5.myworkdayjobs.com/brightlitalent", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:brilliancanada.wd3.myworkdayjobs.com/covenir", "last_ok": "2026-10-20", "strikes": 0}
-{"b": "workday:brilliancanada.wd3.myworkdayjobs.com/idea", "last_ok": "2026-11-20", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:brilliancanada.wd3.myworkdayjobs.com/idea", "last_ok": "2026-11-21", "strikes": 0}
 {"b": "workday:brilliancanada.wd3.myworkdayjobs.com/insuresoft", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:brilliancanada.wd3.myworkdayjobs.com/omegro", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:brilliancanada.wd3.myworkdayjobs.com/systemtechnik", "last_ok": "2026-10-30", "strikes": 0}
@@ -104487,7 +104487,7 @@
 {"b": "workday:bwcterminals.wd12.myworkdayjobs.com/bwc", "last_ok": "2026-10-27", "strikes": 0}
 {"b": "workday:bwe.wd12.myworkdayjobs.com/bwecareers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:bydeluxe.wd5.myworkdayjobs.com/deluxe_external", "last_ok": "2026-10-25", "strikes": 0}
-{"b": "workday:byu.wd1.myworkdayjobs.com/byu-careers", "last_ok": "2026-10-28", "strikes": 0, "why": "error: HTTPSConnectionPool(host='byu.wd1.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/byu/byu-careers/jobs (Caused by ResponseError('too many 429 error responses'))"}
+{"b": "workday:byu.wd1.myworkdayjobs.com/byu-careers", "last_ok": "2026-10-28", "strikes": 0, "why": "error: still running after 960s"}
 {"b": "workday:byuh.wd501.myworkdayjobs.com/byu_h_s", "last_ok": "", "strikes": 0, "why": "error: 403 Client Error: Forbidden for url: https://byuh.wd501.myworkdayjobs.com/wday/cxs/byuh/byu_h_s/jobs"}
 {"b": "workday:byuhi.wd1.myworkdayjobs.com/byu-idaho_faculty_opportunities", "last_ok": "", "strikes": 0, "why": "error: 422 Client Error: Unprocessable Entity for url: https://byuhi.wd1.myworkdayjobs.com/wday/cxs/byuhi/byu-idaho_faculty_opportunities/jobs"}
 {"b": "workday:bzam.wd1.myworkdayjobs.com/bzamcareers", "last_ok": "2026-10-26", "strikes": 0}
@@ -104583,7 +104583,7 @@
 {"b": "workday:cba.wd3.myworkdayjobs.com/CommBank_Careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:cba.wd3.myworkdayjobs.com/bankwest_careers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:cba.wd3.myworkdayjobs.com/x15_careers", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:cbcrc.wd3.myworkdayjobs.com/cbc_radio-canada_jobs", "last_ok": "2026-11-20", "strikes": 0, "why": "error: HTTPSConnectionPool(host='cbcrc.wd3.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/cbcrc/cbc_radio-canada_jobs/jobs (Caused by ResponseError('too many 429 error responses'))"}
+{"b": "workday:cbcrc.wd3.myworkdayjobs.com/cbc_radio-canada_jobs", "last_ok": "2026-11-20", "strikes": 0, "why": "error: still running after 960s"}
 {"b": "workday:cbecompanies.wd1.myworkdayjobs.com/cbecompanies", "last_ok": "2026-10-24", "strikes": 0}
 {"b": "workday:cbgoc.wd3.myworkdayjobs.com/cb", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:cbh.wd12.myworkdayjobs.com/cherrybekaert", "last_ok": "2026-10-24", "strikes": 0}
@@ -104599,7 +104599,7 @@
 {"b": "workday:cdcn.wd1.myworkdayjobs.com/external", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:cdfh.wd3.myworkdayjobs.com/external", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:cdk.wd1.myworkdayjobs.com/cdk", "last_ok": "2026-10-29", "strikes": 0}
-{"b": "workday:cdpq.wd10.myworkdayjobs.com/cdpq", "last_ok": "2026-11-21", "strikes": 0}
+{"b": "workday:cdpq.wd10.myworkdayjobs.com/cdpq", "last_ok": "2026-11-21", "strikes": 0, "why": "error: still running after 960s"}
 {"b": "workday:cdpqfiliales.wd10.myworkdayjobs.com/cdpq-infra", "last_ok": "2026-10-28", "strikes": 0}
 {"b": "workday:cdw.wd5.myworkdayjobs.com/Careers", "last_ok": "2026-10-24", "strikes": 0}
 {"b": "workday:cecentertainment.wd5.myworkdayjobs.com/CEC_Careers", "last_ok": "2026-10-30", "strikes": 0}
@@ -104615,7 +104615,7 @@
 {"b": "workday:centerlight.wd5.myworkdayjobs.com/centerlight", "last_ok": "2026-10-28", "strikes": 0}
 {"b": "workday:centerstone.wd5.myworkdayjobs.com/centerstonecareers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:centier.wd501.myworkdayjobs.com/centierbankcareers", "last_ok": "2026-10-19", "strikes": 0}
-{"b": "workday:centific.wd1.myworkdayjobs.com/centific_global", "last_ok": "2026-10-28", "strikes": 0, "why": "error: HTTPSConnectionPool(host='centific.wd1.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/centific/centific_global/jobs (Caused by ResponseError('too many 429 error responses'))"}
+{"b": "workday:centific.wd1.myworkdayjobs.com/centific_global", "last_ok": "2026-10-28", "strikes": 0, "why": "error: still running after 960s"}
 {"b": "workday:central1resources.wd10.myworkdayjobs.com/central1", "last_ok": "2026-10-25", "strikes": 0}
 {"b": "workday:centralparknyc.wd12.myworkdayjobs.com/central_park_conservancy", "last_ok": "2026-10-29", "strikes": 0}
 {"b": "workday:centrica.wd3.myworkdayjobs.com/centrica", "last_ok": "2026-10-30", "strikes": 0}
@@ -104647,7 +104647,7 @@
 {"b": "workday:chamberlain.wd1.myworkdayjobs.com/chamberlain_group", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:chamberlain.wd1.myworkdayjobs.com/cpsg", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:chamberlain.wd1.myworkdayjobs.com/systems_llc", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:championx.wd1.myworkdayjobs.com/championx_external", "last_ok": "2026-10-23", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:championx.wd1.myworkdayjobs.com/championx_external", "last_ok": "2026-10-23", "strikes": 0, "why": "error: HTTPSConnectionPool(host='championx.wd1.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/championx/championx_external/jobs (Caused by ResponseError('too many 429 error responses'))"}
 {"b": "workday:chaptershealth.wd5.myworkdayjobs.com/jobs", "last_ok": "2026-10-28", "strikes": 0}
 {"b": "workday:chaptershealth.wd5.myworkdayjobs.com/securjobs", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:charleskeith.wd3.myworkdayjobs.com/external", "last_ok": "2026-10-29", "strikes": 0}
@@ -104839,7 +104839,7 @@
 {"b": "workday:convive.wd12.myworkdayjobs.com/lepainquotidien", "last_ok": "2026-10-21", "strikes": 0}
 {"b": "workday:cookchildrens.wd1.myworkdayjobs.com/Cook_Childrens_Careers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:cooley.wd1.myworkdayjobs.com/cooley_us_llp", "last_ok": "2026-10-28", "strikes": 0}
-{"b": "workday:cooperstandard.wd1.myworkdayjobs.com/cooperstandard", "last_ok": "2026-10-29", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:cooperstandard.wd1.myworkdayjobs.com/cooperstandard", "last_ok": "2026-10-29", "strikes": 0, "why": "error: still running after 960s"}
 {"b": "workday:coorstek.wd1.myworkdayjobs.com/coorstekcareers", "last_ok": "2026-10-29", "strikes": 0}
 {"b": "workday:copart.wd12.myworkdayjobs.com/copart", "last_ok": "2026-10-28", "strikes": 0}
 {"b": "workday:copart.wd12.myworkdayjobs.com/npacareers", "last_ok": "2026-10-30", "strikes": 0}
@@ -104855,7 +104855,7 @@
 {"b": "workday:corpartners.wd5.myworkdayjobs.com/envista", "last_ok": "2026-10-28", "strikes": 0}
 {"b": "workday:corpay.wd103.myworkdayjobs.com/ext_001", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:corrohealth.wd1.myworkdayjobs.com/corro", "last_ok": "2026-10-21", "strikes": 0}
-{"b": "workday:corteva.wd5.myworkdayjobs.com/corteva", "last_ok": "2026-10-30", "strikes": 0, "why": "error: HTTPSConnectionPool(host='corteva.wd5.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/corteva/corteva/jobs (Caused by ResponseError('too many 429 error responses'))"}
+{"b": "workday:corteva.wd5.myworkdayjobs.com/corteva", "last_ok": "2026-10-30", "strikes": 0, "why": "error: still running after 960s"}
 {"b": "workday:costar.wd1.myworkdayjobs.com/costarcareers", "last_ok": "2026-10-27", "strikes": 0}
 {"b": "workday:countryfinancial.wd5.myworkdayjobs.com/countryagencyexternal", "last_ok": "2026-10-19", "strikes": 0}
 {"b": "workday:countryfinancial.wd5.myworkdayjobs.com/illinoisfarmbureau", "last_ok": "2026-10-30", "strikes": 0}
@@ -104887,7 +104887,7 @@
 {"b": "workday:cromwell.wd3.myworkdayjobs.com/01", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:crossagency.wd1.myworkdayjobs.com/crossfinancialcareers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:crosscountrymortgage.wd1.myworkdayjobs.com/ccmcareers", "last_ok": "2026-10-29", "strikes": 0}
-{"b": "workday:crossoverhealth.wd1.myworkdayjobs.com/Careers", "last_ok": "2026-10-30", "strikes": 0, "why": "error: HTTPSConnectionPool(host='crossoverhealth.wd1.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/crossoverhealth/Careers/jobs (Caused by ResponseError('too many 429 error responses'))"}
+{"b": "workday:crossoverhealth.wd1.myworkdayjobs.com/Careers", "last_ok": "2026-10-30", "strikes": 0, "why": "error: still running after 960s"}
 {"b": "workday:crossroadstreatmentcenters.wd1.myworkdayjobs.com/crossroads", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:crossvue.wd1.myworkdayjobs.com/youbelongatcrossvue", "last_ok": "2026-10-29", "strikes": 0}
 {"b": "workday:crowdstrike.wd5.myworkdayjobs.com/crowdstrikecareers", "last_ok": "2026-10-30", "strikes": 0}
@@ -104903,7 +104903,7 @@
 {"b": "workday:csl.wd1.myworkdayjobs.com/csl_external", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:csusystem.wd12.myworkdayjobs.com/fortcollins_careers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:cswg.wd1.myworkdayjobs.com/cs_careers", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:ctbcholding.wd3.myworkdayjobs.com/external", "last_ok": "2026-10-30", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:ctbcholding.wd3.myworkdayjobs.com/external", "last_ok": "2026-10-30", "strikes": 0, "why": "error: HTTPSConnectionPool(host='ctbcholding.wd3.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/ctbcholding/external/jobs (Caused by ResponseError('too many 429 error responses'))"}
 {"b": "workday:ctbcholding.wd3.myworkdayjobs.com/tkb_external", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:ctp.wd103.myworkdayjobs.com/ctp_careers", "last_ok": "2026-10-27", "strikes": 0}
 {"b": "workday:ctran.wd5.myworkdayjobs.com/c-tran_careers", "last_ok": "2026-10-26", "strikes": 0}
@@ -104919,7 +104919,7 @@
 {"b": "workday:cvshealth.wd1.myworkdayjobs.com/cvs_health_careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:cw.wd1.myworkdayjobs.com/agency", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:cw.wd1.myworkdayjobs.com/external", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:cwi.wd1.myworkdayjobs.com/cw_careers", "last_ok": "2026-10-28", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:cwi.wd1.myworkdayjobs.com/cw_careers", "last_ok": "2026-10-28", "strikes": 0, "why": "error: HTTPSConnectionPool(host='cwi.wd1.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/cwi/cw_careers/jobs (Caused by ResponseError('too many 429 error responses'))"}
 {"b": "workday:cws.wd3.myworkdayjobs.com/cws_jobs", "last_ok": "2026-10-29", "strikes": 0}
 {"b": "workday:cwsapartments.wd5.myworkdayjobs.com/external-cws", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:cygnethealth.wd3.myworkdayjobs.com/cygnet", "last_ok": "2026-10-28", "strikes": 0}
@@ -104935,7 +104935,7 @@
 {"b": "workday:dallascollege.wd1.myworkdayjobs.com/dallas_college_careers", "last_ok": "2026-10-26", "strikes": 0}
 {"b": "workday:damen.wd3.myworkdayjobs.com/damen_careers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:danaher.wd1.myworkdayjobs.com/DanaherJobs", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:darktrace.wd3.myworkdayjobs.com/darktaceexternal", "last_ok": "2026-10-29", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:darktrace.wd3.myworkdayjobs.com/darktaceexternal", "last_ok": "2026-10-29", "strikes": 0, "why": "error: still running after 960s"}
 {"b": "workday:dart.wd1.myworkdayjobs.com/dart", "last_ok": "2026-10-20", "strikes": 0}
 {"b": "workday:dataminr.wd12.myworkdayjobs.com/Dataminr", "last_ok": "2026-10-26", "strikes": 0}
 {"b": "workday:datarobot.wd1.myworkdayjobs.com/DataRobot_External_Careers", "last_ok": "2026-10-29", "strikes": 0}
@@ -104951,7 +104951,7 @@
 {"b": "workday:davita.wd1.myworkdayjobs.com/DKC_External", "last_ok": "2026-10-19", "strikes": 0}
 {"b": "workday:davita.wd1.myworkdayjobs.com/Ecuador_International", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:davita.wd1.myworkdayjobs.com/GE_External", "last_ok": "2026-10-29", "strikes": 0}
-{"b": "workday:daw.wd3.myworkdayjobs.com/daw_careers", "last_ok": "2026-10-24", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:daw.wd3.myworkdayjobs.com/daw_careers", "last_ok": "2026-11-21", "strikes": 0}
 {"b": "workday:dayone.wd102.myworkdayjobs.com/external", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:daytonchildrens.wd1.myworkdayjobs.com/dayton_childrens_career_site", "last_ok": "2026-10-29", "strikes": 0}
 {"b": "workday:db.wd3.myworkdayjobs.com/DBWebsite", "last_ok": "2026-10-30", "strikes": 0}
@@ -104967,7 +104967,7 @@
 {"b": "workday:dedalus.wd3.myworkdayjobs.com/external", "last_ok": "2026-10-22", "strikes": 0}
 {"b": "workday:deepwater.wd1.myworkdayjobs.com/globalexternalcareersite", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:delo.wd103.myworkdayjobs.com/DELO-Jobs", "last_ok": "2026-10-28", "strikes": 0}
-{"b": "workday:deloitteie.wd3.myworkdayjobs.com/experienced_professionals", "last_ok": "2026-10-23", "strikes": 0, "why": "error: HTTPSConnectionPool(host='deloitteie.wd3.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/deloitteie/experienced_professionals/jobs (Caused by ResponseError('too many 429 error responses'))"}
+{"b": "workday:deloitteie.wd3.myworkdayjobs.com/experienced_professionals", "last_ok": "2026-10-23", "strikes": 0, "why": "error: still running after 960s"}
 {"b": "workday:deluxe.wd5.myworkdayjobs.com/usa_can", "last_ok": "2026-10-22", "strikes": 0}
 {"b": "workday:demegroup.wd3.myworkdayjobs.com/careers_external", "last_ok": "2026-10-21", "strikes": 0}
 {"b": "workday:denisonuniversity.wd12.myworkdayjobs.com/du", "last_ok": "2026-10-29", "strikes": 0}
@@ -104999,7 +104999,7 @@
 {"b": "workday:dinebrands.wd503.myworkdayjobs.com/RestaurantCareerSite", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:dinebrands.wd503.myworkdayjobs.com/dinecareers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:diptyqueparis.wd103.myworkdayjobs.com/DiptyqueCareers", "last_ok": "2026-10-29", "strikes": 0}
-{"b": "workday:directsupply.wd501.myworkdayjobs.com/direct-supply-careers", "last_ok": "2026-11-21", "strikes": 0}
+{"b": "workday:directsupply.wd501.myworkdayjobs.com/direct-supply-careers", "last_ok": "2026-11-21", "strikes": 0, "why": "error: still running after 960s"}
 {"b": "workday:directv.wd1.myworkdayjobs.com/careers", "last_ok": "2026-10-23", "strikes": 0}
 {"b": "workday:discoverylandco.wd5.myworkdayjobs.com/dlc", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:disney.wd5.myworkdayjobs.com/disneycareer", "last_ok": "2026-10-28", "strikes": 0}
@@ -105063,7 +105063,7 @@
 {"b": "workday:easternshipbuilding.wd12.myworkdayjobs.com/easternshipbuildinggroupsystem", "last_ok": "2026-10-27", "strikes": 0}
 {"b": "workday:easterseals.wd5.myworkdayjobs.com/esnh_vtcareers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:easyservice.wd5.myworkdayjobs.com/bon_secours_careers", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:easyservice.wd5.myworkdayjobs.com/bonsecourscareers", "last_ok": "2026-10-26", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:easyservice.wd5.myworkdayjobs.com/bonsecourscareers", "last_ok": "2026-10-26", "strikes": 0, "why": "error: HTTPSConnectionPool(host='easyservice.wd5.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/easyservice/bonsecourscareers/jobs (Caused by ResponseError('too many 429 error responses'))"}
 {"b": "workday:easyservice.wd5.myworkdayjobs.com/bonsecoursmemorialcollegeofnursingcareers", "last_ok": "2026-10-26", "strikes": 0}
 {"b": "workday:easyservice.wd5.myworkdayjobs.com/conduithealthpartnerscareers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:easyservice.wd5.myworkdayjobs.com/mercycollegeofohiocareers", "last_ok": "2026-10-30", "strikes": 0}
@@ -105079,7 +105079,7 @@
 {"b": "workday:ebi.wd5.myworkdayjobs.com/envirologixcareers", "last_ok": "2026-10-27", "strikes": 0}
 {"b": "workday:ebnhc.wd1.myworkdayjobs.com/ebnhc", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:ecc.wd5.myworkdayjobs.com/careeropportunities", "last_ok": "2026-10-26", "strikes": 0}
-{"b": "workday:ech.wd5.myworkdayjobs.com/ech", "last_ok": "2026-11-20", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:ech.wd5.myworkdayjobs.com/ech", "last_ok": "2026-11-20", "strikes": 0, "why": "error: still running after 960s"}
 {"b": "workday:echo.wd1.myworkdayjobs.com/echo_logistics", "last_ok": "2026-10-29", "strikes": 0}
 {"b": "workday:echo.wd1.myworkdayjobs.com/roadtex", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:ecolab.wd1.myworkdayjobs.com/ecolab_external", "last_ok": "2026-10-30", "strikes": 0}
@@ -105095,7 +105095,7 @@
 {"b": "workday:eisai.wd5.myworkdayjobs.com/eisai", "last_ok": "2026-10-29", "strikes": 0}
 {"b": "workday:eisenhower.wd1.myworkdayjobs.com/eisenhower_careers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:eisneramper.wd1.myworkdayjobs.com/eisneramperearlycareers", "last_ok": "2026-10-29", "strikes": 0}
-{"b": "workday:elanco.wd5.myworkdayjobs.com/external_career", "last_ok": "2026-10-27", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:elanco.wd5.myworkdayjobs.com/external_career", "last_ok": "2026-10-27", "strikes": 0, "why": "error: HTTPSConnectionPool(host='elanco.wd5.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/elanco/external_career/jobs (Caused by ResponseError('too many 429 error responses'))"}
 {"b": "workday:elara.wd5.myworkdayjobs.com/external", "last_ok": "2026-10-29", "strikes": 0}
 {"b": "workday:elcorteingles.wd3.myworkdayjobs.com/ext", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:elderslimited.wd3.myworkdayjobs.com/elders", "last_ok": "2026-10-24", "strikes": 0}
@@ -105175,7 +105175,7 @@
 {"b": "workday:eosenergystorage.wd1.myworkdayjobs.com/eos", "last_ok": "2026-10-29", "strikes": 0}
 {"b": "workday:eosgroup.wd3.myworkdayjobs.com/amcm", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:eosgroup.wd3.myworkdayjobs.com/eos", "last_ok": "2026-10-19", "strikes": 0}
-{"b": "workday:epicorsoftware.wd5.myworkdayjobs.com/epicorjobs", "last_ok": "2026-10-30", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:epicorsoftware.wd5.myworkdayjobs.com/epicorjobs", "last_ok": "2026-10-30", "strikes": 0, "why": "error: still running after 960s"}
 {"b": "workday:epicstaffinggroup.wd1.myworkdayjobs.com/epic_careers", "last_ok": "", "strikes": 0, "why": "error: 422 Client Error: Unprocessable Entity for url: https://epicstaffinggroup.wd1.myworkdayjobs.com/wday/cxs/epicstaffinggroup/epic_careers/jobs"}
 {"b": "workday:epiqsystems.wd503.myworkdayjobs.com/epiq_careers", "last_ok": "2026-10-27", "strikes": 0}
 {"b": "workday:epsa.wd103.myworkdayjobs.com/externalcareersite", "last_ok": "2026-10-28", "strikes": 0}
@@ -105223,7 +105223,7 @@
 {"b": "workday:evs.wd108.myworkdayjobs.com/evsengineeringcareers", "last_ok": "2026-10-23", "strikes": 0}
 {"b": "workday:ewe.wd3.myworkdayjobs.com/ewe", "last_ok": "", "strikes": 0, "why": "error: 422 Client Error: Unprocessable Entity for url: https://ewe.wd3.myworkdayjobs.com/wday/cxs/ewe/ewe/jobs"}
 {"b": "workday:exactcare.wd1.myworkdayjobs.com/anewhealth_career_site", "last_ok": "2026-10-29", "strikes": 0}
-{"b": "workday:exactsciences.wd1.myworkdayjobs.com/exact_sciences", "last_ok": "2026-11-20", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:exactsciences.wd1.myworkdayjobs.com/exact_sciences", "last_ok": "2026-11-20", "strikes": 0, "why": "error: HTTPSConnectionPool(host='exactsciences.wd1.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/exactsciences/exact_sciences/jobs (Caused by ResponseError('too many 429 error responses'))"}
 {"b": "workday:exclusivenetworks.wd103.myworkdayjobs.com/exclusive-networks-career", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:exelixis.wd1.myworkdayjobs.com/exel", "last_ok": "2026-10-26", "strikes": 0}
 {"b": "workday:exeterfinance.wd1.myworkdayjobs.com/external", "last_ok": "2026-10-27", "strikes": 0}
@@ -105239,7 +105239,7 @@
 {"b": "workday:fahorro.wd3.myworkdayjobs.com/oportunidades_fdahorro", "last_ok": "2026-10-26", "strikes": 0}
 {"b": "workday:fairstone.wd3.myworkdayjobs.com/fairstonecareers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:faithtechnologies.wd1.myworkdayjobs.com/fti", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:familydollar.wd503.myworkdayjobs.com/familydollarus", "last_ok": "2026-10-29", "strikes": 0, "why": "error: HTTPSConnectionPool(host='familydollar.wd503.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/familydollar/familydollarus/jobs (Caused by ResponseError('too many 429 error responses'))"}
+{"b": "workday:familydollar.wd503.myworkdayjobs.com/familydollarus", "last_ok": "2026-10-29", "strikes": 0, "why": "error: still running after 960s"}
 {"b": "workday:fanniemae.wd1.myworkdayjobs.com/fanniemaecareers", "last_ok": "2026-10-24", "strikes": 0}
 {"b": "workday:fanshawec.wd3.myworkdayjobs.com/fanshawecareers", "last_ok": "2026-10-29", "strikes": 0}
 {"b": "workday:farmerfocus.wd5.myworkdayjobs.com/farmerfocus", "last_ok": "2026-10-27", "strikes": 0}
@@ -105255,7 +105255,7 @@
 {"b": "workday:fedex.wd1.myworkdayjobs.com/FXE-Canada_External_Career_Site", "last_ok": "2026-10-27", "strikes": 0}
 {"b": "workday:fedex.wd1.myworkdayjobs.com/FXE-EU_External", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:fedex.wd1.myworkdayjobs.com/FXE-LAC_External_Career_Site", "last_ok": "2026-10-19", "strikes": 0}
-{"b": "workday:fedex.wd1.myworkdayjobs.com/FXE-MEISA-External", "last_ok": "2026-10-30", "strikes": 0, "why": "error: HTTPSConnectionPool(host='fedex.wd1.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/fedex/FXE-MEISA-External/jobs (Caused by ResponseError('too many 429 error responses'))"}
+{"b": "workday:fedex.wd1.myworkdayjobs.com/FXE-MEISA-External", "last_ok": "2026-10-30", "strikes": 0, "why": "error: still running after 960s"}
 {"b": "workday:fedex.wd1.myworkdayjobs.com/FXE_APAC_External", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:fednav.wd3.myworkdayjobs.com/fednav_careers", "last_ok": "2026-10-26", "strikes": 0}
 {"b": "workday:fedrigoni.wd3.myworkdayjobs.com/fedrigoni", "last_ok": "2026-10-29", "strikes": 0}
@@ -105271,7 +105271,7 @@
 {"b": "workday:ffin.wd1.myworkdayjobs.com/first_financial_bank", "last_ok": "2026-10-22", "strikes": 0}
 {"b": "workday:ffive.wd5.myworkdayjobs.com/f5jobs", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:ffres.wd1.myworkdayjobs.com/fairfieldcareers", "last_ok": "2026-10-28", "strikes": 0}
-{"b": "workday:fgcu.wd5.myworkdayjobs.com/eaglejobs", "last_ok": "2026-10-24", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:fgcu.wd5.myworkdayjobs.com/eaglejobs", "last_ok": "2026-10-24", "strikes": 0, "why": "error: HTTPSConnectionPool(host='fgcu.wd5.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/fgcu/eaglejobs/jobs (Caused by ResponseError('too many 429 error responses'))"}
 {"b": "workday:fgvholdings.wd102.myworkdayjobs.com/fgv_external", "last_ok": "", "strikes": 0, "why": "error: 403 Client Error: Forbidden for url: https://fgvholdings.wd102.myworkdayjobs.com/wday/cxs/fgvholdings/fgv_external/jobs"}
 {"b": "workday:fhcsd.wd1.myworkdayjobs.com/main", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:fhi.wd1.myworkdayjobs.com/fhi_360_external_career_portal", "last_ok": "2026-10-22", "strikes": 0}
@@ -105351,7 +105351,7 @@
 {"b": "workday:fmc.wd12.myworkdayjobs.com/FMC", "last_ok": "2026-10-19", "strikes": 0}
 {"b": "workday:fmr.wd1.myworkdayjobs.com/FidelityCareers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:fnbcorp.wd501.myworkdayjobs.com/fnbcorp", "last_ok": "2026-10-29", "strikes": 0}
-{"b": "workday:fnz.wd3.myworkdayjobs.com/fnz_careers", "last_ok": "2026-10-19", "strikes": 0, "why": "error: HTTPSConnectionPool(host='fnz.wd3.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/fnz/fnz_careers/jobs (Caused by ResponseError('too many 429 error responses'))"}
+{"b": "workday:fnz.wd3.myworkdayjobs.com/fnz_careers", "last_ok": "2026-10-19", "strikes": 0, "why": "error: still running after 960s"}
 {"b": "workday:fogo.wd5.myworkdayjobs.com/fogo", "last_ok": "2026-10-26", "strikes": 0}
 {"b": "workday:folkehjelp.wd103.myworkdayjobs.com/npa_career", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:fondsftq.wd10.myworkdayjobs.com/sitecarriere_externe", "last_ok": "2026-10-30", "strikes": 0}
@@ -105383,7 +105383,7 @@
 {"b": "workday:franklintempleton.wd5.myworkdayjobs.com/jobs_osam", "last_ok": "", "strikes": 0, "why": "error: 403 Client Error: Forbidden for url: https://franklintempleton.wd5.myworkdayjobs.com/wday/cxs/franklintempleton/jobs_osam/jobs"}
 {"b": "workday:franklintempleton.wd5.myworkdayjobs.com/primary-external-1", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:frcsj.wd108.myworkdayjobs.com/frrc_external_career_site", "last_ok": "2026-10-29", "strikes": 0}
-{"b": "workday:freddiemac.wd5.myworkdayjobs.com/external", "last_ok": "2026-10-29", "strikes": 0, "why": "error: HTTPSConnectionPool(host='freddiemac.wd5.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/freddiemac/external/jobs (Caused by ResponseError('too many 429 error responses'))"}
+{"b": "workday:freddiemac.wd5.myworkdayjobs.com/external", "last_ok": "2026-10-29", "strikes": 0, "why": "error: still running after 960s"}
 {"b": "workday:freemanhealth.wd1.myworkdayjobs.com/jointeamfreeman", "last_ok": "2026-10-28", "strikes": 0}
 {"b": "workday:freese.wd1.myworkdayjobs.com/freese_nichols_external", "last_ok": "2026-10-28", "strikes": 0}
 {"b": "workday:frenckengroup.wd103.myworkdayjobs.com/external", "last_ok": "2026-10-30", "strikes": 0}
@@ -105431,7 +105431,7 @@
 {"b": "workday:galileo.wd3.myworkdayjobs.com/regents_university_london_careersite", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:galileo.wd3.myworkdayjobs.com/tai_career_site", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:gallaudet.wd1.myworkdayjobs.com/gucareers", "last_ok": "2026-10-28", "strikes": 0}
-{"b": "workday:galvestoncountytx.wd503.myworkdayjobs.com/countyofgalvestoncareers", "last_ok": "2026-11-21", "strikes": 0}
+{"b": "workday:galvestoncountytx.wd503.myworkdayjobs.com/countyofgalvestoncareers", "last_ok": "2026-11-21", "strikes": 0, "why": "error: still running after 960s"}
 {"b": "workday:gam.wd3.myworkdayjobs.com/gam", "last_ok": "2026-10-29", "strikes": 0}
 {"b": "workday:gamestop.wd5.myworkdayjobs.com/careers", "last_ok": "", "strikes": 0, "why": "error: 422 Client Error: Unprocessable Entity for url: https://gamestop.wd5.myworkdayjobs.com/wday/cxs/gamestop/careers/jobs"}
 {"b": "workday:gamrentals.wd3.myworkdayjobs.com/external", "last_ok": "2026-10-19", "strikes": 0}
@@ -105495,7 +105495,7 @@
 {"b": "workday:gfs.wd5.myworkdayjobs.com/usjobs-gen-gfs", "last_ok": "2026-10-23", "strikes": 0}
 {"b": "workday:gh.wd1.myworkdayjobs.com/gh", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:ghafari.wd5.myworkdayjobs.com/Ghafari_Careers", "last_ok": "2026-10-23", "strikes": 0}
-{"b": "workday:ghc.wd1.myworkdayjobs.com/AHN_Careers", "last_ok": "2026-10-30", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:ghc.wd1.myworkdayjobs.com/AHN_Careers", "last_ok": "2026-10-30", "strikes": 0, "why": "error: still running after 960s"}
 {"b": "workday:ghc.wd1.myworkdayjobs.com/csi_careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:ghc.wd1.myworkdayjobs.com/dbs_career", "last_ok": "2026-10-22", "strikes": 0}
 {"b": "workday:ghc.wd1.myworkdayjobs.com/ghg_careers", "last_ok": "2026-10-27", "strikes": 0}
@@ -105511,7 +105511,7 @@
 {"b": "workday:gilead.wd1.myworkdayjobs.com/gileadcareers", "last_ok": "2026-10-27", "strikes": 0}
 {"b": "workday:gilead.wd1.myworkdayjobs.com/kitepharmacareers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:giorgiglobal.wd3.myworkdayjobs.com/canpack", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:giro.wd10.myworkdayjobs.com/giro", "last_ok": "2026-11-21", "strikes": 0}
+{"b": "workday:giro.wd10.myworkdayjobs.com/giro", "last_ok": "2026-11-21", "strikes": 0, "why": "error: still running after 960s"}
 {"b": "workday:gladstone.wd503.myworkdayjobs.com/careers", "last_ok": "2026-10-28", "strikes": 0}
 {"b": "workday:glencore.wd3.myworkdayjobs.com/astronenergy", "last_ok": "2026-10-28", "strikes": 0}
 {"b": "workday:glencorecorp.wd3.myworkdayjobs.com/external", "last_ok": "2026-10-29", "strikes": 0}
@@ -105527,7 +105527,7 @@
 {"b": "workday:gn.wd3.myworkdayjobs.com/audigycareers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:gn.wd3.myworkdayjobs.com/beltonecareers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:gn.wd3.myworkdayjobs.com/gn-careers", "last_ok": "2026-10-26", "strikes": 0}
-{"b": "workday:gn.wd3.myworkdayjobs.com/steelseriescareers", "last_ok": "2026-10-30", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:gn.wd3.myworkdayjobs.com/steelseriescareers", "last_ok": "2026-11-21", "strikes": 0}
 {"b": "workday:gnw.wd1.myworkdayjobs.com/enact_mi", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:gnw.wd1.myworkdayjobs.com/gnw", "last_ok": "2026-10-29", "strikes": 0}
 {"b": "workday:gobeacon.wd1.myworkdayjobs.com/beaconmobilitycareers", "last_ok": "2026-10-30", "strikes": 0}
@@ -105543,7 +105543,7 @@
 {"b": "workday:goodrx.wd1.myworkdayjobs.com/careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:goodwillaz.wd1.myworkdayjobs.com/goodwillaz", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:goodwillaz.wd1.myworkdayjobs.com/goodwillsfb", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:goodwillaz.wd1.myworkdayjobs.com/thriveservicesgroup", "last_ok": "2026-11-20", "strikes": 0, "why": "error: HTTPSConnectionPool(host='goodwillaz.wd1.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/goodwillaz/thriveservicesgroup/jobs (Caused by ResponseError('too many 429 error responses'))"}
+{"b": "workday:goodwillaz.wd1.myworkdayjobs.com/thriveservicesgroup", "last_ok": "2026-11-21", "strikes": 0}
 {"b": "workday:goodwillmiddletn.wd5.myworkdayjobs.com/goodwill", "last_ok": "2026-10-26", "strikes": 0}
 {"b": "workday:goodwinprocter.wd5.myworkdayjobs.com/external_careers", "last_ok": "2026-10-29", "strikes": 0}
 {"b": "workday:goodyear.wd1.myworkdayjobs.com/GoodyearCareers", "last_ok": "2026-10-23", "strikes": 0}
@@ -105623,7 +105623,7 @@
 {"b": "workday:haier.wd3.myworkdayjobs.com/affiliate_roper", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:haier.wd3.myworkdayjobs.com/fit_external_career_site", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:haier.wd3.myworkdayjobs.com/fpa_external_career_site", "last_ok": "2026-10-19", "strikes": 0}
-{"b": "workday:haier.wd3.myworkdayjobs.com/fpt_external_career_site", "last_ok": "2026-11-20", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:haier.wd3.myworkdayjobs.com/fpt_external_career_site", "last_ok": "2026-11-21", "strikes": 0}
 {"b": "workday:haier.wd3.myworkdayjobs.com/haier_europe_uki_careers", "last_ok": "2026-10-26", "strikes": 0}
 {"b": "workday:haier.wd3.myworkdayjobs.com/haiereurope_professional_careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:haihospitality.wd12.myworkdayjobs.com/haihospitality-careers", "last_ok": "2026-10-27", "strikes": 0}
@@ -105719,7 +105719,7 @@
 {"b": "workday:hialeahfl.wd12.myworkdayjobs.com/career", "last_ok": "2026-10-28", "strikes": 0}
 {"b": "workday:higcapital.wd5.myworkdayjobs.com/linkedin", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:highmarkhealth.wd1.myworkdayjobs.com/highmark", "last_ok": "2026-10-19", "strikes": 0}
-{"b": "workday:highpoint.wd503.myworkdayjobs.com/highpoint_student", "last_ok": "2026-11-21", "strikes": 0}
+{"b": "workday:highpoint.wd503.myworkdayjobs.com/highpoint_student", "last_ok": "2026-11-21", "strikes": 0, "why": "error: still running after 960s"}
 {"b": "workday:highpointnc.wd12.myworkdayjobs.com/highpointnccareers", "last_ok": "2026-10-27", "strikes": 0}
 {"b": "workday:hilbgroup.wd5.myworkdayjobs.com/hg-careers", "last_ok": "2026-10-28", "strikes": 0}
 {"b": "workday:hilcoglobal.wd1.myworkdayjobs.com/hilco_global_careers", "last_ok": "2026-10-27", "strikes": 0}
@@ -105735,7 +105735,7 @@
 {"b": "workday:hksinc.wd501.myworkdayjobs.com/hkscareers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:hkust.wd102.myworkdayjobs.com/hkust", "last_ok": "2026-10-30", "strikes": 0, "why": "error: 403 Client Error: Forbidden for url: https://hkust.wd102.myworkdayjobs.com/wday/cxs/hkust/hkust/jobs"}
 {"b": "workday:hl.wd1.myworkdayjobs.com/Lateral", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:hlb.wd3.myworkdayjobs.com/hlbcareers", "last_ok": "2026-10-30", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:hlb.wd3.myworkdayjobs.com/hlbcareers", "last_ok": "2026-10-30", "strikes": 0, "why": "error: HTTPSConnectionPool(host='hlb.wd3.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/hlb/hlbcareers/jobs (Caused by ResponseError('too many 429 error responses'))"}
 {"b": "workday:hmfp.wd5.myworkdayjobs.com/hmfp", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:hntb.wd5.myworkdayjobs.com/HNTB_Careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:hoganas.wd3.myworkdayjobs.com/careers", "last_ok": "2026-10-30", "strikes": 0}
@@ -105751,7 +105751,7 @@
 {"b": "workday:horizonmedia.wd1.myworkdayjobs.com/careeropportunities", "last_ok": "2026-10-29", "strikes": 0}
 {"b": "workday:hornbeckoffshore.wd5.myworkdayjobs.com/hornbeck", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:hosemaster.wd12.myworkdayjobs.com/hosemaster_careers", "last_ok": "2026-10-26", "strikes": 0}
-{"b": "workday:hospicecom.wd5.myworkdayjobs.com/compassus", "last_ok": "2026-11-20", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:hospicecom.wd5.myworkdayjobs.com/compassus", "last_ok": "2026-11-21", "strikes": 0}
 {"b": "workday:hosthotels.wd5.myworkdayjobs.com/hosthotels", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:hotelbedsgroup.wd3.myworkdayjobs.com/hbg_careers", "last_ok": "2026-10-29", "strikes": 0}
 {"b": "workday:howard.wd1.myworkdayjobs.com/hu", "last_ok": "2026-10-29", "strikes": 0}
@@ -105815,7 +105815,7 @@
 {"b": "workday:ibc.wd5.myworkdayjobs.com/ibc_careers", "last_ok": "2026-10-25", "strikes": 0}
 {"b": "workday:iberdrola.wd3.myworkdayjobs.com/iberdrola", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:ibotta.wd1.myworkdayjobs.com/ibotta", "last_ok": "2026-10-21", "strikes": 0}
-{"b": "workday:icagruppen.wd3.myworkdayjobs.com/extaph", "last_ok": "2026-10-29", "strikes": 0, "why": "error: HTTPSConnectionPool(host='icagruppen.wd3.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/icagruppen/extaph/jobs (Caused by ResponseError('too many 429 error responses'))"}
+{"b": "workday:icagruppen.wd3.myworkdayjobs.com/extaph", "last_ok": "2026-10-29", "strikes": 0, "why": "error: still running after 960s"}
 {"b": "workday:icagruppen.wd3.myworkdayjobs.com/extid", "last_ok": "2026-10-29", "strikes": 0}
 {"b": "workday:icc.wd12.myworkdayjobs.com/external", "last_ok": "2026-10-29", "strikes": 0}
 {"b": "workday:icf.wd5.myworkdayjobs.com/icfexternal_career_site", "last_ok": "2026-10-30", "strikes": 0}
@@ -105847,7 +105847,7 @@
 {"b": "workday:iheartmedia.wd5.myworkdayjobs.com/katz", "last_ok": "2026-10-28", "strikes": 0}
 {"b": "workday:ijm.wd5.myworkdayjobs.com/careers-ijm", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:iko.wd3.myworkdayjobs.com/iko_careers", "last_ok": "2026-10-27", "strikes": 0}
-{"b": "workday:iko.wd3.myworkdayjobs.com/roofmart_careers", "last_ok": "2026-10-30", "strikes": 0, "why": "error: HTTPSConnectionPool(host='iko.wd3.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/iko/roofmart_careers/jobs (Caused by ResponseError('too many 429 error responses'))"}
+{"b": "workday:iko.wd3.myworkdayjobs.com/roofmart_careers", "last_ok": "2026-10-30", "strikes": 0, "why": "error: still running after 960s"}
 {"b": "workday:ikusi.wd3.myworkdayjobs.com/vacantes_sitio_externo", "last_ok": "2026-10-19", "strikes": 0}
 {"b": "workday:ilb.wd103.myworkdayjobs.com/ilb_karriere", "last_ok": "2026-10-27", "strikes": 0}
 {"b": "workday:iliad.wd3.myworkdayjobs.com/iliad", "last_ok": "2026-10-25", "strikes": 0}
@@ -105927,7 +105927,7 @@
 {"b": "workday:interdigital.wd5.myworkdayjobs.com/interdigital_intern", "last_ok": "2026-10-25", "strikes": 0}
 {"b": "workday:interface.wd1.myworkdayjobs.com/interface", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:interfacesystems.wd5.myworkdayjobs.com/interfacesystemscareers", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:interiorlogicgroup.wd5.myworkdayjobs.com/careersatilg", "last_ok": "2026-10-28", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:interiorlogicgroup.wd5.myworkdayjobs.com/careersatilg", "last_ok": "2026-10-28", "strikes": 0, "why": "error: still running after 960s"}
 {"b": "workday:interstate.wd1.myworkdayjobs.com/interstatebatteries-careers", "last_ok": "2026-10-28", "strikes": 0}
 {"b": "workday:intervarsity.wd1.myworkdayjobs.com/intervarsity_press_careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:intervarsity.wd1.myworkdayjobs.com/intervarsitychristianfellowshipcareers", "last_ok": "2026-10-29", "strikes": 0}
@@ -105959,7 +105959,7 @@
 {"b": "workday:isu.wd1.myworkdayjobs.com/iowastatejobs", "last_ok": "2026-10-22", "strikes": 0}
 {"b": "workday:itron.wd5.myworkdayjobs.com/itron", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:itsmyhome.wd3.myworkdayjobs.com/gnw-", "last_ok": "2026-10-27", "strikes": 0}
-{"b": "workday:itw.wd5.myworkdayjobs.com/external", "last_ok": "2026-10-27", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:itw.wd5.myworkdayjobs.com/external", "last_ok": "2026-10-27", "strikes": 0, "why": "error: HTTPSConnectionPool(host='itw.wd5.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/itw/external/jobs (Caused by ResponseError('too many 429 error responses'))"}
 {"b": "workday:ivlglobaliod.wd1.myworkdayjobs.com/indovinya", "last_ok": "2026-10-23", "strikes": 0}
 {"b": "workday:ivyrehab.wd5.myworkdayjobs.com/ivy_rehab", "last_ok": "2026-10-25", "strikes": 0}
 {"b": "workday:ivytech.wd1.myworkdayjobs.com/Ivy_Tech_Careers", "last_ok": "2026-10-19", "strikes": 0}
@@ -105975,7 +105975,7 @@
 {"b": "workday:jacksonhealthcare.wd1.myworkdayjobs.com/careers-jacksontherapypartners", "last_ok": "2026-10-28", "strikes": 0}
 {"b": "workday:jacksonhealthcare.wd1.myworkdayjobs.com/careers-kimedics", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:jacksonhealthcare.wd1.myworkdayjobs.com/careers-usantibiotics", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:jacksonlewis.wd1.myworkdayjobs.com/jacksonlewisbusinessandlegalprofessionalscareers", "last_ok": "2026-10-19", "strikes": 0, "why": "error: HTTPSConnectionPool(host='jacksonlewis.wd1.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/jacksonlewis/jacksonlewisbusinessandlegalprofessionalscareers/jobs (Caused by ResponseError('too many 429 error responses'))"}
+{"b": "workday:jacksonlewis.wd1.myworkdayjobs.com/jacksonlewisbusinessandlegalprofessionalscareers", "last_ok": "2026-10-19", "strikes": 0, "why": "error: still running after 960s"}
 {"b": "workday:jadeglobal.wd5.myworkdayjobs.com/jade_careers", "last_ok": "2026-10-27", "strikes": 0}
 {"b": "workday:japfa.wd102.myworkdayjobs.com/External", "last_ok": "2026-10-22", "strikes": 0}
 {"b": "workday:jas.wd1.myworkdayjobs.com/jascareers", "last_ok": "2026-10-30", "strikes": 0}
@@ -105991,7 +105991,7 @@
 {"b": "workday:jdgroupnam.wd1.myworkdayjobs.com/JDFL_Store_Careers", "last_ok": "2026-10-19", "strikes": 0}
 {"b": "workday:jdgroupnam.wd1.myworkdayjobs.com/hspretail", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:jdpa.wd501.myworkdayjobs.com/jdpower", "last_ok": "2026-10-26", "strikes": 0}
-{"b": "workday:jefferson.wd5.myworkdayjobs.com/External", "last_ok": "2026-10-24", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:jefferson.wd5.myworkdayjobs.com/External", "last_ok": "2026-10-24", "strikes": 0, "why": "error: still running after 960s"}
 {"b": "workday:jeffersonhealth.wd5.myworkdayjobs.com/thomasjeffersonexternal", "last_ok": "2026-10-22", "strikes": 0}
 {"b": "workday:jerrys.wd1.myworkdayjobs.com/jerrysfoods", "last_ok": "2026-10-19", "strikes": 0}
 {"b": "workday:jj.wd5.myworkdayjobs.com/JJ", "last_ok": "2026-10-30", "strikes": 0}
@@ -106071,7 +106071,7 @@
 {"b": "workday:kmkp.wd1.myworkdayjobs.com/careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:kmkp.wd1.myworkdayjobs.com/kacecareers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:kmkp.wd1.myworkdayjobs.com/tpgcareers", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:knightfrank.wd103.myworkdayjobs.com/KF", "last_ok": "2026-11-20", "strikes": 0, "why": "error: HTTPSConnectionPool(host='knightfrank.wd103.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/knightfrank/KF/jobs (Caused by ResponseError('too many 429 error responses'))"}
+{"b": "workday:knightfrank.wd103.myworkdayjobs.com/KF", "last_ok": "2026-11-20", "strikes": 0, "why": "error: still running after 960s"}
 {"b": "workday:knitwellgroup.wd1.myworkdayjobs.com/us_retail_jobs", "last_ok": "2026-10-26", "strikes": 0}
 {"b": "workday:kobrekim.wd1.myworkdayjobs.com/kobrekim_careers", "last_ok": "2026-10-28", "strikes": 0}
 {"b": "workday:kodiakgas.wd12.myworkdayjobs.com/kodiakgascareers", "last_ok": "2026-10-26", "strikes": 0}
@@ -106087,7 +106087,7 @@
 {"b": "workday:kramp.wd502.myworkdayjobs.com/krampcareers", "last_ok": "2026-10-29", "strikes": 0}
 {"b": "workday:krgroup.wd3.myworkdayjobs.com/kr_group", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:ksb.wd3.myworkdayjobs.com/ksb_externalcareersite", "last_ok": "2026-10-26", "strikes": 0}
-{"b": "workday:ksbe.wd1.myworkdayjobs.com/external", "last_ok": "2026-10-24", "strikes": 0, "why": "error: HTTPSConnectionPool(host='ksbe.wd1.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/ksbe/external/jobs (Caused by ResponseError('too many 429 error responses'))"}
+{"b": "workday:ksbe.wd1.myworkdayjobs.com/external", "last_ok": "2026-10-24", "strikes": 0, "why": "error: still running after 960s"}
 {"b": "workday:kslaw.wd1.myworkdayjobs.com/careers", "last_ok": "2026-10-29", "strikes": 0}
 {"b": "workday:ksmcpa.wd12.myworkdayjobs.com/ksmcareers", "last_ok": "2026-10-27", "strikes": 0}
 {"b": "workday:kumc.wd5.myworkdayjobs.com/kumc-jobs", "last_ok": "2026-10-30", "strikes": 0}
@@ -106103,7 +106103,7 @@
 {"b": "workday:landsecurities.wd3.myworkdayjobs.com/landseccareers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:langara.wd10.myworkdayjobs.com/external_employment_opportunities", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:languageline.wd5.myworkdayjobs.com/has_careers", "last_ok": "2026-10-24", "strikes": 0}
-{"b": "workday:languageline.wd5.myworkdayjobs.com/lls_careers", "last_ok": "2026-10-30", "strikes": 0, "why": "error: HTTPSConnectionPool(host='languageline.wd5.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/languageline/lls_careers/jobs (Caused by ResponseError('too many 429 error responses'))"}
+{"b": "workday:languageline.wd5.myworkdayjobs.com/lls_careers", "last_ok": "2026-10-30", "strikes": 0, "why": "error: still running after 960s"}
 {"b": "workday:languageline.wd5.myworkdayjobs.com/psg_careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:largo.wd1.myworkdayjobs.com/external", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:laticrete.wd1.myworkdayjobs.com/laticreteinternational", "last_ok": "2026-10-30", "strikes": 0}
@@ -106151,7 +106151,7 @@
 {"b": "workday:lifespacecommunities.wd1.myworkdayjobs.com/careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:lifestance.wd5.myworkdayjobs.com/careers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:lifestylecommunities.wd1.myworkdayjobs.com/lifestyle_communities_careers", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:lifetime.wd1.myworkdayjobs.com/lifetime", "last_ok": "2026-10-30", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:lifetime.wd1.myworkdayjobs.com/lifetime", "last_ok": "2026-10-30", "strikes": 0, "why": "error: HTTPSConnectionPool(host='lifetime.wd1.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/lifetime/lifetime/jobs (Caused by ResponseError('too many 429 error responses'))"}
 {"b": "workday:lifung.wd3.myworkdayjobs.com/funggroup", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:lifung.wd3.myworkdayjobs.com/meiyume", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:lifung.wd3.myworkdayjobs.com/neotangent", "last_ok": "2026-10-30", "strikes": 0}
@@ -106167,7 +106167,7 @@
 {"b": "workday:lithia.wd5.myworkdayjobs.com/driveway", "last_ok": "", "strikes": 0, "why": "error: 422 Client Error: Unprocessable Entity for url: https://lithia.wd5.myworkdayjobs.com/wday/cxs/lithia/driveway/jobs"}
 {"b": "workday:lithia.wd5.myworkdayjobs.com/lithiacareers", "last_ok": "", "strikes": 0, "why": "error: 422 Client Error: Unprocessable Entity for url: https://lithia.wd5.myworkdayjobs.com/wday/cxs/lithia/lithiacareers/jobs"}
 {"b": "workday:lithia.wd5.myworkdayjobs.com/pfaffcareers", "last_ok": "", "strikes": 0, "why": "error: 422 Client Error: Unprocessable Entity for url: https://lithia.wd5.myworkdayjobs.com/wday/cxs/lithia/pfaffcareers/jobs"}
-{"b": "workday:littelfuse.wd1.myworkdayjobs.com/littelfuse-featured-jobs", "last_ok": "2026-10-30", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:littelfuse.wd1.myworkdayjobs.com/littelfuse-featured-jobs", "last_ok": "2026-10-30", "strikes": 0, "why": "error: still running after 960s"}
 {"b": "workday:littletongov.wd5.myworkdayjobs.com/city_of_littleton_external", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:livanova.wd5.myworkdayjobs.com/search", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:livenation.wd503.myworkdayjobs.com/LNExternalSite", "last_ok": "2026-10-19", "strikes": 0}
@@ -106199,7 +106199,7 @@
 {"b": "workday:lombardodier.wd3.myworkdayjobs.com/Lombard_Odier_Careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:lonza.wd3.myworkdayjobs.com/lonza_careers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:loregroup.wd103.myworkdayjobs.com/loregroupexternal", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:lottomaticagroup.wd103.myworkdayjobs.com/lottomaticacareers", "last_ok": "2026-11-21", "strikes": 0}
+{"b": "workday:lottomaticagroup.wd103.myworkdayjobs.com/lottomaticacareers", "last_ok": "2026-11-21", "strikes": 0, "why": "error: still running after 960s"}
 {"b": "workday:lowell.wd3.myworkdayjobs.com/lowellgroup_careers2", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:lower.wd1.myworkdayjobs.com/lower_external_careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:loyensloeff.wd3.myworkdayjobs.com/ll", "last_ok": "2026-10-30", "strikes": 0}
@@ -106247,7 +106247,7 @@
 {"b": "workday:maersk.wd3.myworkdayjobs.com/apmt_careers", "last_ok": "2026-10-27", "strikes": 0}
 {"b": "workday:maersk.wd3.myworkdayjobs.com/mci_careers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:maersk.wd3.myworkdayjobs.com/pt_careers", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:magellanhealth.wd5.myworkdayjobs.com/magellan_health_careers", "last_ok": "2026-10-30", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:magellanhealth.wd5.myworkdayjobs.com/magellan_health_careers", "last_ok": "2026-10-30", "strikes": 0, "why": "error: HTTPSConnectionPool(host='magellanhealth.wd5.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/magellanhealth/magellan_health_careers/jobs (Caused by ResponseError('too many 429 error responses'))"}
 {"b": "workday:magmutual.wd1.myworkdayjobs.com/magmutual_career", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:magna.wd3.myworkdayjobs.com/Magna", "last_ok": "2026-10-19", "strikes": 0}
 {"b": "workday:mahec.wd5.myworkdayjobs.com/mahec", "last_ok": "2026-10-30", "strikes": 0}
@@ -106263,7 +106263,7 @@
 {"b": "workday:manh.wd5.myworkdayjobs.com/external", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:manningnapier.wd1.myworkdayjobs.com/manning-napier", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:manulife.wd3.myworkdayjobs.com/MFCJH_Jobs", "last_ok": "2026-10-24", "strikes": 0}
-{"b": "workday:marathonhealth.wd501.myworkdayjobs.com/marathon-health-careers", "last_ok": "2026-11-21", "strikes": 0}
+{"b": "workday:marathonhealth.wd501.myworkdayjobs.com/marathon-health-careers", "last_ok": "2026-11-21", "strikes": 0, "why": "error: HTTPSConnectionPool(host='marathonhealth.wd501.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/marathonhealth/marathon-health-careers/jobs (Caused by ResponseError('too many 429 error responses'))"}
 {"b": "workday:marel.wd3.myworkdayjobs.com/marel", "last_ok": "", "strikes": 0, "why": "error: 422 Client Error: Unprocessable Entity for url: https://marel.wd3.myworkdayjobs.com/wday/cxs/marel/marel/jobs"}
 {"b": "workday:marianienterprises.wd501.myworkdayjobs.com/mariani_careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:maricopa.wd1.myworkdayjobs.com/MC_External", "last_ok": "2026-10-21", "strikes": 0}
@@ -106279,7 +106279,7 @@
 {"b": "workday:marshallmedical.wd1.myworkdayjobs.com/mmc", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:martin.wd1.myworkdayjobs.com/mphc", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:marvell.wd1.myworkdayjobs.com/MarvellCareers", "last_ok": "2026-10-29", "strikes": 0}
-{"b": "workday:maryfreebed.wd12.myworkdayjobs.com/mfb", "last_ok": "2026-10-30", "strikes": 0, "why": "error: HTTPSConnectionPool(host='maryfreebed.wd12.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/maryfreebed/mfb/jobs (Caused by ResponseError('too many 429 error responses'))"}
+{"b": "workday:maryfreebed.wd12.myworkdayjobs.com/mfb", "last_ok": "2026-11-21", "strikes": 0}
 {"b": "workday:marylandconnect.wd1.myworkdayjobs.com/bsu_careers", "last_ok": "2026-10-29", "strikes": 0}
 {"b": "workday:marylandconnect.wd1.myworkdayjobs.com/csu_careers", "last_ok": "2026-10-29", "strikes": 0}
 {"b": "workday:marylandconnect.wd1.myworkdayjobs.com/fsu_careers", "last_ok": "2026-10-25", "strikes": 0}
@@ -106391,7 +106391,7 @@
 {"b": "workday:mgmchina.wd5.myworkdayjobs.com/mgmchina", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:mgmresorts.wd5.myworkdayjobs.com/mgmcareers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:mgpru.wd3.myworkdayjobs.com/mandgprudential", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:mhctn.wd12.myworkdayjobs.com/mhc_careers", "last_ok": "2026-11-21", "strikes": 0}
+{"b": "workday:mhctn.wd12.myworkdayjobs.com/mhc_careers", "last_ok": "2026-11-21", "strikes": 0, "why": "error: still running after 960s"}
 {"b": "workday:mhgi.wd1.myworkdayjobs.com/meritagecareers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:mhs.wd1.myworkdayjobs.com/careers", "last_ok": "2026-10-28", "strikes": 0}
 {"b": "workday:miamioh.wd5.myworkdayjobs.com/miamioh-staff", "last_ok": "2026-10-25", "strikes": 0}
@@ -106407,7 +106407,7 @@
 {"b": "workday:miele.wd3.myworkdayjobs.com/miele-jobs", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:mii.wd5.myworkdayjobs.com/mitek", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:mileone.wd1.myworkdayjobs.com/external", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:milestone.wd1.myworkdayjobs.com/milestone_external", "last_ok": "", "strikes": 0, "why": "error: 422 Client Error: Unprocessable Entity for url: https://milestone.wd1.myworkdayjobs.com/wday/cxs/milestone/milestone_external/jobs"}
+{"b": "workday:milestone.wd1.myworkdayjobs.com/milestone_external", "last_ok": "", "strikes": 0, "why": "error: HTTPSConnectionPool(host='milestone.wd1.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/milestone/milestone_external/jobs (Caused by ResponseError('too many 429 error responses'))"}
 {"b": "workday:millerknoll.wd1.myworkdayjobs.com/millerknoll", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:milton.wd10.myworkdayjobs.com/townofmilton", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:mimecast.wd5.myworkdayjobs.com/mimecast-careers", "last_ok": "2026-10-30", "strikes": 0}
@@ -106471,7 +106471,7 @@
 {"b": "workday:mouvrh.wd103.myworkdayjobs.com/external_career_site_biofrais", "last_ok": "", "strikes": 0, "why": "error: 403 Client Error: Forbidden for url: https://mouvrh.wd103.myworkdayjobs.com/wday/cxs/mouvrh/external_career_site_biofrais/jobs"}
 {"b": "workday:mouvrh.wd103.myworkdayjobs.com/external_career_site_fresh", "last_ok": "", "strikes": 0, "why": "error: 403 Client Error: Forbidden for url: https://mouvrh.wd103.myworkdayjobs.com/wday/cxs/mouvrh/external_career_site_fresh/jobs"}
 {"b": "workday:mouvrh.wd103.myworkdayjobs.com/external_career_site_grand_frais", "last_ok": "", "strikes": 0, "why": "error: 403 Client Error: Forbidden for url: https://mouvrh.wd103.myworkdayjobs.com/wday/cxs/mouvrh/external_career_site_grand_frais/jobs"}
-{"b": "workday:movadogroup.wd1.myworkdayjobs.com/careers", "last_ok": "2026-11-20", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:movadogroup.wd1.myworkdayjobs.com/careers", "last_ok": "2026-11-20", "strikes": 0, "why": "error: HTTPSConnectionPool(host='movadogroup.wd1.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/movadogroup/careers/jobs (Caused by ResponseError('too many 429 error responses'))"}
 {"b": "workday:movement.wd1.myworkdayjobs.com/careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:movement.wd1.myworkdayjobs.com/movement_bank", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:mpc.wd1.myworkdayjobs.com/mpccareers", "last_ok": "2026-10-30", "strikes": 0}
@@ -106487,7 +106487,7 @@
 {"b": "workday:msd.wd5.myworkdayjobs.com/SearchJobs", "last_ok": "2026-10-29", "strikes": 0}
 {"b": "workday:msf.wd3.myworkdayjobs.com/msf_france_siege", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:msfg.wd3.myworkdayjobs.com/careers", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:msh.wd503.myworkdayjobs.com/external", "last_ok": "2026-11-21", "strikes": 0}
+{"b": "workday:msh.wd503.myworkdayjobs.com/external", "last_ok": "2026-11-21", "strikes": 0, "why": "error: still running after 960s"}
 {"b": "workday:msiexpress.wd5.myworkdayjobs.com/msi_express_external_careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:msigna.wd5.myworkdayjobs.com/gbl", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:msmc.wd12.myworkdayjobs.com/msmc_careers", "last_ok": "2026-10-30", "strikes": 0}
@@ -106519,7 +106519,7 @@
 {"b": "workday:my1060wd.wd5.myworkdayjobs.com/marquee_development", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:my7elevenhr.wd12.myworkdayjobs.com/careers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:mycts.wd1.myworkdayjobs.com/cts", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:mydpr.wd5.myworkdayjobs.com/11212017", "last_ok": "2026-10-29", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:mydpr.wd5.myworkdayjobs.com/11212017", "last_ok": "2026-10-29", "strikes": 0, "why": "error: HTTPSConnectionPool(host='mydpr.wd5.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/mydpr/11212017/jobs (Caused by ResponseError('too many 429 error responses'))"}
 {"b": "workday:myfamilyfirsthc.wd12.myworkdayjobs.com/external_career_site", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:myhana.wd5.myworkdayjobs.com/mauijim", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:myhana.wd5.myworkdayjobs.com/zealoptics", "last_ok": "2026-10-30", "strikes": 0}
@@ -106535,7 +106535,7 @@
 {"b": "workday:myrayonieram.wd5.myworkdayjobs.com/careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:myview.wd3.myworkdayjobs.com/choice_properties_reit", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:myview.wd3.myworkdayjobs.com/george_weston", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:myview.wd3.myworkdayjobs.com/holt_renfrew_external_career_site", "last_ok": "2026-10-30", "strikes": 0, "why": "error: HTTPSConnectionPool(host='myview.wd3.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/myview/holt_renfrew_external_career_site/jobs (Caused by ResponseError('too many 429 error responses'))"}
+{"b": "workday:myview.wd3.myworkdayjobs.com/holt_renfrew_external_career_site", "last_ok": "2026-10-30", "strikes": 0, "why": "error: still running after 960s"}
 {"b": "workday:myview.wd3.myworkdayjobs.com/pc_financial", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:myview.wd3.myworkdayjobs.com/sdm_careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:myview.wd3.myworkdayjobs.com/weston_family_foundation", "last_ok": "2026-10-30", "strikes": 0}
@@ -106551,7 +106551,7 @@
 {"b": "workday:nacoal.wd5.myworkdayjobs.com/nacoal", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:nacoal.wd5.myworkdayjobs.com/namining", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:nacoal.wd5.myworkdayjobs.com/sawtoothmining", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:nadara.wd3.myworkdayjobs.com/external", "last_ok": "2026-10-30", "strikes": 0, "why": "error: HTTPSConnectionPool(host='nadara.wd3.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/nadara/external/jobs (Caused by ResponseError('too many 429 error responses'))"}
+{"b": "workday:nadara.wd3.myworkdayjobs.com/external", "last_ok": "2026-10-30", "strikes": 0, "why": "error: still running after 960s"}
 {"b": "workday:namb.wd1.myworkdayjobs.com/namb", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:namsa.wd5.myworkdayjobs.com/namsa", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:nandos.wd3.myworkdayjobs.com/nandos", "last_ok": "2026-10-30", "strikes": 0}
@@ -106599,7 +106599,7 @@
 {"b": "workday:netcare.wd103.myworkdayjobs.com/netcareexternal", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:netflix.wd108.myworkdayjobs.com/Eyeline", "last_ok": "2026-11-08", "strikes": 1, "why": "empty answer"}
 {"b": "workday:netflix.wd108.myworkdayjobs.com/Netflix", "last_ok": "2026-10-23", "strikes": 0}
-{"b": "workday:neurocrine.wd5.myworkdayjobs.com/neurocrinecareers", "last_ok": "2026-11-20", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:neurocrine.wd5.myworkdayjobs.com/neurocrinecareers", "last_ok": "2026-11-20", "strikes": 0, "why": "error: HTTPSConnectionPool(host='neurocrine.wd5.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/neurocrine/neurocrinecareers/jobs (Caused by ResponseError('too many 429 error responses'))"}
 {"b": "workday:neuroth.wd103.myworkdayjobs.com/external_careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:newamsterdampharma.wd108.myworkdayjobs.com/new_amsterdam_external_career_site", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:newbalance.wd1.myworkdayjobs.com/Careers", "last_ok": "2026-10-28", "strikes": 0}
@@ -106663,7 +106663,7 @@
 {"b": "workday:northlandpower.wd3.myworkdayjobs.com/externalcs", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:northmark.wd108.myworkdayjobs.com/nms", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:northmark.wd108.myworkdayjobs.com/salamander", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:northwest.wd1.myworkdayjobs.com/northwest_careers", "last_ok": "2026-11-20", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:northwest.wd1.myworkdayjobs.com/northwest_careers", "last_ok": "2026-11-20", "strikes": 0, "why": "error: HTTPSConnectionPool(host='northwest.wd1.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/northwest/northwest_careers/jobs (Caused by ResponseError('too many 429 error responses'))"}
 {"b": "workday:nouria.wd1.myworkdayjobs.com/enk", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:novanta.wd5.myworkdayjobs.com/novanta-careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:novartis.wd3.myworkdayjobs.com/Novartis_Careers", "last_ok": "2026-10-24", "strikes": 0}
@@ -106679,7 +106679,7 @@
 {"b": "workday:nrel.wd5.myworkdayjobs.com/NLR", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:nrf.wd3.myworkdayjobs.com/external", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:nrpgroup.wd1.myworkdayjobs.com/nrp", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:nshe.wd1.myworkdayjobs.com/csn-external", "last_ok": "2026-10-30", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:nshe.wd1.myworkdayjobs.com/csn-external", "last_ok": "2026-10-30", "strikes": 0, "why": "error: HTTPSConnectionPool(host='nshe.wd1.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/nshe/csn-external/jobs (Caused by ResponseError('too many 429 error responses'))"}
 {"b": "workday:nshe.wd1.myworkdayjobs.com/dri-external", "last_ok": "2026-10-22", "strikes": 0}
 {"b": "workday:nshe.wd1.myworkdayjobs.com/gbc-external", "last_ok": "2026-10-28", "strikes": 0}
 {"b": "workday:nshe.wd1.myworkdayjobs.com/nshe-external", "last_ok": "2026-10-30", "strikes": 0}
@@ -106727,7 +106727,7 @@
 {"b": "workday:oclc.wd1.myworkdayjobs.com/oclc_careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:ocpgroup.wd103.myworkdayjobs.com/ocpcareers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:octanner.wd501.myworkdayjobs.com/o_c_tanner", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:odfl.wd1.myworkdayjobs.com/ODFL_Careers", "last_ok": "2026-10-30", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:odfl.wd1.myworkdayjobs.com/ODFL_Careers", "last_ok": "2026-10-30", "strikes": 0, "why": "error: HTTPSConnectionPool(host='odfl.wd1.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/odfl/ODFL_Careers/jobs (Caused by ResponseError('too many 429 error responses'))"}
 {"b": "workday:odl.wd5.myworkdayjobs.com/odl", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:ofcom.wd3.myworkdayjobs.com/ofcom_careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:ofs.wd3.myworkdayjobs.com/external_career_site", "last_ok": "2026-10-30", "strikes": 0}
@@ -106743,7 +106743,7 @@
 {"b": "workday:oldrepublic.wd1.myworkdayjobs.com/oldrepublictitle", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:olemiss.wd12.myworkdayjobs.com/External__Faculty", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:olg.wd3.myworkdayjobs.com/careers-students", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:olympicmedical.wd5.myworkdayjobs.com/omc_careers", "last_ok": "2026-11-20", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:olympicmedical.wd5.myworkdayjobs.com/omc_careers", "last_ok": "2026-11-20", "strikes": 0, "why": "error: HTTPSConnectionPool(host='olympicmedical.wd5.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/olympicmedical/omc_careers/jobs (Caused by ResponseError('too many 429 error responses'))"}
 {"b": "workday:omers.wd3.myworkdayjobs.com/OMERS_External", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:omnissa.wd501.myworkdayjobs.com/omnissa_external_career_site", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:omya.wd3.myworkdayjobs.com/Omya", "last_ok": "2026-10-24", "strikes": 0}
@@ -106775,7 +106775,7 @@
 {"b": "workday:oningroup.wd501.myworkdayjobs.com/External", "last_ok": "2026-10-26", "strikes": 0}
 {"b": "workday:onni.wd10.myworkdayjobs.com/onni_external_careers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:ont.wd5.myworkdayjobs.com/external", "last_ok": "2026-10-28", "strikes": 0}
-{"b": "workday:ontic.wd103.myworkdayjobs.com/onticcareers", "last_ok": "2026-10-30", "strikes": 0, "why": "error: HTTPSConnectionPool(host='ontic.wd103.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/ontic/onticcareers/jobs (Caused by ResponseError('too many 429 error responses'))"}
+{"b": "workday:ontic.wd103.myworkdayjobs.com/onticcareers", "last_ok": "2026-10-30", "strikes": 0, "why": "error: still running after 960s"}
 {"b": "workday:onto.wd1.myworkdayjobs.com/onto_careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:onxholdings.wd501.myworkdayjobs.com/onx_external", "last_ok": "", "strikes": 0, "why": "error: 422 Client Error: Unprocessable Entity for url: https://onxholdings.wd501.myworkdayjobs.com/wday/cxs/onxholdings/onx_external/jobs"}
 {"b": "workday:open.wd103.myworkdayjobs.com/neos-sdi", "last_ok": "2026-10-30", "strikes": 0}
@@ -106791,7 +106791,7 @@
 {"b": "workday:orchidortho.wd5.myworkdayjobs.com/careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:ordnancesurvey.wd3.myworkdayjobs.com/os_careers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:oregon.wd5.myworkdayjobs.com/sor_external_career_site", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:organon.wd5.myworkdayjobs.com/searchjobs", "last_ok": "2026-10-30", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:organon.wd5.myworkdayjobs.com/searchjobs", "last_ok": "2026-10-30", "strikes": 0, "why": "error: HTTPSConnectionPool(host='organon.wd5.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/organon/searchjobs/jobs (Caused by ResponseError('too many 429 error responses'))"}
 {"b": "workday:orientalbank.wd1.myworkdayjobs.com/careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:originbank.wd1.myworkdayjobs.com/careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:orionadvisor.wd1.myworkdayjobs.com/orion_careers", "last_ok": "2026-10-30", "strikes": 0}
@@ -106871,7 +106871,7 @@
 {"b": "workday:paypal.wd1.myworkdayjobs.com/jobs", "last_ok": "2026-10-19", "strikes": 0}
 {"b": "workday:pbfenergy.wd1.myworkdayjobs.com/pbf", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:pbk.wd5.myworkdayjobs.com/leaf", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:pbk.wd5.myworkdayjobs.com/pbk", "last_ok": "2026-10-30", "strikes": 0, "why": "error: HTTPSConnectionPool(host='pbk.wd5.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/pbk/pbk/jobs (Caused by ResponseError('too many 429 error responses'))"}
+{"b": "workday:pbk.wd5.myworkdayjobs.com/pbk", "last_ok": "2026-10-30", "strikes": 0, "why": "error: still running after 960s"}
 {"b": "workday:pbv.wd503.myworkdayjobs.com/external", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:pcaobus.wd503.myworkdayjobs.com/pcaob", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:pcg.wd1.myworkdayjobs.com/pcg_external_careers", "last_ok": "2026-10-30", "strikes": 0}
@@ -106999,7 +106999,7 @@
 {"b": "workday:plmarketing.wd12.myworkdayjobs.com/plm", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:plugpower.wd5.myworkdayjobs.com/Plug_Power_Inc", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:pluralsight.wd1.myworkdayjobs.com/careers", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:pluxee.wd3.myworkdayjobs.com/pluxee_career_site", "last_ok": "2026-10-30", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:pluxee.wd3.myworkdayjobs.com/pluxee_career_site", "last_ok": "2026-10-30", "strikes": 0, "why": "error: HTTPSConnectionPool(host='pluxee.wd3.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/pluxee/pluxee_career_site/jobs (Caused by ResponseError('too many 429 error responses'))"}
 {"b": "workday:pmpediatrics.wd5.myworkdayjobs.com/ClinicalStaff", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:pmpediatrics.wd5.myworkdayjobs.com/pmpeds", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:pnc.wd5.myworkdayjobs.com/External", "last_ok": "2026-10-26", "strikes": 0}
@@ -107127,7 +107127,7 @@
 {"b": "workday:rakuten.wd1.myworkdayjobs.com/cartera", "last_ok": "2026-10-19", "strikes": 0}
 {"b": "workday:rakuten.wd1.myworkdayjobs.com/rakutenadvertising", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:rakuten.wd1.myworkdayjobs.com/rakuteninc", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:rakuten.wd1.myworkdayjobs.com/rakuteninsurancegroup", "last_ok": "2026-10-30", "strikes": 0, "why": "error: HTTPSConnectionPool(host='rakuten.wd1.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/rakuten/rakuteninsurancegroup/jobs (Caused by ResponseError('too many 429 error responses'))"}
+{"b": "workday:rakuten.wd1.myworkdayjobs.com/rakuteninsurancegroup", "last_ok": "2026-10-30", "strikes": 0, "why": "error: still running after 960s"}
 {"b": "workday:rakuten.wd1.myworkdayjobs.com/rakutentv", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:rakuten.wd1.myworkdayjobs.com/rakutenvikisingapore", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:rallyhouse.wd5.myworkdayjobs.com/rally_house_external_career_site", "last_ok": "2026-10-30", "strikes": 0}
@@ -107143,7 +107143,7 @@
 {"b": "workday:razer.wd3.myworkdayjobs.com/Careers", "last_ok": "2026-10-23", "strikes": 0}
 {"b": "workday:rb.wd5.myworkdayjobs.com/frs", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:rb.wd5.myworkdayjobs.com/picfrs", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:rba.wd105.myworkdayjobs.com/rba_careers", "last_ok": "2026-11-21", "strikes": 0}
+{"b": "workday:rba.wd105.myworkdayjobs.com/rba_careers", "last_ok": "2026-11-21", "strikes": 0, "why": "error: still running after 960s"}
 {"b": "workday:rbc.wd3.myworkdayjobs.com/rbcglobal1", "last_ok": "2026-10-29", "strikes": 0}
 {"b": "workday:rbfcu.wd503.myworkdayjobs.com/branchjobsaustin", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:rbi.wd3.myworkdayjobs.com/rbi_external_career_site", "last_ok": "2026-10-30", "strikes": 0}
@@ -107223,7 +107223,7 @@
 {"b": "workday:rhsc.wd5.myworkdayjobs.com/delta_dental_of_michigan", "last_ok": "2026-10-22", "strikes": 0}
 {"b": "workday:rhsc.wd5.myworkdayjobs.com/delta_dental_of_north_carolina", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:rhsc.wd5.myworkdayjobs.com/renaissancebenefits", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:rhsc.wd5.myworkdayjobs.com/the4100group", "last_ok": "2026-11-20", "strikes": 0, "why": "error: HTTPSConnectionPool(host='rhsc.wd5.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/rhsc/the4100group/jobs (Caused by ResponseError('too many 429 error responses'))"}
+{"b": "workday:rhsc.wd5.myworkdayjobs.com/the4100group", "last_ok": "2026-11-21", "strikes": 0}
 {"b": "workday:ri.wd5.myworkdayjobs.com/ri", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:rialtocapital.wd1.myworkdayjobs.com/rialto", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:richardson.wd3.myworkdayjobs.com/richardson_our_careers", "last_ok": "2026-10-30", "strikes": 0}
@@ -107271,7 +107271,7 @@
 {"b": "workday:roquette.wd3.myworkdayjobs.com/external", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:rosendin.wd1.myworkdayjobs.com/careers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:rosendin.wd1.myworkdayjobs.com/mps", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:rosennxt.wd103.myworkdayjobs.com/rosenxt", "last_ok": "2026-11-21", "strikes": 0}
+{"b": "workday:rosennxt.wd103.myworkdayjobs.com/rosenxt", "last_ok": "2026-11-21", "strikes": 0, "why": "error: still running after 960s"}
 {"b": "workday:roskambakingcompany.wd5.myworkdayjobs.com/roskam_careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:rothschildandco.wd3.myworkdayjobs.com/rothschildandco_lateral", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:rovi.wd3.myworkdayjobs.com/rovi_careers", "last_ok": "2026-10-30", "strikes": 0}
@@ -107303,7 +107303,7 @@
 {"b": "workday:rytbank.wd3.myworkdayjobs.com/external_career", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:ryzesuperfoods.wd108.myworkdayjobs.com/ryze_external_career_site", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:s2cp.wd5.myworkdayjobs.com/s2r", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:saabgroup.wd3.myworkdayjobs.com/combitech_careers", "last_ok": "", "strikes": 0, "why": "error: 422 Client Error: Unprocessable Entity for url: https://saabgroup.wd3.myworkdayjobs.com/wday/cxs/saabgroup/combitech_careers/jobs"}
+{"b": "workday:saabgroup.wd3.myworkdayjobs.com/combitech_careers", "last_ok": "", "strikes": 0, "why": "error: HTTPSConnectionPool(host='saabgroup.wd3.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/saabgroup/combitech_careers/jobs (Caused by ResponseError('too many 429 error responses'))"}
 {"b": "workday:saabgroup.wd3.myworkdayjobs.com/saab_careers", "last_ok": "", "strikes": 0, "why": "error: 422 Client Error: Unprocessable Entity for url: https://saabgroup.wd3.myworkdayjobs.com/wday/cxs/saabgroup/saab_careers/jobs"}
 {"b": "workday:saabusa.wd1.myworkdayjobs.com/saab_careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:sabre.wd1.myworkdayjobs.com/sabrejobs", "last_ok": "2026-10-30", "strikes": 0}
@@ -107351,7 +107351,7 @@
 {"b": "workday:santacruzbicycles.wd1.myworkdayjobs.com/gazellebicycles", "last_ok": "2026-10-21", "strikes": 0}
 {"b": "workday:santacruzbicycles.wd1.myworkdayjobs.com/oneup", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:santacruzbicycles.wd1.myworkdayjobs.com/santacruzbicycles", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:santander.wd3.myworkdayjobs.com/SantanderCareers", "last_ok": "2026-10-23", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:santander.wd3.myworkdayjobs.com/SantanderCareers", "last_ok": "2026-10-23", "strikes": 0, "why": "error: HTTPSConnectionPool(host='santander.wd3.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/santander/SantanderCareers/jobs (Caused by ResponseError('too many 429 error responses'))"}
 {"b": "workday:saputo.wd5.myworkdayjobs.com/Saputo_External_Careers", "last_ok": "2026-10-29", "strikes": 0}
 {"b": "workday:sarahbush.wd1.myworkdayjobs.com/sarahbush", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:sarasotagov.wd1.myworkdayjobs.com/careers", "last_ok": "2026-10-30", "strikes": 0}
@@ -107399,7 +107399,7 @@
 {"b": "workday:seaworldentertainment.wd1.myworkdayjobs.com/SEA", "last_ok": "2026-10-20", "strikes": 0}
 {"b": "workday:sec.wd3.myworkdayjobs.com/Samsung_Careers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:sec.wd3.myworkdayjobs.com/Samsung_Jobs", "last_ok": "2026-10-22", "strikes": 0}
-{"b": "workday:sedgwick.wd1.myworkdayjobs.com/efiglobal", "last_ok": "2026-10-22", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:sedgwick.wd1.myworkdayjobs.com/efiglobal", "last_ok": "2026-10-22", "strikes": 0, "why": "error: still running after 960s"}
 {"b": "workday:sedgwick.wd1.myworkdayjobs.com/sedgwick", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:sees.wd1.myworkdayjobs.com/sees_candies", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:sefl.wd1.myworkdayjobs.com/SEFL", "last_ok": "2026-10-28", "strikes": 0}
@@ -107415,7 +107415,7 @@
 {"b": "workday:semtech.wd1.myworkdayjobs.com/SemtechCareers", "last_ok": "2026-10-27", "strikes": 0}
 {"b": "workday:senecacasinos.wd12.myworkdayjobs.com/sgc", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:sensata.wd1.myworkdayjobs.com/Sensata-Careers", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:sentara.wd1.myworkdayjobs.com/SCS", "last_ok": "2026-10-26", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:sentara.wd1.myworkdayjobs.com/SCS", "last_ok": "2026-10-26", "strikes": 0, "why": "error: HTTPSConnectionPool(host='sentara.wd1.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/sentara/SCS/jobs (Caused by ResponseError('too many 429 error responses'))"}
 {"b": "workday:sentryinsurance.wd1.myworkdayjobs.com/SentryCareers", "last_ok": "2026-10-29", "strikes": 0}
 {"b": "workday:servco.wd5.myworkdayjobs.com/servco_careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:servicecu.wd5.myworkdayjobs.com/scu_external_career_site", "last_ok": "2026-10-30", "strikes": 0}
@@ -107431,7 +107431,7 @@
 {"b": "workday:sgadental.wd5.myworkdayjobs.com/careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:sgico.wd10.myworkdayjobs.com/sgi", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:sglottery.wd5.myworkdayjobs.com/scientificgamesexternalcareers", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:shakeshack.wd5.myworkdayjobs.com/external", "last_ok": "2026-10-30", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:shakeshack.wd5.myworkdayjobs.com/external", "last_ok": "2026-10-30", "strikes": 0, "why": "error: HTTPSConnectionPool(host='shakeshack.wd5.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/shakeshack/external/jobs (Caused by ResponseError('too many 429 error responses'))"}
 {"b": "workday:sharecare.wd1.myworkdayjobs.com/sharecare_careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:sharp.wd1.myworkdayjobs.com/External", "last_ok": "2026-10-19", "strikes": 0}
 {"b": "workday:sharpservices.wd3.myworkdayjobs.com/sharp_european", "last_ok": "2026-10-30", "strikes": 0}
@@ -107479,7 +107479,7 @@
 {"b": "workday:sjog.wd105.myworkdayjobs.com/sjghc_professional_and_support_services", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:sjrmc.wd1.myworkdayjobs.com/sjrmc", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:sjsurf.wd1.myworkdayjobs.com/sjsurf", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:sju.wd1.myworkdayjobs.com/sju", "last_ok": "2026-10-30", "strikes": 0, "why": "error: HTTPSConnectionPool(host='sju.wd1.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/sju/sju/jobs (Caused by ResponseError('too many 429 error responses'))"}
+{"b": "workday:sju.wd1.myworkdayjobs.com/sju", "last_ok": "2026-10-30", "strikes": 0, "why": "error: still running after 960s"}
 {"b": "workday:skadden.wd5.myworkdayjobs.com/skadden_careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:skbs.wd103.myworkdayjobs.com/skbs_extern1", "last_ok": "2026-10-27", "strikes": 0}
 {"b": "workday:skechers.wd5.myworkdayjobs.com/One-career-site", "last_ok": "2026-10-30", "strikes": 0}
@@ -107495,7 +107495,7 @@
 {"b": "workday:slihrms.wd3.myworkdayjobs.com/Careers", "last_ok": "2026-10-19", "strikes": 0}
 {"b": "workday:slihrms.wd3.myworkdayjobs.com/linxon", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:slrconsulting.wd103.myworkdayjobs.com/slrcareers", "last_ok": "2026-10-28", "strikes": 0}
-{"b": "workday:slu.wd5.myworkdayjobs.com/careers", "last_ok": "2026-10-30", "strikes": 0, "why": "error: HTTPSConnectionPool(host='slu.wd5.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/slu/careers/jobs (Caused by ResponseError('too many 429 error responses'))"}
+{"b": "workday:slu.wd5.myworkdayjobs.com/careers", "last_ok": "2026-10-30", "strikes": 0, "why": "error: still running after 960s"}
 {"b": "workday:sluhn.wd1.myworkdayjobs.com/nursing-recruiting", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:sluhn.wd1.myworkdayjobs.com/sluhn", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:smartcare.wd5.myworkdayjobs.com/smart_care", "last_ok": "2026-10-30", "strikes": 0}
@@ -107511,7 +107511,7 @@
 {"b": "workday:snapchat.wd1.myworkdayjobs.com/snap", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:snapfinance.wd1.myworkdayjobs.com/snap_external_careers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:snc.wd1.myworkdayjobs.com/SNC_External_Career_Site", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:snhu.wd503.myworkdayjobs.com/external_career_site", "last_ok": "2026-11-21", "strikes": 0}
+{"b": "workday:snhu.wd503.myworkdayjobs.com/external_career_site", "last_ok": "2026-11-21", "strikes": 0, "why": "error: still running after 960s"}
 {"b": "workday:snyk.wd103.myworkdayjobs.com/external", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:sok.wd502.myworkdayjobs.com/s-ryhman-avoimet-tyopaikat", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:soka.wd5.myworkdayjobs.com/sokacareersite", "last_ok": "2026-10-30", "strikes": 0}
@@ -107527,7 +107527,7 @@
 {"b": "workday:sonoco.wd1.myworkdayjobs.com/corporatecareers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:sonos.wd1.myworkdayjobs.com/Sonos", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:sonos.wd1.myworkdayjobs.com/student_opportunities", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:sonyglobal.wd1.myworkdayjobs.com/SonyGlobalCareers", "last_ok": "2026-10-28", "strikes": 0, "why": "error: HTTPSConnectionPool(host='sonyglobal.wd1.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/sonyglobal/SonyGlobalCareers/jobs (Caused by ResponseError('too many 429 error responses'))"}
+{"b": "workday:sonyglobal.wd1.myworkdayjobs.com/SonyGlobalCareers", "last_ok": "2026-10-28", "strikes": 0, "why": "error: still running after 960s"}
 {"b": "workday:sorren.wd12.myworkdayjobs.com/us", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:soti.wd3.myworkdayjobs.com/careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:sou.wd1.myworkdayjobs.com/southern_oregon_university", "last_ok": "2026-10-30", "strikes": 0}
@@ -107575,7 +107575,7 @@
 {"b": "workday:ssctech.wd1.myworkdayjobs.com/ssctechnologies", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:ssmh.wd5.myworkdayjobs.com/ssmhealth", "last_ok": "", "strikes": 0, "why": "error: 422 Client Error: Unprocessable Entity for url: https://ssmh.wd5.myworkdayjobs.com/wday/cxs/ssmh/ssmhealth/jobs"}
 {"b": "workday:ssrmining.wd108.myworkdayjobs.com/ssr_mining_careers", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:stagecoach.wd3.myworkdayjobs.com/external", "last_ok": "2026-10-30", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:stagecoach.wd3.myworkdayjobs.com/external", "last_ok": "2026-10-30", "strikes": 0, "why": "error: HTTPSConnectionPool(host='stagecoach.wd3.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/stagecoach/external/jobs (Caused by ResponseError('too many 429 error responses'))"}
 {"b": "workday:stageentertainment.wd3.myworkdayjobs.com/stageentertainment", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:standard.wd1.myworkdayjobs.com/search", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:standardbiotools.wd5.myworkdayjobs.com/external", "last_ok": "2026-10-30", "strikes": 0}
@@ -107623,7 +107623,7 @@
 {"b": "workday:stord.wd503.myworkdayjobs.com/stord_external_career", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:storebrand.wd3.myworkdayjobs.com/storebrand_careers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:stormontvail.wd1.myworkdayjobs.com/svh", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:stout.wd5.myworkdayjobs.com/stout-careers", "last_ok": "2026-10-30", "strikes": 0, "why": "error: HTTPSConnectionPool(host='stout.wd5.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/stout/stout-careers/jobs (Caused by ResponseError('too many 429 error responses'))"}
+{"b": "workday:stout.wd5.myworkdayjobs.com/stout-careers", "last_ok": "2026-10-30", "strikes": 0, "why": "error: still running after 960s"}
 {"b": "workday:stph.wd5.myworkdayjobs.com/stph", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:strada.wd12.myworkdayjobs.com/careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:strathconaresources.wd10.myworkdayjobs.com/careers", "last_ok": "2026-10-30", "strikes": 0}
@@ -107687,7 +107687,7 @@
 {"b": "workday:swinerton.wd1.myworkdayjobs.com/timberlab", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:swisscom.wd103.myworkdayjobs.com/SwisscomExternalCareers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:swisscom.wd103.myworkdayjobs.com/cablexexternalcareers", "last_ok": "2026-10-26", "strikes": 0}
-{"b": "workday:swisskrono.wd3.myworkdayjobs.com/swiss_krono", "last_ok": "2026-10-30", "strikes": 0, "why": "error: HTTPSConnectionPool(host='swisskrono.wd3.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/swisskrono/swiss_krono/jobs (Caused by ResponseError('too many 429 error responses'))"}
+{"b": "workday:swisskrono.wd3.myworkdayjobs.com/swiss_krono", "last_ok": "2026-10-30", "strikes": 0, "why": "error: still running after 960s"}
 {"b": "workday:swisslife.wd3.myworkdayjobs.com/livit-ag-career-stellenboerse", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:swisslife.wd3.myworkdayjobs.com/swiss_life_asset_managers_career_site", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:swisslife.wd3.myworkdayjobs.com/swiss_life_division_france_career_site", "last_ok": "2026-10-30", "strikes": 0}
@@ -107735,7 +107735,7 @@
 {"b": "workday:talktalk.wd3.myworkdayjobs.com/pxccareers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:talktalk.wd3.myworkdayjobs.com/talktalkcareers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:tamus.wd1.myworkdayjobs.com/TAMUSA_External", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:tamus.wd1.myworkdayjobs.com/etamu_external", "last_ok": "2026-10-26", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:tamus.wd1.myworkdayjobs.com/etamu_external", "last_ok": "2026-10-26", "strikes": 0, "why": "error: still running after 960s"}
 {"b": "workday:tamus.wd1.myworkdayjobs.com/pvamu_external", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:tamus.wd1.myworkdayjobs.com/system-wide_external", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:tamus.wd1.myworkdayjobs.com/tamiu_student_employment", "last_ok": "2026-10-30", "strikes": 0}
@@ -107751,7 +107751,7 @@
 {"b": "workday:tandemdiabetes.wd12.myworkdayjobs.com/tandemdiabetes", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:tanger.wd108.myworkdayjobs.com/tanger_external_careersite", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:tapestry.wd108.myworkdayjobs.com/Tapestry_Careers", "last_ok": "2026-10-28", "strikes": 0}
-{"b": "workday:target.wd5.myworkdayjobs.com/targetcareers", "last_ok": "2026-10-27", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:target.wd5.myworkdayjobs.com/targetcareers", "last_ok": "2026-10-27", "strikes": 0, "why": "error: HTTPSConnectionPool(host='target.wd5.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/target/targetcareers/jobs (Caused by ResponseError('too many 429 error responses'))"}
 {"b": "workday:tarkett.wd3.myworkdayjobs.com/tarkett_careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:taskus.wd1.myworkdayjobs.com/careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:tateandlyle.wd3.myworkdayjobs.com/tlcareers", "last_ok": "2026-10-30", "strikes": 0}
@@ -107783,7 +107783,7 @@
 {"b": "workday:teamcarcare.wd1.myworkdayjobs.com/external", "last_ok": "2026-10-23", "strikes": 0}
 {"b": "workday:teamselecthh.wd501.myworkdayjobs.com/tshc", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:teamsystem.wd103.myworkdayjobs.com/teamsystem", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:teamwass.wd5.myworkdayjobs.com/wassermancareers", "last_ok": "2026-11-20", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:teamwass.wd5.myworkdayjobs.com/wassermancareers", "last_ok": "2026-11-20", "strikes": 0, "why": "error: HTTPSConnectionPool(host='teamwass.wd5.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/teamwass/wassermancareers/jobs (Caused by ResponseError('too many 429 error responses'))"}
 {"b": "workday:teasdalelatinfoods.wd5.myworkdayjobs.com/teasdalelatinfoods", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:techem.wd3.myworkdayjobs.com/techemcareeraustria", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:techwave.wd108.myworkdayjobs.com/techwave_careers", "last_ok": "2026-10-30", "strikes": 0}
@@ -107895,7 +107895,7 @@
 {"b": "workday:toryburch.wd1.myworkdayjobs.com/toryburchcareers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:totalwine.wd1.myworkdayjobs.com/twm", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:towerloan.wd12.myworkdayjobs.com/tower_loan_careers", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:townepark.wd5.myworkdayjobs.com/ext", "last_ok": "2026-10-30", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:townepark.wd5.myworkdayjobs.com/ext", "last_ok": "2026-10-30", "strikes": 0, "why": "error: HTTPSConnectionPool(host='townepark.wd5.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/townepark/ext/jobs (Caused by ResponseError('too many 429 error responses'))"}
 {"b": "workday:toyota.wd503.myworkdayjobs.com/TLAC", "last_ok": "2026-10-19", "strikes": 0}
 {"b": "workday:toyota.wd503.myworkdayjobs.com/TMNA", "last_ok": "2026-10-26", "strikes": 0}
 {"b": "workday:toyota.wd503.myworkdayjobs.com/Toyota_CA", "last_ok": "2026-10-27", "strikes": 0}
@@ -107959,7 +107959,7 @@
 {"b": "workday:tt.wd503.myworkdayjobs.com/ThorntonTomasetti", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:ttc.wd1.myworkdayjobs.com/toro_external_careers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:tti.wd1.myworkdayjobs.com/milwaukee", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:tti.wd1.myworkdayjobs.com/teamtti-jobs", "last_ok": "2026-10-30", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:tti.wd1.myworkdayjobs.com/teamtti-jobs", "last_ok": "2026-10-30", "strikes": 0, "why": "error: HTTPSConnectionPool(host='tti.wd1.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/tti/teamtti-jobs/jobs (Caused by ResponseError('too many 429 error responses'))"}
 {"b": "workday:tti.wd1.myworkdayjobs.com/tti_floor_care", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:ttmtech.wd5.myworkdayjobs.com/jobs", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:tuckahoeholdings.wd12.myworkdayjobs.com/gdn", "last_ok": "2026-10-26", "strikes": 0}
@@ -107991,7 +107991,7 @@
 {"b": "workday:ubc.wd10.myworkdayjobs.com/ubcstaffjobs", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:ucar.wd5.myworkdayjobs.com/ucar_careers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:ucf.wd1.myworkdayjobs.com/athletics", "last_ok": "2026-10-29", "strikes": 0}
-{"b": "workday:ucf.wd1.myworkdayjobs.com/careers", "last_ok": "2026-11-20", "strikes": 0, "why": "error: HTTPSConnectionPool(host='ucf.wd1.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/ucf/careers/jobs (Caused by ResponseError('too many 429 error responses'))"}
+{"b": "workday:ucf.wd1.myworkdayjobs.com/careers", "last_ok": "2026-11-20", "strikes": 0, "why": "error: still running after 960s"}
 {"b": "workday:uchicago.wd5.myworkdayjobs.com/External", "last_ok": "2026-10-26", "strikes": 0}
 {"b": "workday:ucumberlands.wd1.myworkdayjobs.com/careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:ufpi.wd503.myworkdayjobs.com/ufpi", "last_ok": "2026-10-30", "strikes": 0}
@@ -108007,7 +108007,7 @@
 {"b": "workday:ulsselu.wd503.myworkdayjobs.com/slu", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:ulsuno.wd1.myworkdayjobs.com/universityofneworleans", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:ultra.wd3.myworkdayjobs.com/uiccareers", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:ultra.wd3.myworkdayjobs.com/ultra-careers", "last_ok": "2026-10-30", "strikes": 0, "why": "error: HTTPSConnectionPool(host='ultra.wd3.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/ultra/ultra-careers/jobs (Caused by ResponseError('too many 429 error responses'))"}
+{"b": "workday:ultra.wd3.myworkdayjobs.com/ultra-careers", "last_ok": "2026-10-30", "strikes": 0, "why": "error: still running after 960s"}
 {"b": "workday:ultradent.wd1.myworkdayjobs.com/careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:umassglobal.wd5.myworkdayjobs.com/umassglobalcareers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:umb.wd1.myworkdayjobs.com/UMBExternal", "last_ok": "2026-10-21", "strikes": 0}
@@ -108039,7 +108039,7 @@
 {"b": "workday:unitedfidelity.wd12.myworkdayjobs.com/external", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:unitingcareqld.wd105.myworkdayjobs.com/unitingcarecareers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:universalproperty.wd1.myworkdayjobs.com/universal_careers", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:univision.wd1.myworkdayjobs.com/external", "last_ok": "2026-10-30", "strikes": 0, "why": "error: HTTPSConnectionPool(host='univision.wd1.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/univision/external/jobs (Caused by ResponseError('too many 429 error responses'))"}
+{"b": "workday:univision.wd1.myworkdayjobs.com/external", "last_ok": "2026-10-30", "strikes": 0, "why": "error: still running after 960s"}
 {"b": "workday:unum.wd1.myworkdayjobs.com/External", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:uobgroup.wd3.myworkdayjobs.com/UOBExternal", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:uofl.wd1.myworkdayjobs.com/UofLCareerSite", "last_ok": "2026-10-28", "strikes": 0}
@@ -108055,7 +108055,7 @@
 {"b": "workday:urbanutilities.wd105.myworkdayjobs.com/urbancareers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:uria.wd3.myworkdayjobs.com/uria_external_career_site", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:urw.wd3.myworkdayjobs.com/urw_career_site", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:us.wd103.myworkdayjobs.com/tobii_dynavox", "last_ok": "2026-11-21", "strikes": 0}
+{"b": "workday:us.wd103.myworkdayjobs.com/tobii_dynavox", "last_ok": "2026-11-21", "strikes": 0, "why": "error: still running after 960s"}
 {"b": "workday:usaa.wd1.myworkdayjobs.com/USAAJOBSWD", "last_ok": "2026-10-24", "strikes": 0}
 {"b": "workday:usacs.wd1.myworkdayjobs.com/usacscareers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:usbank.wd1.myworkdayjobs.com/US_Bank_Careers", "last_ok": "2026-10-27", "strikes": 0}
@@ -108087,7 +108087,7 @@
 {"b": "workday:vaderstad.wd3.myworkdayjobs.com/external_careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:vai.wd1.myworkdayjobs.com/vaicareers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:valeo.wd3.myworkdayjobs.com/valeo_jobs", "last_ok": "2026-10-28", "strikes": 0}
-{"b": "workday:valet.wd1.myworkdayjobs.com/career_site", "last_ok": "2026-10-30", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:valet.wd1.myworkdayjobs.com/career_site", "last_ok": "2026-10-30", "strikes": 0, "why": "error: HTTPSConnectionPool(host='valet.wd1.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/valet/career_site/jobs (Caused by ResponseError('too many 429 error responses'))"}
 {"b": "workday:valleychildrens.wd12.myworkdayjobs.com/VCH_External", "last_ok": "2026-10-24", "strikes": 0}
 {"b": "workday:valmet.wd103.myworkdayjobs.com/external", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:valmont.wd1.myworkdayjobs.com/valmontcareers", "last_ok": "2026-10-30", "strikes": 0}
@@ -108167,7 +108167,7 @@
 {"b": "workday:vibrant.wd5.myworkdayjobs.com/veh_external_career_site", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:vicinity.wd3.myworkdayjobs.com/vicinityexternalcareers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:villeroyboch.wd3.myworkdayjobs.com/careers", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:vincitgroup.wd5.myworkdayjobs.com/vincit_external_1", "last_ok": "2026-10-30", "strikes": 0, "why": "error: HTTPSConnectionPool(host='vincitgroup.wd5.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/vincitgroup/vincit_external_1/jobs (Caused by ResponseError('too many 429 error responses'))"}
+{"b": "workday:vincitgroup.wd5.myworkdayjobs.com/vincit_external_1", "last_ok": "2026-10-30", "strikes": 0, "why": "error: still running after 960s"}
 {"b": "workday:virainsight.wd108.myworkdayjobs.com/vira_insight", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:virbac.wd103.myworkdayjobs.com/career", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:virtua.wd1.myworkdayjobs.com/virtua_health_external_career_site", "last_ok": "2026-10-30", "strikes": 0}
@@ -108215,7 +108215,7 @@
 {"b": "workday:vsp.wd1.myworkdayjobs.com/VSPVisionCareers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:vst.wd5.myworkdayjobs.com/equest", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:vst.wd5.myworkdayjobs.com/luminant_careers", "last_ok": "2026-10-29", "strikes": 0}
-{"b": "workday:vumc.wd1.myworkdayjobs.com/vumccareers", "last_ok": "2026-10-30", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:vumc.wd1.myworkdayjobs.com/vumccareers", "last_ok": "2026-10-30", "strikes": 0, "why": "error: HTTPSConnectionPool(host='vumc.wd1.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/vumc/vumccareers/jobs (Caused by ResponseError('too many 429 error responses'))"}
 {"b": "workday:vwr.wd1.myworkdayjobs.com/avantorjobs", "last_ok": "2026-10-29", "strikes": 0}
 {"b": "workday:vxi.wd12.myworkdayjobs.com/careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:vystarcu.wd1.myworkdayjobs.com/careers", "last_ok": "2026-10-30", "strikes": 0}
@@ -108263,7 +108263,7 @@
 {"b": "workday:weg.wd501.myworkdayjobs.com/careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:wegmans.wd1.myworkdayjobs.com/wegmans", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:wehi.wd3.myworkdayjobs.com/wehi", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:weil.wd1.myworkdayjobs.com/work_at_weil", "last_ok": "2026-11-20", "strikes": 0, "why": "error: HTTPSConnectionPool(host='weil.wd1.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/weil/work_at_weil/jobs (Caused by ResponseError('too many 429 error responses'))"}
+{"b": "workday:weil.wd1.myworkdayjobs.com/work_at_weil", "last_ok": "2026-11-21", "strikes": 0}
 {"b": "workday:weir.wd3.myworkdayjobs.com/weir_external_careers", "last_ok": "2026-10-26", "strikes": 0}
 {"b": "workday:weis.wd108.myworkdayjobs.com/careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:weldgov.wd5.myworkdayjobs.com/weldcountycareers", "last_ok": "2026-10-30", "strikes": 0}
@@ -108295,7 +108295,7 @@
 {"b": "workday:wfscorp.wd5.myworkdayjobs.com/wfscareers-uk", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:wfu.wd1.myworkdayjobs.com/staff_career_website_live", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:wgl.wd5.myworkdayjobs.com/altagas", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:wgu.wd5.myworkdayjobs.com/external", "last_ok": "2026-10-30", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:wgu.wd5.myworkdayjobs.com/external", "last_ok": "2026-10-30", "strikes": 0, "why": "error: still running after 960s"}
 {"b": "workday:whataburger.wd5.myworkdayjobs.com/WAB_CAREERS", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:wheels.wd5.myworkdayjobs.com/wheels_careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:whistleexpresscarwash.wd108.myworkdayjobs.com/take_5", "last_ok": "2026-10-30", "strikes": 0}
@@ -108311,7 +108311,7 @@
 {"b": "workday:williamscollege.wd5.myworkdayjobs.com/external_career_site", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:willisre.wd107.myworkdayjobs.com/careers", "last_ok": "2026-10-30", "strikes": 0, "why": "error: 403 Client Error: Forbidden for url: https://willisre.wd107.myworkdayjobs.com/wday/cxs/willisre/careers/jobs"}
 {"b": "workday:wilsonco.wd5.myworkdayjobs.com/careers", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:wilsonhcg.wd5.myworkdayjobs.com/wilson_careers", "last_ok": "2026-10-30", "strikes": 0, "why": "error: HTTPSConnectionPool(host='wilsonhcg.wd5.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/wilsonhcg/wilson_careers/jobs (Caused by ResponseError('too many 429 error responses'))"}
+{"b": "workday:wilsonhcg.wd5.myworkdayjobs.com/wilson_careers", "last_ok": "2026-10-30", "strikes": 0, "why": "error: still running after 960s"}
 {"b": "workday:wingate.wd5.myworkdayjobs.com/wu-invite-only", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:winlandfoods.wd1.myworkdayjobs.com/external", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:wintrust.wd1.myworkdayjobs.com/search", "last_ok": "2026-10-30", "strikes": 0}
@@ -108327,7 +108327,7 @@
 {"b": "workday:wlt.wd3.myworkdayjobs.com/wl_careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:wlu.wd5.myworkdayjobs.com/wlucareers", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:wmeimg.wd1.myworkdayjobs.com/160over90us", "last_ok": "", "strikes": 0, "why": "error: 403 Client Error: Forbidden for url: https://wmeimg.wd1.myworkdayjobs.com/wday/cxs/wmeimg/160over90us/jobs"}
-{"b": "workday:wmeimg.wd1.myworkdayjobs.com/wme", "last_ok": "2026-10-30", "strikes": 0, "why": "error: HTTPSConnectionPool(host='wmeimg.wd1.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/wmeimg/wme/jobs (Caused by ResponseError('too many 429 error responses'))"}
+{"b": "workday:wmeimg.wd1.myworkdayjobs.com/wme", "last_ok": "2026-10-30", "strikes": 0, "why": "error: still running after 960s"}
 {"b": "workday:wmg.wd1.myworkdayjobs.com/wmgglobal", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:wmq.wd105.myworkdayjobs.com/wmq-careers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:wnc.wd3.myworkdayjobs.com/wnc_external", "last_ok": "2026-10-30", "strikes": 0}
@@ -108359,7 +108359,7 @@
 {"b": "workday:wri.wd501.myworkdayjobs.com/wri_india", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:wsc.wd1.myworkdayjobs.com/wch", "last_ok": "2026-11-09", "strikes": 0}
 {"b": "workday:wsc.wd1.myworkdayjobs.com/wos", "last_ok": "2026-10-30", "strikes": 0}
-{"b": "workday:wsc.wd1.myworkdayjobs.com/wts", "last_ok": "2026-10-30", "strikes": 0, "why": "error: Expecting value: line 1 column 1 (char 0)"}
+{"b": "workday:wsc.wd1.myworkdayjobs.com/wts", "last_ok": "2026-10-30", "strikes": 0, "why": "error: HTTPSConnectionPool(host='wsc.wd1.myworkdayjobs.com', port=443): Max retries exceeded with url: /wday/cxs/wsc/wts/jobs (Caused by ResponseError('too many 429 error responses'))"}
 {"b": "workday:wsecu.wd5.myworkdayjobs.com/wsecu", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:wsfsbank.wd1.myworkdayjobs.com/wsfscareers", "last_ok": "2026-10-30", "strikes": 0}
 {"b": "workday:wsgr.wd503.myworkdayjobs.com/wsgr", "last_ok": "2026-10-30", "strikes": 0}
