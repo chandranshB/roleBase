@@ -18,7 +18,7 @@
 {"company":"Forest Home","employment":"part_time","first_seen":"2026-11-08","id":"bamboohr:foho:371","location":"Forest Falls, California","team":"Accommodations","title":"Service Technician"}
 {"company":"Forest Home","employment":"part_time","first_seen":"2026-10-29","id":"bamboohr:foho:372","location":"Oak View, California","team":"Recreation","title":"Recreation Staff Ojai Valley"}
 {"company":"Forest Home","employment":"part_time","first_seen":"2026-10-29","id":"bamboohr:foho:373","location":"Oak View, California","team":"Guest Dining","title":"Afternoon Cook Assistant"}
-{"company":"Forest Home","employment":"full_time","first_seen":"2026-10-29","id":"bamboohr:foho:374","remote":true,"team":"Marketing","title":"Marketing Coordinator"}
+{"closed_at":"2026-11-21","company":"Forest Home","employment":"full_time","first_seen":"2026-10-29","id":"bamboohr:foho:374","remote":true,"team":"Marketing","title":"Marketing Coordinator"}
 {"company":"Forest Home","employment":"part_time","first_seen":"2026-10-29","id":"bamboohr:foho:375","location":"Forest Falls, California","team":"Buildings & Grounds","title":"Maintenance Tech: PT"}
 {"company":"Forest Home","employment":"contract","first_seen":"2026-10-29","id":"bamboohr:foho:376","location":"Forest Falls, California","team":"First Aid","title":"Medical Professional- Summer Camp 2027"}
 {"closed_at":"2026-11-10","company":"Forest Home","employment":"internship","first_seen":"2026-10-29","id":"bamboohr:foho:377","remote":true,"team":"Marketing","title":"Marketing Intern"}
@@ -32,3 +32,5 @@
 {"company":"Forest Home","employment":"part_time","first_seen":"2026-10-29","id":"bamboohr:foho:385","location":"Oak View, California","team":"Accommodations","title":"Accommodations Staff"}
 {"company":"Forest Home","employment":"part_time","first_seen":"2026-10-29","id":"bamboohr:foho:386","remote":true,"team":"Sales","title":"Rebooking Coordinator- Guest Retreats"}
 {"company":"Forest Home","employment":"full_time","first_seen":"2026-11-18","id":"bamboohr:foho:387","location":"Forest Falls, California","team":"Sales","title":"Church Relations Manager"}
+{"company":"Forest Home","employment":"full_time","first_seen":"2026-11-21","id":"bamboohr:foho:388","location":"Forest Falls, California","team":"Marketing","title":"Brand & Content Coordinator"}
+{"company":"Forest Home","employment":"full_time","first_seen":"2026-11-21","id":"bamboohr:foho:389","location":"Forest Falls, California","team":"Marketing","title":"Digital Growth Manager"}
