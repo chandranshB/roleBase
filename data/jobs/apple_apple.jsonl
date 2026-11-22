@@ -1339,7 +1339,7 @@
 {"company":"Apple","first_seen":"2026-11-08","id":"apple:apple:200665961","location":"United States of America","posted":"2026-06-09","team":"Operations and Supply Chain","title":"Manufacturing Quality Engineer"}
 {"company":"Apple","first_seen":"2026-11-08","id":"apple:apple:200666017","location":"United States of America","posted":"2026-06-02","team":"Corporate Functions","title":"Strategic Foresight and Trend Intelligence"}
 {"company":"Apple","first_seen":"2026-11-08","id":"apple:apple:200666022","location":"United States of America","posted":"2026-11-05","team":"Software and Services","title":"Sr. Software Engineer, Customer Systems"}
-{"company":"Apple","first_seen":"2026-11-09","id":"apple:apple:200666049","location":"Israel","posted":"2026-11-09","skills":["ml"],"team":"Hardware","title":"Mechanical Engineer - Q"}
+{"company":"Apple","first_seen":"2026-11-09","id":"apple:apple:200666049","location":"Israel","posted":"2026-11-09","skills":["ml"],"team":"Hardware","title":"Senior Mechanical Engineer - Q"}
 {"company":"Apple","first_seen":"2026-11-08","id":"apple:apple:200666054","location":"Israel","posted":"2026-06-01","team":"Hardware","title":"Silicon Validation Embedded Engineer - GPU IP"}
 {"company":"Apple","first_seen":"2026-11-08","id":"apple:apple:200666065","location":"United States of America","posted":"2026-06-02","team":"Hardware","title":"SoC Design and Integration Engineer"}
 {"company":"Apple","first_seen":"2026-11-08","id":"apple:apple:200666185","location":"United States of America","posted":"2026-06-03","team":"Corporate Functions","title":"Engineering Project Manager, Retail & Marcom Engineering"}
@@ -3661,8 +3661,8 @@
 {"company":"Apple","first_seen":"2026-10-29","id":"apple:apple:200689616","location":"United States of America","posted":"2026-10-29","team":"Hardware","title":"Hardware Systems Engineer"}
 {"company":"Apple","first_seen":"2026-10-16","id":"apple:apple:200689618","location":"Japan","posted":"2026-10-16","team":"Software and Services","title":"Data Center Engineer"}
 {"company":"Apple","first_seen":"2026-11-08","id":"apple:apple:200689625","location":"United States of America","posted":"2026-11-17","team":"Hardware","title":"Hardware System Integration Electrical Engineer - Mac"}
+{"company":"Apple","first_seen":"2026-11-22","id":"apple:apple:200689632","location":"United States of America","posted":"2026-11-22","team":"Software and Services","title":"Senior Security Engineer - Strategic Risk"}
 {"company":"Apple","first_seen":"2026-11-11","id":"apple:apple:200689633","location":"China","posted":"2026-11-11","team":"Sales and Business Development","title":"Retail Online Production Support Analyst"}
-{"company":"Apple","first_seen":"2026-10-17","id":"apple:apple:200689634","location":"United States of America","posted":"2026-10-16","team":"Software and Services","title":"Senior Security Engineer - Strategic Risk"}
 {"company":"Apple","first_seen":"2026-11-08","id":"apple:apple:200689635","location":"United States of America","posted":"2026-10-30","team":"Corporate Functions","title":"Facilities Building Manager"}
 {"company":"Apple","first_seen":"2026-10-16","id":"apple:apple:200689638","location":"United States of America","posted":"2026-10-24","skills":["ml"],"team":"Machine Learning and AI","title":"Machine Learning Engineer, System Experience - Proactive"}
 {"company":"Apple","first_seen":"2026-10-17","id":"apple:apple:200689643","location":"United States of America","posted":"2026-10-16","team":"Hardware","title":"Digital Mixed-Signal Modeling Engineer"}
@@ -5116,3 +5116,6 @@
 {"company":"Apple","first_seen":"2026-11-21","id":"apple:apple:200696405","location":"United States of America","posted":"2026-11-21","team":"Operations and Supply Chain","title":"Purchasing Operations Analyst, Infrastructure Services"}
 {"company":"Apple","first_seen":"2026-11-21","id":"apple:apple:200696408","location":"United States of America","posted":"2026-11-21","skills":["ml"],"team":"Software and Services","title":"Software Development Engineer - Test"}
 {"company":"Apple","first_seen":"2026-11-21","id":"apple:apple:200696410","location":"United States of America","posted":"2026-11-21","team":"Software and Services","title":"Senior iOS & macOS UI Engineer, Settings"}
+{"company":"Apple","first_seen":"2026-11-22","id":"apple:apple:200696416","location":"India","posted":"2026-11-22","team":"Software and Services","title":"Audio Software Development Engineer — Apple Products"}
+{"company":"Apple","first_seen":"2026-11-22","id":"apple:apple:200696452","location":"Israel","posted":"2026-11-22","team":"Students","title":"Sourcing student"}
+{"company":"Apple","first_seen":"2026-11-22","id":"apple:apple:200696454","location":"Israel","posted":"2026-11-22","team":"Hardware","title":"PHY Firmware Design & Development Engineer"}

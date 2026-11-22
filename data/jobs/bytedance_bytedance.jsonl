@@ -23,17 +23,18 @@
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:6820388136138180878","location":"北京","posted":"2020-04-27","skills":["c++","java"],"team":"后端","title":"推荐架构工程师-Data"}
 {"closed_at":"2026-11-18","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:6825465137237068046","location":"北京","posted":"2020-05-11","team":"基础架构","title":"流量接入架构工程师-基础架构"}
 {"company":"ByteDance","first_seen":"2026-11-14","id":"bytedance:bytedance:6834682107822934279","location":"北京","posted":"2020-06-05","skills":["java","c++","python"],"team":"研发","title":"高级研发工程师（代码基础设施方向）-Dev Infra"}
+{"company":"ByteDance","first_seen":"2026-11-22","id":"bytedance:bytedance:6841826330197264648","location":"北京","posted":"2020-06-24","skills":["python"],"team":"测试","title":"高级测试开发工程师-抖音搜索"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:6851437355502618893","location":"北京","posted":"2020-07-20","team":"产品","title":"官网基础平台产品经理-火山引擎"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:6856715222381775118","location":"北京","posted":"2020-08-03","team":"运维","title":"云计算客户支持工程师-火山引擎"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:6857785123309930759","location":"上海","posted":"2020-08-06","team":"测试","title":"测试开发工程师-国际化短视频业务"}
 {"closed_at":"2026-11-19","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:6857787196935899399","location":"上海","posted":"2020-08-06","team":"测试","title":"资深测试开发工程师-国际化短视频业务"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:6881506507717036296","location":"杭州","posted":"2020-10-09","skills":["python"],"team":"测试","title":"资深测试开发工程师-抖音支付"}
 {"closed_at":"2026-11-09","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:6883824520602487053","location":"北京","posted":"2020-10-15","team":"产品","title":"零售行业解决方案架构师 - 火山引擎"}
-{"closed_at":"2026-11-16","company":"ByteDance","first_seen":"2026-11-16","id":"bytedance:bytedance:6893709479093143816","location":"北京","posted":"2020-11-11","team":"产品经理","title":"抖音钱包产品经理"}
+{"company":"ByteDance","first_seen":"2026-11-16","id":"bytedance:bytedance:6893709479093143816","location":"北京","posted":"2020-11-11","team":"产品经理","title":"抖音钱包产品经理"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:6897817643669358855","location":"杭州","posted":"2020-11-22","skills":["c++","python","redis"],"team":"后端","title":"服务端研发工程师（飞连 ）-火山引擎"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:6903041898496936200","location":"深圳","posted":"2020-12-06","team":"商业运营","title":"泛互联网/通用交付项目经理-火山引擎（深圳/广州）"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:6908202120156760334","location":"北京","posted":"2020-12-20","team":"产品","title":"泛互行业解决方案架构师 - 火山引擎"}
-{"closed_at":"2026-11-17","company":"ByteDance","first_seen":"2026-11-16","id":"bytedance:bytedance:6914104710346098952","location":"北京","posted":"2021-01-05","team":"销售","title":"KA大客户销售-快消食品方向"}
+{"company":"ByteDance","first_seen":"2026-11-16","id":"bytedance:bytedance:6914104710346098952","location":"北京","posted":"2021-01-05","team":"销售","title":"KA大客户销售-快消食品方向"}
 {"closed_at":"2026-11-18","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:6915222608963979533","location":"北京","posted":"2022-04-15","team":"产品经理","title":"内容分销产品经理 - 火山引擎"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:6919494178864056590","location":"上海","posted":"2021-01-19","team":"数据分析","title":"数据分析师（治理体验方向）-抖音电商"}
 {"closed_at":"2026-11-22","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:6920464562690230541","location":"杭州","posted":"2021-01-22","skills":["go"],"team":"基础架构","title":"Linux操作系统研发工程师-服务器"}
@@ -54,8 +55,9 @@
 {"company":"ByteDance","first_seen":"2026-11-11","id":"bytedance:bytedance:6955834200470046984","location":"北京","posted":"2021-04-28","skills":["python","go","pytorch"],"team":"运维","title":"云计算技术支持专家-火山引擎"}
 {"closed_at":"2026-11-16","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:6963196379209926948","location":"广州","posted":"2021-05-17","skills":["java"],"team":"测试","title":"高级测试开发工程师-剪映"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:6963899904368838926","location":"深圳","posted":"2021-05-19","skills":["java"],"team":"测试","title":"测试开发工程师-TikTok直播"}
+{"company":"ByteDance","first_seen":"2026-11-22","id":"bytedance:bytedance:6963967310400358693","location":"北京","posted":"2021-05-19","reposts":1,"team":"销售运营","title":"销售运营经理-合同管理-火山引擎"}
 {"closed_at":"2026-11-18","company":"ByteDance","first_seen":"2026-11-16","id":"bytedance:bytedance:6966048560694413604","location":"深圳","posted":"2021-05-25","skills":["c++"],"team":"后端","title":"服务端AI架构负责人-剪映（深圳/广州）"}
-{"closed_at":"2026-11-19","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:6966184229286578462","location":"北京","posted":"2021-05-25","team":"战略","title":"战略投资专家（北/上/深/杭） - 火山引擎"}
+{"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:6966184229286578462","location":"北京","posted":"2021-05-25","team":"战略","title":"战略投资专家（北/上/深/杭） - 火山引擎"}
 {"company":"ByteDance","first_seen":"2026-11-16","id":"bytedance:bytedance:6966882956199643422","location":"上海","posted":"2021-05-28","team":"产品运营","title":"直播国际化产品运营-用户产品"}
 {"closed_at":"2026-11-12","company":"ByteDance","first_seen":"2026-11-12","id":"bytedance:bytedance:6967210607599421710","location":"上海","posted":"2021-05-28","team":"运营","title":"大客户技术服务负责人-火山引擎"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:6969086883587016996","location":"北京","posted":"2021-06-02","skills":["python","spark","kafka"],"team":"大数据","title":"大数据开发工程师 - 创新&中台"}
@@ -65,6 +67,7 @@
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:6976177941395048735","location":"北京","posted":"2021-06-21","skills":["java"],"team":"安全","title":"隐私BP-隐私和数据保护办公室（北京）"}
 {"company":"ByteDance","first_seen":"2026-11-16","id":"bytedance:bytedance:6976649537511901476","location":"北京","posted":"2021-06-22","team":"销售运营","title":"销售运营经理-投标经理-火山引擎"}
 {"closed_at":"2026-11-20","company":"ByteDance","first_seen":"2026-11-17","id":"bytedance:bytedance:6979610502155602183","location":"深圳","posted":"2021-06-30","team":"客户端","title":"Android/iOS客户端开发工程师（内容生态） - 今日头条"}
+{"company":"ByteDance","first_seen":"2026-11-22","id":"bytedance:bytedance:6980955085342673189","location":"北京","posted":"2021-07-04","team":"产品","title":"贷后风控策略"}
 {"company":"ByteDance","first_seen":"2026-11-16","id":"bytedance:bytedance:6981280701330295077","location":"深圳","posted":"2021-07-05","skills":["python","java","php","c++"],"team":"后端","title":"服务端高级工程师-抖音营销中台（深圳）"}
 {"closed_at":"2026-11-16","company":"ByteDance","first_seen":"2026-11-16","id":"bytedance:bytedance:6981331585257933064","location":"北京","posted":"2021-07-05","team":"算法","title":"推荐策略算法工程师（智能内容）-Data"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:6982063965891217678","location":"北京","posted":"2021-07-07","skills":["java","spark"],"team":"算法","title":"支付风险算法工程师-风控"}
@@ -111,7 +114,7 @@
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7078653516857018631","location":"深圳","posted":"2022-03-24","skills":["php","c++"],"team":"后端","title":"后端研发工程师-国际支付"}
 {"company":"ByteDance","first_seen":"2026-11-14","id":"bytedance:bytedance:7079696892649769246","location":"北京","posted":"2022-03-27","team":"项目管理","title":"TPM/PMO-国际化短视频（通用）"}
 {"closed_at":"2026-11-17","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7081254088541915406","location":"上海","posted":"2022-03-31","team":"算法","title":"多模态世界模型算法研究员-Seed"}
-{"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7085907334136678669","location":"广州","posted":"2022-04-13","skills":["swift"],"team":"客户端","title":"iOS研发工程师（基础技术）-今日头条"}
+{"closed_at":"2026-11-22","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7085907334136678669","location":"广州","posted":"2022-04-13","skills":["swift"],"team":"客户端","title":"iOS研发工程师（基础技术）-今日头条"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7088292554517088543","location":"北京","posted":"2022-04-19","team":"算法","title":"广告反作弊算法工程师-穿山甲广告"}
 {"closed_at":"2026-11-22","company":"ByteDance","first_seen":"2026-11-17","id":"bytedance:bytedance:7088523572368902413","location":"北京","posted":"2022-04-20","team":"研发","title":"推荐架构工程师-抖音"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7089270370766948615","location":"北京","posted":"2022-04-22","team":"研发","title":"芯片封装设计/SIPI（北京）"}
@@ -122,14 +125,16 @@
 {"company":"ByteDance","first_seen":"2026-11-19","id":"bytedance:bytedance:7098287913527675143","location":"杭州","posted":"2022-05-16","skills":["go","python"],"team":"后端","title":"云稳定性架构师/技术专家 - AI算力基础设施"}
 {"closed_at":"2026-11-19","company":"ByteDance","first_seen":"2026-11-14","id":"bytedance:bytedance:7100759131959658766","location":"北京","posted":"2022-05-23","skills":["pytorch","sql","c++"],"team":"算法","title":"算法研发工程师-商业化生态与安全"}
 {"closed_at":"2026-11-19","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7101613364309166366","location":"北京","posted":"2022-07-22","skills":["llm","tensorflow","c++","python","java"],"team":"安全","title":"可信隐私计算高级研究员-安全与风控"}
+{"company":"ByteDance","first_seen":"2026-11-22","id":"bytedance:bytedance:7103438610296703262","location":"上海","posted":"2022-05-30","team":"研发","title":"芯片定制IP设计-芯片（上海）"}
 {"closed_at":"2026-11-10","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7103496889383602463","location":"杭州","posted":"2022-05-30","skills":["c++","python"],"team":"基础架构","title":"交换机软件工程师"}
+{"company":"ByteDance","first_seen":"2026-11-22","id":"bytedance:bytedance:7103497061266426125","location":"上海","posted":"2022-05-30","team":"研发","title":"交换机硬件工程师"}
 {"company":"ByteDance","first_seen":"2026-11-11","id":"bytedance:bytedance:7103514457283954975","location":"杭州","posted":"2022-05-30","skills":["javascript","typescript","react","vue","python","c++","sql","nosql"],"team":"后端","title":"网络自动化工程师"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7103516434680924430","location":"北京","posted":"2022-05-30","team":"后端","title":"光通信系统研发工程师"}
 {"company":"ByteDance","first_seen":"2026-11-20","id":"bytedance:bytedance:7107151338529786126","location":"西安","posted":"2022-06-09","team":"后端","title":"弹性云主机Linux研发工程师-计算"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7120140141473368356","location":"上海","posted":"2022-07-14","team":"数据分析","title":"资深数据科学家-抖音电商"}
 {"closed_at":"2026-11-22","company":"ByteDance","first_seen":"2026-11-20","id":"bytedance:bytedance:7120141082855508231","location":"上海","posted":"2022-07-14","team":"数据分析","title":"资深数据科学家-抖音电商"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7121626574340213029","location":"成都","posted":"2022-07-18","skills":["java"],"team":"后端","title":"基础平台研发工程师（容器方向）"}
-{"closed_at":"2026-11-22","company":"ByteDance","first_seen":"2026-11-12","id":"bytedance:bytedance:7124151913838971167","location":"上海","posted":"2022-07-25","team":"后端","title":"TikTok研发工程师（开放平台方向）-服务端"}
+{"company":"ByteDance","first_seen":"2026-11-12","id":"bytedance:bytedance:7124151913838971167","location":"上海","posted":"2022-07-25","team":"后端","title":"TikTok研发工程师（开放平台方向）-服务端"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7124165223275956511","location":"北京","posted":"2022-07-26","team":"研发","title":"硬件加速训练AI Infra工程师（AI芯片） - 芯片研发"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7126850907816102151","location":"上海","posted":"2022-08-01","team":"客户端","title":"Android开发工程师-TikTok生活服务"}
 {"company":"ByteDance","first_seen":"2026-11-16","id":"bytedance:bytedance:7130810960143091976","location":"深圳","posted":"2022-08-12","reposts":1,"team":"销售","title":"智慧城市销售经理-火山引擎"}
@@ -144,7 +149,7 @@
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7140153472800573733","location":"北京","posted":"2022-09-06","team":"数据分析","title":"数据科学家-抖音搜索"}
 {"closed_at":"2026-11-12","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7142748481563871519","location":"北京","posted":"2022-09-13","team":"IT支持","title":"品牌传播与舆情监控专家-IT"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7146083602186422541","location":"北京","posted":"2022-09-22","team":"运营","title":"渠道运营经理-火山引擎"}
-{"company":"ByteDance","first_seen":"2026-11-18","id":"bytedance:bytedance:7146454978869430559","location":"北京","posted":"2022-09-23","team":"采购","title":"供应链项目经理-芯片"}
+{"closed_at":"2026-11-22","company":"ByteDance","first_seen":"2026-11-18","id":"bytedance:bytedance:7146454978869430559","location":"北京","posted":"2022-09-23","team":"采购","title":"供应链项目经理-芯片"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7147933923065383182","location":"北京","posted":"2022-09-27","team":"产品","title":"官网平台产品经理-火山引擎（北京/上海/深圳）"}
 {"closed_at":"2026-11-10","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7148797740414486814","location":"深圳","posted":"2022-09-29","skills":["redis","kafka"],"team":"后端","title":"AIGC服务端工程师（即梦）-剪映CapCut（深圳/广州）"}
 {"company":"ByteDance","first_seen":"2026-11-20","id":"bytedance:bytedance:7152475784913389860","location":"北京","posted":"2022-10-09","team":"研发","title":"技术支持专家（故障流程管理）-火山引擎"}
@@ -172,9 +177,10 @@
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7195475184236677433","location":"上海","posted":"2023-02-02","skills":["python"],"team":"研发","title":"后端研发工程师 -稳定性方向"}
 {"company":"ByteDance","first_seen":"2026-11-16","id":"bytedance:bytedance:7196998404374219063","location":"北京","posted":"2023-02-06","skills":["java"],"team":"大数据","title":"大数据开发工程师（数据BP） - 数据平台"}
 {"closed_at":"2026-11-16","company":"ByteDance","first_seen":"2026-11-11","id":"bytedance:bytedance:7199647347394267448","location":"深圳","posted":"2023-02-13","team":"销售支持","title":"零售行业解决方案专家-飞书"}
-{"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7202108734558325051","location":"上海","posted":"2023-02-20","team":"销售","title":"大客户销售经理（小游戏方向）-Global Business Solutions"}
+{"closed_at":"2026-11-22","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7202108734558325051","location":"上海","posted":"2023-02-20","team":"销售","title":"大客户销售经理（小游戏方向）-Global Business Solutions"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7202437497606555965","location":"北京","posted":"2023-02-21","team":"测试","title":"质量效能平台开发工程师"}
 {"closed_at":"2026-11-09","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7204655343069612346","location":"深圳","posted":"2023-02-27","team":"销售","title":"渠道城市经理-飞书（深圳）"}
+{"company":"ByteDance","first_seen":"2026-11-22","id":"bytedance:bytedance:7206259045606181178","location":"杭州","posted":"2023-03-03","reposts":1,"team":"销售","title":"高级销售经理-火山引擎"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7207433289186462007","location":"上海","posted":"2023-03-06","team":"基础架构","title":"数据湖存储专家-Hudi/Paimon"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7213210671558297914","location":"北京","posted":"2023-03-22","skills":["java"],"team":"测试","title":"资深测试开发工程师-互联网信贷"}
 {"closed_at":"2026-11-20","company":"ByteDance","first_seen":"2026-11-17","id":"bytedance:bytedance:7215551165168486693","location":"上海","posted":"2023-03-28","skills":["nosql","postgres","redis","mongodb"],"team":"产品","title":"数据库产品经理-基础设施"}
@@ -203,15 +209,15 @@
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7251424924823963960","location":"北京","posted":"2023-07-03","team":"销售","title":"广告大客户销售经理-华北工具应用"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7251475988223035703","location":"上海","posted":"2023-07-03","team":"销售","title":"大客户广告销售-社交资讯行业（上海）"}
 {"company":"ByteDance","first_seen":"2026-11-19","id":"bytedance:bytedance:7252308674645936445","location":"杭州","posted":"2023-07-05","skills":["c++","php","java"],"team":"研发","title":"后端/资深后端研发工程师（履约方向）-TikTok Shop"}
-{"closed_at":"2026-11-16","company":"ByteDance","first_seen":"2026-11-16","id":"bytedance:bytedance:7252540272922593596","location":"上海","posted":"2023-07-06","skills":["python","java"],"team":"研发","title":"推荐架构工程师"}
-{"closed_at":"2026-11-17","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7252583235413936442","location":"珠海","posted":"2023-07-06","skills":["c++","php","java"],"team":"研发","title":"后端/资深后端研发工程师-国际物流供应链"}
+{"company":"ByteDance","first_seen":"2026-11-16","id":"bytedance:bytedance:7252540272922593596","location":"上海","posted":"2023-07-06","skills":["python","java"],"team":"研发","title":"推荐架构工程师"}
+{"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7252583235413936442","location":"珠海","posted":"2023-07-06","skills":["c++","php","java"],"team":"研发","title":"后端/资深后端研发工程师-国际物流供应链"}
 {"company":"ByteDance","first_seen":"2026-11-11","id":"bytedance:bytedance:7252876604312619321","location":"上海","posted":"2023-07-07","team":"运营","title":"TikTok应用广告产品策略与运营（出海业务）-Global Business Solutions"}
 {"company":"ByteDance","first_seen":"2026-11-16","id":"bytedance:bytedance:7254068919241328951","location":"北京","posted":"2023-07-10","skills":["python","java"],"team":"研发","title":"推荐架构工程师"}
 {"closed_at":"2026-11-12","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7254382782603102519","location":"北京","posted":"2023-07-11","team":"运营","title":"内容生产与策略-飞书"}
 {"closed_at":"2026-11-16","company":"ByteDance","first_seen":"2026-11-14","id":"bytedance:bytedance:7257741986588412217","location":"北京","posted":"2023-07-20","team":"人力","title":"招聘专家-安全与服务（北京）"}
 {"closed_at":"2026-11-12","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7260026383459600698","location":"北京","posted":"2023-07-26","team":"研发","title":"高级测试开发工程师-抖音"}
 {"closed_at":"2026-11-12","company":"ByteDance","first_seen":"2026-11-11","id":"bytedance:bytedance:7260045272813685048","location":"上海","posted":"2023-07-26","team":"运营","title":"服饰KA行业运营（奢品鞋包）-抖音电商"}
-{"closed_at":"2026-11-22","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7260062443065346341","location":"北京","posted":"2023-07-26","team":"产品","title":"推荐策略产品经理-TikTok直播"}
+{"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7260062443065346341","location":"北京","posted":"2023-07-26","team":"产品","title":"推荐策略产品经理-TikTok直播"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7261946161685334331","location":"成都","posted":"2023-07-31","team":"前端","title":"前端研发工程师-算力基础设施"}
 {"closed_at":"2026-11-12","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7261946883973974332","location":"成都","posted":"2023-07-31","skills":["c++","python"],"team":"基础架构","title":"交换机软件工程师"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7262290474215409975","location":"北京","posted":"2023-08-01","skills":["java"],"team":"大数据","title":"大数据开发工程师（抖音电商） - 泛抖音"}
@@ -223,8 +229,8 @@
 {"closed_at":"2026-11-20","company":"ByteDance","first_seen":"2026-11-18","id":"bytedance:bytedance:7263015755921410341","location":"北京","posted":"2023-08-03","skills":["tensorflow"],"team":"算法","title":"大模型应用算法工程师-剪映CapCut"}
 {"company":"ByteDance","first_seen":"2026-11-11","id":"bytedance:bytedance:7263398173569632570","location":"上海","posted":"2023-08-04","team":"设计","title":"效果设计师（AIGC方向）-抖音特效"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7264414543534197048","location":"北京","posted":"2023-08-07","skills":["c++","scala","kubernetes","spark"],"team":"大数据","title":"大数据高级研发工程师"}
-{"closed_at":"2026-11-22","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7264575174225037623","location":"上海","posted":"2023-08-07","team":"运营","title":"战略经营分析师-Global Business Solutions"}
-{"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7264821168908994872","location":"上海","posted":"2023-08-08","team":"销售","title":"渠道销售（星图方向）-华东"}
+{"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7264575174225037623","location":"上海","posted":"2023-08-07","team":"运营","title":"战略经营分析师-Global Business Solutions"}
+{"closed_at":"2026-11-22","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7264821168908994872","location":"上海","posted":"2023-08-08","team":"销售","title":"渠道销售（星图方向）-华东"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7264933033035123000","location":"北京","posted":"2023-08-08","team":"职能 / 支持","title":"职业道德合规调查专家"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7267063378606082362","location":"上海","posted":"2023-08-14","team":"研发","title":"云网络资深研发工程师/架构师"}
 {"closed_at":"2026-11-20","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7268215112959396156","location":"成都","posted":"2023-08-17","skills":["php","c++"],"team":"研发","title":"后端研发工程师"}
@@ -256,7 +262,7 @@
 {"closed_at":"2026-11-22","company":"ByteDance","first_seen":"2026-11-18","id":"bytedance:bytedance:7293076460419074314","location":"深圳","posted":"2023-10-23","team":"研发","title":"iOS开发工程师-TikTok智能创作"}
 {"company":"ByteDance","first_seen":"2026-11-18","id":"bytedance:bytedance:7293107106244446515","location":"深圳","posted":"2023-10-23","skills":["swift","java","kotlin"],"team":"客户端","title":"AI全栈开发工程师-今日头条"}
 {"closed_at":"2026-11-12","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7293749661927622922","location":"北京","posted":"2023-10-25","team":"运营","title":"产品运营-语音短信-火山引擎"}
-{"closed_at":"2026-11-17","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7294457163190683914","location":"上海","posted":"2023-10-27","team":"产品","title":"边缘云海外市场资深产品架构师-PDSA-上海"}
+{"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7294457163190683914","location":"上海","posted":"2023-10-27","team":"产品","title":"边缘云海外市场资深产品架构师-PDSA-上海"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7296463199564564762","location":"北京","posted":"2023-11-01","team":"产品","title":"财务结算产品经理-抖音生活服务"}
 {"company":"ByteDance","first_seen":"2026-11-19","id":"bytedance:bytedance:7296471168001165619","location":"上海","posted":"2023-11-01","team":"产品","title":"财务结算产品经理-抖音生活服务"}
 {"closed_at":"2026-11-12","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7298568941759416603","location":"北京","posted":"2023-11-07","team":"产品","title":"AI工具产品经理 - 剪映CapCut"}
@@ -264,8 +270,8 @@
 {"closed_at":"2026-11-16","company":"ByteDance","first_seen":"2026-11-12","id":"bytedance:bytedance:7299363825898817842","location":"北京","posted":"2023-11-09","skills":["llm","java","python"],"team":"后端","title":"LLM Agent基础架构工程师-TRAE"}
 {"company":"ByteDance","first_seen":"2026-11-17","id":"bytedance:bytedance:7300780809677637915","location":"上海","posted":"2023-11-13","team":"算法","title":"推荐算法工程师（国际化短视频本地生活） - TikTok算法"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7300815588849944859","location":"杭州","posted":"2023-11-13","skills":["javascript"],"team":"客户端","title":"客户端研发工程师-抖音研发"}
-{"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7302047085532203314","location":"上海","posted":"2023-11-16","team":"研发","title":"国际化广告算法工程师-Ranking(北京/上海/杭州)"}
-{"closed_at":"2026-11-17","company":"ByteDance","first_seen":"2026-11-16","id":"bytedance:bytedance:7302358022571084041","location":"上海","posted":"2023-11-17","team":"人力","title":"资深HRBP-抖音电商"}
+{"closed_at":"2026-11-22","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7302047085532203314","location":"上海","posted":"2023-11-16","team":"研发","title":"国际化广告算法工程师-Ranking(北京/上海/杭州)"}
+{"company":"ByteDance","first_seen":"2026-11-16","id":"bytedance:bytedance:7302358022571084041","location":"上海","posted":"2023-11-17","team":"人力","title":"资深HRBP-抖音电商"}
 {"closed_at":"2026-11-22","company":"ByteDance","first_seen":"2026-11-18","id":"bytedance:bytedance:7303385185269123354","location":"北京","posted":"2023-11-20","skills":["python","java","php","c++","redis"],"team":"后端","title":"国际支付系统研发工程师（增长营销方向）-Global Payment"}
 {"closed_at":"2026-11-10","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7304529269194148123","location":"北京","posted":"2023-11-23","skills":["spark"],"team":"研发","title":"AI数据策略（体验监察方向）-TikTok Shop"}
 {"closed_at":"2026-11-12","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7304541395246696742","location":"杭州","posted":"2023-11-23","team":"研发","title":"SDLC安全专家-飞书"}
@@ -277,6 +283,7 @@
 {"closed_at":"2026-11-12","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7306433166671366437","location":"北京","posted":"2023-11-28","skills":["redis"],"team":"后端","title":"后端开发工程师-TikTok生活服务"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7306437933854198066","location":"北京","posted":"2023-11-28","team":"前端","title":"前端开发工程师-TikTok生活服务"}
 {"closed_at":"2026-11-12","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7306446160222439718","location":"北京","posted":"2023-11-28","team":"客户端","title":"iOS研发工程师-抖音增长-北京"}
+{"company":"ByteDance","first_seen":"2026-11-22","id":"bytedance:bytedance:7306546017004063014","location":"北京","posted":"2023-11-28","skills":["python","java","php","c++"],"team":"后端","title":"后端研发工程师（Growth）-抖音激励（北京）"}
 {"closed_at":"2026-11-16","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7306717397092174090","location":"北京","posted":"2023-11-29","team":"安全","title":"AI Security安全攻防工程师 - 安全与风控"}
 {"closed_at":"2026-11-09","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7306751081047345458","location":"北京","posted":"2023-11-29","team":"产品运营","title":"价格力策略运营专家-抖音电商"}
 {"closed_at":"2026-11-18","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7307100601442240778","location":"北京","posted":"2023-11-30","team":"客户端","title":"高级Android Framework开发工程师 - 豆包手机助手"}
@@ -294,7 +301,7 @@
 {"closed_at":"2026-11-09","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7313770106563512626","location":"北京","posted":"2023-12-18","skills":["java","kotlin","llm"],"team":"安全","title":"资深安全研发工程师（客户端方向） - 安全与风控"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7314654316882528538","location":"北京","posted":"2023-12-20","skills":["rust"],"team":"算法","title":"大语言模型预训练算法工程师 - Seed Model"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7314990993350445350","location":"上海","posted":"2023-12-21","team":"研发","title":"版图设计工程师（上海） - 芯片研发"}
-{"company":"ByteDance","first_seen":"2026-11-18","id":"bytedance:bytedance:7315350123448764722","location":"北京","posted":"2023-12-22","skills":["kubernetes","python","rust","c++"],"team":"后端","title":"Kubernetes 技术专家"}
+{"closed_at":"2026-11-22","company":"ByteDance","first_seen":"2026-11-18","id":"bytedance:bytedance:7315350123448764722","location":"北京","posted":"2023-12-22","skills":["kubernetes","python","rust","c++"],"team":"后端","title":"Kubernetes 技术专家"}
 {"company":"ByteDance","first_seen":"2026-11-18","id":"bytedance:bytedance:7316535904372295963","location":"北京","posted":"2023-12-25","team":"算法","title":"NLP算法工程师-抖音对话机器人"}
 {"closed_at":"2026-11-10","company":"ByteDance","first_seen":"2026-11-10","id":"bytedance:bytedance:7317671010504132915","location":"上海","posted":"2023-12-28","skills":["c++","python"],"team":"后端","title":"AI Agent研发工程师-开发者服务"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7319490821325621513","location":"北京","posted":"2024-01-02","team":"算法","title":"内容理解算法工程师-抖音"}
@@ -312,7 +319,7 @@
 {"company":"ByteDance","first_seen":"2026-11-12","id":"bytedance:bytedance:7326837309806348570","location":"北京","posted":"2024-01-22","team":"产品运营","title":"战略项目管理 - 抖音电商"}
 {"closed_at":"2026-11-19","company":"ByteDance","first_seen":"2026-11-12","id":"bytedance:bytedance:7326899595064412426","location":"杭州","posted":"2024-01-22","team":"大数据","title":"大数据研发工程师"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7327562544113158438","location":"上海","posted":"2024-01-24","team":"算法","title":"广告算法工程师-穿山甲（上海）"}
-{"closed_at":"2026-11-19","company":"ByteDance","first_seen":"2026-11-16","id":"bytedance:bytedance:7327678614396569894","location":"北京","posted":"2024-01-24","team":"后端","title":"广告后端开发工程师-抖音变现"}
+{"company":"ByteDance","first_seen":"2026-11-16","id":"bytedance:bytedance:7327678614396569894","location":"北京","posted":"2024-01-24","team":"后端","title":"广告后端开发工程师-抖音变现"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7327982661300832549","location":"北京","posted":"2024-01-25","team":"项目管理","title":"研发PMO/TPM专家（直播方向）-TikTok"}
 {"closed_at":"2026-11-18","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7329438987776543002","location":"上海","posted":"2024-01-29","team":"运营","title":"撮合策略运营-TikTok生活服务"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7330562286090586377","location":"北京","posted":"2024-02-01","team":"销售支持","title":"行业解决方案架构师（泛制造） - 创造力服务平台"}
@@ -380,7 +387,7 @@
 {"closed_at":"2026-11-10","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7373555443489573157","location":"北京","posted":"2024-05-27","team":"产品经理","title":"云通信产品经理-火山引擎（北京/杭州）"}
 {"closed_at":"2026-11-18","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7373565710050511114","location":"北京","posted":"2024-05-27","team":"产品","title":"生态平台产品经理-火山引擎（北京/上海/深圳）"}
 {"closed_at":"2026-11-11","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7373594751658707210","location":"上海","posted":"2024-05-27","team":"项目管理","title":"PMO专家-国际电商"}
-{"closed_at":"2026-11-18","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7374328417346537779","location":"北京","posted":"2024-05-29","skills":["spark"],"team":"大数据","title":"大数据开发工程师（生活服务） - 泛抖音"}
+{"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7374328417346537779","location":"北京","posted":"2024-05-29","skills":["spark"],"team":"大数据","title":"大数据开发工程师（生活服务） - 泛抖音"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7374380973905627443","location":"上海","posted":"2024-05-29","team":"商业运营","title":"培训专家-抖音生活服务"}
 {"company":"ByteDance","first_seen":"2026-11-12","id":"bytedance:bytedance:7374385623858268454","location":"北京","posted":"2024-05-29","team":"产品经理","title":"商家端产品经理（体验优化）-抖音生活服务"}
 {"closed_at":"2026-11-16","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7374420499457460530","location":"北京","posted":"2024-05-29","team":"算法","title":"定位算法工程师（LBS）-TikTok生活服务"}
@@ -389,8 +396,8 @@
 {"closed_at":"2026-11-09","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7376149185835321650","location":"北京","posted":"2024-06-03","team":"产品","title":"高级直播营收产品经理（AI应用方向）-抖音直播"}
 {"closed_at":"2026-11-14","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7377594991902656795","location":"北京","posted":"2024-06-07","skills":["linux","python","aws","gcp","azure"],"team":"基础架构","title":"视频架构SRE工程师"}
 {"company":"ByteDance","first_seen":"2026-11-20","id":"bytedance:bytedance:7380248571012647218","location":"武汉","posted":"2024-06-14","team":"职能 / 支持","title":"资深公共事务-湖北"}
-{"company":"ByteDance","first_seen":"2026-11-12","id":"bytedance:bytedance:7380260294444206386","location":"杭州","posted":"2024-06-14","team":"销售","title":"高级销售经理-火山引擎"}
-{"closed_at":"2026-11-18","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7381393107181390131","location":"北京","posted":"2024-06-17","team":"算法","title":"大模型搜索算法工程师-Data AML"}
+{"closed_at":"2026-11-22","company":"ByteDance","first_seen":"2026-11-12","id":"bytedance:bytedance:7380260294444206386","location":"杭州","posted":"2024-06-14","team":"销售","title":"高级销售经理-火山引擎"}
+{"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7381393107181390131","location":"北京","posted":"2024-06-17","team":"算法","title":"大模型搜索算法工程师-Data AML"}
 {"closed_at":"2026-11-17","company":"ByteDance","first_seen":"2026-11-12","id":"bytedance:bytedance:7382785734506678565","location":"北京","posted":"2024-06-21","skills":["go"],"team":"后端","title":"AI安全研发工程师（AI搜索） - 抖音研发"}
 {"closed_at":"2026-11-14","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7382869131492198682","location":"北京","posted":"2024-06-21","skills":["java"],"team":"测试","title":"Camera测试开发工程师/专家-移动OS"}
 {"company":"ByteDance","first_seen":"2026-11-17","id":"bytedance:bytedance:7384253270418032946","location":"广州","posted":"2024-06-25","team":"销售","title":"大客户销售（零售行业）-抖音生活服务（广州）"}
@@ -398,8 +405,8 @@
 {"company":"ByteDance","first_seen":"2026-11-20","id":"bytedance:bytedance:7385004077949815078","location":"北京","posted":"2024-06-27","team":"人力","title":"人才户政运营专员-人力运营（北京）"}
 {"company":"ByteDance","first_seen":"2026-11-18","id":"bytedance:bytedance:7385119311696447771","location":"北京","posted":"2024-06-27","skills":["python"],"team":"数据分析","title":"数据科学家-TikTok直播"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7385177755657193765","location":"上海","posted":"2024-06-27","team":"销售","title":"高级销售经理-火山引擎"}
-{"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7386947265430260006","location":"深圳","posted":"2024-07-02","team":"研发","title":"Camera评测资深专家"}
-{"company":"ByteDance","first_seen":"2026-11-14","id":"bytedance:bytedance:7387338231324756274","location":"西安","posted":"2024-07-03","team":"研发","title":"芯片后端设计工程师（西安）"}
+{"closed_at":"2026-11-22","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7386947265430260006","location":"深圳","posted":"2024-07-02","team":"研发","title":"Camera评测资深专家"}
+{"closed_at":"2026-11-22","company":"ByteDance","first_seen":"2026-11-14","id":"bytedance:bytedance:7387338231324756274","location":"西安","posted":"2024-07-03","team":"研发","title":"芯片后端设计工程师（西安）"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7389184361750726962","location":"深圳","posted":"2024-07-08","skills":["java"],"team":"大数据","title":"大数据开发工程师（剪映） - 创新&中台"}
 {"company":"ByteDance","first_seen":"2026-11-20","id":"bytedance:bytedance:7390294094336297254","location":"上海","posted":"2024-07-11","team":"产品","title":"国际电商-商城推荐策略产品经理"}
 {"closed_at":"2026-11-16","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7391688184168614154","location":"南京","posted":"2024-07-15","team":"销售","title":"区域客户销售经理（华东大区）-飞书"}
@@ -468,7 +475,7 @@
 {"closed_at":"2026-11-10","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7439286594644117768","location":"上海","posted":"2024-11-20","team":"产品","title":"高级AI创作工具产品经理-TikTok"}
 {"closed_at":"2026-11-19","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7439640272327592210","location":"杭州","posted":"2024-11-21","team":"算法","title":"豆包大模型算法工程师-火山方舟"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7439661850725927176","location":"杭州","posted":"2024-11-21","skills":["javascript","rust","kotlin","java","swift"],"team":"前端","title":"高级全栈开发工程师-TRAE"}
-{"closed_at":"2026-11-19","company":"ByteDance","first_seen":"2026-11-16","id":"bytedance:bytedance:7441092310366521607","location":"北京","posted":"2024-11-25","team":"用户运营","title":"资深区域运营（东南亚&中亚/国际化直播） - TikTok直播"}
+{"company":"ByteDance","first_seen":"2026-11-16","id":"bytedance:bytedance:7441092310366521607","location":"北京","posted":"2024-11-25","team":"用户运营","title":"资深区域运营（东南亚&中亚/国际化直播） - TikTok直播"}
 {"closed_at":"2026-11-09","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7441115073496090898","location":"北京","posted":"2024-11-25","team":"算法","title":"多模态算法工程师 - Seed Model"}
 {"company":"ByteDance","first_seen":"2026-11-12","id":"bytedance:bytedance:7441119705689082120","location":"上海","posted":"2024-11-25","team":"算法","title":"豆包大模型算法工程师-火山方舟"}
 {"company":"ByteDance","first_seen":"2026-11-12","id":"bytedance:bytedance:7441536238194903303","location":"北京","posted":"2024-11-26","team":"人力","title":"HRBP Leader-Data"}
@@ -548,7 +555,7 @@
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7477411371635132679","location":"深圳","posted":"2025-03-03","team":"销售","title":"华南游戏行业销售经理-火山引擎"}
 {"closed_at":"2026-11-20","company":"ByteDance","first_seen":"2026-11-17","id":"bytedance:bytedance:7477433757433219346","location":"上海","posted":"2025-03-03","team":"数据分析","title":"数据科学家-抖音电商（上海/北京）"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7477557096075757842","location":"北京","posted":"2025-03-03","skills":["c++","java"],"team":"算法","title":"大模型算法工程师（AI Agent）-巨量AI工作台"}
-{"closed_at":"2026-11-17","company":"ByteDance","first_seen":"2026-11-16","id":"bytedance:bytedance:7478900423303317778","location":"上海","posted":"2025-03-07","team":"产品","title":"AI生态解决方案架构师-火山引擎"}
+{"company":"ByteDance","first_seen":"2026-11-16","id":"bytedance:bytedance:7478900423303317778","location":"上海","posted":"2025-03-07","team":"产品","title":"AI生态解决方案架构师-火山引擎"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7478901849873975559","location":"杭州","posted":"2025-03-07","skills":["java"],"team":"测试","title":"高级测试开发工程师（大模型方向）-抖音搜索"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7478942766648903944","location":"上海","posted":"2025-03-07","team":"运营","title":"销售支持-抖音生活服务（上海）"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7478955370721364231","location":"上海","posted":"2025-03-07","team":"客户端","title":"客户端引擎技术专家-抖音"}
@@ -596,7 +603,7 @@
 {"closed_at":"2026-11-12","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7490138960213002504","location":"上海","posted":"2025-04-06","skills":["ci/cd","python","java","mysql","redis"],"team":"后端","title":"直播后端研发工程师-视频云"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7490437032105756936","location":"北京","posted":"2025-04-07","team":"产品经理","title":"推荐产品（导购方向）-抖音电商"}
 {"closed_at":"2026-11-19","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7490438563005008135","location":"上海","posted":"2025-04-07","team":"商业产品（广告）","title":"广告流量策略产品（线索方向）-抖音生活服务"}
-{"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7490459772564408584","location":"深圳","posted":"2025-04-07","team":"测试","title":"Camera评测Leader-移动OS"}
+{"closed_at":"2026-11-22","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7490459772564408584","location":"深圳","posted":"2025-04-07","team":"测试","title":"Camera评测Leader-移动OS"}
 {"closed_at":"2026-11-22","company":"ByteDance","first_seen":"2026-11-19","id":"bytedance:bytedance:7490819392198019346","location":"上海","posted":"2025-04-08","team":"产品","title":"欧洲商家治理策略产品经理（AI智能化方向）-TikTok Shop"}
 {"company":"ByteDance","first_seen":"2026-11-16","id":"bytedance:bytedance:7490837597095692551","location":"深圳","posted":"2025-04-08","team":"客户端","title":"客户端/资深客户端研发工程师-国际电商"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7490881601212303634","location":"上海","posted":"2025-04-08","team":"运营","title":"TikTok游戏广告产品策略与运营（出海/亚太/中东/拉美）-Global Business Solutions"}
@@ -615,7 +622,7 @@
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7493752203682187527","location":"深圳","posted":"2025-04-16","team":"硬件","title":"ASIC设计工程师（DPU方向） - 芯片研发"}
 {"closed_at":"2026-11-19","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7493793061526587656","location":"上海","posted":"2025-04-16","team":"销售支持","title":"华东区解决方案专家-飞书"}
 {"company":"ByteDance","first_seen":"2026-11-14","id":"bytedance:bytedance:7493796900845684999","location":"深圳","posted":"2025-04-16","team":"销售支持","title":"行业解决方案架构师（泛制造） - 创造力服务平台"}
-{"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7494088739959261458","location":"上海","posted":"2025-04-17","team":"产品","title":"治理工具产品经理（平台方向） - TikTok生活服务"}
+{"closed_at":"2026-11-22","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7494088739959261458","location":"上海","posted":"2025-04-17","team":"产品","title":"治理工具产品经理（平台方向） - TikTok生活服务"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7494151711418779912","location":"上海","posted":"2025-04-17","team":"职能 / 支持","title":"内控专家-国际化电商（上海）"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7494231474725292296","location":"上海","posted":"2025-04-17","skills":["sql","python"],"team":"数据分析","title":"数据分析师（营销产品方向）-抖音电商"}
 {"company":"ByteDance","first_seen":"2026-11-19","id":"bytedance:bytedance:7494489223861438727","location":"北京","posted":"2025-04-18","team":"产品经理","title":"AI产品经理-AI Coding"}
@@ -635,9 +642,9 @@
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7497991385225906440","location":"北京","posted":"2025-04-27","team":"媒介公关","title":"舆情公关-中国公共关系"}
 {"closed_at":"2026-11-10","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7498195175228098824","location":"北京","posted":"2025-04-28","team":"算法","title":"多模态大模型算法工程师-国际化短视频"}
 {"company":"ByteDance","first_seen":"2026-11-20","id":"bytedance:bytedance:7498644005828446471","location":"北京","posted":"2025-04-29","team":"内审","title":"集团内控专家-管理决策"}
-{"company":"ByteDance","first_seen":"2026-11-19","id":"bytedance:bytedance:7498669378100496658","location":"北京","posted":"2025-04-29","skills":["emr"],"team":"产品经理","title":"大数据产品经理（EMR方向）-火山引擎"}
+{"closed_at":"2026-11-22","company":"ByteDance","first_seen":"2026-11-19","id":"bytedance:bytedance:7498669378100496658","location":"北京","posted":"2025-04-29","skills":["emr"],"team":"产品经理","title":"大数据产品经理（EMR方向）-火山引擎"}
 {"closed_at":"2026-11-17","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7501156570853230856","location":"上海","posted":"2025-05-06","team":"基础架构","title":"推荐架构工程师-Data"}
-{"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7501157670754568466","location":"北京","posted":"2025-05-06","team":"运营","title":"安全/画风治理策略专家（视频账号方向） - 抖音社区治理"}
+{"closed_at":"2026-11-22","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7501157670754568466","location":"北京","posted":"2025-05-06","team":"运营","title":"安全/画风治理策略专家（视频账号方向） - 抖音社区治理"}
 {"closed_at":"2026-11-17","company":"ByteDance","first_seen":"2026-11-14","id":"bytedance:bytedance:7501540169955199240","location":"上海","posted":"2025-05-07","team":"后端","title":"网络资源与交付管理工程师-基础设施"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7501617739342694663","location":"北京","posted":"2025-05-07","team":"算法","title":"推荐算法工程师-搜索"}
 {"closed_at":"2026-11-17","company":"ByteDance","first_seen":"2026-11-11","id":"bytedance:bytedance:7501912064332679431","location":"北京","posted":"2025-05-08","team":"后端","title":"后端高级工程师-OLAP分析型数据库"}
@@ -647,7 +654,7 @@
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7502285078614427912","location":"深圳","posted":"2025-05-09","skills":["javascript"],"team":"前端","title":"前端研发工程师-基础架构"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7502298891573643527","location":"北京","posted":"2025-05-09","skills":["redis"],"team":"后端","title":"后端研发工程师（云编辑）-剪映Capcut（北京/广州/深圳）"}
 {"company":"ByteDance","first_seen":"2026-11-22","id":"bytedance:bytedance:7503371762361714952","location":"上海","posted":"2025-05-12","team":"运维","title":"网络现场交付工程师-基础设施"}
-{"company":"ByteDance","first_seen":"2026-11-19","id":"bytedance:bytedance:7503383664136603912","location":"北京","posted":"2025-05-12","team":"产品","title":"平台产品经理（结算方向）-国际化生活服务"}
+{"closed_at":"2026-11-22","company":"ByteDance","first_seen":"2026-11-19","id":"bytedance:bytedance:7503383664136603912","location":"北京","posted":"2025-05-12","team":"产品","title":"平台产品经理（结算方向）-国际化生活服务"}
 {"closed_at":"2026-11-12","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7503393967947204871","location":"上海","posted":"2025-05-12","team":"后端","title":"抖音游戏研发专家"}
 {"company":"ByteDance","first_seen":"2026-11-19","id":"bytedance:bytedance:7503821774633044242","location":"北京","posted":"2025-05-13","skills":["python","java"],"team":"研发","title":"推荐架构工程师-抖音电商"}
 {"company":"ByteDance","first_seen":"2026-11-19","id":"bytedance:bytedance:7503823950372227346","location":"北京","posted":"2025-05-13","skills":["python","java"],"team":"研发","title":"推荐架构工程师-抖音直播"}
@@ -666,7 +673,7 @@
 {"closed_at":"2026-11-18","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7507661495732717832","location":"北京","posted":"2025-05-23","team":"算法","title":"音频算法工程师-抖音"}
 {"closed_at":"2026-11-18","company":"ByteDance","first_seen":"2026-11-12","id":"bytedance:bytedance:7508604157839542546","location":"北京","posted":"2025-05-26","team":"用户运营","title":"开发者产品运营专家-Dev Infra"}
 {"closed_at":"2026-11-17","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7508607514318375176","location":"杭州","posted":"2025-05-26","team":"用户运营","title":"开发者产品运营专家 - 开发者服务"}
-{"company":"ByteDance","first_seen":"2026-11-19","id":"bytedance:bytedance:7508630182379866375","location":"北京","posted":"2025-05-26","team":"内审","title":"AI合规策略专家-抖音生活服务"}
+{"closed_at":"2026-11-22","company":"ByteDance","first_seen":"2026-11-19","id":"bytedance:bytedance:7508630182379866375","location":"北京","posted":"2025-05-26","team":"内审","title":"AI合规策略专家-抖音生活服务"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7508688502948940040","location":"北京","posted":"2025-05-26","team":"市场","title":"品牌营销-抖音"}
 {"company":"ByteDance","first_seen":"2026-11-16","id":"bytedance:bytedance:7508956648824932616","location":"上海","posted":"2025-05-27","skills":["seo"],"team":"产品运营","title":"B端媒介增长策略 - TikTok直播"}
 {"closed_at":"2026-11-16","company":"ByteDance","first_seen":"2026-11-12","id":"bytedance:bytedance:7509053859659974919","location":"北京","posted":"2025-05-27","team":"职能 / 支持","title":"监察专家-综合监察"}
@@ -681,12 +688,13 @@
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7512044224126224647","location":"上海","posted":"2025-06-04","skills":["llm","tensorflow"],"team":"算法","title":"推荐大模型算法工程师-国际电商"}
 {"closed_at":"2026-11-14","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7512447129404950791","location":"北京","posted":"2025-06-05","team":"运营","title":"内控专家-TikTok直播"}
 {"closed_at":"2026-11-17","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7512696167911852295","location":"北京","posted":"2025-06-06","team":"算法","title":"营销算法工程师 - 生活服务"}
+{"company":"ByteDance","first_seen":"2026-11-22","id":"bytedance:bytedance:7512719938147223826","location":"上海","posted":"2025-06-06","team":"客户端","title":"Android研发工程师-抖音搜索"}
 {"closed_at":"2026-11-14","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7513783993607801106","location":"深圳","posted":"2025-06-09","team":"研发","title":"HiAgent实施运维专家-火山引擎"}
 {"company":"ByteDance","first_seen":"2026-11-16","id":"bytedance:bytedance:7514151056264956167","location":"上海","posted":"2025-06-10","team":"运营","title":"菲律宾重点专项策略运营-TikTok Shop"}
 {"closed_at":"2026-11-16","company":"ByteDance","first_seen":"2026-11-14","id":"bytedance:bytedance:7514280711382288647","location":"上海","posted":"2025-06-10","skills":["llm"],"team":"产品经理","title":"AI产品经理（可观测性方向）-Dev Infra"}
 {"company":"ByteDance","first_seen":"2026-11-16","id":"bytedance:bytedance:7514300471709075719","location":"上海","posted":"2025-06-10","team":"人力","title":"招聘专家-TikTok"}
 {"closed_at":"2026-11-12","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7514535821186287880","location":"上海","posted":"2025-06-11","skills":["java"],"team":"客户端","title":"实时音视频客户端架构师-视频与边缘"}
-{"company":"ByteDance","first_seen":"2026-11-14","id":"bytedance:bytedance:7514603036629993735","location":"上海","posted":"2025-06-11","team":"产品","title":"豆包语音产品经理（北京/上海） - 火山引擎"}
+{"closed_at":"2026-11-22","company":"ByteDance","first_seen":"2026-11-14","id":"bytedance:bytedance:7514603036629993735","location":"上海","posted":"2025-06-11","team":"产品","title":"豆包语音产品经理（北京/上海） - 火山引擎"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7514995169322797319","location":"上海","posted":"2025-06-12","team":"产品经理","title":"资深隐私安全产品专家/Leader-隐私和数据保护办公室（北京/上海）"}
 {"company":"ByteDance","first_seen":"2026-11-11","id":"bytedance:bytedance:7515270514199513352","location":"北京","posted":"2025-06-13","team":"产品运营","title":"商业分析-国际化广告审核风控业务（上海/北京）"}
 {"closed_at":"2026-11-12","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7515289756390230290","location":"杭州","posted":"2025-06-13","team":"前端","title":"资深前端全栈专家 - Data AML"}
@@ -714,7 +722,7 @@
 {"closed_at":"2026-11-16","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7521730220291426567","location":"上海","posted":"2025-06-30","team":"项目管理","title":"TPM/PMO-国际化短视频"}
 {"closed_at":"2026-11-22","company":"ByteDance","first_seen":"2026-11-16","id":"bytedance:bytedance:7521927299676670216","location":"北京","posted":"2025-07-01","team":"商业运营","title":"广告产品运营-中国商业产品与技术"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7522032229325818120","location":"深圳","posted":"2025-07-01","team":"后端","title":"服务器系统硬件研发工程师-Data"}
-{"closed_at":"2026-11-16","company":"ByteDance","first_seen":"2026-11-14","id":"bytedance:bytedance:7522055842826651912","location":"深圳","posted":"2025-07-01","reposts":1,"team":"基础架构","title":"服务器整机结构工程师-Data"}
+{"company":"ByteDance","first_seen":"2026-11-14","id":"bytedance:bytedance:7522055842826651912","location":"深圳","posted":"2025-07-01","reposts":1,"team":"基础架构","title":"服务器整机结构工程师-Data"}
 {"company":"ByteDance","first_seen":"2026-11-20","id":"bytedance:bytedance:7522077799806224648","location":"北京","posted":"2025-07-01","team":"后端","title":"服务端研发工程师（审批系统）-集团信息系统"}
 {"company":"ByteDance","first_seen":"2026-11-17","id":"bytedance:bytedance:7522101699731294482","location":"北京","posted":"2025-07-01","team":"产品经理","title":"渠道对账产品经理-国际支付"}
 {"closed_at":"2026-11-10","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7522337752798005512","location":"北京","posted":"2025-07-02","team":"财务","title":"资金方案设计专家-国际支付"}
@@ -758,6 +766,7 @@
 {"company":"ByteDance","first_seen":"2026-11-16","id":"bytedance:bytedance:7534655347920062728","location":"上海","posted":"2025-08-04","skills":["sql","python"],"team":"产品运营","title":"模型策略运营-TikTok直播"}
 {"closed_at":"2026-11-20","company":"ByteDance","first_seen":"2026-11-17","id":"bytedance:bytedance:7534736788822329618","location":"深圳","posted":"2025-08-04","team":"前端","title":"全栈开发工程师-TikTok"}
 {"closed_at":"2026-11-22","company":"ByteDance","first_seen":"2026-11-18","id":"bytedance:bytedance:7534932734637345042","location":"上海","posted":"2025-08-05","team":"数据分析","title":"数据科学家（体验与治理方向）-抖音生活服务"}
+{"company":"ByteDance","first_seen":"2026-11-22","id":"bytedance:bytedance:7535365004515543303","location":"北京","posted":"2025-08-06","team":"算法","title":"机器人电机控制算法工程师 - Seed Model"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7535386768423569682","location":"北京","posted":"2025-08-06","skills":["mysql","redis","mongodb"],"team":"后端","title":"C++服务端开发（代号对决） - Bluesea Studio"}
 {"closed_at":"2026-11-14","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7535667491063466248","location":"北京","posted":"2025-08-07","team":"用户运营","title":"服务策略运营（垂直产品）-体验与服务"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7535784517489264904","location":"上海","posted":"2025-08-07","team":"产品经理","title":"AI产品经理（用户方向）-TikTok直播"}
@@ -773,7 +782,7 @@
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7540132690550737160","location":"北京","posted":"2025-08-19","team":"采购","title":"工程采购经理"}
 {"closed_at":"2026-11-12","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7540203567366326536","location":"上海","posted":"2025-08-19","team":"运营","title":"标准治理-抖音电商"}
 {"closed_at":"2026-11-11","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7540503722599532808","location":"上海","posted":"2025-08-20","skills":["python","go","java","c++","nosql"],"team":"后端","title":"后端开发工程师（AI智能会议纪要）-飞书"}
-{"company":"ByteDance","first_seen":"2026-11-12","id":"bytedance:bytedance:7540598310181161234","location":"北京","posted":"2025-08-20","team":"运营","title":"视频安全治理策略经理-抖音"}
+{"closed_at":"2026-11-22","company":"ByteDance","first_seen":"2026-11-12","id":"bytedance:bytedance:7540598310181161234","location":"北京","posted":"2025-08-20","team":"运营","title":"视频安全治理策略经理-抖音"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7540957543511148818","location":"北京","posted":"2025-08-21","team":"产品运营","title":"AI搜索策略运营经理-抖音搜索"}
 {"closed_at":"2026-11-16","company":"ByteDance","first_seen":"2026-11-14","id":"bytedance:bytedance:7541041337911675154","location":"上海","posted":"2025-08-21","team":"运营","title":"消费者服务运营专家-抖音电商"}
 {"closed_at":"2026-11-19","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7541314121405958408","location":"北京","posted":"2025-08-22","team":"产品经理","title":"AI产品经理（达人成长方向）-抖音电商（北京）"}
@@ -862,7 +871,7 @@
 {"closed_at":"2026-11-14","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7561741480294205749","location":"深圳","posted":"2025-10-16","skills":["java","kubernetes"],"team":"研发","title":"云交付研发工程师-火山引擎"}
 {"closed_at":"2026-11-10","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7562092676919363845","location":"南京","posted":"2025-10-17","skills":["java"],"team":"测试","title":"高级效率工具开发工程师 - 数据平台"}
 {"closed_at":"2026-11-12","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7563187417576999173","location":"杭州","posted":"2025-10-20","team":"基础架构","title":"服务器整机结构工程师-Data"}
-{"closed_at":"2026-11-18","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7563187812448028981","location":"杭州","posted":"2025-10-20","team":"研发","title":"服务器硬件板级电源工程师（Data） - 服务器"}
+{"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7563187812448028981","location":"杭州","posted":"2025-10-20","team":"研发","title":"服务器硬件板级电源工程师（Data） - 服务器"}
 {"closed_at":"2026-11-16","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7563199284188596533","location":"上海","posted":"2025-10-20","team":"研发","title":"信号/电源完整性（SI/PI）工程师-Data"}
 {"company":"ByteDance","first_seen":"2026-11-17","id":"bytedance:bytedance:7563495153898457397","location":"上海","posted":"2025-10-21","team":"运营","title":"策略运营经理（规模化方向）-TikTok直播"}
 {"closed_at":"2026-11-12","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7563678658524596533","location":"上海","posted":"2025-10-21","team":"运营","title":"B端整合营销（品牌叙事方向）-TikTok生活服务"}
@@ -872,19 +881,19 @@
 {"company":"ByteDance","first_seen":"2026-11-20","id":"bytedance:bytedance:7564708929857505541","location":"上海","posted":"2025-10-24","team":"研发","title":"操作算法资深专家（具身智能）-火山引擎"}
 {"closed_at":"2026-11-16","company":"ByteDance","first_seen":"2026-11-16","id":"bytedance:bytedance:7564727860117768501","location":"上海","posted":"2025-10-24","team":"运营","title":"内容策略运营-抖音生活服务"}
 {"closed_at":"2026-11-17","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7565825507625175301","location":"上海","posted":"2025-10-27","team":"算法","title":"大模型应用算法工程师（People）-集团信息系统"}
-{"company":"ByteDance","first_seen":"2026-11-12","id":"bytedance:bytedance:7565889084280260869","location":"上海","posted":"2025-10-27","team":"后端","title":"搜索架构工程师-国际电商"}
-{"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7566484602395953461","location":"上海","posted":"2025-10-29","skills":["java"],"team":"大数据","title":"大数据开发工程师（安全与风控） - 国际化"}
+{"closed_at":"2026-11-22","company":"ByteDance","first_seen":"2026-11-12","id":"bytedance:bytedance:7565889084280260869","location":"上海","posted":"2025-10-27","team":"后端","title":"搜索架构工程师-国际电商"}
+{"closed_at":"2026-11-22","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7566484602395953461","location":"上海","posted":"2025-10-29","skills":["java"],"team":"大数据","title":"大数据开发工程师（安全与风控） - 国际化"}
 {"closed_at":"2026-11-14","company":"ByteDance","first_seen":"2026-11-12","id":"bytedance:bytedance:7566552884700268853","location":"北京","posted":"2025-10-29","team":"产品","title":"医疗行业解决方案架构师-火山引擎"}
 {"company":"ByteDance","first_seen":"2026-11-18","id":"bytedance:bytedance:7566648759729129781","location":"上海","posted":"2025-10-29","team":"产品经理","title":"商品产品经理（发品方向）-TikTok Shop"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7568316546700249397","location":"上海","posted":"2025-11-03","team":"运营","title":"语音大模型语言专家（语音理解方向） - AI数据与安全"}
-{"closed_at":"2026-11-22","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7568338121034025221","location":"北京","posted":"2025-11-03","team":"研发","title":"SoC芯片软件架构师 - 移动OS"}
+{"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7568338121034025221","location":"北京","posted":"2025-11-03","team":"研发","title":"SoC芯片软件架构师 - 移动OS"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7568392914842175797","location":"上海","posted":"2025-11-03","team":"运营","title":"酒店行业产品运营经理-抖音生活服务"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7568667431088261381","location":"深圳","posted":"2025-11-04","team":"算法","title":"增长投放算法工程师 - 抖音"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7568752854364145925","location":"北京","posted":"2025-11-04","team":"职能 / 支持","title":"成本经理（数据中心/商办）"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7569139847785400581","location":"北京","posted":"2025-11-05","team":"研发","title":"Agent软件架构师-移动OS"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7569140728417224965","location":"北京","posted":"2025-11-05","skills":["c++","java"],"team":"研发","title":"Agent客户端软件工程师-移动OS"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7569567302638389509","location":"北京","posted":"2025-11-06","team":"销售","title":"大客户广告销售-金融行业"}
-{"company":"ByteDance","first_seen":"2026-11-14","id":"bytedance:bytedance:7569606513046685957","location":"深圳","posted":"2025-11-06","team":"采购","title":"IDC经营分析 - AI算力基础设施"}
+{"closed_at":"2026-11-22","company":"ByteDance","first_seen":"2026-11-14","id":"bytedance:bytedance:7569606513046685957","location":"深圳","posted":"2025-11-06","team":"采购","title":"IDC经营分析 - AI算力基础设施"}
 {"closed_at":"2026-11-19","company":"ByteDance","first_seen":"2026-11-17","id":"bytedance:bytedance:7569638311326615861","location":"北京","posted":"2025-11-06","skills":["tensorflow","pytorch"],"team":"算法","title":"广告算法工程师（激励方向）-端变现"}
 {"company":"ByteDance","first_seen":"2026-11-14","id":"bytedance:bytedance:7570334972907047173","location":"北京","posted":"2025-11-08","team":"产品","title":"用户增长补贴策略产品-抖音生活服务"}
 {"closed_at":"2026-11-20","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7571365864895072517","location":"杭州","posted":"2025-11-11","team":"后端","title":"AI Agent研发工程师-计算"}
@@ -898,7 +907,7 @@
 {"closed_at":"2026-11-12","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7572138222173227317","location":"北京","posted":"2025-11-13","team":"运营","title":"体验运营（直播安全方向）-体验与服务"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7572213691924941109","location":"成都","posted":"2025-11-13","team":"运营","title":"标准运营管理-商业生态与安全"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7572521002975119669","location":"北京","posted":"2025-11-14","skills":["llm"],"team":"后端","title":"LLM Agent工程师-TRAE"}
-{"company":"ByteDance","first_seen":"2026-11-18","id":"bytedance:bytedance:7573626687053842741","location":"深圳","posted":"2025-11-17","team":"产品经理","title":"高级技术产品经理（创作Agent架构方向） - 抖音效果与创作"}
+{"closed_at":"2026-11-22","company":"ByteDance","first_seen":"2026-11-18","id":"bytedance:bytedance:7573626687053842741","location":"深圳","posted":"2025-11-17","team":"产品经理","title":"高级技术产品经理（创作Agent架构方向） - 抖音效果与创作"}
 {"company":"ByteDance","first_seen":"2026-11-12","id":"bytedance:bytedance:7573664742943885573","location":"北京","posted":"2025-11-17","team":"运营","title":"安全响应专家-商业安全（上海/北京）"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7573926751886280965","location":"上海","posted":"2025-11-18","skills":["java","spark"],"team":"算法","title":"信贷风控算法工程师-国际支付"}
 {"closed_at":"2026-11-18","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7574260501297285381","location":"北京","posted":"2025-11-19","team":"运营","title":"模型策略运营（AIGC方向）-CQC"}
@@ -913,7 +922,7 @@
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7575111903435639045","location":"深圳","posted":"2025-11-21","team":"运营","title":"区域企业效能顾问-飞书"}
 {"closed_at":"2026-11-17","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7576150809740118277","location":"北京","posted":"2025-11-24","team":"运营","title":"服务策略运营（商业化）-体验与服务"}
 {"closed_at":"2026-11-22","company":"ByteDance","first_seen":"2026-11-18","id":"bytedance:bytedance:7576198593179633973","location":"上海","posted":"2025-11-24","team":"产品","title":"资金管理申报产品-国际支付"}
-{"company":"ByteDance","first_seen":"2026-11-18","id":"bytedance:bytedance:7576282486238415109","location":"北京","posted":"2025-11-24","team":"产品经理","title":"履约配送策略产品 - 抖音电商"}
+{"closed_at":"2026-11-22","company":"ByteDance","first_seen":"2026-11-18","id":"bytedance:bytedance:7576282486238415109","location":"北京","posted":"2025-11-24","team":"产品经理","title":"履约配送策略产品 - 抖音电商"}
 {"closed_at":"2026-11-12","company":"ByteDance","first_seen":"2026-11-11","id":"bytedance:bytedance:7576508438995945733","location":"上海","posted":"2025-11-25","team":"运营","title":"亚太区域电商广告运营（游戏/应用工具/线索广告方向）-Global Business Solutions"}
 {"closed_at":"2026-11-22","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7576576009315961141","location":"北京","posted":"2025-11-25","skills":["python","go","c++"],"team":"后端","title":"高级工程师（钱包方向）-国际支付"}
 {"closed_at":"2026-11-10","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7576593056729958661","location":"北京","posted":"2025-11-25","team":"算法","title":"推荐算法工程师-TikTok长期生态"}
@@ -922,14 +931,15 @@
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7576922766646298885","location":"北京","posted":"2025-11-26","team":"市场","title":"市场品牌创意-抖音"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7576951376941566261","location":"上海","posted":"2025-11-26","team":"运营","title":"商家达人服务运营专家-抖音电商"}
 {"closed_at":"2026-11-14","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7577278472499448117","location":"上海","posted":"2025-11-27","team":"产品","title":"B端产品（内容管理方向）-国际化短剧"}
-{"company":"ByteDance","first_seen":"2026-11-22","id":"bytedance:bytedance:7577294458397624629","location":"北京","posted":"2025-11-27","skills":["c++"],"team":"机器学习","title":"训练高性能计算工程师 - Seed Model"}
+{"closed_at":"2026-11-22","company":"ByteDance","first_seen":"2026-11-22","id":"bytedance:bytedance:7577294458397624629","location":"北京","posted":"2025-11-27","skills":["c++"],"team":"机器学习","title":"训练高性能计算工程师 - Seed Model"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7577336430721239349","location":"上海","posted":"2025-11-27","team":"产品","title":"欧洲商城产品经理-TikTok Shop"}
 {"closed_at":"2026-11-17","company":"ByteDance","first_seen":"2026-11-12","id":"bytedance:bytedance:7577400576846760245","location":"北京","posted":"2025-11-27","skills":["spark","kubernetes","airflow","mysql"],"team":"大数据","title":"资深大数据技术运维专家-火山引擎"}
 {"closed_at":"2026-11-18","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7577597906900289797","location":"北京","posted":"2025-11-28","team":"运营","title":"经营分析师-抖音生活服务"}
+{"company":"ByteDance","first_seen":"2026-11-22","id":"bytedance:bytedance:7577708164797335861","location":"北京","posted":"2025-11-28","team":"产品","title":"AI产品经理（智能对话与AI员工）-抖音生活服务"}
 {"company":"ByteDance","first_seen":"2026-11-17","id":"bytedance:bytedance:7578710762006137141","location":"北京","posted":"2025-12-01","team":"后端","title":"大模型应用架构师-TikTok搜索"}
 {"company":"ByteDance","first_seen":"2026-11-22","id":"bytedance:bytedance:7578764693611809077","location":"杭州","posted":"2025-12-01","team":"运营","title":"国际化资深广告策略运营经理（中国出海方向）-Global Business Solutions"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7579122282270984501","location":"北京","posted":"2025-12-02","skills":["go","ci/cd"],"team":"算法","title":"AI Agent Harness优化专家/工程师-TRAE"}
-{"company":"ByteDance","first_seen":"2026-11-12","id":"bytedance:bytedance:7579456604498807045","location":"北京","posted":"2025-12-03","skills":["java"],"team":"后端","title":"Agent开发高级工程师（埋点分析平台） - 数据平台"}
+{"closed_at":"2026-11-22","company":"ByteDance","first_seen":"2026-11-12","id":"bytedance:bytedance:7579456604498807045","location":"北京","posted":"2025-12-03","skills":["java"],"team":"后端","title":"Agent开发高级工程师（埋点分析平台） - 数据平台"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7579573569035454725","location":"上海","posted":"2025-12-03","team":"运营","title":"会员营销增长运营-抖音生活服务"}
 {"closed_at":"2026-11-19","company":"ByteDance","first_seen":"2026-11-16","id":"bytedance:bytedance:7579584884722338053","location":"上海","posted":"2025-12-03","team":"硬件","title":"DPU验证工程师 - 芯片研发"}
 {"closed_at":"2026-11-16","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7580228568682170677","location":"深圳","posted":"2025-12-05","team":"运营","title":"印尼行业策略运营-TikTok Shop"}
@@ -943,14 +953,14 @@
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7581475724831279365","location":"北京","posted":"2025-12-08","team":"采购","title":"IoT综合采购经理-Data"}
 {"closed_at":"2026-11-22","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7581491171309177093","location":"北京","posted":"2025-12-08","skills":["c++","rust","go"],"team":"算法","title":"豆包大模型算法工程师-火山方舟"}
 {"closed_at":"2026-11-16","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7581494335418747189","location":"北京","posted":"2025-12-08","team":"商业产品（广告）","title":"流量策略产品经理（抖音系APP变现）-中国商业产品与技术（北京/上海）"}
-{"closed_at":"2026-11-09","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7581742386306287925","location":"上海","posted":"2025-12-09","team":"产品","title":"抖音商城APP互动增长产品-抖音电商"}
+{"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7581742386306287925","location":"上海","posted":"2025-12-09","team":"产品","title":"抖音商城APP互动增长产品-抖音电商"}
 {"closed_at":"2026-11-16","company":"ByteDance","first_seen":"2026-11-12","id":"bytedance:bytedance:7581750434095008005","location":"深圳","posted":"2025-12-09","skills":["postgres","nosql","git","c++","rust"],"team":"研发","title":"AI数据库资深研发工程师（Serverless PostgreSQL） - 数据库"}
 {"closed_at":"2026-11-22","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7581772558526941445","location":"上海","posted":"2025-12-09","team":"用户研究","title":"用户研究分析师-TikTok Shop"}
 {"closed_at":"2026-11-19","company":"ByteDance","first_seen":"2026-11-14","id":"bytedance:bytedance:7581803131965770037","location":"北京","posted":"2025-12-09","team":"产品","title":"AI安全运营产品经理 - 安全与风控"}
 {"company":"ByteDance","first_seen":"2026-11-17","id":"bytedance:bytedance:7581840104152549685","location":"北京","posted":"2025-12-09","team":"运营","title":"AI数据运营业务分析师（国际化） - TikTok"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7582050729545648437","location":"北京","posted":"2025-12-10","skills":["mongodb"],"team":"后端","title":"游戏C++服务器开发专家（Bluesea） - Bluesea Studio"}
 {"closed_at":"2026-11-16","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7582110968772888837","location":"上海","posted":"2025-12-10","team":"客户端","title":"iOS资深研发工程师-TikTok搜索"}
-{"company":"ByteDance","first_seen":"2026-11-20","id":"bytedance:bytedance:7582158076784953605","location":"北京","posted":"2025-12-10","team":"产品","title":"用户产品-抖音短剧"}
+{"closed_at":"2026-11-22","company":"ByteDance","first_seen":"2026-11-20","id":"bytedance:bytedance:7582158076784953605","location":"北京","posted":"2025-12-10","team":"产品","title":"用户产品-抖音短剧"}
 {"closed_at":"2026-11-12","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7582496141345835269","location":"济南","posted":"2025-12-11","team":"运营","title":"教育测评数据标注员（高等数学）-豆包爱学"}
 {"closed_at":"2026-11-12","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7582553941155940661","location":"北京","posted":"2025-12-11","skills":["llm"],"team":"算法","title":"推荐算法工程师-豆包"}
 {"company":"ByteDance","first_seen":"2026-11-12","id":"bytedance:bytedance:7582796697096325381","location":"北京","posted":"2025-12-12","team":"运营","title":"行业解决方案产品运营-TikTok"}
@@ -984,7 +994,7 @@
 {"company":"ByteDance","first_seen":"2026-11-12","id":"bytedance:bytedance:7592192886587689221","location":"深圳","posted":"2026-01-06","team":"游戏美术","title":"游戏角色原画设计师（怪物方向）"}
 {"closed_at":"2026-11-09","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7592527111610730805","location":"北京","posted":"2026-01-07","team":"战略","title":"前沿技术研究员-管理研究院"}
 {"closed_at":"2026-11-18","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7592588877178947893","location":"北京","posted":"2026-01-07","team":"产品","title":"搜索增长产品（汽车行业方向）-TikTok"}
-{"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7592657796129933573","location":"北京","posted":"2026-01-07","team":"运营","title":"搜索增长策略运营（AI搜索）-TikTok"}
+{"closed_at":"2026-11-22","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7592657796129933573","location":"北京","posted":"2026-01-07","team":"运营","title":"搜索增长策略运营（AI搜索）-TikTok"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7592821553433102597","location":"北京","posted":"2026-01-08","team":"市场","title":"政务文旅运营专家-抖音生活服务"}
 {"closed_at":"2026-11-17","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7593251588119267637","location":"北京","posted":"2026-01-09","team":"商务拓展BD","title":"AI应用生态BD（豆包手机助手）-火山引擎"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7594335548396882181","location":"北京","posted":"2026-01-12","skills":["java","php","python","react"],"team":"后端","title":"资深AI Agent研发工程师-豆包手机助手"}
@@ -992,7 +1002,7 @@
 {"closed_at":"2026-11-12","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7594684664071129397","location":"北京","posted":"2026-01-13","team":"交互设计","title":"AI产品设计师-飞书多维表格"}
 {"closed_at":"2026-11-12","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7594685396119226677","location":"深圳","posted":"2026-01-13","team":"交互设计","title":"AI产品设计师-飞书多维表格"}
 {"company":"ByteDance","first_seen":"2026-11-11","id":"bytedance:bytedance:7594694346400811269","location":"杭州","posted":"2026-01-13","team":"设计","title":"创意视觉设计师（社交与互动方向）-抖音"}
-{"company":"ByteDance","first_seen":"2026-11-18","id":"bytedance:bytedance:7594785770803480885","location":"北京","posted":"2026-01-13","skills":["docker"],"team":"运维","title":"交付技术架构师-云安全 - 安全与风控"}
+{"closed_at":"2026-11-22","company":"ByteDance","first_seen":"2026-11-18","id":"bytedance:bytedance:7594785770803480885","location":"北京","posted":"2026-01-13","skills":["docker"],"team":"运维","title":"交付技术架构师-云安全 - 安全与风控"}
 {"closed_at":"2026-11-18","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7594786118659803445","location":"北京","posted":"2026-01-13","team":"产品","title":"搜索增长产品（生活服务方向）-TikTok"}
 {"closed_at":"2026-11-14","company":"ByteDance","first_seen":"2026-11-14","id":"bytedance:bytedance:7595059581089761541","location":"北京","posted":"2026-01-14","team":"研发","title":"IDC给排水技术专家 - DCE"}
 {"company":"ByteDance","first_seen":"2026-11-19","id":"bytedance:bytedance:7595086996900366597","location":"北京","posted":"2026-01-14","team":"研发","title":"IDC暖通技术专家 - DCE"}
@@ -1017,7 +1027,8 @@
 {"closed_at":"2026-11-19","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7597336305224649013","location":"杭州","posted":"2026-01-20","skills":["c++","php","java"],"team":"后端","title":"后端/资深后端研发工程师（美国物流方向）-TikTok Shop"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7597348653149358341","location":"北京","posted":"2026-01-20","skills":["solidworks"],"team":"硬件","title":"XR光学模组专家-PICO"}
 {"company":"ByteDance","first_seen":"2026-11-16","id":"bytedance:bytedance:7597354386385717557","location":"北京","posted":"2026-01-20","team":"运营","title":"平台运营（AI相关） - 火山引擎"}
-{"closed_at":"2026-11-14","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7597372495176714549","location":"上海","posted":"2026-01-20","team":"算法","title":"多模态大模型算法专家-Commercial AI"}
+{"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7597372495176714549","location":"上海","posted":"2026-01-20","team":"算法","title":"多模态大模型算法专家-Commercial AI"}
+{"company":"ByteDance","first_seen":"2026-11-22","id":"bytedance:bytedance:7597399886500038917","location":"北京","posted":"2026-01-20","skills":["sql"],"team":"内审","title":"运营审计专家（财经方向）"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7597417603786721541","location":"上海","posted":"2026-01-20","team":"游戏美术","title":"游戏资深3D场景（DC-IP项目） - ZERO36工作室"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7597654965374339333","location":"北京","posted":"2026-01-21","skills":["java"],"team":"测试","title":"AI安全测试工程师（豆包手机助手） - 移动OS"}
 {"closed_at":"2026-11-22","company":"ByteDance","first_seen":"2026-11-16","id":"bytedance:bytedance:7598019582389160245","location":"上海","posted":"2026-01-22","skills":["java"],"team":"研发","title":"资深后端研发工程师（SEA供给增长）-TikTok Shop"}
@@ -1030,6 +1041,7 @@
 {"company":"ByteDance","first_seen":"2026-11-17","id":"bytedance:bytedance:7598466600917321989","location":"北京","posted":"2026-01-23","skills":["redis","kafka"],"team":"前端","title":"全栈开发工程师-即梦AI（深圳/广州/北京）"}
 {"closed_at":"2026-11-10","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7599497471727044917","location":"北京","posted":"2026-01-26","team":"产品","title":"内容治理AI产品经理 - 抖音社区治理"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7599865262518913333","location":"深圳","posted":"2026-01-27","team":"运营","title":"豆包AI大模型平台运营-火山方舟MaaS"}
+{"company":"ByteDance","first_seen":"2026-11-22","id":"bytedance:bytedance:7599871853298092341","location":"北京","posted":"2026-01-27","team":"研发","title":"IDC建筑技术专家 - DCE"}
 {"closed_at":"2026-11-16","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7599975781246863669","location":"上海","posted":"2026-01-27","team":"运营","title":"木作钱币行业运营 - 抖音电商"}
 {"closed_at":"2026-11-09","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7599979327018715445","location":"深圳","posted":"2026-01-27","skills":["java","python"],"team":"后端","title":"高级后端研发工程师-抖音服务架构"}
 {"closed_at":"2026-11-18","company":"ByteDance","first_seen":"2026-11-11","id":"bytedance:bytedance:7599988363013245189","location":"上海","posted":"2026-01-27","team":"运营","title":"规模化商家运营-TikTok生活服务"}
@@ -1045,7 +1057,7 @@
 {"closed_at":"2026-11-14","company":"ByteDance","first_seen":"2026-11-12","id":"bytedance:bytedance:7601103598819150133","location":"成都","posted":"2026-01-30","team":"销售","title":"泛互行业高级销售经理-火山引擎（成都）"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7601107445429635333","location":"上海","posted":"2026-01-30","team":"职能 / 支持","title":"项目设计经理"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7601780229894260997","location":"杭州","posted":"2026-02-01","team":"算法","title":"AIGC视频生成算法工程师-Data AML"}
-{"closed_at":"2026-11-20","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7601783034947291397","location":"杭州","posted":"2026-02-01","team":"算法","title":"AIGC图像生成算法工程师-火山方舟"}
+{"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7601783034947291397","location":"杭州","posted":"2026-02-01","team":"算法","title":"AIGC图像生成算法工程师-火山方舟"}
 {"closed_at":"2026-11-16","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7601795064759601413","location":"杭州","posted":"2026-02-01","team":"算法","title":"豆包大模型算法工程师（AIGC Agent方向） - 火山方舟"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7601811392853346613","location":"上海","posted":"2026-02-01","skills":["react"],"team":"算法","title":"豆包大模型Agent算法工程师 - 火山方舟"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7601811392875202869","location":"杭州","posted":"2026-02-01","skills":["react"],"team":"算法","title":"豆包大模型Agent算法工程师 - 火山方舟"}
@@ -1119,7 +1131,7 @@
 {"closed_at":"2026-11-12","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7615571079267895557","location":"杭州","posted":"2026-03-10","team":"算法","title":"风控算法工程师-抖音直播"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7615578634536945925","location":"杭州","posted":"2026-03-10","skills":["python","go","rust","java"],"team":"后端","title":"AI Agent研发工程师 - 计算"}
 {"closed_at":"2026-11-12","company":"ByteDance","first_seen":"2026-11-10","id":"bytedance:bytedance:7615626851586771253","location":"北京","posted":"2026-03-10","team":"采购","title":"公有云商务-Data"}
-{"company":"ByteDance","first_seen":"2026-11-18","id":"bytedance:bytedance:7615828761373903109","location":"北京","posted":"2026-03-11","team":"算法","title":"网络安全大模型算法工程师 - Seed Model"}
+{"closed_at":"2026-11-22","company":"ByteDance","first_seen":"2026-11-18","id":"bytedance:bytedance:7615828761373903109","location":"北京","posted":"2026-03-11","team":"算法","title":"网络安全大模型算法工程师 - Seed Model"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7615871285195442437","location":"北京","posted":"2026-03-11","team":"运营","title":"体育垂类内容运营-中国内容与合作"}
 {"company":"ByteDance","first_seen":"2026-11-20","id":"bytedance:bytedance:7615910375762315525","location":"深圳","posted":"2026-03-11","team":"后端","title":"Agent技术专家（小云雀Pippit方向） - 剪映CapCut"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7616189013097040133","location":"杭州","posted":"2026-03-12","team":"运营","title":"销售支持-抖音生活服务（杭州）"}
@@ -1141,7 +1153,8 @@
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7617683078505662725","location":"北京","posted":"2026-03-16","team":"硬件","title":"SoC架构工程师（AI芯片） - 芯片研发"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7617700719994636597","location":"上海","posted":"2026-03-16","team":"销售","title":"大客户销售（本地服务与亲子教培）-抖音生活服务（上海/杭州/北京）"}
 {"company":"ByteDance","first_seen":"2026-11-20","id":"bytedance:bytedance:7617742445707495733","location":"上海","posted":"2026-03-16","team":"安全","title":"AI隐私合规治理专家 - TikTok研发"}
-{"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7618211425446627637","location":"上海","posted":"2026-03-17","team":"研发","title":"Camera质量开发工程师-移动OS"}
+{"company":"ByteDance","first_seen":"2026-11-22","id":"bytedance:bytedance:7617781081287444789","location":"北京","posted":"2026-03-16","team":"产品","title":"资深CRM策略-TikTok Shop"}
+{"closed_at":"2026-11-22","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7618211425446627637","location":"上海","posted":"2026-03-17","team":"研发","title":"Camera质量开发工程师-移动OS"}
 {"closed_at":"2026-11-19","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7618211621304977669","location":"北京","posted":"2026-03-17","team":"职能 / 支持","title":"机电项目经理（北京/上海）"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7618211775123376389","location":"北京","posted":"2026-03-17","team":"职能 / 支持","title":"项目经理（土建）"}
 {"closed_at":"2026-11-19","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7618211886794869045","location":"北京","posted":"2026-03-17","team":"职能 / 支持","title":"机电工程经理（北京/上海）"}
@@ -1196,7 +1209,7 @@
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7625551347623315717","location":"上海","posted":"2026-04-06","team":"运营","title":"B端营销专家 - TikTok生活服务"}
 {"closed_at":"2026-11-12","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7625858990787578117","location":"杭州","posted":"2026-04-07","team":"研发","title":"AI研发效能工程师-AI Data"}
 {"closed_at":"2026-11-18","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7625941064257079557","location":"上海","posted":"2026-04-07","team":"运营","title":"区域运营-抖音生活服务（上海）"}
-{"closed_at":"2026-11-22","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7625947577901959477","location":"北京","posted":"2026-04-07","team":"产品","title":"AI产品经理（IP创新业务） - 抖音运营"}
+{"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7625947577901959477","location":"北京","posted":"2026-04-07","team":"产品","title":"AI产品经理（IP创新业务） - 抖音运营"}
 {"closed_at":"2026-11-20","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7626223336315685125","location":"上海","posted":"2026-04-08","skills":["llm"],"team":"产品经理","title":"AI产品经理-Dev Infra"}
 {"closed_at":"2026-11-17","company":"ByteDance","first_seen":"2026-11-14","id":"bytedance:bytedance:7626224941537380661","location":"北京","posted":"2026-04-08","team":"产品经理","title":"AI策略产品经理-Dev Infra"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7626224968504756485","location":"杭州","posted":"2026-04-08","team":"产品经理","title":"AI策略产品经理-Dev Infra"}
@@ -1211,7 +1224,7 @@
 {"closed_at":"2026-11-14","company":"ByteDance","first_seen":"2026-11-12","id":"bytedance:bytedance:7626803145875769653","location":"北京","posted":"2026-04-09","team":"商业运营","title":"商家策略运营（行业经营方向）-抖音生活服务"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7626949952555452725","location":"郑州","posted":"2026-04-10","team":"运营","title":"标准运营（体验方向）-商业生态与安全"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7626963542823061813","location":"上海","posted":"2026-04-10","team":"用户运营","title":"AI主动服务策略专家-抖音生活服务"}
-{"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7626975687652100357","location":"北京","posted":"2026-04-10","team":"算法","title":"多模态算法工程师-GIP变现"}
+{"closed_at":"2026-11-22","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7626975687652100357","location":"北京","posted":"2026-04-10","team":"算法","title":"多模态算法工程师-GIP变现"}
 {"closed_at":"2026-11-20","company":"ByteDance","first_seen":"2026-11-17","id":"bytedance:bytedance:7627023220669630725","location":"广州","posted":"2026-04-10","team":"运营","title":"跨境电商品控专家-TikTok Shop"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7627065258499082549","location":"北京","posted":"2026-04-10","skills":["python","kubernetes"],"team":"后端","title":"AI Coding服务端工程师（字节云） - AI算力基础设施"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7627066508838422837","location":"深圳","posted":"2026-04-10","team":"算法","title":"大模型推理优化工程师 - 抖音直播"}
@@ -1220,18 +1233,19 @@
 {"closed_at":"2026-11-12","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7628067289137318197","location":"北京","posted":"2026-04-13","team":"客户端","title":"Android客户端研发工程师-豆包"}
 {"closed_at":"2026-11-16","company":"ByteDance","first_seen":"2026-11-14","id":"bytedance:bytedance:7628127737760909621","location":"深圳","posted":"2026-04-13","team":"用户运营","title":"策略运营经理（创作者激励方向）-抖音"}
 {"company":"ByteDance","first_seen":"2026-11-12","id":"bytedance:bytedance:7628163150919469365","location":"北京","posted":"2026-04-13","team":"商业运营","title":"商家策略运营（流量分发方向）-抖音生活服务"}
-{"company":"ByteDance","first_seen":"2026-11-19","id":"bytedance:bytedance:7628215293590931717","location":"北京","posted":"2026-04-13","team":"人力","title":"HRBP-中国交易与广告工程技术"}
+{"closed_at":"2026-11-22","company":"ByteDance","first_seen":"2026-11-19","id":"bytedance:bytedance:7628215293590931717","location":"北京","posted":"2026-04-13","team":"人力","title":"HRBP-中国交易与广告工程技术"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7628442679242459397","location":"上海","posted":"2026-04-14","skills":["sql"],"team":"运营","title":"经营分析师（酒旅方向）-抖音生活服务"}
-{"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7628502746375555381","location":"上海","posted":"2026-04-14","team":"运营","title":"酒旅KA行业运营（国际化市场）-TikTok生活服务"}
+{"closed_at":"2026-11-22","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7628502746375555381","location":"上海","posted":"2026-04-14","team":"运营","title":"酒旅KA行业运营（国际化市场）-TikTok生活服务"}
+{"company":"ByteDance","first_seen":"2026-11-22","id":"bytedance:bytedance:7628517331380177205","location":"上海","posted":"2026-04-14","team":"产品","title":"电商搜索策略产品经理 - 抖音搜索"}
 {"company":"ByteDance","first_seen":"2026-11-20","id":"bytedance:bytedance:7628550762209855797","location":"青岛","posted":"2026-04-14","team":"商务拓展BD","title":"飞书商业合作省域负责人（高端企业家圈层方向）-Lark GTM"}
 {"closed_at":"2026-11-14","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7628556642448558341","location":"上海","posted":"2026-04-14","team":"销售","title":"海外续约增长运营（中小客户方向）-飞书"}
 {"company":"ByteDance","first_seen":"2026-11-12","id":"bytedance:bytedance:7628569799518046469","location":"南京","posted":"2026-04-14","team":"商务拓展BD","title":"商业合作省域负责人（高端企业家圈层方向/Lark GTM） - 飞书商业化"}
 {"closed_at":"2026-11-11","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7628862214835783941","location":"广州","posted":"2026-04-15","team":"销售","title":"大客户销售（景区方向）-抖音生活服务（广州）"}
 {"closed_at":"2026-11-10","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7628866702605289781","location":"西安","posted":"2026-04-15","team":"销售","title":"大客户销售（景区方向）-抖音生活服务（西安）"}
-{"closed_at":"2026-11-16","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7628871323632945461","location":"重庆","posted":"2026-04-15","team":"销售","title":"大客户销售（景区方向）-抖音生活服务（重庆）"}
+{"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7628871323632945461","location":"重庆","posted":"2026-04-15","team":"销售","title":"大客户销售（景区方向）-抖音生活服务（重庆）"}
 {"closed_at":"2026-11-20","company":"ByteDance","first_seen":"2026-11-18","id":"bytedance:bytedance:7628930163425872133","location":"北京","posted":"2026-04-15","reposts":1,"team":"运营","title":"经营分析师-商业生态与安全"}
 {"closed_at":"2026-11-09","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7628980388809050373","location":"上海","posted":"2026-04-15","team":"产品运营","title":"直播产品运营专家-TikTok生活服务"}
-{"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7628981474557987125","location":"上海","posted":"2026-04-15","skills":["project_management"],"team":"产品运营","title":"商品产品运营经理-TikTok生活服务"}
+{"closed_at":"2026-11-22","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7628981474557987125","location":"上海","posted":"2026-04-15","skills":["project_management"],"team":"产品运营","title":"商品产品运营经理-TikTok生活服务"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7629178441485175093","location":"上海","posted":"2026-04-16","team":"运营","title":"豆包AI大模型音乐数据专家 - Data语音"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7629180888378968325","location":"北京","posted":"2026-04-16","team":"商业运营","title":"项目运营-抖音生活服务"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7629190591629740341","location":"杭州","posted":"2026-04-16","team":"商业运营","title":"项目运营（餐饮）-抖音生活服务"}
@@ -1246,7 +1260,7 @@
 {"company":"ByteDance","first_seen":"2026-11-18","id":"bytedance:bytedance:7629666956589467909","location":"杭州","posted":"2026-04-17","skills":["go","python"],"team":"研发","title":"运维平台技术专家/架构师-计算"}
 {"company":"ByteDance","first_seen":"2026-11-22","id":"bytedance:bytedance:7630668293718100229","location":"北京","posted":"2026-04-20","team":"后端","title":"Agent开发架构师（AI Testing）-开发者服务"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7630735954756094261","location":"北京","posted":"2026-04-20","team":"市场","title":"市场营销专家（活动营销方向）-抖音"}
-{"company":"ByteDance","first_seen":"2026-11-12","id":"bytedance:bytedance:7630765414016878901","location":"北京","posted":"2026-04-20","team":"产品经理","title":"商业化AI策略产品 - 国际化广告创意与品牌"}
+{"closed_at":"2026-11-22","company":"ByteDance","first_seen":"2026-11-12","id":"bytedance:bytedance:7630765414016878901","location":"北京","posted":"2026-04-20","team":"产品经理","title":"商业化AI策略产品 - 国际化广告创意与品牌"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7630812632279648517","location":"杭州","posted":"2026-04-20","skills":["redis"],"team":"后端","title":"国际支付高级工程师-全球网络"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7630812875963517189","location":"杭州","posted":"2026-04-20","team":"运营","title":"电商搜索行业运营 - 抖音搜索"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7630820081880402181","location":"深圳","posted":"2026-04-20","team":"产品","title":"高级AIGC产品经理（投稿工具）-抖音"}
@@ -1258,7 +1272,7 @@
 {"closed_at":"2026-11-14","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7631252330081077509","location":"北京","posted":"2026-04-21","team":"产品","title":"产品解决方案经理（AI方向） - TikTok直播"}
 {"company":"ByteDance","first_seen":"2026-11-16","id":"bytedance:bytedance:7631548003481225477","location":"上海","posted":"2026-04-22","team":"用户研究","title":"用户研究分析师-抖音内容生态与体验"}
 {"company":"ByteDance","first_seen":"2026-11-19","id":"bytedance:bytedance:7631554341821270277","location":"深圳","posted":"2026-04-22","team":"运营","title":"跨境物流美洲运营专家-TikTok Shop"}
-{"closed_at":"2026-11-18","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7631593379109767429","location":"上海","posted":"2026-04-22","team":"数据分析","title":"数据分析师（广告产品方向）-Global Business Solutions"}
+{"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7631593379109767429","location":"上海","posted":"2026-04-22","team":"数据分析","title":"数据分析师（广告产品方向）-Global Business Solutions"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7631794688454445365","location":"重庆","posted":"2026-04-23","team":"客服","title":"客服（直播高价值专属顾问）-体验与服务"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7631831811215100213","location":"上海","posted":"2026-04-23","skills":["c++"],"team":"研发","title":"嵌入式开发工程师-移动OS"}
 {"company":"ByteDance","first_seen":"2026-11-14","id":"bytedance:bytedance:7631882627995715845","location":"北京","posted":"2026-04-23","skills":["sql"],"team":"运营","title":"供给运营（品类经营方向）-抖音生活服务"}
@@ -1287,7 +1301,7 @@
 {"closed_at":"2026-11-12","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7636675825068788021","location":"深圳","posted":"2026-05-06","skills":["ci/cd","python","java","mysql","redis"],"team":"后端","title":"直播后端研发工程师-视频云"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7636680403371837701","location":"上海","posted":"2026-05-06","team":"用户研究","title":"用户研究-AI创新业务"}
 {"company":"ByteDance","first_seen":"2026-11-12","id":"bytedance:bytedance:7636700362530900229","location":"深圳","posted":"2026-05-06","team":"营销策划","title":"游戏全球内容营销传播专家-ONE Studio"}
-{"company":"ByteDance","first_seen":"2026-11-22","id":"bytedance:bytedance:7636713658731170053","location":"北京","posted":"2026-05-06","team":"产品","title":"线索行业广告策略产品经理-穿山甲"}
+{"closed_at":"2026-11-22","company":"ByteDance","first_seen":"2026-11-22","id":"bytedance:bytedance:7636713658731170053","location":"北京","posted":"2026-05-06","team":"产品","title":"线索行业广告策略产品经理-穿山甲"}
 {"closed_at":"2026-11-12","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7636751351460186421","location":"成都","posted":"2026-05-06","team":"运营","title":"模型训练-大模型安全群组"}
 {"closed_at":"2026-11-22","company":"ByteDance","first_seen":"2026-11-16","id":"bytedance:bytedance:7636983222752512261","location":"广州","posted":"2026-05-07","team":"销售","title":"游玩小组负责人-抖音生活服务（广州）"}
 {"closed_at":"2026-11-10","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7637044729075452213","location":"北京","posted":"2026-05-07","team":"商业运营","title":"Project Manager招商项目运营专家 - 国际化广告创意与品牌"}
@@ -1303,7 +1317,7 @@
 {"company":"ByteDance","first_seen":"2026-11-22","id":"bytedance:bytedance:7638458771246942517","location":"北京","posted":"2026-05-11","team":"产品经理","title":"产品经理（业务风控）-AI产品经理-TikTok业务风控"}
 {"company":"ByteDance","first_seen":"2026-11-20","id":"bytedance:bytedance:7638480466803853573","location":"北京","posted":"2026-05-11","team":"产品经理","title":"电商短视频用户产品经理-TikTok Shop"}
 {"closed_at":"2026-11-16","company":"ByteDance","first_seen":"2026-11-16","id":"bytedance:bytedance:7638536465727785269","location":"北京","posted":"2026-05-11","skills":["llm"],"team":"产品运营","title":"AI产品运营-抖音生活服务"}
-{"company":"ByteDance","first_seen":"2026-11-19","id":"bytedance:bytedance:7638615289605015861","location":"上海","posted":"2026-05-11","team":"运营","title":"战略分析与行业研究专家-抖音电商"}
+{"closed_at":"2026-11-22","company":"ByteDance","first_seen":"2026-11-19","id":"bytedance:bytedance:7638615289605015861","location":"上海","posted":"2026-05-11","team":"运营","title":"战略分析与行业研究专家-抖音电商"}
 {"closed_at":"2026-11-16","company":"ByteDance","first_seen":"2026-11-12","id":"bytedance:bytedance:7638649055107418373","location":"上海","posted":"2026-05-11","team":"销售","title":"大客户销售-抖音生活服务（深圳/上海）"}
 {"closed_at":"2026-11-22","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7638837350633621813","location":"深圳","posted":"2026-05-12","skills":["llm","javascript","typescript","sql"],"team":"安全","title":"AI安全防护治理专家 - 安全与风控"}
 {"closed_at":"2026-11-17","company":"ByteDance","first_seen":"2026-11-16","id":"bytedance:bytedance:7638942622912760117","location":"北京","posted":"2026-05-12","team":"产品","title":"用户体验平台产品经理 - 抖音电商"}
@@ -1385,7 +1399,7 @@
 {"closed_at":"2026-11-09","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7647870057997388037","location":"北京","posted":"2026-06-05","skills":["c++"],"team":"后端","title":"运筹优化研究员 - 基础技术"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7648259260179384581","location":"北京","posted":"2026-06-06","team":"产品经理","title":"基础平台产品专家 - 经营管理与平台"}
 {"closed_at":"2026-11-20","company":"ByteDance","first_seen":"2026-11-17","id":"bytedance:bytedance:7648855776983681333","location":"北京","posted":"2026-06-08","team":"运营","title":"服务策略运营（高价值）-体验与服务"}
-{"company":"ByteDance","first_seen":"2026-11-19","id":"bytedance:bytedance:7648858626295744821","location":"北京","posted":"2026-06-08","team":"运营","title":"达人营销运营（即梦国内/海外） - 剪映CapCut"}
+{"closed_at":"2026-11-22","company":"ByteDance","first_seen":"2026-11-19","id":"bytedance:bytedance:7648858626295744821","location":"北京","posted":"2026-06-08","team":"运营","title":"达人营销运营（即梦国内/海外） - 剪映CapCut"}
 {"company":"ByteDance","first_seen":"2026-11-18","id":"bytedance:bytedance:7648951436630853941","location":"上海","posted":"2026-06-08","team":"运营","title":"电商物流结算方案专家-TikTok Shop"}
 {"closed_at":"2026-11-10","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7648980838486690053","location":"深圳","posted":"2026-06-08","team":"研发","title":"整机架构师/专家-AI创新业务"}
 {"closed_at":"2026-11-10","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7649248835429189941","location":"北京","posted":"2026-06-09","team":"人力","title":"HRBP Leader（效率效能）-Data算法"}
@@ -1405,12 +1419,13 @@
 {"closed_at":"2026-11-22","company":"ByteDance","first_seen":"2026-11-17","id":"bytedance:bytedance:7651554432669108533","location":"北京","posted":"2026-06-15","team":"运营","title":"XR直播公会运营-PICO"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7651558805167573301","location":"上海","posted":"2026-06-15","team":"运营","title":"餐饮营销与活动运营（美国市场）-TikTok生活服务"}
 {"closed_at":"2026-11-14","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7651832487132563765","location":"北京","posted":"2026-06-16","skills":["c++"],"team":"研发","title":"AIGC算法工程师（AI达人/数字人方向） - Commercial AI"}
-{"company":"ByteDance","first_seen":"2026-11-19","id":"bytedance:bytedance:7651843149828704565","location":"北京","posted":"2026-06-16","team":"产品","title":"风控策略产品经理-抖音电商"}
+{"closed_at":"2026-11-22","company":"ByteDance","first_seen":"2026-11-19","id":"bytedance:bytedance:7651843149828704565","location":"北京","posted":"2026-06-16","team":"产品","title":"风控策略产品经理-抖音电商"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7651855436246599941","location":"北京","posted":"2026-06-16","team":"算法","title":"推荐算法工程师-抖音"}
+{"company":"ByteDance","first_seen":"2026-11-22","id":"bytedance:bytedance:7651856174828849461","location":"深圳","posted":"2026-06-16","team":"算法","title":"推荐算法工程师-抖音"}
 {"closed_at":"2026-11-20","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7651894500638230789","location":"北京","posted":"2026-06-16","skills":["python"],"team":"安全","title":"安全攻防工程师-安全与风控"}
 {"closed_at":"2026-11-16","company":"ByteDance","first_seen":"2026-11-12","id":"bytedance:bytedance:7651965169778870581","location":"上海","posted":"2026-06-16","team":"运营","title":"AI平台产品运营-TikTok Shop"}
 {"closed_at":"2026-11-10","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7651966760685914421","location":"北京","posted":"2026-06-16","team":"运营","title":"AI平台产品运营（策略方向）-TikTok Shop"}
-{"closed_at":"2026-11-16","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7651979149699483957","location":"上海","posted":"2026-06-16","team":"销售","title":"大客户广告销售Leader-食品饮料"}
+{"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7651979149699483957","location":"上海","posted":"2026-06-16","team":"销售","title":"大客户广告销售Leader-食品饮料"}
 {"closed_at":"2026-11-19","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7651982682775652661","location":"北京","posted":"2026-06-16","team":"销售","title":"大客户广告销售Leader-金融行业"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7652006780616526133","location":"北京","posted":"2026-06-16","skills":["python","php"],"team":"研发","title":"服务器NPI导入专家 - DCS"}
 {"closed_at":"2026-11-12","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7652018471010011397","location":"北京","posted":"2026-06-16","skills":["pytorch"],"team":"基础架构","title":"AI for Science性能优化工程师-Seed"}
@@ -1440,6 +1455,7 @@
 {"company":"ByteDance","first_seen":"2026-11-16","id":"bytedance:bytedance:7654909276363704629","location":"深圳","posted":"2026-06-24","team":"商业运营","title":"印尼半托管广告策略运营-TikTok Shop"}
 {"closed_at":"2026-11-22","company":"ByteDance","first_seen":"2026-11-12","id":"bytedance:bytedance:7654952500206340405","location":"上海","posted":"2026-06-24","team":"产品经理","title":"策略产品经理（商家达人撮合方向）-TikTok生活服务"}
 {"company":"ByteDance","first_seen":"2026-11-14","id":"bytedance:bytedance:7655174944868288821","location":"上海","posted":"2026-06-25","team":"运营","title":"TikTok品牌产品策略与运营（北美市场）-Global Business Solutions"}
+{"company":"ByteDance","first_seen":"2026-11-22","id":"bytedance:bytedance:7655213427554601221","location":"北京","posted":"2026-06-25","team":"商务拓展BD","title":"AI产品生态伙伴拓展-火山引擎"}
 {"closed_at":"2026-11-22","company":"ByteDance","first_seen":"2026-11-18","id":"bytedance:bytedance:7655273634924382517","location":"北京","posted":"2026-06-25","team":"产品运营","title":"经营分析师-AI Data&Safety"}
 {"closed_at":"2026-11-22","company":"ByteDance","first_seen":"2026-11-20","id":"bytedance:bytedance:7655290695313426693","location":"北京","posted":"2026-06-25","team":"运营","title":"商品与内容公信力策略专家-抖音生活服务"}
 {"company":"ByteDance","first_seen":"2026-11-12","id":"bytedance:bytedance:7655329506633124101","location":"北京","posted":"2026-06-25","skills":["java"],"team":"研发","title":"IDC运维平台研发专家 - DCS"}
@@ -1465,7 +1481,7 @@
 {"company":"ByteDance","first_seen":"2026-11-12","id":"bytedance:bytedance:7657166072716429573","location":"北京","posted":"2026-06-30","team":"数据分析","title":"数据科学（AI业务） - 抖音电商"}
 {"company":"ByteDance","first_seen":"2026-11-16","id":"bytedance:bytedance:7657166155233380613","location":"上海","posted":"2026-06-30","team":"数据分析","title":"数据科学（AI方向） - 抖音电商"}
 {"closed_at":"2026-11-12","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7657184560123988229","location":"上海","posted":"2026-06-30","team":"算法","title":"电商定价与经营策略算法专家-Data"}
-{"closed_at":"2026-11-19","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7657410042866796805","location":"北京","posted":"2026-07-01","team":"客户端","title":"客户端开发工程师（SaaS方向）-抖音电商"}
+{"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7657410042866796805","location":"北京","posted":"2026-07-01","team":"客户端","title":"客户端开发工程师（SaaS方向）-抖音电商"}
 {"closed_at":"2026-11-14","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7657410692634577205","location":"杭州","posted":"2026-07-01","team":"交互设计","title":"AI产品设计师-飞书智能体平台（杭州/北京）"}
 {"closed_at":"2026-11-20","company":"ByteDance","first_seen":"2026-11-14","id":"bytedance:bytedance:7657438456649632053","location":"杭州","posted":"2026-07-01","team":"运营","title":"内容风控策略运营-商业信任与安全（杭州/北京）"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7657442148606396725","location":"北京","posted":"2026-07-01","skills":["java"],"team":"研发","title":"Agent研发工程师-抖音质量架构"}
@@ -1540,7 +1556,7 @@
 {"company":"ByteDance","first_seen":"2026-11-19","id":"bytedance:bytedance:7664551854852983093","location":"深圳","posted":"2026-07-20","team":"销售","title":"大客户销售（零售行业）-抖音生活服务（广州/深圳/杭州）"}
 {"closed_at":"2026-11-20","company":"ByteDance","first_seen":"2026-11-19","id":"bytedance:bytedance:7664588761406097717","location":"上海","posted":"2026-07-20","skills":["sql","erp"],"team":"市场","title":"市场营销经理（大制造汽车产业链）-Lark Field Marketing"}
 {"closed_at":"2026-11-14","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7664615239737460997","location":"北京","posted":"2026-07-20","team":"内审","title":"业务内控合规-体验与服务"}
-{"company":"ByteDance","first_seen":"2026-11-19","id":"bytedance:bytedance:7664806603446700293","location":"北京","posted":"2026-07-21","team":"运营","title":"风险服务专员（外呼方向） - 剪映CapCut"}
+{"closed_at":"2026-11-22","company":"ByteDance","first_seen":"2026-11-19","id":"bytedance:bytedance:7664806603446700293","location":"北京","posted":"2026-07-21","team":"运营","title":"风险服务专员（外呼方向） - 剪映CapCut"}
 {"company":"ByteDance","first_seen":"2026-11-14","id":"bytedance:bytedance:7664888048740239669","location":"北京","posted":"2026-07-21","team":"产品经理","title":"搜索策略产品Leader（国际化生活服务）-TikTok"}
 {"closed_at":"2026-11-10","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7664903777337739573","location":"上海","posted":"2026-07-21","team":"运营","title":"风控情报运营专家-TikTok Shop"}
 {"closed_at":"2026-11-14","company":"ByteDance","first_seen":"2026-11-12","id":"bytedance:bytedance:7665185556301187333","location":"北京","posted":"2026-07-22","team":"财务","title":"财务BP-集团职能"}
@@ -1564,11 +1580,11 @@
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7667518397278112053","location":"上海","posted":"2026-07-28","team":"职能 / 支持","title":"AI安防产品经理"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7667533927876151605","location":"北京","posted":"2026-07-28","team":"采购","title":"国际数据中心网络商务专家 - AI算力基础设施"}
 {"company":"ByteDance","first_seen":"2026-11-18","id":"bytedance:bytedance:7667545633206012213","location":"上海","posted":"2026-07-28","team":"产品","title":"营销产品运营-TikTok Shop"}
-{"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7667552556821956869","location":"北京","posted":"2026-07-28","skills":["go","java","python","redis"],"team":"研发","title":"后端开发工程师（增长方向）"}
+{"closed_at":"2026-11-22","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7667552556821956869","location":"北京","posted":"2026-07-28","skills":["go","java","python","redis"],"team":"研发","title":"后端开发工程师（增长方向）"}
 {"closed_at":"2026-11-18","company":"ByteDance","first_seen":"2026-11-16","id":"bytedance:bytedance:7667781765817813253","location":"上海","posted":"2026-07-29","team":"产品","title":"AI社交产品（内容策略）-TikTok"}
 {"closed_at":"2026-11-22","company":"ByteDance","first_seen":"2026-11-18","id":"bytedance:bytedance:7667788998584305925","location":"上海","posted":"2026-07-29","team":"产品经理","title":"物流轨迹产品经理-TikTok Shop"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7667792534320613685","location":"广州","posted":"2026-07-29","team":"销售","title":"大客户广告销售Leader-日化行业"}
-{"company":"ByteDance","first_seen":"2026-11-14","id":"bytedance:bytedance:7667799984544581941","location":"北京","posted":"2026-07-29","team":"运营","title":"游玩行业营销Leader-抖音生活服务"}
+{"closed_at":"2026-11-22","company":"ByteDance","first_seen":"2026-11-14","id":"bytedance:bytedance:7667799984544581941","location":"北京","posted":"2026-07-29","team":"运营","title":"游玩行业营销Leader-抖音生活服务"}
 {"closed_at":"2026-11-18","company":"ByteDance","first_seen":"2026-11-14","id":"bytedance:bytedance:7667816003496151301","location":"北京","posted":"2026-07-29","team":"产品经理","title":"AI短剧内容策略产品 - 番茄小说"}
 {"closed_at":"2026-11-12","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7667831564391500085","location":"北京","posted":"2026-07-29","team":"销售","title":"电脑数码行业大客户广告销售 - 抖音电商"}
 {"company":"ByteDance","first_seen":"2026-11-17","id":"bytedance:bytedance:7667832628351715637","location":"广州","posted":"2026-07-29","team":"销售","title":"SKA手机行业大客户广告销售 - 抖音电商"}
@@ -1585,6 +1601,7 @@
 {"closed_at":"2026-11-19","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7669627934847928581","location":"北京","posted":"2026-08-03","skills":["python"],"team":"后端","title":"系统可用性与性能工程专家（GPU性能与稳定性工程师） - AI算力基础设施"}
 {"closed_at":"2026-11-18","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7669712484220307717","location":"北京","posted":"2026-08-03","team":"产品运营","title":"服务零售产品运营（广告方向）-抖音生活服务"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7669713975020357893","location":"深圳","posted":"2026-08-03","skills":["llm"],"team":"研发","title":"电商安全算法工程师-TikTok Shop"}
+{"company":"ByteDance","first_seen":"2026-11-22","id":"bytedance:bytedance:7669716317955475717","location":"北京","posted":"2026-08-03","skills":["linux"],"team":"研发","title":"芯片系统软件工程师（存储/高速IO/DFX方向） - 芯片研发"}
 {"company":"ByteDance","first_seen":"2026-11-12","id":"bytedance:bytedance:7669752636237433093","location":"北京","posted":"2026-08-03","team":"产品经理","title":"搜索广告流量策略产品经理（AI智能体广告方向）-抖音生活服务"}
 {"closed_at":"2026-11-12","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7669770869686520117","location":"北京","posted":"2026-08-03","team":"运营","title":"AI本地化翻配运营 - 国际化短剧"}
 {"closed_at":"2026-11-14","company":"ByteDance","first_seen":"2026-11-11","id":"bytedance:bytedance:7669847754177448245","location":"上海","posted":"2026-08-03","team":"研发","title":"AI Infra工程师（芯片平台） - 芯片研发"}
@@ -1598,7 +1615,7 @@
 {"closed_at":"2026-11-20","company":"ByteDance","first_seen":"2026-11-16","id":"bytedance:bytedance:7670479839010326789","location":"深圳","posted":"2026-08-05","team":"运营","title":"质量控制与路由管理-TikTok Shop"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7670762086656264453","location":"北京","posted":"2026-08-06","team":"前端","title":"游戏客户端开发工程师（代号对决） - Bluesea Studio"}
 {"company":"ByteDance","first_seen":"2026-11-19","id":"bytedance:bytedance:7670826156086987061","location":"北京","posted":"2026-08-06","team":"算法","title":"Agent大模型算法专家（抖音保险） - 内容消费与非闭环营销"}
-{"closed_at":"2026-11-20","company":"ByteDance","first_seen":"2026-11-18","id":"bytedance:bytedance:7670840049478617349","location":"上海","posted":"2026-08-06","team":"销售","title":"国际化渠道销售经理-Global Business Solutions"}
+{"company":"ByteDance","first_seen":"2026-11-18","id":"bytedance:bytedance:7670840049478617349","location":"上海","posted":"2026-08-06","team":"销售","title":"国际化渠道销售经理-Global Business Solutions"}
 {"company":"ByteDance","first_seen":"2026-11-12","id":"bytedance:bytedance:7670857671521978629","location":"深圳","posted":"2026-08-06","skills":["c++"],"team":"研发","title":"RTOS嵌入式开发工程师 - 移动OS"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7670872546896333109","location":"北京","posted":"2026-08-06","team":"游戏策划","title":"战斗策划（代号对决） - Bluesea Studio"}
 {"closed_at":"2026-11-18","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7670873393064315189","location":"北京","posted":"2026-08-06","team":"游戏策划","title":"基础功能/玩法方向系统策划 - Bluesea Studio"}
@@ -1609,6 +1626,7 @@
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7671195317068728581","location":"北京","posted":"2026-08-07","team":"运营","title":"商家生态策略专家-抖音生活服务"}
 {"closed_at":"2026-11-22","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7671587177622341893","location":"北京","posted":"2026-08-08","team":"职能 / 支持","title":"工程经理（土建）"}
 {"closed_at":"2026-11-17","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7672232967771703605","location":"北京","posted":"2026-08-10","team":"市场","title":"公益项目经理-基金会"}
+{"company":"ByteDance","first_seen":"2026-11-22","id":"bytedance:bytedance:7672275282863016245","location":"北京","posted":"2026-08-10","skills":["sql"],"team":"财务","title":"财务BP-生活服务"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7672306131167774981","location":"北京","posted":"2026-08-10","team":"运营","title":"生态治理策略运营（汽车垂类方向）-CQC"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7672315812338747701","location":"青岛","posted":"2026-08-10","team":"市场","title":"CM-抖音生活服务（山东）"}
 {"closed_at":"2026-11-14","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7672335879717603589","location":"广州","posted":"2026-08-10","skills":["kotlin","swift","c++","c#"],"team":"前端","title":"AI全栈开发工程师 - 抖音直播"}
@@ -1619,7 +1637,7 @@
 {"company":"ByteDance","first_seen":"2026-11-11","id":"bytedance:bytedance:7672602400725895477","location":"北京","posted":"2026-08-11","skills":["java"],"team":"研发","title":"电商搜索架构工程师 - 搜索架构"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7672602625905166645","location":"北京","posted":"2026-08-11","team":"产品","title":"高级AI产品经理-抖音生活服务"}
 {"closed_at":"2026-11-19","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7672617054890182965","location":"北京","posted":"2026-08-11","team":"销售","title":"大客户广告销售Leader-服饰行业"}
-{"company":"ByteDance","first_seen":"2026-11-19","id":"bytedance:bytedance:7672650408183646517","location":"深圳","posted":"2026-08-11","team":"产品","title":"资深产品专家（醒图） - 剪映CapCut"}
+{"closed_at":"2026-11-22","company":"ByteDance","first_seen":"2026-11-19","id":"bytedance:bytedance:7672650408183646517","location":"深圳","posted":"2026-08-11","team":"产品","title":"资深产品专家（醒图） - 剪映CapCut"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7672666727587121461","location":"深圳","posted":"2026-08-11","team":"算法","title":"通用基础模型研究员 - AI for Science"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7672680294810143029","location":"北京","posted":"2026-08-11","team":"运营","title":"版权治理运营（红果短剧真人剧-国际化方向）-CQC"}
 {"closed_at":"2026-11-12","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7672752886435186997","location":"北京","posted":"2026-08-11","team":"游戏策划","title":"游戏策划 - Bluesea Studio"}
@@ -1700,6 +1718,7 @@
 {"company":"ByteDance","first_seen":"2026-11-11","id":"bytedance:bytedance:7678970608819292469","location":"北京","posted":"2026-08-28","skills":["python"],"team":"数据分析","title":"风险数据分析专家 - 抖音社区治理"}
 {"closed_at":"2026-11-22","company":"ByteDance","first_seen":"2026-11-12","id":"bytedance:bytedance:7678975495201835269","location":"深圳","posted":"2026-08-28","team":"市场","title":"海外资深营销经理（3A射击产品全球发行方向） - ONE Studio"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7678980569913084165","location":"上海","posted":"2026-08-28","skills":["llm"],"team":"产品","title":"豆包AI大模型产品解决方案（LLM Demo&技术探索方向） - 火山方舟"}
+{"company":"ByteDance","first_seen":"2026-11-22","id":"bytedance:bytedance:7678983476342950149","location":"上海","posted":"2026-08-28","skills":["rust"],"team":"产品","title":"豆包AI大模型评测产品解决方案（Coding/Agent方向） - 火山方舟"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7678994010334071045","location":"上海","posted":"2026-08-28","team":"销售","title":"高级销售经理（出海方向） - 火山引擎"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7679008324763519285","location":"北京","posted":"2026-08-28","team":"产品","title":"达人策略产品经理-抖音生活服务"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7679764026495027509","location":"北京","posted":"2026-08-30","team":"产品运营","title":"内容治理AI产品运营 - 抖音社区治理"}
@@ -1707,6 +1726,7 @@
 {"company":"ByteDance","first_seen":"2026-11-20","id":"bytedance:bytedance:7680036366656768261","location":"北京","posted":"2026-08-31","team":"产品","title":"增长策略产品负责人（投放方向） - TikTok用户增长"}
 {"closed_at":"2026-11-10","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7680071202924480821","location":"成都","posted":"2026-08-31","team":"职能 / 支持","title":"安全审计工程师 - IT"}
 {"closed_at":"2026-11-12","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7680071311863531781","location":"成都","posted":"2026-08-31","team":"职能 / 支持","title":"安全运营工程师 - IT"}
+{"company":"ByteDance","first_seen":"2026-11-22","id":"bytedance:bytedance:7680074825067579653","location":"上海","posted":"2026-08-31","team":"运营","title":"创意产品策略运营（国际化） - 规模化增长"}
 {"company":"ByteDance","first_seen":"2026-11-16","id":"bytedance:bytedance:7680100852829423877","location":"上海","posted":"2026-08-31","skills":["redis"],"team":"后端","title":"国际支付资深工程师-支付网络"}
 {"closed_at":"2026-11-19","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7680104759177332997","location":"北京","posted":"2026-08-31","team":"产品","title":"AI策略产品经理（搜索×feed方向） - 抖音搜索"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7680135278717028613","location":"北京","posted":"2026-08-31","team":"产品经理","title":"支付行业运营（乘车码策略方向）-财经"}
@@ -1734,7 +1754,7 @@
 {"closed_at":"2026-11-17","company":"ByteDance","first_seen":"2026-11-11","id":"bytedance:bytedance:7681233556527122693","location":"上海","posted":"2026-09-03","team":"运营","title":"招商运营专家（奢品生活方式） - 抖音电商"}
 {"company":"ByteDance","first_seen":"2026-11-14","id":"bytedance:bytedance:7681271603582634245","location":"北京","posted":"2026-09-03","team":"运营","title":"体育产品运营-中国内容与合作"}
 {"closed_at":"2026-11-10","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7681347266269628677","location":"北京","posted":"2026-09-03","team":"产品经理","title":"用户体验AI产品经理（售后场景） - 抖音电商"}
-{"closed_at":"2026-11-22","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7681586604777064709","location":"北京","posted":"2026-09-04","skills":["sql"],"team":"战略","title":"战略分析师（轮岗培养专项）"}
+{"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7681586604777064709","location":"北京","posted":"2026-09-04","skills":["sql"],"team":"战略","title":"战略分析师（轮岗培养专项）"}
 {"company":"ByteDance","first_seen":"2026-11-17","id":"bytedance:bytedance:7681587009502628101","location":"北京","posted":"2026-09-04","reposts":1,"skills":["sql"],"team":"战略","title":"战略分析师-轮岗培养专项"}
 {"closed_at":"2026-11-14","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7681620497748166965","location":"西安","posted":"2026-09-04","team":"运营","title":"标准运营管理-商业生态与安全"}
 {"closed_at":"2026-11-09","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7681622797244074293","location":"上海","posted":"2026-09-04","skills":["java"],"team":"研发","title":"AI Agent架构师（东南亚业务）-TikTok Shop"}
@@ -1756,7 +1776,7 @@
 {"closed_at":"2026-11-14","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7683363761671293237","location":"上海","posted":"2026-09-09","team":"运营","title":"亚太新兴市场TikTok广告增长运营负责人-Global Business Solutions"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7683376742291130677","location":"北京","posted":"2026-09-09","team":"研发","title":"IDC技术标准规划专家（暖通方向） - DCE"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7683380765661514037","location":"北京","posted":"2026-09-09","team":"运营","title":"资深数据分析师（内容质量中心）-CQC"}
-{"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7683391654025677061","location":"北京","posted":"2026-09-09","team":"产品","title":"官网建站产品经理（北/上/深） - 火山引擎"}
+{"closed_at":"2026-11-22","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7683391654025677061","location":"北京","posted":"2026-09-09","team":"产品","title":"官网建站产品经理（北/上/深） - 火山引擎"}
 {"closed_at":"2026-11-16","company":"ByteDance","first_seen":"2026-11-12","id":"bytedance:bytedance:7683406857789294853","location":"上海","posted":"2026-09-09","team":"产品","title":"电商运营AI产品经理（数字员工方向）-TikTok Shop"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7683420412701804853","location":"北京","posted":"2026-09-09","team":"运营","title":"和田玉行业运营 - 抖音电商"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7683429313790855477","location":"北京","posted":"2026-09-09","team":"财务","title":"中国税务BP Leader"}
@@ -1777,7 +1797,7 @@
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7683824496882714885","location":"上海","posted":"2026-09-10","team":"产品","title":"豆包语音大模型ToB产品经理 - Data语音"}
 {"closed_at":"2026-11-16","company":"ByteDance","first_seen":"2026-11-14","id":"bytedance:bytedance:7683828003692218677","location":"北京","posted":"2026-09-10","team":"运营","title":"头程运输市场推广-TikTok Shop"}
 {"closed_at":"2026-11-09","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7684096236404738357","location":"深圳","posted":"2026-09-11","skills":["python"],"team":"安全","title":"安全攻防工程师（渗透测试方向） - 安全与风控"}
-{"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7684115403955161349","location":"杭州","posted":"2026-09-11","team":"游戏美术","title":"游戏资深3D角色模型专家 - 江南工作室"}
+{"closed_at":"2026-11-22","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7684115403955161349","location":"杭州","posted":"2026-09-11","team":"游戏美术","title":"游戏资深3D角色模型专家 - 江南工作室"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7684117397223557381","location":"北京","posted":"2026-09-11","team":"产品","title":"欧美商城主框架产品经理-TikTok Shop"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7684121587620202805","location":"成都","posted":"2026-09-11","team":"运营","title":"搜索安全治理运营-CQC"}
 {"closed_at":"2026-11-18","company":"ByteDance","first_seen":"2026-11-10","id":"bytedance:bytedance:7684126333261236485","location":"北京","posted":"2026-09-11","team":"产品","title":"欧美商城营销玩法产品经理-TikTok Shop"}
@@ -1792,6 +1812,7 @@
 {"closed_at":"2026-11-16","company":"ByteDance","first_seen":"2026-11-12","id":"bytedance:bytedance:7685278934675867909","location":"上海","posted":"2026-09-14","team":"运营","title":"中东商家策略运营-TikTok Shop"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7685324387777890565","location":"上海","posted":"2026-09-14","team":"运营","title":"TikTok品牌广告产品策略与运营（日本/澳洲市场）-Global Business Solutions"}
 {"closed_at":"2026-11-11","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7685328288833243397","location":"深圳","posted":"2026-09-14","team":"运营","title":"AI创作者运营 - 剪映CapCut"}
+{"company":"ByteDance","first_seen":"2026-11-22","id":"bytedance:bytedance:7685341309393881397","location":"北京","posted":"2026-09-14","team":"销售","title":"渠道销售Leader-中国广告销售平台"}
 {"company":"ByteDance","first_seen":"2026-11-16","id":"bytedance:bytedance:7685586800237644037","location":"上海","posted":"2026-09-15","team":"运营","title":"TikTok电商广告产品策略与运营（日本市场）-Global Business Solutions"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7685606700820547845","location":"北京","posted":"2026-09-15","team":"运营","title":"众包调度策略Leader-CQC"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7685618686468622597","location":"重庆","posted":"2026-09-15","team":"销售","title":"大客户销售（高星酒店方向）-抖音生活服务（重庆）"}
@@ -1848,7 +1869,7 @@
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7688695199577524533","location":"深圳","posted":"2026-09-23","team":"产品运营","title":"AI产品运营 - 抖音平台"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7688696352165923077","location":"北京","posted":"2026-09-23","team":"用户运营","title":"申诉体验业务运营专家（泛娱乐） - 抖音社区治理"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7688697399954999605","location":"北京","posted":"2026-09-23","team":"产品经理","title":"AI平台产品经理 - 抖音平台"}
-{"closed_at":"2026-11-16","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7688708412667185461","location":"上海","posted":"2026-09-23","team":"基础架构","title":"AIOps Harness工程师 - 计算"}
+{"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7688708412667185461","location":"上海","posted":"2026-09-23","team":"基础架构","title":"AIOps Harness工程师 - 计算"}
 {"closed_at":"2026-11-16","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7688711756899076405","location":"北京","posted":"2026-09-23","team":"产品","title":"资深产品增长专家（PLG） - 飞书商业化"}
 {"company":"ByteDance","first_seen":"2026-11-12","id":"bytedance:bytedance:7688738952744618293","location":"北京","posted":"2026-09-23","team":"项目管理","title":"CDN资源规划专家 - 网络"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7688937716266469637","location":"北京","posted":"2026-09-24","team":"行政设施","title":"食品安全与健康运营"}
@@ -1867,7 +1888,7 @@
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7690787561724004613","location":"深圳","posted":"2026-09-29","team":"产品","title":"AI工具产品（PC专业版） - 剪映CapCut"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7690888254084286725","location":"成都","posted":"2026-09-29","team":"运营","title":"官方抖店运营支持-CQC"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7690964223816599861","location":"上海","posted":"2026-09-29","team":"产品","title":"AI用户体验评测产品经理 - 抖音电商"}
-{"company":"ByteDance","first_seen":"2026-11-19","id":"bytedance:bytedance:7694114665078999301","location":"上海","posted":"2026-10-08","team":"运营","title":"策略分析专家（用户增长方向）-TikTok Shop"}
+{"closed_at":"2026-11-22","company":"ByteDance","first_seen":"2026-11-19","id":"bytedance:bytedance:7694114665078999301","location":"上海","posted":"2026-10-08","team":"运营","title":"策略分析专家（用户增长方向）-TikTok Shop"}
 {"closed_at":"2026-11-17","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7694176528276425013","location":"北京","posted":"2026-10-08","team":"职能 / 支持","title":"舆情管理专家"}
 {"closed_at":"2026-11-09","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7694187678435117317","location":"北京","posted":"2026-10-08","team":"职能 / 支持","title":"采购BP"}
 {"company":"ByteDance","first_seen":"2026-11-14","id":"bytedance:bytedance:7694209113894881589","location":"北京","posted":"2026-10-08","team":"职能 / 支持","title":"房产项目中台"}
@@ -1882,7 +1903,8 @@
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7694587778420607285","location":"北京","posted":"2026-10-09","team":"硬件","title":"芯片研发质量工程师（存算与AI） - 芯片研发"}
 {"company":"ByteDance","first_seen":"2026-11-10","id":"bytedance:bytedance:7694589388294277429","location":"北京","posted":"2026-10-09","team":"硬件","title":"DTCO工程师（存算与AI） - 芯片研发"}
 {"closed_at":"2026-11-09","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7694589927579699461","location":"北京","posted":"2026-10-09","team":"研发","title":"AI编译器专家（存算与AI） - 芯片研发"}
-{"closed_at":"2026-11-22","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7694604056226334981","location":"北京","posted":"2026-10-09","team":"研发","title":"芯片DFT工程师（芯片平台） - 芯片研发"}
+{"company":"ByteDance","first_seen":"2026-11-22","id":"bytedance:bytedance:7694590729039857925","location":"北京","posted":"2026-10-09","skills":["c++"],"team":"研发","title":"AI存储固件开发工程师中后端（存算与AI） - 芯片研发"}
+{"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7694604056226334981","location":"北京","posted":"2026-10-09","team":"研发","title":"芯片DFT工程师（芯片平台） - 芯片研发"}
 {"company":"ByteDance","first_seen":"2026-11-16","id":"bytedance:bytedance:7694605581970049333","location":"北京","posted":"2026-10-09","team":"研发","title":"芯片综合/STA工程师（芯片平台） - 芯片研发"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7694606245056235829","location":"北京","posted":"2026-10-09","team":"研发","title":"芯片封装设计/SIPI（芯片平台） - 芯片研发"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7694607807261329717","location":"北京","posted":"2026-10-09","skills":["c++"],"team":"研发","title":"芯片ATE测试（芯片平台） - 芯片研发"}
@@ -1890,13 +1912,13 @@
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7694623534958168373","location":"杭州","posted":"2026-10-09","team":"数据分析","title":"数据分析师 - 飞书&豆包工作"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7694625063519439109","location":"北京","posted":"2026-10-09","skills":["jira","scrum"],"team":"采购","title":"项目运营经理（芯片设计/存算与AI） - 芯片研发"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7694627235383412997","location":"北京","posted":"2026-10-09","team":"研发","title":"高速接口资深驱动工程师（存算与AI） - 芯片研发"}
-{"closed_at":"2026-11-20","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7694627777103071541","location":"北京","posted":"2026-10-09","team":"研发","title":"底层软件高级工程师（存算与AI） - 芯片研发"}
+{"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7694627777103071541","location":"北京","posted":"2026-10-09","team":"研发","title":"底层软件高级工程师（存算与AI） - 芯片研发"}
 {"closed_at":"2026-11-09","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7694627777123698949","location":"北京","posted":"2026-10-09","skills":["c++"],"team":"研发","title":"研发效能平台开发工程师（存算与AI） - 芯片研发"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7694628330043115781","location":"北京","posted":"2026-10-09","skills":["c++"],"team":"研发","title":"AI存储固件开发工程师（前端/存算与AI） - 芯片研发"}
 {"company":"ByteDance","first_seen":"2026-11-17","id":"bytedance:bytedance:7694628356362701061","location":"北京","posted":"2026-10-09","skills":["pytorch"],"team":"研发","title":"大模型框架专家（存算与AI） - 芯片研发"}
 {"company":"ByteDance","first_seen":"2026-11-12","id":"bytedance:bytedance:7694628356377037109","location":"北京","posted":"2026-10-09","skills":["git"],"team":"研发","title":"高性能算子专家（存算与AI） - 芯片研发"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7694660446596679941","location":"北京","posted":"2026-10-09","team":"运营","title":"精选联盟AI策略运营 - 抖音电商"}
-{"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7694660759397927221","location":"北京","posted":"2026-10-09","team":"产品","title":"达运平台AI产品经理-抖音生活服务"}
+{"closed_at":"2026-11-22","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7694660759397927221","location":"北京","posted":"2026-10-09","team":"产品","title":"达运平台AI产品经理-抖音生活服务"}
 {"closed_at":"2026-11-12","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7694691949685934389","location":"北京","posted":"2026-10-09","team":"研发","title":"光学系统工程师（人机交互传感系统） - PICO"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7694710605819234613","location":"杭州","posted":"2026-10-09","team":"销售","title":"大客户广告销售-服饰行业"}
 {"closed_at":"2026-11-09","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7694863216956901637","location":"北京","posted":"2026-10-10","team":"产品运营","title":"品牌公关及传播专家 - TikTok直播"}
@@ -1921,7 +1943,7 @@
 {"closed_at":"2026-11-18","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7695764981346126133","location":"杭州","posted":"2026-10-12","skills":["typescript"],"team":"客户端","title":"AI Native游戏引擎工程师 - 抖音直播"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7695767491572566277","location":"上海","posted":"2026-10-12","team":"产品","title":"AI产品经理（知识与评测方向）-TikTok Shop"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7695771890045356293","location":"北京","posted":"2026-10-12","team":"硬件","title":"芯片项目质量保证工程师（AI芯片） - 芯片研发"}
-{"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7695774303719278853","location":"北京","posted":"2026-10-12","team":"运营","title":"Seedance2.5评测专家（导演/编剧/美术/摄影/表演/动作/服装） - 火山方舟"}
+{"closed_at":"2026-11-22","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7695774303719278853","location":"北京","posted":"2026-10-12","team":"运营","title":"Seedance2.5评测专家（导演/编剧/美术/摄影/表演/动作/服装） - 火山方舟"}
 {"closed_at":"2026-11-12","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7695796396142659893","location":"北京","posted":"2026-10-12","skills":["kubernetes"],"team":"产品经理","title":"可观测产品专家 - 计算"}
 {"closed_at":"2026-11-16","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7695974102095923461","location":"北京","posted":"2026-10-13","team":"商业产品（广告）","title":"广告策略产品经理（小游戏行业）-中国广告产品"}
 {"closed_at":"2026-11-12","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7696016358357731637","location":"北京","posted":"2026-10-13","team":"产品经理","title":"商家举报中心AI产品经理 - 抖音电商"}
@@ -1987,11 +2009,11 @@
 {"closed_at":"2026-11-12","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7698594388091832629","location":"杭州","posted":"2026-10-20","skills":["c++","php","java"],"team":"研发","title":"后端研发工程师（内容治理方向）-TikTok Shop"}
 {"company":"ByteDance","first_seen":"2026-11-16","id":"bytedance:bytedance:7698597171231705349","location":"上海","posted":"2026-10-20","team":"运营","title":"高级策略运营专家 - 抖音电商"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7698625225357658373","location":"上海","posted":"2026-10-20","team":"产品","title":"供应链补货计划产品经理-TikTok Shop"}
-{"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7698639420145256709","location":"上海","posted":"2026-10-20","team":"运营","title":"商业化产品运营负责人-日本市场"}
+{"closed_at":"2026-11-22","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7698639420145256709","location":"上海","posted":"2026-10-20","team":"运营","title":"商业化产品运营负责人-日本市场"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7698677253309090053","location":"北京","posted":"2026-10-20","team":"游戏运营","title":"游戏海外社区运营 - 绿洲工作室"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7698710238586128693","location":"北京","posted":"2026-10-20","team":"产品运营","title":"产品运营专家-巨量AI工作台"}
 {"closed_at":"2026-11-14","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7698769845387872565","location":"上海","posted":"2026-10-20","team":"运营","title":"机构运营（中东区域）-TikTok Shop"}
-{"closed_at":"2026-11-17","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7698956287681710389","location":"上海","posted":"2026-10-21","team":"用户运营","title":"支付风控运营-Global Payment"}
+{"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7698956287681710389","location":"上海","posted":"2026-10-21","team":"用户运营","title":"支付风控运营-Global Payment"}
 {"company":"ByteDance","first_seen":"2026-11-19","id":"bytedance:bytedance:7698970077220358453","location":"北京","posted":"2026-10-21","team":"产品","title":"AI营销产品专家（即梦） - 剪映CapCut"}
 {"company":"ByteDance","first_seen":"2026-11-20","id":"bytedance:bytedance:7699002695747881221","location":"广州","posted":"2026-10-21","team":"项目管理","title":"游戏日语监修PM - Glow Studio"}
 {"closed_at":"2026-11-19","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7699013469458893061","location":"深圳","posted":"2026-10-21","skills":["photoshop"],"team":"设计","title":"创意视觉多媒体设计师 - 剪映CapCut"}
@@ -2006,13 +2028,13 @@
 {"company":"ByteDance","first_seen":"2026-11-19","id":"bytedance:bytedance:7699377832187627829","location":"上海","posted":"2026-10-22","team":"运营","title":"新中式服饰类目行业运营 - 抖音电商"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7699388409769740597","location":"杭州","posted":"2026-10-22","team":"游戏策划","title":"AI游戏策划 - A1"}
 {"closed_at":"2026-11-16","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7699411071317199109","location":"北京","posted":"2026-10-22","team":"运营","title":"闭环广告策略运营（国际化） - 规模化增长"}
-{"company":"ByteDance","first_seen":"2026-11-18","id":"bytedance:bytedance:7699429593900026117","location":"上海","posted":"2026-10-22","team":"数据分析","title":"高级数据分析Leader - 抖音UGC"}
+{"closed_at":"2026-11-22","company":"ByteDance","first_seen":"2026-11-18","id":"bytedance:bytedance:7699429593900026117","location":"上海","posted":"2026-10-22","team":"数据分析","title":"高级数据分析Leader - 抖音UGC"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7699444627406997765","location":"北京","posted":"2026-10-22","team":"运营","title":"内容安全治理策略运营（IM方向） - 抖音社区治理"}
 {"company":"ByteDance","first_seen":"2026-11-16","id":"bytedance:bytedance:7699460979243731253","location":"北京","posted":"2026-10-22","team":"产品","title":"OS软件产品经理 - AI创新业务"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7699462536354367749","location":"上海","posted":"2026-10-22","team":"编辑","title":"AI模型数据运营（韩语方向） - TikTok"}
 {"closed_at":"2026-11-16","company":"ByteDance","first_seen":"2026-11-12","id":"bytedance:bytedance:7699491257734826293","location":"北京","posted":"2026-10-22","team":"项目管理","title":"研发PMO/TPM专家（流程管理及效能） - 抖音研发"}
 {"company":"ByteDance","first_seen":"2026-11-11","id":"bytedance:bytedance:7699494184877295925","location":"广州","posted":"2026-10-22","team":"销售","title":"制造行业大客户销售经理 - 飞书商业化"}
-{"closed_at":"2026-11-09","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7699540176914041141","location":"北京","posted":"2026-10-22","team":"职能 / 支持","title":"供应链数字化实施专家（采销交易流） - AI算力基础设施"}
+{"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7699540176914041141","location":"北京","posted":"2026-10-22","team":"职能 / 支持","title":"供应链数字化实施专家（采销交易流） - AI算力基础设施"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7699712723630246197","location":"北京","posted":"2026-10-23","team":"运营","title":"账号治理体验运营 - 抖音社区治理"}
 {"closed_at":"2026-11-14","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7699732718445775109","location":"北京","posted":"2026-10-23","team":"产品运营","title":"AI编剧提示词工程师（短剧） - TikTok"}
 {"company":"ByteDance","first_seen":"2026-11-16","id":"bytedance:bytedance:7699733984670157109","location":"北京","posted":"2026-10-23","team":"法务","title":"产品法务-全球新兴业务（北京/上海）"}
@@ -2021,7 +2043,7 @@
 {"closed_at":"2026-11-12","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7699755891672074501","location":"北京","posted":"2026-10-23","team":"运营","title":"红果短剧分发运营策略-CQC"}
 {"closed_at":"2026-11-20","company":"ByteDance","first_seen":"2026-11-16","id":"bytedance:bytedance:7699768079263762693","location":"上海","posted":"2026-10-23","team":"运营","title":"规模化作者高级运营（直播作者） - 抖音电商"}
 {"closed_at":"2026-11-17","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7700857347537586437","location":"北京","posted":"2026-10-26","team":"职能 / 支持","title":"AI资源拓展及供应商管理"}
-{"company":"ByteDance","first_seen":"2026-11-12","id":"bytedance:bytedance:7700882479015676213","location":"深圳","posted":"2026-10-26","team":"数据分析","title":"数据分析专家（MaaS） - 火山方舟"}
+{"closed_at":"2026-11-22","company":"ByteDance","first_seen":"2026-11-12","id":"bytedance:bytedance:7700882479015676213","location":"深圳","posted":"2026-10-26","team":"数据分析","title":"数据分析专家（MaaS） - 火山方舟"}
 {"closed_at":"2026-11-18","company":"ByteDance","first_seen":"2026-11-12","id":"bytedance:bytedance:7701173959208110389","location":"上海","posted":"2026-10-27","team":"职能 / 支持","title":"房产规划运营"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7701178536519698693","location":"上海","posted":"2026-10-27","team":"运营","title":"交易搜索商家策略运营（For豆包平台） - 抖音搜索"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7701180012741658885","location":"北京","posted":"2026-10-27","skills":["go","rust"],"team":"安全","title":"AI自动化蓝军 - 安全与风控"}
@@ -2033,7 +2055,7 @@
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7701246296413620485","location":"北京","posted":"2026-10-27","skills":["python","java"],"team":"研发","title":"解决方案专家（北京） - 国际化广告客户解决方案"}
 {"closed_at":"2026-11-17","company":"ByteDance","first_seen":"2026-11-16","id":"bytedance:bytedance:7701286750748526901","location":"北京","posted":"2026-10-27","team":"运营","title":"投放策略负责人 - 国际化短剧"}
 {"closed_at":"2026-11-12","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7701320006633818373","location":"上海","posted":"2026-10-27","team":"运营","title":"Seed Audio配音导演 - Data语音"}
-{"company":"ByteDance","first_seen":"2026-11-18","id":"bytedance:bytedance:7701549411838937397","location":"北京","posted":"2026-10-28","team":"运营","title":"异业合作流量策略运营经理 - 抖音"}
+{"closed_at":"2026-11-22","company":"ByteDance","first_seen":"2026-11-18","id":"bytedance:bytedance:7701549411838937397","location":"北京","posted":"2026-10-28","team":"运营","title":"异业合作流量策略运营经理 - 抖音"}
 {"closed_at":"2026-11-14","company":"ByteDance","first_seen":"2026-11-11","id":"bytedance:bytedance:7701589140090161461","location":"上海","posted":"2026-10-28","team":"运营","title":"东南亚跨境韩国商家运营-TikTok Shop"}
 {"closed_at":"2026-11-14","company":"ByteDance","first_seen":"2026-11-12","id":"bytedance:bytedance:7701641472892487941","location":"深圳","posted":"2026-10-28","skills":["react"],"team":"客户端","title":"AI全栈/客户端开发工程师（抖音相机） - 抖音研发"}
 {"closed_at":"2026-11-19","company":"ByteDance","first_seen":"2026-11-17","id":"bytedance:bytedance:7701648799695980805","location":"重庆","posted":"2026-10-28","team":"运营","title":"AI短剧版权运营支持（红果短剧）-CQC"}
@@ -2043,7 +2065,7 @@
 {"closed_at":"2026-11-09","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7701685809368582405","location":"上海","posted":"2026-10-28","team":"营销策划","title":"高级市场营销专家（品牌事件方向） - 火山引擎"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7701714567999457589","location":"北京","posted":"2026-10-28","team":"产品运营","title":"全球安全与合规培训平台产品与运营专家 - 安全与风控"}
 {"closed_at":"2026-11-14","company":"ByteDance","first_seen":"2026-11-11","id":"bytedance:bytedance:7701724682315647285","location":"北京","posted":"2026-10-28","team":"职能 / 支持","title":"业务需求分析运营专家（资产管理方向） - IT"}
-{"company":"ByteDance","first_seen":"2026-11-19","id":"bytedance:bytedance:7701930264368318773","location":"上海","posted":"2026-10-29","team":"运营","title":"作者策略运营（内容生态） - 抖音电商"}
+{"closed_at":"2026-11-22","company":"ByteDance","first_seen":"2026-11-19","id":"bytedance:bytedance:7701930264368318773","location":"上海","posted":"2026-10-29","team":"运营","title":"作者策略运营（内容生态） - 抖音电商"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7701931294507436341","location":"上海","posted":"2026-10-29","team":"编辑","title":"AI模型数据运营（小语种方向） - TikTok"}
 {"closed_at":"2026-11-16","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7701931958095792437","location":"上海","posted":"2026-10-29","team":"运营","title":"服务运营项目经理-TikTok Shop"}
 {"closed_at":"2026-11-14","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7701972441224284469","location":"北京","posted":"2026-10-29","team":"研发","title":"Android开发工程师 - 番茄小说/红果短剧/番茄畅听"}
@@ -2052,7 +2074,7 @@
 {"company":"ByteDance","first_seen":"2026-11-10","id":"bytedance:bytedance:7702085494392015109","location":"上海","posted":"2026-10-29","team":"市场","title":"B端营销专家（内容营销方向）-TikTok Shop"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7702089761675249973","location":"重庆","posted":"2026-10-29","team":"运营","title":"网文编辑（短篇方向）-CQC"}
 {"company":"ByteDance","first_seen":"2026-11-14","id":"bytedance:bytedance:7702389552017393925","location":"北京","posted":"2026-10-30","team":"研发","title":"骨干网架构师 - 网络"}
-{"closed_at":"2026-11-20","company":"ByteDance","first_seen":"2026-11-12","id":"bytedance:bytedance:7702391043962521861","location":"上海","posted":"2026-10-30","team":"商业运营","title":"韩国商家成长策略运营-TikTok Commerce"}
+{"company":"ByteDance","first_seen":"2026-11-12","id":"bytedance:bytedance:7702391043962521861","location":"上海","posted":"2026-10-30","team":"商业运营","title":"韩国商家成长策略运营-TikTok Commerce"}
 {"company":"ByteDance","first_seen":"2026-11-20","id":"bytedance:bytedance:7702392193471187253","location":"上海","posted":"2026-10-30","team":"商业运营","title":"韩国商城策略运营-TikTok Commerce"}
 {"company":"ByteDance","first_seen":"2026-11-18","id":"bytedance:bytedance:7702399676026898693","location":"北京","posted":"2026-10-30","team":"研发","title":"交换机硬件研发系统工程师 - 网络"}
 {"company":"ByteDance","first_seen":"2026-11-19","id":"bytedance:bytedance:7702406344177731845","location":"北京","posted":"2026-10-30","team":"产品","title":"大模型策略产品（交易方向） - 豆包"}
@@ -2072,12 +2094,12 @@
 {"closed_at":"2026-11-14","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7703565062540265733","location":"北京","posted":"2026-11-02","team":"财务","title":"核算与报表数字化专家"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7703839146218359093","location":"北京","posted":"2026-11-03","team":"商业运营","title":"行业运营（机票方向）-抖音生活服务"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7703912320143476997","location":"北京","posted":"2026-11-03","team":"产品","title":"豆包大模型产品解决方案架构师（行业线） - 火山方舟"}
-{"closed_at":"2026-11-20","company":"ByteDance","first_seen":"2026-11-16","id":"bytedance:bytedance:7703935959175498037","location":"北京","posted":"2026-11-03","team":"行政设施","title":"资产管理专员"}
+{"company":"ByteDance","first_seen":"2026-11-16","id":"bytedance:bytedance:7703935959175498037","location":"北京","posted":"2026-11-03","team":"行政设施","title":"资产管理专员"}
 {"closed_at":"2026-11-14","company":"ByteDance","first_seen":"2026-11-11","id":"bytedance:bytedance:7704148276816808197","location":"北京","posted":"2026-11-04","team":"运营","title":"AI创作Agent评测策略运营（TikTok旗下图文独立端） - TikTok图文社区"}
 {"company":"ByteDance","first_seen":"2026-11-16","id":"bytedance:bytedance:7704181518743079173","location":"上海","posted":"2026-11-04","team":"用户运营","title":"用户增长产品运营 - TikTok生活服务"}
 {"company":"ByteDance","first_seen":"2026-11-10","id":"bytedance:bytedance:7704199867400194309","location":"北京","posted":"2026-11-04","team":"运营","title":"撮合运营 - 红果短剧"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7704220144345401605","location":"北京","posted":"2026-11-04","team":"硬件","title":"硬件测试工程师 - PICO"}
-{"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7704250066689460533","location":"上海","posted":"2026-11-04","team":"运营","title":"电商广告策略运营（澳洲市场）-Global Business Solutions"}
+{"closed_at":"2026-11-22","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7704250066689460533","location":"上海","posted":"2026-11-04","team":"运营","title":"电商广告策略运营（澳洲市场）-Global Business Solutions"}
 {"company":"ByteDance","first_seen":"2026-11-16","id":"bytedance:bytedance:7704254126947076405","location":"上海","posted":"2026-11-04","team":"职能 / 支持","title":"职业道德合规制度专家"}
 {"closed_at":"2026-11-19","company":"ByteDance","first_seen":"2026-11-16","id":"bytedance:bytedance:7704283218023074053","location":"北京","posted":"2026-11-04","team":"产品运营","title":"产品与流程解决方案专家（产品功能方向）-国际化"}
 {"closed_at":"2026-11-12","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7704567341601818933","location":"上海","posted":"2026-11-05","team":"设计","title":"SI空间设计专家 - PICO"}
@@ -2088,7 +2110,7 @@
 {"company":"ByteDance","first_seen":"2026-11-14","id":"bytedance:bytedance:7704660430469564677","location":"北京","posted":"2026-11-05","skills":["c++","java"],"team":"研发","title":"Agent算法工程师 - 经营管理与平台"}
 {"company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7704886462958455045","location":"北京","posted":"2026-11-06","team":"运营","title":"豆包AI大模型产品解决方案（火山方舟MaaS） - Data AML"}
 {"closed_at":"2026-11-14","company":"ByteDance","first_seen":"2026-11-11","id":"bytedance:bytedance:7704894197128448261","location":"北京","posted":"2026-11-06","team":"运营","title":"AI短剧结算策略运营 - 红果短剧"}
-{"company":"ByteDance","first_seen":"2026-11-19","id":"bytedance:bytedance:7704910839111158069","location":"北京","posted":"2026-11-06","team":"商业产品（广告）","title":"广告策略产品经理（短剧行业）-中国广告产品"}
+{"closed_at":"2026-11-22","company":"ByteDance","first_seen":"2026-11-19","id":"bytedance:bytedance:7704910839111158069","location":"北京","posted":"2026-11-06","team":"商业产品（广告）","title":"广告策略产品经理（短剧行业）-中国广告产品"}
 {"closed_at":"2026-11-18","company":"ByteDance","first_seen":"2026-11-12","id":"bytedance:bytedance:7704941054447339781","location":"北京","posted":"2026-11-06","team":"运营","title":"网文内容生态策略运营 - 红果短剧"}
 {"closed_at":"2026-11-20","company":"ByteDance","first_seen":"2026-11-17","id":"bytedance:bytedance:7704967887183988997","location":"北京","posted":"2026-11-06","team":"市场","title":"游戏行业营销专家 - 飞书商业化"}
 {"company":"ByteDance","first_seen":"2026-11-14","id":"bytedance:bytedance:7704969084404320517","location":"上海","posted":"2026-11-06","team":"运营","title":"资深广告创意策划（Creative Director） - 火山方舟"}
@@ -2103,12 +2125,13 @@
 {"closed_at":"2026-11-19","company":"ByteDance","first_seen":"2026-11-14","id":"bytedance:bytedance:7704988347848378677","location":"深圳","posted":"2026-11-06","skills":["sql"],"team":"数据分析","title":"数据分析师 - AI创新业务"}
 {"company":"ByteDance","first_seen":"2026-11-16","id":"bytedance:bytedance:7704998029757139253","location":"北京","posted":"2026-11-06","skills":["git","llm"],"team":"研发","title":"IC Agent研发工程师（芯片平台） - 芯片研发"}
 {"closed_at":"2026-11-18","company":"ByteDance","first_seen":"2026-11-09","id":"bytedance:bytedance:7705990542331218181","location":"北京","posted":"2026-11-09","team":"运营","title":"商业化产品运营（线索行业） - 国际化内容与服务广告"}
-{"company":"ByteDance","first_seen":"2026-11-19","id":"bytedance:bytedance:7706008050649565445","location":"上海","posted":"2026-11-09","team":"运营","title":"货架经营策略（美国市场）-TikTok Shop"}
+{"closed_at":"2026-11-22","company":"ByteDance","first_seen":"2026-11-19","id":"bytedance:bytedance:7706008050649565445","location":"上海","posted":"2026-11-09","team":"运营","title":"货架经营策略（美国市场）-TikTok Shop"}
 {"company":"ByteDance","first_seen":"2026-11-19","id":"bytedance:bytedance:7706063120192915765","location":"北京","posted":"2026-11-09","skills":["llm"],"team":"产品经理","title":"AI评测产品经理（Tako） - TikTok搜索"}
+{"company":"ByteDance","first_seen":"2026-11-22","id":"bytedance:bytedance:7706083517046917381","location":"北京","posted":"2026-11-09","team":"研发","title":"机器人仿真工程师 - Seed Model"}
 {"company":"ByteDance","first_seen":"2026-11-12","id":"bytedance:bytedance:7706090665365620997","location":"重庆","posted":"2026-11-09","team":"运营","title":"IP衍生运营支持-CQC"}
 {"closed_at":"2026-11-16","company":"ByteDance","first_seen":"2026-11-14","id":"bytedance:bytedance:7706101066592504069","location":"北京","posted":"2026-11-09","skills":["typescript","python"],"team":"研发","title":"全栈开发工程师（主栈前端） - 抖音研发"}
 {"company":"ByteDance","first_seen":"2026-11-11","id":"bytedance:bytedance:7706101301610400005","location":"海口","posted":"2026-11-09","team":"客服","title":"客服（二线番茄小说方向）-体验与服务"}
-{"company":"ByteDance","first_seen":"2026-11-16","id":"bytedance:bytedance:7706144411219036469","location":"深圳","posted":"2026-11-09","team":"产品","title":"营收产品经理（用户体系方向） - 抖音直播"}
+{"closed_at":"2026-11-22","company":"ByteDance","first_seen":"2026-11-16","id":"bytedance:bytedance:7706144411219036469","location":"深圳","posted":"2026-11-09","team":"产品","title":"营收产品经理（用户体系方向） - 抖音直播"}
 {"company":"ByteDance","first_seen":"2026-11-18","id":"bytedance:bytedance:7706147086815709445","location":"深圳","posted":"2026-11-09","team":"运营","title":"直播营收运营 - 抖音直播"}
 {"company":"ByteDance","first_seen":"2026-11-20","id":"bytedance:bytedance:7706147553830471989","location":"深圳","posted":"2026-11-09","team":"运营","title":"营收活动运营 - 抖音直播"}
 {"closed_at":"2026-11-14","company":"ByteDance","first_seen":"2026-11-12","id":"bytedance:bytedance:7706374860070897925","location":"北京","posted":"2026-11-10","team":"用户运营","title":"抖音AI运营经理（校园方向） - 抖音UGC"}
@@ -2138,15 +2161,16 @@
 {"company":"ByteDance","first_seen":"2026-11-16","id":"bytedance:bytedance:7708594397155871029","location":"深圳","posted":"2026-11-16","team":"财务","title":"中国税务BP（智能硬件方向）"}
 {"closed_at":"2026-11-22","company":"ByteDance","first_seen":"2026-11-18","id":"bytedance:bytedance:7708604733387262213","location":"北京","posted":"2026-11-16","skills":["go"],"team":"运营","title":"AI应用架构工程师 - 模型运维"}
 {"closed_at":"2026-11-19","company":"ByteDance","first_seen":"2026-11-17","id":"bytedance:bytedance:7708616528306505989","location":"杭州","posted":"2026-11-16","team":"运营","title":"游戏行业企业效能顾问 - 飞书商业化"}
-{"company":"ByteDance","first_seen":"2026-11-17","id":"bytedance:bytedance:7708643942343395637","location":"上海","posted":"2026-11-16","team":"用户运营","title":"内容运营经理（ACG方向） - 抖音UGC"}
+{"closed_at":"2026-11-22","company":"ByteDance","first_seen":"2026-11-17","id":"bytedance:bytedance:7708643942343395637","location":"上海","posted":"2026-11-16","team":"用户运营","title":"内容运营经理（ACG方向） - 抖音UGC"}
 {"company":"ByteDance","first_seen":"2026-11-18","id":"bytedance:bytedance:7708645129214347573","location":"上海","posted":"2026-11-16","team":"用户运营","title":"内容运营经理（城市玩乐方向） - 抖音UGC"}
 {"company":"ByteDance","first_seen":"2026-11-18","id":"bytedance:bytedance:7708668737260079413","location":"上海","posted":"2026-11-16","team":"产品经理","title":"SEA BNP解决方案专家-国际支付"}
 {"company":"ByteDance","first_seen":"2026-11-20","id":"bytedance:bytedance:7708671662246611253","location":"上海","posted":"2026-11-16","skills":["sql"],"team":"财务","title":"财务和监管合规（信贷监管报送方向）"}
-{"company":"ByteDance","first_seen":"2026-11-19","id":"bytedance:bytedance:7708703492357278005","location":"上海","posted":"2026-11-16","team":"运营","title":"风险案例库运营-抖音生活服务"}
+{"closed_at":"2026-11-22","company":"ByteDance","first_seen":"2026-11-19","id":"bytedance:bytedance:7708703492357278005","location":"上海","posted":"2026-11-16","team":"运营","title":"风险案例库运营-抖音生活服务"}
 {"company":"ByteDance","first_seen":"2026-11-17","id":"bytedance:bytedance:7708760795476347141","location":"广州","posted":"2026-11-16","team":"运营","title":"运营（女装招买行业）-TikTok Shop"}
 {"company":"ByteDance","first_seen":"2026-11-17","id":"bytedance:bytedance:7708771425265387781","location":"上海","posted":"2026-11-16","team":"内审","title":"内审专家 Internal Auditor","years":5}
-{"company":"ByteDance","first_seen":"2026-11-19","id":"bytedance:bytedance:7709033244726544645","location":"上海","posted":"2026-11-17","team":"运营","title":"快消行业治理策略专家 - 抖音电商"}
-{"company":"ByteDance","first_seen":"2026-11-18","id":"bytedance:bytedance:7709193627105397045","location":"北京","posted":"2026-11-17","team":"运营","title":"品牌整合营销专家（用户GTM方向） - TikTok生活服务"}
+{"company":"ByteDance","first_seen":"2026-11-22","id":"bytedance:bytedance:7708771672446552373","location":"北京","posted":"2026-11-16","team":"内审","title":"内审专家 Internal Auditor","years":5}
+{"closed_at":"2026-11-22","company":"ByteDance","first_seen":"2026-11-19","id":"bytedance:bytedance:7709033244726544645","location":"上海","posted":"2026-11-17","team":"运营","title":"快消行业治理策略专家 - 抖音电商"}
+{"closed_at":"2026-11-22","company":"ByteDance","first_seen":"2026-11-18","id":"bytedance:bytedance:7709193627105397045","location":"北京","posted":"2026-11-17","team":"运营","title":"品牌整合营销专家（用户GTM方向） - TikTok生活服务"}
 {"company":"ByteDance","first_seen":"2026-11-19","id":"bytedance:bytedance:7709431880613841157","location":"上海","posted":"2026-11-18","team":"运营","title":"渠道策略运营-商业化广告"}
 {"company":"ByteDance","first_seen":"2026-11-18","id":"bytedance:bytedance:7709449316823353605","location":"北京","posted":"2026-11-18","team":"运营","title":"电影内容监制 - 红果短剧"}
 {"company":"ByteDance","first_seen":"2026-11-20","id":"bytedance:bytedance:7709498233921095941","location":"上海","posted":"2026-11-18","skills":["sql","tensorflow"],"team":"研发","title":"风控算法工程师-广告平台技术"}
@@ -2156,4 +2180,5 @@
 {"company":"ByteDance","first_seen":"2026-11-20","id":"bytedance:bytedance:7709867667916065029","location":"重庆","posted":"2026-11-19","team":"客服","title":"客服（风险应急方向）-体验与服务"}
 {"company":"ByteDance","first_seen":"2026-11-20","id":"bytedance:bytedance:7709872094703782197","location":"重庆","posted":"2026-11-19","team":"客服","title":"客服（财务结算专员）-体验与服务"}
 {"company":"ByteDance","first_seen":"2026-11-20","id":"bytedance:bytedance:7709875737956485381","location":"重庆","posted":"2026-11-19","team":"客服","title":"客服（专属顾问/艺人运营）-体验与服务"}
+{"company":"ByteDance","first_seen":"2026-11-22","id":"bytedance:bytedance:7709879470840236341","location":"重庆","posted":"2026-11-19","team":"客服","title":"客服（专属顾问/虚拟音乐人运营）-体验与服务"}
 {"company":"ByteDance","first_seen":"2026-11-20","id":"bytedance:bytedance:7709879626072836405","location":"重庆","posted":"2026-11-19","team":"客服","title":"客服（专属顾问-主播音乐人运营）-体验与服务"}
