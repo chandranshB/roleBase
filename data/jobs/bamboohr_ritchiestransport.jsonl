@@ -25,7 +25,7 @@
 {"company":"Ritchies","first_seen":"2026-11-08","id":"bamboohr:ritchiestransport:219","location":"Takanini, Auckland","team":"Facilities & Fleet Services","title":"Facilities and Fleet Cleaner"}
 {"company":"Ritchies","first_seen":"2026-11-08","id":"bamboohr:ritchiestransport:221","location":"Wellsford, Auckland","team":"Drivers","title":"SESTA Driver - Wellsford x 2"}
 {"company":"Ritchies","first_seen":"2026-11-08","id":"bamboohr:ritchiestransport:222","location":"Takanini, Auckland","team":"Drivers","title":"School Bus Driver - Pukekohe"}
-{"company":"Ritchies","first_seen":"2026-11-08","id":"bamboohr:ritchiestransport:224","location":"Wellsford, Auckland","team":"Drivers","title":"School Bus Driver - Wellsford x 3"}
+{"closed_at":"2026-11-23","company":"Ritchies","first_seen":"2026-11-08","id":"bamboohr:ritchiestransport:224","location":"Wellsford, Auckland","team":"Drivers","title":"School Bus Driver - Wellsford x 3"}
 {"company":"Ritchies","first_seen":"2026-11-08","id":"bamboohr:ritchiestransport:225","location":"Albany, Auckland","team":"Depot Leadership","title":"Operations Manager - Albany"}
 {"company":"Ritchies","first_seen":"2026-11-08","id":"bamboohr:ritchiestransport:226","location":"Westgate, Auckland","team":"Workshop","title":"Coachbuilder - Westgate"}
 {"company":"Ritchies","first_seen":"2026-11-08","id":"bamboohr:ritchiestransport:229","location":"Birkenhead, Auckland","team":"Workshop","title":"Workshop Mechanic - Birkenhead"}
@@ -81,6 +81,9 @@
 {"company":"Ritchies","first_seen":"2026-11-16","id":"bamboohr:ritchiestransport:321","location":"Swanson, Auckland","team":"Drivers","title":"School Bus Drivers - Swanson x 5"}
 {"company":"Ritchies","first_seen":"2026-11-16","id":"bamboohr:ritchiestransport:322","location":"Swanson, Auckland","team":"Drivers","title":"Urban Bus Drivers - Swanson x 15"}
 {"company":"Ritchies","first_seen":"2026-11-19","id":"bamboohr:ritchiestransport:323","location":"Warkworth, Auckland","team":"Facilities & Fleet Services","title":"Vehicle Cleaner / Rentals Assistant"}
+{"company":"Ritchies","first_seen":"2026-11-23","id":"bamboohr:ritchiestransport:325","location":"Morrinsville","team":"Drivers","title":"School Bus Driver - Te Aroha"}
+{"company":"Ritchies","first_seen":"2026-11-23","id":"bamboohr:ritchiestransport:326","location":"Ferry Road, Christchurch","team":"Drivers","title":"School Bus Driver - Port Levy"}
+{"company":"Ritchies","first_seen":"2026-11-23","id":"bamboohr:ritchiestransport:327","location":"Wellsford, Auckland","team":"Drivers","title":"School Bus Driver - Wellsford, Te Hana and Kaiwaka x 4"}
 {"closed_at":"2026-11-18","company":"Ritchies","first_seen":"2026-11-08","id":"bamboohr:ritchiestransport:47","location":"Blenheim, Marlborough","team":"Drivers","title":"Casual Urban Bus Driver - Blenheim x 1"}
 {"closed_at":"2026-11-16","company":"Ritchies","first_seen":"2026-10-30","id":"bamboohr:ritchiestransport:54","location":"Albany, Auckland","team":"Drivers","title":"School Bus Driver - Albany"}
 {"closed_at":"2026-11-10","company":"Ritchies","first_seen":"2026-11-08","id":"bamboohr:ritchiestransport:75","location":"Warkworth, Auckland","team":"Drivers","title":"School Bus Driver Casual - Wellsford x 3"}

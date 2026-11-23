@@ -86,10 +86,10 @@
 {"company":"CFL","first_seen":"2026-11-08","id":"csod:sncfl:1451","location":"LU","posted":"2025-12-11","title":"Opérateur / Opératrice Gate"}
 {"company":"CFL","first_seen":"2026-11-08","id":"csod:sncfl:1568","location":"Dudelange, LU","posted":"2026-05-03","title":"Magasinier-Cariste / Magasinière-Cariste"}
 {"company":"CFL","first_seen":"2026-11-20","id":"csod:sncfl:1597","location":"Luxembourg, LU","title":"Fachkraft für digitales Dokumentenmanagement (m/w)"}
-{"company":"CFL","first_seen":"2026-11-08","id":"csod:sncfl:1598","location":"Luxembourg, LU","title":"Chef / Cheffe de projet Digital & innovation"}
+{"closed_at":"2026-11-23","company":"CFL","first_seen":"2026-11-08","id":"csod:sncfl:1598","location":"Luxembourg, LU","title":"Chef / Cheffe de projet Digital & innovation"}
 {"company":"CFL","first_seen":"2026-11-08","id":"csod:sncfl:1606","location":"Contern, LU","posted":"2026-01-04","title":"Mitarbeiter/Mitarbeiterin Customer Care Logistik / Straßentransport"}
 {"company":"CFL","first_seen":"2026-11-08","id":"csod:sncfl:1632","location":"Dudelange, LU","title":"Triebfahrzeugführer/Triebfahrzeugführerin FR/DE"}
-{"company":"CFL","first_seen":"2026-11-08","id":"csod:sncfl:1661","location":"Luxembourg, LU","title":"Ingénieur / Ingénieure Télécommunications ferroviaires GSM-R / MCx / FRMCS"}
+{"closed_at":"2026-11-23","company":"CFL","first_seen":"2026-11-08","id":"csod:sncfl:1661","location":"Luxembourg, LU","title":"Ingénieur / Ingénieure Télécommunications ferroviaires GSM-R / MCx / FRMCS"}
 {"company":"CFL","first_seen":"2026-11-08","id":"csod:sncfl:1665","location":"Mouguerre, FR","title":"Mécanicien / Mécanicien ferroviaire"}
 {"company":"CFL","first_seen":"2026-11-08","id":"csod:sncfl:1671","location":"Dudelange, LU","posted":"2026-03-06","title":"Assistant Administratif Opérationnel / Assistante Administrative Opérationnelle"}
 {"company":"CFL","first_seen":"2026-11-08","id":"csod:sncfl:1683","location":"LU","title":"Pontier / Pontière"}
@@ -110,13 +110,13 @@
 {"company":"CFL","first_seen":"2026-11-08","id":"csod:sncfl:1756","location":"Luxembourg, LU","title":"Aiguilleurs / Aiguilleuses"}
 {"company":"CFL","first_seen":"2026-11-08","id":"csod:sncfl:1757","location":"LU","posted":"2026-07-09","title":"Contrôleur/Contrôleuse de gestion Junior"}
 {"company":"CFL","first_seen":"2026-11-08","id":"csod:sncfl:1760","location":"LU","reposts":1,"title":"Lokführer / Lokführerinnen (zweisprachig deutsch/französisch)"}
-{"company":"CFL","first_seen":"2026-11-08","id":"csod:sncfl:1764","location":"Luxembourg, LU","skills":["sap"],"title":"Expert / Experte SAP BTP & Architecture d’intégration"}
+{"closed_at":"2026-11-23","company":"CFL","first_seen":"2026-11-08","id":"csod:sncfl:1764","location":"Luxembourg, LU","skills":["sap"],"title":"Expert / Experte SAP BTP & Architecture d’intégration"}
 {"company":"CFL","first_seen":"2026-11-08","id":"csod:sncfl:1768","location":"Luxembourg, LU","reposts":1,"title":"Agentes / Agents de maintenance"}
 {"company":"CFL","first_seen":"2026-11-17","id":"csod:sncfl:1769","location":"Luxembourg, LU","reposts":2,"title":"Stagiaire Marketing (M/F)"}
 {"company":"CFL","first_seen":"2026-11-10","id":"csod:sncfl:1773","location":"Luxembourg, LU","posted":"2026-09-11","title":"Resp. Cellule d’exploitation des systèmes informatiques (M/F)"}
 {"company":"CFL","first_seen":"2026-11-08","id":"csod:sncfl:1784","location":"Luxembourg, LU","title":"Régulateurs / Régulatrices Alimentation électrique ferroviaire"}
-{"company":"CFL","first_seen":"2026-11-08","id":"csod:sncfl:1786","location":"Luxembourg, LU","title":"Coordinateur / Coordinatrice Information voyageurs"}
-{"company":"CFL","first_seen":"2026-11-08","id":"csod:sncfl:1787","location":"Luxembourg, LU","title":"Ingénieur / Ingénieure de projet en Maintenance des trains"}
+{"closed_at":"2026-11-23","company":"CFL","first_seen":"2026-11-08","id":"csod:sncfl:1786","location":"Luxembourg, LU","title":"Coordinateur / Coordinatrice Information voyageurs"}
+{"closed_at":"2026-11-23","company":"CFL","first_seen":"2026-11-08","id":"csod:sncfl:1787","location":"Luxembourg, LU","title":"Ingénieur / Ingénieure de projet en Maintenance des trains"}
 {"closed_at":"2026-11-16","company":"CFL","first_seen":"2026-11-08","id":"csod:sncfl:1788","location":"Dudelange, LU","posted":"2026-06-10","title":"Coordinateur / Coordinatrice Remplacant(e) Dispatch UP Lux"}
 {"closed_at":"2026-11-16","company":"CFL","first_seen":"2026-11-08","id":"csod:sncfl:1789","location":"Dudelange, LU","posted":"2026-05-10","title":"Disponent / Real Time Operator"}
 {"company":"CFL","first_seen":"2026-11-08","id":"csod:sncfl:1791","location":"Luxembourg, LU","title":"Manœuvres train de service (M/F)"}
@@ -130,7 +130,7 @@
 {"company":"CFL","first_seen":"2026-11-08","id":"csod:sncfl:1805","location":"Esch-sur-Alzette, FR","title":"Conducteur / Conductrice de Manoeuvre"}
 {"company":"CFL","first_seen":"2026-11-08","id":"csod:sncfl:1806","location":"Esch-sur-Alzette, FR","title":"Opérateurs/ Opératrices de Manoeuvre"}
 {"company":"CFL","first_seen":"2026-11-08","id":"csod:sncfl:1807","location":"Luxembourg, LU","reposts":1,"title":"Fahrdienstleiter/ Fahrdienstleiterinnen"}
-{"company":"CFL","first_seen":"2026-11-08","id":"csod:sncfl:1811","location":"Luxembourg, LU","title":"IT Change Manager (M/F)"}
+{"closed_at":"2026-11-23","company":"CFL","first_seen":"2026-11-08","id":"csod:sncfl:1811","location":"Luxembourg, LU","title":"IT Change Manager (M/F)"}
 {"company":"CFL","first_seen":"2026-11-08","id":"csod:sncfl:1812","location":"Dudelange, LU","title":"Shift Supervisor DOTF(H/F)"}
 {"company":"CFL","first_seen":"2026-11-08","id":"csod:sncfl:1813","location":"Dudelange, LU","title":"Shift Supervisor DOTF(H/F)"}
 {"closed_at":"2026-11-22","company":"CFL","first_seen":"2026-11-08","id":"csod:sncfl:1815","location":"Luxembourg, LU","title":"Ingénieur / Ingénieure Génie civil"}
