@@ -102,6 +102,7 @@ jobs:
 
   deploy:
     needs: build-site
+    if: needs.build-site.result == 'success'
     runs-on: ubuntu-latest
     permissions: { pages: write, id-token: write }
     environment:
