@@ -3638,13 +3638,27 @@ def run_all(tasks, budget=RUN_BUDGET):
     return [f.result() for f in done] + [(futs[f], None, TimeoutError(f"still running after {budget}s"), budget) for f in pending], [futs[f] for f in pending]
 
 
+def export_parquet(out_dir="kaggle", fmt="parquet", max_files=None, compression="snappy"):
+    """Export the crawled dataset to Parquet format (delegates to export_kaggle)."""
+    import export_kaggle
+    cmd = ["--format", fmt, "--output-dir", str(out_dir), "--compression", compression]
+    if max_files is not None:
+        cmd.extend(["--max-files", str(max_files)])
+    return export_kaggle.main(cmd)
+
+
 def main():
     parser = argparse.ArgumentParser(description="RoleBase job scraper")
     parser.add_argument("--shard", type=int, default=0, help="Shard index (0-based)")
     parser.add_argument("--total-shards", type=int, default=1, help="Total number of parallel shards")
     parser.add_argument("--consolidate", action="store_true", help="Merge shards, prune, and log history")
+    parser.add_argument("--export", "--parquet", action="store_true", dest="export_parquet", help="Export dataset to Parquet (Kaggle format)")
     parser.add_argument("--budget", type=int, default=RUN_BUDGET, help="Run budget in seconds")
     args, _ = parser.parse_known_args()
+
+    if getattr(args, "export_parquet", False):
+        export_parquet()
+        return
 
     t_start = time.time()
     today = dt.date.today().isoformat()

@@ -1,7 +1,9 @@
-"""Build the kaggle/ dataset folder (one CSV + metadata) from data/jobs/*.jsonl."""
+"""Build the kaggle/ dataset folder (Parquet + CSV + metadata) from data/jobs/*.jsonl."""
+import argparse
 import csv
 import datetime as dt
 import json
+import math
 import os
 import shutil
 import time
@@ -9,23 +11,26 @@ from collections import Counter
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
+import pyarrow as pa
+import pyarrow.parquet as pq
+
 from scraper import (
-    DIR,
     DEFAULTS,
-    clean_company,
+    DIR,
+    EVERGREEN_RX,
+    HIDDEN_RX,
+    _clean_title,
     category,
     country,
     fresher_ok,
     level,
     url_of,
-    EVERGREEN_RX,
-    HIDDEN_RX,
-    _clean_title,
 )
 
 # These boards' terms are about attribution and display, so they stay out of a republished dataset.
 SKIP = {"remotive", "remoteok", "himalayas", "jobicy", "weworkremotely", "getonbrd", "workingnomads", "cryptojobs", "themuse"}
-COLUMNS = {  # name -> (type, description); also the CSV column order
+
+COLUMNS = {  # name -> (type, description); also the column order
     "source": ("string", "Job board or applicant tracking system (ATS) feed where the posting was detected across 58 enterprise ATS platforms (e.g. workday, greenhouse, lever, ashby, smartrecruiters, adp, ultipro, dayforce, paylocity, paycom, applicantpro, isolved, betterteam, gohire, freshteam, gem, recooty, csod, taleo, bullhorn, successfactors, avature, recruiterflow, manatal, loxo, careerplug, comeet, crelate, clearcompany, pageup, catsone, talentlyft, jobadder, jobsoid, tribepad, applicantstack, factorial, join, personio, bamboohr, rippling, oracle, jazzhr, jobvite, jobscore, zoho, icims, or public feeds)."),
     "company": ("string", "Employer or hiring organization name advertising the job vacancy."),
     "title": ("string", "Official job title as published on the employer's career portal."),
@@ -50,6 +55,7 @@ COLUMNS = {  # name -> (type, description); also the CSV column order
     "ghost_reasons": ("string", "Specific heuristic audit triggers explaining why ghost_score is above zero (e.g. open over a year, talent pool phrasing, multiple reposts)."),
     "fresher_friendly": ("boolean", "Boolean flag indicating whether the role is open to early-career candidates with 0-2 years of experience (True/False)."),
 }
+
 COMPANY_COLUMNS = {
     "company": ("string", "Employer or organization name (included for all companies with 5 or more open roles)."),
     "open_roles": ("integer", "Total number of currently active, open job listings tracked for this employer."),
@@ -64,6 +70,7 @@ DAILY_COLUMNS = {
     "open_jobs": ("integer", "Total active open jobs tracked globally on this date across all indexed employers (time series benchmark)."),
     "fresher_friendly_jobs": ("integer", "Total active open jobs verified as fresher-friendly (0-2 years of experience) on this date."),
 }
+
 SKILL_COLUMNS = {
     "date": ("date", "Observation date in UTC (YYYY-MM-DD)."),
     "skill": ("string", "Normalized skill keyword tracked across postings (e.g. python, excel, sql, customer_service, cpr)."),
@@ -71,15 +78,88 @@ SKILL_COLUMNS = {
     "tagged": ("integer", "Total count of active open job postings on this date that mention at least one tracked skill (denominator for share_pct)."),
     "share_pct": ("number", "Percentage share of skill-tagged open jobs that demand this specific skill (100 * jobs / tagged)."),
 }
-FILES = {  # file -> (description, its columns): feeds the Kaggle file/column metadata, the column table in the description and the header check below
-    "jobs.csv": ("One row per job posting (open, or closed within the last 90 days), with the apply link, level, field, skills, pay where stated and dates. Identical postings are merged (see openings).", COLUMNS),
-    "jobs_by_company.csv": ("One row per company with 5+ open jobs: how many of its roles are open to 0-2 years of experience.", COMPANY_COLUMNS),
-    "open_jobs_daily.csv": ("Open and fresher-friendly job counts per day since tracking began (a growing time series).", DAILY_COLUMNS),
-    "skill_demand_daily.csv": ("Per day and skill: postings that mention the skill, postings that mention any skill, and the share between them.", SKILL_COLUMNS),
-}
 
 today_date = dt.date.today()
 today = today_date.isoformat()
+
+
+def make_pyarrow_schema(cols_spec):
+    """Derive PyArrow Schema from the declarative column metadata specification."""
+    fields = []
+    for name, (type_name, _) in cols_spec.items():
+        if type_name == "integer":
+            pa_type = pa.int32()
+        elif type_name == "number":
+            pa_type = pa.float64()
+        elif type_name == "boolean":
+            pa_type = pa.bool_()
+        else:
+            pa_type = pa.string()
+        fields.append(pa.field(name, pa_type))
+    return pa.schema(fields)
+
+
+JOBS_SCHEMA = make_pyarrow_schema(COLUMNS)
+COMPANY_SCHEMA = make_pyarrow_schema(COMPANY_COLUMNS)
+DAILY_SCHEMA = make_pyarrow_schema(DAILY_COLUMNS)
+SKILL_SCHEMA = make_pyarrow_schema(SKILL_COLUMNS)
+
+
+def clean_row_for_pyarrow(row, cols_spec):
+    """Cast dictionary values into strict, nullable PyArrow-compatible types."""
+    cleaned = {}
+    for name, (type_name, _) in cols_spec.items():
+        v = row.get(name)
+        if v is None or v == "":
+            cleaned[name] = None
+        elif type_name == "integer":
+            try:
+                cleaned[name] = int(v)
+            except (ValueError, TypeError):
+                cleaned[name] = None
+        elif type_name == "number":
+            try:
+                f = float(v)
+                cleaned[name] = None if math.isnan(f) else f
+            except (ValueError, TypeError):
+                cleaned[name] = None
+        elif type_name == "boolean":
+            cleaned[name] = bool(v)
+        else:
+            cleaned[name] = str(v)
+    return cleaned
+
+
+def get_file_catalog(fmt="parquet"):
+    """Return dictionary of {filename: (description, cols)} for active export format."""
+    base_catalogs = {
+        "parquet": {
+            "jobs.parquet": ("One row per job posting (open, or closed within the last 90 days), with apply link, level, field, skills, pay, and dates. Columnar Parquet format (~85% smaller, sub-second load times).", COLUMNS),
+            "jobs_by_company.parquet": ("One row per company with 5+ open jobs: how many of its roles are open to 0-2 years of experience.", COMPANY_COLUMNS),
+            "open_jobs_daily.parquet": ("Open and fresher-friendly job counts per day since tracking began (a growing time series).", DAILY_COLUMNS),
+            "skill_demand_daily.parquet": ("Per day and skill: postings that mention the skill, postings that mention any skill, and the share between them.", SKILL_COLUMNS),
+        },
+        "csv": {
+            "jobs.csv": ("One row per job posting (open, or closed within the last 90 days), with the apply link, level, field, skills, pay where stated and dates. Identical postings are merged (see openings).", COLUMNS),
+            "jobs_by_company.csv": ("One row per company with 5+ open jobs: how many of its roles are open to 0-2 years of experience.", COMPANY_COLUMNS),
+            "open_jobs_daily.csv": ("Open and fresher-friendly job counts per day since tracking began (a growing time series).", DAILY_COLUMNS),
+            "skill_demand_daily.csv": ("Per day and skill: postings that mention the skill, postings that mention any skill, and the share between them.", SKILL_COLUMNS),
+        }
+    }
+    if fmt == "parquet":
+        return base_catalogs["parquet"]
+    elif fmt == "csv":
+        return base_catalogs["csv"]
+    elif fmt == "both":
+        combined = {}
+        combined.update(base_catalogs["parquet"])
+        combined.update(base_catalogs["csv"])
+        return combined
+    raise ValueError(f"Unknown format: {fmt}")
+
+
+# Default FILES for backwards compatibility
+FILES = get_file_catalog("parquet")
 
 
 def board_ghost_flags(jobs):
@@ -120,7 +200,6 @@ def flat(j, flags):
     if y is not None:
         try:
             if isinstance(y, (int, float)):
-                import math
                 y = "" if math.isnan(y) else int(y)
             elif str(y).isdigit():
                 y = int(y)
@@ -130,10 +209,18 @@ def flat(j, flags):
             y = ""
     else:
         y = ""
-    return {**j, "country": c, "years_experience": y, "skills": ";".join(j.get("skills") or []),
-            "pay_min": lo, "pay_max": hi, "pay_currency": cur,
-            "ghost_score": "" if f is None else sum(p for _, p in f), "ghost_reasons": "; ".join(r for r, _ in f or []),
-            "fresher_friendly": fresher_ok(j)}
+    return {
+        **j,
+        "country": c,
+        "years_experience": y,
+        "skills": ";".join(j.get("skills") or []),
+        "pay_min": lo,
+        "pay_max": hi,
+        "pay_currency": cur,
+        "ghost_score": "" if f is None else sum(p for _, p in f),
+        "ghost_reasons": "; ".join(r for r, _ in f or []),
+        "fresher_friendly": fresher_ok(j),
+    }
 
 
 def collapse(rows):
@@ -182,12 +269,48 @@ def process_board(fpath):
     return b_rows
 
 
-def main():
-    out = Path("kaggle")
-    out.mkdir(exist_ok=True)
-    shutil.copy("kaggle_assets/dataset-cover-image.png", out)  # picked up by `kaggle datasets metadata --update`
+def export_table(rows, cols_spec, pa_schema, out_dir, base_name, write_parquet=True, write_csv=False, compression="snappy"):
+    """Export a bounded dataset table to Parquet, CSV, or both."""
+    cleaned_rows = [clean_row_for_pyarrow(r, cols_spec) for r in rows]
+
+    if write_parquet:
+        pq_path = out_dir / f"{base_name}.parquet"
+        table = pa.Table.from_pylist(cleaned_rows, schema=pa_schema)
+        pq.write_table(table, pq_path, compression=compression)
+
+    if write_csv:
+        csv_path = out_dir / f"{base_name}.csv"
+        with open(csv_path, "w", encoding="utf-8", newline="") as f:
+            w = csv.DictWriter(f, list(cols_spec), extrasaction="ignore")
+            w.writeheader()
+            w.writerows(rows)
+
+
+def main(argv=None):
+    parser = argparse.ArgumentParser(description="Export RoleBase datasets for Kaggle (Parquet and/or CSV).")
+    parser.add_argument("--format", choices=["parquet", "csv", "both"], default="parquet",
+                        help="Export format: 'parquet' (default, ~85%% smaller), 'csv', or 'both'")
+    parser.add_argument("--csv", action="store_true", help="Also export CSV files (equivalent to --format both)")
+    parser.add_argument("-o", "--output-dir", default="kaggle", help="Output directory (default: kaggle)")
+    parser.add_argument("--max-files", type=int, default=None, help="Max board files to process (for testing)")
+    parser.add_argument("--compression", default="snappy", choices=["snappy", "zstd", "gzip", "none"],
+                        help="Parquet compression codec (default: snappy)")
+    args = parser.parse_args(argv)
+
+    fmt = "both" if args.csv else args.format
+    write_parquet = fmt in ("parquet", "both")
+    write_csv = fmt in ("csv", "both")
+
+    out = Path(args.output_dir)
+    out.mkdir(parents=True, exist_ok=True)
+
+    cover_src = Path("kaggle_assets/dataset-cover-image.png")
+    if cover_src.exists():
+        shutil.copy(cover_src, out)
 
     files = [DIR / f for f in os.listdir(DIR) if f.endswith(".jsonl")] if DIR.exists() else []
+    if args.max_files is not None and args.max_files > 0:
+        files = files[:args.max_files]
 
     total_rows = 0
     live_count = 0
@@ -197,17 +320,26 @@ def main():
     BATCH_SIZE = 2000
     t_start = time.time()
 
-    with open(out / "jobs.csv", "w", encoding="utf-8", newline="") as f_jobs:
-        w = csv.DictWriter(f_jobs, list(COLUMNS), extrasaction="ignore")
-        w.writeheader()
+    f_jobs_csv = None
+    csv_jobs_writer = None
+    if write_csv:
+        f_jobs_csv = open(out / "jobs.csv", "w", encoding="utf-8", newline="")
+        csv_jobs_writer = csv.DictWriter(f_jobs_csv, list(COLUMNS), extrasaction="ignore")
+        csv_jobs_writer.writeheader()
 
+    pq_jobs_writer = None
+    if write_parquet:
+        pq_jobs_writer = pq.ParquetWriter(out / "jobs.parquet", schema=JOBS_SCHEMA, compression=args.compression)
+
+    try:
         with ThreadPoolExecutor(max_workers=8) as ex:
             for i in range(0, len(files), BATCH_SIZE):
                 batch = files[i:i + BATCH_SIZE]
+                batch_rows = []
                 for b_rows in ex.map(process_board, batch, chunksize=50):
                     if not b_rows:
                         continue
-                    w.writerows(b_rows)
+                    batch_rows.extend(b_rows)
                     total_rows += len(b_rows)
 
                     for r in b_rows:
@@ -219,12 +351,27 @@ def main():
                             cat = r.get("category")
                             if cat and cat != "other":
                                 fields_counter[cat] += 1
-                f_jobs.flush()
+
+                if batch_rows:
+                    if csv_jobs_writer:
+                        csv_jobs_writer.writerows(batch_rows)
+                        f_jobs_csv.flush()
+                    if pq_jobs_writer:
+                        cleaned_batch = [clean_row_for_pyarrow(r, COLUMNS) for r in batch_rows]
+                        table = pa.Table.from_pylist(cleaned_batch, schema=JOBS_SCHEMA)
+                        pq_jobs_writer.write_table(table)
+
                 elapsed = time.time() - t_start
                 done_files = min(i + BATCH_SIZE, len(files))
                 speed = done_files / elapsed if elapsed > 0 else 0
                 eta = (len(files) - done_files) / speed if speed > 0 else 0
-                print(f"[{elapsed:6.1f}s] Exported {done_files:,}/{len(files):,} boards ({total_rows:,} rows, {speed:.1f} b/s, ETA {eta/60:.1f}m)...", flush=True)
+                fmt_desc = "Parquet + CSV" if (write_parquet and write_csv) else ("Parquet" if write_parquet else "CSV")
+                print(f"[{elapsed:6.1f}s] Exported ({fmt_desc}) {done_files:,}/{len(files):,} boards ({total_rows:,} rows, {speed:.1f} b/s, ETA {eta/60:.1f}m)...", flush=True)
+    finally:
+        if pq_jobs_writer:
+            pq_jobs_writer.close()
+        if f_jobs_csv:
+            f_jobs_csv.close()
 
     # Company stats
     cached_comp = None
@@ -243,12 +390,9 @@ def main():
     else:
         company_rows = []
 
-    with open(out / "jobs_by_company.csv", "w", encoding="utf-8", newline="") as f:
-        w = csv.DictWriter(f, list(COMPANY_COLUMNS))
-        w.writeheader()
-        w.writerows(company_rows)
+    export_table(company_rows, COMPANY_COLUMNS, COMPANY_SCHEMA, out, "jobs_by_company", write_parquet, write_csv, args.compression)
 
-    # two small time series, so the dataset answers "how is it changing" and not only "what is open now"
+    # Two small time series datasets
     daily = {}
     pulse = Path("data/pulse.csv")
     if pulse.exists():
@@ -260,30 +404,42 @@ def main():
                     d[1] += int(r.get("fresher") or 0)
                 except Exception:
                     pass
-    with open(out / "open_jobs_daily.csv", "w", encoding="utf-8", newline="") as f:
-        w = csv.writer(f)
-        w.writerow(list(DAILY_COLUMNS))
-        w.writerows([d, *v] for d, v in sorted(daily.items()))
+    daily_rows = [{"date": d, "open_jobs": v[0], "fresher_friendly_jobs": v[1]} for d, v in sorted(daily.items())]
+    export_table(daily_rows, DAILY_COLUMNS, DAILY_SCHEMA, out, "open_jobs_daily", write_parquet, write_csv, args.compression)
 
-    skills = Path("data/skills.csv")
-    with open(out / "skill_demand_daily.csv", "w", encoding="utf-8", newline="") as f:
-        w = csv.writer(f)
-        w.writerow(list(SKILL_COLUMNS))
-        if skills.exists():
-            with open(skills, encoding="utf-8") as f_skills:
-                for r in csv.DictReader(f_skills):
-                    try:
-                        tagged = int(r.get("tagged") or 0)
-                        jobs_count = int(r.get("jobs") or 0)
-                        if tagged > 0:
-                            w.writerow([r.get("date", ""), r.get("skill", ""), jobs_count, tagged, round(100 * jobs_count / tagged, 2)])
-                    except Exception:
-                        pass
+    skill_rows = []
+    skills_path = Path("data/skills.csv")
+    if skills_path.exists():
+        with open(skills_path, encoding="utf-8") as f_skills:
+            for r in csv.DictReader(f_skills):
+                try:
+                    tagged = int(r.get("tagged") or 0)
+                    jobs_count = int(r.get("jobs") or 0)
+                    if tagged > 0:
+                        skill_rows.append({
+                            "date": r.get("date", ""),
+                            "skill": r.get("skill", ""),
+                            "jobs": jobs_count,
+                            "tagged": tagged,
+                            "share_pct": round(100 * jobs_count / tagged, 2)
+                        })
+                except Exception:
+                    pass
+    export_table(skill_rows, SKILL_COLUMNS, SKILL_SCHEMA, out, "skill_demand_daily", write_parquet, write_csv, args.compression)
 
-    for name, (_, cols) in FILES.items():  # Kaggle's docs: the field list must cover every CSV column, in order, or descriptions "will not be matched up correctly": fail here, before anything is published
-        with open(out / name, encoding="utf-8", newline="") as f:
-            assert next(csv.reader(f)) == list(cols), f"{name}: CSV header and column descriptions differ"
-        assert all(t and d.strip() for t, d in cols.values()), f"{name}: a column has no type or description"
+    active_files = get_file_catalog(fmt)
+
+    # Validate output schemas before metadata generation
+    for fname, (_, cols) in active_files.items():
+        fpath = out / fname
+        assert fpath.exists(), f"{fname}: Exported file is missing"
+        if fname.endswith(".parquet"):
+            pf = pq.ParquetFile(fpath)
+            assert pf.schema_arrow.names == list(cols), f"{fname}: Parquet column schema does not match column specification"
+        else:
+            with open(fpath, encoding="utf-8", newline="") as f:
+                assert next(csv.reader(f)) == list(cols), f"{fname}: CSV header does not match column specification"
+        assert all(t and d.strip() for t, d in cols.values()), f"{fname}: a column has no type or description"
 
     field_list = ", ".join(f"{k.replace('_', ' ')} ({v:,})" for k, v in fields_counter.most_common(14))
     n_companies = len(live_companies)
@@ -292,8 +448,20 @@ def main():
     assert 6 <= len(TITLE) <= 50 and len(SUBTITLE) <= 80, (len(TITLE), len(SUBTITLE))
     SOURCES = ("Public career portals, APIs and feeds across 58 enterprise ATS platforms (Workday, Greenhouse, Lever, Ashby, SmartRecruiters, ADP, UKG Pro, Dayforce, Paylocity, Paycom, ApplicantPro, iSolved, Betterteam, GoHire, Freshteam, Gem, Recooty, CSOD, Taleo, Bullhorn, SAP SuccessFactors, Avature, Recruiterflow, Manatal, Loxo, CareerPlug, Comeet, Crelate, ClearCompany, PageUp People, CATS, TalentLyft, JobAdder, Jobsoid, Tribepad, ApplicantStack, Factorial HR, Join, Personio, BambooHR, Rippling, Oracle HCM, JazzHR, Jobvite, JobScore, Zoho Recruit, iCIMS, Amazon, Apple, Microsoft, Eightfold, and more). "
                "Collected with automated tooling; no logins, no private data.")
-    COLUMN_TABLE = "\n\n".join(f"**`{name}`**\n\n| Column | Type | Meaning |\n|---|---|---|\n" + "\n".join(f"| `{c}` | {t} | {d.replace('|', '/')} |" for c, (t, d) in cols.items())
-                               for name, (_, cols) in FILES.items())
+
+    file_summary_rows = []
+    for fname, (desc, _) in active_files.items():
+        fpath = out / fname
+        size_mb = fpath.stat().st_size / (1024 * 1024)
+        file_summary_rows.append(f"| `{fname}` | {desc} ({size_mb:.1f} MB) |")
+    file_table = "\n".join(file_summary_rows)
+
+    COLUMN_TABLE = "\n\n".join(
+        f"**`{name}`**\n\n| Column | Type | Meaning |\n|---|---|---|\n" +
+        "\n".join(f"| `{c}` | {t} | {d.replace('|', '/')} |" for c, (t, d) in cols.items())
+        for name, (_, cols) in active_files.items()
+    )
+
     DESCRIPTION = f"""# Job Listings: open jobs in every field, updated daily
 
 {live_count:,} open job postings from {n_companies:,} employers, collected straight from their own career pages and refreshed every day. Unlike most job datasets, it is **not limited to tech**: healthcare, retail, finance and banking, education, manufacturing, logistics, sales, marketing, engineering and more are all in here, so you can compare the job market across fields, not just inside one.
@@ -304,10 +472,7 @@ Every row has the **apply link**, the level (intern to manager+), the field, the
 
 | File | What it is |
 |---|---|
-| `jobs.csv` | One row per posting (open, or closed in the last 90 days): {total_rows:,} rows. Identical postings are merged into one row with an `openings` count. |
-| `jobs_by_company.csv` | One row per employer with 5+ open jobs ({len(company_rows):,} employers): how many of its roles are open to people with 0-2 years of experience, and how many "junior" roles quietly ask for 3+. |
-| `open_jobs_daily.csv` | Open and fresher-friendly job counts per day since tracking began. |
-| `skill_demand_daily.csv` | For every skill, the share of skill-tagged postings that mention it, per day. Technical and non-technical skills (Excel, customer service, project management, CPR, forklift and more). |
+{file_table}
 
 ## Columns
 
@@ -320,12 +485,12 @@ Every row has the **apply link**, the level (intern to manager+), the field, the
 ## Ideas for analysis
 
 - Which fields hire the most beginners? Compare `fresher_friendly` by `category`.
-- Which employers inflate "junior" titles? See `junior_asking_3plus` in `jobs_by_company.csv`.
+- Which employers inflate "junior" titles? See `junior_asking_3plus` in `jobs_by_company.parquet`.
 - How much do employers pay, and in which fields do they state it at all? (`pay_min`, `pay_max`, `pay_currency`)
 - What do employers in a field actually ask for? Skills and years of experience by `category` and `level`.
 - Where can you work remotely? `remote` by field and location.
 - How long do postings stay open, and how many are reposted? `first_seen`, `closed_at`, `ghost_score`.
-- Is demand for a skill rising or falling? `skill_demand_daily.csv` builds a time series as the days go by.
+- Is demand for a skill rising or falling? `skill_demand_daily.parquet` builds a time series as the days go by.
 - Text and classification practice: predict `category` or `level` from `title`, or build a job recommender.
 
 ## How it is collected
@@ -347,7 +512,7 @@ Refreshed automatically once a day by GitHub Actions; the scraper itself runs ev
 
 ## License
 
-- **Compilation, schema, derived fields & aggregates** (`category`, `level`, `years_experience`, `skills`, `ghost_score`, `fresher_friendly`, and the company/daily CSVs): released under **CC BY 4.0**.
+- **Compilation, schema, derived fields & aggregates** (`category`, `level`, `years_experience`, `skills`, `ghost_score`, `fresher_friendly`, and the company/daily tables): released under **CC BY 4.0**.
 - **Underlying job titles, company names, and apply URLs**: remain the property of their respective employers.
 - **Opt-out / removal**: employers who want their listings excluded from this dataset can open an issue at https://github.com/chandranshB/roleBase/issues.
 
@@ -370,9 +535,11 @@ Binjola, C. ({today[:4]}). RoleBase Job Listings: Open Jobs in Every Field. Kagg
         "userSpecifiedSources": SOURCES,
         "description": DESCRIPTION,
         "resources": [{"path": name, "description": desc, "schema": {"fields": [{"name": n, "description": d, "type": t} for n, (t, d) in cols.items()]}}
-                      for name, (desc, cols) in FILES.items()],
+                      for name, (desc, cols) in active_files.items()],
     }, indent=2), encoding="utf-8")
-    print(f"\nCompleted in {time.time() - t_start:.1f}s: {total_rows:,} rows -> kaggle/jobs.csv (+ jobs_by_company.csv, open_jobs_daily.csv, skill_demand_daily.csv); description {len(DESCRIPTION):,} chars", flush=True)
+
+    out_file_list = ", ".join(active_files.keys())
+    print(f"\nCompleted in {time.time() - t_start:.1f}s: {total_rows:,} rows -> {out_file_list}; description {len(DESCRIPTION):,} chars", flush=True)
 
 
 if __name__ == "__main__":

@@ -87,20 +87,34 @@ plt.rcParams['axes.labelweight'] = 'bold'
 plt.rcParams['figure.autolayout'] = True
 plt.rcParams['figure.dpi'] = 110
 
-# Dual-path data loader: seamless on Kaggle and local development environments
+# Dual-path data loader: seamless on Kaggle and local development environments (supports Parquet and CSV)
 def locate_file(filename):
-    kaggle_matches = glob.glob(f"/kaggle/input/**/{filename}", recursive=True)
-    if kaggle_matches:
-        return kaggle_matches[0]
-    local_matches = glob.glob(f"kaggle/{filename}") or glob.glob(f"../kaggle/{filename}") or glob.glob(f"**/{filename}", recursive=True)
-    if local_matches:
-        return local_matches[0]
-    raise FileNotFoundError(f"Could not locate {filename} in Kaggle or local workspace paths.")
+    base = filename.rsplit(".", 1)[0]
+    candidates = [f"{base}.parquet", f"{base}.csv", filename] if "." in filename else [f"{filename}.parquet", f"{filename}.csv"]
+    for cand in candidates:
+        kaggle_matches = glob.glob(f"/kaggle/input/**/{cand}", recursive=True)
+        if kaggle_matches:
+            return kaggle_matches[0]
+        local_matches = glob.glob(f"kaggle/{cand}") or glob.glob(f"../kaggle/{cand}") or glob.glob(f"data/{cand}")
+        if local_matches:
+            return local_matches[0]
+    raise FileNotFoundError(f"Could not locate {filename} (as parquet or csv) in Kaggle or local workspace paths.")
+
+def load_dataset(filename, parse_dates=None):
+    path = locate_file(filename)
+    if path.endswith(".parquet"):
+        df = pd.read_parquet(path)
+        if parse_dates:
+            for c in parse_dates:
+                if c in df.columns and not pd.api.types.is_datetime64_any_dtype(df[c]):
+                    df[c] = pd.to_datetime(df[c], errors="coerce")
+        return df
+    return pd.read_csv(path, low_memory=False, parse_dates=parse_dates)
 
 # Load primary datasets
-jobs_path = locate_file("jobs.csv")
+jobs_path = locate_file("jobs.parquet")
 print(f"Loading primary dataset from: {jobs_path} ...")
-df = pd.read_csv(jobs_path, low_memory=False, parse_dates=["posted", "first_seen", "closed_at"])
+df = load_dataset("jobs", parse_dates=["posted", "first_seen", "closed_at"])
 
 open_jobs = df[df.closed_at.isna()].copy()
 closed_jobs = df[df.closed_at.notna()].copy()
@@ -236,8 +250,8 @@ print(f"- Junior positions demanding 5+ years: {(juniors.years_experience >= 5).
 
     add_code(r"""
 # Load company-level benchmarks
-comp_path = locate_file("jobs_by_company.csv")
-companies = pd.read_csv(comp_path)
+comp_path = locate_file("jobs_by_company.parquet")
+companies = load_dataset("jobs_by_company")
 
 # Filter for companies with substantial hiring volume (>= 50 open roles)
 big_companies = companies[companies.open_roles >= 50].copy()
@@ -612,8 +626,8 @@ Using `skill_demand_daily.csv`, we track how the percentage share of skill-tagge
 """, "h8")
 
     add_code(r"""
-skill_trend_path = locate_file("skill_demand_daily.csv")
-trend_df = pd.read_csv(skill_trend_path, parse_dates=["date"])
+skill_trend_path = locate_file("skill_demand_daily.parquet")
+trend_df = load_dataset("skill_demand_daily", parse_dates=["date"])
 
 # Identify the top 8 skills by share on the latest date
 latest_date = trend_df.date.max()

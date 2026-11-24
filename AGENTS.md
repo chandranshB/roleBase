@@ -17,7 +17,7 @@ flowchart TD
     E --> F["Deploy Job<br/>(build_site.py, build_logos.py, build_pages.py)"]
     E --> G["Kaggle Workflow<br/>(export_kaggle.py)"]
     F --> H["GitHub Pages<br/>(chandranshb.github.io/roleBase)"]
-    G --> I["Kaggle Datasets & Notebooks<br/>(kaggle/jobs.csv, etc.)"]
+    G --> I["Kaggle Datasets & Notebooks<br/>(kaggle/jobs.parquet, etc.)"]
 ```
 
 ### Data Pipeline Stages:
@@ -38,7 +38,7 @@ flowchart TD
    - Deploys static site to GitHub Pages.
 4. **Kaggle Dataset Export (`export_kaggle.py`)**:
    - Batches all 103k boards in bounded 2,000-file chunks.
-   - Generates 4 clean relational CSV datasets (`jobs.csv`, `jobs_by_company.csv`, `open_jobs_daily.csv`, `skill_demand_daily.csv`).
+   - Generates 4 clean columnar Parquet datasets (and optional CSV: `jobs.parquet`, `jobs_by_company.parquet`, `open_jobs_daily.parquet`, `skill_demand_daily.parquet`).
    - Validates schema against column metadata assertions.
    - Pushes new dataset version and starter notebook to Kaggle.
 
@@ -79,7 +79,7 @@ roleBase/
 ├── build_site.py               # Site search index generator (_site/jobs.json)
 ├── build_logos.py              # Icon scraper & optimizer (logo-cache/)
 ├── build_pages.py              # Static SEO HTML page generator
-├── export_kaggle.py            # Kaggle CSV dataset exporter
+├── export_kaggle.py            # Kaggle Parquet & CSV dataset exporter
 ├── companies.json              # Registry of employers mapped to ATS boards
 ├── domains.json                # Company website domain overrides for logos
 ├── pyproject.toml              # PEP 517/621 project configuration

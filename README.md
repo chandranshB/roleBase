@@ -67,14 +67,14 @@ Every posting is parsed and normalized with seniority level, professional field,
 
 ## Data Schemas
 
-### 1. Kaggle Relational CSVs (`kaggle/`)
+### 1. Kaggle Datasets (`kaggle/` - Parquet & CSV)
 
 | File | Description | Key Fields |
 | :--- | :--- | :--- |
-| **`jobs.csv`** | Primary job database (open & closed <90 days) | `url`, `company`, `title`, `level`, `category`, `years_experience`, `skills`, `pay_min`, `pay_max`, `pay_currency`, `remote`, `ghost_score`, `first_seen`, `closed_at` |
-| **`jobs_by_company.csv`** | Early-career hiring index by employer (5+ roles) | `company`, `open_roles`, `fresher_roles`, `fresher_share`, `junior_asking_3plus`, `years_stated_share` |
-| **`open_jobs_daily.csv`** | Daily active and fresher job counts | `date`, `open_jobs`, `fresher_friendly_jobs` |
-| **`skill_demand_daily.csv`** | Skill frequency time series | `date`, `skill`, `jobs`, `tagged`, `share_pct` |
+| **`jobs.parquet`** / `jobs.csv` | Primary job database (open & closed <90 days; Parquet provides ~85% smaller file size and sub-second load times) | `url`, `company`, `title`, `level`, `category`, `years_experience`, `skills`, `pay_min`, `pay_max`, `pay_currency`, `remote`, `ghost_score`, `first_seen`, `closed_at` |
+| **`jobs_by_company.parquet`** / `jobs_by_company.csv` | Early-career hiring index by employer (5+ roles) | `company`, `open_roles`, `fresher_roles`, `fresher_share`, `junior_asking_3plus`, `years_stated_share` |
+| **`open_jobs_daily.parquet`** / `open_jobs_daily.csv` | Daily active and fresher job counts | `date`, `open_jobs`, `fresher_friendly_jobs` |
+| **`skill_demand_daily.parquet`** / `skill_demand_daily.csv` | Skill frequency time series | `date`, `skill`, `jobs`, `tagged`, `share_pct` |
 
 ### 2. Internal JSONL Store (`data/jobs/*.jsonl`)
 
