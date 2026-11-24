@@ -138,11 +138,11 @@
 {"closed_at":"2026-11-21","company":"Ruba","first_seen":"2026-11-08","id":"csod:ruba:4811","location":"LEON, MX","title":"GERENTE DE URBANIZACION"}
 {"company":"Ruba","first_seen":"2026-11-08","id":"csod:ruba:4884","location":"HERMOSILLO, MX","title":"VENDEDOR DE VIVIENDA"}
 {"company":"Ruba","first_seen":"2026-11-08","id":"csod:ruba:4885","location":"HERMOSILLO, MX","title":"VENDEDOR DE VIVIENDA"}
-{"company":"Ruba","first_seen":"2026-11-08","id":"csod:ruba:4933","location":"TIJUANA, MX","posted":"2026-12-05","title":"VENDEDOR DE VIVIENDA"}
+{"closed_at":"2026-11-24","company":"Ruba","first_seen":"2026-11-08","id":"csod:ruba:4933","location":"TIJUANA, MX","posted":"2026-12-05","title":"VENDEDOR DE VIVIENDA"}
 {"company":"Ruba","first_seen":"2026-11-08","id":"csod:ruba:4938","location":"GUADALAJARA, MX","reposts":1,"title":"ACTUALIZACION DE CEDULAS"}
 {"company":"Ruba","first_seen":"2026-11-08","id":"csod:ruba:5029","location":"OBREGON, MX","posted":"2026-10-06","reposts":1,"title":"PRACTICANTE"}
 {"company":"Ruba","first_seen":"2026-11-08","id":"csod:ruba:5032","location":"SALTILLO, MX","title":"VENDEDOR DE VIVIENDA"}
-{"company":"Ruba","first_seen":"2026-11-08","id":"csod:ruba:5034","location":"JUAREZ, MX","title":"SEGUIMIENTO INFRAESTRUCTURA Y URBANISMO"}
+{"closed_at":"2026-11-24","company":"Ruba","first_seen":"2026-11-08","id":"csod:ruba:5034","location":"JUAREZ, MX","title":"SEGUIMIENTO INFRAESTRUCTURA Y URBANISMO"}
 {"company":"Ruba","first_seen":"2026-11-08","id":"csod:ruba:5047","location":"CANCUN, MX","reposts":1,"title":"ANALISTA DE RESERVAS TERRITORIALES"}
 {"company":"Ruba","first_seen":"2026-11-19","id":"csod:ruba:5070","location":"MONTERREY, MX","posted":"2026-08-07","title":"LIDER COMERCIAL VERTICAL"}
 {"company":"Ruba","first_seen":"2026-11-08","id":"csod:ruba:5113","location":"JUAREZ, MX","reposts":3,"title":"ANALISTA DE COSTOS Y PPTOS URBANIZACION"}
@@ -188,7 +188,7 @@
 {"company":"Ruba","first_seen":"2026-11-08","id":"csod:ruba:5340","location":"JUÁREZ, MX","posted":"2026-06-10","title":"ANALISTA DE CONTRATISTAS"}
 {"closed_at":"2026-11-10","company":"Ruba","first_seen":"2026-11-08","id":"csod:ruba:5341","location":"TIJUANA, MX","posted":"2026-06-10","reposts":1,"title":"DESARROLLO DE CONTRATISTAS"}
 {"company":"Ruba","first_seen":"2026-11-14","id":"csod:ruba:5343","location":"MEXICALI, MX","reposts":2,"title":"CONTADOR"}
-{"company":"Ruba","first_seen":"2026-11-08","id":"csod:ruba:5347","location":"JUÁREZ, MX","posted":"2026-07-10","title":"GESTOR MODELO COMERCIAL"}
+{"closed_at":"2026-11-24","company":"Ruba","first_seen":"2026-11-08","id":"csod:ruba:5347","location":"JUÁREZ, MX","posted":"2026-07-10","title":"GESTOR MODELO COMERCIAL"}
 {"company":"Ruba","first_seen":"2026-11-19","id":"csod:ruba:5350","location":"MONTERREY, MX","reposts":1,"title":"ADMINISTRADOR DE VENTAS"}
 {"company":"Ruba","first_seen":"2026-11-19","id":"csod:ruba:5351","location":"MONTERREY, MX","posted":"2026-08-10","reposts":5,"title":"VENDEDOR DE VIVIENDA"}
 {"company":"Ruba","first_seen":"2026-11-08","id":"csod:ruba:5352","location":"HERMOSILLO, MX","posted":"2026-09-10","title":"COORDINADOR DE MERCADOTECNIA"}
@@ -226,7 +226,7 @@
 {"company":"Ruba","first_seen":"2026-11-09","id":"csod:ruba:5446","location":"JUAREZ, MX","posted":"2026-09-11","title":"AUDITOR VIVIENDA VERTICAL"}
 {"company":"Ruba","first_seen":"2026-11-10","id":"csod:ruba:5449","location":"TIJUANA, MX","posted":"2026-09-11","reposts":2,"title":"SUPERVISOR DE ATENCION TECNICA"}
 {"company":"Ruba","first_seen":"2026-11-11","id":"csod:ruba:5450","location":"MEXICALI, MX","posted":"2026-09-11","reposts":4,"title":"AUDITOR DE VIVIENDA (SUPERVISOR DE CONSTRUCCION)"}
-{"company":"Ruba","first_seen":"2026-11-11","id":"csod:ruba:5451","location":"TIJUANA, MX","posted":"2026-09-11","reposts":4,"title":"AUDITOR INFRAESTRUCTURA Y URBANISMO"}
+{"closed_at":"2026-11-24","company":"Ruba","first_seen":"2026-11-11","id":"csod:ruba:5451","location":"TIJUANA, MX","posted":"2026-09-11","reposts":4,"title":"AUDITOR INFRAESTRUCTURA Y URBANISMO"}
 {"company":"Ruba","first_seen":"2026-11-11","id":"csod:ruba:5452","location":"TIJUANA, MX","posted":"2026-09-11","reposts":3,"title":"COORDINADOR DE VIVIENDA"}
 {"company":"Ruba","first_seen":"2026-11-11","id":"csod:ruba:5453","location":"TIJUANA, MX","posted":"2026-09-11","reposts":2,"title":"VENDEDOR DE VIVIENDA"}
 {"company":"Ruba","first_seen":"2026-11-11","id":"csod:ruba:5454","location":"TIJUANA, MX","posted":"2026-09-11","reposts":2,"title":"VENDEDOR DE VIVIENDA"}
@@ -235,5 +235,6 @@
 {"company":"Ruba","first_seen":"2026-11-13","id":"csod:ruba:5458","location":"JUAREZ, MX","reposts":1,"title":"CONTROL ADMINISTRATIVO"}
 {"company":"Ruba","first_seen":"2026-11-13","id":"csod:ruba:5459","location":"JUAREZ, MX","reposts":4,"title":"AUDITOR INFRAESTRUCTURA Y URBANISMO"}
 {"company":"Ruba","first_seen":"2026-11-17","id":"csod:ruba:5464","location":"JUAREZ, MX","reposts":4,"title":"AUDITOR DE VIVIENDA (SUPERVISOR DE CONSTRUCCION)"}
+{"company":"Ruba","first_seen":"2026-11-24","id":"csod:ruba:5467","location":"MEXICALI, MX","reposts":4,"title":"COORDINADOR DE VIVIENDA"}
 {"company":"Ruba","first_seen":"2026-11-20","id":"csod:ruba:5468","location":"GUADALAJARA, MX","reposts":5,"title":"AUDITOR INFRAESTRUCTURA Y URBANISMO"}
 {"company":"Ruba","first_seen":"2026-11-21","id":"csod:ruba:5476","location":"LEON, MX","reposts":2,"title":"COORDINADOR DE INFRAESTRUCTURA Y URBANISMO"}

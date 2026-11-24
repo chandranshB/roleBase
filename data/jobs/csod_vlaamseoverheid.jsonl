@@ -220,12 +220,12 @@
 {"closed_at":"2026-11-13","company":"Opgroeien","first_seen":"2026-11-08","id":"csod:vlaamseoverheid:22065","location":"Brussel, BE","title":"Coördinator PMO"}
 {"company":"Opgroeien","first_seen":"2026-11-17","id":"csod:vlaamseoverheid:22072","location":"Brussel, BE","title":"Coördinator informatieveiligheid en privacy"}
 {"closed_at":"2026-11-14","company":"Opgroeien","first_seen":"2026-11-08","id":"csod:vlaamseoverheid:22077","location":"Brussel, BE","title":"HR-deskundige"}
-{"company":"Opgroeien","first_seen":"2026-11-08","id":"csod:vlaamseoverheid:22078","location":"Brussel, BE","title":"Woordvoerder"}
+{"closed_at":"2026-11-24","company":"Opgroeien","first_seen":"2026-11-08","id":"csod:vlaamseoverheid:22078","location":"Brussel, BE","title":"Woordvoerder"}
 {"closed_at":"2026-11-23","company":"Opgroeien","first_seen":"2026-11-08","id":"csod:vlaamseoverheid:22093","location":"Merelbeke-Melle, BE","title":"ILVO Eigen Vermogen Voedertechnoloog Feed Pilot"}
 {"company":"Opgroeien","first_seen":"2026-11-13","id":"csod:vlaamseoverheid:22106","location":"BH Vlissingen (NL), NL","reposts":2,"title":"Nautisch dienstchef"}
 {"closed_at":"2026-11-19","company":"Opgroeien","first_seen":"2026-11-08","id":"csod:vlaamseoverheid:22115","location":"Brugge, BE","reposts":1,"title":"Back up teamleider schoonmaak"}
-{"company":"Opgroeien","first_seen":"2026-11-08","id":"csod:vlaamseoverheid:22120","location":"Gent, BE","title":"Kok"}
-{"company":"Opgroeien","first_seen":"2026-11-08","id":"csod:vlaamseoverheid:22128","location":"Brussel, BE","title":"HR-specialist"}
+{"closed_at":"2026-11-24","company":"Opgroeien","first_seen":"2026-11-08","id":"csod:vlaamseoverheid:22120","location":"Gent, BE","title":"Kok"}
+{"closed_at":"2026-11-24","company":"Opgroeien","first_seen":"2026-11-08","id":"csod:vlaamseoverheid:22128","location":"Brussel, BE","title":"HR-specialist"}
 {"company":"Opgroeien","first_seen":"2026-11-10","id":"csod:vlaamseoverheid:22130","location":"Sint-Gillis (bij-Brussel), BE","title":"Directeur data"}
 {"company":"Opgroeien","first_seen":"2026-11-10","id":"csod:vlaamseoverheid:22131","location":"Sint-Gillis (bij-Brussel), BE","title":"Directeur operaties"}
 {"company":"Opgroeien","first_seen":"2026-11-18","id":"csod:vlaamseoverheid:22133","location":"Brussel, BE","title":"Beleidsmedewerker groene warmte en warmtenetten"}
@@ -235,7 +235,7 @@
 {"company":"Opgroeien","first_seen":"2026-11-19","id":"csod:vlaamseoverheid:22160","location":"Brussel, BE","title":"Specialist Financiën & Begroting"}
 {"company":"Opgroeien","first_seen":"2026-11-10","id":"csod:vlaamseoverheid:22172","location":"Antwerpen, BE","title":"Gebiedsmedewerker omgevingsvergunningen ruimte"}
 {"company":"Opgroeien","first_seen":"2026-11-20","id":"csod:vlaamseoverheid:22177","location":"Hasselt, BE; Mol, BE","title":"Gespecialiseerd Onderhoudsmedewerker"}
-{"company":"Opgroeien","first_seen":"2026-11-08","id":"csod:vlaamseoverheid:22181","location":"Brussel, BE","reposts":1,"title":"Technisch beheerder"}
+{"closed_at":"2026-11-24","company":"Opgroeien","first_seen":"2026-11-08","id":"csod:vlaamseoverheid:22181","location":"Brussel, BE","reposts":1,"title":"Technisch beheerder"}
 {"company":"Opgroeien","first_seen":"2026-11-12","id":"csod:vlaamseoverheid:22186","location":"Sint-Gillis (bij-Brussel), BE","title":"Medewerker onthaal - administratie"}
 {"company":"Opgroeien","first_seen":"2026-11-13","id":"csod:vlaamseoverheid:22201","location":"Brussel, BE","title":"Administratief kabinetsondersteuner"}
 {"closed_at":"2026-11-23","company":"Opgroeien","first_seen":"2026-11-08","id":"csod:vlaamseoverheid:22207","location":"Merelbeke-Melle, BE","skills":["llm"],"title":"ILVO Eigen Vermogen Agentic AI & LLM Developer"}
@@ -246,3 +246,10 @@
 {"company":"Opgroeien","first_seen":"2026-11-16","id":"csod:vlaamseoverheid:22247","location":"BE","title":"Consulent"}
 {"company":"Opgroeien","first_seen":"2026-11-12","id":"csod:vlaamseoverheid:22249","location":"Sint-Gillis (bij-Brussel), BE","title":"jobstudenten voor Team Zorgnoodevaluatie"}
 {"company":"Opgroeien","first_seen":"2026-11-16","id":"csod:vlaamseoverheid:22257","location":"Merelbeke-Melle, BE","title":"ILVO Eigen Vermogen Landbouweconoom"}
+{"company":"Opgroeien","first_seen":"2026-11-24","id":"csod:vlaamseoverheid:22276","location":"Brussel, BE","title":"Administratief Medewerker Slachtofferonthaal Brussel"}
+{"company":"Opgroeien","first_seen":"2026-11-24","id":"csod:vlaamseoverheid:22278","location":"Dendermonde, BE","title":"Administratief Medewerker Slachtofferonthaal Dendermonde"}
+{"company":"Opgroeien","first_seen":"2026-11-24","id":"csod:vlaamseoverheid:22279","location":"Gent, BE","title":"Administratief Medewerker Slachtofferonthaal Gent"}
+{"company":"Opgroeien","first_seen":"2026-11-24","id":"csod:vlaamseoverheid:22280","location":"Leuven, BE","title":"Administratief Medewerker Slachtofferonthaal Leuven"}
+{"company":"Opgroeien","first_seen":"2026-11-24","id":"csod:vlaamseoverheid:22281","location":"Mechelen, BE","title":"Administratief Medewerker Slachtofferonthaal Mechelen"}
+{"company":"Opgroeien","first_seen":"2026-11-24","id":"csod:vlaamseoverheid:22282","location":"Turnhout, BE","title":"Administratief Medewerker Slachtofferonthaal Turnhout"}
+{"company":"Opgroeien","first_seen":"2026-11-24","id":"csod:vlaamseoverheid:22285","location":"Antwerpen, BE","title":"Administratief Medewerker Slachtofferonthaal Antwerpen"}

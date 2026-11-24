@@ -86,7 +86,7 @@
 {"company":"OpenRoad Auto","first_seen":"2026-11-08","id":"bamboohr:orag:5043","location":"Brampton, Ontario","team":"Sales","title":"Product Advisor - OpenRoad Honda"}
 {"company":"OpenRoad Auto","employment":"part_time","first_seen":"2026-11-08","id":"bamboohr:orag:5044","location":"Brampton, Ontario","skills":["customer_service"],"title":"Part Time - Customer Service Associate - Tommy's Express Car Wash"}
 {"company":"OpenRoad Auto","first_seen":"2026-11-08","id":"bamboohr:orag:5046","location":"Burnaby, British Columbia","team":"Sales","title":"Sales Manager - OpenRoad Auto"}
-{"company":"OpenRoad Auto","first_seen":"2026-11-08","id":"bamboohr:orag:5047","location":"Vancouver, British Columbia","team":"Service","title":"Reception Associate - The BMW Store"}
+{"closed_at":"2026-11-24","company":"OpenRoad Auto","first_seen":"2026-11-08","id":"bamboohr:orag:5047","location":"Vancouver, British Columbia","team":"Service","title":"Reception Associate - The BMW Store"}
 {"company":"OpenRoad Auto","first_seen":"2026-11-08","id":"bamboohr:orag:5049","location":"Richmond, British Columbia","team":"Sales","title":"Delivery Specialist - OpenRoad Toyota Richmond"}
 {"company":"OpenRoad Auto","first_seen":"2026-11-08","id":"bamboohr:orag:5050","location":"Port Moody, British Columbia","team":"Sales","title":"Service to Sales Team Member - OpenRoad Mazda Port Moody"}
 {"company":"OpenRoad Auto","first_seen":"2026-11-08","id":"bamboohr:orag:5053","location":"Burnaby, British Columbia","team":"Client Contact Centre","title":"Internet Sales Coordinator - Client Contact Centre - OpenRoad Auto"}
@@ -137,3 +137,6 @@
 {"company":"OpenRoad Auto","first_seen":"2026-11-18","id":"bamboohr:orag:5113","location":"Richmond, British Columbia","team":"Sales","title":"Product Advisor - OpenRoad Toyota Richmond"}
 {"company":"OpenRoad Auto","first_seen":"2026-11-18","id":"bamboohr:orag:5114","location":"Langley, British Columbia","team":"Sales","title":"Delivery Specialist - BMW/MINI Langley"}
 {"company":"OpenRoad Auto","first_seen":"2026-11-20","id":"bamboohr:orag:5115","location":"Abbotsford, British Columbia","team":"Sales","title":"Product Advisor - OpenRoad Toyota Abbotsford"}
+{"company":"OpenRoad Auto","first_seen":"2026-11-24","id":"bamboohr:orag:5116","location":"Burnaby, British Columbia","skills":["payroll"],"team":"Accounting","title":"Payroll Associate - OpenRoad Auto"}
+{"company":"OpenRoad Auto","first_seen":"2026-11-24","id":"bamboohr:orag:5117","location":"Richmond, British Columbia","team":"Accounting","title":"General Accounting Associate - Head Office Richmond - OpenRoad Auto"}
+{"company":"OpenRoad Auto","first_seen":"2026-11-24","id":"bamboohr:orag:5118","location":"Port Moody, British Columbia","team":"Sales","title":"Receptionist - OpenRoad Lexus Port Moody"}

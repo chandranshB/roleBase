@@ -7,7 +7,7 @@
 {"closed_at":"2026-11-12","company":"Newmedica","first_seen":"2026-11-09","id":"bamboohr:newmedica:2249","location":"Worcester, Worcestershire","team":"OJV","title":"Patient Administrator"}
 {"company":"Newmedica","first_seen":"2026-11-08","id":"bamboohr:newmedica:2252","location":"Plymouth, Devon","team":"OJV","title":"RN Scrub Nurse  /ODP"}
 {"company":"Newmedica","first_seen":"2026-11-08","id":"bamboohr:newmedica:2255","location":"Whiteley, Hampshire","team":"OJV","title":"Ophthalmic Clinic Assistant"}
-{"company":"Newmedica","first_seen":"2026-10-30","id":"bamboohr:newmedica:2257","location":"Worcester, Worcestershire","team":"OJV","title":"Ophthalmic Scrub Nurse"}
+{"closed_at":"2026-11-24","company":"Newmedica","first_seen":"2026-10-30","id":"bamboohr:newmedica:2257","location":"Worcester, Worcestershire","team":"OJV","title":"Ophthalmic Scrub Nurse"}
 {"closed_at":"2026-11-10","company":"Newmedica","employment":"part_time","first_seen":"2026-10-30","id":"bamboohr:newmedica:2258","location":"Leicester","team":"OJV","title":"Part-time Optometrist - Glaucoma Specialist"}
 {"closed_at":"2026-11-08","company":"Newmedica","first_seen":"2026-10-30","id":"bamboohr:newmedica:2259","location":"Whiteley, Hampshire","team":"OJV","title":"Ophthalmic Scrub Nurse"}
 {"closed_at":"2026-11-13","company":"Newmedica","first_seen":"2026-11-08","id":"bamboohr:newmedica:2261","location":"Shrewsbury, Shropshire","team":"OJV","title":"Ophthalmic Assistant"}
@@ -35,3 +35,6 @@
 {"company":"Newmedica","first_seen":"2026-11-19","id":"bamboohr:newmedica:2304","location":"Welwyn Garden City, Hertfordshire","team":"OJV","title":"Service Engagement Lead – NHS and Private"}
 {"company":"Newmedica","first_seen":"2026-11-20","id":"bamboohr:newmedica:2306","location":"Norwich, Norfolk","team":"OJV","title":"Office Manager and Governance Lead"}
 {"company":"Newmedica","first_seen":"2026-11-20","id":"bamboohr:newmedica:2308","location":"Grimsby / Brigg, Lincolnshire","team":"OJV","title":"Administrator"}
+{"company":"Newmedica","first_seen":"2026-11-24","id":"bamboohr:newmedica:2309","remote":true,"reposts":1,"team":"OJV","title":"HR Administrator"}
+{"company":"Newmedica","first_seen":"2026-11-24","id":"bamboohr:newmedica:2311","location":"Norwich, Norfolk","team":"OJV","title":"Apprentice Ophthalmic Assistant"}
+{"company":"Newmedica","first_seen":"2026-11-24","id":"bamboohr:newmedica:2312","location":"Worcester, Worcestershire","reposts":1,"team":"OJV","title":"Ophthalmic Scrub Nurse"}

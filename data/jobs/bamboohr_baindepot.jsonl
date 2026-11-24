@@ -14,9 +14,10 @@
 {"company":"Bain Dépôt","first_seen":"2026-10-19","id":"bamboohr:baindepot:293","location":"Drummondville, Quebec","team":"100 Sales","title":"18-Assistant(e) gérant(e)"}
 {"closed_at":"2026-11-19","company":"Bain Dépôt","first_seen":"2026-11-08","id":"bamboohr:baindepot:304","location":"Moncton, New Brunswick","team":"100 Sales","title":"63-Key Holder | Full time"}
 {"company":"Bain Dépôt","first_seen":"2026-11-08","id":"bamboohr:baindepot:319","location":"Lasalle, Quebec","team":"100 Sales","title":"63-Troisième clé"}
-{"company":"Bain Dépôt","first_seen":"2026-11-08","id":"bamboohr:baindepot:329","location":"laval, Quebec","team":"100 Sales","title":"15 - Commis d'entrepôt | Laval"}
+{"company":"Bain Dépôt","employment":"part_time","first_seen":"2026-11-08","id":"bamboohr:baindepot:329","location":"laval, Quebec","team":"100 Sales","title":"15 - Commis d'entrepôt Laval | Temps partiel"}
 {"company":"Bain Dépôt","employment":"part_time","first_seen":"2026-11-08","id":"bamboohr:baindepot:338","location":"Scarborough, Ontario","team":"100 Sales","title":"63-key Holder | Part time"}
 {"company":"Bain Dépôt","employment":"part_time","first_seen":"2026-10-20","id":"bamboohr:baindepot:346","location":"Gloucester, Ontario","team":"100 Sales","title":"24-Sales Associate | Part time"}
+{"company":"Bain Dépôt","employment":"part_time","first_seen":"2026-11-24","id":"bamboohr:baindepot:355","location":"Ajax, Ontario","reposts":2,"team":"100 Sales","title":"63-Key Holder | Part time"}
 {"company":"Bain Dépôt","employment":"part_time","first_seen":"2026-11-08","id":"bamboohr:baindepot:356","location":"Woodbridge, Ontario","team":"100 Sales","title":"63-Key Holder | Part time"}
 {"company":"Bain Dépôt","first_seen":"2026-11-08","id":"bamboohr:baindepot:359","location":"Dorval, Quebec","team":"100 Sales","title":"63-Troisième clé | temps plein"}
 {"company":"Bain Dépôt","employment":"part_time","first_seen":"2026-11-08","id":"bamboohr:baindepot:360","location":"Lasalle, Quebec","team":"100 Sales","title":"24 – Conseiller(ère) aux ventes"}
@@ -35,7 +36,7 @@
 {"closed_at":"2026-11-18","company":"Bain Dépôt","first_seen":"2026-11-17","id":"bamboohr:baindepot:448","location":"Blainville, Quebec","team":"Finances","title":"Analyste en approvisionnement"}
 {"company":"Bain Dépôt","employment":"part_time","first_seen":"2026-10-19","id":"bamboohr:baindepot:451","location":"Kitchener, Ontario","team":"100 Sales","title":"24 - Sales Associate | Part time"}
 {"company":"Bain Dépôt","first_seen":"2026-10-19","id":"bamboohr:baindepot:453","location":"Lévis, Quebec","team":"100 Sales","title":"63-troisième clé | temps plein"}
-{"company":"Bain Dépôt","employment":"part_time","first_seen":"2026-11-09","id":"bamboohr:baindepot:455","location":"Woodbridge, Ontario","team":"100 Sales","title":"24-Sales Associate | Part time"}
+{"closed_at":"2026-11-24","company":"Bain Dépôt","employment":"part_time","first_seen":"2026-11-09","id":"bamboohr:baindepot:455","location":"Woodbridge, Ontario","team":"100 Sales","title":"24-Sales Associate | Part time"}
 {"closed_at":"2026-11-19","company":"Bain Dépôt","first_seen":"2026-10-19","id":"bamboohr:baindepot:456","location":"Winnipeg, Manitoba","team":"100 Sales","title":"63-Key holder | Full time"}
 {"company":"Bain Dépôt","employment":"part_time","first_seen":"2026-10-19","id":"bamboohr:baindepot:458","location":"Kingston, Ontario","team":"100 Sales","title":"24-Sales Associate | Part time"}
 {"closed_at":"2026-11-19","company":"Bain Dépôt","employment":"part_time","first_seen":"2026-10-27","id":"bamboohr:baindepot:460","location":"Oshawa, Ontario","reposts":1,"team":"100 Sales","title":"63-Keyholder | Part Time"}
@@ -61,6 +62,6 @@
 {"closed_at":"2026-11-16","company":"Bain Dépôt","first_seen":"2026-11-08","id":"bamboohr:baindepot:503","location":"Blainville, Quebec","team":"Marketing","title":"Spécialiste E-commerce | Junior"}
 {"company":"Bain Dépôt","employment":"part_time","first_seen":"2026-10-28","id":"bamboohr:baindepot:504","location":"Edmonton, Alberta","team":"100 Sales","title":"24-sales associate | Part time"}
 {"company":"Bain Dépôt","first_seen":"2026-11-10","id":"bamboohr:baindepot:505","location":"Quebec, Quebec","reposts":1,"team":"100 Sales","title":"26- Gérant(e) de magasin"}
-{"company":"Bain Dépôt","first_seen":"2026-11-16","id":"bamboohr:baindepot:506","location":"Oakville, Ontario","team":"100 Sales","title":"26-Store Manager | Burloak"}
+{"closed_at":"2026-11-24","company":"Bain Dépôt","first_seen":"2026-11-16","id":"bamboohr:baindepot:506","location":"Oakville, Ontario","team":"100 Sales","title":"26-Store Manager | Burloak"}
 {"company":"Bain Dépôt","first_seen":"2026-11-19","id":"bamboohr:baindepot:507","location":"Kingston, Ontario","team":"100 Sales","title":"24-Sales Associate | Full time"}
 {"company":"Bain Dépôt","first_seen":"2026-11-08","id":"bamboohr:baindepot:99","location":"Blainville, Quebec","team":"Marketing","title":"Marchandiseur E-Commerce"}

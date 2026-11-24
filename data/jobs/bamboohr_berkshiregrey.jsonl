@@ -1,11 +1,11 @@
-{"closed_at":"2026-11-10","company":"Berkshire Grey","first_seen":"2026-11-09","id":"bamboohr:berkshiregrey:645","remote":true,"team":"BU-Retail & Verticals","title":"Sales Executive"}
+{"company":"Berkshire Grey","first_seen":"2026-11-09","id":"bamboohr:berkshiregrey:645","remote":true,"team":"BU-Retail & Verticals","title":"Sales Executive"}
 {"closed_at":"2026-11-19","company":"Berkshire Grey","first_seen":"2026-11-08","id":"bamboohr:berkshiregrey:689","location":"Bedford, Massachusetts","team":"Software","title":"Senior Software Engineer, Robotics"}
 {"closed_at":"2026-11-09","company":"Berkshire Grey","first_seen":"2026-11-08","id":"bamboohr:berkshiregrey:754","location":"Bedford, Massachusetts","team":"Mechatronics","title":"Senior Mechatronics and Control Engineer"}
 {"closed_at":"2026-11-16","company":"Berkshire Grey","first_seen":"2026-11-08","id":"bamboohr:berkshiregrey:755","location":"Bedford, Massachusetts","team":"Software","title":"Senior Software Engineer, R&D"}
 {"company":"Berkshire Grey","first_seen":"2026-11-08","id":"bamboohr:berkshiregrey:757","location":"Bedford, Massachusetts","team":"Mechanical","title":"Principal Mechanical Engineer"}
 {"company":"Berkshire Grey","first_seen":"2026-11-08","id":"bamboohr:berkshiregrey:759","remote":true,"team":"BU-Retail & Verticals","title":"Principal Solutions Architect  (Warehousing/MHE)"}
 {"closed_at":"2026-11-11","company":"Berkshire Grey","employment":"internship","first_seen":"2026-11-10","id":"bamboohr:berkshiregrey:762","location":"Bedford, Massachusetts","team":"Mechanical","title":"Spring 2027 Mechanical Engineering Co-op"}
-{"company":"Berkshire Grey","employment":"internship","first_seen":"2026-11-08","id":"bamboohr:berkshiregrey:768","location":"Bedford, Massachusetts","team":"Software","title":"Spring 2027 Robot Learning R&D Co-op"}
+{"closed_at":"2026-11-24","company":"Berkshire Grey","employment":"internship","first_seen":"2026-11-08","id":"bamboohr:berkshiregrey:768","location":"Bedford, Massachusetts","team":"Software","title":"Spring 2027 Robot Learning R&D Co-op"}
 {"closed_at":"2026-11-09","company":"Berkshire Grey","employment":"internship","first_seen":"2026-11-08","id":"bamboohr:berkshiregrey:772","location":"Bedford, Massachusetts","team":"Mechatronics","title":"Spring 2027 Mechatronics Engineering Co-op"}
 {"closed_at":"2026-11-17","company":"Berkshire Grey","first_seen":"2026-11-08","id":"bamboohr:berkshiregrey:774","location":"Bedford, Massachusetts","skills":["ml"],"team":"Software","title":"Senior ML Engineer, Computer Vision"}
 {"closed_at":"2026-11-09","company":"Berkshire Grey","first_seen":"2026-11-08","id":"bamboohr:berkshiregrey:775","location":"Bedford, Massachusetts","team":"Mechatronics","title":"Senior Mechatronics Controls Engineer"}
@@ -24,3 +24,4 @@
 {"company":"Berkshire Grey","first_seen":"2026-11-09","id":"bamboohr:berkshiregrey:794","location":"Bedford, Massachusetts","team":"Operations Admin","title":"Manufacturing Engineer – Robotic Systems"}
 {"company":"Berkshire Grey","first_seen":"2026-11-09","id":"bamboohr:berkshiregrey:795","location":"Bedford, Massachusetts","team":"CEO Office","title":"Principal Product Development Engineers"}
 {"company":"Berkshire Grey","first_seen":"2026-11-09","id":"bamboohr:berkshiregrey:796","location":"Bedford, Massachusetts","team":"Engineering TPM","title":"Principal Applications Engineer"}
+{"company":"Berkshire Grey","first_seen":"2026-11-24","id":"bamboohr:berkshiregrey:797","location":"Bedford, Massachusetts","reposts":1,"skills":["ml"],"team":"Software","title":"Senior ML Engineer, Computer Vision"}

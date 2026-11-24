@@ -21,7 +21,6 @@
 {"closed_at":"2026-10-15","company":"Enviva","first_seen":"2026-07-10","id":"greenhouse:enviva:7798820003","location":"United States","posted":"2026-07-09","team":"Operations","title":"Area Manager, Quality and Barge Loadout"}
 {"closed_at":"2026-09-03","company":"Enviva","first_seen":"2026-07-10","id":"greenhouse:enviva:7800433003","location":"FL; Lucedale","posted":"2026-07-09","team":"Engineering","title":"Corporate Reliability Engineer"}
 {"closed_at":"2026-08-26","company":"Enviva","first_seen":"2026-07-15","id":"greenhouse:enviva:7804460003","location":"NC; Greenwood","posted":"2026-07-14","team":"Operations","title":"Mobile Grinder Operator"}
-{"closed_at":"2026-08-25","company":"Enviva","first_seen":"2026-07-15","id":"greenhouse:enviva:7804671003","location":"United States","posted":"2026-07-14","skills":["procurement"],"team":"Procurement","title":"Procurement Specialist"}
 {"closed_at":"2026-10-08","company":"Enviva","first_seen":"2026-10-01","id":"greenhouse:enviva:7804706003","location":"United States","posted":"2026-07-14","team":"Operations","title":"Operations Manager"}
 {"company":"Enviva","first_seen":"2026-11-08","id":"greenhouse:enviva:7807077003","location":"Garysburg, NC","posted":"2026-07-21","reposts":3,"skills":["preventive_maintenance","welding","osha"],"team":"Operations","title":"Mechanical Technician"}
 {"closed_at":"2026-08-29","company":"Enviva","first_seen":"2026-07-18","id":"greenhouse:enviva:7807260003","location":"United States","posted":"2026-07-17","team":"Operations","title":"Utility/Trainee"}
@@ -51,7 +50,7 @@
 {"company":"Enviva","first_seen":"2026-10-19","id":"greenhouse:enviva:7981708003","location":"Wilmington, NC","posted":"2026-08-31","team":"Operations","title":"Receiving Operator - Lead position"}
 {"company":"Enviva","first_seen":"2026-10-19","id":"greenhouse:enviva:7983869003","location":"Franklin, VA","posted":"2026-09-08","skills":["excel"],"team":"Operations","title":"Quality Technician"}
 {"closed_at":"2026-09-05","company":"Enviva","first_seen":"2026-09-03","id":"greenhouse:enviva:7984001003","location":"United States","posted":"2026-09-02","team":"Operations","title":"Hammer Mill Operator"}
-{"company":"Enviva","first_seen":"2026-10-19","id":"greenhouse:enviva:7984333003","location":"Epes, AL","posted":"2026-09-02","skills":["preventive_maintenance","welding","osha"],"team":"Operations","title":"Mechanical Technician"}
+{"closed_at":"2026-11-24","company":"Enviva","first_seen":"2026-10-19","id":"greenhouse:enviva:7984333003","location":"Epes, AL","posted":"2026-09-02","skills":["preventive_maintenance","welding","osha"],"team":"Operations","title":"Mechanical Technician"}
 {"closed_at":"2026-11-10","company":"Enviva","first_seen":"2026-10-19","id":"greenhouse:enviva:7984683003","location":"Epes, AL","posted":"2026-09-04","team":"Operations","title":"Hammer Mill Operator"}
 {"closed_at":"2026-11-09","company":"Enviva","first_seen":"2026-10-19","id":"greenhouse:enviva:7985909003","location":"Epes, AL","posted":"2026-09-04","skills":["osha"],"team":"Operations","title":"Electrical Technician"}
 {"closed_at":"2026-11-09","company":"Enviva","first_seen":"2026-11-08","id":"greenhouse:enviva:7986969003","location":"Epes, AL","posted":"2026-09-08","reposts":3,"skills":["preventive_maintenance","welding","osha"],"team":"Operations","title":"Mechanical Technician"}
@@ -118,3 +117,4 @@
 {"company":"Enviva","first_seen":"2026-11-17","id":"greenhouse:enviva:8205822003","location":"Wilmington, NC","posted":"2026-11-17","reposts":6,"skills":["osha"],"team":"Operations","title":"Electrical Technician"}
 {"company":"Enviva","first_seen":"2026-11-17","id":"greenhouse:enviva:8205858003","location":"Hamlet, NC","posted":"2026-11-17","skills":["preventive_maintenance","welding","osha"],"team":"Operations","title":"Mechanical Technician - Night"}
 {"company":"Enviva","first_seen":"2026-11-19","id":"greenhouse:enviva:8207597003","location":"Lucedale, MS","posted":"2026-11-19","reposts":8,"team":"Operations","title":"Pellet Mill Operator"}
+{"company":"Enviva","first_seen":"2026-11-24","id":"greenhouse:enviva:8210654003","location":"Waycross, GA","posted":"2026-11-23","reposts":4,"skills":["preventive_maintenance","welding","osha"],"team":"Operations","title":"Mechanical Technician"}

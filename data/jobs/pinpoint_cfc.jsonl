@@ -4,10 +4,10 @@
 {"company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:079f9588-1433-4a8d-a78f-d481c145e671","location":"UK - London","title":"Senior Professional Services Consultant"}
 {"closed_at":"2026-11-18","company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:083dc155-31d8-4dde-a64c-262671be29f3","location":"UK - London","skills":["negotiation"],"title":"Underwriter, International Technology"}
 {"company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:0908aa9b-3a12-42d9-ac1b-80ffc10de216","location":"ES - Madrid","title":"International Tax Underwriter"}
-{"closed_at":"2026-11-09","company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:09171b65-736e-4839-831b-f6f69b1d448c","location":"UK - London","skills":["time_management"],"title":"Underwriting Operations Specialist - 12 month FTC"}
+{"company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:09171b65-736e-4839-831b-f6f69b1d448c","location":"UK - London","skills":["time_management"],"title":"Underwriting Operations Specialist - 12 month FTC"}
 {"company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:097aa176-01d9-48e6-bdd0-f3b2f5c688f6","location":"UK - London","skills":["sql","python"],"title":"Systemic Risk Actuary"}
 {"company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:0a76a67b-2cc1-43d2-b448-33b9bdca8480","location":"UK - London","skills":["ml","llm","python","docker","azure"],"title":"Senior Machine Learning Engineer","years":6}
-{"company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:1429f9e0-1083-4cf0-acab-2dfe920e5f7e","location":"UK - London","skills":["procurement","databricks"],"title":"Finance Systems Business Analyst"}
+{"closed_at":"2026-11-24","company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:1429f9e0-1083-4cf0-acab-2dfe920e5f7e","location":"UK - London","skills":["procurement","databricks"],"title":"Finance Systems Business Analyst"}
 {"company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:16380efb-1c4e-4fc3-a87c-065b3b165ddc","location":"Remote","remote":true,"skills":["negotiation"],"title":"Underwriter, Technology"}
 {"company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:165b0eb3-8444-4e76-b1e8-484b8e68dac1","location":"UK - London","skills":["project_management","budgeting","forecasting"],"title":"Project Manager"}
 {"company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:1f4933b2-3cc8-445f-b855-fa95b8f71822","location":"UK - London","title":"Account Executive - Cyber"}
@@ -30,9 +30,10 @@
 {"company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:5bb3787a-8b04-47d7-9321-2020320507e7","location":"UK - London","title":"Senior DFIR Investigator"}
 {"company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:5d86caa9-184b-4d7c-9d8f-7377ba85608c","location":"UK - London","skills":["project_management"],"title":"Cyber Incident Manager"}
 {"company":"CFC","first_seen":"2026-11-13","id":"pinpoint:cfc:67210c74-6c81-4676-8a7d-b33881880ec6","location":"US - New York","pay":[140000,180000,"USD"],"title":"Senior Underwriter - Corporate Professions"}
-{"company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:6adbbeb1-0887-40d7-bf0f-ed1b23fc7daa","location":"UK - London","title":"Complaints Lead"}
+{"closed_at":"2026-11-24","company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:6adbbeb1-0887-40d7-bf0f-ed1b23fc7daa","location":"UK - London","title":"Complaints Lead"}
 {"company":"CFC","first_seen":"2026-10-30","id":"pinpoint:cfc:79c9e444-ad98-4c3b-a705-0cc62f7ea4ab","location":"UK - London","title":"Senior DFIR Investigator"}
 {"company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:7bad9fcc-08f0-4c88-adbe-99524c2554cc","location":"CA - Ontario","pay":[160000,220000,"CAD"],"title":"Assistant General Counsel","years":10}
+{"company":"CFC","first_seen":"2026-11-24","id":"pinpoint:cfc:7ec67b98-2cb2-4f53-ae2e-302cc89db744","location":"US - Texas","title":"Senior Forensic Investigator"}
 {"company":"CFC","first_seen":"2026-11-13","id":"pinpoint:cfc:802cb0cc-d4df-4166-a49d-4502fcc82dd0","location":"AU - Melbourne","skills":["customer_service"],"title":"Technical Business Analyst","years":2}
 {"company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:8630e4b4-6eae-492a-83ff-940871d7ee88","location":"UK - London","title":"Threat Intellience Analyst"}
 {"company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:8bd8c371-27e3-4891-9971-b412f1ff8192","location":"UK - London","title":"Talent & Development Partner"}
@@ -60,6 +61,7 @@
 {"company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:bdb54b95-2c68-4462-96fb-9e3315161e35","location":"UK - London","title":"Lead Security Engineer (Data)"}
 {"company":"CFC","first_seen":"2026-11-20","id":"pinpoint:cfc:bf8daa2f-031e-48fb-9e7f-136178f8f280","location":"UK - London","skills":["customer_service","ml"],"title":"Underwriter - UK Management Liability"}
 {"company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:c30496bc-626c-425f-ab72-808f7e44d130","location":"UK - London","skills":["ml","terraform","llm","python","java","c#","postgres","azure"],"title":"Senior Software Engineer (AI & ML)"}
+{"company":"CFC","first_seen":"2026-11-24","id":"pinpoint:cfc:c922c19d-244a-4608-8e74-5e8687e2b901","location":"US - Texas","skills":["azure"],"title":"Senior Platform Engineer"}
 {"company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:c986d7b0-ff38-4ccb-a5bf-aafa576a69a5","location":"US - New York","pay":[180000,220000,"USD"],"skills":["excel","sql","python"],"title":"Pricing Manager"}
 {"closed_at":"2026-11-18","company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:ca06a7ac-4bfb-4f1a-93bb-cf3af5fd3edc","location":"UK - London","skills":["ml","llm","ci/cd","python","sql","azure","databricks","docker"],"title":"Data Scientist"}
 {"company":"CFC","first_seen":"2026-11-08","id":"pinpoint:cfc:cc5fa3d0-058b-4efd-a6b0-1a5df4a03d4c","location":"UK - London","title":"Senior Reporting Accountant"}

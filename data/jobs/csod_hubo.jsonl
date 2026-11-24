@@ -68,7 +68,7 @@
 {"company":"Hubo","first_seen":"2026-11-08","id":"csod:hubo:1039","location":"Veurne, West-Vlaanderen, BE","title":"Winkelverantwoordelijke - Hubo Veurne"}
 {"company":"Hubo","first_seen":"2026-11-08","id":"csod:hubo:1051","location":"Wommelgem, Antwerpen, BE","reposts":1,"title":"Inkoopassistent"}
 {"closed_at":"2026-11-17","company":"Hubo","first_seen":"2026-11-08","id":"csod:hubo:1057","location":"Blankenberge, West-Vlaanderen, BE","title":"Assistent-Winkelverantwoordelijke - Hubo Blankenberge"}
-{"company":"Hubo","first_seen":"2026-11-08","id":"csod:hubo:1070","location":"GAVERE, Oost-Vlaanderen, BE","title":"Polyvalent winkel- en magazijnmedewerker tuin/hout/bouw (heftruck) - Hubo Gavere"}
+{"closed_at":"2026-11-24","company":"Hubo","first_seen":"2026-11-08","id":"csod:hubo:1070","location":"GAVERE, Oost-Vlaanderen, BE","title":"Polyvalent winkel- en magazijnmedewerker tuin/hout/bouw (heftruck) - Hubo Gavere"}
 {"company":"Hubo","first_seen":"2026-11-08","id":"csod:hubo:1074","location":"Wommelgem, Antwerpen, BE","reposts":1,"title":"Administratief Medewerker Boekhouding"}
 {"company":"Hubo","first_seen":"2026-11-08","id":"csod:hubo:1085","location":"BEVEREN, Oost-Vlaanderen, BE","title":"Kassamedewerker / Verkoper / Magazijnier - Hubo Beveren-Waas"}
 {"company":"Hubo","first_seen":"2026-11-08","id":"csod:hubo:1098","location":"Machelen (Bt), Vlaams-Brabant, BE","title":"Assistent Winkelmanager Machelen"}
@@ -85,7 +85,7 @@
 {"closed_at":"2026-11-13","company":"Hubo","first_seen":"2026-11-08","id":"csod:hubo:1114","location":"HAMME, Oost-Vlaanderen, BE","title":"Verkoper / Aanvuller - Hubo Hamme"}
 {"closed_at":"2026-11-09","company":"Hubo","first_seen":"2026-11-08","id":"csod:hubo:1115","location":"Willebroek, Antwerpen, BE","title":"Magazijnier - Plafomat Willebroek"}
 {"company":"Hubo","first_seen":"2026-11-08","id":"csod:hubo:1116","location":"HAACHT, Vlaams-Brabant, BE","reposts":1,"title":"Flexi Winkelmedewerker - Hubo Haacht"}
-{"company":"Hubo","first_seen":"2026-11-08","id":"csod:hubo:1118","location":"STABROEK, Antwerpen, BE","title":"Verkoper / Aanvuller - Hubo Stabroek"}
+{"closed_at":"2026-11-24","company":"Hubo","first_seen":"2026-11-08","id":"csod:hubo:1118","location":"STABROEK, Antwerpen, BE","title":"Verkoper / Aanvuller - Hubo Stabroek"}
 {"closed_at":"2026-11-09","company":"Hubo","first_seen":"2026-11-08","id":"csod:hubo:1120","location":"Herstal, Liège, BE","title":"Caissièr(e) - Hubo Herstal"}
 {"closed_at":"2026-11-09","company":"Hubo","first_seen":"2026-11-08","id":"csod:hubo:1121","location":"Herstal, Liège, BE","title":"Vendeur / Réassortisseur - Hubo Herstal"}
 {"closed_at":"2026-11-09","company":"Hubo","first_seen":"2026-11-08","id":"csod:hubo:1122","location":"Chenee, Liège, BE","title":"Vendeur / Réassortisseur - Hubo Chênée"}
@@ -95,10 +95,15 @@
 {"closed_at":"2026-11-18","company":"Hubo","first_seen":"2026-11-13","id":"csod:hubo:1128","location":"ZELZATE, Oost-Vlaanderen, BE","title":"Flexi Kassamedewerker (tijdelijk) - Hubo Zelzate"}
 {"company":"Hubo","first_seen":"2026-11-13","id":"csod:hubo:1129","location":"LEDE, Oost-Vlaanderen, BE","reposts":2,"title":"Verkoper / Aanvuller - Hubo Lede"}
 {"company":"Hubo","first_seen":"2026-11-17","id":"csod:hubo:1130","location":"Awans, Liège, BE","title":"Vendeur / Réassortisseur (temporaire)- Hubo Hognoul"}
-{"company":"Hubo","first_seen":"2026-11-17","id":"csod:hubo:1131","location":"Roeselare, West-Vlaanderen, BE","title":"Verkoper / Magazijnier / Kassa - Hubo Roeselare"}
+{"closed_at":"2026-11-24","company":"Hubo","first_seen":"2026-11-17","id":"csod:hubo:1131","location":"Roeselare, West-Vlaanderen, BE","title":"Verkoper / Magazijnier / Kassa - Hubo Roeselare"}
 {"closed_at":"2026-11-20","company":"Hubo","first_seen":"2026-11-18","id":"csod:hubo:1132","location":"Wetteren, Oost-Vlaanderen, BE","reposts":1,"title":"Verkoper / Aanvuller - Hubo Wetteren"}
 {"company":"Hubo","first_seen":"2026-11-20","id":"csod:hubo:1133","location":"Halle, Vlaams-Brabant, BE","title":"Kassamedewerker - Hubo Halle"}
 {"company":"Hubo","first_seen":"2026-11-20","id":"csod:hubo:1134","location":"BEVEREN, Oost-Vlaanderen, BE","title":"Assistent-Winkelverantwoordelijke - Hubo Beveren-Waas"}
+{"company":"Hubo","first_seen":"2026-11-24","id":"csod:hubo:1135","location":"EKEREN, Antwerpen, BE","title":"Verkoper / Magazijnier - Hubo Ekeren"}
+{"company":"Hubo","first_seen":"2026-11-24","id":"csod:hubo:1136","location":"Oostende, West-Vlaanderen, BE","title":"Polyvalente Kassamedewerker"}
+{"company":"Hubo","first_seen":"2026-11-24","id":"csod:hubo:1137","location":"Oostende, West-Vlaanderen, BE","title":"Polyvalent Winkelmedewerker - Hubo Oostende"}
+{"company":"Hubo","first_seen":"2026-11-24","id":"csod:hubo:1138","location":"Oostende, West-Vlaanderen, BE","title":"Flexi Winkelmedewerker - Hubo Oostende"}
+{"company":"Hubo","first_seen":"2026-11-24","id":"csod:hubo:1139","location":"HAMME, Oost-Vlaanderen, BE","reposts":2,"title":"Kassamedewerker - Hubo Hamme"}
 {"company":"Hubo","first_seen":"2026-11-08","id":"csod:hubo:383","location":"EDEGEM, Antwerpen, BE","title":"Trainee Assistent Winkelverantwoordelijke - Provincie Antwerpen"}
 {"company":"Hubo","first_seen":"2026-11-08","id":"csod:hubo:497","location":"Wommelgem, Antwerpen, BE","title":"Stagiair(e)"}
 {"company":"Hubo","first_seen":"2026-11-08","id":"csod:hubo:645","location":"Wommelgem, Antwerpen, BE","title":"Stagiair(e) Inkoopassistent"}
@@ -106,4 +111,4 @@
 {"company":"Hubo","first_seen":"2026-11-08","id":"csod:hubo:734","location":"Machelen (Bt), Vlaams-Brabant, BE","title":"Drive-In Manager Machelen"}
 {"company":"Hubo","first_seen":"2026-11-08","id":"csod:hubo:916","location":"Wommelgem, Antwerpen, BE","title":"Technisch-commercieel adviseur"}
 {"company":"Hubo","first_seen":"2026-11-08","id":"csod:hubo:932","location":"Poperinge, West-Vlaanderen, BE","title":"Winkelverantwoordelijke - Hubo Poperinge"}
-{"company":"Hubo","first_seen":"2026-11-08","id":"csod:hubo:971","location":"Wommelgem, Antwerpen, BE","title":"Conseiller en Prévention Expérimenté (Niveau 1 ou 2)"}
+{"closed_at":"2026-11-24","company":"Hubo","first_seen":"2026-11-08","id":"csod:hubo:971","location":"Wommelgem, Antwerpen, BE","title":"Conseiller en Prévention Expérimenté (Niveau 1 ou 2)"}
