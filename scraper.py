@@ -535,7 +535,7 @@ def workday(s, name):  # s = "<tenant>.<pod>.myworkdayjobs.com/<site>"; the list
                  for d in [first, *rest] for j in d.get("jobPostings", []) if j.get("externalPath") and j.get("title")}.values())  # entries with no link or no title exist (KBR has one): skip them, not the board
 
 
-CAPPED = {"workday", "eightfold", "himalayas", "jobicy", "jobtech", "usajobs", "oracle", "phenom", "apple", "themuse", "aidevboard", "nofluffjobs", "arbeitsagentur", "mycareersfuture", "freehire", "workatastartup"}
+CAPPED = {"workday", "eightfold", "himalayas", "jobicy", "jobtech", "usajobs", "oracle", "phenom", "apple", "themuse", "aidevboard", "nofluffjobs", "arbeitsagentur", "mycareersfuture", "freehire", "workatastartup", "talentbrew"}
 AIDEV_CAP = 500  # newest N AI Dev Jobs
 HIM_CAP = 400  # newest N Himalayas jobs (of 100k+)
 MUSE_CAP = 400  # newest N jobs from The Muse (of 400k+)
@@ -871,8 +871,9 @@ def workable(s, name):  # apply.workable.com/<slug>; many small and mid-size emp
             for j in d.get("jobs") or [] if j.get("shortcode") and j.get("title")]
 
 
-def teamtailor(s, name):  # RSS per company: <slug>.teamtailor.com
-    r = S.get(f"https://{s}.teamtailor.com/jobs.rss", timeout=TIMEOUT)
+def teamtailor(s, name):  # RSS per company: <slug>.teamtailor.com or custom domain
+    url = f"https://{s}/jobs.rss" if "." in s else f"https://{s}.teamtailor.com/jobs.rss"
+    r = S.get(url, timeout=TIMEOUT)
     r.raise_for_status()
     ns, out = {"tt": "https://teamtailor.com/locations"}, []
     for i in ET.fromstring(r.content).iter("item"):
@@ -1823,6 +1824,55 @@ def bullhorn(s, name):  # s = "{cls}/{token}"
 
 
 def successfactors(s, name):
+    comp = name or s
+    out = []
+    seen = set()
+    if "." in s:
+        startrow = 0
+        while startrow < 1000:
+            url = f"https://{s}/search/?q=&startrow={startrow}"
+            try:
+                r = S.get(url, timeout=TIMEOUT)
+                if not r.ok:
+                    break
+            except Exception:
+                break
+            soup = BeautifulSoup(r.text, "html.parser")
+            rows = soup.find_all("tr", class_=lambda c: c and "data-row" in c.lower())
+            if not rows:
+                break
+            new_in_page = 0
+            for tr in rows:
+                a = tr.find("a", class_=lambda c: c and ("jobtitle" in c.lower() or "title" in c.lower()))
+                if not a:
+                    continue
+                title = a.text.strip()
+                href = a.get("href") or ""
+                jid = href.strip("/").split("/")[-1] if href else ""
+                if not jid or not title or jid in seen:
+                    continue
+                seen.add(jid)
+                new_in_page += 1
+                loc_el = tr.find(class_=lambda c: c and "location" in c.lower())
+                loc = loc_el.text.strip() if loc_el else ""
+                date_el = tr.find(class_=lambda c: c and "date" in c.lower())
+                date_str = date_el.text.strip() if date_el else ""
+                posted = None
+                if date_str:
+                    for fmt in ("%b %d, %Y", "%d-%b-%Y", "%Y-%m-%d"):
+                        try:
+                            posted = dt.datetime.strptime(date_str, fmt).date().isoformat()
+                            break
+                        except Exception:
+                            pass
+                apply_url = href if href.startswith("http") else f"https://{s}{href}"
+                remote = "remote" in loc.lower() or "remote" in title.lower()
+                out.append(job("successfactors", f"successfactors:{s}", jid, comp, title, apply_url, location=loc, remote=remote, posted=posted))
+            if new_in_page == 0:
+                break
+            startrow += len(rows)
+        return out
+
     parts = s.split("/")
     cls = parts[0]
     company = parts[1] if len(parts) > 1 else s
@@ -1835,9 +1885,6 @@ def successfactors(s, name):
         return []
     soup = BeautifulSoup(r.text, "html.parser")
     rows = soup.find_all("tr", class_=lambda c: c and "data-row" in c.lower())
-    out = []
-    comp = name or company
-    seen = set()
     for tr in rows:
         a = tr.find("a", class_=lambda c: c and "jobtitle" in c.lower())
         if not a:
@@ -3166,6 +3213,100 @@ def yc(s, name):
     return out
 
 
+def jibe(s, name):
+    comp = name or s
+    out = []
+    seen = set()
+    page = 1
+    base = f"https://{s}" if "." in s else f"https://{s}.jibeapply.com"
+    while page <= 50:
+        url = f"{base}/api/jobs?page={page}&limit=100"
+        try:
+            r = S.get(url, timeout=TIMEOUT)
+            if not r.ok:
+                break
+            d = r.json()
+        except Exception:
+            break
+        jobs = d.get("jobs") or []
+        if not jobs:
+            break
+        new_jobs = 0
+        for item in jobs:
+            data = item.get("data") if isinstance(item, dict) else {}
+            if not data:
+                continue
+            jid = str(data.get("slug") or data.get("req_id") or item.get("id") or "")
+            title = (data.get("title") or item.get("title") or "").strip()
+            if not jid or not title or jid in seen:
+                continue
+            seen.add(jid)
+            new_jobs += 1
+            loc = (data.get("full_location") or data.get("short_location") or data.get("location_name") or data.get("city") or "").strip()
+            remote = bool(data.get("remote")) or "remote" in loc.lower() or "remote" in title.lower()
+            emp = [data.get("employment_type")] if data.get("employment_type") else []
+            desc = data.get("description") or data.get("short_description") or ""
+            posted = None
+            p_date = data.get("posted_date") or ""
+            if p_date:
+                try:
+                    posted = p_date.split("T")[0]
+                except Exception:
+                    pass
+            apply_url = data.get("apply_url") or f"{base}/jobs/{jid}"
+            cat = data.get("category") or data.get("categories") or ""
+            team = ", ".join(cat) if isinstance(cat, list) else str(cat).strip()
+            out.append(job("jibe", f"jibe:{s}", jid, comp, title, apply_url,
+                           location=loc, remote=remote, emp=emp, desc=desc, posted=posted, team=team))
+        if new_jobs == 0:
+            break
+        page += 1
+    return out
+
+
+def talentbrew(s, name):
+    comp = name or s
+    out = []
+    seen = set()
+    page = 1
+    base = f"https://{s}" if "." in s else f"https://{s}.talentbrew.com"
+    while page <= 100:
+        url = f"{base}/search-jobs?p={page}"
+        try:
+            r = S.get(url, timeout=TIMEOUT)
+            if not r.ok:
+                break
+        except Exception:
+            break
+        soup = BeautifulSoup(r.text, "html.parser")
+        links = soup.find_all("a", href=lambda h: h and "/job/" in h)
+        if not links:
+            break
+        new_jobs = 0
+        for a in links:
+            href = a.get("href") or ""
+            if not href or "/search-jobs" in href:
+                continue
+            jid = a.get("data-job-id") or href.rstrip("/").split("/")[-1]
+            t_el = a.find(["h2", "h3"]) or a
+            title = t_el.get_text(strip=True)
+            if not jid or not title or jid in seen:
+                continue
+            seen.add(jid)
+            new_jobs += 1
+            parent = a.find_parent(["li", "div", "tr"]) or a
+            loc_el = parent.find(class_=lambda c: c and "location" in c.lower())
+            loc = loc_el.get_text(strip=True) if loc_el else ""
+            remote = "remote" in loc.lower() or "remote" in title.lower()
+            apply_url = href if href.startswith("http") else f"{base}{href}"
+            out.append(job("talentbrew", f"talentbrew:{s}", str(jid), comp, title, apply_url,
+                           location=loc, remote=remote))
+        if new_jobs == 0:
+            break
+        page += 1
+    return out
+
+
 # ---------- New Feeds ----------
 def arbeitsagentur():
     headers = {"X-API-Key": "jobboerse-jobsuche"}
@@ -3370,7 +3511,8 @@ ATS = dict(greenhouse=greenhouse, lever=lever, ashby=ashby, smartrecruiters=smar
            successfactors=successfactors, avature=avature, recruiterflow=recruiterflow, manatal=manatal, loxo=loxo, careerplug=careerplug, comeet=comeet,
            crelate=crelate, clearcompany=clearcompany, pageup=pageup,
            catsone=catsone, talentlyft=talentlyft, jobadder=jobadder, jobsoid=jobsoid, tribepad=tribepad, applicantstack=applicantstack,
-           factorial=factorial, hireology=hireology, feishu=feishu, moka=moka, beisen=beisen, tencent=tencent, bytedance=bytedance, netease=netease, jd=jd, unitree=unitree, baidu=baidu, yc=yc)
+           factorial=factorial, hireology=hireology, feishu=feishu, moka=moka, beisen=beisen, tencent=tencent, bytedance=bytedance, netease=netease, jd=jd, unitree=unitree, baidu=baidu, yc=yc,
+           jibe=jibe, talentbrew=talentbrew)
 FEEDS = dict(remotive=remotive, remoteok=remoteok, arbeitnow=arbeitnow, himalayas=himalayas, jobicy=jobicy, weworkremotely=weworkremotely,
              getonbrd=getonbrd, workingnomads=workingnomads, jobtech=jobtech, cryptojobs=cryptojobs, themuse=themuse,
              aidevboard=aidevboard, larajobs=larajobs, fourdayweek=fourdayweek, nodesk=nodesk, remotepython=remotepython, nofluffjobs=nofluffjobs, landingjobs=landingjobs, cryptocurrencyjobs=cryptocurrencyjobs, cryptojobslist=cryptojobslist, golangprojects=golangprojects, arbeitsagentur=arbeitsagentur, mycareersfuture=mycareersfuture, freehire=freehire, workatastartup=workatastartup)
@@ -3430,7 +3572,9 @@ URLS = dict(greenhouse="https://job-boards.greenhouse.io/{s}/jobs/{r}", lever="h
             baidu="https://talent.baidu.com/jobs/social-detail/{r}",
             arbeitsagentur="https://www.arbeitsagentur.de/jobsuche/jobdetail/{r}",
             mycareersfuture="https://www.mycareersfuture.gov.sg/job/{r}",
-            yc="https://www.workatastartup.com/jobs/{r}")
+            yc="https://www.workatastartup.com/jobs/{r}",
+            jibe="https://{s}.jibeapply.com/jobs/{r}",
+            talentbrew="https://{s}/job/{r}")
 DEFAULTS = dict(company="", closed_at=None, location="", country="", team="", remote=False, years=None, skills=[], pay=None, employment="", posted=None, reposts=0)
 
 
@@ -3611,7 +3755,7 @@ def verdict(jobs, err, prev, strikes):
 # The number is how many boards of that provider are fetched at the same time (conservative defaults, not published limits); a provider not listed
 # here (Arbeitnow, every feed, Amazon, Microsoft...) gets one worker, i.e. one board at a time. Workable and Arbeitnow also pause a second between requests.
 LANE_OF = {"microsoft": "eightfold"}  # Microsoft's careers site is Eightfold-hosted: one lane, one site at a time, so their bot protection never sees a burst
-LANES = {"greenhouse": 24, "lever": 16, "ashby": 16, "smartrecruiters": 12, "workday": 32, "teamtailor": 4, "oracle": 8, "workable": 2, "personio": 12, "recruitee": 2, "phenom": 4, "apple": 1, "pinpoint": 8, "breezy": 8, "bamboohr": 16, "rippling": 8, "join": 16, "adp": 16, "jazzhr": 16, "jobvite": 8, "trakstar_hire": 8, "jobscore": 8, "zoho": 16, "icims": 8, "ultipro": 16, "dayforce": 16, "paylocity": 16, "paycom": 16, "applicantpro": 8, "isolved": 8, "betterteam": 8, "gohire": 8, "freshteam": 4, "gem": 4, "recooty": 4, "csod": 4, "taleo": 2, "bullhorn": 8, "successfactors": 8, "avature": 8, "recruiterflow": 8, "manatal": 8, "loxo": 8, "careerplug": 8, "comeet": 8, "crelate": 8, "clearcompany": 8, "pageup": 8, "catsone": 8, "talentlyft": 8, "jobadder": 8, "jobsoid": 8, "tribepad": 8, "applicantstack": 8, "factorial": 4, "hireology": 16, "feishu": 16, "moka": 16, "beisen": 8, "tencent": 4, "bytedance": 4, "netease": 4, "jd": 4, "unitree": 2, "baidu": 4, "arbeitsagentur": 4, "mycareersfuture": 4, "freehire": 4, "yc": 16, "workatastartup": 4, "aidevboard": 2, "larajobs": 2, "fourdayweek": 2, "nodesk": 2, "remotepython": 2, "nofluffjobs": 2, "landingjobs": 2, "cryptocurrencyjobs": 2, "cryptojobslist": 2, "golangprojects": 2}
+LANES = {"greenhouse": 24, "lever": 16, "ashby": 16, "smartrecruiters": 12, "workday": 32, "teamtailor": 4, "oracle": 8, "workable": 2, "personio": 12, "recruitee": 2, "phenom": 4, "apple": 1, "pinpoint": 8, "breezy": 8, "bamboohr": 16, "rippling": 8, "join": 16, "adp": 16, "jazzhr": 16, "jobvite": 8, "trakstar_hire": 8, "jobscore": 8, "zoho": 16, "icims": 8, "ultipro": 16, "dayforce": 16, "paylocity": 16, "paycom": 16, "applicantpro": 8, "isolved": 8, "betterteam": 8, "gohire": 8, "freshteam": 4, "gem": 4, "recooty": 4, "csod": 4, "taleo": 2, "bullhorn": 8, "successfactors": 8, "avature": 8, "recruiterflow": 8, "manatal": 8, "loxo": 8, "careerplug": 8, "comeet": 8, "crelate": 8, "clearcompany": 8, "pageup": 8, "catsone": 8, "talentlyft": 8, "jobadder": 8, "jobsoid": 8, "tribepad": 8, "applicantstack": 8, "factorial": 4, "hireology": 16, "feishu": 16, "moka": 16, "beisen": 8, "tencent": 4, "bytedance": 4, "netease": 4, "jd": 4, "unitree": 2, "baidu": 4, "arbeitsagentur": 4, "mycareersfuture": 4, "freehire": 4, "yc": 16, "workatastartup": 4, "jibe": 8, "talentbrew": 8, "aidevboard": 2, "larajobs": 2, "fourdayweek": 2, "nodesk": 2, "remotepython": 2, "nofluffjobs": 2, "landingjobs": 2, "cryptocurrencyjobs": 2, "cryptojobslist": 2, "golangprojects": 2}
 RUN_BUDGET = 16 * 60  # seconds: graceful cutoff so in-flight tasks finish, disk saves, and shards exit cleanly within CI limits
 
 

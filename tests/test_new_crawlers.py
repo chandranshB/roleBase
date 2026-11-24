@@ -238,6 +238,69 @@ class TestNewCrawlers(unittest.TestCase):
         self.assertEqual(j["pay"], [180000, 220000, "USD"])
         self.assertEqual(j["url"], "https://www.workatastartup.com/jobs/999123")
 
+    @patch.object(scraper.S, "get")
+    def test_jibe_parser(self, mock_get):
+        mock_resp = unittest.mock.MagicMock()
+        mock_resp.ok = True
+        mock_resp.status_code = 200
+        mock_resp.json.return_value = {
+            "jobs": [{
+                "id": "item-123",
+                "data": {
+                    "slug": "484313",
+                    "req_id": "REQ-484313",
+                    "title": "Network VEND Coordinator",
+                    "full_location": "Dallas, Texas",
+                    "posted_date": "2026-11-20T01:39:00+0000",
+                    "employment_type": "FULL_TIME",
+                    "description": "Requires 3+ years experience in Python and AWS.",
+                    "remote": False,
+                    "category": "Supply Chain",
+                    "apply_url": "https://uscareers-pepsico.icims.com/jobs/484313/login"
+                }
+            }]
+        }
+        mock_get.return_value = mock_resp
+        jobs = scraper.jibe("pepsico", "PepsiCo")
+        self.assertEqual(len(jobs), 1)
+        j = jobs[0]
+        self.assertEqual(j["id"], "jibe:pepsico:484313")
+        self.assertEqual(j["title"], "Network VEND Coordinator")
+        self.assertEqual(j["company"], "PepsiCo")
+        self.assertEqual(j["location"], "Dallas, Texas")
+        self.assertEqual(j["team"], "Supply Chain")
+        self.assertFalse(j["remote"])
+        self.assertEqual(j["posted"], "2026-11-20")
+        self.assertIn("python", j["skills"])
+        self.assertIn("aws", j["skills"])
+
+    @patch.object(scraper.S, "get")
+    def test_talentbrew_parser(self, mock_get):
+        mock_resp = unittest.mock.MagicMock()
+        mock_resp.ok = True
+        mock_resp.status_code = 200
+        mock_resp.text = '''
+        <section id="search-results-list">
+            <ul>
+                <li class="search-results-list__item">
+                    <a class="search-results-list__job-link" data-job-id="103718173632" href="/job/oakland/expert-business-analyst/29673/103718173632">
+                        <h2>Expert Business Analyst</h2>
+                    </a>
+                    <span class="job-location">Oakland, CA</span>
+                </li>
+            </ul>
+        </section>
+        '''
+        mock_get.return_value = mock_resp
+        jobs = scraper.talentbrew("jobs.pge.com", "PG&E")
+        self.assertEqual(len(jobs), 1)
+        j = jobs[0]
+        self.assertEqual(j["id"], "talentbrew:jobs.pge.com:103718173632")
+        self.assertEqual(j["title"], "Expert Business Analyst")
+        self.assertEqual(j["company"], "PG&E")
+        self.assertEqual(j["location"], "Oakland, CA")
+        self.assertFalse(j["remote"])
+
 
 if __name__ == "__main__":
     unittest.main()

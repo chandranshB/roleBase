@@ -227,13 +227,15 @@ URLS = dict(
     baidu="https://talent.baidu.com/jobs/social-detail/{r}",
     arbeitsagentur="https://www.arbeitsagentur.de/jobsuche/jobdetail/{r}",
     mycareersfuture="https://www.mycareersfuture.gov.sg/job/{r}",
-    yc="https://www.workatastartup.com/jobs/{r}"
+    yc="https://www.workatastartup.com/jobs/{r}",
+    jibe="https://{s}.jibeapply.com/jobs/{r}",
+    talentbrew="https://{s}/job/{r}"
 )
 
 DEFAULTS = dict(company="", closed_at=None, location="", country="", team="", remote=False, years=None, skills=[], pay=None, employment="", posted=None, reposts=0)
 
 # Capped / windowed feeds where missing postings cannot be assumed closed
-CAPPED = {"workday", "eightfold", "himalayas", "jobicy", "jobtech", "usajobs", "oracle", "phenom", "apple", "themuse", "aidevboard", "nofluffjobs", "arbeitsagentur", "mycareersfuture", "freehire", "workatastartup"}
+CAPPED = {"workday", "eightfold", "himalayas", "jobicy", "jobtech", "usajobs", "oracle", "phenom", "apple", "themuse", "aidevboard", "nofluffjobs", "arbeitsagentur", "mycareersfuture", "freehire", "workatastartup", "talentbrew"}
 
 # Public feeds skipped during Kaggle export
 SKIP = {"remotive", "remoteok", "himalayas", "jobicy", "weworkremotely", "getonbrd", "workingnomads", "cryptojobs", "themuse", "aidevboard", "larajobs", "fourdayweek", "nodesk", "remotepython", "nofluffjobs", "landingjobs", "cryptocurrencyjobs", "cryptojobslist", "golangprojects", "arbeitsagentur", "mycareersfuture", "freehire", "workatastartup"}
@@ -251,6 +253,7 @@ LANES = {
     "factorial": 4, "hireology": 8, "feishu": 8, "moka": 8, "beisen": 8, "tencent": 4, "bytedance": 4, "netease": 4, "jd": 4, "unitree": 2, "baidu": 4,
     "arbeitsagentur": 4, "mycareersfuture": 4, "freehire": 4,
     "yc": 16, "workatastartup": 4,
+    "jibe": 8, "talentbrew": 8,
     "aidevboard": 2, "larajobs": 2, "fourdayweek": 2, "nodesk": 2, "remotepython": 2,
     "nofluffjobs": 2, "landingjobs": 2, "cryptocurrencyjobs": 2, "cryptojobslist": 2, "golangprojects": 2
 }

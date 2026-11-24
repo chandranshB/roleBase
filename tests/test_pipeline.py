@@ -36,6 +36,8 @@ class TestPipeline(unittest.TestCase):
             ("arbeitsagentur:10000:12345", "https://www.arbeitsagentur.de/jobsuche/jobdetail/12345"),
             ("mycareersfuture:sg:01784e6b", "https://www.mycareersfuture.gov.sg/job/01784e6b"),
             ("yc:instawork:81975", "https://www.workatastartup.com/jobs/81975"),
+            ("jibe:pepsico:484313", "https://pepsico.jibeapply.com/jobs/484313"),
+            ("talentbrew:careers.unitedhealthgroup.com:103717209136", "https://careers.unitedhealthgroup.com/job/103717209136"),
             ("workatastartup:123", None),
             ("freehire:abc", None),
             ("remotive:7", None),  # Non-derivable feed URL

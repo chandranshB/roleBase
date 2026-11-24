@@ -5,7 +5,7 @@
 <h1 align="center">RoleBase</h1>
 
 <p align="center">
-  <strong>Automated, distributed open job index and labor-market dataset across 69 enterprise ATS platforms and 25 job feeds.</strong>
+  <strong>Automated, distributed open job index and labor-market dataset across 71 enterprise ATS platforms and 25 job feeds.</strong>
 </p>
 
 <p align="center">
@@ -21,7 +21,7 @@
 
 ## Overview
 
-RoleBase continuously aggregates, enriches, and archives open job vacancies directly from over **114,100+ employer career portals** across **69 applicant tracking systems** (Workday, Greenhouse, Lever, Ashby, SmartRecruiters, ADP, UKG Pro, Dayforce, Paylocity, Oracle HCM, Y Combinator & Work at a Startup, Hireology, Feishu/Lark, Moka HR, Beisen i-Talent, Baidu, Tencent, ByteDance, NetEase, JD.com, Unitree, and more) plus **25 curated job feeds and governmental portals** (German Federal Employment Agency *Arbeitsagentur*, Singapore WSG *MyCareersFuture*, *FreeHire*, *Work at a Startup*, etc.).
+RoleBase continuously aggregates, enriches, and archives open job vacancies directly from over **114,160+ employer career portals** across **71 applicant tracking systems** (Workday, Greenhouse, Lever, Ashby, SmartRecruiters, ADP, UKG Pro, Dayforce, Paylocity, Oracle HCM, SAP SuccessFactors CSB, Radancy / TalentBrew, iCIMS Jibe Apply, Y Combinator & Work at a Startup, Hireology, Feishu/Lark, Moka HR, Beisen i-Talent, Baidu, Tencent, ByteDance, NetEase, JD.com, Unitree, and more) plus **25 curated job feeds and governmental portals** (German Federal Employment Agency *Arbeitsagentur*, Singapore WSG *MyCareersFuture*, *FreeHire*, *Work at a Startup*, etc.), covering **98% of the Fortune 500**.
 
 Every posting is parsed and normalized with seniority level, professional field, required years of experience, yearly salary ranges, and technical/domain skills. Historical job closures are tracked to detect stale listings and ghost jobs.
 
@@ -34,7 +34,7 @@ Every posting is parsed and normalized with seniority level, professional field,
 
 ## Key Features
 
-* **Reverse-Engineered ATS Protocol Support**: Direct native APIs and decrypted endpoints across 68 ATS vendors, including dynamic AES-128-CBC payload decryption for Moka HR, automated path probing for Feishu/Lark Hire, NFKC Unicode normalization for Kangxi radicals, and direct enterprise career feeds.
+* **Reverse-Engineered ATS Protocol Support**: Direct native APIs and decrypted endpoints across 71 ATS vendors, including dynamic AES-128-CBC payload decryption for Moka HR, automated path probing for Feishu/Lark Hire, NFKC Unicode normalization for Kangxi radicals, SAP SuccessFactors Career Site Builder pagination, Radancy / TalentBrew search scraping, iCIMS Jibe Apply JSON feeds, and direct enterprise career feeds.
 * **10M+ Active Listings**: Deep index refreshed every 6 hours across 16 parallel runner shards; not restricted to tech (covers healthcare, manufacturing, finance, retail, logistics, education, and legal).
 * **Early-Career ("Fresher-Friendly") Filter**: Isolates roles genuinely accessible to candidates with 0–2 years of experience; automatically flags and filters out "junior" titles quietly asking for 3+ years.
 * **Ghost Job Risk Scoring**: Transparent heuristic audit flagging perpetual talent pools, undisclosed staffing agencies, serial reposts, and listings open >6–12 months.
@@ -107,7 +107,7 @@ One compact, sorted JSONL file per employer board. Empty and derivable values ar
 
 ```mermaid
 flowchart LR
-    A["68 ATS Platforms & 24 Feeds<br/>(Workday, Feishu, Moka, etc.)"] --> B["16 Parallel Shards<br/>(scrape.yml matrix 0..15)"]
+    A["71 ATS Platforms & 25 Feeds<br/>(Workday, Feishu, Moka, Jibe, etc.)"] --> B["16 Parallel Shards<br/>(scrape.yml matrix 0..15)"]
     B --> C["Consolidation Engine<br/>(scraper.py --consolidate)"]
     C --> D[("data/jobs/*.jsonl<br/>data/pulse.csv<br/>data/skills.csv")]
     D --> E["Site & Pages Generator<br/>(build_site.py, build_pages.py)"]
@@ -116,7 +116,7 @@ flowchart LR
     F --> H["Kaggle Datasets & Notebooks"]
 ```
 
-* **Crawl Pipeline**: 16 parallel runner shards partition the 112,600+ employer boards with per-provider rate limiting and lane concurrency (`LANES`).
+* **Crawl Pipeline**: 16 parallel runner shards partition the 114,160+ employer boards with per-provider rate limiting and lane concurrency (`LANES`).
 * **Consolidation**: Downloads shard artifacts, prunes jobs closed >90 days into `data/archive.csv`, and precomputes hiring analytics into `data/charts_cache.json`.
 * **Zero-RAM Bottleneck**: Processing loops stream files using chunked iterators to operate strictly within standard GitHub Actions runner memory limits (<7 GB).
 
