@@ -35,6 +35,8 @@ class TestPipeline(unittest.TestCase):
             ("baidu:baidu:7d8ebd32", "https://talent.baidu.com/jobs/social-detail/7d8ebd32"),
             ("arbeitsagentur:10000:12345", "https://www.arbeitsagentur.de/jobsuche/jobdetail/12345"),
             ("mycareersfuture:sg:01784e6b", "https://www.mycareersfuture.gov.sg/job/01784e6b"),
+            ("yc:instawork:81975", "https://www.workatastartup.com/jobs/81975"),
+            ("workatastartup:123", None),
             ("freehire:abc", None),
             ("remotive:7", None),  # Non-derivable feed URL
             ("aidevboard:123", None),

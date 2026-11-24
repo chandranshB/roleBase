@@ -5,7 +5,7 @@
 <h1 align="center">RoleBase</h1>
 
 <p align="center">
-  <strong>Automated, distributed open job index and labor-market dataset across 68 enterprise ATS platforms and 24 job feeds.</strong>
+  <strong>Automated, distributed open job index and labor-market dataset across 69 enterprise ATS platforms and 25 job feeds.</strong>
 </p>
 
 <p align="center">
@@ -21,7 +21,7 @@
 
 ## Overview
 
-RoleBase continuously aggregates, enriches, and archives open job vacancies directly from over **112,600+ employer career portals** across **68 applicant tracking systems** (Workday, Greenhouse, Lever, Ashby, SmartRecruiters, ADP, UKG Pro, Dayforce, Paylocity, Oracle HCM, Hireology, Feishu/Lark, Moka HR, Beisen i-Talent, Baidu, Tencent, ByteDance, NetEase, JD.com, Unitree, and more) plus **24 curated job feeds and governmental portals** (German Federal Employment Agency *Arbeitsagentur*, Singapore WSG *MyCareersFuture*, *FreeHire*, etc.).
+RoleBase continuously aggregates, enriches, and archives open job vacancies directly from over **114,100+ employer career portals** across **69 applicant tracking systems** (Workday, Greenhouse, Lever, Ashby, SmartRecruiters, ADP, UKG Pro, Dayforce, Paylocity, Oracle HCM, Y Combinator & Work at a Startup, Hireology, Feishu/Lark, Moka HR, Beisen i-Talent, Baidu, Tencent, ByteDance, NetEase, JD.com, Unitree, and more) plus **25 curated job feeds and governmental portals** (German Federal Employment Agency *Arbeitsagentur*, Singapore WSG *MyCareersFuture*, *FreeHire*, *Work at a Startup*, etc.).
 
 Every posting is parsed and normalized with seniority level, professional field, required years of experience, yearly salary ranges, and technical/domain skills. Historical job closures are tracked to detect stale listings and ghost jobs.
 

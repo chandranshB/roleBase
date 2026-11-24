@@ -1,4 +1,6 @@
 """Unit tests for newly added ATS and feed crawlers."""
+import html
+import json
 import unittest
 from unittest.mock import patch
 
@@ -203,6 +205,38 @@ class TestNewCrawlers(unittest.TestCase):
         self.assertEqual(j["location"], "Beijing")
         self.assertEqual(j["posted"], "2026-11-01")
         self.assertEqual(j["url"], "https://talent.baidu.com/jobs/social-detail/baidu-post-001")
+
+    @patch.object(scraper.S, "get")
+    def test_yc_parser(self, mock_get):
+        mock_resp = unittest.mock.MagicMock()
+        mock_resp.status_code = 200
+        waas_data = {
+            "props": {
+                "company": {
+                    "name": "Acme Startup",
+                    "description": "Building next-gen AI tools with Python.",
+                    "jobs": [{
+                        "id": 999123,
+                        "title": "Senior AI Systems Engineer",
+                        "location": "San Francisco, CA / Remote (US)",
+                        "jobType": "Full-time",
+                        "salaryRange": "$180K - $220K"
+                    }]
+                }
+            }
+        }
+        mock_resp.text = f'<div id="app" data-page="{html.escape(json.dumps(waas_data))}">'
+        mock_get.return_value = mock_resp
+
+        jobs = scraper.yc("acme", "Acme Startup")
+        self.assertGreaterEqual(len(jobs), 1)
+        j = jobs[0]
+        self.assertEqual(j["id"], "yc:acme:999123")
+        self.assertEqual(j["title"], "Senior AI Systems Engineer")
+        self.assertEqual(j["company"], "Acme Startup")
+        self.assertTrue(j["remote"])
+        self.assertEqual(j["pay"], [180000, 220000, "USD"])
+        self.assertEqual(j["url"], "https://www.workatastartup.com/jobs/999123")
 
 
 if __name__ == "__main__":

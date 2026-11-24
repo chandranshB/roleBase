@@ -535,7 +535,7 @@ def workday(s, name):  # s = "<tenant>.<pod>.myworkdayjobs.com/<site>"; the list
                  for d in [first, *rest] for j in d.get("jobPostings", []) if j.get("externalPath") and j.get("title")}.values())  # entries with no link or no title exist (KBR has one): skip them, not the board
 
 
-CAPPED = {"workday", "eightfold", "himalayas", "jobicy", "jobtech", "usajobs", "oracle", "phenom", "apple", "themuse", "aidevboard", "nofluffjobs"}
+CAPPED = {"workday", "eightfold", "himalayas", "jobicy", "jobtech", "usajobs", "oracle", "phenom", "apple", "themuse", "aidevboard", "nofluffjobs", "arbeitsagentur", "mycareersfuture", "freehire", "workatastartup"}
 AIDEV_CAP = 500  # newest N AI Dev Jobs
 HIM_CAP = 400  # newest N Himalayas jobs (of 100k+)
 MUSE_CAP = 400  # newest N jobs from The Muse (of 400k+)
@@ -3088,6 +3088,84 @@ def baidu(s, name):
     return out
 
 
+def yc(s, name):
+    out = []
+    seen = set()
+    # 1. Work at a Startup company portal
+    try:
+        r = S.get(f"https://www.workatastartup.com/companies/{s}", timeout=TIMEOUT)
+        if r.status_code == 200:
+            m = re.search(r'data-page="([^"]+)"', r.text)
+            if m:
+                data = json.loads(html.unescape(m.group(1)))
+                c = data.get("props", {}).get("company", {})
+                c_name = name or c.get("name") or s
+                desc = text(c.get("hiringDescriptionHtml") or c.get("techDescriptionHtml") or c.get("description") or "")
+                jobs = c.get("jobs", []) or []
+                for j in jobs:
+                    if not isinstance(j, dict):
+                        continue
+                    jid = j.get("id")
+                    title = j.get("title")
+                    if not jid or not title:
+                        continue
+                    s_jid = str(jid)
+                    if s_jid in seen:
+                        continue
+                    seen.add(s_jid)
+                    loc = j.get("location") or ""
+                    remote = "remote" in loc.lower()
+                    emp = [j.get("jobType")] if j.get("jobType") else []
+                    sal = j.get("salaryRange") or ""
+                    pay = find_pay(sal) if sal else None
+                    url = f"https://www.workatastartup.com/jobs/{jid}"
+                    out.append(job("yc", f"yc:{s}", s_jid, c_name, title, url,
+                                   location=loc, remote=remote, emp=emp, pay=pay, desc=desc))
+    except Exception:
+        pass
+
+    # 2. Y Combinator direct company profile
+    try:
+        r = S.get(f"https://www.ycombinator.com/companies/{s}", timeout=TIMEOUT)
+        if r.status_code == 200:
+            m = re.search(r'data-page="([^"]+)"', r.text)
+            if m:
+                data = json.loads(html.unescape(m.group(1)))
+                c = data.get("props", {}).get("company", {})
+                c_name = name or c.get("name") or s
+                desc = text(c.get("long_description") or c.get("one_liner") or "")
+                jobs = c.get("jobPostings", []) or []
+                for j in jobs:
+                    if not isinstance(j, dict):
+                        continue
+                    jid = j.get("id")
+                    title = j.get("title")
+                    if not jid or not title:
+                        continue
+                    s_jid = str(jid)
+                    if s_jid in seen:
+                        continue
+                    seen.add(s_jid)
+                    loc = j.get("location") or ""
+                    remote = "remote" in loc.lower()
+                    emp = [j.get("type")] if j.get("type") else []
+                    sal = j.get("salaryRange") or ""
+                    pay = find_pay(sal) if sal else None
+                    j_url = j.get("url") or ""
+                    if j_url.startswith("/"):
+                        url = f"https://www.ycombinator.com{j_url}"
+                    elif j_url:
+                        url = j_url
+                    else:
+                        url = f"https://www.workatastartup.com/jobs/{jid}"
+                    out.append(job("yc", f"yc:{s}", s_jid, c_name, title, url,
+                                   location=loc, remote=remote, emp=emp, pay=pay, desc=desc))
+    except Exception:
+        pass
+
+    return out
+
+
 # ---------- New Feeds ----------
 def arbeitsagentur():
     headers = {"X-API-Key": "jobboerse-jobsuche"}
@@ -3192,6 +3270,99 @@ def freehire():
     return out
 
 
+def workatastartup():
+    out = []
+    seen = set()
+    # 1. WaaS category pages
+    roles = [
+        'software-engineer', 'designer', 'product-manager', 'sales-manager',
+        'operations', 'marketing', 'recruiting', 'science', 'finance', 'legal'
+    ]
+    for role in roles:
+        try:
+            r = S.get(f"https://www.workatastartup.com/jobs/l/{role}", timeout=TIMEOUT)
+            if r.status_code == 200:
+                m = re.search(r'data-page="([^"]+)"', r.text)
+                if m:
+                    data = json.loads(html.unescape(m.group(1)))
+                    jobs = data.get("props", {}).get("jobs", []) or []
+                    for j in jobs:
+                        if not isinstance(j, dict):
+                            continue
+                        jid = j.get("id")
+                        title = j.get("title")
+                        company = j.get("companyName")
+                        slug = j.get("companySlug") or "yc"
+                        if not jid or not title:
+                            continue
+                        s_jid = str(jid)
+                        if s_jid in seen:
+                            continue
+                        seen.add(s_jid)
+                        loc = j.get("location") or ""
+                        remote = "remote" in loc.lower()
+                        emp = [j.get("jobType")] if j.get("jobType") else []
+                        sal = j.get("salary") or ""
+                        pay = find_pay(sal) if sal else None
+                        url = f"https://www.workatastartup.com/jobs/{jid}"
+                        desc = text(j.get("companyOneLiner") or "")
+                        out.append(job("workatastartup", f"yc:{slug}", s_jid, company or slug, title, url,
+                                       location=loc, remote=remote, emp=emp, pay=pay, desc=desc))
+        except Exception:
+            pass
+
+    # 2. YC jobs landing & category/location pages
+    yc_paths = [
+        '/jobs',
+        '/jobs/role/software-engineer', '/jobs/role/designer', '/jobs/role/product-manager',
+        '/jobs/role/sales-manager', '/jobs/role/operations', '/jobs/role/marketing',
+        '/jobs/role/recruiting-hr', '/jobs/role/science',
+        '/jobs/location/san-francisco', '/jobs/location/new-york', '/jobs/location/seattle',
+        '/jobs/location/los-angeles', '/jobs/location/austin', '/jobs/location/chicago', '/jobs/location/india'
+    ]
+    for path in yc_paths:
+        try:
+            r = S.get(f"https://www.ycombinator.com{path}", timeout=TIMEOUT)
+            if r.status_code == 200:
+                m = re.search(r'data-page="([^"]+)"', r.text)
+                if m:
+                    data = json.loads(html.unescape(m.group(1)))
+                    postings = data.get("props", {}).get("jobPostings", []) or []
+                    for p in postings:
+                        if not isinstance(p, dict):
+                            continue
+                        jid = p.get("id")
+                        title = p.get("title")
+                        company = p.get("companyName")
+                        c_url = p.get("companyUrl") or ""
+                        slug = c_url.split("/")[-1] if c_url else "yc"
+                        if not jid or not title:
+                            continue
+                        s_jid = str(jid)
+                        if s_jid in seen:
+                            continue
+                        seen.add(s_jid)
+                        loc = p.get("location") or ""
+                        remote = "remote" in loc.lower()
+                        emp = [p.get("type")] if p.get("type") else []
+                        sal = p.get("salaryRange") or ""
+                        pay = find_pay(sal) if sal else None
+                        j_url = p.get("url") or ""
+                        if j_url.startswith("/"):
+                            url = f"https://www.ycombinator.com{j_url}"
+                        elif j_url:
+                            url = j_url
+                        else:
+                            url = f"https://www.workatastartup.com/jobs/{jid}"
+                        desc = text(p.get("companyOneLiner") or "")
+                        out.append(job("workatastartup", f"yc:{slug}", s_jid, company or slug, title, url,
+                                       location=loc, remote=remote, emp=emp, pay=pay, desc=desc))
+        except Exception:
+            pass
+
+    return out
+
+
 ATS = dict(greenhouse=greenhouse, lever=lever, ashby=ashby, smartrecruiters=smartrecruiters, workday=workday, microsoft=microsoft, eightfold=eightfold,
            amazon=amazon, apple=apple, teamtailor=teamtailor, personio=personio, recruitee=recruitee, oracle=oracle, workable=workable, phenom=phenom,
            pinpoint=pinpoint, breezy=breezy, bamboohr=bamboohr, rippling=rippling, join=join, adp=adp, jazzhr=jazzhr, jobvite=jobvite, trakstar_hire=trakstar_hire, jobscore=jobscore, zoho=zoho, icims=icims, ultipro=ultipro, dayforce=dayforce, paylocity=paylocity,
@@ -3199,10 +3370,10 @@ ATS = dict(greenhouse=greenhouse, lever=lever, ashby=ashby, smartrecruiters=smar
            successfactors=successfactors, avature=avature, recruiterflow=recruiterflow, manatal=manatal, loxo=loxo, careerplug=careerplug, comeet=comeet,
            crelate=crelate, clearcompany=clearcompany, pageup=pageup,
            catsone=catsone, talentlyft=talentlyft, jobadder=jobadder, jobsoid=jobsoid, tribepad=tribepad, applicantstack=applicantstack,
-           factorial=factorial, hireology=hireology, feishu=feishu, moka=moka, beisen=beisen, tencent=tencent, bytedance=bytedance, netease=netease, jd=jd, unitree=unitree, baidu=baidu)
+           factorial=factorial, hireology=hireology, feishu=feishu, moka=moka, beisen=beisen, tencent=tencent, bytedance=bytedance, netease=netease, jd=jd, unitree=unitree, baidu=baidu, yc=yc)
 FEEDS = dict(remotive=remotive, remoteok=remoteok, arbeitnow=arbeitnow, himalayas=himalayas, jobicy=jobicy, weworkremotely=weworkremotely,
              getonbrd=getonbrd, workingnomads=workingnomads, jobtech=jobtech, cryptojobs=cryptojobs, themuse=themuse,
-             aidevboard=aidevboard, larajobs=larajobs, fourdayweek=fourdayweek, nodesk=nodesk, remotepython=remotepython, nofluffjobs=nofluffjobs, landingjobs=landingjobs, cryptocurrencyjobs=cryptocurrencyjobs, cryptojobslist=cryptojobslist, golangprojects=golangprojects, arbeitsagentur=arbeitsagentur, mycareersfuture=mycareersfuture, freehire=freehire)
+             aidevboard=aidevboard, larajobs=larajobs, fourdayweek=fourdayweek, nodesk=nodesk, remotepython=remotepython, nofluffjobs=nofluffjobs, landingjobs=landingjobs, cryptocurrencyjobs=cryptocurrencyjobs, cryptojobslist=cryptojobslist, golangprojects=golangprojects, arbeitsagentur=arbeitsagentur, mycareersfuture=mycareersfuture, freehire=freehire, workatastartup=workatastartup)
 if os.environ.get("USAJOBS_API_KEY") and os.environ.get("USAJOBS_EMAIL"):  # optional: skipped (not failed) without a key
     FEEDS["usajobs"] = usajobs
 
@@ -3258,7 +3429,8 @@ URLS = dict(greenhouse="https://job-boards.greenhouse.io/{s}/jobs/{r}", lever="h
             unitree="https://www.unitree.com/cn/position/{r}",
             baidu="https://talent.baidu.com/jobs/social-detail/{r}",
             arbeitsagentur="https://www.arbeitsagentur.de/jobsuche/jobdetail/{r}",
-            mycareersfuture="https://www.mycareersfuture.gov.sg/job/{r}")
+            mycareersfuture="https://www.mycareersfuture.gov.sg/job/{r}",
+            yc="https://www.workatastartup.com/jobs/{r}")
 DEFAULTS = dict(company="", closed_at=None, location="", country="", team="", remote=False, years=None, skills=[], pay=None, employment="", posted=None, reposts=0)
 
 
@@ -3439,7 +3611,7 @@ def verdict(jobs, err, prev, strikes):
 # The number is how many boards of that provider are fetched at the same time (conservative defaults, not published limits); a provider not listed
 # here (Arbeitnow, every feed, Amazon, Microsoft...) gets one worker, i.e. one board at a time. Workable and Arbeitnow also pause a second between requests.
 LANE_OF = {"microsoft": "eightfold"}  # Microsoft's careers site is Eightfold-hosted: one lane, one site at a time, so their bot protection never sees a burst
-LANES = {"greenhouse": 24, "lever": 16, "ashby": 16, "smartrecruiters": 12, "workday": 32, "teamtailor": 4, "oracle": 8, "workable": 2, "personio": 12, "recruitee": 2, "phenom": 4, "apple": 1, "pinpoint": 8, "breezy": 8, "bamboohr": 16, "rippling": 8, "join": 16, "adp": 16, "jazzhr": 16, "jobvite": 8, "trakstar_hire": 8, "jobscore": 8, "zoho": 16, "icims": 8, "ultipro": 16, "dayforce": 16, "paylocity": 16, "paycom": 16, "applicantpro": 8, "isolved": 8, "betterteam": 8, "gohire": 8, "freshteam": 4, "gem": 4, "recooty": 4, "csod": 4, "taleo": 2, "bullhorn": 8, "successfactors": 8, "avature": 8, "recruiterflow": 8, "manatal": 8, "loxo": 8, "careerplug": 8, "comeet": 8, "crelate": 8, "clearcompany": 8, "pageup": 8, "catsone": 8, "talentlyft": 8, "jobadder": 8, "jobsoid": 8, "tribepad": 8, "applicantstack": 8, "factorial": 4, "hireology": 16, "feishu": 16, "moka": 16, "beisen": 8, "tencent": 4, "bytedance": 4, "netease": 4, "jd": 4, "unitree": 2, "baidu": 4, "arbeitsagentur": 4, "mycareersfuture": 4, "freehire": 4, "aidevboard": 2, "larajobs": 2, "fourdayweek": 2, "nodesk": 2, "remotepython": 2, "nofluffjobs": 2, "landingjobs": 2, "cryptocurrencyjobs": 2, "cryptojobslist": 2, "golangprojects": 2}
+LANES = {"greenhouse": 24, "lever": 16, "ashby": 16, "smartrecruiters": 12, "workday": 32, "teamtailor": 4, "oracle": 8, "workable": 2, "personio": 12, "recruitee": 2, "phenom": 4, "apple": 1, "pinpoint": 8, "breezy": 8, "bamboohr": 16, "rippling": 8, "join": 16, "adp": 16, "jazzhr": 16, "jobvite": 8, "trakstar_hire": 8, "jobscore": 8, "zoho": 16, "icims": 8, "ultipro": 16, "dayforce": 16, "paylocity": 16, "paycom": 16, "applicantpro": 8, "isolved": 8, "betterteam": 8, "gohire": 8, "freshteam": 4, "gem": 4, "recooty": 4, "csod": 4, "taleo": 2, "bullhorn": 8, "successfactors": 8, "avature": 8, "recruiterflow": 8, "manatal": 8, "loxo": 8, "careerplug": 8, "comeet": 8, "crelate": 8, "clearcompany": 8, "pageup": 8, "catsone": 8, "talentlyft": 8, "jobadder": 8, "jobsoid": 8, "tribepad": 8, "applicantstack": 8, "factorial": 4, "hireology": 16, "feishu": 16, "moka": 16, "beisen": 8, "tencent": 4, "bytedance": 4, "netease": 4, "jd": 4, "unitree": 2, "baidu": 4, "arbeitsagentur": 4, "mycareersfuture": 4, "freehire": 4, "yc": 16, "workatastartup": 4, "aidevboard": 2, "larajobs": 2, "fourdayweek": 2, "nodesk": 2, "remotepython": 2, "nofluffjobs": 2, "landingjobs": 2, "cryptocurrencyjobs": 2, "cryptojobslist": 2, "golangprojects": 2}
 RUN_BUDGET = 16 * 60  # seconds: graceful cutoff so in-flight tasks finish, disk saves, and shards exit cleanly within CI limits
 
 
