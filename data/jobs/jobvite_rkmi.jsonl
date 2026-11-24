@@ -32,16 +32,17 @@
 {"company":"RK Industries","first_seen":"2026-11-08","id":"jobvite:rkmi:o9e2AfwJ","skills":["forklift"],"title":"Forklift Operator"}
 {"company":"RK Industries","first_seen":"2026-11-08","id":"jobvite:rkmi:oA7VAfwW","title":"Mechanical Superintendent"}
 {"company":"RK Industries","first_seen":"2026-11-08","id":"jobvite:rkmi:oAKVAfwz","title":"Manufacturing Engineer"}
+{"company":"RK Industries","first_seen":"2026-11-24","id":"jobvite:rkmi:oAU8AfwW","title":"Business Development Specialist"}
 {"company":"RK Industries","first_seen":"2026-10-30","id":"jobvite:rkmi:oAhZAfwa","title":"Material Handler"}
 {"closed_at":"2026-11-14","company":"RK Industries","first_seen":"2026-11-08","id":"jobvite:rkmi:oB3dAfwb","title":"Structural Shop Foreman"}
-{"company":"RK Industries","first_seen":"2026-11-08","id":"jobvite:rkmi:oBF3AfwD","title":"Human Resources Business Partner"}
+{"closed_at":"2026-11-24","company":"RK Industries","first_seen":"2026-11-08","id":"jobvite:rkmi:oBF3AfwD","title":"Human Resources Business Partner"}
 {"company":"RK Industries","first_seen":"2026-11-11","id":"jobvite:rkmi:oCH5AfwI","title":"Quality Inspector - CWI"}
 {"company":"RK Industries","first_seen":"2026-11-12","id":"jobvite:rkmi:oCT5AfwU","title":"Safety Specialist (Night Shift)"}
 {"company":"RK Industries","first_seen":"2026-11-08","id":"jobvite:rkmi:oD62Afw5","title":"Journeyman Electrician"}
 {"company":"RK Industries","first_seen":"2026-11-08","id":"jobvite:rkmi:oDP0AfwM","title":"Sr. Project Accountant"}
 {"company":"RK Industries","first_seen":"2026-11-11","id":"jobvite:rkmi:oDm5Afwo","title":"Tool Shop Counter"}
 {"company":"RK Industries","first_seen":"2026-11-08","id":"jobvite:rkmi:oE0uAfws","title":"Project Engineer"}
-{"company":"RK Industries","first_seen":"2026-11-08","id":"jobvite:rkmi:oEQxAfwl","title":"Quality Inspector - Journeyman Electrician"}
+{"closed_at":"2026-11-24","company":"RK Industries","first_seen":"2026-11-08","id":"jobvite:rkmi:oEQxAfwl","title":"Quality Inspector - Journeyman Electrician"}
 {"closed_at":"2026-11-20","company":"RK Industries","first_seen":"2026-11-08","id":"jobvite:rkmi:oFWlAfwg","title":"Installer"}
 {"closed_at":"2026-11-11","company":"RK Industries","first_seen":"2026-11-08","id":"jobvite:rkmi:oFaPAfwY","title":"Project Manager - Mechanical"}
 {"company":"RK Industries","first_seen":"2026-10-30","id":"jobvite:rkmi:oG62Afw8","title":"Quality Inspector - Journeyman Electrician"}
@@ -62,6 +63,7 @@
 {"company":"RK Industries","first_seen":"2026-11-08","id":"jobvite:rkmi:oJq1Afwu","title":"Field Engineer"}
 {"company":"RK Industries","first_seen":"2026-11-08","id":"jobvite:rkmi:oJqcAfwF","title":"Mechanical/Plumbing - Technical Sales Engineer"}
 {"closed_at":"2026-11-20","company":"RK Industries","first_seen":"2026-11-08","id":"jobvite:rkmi:oK3YAfw5","title":"Installer"}
+{"company":"RK Industries","first_seen":"2026-11-24","id":"jobvite:rkmi:oKJ7AfwU","title":"Senior Project Manager - Mechanical"}
 {"closed_at":"2026-11-11","company":"RK Industries","first_seen":"2026-11-08","id":"jobvite:rkmi:oKrPAfwk","title":"Quality Shop Inspector - CWI"}
 {"company":"RK Industries","first_seen":"2026-11-19","id":"jobvite:rkmi:oLF0AfwK","title":"Receiving Coordinator"}
 {"closed_at":"2026-11-19","company":"RK Industries","first_seen":"2026-11-08","id":"jobvite:rkmi:oLgKAfw5","title":"Journeyman - Pipefitter"}
@@ -82,6 +84,7 @@
 {"closed_at":"2026-11-17","company":"RK Industries","first_seen":"2026-11-08","id":"jobvite:rkmi:oPgWAfwl","title":"Quality Supervisor"}
 {"company":"RK Industries","first_seen":"2026-11-08","id":"jobvite:rkmi:oPkCAfw5","title":"VDC Coordinator"}
 {"company":"RK Industries","first_seen":"2026-11-08","id":"jobvite:rkmi:oPvWAfwA","title":"Material Handler"}
+{"company":"RK Industries","first_seen":"2026-11-24","id":"jobvite:rkmi:oQ19Bfwl","title":"Project Engineer"}
 {"closed_at":"2026-11-08","company":"RK Industries","first_seen":"2026-10-30","id":"jobvite:rkmi:oR2PAfw2","title":"HVAC Service Technician"}
 {"company":"RK Industries","first_seen":"2026-11-21","id":"jobvite:rkmi:oRh8AfwA","title":"Mechanical Field Service Technician"}
 {"company":"RK Industries","first_seen":"2026-11-08","id":"jobvite:rkmi:oRt3AfwH","title":"Estimator - Service"}
@@ -90,7 +93,7 @@
 {"company":"RK Industries","first_seen":"2026-11-08","id":"jobvite:rkmi:oTt3AfwJ","title":"HVAC Service Technician"}
 {"company":"RK Industries","first_seen":"2026-11-08","id":"jobvite:rkmi:oU1dAfws","title":"Ironworker Foreman"}
 {"company":"RK Industries","first_seen":"2026-11-18","id":"jobvite:rkmi:oUq7AfwL","title":"Installer"}
-{"company":"RK Industries","first_seen":"2026-11-08","id":"jobvite:rkmi:oVkZAfwy","skills":["accounts_payable"],"title":"Accounts Payable Specialist"}
+{"closed_at":"2026-11-24","company":"RK Industries","first_seen":"2026-11-08","id":"jobvite:rkmi:oVkZAfwy","skills":["accounts_payable"],"title":"Accounts Payable Specialist"}
 {"company":"RK Industries","first_seen":"2026-11-08","id":"jobvite:rkmi:oX2MAfw5","title":"Material Handler"}
 {"company":"RK Industries","first_seen":"2026-11-11","id":"jobvite:rkmi:oXD5AfwZ","title":"Assistant Project Manager"}
 {"company":"RK Industries","first_seen":"2026-11-08","id":"jobvite:rkmi:oXJKAfwK","title":"Shop Superintendent (Plumbing)"}
@@ -160,6 +163,7 @@
 {"closed_at":"2026-11-09","company":"RK Industries","first_seen":"2026-11-08","id":"jobvite:rkmi:orrSAfw4","title":"HVAC Service Technician"}
 {"closed_at":"2026-11-20","company":"RK Industries","first_seen":"2026-11-11","id":"jobvite:rkmi:osO4zfwD","title":"Shop Electrician"}
 {"company":"RK Industries","first_seen":"2026-11-08","id":"jobvite:rkmi:osgPAfwR","title":"Director of Preconstruction"}
+{"company":"RK Industries","first_seen":"2026-11-24","id":"jobvite:rkmi:ot19BfwY","reposts":1,"title":"Assistant Project Manager"}
 {"closed_at":"2026-11-18","company":"RK Industries","first_seen":"2026-11-08","id":"jobvite:rkmi:ou34AfwV","title":"Commercial Service Plumber"}
 {"company":"RK Industries","first_seen":"2026-10-30","id":"jobvite:rkmi:ou7VAfwQ","title":"Mechanical Superintendent"}
 {"company":"RK Industries","first_seen":"2026-10-30","id":"jobvite:rkmi:ou9QAfwN","title":"Quality Shop Inspector - CWI"}
@@ -178,7 +182,7 @@
 {"company":"RK Industries","first_seen":"2026-11-08","id":"jobvite:rkmi:ox8GAfwF","title":"VDC Project Manager"}
 {"company":"RK Industries","first_seen":"2026-11-08","id":"jobvite:rkmi:oxBWAfwo","title":"Director of Business Development, RK Electrical"}
 {"closed_at":"2026-11-17","company":"RK Industries","first_seen":"2026-11-08","id":"jobvite:rkmi:oxHWAfwu","title":"Logistics Manager"}
-{"company":"RK Industries","first_seen":"2026-11-08","id":"jobvite:rkmi:oxRNAfwv","title":"Journeyman - Plumber"}
+{"closed_at":"2026-11-24","company":"RK Industries","first_seen":"2026-11-08","id":"jobvite:rkmi:oxRNAfwv","title":"Journeyman - Plumber"}
 {"company":"RK Industries","first_seen":"2026-11-08","id":"jobvite:rkmi:oyUPAfwB","title":"Project/CAD Designer"}
 {"company":"RK Industries","first_seen":"2026-11-18","id":"jobvite:rkmi:oyc7Afwb","title":"High Volume Craft Recruiter"}
 {"company":"RK Industries","first_seen":"2026-11-08","id":"jobvite:rkmi:oyt3Afwo","title":"HVAC Service Technician"}

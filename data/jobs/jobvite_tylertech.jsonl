@@ -30,7 +30,7 @@
 {"company":"Tyler Technologies","first_seen":"2026-11-13","id":"jobvite:tylertech:o9i4AfwP","title":"Project Manager, Municipal Justice"}
 {"closed_at":"2026-11-09","company":"Tyler Technologies","first_seen":"2026-10-30","id":"jobvite:tylertech:oAS1AfwN","title":"Business Development Representative - Public Safety"}
 {"company":"Tyler Technologies","employment":"internship","first_seen":"2026-11-08","id":"jobvite:tylertech:oAVOAfwD","title":"Software Development Intern, Summer 2027"}
-{"company":"Tyler Technologies","first_seen":"2026-11-08","id":"jobvite:tylertech:oAy0Afws","title":"Clerical Lead"}
+{"closed_at":"2026-11-24","company":"Tyler Technologies","first_seen":"2026-11-08","id":"jobvite:tylertech:oAy0Afws","title":"Clerical Lead"}
 {"company":"Tyler Technologies","first_seen":"2026-11-08","id":"jobvite:tylertech:oBASAfwn","title":"Manager, Client Experience"}
 {"closed_at":"2026-11-13","company":"Tyler Technologies","first_seen":"2026-11-08","id":"jobvite:tylertech:oBJ3zfwG","title":"Senior Software Engineer"}
 {"closed_at":"2026-11-11","company":"Tyler Technologies","first_seen":"2026-11-08","id":"jobvite:tylertech:oBQjAfw4","skills":["ml"],"title":"ML/AI Data and Cloud Engineer"}
@@ -41,6 +41,7 @@
 {"company":"Tyler Technologies","first_seen":"2026-11-08","id":"jobvite:tylertech:oDfGAfwS","title":"Facilities Maintenance Specialist"}
 {"closed_at":"2026-11-24","company":"Tyler Technologies","first_seen":"2026-11-08","id":"jobvite:tylertech:oEwyAfw2","skills":["sql"],"title":"SQL Reports Developer"}
 {"company":"Tyler Technologies","first_seen":"2026-11-08","id":"jobvite:tylertech:oG4eAfwi","title":"Support Representative"}
+{"company":"Tyler Technologies","first_seen":"2026-11-24","id":"jobvite:tylertech:oGg4Afwk","title":"Client Experience Advocate"}
 {"company":"Tyler Technologies","first_seen":"2026-11-08","id":"jobvite:tylertech:oGuGAfwa","title":"Account Executive"}
 {"company":"Tyler Technologies","first_seen":"2026-10-30","id":"jobvite:tylertech:oI6ZAfw7","title":"Senior Implementation Consultant"}
 {"company":"Tyler Technologies","first_seen":"2026-11-24","id":"jobvite:tylertech:oI90Afwb","title":"Senior Product Analyst, Payments"}
@@ -50,6 +51,7 @@
 {"closed_at":"2026-11-19","company":"Tyler Technologies","first_seen":"2026-11-08","id":"jobvite:tylertech:oIvOAfwl","title":"Software Support Specialist"}
 {"company":"Tyler Technologies","first_seen":"2026-11-08","id":"jobvite:tylertech:oIvTAfwq","title":"Senior Software Engineer, Payments"}
 {"company":"Tyler Technologies","first_seen":"2026-11-08","id":"jobvite:tylertech:oK0tAfwx","title":"Senior Data Architect"}
+{"company":"Tyler Technologies","first_seen":"2026-11-24","id":"jobvite:tylertech:oKF6AfwP","title":"Systems Implementation Consultant"}
 {"closed_at":"2026-11-21","company":"Tyler Technologies","first_seen":"2026-11-08","id":"jobvite:tylertech:oKf2Afwl","title":"Technical Services Support Specialist"}
 {"company":"Tyler Technologies","first_seen":"2026-11-08","id":"jobvite:tylertech:oKgSAfwc","skills":["payroll"],"title":"Product Analyst - Payroll"}
 {"closed_at":"2026-11-13","company":"Tyler Technologies","first_seen":"2026-11-08","id":"jobvite:tylertech:oKuTAfwr","skills":["customer_service"],"title":"Supervisory Team Lead, Customer Service Specialist"}
@@ -69,6 +71,7 @@
 {"closed_at":"2026-11-16","company":"Tyler Technologies","first_seen":"2026-11-08","id":"jobvite:tylertech:oOkTAfwl","title":"Client Experience Coordinator"}
 {"company":"Tyler Technologies","first_seen":"2026-11-18","id":"jobvite:tylertech:oPoOAfwl","reposts":1,"title":"Program Manager"}
 {"company":"Tyler Technologies","first_seen":"2026-11-08","id":"jobvite:tylertech:oQ9QAfw9","title":"Software Support Specialist (Manila)"}
+{"company":"Tyler Technologies","first_seen":"2026-11-24","id":"jobvite:tylertech:oQC5AfwR","skills":["customer_service"],"title":"Customer Service Rep"}
 {"closed_at":"2026-11-16","company":"Tyler Technologies","employment":"internship","first_seen":"2026-11-13","id":"jobvite:tylertech:oQFRAfwG","reposts":2,"title":"Software Development Intern, Summer 2027"}
 {"closed_at":"2026-11-20","company":"Tyler Technologies","first_seen":"2026-11-14","id":"jobvite:tylertech:oQQQAfwQ","title":"Software Support Specialist"}
 {"closed_at":"2026-11-09","company":"Tyler Technologies","first_seen":"2026-11-08","id":"jobvite:tylertech:oQUZAfw3","skills":["erp"],"title":"Business Development Representative - ERP Pro"}
@@ -78,6 +81,7 @@
 {"company":"Tyler Technologies","employment":"internship","first_seen":"2026-11-08","id":"jobvite:tylertech:oSAPAfwB","title":"Product Analyst Intern, Summer 2027"}
 {"company":"Tyler Technologies","first_seen":"2026-11-08","id":"jobvite:tylertech:oTcNAfwc","title":"VP, Professional Services & Support"}
 {"company":"Tyler Technologies","first_seen":"2026-10-30","id":"jobvite:tylertech:oTcSAfwh","title":"Business Operations Specialist"}
+{"company":"Tyler Technologies","first_seen":"2026-11-24","id":"jobvite:tylertech:oU85Afwr","skills":["customer_service"],"title":"Customer Service Rep"}
 {"company":"Tyler Technologies","first_seen":"2026-11-08","id":"jobvite:tylertech:oUvrAfwa","title":"Associate Service Engineer"}
 {"company":"Tyler Technologies","first_seen":"2026-11-08","id":"jobvite:tylertech:oVoPAfws","title":"Software Support Specialist"}
 {"company":"Tyler Technologies","first_seen":"2026-11-12","id":"jobvite:tylertech:oWv3AfwO","title":"Support Services Representative"}
@@ -100,7 +104,7 @@
 {"company":"Tyler Technologies","first_seen":"2026-11-08","id":"jobvite:tylertech:odbuAfwc","title":"Associate Product Manager, Payments"}
 {"company":"Tyler Technologies","first_seen":"2026-11-13","id":"jobvite:tylertech:odi2AfwR","title":"Project Manager"}
 {"closed_at":"2026-11-17","company":"Tyler Technologies","first_seen":"2026-11-08","id":"jobvite:tylertech:oeAJAfwR","title":"Senior Manager, Product - State and Regulatory Reporting"}
-{"company":"Tyler Technologies","first_seen":"2026-11-08","id":"jobvite:tylertech:oeCtAfwD","title":"Executive Program Manager"}
+{"closed_at":"2026-11-24","company":"Tyler Technologies","first_seen":"2026-11-08","id":"jobvite:tylertech:oeCtAfwD","title":"Executive Program Manager"}
 {"company":"Tyler Technologies","first_seen":"2026-11-08","id":"jobvite:tylertech:oelQzfwI","title":"Client Success Advocate"}
 {"company":"Tyler Technologies","employment":"internship","first_seen":"2026-11-08","id":"jobvite:tylertech:ofBPAfwZ","title":"Software Support Internship, Summer 2027"}
 {"closed_at":"2026-11-21","company":"Tyler Technologies","first_seen":"2026-11-08","id":"jobvite:tylertech:og3MAfwp","title":"Receptionist"}
@@ -130,7 +134,7 @@
 {"company":"Tyler Technologies","first_seen":"2026-11-08","id":"jobvite:tylertech:opuLAfwY","title":"Application Engineer"}
 {"company":"Tyler Technologies","first_seen":"2026-11-08","id":"jobvite:tylertech:oqTSAfwv","title":"Implementation Consultant"}
 {"company":"Tyler Technologies","first_seen":"2026-11-09","id":"jobvite:tylertech:oqV1AfwG","title":"Associate Account Executive"}
-{"company":"Tyler Technologies","first_seen":"2026-11-08","id":"jobvite:tylertech:oqVqAfw5","title":"QA Engineer"}
+{"closed_at":"2026-11-24","company":"Tyler Technologies","first_seen":"2026-11-08","id":"jobvite:tylertech:oqVqAfw5","title":"QA Engineer"}
 {"closed_at":"2026-11-17","company":"Tyler Technologies","first_seen":"2026-11-08","id":"jobvite:tylertech:oqxOAfw5","title":"Recruiter (Temp)"}
 {"company":"Tyler Technologies","first_seen":"2026-11-12","id":"jobvite:tylertech:osbLAfwI","title":"Senior Software Engineer - .NET"}
 {"company":"Tyler Technologies","first_seen":"2026-11-08","id":"jobvite:tylertech:otYNAfwy","title":"Director, Human Resources for Sales"}

@@ -1,6 +1,6 @@
 {"company":"The Wright Group","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:thewrightgroup:466","location":"Lafayette, Louisiana","team":"Corporate","title":"General Application"}
-{"company":"The Wright Group","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:thewrightgroup:485","location":"Crowley, Louisiana","team":"Warehouse","title":"Packing Associate"}
-{"company":"The Wright Group","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:thewrightgroup:486","location":"Crowley, Louisiana","team":"Production","title":"Production Associate"}
+{"closed_at":"2026-11-24","company":"The Wright Group","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:thewrightgroup:485","location":"Crowley, Louisiana","team":"Warehouse","title":"Packing Associate"}
+{"closed_at":"2026-11-24","company":"The Wright Group","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:thewrightgroup:486","location":"Crowley, Louisiana","team":"Production","title":"Production Associate"}
 {"company":"The Wright Group","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:thewrightgroup:487","location":"Modesto, California","team":"Production","title":"Production Operator"}
 {"closed_at":"2026-11-17","company":"The Wright Group","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:thewrightgroup:488","location":"Plain City, Ohio","team":"Production","title":"Manufacturing Associate"}
 {"company":"The Wright Group","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:thewrightgroup:489","location":"Crowley, Louisiana","team":"Lab-QC-QA","title":"QA Tech"}
@@ -10,3 +10,4 @@
 {"company":"The Wright Group","employment":"full_time","first_seen":"2026-11-17","id":"bamboohr:thewrightgroup:493","location":"Plain City, Ohio","team":"Production","title":"Production Operator I"}
 {"company":"The Wright Group","employment":"full_time","first_seen":"2026-11-17","id":"bamboohr:thewrightgroup:494","location":"Plain City, Ohio","team":"Lab-QC-QA","title":"Lab Technician"}
 {"company":"The Wright Group","employment":"full_time","first_seen":"2026-11-24","id":"bamboohr:thewrightgroup:495","location":"Lafayette, Louisiana","team":"Maintenance","title":"Facilities Maintenance Technician"}
+{"company":"The Wright Group","employment":"full_time","first_seen":"2026-11-24","id":"bamboohr:thewrightgroup:496","location":"Crowley, Louisiana","skills":["cdl"],"team":"Trucking","title":"CDL Driver"}

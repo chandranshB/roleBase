@@ -194,10 +194,10 @@
 {"company":"Bauer Group","first_seen":"2026-11-08","id":"csod:btc:2010","location":"Nordhausen, DE","title":"Auszubildender Konstruktionsmechaniker (m/w/d)"}
 {"company":"Bauer Group","first_seen":"2026-11-08","id":"csod:btc:2014","location":"Schrobenhausen, DE","title":"Servicemonteur für den Außendienst mit Schwerpunkt Elektronik/Mechatronik (m/w/d)"}
 {"company":"Bauer Group","first_seen":"2026-11-08","id":"csod:btc:2033","location":"Nordhausen, DE","title":"Schlosser / Vorarbeiter auf Baustellen (m/w/d)"}
-{"company":"Bauer Group","first_seen":"2026-11-08","id":"csod:btc:2034","location":"; Nordhausen, DE","title":"WIG-Schweißer auf Betriebsstellen (m/w/d)"}
+{"company":"Bauer Group","first_seen":"2026-11-08","id":"csod:btc:2034","location":"Nordhausen, DE;","title":"WIG-Schweißer auf Betriebsstellen (m/w/d)"}
 {"company":"Bauer Group","first_seen":"2026-11-08","id":"csod:btc:2036","location":"Nordhausen, DE","title":"Hauer (m/w/d)"}
 {"company":"Bauer Group","first_seen":"2026-11-08","id":"csod:btc:2042","location":"Nordhausen, DE","title":"Bauingenieur (m/w/d)"}
-{"company":"Bauer Group","first_seen":"2026-11-08","id":"csod:btc:2045","location":"; Nordhausen, DE","title":"WIG-Schweißer (m/w/d)"}
+{"company":"Bauer Group","first_seen":"2026-11-08","id":"csod:btc:2045","location":"Nordhausen, DE;","title":"WIG-Schweißer (m/w/d)"}
 {"company":"Bauer Group","first_seen":"2026-11-08","id":"csod:btc:2056","location":"Peine, DE","title":"Elektriker (m/w/d)"}
 {"company":"Bauer Group","employment":"internship","first_seen":"2026-11-08","id":"csod:btc:2065","location":"Nordhausen, DE","title":"Initiativbewerbung für ein Praktikum"}
 {"company":"Bauer Group","employment":"internship","first_seen":"2026-11-08","id":"csod:btc:2068","location":"Nordhausen, DE","title":"Ausbildungsplatz zum Spezialtiefbauer (m/w/d)"}
@@ -212,7 +212,7 @@
 {"company":"Bauer Group","employment":"internship","first_seen":"2026-11-08","id":"csod:btc:2127","location":"DE","title":"Ausbildungsplatz zum Konstruktionsmechaniker (m/w/d)"}
 {"company":"Bauer Group","first_seen":"2026-11-08","id":"csod:btc:2144","location":"Nordhausen, DE","title":"Vermessungstechniker / Vermessungsingenieur (m/w/d)"}
 {"company":"Bauer Group","first_seen":"2026-11-08","id":"csod:btc:2157","location":"Schrobenhausen, DE","title":"Verfahrens- und Qualitätsingenieur (m/w/d)"}
-{"company":"Bauer Group","first_seen":"2026-11-08","id":"csod:btc:2203","location":"DE","reposts":1,"title":"Bohrgeräteführer – Geothermie (m/w/d)"}
+{"closed_at":"2026-11-24","company":"Bauer Group","first_seen":"2026-11-08","id":"csod:btc:2203","location":"DE","reposts":1,"title":"Bohrgeräteführer – Geothermie (m/w/d)"}
 {"company":"Bauer Group","employment":"internship","first_seen":"2026-11-08","id":"csod:btc:2213","location":"Schrobenhausen, DE","title":"Praktikant oder Werkstudent in der Entwicklung Elektrik (m/w/d)"}
 {"company":"Bauer Group","first_seen":"2026-11-08","id":"csod:btc:2225","location":"Schrobenhausen, DE","title":"Baumaschinenführer (m/w/d) Ankertechnik"}
 {"company":"Bauer Group","first_seen":"2026-11-08","id":"csod:btc:2226","location":"Schrobenhausen, DE","title":"Werkpolier/Polier (m/w/d) Ankertechnik"}
@@ -312,6 +312,7 @@
 {"company":"Bauer Group","first_seen":"2026-11-18","id":"csod:btc:2464","location":"Aresing, DE","title":"Ingenieur für funktionale Sicherheit im Maschinenbau (m/w/d)"}
 {"company":"Bauer Group","first_seen":"2026-11-19","id":"csod:btc:2466","location":"Oakville, Ontario, CA","title":"Regional Director Ontario & Quebec (m/f/x)"}
 {"company":"Bauer Group","employment":"internship","first_seen":"2026-11-19","id":"csod:btc:2467","location":"Schrobenhausen, DE","title":"Werkstudent Personalentwicklung (m/w/d)"}
+{"company":"Bauer Group","first_seen":"2026-11-24","id":"csod:btc:2470","location":"DE","title":"Brunnenbauer – Geothermie (m/w/d)"}
 {"company":"Bauer Group","first_seen":"2026-11-08","id":"csod:btc:630","location":"Peine, DE","title":"Initiativbewerbung"}
 {"company":"Bauer Group","first_seen":"2026-11-08","id":"csod:btc:645","location":"Schrobenhausen, DE","title":"Initiativbewerbung im Bereich Bau"}
 {"company":"Bauer Group","first_seen":"2026-11-08","id":"csod:btc:655","location":"Nordhausen, DE","title":"Grubenelektriker (m/w/d)"}

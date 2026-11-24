@@ -3,9 +3,10 @@
 {"company":"Arctiq","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:arctiq:222","location":"Orlando, Florida","team":"Sales","title":"Client Director"}
 {"company":"Arctiq","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:arctiq:245","remote":true,"team":"Delivery - MSSP","title":"SOC Analyst (CAN)"}
 {"company":"Arctiq","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:arctiq:246","remote":true,"team":"Delivery - MSSP","title":"SOC Analyst"}
-{"company":"Arctiq","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:arctiq:304","location":"Brentwood, Tennessee","team":"Delivery - MSSP","title":"NOC Specialist"}
+{"company":"Arctiq","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:arctiq:304","location":"Duluth, Georgia","team":"Delivery - MSSP","title":"Networking Administrator"}
 {"closed_at":"2026-11-20","company":"Arctiq","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:arctiq:308","remote":true,"team":"Delivery - MSSP","title":"Senior Google SecOps Engineer"}
 {"company":"Arctiq","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:arctiq:317","location":"Montreal, Quebec","skills":["bilingual"],"team":"Pre-Sales","title":"Bilingual Enterprise Solutions Architect"}
+{"company":"Arctiq","employment":"full_time","first_seen":"2026-11-24","id":"bamboohr:arctiq:318","remote":true,"team":"Pre-Sales","title":"Enterprise Solutions Architect"}
 {"company":"Arctiq","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:arctiq:319","location":"Toronto, Ontario","team":"Sales","title":"Client Director"}
 {"company":"Arctiq","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:arctiq:323","remote":true,"team":"Sales","title":"Client Director"}
 {"company":"Arctiq","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:arctiq:327","remote":true,"team":"Delivery - MSSP","title":"Technology Lead - Networking"}
@@ -38,5 +39,5 @@
 {"company":"Arctiq","employment":"full_time","first_seen":"2026-11-20","id":"bamboohr:arctiq:369","remote":true,"team":"Delivery - PS - DevOps","title":"Dynatrace Senior Consultant – ServiceNow"}
 {"company":"Arctiq","employment":"full_time","first_seen":"2026-11-20","id":"bamboohr:arctiq:370","remote":true,"team":"Delivery - PS - DevOps","title":"Dynatrace Senior Consultant – Site Reliability Engineering"}
 {"company":"Arctiq","employment":"full_time","first_seen":"2026-11-20","id":"bamboohr:arctiq:371","remote":true,"team":"Delivery - PS - DevOps","title":"Dynatrace Delivery Architect"}
-{"company":"Arctiq","employment":"full_time","first_seen":"2026-11-24","id":"bamboohr:arctiq:372","remote":true,"team":"Delivery - MSSP","title":"NOC Engineer – Network"}
-{"company":"Arctiq","employment":"full_time","first_seen":"2026-11-24","id":"bamboohr:arctiq:373","remote":true,"team":"Delivery - MSSP","title":"NOC Analyst – Network (L1)"}
+{"company":"Arctiq","employment":"full_time","first_seen":"2026-11-24","id":"bamboohr:arctiq:372","location":"Duluth, Georgia","team":"Delivery - MSSP","title":"NOC Engineer – Network"}
+{"company":"Arctiq","employment":"full_time","first_seen":"2026-11-24","id":"bamboohr:arctiq:373","location":"Duluth, Georgia","team":"Delivery - MSSP","title":"NOC Analyst – Network (L1)"}

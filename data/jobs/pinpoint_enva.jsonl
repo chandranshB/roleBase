@@ -7,6 +7,7 @@
 {"company":"Enva","first_seen":"2026-11-08","id":"pinpoint:enva:0846ff63-f41c-44f2-8db6-3966fd2c23d8","location":"Linwood","skills":["customer_service","time_management"],"title":"HGV Trade Driver"}
 {"company":"Enva","first_seen":"2026-11-08","id":"pinpoint:enva:09c5340e-9bfa-4f73-a624-6981a2b979c4","location":"Portlaoise","skills":["welding"],"title":"Mechanical Maintenance Technician/Fitter"}
 {"company":"Enva","first_seen":"2026-11-08","id":"pinpoint:enva:0acc1dc1-6a04-4cd2-8d09-ac6f9b105eab","location":"Colwick","skills":["time_management"],"title":"HGV Mechanic","years":3}
+{"company":"Enva","first_seen":"2026-11-24","id":"pinpoint:enva:0c4e50aa-b81e-400b-b262-d38c4e5a7e51","location":"Acorn House","skills":["supply_chain","negotiation","customer_service"],"title":"Supply Chain Manager - Non Hazardous"}
 {"closed_at":"2026-11-21","company":"Enva","first_seen":"2026-11-17","id":"pinpoint:enva:11c79c28-382c-4e84-9417-ac442bf6a868","location":"Linwood","title":"Environmental & Compliance Advisor"}
 {"company":"Enva","first_seen":"2026-11-12","id":"pinpoint:enva:132d3285-0beb-481e-8dec-17167c7fbf65","location":"Colwick","pay":[30000,35000,"GBP"],"skills":["customer_service","procurement"],"title":"Asset Coordinator"}
 {"closed_at":"2026-11-11","company":"Enva","first_seen":"2026-11-08","id":"pinpoint:enva:1413a9e4-39e1-48f3-a7f4-5f56a0fd818b","location":"Carryduff [IW]","skills":["employee_relations","payroll","ms_office","powerpoint","hris"],"title":"HR Advisor"}
@@ -29,12 +30,14 @@
 {"company":"Enva","first_seen":"2026-11-08","id":"pinpoint:enva:49afda25-6ab5-44c4-b5e5-2a3a085975a3","location":"Stourbridge","skills":["preventive_maintenance","welding"],"title":"Maintenance Engineer"}
 {"company":"Enva","first_seen":"2026-10-19","id":"pinpoint:enva:49e5916a-e348-423e-baf4-cab888b8368c","location":"Enniscorthy","title":"HGV Class C Driver & Industrial Jet Vac Specialist"}
 {"closed_at":"2026-11-18","company":"Enva","first_seen":"2026-11-11","id":"pinpoint:enva:4b438c49-a337-4e9b-a3aa-eb40b1992e0d","location":"Linwood","title":"Mobile Plant Operative"}
+{"company":"Enva","first_seen":"2026-11-24","id":"pinpoint:enva:4c667866-6cd0-4bbe-bf44-943f5af5c437","location":"Paisley","title":"Head of Operations - North"}
 {"closed_at":"2026-11-10","company":"Enva","first_seen":"2026-11-08","id":"pinpoint:enva:4d71ae71-1691-4fd4-bda5-309325151c39","location":"Newbridge","skills":["customer_service","time_management"],"title":"HGV Class 2 - Nightshift Trade Waste - 4 on 4 off"}
 {"company":"Enva","first_seen":"2026-11-09","id":"pinpoint:enva:4daf4705-021a-4a05-840c-cad3803ef48e","location":"Duncrue [MacNabb]","skills":["forklift"],"title":"Yard Operative"}
 {"company":"Enva","first_seen":"2026-11-08","id":"pinpoint:enva:56176ed2-f829-4e3b-aea7-e0b3bdf5d509","location":"Linwood","title":"Transport Controller"}
-{"company":"Enva","first_seen":"2026-11-08","id":"pinpoint:enva:5fdf4fa8-d357-4442-ba04-14d2a6b2956b","location":"Toomebridge","skills":["ms_office","powerpoint"],"title":"SHEQ Assistant","years":1}
+{"closed_at":"2026-11-24","company":"Enva","first_seen":"2026-11-08","id":"pinpoint:enva:5fdf4fa8-d357-4442-ba04-14d2a6b2956b","location":"Toomebridge","skills":["ms_office","powerpoint"],"title":"SHEQ Assistant","years":1}
 {"company":"Enva","first_seen":"2026-11-18","id":"pinpoint:enva:60c679ca-8f1d-478a-ae6c-7490c982481b","location":"Carryduff [IW]","skills":["accounts_payable","sap","excel","data_entry"],"title":"Accounts Payable","years":4}
 {"closed_at":"2026-11-16","company":"Enva","employment":"contract","first_seen":"2026-11-09","id":"pinpoint:enva:62121671-8f85-4eeb-85f9-ddff0b4db209","location":"Rathcoole","skills":["erp","customer_service"],"title":"ERP Implementation & Sales Operations Administrator - 12 month Fixed Term Contract"}
+{"company":"Enva","first_seen":"2026-11-24","id":"pinpoint:enva:64e4f49a-94f5-46f2-b33a-f9d8f38b3b78","location":"Paisley","skills":["crm","project_management","procurement","supply_chain"],"title":"Business Development Lead - Scotland","years":3}
 {"company":"Enva","first_seen":"2026-11-08","id":"pinpoint:enva:653cd4a6-2632-4cf5-a208-16c8b1370aba","location":"Portlaoise","title":"Rigid  Truck driver"}
 {"company":"Enva","first_seen":"2026-11-08","id":"pinpoint:enva:65818772-4589-4639-ac7b-34d6f0456e02","location":"Grantham","pay":[35000,35000,"GBP"],"title":"HSE Advisor"}
 {"company":"Enva","first_seen":"2026-10-28","id":"pinpoint:enva:6aa69a6e-c6a0-4650-bfff-6b3663247b71","location":"Stourbridge","pay":[30000,35000,"GBP"],"title":"SHEQ Advisor"}
@@ -42,7 +45,7 @@
 {"company":"Enva","first_seen":"2026-11-08","id":"pinpoint:enva:6db2800b-37cd-43cd-8e1e-b1e2cee13103","location":"Immingham","skills":["forklift"],"title":"General Operator"}
 {"company":"Enva","first_seen":"2026-11-08","id":"pinpoint:enva:771a7561-2288-4bb2-9d96-2eb471bb789b","location":"Linwood","skills":["customer_service","time_management"],"title":"HGV Driver - Trade Waste"}
 {"company":"Enva","first_seen":"2026-11-08","id":"pinpoint:enva:83fd47bb-c18f-4f24-8ab5-d0c8400cf627","location":"Stourbridge","title":"Fork Lift Driver [SDA Processing]"}
-{"closed_at":"2026-11-24","company":"Enva","first_seen":"2026-11-10","id":"pinpoint:enva:8c375d46-41ff-43c0-842a-c48e1a6f81a8","location":"Grantham","skills":["forklift"],"title":"Fork Lift Operative"}
+{"company":"Enva","first_seen":"2026-11-10","id":"pinpoint:enva:8c375d46-41ff-43c0-842a-c48e1a6f81a8","location":"Grantham","skills":["forklift"],"title":"Fork Lift Operative"}
 {"company":"Enva","first_seen":"2026-11-13","id":"pinpoint:enva:907d7a2f-49da-473d-b0cb-b3703b5ef85f","location":"Toomebridge","title":"General Operative - SDA"}
 {"company":"Enva","first_seen":"2026-10-19","id":"pinpoint:enva:93678971-2a54-400e-9523-47a4cd8d1222","location":"Rathcoole","title":"HGV Class C Driver & Industrial Jet Vac Specialist"}
 {"company":"Enva","first_seen":"2026-10-19","id":"pinpoint:enva:94d2b920-da8d-4db0-8ed0-c09333565bce","location":"Dunniflats","skills":["time_management"],"title":"HGV Driver"}
@@ -64,8 +67,9 @@
 {"company":"Enva","first_seen":"2026-10-28","id":"pinpoint:enva:dba0a955-1543-4e4b-a134-92f2053a9367","location":"Wesley Street","pay":[40000,45000,"GBP"],"skills":["time_management"],"title":"HGV DRIVER"}
 {"company":"Enva","first_seen":"2026-11-16","id":"pinpoint:enva:dbd5a2fa-bf91-4ac3-8db9-03422a0abba2","location":"Whetstone","skills":["customer_service"],"title":"HGV Utility Driver - Trade Waste & Skips"}
 {"closed_at":"2026-11-18","company":"Enva","first_seen":"2026-11-10","id":"pinpoint:enva:df1bfb24-ed09-4efb-a3f3-71cd43222340","location":"Linwood","title":"Transport Controller - Trade Waste"}
-{"company":"Enva","first_seen":"2026-11-09","id":"pinpoint:enva:dfd885b5-4ebd-4057-994d-3aad7e8d1976","location":"Duncrue [MacNabb]","reposts":1,"title":"Plant Operative"}
+{"closed_at":"2026-11-24","company":"Enva","first_seen":"2026-11-09","id":"pinpoint:enva:dfd885b5-4ebd-4057-994d-3aad7e8d1976","location":"Duncrue [MacNabb]","reposts":1,"title":"Plant Operative"}
 {"company":"Enva","first_seen":"2026-11-08","id":"pinpoint:enva:dfee584d-d481-4edd-bbba-cac5e6e842d7","location":"Portlaoise","title":"Trainee Industrial Services Jet Vac Operative /Driver"}
+{"company":"Enva","first_seen":"2026-11-24","id":"pinpoint:enva:e21deac2-3d25-459f-86ee-6570e9a05662","location":"Linwood","reposts":1,"skills":["customer_service","ms_office"],"title":"Customer Service Advisor"}
 {"company":"Enva","first_seen":"2026-11-08","id":"pinpoint:enva:e4451c8f-96c5-455d-8291-e9795ab7171b","location":"Stourbridge","title":"Team Leader - SDA Processing"}
 {"company":"Enva","first_seen":"2026-11-08","id":"pinpoint:enva:e4d53118-7966-47be-b5f8-cd20286be503","location":"Stourbridge","skills":["forklift"],"title":"Telescopic / FLT Driver (SDA Processing line)"}
 {"company":"Enva","first_seen":"2026-11-08","id":"pinpoint:enva:e5da30cc-f352-43f7-998d-bec866737d47","location":"Stourbridge","skills":["forklift"],"title":"Telescopic/ FLT Driver (SDA Pre Pick)"}

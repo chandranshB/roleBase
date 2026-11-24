@@ -12,7 +12,7 @@
 {"company":"Euna Solutions","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:euna:753","location":"Oakville, Ontario","team":"Professional Services","title":"Sr. Implementation Manager - Grants"}
 {"company":"Euna Solutions","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:euna:754","location":"Atlanta, Georgia","team":"Professional Services","title":"Sr. Implementation Manager - Grants"}
 {"closed_at":"2026-11-18","company":"Euna Solutions","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:euna:759","location":"Oakville, Ontario","team":"Professional Services","title":"Associate Technical Solutions Specialist"}
-{"company":"Euna Solutions","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:euna:760","remote":true,"team":"Professional Services","title":"Implementation Manager - ECP, Grants"}
+{"closed_at":"2026-11-24","company":"Euna Solutions","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:euna:760","remote":true,"team":"Professional Services","title":"Implementation Manager - ECP, Grants"}
 {"closed_at":"2026-11-16","company":"Euna Solutions","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:euna:762","location":"Oakville, Ontario","team":"Professional Services","title":"Team Lead, Professional Services-Grants"}
 {"closed_at":"2026-11-16","company":"Euna Solutions","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:euna:763","location":"Atlanta, Georgia","team":"Professional Services","title":"Team Lead, Professional Services-Grants"}
 {"company":"Euna Solutions","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:euna:765","location":"Oakville, Ontario","team":"Professional Services","title":"Principal Consultant (Budget)"}
@@ -30,7 +30,7 @@
 {"closed_at":"2026-11-16","company":"Euna Solutions","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:euna:781","location":"Oakville, Ontario","skills":["procurement"],"team":"Enablement Services","title":"Customer Success Manager - Contract (Procurement)"}
 {"closed_at":"2026-11-16","company":"Euna Solutions","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:euna:782","location":"Atlanta, Georgia","skills":["procurement"],"team":"Enablement Services","title":"Customer Success Manager - Contract (Procurement)"}
 {"company":"Euna Solutions","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:euna:785","location":"Atlanta, Georgia","team":"Development","title":"Senior Systems Architect"}
-{"company":"Euna Solutions","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:euna:786","location":"Oakville, Ontario","skills":["accounts_receivable"],"team":"Finance","title":"Accounts Receivable Collections Analyst"}
+{"closed_at":"2026-11-24","company":"Euna Solutions","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:euna:786","location":"Oakville, Ontario","skills":["accounts_receivable"],"team":"Finance","title":"Accounts Receivable Collections Analyst"}
 {"closed_at":"2026-10-22","company":"Euna Solutions","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:euna:787","location":"Oakville, Ontario","team":"IT - CloudOps/SRE","title":"Cloud Engineer"}
 {"company":"Euna Solutions","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:euna:788","location":"Atlanta, Georgia","team":"IT - CloudOps/SRE","title":"Cloud Engineer"}
 {"company":"Euna Solutions","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:euna:789","remote":true,"team":"Sales","title":"Account Executive - Payments"}
@@ -72,3 +72,7 @@
 {"company":"Euna Solutions","employment":"full_time","first_seen":"2026-11-19","id":"bamboohr:euna:825","location":"Atlanta, Georgia","team":"IT","title":"Integrations Project Manager"}
 {"company":"Euna Solutions","employment":"full_time","first_seen":"2026-11-20","id":"bamboohr:euna:826","location":"Oakville, Ontario","team":"IT - CloudOps/SRE","title":"Senior Cloud Engineer"}
 {"company":"Euna Solutions","employment":"full_time","first_seen":"2026-11-20","id":"bamboohr:euna:827","location":"Atlanta, Georgia","team":"IT - CloudOps/SRE","title":"Senior Cloud Engineer"}
+{"company":"Euna Solutions","employment":"internship","first_seen":"2026-11-24","id":"bamboohr:euna:828","location":"Oakville, Ontario","team":"Finance","title":"Accounting Co-op Associate"}
+{"company":"Euna Solutions","employment":"full_time","first_seen":"2026-11-24","id":"bamboohr:euna:829","location":"Oakville, Ontario","team":"Professional Services","title":"Sr. Implementation Manager (Budget)"}
+{"company":"Euna Solutions","employment":"full_time","first_seen":"2026-11-24","id":"bamboohr:euna:830","location":"Oakville, Ontario","skills":["scrum"],"team":"Development","title":"Scrum Master"}
+{"company":"Euna Solutions","employment":"full_time","first_seen":"2026-11-24","id":"bamboohr:euna:831","location":"Atlanta, Georgia","skills":["scrum"],"team":"Development","title":"Scrum Master"}

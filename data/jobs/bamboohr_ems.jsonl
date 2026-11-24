@@ -107,7 +107,7 @@
 {"company":"Enterprise Management Solutions","employment":"part_time","first_seen":"2026-11-08","id":"bamboohr:ems:611","location":"King william, Virginia","team":"Facilities Management","title":"Gardener 2"}
 {"company":"Enterprise Management Solutions","employment":"part_time","first_seen":"2026-11-08","id":"bamboohr:ems:612","location":"Greenville, South Carolina","team":"Transportation & Moving","title":"On-Call Box Truck Driver 1"}
 {"company":"Enterprise Management Solutions","employment":"part_time","first_seen":"2026-11-08","id":"bamboohr:ems:613","location":"Greenville, South Carolina","team":"Transportation & Moving","title":"On-Call Box Truck Driver 2"}
-{"company":"Enterprise Management Solutions","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:ems:615","location":"Baltimore, Maryland","team":"Corporate/EMS Level","title":"Executive Office Manager and Legal Administrative Coordinator"}
+{"closed_at":"2026-11-24","company":"Enterprise Management Solutions","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:ems:615","location":"Baltimore, Maryland","team":"Corporate/EMS Level","title":"Executive Office Manager and Legal Administrative Coordinator"}
 {"company":"Enterprise Management Solutions","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:ems:616","location":"Baltimore, Maryland","team":"Facilities Management","title":"Construction Laborer 1"}
 {"company":"Enterprise Management Solutions","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:ems:617","location":"Baltimore, Maryland","team":"Facilities Management","title":"Construction Laborer 2"}
 {"company":"Enterprise Management Solutions","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:ems:618","location":"Baltimore, Maryland","team":"Facilities Management","title":"Construction Laborer 3"}
@@ -140,3 +140,4 @@
 {"company":"Enterprise Management Solutions","employment":"part_time","first_seen":"2026-11-23","id":"bamboohr:ems:653","location":"Baltimore, Maryland","title":"Family Nurse Practitioner"}
 {"company":"Enterprise Management Solutions","first_seen":"2026-11-23","id":"bamboohr:ems:654","location":"Baltimore, Maryland","team":"Facilities Management","title":"Housekeeper"}
 {"closed_at":"2026-11-24","company":"Enterprise Management Solutions","first_seen":"2026-11-23","id":"bamboohr:ems:655","remote":true,"team":"Patient Access","title":"Patient Access Specialist"}
+{"company":"Enterprise Management Solutions","employment":"full_time","first_seen":"2026-11-24","id":"bamboohr:ems:656","location":"Baltimore, Maryland","team":"Corporate and Professional Services Staffing","title":"Project and Office Manager"}

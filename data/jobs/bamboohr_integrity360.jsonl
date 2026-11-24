@@ -7,7 +7,7 @@
 {"company":"Integrity360","first_seen":"2026-11-08","id":"bamboohr:integrity360:737","remote":true,"team":"Payments Compliance","title":"Security Consultant(Payments Compliance) - Germany"}
 {"company":"Integrity360","first_seen":"2026-11-08","id":"bamboohr:integrity360:742","location":"Paris, Courbevoie","team":"Sales","title":"Sale Executive"}
 {"company":"Integrity360","first_seen":"2026-11-08","id":"bamboohr:integrity360:748","location":"Roma, Italy","team":"Sales","title":"Senior Sales Executive - Cyber"}
-{"company":"Integrity360","first_seen":"2026-11-08","id":"bamboohr:integrity360:755","location":"Cape Town, Western Cape","team":"Cape Town Sales Office","title":"Sales Development Representative"}
+{"closed_at":"2026-11-24","company":"Integrity360","first_seen":"2026-11-08","id":"bamboohr:integrity360:755","location":"Cape Town, Western Cape","team":"Cape Town Sales Office","title":"Sales Development Representative"}
 {"company":"Integrity360","first_seen":"2026-11-08","id":"bamboohr:integrity360:777","location":"Dublin, Dublin","team":"Pre-sales","title":"Pre Sales Solution Architect"}
 {"company":"Integrity360","first_seen":"2026-11-08","id":"bamboohr:integrity360:780","location":"Paris, Courbevoie","team":"MSS","title":"Prinicipal (L3) SOC Analyst"}
 {"company":"Integrity360","first_seen":"2026-11-08","id":"bamboohr:integrity360:781","location":"Paris, Courbevoie","team":"MSS","title":"L2 SOC Analyst"}
@@ -29,10 +29,10 @@
 {"company":"Integrity360","first_seen":"2026-11-08","id":"bamboohr:integrity360:833","location":"Dublin, Dublin","team":"Infra","title":"Senior Project Manager (Cyber Security)"}
 {"company":"Integrity360","first_seen":"2026-11-08","id":"bamboohr:integrity360:834","location":"Roma, Italy","team":"Infra","title":"Senior Project Manager (Cyber Security)-Italy"}
 {"company":"Integrity360","first_seen":"2026-11-08","id":"bamboohr:integrity360:835","location":"Madrid, Community of Madrid","team":"Infra","title":"Senior Project Manager (Cyber Security)-Spain"}
-{"company":"Integrity360","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:integrity360:836","location":"Stockholm, Stockholm","team":"Identity Access Management","title":"Senior Consultant Identity Access Management"}
-{"company":"Integrity360","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:integrity360:837","location":"Paris, Courbevoie","team":"Identity Access Management","title":"Senior Consultant Identity Access Management - France"}
-{"company":"Integrity360","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:integrity360:838","location":"Stockholm, Stockholm","team":"Identity Management","title":"Senior Consultant Privileged Access Management"}
-{"company":"Integrity360","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:integrity360:839","location":"Paris, Courbevoie","team":"Identity Management","title":"Senior Consultant Privileged Access Management - France"}
+{"company":"Integrity360","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:integrity360:836","location":"Stockholm, Stockholm","team":"Identity Access Management","title":"Identity Access Management (IAM) Architect"}
+{"company":"Integrity360","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:integrity360:837","location":"Paris, Courbevoie","team":"Identity Access Management","title":"Identity Access Management (IAM) Architect- France"}
+{"company":"Integrity360","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:integrity360:838","location":"Stockholm, Stockholm","team":"Identity Management","title":"Privileged Access Management (PAM) Architect"}
+{"company":"Integrity360","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:integrity360:839","location":"Paris, Courbevoie","team":"Identity Management","title":"Privileged Access Management (PAM) Architect- France"}
 {"company":"Integrity360","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:integrity360:840","location":"Brussels, Auderghem","team":"Identity Access Management","title":"Senior Consultant Identity Access Management - Belgium"}
 {"company":"Integrity360","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:integrity360:841","location":"Brussels, Auderghem","team":"Identity Management","title":"Senior Consultant Privileged Access Management - Belgium"}
 {"closed_at":"2026-11-13","company":"Integrity360","first_seen":"2026-11-08","id":"bamboohr:integrity360:844","location":"Dublin, Dublin","team":"Professional Services","title":"Microsoft Security Engineer"}
@@ -65,3 +65,4 @@
 {"company":"Integrity360","first_seen":"2026-11-17","id":"bamboohr:integrity360:876","remote":true,"team":"Pre-sales","title":"Cybersecurity Solution Architect"}
 {"company":"Integrity360","first_seen":"2026-11-19","id":"bamboohr:integrity360:877","location":"Sofia","reposts":2,"team":"Sales","title":"Senior Sales Executive"}
 {"company":"Integrity360","first_seen":"2026-11-19","id":"bamboohr:integrity360:878","location":"London, Greater London","team":"Sales","title":"Sales Executive"}
+{"company":"Integrity360","employment":"full_time","first_seen":"2026-11-24","id":"bamboohr:integrity360:879","location":"Cape Town","team":"MSS","title":"L2 Netskope Engineer - Cape Town or Johannesburg"}

@@ -75,7 +75,7 @@
 {"closed_at":"2026-11-17","company":"Hubo","first_seen":"2026-11-08","id":"csod:hubo:1100","location":"Willebroek, Antwerpen, BE","title":"Polyvalent Medewerker - Plafomat Willebroek"}
 {"company":"Hubo","first_seen":"2026-11-08","id":"csod:hubo:1101","location":"NIJLEN, Antwerpen, BE","title":"Poetshulp (Flexi) - Hubo Nijlen"}
 {"closed_at":"2026-11-12","company":"Hubo","first_seen":"2026-11-08","id":"csod:hubo:1102","location":"Bornem, Antwerpen, BE","title":"Poetshulp (Flexi) - Hubo Bornem"}
-{"company":"Hubo","first_seen":"2026-11-08","id":"csod:hubo:1106","location":"Asse, Vlaams-Brabant, BE","title":"Verkoper / Aanvuller - Hubo Asse"}
+{"closed_at":"2026-11-24","company":"Hubo","first_seen":"2026-11-08","id":"csod:hubo:1106","location":"Asse, Vlaams-Brabant, BE","title":"Verkoper / Aanvuller - Hubo Asse"}
 {"closed_at":"2026-11-09","company":"Hubo","first_seen":"2026-11-08","id":"csod:hubo:1107","location":"Bornem, Antwerpen, BE","reposts":1,"title":"Verkoper / Magazijnier - Hubo Bornem"}
 {"company":"Hubo","first_seen":"2026-11-08","id":"csod:hubo:1108","location":"RETIE, Antwerpen, BE","reposts":1,"title":"Verkoper / Magazijnier / Kassa - Hubo Retie"}
 {"company":"Hubo","first_seen":"2026-11-08","id":"csod:hubo:1109","location":"ARENDONK, Antwerpen, BE","reposts":1,"title":"Verkoper / Magazijnier / Kassa - Hubo Arendonk"}
@@ -100,10 +100,15 @@
 {"company":"Hubo","first_seen":"2026-11-20","id":"csod:hubo:1133","location":"Halle, Vlaams-Brabant, BE","title":"Kassamedewerker - Hubo Halle"}
 {"company":"Hubo","first_seen":"2026-11-20","id":"csod:hubo:1134","location":"BEVEREN, Oost-Vlaanderen, BE","title":"Assistent-Winkelverantwoordelijke - Hubo Beveren-Waas"}
 {"company":"Hubo","first_seen":"2026-11-24","id":"csod:hubo:1135","location":"EKEREN, Antwerpen, BE","title":"Verkoper / Magazijnier - Hubo Ekeren"}
-{"company":"Hubo","first_seen":"2026-11-24","id":"csod:hubo:1136","location":"Oostende, West-Vlaanderen, BE","title":"Polyvalente Kassamedewerker"}
+{"company":"Hubo","first_seen":"2026-11-24","id":"csod:hubo:1136","location":"Oostende, West-Vlaanderen, BE","title":"Polyvalente Kassamedewerker - Hubo Oostende"}
 {"company":"Hubo","first_seen":"2026-11-24","id":"csod:hubo:1137","location":"Oostende, West-Vlaanderen, BE","title":"Polyvalent Winkelmedewerker - Hubo Oostende"}
 {"company":"Hubo","first_seen":"2026-11-24","id":"csod:hubo:1138","location":"Oostende, West-Vlaanderen, BE","title":"Flexi Winkelmedewerker - Hubo Oostende"}
 {"company":"Hubo","first_seen":"2026-11-24","id":"csod:hubo:1139","location":"HAMME, Oost-Vlaanderen, BE","reposts":2,"title":"Kassamedewerker - Hubo Hamme"}
+{"company":"Hubo","first_seen":"2026-11-24","id":"csod:hubo:1140","location":"Oudenaarde, Oost-Vlaanderen, BE","title":"Verkoper / Aanvuller - Hubo Oudenaarde"}
+{"company":"Hubo","first_seen":"2026-11-24","id":"csod:hubo:1141","location":"Geel, Antwerpen, BE","title":"Kassamedewerker - Hubo Geel"}
+{"company":"Hubo","first_seen":"2026-11-24","id":"csod:hubo:1142","location":"Geel, Antwerpen, BE","title":"Verkoper / Aanvuller - Hubo Geel - Student/Flexi"}
+{"company":"Hubo","first_seen":"2026-11-24","id":"csod:hubo:1143","location":"Sint-Niklaas, Oost-Vlaanderen, BE","title":"Verkoper / Aanvuller - Hubo Sint-Niklaas"}
+{"company":"Hubo","first_seen":"2026-11-24","id":"csod:hubo:1144","location":"EKEREN, Antwerpen, BE","title":"Kassamedewerker - Hubo Ekeren"}
 {"company":"Hubo","first_seen":"2026-11-08","id":"csod:hubo:383","location":"EDEGEM, Antwerpen, BE","title":"Trainee Assistent Winkelverantwoordelijke - Provincie Antwerpen"}
 {"company":"Hubo","first_seen":"2026-11-08","id":"csod:hubo:497","location":"Wommelgem, Antwerpen, BE","title":"Stagiair(e)"}
 {"company":"Hubo","first_seen":"2026-11-08","id":"csod:hubo:645","location":"Wommelgem, Antwerpen, BE","title":"Stagiair(e) Inkoopassistent"}

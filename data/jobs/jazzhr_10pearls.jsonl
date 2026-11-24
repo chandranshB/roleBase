@@ -1,6 +1,6 @@
 {"company":"10Pearls","first_seen":"2026-10-30","id":"jazzhr:10pearls:0c1Cq8CC03","title":"AI Architect"}
 {"company":"10Pearls","first_seen":"2026-10-30","id":"jazzhr:10pearls:2Lhf9aBxOA","title":"Manager Resource Allocation"}
-{"company":"10Pearls","first_seen":"2026-11-19","id":"jazzhr:10pearls:38qmE3SUDd","skills":["erp"],"title":"Test Manager - ERP"}
+{"company":"10Pearls","first_seen":"2026-11-19","id":"jazzhr:10pearls:38qmE3SUDd","skills":["erp"],"title":"Test Manager - Microsoft Dynamics 365 (ERP)"}
 {"company":"10Pearls","first_seen":"2026-11-10","id":"jazzhr:10pearls:7iC4nhtwCv","title":"Business Analyst"}
 {"company":"10Pearls","first_seen":"2026-10-30","id":"jazzhr:10pearls:7sFzMgfIY8","title":"Senior NetSuite Functional Consultant"}
 {"company":"10Pearls","first_seen":"2026-10-30","id":"jazzhr:10pearls:7tSn9wXxcX","title":"Legal Counsel - Pakistan & Middle East"}
@@ -21,6 +21,7 @@
 {"closed_at":"2026-11-24","company":"10Pearls","first_seen":"2026-11-17","id":"jazzhr:10pearls:TlXCtgc8jM","title":"Principal SecOps Consultant - Afternoon Shift"}
 {"closed_at":"2026-11-12","company":"10Pearls","first_seen":"2026-10-30","id":"jazzhr:10pearls:W5wByNQGC9","title":"Test Manager - Morning Shift/Afternoon Shift"}
 {"closed_at":"2026-11-08","company":"10Pearls","first_seen":"2026-10-30","id":"jazzhr:10pearls:XBnNwQFCIm","title":"Business Development Manager"}
+{"company":"10Pearls","first_seen":"2026-11-24","id":"jazzhr:10pearls:XGW7T3qJht","skills":["azure"],"title":"Senior DevOps Consultant - Azure"}
 {"company":"10Pearls","first_seen":"2026-10-30","id":"jazzhr:10pearls:XJmCeUzqXu","title":"Lead Finance - Night Shift"}
 {"company":"10Pearls","first_seen":"2026-11-08","id":"jazzhr:10pearls:Xw6LYR4CM5","title":"Business Development Manager"}
 {"company":"10Pearls","first_seen":"2026-10-30","id":"jazzhr:10pearls:aNEYRjfKar","skills":["python","django"],"title":"Backend Python/Django"}
@@ -31,9 +32,10 @@
 {"company":"10Pearls","first_seen":"2026-11-18","id":"jazzhr:10pearls:tEfO6wHZ7Z","title":"Principal/Staff Platform Consultant - SharePoint"}
 {"company":"10Pearls","first_seen":"2026-11-19","id":"jazzhr:10pearls:tW4oyU5yst","skills":["php"],"title":"Principal/Staff Software Consultant - PHP"}
 {"closed_at":"2026-11-08","company":"10Pearls","first_seen":"2026-10-30","id":"jazzhr:10pearls:u8R7JjFN8d","skills":["angular"],"title":"Senior/Staff Software Consultant - Angular 20+"}
+{"company":"10Pearls","first_seen":"2026-11-24","id":"jazzhr:10pearls:vn0lzc1hRw","title":"Integration Test Manager"}
 {"company":"10Pearls","first_seen":"2026-10-30","id":"jazzhr:10pearls:wMBInVaEoY","title":"Senior Technical Writer"}
 {"closed_at":"2026-11-20","company":"10Pearls","first_seen":"2026-10-30","id":"jazzhr:10pearls:wZfSpfCGyX","skills":["java","aws"],"title":"Principal/Staff Software Consultant - Java + AWS"}
 {"company":"10Pearls","first_seen":"2026-10-30","id":"jazzhr:10pearls:xflQh1hH7Z","title":"Senior Technical Project Manager"}
-{"company":"10Pearls","first_seen":"2026-10-30","id":"jazzhr:10pearls:yINLnnQOdS","title":"Manager Administration"}
+{"closed_at":"2026-11-24","company":"10Pearls","first_seen":"2026-10-30","id":"jazzhr:10pearls:yINLnnQOdS","title":"Manager Administration"}
 {"company":"10Pearls","first_seen":"2026-11-24","id":"jazzhr:10pearls:yVqAzFcRV4","title":"Staff DevSecOps Consultant - Afternoon Shift"}
 {"company":"10Pearls","first_seen":"2026-11-10","id":"jazzhr:10pearls:yeKqsWah01","skills":["react","azure"],"title":"Associate /Software Architect - .Net + React + Azure"}

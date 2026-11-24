@@ -65,7 +65,7 @@
 {"company":"Kennards Hire","first_seen":"2026-11-08","id":"csod:kennardshire:5750","location":"Taren Point, NSW, AU","posted":"2026-06-07","reposts":11,"title":"Service Person Driver"}
 {"company":"Kennards Hire","first_seen":"2026-11-08","id":"csod:kennardshire:5760","location":"Phillip, ACT, AU","reposts":11,"title":"Service Person Driver"}
 {"company":"Kennards Hire","first_seen":"2026-11-08","id":"csod:kennardshire:5805","location":"Abbotsford, VIC, AU","reposts":11,"title":"Service Person Driver"}
-{"company":"Kennards Hire","first_seen":"2026-11-08","id":"csod:kennardshire:5809","location":"Bexley, NSW, AU","reposts":4,"title":"Casual Service Person Driver"}
+{"closed_at":"2026-11-24","company":"Kennards Hire","first_seen":"2026-11-08","id":"csod:kennardshire:5809","location":"Bexley, NSW, AU","reposts":4,"title":"Casual Service Person Driver"}
 {"company":"Kennards Hire","first_seen":"2026-11-08","id":"csod:kennardshire:5831","location":"Wagga Wagga, NSW, AU","reposts":4,"title":"Casual Service Person Driver"}
 {"company":"Kennards Hire","first_seen":"2026-11-08","id":"csod:kennardshire:5873","location":"Redcliffe, QLD, AU","posted":"2026-06-11","reposts":11,"title":"Service Person/Driver"}
 {"company":"Kennards Hire","first_seen":"2026-11-08","id":"csod:kennardshire:5877","location":"Dubbo, NSW, AU","reposts":11,"title":"Service Person Driver"}
@@ -112,7 +112,7 @@
 {"company":"Kennards Hire","first_seen":"2026-11-08","id":"csod:kennardshire:6070","location":"Bendigo, VIC, AU","title":"Equipment Coordinator Driver"}
 {"company":"Kennards Hire","first_seen":"2026-11-08","id":"csod:kennardshire:6071","location":"Penrith, NSW, AU","title":"Maintenance Mechanic"}
 {"closed_at":"2026-11-18","company":"Kennards Hire","first_seen":"2026-11-08","id":"csod:kennardshire:6072","location":"Penrith, NSW, AU","reposts":1,"title":"Electrician"}
-{"closed_at":"2026-11-18","company":"Kennards Hire","first_seen":"2026-11-08","id":"csod:kennardshire:6077","location":"Wagga Wagga, NSW, AU","reposts":11,"title":"Service Person Driver"}
+{"company":"Kennards Hire","first_seen":"2026-11-08","id":"csod:kennardshire:6077","location":"Wagga Wagga, NSW, AU","reposts":11,"title":"Service Person Driver"}
 {"company":"Kennards Hire","first_seen":"2026-11-08","id":"csod:kennardshire:6079","location":"Hindmarsh, SA, AU","reposts":3,"title":"MR Driver"}
 {"closed_at":"2026-11-16","company":"Kennards Hire","first_seen":"2026-11-08","id":"csod:kennardshire:6082","location":"Regency Park, SA, AU","reposts":1,"title":"Transport Supervisor"}
 {"company":"Kennards Hire","first_seen":"2026-11-08","id":"csod:kennardshire:6093","location":"Trinity Gardens, SA, AU","reposts":5,"title":"Maintenance Controller"}
@@ -124,7 +124,7 @@
 {"closed_at":"2026-11-18","company":"Kennards Hire","first_seen":"2026-11-08","id":"csod:kennardshire:6107","location":"Townsville, QLD, AU","posted":"2026-02-11","reposts":11,"title":"Service Person Driver"}
 {"company":"Kennards Hire","first_seen":"2026-11-08","id":"csod:kennardshire:6108","location":"Orange, NSW, AU","posted":"2026-03-11","reposts":11,"title":"Service Person Driver"}
 {"closed_at":"2026-11-11","company":"Kennards Hire","first_seen":"2026-11-08","id":"csod:kennardshire:6109","location":"Mornington, VIC, AU","posted":"2026-03-11","reposts":11,"title":"Service Person Driver"}
-{"company":"Kennards Hire","first_seen":"2026-11-08","id":"csod:kennardshire:6111","location":"Regency Park, SA, AU","posted":"2026-08-11","reposts":2,"title":"HR Driver"}
+{"closed_at":"2026-11-24","company":"Kennards Hire","first_seen":"2026-11-08","id":"csod:kennardshire:6111","location":"Regency Park, SA, AU","posted":"2026-08-11","reposts":2,"title":"HR Driver"}
 {"company":"Kennards Hire","first_seen":"2026-11-23","id":"csod:kennardshire:6112","location":"Crestmead, QLD, AU","title":"Service Controller"}
 {"company":"Kennards Hire","first_seen":"2026-11-09","id":"csod:kennardshire:6113","location":"Burwood, NSW, AU","posted":"2026-08-11","reposts":8,"title":"Service Person Driver"}
 {"closed_at":"2026-11-19","company":"Kennards Hire","first_seen":"2026-11-09","id":"csod:kennardshire:6114","location":"Burwood, NSW, AU","posted":"2026-08-11","reposts":3,"title":"Casual Service Person Driver"}
@@ -139,3 +139,5 @@
 {"company":"Kennards Hire","first_seen":"2026-11-17","id":"csod:kennardshire:6130","location":"Christchurch, CANTERBURY, NZ; Wigram, CANTERBURY, NZ; Rangiora, CANTERBURY, NZ; Christchurch, Canterbury, NZ","reposts":13,"title":"Service Person Driver"}
 {"company":"Kennards Hire","first_seen":"2026-11-20","id":"csod:kennardshire:6138","location":"Regency Park, SA, AU","title":"HC Driver"}
 {"company":"Kennards Hire","first_seen":"2026-11-20","id":"csod:kennardshire:6139","location":"Lilydale, VIC, AU","title":"Equipment Service Person"}
+{"company":"Kennards Hire","first_seen":"2026-11-24","id":"csod:kennardshire:6140","location":"Wagga Wagga, NSW, AU","reposts":18,"title":"Service Person Driver"}
+{"company":"Kennards Hire","first_seen":"2026-11-24","id":"csod:kennardshire:6141","location":"Palmerston, NT, AU","reposts":3,"title":"Branch Manager"}

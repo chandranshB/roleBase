@@ -1,7 +1,7 @@
 {"company":"Phillip Jeffries","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:phillipj:887","location":"West Palm Beach, Florida","team":"Sales Domestic","title":"Studio Sales Lead"}
 {"closed_at":"2026-11-08","company":"Phillip Jeffries","employment":"full_time","first_seen":"2026-10-30","id":"bamboohr:phillipj:903","remote":true,"team":"Sales International","title":"Sales Representative"}
 {"company":"Phillip Jeffries","employment":"full_time","first_seen":"2026-10-30","id":"bamboohr:phillipj:914","location":"London, London, City of","team":"Sales International","title":"Marketing Manager, EU/UK"}
-{"closed_at":"2026-11-24","company":"Phillip Jeffries","employment":"full_time","first_seen":"2026-10-30","id":"bamboohr:phillipj:919","location":"Chicago, Illinois","team":"Sales Contract","title":"Regional Sales Manager, Contract/ Hospitality"}
+{"company":"Phillip Jeffries","employment":"full_time","first_seen":"2026-10-30","id":"bamboohr:phillipj:919","remote":true,"team":"Sales Contract","title":"Regional Sales Manager, Contract/ Hospitality"}
 {"company":"Phillip Jeffries","employment":"full_time","first_seen":"2026-10-30","id":"bamboohr:phillipj:925","location":"Fairfield, New Jersey","title":"Product Rendering Associate"}
 {"closed_at":"2026-11-12","company":"Phillip Jeffries","employment":"full_time","first_seen":"2026-10-30","id":"bamboohr:phillipj:928","location":"Fairfield, New Jersey","team":"Logistics - Sampling","title":"Packing Associate"}
 {"company":"Phillip Jeffries","employment":"full_time","first_seen":"2026-10-30","id":"bamboohr:phillipj:929","remote":true,"team":"Sales Domestic","title":"Sales Representative (Residential Outside Sales)"}
@@ -13,7 +13,7 @@
 {"company":"Phillip Jeffries","employment":"full_time","first_seen":"2026-10-30","id":"bamboohr:phillipj:936","location":"New York, New York","team":"Sales Domestic - Showroom","title":"Showroom Sales"}
 {"closed_at":"2026-11-18","company":"Phillip Jeffries","employment":"full_time","first_seen":"2026-10-30","id":"bamboohr:phillipj:937","location":"Fairfield, New Jersey","title":"Large Format Print Operator"}
 {"closed_at":"2026-11-18","company":"Phillip Jeffries","employment":"full_time","first_seen":"2026-10-30","id":"bamboohr:phillipj:938","location":"Fairfield, New Jersey","title":"Pre-Press Operator"}
-{"company":"Phillip Jeffries","employment":"full_time","first_seen":"2026-10-30","id":"bamboohr:phillipj:939","location":"Atlanta, Georgia","team":"Sales Domestic - Showroom","title":"Showroom Sales"}
+{"closed_at":"2026-11-24","company":"Phillip Jeffries","employment":"full_time","first_seen":"2026-10-30","id":"bamboohr:phillipj:939","location":"Atlanta, Georgia","team":"Sales Domestic - Showroom","title":"Showroom Sales"}
 {"company":"Phillip Jeffries","employment":"full_time","first_seen":"2026-10-30","id":"bamboohr:phillipj:941","location":"Fairfield, New Jersey","team":"Design","title":"Visual Merchandising Assistant"}
 {"closed_at":"2026-11-08","company":"Phillip Jeffries","employment":"full_time","first_seen":"2026-10-30","id":"bamboohr:phillipj:944","location":"New York, New York","team":"Sales Domestic - Showroom","title":"Assistant Manager, Showroom Operations"}
 {"company":"Phillip Jeffries","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:phillipj:945","location":"Fairfield, New Jersey","title":"Manufacturing Technician"}
@@ -24,3 +24,4 @@
 {"closed_at":"2026-11-18","company":"Phillip Jeffries","employment":"full_time","first_seen":"2026-11-11","id":"bamboohr:phillipj:954","remote":true,"team":"Contract Project Support","title":"Contract Sales Project Representative"}
 {"company":"Phillip Jeffries","employment":"full_time","first_seen":"2026-11-18","id":"bamboohr:phillipj:955","location":"Fairfield, New Jersey","title":"Large Format Print Operator"}
 {"company":"Phillip Jeffries","employment":"full_time","first_seen":"2026-11-20","id":"bamboohr:phillipj:956","location":"Fairfield, New Jersey","skills":["procurement"],"team":"Supply Chain","title":"Procurement Coordinator"}
+{"company":"Phillip Jeffries","employment":"full_time","first_seen":"2026-11-24","id":"bamboohr:phillipj:958","remote":true,"reposts":1,"team":"Sales Contract","title":"Regional Sales Manager, Contract/ Hospitality"}

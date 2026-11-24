@@ -20,7 +20,7 @@
 {"company":"401 Group of Companies","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:401auto:1955","location":"Kitchener, Ontario","team":"Sales","title":"Product Sales Specialist  - Automart Kitchener"}
 {"company":"401 Group of Companies","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:401auto:1956","location":"Kitchener, Ontario","team":"Sales","title":"Lot Attendant - Kitchener"}
 {"company":"401 Group of Companies","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:401auto:1963","location":"Fraserville, Ontario","team":"Sales","title":"Automotive Sales Person - Peterborough"}
-{"company":"401 Group of Companies","employment":"full_time","first_seen":"2026-11-24","id":"bamboohr:401auto:1970","location":"Pembroke, Ontario","team":"Service","title":"Experienced Service Advisor - Pembroke Honda"}
+{"closed_at":"2026-11-24","company":"401 Group of Companies","employment":"full_time","first_seen":"2026-11-24","id":"bamboohr:401auto:1970","location":"Pembroke, Ontario","team":"Service","title":"Experienced Service Advisor - Pembroke Honda"}
 {"company":"401 Group of Companies","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:401auto:1996","location":"Tillsonburg, Ontario","team":"Sales","title":"Product Sales Specialist - Tillsonburg Kia"}
 {"company":"401 Group of Companies","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:401auto:2037","location":"Pembroke, Ontario","team":"Service","title":"310s Licensed Technician - Pembroke"}
 {"company":"401 Group of Companies","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:401auto:2046","location":"Barrie, Ontario","team":"Sales","title":"Product Sales Specialist - Barrie Kia"}
@@ -81,6 +81,7 @@
 {"company":"401 Group of Companies","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:401auto:2375","location":"Sudbury, Ontario","team":"Service","title":"310s Licensed Technician - Sudbury Mitsubishi"}
 {"company":"401 Group of Companies","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:401auto:2377","location":"Stratford, Ontario","team":"Service","title":"Detailer - Stratford Hyundai"}
 {"company":"401 Group of Companies","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:401auto:2379","location":"Woodstock, Ontario","team":"Business Office","title":"Business Manager - Woodstock"}
+{"company":"401 Group of Companies","employment":"full_time","first_seen":"2026-11-24","id":"bamboohr:401auto:2380","location":"Cambridge, Ontario","team":"Sales","title":"Product Sales Specialist - Cambridge Kia"}
 {"company":"401 Group of Companies","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:401auto:2381","location":"Innisfil, Ontario","team":"Sales","title":"Lot Attendant - Barrie 401"}
 {"company":"401 Group of Companies","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:401auto:2382","location":"Tecumseh, Ontario","team":"Service","title":"310s Licensed Technician - Windsor Mitsubishi"}
 {"closed_at":"2026-11-09","company":"401 Group of Companies","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:401auto:2384","location":"Innisfil, Ontario","team":"Service","title":"Parts and Service Advisor"}
@@ -163,3 +164,6 @@
 {"company":"401 Group of Companies","employment":"full_time","first_seen":"2026-11-20","id":"bamboohr:401auto:2473","location":"Sudbury, Ontario","team":"Service","title":"Detailer - Subaru of Sudbury"}
 {"company":"401 Group of Companies","employment":"full_time","first_seen":"2026-11-21","id":"bamboohr:401auto:2474","location":"Sudbury, Ontario","team":"Reception","title":"Full-Time Receptionist - Subaru of Sudbury"}
 {"company":"401 Group of Companies","employment":"full_time","first_seen":"2026-11-24","id":"bamboohr:401auto:2475","location":"Cambridge, Ontario","reposts":1,"team":"Business Office","title":"Business Manager - Cambridge Automart"}
+{"company":"401 Group of Companies","employment":"full_time","first_seen":"2026-11-24","id":"bamboohr:401auto:2476","location":"Kingston, Ontario","reposts":2,"team":"Business Office","title":"Business Manager"}
+{"company":"401 Group of Companies","employment":"full_time","first_seen":"2026-11-24","id":"bamboohr:401auto:2477","location":"Sudbury, Ontario","team":"Service","title":"Detail Manager - Mercedes-Benz of Sudbury"}
+{"company":"401 Group of Companies","employment":"full_time","first_seen":"2026-11-24","id":"bamboohr:401auto:2479","location":"Sudbury, Ontario","team":"Service","title":"Detailer - Mercedes-Benz of Sudbury"}

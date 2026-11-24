@@ -7,18 +7,18 @@
 {"company":"Mack Molding","employment":"part_time","first_seen":"2026-11-08","id":"bamboohr:mackmolding:248","location":"Arlington, Vermont","team":"Mack Internships","title":"Summer 2027 Internships - Arlington & Cavendish, VT"}
 {"company":"Mack Molding","employment":"full_time","first_seen":"2026-11-09","id":"bamboohr:mackmolding:258","location":"Inman, South Carolina","team":"Finishing","title":"Cleaning Crew 5p-3a rotating shift"}
 {"company":"Mack Molding","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:mackmolding:274","location":"Cavendish, Vermont","team":"Molding","title":"Shift Technician-Molding 2nd shift"}
-{"company":"Mack Molding","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:mackmolding:284","location":"Arlington, Vermont","team":"Engineering","title":"Manufacturing Engineer"}
+{"closed_at":"2026-11-24","company":"Mack Molding","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:mackmolding:284","location":"Arlington, Vermont","team":"Engineering","title":"Manufacturing Engineer"}
 {"company":"Mack Molding","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:mackmolding:286","location":"Arlington, Vermont","team":"Molding","title":"Material Handler/Utility - Molding Department"}
 {"company":"Mack Molding","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:mackmolding:293","location":"Arlington, Vermont","team":"Engineering","title":"Manufacturing Technician"}
 {"closed_at":"2026-11-20","company":"Mack Molding","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:mackmolding:295","location":"Arlington, Vermont","team":"Finishing","title":"Finisher - 1st Shift"}
 {"company":"Mack Molding","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:mackmolding:304","location":"Arlington, Vermont","team":"METALS HRLY","title":"Metals Team Members - 2nd & 3rd Shifts - $1500 SIGN ON BONUS"}
 {"company":"Mack Molding","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:mackmolding:311","location":"Arlington, Vermont","team":"METALS HRLY","title":"Material Handler - Metals"}
 {"company":"Mack Molding","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:mackmolding:319","location":"Arlington, Vermont","team":"IT Dept","title":"Director of Enterprise Systems & Digital Transformation"}
-{"company":"Mack Molding","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:mackmolding:323","location":"Arlington, Vermont","team":"Quality","title":"Quality Engineer"}
-{"company":"Mack Molding","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:mackmolding:325","location":"Arlington, Vermont","team":"Quality","title":"Quality Auditor - 1st & 2nd Shifts"}
+{"closed_at":"2026-11-24","company":"Mack Molding","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:mackmolding:323","location":"Arlington, Vermont","team":"Quality","title":"Quality Engineer"}
+{"company":"Mack Molding","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:mackmolding:325","location":"Arlington, Vermont","team":"Quality","title":"Quality Auditor - 2nd Shift"}
 {"company":"Mack Molding","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:mackmolding:326","location":"Arlington, Vermont","skills":["procurement"],"team":"PURCH","title":"Procurement Specialist"}
 {"company":"Mack Molding","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:mackmolding:329","location":"Arlington, Vermont","team":"Finishing","title":"1st Shift Supervisor - Finishing"}
-{"company":"Mack Molding","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:mackmolding:330","location":"Arlington, Vermont","team":"Quality","title":"Incoming Inspector - 1st & 2nd Shift"}
+{"company":"Mack Molding","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:mackmolding:330","location":"Arlington, Vermont","team":"Quality","title":"Incoming Inspector - 2nd Shift"}
 {"company":"Mack Molding","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:mackmolding:331","location":"Arlington, Vermont","team":"Shipping","title":"Warehouse Supervisor"}
 {"company":"Mack Molding","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:mackmolding:332","location":"Inman, South Carolina","team":"Molding","title":"Manufacturing Operator 1st & 2nd shifts"}
 {"company":"Mack Molding","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:mackmolding:335","location":"Arlington, Vermont","team":"Molding","title":"Plastics Process Engineer"}
@@ -43,6 +43,7 @@
 {"closed_at":"2026-11-19","company":"Mack Molding","employment":"full_time","first_seen":"2026-11-19","id":"bamboohr:mackmolding:358","location":"Arlington, Vermont","team":"IT Dept","title":"Network Administrator"}
 {"company":"Mack Molding","employment":"full_time","first_seen":"2026-11-19","id":"bamboohr:mackmolding:359","location":"Statesville, North Carolina","team":"Quality","title":"Quality Analyst"}
 {"company":"Mack Molding","employment":"full_time","first_seen":"2026-11-24","id":"bamboohr:mackmolding:36","location":"Arlington, Vermont","team":"Sales/Eng","title":"Account Manager/Program Manager"}
+{"company":"Mack Molding","employment":"full_time","first_seen":"2026-11-24","id":"bamboohr:mackmolding:360","location":"Arlington, Vermont","team":"Sales/Eng","title":"Associate Program Manager - Plastics NPI"}
 {"company":"Mack Molding","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:mackmolding:42","location":"Statesville, North Carolina","team":"Sales/Eng","title":"Tooling Engineer"}
 {"company":"Mack Molding","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:mackmolding:77","location":"Arlington, Vermont","team":"PURCH","title":"Supplier Engineer"}
 {"company":"Mack Molding","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:mackmolding:90","location":"Statesville, North Carolina","team":"Sales/Eng","title":"Program Manager"}

@@ -7,8 +7,8 @@
 {"company":"HTeaO","employment":"part_time","first_seen":"2026-10-19","id":"bamboohr:htoemp:164","location":"Durant, Oklahoma","team":"HTeaO Durant","title":"HTeaO TEAm Member"}
 {"company":"HTeaO","employment":"part_time","first_seen":"2026-10-19","id":"bamboohr:htoemp:166","location":"Allen, Texas","team":"HTeaO Allen","title":"HTeaO TEAm Member"}
 {"company":"HTeaO","employment":"part_time","first_seen":"2026-11-08","id":"bamboohr:htoemp:167","location":"Amarillo, Texas","team":"Texas Tea - 34th","title":"HTeaO TEAm Member"}
-{"company":"HTeaO","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:htoemp:168","location":"Fort Worth, Texas","team":"Logistics","title":"Warehouse TEAm Member"}
-{"company":"HTeaO","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:htoemp:169","location":"Fort Worth, Texas","skills":["cdl"],"team":"TBC Trucking","title":"CDL Truck Driver (Delivery Specialist)"}
+{"closed_at":"2026-11-24","company":"HTeaO","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:htoemp:168","location":"Fort Worth, Texas","team":"Logistics","title":"Warehouse TEAm Member"}
+{"closed_at":"2026-11-24","company":"HTeaO","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:htoemp:169","location":"Fort Worth, Texas","skills":["cdl"],"team":"TBC Trucking","title":"CDL Truck Driver (Delivery Specialist)"}
 {"company":"HTeaO","employment":"part_time","first_seen":"2026-10-19","id":"bamboohr:htoemp:170","location":"Mount Pleasant, Texas","team":"HTeaO Mt Pleasant","title":"HTeaO TEAm Member"}
 {"company":"HTeaO","employment":"part_time","first_seen":"2026-10-19","id":"bamboohr:htoemp:174","location":"Midland, Texas","team":"HTeaO - Midland","title":"HTeaO TEAm Member"}
 {"company":"HTeaO","employment":"part_time","first_seen":"2026-10-19","id":"bamboohr:htoemp:184","location":"Wichita Falls, Texas","team":"HTeaO Wichita Falls","title":"HTeaO TEAm Member"}
@@ -23,3 +23,8 @@
 {"company":"HTeaO","employment":"full_time","first_seen":"2026-11-16","id":"bamboohr:htoemp:238","location":"Fort Worth, Texas","team":"Store Development","title":"Paralegal, Franchise"}
 {"company":"HTeaO","employment":"full_time","first_seen":"2026-11-20","id":"bamboohr:htoemp:241","location":"Weatherford, Texas","team":"HTeaO Weatherford","title":"Assistant General Manager"}
 {"company":"HTeaO","employment":"full_time","first_seen":"2026-11-21","id":"bamboohr:htoemp:242","remote":true,"team":"Operations","title":"District Manager, Corporate Operations"}
+{"company":"HTeaO","employment":"full_time","first_seen":"2026-11-24","id":"bamboohr:htoemp:243","location":"Fort Worth, Texas","team":"Operations","title":"Manager, Operations Training & Innovation"}
+{"company":"HTeaO","employment":"full_time","first_seen":"2026-11-24","id":"bamboohr:htoemp:244","remote":true,"team":"Operations - NSO/Training","title":"Operations Readiness Specialist"}
+{"company":"HTeaO","employment":"full_time","first_seen":"2026-11-24","id":"bamboohr:htoemp:245","remote":true,"team":"Operations - NSO/Training","title":"Operations Readiness Specialist"}
+{"company":"HTeaO","employment":"full_time","first_seen":"2026-11-24","id":"bamboohr:htoemp:246","location":"Fort Worth, Texas","team":"Operations - NSO/Training","title":"Operations Readiness Specialist"}
+{"company":"HTeaO","employment":"full_time","first_seen":"2026-11-24","id":"bamboohr:htoemp:247","location":"Fort Worth, Texas","title":"Manager, Operations Readiness & Support"}

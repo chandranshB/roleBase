@@ -107,7 +107,7 @@
 {"company":"CFL","first_seen":"2026-11-08","id":"csod:sncfl:1754","location":"Luxembourg, LU","posted":"2026-01-10","title":"Conducteurs / Conductrices de manœuvres"}
 {"company":"CFL","first_seen":"2026-11-08","id":"csod:sncfl:1755","location":"Luxembourg, LU","title":"Électronicien / Électronicienne - Mécatronicien / Mécatronicienne d'autobus"}
 {"company":"CFL","first_seen":"2026-11-08","id":"csod:sncfl:1756","location":"Luxembourg, LU","title":"Aiguilleurs / Aiguilleuses"}
-{"company":"CFL","first_seen":"2026-11-08","id":"csod:sncfl:1757","location":"LU","posted":"2026-07-09","title":"Contrôleur/Contrôleuse de gestion Junior"}
+{"closed_at":"2026-11-24","company":"CFL","first_seen":"2026-11-08","id":"csod:sncfl:1757","location":"LU","posted":"2026-07-09","title":"Contrôleur/Contrôleuse de gestion Junior"}
 {"closed_at":"2026-11-24","company":"CFL","first_seen":"2026-11-08","id":"csod:sncfl:1760","location":"LU","reposts":1,"title":"Lokführer / Lokführerinnen (zweisprachig deutsch/französisch)"}
 {"closed_at":"2026-11-23","company":"CFL","first_seen":"2026-11-08","id":"csod:sncfl:1764","location":"Luxembourg, LU","skills":["sap"],"title":"Expert / Experte SAP BTP & Architecture d’intégration"}
 {"company":"CFL","first_seen":"2026-11-08","id":"csod:sncfl:1768","location":"Luxembourg, LU","reposts":1,"title":"Agentes / Agents de maintenance"}
@@ -142,6 +142,7 @@
 {"company":"CFL","first_seen":"2026-11-18","id":"csod:sncfl:1830","location":"Pétange, LU","title":"Employé / Employée Facturation et Gestion Commerciale (FR/DE)"}
 {"company":"CFL","first_seen":"2026-11-18","id":"csod:sncfl:1831","location":"Bettembourg, LU","title":"Coordinateur / Coordinatrice de maintenance locomotive"}
 {"company":"CFL","first_seen":"2026-11-18","id":"csod:sncfl:1832","location":"Bettembourg, LU","title":"Dirigeant/Dirigeante maintenance locomotive"}
+{"company":"CFL","first_seen":"2026-11-24","id":"csod:sncfl:1835","location":"Luxembourg, LU","title":"Dispatcher/ Dispatcherinnen für die Bahnstromversorgung"}
 {"company":"CFL","first_seen":"2026-11-20","id":"csod:sncfl:1836","location":"Dudelange, LU","title":"Animateur/Animatrice QSE"}
 {"company":"CFL","first_seen":"2026-11-08","id":"csod:sncfl:712","location":"Luxembourg, LU","posted":"2026-01-01","title":"Candidature spontanée CFL"}
 {"company":"CFL","first_seen":"2026-11-08","id":"csod:sncfl:9","location":"LU","posted":"2020-01-12","title":"Candidature spontanée FRET"}

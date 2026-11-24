@@ -19,7 +19,7 @@
 {"company":"DATA4","first_seen":"2026-11-08","id":"bamboohr:data4:328","location":"PARIS, PARIS","team":"Finance","title":"Group Capex Controller"}
 {"company":"DATA4","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:data4:331","location":"Jawczyce","team":"Operations","title":"Data Center Senior Field Engineer Controls and Building Management Systems"}
 {"company":"DATA4","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:data4:332","location":"Marcoussis","team":"Finance","title":"Project Cost Controller"}
-{"company":"DATA4","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:data4:333","location":"PARIS, PARIS","team":"Product Engineering and Design","title":"Design Manager Escaudain"}
+{"closed_at":"2026-11-24","company":"DATA4","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:data4:333","location":"PARIS, PARIS","team":"Product Engineering and Design","title":"Design Manager Escaudain"}
 {"company":"DATA4","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:data4:334","location":"Marcoussis","team":"DC Operations","title":"Technicien Environnement Critique 3x8"}
 {"company":"DATA4","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:data4:335","location":"Hanau","team":"Product Engineering and Design","title":"Commissioning Manager"}
 {"company":"DATA4","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:data4:336","location":"Madrid","team":"Product Engineering and Design","title":"Controls Engineer"}
@@ -48,3 +48,5 @@
 {"company":"DATA4","employment":"full_time","first_seen":"2026-11-12","id":"bamboohr:data4:373","location":"Cornaredo, Lombardy","team":"Product Engineering and Design","title":"CAD/BIM Engineer"}
 {"company":"DATA4","employment":"full_time","first_seen":"2026-11-12","id":"bamboohr:data4:374","location":"Madrid","team":"DC Operations","title":"Project Manager Operation Spain"}
 {"company":"DATA4","employment":"full_time","first_seen":"2026-11-18","id":"bamboohr:data4:375","location":"PARIS, PARIS","skills":["payroll"],"team":"HR","title":"Group HR Payroll Specialist - Gestionnaire de paie/RH Groupe"}
+{"company":"DATA4","employment":"full_time","first_seen":"2026-11-24","id":"bamboohr:data4:376","location":"Hanau","team":"DC Operations","title":"Techniker/in - Meister/in Elektrotechnik (m/w/d)  (Betrieb Rechenzentrumsinfrastruktur) - Data Center Operations Engineer Germany"}
+{"company":"DATA4","employment":"full_time","first_seen":"2026-11-24","id":"bamboohr:data4:377","location":"Hanau","team":"DC Operations","title":"Techniker/in - Meister/in Elektrotechnik (m/w/d)  (Wartungsplanung Rechenzentrumsinfrastruktur) - Data Center Infrastructure Engineer Germany"}
