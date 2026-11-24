@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   push: # a front-end fix goes live within minutes instead of at the next 6-hourly run: only the deploy job runs, no scrape
     branches: [main]
-    paths: ["web/**", "build_site.py", "build_pages.py", "build_logos.py"]
+    paths: ["web/**", "build_site.py", "build_pages.py", "build_logos.py", ".github/workflows/scrape.yml"]
 permissions:
   contents: write
 concurrency: scrape
@@ -69,14 +69,10 @@ jobs:
             exit 1
           fi
 
-  deploy: # rebuild the Pages site from the freshly committed data
+  build-site: # rebuild the Pages site from the freshly committed data
     needs: [scrape, consolidate]
     if: ${{ !cancelled() && (github.event_name == 'push' || needs.consolidate.result == 'success') }} # a push skips the scrape job; a failed scrape still stops the deploy
     runs-on: ubuntu-latest
-    permissions: { pages: write, id-token: write, contents: read }
-    environment:
-      name: github-pages
-      url: ${{ steps.d.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
         with: { ref: main } # not the triggering sha: the bot commit above is newer
@@ -94,10 +90,6 @@ jobs:
         continue-on-error: true
       - run: python build_logos.py
       - run: python build_pages.py # crawlable field/company pages, sitemap.xml
-      - uses: actions/upload-pages-artifact@v3
-        with: { path: _site }
-      - id: d
-        uses: actions/deploy-pages@v4
       - name: Update the About text # the open-job figure in the repo description. GITHUB_TOKEN may not edit repo settings, so this needs a fine-grained token (Administration: read and write) in the ABOUT_TOKEN secret; without one it is skipped
         continue-on-error: true # never fails a deploy
         env:
@@ -105,3 +97,16 @@ jobs:
           GH_REPO: ${{ github.repository }}
         run: |
           if [ -n "$GH_TOKEN" ]; then python update_about.py; else echo "ABOUT_TOKEN is not set: leaving the About text alone"; fi
+      - uses: actions/upload-pages-artifact@v3
+        with: { path: _site }
+
+  deploy:
+    needs: build-site
+    runs-on: ubuntu-latest
+    permissions: { pages: write, id-token: write }
+    environment:
+      name: github-pages
+      url: ${{ steps.d.outputs.page_url }}
+    steps:
+      - id: d
+        uses: actions/deploy-pages@v4
