@@ -1,1 +1,1 @@
-"""Unit tests for RoleBase test suite."""
+"""Unit tests for Argus test suite."""

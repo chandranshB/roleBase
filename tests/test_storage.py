@@ -1,7 +1,7 @@
 """Unit tests for storage, slimming, deduplication, and differential merge."""
 import unittest
 
-from rolebase.storage import collapse, merge, slim
+from argus.storage import collapse, merge, slim
 
 
 class TestStorage(unittest.TestCase):

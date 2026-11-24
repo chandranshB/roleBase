@@ -137,7 +137,7 @@ def fetch_rates():
     for url, pick in (("https://api.frankfurter.dev/v1/latest?base=USD", lambda d: (d["rates"], d["date"])),
                       ("https://open.er-api.com/v6/latest/USD", lambda d: (d["rates"], ""))):
         try:
-            req = urllib.request.Request(url, headers={"User-Agent": "roleBase (github.com/chandranshB/roleBase)"})
+            req = urllib.request.Request(url, headers={"User-Agent": "Argus (github.com/chandranshB/argus)"})
             got, day = pick(json.load(urllib.request.urlopen(req, timeout=15)))
         except Exception as e:
             print("rates:", url, "failed:", e)

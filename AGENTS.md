@@ -1,12 +1,12 @@
-# RoleBase: Agent & Developer Operational Manual
+# Argus: Agent & Developer Operational Manual
 
-Welcome to **RoleBase**. This document is the definitive operational handbook for both AI coding agents and human software engineers. It outlines the architectural design, directory structure, data schemas, invariant rules, and step-by-step developer playbooks.
+Welcome to **Argus**. This document is the definitive operational handbook for both AI coding agents and human software engineers. It outlines the architectural design, directory structure, data schemas, invariant rules, and step-by-step developer playbooks.
 
 ---
 
 ## 1. System Architecture & Data Lifecycle
 
-RoleBase is an automated, distributed job indexing platform that continuously aggregates open job vacancies across 50+ applicant tracking systems (ATS) and enterprise feeds, enriching postings with extracted metadata (seniority level, field category, required experience years, pay ranges, and technical skills) and publishing the results to GitHub Pages and Kaggle.
+Argus is an automated, distributed job indexing platform that continuously aggregates open job vacancies across 50+ applicant tracking systems (ATS) and enterprise feeds, enriching postings with extracted metadata (seniority level, field category, required experience years, pay ranges, and technical skills) and publishing the results to GitHub Pages and Kaggle.
 
 ```mermaid
 flowchart TD
@@ -16,7 +16,7 @@ flowchart TD
     D --> E["Data Store & Caches<br/>data/jobs/*.jsonl<br/>data/pulse.csv<br/>data/skills.csv<br/>data/charts_cache.json"]
     E --> F["Deploy Job<br/>(build_site.py, build_logos.py, build_pages.py)"]
     E --> G["Kaggle Workflow<br/>(export_kaggle.py)"]
-    F --> H["GitHub Pages<br/>(chandranshb.github.io/roleBase)"]
+    F --> H["GitHub Pages<br/>(chandranshb.github.io/argus)"]
     G --> I["Kaggle Datasets & Notebooks<br/>(kaggle/jobs.parquet, etc.)"]
 ```
 
@@ -47,13 +47,13 @@ flowchart TD
 ## 2. Directory Structure & File Manifest
 
 ```
-roleBase/
+argus/
 ├── .github/
 │   └── workflows/
 │       ├── ci.yml              # CI test & lint quality gate (PRs & pushes)
 │       ├── scrape.yml          # 16-shard 6-hourly crawl & site deployment
 │       └── kaggle.yml          # Daily Kaggle dataset export & publishing
-├── rolebase/                   # Core modular Python engine
+├── argus/                      # Core modular Python engine
 │   ├── __init__.py             # Public package exports & version
 │   ├── config.py               # Constants, regexes, paths, and mappings
 │   ├── client.py               # Resilient HTTP Session with exponential backoff
@@ -63,6 +63,7 @@ roleBase/
 │   ├── consolidate.py          # Shard merging & analytics precomputation
 │   └── crawlers/               # ATS & feed crawler registry
 │       └── __init__.py         # Platform registry (ATS, FEEDS, LANES)
+├── rolebase/                   # Backward-compatibility re-export layer
 ├── tests/                      # Pytest & standard unittest test suite
 │   ├── test_normalize.py       # Classification, level, category, skills tests
 │   ├── test_ghost.py           # Ghost job score tests
@@ -163,15 +164,15 @@ When modifying or adding code to this repository, AI agents and engineers MUST f
        ]
    ```
 2. **Register Platform**:
-   - Add URL template to `URLS` in `rolebase/config.py` and `scraper.py`.
+   - Add URL template to `URLS` in `argus/config.py` and `scraper.py`.
    - Add entry to `ATS` dict in `scraper.py`.
-   - Add concurrency limit to `LANES` in `rolebase/config.py`.
+   - Add concurrency limit to `LANES` in `argus/config.py`.
 3. **Add Tests**:
    - Add URL derivation check in `tests/test_pipeline.py`.
    - Verify with `python -m unittest discover tests`.
 
 ### B. Adding or Updating Tracked Skills
-1. Open [`rolebase/config.py`](file:///w:/Code/Projects/roleBase/rolebase/config.py).
+1. Open [`argus/config.py`](file:///w:/Code/Projects/roleBase/argus/config.py).
 2. For single-word skills (e.g., `zig`, `solidity`), append to the `SKILLS` string.
 3. For multi-word skills or aliases (e.g., `power bi` -> `power_bi`), add to the `ALIAS` dictionary.
 4. Run `python -m unittest tests/test_normalize.py` to verify regex compilation and token extraction.
@@ -185,5 +186,5 @@ python -m unittest discover tests -v
 python test_scraper.py
 
 # Verify code quality with ruff
-ruff check rolebase tests
+ruff check argus tests
 ```

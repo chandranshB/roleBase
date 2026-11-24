@@ -15,7 +15,7 @@ from pathlib import Path
 
 from scraper import company_stats, fresher_ok, ghost_flags, load
 
-BASE = "https://chandranshb.github.io/roleBase"
+BASE = "https://chandranshb.github.io/argus"
 SITE = Path("_site")
 TODAY = dt.date.today().isoformat()
 FIELDS = dict(
@@ -50,12 +50,12 @@ def page(path, title, desc, body, crumbs):
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{esc(title)}</title><meta name="description" content="{esc(desc)}"><link rel="canonical" href="{esc(url)}">
 <meta property="og:type" content="website"><meta property="og:title" content="{esc(title)}"><meta property="og:description" content="{esc(desc)}">
-<meta property="og:url" content="{esc(url)}"><meta property="og:site_name" content="RoleBase"><meta property="og:image" content="{BASE}/og.png"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="{BASE}/og.png">
+<meta property="og:url" content="{esc(url)}"><meta property="og:site_name" content="Argus"><meta property="og:image" content="{BASE}/og.png"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="{BASE}/og.png">
 <link rel="icon" href="{BASE}/favicon.svg" type="image/svg+xml"><style>{CSS}</style>
 <script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script></head>
 <body><main><nav class="bc" aria-label="Breadcrumb">{nav}</nav>{body}
 <footer><p>Listings belong to their employers and link to the original posting. Level, field, skills and pay are read from the posting text automatically and can be wrong.
-Updated {TODAY}. <a href="{BASE}/">RoleBase</a> is open source: <a href="https://github.com/chandranshB/roleBase">code and data</a>.</p></footer></main></body></html>
+Updated {TODAY}. <a href="{BASE}/">Argus</a> is open source: <a href="https://github.com/chandranshB/argus">code and data</a>.</p></footer></main></body></html>
 """
     d = SITE / path
     d.mkdir(parents=True, exist_ok=True)
@@ -156,7 +156,7 @@ def main():
     if (SITE / "logos.json").exists():
         logos = json.loads((SITE / "logos.json").read_text(encoding="utf-8"))
     urls = [f"{BASE}/", f"{BASE}/fields/", f"{BASE}/companies/"]
-    home = ("RoleBase", f"{BASE}/")
+    home = ("Argus", f"{BASE}/")
     by_cat = {}
     for j in jobs:
         cat_key = j.get("category") or ""
@@ -186,18 +186,18 @@ def main():
                 f"<h2>Latest {esc(label)} listings</h2>{listing(js, cmap)}"
                 + (f"<h2>Employers hiring most</h2><ul class='cols'>{employers}</ul>" if employers else "")
                 + f"<h2>Other ways to browse</h2><ul class='cols'>{others}</ul>")
-        page(path, f"{h1}: {len(js):,} open roles | RoleBase", short, body, crumbs)
+        page(path, f"{h1}: {len(js):,} open roles | Argus", short, body, crumbs)
         urls.append(url)
 
     # hubs
     items = "".join(f'<li><a href="{BASE}/fields/{c}/">{esc(n)} jobs</a> <small>({len(by_cat[c]):,})</small></li>' for c, n in FIELDS.items() if len(by_cat.get(c, [])) >= 20)
-    page("fields", "Jobs by field: healthcare, retail, finance, engineering and more | RoleBase",
+    page("fields", "Jobs by field: healthcare, retail, finance, engineering and more | Argus",
          "Browse open jobs by field: healthcare, retail and hospitality, finance, education, manufacturing, logistics, engineering and more.",
          f"<h1>Jobs by field</h1><p class='lead'>Open jobs from employers' own career pages, grouped by what the work is, not only by technology. Pick a field to see the latest listings and who is hiring.</p><ul class='cols'>{items}</ul>"
          f"<h2>Also popular</h2><ul class='cols'><li><a href='{BASE}/entry-level-jobs/'>Entry-level jobs</a></li><li><a href='{BASE}/remote-jobs/'>Remote jobs</a></li><li><a href='{BASE}/internships/'>Internships</a></li></ul>",
          [home, ("Jobs by field", f"{BASE}/fields/")])
     ci = "".join(f'<li><a href="{BASE}/companies/{cmap[c["company"]]}/">{esc(c["company"])}</a> <small>({c["open_roles"]:,})</small></li>' for c in sorted(cs, key=lambda c: c["company"].lower()))
-    page("companies", f"Companies hiring now: {len(cs):,} employers with open jobs | RoleBase",
+    page("companies", f"Companies hiring now: {len(cs):,} employers with open jobs | Argus",
          f"{len(cs):,} employers with five or more open jobs, from hospitals and banks to retailers and tech. See who is hiring and how many roles suit beginners.",
          f"<h1>Companies hiring now</h1><p class='lead'>{len(cs):,} employers with five or more open roles. Each page shows the latest listings and how many are open to people with up to two years of experience.</p><ul class='cols'>{ci}</ul>",
          [home, ("Companies", f"{BASE}/companies/")])
@@ -219,7 +219,7 @@ def main():
                 f'<a class="cta" href="{BASE}/#q=%22{esc(urllib.parse.quote(name))}%22&amp;all=1">Search {esc(name)} jobs in the app</a>'
                 f"<h2>Latest openings</h2>{listing(js, {}, per_company=40, limit=40)}")
         url = f"{BASE}/companies/{s}/"
-        page(f"companies/{s}", f"Jobs at {name}: {len(js):,} open roles | RoleBase", short, body,
+        page(f"companies/{s}", f"Jobs at {name}: {len(js):,} open roles | Argus", short, body,
              [home, ("Companies", f"{BASE}/companies/"), (name, url)])
         urls.append(url)
 

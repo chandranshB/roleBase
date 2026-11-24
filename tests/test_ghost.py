@@ -2,7 +2,7 @@
 import datetime as dt
 import unittest
 
-from rolebase.ghost import ghost_flags
+from argus.ghost import ghost_flags
 
 
 class TestGhostScore(unittest.TestCase):

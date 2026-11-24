@@ -29,7 +29,7 @@ HF_BASE = "https://huggingface.co/datasets/scholarweave/Jobs-Dataset-v2/resolve/
 
 def fetch_file(fpath, company_lookup):
     url = f"{HF_BASE}/{fpath}"
-    req = urllib.request.Request(url, headers={"User-Agent": "roleBase-sync"})
+    req = urllib.request.Request(url, headers={"User-Agent": "argus-sync"})
     try:
         with urllib.request.urlopen(req, timeout=45) as resp:
             buf = io.BytesIO(resp.read())

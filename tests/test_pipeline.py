@@ -2,8 +2,8 @@
 import unittest
 
 import scraper
-from rolebase.consolidate import company_stats
-from rolebase.normalize import url_of
+from argus.consolidate import company_stats
+from argus.normalize import url_of
 
 
 class TestPipeline(unittest.TestCase):
@@ -90,6 +90,15 @@ class TestPipeline(unittest.TestCase):
         self.assertEqual(s["fresher_share"], 0.6)
         self.assertEqual(s["junior_asking_3plus"], 0)
         self.assertEqual(s["years_stated_share"], 1.0)
+
+    def test_rolebase_backward_compatibility(self):
+        import rolebase
+        import rolebase.config
+        import rolebase.ghost
+        import rolebase.normalize
+        import rolebase.storage
+        self.assertEqual(rolebase.__version__, "2.0.0")
+        self.assertEqual(rolebase.normalize.clean_company("Argus LLC"), "Argus")
 
 
 if __name__ == "__main__":

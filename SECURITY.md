@@ -2,7 +2,7 @@
 
 ## Reporting a vulnerability
 
-Please don't open a public issue. Use GitHub's [private vulnerability reporting](https://github.com/chandranshB/roleBase/security/advisories/new). Expect a reply within a week.
+Please don't open a public issue. Use GitHub's [private vulnerability reporting](https://github.com/chandranshB/argus/security/advisories/new). Expect a reply within a week.
 
 ## Scope
 

@@ -42,7 +42,7 @@ jobs:
 
       - name: Code quality check (ruff)
         run: |
-          ruff check rolebase tests --output-format=github
+          ruff check argus rolebase tests --output-format=github
 
       - name: Run unit test suite
         run: |

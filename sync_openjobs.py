@@ -30,7 +30,7 @@ HF_BASE = "https://huggingface.co/datasets/scholarweave/Jobs-Dataset-v2/resolve/
 def fetch_shard(shard_idx, company_lookup):
     shard_str = f"shard_{shard_idx:04d}.parquet"
     url = f"{HF_BASE}/data/active/minimal/current/{shard_str}"
-    req = urllib.request.Request(url, headers={"User-Agent": "roleBase-sync"})
+    req = urllib.request.Request(url, headers={"User-Agent": "argus-sync"})
     try:
         with urllib.request.urlopen(req, timeout=45) as resp:
             buf = io.BytesIO(resp.read())

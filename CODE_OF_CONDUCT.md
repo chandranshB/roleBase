@@ -4,4 +4,4 @@ We follow the [Contributor Covenant 2.1](https://www.contributor-covenant.org/ve
 
 In short: be respectful, assume good faith, and keep discussion about the work. Harassment, discrimination and personal attacks are not tolerated.
 
-To report a problem, open a private [security advisory](https://github.com/chandranshB/roleBase/security/advisories/new). Reports are handled confidentially, and maintainers may remove comments or ban contributors who break these rules.
+To report a problem, open a private [security advisory](https://github.com/chandranshB/argus/security/advisories/new). Reports are handled confidentially, and maintainers may remove comments or ban contributors who break these rules.

@@ -287,7 +287,7 @@ def export_table(rows, cols_spec, pa_schema, out_dir, base_name, write_parquet=T
 
 
 def main(argv=None):
-    parser = argparse.ArgumentParser(description="Export RoleBase datasets for Kaggle (Parquet and/or CSV).")
+    parser = argparse.ArgumentParser(description="Export Argus datasets for Kaggle (Parquet and/or CSV).")
     parser.add_argument("--format", choices=["parquet", "csv", "both"], default="parquet",
                         help="Export format: 'parquet' (default, ~85%% smaller), 'csv', or 'both'")
     parser.add_argument("--csv", action="store_true", help="Also export CSV files (equivalent to --format both)")
@@ -443,7 +443,7 @@ def main(argv=None):
 
     field_list = ", ".join(f"{k.replace('_', ' ')} ({v:,})" for k, v in fields_counter.most_common(14))
     n_companies = len(live_companies)
-    TITLE = "Job Listings: Open Jobs in Every Field (Daily)"
+    TITLE = "Argus: Open Jobs in Every Field (Daily)"
     SUBTITLE = "Daily-updated open jobs with apply links, level, field, skills and pay"
     assert 6 <= len(TITLE) <= 50 and len(SUBTITLE) <= 80, (len(TITLE), len(SUBTITLE))
     SOURCES = ("Public career portals, APIs and feeds across 58 enterprise ATS platforms (Workday, Greenhouse, Lever, Ashby, SmartRecruiters, ADP, UKG Pro, Dayforce, Paylocity, Paycom, ApplicantPro, iSolved, Betterteam, GoHire, Freshteam, Gem, Recooty, CSOD, Taleo, Bullhorn, SAP SuccessFactors, Avature, Recruiterflow, Manatal, Loxo, CareerPlug, Comeet, Crelate, ClearCompany, PageUp People, CATS, TalentLyft, JobAdder, Jobsoid, Tribepad, ApplicantStack, Factorial HR, Join, Personio, BambooHR, Rippling, Oracle HCM, JazzHR, Jobvite, JobScore, Zoho Recruit, iCIMS, Amazon, Apple, Microsoft, Eightfold, and more). "
@@ -514,15 +514,15 @@ Refreshed automatically once a day by GitHub Actions; the scraper itself runs ev
 
 - **Compilation, schema, derived fields & aggregates** (`category`, `level`, `years_experience`, `skills`, `ghost_score`, `fresher_friendly`, and the company/daily tables): released under **CC BY 4.0**.
 - **Underlying job titles, company names, and apply URLs**: remain the property of their respective employers.
-- **Opt-out / removal**: employers who want their listings excluded from this dataset can open an issue at https://github.com/chandranshB/roleBase/issues.
+- **Opt-out / removal**: employers who want their listings excluded from this dataset can open an issue at https://github.com/chandranshB/argus/issues.
 
 ## Links
 
-Search the same data as a website: https://chandranshb.github.io/roleBase/ . Starter notebook: https://www.kaggle.com/code/chandranshbinjola/job-listings-explorer
+Search the same data as a website: https://chandranshb.github.io/argus/ . Starter notebook: https://www.kaggle.com/code/chandranshbinjola/job-listings-explorer
 
 ## How to cite
 
-Binjola, C. ({today[:4]}). RoleBase Job Listings: Open Jobs in Every Field. Kaggle. https://www.kaggle.com/datasets/chandranshbinjola/job-listings
+Binjola, C. ({today[:4]}). Argus Job Listings: Open Jobs in Every Field. Kaggle. https://www.kaggle.com/datasets/chandranshbinjola/job-listings
 """
 
     (out / "dataset-metadata.json").write_text(json.dumps({

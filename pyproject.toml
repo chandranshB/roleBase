@@ -3,9 +3,9 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "rolebase"
+name = "argus"
 version = "2.0.0"
-description = "High-throughput, distributed job scraping and aggregation engine indexing 50+ enterprise ATS platforms."
+description = "Argus: High-throughput, distributed job scraping and aggregation engine indexing 50+ enterprise ATS platforms."
 readme = "README.md"
 authors = [{ name = "Chandransh Binjola" }]
 license = { file = "LICENSE" }
@@ -29,7 +29,7 @@ dev = [
 
 [tool.setuptools.packages.find]
 where = ["."]
-include = ["rolebase*"]
+include = ["argus*", "rolebase*"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests", "test_scraper.py"]
@@ -53,5 +53,8 @@ exclude = [
 select = ["E", "F", "W", "B", "I"]
 ignore = ["E501", "B008", "B905"]
 
+[tool.ruff.lint.per-file-ignores]
+"rolebase/*" = ["F401", "F403"]
+
 [tool.ruff.lint.isort]
-known-first-party = ["rolebase", "scraper"]
+known-first-party = ["argus", "rolebase", "scraper"]

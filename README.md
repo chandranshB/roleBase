@@ -1,19 +1,19 @@
 <p align="center">
-  <img src="docs/logo.svg" alt="RoleBase" height="56">
+  <img src="docs/logo.svg" alt="Argus" height="56">
 </p>
 
-<h1 align="center">RoleBase</h1>
+<h1 align="center">Argus</h1>
 
 <p align="center">
   <strong>Automated, distributed open job index and labor-market dataset across 71 enterprise ATS platforms and 25 job feeds.</strong>
 </p>
 
 <p align="center">
-  <a href="https://github.com/chandranshB/roleBase/actions/workflows/ci.yml"><img src="https://github.com/chandranshB/roleBase/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
-  <a href="https://github.com/chandranshB/roleBase/actions/workflows/scrape.yml"><img src="https://github.com/chandranshB/roleBase/actions/workflows/scrape.yml/badge.svg" alt="Scrape & Deploy"></a>
-  <a href="https://github.com/chandranshB/roleBase/actions/workflows/kaggle.yml"><img src="https://github.com/chandranshB/roleBase/actions/workflows/kaggle.yml/badge.svg" alt="Kaggle Export"></a>
+  <a href="https://github.com/chandranshB/argus/actions/workflows/ci.yml"><img src="https://github.com/chandranshB/argus/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
+  <a href="https://github.com/chandranshB/argus/actions/workflows/scrape.yml"><img src="https://github.com/chandranshB/argus/actions/workflows/scrape.yml/badge.svg" alt="Scrape & Deploy"></a>
+  <a href="https://github.com/chandranshB/argus/actions/workflows/kaggle.yml"><img src="https://github.com/chandranshB/argus/actions/workflows/kaggle.yml/badge.svg" alt="Kaggle Export"></a>
   <a href="https://www.kaggle.com/datasets/chandranshbinjola/job-listings"><img src="https://img.shields.io/badge/Kaggle-Dataset-20BEFF?logo=kaggle&logoColor=white" alt="Kaggle"></a>
-  <a href="https://chandranshb.github.io/roleBase/"><img src="https://img.shields.io/badge/Web-Live%20Search-success" alt="Live Site"></a>
+  <a href="https://chandranshb.github.io/argus/"><img src="https://img.shields.io/badge/Web-Live%20Search-success" alt="Live Site"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-AGPL--3.0-blue.svg" alt="License: AGPL-3.0"></a>
 </p>
 
@@ -21,11 +21,11 @@
 
 ## Overview
 
-RoleBase continuously aggregates, enriches, and archives open job vacancies directly from over **114,160+ employer career portals** across **71 applicant tracking systems** (Workday, Greenhouse, Lever, Ashby, SmartRecruiters, ADP, UKG Pro, Dayforce, Paylocity, Oracle HCM, SAP SuccessFactors CSB, Radancy / TalentBrew, iCIMS Jibe Apply, Y Combinator & Work at a Startup, Hireology, Feishu/Lark, Moka HR, Beisen i-Talent, Baidu, Tencent, ByteDance, NetEase, JD.com, Unitree, and more) plus **25 curated job feeds and governmental portals** (German Federal Employment Agency *Arbeitsagentur*, Singapore WSG *MyCareersFuture*, *FreeHire*, *Work at a Startup*, etc.), covering **98% of the Fortune 500**.
+Argus continuously aggregates, enriches, and archives open job vacancies directly from over **114,160+ employer career portals** across **71 applicant tracking systems** (Workday, Greenhouse, Lever, Ashby, SmartRecruiters, ADP, UKG Pro, Dayforce, Paylocity, Oracle HCM, SAP SuccessFactors CSB, Radancy / TalentBrew, iCIMS Jibe Apply, Y Combinator & Work at a Startup, Hireology, Feishu/Lark, Moka HR, Beisen i-Talent, Baidu, Tencent, ByteDance, NetEase, JD.com, Unitree, and more) plus **25 curated job feeds and governmental portals** (German Federal Employment Agency *Arbeitsagentur*, Singapore WSG *MyCareersFuture*, *FreeHire*, *Work at a Startup*, etc.), covering **98% of the Fortune 500**.
 
 Every posting is parsed and normalized with seniority level, professional field, required years of experience, yearly salary ranges, and technical/domain skills. Historical job closures are tracked to detect stale listings and ghost jobs.
 
-* 🌐 **Live Web Search**: [chandranshb.github.io/roleBase](https://chandranshb.github.io/roleBase/)
+* 🌐 **Live Web Search**: [chandranshb.github.io/argus](https://chandranshb.github.io/argus/)
 * 📊 **Kaggle Relational Dataset**: [kaggle.com/datasets/chandranshbinjola/job-listings](https://www.kaggle.com/datasets/chandranshbinjola/job-listings)
 * 📓 **Starter Analysis Notebook**: [Job Listings Explorer](https://www.kaggle.com/code/chandranshbinjola/job-listings-explorer)
 * 🤖 **AI Agent & Developer Guide**: [AGENTS.md](AGENTS.md) · [ARCHITECTURE.md](docs/ARCHITECTURE.md)
@@ -112,7 +112,7 @@ flowchart LR
     C --> D[("data/jobs/*.jsonl<br/>data/pulse.csv<br/>data/skills.csv")]
     D --> E["Site & Pages Generator<br/>(build_site.py, build_pages.py)"]
     D --> F["Dataset Exporter<br/>(export_kaggle.py)"]
-    E --> G["GitHub Pages<br/>chandranshb.github.io/roleBase"]
+    E --> G["GitHub Pages<br/>chandranshb.github.io/argus"]
     F --> H["Kaggle Datasets & Notebooks"]
 ```
 
@@ -130,8 +130,8 @@ flowchart LR
 
 ### Setup
 ```bash
-git clone https://github.com/chandranshB/roleBase.git
-cd roleBase
+git clone https://github.com/chandranshB/argus.git
+cd argus
 pip install -r requirements-dev.txt
 ```
 
@@ -144,7 +144,7 @@ python -m unittest discover tests -v
 python test_scraper.py
 
 # Run linter
-ruff check rolebase tests
+ruff check argus tests
 ```
 
 ### Crawl & Site Build Commands

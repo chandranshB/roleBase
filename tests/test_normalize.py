@@ -1,7 +1,7 @@
 """Unit tests for entity extraction, normalization, and classification logic."""
 import unittest
 
-from rolebase.normalize import (
+from argus.normalize import (
     category,
     clean_company,
     country,
@@ -130,6 +130,7 @@ class TestClassifiers(unittest.TestCase):
     def test_clean_company_name(self):
         self.assertEqual(clean_company("Stripe, Inc."), "Stripe")
         self.assertEqual(clean_company("Acme GmbH"), "Acme")
+        self.assertEqual(clean_company("Argus LLC"), "Argus")
         self.assertEqual(clean_company("RoleBase LLC"), "RoleBase")
         self.assertEqual(clean_company("OpenAI Ltd."), "OpenAI")
         self.assertEqual(clean_company("Inc"), "Inc")

@@ -20,7 +20,7 @@ from scraper import load
 
 CACHE, SITE = Path("logo-cache"), Path("_site")
 MIN, MAX_BYTES, FRESH, RETRY = 48, 120_000, 30 * 86400, 7 * 86400  # px, bytes, seconds before re-fetching a hit / a miss
-HEADERS = {"User-Agent": "roleBase-job-scraper (icon fetch)"}
+HEADERS = {"User-Agent": "argus-job-scraper (icon fetch)"}
 BAD = []
 VER = 2  # bump when the lookup recipe gains a source, so earlier misses get another try
 

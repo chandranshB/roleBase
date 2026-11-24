@@ -1,6 +1,6 @@
-# RoleBase System Architecture & Pipeline Design
+# Argus System Architecture & Pipeline Design
 
-RoleBase is engineered for high throughput, low latency, and zero-maintenance continuous operation on standard free-tier GitHub Actions runners.
+Argus is engineered for high throughput, low latency, and zero-maintenance continuous operation on standard free-tier GitHub Actions runners.
 
 ---
 
@@ -29,7 +29,7 @@ graph TD
         SITE_BUILD["Site Generator<br/>(build_site.py)"]
         LOGOS["Logo Pipeline<br/>(build_logos.py)"]
         PAGES["Static SEO Pages<br/>(build_pages.py)"]
-        WEB["GitHub Pages App<br/>(chandranshb.github.io/roleBase)"]
+        WEB["GitHub Pages App<br/>(chandranshb.github.io/argus)"]
         KAGGLE["Kaggle Exporter<br/>(export_kaggle.py)"]
     end
 
@@ -56,13 +56,13 @@ graph TD
 
 | Module | Responsibility |
 | :--- | :--- |
-| **`rolebase.config`** | Central configuration, regular expressions, country/state lookup dictionaries, and concurrency settings. |
-| **`rolebase.client`** | Resilient `requests.Session` subclass with exponential backoff on connection drops and HTTP 429/5xx codes. |
-| **`rolebase.normalize`** | High-performance extraction of seniority levels, categories, countries, skills, compensation, and fresher eligibility. |
-| **`rolebase.ghost`** | Staleness and ghost job heuristic risk scoring. |
-| **`rolebase.storage`** | Fast differential merging, compact JSONL serialization, and CSV persistence. |
-| **`rolebase.consolidate`** | Shard artifact merging, pruning aged jobs (>90 days), and precomputing company statistics for instantaneous site builds. |
-| **`rolebase.crawlers`** | Registry of crawlers supporting Workday, Greenhouse, Lever, Ashby, SmartRecruiters, ADP, Eightfold, and 45+ others. |
+| **`argus.config`** | Central configuration, regular expressions, country/state lookup dictionaries, and concurrency settings. |
+| **`argus.client`** | Resilient `requests.Session` subclass with exponential backoff on connection drops and HTTP 429/5xx codes. |
+| **`argus.normalize`** | High-performance extraction of seniority levels, categories, countries, skills, compensation, and fresher eligibility. |
+| **`argus.ghost`** | Staleness and ghost job heuristic risk scoring. |
+| **`argus.storage`** | Fast differential merging, compact JSONL serialization, and CSV persistence. |
+| **`argus.consolidate`** | Shard artifact merging, pruning aged jobs (>90 days), and precomputing company statistics for instantaneous site builds. |
+| **`argus.crawlers`** | Registry of crawlers supporting Workday, Greenhouse, Lever, Ashby, SmartRecruiters, ADP, Eightfold, and 45+ others. |
 | **`scraper.py`** | Root entry point maintaining 100% backward compatibility for CLI commands and external imports. |
 
 ---

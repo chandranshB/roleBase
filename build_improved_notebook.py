@@ -33,8 +33,8 @@ def create_notebook():
 # 🧭 Decoding 450,000+ Job Postings: The Empirical Labor Market Intelligence Report
 ### Beyond Generic Data-to-Graph Generation: Seniority Gatekeeping, Ghost Jobs, Pay Transparency, and High-ROI Skill Stacks across 7,500+ Employers
 
-**Live Search & Exploration Portal:** [chandranshb.github.io/roleBase](https://chandranshb.github.io/roleBase/)  
-**Source Code & Automated Daily Crawler:** [github.com/chandranshB/roleBase](https://github.com/chandranshB/roleBase)  
+**Live Search & Exploration Portal:** [chandranshb.github.io/argus](https://chandranshb.github.io/argus/)  
+**Source Code & Automated Daily Crawler:** [github.com/chandranshB/argus](https://github.com/chandranshB/argus)  
 **Dataset:** [Job Listings: Open Jobs in Every Field (Daily)](https://www.kaggle.com/datasets/chandranshbinjola/job-listings)
 
 ---
@@ -734,8 +734,8 @@ Based on our analysis of 450,000+ postings, here are the five strategic takeaway
 ---
 
 ### 🔗 Explore More:
-* **Interactive Web Explorer:** [chandranshb.github.io/roleBase](https://chandranshb.github.io/roleBase/)
-* **GitHub Repository & Crawler:** [github.com/chandranshB/roleBase](https://github.com/chandranshB/roleBase)
+* **Interactive Web Explorer:** [chandranshb.github.io/argus](https://chandranshb.github.io/argus/)
+* **GitHub Repository & Crawler:** [github.com/chandranshB/argus](https://github.com/chandranshB/argus)
 * **Kaggle Dataset:** [Job Listings: Open Jobs in Every Field (Daily)](https://www.kaggle.com/datasets/chandranshbinjola/job-listings)
 """, "h10")
 

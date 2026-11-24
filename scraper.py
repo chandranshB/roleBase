@@ -45,7 +45,7 @@ class Client(requests.Session):
 
 
 S = Client()
-S.headers["User-Agent"] = "roleBase-job-scraper"
+S.headers["User-Agent"] = "argus-job-scraper"
 S.headers["Accept-Encoding"] = "gzip, deflate"
 S.mount("https://", HTTPAdapter(pool_maxsize=128, max_retries=Retry(total=5, backoff_factor=2, status_forcelist=[429, 500, 502, 503, 504],
                                                                     allowed_methods=None)))  # None = retry POST too (Workday searches are read-only)
@@ -3792,7 +3792,7 @@ def export_parquet(out_dir="kaggle", fmt="parquet", max_files=None, compression=
 
 
 def main():
-    parser = argparse.ArgumentParser(description="RoleBase job scraper")
+    parser = argparse.ArgumentParser(description="Argus job scraper")
     parser.add_argument("--shard", type=int, default=0, help="Shard index (0-based)")
     parser.add_argument("--total-shards", type=int, default=1, help="Total number of parallel shards")
     parser.add_argument("--consolidate", action="store_true", help="Merge shards, prune, and log history")
