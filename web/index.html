@@ -9,8 +9,8 @@
 <meta property="og:type" content="website"><meta property="og:site_name" content="Argus"><meta property="og:title" content="Free job search for every field | Argus">
 <meta property="og:description" content="Open jobs from employers' own career pages in every field, with entry-level, remote and salary filters and ghost-job flags.">
 <meta property="og:url" content="https://chandranshb.github.io/argus/"><meta property="og:image" content="https://chandranshb.github.io/argus/og.png"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://chandranshb.github.io/argus/og.png">
-<link rel="preload" href="feed.json" as="fetch" crossorigin>
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","name":"Argus","url":"https://chandranshb.github.io/argus/","description":"Free, open job search across every field."},{"@type":"Dataset","name":"Job Listings (auto-updated)","description":"Open and recently closed jobs from company career boards, refreshed daily: apply link, level, field, skills, pay where stated, open and closed dates.","url":"https://www.kaggle.com/datasets/chandranshbinjola/job-listings","sameAs":"https://github.com/chandranshB/argus","isAccessibleForFree":true,"keywords":["jobs","job listings","job market","entry-level jobs","remote jobs","labor market"],"creator":{"@type":"Person","name":"Chandransh Binjola"},"distribution":[{"@type":"DataDownload","encodingFormat":"text/csv","contentUrl":"https://www.kaggle.com/datasets/chandranshbinjola/job-listings"}]}]}</script>
+<link rel="preload" href="feed.parquet" as="fetch" crossorigin>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","name":"Argus","url":"https://chandranshb.github.io/argus/","description":"Free, open job search across every field."},{"@type":"Dataset","name":"Job Listings (auto-updated)","description":"Open and recently closed jobs from company career boards, refreshed daily: apply link, level, field, skills, pay where stated, open and closed dates.","url":"https://www.kaggle.com/datasets/chandranshbinjola/job-listings","sameAs":"https://github.com/chandranshB/argus","isAccessibleForFree":true,"keywords":["jobs","job listings","job market","entry-level jobs","remote jobs","labor market","apache parquet"],"creator":{"@type":"Person","name":"Chandransh Binjola"},"distribution":[{"@type":"DataDownload","encodingFormat":"application/vnd.apache.parquet","contentUrl":"https://www.kaggle.com/datasets/chandranshbinjola/job-listings"}]}]}</script>
 <meta name="theme-color" content="#f4f5f7" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#0d0f12" media="(prefers-color-scheme: dark)">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -635,7 +635,8 @@ dialog[open]::backdrop{animation:fadein .22s var(--ease)}
     <footer><button type="button" id="reset">Reset everything</button><button type="submit" class="primary">Done</button></footer>
   </form>
 </dialog>
-<script>
+<script type="module">
+import { parquetMetadata, parquetRead } from "./vendor/hyparquet.mjs";
 (()=>{
 const $=s=>document.querySelector(s),PAGE=20,form=$("#f"),qi=$("#q"),list=$("#list");
 const el=(t,c,x)=>{const e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e};
@@ -1335,10 +1336,21 @@ function ingest(d){
 }
 
 let fullP=null;
+async function fetchParquet(url){
+  const res=await fetch(url);
+  if(!res.ok)throw new Error("HTTP "+res.status);
+  const buf=await res.arrayBuffer();
+  const meta=parquetMetadata(buf);
+  const kv=(meta.key_value_metadata||[]).find(x=>x.key==="argus_meta");
+  const info=kv?JSON.parse(kv.value):{};
+  let rows=[];
+  await parquetRead({file:buf,onComplete:r=>{rows=r}});
+  return info.levels?{...info,rows}:rows;
+}
 function loadFull(){
   if(fullLoaded)return;
   if(!fullP){
-    fullP=fetch("jobs.json").then(r=>{if(!r.ok)throw new Error("HTTP "+r.status);return r.json()}).then(d=>{
+    fullP=fetchParquet("jobs.parquet").then(d=>{
       fullLoaded=true;ingest(d);
       if(document.body.classList.contains("home")){
         chrome();
@@ -1358,7 +1370,7 @@ function loadFull(){
 qi.addEventListener("focus",loadFull);
 qi.addEventListener("input",loadFull);
 
-Promise.all([fetch("feed.json").then(r=>r.json()),fetch("companies.json").then(r=>r.json()),fetch("logos.json").then(r=>r.ok?r.json():{}).catch(()=>({})),fetch("rates.json").then(r=>r.ok?r.json():null).catch(()=>null)]).then(([d,c,lg,rt])=>{
+Promise.all([fetchParquet("feed.parquet"),fetchParquet("companies.parquet"),fetch("logos.json").then(r=>r.ok?r.json():{}).catch(()=>({})),fetch("rates.json").then(r=>r.ok?r.json():null).catch(()=>null)]).then(([d,c,lg,rt])=>{
   C=c;LG=lg;if(rt&&rt.rates){RT=rt.rates;RDATE=rt.date}
   ingest(d);
   tabsBuild();quickBuild();sheet(false);
@@ -1376,7 +1388,7 @@ Promise.all([fetch("feed.json").then(r=>r.json()),fetch("companies.json").then(r
     setTimeout(loadFull,300);
   }
 }).catch(()=>{
-  fetch("jobs.json").then(r=>r.json()).then(d=>{
+  fetchParquet("jobs.parquet").then(d=>{
     fullLoaded=true;ingest(d);run();refreshHome();feedInit();
   }).catch(()=>{$("#count").textContent="Could not load jobs";for(const x of [feed,list,$("#stories"),$("#fchips"),$("#fbody")])x.replaceChildren();feed.append(note("Could not load jobs","Please refresh the page."))});
 });

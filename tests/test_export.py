@@ -139,6 +139,40 @@ class TestParquetExport(unittest.TestCase):
             scraper.export_parquet(out_dir=out_dir, fmt="parquet")
             mock_export.assert_called_once_with(["--format", "parquet", "--output-dir", str(out_dir), "--compression", "snappy"])
 
+    def test_site_parquet_bundle_and_pages_compatibility(self):
+        import pyarrow as pa
+        import pyarrow.parquet as pq
+
+        import build_pages
+
+        site_dir = self.test_dir / "_site"
+        site_dir.mkdir(parents=True)
+        meta_bytes = json.dumps({"updated": "2026-11-25 00:00 UTC", "levels": ["mid"], "sources": ["lever"], "total": 1}).encode("utf-8")
+        schema = pa.schema([
+            ("title", pa.string()), ("company", pa.string()), ("location", pa.string()), ("remote", pa.int8()),
+            ("level", pa.int16()), ("source", pa.int16()), ("date", pa.string()), ("url", pa.string()),
+            ("category", pa.string()), ("employment", pa.string()), ("years", pa.int16()), ("pay_min", pa.float64()),
+            ("pay_max", pa.float64()), ("pay_currency", pa.string()), ("skills", pa.string()), ("team", pa.string()),
+            ("ghost_score", pa.int16()), ("ghost_reasons", pa.string()), ("fresher_friendly", pa.int8()),
+        ], metadata={b"argus_meta": meta_bytes})
+        tbl = pa.Table.from_arrays([
+            ["Backend Engineer"], ["Acme"], ["Remote"], [1], [0], [0], ["2026-11-25"],
+            ["https://jobs.lever.co/acme/1"], ["engineering"], ["full_time"], [1], [120000.0],
+            [160000.0], ["USD"], ["python,sql"], ["Core"], [0], [""], [1],
+        ], schema=schema)
+        pq.write_table(tbl, site_dir / "jobs.parquet", compression="snappy")
+
+        self.assertTrue(Path("web/vendor/hyparquet.mjs").exists())
+        html_text = Path("web/index.html").read_text(encoding="utf-8")
+        self.assertIn("feed.parquet", html_text)
+        self.assertIn("jobs.parquet", html_text)
+        self.assertIn("companies.parquet", html_text)
+        self.assertIn("./vendor/hyparquet.mjs", html_text)
+
+        with patch.object(build_pages, "SITE", site_dir):
+            build_pages.main()
+        self.assertTrue((site_dir / "sitemap.xml").exists())
+
 
 if __name__ == "__main__":
     unittest.main()

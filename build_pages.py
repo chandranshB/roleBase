@@ -1,5 +1,5 @@
 """Static, crawlable pages for the website: one per field, per company, plus entry-level / remote / internship pages,
-hubs, sitemap.xml and robots.txt. The app itself is client-rendered (the jobs load from jobs.json), which search engines see
+hubs, sitemap.xml and robots.txt. The app itself is client-rendered (the jobs load from jobs.parquet), which search engines see
 as an almost empty page; these pages put real, useful content in plain HTML. Run after build_site.py and build_logos.py.
 
 Each page has a unique title and description, real numbers computed from the data, links to the original postings (nofollow),
@@ -120,8 +120,42 @@ def stats_text(jobs, label, company=None):
 
 
 def main():
+    site_parquet_file = SITE / "jobs.parquet"
     site_jobs_file = SITE / "jobs.json"
-    if site_jobs_file.exists():
+    if site_parquet_file.exists():
+        import pyarrow.parquet as pq
+
+        tbl = pq.read_table(site_parquet_file)
+        meta_raw = (tbl.schema.metadata or {}).get(b"argus_meta")
+        meta = json.loads(meta_raw.decode("utf-8")) if meta_raw else {}
+        levels = meta.get("levels", [])
+        sources = meta.get("sources", [])
+        cols = tbl.to_pydict()
+        n = tbl.num_rows
+        jobs = []
+        for idx in range(n):
+            score = cols["ghost_score"][idx]
+            u = cols["url"][idx]
+            if score >= 2 or not u:
+                continue
+            lvl_i = cols["level"][idx]
+            src_i = cols["source"][idx]
+            pmin, pmax, pcur = cols["pay_min"][idx], cols["pay_max"][idx], cols["pay_currency"][idx]
+            pay = (pmin, pmax, pcur) if (pmin or pmax) else None
+            sk = cols["skills"][idx]
+            yrs = cols["years"][idx]
+            dt_str = cols["date"][idx]
+            jobs.append({
+                "title": cols["title"][idx], "company": cols["company"][idx], "location": cols["location"][idx],
+                "remote": bool(cols["remote"][idx]),
+                "level": levels[lvl_i] if 0 <= lvl_i < len(levels) else "mid",
+                "source": sources[src_i] if 0 <= src_i < len(sources) else "",
+                "posted": dt_str, "first_seen": dt_str, "url": u, "category": cols["category"][idx],
+                "employment": cols["employment"][idx], "years": None if yrs == -1 else yrs,
+                "pay": pay, "skills": sk.split(",") if sk else [], "team": cols["team"][idx],
+                "closed_at": None,
+            })
+    elif site_jobs_file.exists():
         d = json.loads(site_jobs_file.read_text(encoding="utf-8"))
         levels = d.get("levels", [])
         sources = d.get("sources", [])

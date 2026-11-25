@@ -1,6 +1,6 @@
-"""Build _site/ for GitHub Pages: index.html + one compact jobs.json of open jobs (gzipped by Pages).
+"""Build _site/ for GitHub Pages: index.html + compact Apache Parquet files of open jobs (Snappy compressed).
 
-jobs.json rows are arrays, newest first:
+jobs.parquet / feed.parquet columns, newest first:
   0 title, 1 company, 2 location, 3 remote, 4 level (index into "levels"), 5 source (index into "sources"), 6 date,
   7 apply url, 8 category, 9 employment, 10 years of experience (-1 = not stated), 11 pay min, 12 pay max (0 = none),
   13 pay currency, 14 skills (comma separated), 15 team, 16 ghost-job score (2+ possibly, 3+ likely), 17 reasons (score 2+ only),
@@ -15,6 +15,9 @@ import time
 import urllib.request
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
+
+import pyarrow as pa
+import pyarrow.parquet as pq
 
 from scraper import (
     DIR,
@@ -153,14 +156,31 @@ out.mkdir(exist_ok=True)
 shutil.copy("web/index.html", out / "index.html")  # the search and feed front end
 shutil.copy("web/favicon.svg", out / "favicon.svg")
 shutil.copytree("web/fonts", out / "fonts", dirs_exist_ok=True)  # Instrument Sans (SIL OFL), bundled so no outside font service is used
+if Path("web/vendor").exists():
+    shutil.copytree("web/vendor", out / "vendor", dirs_exist_ok=True)  # hyparquet.mjs for native browser Parquet decoding
 FEED_SIZE = 1200
 updated_str = dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
-(out / "feed.json").write_text(json.dumps(
-    {"updated": updated_str, "levels": levels, "sources": sources, "rows": rows[:FEED_SIZE], "total": len(rows)},
-    ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
-(out / "jobs.json").write_text(json.dumps(
-    {"updated": updated_str, "levels": levels, "sources": sources, "rows": rows, "total": len(rows)},
-    ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+SITE_FIELDS = [
+    ("title", pa.string()), ("company", pa.string()), ("location", pa.string()), ("remote", pa.int8()),
+    ("level", pa.int16()), ("source", pa.int16()), ("date", pa.string()), ("url", pa.string()),
+    ("category", pa.string()), ("employment", pa.string()), ("years", pa.int16()), ("pay_min", pa.float64()),
+    ("pay_max", pa.float64()), ("pay_currency", pa.string()), ("skills", pa.string()), ("team", pa.string()),
+    ("ghost_score", pa.int16()), ("ghost_reasons", pa.string()), ("fresher_friendly", pa.int8()),
+]
+meta_bytes = json.dumps(
+    {"updated": updated_str, "levels": levels, "sources": sources, "total": len(rows)},
+    ensure_ascii=False, separators=(",", ":"),
+).encode("utf-8")
+site_schema = pa.schema(SITE_FIELDS, metadata={b"argus_meta": meta_bytes})
+
+
+def write_rows_parquet(path, row_list, fields, schema):
+    cols = [[r[i] for r in row_list] for i in range(len(fields))] if row_list else [[] for _ in fields]
+    pq.write_table(pa.Table.from_arrays(cols, schema=schema), path, compression="snappy")
+
+
+write_rows_parquet(out / "feed.parquet", rows[:FEED_SIZE], SITE_FIELDS, site_schema)
+write_rows_parquet(out / "jobs.parquet", rows, SITE_FIELDS, site_schema)
 
 # Companies stats from charts_cache
 cache_path = Path("data/charts_cache.json")
@@ -183,8 +203,12 @@ if cache_path.exists():
         pass
 
 companies = cached_comp or []
-(out / "companies.json").write_text(json.dumps(companies, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
-print(f"{len(rows)} of {total_open_count:,} open jobs -> _site/jobs.json ({min(FEED_SIZE, len(rows))} -> _site/feed.json), {len(companies):,} companies -> _site/companies.json | {time.time()-t_start:.1f}s")
+COMP_FIELDS = [
+    ("company", pa.string()), ("open_roles", pa.int32()), ("fresher_roles", pa.int32()),
+    ("fresher_share", pa.float64()), ("junior_asking_3plus", pa.int32()), ("years_stated_share", pa.float64()),
+]
+write_rows_parquet(out / "companies.parquet", companies, COMP_FIELDS, pa.schema(COMP_FIELDS))
+print(f"{len(rows)} of {total_open_count:,} open jobs -> _site/jobs.parquet ({min(FEED_SIZE, len(rows))} -> _site/feed.parquet), {len(companies):,} companies -> _site/companies.parquet | {time.time()-t_start:.1f}s")
 rates = fetch_rates()
 if rates:
     (out / "rates.json").write_text(json.dumps({"date": rates[1], "rates": rates[0]}, separators=(",", ":")), encoding="utf-8")

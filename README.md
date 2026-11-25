@@ -1,45 +1,61 @@
 <p align="center">
-  <img src="docs/logo.svg" alt="Argus" height="56">
+  <img src="docs/logo.svg" alt="Argus Open Job Index and Labor Market Dataset" height="56">
 </p>
 
-<h1 align="center">Argus</h1>
+<h1 align="center">Argus — Open Global Job Search Engine &amp; Apache Parquet Labor-Market Dataset</h1>
 
 <p align="center">
-  <strong>Automated, distributed open job index and labor-market dataset across 71 enterprise ATS platforms and 25 job feeds.</strong>
+  <strong>Direct first-party job indexing across 114,000+ employer career portals, 71 enterprise ATS platforms, and 25 public job feeds — refreshed every 6 hours, scored for ghost-job risk, and served end-to-end in Apache Parquet.</strong>
 </p>
 
 <p align="center">
   <a href="https://github.com/chandranshB/argus/actions/workflows/ci.yml"><img src="https://github.com/chandranshB/argus/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
-  <a href="https://github.com/chandranshB/argus/actions/workflows/scrape.yml"><img src="https://github.com/chandranshB/argus/actions/workflows/scrape.yml/badge.svg" alt="Scrape & Deploy"></a>
-  <a href="https://github.com/chandranshB/argus/actions/workflows/kaggle.yml"><img src="https://github.com/chandranshB/argus/actions/workflows/kaggle.yml/badge.svg" alt="Kaggle Export"></a>
-  <a href="https://www.kaggle.com/datasets/chandranshbinjola/job-listings"><img src="https://img.shields.io/badge/Kaggle-Dataset-20BEFF?logo=kaggle&logoColor=white" alt="Kaggle"></a>
-  <a href="https://chandranshb.github.io/argus/"><img src="https://img.shields.io/badge/Web-Live%20Search-success" alt="Live Site"></a>
+  <a href="https://github.com/chandranshB/argus/actions/workflows/scrape.yml"><img src="https://github.com/chandranshB/argus/actions/workflows/scrape.yml/badge.svg" alt="Scrape &amp; Deploy"></a>
+  <a href="https://github.com/chandranshB/argus/actions/workflows/kaggle.yml"><img src="https://github.com/chandranshB/argus/actions/workflows/kaggle.yml/badge.svg" alt="Kaggle Parquet Export"></a>
+  <a href="https://www.kaggle.com/datasets/chandranshbinjola/job-listings"><img src="https://img.shields.io/badge/Kaggle-Parquet%20Dataset-20BEFF?logo=kaggle&logoColor=white" alt="Kaggle Parquet Dataset"></a>
+  <a href="https://chandranshb.github.io/argus/"><img src="https://img.shields.io/badge/Web-Live%20Parquet%20Search-success" alt="Live Search"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-AGPL--3.0-blue.svg" alt="License: AGPL-3.0"></a>
 </p>
 
 ---
 
-## Overview
+## What Is Argus?
 
-Argus continuously aggregates, enriches, and archives open job vacancies directly from over **114,160+ employer career portals** across **71 applicant tracking systems** (Workday, Greenhouse, Lever, Ashby, SmartRecruiters, ADP, UKG Pro, Dayforce, Paylocity, Oracle HCM, SAP SuccessFactors CSB, Radancy / TalentBrew, iCIMS Jibe Apply, Y Combinator & Work at a Startup, Hireology, Feishu/Lark, Moka HR, Beisen i-Talent, Baidu, Tencent, ByteDance, NetEase, JD.com, Unitree, and more) plus **25 curated job feeds and governmental portals** (German Federal Employment Agency *Arbeitsagentur*, Singapore WSG *MyCareersFuture*, *FreeHire*, *Work at a Startup*, etc.), covering **98% of the Fortune 500**.
+**Argus** is a free, open-source, distributed job search engine and longitudinal labor-market dataset that indexes **10M+ active job openings** directly from employer Applicant Tracking Systems (**71 ATS vendors**, **114,000+ career portals**, **98% of the Fortune 500**) plus **25 government and curated job feeds** every 6 hours.
 
-Every posting is parsed and normalized with seniority level, professional field, required years of experience, yearly salary ranges, and technical/domain skills. Historical job closures are tracked to detect stale listings and ghost jobs.
+Unlike traditional job aggregators that hide behind logins, paid APIs, or stale reposts, Argus queries first-party employer APIs directly, links straight to each company's official application page, scores every listing for **ghost-job risk** and **genuine entry-level ("0–2 years") accessibility**, and delivers both the **live GitHub Pages search web app** and the **daily Kaggle dataset** in columnar **Apache Parquet**.
 
-* 🌐 **Live Web Search**: [chandranshb.github.io/argus](https://chandranshb.github.io/argus/)
-* 📊 **Kaggle Relational Dataset**: [kaggle.com/datasets/chandranshbinjola/job-listings](https://www.kaggle.com/datasets/chandranshbinjola/job-listings)
-* 📓 **Starter Analysis Notebook**: [Job Listings Explorer](https://www.kaggle.com/code/chandranshbinjola/job-listings-explorer)
-* 🤖 **AI Agent & Developer Guide**: [AGENTS.md](AGENTS.md) · [ARCHITECTURE.md](docs/ARCHITECTURE.md)
+* **Live Search Web App (Browser-Native Parquet)**: [chandranshb.github.io/argus](https://chandranshb.github.io/argus/)
+* **Kaggle Relational Parquet Dataset**: [kaggle.com/datasets/chandranshbinjola/job-listings](https://www.kaggle.com/datasets/chandranshbinjola/job-listings)
+* **Starter Exploratory Notebook**: [Job Listings Explorer](https://www.kaggle.com/code/chandranshbinjola/job-listings-explorer)
+* **Developer & AI Agent Handbook**: [AGENTS.md](AGENTS.md) · [ARCHITECTURE.md](docs/ARCHITECTURE.md)
 
 ---
 
-## Key Features
+## Why Argus Stands Out (Comparison)
 
-* **Reverse-Engineered ATS Protocol Support**: Direct native APIs and decrypted endpoints across 71 ATS vendors, including dynamic AES-128-CBC payload decryption for Moka HR, automated path probing for Feishu/Lark Hire, NFKC Unicode normalization for Kangxi radicals, SAP SuccessFactors Career Site Builder pagination, Radancy / TalentBrew search scraping, iCIMS Jibe Apply JSON feeds, and direct enterprise career feeds.
-* **10M+ Active Listings**: Deep index refreshed every 6 hours across 16 parallel runner shards; not restricted to tech (covers healthcare, manufacturing, finance, retail, logistics, education, and legal).
-* **Early-Career ("Fresher-Friendly") Filter**: Isolates roles genuinely accessible to candidates with 0–2 years of experience; automatically flags and filters out "junior" titles quietly asking for 3+ years.
-* **Ghost Job Risk Scoring**: Transparent heuristic audit flagging perpetual talent pools, undisclosed staffing agencies, serial reposts, and listings open >6–12 months.
-* **Longitudinal Labor Market Metrics**: Daily snapshots tracking global open job volume, early-career hiring share, and daily demand shares across 80+ technical and non-technical skills.
-* **100% Serverless & Open**: Fully automated on GitHub Actions; persists state in Git, publishes static indices to GitHub Pages, and updates Kaggle daily.
+| Capability | **Argus** | Traditional Job Boards (LinkedIn, Indeed) | Commercial Job APIs | Single-Board Scrapers |
+| :--- | :--- | :--- | :--- | :--- |
+| **Source Verification** | **100% first-party ATS APIs** (71 platforms, 114k+ boards) | Mixed third-party & staffing reposts | Resold/scraped aggregates | 1–5 tech boards |
+| **Ghost-Job Detection** | **Transparent heuristic `ghost_score`** (staleness, reposts, staffing, evergreen pools) | Paid "Promoted" boosts hide stale roles | None | None |
+| **Entry-Level Truth Filter** | **Flags "junior" roles demanding 3+ yrs (`junior_asking_3plus`)** | Misleading seniority tags | Unverified titles | Keyword-only |
+| **Delivery Format** | **End-to-end Apache Parquet** (web app + Kaggle + CLI) | Web UI / account wall | Rate-limited REST JSON | Ad-hoc CSV / JSON |
+| **Refresh Cadence** | **Every 6 hours** via 16 parallel GitHub Actions shards | Opaque | Cached snapshots | Manual |
+| **Industry Coverage** | **All sectors** (Engineering, Healthcare, Finance, Logistics, Retail, Legal, Skilled Trades) | General | Mostly Tech | Tech-only |
+| **Cost & Access** | **$0 · No login · Open source (AGPL-3.0) + CC BY 4.0 aggregates** | Freemium / paywalled recruiters | \$\$–\$\$\$\$ / month | Custom maintenance |
+
+---
+
+## Key Features & Capabilities
+
+* **71 Reverse-Engineered ATS Protocols**: Direct native APIs and protocol-level integrations across Workday (`appliedFacets` partitioning past 2,000), Oracle Recruiting Cloud (`postingDatesFacet` partitioning past 10k), Greenhouse, Lever, Ashby, SmartRecruiters, Phenom People, Eightfold (`pcsx` WAF-aware pacing), ADP Workforce Now, UKG Pro (`ultipro`), Dayforce, Paylocity (`window.pageData`), Paycom (Mantle `sessionJWT` + search API), iCIMS, Cornerstone OnDemand (CSOD), Oracle Taleo (Classic JSF `.ajax` + Fluid REST `searchjobs`), SAP SuccessFactors CSB, Radancy / TalentBrew (`/sitemap.xml` + HTML), Avature, Jobvite, Bullhorn, Teamtailor (`jobs.rss` + `/jobs/show_more` turbo-stream), Trakstar Hire, ApplicantPro/iSolved, Moka HR (AES-128-CBC decryption), Feishu/Lark Hire, Beisen i-Talent, ByteDance, Tencent, Baidu, JD.com, NetEase, and Unitree.
+* **25 Public & Governmental Feeds**: Full coverage across Sweden's Arbetsförmedlingen *JobTech* (`43k+` ads via region/occupation partitioning), Germany's *Arbeitsagentur*, Singapore's *MyCareersFuture* (all 43 category slices), *AI Dev Jobs* (`9k+`), *NoFluffJobs* (`15k+`), *Get on Board*, *Y Combinator / Work at a Startup*, *Himalayas*, *Remotive*, *RemoteOK*, *Arbeitnow*, *We Work Remotely*, and niche engineering boards.
+* **End-to-End Apache Parquet Pipeline**:
+  * **Static Web App (`_site/*.parquet`)**: `build_site.py` generates Snappy-compressed `feed.parquet`, `jobs.parquet`, and `companies.parquet`, decoded directly in the browser via bundled pure-JS [`hyparquet`](web/vendor/hyparquet.mjs) with zero backend servers.
+  * **Daily Kaggle Release (`kaggle/*.parquet`)**: `export_kaggle.py` outputs typed PyArrow Parquet tables (`jobs.parquet`, `jobs_by_company.parquet`, `open_jobs_daily.parquet`, `skill_demand_daily.parquet`) with ~85% smaller footprint than CSV.
+* **Accurate Early-Career ("Fresher-Friendly") Index**: Isolates genuinely entry-level roles (`0–2` years required) and scores every employer on `fresher_share` and `junior_asking_3plus` ("experience inflation").
+* **Ghost-Job Risk Scoring**: Deterministic audit assigning `ghost_score` and human-readable `ghost_reasons` for listings open `>180`/`>365` days, serial reposts, perpetual talent pools, or undisclosed staffing agencies.
+* **80+ Normalized Skills & Multi-Currency Pay**: Extracts standardized skills (`python`, `aws`, `sql`, `cpr`, `ehr`, `osha`, `cdl`, `gaap`, `autocad`, etc.), seniority tier, domain category, and annualized salary with build-time ECB exchange rate conversion (`rates.json`).
 
 ---
 
@@ -65,41 +81,55 @@ Every posting is parsed and normalized with seniority level, professional field,
 
 ---
 
-## Data Schemas
+## Querying Argus Parquet Datasets
 
-### 1. Kaggle Datasets (`kaggle/` - Parquet & CSV)
+### Python (`polars` / `duckdb` / `pyarrow`)
 
-| File | Description | Key Fields |
-| :--- | :--- | :--- |
-| **`jobs.parquet`** / `jobs.csv` | Primary job database (open & closed <90 days; Parquet provides ~85% smaller file size and sub-second load times) | `url`, `company`, `title`, `level`, `category`, `years_experience`, `skills`, `pay_min`, `pay_max`, `pay_currency`, `remote`, `ghost_score`, `first_seen`, `closed_at` |
-| **`jobs_by_company.parquet`** / `jobs_by_company.csv` | Early-career hiring index by employer (5+ roles) | `company`, `open_roles`, `fresher_roles`, `fresher_share`, `junior_asking_3plus`, `years_stated_share` |
-| **`open_jobs_daily.parquet`** / `open_jobs_daily.csv` | Daily active and fresher job counts | `date`, `open_jobs`, `fresher_friendly_jobs` |
-| **`skill_demand_daily.parquet`** / `skill_demand_daily.csv` | Skill frequency time series | `date`, `skill`, `jobs`, `tagged`, `share_pct` |
+```python
+import duckdb
 
-### 2. Internal JSONL Store (`data/jobs/*.jsonl`)
-
-One compact, sorted JSONL file per employer board. Empty and derivable values are omitted to minimize storage and diff size:
-
-```json
-{
-  "id": "greenhouse:stripe:12345",
-  "company": "Stripe",
-  "title": "Software Engineer, Infrastructure",
-  "location": "Seattle, WA",
-  "country": "United States",
-  "remote": true,
-  "level": "senior",
-  "category": "engineering",
-  "employment": "full_time",
-  "years": 5,
-  "skills": ["python", "aws", "kubernetes"],
-  "pay": [180000, 240000, "USD"],
-  "posted": "2026-11-01",
-  "first_seen": "2026-11-01",
-  "closed_at": null,
-  "reposts": 0
-}
+# Query open entry-level remote engineering roles with transparent pay in sub-second SQL
+df = duckdb.sql("""
+    SELECT company, title, pay_min, pay_max, pay_currency, skills, url
+    FROM 'kaggle/jobs.parquet'
+    WHERE closed_at IS NULL
+      AND fresher_friendly = TRUE
+      AND remote = TRUE
+      AND ghost_score = 0
+      AND pay_min > 0
+    ORDER BY first_seen DESC
+    LIMIT 25
+""").df()
 ```
+
+```python
+import pyarrow.parquet as pq
+
+table = pq.read_table("kaggle/jobs_by_company.parquet")
+```
+
+### Apache Parquet Schemas
+
+#### 1. Kaggle Relational Dataset (`kaggle/*.parquet`)
+
+| File | Description | Key Columns |
+| :--- | :--- | :--- |
+| **`jobs.parquet`** | Open & recently closed (<90d) postings across 71 ATS + feeds | `source`, `company`, `title`, `url`, `openings`, `team`, `category`, `level`, `years_experience`, `employment`, `remote`, `location`, `country`, `skills`, `pay_min`, `pay_max`, `pay_currency`, `posted`, `first_seen`, `closed_at`, `ghost_score`, `ghost_reasons`, `fresher_friendly` |
+| **`jobs_by_company.parquet`** | Employer early-career & transparency index (5+ open roles) | `company`, `open_roles`, `fresher_roles`, `fresher_share`, `junior_asking_3plus`, `years_stated_share` |
+| **`open_jobs_daily.parquet`** | Daily global open vs. fresher-friendly time series | `date`, `open_jobs`, `fresher_friendly_jobs` |
+| **`skill_demand_daily.parquet`** | Daily normalized skill share time series | `date`, `skill`, `jobs`, `tagged`, `share_pct` |
+
+#### 2. Web App Parquet Bundle (`_site/*.parquet`)
+
+| File | Purpose | Encoding |
+| :--- | :--- | :--- |
+| **`_site/feed.parquet`** | Instant initial homepage feed (newest 1,200 open roles) + `argus_meta` header | Snappy Parquet (decoded in-browser via `hyparquet`) |
+| **`_site/jobs.parquet`** | Full client-side search index (up to 35 newest jobs per employer) | Snappy Parquet (decoded in-browser via `hyparquet`) |
+| **`_site/companies.parquet`** | Live employer hiring & fresher-share leaderboard | Snappy Parquet (decoded in-browser via `hyparquet`) |
+
+#### 3. Canonical Per-Board Store (`data/jobs/*.jsonl`)
+
+One compact, line-sorted JSONL file per employer board inside Git for minimal incremental diffs and 6-hourly history tracking; streamed into Parquet during site builds (`build_site.py`) and Kaggle exports (`export_kaggle.py`).
 
 ---
 
@@ -107,64 +137,74 @@ One compact, sorted JSONL file per employer board. Empty and derivable values ar
 
 ```mermaid
 flowchart LR
-    A["71 ATS Platforms & 25 Feeds<br/>(Workday, Feishu, Moka, Jibe, etc.)"] --> B["16 Parallel Shards<br/>(scrape.yml matrix 0..15)"]
+    A["71 ATS Platforms & 25 Feeds<br/>(Workday, Oracle, Greenhouse, Moka, etc.)"] --> B["16 Parallel Shards<br/>(scrape.yml matrix 0..15)"]
     B --> C["Consolidation Engine<br/>(scraper.py --consolidate)"]
     C --> D[("data/jobs/*.jsonl<br/>data/pulse.csv<br/>data/skills.csv")]
-    D --> E["Site & Pages Generator<br/>(build_site.py, build_pages.py)"]
-    D --> F["Dataset Exporter<br/>(export_kaggle.py)"]
-    E --> G["GitHub Pages<br/>chandranshb.github.io/argus"]
-    F --> H["Kaggle Datasets & Notebooks"]
+    D --> E["Site & SEO Generator<br/>(build_site.py, build_pages.py)"]
+    D --> F["Parquet Exporter<br/>(export_kaggle.py)"]
+    E --> G["GitHub Pages<br/>_site/*.parquet + hyparquet"]
+    F --> H["Kaggle Parquet Datasets<br/>kaggle/*.parquet"]
 ```
 
-* **Crawl Pipeline**: 16 parallel runner shards partition the 114,160+ employer boards with per-provider rate limiting and lane concurrency (`LANES`).
-* **Consolidation**: Downloads shard artifacts, prunes jobs closed >90 days into `data/archive.csv`, and precomputes hiring analytics into `data/charts_cache.json`.
-* **Zero-RAM Bottleneck**: Processing loops stream files using chunked iterators to operate strictly within standard GitHub Actions runner memory limits (<7 GB).
+* **Zero-RAM-Bottleneck Streaming**: Both `build_site.py` and `export_kaggle.py` stream board files via bounded `ThreadPoolExecutor(max_workers=8)` chunks strictly under GitHub Actions' 7 GB memory ceiling.
+* **Clean SEO Static Pages**: `build_pages.py` reads `_site/jobs.parquet` to generate static, crawlable HTML pages per company and field alongside `sitemap.xml` and `robots.txt`.
+
+---
+
+## Frequently Asked Questions (FAQ)
+
+### How does Argus guarantee direct, legitimate job postings?
+Argus fetches job data exclusively from official first-party company ATS APIs and public government feeds (such as Workday, Greenhouse, Lever, Ashby, Oracle Recruiting Cloud, SmartRecruiters, and Arbeitsagentur), linking every search result directly to the employer's application URL with no middleman redirects.
+
+### How does Argus detect ghost jobs?
+Each open posting receives a deterministic `ghost_score` (`0` = normal, `2` = possibly stale/ghost, `3+` = likely ghost or perpetual talent pool) computed from active age (`>180` / `>365` days), repeated close-and-repost cycles (`reposts`), evergreen talent-pool wording, and staffing-agency indicators.
+
+### What makes the "Fresher-Friendly" filter more reliable than job board tags?
+Employers frequently label jobs "Junior" or "Associate" while requiring 3–5+ years of experience inside the description. Argus parses explicit experience requirements (`years`) from full job descriptions and sets `fresher_friendly = True` only when the role is `intern`/`junior` or requires `0–2` years, while exposing `junior_asking_3plus` per company.
+
+### Why does Argus use Apache Parquet for both Kaggle and the web app?
+Columnar Snappy-compressed Parquet reduces dataset size by ~85% compared to raw JSON/CSV, enables sub-second predicate pushdown in DuckDB/Polars/Spark, and lets the static GitHub Pages frontend decode typed columns directly in the browser using `hyparquet` with zero server infrastructure.
+
+### How frequently is Argus updated?
+GitHub Actions runs a 16-shard distributed crawl every **6 hours** (publishing fresh `_site/*.parquet` indices to GitHub Pages automatically) and pushes updated relational `kaggle/*.parquet` tables daily.
 
 ---
 
 ## Local Development
 
-### Prerequisites
-* Python 3.10+
-* Git
-
 ### Setup
+
 ```bash
 git clone https://github.com/chandranshB/argus.git
 cd argus
 pip install -r requirements-dev.txt
 ```
 
-### Running Tests & Linting
+### Tests & Linting
+
 ```bash
-# Run unit test suite
 python -m unittest discover tests -v
-
-# Run legacy integration checks
 python test_scraper.py
-
-# Run linter
-ruff check argus tests
+ruff check argus rolebase tests
 ```
 
-### Crawl & Site Build Commands
+### Crawl, Parquet Site Build & Export Commands
+
 ```bash
 # Run single-shard crawl test
 python scraper.py --shard 0 --total-shards 16
 
-# Consolidate artifacts & precalculate analytics
+# Consolidate shard artifacts & precompute analytics
 python scraper.py --consolidate
 
-# Generate static search indices (_site/)
+# Build Apache Parquet site bundle (_site/*.parquet + hyparquet web app)
 python build_site.py
 
-# Fetch company icons (cached in logo-cache/)
+# Fetch company logos & generate static SEO pages from _site/jobs.parquet
 python build_logos.py
-
-# Generate static SEO HTML pages
 python build_pages.py
 
-# Export Kaggle relational CSVs (kaggle/)
+# Export Kaggle Apache Parquet dataset (kaggle/*.parquet)
 python export_kaggle.py
 ```
 
@@ -172,23 +212,12 @@ python export_kaggle.py
 
 ## Adding an Employer Board
 
-1. Find the employer's ATS identifier:
-   * **Greenhouse / Lever / Ashby / SmartRecruiters**: board slug from career page URL (e.g. `boards.greenhouse.io/<slug>`).
-   * **Workday**: `<tenant>.<pod>.myworkdayjobs.com/<site>` (e.g. `adobe.wd5.myworkdayjobs.com/external_experienced`).
-2. Add `"slug": "Company Name"` under the respective ATS key in [`companies.json`](companies.json).
-3. *(Optional)* Add the company's domain to [`domains.json`](domains.json) for high-resolution logo resolution.
+1. Identify the employer's ATS slug (for example, `boards.greenhouse.io/<slug>` or `<tenant>.<pod>.myworkdayjobs.com/<site>`).
+2. Add `"slug": "Company Name"` under the ATS platform key in [`companies.json`](companies.json).
+3. *(Optional)* Add the company's domain to [`domains.json`](domains.json) for logo resolution.
 
 ---
 
-## Principles & Ethics
+## License & Attribution
 
-* **Official First-Party Sources Only**: Postings are fetched exclusively from public company ATS feeds and open APIs. Aggregators that restrict scraping (LinkedIn, Indeed, Naukri) are omitted on purpose.
-* **No Wall Gardens**: Every search result links directly back to the employer's official job portal.
-* **Polite Crawling**: Per-provider concurrency limits (`LANES`), exponential backoff on HTTP 429/5xx, and descriptive User-Agent headers.
-
----
-
-## License
-
-This project is licensed under the [GNU Affero General Public License v3.0](LICENSE).
-Company names, logos, and trademarks belong to their respective employers and are used strictly for identification purposes.
+Code in this repository is licensed under the [GNU Affero General Public License v3.0](LICENSE). Derived classifications, aggregates, and Parquet dataset schemas (`category`, `level`, `years_experience`, `skills`, `ghost_score`, `fresher_friendly`, `jobs_by_company.parquet`, `open_jobs_daily.parquet`, `skill_demand_daily.parquet`) are released under **CC BY 4.0**. Original job titles, company names, and application URLs remain the property of their respective employers.

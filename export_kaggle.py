@@ -1,4 +1,4 @@
-"""Build the kaggle/ dataset folder (Parquet + CSV + metadata) from data/jobs/*.jsonl."""
+"""Build the kaggle/ dataset folder (Parquet + metadata) from data/jobs/*.jsonl."""
 import argparse
 import csv
 import datetime as dt
