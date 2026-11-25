@@ -368,7 +368,7 @@
 {"company":"Planet Fitness","employment":"full_time","first_seen":"2026-11-25","id":"paycom:41165FD7DA2DD0DA85C677E75EE5FAF0:401696","location":"Sunray SR - St Paul, MN 55119","reposts":2,"title":"Club Manager"}
 {"company":"Planet Fitness","first_seen":"2026-11-25","id":"paycom:41165FD7DA2DD0DA85C677E75EE5FAF0:401703","location":"Sunray SR - St Paul, MN 55119","reposts":3,"skills":["customer_service"],"title":"Customer Service Rep"}
 {"company":"Planet Fitness","first_seen":"2026-11-25","id":"paycom:41165FD7DA2DD0DA85C677E75EE5FAF0:401710","location":"Sunray SR - St Paul, MN 55119","reposts":3,"title":"Overnight"}
-{"company":"Planet Fitness","employment":"full_time","first_seen":"2026-11-25","id":"paycom:41165FD7DA2DD0DA85C677E75EE5FAF0:401717","location":"Sunray SR - St Paul, MN 55119","reposts":2,"title":"Team Lead"}
+{"closed_at":"2026-11-25","company":"Planet Fitness","employment":"full_time","first_seen":"2026-11-25","id":"paycom:41165FD7DA2DD0DA85C677E75EE5FAF0:401717","location":"Sunray SR - St Paul, MN 55119","reposts":2,"title":"Team Lead"}
 {"company":"Planet Fitness","employment":"full_time","first_seen":"2026-11-25","id":"paycom:41165FD7DA2DD0DA85C677E75EE5FAF0:401725","location":"Sibley SIB - St Paul, MN 55116","reposts":2,"title":"Club Manager"}
 {"company":"Planet Fitness","first_seen":"2026-11-25","id":"paycom:41165FD7DA2DD0DA85C677E75EE5FAF0:401732","location":"Sibley SIB - St Paul, MN 55116","reposts":3,"skills":["customer_service"],"title":"Customer Service Rep"}
 {"company":"Planet Fitness","first_seen":"2026-11-25","id":"paycom:41165FD7DA2DD0DA85C677E75EE5FAF0:401759","location":"Sibley SIB - St Paul, MN 55116","reposts":2,"title":"Trainer"}
@@ -454,6 +454,12 @@
 {"company":"Planet Fitness","first_seen":"2026-11-25","id":"paycom:41165FD7DA2DD0DA85C677E75EE5FAF0:404287","location":"Colorado Springs Main CSM - Colorado Springs, CO 80911","reposts":2,"title":"Trainer"}
 {"company":"Planet Fitness","first_seen":"2026-11-25","id":"paycom:41165FD7DA2DD0DA85C677E75EE5FAF0:404300","location":"Gonzales GZ - Gonzales, LA 70737","reposts":2,"title":"Trainer"}
 {"company":"Planet Fitness","first_seen":"2026-11-25","id":"paycom:41165FD7DA2DD0DA85C677E75EE5FAF0:404315","location":"Gonzales GZ - Gonzales, LA 70737","reposts":3,"skills":["customer_service"],"title":"Customer Service Rep"}
+{"company":"Planet Fitness","first_seen":"2026-11-25","id":"paycom:41165FD7DA2DD0DA85C677E75EE5FAF0:404385","location":"New Iberia NI - New Iberia, LA 70560","reposts":2,"title":"Cleaner"}
+{"company":"Planet Fitness","employment":"full_time","first_seen":"2026-11-25","id":"paycom:41165FD7DA2DD0DA85C677E75EE5FAF0:404392","location":"New Iberia NI - New Iberia, LA 70560","reposts":2,"title":"Team Lead"}
+{"company":"Planet Fitness","first_seen":"2026-11-25","id":"paycom:41165FD7DA2DD0DA85C677E75EE5FAF0:404402","location":"New Iberia NI - New Iberia, LA 70560","reposts":3,"skills":["customer_service"],"title":"Overnight"}
+{"company":"Planet Fitness","first_seen":"2026-11-25","id":"paycom:41165FD7DA2DD0DA85C677E75EE5FAF0:404409","location":"New Iberia NI - New Iberia, LA 70560","reposts":5,"skills":["customer_service"],"title":"Customer Service Rep"}
+{"company":"Planet Fitness","first_seen":"2026-11-25","id":"paycom:41165FD7DA2DD0DA85C677E75EE5FAF0:404433","location":"Eden Prairie EP - Eden Prairie, MN 55344","reposts":5,"skills":["customer_service"],"title":"Customer Service Rep"}
+{"company":"Planet Fitness","first_seen":"2026-11-25","id":"paycom:41165FD7DA2DD0DA85C677E75EE5FAF0:404465","location":"Watertown WT - Watertown, SD 57201","skills":["customer_service"],"title":"Customer Service Rep Mornings"}
 {"company":"Planet Fitness","first_seen":"2026-10-04","id":"paycom:41165FD7DA2DD0DA85C677E75EE5FAF0:86009","location":"Cedar Rapids CR - Cedar Rapids, IA 52405","title":"5AM Morning Opener"}
 {"company":"Planet Fitness","first_seen":"2026-11-25","id":"paycom:41165FD7DA2DD0DA85C677E75EE5FAF0:87494","location":"Waterloo WL - Waterloo, IA 50702","reposts":3,"title":"Cleaner"}
 {"company":"Planet Fitness","first_seen":"2026-10-04","id":"paycom:41165FD7DA2DD0DA85C677E75EE5FAF0:90993","location":"Cedar Rapids CR - Cedar Rapids, IA 52405","skills":["customer_service"],"title":"Weekends Only Customer Service Rep"}

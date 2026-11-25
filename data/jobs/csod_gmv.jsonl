@@ -361,7 +361,7 @@
 {"company":"GMV","first_seen":"2026-11-25","id":"csod:gmv:4923","location":"Gilching, Baviera, DE","posted":"2026-07-22","title":"Project Manager – Satcom Systems & Testbeds"}
 {"company":"GMV","first_seen":"2026-11-25","id":"csod:gmv:4928","location":"Warsaw, Warsaw, PL","posted":"2026-07-23","title":"Systems Analyst"}
 {"company":"GMV","first_seen":"2026-11-25","id":"csod:gmv:4930","location":"Warsaw, Warsaw, PL","posted":"2026-07-23","title":"Solution Architect"}
-{"company":"GMV","first_seen":"2026-11-25","id":"csod:gmv:4933","location":"Tres Cantos, Madrid, ES","posted":"2026-10-23","title":"Accounting & Tax Specialist"}
+{"closed_at":"2026-11-25","company":"GMV","first_seen":"2026-11-25","id":"csod:gmv:4933","location":"Tres Cantos, Madrid, ES","posted":"2026-10-23","title":"Accounting & Tax Specialist"}
 {"company":"GMV","first_seen":"2026-11-25","id":"csod:gmv:4942","location":"Tres Cantos, Madrid, ES","posted":"2026-08-17","title":"Aerospace Engineer - Flight Dynamics"}
 {"company":"GMV","first_seen":"2026-11-25","id":"csod:gmv:4944","location":"Bogotá, Bogotá, CO","posted":"2026-11-06","title":"Ingeniero/a de senior de GRC"}
 {"company":"GMV","first_seen":"2026-11-25","id":"csod:gmv:4946","location":"Tres Cantos, Madrid, ES","posted":"2026-10-05","title":"Software engineer"}
@@ -416,7 +416,7 @@
 {"company":"GMV","first_seen":"2026-11-25","id":"csod:gmv:5100","location":"Nigrán, Pontevedra, ES","posted":"2026-09-28","title":"Senior Space Technical Proposal Engineer"}
 {"company":"GMV","first_seen":"2026-11-25","id":"csod:gmv:5101","location":"Tres Cantos, Madrid, ES","posted":"2026-09-28","title":"DevOps Engineer for Satellite Control Centers"}
 {"company":"GMV","first_seen":"2026-11-25","id":"csod:gmv:5102","location":"Tres Cantos, Madrid, ES","posted":"2026-09-29","title":"Software Engineer for Satellite Control Centres"}
-{"company":"GMV","first_seen":"2026-11-25","id":"csod:gmv:5103","location":"Tres Cantos, Madrid, ES","posted":"2026-09-30","title":"Ground Segment Maintenance & Governance Engineer"}
+{"closed_at":"2026-11-25","company":"GMV","first_seen":"2026-11-25","id":"csod:gmv:5103","location":"Tres Cantos, Madrid, ES","posted":"2026-09-30","title":"Ground Segment Maintenance & Governance Engineer"}
 {"company":"GMV","first_seen":"2026-11-25","id":"csod:gmv:5107","location":"Gilching, Baviera, DE","posted":"2026-10-05","title":"Business Developer for Defence and Aeronautics"}
 {"company":"GMV","first_seen":"2026-11-25","id":"csod:gmv:5108","location":"Tres Cantos, Madrid, ES","posted":"2026-10-01","title":"Space Systems Engineer – Robotics"}
 {"company":"GMV","first_seen":"2026-11-25","id":"csod:gmv:5110","location":"Tres Cantos, Madrid, ES","posted":"2026-10-02","title":"Junior High-Performance Computing and GPU Development Engineer"}
@@ -487,3 +487,4 @@
 {"company":"GMV","first_seen":"2026-11-25","id":"csod:gmv:5199","location":"Tres Cantos, Madrid, ES","posted":"2026-11-19","title":"Cybersecurity engineer"}
 {"company":"GMV","first_seen":"2026-11-25","id":"csod:gmv:5200","location":"Tres Cantos, Madrid, ES","posted":"2026-11-20","title":"GNSS Software & Systems Integration Engineer"}
 {"company":"GMV","first_seen":"2026-11-25","id":"csod:gmv:5205","location":"Gilching, Baviera, DE","posted":"2026-11-24","title":"Senior Ground Operations Engineer"}
+{"company":"GMV","first_seen":"2026-11-25","id":"csod:gmv:5206","location":"Warsaw, Warsaw, PL","posted":"2026-11-25","title":"Embebbed Software Engineer"}

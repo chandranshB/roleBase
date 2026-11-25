@@ -4,6 +4,7 @@
 {"company":"px Group","first_seen":"2026-11-20","id":"pinpoint:pxlimited:0850e761-3039-493c-a8ca-e19be0f512af","location":"Sunderland","skills":["project_management","forecasting"],"title":"Senior Project Manager"}
 {"closed_at":"2026-11-20","company":"px Group","first_seen":"2026-11-11","id":"pinpoint:pxlimited:0dd106c3-9cca-46f4-9eba-1f37f01d0546","location":"Bahamas","skills":["project_management"],"title":"SCDB Coordinator"}
 {"company":"px Group","first_seen":"2026-11-18","id":"pinpoint:pxlimited:0e299137-05e3-448e-8f1d-afcc318e5a61","location":"Middlesbrough","skills":["ms_office"],"title":"Permit Co-ordinator"}
+{"company":"px Group","first_seen":"2026-11-25","id":"pinpoint:pxlimited:16c3e51d-d6f2-42d6-a82b-e5956b2829ea","location":"Teesside","title":"Mechanical Technician"}
 {"company":"px Group","first_seen":"2026-11-20","id":"pinpoint:pxlimited:1a9d0fa5-5389-4a8b-bb6f-027ffe5aa4ae","location":"Stockton on Tees","skills":["procurement","supply_chain","erp","sap","ms_office"],"title":"Procurement Administrator"}
 {"company":"px Group","first_seen":"2026-11-08","id":"pinpoint:pxlimited:1cff7818-dc2d-400d-aa87-5808cd09d40b","location":"Bahamas","skills":["osha"],"title":"Shift Operator","years":3}
 {"company":"px Group","first_seen":"2026-11-11","id":"pinpoint:pxlimited:1e884665-d4c7-4a9d-9d88-7208683a7b08","location":"Wilton","title":"Shift Team Leader"}
@@ -16,29 +17,41 @@
 {"closed_at":"2026-11-19","company":"px Group","first_seen":"2026-11-10","id":"pinpoint:pxlimited:383a0e97-3e17-4ce9-966b-38e77ce62de7","location":"Stockton on Tees","title":"Occupational Health & Safety Advisor"}
 {"closed_at":"2026-11-14","company":"px Group","first_seen":"2026-11-08","id":"pinpoint:pxlimited:3bdf3370-9260-4575-9b64-a4771cd26ab5","location":"Bahamas","title":"Mechanical Commissioning Lead"}
 {"closed_at":"2026-11-14","company":"px Group","first_seen":"2026-11-08","id":"pinpoint:pxlimited:3fb0c443-cba8-49a7-b9d5-ea9b7710c550","location":"Bahamas","title":"Instrument and Controls Commissioning Lead"}
+{"company":"px Group","first_seen":"2026-11-25","id":"pinpoint:pxlimited:402772a1-f0b8-40a8-b63e-b93ab8952a8a","location":"Aberdeen","title":"HSE Team Lead"}
 {"company":"px Group","employment":"contract","first_seen":"2026-11-08","id":"pinpoint:pxlimited:423f8604-e5f0-413c-b4bf-77f772d3f65f","location":"Saltend Chemicals Park","title":"Horticultural Operative (CONTRACT)"}
+{"company":"px Group","first_seen":"2026-11-25","id":"pinpoint:pxlimited:4b1e77ca-6187-4806-8a65-e6aa4f73200a","location":"Teesside","skills":["excel"],"title":"Operations Production Engineer"}
 {"closed_at":"2026-11-24","company":"px Group","employment":"contract","first_seen":"2026-11-09","id":"pinpoint:pxlimited:4b54c336-d64c-4ddc-baab-aaaaa283c695","location":"Stockton on Tees","skills":["project_management"],"title":"Senior Project Engineer (CONTRACT)"}
+{"company":"px Group","first_seen":"2026-11-25","id":"pinpoint:pxlimited:5222159c-c167-4f96-ab19-597a4ca607f9","location":"Teesside","reposts":1,"title":"Operations Manager"}
 {"company":"px Group","first_seen":"2026-11-08","id":"pinpoint:pxlimited:5ce8a7bd-2ad6-44fb-9107-0218acf113b1","location":"Wyke","skills":["supply_chain","procurement"],"title":"Maintenance Delivery Leader"}
+{"company":"px Group","first_seen":"2026-11-25","id":"pinpoint:pxlimited:6368a8d3-061e-47d8-8f09-f1af8e4cd272","location":"Teesside","skills":["procurement"],"title":"Mechanical Engineer"}
 {"company":"px Group","first_seen":"2026-11-08","id":"pinpoint:pxlimited:64b6685c-9a28-40d1-8b26-9db152ac5c73","location":"Middlesbrough","title":"DCS Engineer"}
 {"company":"px Group","first_seen":"2026-11-16","id":"pinpoint:pxlimited:6b5e2a06-99d5-4cc5-a2aa-a82d6c0b4197","location":"Middlesbrough","skills":["sap","ms_office"],"title":"Control of Work Manager"}
 {"company":"px Group","first_seen":"2026-11-08","id":"pinpoint:pxlimited:77afb1cc-734c-4367-ac27-31679502ba12","location":"Stockton on Tees","title":"Cyber Security Functional Lead"}
 {"company":"px Group","first_seen":"2026-11-08","id":"pinpoint:pxlimited:794bc561-179d-4409-82f4-5981117cf55b","location":"Bahamas","skills":["osha"],"title":"Maintenance Technician","years":3}
 {"company":"px Group","first_seen":"2026-11-08","id":"pinpoint:pxlimited:7d807085-7e24-489b-9c3b-3a64b65f2bec","location":"Bahamas","skills":["osha","preventive_maintenance"],"title":"I&E Technician","years":3}
+{"company":"px Group","first_seen":"2026-11-25","id":"pinpoint:pxlimited:7de088b7-2c3d-43d4-bb31-81e8641e2e87","location":"Teesside","title":"Instrument Engineer"}
 {"company":"px Group","first_seen":"2026-11-16","id":"pinpoint:pxlimited:7f668aef-22b7-40f7-8cc0-7c3469148318","location":"Stockton on Tees","skills":["procurement","ms_office"],"title":"Senior C&I Engineer"}
 {"closed_at":"2026-11-24","company":"px Group","first_seen":"2026-11-11","id":"pinpoint:pxlimited:82be9a5d-0a71-4af7-bbe1-2eb92b130834","location":"Stockton on Tees","skills":["forecasting"],"title":"Financial Controller"}
 {"company":"px Group","first_seen":"2026-11-20","id":"pinpoint:pxlimited:8b61630f-acc0-47e9-855c-c2b0b4cbd88e","location":"Beckton","title":"Operations Technician"}
+{"company":"px Group","first_seen":"2026-11-25","id":"pinpoint:pxlimited:92cff73b-4b1f-4ef9-b034-4c1850169d7d","location":"Teesside","title":"Electrical Technician"}
 {"closed_at":"2026-11-19","company":"px Group","employment":"contract","first_seen":"2026-11-08","id":"pinpoint:pxlimited:9ef8c0c1-54d5-44dc-9b3e-bc7165123a25","location":"Shetland","title":"Operations Engineer"}
 {"closed_at":"2026-11-12","company":"px Group","first_seen":"2026-11-08","id":"pinpoint:pxlimited:a0a6dc35-8024-47b9-8520-7ca1cc3fdb1c","location":"Teesside","title":"Plant Manager"}
 {"closed_at":"2026-11-20","company":"px Group","first_seen":"2026-10-30","id":"pinpoint:pxlimited:a25a53ac-a5fa-4bed-8d6d-6bb668e2df97","location":"Northampton","skills":["project_management"],"title":"Senior Mechanical Engineer"}
 {"company":"px Group","first_seen":"2026-11-08","id":"pinpoint:pxlimited:adab5e71-2ee7-4307-b004-f614c25596c2","location":"Aberdeen","title":"Cyber Security & Systems Engineer"}
 {"company":"px Group","first_seen":"2026-11-08","id":"pinpoint:pxlimited:aec47bf9-dab8-4e49-b9b4-698a5e2e18f4","location":"Saltend Chemicals Park","title":"Mechanical Technician"}
+{"company":"px Group","first_seen":"2026-11-25","id":"pinpoint:pxlimited:b0242b2d-5c54-4118-889c-4fc16374f182","location":"Teesside","title":"Electrical Engineer"}
+{"company":"px Group","first_seen":"2026-11-25","id":"pinpoint:pxlimited:b3c8564e-6f7f-459d-8909-23ea9b4ad43e","location":"Teesside","title":"C&I Technician"}
+{"company":"px Group","first_seen":"2026-11-25","id":"pinpoint:pxlimited:bece1b10-3a4a-4ff5-bbb4-ece52cff9c9e","location":"Teesside","title":"IACS Engineer"}
 {"closed_at":"2026-11-20","company":"px Group","first_seen":"2026-10-30","id":"pinpoint:pxlimited:c4186353-92a6-4a3d-8b03-5d36f0ad2d85","location":"Hull","skills":["project_management"],"title":"Senior Mechanical Engineer"}
+{"company":"px Group","first_seen":"2026-11-25","id":"pinpoint:pxlimited:c65790ed-482d-4583-b4e7-267255e9e407","location":"Teesside","reposts":1,"title":"Plant Manager"}
+{"company":"px Group","first_seen":"2026-11-25","id":"pinpoint:pxlimited:c962275d-2d72-4e7b-81ad-ef870fd33c2c","location":"Teesside","skills":["procurement","budgeting","forecasting","excel"],"title":"Finance & Procurement Site Lead"}
 {"company":"px Group","first_seen":"2026-11-18","id":"pinpoint:pxlimited:cb1aa823-2026-46ad-aa86-ac630c2c750d","location":"Seal Sands","title":"Senior SHEQ Advisor"}
 {"company":"px Group","first_seen":"2026-11-08","id":"pinpoint:pxlimited:cf7b23de-5b6a-498e-b213-07d565ff6afe","location":"Stockton on Tees","skills":["preventive_maintenance","procurement"],"title":"Senior Electrical Engineer"}
 {"closed_at":"2026-11-14","company":"px Group","first_seen":"2026-11-08","id":"pinpoint:pxlimited:debc5eab-4bbf-4573-b126-dd0ebbff9767","location":"Bahamas","title":"Electrical Commissioning Lead"}
 {"closed_at":"2026-11-24","company":"px Group","employment":"contract","first_seen":"2026-11-09","id":"pinpoint:pxlimited:e720f7cb-c12f-4944-a7fc-96d1cd1eea51","location":"Wyke","skills":["project_management"],"title":"Senior Project Engineer (CONTRACT)"}
 {"closed_at":"2026-11-14","company":"px Group","first_seen":"2026-11-08","id":"pinpoint:pxlimited:e805595d-a364-48c4-997b-96ac130e401d","location":"Wyke","skills":["supply_chain"],"title":"Asset Integrity Manager"}
 {"company":"px Group","first_seen":"2026-11-08","id":"pinpoint:pxlimited:ea6ceef5-a0c6-4880-b1d4-fbc833706a0b","location":"Saltend Chemicals Park","skills":["procurement","supply_chain"],"title":"Senior Buyer"}
+{"company":"px Group","first_seen":"2026-11-25","id":"pinpoint:pxlimited:eca7ee3f-ef67-4d5a-aba6-d68f83365e77","location":"Teesside","title":"Optimisation Engineer"}
 {"company":"px Group","first_seen":"2026-11-08","id":"pinpoint:pxlimited:f00b53a1-b7a9-4b71-a372-b21659361519","location":"Stockton on Tees","title":"Senior Systems & Cyber Engineer"}
 {"company":"px Group","first_seen":"2026-11-13","id":"pinpoint:pxlimited:f1b07203-96cc-4ba6-85d6-d28be9b7c38c","location":"Stockton on Tees","title":"Occupational Health & Safety Advisor"}
 {"closed_at":"2026-11-12","company":"px Group","first_seen":"2026-11-08","id":"pinpoint:pxlimited:f3000ec9-f145-4cc1-8a98-9a4ac5beffb1","location":"Teesside","title":"SHEQ Lead"}

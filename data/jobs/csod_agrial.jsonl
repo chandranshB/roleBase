@@ -15,7 +15,7 @@
 {"company":"Agrial","first_seen":"2026-11-25","id":"csod:agrial:12064","location":"HERBIGNAC, 44, FR","posted":"2026-10-19","title":"Technicien de maintenance énergies (F/H)"}
 {"company":"Agrial","first_seen":"2026-11-25","id":"csod:agrial:12110","location":"LUCON, 85, FR","posted":"2026-11-23","title":"Technicien qualité (F/H)"}
 {"company":"Agrial","first_seen":"2026-11-25","id":"csod:agrial:12140","location":"VENAREY LES LAUMES, 21, FR","posted":"2026-04-29","title":"Conseiller Lait en alternance (F/H)"}
-{"company":"Agrial","first_seen":"2026-11-25","id":"csod:agrial:12172","location":"FOUCHERES, 89, FR","posted":"2026-05-06","title":"Responsable d'activité (F/H)"}
+{"closed_at":"2026-11-25","company":"Agrial","first_seen":"2026-11-25","id":"csod:agrial:12172","location":"FOUCHERES, 89, FR","posted":"2026-05-06","title":"Responsable d'activité (F/H)"}
 {"company":"Agrial","first_seen":"2026-11-25","id":"csod:agrial:12204","location":"HERBIGNAC, 44, FR","posted":"2026-07-13","title":"Planificateur Maintenance Energies (F/H)"}
 {"company":"Agrial","first_seen":"2026-11-25","id":"csod:agrial:12274","location":"LUCON, 85, FR","posted":"2026-11-23","title":"Conducteur de ligne F/H conditionnement"}
 {"company":"Agrial","first_seen":"2026-11-25","id":"csod:agrial:12282","location":"DANGE ST ROMAIN, 86, FR","posted":"2026-06-09","title":"Responsable de secteur Démoulage Fabrication Fromagerie (F/H)"}
@@ -56,7 +56,7 @@
 {"company":"Agrial","first_seen":"2026-11-25","id":"csod:agrial:12753","location":"NANTES, 44, FR","posted":"2026-10-13","title":"Stagiaire Communication (F/H)"}
 {"company":"Agrial","first_seen":"2026-11-25","id":"csod:agrial:12755","location":"NANTES, 44, FR","posted":"2026-10-13","title":"Stage contrôle de gestion central commerce et industriel (F/H)"}
 {"company":"Agrial","first_seen":"2026-11-25","id":"csod:agrial:12763","location":"NANTES, 44, FR","posted":"2026-10-15","skills":["erp"],"title":"Responsable d’Application Finance ERP JDE H/F"}
-{"company":"Agrial","first_seen":"2026-11-25","id":"csod:agrial:12775","location":"CESSON SEVIGNE, 35, FR","posted":"2026-10-20","title":"Conducteur d'installation laitière UHT (F/H)"}
+{"closed_at":"2026-11-25","company":"Agrial","first_seen":"2026-11-25","id":"csod:agrial:12775","location":"CESSON SEVIGNE, 35, FR","posted":"2026-10-20","title":"Conducteur d'installation laitière UHT (F/H)"}
 {"company":"Agrial","first_seen":"2026-11-25","id":"csod:agrial:12779","location":"BELLEVILLE SUR VIE, 85, FR","posted":"2026-10-21","title":"Assistant Qualité (F/H)"}
 {"company":"Agrial","first_seen":"2026-11-25","id":"csod:agrial:12780","location":"DANGE ST ROMAIN, 86, FR","posted":"2026-10-21","title":"Assistant Ressources Humaines (F/H)"}
 {"company":"Agrial","first_seen":"2026-11-25","id":"csod:agrial:12787","location":"NANTES, 44, FR","posted":"2026-10-23","title":"Enter here job title to be displayed - copy - copy - copy - copy - copy - copy"}
@@ -88,6 +88,10 @@
 {"company":"Agrial","first_seen":"2026-11-25","id":"csod:agrial:12859","location":"LA CHAPELLE THIREUIL, 79, FR","posted":"2026-11-23","title":"- copy"}
 {"company":"Agrial","first_seen":"2026-11-25","id":"csod:agrial:12860","location":"ST MARTIN DE ST MAIXENT, 79, FR","posted":"2026-11-24","title":"Technicien Energie - CDI (F/H)"}
 {"company":"Agrial","first_seen":"2026-11-25","id":"csod:agrial:12862","location":"NANTES, FR","posted":"2026-11-24","title":"Enter here job title to be displayed - copy - copy"}
+{"company":"Agrial","first_seen":"2026-11-25","id":"csod:agrial:12865","location":"NIVILLAC, 56, FR","posted":"2026-11-25","title":"Assistant logistique collecte (F/H)"}
+{"company":"Agrial","first_seen":"2026-11-25","id":"csod:agrial:12866","location":"BELLEVILLE SUR VIE, 85, FR","posted":"2026-11-25","title":"Référente qualité de secteur CDI (F/H)"}
+{"company":"Agrial","first_seen":"2026-11-25","id":"csod:agrial:12867","location":"NANTES, 44, FR","posted":"2026-11-25","title":"Contrôleur(se) de gestion filiales internationales CDI (F/H)"}
+{"company":"Agrial","first_seen":"2026-11-25","id":"csod:agrial:12868","location":"NANTES, 44, FR","posted":"2026-11-25","title":"Chargé(e) RH BU Beurre-Fromage en CDI (F/H)"}
 {"company":"Agrial","first_seen":"2026-11-25","id":"csod:agrial:7278","location":"ST MARTIN DE ST MAIXENT, 79, FR","posted":"2023-07-19","title":"Opérateur Emballage (Entrée en stock) F/H"}
 {"closed_at":"2026-11-25","company":"Agrial","employment":"full_time","first_seen":"2026-10-04","id":"csod:agrial:8/10237","location":"France","posted":"2026-10-29","title":"Conseiller productions végétales (F/H) - LE MANS","url":"https://agrial.csod.com/ux/ats/careersite/8/home/requisition/10237?c=agrial"}
 {"closed_at":"2026-11-25","company":"Agrial","first_seen":"2026-10-04","id":"csod:agrial:8/10307","location":"France","posted":"2026-10-29","title":"Alternance mécanicien industriel (F/H) - COESMES","url":"https://agrial.csod.com/ux/ats/careersite/8/home/requisition/10307?c=agrial"}

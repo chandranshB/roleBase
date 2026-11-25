@@ -1,10 +1,10 @@
 {"company":"Enterprise Management Solutions","employment":"part_time","first_seen":"2026-11-08","id":"bamboohr:ems:128","location":"Baltimore, Maryland","team":"Outpatient Mental Health","title":"Psychiatric Mental Health Nurse Practitioner 5"}
 {"company":"Enterprise Management Solutions","employment":"full_time","first_seen":"2026-11-20","id":"bamboohr:ems:129","location":"Baltimore, Maryland","skills":["accounts_receivable"],"title":"Accounts Receivable Department Manager"}
 {"company":"Enterprise Management Solutions","employment":"full_time","first_seen":"2026-11-20","id":"bamboohr:ems:130","location":"Baltimore, Maryland","skills":["accounts_payable"],"title":"Accounts Payable Department Manager"}
-{"company":"Enterprise Management Solutions","first_seen":"2026-11-23","id":"bamboohr:ems:162","remote":true,"skills":["talent_acquisition"],"team":"Human Resources","title":"Talent Acquisition Department Manager"}
-{"company":"Enterprise Management Solutions","first_seen":"2026-11-23","id":"bamboohr:ems:168","remote":true,"title":"Prior Authorization Unit Supervisor"}
-{"company":"Enterprise Management Solutions","first_seen":"2026-11-23","id":"bamboohr:ems:169","remote":true,"title":"OMHC/FGC Prior Authorization Specialist"}
-{"company":"Enterprise Management Solutions","first_seen":"2026-11-23","id":"bamboohr:ems:171","remote":true,"title":"SUD OP/SUD IP Prior Authorization Specialist"}
+{"closed_at":"2026-11-25","company":"Enterprise Management Solutions","first_seen":"2026-11-23","id":"bamboohr:ems:162","remote":true,"skills":["talent_acquisition"],"team":"Human Resources","title":"Talent Acquisition Department Manager"}
+{"closed_at":"2026-11-25","company":"Enterprise Management Solutions","first_seen":"2026-11-23","id":"bamboohr:ems:168","remote":true,"title":"Prior Authorization Unit Supervisor"}
+{"closed_at":"2026-11-25","company":"Enterprise Management Solutions","first_seen":"2026-11-23","id":"bamboohr:ems:169","remote":true,"title":"OMHC/FGC Prior Authorization Specialist"}
+{"closed_at":"2026-11-25","company":"Enterprise Management Solutions","first_seen":"2026-11-23","id":"bamboohr:ems:171","remote":true,"title":"SUD OP/SUD IP Prior Authorization Specialist"}
 {"closed_at":"2026-11-24","company":"Enterprise Management Solutions","first_seen":"2026-11-20","id":"bamboohr:ems:190","remote":true,"title":"Accounts Payables Specialist"}
 {"company":"Enterprise Management Solutions","employment":"full_time","first_seen":"2026-11-23","id":"bamboohr:ems:192","location":"Baltimore, Maryland","title":"Operations Supervisor 5"}
 {"company":"Enterprise Management Solutions","first_seen":"2026-11-08","id":"bamboohr:ems:199","location":"Baltimore, Maryland","title":"Co-Occurring Disorder Counselor 2"}
@@ -17,7 +17,7 @@
 {"company":"Enterprise Management Solutions","first_seen":"2026-11-08","id":"bamboohr:ems:206","location":"Baltimore, Maryland","title":"Co-Occurring Disorder Counselor 9"}
 {"company":"Enterprise Management Solutions","first_seen":"2026-11-08","id":"bamboohr:ems:207","location":"Baltimore, Maryland","title":"Entitlements Case Manager 1"}
 {"company":"Enterprise Management Solutions","first_seen":"2026-11-08","id":"bamboohr:ems:209","location":"Brooklyn, Maryland","team":"Outpatient Mental Health","title":"Mental Health Counselor 2"}
-{"company":"Enterprise Management Solutions","first_seen":"2026-11-23","id":"bamboohr:ems:222","remote":true,"team":"Scheduling","title":"Productivity Monitoring Specialist"}
+{"closed_at":"2026-11-25","company":"Enterprise Management Solutions","first_seen":"2026-11-23","id":"bamboohr:ems:222","remote":true,"team":"Scheduling","title":"Productivity Monitoring Specialist"}
 {"company":"Enterprise Management Solutions","first_seen":"2026-11-08","id":"bamboohr:ems:228","location":"Baltimore, Maryland","title":"Co-Occurring Disorder Counselor 12"}
 {"company":"Enterprise Management Solutions","first_seen":"2026-11-08","id":"bamboohr:ems:232","location":"Baltimore, Maryland","title":"Entitlements Case Manager 3"}
 {"company":"Enterprise Management Solutions","first_seen":"2026-11-08","id":"bamboohr:ems:233","location":"Baltimore, Maryland","title":"Entitlements Case Manager 4"}
@@ -38,13 +38,13 @@
 {"company":"Enterprise Management Solutions","employment":"full_time","first_seen":"2026-11-23","id":"bamboohr:ems:319","location":"Baltimore, Maryland","title":"Front Desk Security Guard"}
 {"company":"Enterprise Management Solutions","employment":"full_time","first_seen":"2026-11-23","id":"bamboohr:ems:323","location":"Baltimore, Maryland","title":"Medical Receptionist"}
 {"company":"Enterprise Management Solutions","first_seen":"2026-11-24","id":"bamboohr:ems:327","remote":true,"team":"Patient Access","title":"Patient Access Specialist 1"}
-{"company":"Enterprise Management Solutions","first_seen":"2026-11-24","id":"bamboohr:ems:328","remote":true,"team":"Patient Access","title":"Patient Access Specialist 2"}
+{"closed_at":"2026-11-25","company":"Enterprise Management Solutions","first_seen":"2026-11-24","id":"bamboohr:ems:328","remote":true,"team":"Patient Access","title":"Patient Access Specialist 2"}
 {"company":"Enterprise Management Solutions","employment":"part_time","first_seen":"2026-11-08","id":"bamboohr:ems:329","location":"Baltimore, Maryland","team":"Special Police","title":"Special Police Officer 1"}
 {"company":"Enterprise Management Solutions","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:ems:338","location":"Baltimore, Maryland","title":"General Manager - Catering Operations"}
 {"company":"Enterprise Management Solutions","first_seen":"2026-11-08","id":"bamboohr:ems:356","location":"Baltimore, Maryland","title":"Full Stack Web Developer 2"}
 {"company":"Enterprise Management Solutions","first_seen":"2026-11-08","id":"bamboohr:ems:360","location":"Baltimore, Maryland","title":"Co-Occurring Disorder Counselor 26"}
 {"company":"Enterprise Management Solutions","first_seen":"2026-11-08","id":"bamboohr:ems:364","location":"Baltimore, Maryland","title":"Co-Occurring Disorder Counselor 27"}
-{"company":"Enterprise Management Solutions","first_seen":"2026-11-23","id":"bamboohr:ems:367","remote":true,"title":"Integrated Support Coordinator"}
+{"closed_at":"2026-11-25","company":"Enterprise Management Solutions","first_seen":"2026-11-23","id":"bamboohr:ems:367","remote":true,"title":"Integrated Support Coordinator"}
 {"company":"Enterprise Management Solutions","employment":"contract","first_seen":"2026-11-08","id":"bamboohr:ems:368","location":"Baltimore, Maryland","title":"Program Assistant Intern 1"}
 {"company":"Enterprise Management Solutions","employment":"contract","first_seen":"2026-11-08","id":"bamboohr:ems:369","location":"Baltimore, Maryland","title":"Program Assistant Intern 2"}
 {"company":"Enterprise Management Solutions","employment":"contract","first_seen":"2026-11-08","id":"bamboohr:ems:383","location":"Baltimore, Maryland","title":"Program Assistant Intern 3"}
@@ -97,7 +97,7 @@
 {"company":"Enterprise Management Solutions","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:ems:579","location":"Baltimore, Maryland","team":"Outpatient Mental Health Disorder Treatment","title":"Treatment Coordinator"}
 {"company":"Enterprise Management Solutions","employment":"part_time","first_seen":"2026-11-08","id":"bamboohr:ems:583","location":"Baltimore, Maryland","title":"Operations Manager 12 (Physician/Clinical Director)"}
 {"closed_at":"2026-11-17","company":"Enterprise Management Solutions","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:ems:584","location":"Baltimore, Maryland","team":"Psychiatric Rehabilitation","title":"Psychiatric Rehabilitation Specialist"}
-{"company":"Enterprise Management Solutions","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:ems:585","remote":true,"title":"Recovery Services Sales Specialist"}
+{"closed_at":"2026-11-25","company":"Enterprise Management Solutions","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:ems:585","remote":true,"title":"Recovery Services Sales Specialist"}
 {"company":"Enterprise Management Solutions","employment":"part_time","first_seen":"2026-11-23","id":"bamboohr:ems:587","location":"Aylett, Virginia","title":"Operations Manager – King William"}
 {"company":"Enterprise Management Solutions","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:ems:590","location":"Baltimore, Maryland","team":"Legal Operations","title":"Paralegal"}
 {"closed_at":"2026-11-24","company":"Enterprise Management Solutions","first_seen":"2026-11-08","id":"bamboohr:ems:600","remote":true,"title":"OMHC Prior Authorization Specialist"}

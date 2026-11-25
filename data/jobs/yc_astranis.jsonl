@@ -3,7 +3,7 @@
 {"company":"Astranis","employment":"full_time","first_seen":"2026-11-24","id":"yc:astranis:109830","location":"San Francisco, California, United States","title":"CAD Engineer Associate (Winter 2027)"}
 {"company":"Astranis","employment":"full_time","first_seen":"2026-11-24","id":"yc:astranis:109831","location":"San Francisco, California, United States","title":"CAD Engineer Intern (Spring 2027)"}
 {"company":"Astranis","employment":"full_time","first_seen":"2026-11-24","id":"yc:astranis:109833","location":"San Francisco, California, United States","title":"CAD Engineer Intern (Winter 2027)"}
-{"company":"Astranis","employment":"full_time","first_seen":"2026-11-24","id":"yc:astranis:109836","location":"San Francisco, California, United States","title":"Electrical Test Specialist"}
+{"closed_at":"2026-11-25","company":"Astranis","employment":"full_time","first_seen":"2026-11-24","id":"yc:astranis:109836","location":"San Francisco, California, United States","title":"Electrical Test Specialist"}
 {"company":"Astranis","employment":"full_time","first_seen":"2026-11-24","id":"yc:astranis:109840","location":"San Francisco, California, United States","pay":[140000,205000,"USD"],"title":"FPGA Engineer"}
 {"company":"Astranis","employment":"full_time","first_seen":"2026-11-24","id":"yc:astranis:109841","location":"Remote","pay":[115000,160000,"USD"],"remote":true,"title":"Government Contracts Manager"}
 {"company":"Astranis","employment":"full_time","first_seen":"2026-11-24","id":"yc:astranis:109842","location":"San Francisco, California, United States","pay":[150000,215000,"USD"],"title":"Hardware Integration Test Engineer"}
@@ -92,7 +92,7 @@
 {"company":"Astranis","employment":"full_time","first_seen":"2026-11-24","id":"yc:astranis:112076","location":"San Francisco, California, United States","title":"Thermal Associate Engineer (Winter 2027)"}
 {"company":"Astranis","employment":"full_time","first_seen":"2026-11-24","id":"yc:astranis:112077","location":"San Francisco, California, United States","title":"Thermal Intern (Summer 2027)"}
 {"company":"Astranis","employment":"full_time","first_seen":"2026-11-24","id":"yc:astranis:112078","location":"San Francisco, California, United States","title":"Thermal Intern (Winter 2027)"}
-{"company":"Astranis","employment":"full_time","first_seen":"2026-11-24","id":"yc:astranis:112191","location":"San Francisco, California, United States","title":"Project Manager, Configuration Management"}
+{"closed_at":"2026-11-25","company":"Astranis","employment":"full_time","first_seen":"2026-11-24","id":"yc:astranis:112191","location":"San Francisco, California, United States","title":"Project Manager, Configuration Management"}
 {"company":"Astranis","employment":"full_time","first_seen":"2026-11-24","id":"yc:astranis:112796","location":"San Francisco, California, United States","title":"Financial Analyst"}
 {"company":"Astranis","employment":"full_time","first_seen":"2026-11-24","id":"yc:astranis:113280","location":"San Francisco, California, United States","title":"Automation & Controls Engineering Associate (Summer 2027)"}
 {"company":"Astranis","employment":"full_time","first_seen":"2026-11-24","id":"yc:astranis:113281","location":"San Francisco, California, United States","title":"Automation & Controls Engineering Associate (Winter 2027)"}
@@ -153,6 +153,7 @@
 {"company":"Astranis","employment":"full_time","first_seen":"2026-11-24","id":"yc:astranis:124303","location":"San Francisco, California, United States","title":"AI Enablement & Learning and Development Partner"}
 {"company":"Astranis","employment":"full_time","first_seen":"2026-11-24","id":"yc:astranis:124304","location":"San Francisco, California, United States","title":"Senior Brand Designer"}
 {"company":"Astranis","employment":"full_time","first_seen":"2026-11-24","id":"yc:astranis:124898","location":"San Francisco, California, United States","title":"Hardware/Production Test Software Engineer"}
+{"company":"Astranis","employment":"full_time","first_seen":"2026-11-25","id":"yc:astranis:125268","location":"San Francisco, California, United States","title":"PCB Librarian"}
 {"company":"Astranis","employment":"full_time","first_seen":"2026-11-24","id":"yc:astranis:55894","location":"San Francisco, CA","pay":[200000,280000,"USD"],"title":"Senior Flight Software Engineer"}
 {"company":"Astranis","employment":"full_time","first_seen":"2026-11-24","id":"yc:astranis:55896","location":"San Francisco, CA","pay":[130000,175000,"USD"],"title":"Flight Software Engineer"}
 {"company":"Astranis","employment":"full_time","first_seen":"2026-11-24","id":"yc:astranis:56104","location":"San Francisco, CA","pay":[110000,140000,"USD"],"title":"Mechanical Engineer"}

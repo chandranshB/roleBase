@@ -812,7 +812,7 @@
 {"company":"Inter-Con Security","first_seen":"2026-10-23","id":"paycom:9CC558E6DB931F02AA88A617AB1856CD:873817","location":"Redmond (13643) - Redmond, WA 98052","title":"ERT Agent (88563)"}
 {"company":"Inter-Con Security","first_seen":"2026-10-23","id":"paycom:9CC558E6DB931F02AA88A617AB1856CD:873824","location":"Pasadena (10067) - Pasadena, CA 91103","title":"Security Operations Manager (88564)"}
 {"company":"Inter-Con Security","employment":"full_time","first_seen":"2026-10-23","id":"paycom:9CC558E6DB931F02AA88A617AB1856CD:873837","location":"The Dalles (10653) - The Dalles, OR 97058","title":"Armed Security Officer (88565)"}
-{"company":"Inter-Con Security","first_seen":"2026-10-24","id":"paycom:9CC558E6DB931F02AA88A617AB1856CD:874017","location":"Charlotte (18555) - Charlotte, NC 28208","title":"Regional Account Manager (88582)"}
+{"closed_at":"2026-11-25","company":"Inter-Con Security","first_seen":"2026-10-24","id":"paycom:9CC558E6DB931F02AA88A617AB1856CD:874017","location":"Charlotte (18555) - Charlotte, NC 28208","title":"Regional Account Manager (88582)"}
 {"closed_at":"2026-11-25","company":"Inter-Con Security","first_seen":"2026-10-24","id":"paycom:9CC558E6DB931F02AA88A617AB1856CD:874024","location":"United States","posted":"2025-05-12","team":"Corporate","title":"Regional Account Manager (88583)"}
 {"company":"Inter-Con Security","employment":"full_time","first_seen":"2026-10-24","id":"paycom:9CC558E6DB931F02AA88A617AB1856CD:874047","location":"Kansas City - 22406 - Kansas City, KS 66101","title":"Concierge Security Officer  (88588)"}
 {"company":"Inter-Con Security","first_seen":"2026-10-27","id":"paycom:9CC558E6DB931F02AA88A617AB1856CD:874233","location":"Torrance (10805) - Torrance, CA 90502","title":"Administrative Assistant  (88605)"}
@@ -850,6 +850,8 @@
 {"company":"Inter-Con Security","first_seen":"2026-11-25","id":"paycom:9CC558E6DB931F02AA88A617AB1856CD:878298","location":"Caledonia - 21595 - Caledonia, MI 49316-9587","title":"Security Site Supervisor (88946)"}
 {"company":"Inter-Con Security","first_seen":"2026-11-25","id":"paycom:9CC558E6DB931F02AA88A617AB1856CD:878305","location":"Reno (12840) - Reno, NV 895011029","title":"Security Site Coordinator  (88947)"}
 {"company":"Inter-Con Security","first_seen":"2026-11-25","id":"paycom:9CC558E6DB931F02AA88A617AB1856CD:878341","location":"Pasadena (10080) - Pasadena, CA 91106","skills":["supply_chain"],"title":"Supply Chain Manager (88948)"}
+{"company":"Inter-Con Security","first_seen":"2026-11-25","id":"paycom:9CC558E6DB931F02AA88A617AB1856CD:878476","location":"Washington DC (11301) - Washington, DC 20037","title":"Armed Security Training (88958)"}
+{"company":"Inter-Con Security","employment":"full_time","first_seen":"2026-11-25","id":"paycom:9CC558E6DB931F02AA88A617AB1856CD:878488","location":"Sylmar (13480) - Sylmar, CA 91342","title":"Unarmed Enhanced Ofcr 9 CA (88959)"}
 {"company":"Inter-Con Security","first_seen":"2026-10-01","id":"paycom:9CC558E6DB931F02AA88A617AB1856CD:90440","location":"Irvine (12235) - Irvine, CA 92618","title":"Security Officer (41292)"}
 {"company":"Inter-Con Security","first_seen":"2026-10-01","id":"paycom:9CC558E6DB931F02AA88A617AB1856CD:95049","location":"Nashville (18212) - Nashville, TN 37214","title":"Security Officer - Nashville, TN (42103)"}
 {"company":"Inter-Con Security","first_seen":"2026-10-01","id":"paycom:9CC558E6DB931F02AA88A617AB1856CD:95056","location":"Nashville (18212) - Nashville, TN 37214","title":"Security Shift Supervisor - Nashville, TN (42104)"}

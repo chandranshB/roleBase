@@ -42,15 +42,16 @@
 {"company":"BAC Credomatic","first_seen":"2026-11-25","id":"csod:talento360:29700","location":"HN","posted":"2026-11-03","title":"COORDINADOR DE EJECUCION Y MEJORA EMISOR"}
 {"company":"BAC Credomatic","first_seen":"2026-11-25","id":"csod:talento360:29703","location":"HN","posted":"2026-11-04","title":"AUDITOR SR"}
 {"company":"BAC Credomatic","first_seen":"2026-11-25","id":"csod:talento360:29708","location":"HN","posted":"2026-11-03","title":"BLHN- ANALISTA DE CONTROL INTERNO"}
-{"company":"BAC Credomatic","first_seen":"2026-11-25","id":"csod:talento360:29720","location":"SV","posted":"2026-11-05","title":"ASESOR DE SERVICIO AG AHUACHAPAN (OUTSOURCING)"}
-{"company":"BAC Credomatic","first_seen":"2026-11-25","id":"csod:talento360:29724","location":"SV","posted":"2026-11-05","reposts":1,"title":"EJECUTIVO DE SERVICIO FINANCIERO AG SAN LUIS"}
-{"company":"BAC Credomatic","first_seen":"2026-11-25","id":"csod:talento360:29729","location":"SV","posted":"2026-11-06","title":"OPERADOR DE ATM"}
+{"closed_at":"2026-11-25","company":"BAC Credomatic","first_seen":"2026-11-25","id":"csod:talento360:29720","location":"SV","posted":"2026-11-05","title":"ASESOR DE SERVICIO AG AHUACHAPAN (OUTSOURCING)"}
+{"closed_at":"2026-11-25","company":"BAC Credomatic","first_seen":"2026-11-25","id":"csod:talento360:29724","location":"SV","posted":"2026-11-05","reposts":1,"title":"EJECUTIVO DE SERVICIO FINANCIERO AG SAN LUIS"}
+{"closed_at":"2026-11-25","company":"BAC Credomatic","first_seen":"2026-11-25","id":"csod:talento360:29729","location":"SV","posted":"2026-11-06","title":"OPERADOR DE ATM"}
 {"company":"BAC Credomatic","first_seen":"2026-11-25","id":"csod:talento360:29730","location":"SV","posted":"2026-11-05","title":"GESTOR DE RECUPERACIÓN ADMINISTRATIVA BANCO"}
 {"company":"BAC Credomatic","first_seen":"2026-11-25","id":"csod:talento360:29743","location":"NI","posted":"2026-11-20","title":"Administrador de Servidores"}
 {"company":"BAC Credomatic","first_seen":"2026-11-25","id":"csod:talento360:29769","location":"SV","posted":"2026-11-17","title":"EJECUTIVO DE NEGOCIOS DIGITALES"}
 {"company":"BAC Credomatic","first_seen":"2026-11-25","id":"csod:talento360:29788","location":"HN","posted":"2026-11-17","title":"COORDINADOR DE SERVICIO VACACIONISTA"}
 {"company":"BAC Credomatic","first_seen":"2026-11-25","id":"csod:talento360:29799","location":"GT","posted":"2026-11-24","title":"COORDINADOR LEASING"}
 {"company":"BAC Credomatic","first_seen":"2026-11-25","id":"csod:talento360:29829","location":"SV","posted":"2026-11-10","title":"ANALISTA PRODUCTOS DE PAGO"}
+{"company":"BAC Credomatic","first_seen":"2026-11-25","id":"csod:talento360:29834","location":"CR","posted":"2026-11-25","title":"PERSONA EJECUTIVA DE PUNTO DE VENTA (GAM Y LIBERIA)"}
 {"company":"BAC Credomatic","first_seen":"2026-11-25","id":"csod:talento360:29840","location":"HN; HN","posted":"2026-11-17","reposts":2,"title":"JEFE DE AGENCIA"}
 {"closed_at":"2026-11-25","company":"BAC Credomatic","first_seen":"2026-11-25","id":"csod:talento360:29879","location":"GT","posted":"2026-11-16","title":"EJECUTIVO CORPORATIVO DE AFILIADOS"}
 {"closed_at":"2026-11-25","company":"BAC Credomatic","first_seen":"2026-11-25","id":"csod:talento360:29894","location":"GT","posted":"2026-11-16","reposts":1,"title":"ANALISTA DE GESTION DE PROCESOS CREDITICIOS"}
@@ -72,8 +73,19 @@
 {"company":"BAC Credomatic","first_seen":"2026-11-25","id":"csod:talento360:29988","location":"GT","posted":"2026-11-24","title":"ANALISTA DE DATOS N1"}
 {"company":"BAC Credomatic","first_seen":"2026-11-25","id":"csod:talento360:29989","location":"GT","posted":"2026-11-23","title":"SUPERVISOR DE CONTABILIADAD"}
 {"company":"BAC Credomatic","first_seen":"2026-11-25","id":"csod:talento360:30002","location":"GT","posted":"2026-11-24","title":"COORDINADOR DE CONTROL INTERNO"}
+{"company":"BAC Credomatic","first_seen":"2026-11-25","id":"csod:talento360:30045","location":"NI","posted":"2026-11-25","title":"Oficial de Servicios Bancarios"}
 {"company":"BAC Credomatic","first_seen":"2026-11-25","id":"csod:talento360:30052","location":"NI","posted":"2026-11-23","title":"Operador de Computo"}
+{"company":"BAC Credomatic","first_seen":"2026-11-25","id":"csod:talento360:30082","location":"GT","posted":"2026-11-25","reposts":1,"title":"EJECUTIVO DE ATENCION AL PUBLICO"}
+{"company":"BAC Credomatic","first_seen":"2026-11-25","id":"csod:talento360:30083","location":"GT","posted":"2026-11-25","title":"EJECUTIVO DE BAC CENTER"}
+{"company":"BAC Credomatic","first_seen":"2026-11-25","id":"csod:talento360:30084","location":"GT","posted":"2026-11-25","reposts":1,"title":"RECEPTOR PAGADOR"}
+{"company":"BAC Credomatic","first_seen":"2026-11-25","id":"csod:talento360:30085","location":"GT","posted":"2026-11-25","reposts":2,"title":"EJECUTIVO DE SMART CENTER"}
+{"company":"BAC Credomatic","first_seen":"2026-11-25","id":"csod:talento360:30086","location":"GT","posted":"2026-11-25","reposts":1,"title":"COBRADOR TELEFONICO BAC"}
+{"company":"BAC Credomatic","first_seen":"2026-11-25","id":"csod:talento360:30087","location":"GT","posted":"2026-11-25","reposts":3,"title":"SUB-JEFE DE AGENCIA"}
+{"company":"BAC Credomatic","first_seen":"2026-11-25","id":"csod:talento360:30088","location":"GT","posted":"2026-11-25","reposts":3,"title":"JEFE DE AGENCIA"}
 {"company":"BAC Credomatic","first_seen":"2026-11-25","id":"csod:talento360:30105","location":"CR","posted":"2026-11-24","title":"PROGRAMA DE PASANTÍAS - BAC COSTA RICA"}
+{"company":"BAC Credomatic","first_seen":"2026-11-25","id":"csod:talento360:30108","location":"SV","posted":"2026-11-25","title":"ANALISTA CONTABLE CORPORATIVO"}
+{"company":"BAC Credomatic","first_seen":"2026-11-25","id":"csod:talento360:30114","location":"SV","posted":"2026-11-25","title":"AUXILIAR DE OFICIOS (Outsourcing)"}
+{"company":"BAC Credomatic","first_seen":"2026-11-25","id":"csod:talento360:30118","location":"SV","posted":"2026-11-25","title":"AUXILIAR DE OFICIOS"}
 {"closed_at":"2026-11-25","company":"BAC Credomatic","employment":"full_time","first_seen":"2026-10-04","id":"csod:talento360:4/12025","location":"United States","posted":"2026-10-29","title":"OPORTUNIDADES BAC PANAMÁ","url":"https://talento360.csod.com/ux/ats/careersite/4/home/requisition/12025?c=talento360"}
 {"closed_at":"2026-09-01","company":"BAC Credomatic","employment":"full_time","first_seen":"2026-05-24","id":"csod:talento360:4/19504","location":"GT","posted":"2026-05-24","title":"APRENDIZ DE OPERACIONES","url":"https://talento360.csod.com/ux/ats/careersite/4/home/requisition/19504?c=talento360"}
 {"closed_at":"2026-09-01","company":"BAC Credomatic","employment":"full_time","first_seen":"2026-05-24","id":"csod:talento360:4/19855","location":"GT","posted":"2026-05-24","title":"EJECUTIVO PUNTOS DE VENTA - SUPERMERCADOS","url":"https://talento360.csod.com/ux/ats/careersite/4/home/requisition/19855?c=talento360"}

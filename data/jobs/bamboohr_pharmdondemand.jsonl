@@ -15,7 +15,7 @@
 {"company":"PharmD on Demand","first_seen":"2026-11-08","id":"bamboohr:pharmdondemand:678","location":"Titusville, Florida","team":"Pharmacy Management","title":"Retail Pharmacist"}
 {"company":"PharmD on Demand","first_seen":"2026-11-08","id":"bamboohr:pharmdondemand:680","location":"Watkinsville, Georgia","team":"Administration","title":"Accountant"}
 {"company":"PharmD on Demand","first_seen":"2026-10-30","id":"bamboohr:pharmdondemand:683","location":"Daytona, Florida","team":"Pharmacy Management","title":"Retail Pharmacist"}
-{"company":"PharmD on Demand","first_seen":"2026-10-30","id":"bamboohr:pharmdondemand:685","location":"Forsyth, Georgia","team":"Pharmacy Management","title":"Hospital Pharmacist"}
+{"closed_at":"2026-11-25","company":"PharmD on Demand","first_seen":"2026-10-30","id":"bamboohr:pharmdondemand:685","location":"Forsyth, Georgia","team":"Pharmacy Management","title":"Hospital Pharmacist"}
 {"company":"PharmD on Demand","first_seen":"2026-10-30","id":"bamboohr:pharmdondemand:686","location":"Hinesville, Georgia","team":"Pharmacy Management","title":"Hospital Pharmacy Technician"}
 {"closed_at":"2026-11-12","company":"PharmD on Demand","first_seen":"2026-11-08","id":"bamboohr:pharmdondemand:687","location":"Toccoa, Georgia","team":"Pharmacy Management","title":"Lead Hospital Pharmacy Technician"}
 {"company":"PharmD on Demand","first_seen":"2026-11-08","id":"bamboohr:pharmdondemand:688","location":"Athens, Georgia","team":"Pharmacy Management","title":"Retail Pharmacy Technician"}
@@ -31,3 +31,4 @@
 {"company":"PharmD on Demand","first_seen":"2026-11-12","id":"bamboohr:pharmdondemand:698","location":"McDonough, Georgia","team":"Pharmacy Management","title":"Retail Pharmacist"}
 {"company":"PharmD on Demand","first_seen":"2026-11-12","id":"bamboohr:pharmdondemand:699","location":"DeFuniak Springs, Florida","team":"Pharmacy Management","title":"Hospital Pharmacy Technician"}
 {"company":"PharmD on Demand","first_seen":"2026-11-12","id":"bamboohr:pharmdondemand:700","location":"DeFuniak Springs, Florida","team":"Pharmacy Management","title":"Hospital Pharmacist"}
+{"company":"PharmD on Demand","first_seen":"2026-11-25","id":"bamboohr:pharmdondemand:701","remote":true,"team":"Remote Pharmacy Services","title":"Remote Hospital Pharmacist"}

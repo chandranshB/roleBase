@@ -99,7 +99,7 @@
 {"company":"BearCom","first_seen":"2026-11-25","id":"paycom:B4CAB40EE7D47F9BF358C76C2702C5BB:464658","location":"Nashville TN - Nashville, TN 37211","title":"Project Technician Nashville, TN"}
 {"company":"BearCom","first_seen":"2026-10-04","id":"paycom:B4CAB40EE7D47F9BF358C76C2702C5BB:464693","location":"Work From Home - Home, TX 75041-7504; Chantilly VA - Chantilly, VA 20151; Chicago IL - Elmhurst, IL 60126","remote":true,"title":"Physical Security Global Project Manager"}
 {"company":"BearCom","first_seen":"2026-10-04","id":"paycom:B4CAB40EE7D47F9BF358C76C2702C5BB:464917","location":"Anchorage - SEC - Anchorage, AK 99518","title":"Project Technician - Anchorage, AK"}
-{"company":"BearCom","first_seen":"2026-10-04","id":"paycom:B4CAB40EE7D47F9BF358C76C2702C5BB:465496","location":"Bearcom  Garland - Garland, TX 75041","title":"Enterprise Field Service Manager Dallas (Garland), TX"}
+{"closed_at":"2026-11-25","company":"BearCom","first_seen":"2026-10-04","id":"paycom:B4CAB40EE7D47F9BF358C76C2702C5BB:465496","location":"Bearcom  Garland - Garland, TX 75041","title":"Enterprise Field Service Manager Dallas (Garland), TX"}
 {"company":"BearCom","first_seen":"2026-10-04","id":"paycom:B4CAB40EE7D47F9BF358C76C2702C5BB:466078","location":"Los Angeles - Redondo Beach, CA 90278","title":"Physical Security Technician"}
 {"company":"BearCom","first_seen":"2026-09-25","id":"paycom:B4CAB40EE7D47F9BF358C76C2702C5BB:466146","location":"Bearcom  Garland - Garland, TX 75041","title":"Director, Human Resources"}
 {"company":"BearCom","first_seen":"2026-10-04","id":"paycom:B4CAB40EE7D47F9BF358C76C2702C5BB:466343","location":"Grande Prairie - Grande Prairie, AB T8V 5N5","title":"Service Coordinator Grande Prairie, AB"}
@@ -115,7 +115,7 @@
 {"company":"BearCom","first_seen":"2026-10-04","id":"paycom:B4CAB40EE7D47F9BF358C76C2702C5BB:468307","location":"Bearcom  Garland - Garland, TX 75041","title":"Director of Fulfillment"}
 {"closed_at":"2026-11-09","company":"BearCom","first_seen":"2026-10-08","id":"paycom:B4CAB40EE7D47F9BF358C76C2702C5BB:468857","location":"United States","posted":"2022-03-29","title":"Installation Technician Seattle (Redmond), WA"}
 {"company":"BearCom","first_seen":"2026-11-25","id":"paycom:B4CAB40EE7D47F9BF358C76C2702C5BB:468886","location":"Chicago IL - Elmhurst, IL 60126","reposts":1,"title":"Installation Technician Chicago (Elmhurst), IL"}
-{"company":"BearCom","first_seen":"2026-10-08","id":"paycom:B4CAB40EE7D47F9BF358C76C2702C5BB:469625","location":"Edmonton - Edmonton , AB T6B 3T8","title":"Rental Technician Edmonton, AB"}
+{"closed_at":"2026-11-25","company":"BearCom","first_seen":"2026-10-08","id":"paycom:B4CAB40EE7D47F9BF358C76C2702C5BB:469625","location":"Edmonton - Edmonton , AB T6B 3T8","title":"Rental Technician Edmonton, AB"}
 {"company":"BearCom","first_seen":"2026-10-13","id":"paycom:B4CAB40EE7D47F9BF358C76C2702C5BB:470505","location":"Salt Lake - Stone - Salt Lake, UT 84115","title":"Senior Operations Manager, Inventory and Fulfillment, Salt Lake City, UT"}
 {"closed_at":"2026-11-09","company":"BearCom","first_seen":"2026-10-13","id":"paycom:B4CAB40EE7D47F9BF358C76C2702C5BB:470528","location":"United States","posted":"2022-03-29","title":"Service Coordinator Redondo Beach, CA"}
 {"closed_at":"2026-11-09","company":"BearCom","first_seen":"2026-10-14","id":"paycom:B4CAB40EE7D47F9BF358C76C2702C5BB:470834","location":"United States","posted":"2022-03-29","title":"Rental Coordinator Chicago (Elmhurst), IL"}
@@ -169,3 +169,6 @@
 {"company":"BearCom","first_seen":"2026-11-25","id":"paycom:B4CAB40EE7D47F9BF358C76C2702C5BB:482825","location":"Oklahoma City - Oklahoma City, OK 73108","title":"Account Executive Oklahoma City, OK"}
 {"company":"BearCom","first_seen":"2026-11-25","id":"paycom:B4CAB40EE7D47F9BF358C76C2702C5BB:484023","location":"Dallas - Garland, TX 75041","title":"Sales Coordinator Dallas, TX"}
 {"company":"BearCom","first_seen":"2026-11-25","id":"paycom:B4CAB40EE7D47F9BF358C76C2702C5BB:484179","location":"Houston - Deer Park, TX 77536","title":"Field Service Technician Houston, TX (Deer Park)"}
+{"company":"BearCom","first_seen":"2026-11-25","id":"paycom:B4CAB40EE7D47F9BF358C76C2702C5BB:484408","location":"Bearcom  Garland - Garland, TX 75041","title":"Enterprise Field Service Manager"}
+{"company":"BearCom","first_seen":"2026-11-25","id":"paycom:B4CAB40EE7D47F9BF358C76C2702C5BB:484461","location":"Toronto - Toronto, ON M3B 1S1","reposts":2,"title":"Field Service Technician Toronto, ON"}
+{"company":"BearCom","first_seen":"2026-11-25","id":"paycom:B4CAB40EE7D47F9BF358C76C2702C5BB:484474","location":"Nashville TN - Nashville, TN 37211","title":"Project Manager - Nashville"}

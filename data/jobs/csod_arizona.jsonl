@@ -46,7 +46,7 @@
 {"company":"University of Arizona","first_seen":"2026-11-25","id":"csod:arizona:26032","location":"Tucson, AZ, US","posted":"2026-05-18","reposts":1,"title":"Research Technician III, Cancer Center (Full Time) (Multiple)"}
 {"company":"University of Arizona","first_seen":"2026-11-25","id":"csod:arizona:26047","location":"Tucson, AZ, US","posted":"2026-06-01","reposts":1,"title":"Research Professor, Steward Observatory"}
 {"company":"University of Arizona","first_seen":"2026-11-25","id":"csod:arizona:26067","location":"Tucson, AZ, US","posted":"2026-05-21","reposts":2,"title":"Financial Analyst III - College of Medicine, Tucson"}
-{"company":"University of Arizona","first_seen":"2026-11-25","id":"csod:arizona:26096","location":"Phoenix, AZ, US","posted":"2026-11-02","reposts":1,"title":"Sponsored Programs Administrator, Department of Administration (College of Medicine-Phoenix)"}
+{"closed_at":"2026-11-25","company":"University of Arizona","first_seen":"2026-11-25","id":"csod:arizona:26096","location":"Phoenix, AZ, US","posted":"2026-11-02","reposts":1,"title":"Sponsored Programs Administrator, Department of Administration (College of Medicine-Phoenix)"}
 {"company":"University of Arizona","first_seen":"2026-11-25","id":"csod:arizona:26097","location":"Phoenix, AZ, US","posted":"2026-05-26","reposts":1,"title":"Postdoctoral Research Associate, Department of Child Health (College of Medicine-Phoenix)"}
 {"company":"University of Arizona","first_seen":"2026-11-25","id":"csod:arizona:26099","location":"Phoenix, AZ, US","posted":"2026-05-26","reposts":1,"title":"Researcher/Scientist III, Department of Translational Cardiovascular Research Center (TCRC)(Phoenix)"}
 {"company":"University of Arizona","first_seen":"2026-11-25","id":"csod:arizona:26124","location":"Tucson, AZ, US","posted":"2026-05-29","reposts":1,"title":"Simulation Nurse Specialist (Multiple Positions) (UPDATED)"}
@@ -123,7 +123,7 @@
 {"company":"University of Arizona","first_seen":"2026-11-25","id":"csod:arizona:26933","location":"Tucson, AZ, US","posted":"2026-09-01","reposts":1,"title":"General Maintenance Mechanic"}
 {"company":"University of Arizona","first_seen":"2026-11-25","id":"csod:arizona:26948","location":"Tucson, AZ, US","posted":"2026-08-31","reposts":1,"title":"Postdoctoral Research Associate I - III, Sarver Heart Center"}
 {"company":"University of Arizona","first_seen":"2026-11-25","id":"csod:arizona:26954","location":"Tucson, AZ, US","posted":"2026-09-01","reposts":1,"title":"Lateral Police Officer (Multiple Positions)"}
-{"company":"University of Arizona","employment":"part_time","first_seen":"2026-11-25","id":"csod:arizona:26957","location":"Tucson, AZ, US","posted":"2026-09-04","reposts":1,"title":"Laboratory Technician, Marine Microbiology - Duhamel Lab, Molecular and Cellular Biology (Part-Time)"}
+{"closed_at":"2026-11-25","company":"University of Arizona","employment":"part_time","first_seen":"2026-11-25","id":"csod:arizona:26957","location":"Tucson, AZ, US","posted":"2026-09-04","reposts":1,"title":"Laboratory Technician, Marine Microbiology - Duhamel Lab, Molecular and Cellular Biology (Part-Time)"}
 {"company":"University of Arizona","first_seen":"2026-11-25","id":"csod:arizona:26958","location":"Phoenix, AZ, US","posted":"2026-09-01","reposts":2,"title":"Researcher/Scientist III, Translational Cardiovascular Research Center - TCRC (Phoenix)"}
 {"company":"University of Arizona","first_seen":"2026-11-25","id":"csod:arizona:26959","location":"Tucson, AZ, US","posted":"2026-09-02","title":"Digital Access Professional Sr."}
 {"company":"University of Arizona","employment":"part_time","first_seen":"2026-11-25","id":"csod:arizona:26974","location":"Tucson, AZ, US","posted":"2026-09-03","reposts":1,"title":"Banquet Server (Part-Time) (Multiple Positions)"}
@@ -132,6 +132,7 @@
 {"company":"University of Arizona","first_seen":"2026-11-25","id":"csod:arizona:27003","location":"Tucson, AZ, US","posted":"2026-09-08","reposts":1,"title":"Roofer II (Multiple Positions)"}
 {"company":"University of Arizona","first_seen":"2026-11-25","id":"csod:arizona:27029","location":"Phoenix, AZ, US","posted":"2026-09-16","reposts":1,"title":"Clinical Resource Equity Coordinator (On Call, Nights)"}
 {"company":"University of Arizona","first_seen":"2026-11-25","id":"csod:arizona:27032","location":"Tucson, AZ, US","posted":"2026-09-11","reposts":1,"title":"Postdoctoral Research Associate, Cellular and Molecular Medicine"}
+{"company":"University of Arizona","first_seen":"2026-11-25","id":"csod:arizona:27040","location":"Tucson, AZ, US","posted":"2026-09-16","reposts":1,"title":"Legal Analyst, NRULPC"}
 {"company":"University of Arizona","first_seen":"2026-11-25","id":"csod:arizona:27041","location":"Tucson, AZ, US","posted":"2026-09-11","reposts":1,"title":"Postdoctoral Research Associate, Environmental Policy Program"}
 {"company":"University of Arizona","first_seen":"2026-11-25","id":"csod:arizona:27064","location":"Tucson, AZ, US","posted":"2026-09-23","reposts":1,"title":"Division Chief, Gynecologic Oncology - Department of Obstetrics and Gynecology"}
 {"company":"University of Arizona","first_seen":"2026-11-25","id":"csod:arizona:27067","location":"Tucson, AZ, US","posted":"2026-09-23","reposts":1,"title":"Assistant/Associate/Full Clinical Professor, Speech, Language, & Hearing Sciences (Career-Track)"}
@@ -271,7 +272,7 @@
 {"company":"University of Arizona","first_seen":"2026-11-25","id":"csod:arizona:27526","location":"Tucson, AZ, US","posted":"2026-11-03","title":"Postdoctoral Research Associate-Nearby Galaxies, Steward Observatory"}
 {"company":"University of Arizona","first_seen":"2026-11-25","id":"csod:arizona:27527","location":"Tucson, AZ, US","posted":"2026-11-02","title":"Postdoctoral Research Associate, Steward Observatory (Strittmatter Theory-Comp Fellowships)"}
 {"company":"University of Arizona","first_seen":"2026-11-25","id":"csod:arizona:27531","location":"Tucson, AZ, US","posted":"2026-11-02","title":"Postdoctoral Research Associate (Dusty Inner Regions of AGN Interferometric Imaging Fellowship)"}
-{"company":"University of Arizona","first_seen":"2026-11-25","id":"csod:arizona:27533","location":"US","posted":"2026-11-05","title":"Market Analyst, Enrollment Management"}
+{"closed_at":"2026-11-25","company":"University of Arizona","first_seen":"2026-11-25","id":"csod:arizona:27533","location":"US","posted":"2026-11-05","title":"Market Analyst, Enrollment Management"}
 {"company":"University of Arizona","first_seen":"2026-11-25","id":"csod:arizona:27535","location":"Phoenix, AZ, US","posted":"2026-11-02","reposts":1,"title":"Postdoctoral Research Associate, Department of Basic Medical Sciences (College of Medicine-Phoenix)"}
 {"company":"University of Arizona","first_seen":"2026-11-25","id":"csod:arizona:27537","location":"Tucson, AZ, US","posted":"2026-11-02","title":"Dean, College of Nursing"}
 {"company":"University of Arizona","first_seen":"2026-11-25","id":"csod:arizona:27540","location":"Willcox, AZ, US","posted":"2026-11-02","title":"Extension Professional I-FCHS (Willcox, AZ)"}
@@ -298,6 +299,7 @@
 {"company":"University of Arizona","first_seen":"2026-11-25","id":"csod:arizona:27571","location":"Tucson, AZ, US","posted":"2026-11-05","title":"Research Scientist III"}
 {"company":"University of Arizona","first_seen":"2026-11-25","id":"csod:arizona:27572","location":"Tucson, AZ, US","posted":"2026-11-05","title":"Baker I (Academic)"}
 {"company":"University of Arizona","first_seen":"2026-11-25","id":"csod:arizona:27575","location":"US","posted":"2026-11-05","reposts":1,"title":"Assistant Director, Compensation"}
+{"company":"University of Arizona","first_seen":"2026-11-25","id":"csod:arizona:27577","location":"Tucson, AZ, US","posted":"2026-11-05","title":"Laboratory Coordinator II, Physiology"}
 {"company":"University of Arizona","employment":"part_time","first_seen":"2026-11-25","id":"csod:arizona:27579","location":"Globe, AZ, US","posted":"2026-11-06","title":"After-School Program Coordinator (Part Time) (Globe, AZ)"}
 {"company":"University of Arizona","first_seen":"2026-11-25","id":"csod:arizona:27580","location":"Tucson, AZ, US","posted":"2026-11-06","title":"Limited Term Adjunct Instructor (Studio Art)"}
 {"company":"University of Arizona","employment":"contract","first_seen":"2026-11-25","id":"csod:arizona:27581","location":"Phoenix, AZ, US","posted":"2026-11-06","title":"Manager, Center for Urban Smart Agriculture (Phoenix, AZ) (Extended Temporary)"}
@@ -315,6 +317,7 @@
 {"company":"University of Arizona","first_seen":"2026-11-25","id":"csod:arizona:27607","location":"Tucson, AZ, US","posted":"2026-11-09","title":"Member Relations Specialist"}
 {"company":"University of Arizona","employment":"contract","first_seen":"2026-11-25","id":"csod:arizona:27611","location":"Tucson, AZ, US","posted":"2026-11-10","title":"Accountant (Extended Temporary)"}
 {"company":"University of Arizona","first_seen":"2026-11-25","id":"csod:arizona:27617","location":"Tucson, AZ, US","posted":"2026-11-10","title":"Library Information Associate, Access & Information Services"}
+{"company":"University of Arizona","employment":"part_time","first_seen":"2026-11-25","id":"csod:arizona:27618","location":"Tucson, AZ, US","posted":"2026-11-25","title":"Administrative Support Assistant (Part-Time)"}
 {"company":"University of Arizona","first_seen":"2026-11-25","id":"csod:arizona:27619","location":"Tucson, AZ, US","posted":"2026-11-10","title":"Postdoctoral Research Associate, Direct Imaging and Instrument Development (Steward Observatory)"}
 {"company":"University of Arizona","first_seen":"2026-11-25","id":"csod:arizona:27620","location":"Tucson, AZ, US","posted":"2026-11-10","title":"Adaptive Optics Engineer, Large Binocular Telescope Observatory"}
 {"company":"University of Arizona","first_seen":"2026-11-25","id":"csod:arizona:27625","location":"Tucson, AZ, US","posted":"2026-11-13","title":"Research Professional I, Chemistry & Biochemistry"}
@@ -342,16 +345,16 @@
 {"company":"University of Arizona","first_seen":"2026-11-25","id":"csod:arizona:27660","location":"Tucson, AZ, US","posted":"2026-11-13","reposts":1,"title":"Assistant Professor (TE)"}
 {"company":"University of Arizona","first_seen":"2026-11-25","id":"csod:arizona:27663","location":"Tucson, AZ, US","posted":"2026-11-18","title":"R&D Mechanical Engineer II, Steward Observatory"}
 {"company":"University of Arizona","first_seen":"2026-11-25","id":"csod:arizona:27664","location":"Tucson, AZ, US","posted":"2026-11-13","title":"Clinical Research Coordinator III, Department of Medicine"}
-{"company":"University of Arizona","first_seen":"2026-11-25","id":"csod:arizona:27666","location":"Tucson, AZ, US","posted":"2026-11-13","title":"req27666","url":"https://arizona.csod.com/ux/ats/careersite/5/home/requisition/27666?c=arizona"}
+{"closed_at":"2026-11-25","company":"University of Arizona","first_seen":"2026-11-25","id":"csod:arizona:27666","location":"Tucson, AZ, US","posted":"2026-11-13","title":"req27666","url":"https://arizona.csod.com/ux/ats/careersite/5/home/requisition/27666?c=arizona"}
 {"company":"University of Arizona","first_seen":"2026-11-25","id":"csod:arizona:27668","location":"Phoenix, AZ, US","posted":"2026-11-13","title":"Clinical Research Coordinator II, Internal Medicine (College of Medicine, Phoenix)(Updated)"}
 {"company":"University of Arizona","first_seen":"2026-11-25","id":"csod:arizona:27670","location":"Phoenix, AZ, US","posted":"2026-11-16","title":"Director, MD/PhD Program (Tenure Track) (MD), Department of Basic Medical Sciences (Phoenix)"}
 {"company":"University of Arizona","first_seen":"2026-11-25","id":"csod:arizona:27673","location":"Tucson, AZ, US","posted":"2026-11-18","title":"Assistant Professor (Tenure Eligible)"}
 {"company":"University of Arizona","first_seen":"2026-11-25","id":"csod:arizona:27674","location":"Tucson, AZ, US","posted":"2026-11-24","title":"R&D Software Engineer III, Steward Observatory"}
-{"company":"University of Arizona","first_seen":"2026-11-25","id":"csod:arizona:27676","location":"Tucson, AZ, US","posted":"2026-11-17","title":"Academic Adjunct Faculty – BSN Tucson"}
+{"closed_at":"2026-11-25","company":"University of Arizona","first_seen":"2026-11-25","id":"csod:arizona:27676","location":"Tucson, AZ, US","posted":"2026-11-17","title":"Academic Adjunct Faculty – BSN Tucson"}
 {"company":"University of Arizona","first_seen":"2026-11-25","id":"csod:arizona:27677","location":"Phoenix, AZ, US","posted":"2026-11-16","title":"Graduate Program Coordinator, Office of Graduate Studies (College of Medicine-Phoenix)"}
 {"company":"University of Arizona","first_seen":"2026-11-25","id":"csod:arizona:27678","location":"Tucson, AZ, US","posted":"2026-11-16","reposts":1,"title":"HVAC Mechanic II"}
 {"company":"University of Arizona","first_seen":"2026-11-25","id":"csod:arizona:27679","location":"Tucson, AZ, US","posted":"2026-11-16","title":"Admissions Counselor, Outreach"}
-{"company":"University of Arizona","first_seen":"2026-11-25","id":"csod:arizona:27680","location":"Tucson, AZ, US","posted":"2026-11-16","title":"Athletics Professional III, Athletics Facilities (Athletics)"}
+{"closed_at":"2026-11-25","company":"University of Arizona","first_seen":"2026-11-25","id":"csod:arizona:27680","location":"Tucson, AZ, US","posted":"2026-11-16","title":"Athletics Professional III, Athletics Facilities (Athletics)"}
 {"company":"University of Arizona","first_seen":"2026-11-25","id":"csod:arizona:27683","location":"Tucson, AZ, US","posted":"2026-11-16","title":"Finance & Operations Professional"}
 {"company":"University of Arizona","first_seen":"2026-11-25","id":"csod:arizona:27685","location":"Tucson, AZ, US","posted":"2026-11-16","title":"Accountant"}
 {"company":"University of Arizona","first_seen":"2026-11-25","id":"csod:arizona:27688","location":"Tucson, AZ, US","posted":"2026-11-18","title":"Marketing Specialist, Project & Events"}
@@ -359,7 +362,7 @@
 {"company":"University of Arizona","first_seen":"2026-11-25","id":"csod:arizona:27694","location":"Tucson, AZ, US","posted":"2026-11-17","title":"Laboratory Coordinator, Division of Translational Medicine"}
 {"company":"University of Arizona","first_seen":"2026-11-25","id":"csod:arizona:27695","location":"Tucson, AZ, US","posted":"2026-11-17","reposts":1,"title":"Clinical Research Coordinator I"}
 {"company":"University of Arizona","employment":"contract","first_seen":"2026-11-25","id":"csod:arizona:27698","location":"Tucson, AZ, US","posted":"2026-11-17","title":"NWS Research Scientist (Extended Temporary Employment)"}
-{"company":"University of Arizona","first_seen":"2026-11-25","id":"csod:arizona:27699","location":"Tucson, AZ, US","posted":"2026-11-17","reposts":1,"title":"Research Technician I"}
+{"closed_at":"2026-11-25","company":"University of Arizona","first_seen":"2026-11-25","id":"csod:arizona:27699","location":"Tucson, AZ, US","posted":"2026-11-17","reposts":1,"title":"Research Technician I"}
 {"company":"University of Arizona","first_seen":"2026-11-25","id":"csod:arizona:27700","location":"Tucson, AZ, US","posted":"2026-11-17","title":"Research Professional II (Aquatic Specialist - Zebrafish), Molecular and Cellular Biology"}
 {"company":"University of Arizona","first_seen":"2026-11-25","id":"csod:arizona:27702","location":"Tucson, AZ, US","posted":"2026-11-18","title":"Research Program Administration Officer II, Steward Observatory (Multiple Positions)"}
 {"company":"University of Arizona","first_seen":"2026-11-25","id":"csod:arizona:27703","location":"Tucson, AZ, US","posted":"2026-11-17","title":"Barista I (Multiple Positions)"}
@@ -405,6 +408,7 @@
 {"company":"University of Arizona","first_seen":"2026-11-25","id":"csod:arizona:27760","location":"Phoenix, AZ, US","posted":"2026-11-23","title":"Program Coordinator (Phoenix, AZ)"}
 {"company":"University of Arizona","first_seen":"2026-11-25","id":"csod:arizona:27761","location":"Tucson, AZ, US","posted":"2026-11-23","title":"Microbiology Technician III - Molecular Focus"}
 {"company":"University of Arizona","first_seen":"2026-11-25","id":"csod:arizona:27763","location":"Tucson, AZ, US","posted":"2026-11-23","reposts":1,"title":"Postdoctoral Research Associate I-II, Sarver Heart Center"}
+{"company":"University of Arizona","employment":"contract","first_seen":"2026-11-25","id":"csod:arizona:27764","location":"Tucson, AZ, US","posted":"2026-11-25","title":"Recruitment & Outreach Professional, Portuguese Flagship (Part-Time) (Temporary)"}
 {"company":"University of Arizona","first_seen":"2026-11-25","id":"csod:arizona:27765","location":"Tucson, AZ, US","posted":"2026-11-23","title":"Postdoctoral Researcher in Indigenous Governance and Policy"}
 {"company":"University of Arizona","first_seen":"2026-11-25","id":"csod:arizona:27766","location":"Tucson, AZ, US","posted":"2026-11-23","title":"Microbiology Technician II - Molecular Focus"}
 {"company":"University of Arizona","first_seen":"2026-11-25","id":"csod:arizona:27769","location":"Tucson, AZ, US","posted":"2026-11-23","reposts":2,"title":"Postdoctoral Research Associate"}
@@ -417,10 +421,17 @@
 {"company":"University of Arizona","first_seen":"2026-11-25","id":"csod:arizona:27778","location":"Tucson, AZ, US","posted":"2026-11-24","title":"Lead Coordinator, Student Engagement"}
 {"company":"University of Arizona","first_seen":"2026-11-25","id":"csod:arizona:27781","location":"Tucson, AZ, US","posted":"2026-11-24","title":"Postdoctoral Research Associate, Cancer Immunology and Tumor Microenvironment"}
 {"company":"University of Arizona","first_seen":"2026-11-25","id":"csod:arizona:27782","location":"Tucson, AZ, US","posted":"2026-11-24","reposts":1,"title":"Laboratory Coordinator I"}
+{"company":"University of Arizona","employment":"contract","first_seen":"2026-11-25","id":"csod:arizona:27784","location":"Tucson, AZ, US","posted":"2026-11-25","title":"Preservation Assistant, Special Collections (Extended Temporary)"}
+{"company":"University of Arizona","first_seen":"2026-11-25","id":"csod:arizona:27785","location":"US","posted":"2026-11-25","reposts":2,"title":"Postdoctoral Research Associate I"}
 {"company":"University of Arizona","first_seen":"2026-11-25","id":"csod:arizona:27786","location":"Tucson, AZ, US","posted":"2026-11-24","title":"Postdoctoral Research Associate, Cancer Center"}
 {"company":"University of Arizona","first_seen":"2026-11-25","id":"csod:arizona:27787","location":"Safford, AZ, US","posted":"2026-11-24","title":"Observatory Support Junior Associate, Large Binocular Telescope Observatory (Safford, AZ)"}
 {"company":"University of Arizona","employment":"contract","first_seen":"2026-11-25","id":"csod:arizona:27788","location":"Tucson, AZ, US","posted":"2026-11-24","title":"R&D Systems Engineer, Lunar & Planetary Laboratory (Temporary)"}
 {"company":"University of Arizona","first_seen":"2026-11-25","id":"csod:arizona:27790","location":"Tucson, AZ, US","posted":"2026-11-24","title":"Administrative Associate, Student Support, College of Law"}
+{"company":"University of Arizona","first_seen":"2026-11-25","id":"csod:arizona:27792","location":"Tucson, AZ, US","posted":"2026-11-25","reposts":1,"title":"Senior Director, CAIO Office and Institutes"}
+{"company":"University of Arizona","employment":"part_time","first_seen":"2026-11-25","id":"csod:arizona:27794","location":"Tucson, AZ, US","posted":"2026-11-25","reposts":1,"title":"Research Technician II (Part Time)"}
+{"company":"University of Arizona","first_seen":"2026-11-25","id":"csod:arizona:27795","location":"Tucson, AZ, US","posted":"2026-11-25","title":"Auto Mechanic, Lead"}
+{"company":"University of Arizona","first_seen":"2026-11-25","id":"csod:arizona:27800","location":"Tucson, AZ, US","posted":"2026-11-25","title":"Microbiology Section Supervisor"}
+{"company":"University of Arizona","first_seen":"2026-11-25","id":"csod:arizona:27804","location":"Tucson, AZ, US","posted":"2026-11-25","title":"Limited Term Adjunct Instructor, Audiology (Speech, Language & Hearing Sciences)"}
 {"closed_at":"2026-11-09","company":"University of Arizona","employment":"full_time","first_seen":"2026-10-09","id":"csod:arizona:4/23491","location":"United States","posted":"2026-10-29","title":"Assistant, Associate or Full Professor (Tenure Track), Translational Neurosciences (Phoenix)","url":"https://arizona.csod.com/ux/ats/careersite/4/home/requisition/23491?c=arizona"}
 {"closed_at":"2026-10-08","company":"University of Arizona","employment":"full_time","first_seen":"2026-10-04","id":"csod:arizona:4/23635","location":"United States","posted":"2026-10-05","title":"Associate or Full Professor, Economics (Tenured)","url":"https://arizona.csod.com/ux/ats/careersite/4/home/requisition/23635?c=arizona"}
 {"closed_at":"2026-09-04","company":"University of Arizona","employment":"full_time","first_seen":"2026-05-24","id":"csod:arizona:4/23983","location":"United States","posted":"2026-05-24","title":"Senior Engineer, Optical Fabrication","url":"https://arizona.csod.com/ux/ats/careersite/4/home/requisition/23983?c=arizona"}

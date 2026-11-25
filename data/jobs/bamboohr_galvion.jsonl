@@ -1,6 +1,6 @@
-{"company":"Galvion","employment":"contract","first_seen":"2026-11-08","id":"bamboohr:galvion:210","location":"Portsmouth, New Hampshire","team":"PRMF - Production - Manufacturing","title":"Manufacturing Operator (Contractor)"}
+{"closed_at":"2026-11-25","company":"Galvion","employment":"contract","first_seen":"2026-11-08","id":"bamboohr:galvion:210","location":"Portsmouth, New Hampshire","team":"PRMF - Production - Manufacturing","title":"Manufacturing Operator (Contractor)"}
 {"closed_at":"2026-11-24","company":"Galvion","first_seen":"2026-11-08","id":"bamboohr:galvion:222","location":"Newport, Vermont","team":"PLQC - Plant Operations - Quality Control","title":"Director, Quality Assurance"}
-{"company":"Galvion","first_seen":"2026-11-08","id":"bamboohr:galvion:241","location":"Portsmouth, New Hampshire","team":"PRMF - Production - Manufacturing","title":"Manufacturing Operator (Solderer)"}
+{"closed_at":"2026-11-25","company":"Galvion","first_seen":"2026-11-08","id":"bamboohr:galvion:241","location":"Portsmouth, New Hampshire","team":"PRMF - Production - Manufacturing","title":"Manufacturing Operator (Solderer)"}
 {"company":"Galvion","first_seen":"2026-11-08","id":"bamboohr:galvion:255","location":"Newport, Vermont","team":"PRMF - Production - Manufacturing","title":"Manufacturing Operator (Weekend Shift days) - Fri-Sat-Sun"}
 {"company":"Galvion","first_seen":"2026-11-08","id":"bamboohr:galvion:256","location":"Newport, Vermont","team":"PRMF - Production - Manufacturing","title":"Manufacturing Operator (Weekend Shift - Nights) Fri-Sat-Sun"}
 {"company":"Galvion","first_seen":"2026-11-08","id":"bamboohr:galvion:259","location":"Newport, Vermont","team":"PRMF - Production - Manufacturing","title":"Manufacturing Operator - First Shift (5am-3pm, Mon - Thursday) 4 day work week"}
@@ -9,14 +9,14 @@
 {"company":"Galvion","first_seen":"2026-11-08","id":"bamboohr:galvion:271","location":"Newport, Vermont","team":"PRMO - Production - Molding","title":"Newport Manufacturing Operators"}
 {"company":"Galvion","first_seen":"2026-11-08","id":"bamboohr:galvion:277","remote":true,"team":"PLMM - Plant Operations-Materials Mmgmt","title":"Sourcing Engineer"}
 {"closed_at":"2026-11-18","company":"Galvion","first_seen":"2026-11-08","id":"bamboohr:galvion:278","location":"Montréal, Quebec","team":"ADFI - Administration Finance","title":"Senior Cost Analyst / Analyste principal(e) en coûts"}
-{"company":"Galvion","first_seen":"2026-11-08","id":"bamboohr:galvion:283","location":"Newport, Vermont","team":"GLSC - Global Supply Chain","title":"Planner / Buyer III"}
+{"company":"Galvion","first_seen":"2026-11-08","id":"bamboohr:galvion:283","location":"Newport, Vermont","skills":["supply_chain"],"team":"GLSC - Global Supply Chain","title":"Supply Chain Operations Specialist"}
 {"company":"Galvion","first_seen":"2026-11-08","id":"bamboohr:galvion:284","location":"Montréal, Quebec","team":"MFEX - Manufacturing Excellence","title":"Senior Vice President, Global Operations / Vice-président(e) principal(e), Opérations globales"}
 {"company":"Galvion","first_seen":"2026-11-08","id":"bamboohr:galvion:285","location":"Portsmouth, New Hampshire","team":"MFEX - Manufacturing Excellence","title":"Senior Vice President, Global Operations"}
 {"company":"Galvion","first_seen":"2026-11-08","id":"bamboohr:galvion:286","location":"Gdańsk","team":"MFEX - Manufacturing Excellence","title":"Senior Vice President, Global Operations"}
 {"company":"Galvion","first_seen":"2026-11-08","id":"bamboohr:galvion:288","location":"Newport, Vermont","team":"PLOH - Plant Operations - Overhead","title":"Manufacturing Engineer I"}
 {"company":"Galvion","first_seen":"2026-11-09","id":"bamboohr:galvion:290","location":"Portsmouth, New Hampshire","team":"PDGT - Product Management","title":"Program Manager, Product Development"}
 {"company":"Galvion","first_seen":"2026-11-09","id":"bamboohr:galvion:291","location":"Montréal, Quebec","team":"PDGT - Product Management","title":"Senior Program Manager, Product Development / Gestionnaire principal(e) de programme, Développement de produits"}
-{"company":"Galvion","first_seen":"2026-11-14","id":"bamboohr:galvion:292","location":"Portsmouth, New Hampshire","team":"ADLG - Administration - Legal","title":"Global Trade Compliance Analyst"}
+{"company":"Galvion","first_seen":"2026-11-14","id":"bamboohr:galvion:292","remote":true,"team":"ADLG - Administration - Legal","title":"Global Trade Compliance Analyst"}
 {"company":"Galvion","first_seen":"2026-11-16","id":"bamboohr:galvion:293","location":"Montréal, Quebec","team":"GLSC - Global Supply Chain","title":"Manager, Strategic Sourcing / Gestionnaire, approvisionnement stratégique"}
 {"closed_at":"2026-11-20","company":"Galvion","first_seen":"2026-11-18","id":"bamboohr:galvion:294","location":"Portsmouth, New Hampshire","team":"ENDE - Engineering Design Engineering","title":"Senior Program Manager"}
 {"company":"Galvion","first_seen":"2026-11-19","id":"bamboohr:galvion:295","location":"Portsmouth, New Hampshire","team":"ENDE - Engineering Design Engineering","title":"Senior Program Manager"}

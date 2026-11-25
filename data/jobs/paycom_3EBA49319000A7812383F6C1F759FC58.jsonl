@@ -63,10 +63,10 @@
 {"company":"Silverton Casino","employment":"full_time","first_seen":"2026-10-29","id":"paycom:3EBA49319000A7812383F6C1F759FC58:152797","location":"Fort Worth, TX 76164","title":"Housekeeping Lead"}
 {"company":"Silverton Casino","employment":"full_time","first_seen":"2026-11-25","id":"paycom:3EBA49319000A7812383F6C1F759FC58:152815","location":"Fort Worth, TX 76164","reposts":2,"title":"Housekeeper"}
 {"company":"Silverton Casino","employment":"full_time","first_seen":"2026-10-29","id":"paycom:3EBA49319000A7812383F6C1F759FC58:152863","location":"Fort Worth, TX 76164","title":"Breakfast Host"}
-{"company":"Silverton Casino","employment":"full_time","first_seen":"2026-10-29","id":"paycom:3EBA49319000A7812383F6C1F759FC58:153032","location":"Fort Worth, TX 76164","title":"Assistant General Manager, H3 Ranch"}
-{"company":"Silverton Casino","employment":"full_time","first_seen":"2026-10-29","id":"paycom:3EBA49319000A7812383F6C1F759FC58:153045","location":"Fort Worth, TX 76164","title":"F+B Manager"}
+{"closed_at":"2026-11-25","company":"Silverton Casino","employment":"full_time","first_seen":"2026-10-29","id":"paycom:3EBA49319000A7812383F6C1F759FC58:153032","location":"Fort Worth, TX 76164","title":"Assistant General Manager, H3 Ranch"}
+{"closed_at":"2026-11-25","company":"Silverton Casino","employment":"full_time","first_seen":"2026-10-29","id":"paycom:3EBA49319000A7812383F6C1F759FC58:153045","location":"Fort Worth, TX 76164","title":"F+B Manager"}
 {"company":"Silverton Casino","employment":"full_time","first_seen":"2026-10-29","id":"paycom:3EBA49319000A7812383F6C1F759FC58:153054","location":"Fort Worth, TX 76164","title":"Engineer II"}
-{"company":"Silverton Casino","employment":"full_time","first_seen":"2026-11-25","id":"paycom:3EBA49319000A7812383F6C1F759FC58:153184","location":"Fort Worth, TX 76164","title":"Sous Chef"}
+{"closed_at":"2026-11-25","company":"Silverton Casino","employment":"full_time","first_seen":"2026-11-25","id":"paycom:3EBA49319000A7812383F6C1F759FC58:153184","location":"Fort Worth, TX 76164","title":"Sous Chef"}
 {"company":"Silverton Casino","employment":"part_time","first_seen":"2026-11-25","id":"paycom:3EBA49319000A7812383F6C1F759FC58:153573","location":"FORT WORTH, TX 76164","reposts":1,"title":"97 West Host"}
 {"company":"Silverton Casino","first_seen":"2026-11-25","id":"paycom:3EBA49319000A7812383F6C1F759FC58:153582","location":"FORT WORTH, TX 76164","title":"On-Call 97 West Host"}
 {"company":"Silverton Casino","employment":"full_time","first_seen":"2026-11-25","id":"paycom:3EBA49319000A7812383F6C1F759FC58:154078","location":"Fort Worth, TX 76164","title":"Jr. Sous Chef"}
@@ -77,5 +77,8 @@
 {"company":"Silverton Casino","employment":"full_time","first_seen":"2026-11-25","id":"paycom:3EBA49319000A7812383F6C1F759FC58:155382","location":"FORT WORTH, TX 76164","title":"Steward - AM Shift"}
 {"company":"Silverton Casino","employment":"full_time","first_seen":"2026-11-25","id":"paycom:3EBA49319000A7812383F6C1F759FC58:155797","location":"Fort Worth, TX 76164","reposts":1,"title":"Night Auditor"}
 {"company":"Silverton Casino","employment":"full_time","first_seen":"2026-11-25","id":"paycom:3EBA49319000A7812383F6C1F759FC58:156317","location":"LAS VEGAS, NV 89139","title":"Inspector"}
+{"company":"Silverton Casino","employment":"full_time","first_seen":"2026-11-25","id":"paycom:3EBA49319000A7812383F6C1F759FC58:157447","location":"Fort Worth, TX 76164","title":"F+B Manager"}
+{"company":"Silverton Casino","employment":"full_time","first_seen":"2026-11-25","id":"paycom:3EBA49319000A7812383F6C1F759FC58:157459","location":"Fort Worth, TX 76164","title":"Sous Chef"}
+{"company":"Silverton Casino","employment":"part_time","first_seen":"2026-11-25","id":"paycom:3EBA49319000A7812383F6C1F759FC58:157485","location":"FORT WORTH, TX 76164","title":"House Car Driver"}
 {"closed_at":"2026-11-25","company":"Silverton Casino","employment":"full_time","first_seen":"2026-10-01","id":"paycom:3EBA49319000A7812383F6C1F759FC58:89151","location":"United States","posted":"2024-08-21","team":"Hospitality - Hotel","title":"Guest Room Attendant"}
 {"company":"Silverton Casino","employment":"full_time","first_seen":"2026-10-01","id":"paycom:3EBA49319000A7812383F6C1F759FC58:89170","location":"FORT WORTH, TX 76164","title":"Housekeeping Houseperson - AM Shift"}

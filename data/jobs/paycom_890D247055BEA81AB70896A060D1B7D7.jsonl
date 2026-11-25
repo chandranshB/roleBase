@@ -25,4 +25,5 @@
 {"company":"Goodin Company","employment":"full_time","first_seen":"2026-10-29","id":"paycom:890D247055BEA81AB70896A060D1B7D7:270084","location":"Minneapolis Corporate - Minneapolis, MN 55411","title":"Warehouse Manager 2nd Shift"}
 {"company":"Goodin Company","employment":"full_time","first_seen":"2026-10-29","id":"paycom:890D247055BEA81AB70896A060D1B7D7:270099","location":"Fargo Branch - Fargo, ND 58102","title":"Warehouse Associate"}
 {"company":"Goodin Company","employment":"full_time","first_seen":"2026-11-25","id":"paycom:890D247055BEA81AB70896A060D1B7D7:271966","location":"Minneapolis Corporate - Minneapolis, MN 55411","title":"HVAC Hydronic Specialist"}
-{"company":"Goodin Company","first_seen":"2026-11-25","id":"paycom:890D247055BEA81AB70896A060D1B7D7:272661","location":"Eau Claire Branch - Eau Claire, WI 54703","skills":["cdl"],"title":"Warehouse Associate/Truck Driver CDL"}
+{"closed_at":"2026-11-25","company":"Goodin Company","first_seen":"2026-11-25","id":"paycom:890D247055BEA81AB70896A060D1B7D7:272661","location":"Eau Claire Branch - Eau Claire, WI 54703","skills":["cdl"],"title":"Warehouse Associate/Truck Driver CDL"}
+{"company":"Goodin Company","first_seen":"2026-11-25","id":"paycom:890D247055BEA81AB70896A060D1B7D7:273012","location":"Duluth Branch - Duluth, MN 55811","skills":["cdl"],"title":"Truck Driver/CDL"}

@@ -48,7 +48,7 @@
 {"company":"The Fortune Society","first_seen":"2026-10-01","id":"paycom:33B4B23E84A9B3F4CD16B8BC7604391F:412376","location":"Long Island City - Long Island City, NY 11101","title":"Outreach Worker"}
 {"company":"The Fortune Society","first_seen":"2026-10-01","id":"paycom:33B4B23E84A9B3F4CD16B8BC7604391F:413478","location":"Castle Gardens (West Harlem) - New York, NY 10031","title":"Peer Recovery Specialist"}
 {"company":"The Fortune Society","first_seen":"2026-11-25","id":"paycom:33B4B23E84A9B3F4CD16B8BC7604391F:413536","location":"Long Island City - Long Island City, NY 11101","title":"Social Worker"}
-{"company":"The Fortune Society","first_seen":"2026-11-25","id":"paycom:33B4B23E84A9B3F4CD16B8BC7604391F:414342","location":"Supervised Release Service Center (Bronx) - Bronx, NY 10451","title":"Social Worker"}
+{"closed_at":"2026-11-25","company":"The Fortune Society","first_seen":"2026-11-25","id":"paycom:33B4B23E84A9B3F4CD16B8BC7604391F:414342","location":"Supervised Release Service Center (Bronx) - Bronx, NY 10451","title":"Social Worker"}
 {"closed_at":"2026-10-14","company":"The Fortune Society","first_seen":"2026-10-01","id":"paycom:33B4B23E84A9B3F4CD16B8BC7604391F:420264","location":"United States","posted":"2023-04-12","title":"Case Manager, CRED"}
 {"company":"The Fortune Society","first_seen":"2026-10-01","id":"paycom:33B4B23E84A9B3F4CD16B8BC7604391F:421034","location":"Long Island City - Long Island City, NY 11101","title":"APIP Case Manager"}
 {"closed_at":"2026-11-25","company":"The Fortune Society","first_seen":"2026-06-16","id":"paycom:33B4B23E84A9B3F4CD16B8BC7604391F:422236","location":"United States","posted":"2023-04-12","title":"Peer Navigator Supervisor (Day Shift)"}
@@ -86,7 +86,7 @@
 {"closed_at":"2026-11-25","company":"The Fortune Society","first_seen":"2026-09-13","id":"paycom:33B4B23E84A9B3F4CD16B8BC7604391F:461618","location":"United States","posted":"2023-04-12","title":"Residential Aide Team Leader"}
 {"closed_at":"2026-11-25","company":"The Fortune Society","first_seen":"2026-09-13","id":"paycom:33B4B23E84A9B3F4CD16B8BC7604391F:461693","location":"United States","posted":"2023-04-12","title":"Queens County Reentry Taskforce Coordinator"}
 {"company":"The Fortune Society","first_seen":"2026-10-01","id":"paycom:33B4B23E84A9B3F4CD16B8BC7604391F:461830","location":"Long Island City - Long Island City, NY 11101","title":"Billing Analyst"}
-{"company":"The Fortune Society","first_seen":"2026-09-17","id":"paycom:33B4B23E84A9B3F4CD16B8BC7604391F:462573","location":"SRP 2 [Bronx] - Bronx, NY 10451","title":"Dual Clinic Social Worker"}
+{"closed_at":"2026-11-25","company":"The Fortune Society","first_seen":"2026-09-17","id":"paycom:33B4B23E84A9B3F4CD16B8BC7604391F:462573","location":"SRP 2 [Bronx] - Bronx, NY 10451","title":"Dual Clinic Social Worker"}
 {"company":"The Fortune Society","first_seen":"2026-11-25","id":"paycom:33B4B23E84A9B3F4CD16B8BC7604391F:463919","location":"Queens County Court - Kew Gardens, NY 11415","title":"Court Advocate"}
 {"company":"The Fortune Society","first_seen":"2026-10-01","id":"paycom:33B4B23E84A9B3F4CD16B8BC7604391F:463949","location":"Queens County Court - Kew Gardens, NY 11415","title":"Court Advocate Report Writer"}
 {"closed_at":"2026-11-25","company":"The Fortune Society","employment":"full_time","first_seen":"2026-10-04","id":"paycom:33B4B23E84A9B3F4CD16B8BC7604391F:464348","location":"United States","posted":"2023-04-12","title":"Court Advocate - Night Shift"}
@@ -134,3 +134,4 @@
 {"company":"The Fortune Society","first_seen":"2026-11-25","id":"paycom:33B4B23E84A9B3F4CD16B8BC7604391F:483257","location":"Freedom House - Hendrix  - Brooklyn, NY 11207-3611","title":"Senior Case Manager"}
 {"company":"The Fortune Society","first_seen":"2026-11-25","id":"paycom:33B4B23E84A9B3F4CD16B8BC7604391F:483468","location":"Academy (West Harlem) - New York, NY 10031","title":"Residential Aide Shift Supervisor"}
 {"company":"The Fortune Society","first_seen":"2026-11-25","id":"paycom:33B4B23E84A9B3F4CD16B8BC7604391F:483539","location":"Long Island City - Long Island City, NY 11101","title":"Director of ATI and Family Services"}
+{"company":"The Fortune Society","first_seen":"2026-11-25","id":"paycom:33B4B23E84A9B3F4CD16B8BC7604391F:484501","location":"NY Correctional Facilities Rikers Island - East Elmhurst, NY 11370","title":"Operations Supervisor"}

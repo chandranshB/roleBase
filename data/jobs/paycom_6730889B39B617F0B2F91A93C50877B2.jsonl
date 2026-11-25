@@ -495,7 +495,7 @@
 {"company":"City Electric Supply","first_seen":"2026-10-29","id":"paycom:6730889B39B617F0B2F91A93C50877B2:613323","location":"Wellington Branch - Wellington, FL 33414","title":"SALES REPRESENTATIVE - BRANCH (49695)"}
 {"company":"City Electric Supply","first_seen":"2026-10-29","id":"paycom:6730889B39B617F0B2F91A93C50877B2:613331","location":"High Point NC Branch - High Point, NC 27260","title":"COUNTER SALES WAREHOUSE (49696)"}
 {"company":"City Electric Supply","first_seen":"2026-10-29","id":"paycom:6730889B39B617F0B2F91A93C50877B2:613345","location":"New Berlin Branch - New Berlin, WI 53151","title":"VAN DRIVER WAREHOUSE (49698)"}
-{"company":"City Electric Supply","first_seen":"2026-10-29","id":"paycom:6730889B39B617F0B2F91A93C50877B2:613354","location":"Forney Branch - Forney, TX 75126","title":"VAN DRIVER WAREHOUSE (49699)"}
+{"closed_at":"2026-11-25","company":"City Electric Supply","first_seen":"2026-10-29","id":"paycom:6730889B39B617F0B2F91A93C50877B2:613354","location":"Forney Branch - Forney, TX 75126","title":"VAN DRIVER WAREHOUSE (49699)"}
 {"company":"City Electric Supply","first_seen":"2026-10-29","id":"paycom:6730889B39B617F0B2F91A93C50877B2:613394","location":"Fort Myers Branch - Fort Myers, FL 33966","title":"COUNTER SALES WAREHOUSE (49700)"}
 {"company":"City Electric Supply","first_seen":"2026-11-25","id":"paycom:6730889B39B617F0B2F91A93C50877B2:613526","location":"Chula Vista Branch - Chula Vista, CA 91911","title":"VAN DRIVER WAREHOUSE (49713)"}
 {"company":"City Electric Supply","first_seen":"2026-11-25","id":"paycom:6730889B39B617F0B2F91A93C50877B2:613614","location":"Cherry Hill Branch - Cherry Hill, NJ 08003","title":"VAN DRIVER WAREHOUSE (49715)"}
@@ -525,8 +525,8 @@
 {"company":"City Electric Supply","first_seen":"2026-11-25","id":"paycom:6730889B39B617F0B2F91A93C50877B2:615071","location":"Michigan City Branch - Michigan City, IN 46360","title":"VAN DRIVER WAREHOUSE (49803)"}
 {"company":"City Electric Supply","first_seen":"2026-11-25","id":"paycom:6730889B39B617F0B2F91A93C50877B2:615517","location":"Antioch Branch - Nashville, TN 37211","title":"VAN DRIVER WAREHOUSE (49826)"}
 {"company":"City Electric Supply","first_seen":"2026-11-25","id":"paycom:6730889B39B617F0B2F91A93C50877B2:615524","location":"Antioch Branch - Nashville, TN 37211","title":"COUNTER SALES WAREHOUSE (49827)"}
-{"company":"City Electric Supply","first_seen":"2026-11-25","id":"paycom:6730889B39B617F0B2F91A93C50877B2:615773","location":"Peoria Branch - Peoria, AZ 85345","title":"PROJECT COORDINATOR (49810)"}
-{"company":"City Electric Supply","first_seen":"2026-11-25","id":"paycom:6730889B39B617F0B2F91A93C50877B2:615780","location":"Broomfield Branch - Broomfield, CO 80020","title":"VAN DRIVER WAREHOUSE (49839)"}
+{"closed_at":"2026-11-25","company":"City Electric Supply","first_seen":"2026-11-25","id":"paycom:6730889B39B617F0B2F91A93C50877B2:615773","location":"Peoria Branch - Peoria, AZ 85345","title":"PROJECT COORDINATOR (49810)"}
+{"closed_at":"2026-11-25","company":"City Electric Supply","first_seen":"2026-11-25","id":"paycom:6730889B39B617F0B2F91A93C50877B2:615780","location":"Broomfield Branch - Broomfield, CO 80020","title":"VAN DRIVER WAREHOUSE (49839)"}
 {"company":"City Electric Supply","first_seen":"2026-11-25","id":"paycom:6730889B39B617F0B2F91A93C50877B2:615881","location":"Winter Haven Branch - Winter Haven, FL 33880","title":"COUNTER SALES WAREHOUSE (49828)"}
 {"company":"City Electric Supply","first_seen":"2026-11-25","id":"paycom:6730889B39B617F0B2F91A93C50877B2:615917","location":"Tampa East Branch - Tampa, FL 33619","title":"VAN DRIVER WAREHOUSE (49856)"}
 {"company":"City Electric Supply","first_seen":"2026-11-25","id":"paycom:6730889B39B617F0B2F91A93C50877B2:616424","location":"Atlanta Projects Branch - Lawrenceville, GA 30043","title":"COUNTER SALES WAREHOUSE (49845)"}
@@ -569,7 +569,7 @@
 {"company":"City Electric Supply","first_seen":"2026-11-25","id":"paycom:6730889B39B617F0B2F91A93C50877B2:619880","location":"NC DIV Accounting Branch - Greensboro, NC 27405","remote":true,"title":"CREDIT ASSISTANT (50055)"}
 {"company":"City Electric Supply","first_seen":"2026-11-25","id":"paycom:6730889B39B617F0B2F91A93C50877B2:620318","location":"Steamboat Springs Branch - Steamboat Springs, CO 80487","title":"VAN DRIVER WAREHOUSE (50085)"}
 {"company":"City Electric Supply","first_seen":"2026-11-25","id":"paycom:6730889B39B617F0B2F91A93C50877B2:620326","location":"Tifton Branch - Tifton, GA 31794","title":"COUNTER SALES WAREHOUSE (50082)"}
-{"company":"City Electric Supply","first_seen":"2026-11-25","id":"paycom:6730889B39B617F0B2F91A93C50877B2:620445","location":"Menomonee Falls Branch - Menomonee Falls, WI 53051","title":"SALES REPRESENTATIVE - BRANCH (50094)"}
+{"closed_at":"2026-11-25","company":"City Electric Supply","first_seen":"2026-11-25","id":"paycom:6730889B39B617F0B2F91A93C50877B2:620445","location":"Menomonee Falls Branch - Menomonee Falls, WI 53051","title":"SALES REPRESENTATIVE - BRANCH (50094)"}
 {"company":"City Electric Supply","first_seen":"2026-11-25","id":"paycom:6730889B39B617F0B2F91A93C50877B2:620459","location":"Beltsville Branch - Beltsville, MD 20705","title":"COUNTER SALES WAREHOUSE (50098)"}
 {"company":"City Electric Supply","employment":"full_time","first_seen":"2026-11-25","id":"paycom:6730889B39B617F0B2F91A93C50877B2:620487","location":"Dover Branch - Dover, DE 19901","title":"BRANCH MANAGER (50095)"}
 {"company":"City Electric Supply","first_seen":"2026-11-25","id":"paycom:6730889B39B617F0B2F91A93C50877B2:620495","location":"Dover Branch - Dover, DE 19901","title":"COUNTER SALES WAREHOUSE (50096)"}
@@ -578,4 +578,6 @@
 {"company":"City Electric Supply","first_seen":"2026-11-25","id":"paycom:6730889B39B617F0B2F91A93C50877B2:620715","location":"Martinsburg Branch - Martinsburg, WV 25405","title":"VAN DRIVER WAREHOUSE (50073)"}
 {"company":"City Electric Supply","first_seen":"2026-11-25","id":"paycom:6730889B39B617F0B2F91A93C50877B2:620774","location":"St Cloud Branch - St Cloud, FL 34771","title":"VAN DRIVER WAREHOUSE (50056)"}
 {"company":"City Electric Supply","first_seen":"2026-11-25","id":"paycom:6730889B39B617F0B2F91A93C50877B2:620782","location":"Wildwood Branch - Wildwood, FL 34785","title":"VAN DRIVER WAREHOUSE (50121)"}
+{"company":"City Electric Supply","first_seen":"2026-11-25","id":"paycom:6730889B39B617F0B2F91A93C50877B2:620967","location":"Forest City Branch - Forest City, NC 28043","title":"VAN DRIVER WAREHOUSE (50092)"}
+{"company":"City Electric Supply","first_seen":"2026-11-25","id":"paycom:6730889B39B617F0B2F91A93C50877B2:620985","location":"Biltmore Branch - Asheville, NC 28803","title":"COUNTER SALES WAREHOUSE (50124)"}
 {"company":"City Electric Supply","first_seen":"2026-10-16","id":"paycom:6730889B39B617F0B2F91A93C50877B2:97714","location":"Youngsville Branch - Youngsville, NC 27596","title":"VAN DRIVER WAREHOUSE (29566)"}

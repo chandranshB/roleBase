@@ -13,7 +13,7 @@
 {"company":"阶跃星辰","first_seen":"2026-11-09","id":"moka:step/94904:04c20473-fe36-408e-a4b4-f3adc3320a59","location":"徐汇区","posted":"2026-10-27","skills":["javascript"],"title":"图像与视频数据专家"}
 {"company":"阶跃星辰","first_seen":"2026-11-09","id":"moka:step/94904:058bbe5f-fe7f-4c07-83e9-f44a195c40cb","location":"徐汇区","posted":"2024-12-11","title":"大模型售前解决方案"}
 {"company":"阶跃星辰","first_seen":"2026-11-09","id":"moka:step/94904:05a06ac3-a8c8-4f43-b7c0-96b76c70bddc","location":"徐汇区","posted":"2026-09-29","skills":["sql"],"title":"增长运营"}
-{"company":"阶跃星辰","first_seen":"2026-11-09","id":"moka:step/94904:05a5670b-dbca-4166-aef9-e182f836b881","location":"徐汇区","posted":"2026-10-09","title":"AI搜索评估产品经理"}
+{"closed_at":"2026-11-25","company":"阶跃星辰","first_seen":"2026-11-09","id":"moka:step/94904:05a5670b-dbca-4166-aef9-e182f836b881","location":"徐汇区","posted":"2026-10-09","title":"AI搜索评估产品经理"}
 {"company":"阶跃星辰","first_seen":"2026-11-09","id":"moka:step/94904:05c59d22-ed60-4f37-9933-a0825762ae3e","location":"南山区, 徐汇区","posted":"2026-09-22","skills":["c++","linux"],"title":"RTOS 软件开发工程师"}
 {"company":"阶跃星辰","first_seen":"2026-11-23","id":"moka:step/94904:0673c082-1966-4eb0-b448-6c1913f99789","location":"徐汇区","posted":"2026-11-23","title":"商业化策略运营"}
 {"company":"阶跃星辰","first_seen":"2026-11-09","id":"moka:step/94904:06ab594b-9c0a-4596-99da-413f15388b97","location":"徐汇区","posted":"2026-09-23","title":"音频SE"}
@@ -39,6 +39,7 @@
 {"company":"阶跃星辰","first_seen":"2026-11-09","id":"moka:step/94904:11a6bd24-50ca-494d-af18-47609cabc75c","location":"徐汇区","posted":"2026-07-08","title":"音频软件工程师"}
 {"company":"阶跃星辰","first_seen":"2026-11-09","id":"moka:step/94904:11cae4ff-5dac-47bb-9905-6957fefc4e45","location":"海淀区, 徐汇区","posted":"2026-09-15","skills":["crm"],"title":"商业化增长BP岗"}
 {"company":"阶跃星辰","first_seen":"2026-11-10","id":"moka:step/94904:11dc8f20-ebb7-4c36-99ce-70a023cfc1c2","location":"徐汇区","posted":"2026-11-10","title":"Social Campaign"}
+{"company":"阶跃星辰","first_seen":"2026-11-25","id":"moka:step/94904:11f8c329-d0b7-485c-a4fc-d00922a0c241","location":"徐汇区","posted":"2026-11-25","title":"媒介策略经理"}
 {"company":"阶跃星辰","first_seen":"2026-11-09","id":"moka:step/94904:13e0c159-fbae-4527-8ba4-d2869ba31300","location":"海淀区, 徐汇区","posted":"2026-10-27","title":"AI战略生态BD"}
 {"company":"阶跃星辰","first_seen":"2026-11-09","id":"moka:step/94904:14402629-ae48-41f2-851c-6b518b9cc721","location":"徐汇区, 海淀区","posted":"2026-03-09","skills":["llm"],"title":"API业务增长"}
 {"company":"阶跃星辰","first_seen":"2026-11-09","id":"moka:step/94904:15d579d6-a113-413c-b992-a3325fdc2a5c","location":"徐汇区","posted":"2026-10-27","skills":["java","llm"],"title":"MaaS平台架构师（模型服务平台）"}
@@ -179,6 +180,7 @@
 {"company":"阶跃星辰","first_seen":"2026-11-09","id":"moka:step/94904:7d39db55-7da3-49e0-a1a8-2e31e6f5f75d","location":"徐汇区, 南山区","posted":"2026-10-14","skills":["linux"],"title":"底软/驱动开发工程师（BSP)"}
 {"company":"阶跃星辰","first_seen":"2026-11-09","id":"moka:step/94904:7d7fd502-8c8d-4301-9515-6f5edd40a10e","location":"徐汇区","posted":"2026-08-25","skills":["c++","linux","redis","mysql","kafka"],"title":"音视频传输研发工程师(RTC链路优化方向)"}
 {"company":"阶跃星辰","first_seen":"2026-11-09","id":"moka:step/94904:7d854195-6f72-4ed9-9ad8-30c7fbd6cc20","location":"南山区, 徐汇区","posted":"2026-08-14","skills":["linux","llm","c++"],"title":"功耗工程师"}
+{"company":"阶跃星辰","first_seen":"2026-11-25","id":"moka:step/94904:7ecb18cc-ecda-40af-bc74-b8f0e25a530a","location":"海淀区","posted":"2026-11-26","skills":["typescript","ci/cd","javascript","react","vue","git","node.js"],"title":"前端工程师（AI 大模型训练数据平台）"}
 {"company":"阶跃星辰","first_seen":"2026-11-09","id":"moka:step/94904:7f00dd6a-4a2e-4ebe-bd4c-712a68682b07","location":"海淀区, 徐汇区","posted":"2024-12-23","title":"AIGC算法工程师/研究员"}
 {"company":"阶跃星辰","first_seen":"2026-11-09","id":"moka:step/94904:7f0ffaac-f55c-4630-a6c3-2872145ad16a","location":"徐汇区","posted":"2026-09-01","title":"动画设计师"}
 {"company":"阶跃星辰","first_seen":"2026-11-09","id":"moka:step/94904:7f19af6b-18fd-4ba6-82d3-ed84fab8a791","location":"徐汇区","posted":"2026-06-08","skills":["pytorch","tensorflow"],"title":"训推方向研发实习生"}
