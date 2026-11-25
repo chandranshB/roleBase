@@ -1,41 +1,182 @@
 {"closed_at":"2026-10-18","company":"ACES","first_seen":"2026-10-01","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:373277","location":"United States","posted":"2025-05-15","title":"BCBA"}
-{"closed_at":"2026-11-09","company":"ACES","first_seen":"2026-10-27","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:373575","location":"United States","posted":"2025-05-15","title":"BCaBA"}
-{"closed_at":"2026-11-09","company":"ACES","first_seen":"2026-10-27","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:395883","location":"United States","posted":"2025-05-15","title":"BCBA"}
-{"closed_at":"2026-11-09","company":"ACES","first_seen":"2026-10-27","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:486019","location":"United States","posted":"2025-05-15","title":"Clinical Manager, Treatment Initiation"}
-{"closed_at":"2026-11-09","company":"ACES","first_seen":"2026-10-27","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:497083","location":"United States","posted":"2025-05-15","title":"Entry Level Behavior Technician"}
-{"closed_at":"2026-10-16","company":"ACES","first_seen":"2026-10-01","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:497896","location":"United States","posted":"2025-05-15","title":"Entry Level Behavior Technician"}
-{"closed_at":"2026-09-08","company":"ACES","first_seen":"2026-05-29","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:498028","location":"United States","posted":"2025-05-15","title":"Entry Level Behavior Technician"}
+{"company":"ACES","first_seen":"2026-10-27","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:373575","location":"Bartlesville, OK 74003","pay":[75000,85000,"USD"],"title":"BCaBA"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:388548","location":"Bakersfield, CA 93301","pay":[85000,100000,"USD"],"reposts":3,"title":"Clinical Manager, Quality Assurance"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:395818","location":"San Bruno, CA 94066","pay":[90000,110000,"USD"],"reposts":2,"title":"BCBA"}
+{"company":"ACES","first_seen":"2026-10-27","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:395883","location":"Bartlesville, OK 74003","pay":[90000,105000,"USD"],"title":"BCBA"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:411140","location":"Avondale, AZ 85392","pay":[90000,110000,"USD"],"reposts":2,"title":"BCBA"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:411653","location":"Owasso, OK 74055","pay":[90000,105000,"USD"],"reposts":2,"title":"BCBA"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:413636","location":"Phoenix, AZ 85014","pay":[90000,110000,"USD"],"reposts":2,"title":"BCBA"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:416364","location":"Glendale, AZ 85306","pay":[90000,110000,"USD"],"reposts":2,"title":"BCBA"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:418342","location":"Phoenix, AZ 85027","pay":[90000,110000,"USD"],"reposts":2,"title":"BCBA"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:431088","location":"Lakewood, WA 98499-2731","pay":[85000,105000,"USD"],"reposts":2,"title":"BCBA"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:445866","location":"El Paso, TX 79912","pay":[85000,105000,"USD"],"reposts":2,"title":"BCBA"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:447257","location":"El Paso, TX 79912","pay":[90000,110000,"USD"],"reposts":3,"title":"Clinical Manager, Quality Assurance"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:482452","location":"New Bern, NC 28562","pay":[90000,105000,"USD"],"reposts":2,"title":"BCBA"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:482516","location":"New Bern, NC 28562","pay":[70000,85000,"USD"],"reposts":1,"title":"BCaBA"}
+{"company":"ACES","first_seen":"2026-10-27","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:486019","location":"Phoenix, AZ 85027","pay":[95000,115000,"USD"],"title":"Clinical Manager, Treatment Initiation"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:491378","location":"Colorado Springs, CO 80906","pay":[85000,100000,"USD"],"reposts":2,"title":"BCBA"}
+{"company":"ACES","first_seen":"2026-10-27","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:497083","location":"Bakersfield, CA 93301","title":"Entry Level Behavior Technician"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:497125","location":"Elk Grove, CA 95824","reposts":3,"title":"Entry Level Behavior Technician"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:497147","location":"avondale, AZ 85392","reposts":3,"title":"Entry Level Behavior Technician"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:497163","location":"Fairfield, CA 94533","reposts":3,"title":"Entry Level Behavior Technician"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:497225","location":"Chandler, AZ 85224","reposts":3,"title":"Entry Level Behavior Technician"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:497315","location":"Greenville, NC 27858","reposts":3,"title":"Entry Level Behavior Technician"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:497455","location":"New Bern, NC 28562","reposts":3,"title":"Entry Level Behavior Technician"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:497504","location":"Norman, OK 73069","reposts":3,"title":"Entry Level Behavior Technician"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:497548","location":"Tustin, CA 92780","reposts":3,"title":"Entry Level Behavior Technician"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:497565","location":"Culver City, CA 90066","reposts":3,"title":"Entry Level Behavior Technician"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:497694","location":"Garden Grove, CA 92840","reposts":3,"title":"Entry Level Behavior Technician"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:497709","location":"Lake Forest, CA 92630","reposts":3,"title":"Entry Level Behavior Technician"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:497721","location":"Long Beach, CA 90807","reposts":3,"title":"Entry Level Behavior Technician"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:497766","location":"Torrance, CA 90505","reposts":3,"title":"Entry Level Behavior Technician"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:497844","location":"Fresno, CA 93720","reposts":3,"title":"Entry Level Behavior Technician"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:497858","location":"Modesto, CA 95355","reposts":3,"title":"Entry Level Behavior Technician"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:497880","location":"Petaluma, CA 94954","reposts":3,"title":"Entry Level Behavior Technician"}
+{"company":"ACES","first_seen":"2026-10-01","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:497896","location":"CA 95843","title":"Entry Level Behavior Technician"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:497910","location":"sacramento, CA 95816","reposts":3,"title":"Entry Level Behavior Technician"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:497923","location":"Stockton, CA 95207","reposts":3,"title":"Entry Level Behavior Technician"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:497936","location":"Santa Rosa, CA 95401","reposts":3,"title":"Entry Level Behavior Technician"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:497950","location":"Tracy, CA 95376","reposts":3,"title":"Entry Level Behavior Technician"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:498012","location":"Oceanside, CA 92003","reposts":3,"title":"Entry Level Behavior Technician"}
+{"company":"ACES","first_seen":"2026-05-29","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:498028","location":"Chula Vista, CA 91910","title":"Entry Level Behavior Technician"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:498044","location":"El Cajon, CA 92020","reposts":3,"title":"Entry Level Behavior Technician"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:498059","location":"Otay Ranch, CA 91913","reposts":3,"title":"Entry Level Behavior Technician"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:498072","location":"CA 92064","reposts":3,"title":"Entry Level Behavior Technician"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:498080","location":"San Diego, CA 92108","reposts":3,"title":"Entry Level Behavior Technician"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:498123","location":"Owasso, OK 74055","reposts":3,"title":"Entry Level Behavior Technician"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:498656","location":"Honolulu, HI 96841","reposts":3,"title":"Entry Level Behavior Technician"}
 {"closed_at":"2026-08-29","company":"ACES","first_seen":"2026-05-29","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:498781","location":"United States","posted":"2025-05-15","title":"SV BCBA CV"}
-{"closed_at":"2026-11-09","company":"ACES","first_seen":"2026-10-27","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:498903","location":"United States","posted":"2025-05-15","title":"School Behavior Technician"}
+{"company":"ACES","first_seen":"2026-10-27","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:498903","location":"San Diego, CA 92103","title":"School Behavior Technician"}
 {"closed_at":"2026-10-16","company":"ACES","first_seen":"2026-10-01","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:499163","location":"United States","posted":"2025-05-15","title":"Clinical Manager, Treatment Initiation"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:500009","location":"Concord, CA 94519","reposts":3,"title":"Entry Level Behavior Technician"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:500016","location":"Brentwood, CA 94513","reposts":3,"title":"Entry Level Behavior Technician"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:500027","location":"Dublin, CA 94568","reposts":3,"title":"Entry Level Behavior Technician"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:500145","location":"CA 94086","reposts":3,"title":"Entry Level Behavior Technician"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:500164","location":"Newark, CA 94560","reposts":3,"title":"Entry Level Behavior Technician"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:500180","location":"Daly City, CA 94014","reposts":3,"title":"Entry Level Behavior Technician"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:500214","location":"San Jose, CA 95126","reposts":3,"title":"Entry Level Behavior Technician"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:501149","location":"Tulsa, OK 74136","pay":[90000,105000,"USD"],"remote":true,"reposts":2,"title":"BCBA"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:501669","location":"Phoenix, AZ 85044","reposts":3,"title":"Entry Level Behavior Technician"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:501689","location":"Glendale, AZ 85306","reposts":3,"title":"Entry Level Behavior Technician"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:501742","location":"Chandler, AZ 85286","reposts":3,"title":"Entry Level Behavior Technician"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:501763","location":"Phoenix, AZ 85027","reposts":3,"title":"Entry Level Behavior Technician"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:501781","location":"Gilbert, AZ 85296","reposts":3,"title":"Entry Level Behavior Technician"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:501816","location":"Mesa, AZ 85206","reposts":3,"title":"Entry Level Behavior Technician"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:501844","location":"Phoenix, AZ 85014","reposts":3,"title":"Entry Level Behavior Technician"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:501863","location":"Surprise, AZ 85335","reposts":3,"title":"Entry Level Behavior Technician"}
 {"closed_at":"2026-09-05","company":"ACES","first_seen":"2026-06-04","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:502162","location":"United States","posted":"2025-05-15","title":"Clinical Manager, Quality Assurance"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:514970","location":"Ontario, CA 91764","pay":[90000,105000,"USD"],"reposts":2,"title":"BCBA"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:517105","location":"Corona, CA 92879","pay":[90000,105000,"USD"],"reposts":2,"title":"BCBA"}
 {"closed_at":"2026-09-10","company":"ACES","first_seen":"2026-07-01","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:517109","location":"United States","posted":"2025-05-15","title":"Associate Clinical Director"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:517457","location":"Katy, TX 77494","pay":[85000,105000,"USD"],"reposts":2,"title":"BCBA"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:517749","location":"Hacienda Heights, CA 91745","pay":[90000,105000,"USD"],"reposts":2,"title":"BCBA"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:517768","location":"Gilbert, AZ 85296","pay":[90000,110000,"USD"],"reposts":2,"title":"BCBA"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:517783","location":"Queen Creek, AZ 85286","pay":[90000,110000,"USD"],"reposts":2,"title":"BCBA"}
 {"closed_at":"2026-09-04","company":"ACES","first_seen":"2026-07-02","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:517811","location":"United States","posted":"2025-05-15","title":"SV BCBA WCA (External)"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:519166","location":"Norman, OK 73069","pay":[75000,85000,"USD"],"reposts":1,"title":"BCaBA"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:519317","location":"Tulsa, OK 74136","pay":[75000,85000,"USD"],"reposts":1,"title":"BCaBA"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:520823","location":"Long Beach, CA 90807","pay":[90000,102000,"USD"],"reposts":2,"title":"BCBA"}
 {"closed_at":"2026-08-29","company":"ACES","first_seen":"2026-07-21","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:524087","location":"United States","posted":"2025-05-15","title":"SV WCA MS"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:524210","location":"Phoenix, AZ 85014","pay":[95000,115000,"USD"],"reposts":2,"title":"Clinical Manager, Treatment Initiation"}
 {"closed_at":"2026-09-02","company":"ACES","first_seen":"2026-07-23","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:525350","location":"United States","posted":"2025-05-15","title":"Clinical Director"}
-{"closed_at":"2026-08-26","company":"ACES","first_seen":"2026-07-28","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:526728","location":"United States","posted":"2025-05-15","title":"Clinic Operations Manager - Ontario"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:527281","location":"Chandler, AZ 85286","pay":[117000,122000,"USD"],"reposts":2,"title":"Clinical Director"}
 {"closed_at":"2026-10-08","company":"ACES","first_seen":"2026-10-01","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:527416","location":"United States","posted":"2025-05-15","title":"Clinical Supervisor (MS Required)"}
-{"closed_at":"2026-11-09","company":"ACES","first_seen":"2026-10-27","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:527570","location":"United States","posted":"2025-05-15","title":"Clinical Manager, Quality Assurance"}
-{"closed_at":"2026-11-09","company":"ACES","first_seen":"2026-10-27","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:530266","location":"United States","posted":"2025-05-15","title":"Clinical Supervisor (Master's Required)"}
+{"company":"ACES","first_seen":"2026-10-27","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:527570","location":"Tracy, CA 95376","pay":[88000,100000,"USD"],"title":"Clinical Manager, Quality Assurance"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:529040","location":"CA 95046","reposts":3,"title":"Entry Level Behavior Technician"}
+{"company":"ACES","first_seen":"2026-10-27","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:530266","location":"Bakersfield, CA 93301","pay":[70000,75000,"USD"],"title":"Clinical Supervisor (Master's Required)"}
 {"closed_at":"2026-09-10","company":"ACES","first_seen":"2026-08-11","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:530288","location":"United States","posted":"2025-05-15","title":"Senior Clinical Director"}
-{"closed_at":"2026-08-26","company":"ACES","first_seen":"2026-08-11","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:530472","location":"United States","posted":"2025-05-15","title":"Clinical Supervisor (MS Required)"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:530330","location":"Garden Grove, CA 92840","pay":[90000,102000,"USD"],"reposts":2,"title":"BCBA"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:530349","location":"Katy, TX 77450","pay":[85000,105000,"USD"],"reposts":2,"title":"BCBA"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:530351","location":"Torrance, CA 90505","pay":[90000,102000,"USD"],"reposts":2,"title":"BCBA"}
 {"closed_at":"2026-09-04","company":"ACES","first_seen":"2026-08-15","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:531993","location":"United States","posted":"2025-05-15","title":"SV BCBA BW (External)"}
 {"closed_at":"2026-09-04","company":"ACES","first_seen":"2026-08-21","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:533419","location":"United States","posted":"2025-05-15","title":"Clinical Supervisor"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:533472","location":"El Cajon, CA 92020","pay":[90000,102000,"USD"],"reposts":2,"title":"BCBA"}
 {"closed_at":"2026-10-08","company":"ACES","first_seen":"2026-09-02","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:536681","location":"United States","posted":"2025-05-15","title":"Clinical Manager, Quality Assurance"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:538230","location":"Santa Rosa, CA 95401","pay":[93000,110000,"USD"],"reposts":2,"title":"Clinical Manager, Treatment Initiation"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:538234","location":"Santa Rosa, CA 95401","pay":[93000,110000,"USD"],"reposts":3,"title":"Clinical Manager, Quality Assurance"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:538240","location":"Bakersfield, CA 93301","pay":[85000,100000,"USD"],"reposts":2,"title":"BCBA"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:538463","location":"San Jose, CA 95112","pay":[90000,110000,"USD"],"reposts":2,"title":"BCBA"}
 {"closed_at":"2026-10-08","company":"ACES","first_seen":"2026-09-04","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:538479","location":"United States","posted":"2025-05-15","title":"Clinical Supervisor"}
 {"closed_at":"2026-10-18","company":"ACES","first_seen":"2026-09-13","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:539828","location":"United States","posted":"2025-05-15","remote":true,"title":"Human Resources Manager"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:541042","location":"Owasso, OK 74055","pay":[75000,85000,"USD"],"reposts":1,"title":"BCaBA"}
 {"closed_at":"2026-11-09","company":"ACES","first_seen":"2026-10-27","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:541898","location":"United States","posted":"2025-05-15","title":"Clinic Operations Manager - Carlsbad"}
 {"closed_at":"2026-11-09","company":"ACES","first_seen":"2026-10-27","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:542257","location":"United States","posted":"2025-05-15","title":"Clinic Operations Manager - Pearl Ridge"}
-{"closed_at":"2026-11-09","company":"ACES","first_seen":"2026-10-27","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:543071","location":"United States","posted":"2025-05-15","title":"Senior Clinical Director"}
-{"closed_at":"2026-11-09","company":"ACES","first_seen":"2026-10-27","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:544160","location":"United States","posted":"2025-05-15","remote":true,"title":"Director of Market Expansion"}
+{"company":"ACES","first_seen":"2026-10-27","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:543071","location":"Chandler, AZ 85286","pay":[119000,125000,"USD"],"title":"Senior Clinical Director"}
+{"company":"ACES","first_seen":"2026-10-27","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:544160","location":"San Diego, CA 92163","pay":[140000,150000,"USD"],"remote":true,"title":"Director of Market Expansion"}
 {"closed_at":"2026-10-10","company":"ACES","first_seen":"2026-10-04","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:545023","location":"United States","posted":"2025-05-15","title":"Behavior Technician (MCK)"}
-{"closed_at":"2026-11-09","company":"ACES","first_seen":"2026-10-27","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:545801","location":"United States","posted":"2025-05-15","title":"Clinical Supervisor (MS Required)"}
+{"company":"ACES","first_seen":"2026-10-27","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:545801","location":"Stockton, CA 95207","title":"Clinical Supervisor (MS Required)"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:546163","location":"Modesto, CA 95355","pay":[88000,100000,"USD"],"reposts":3,"title":"Clinical Manager, Quality Assurance"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:546168","location":"Modesto, CA 95355","reposts":3,"title":"Clinical Supervisor (MS Required)"}
 {"closed_at":"2026-11-09","company":"ACES","first_seen":"2026-10-27","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:546188","location":"United States","posted":"2025-05-15","title":"Clinic Operations Manager"}
-{"closed_at":"2026-11-09","company":"ACES","first_seen":"2026-10-27","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:547039","location":"United States","posted":"2025-05-15","title":"Clinic Operations Manager - Centennial"}
-{"closed_at":"2026-11-09","company":"ACES","first_seen":"2026-10-27","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:547189","location":"United States","posted":"2025-05-15","title":"Senior Director, Real Estate & Development"}
-{"closed_at":"2026-11-09","company":"ACES","first_seen":"2026-10-27","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:548327","location":"United States","posted":"2025-05-15","title":"Behavior Technician (AUS)"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:546235","location":"Hayward, CA 94545","pay":[90000,105000,"USD"],"reposts":2,"title":"BCBA"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:546239","location":"Norman, OK 73069","pay":[90000,105000,"USD"],"reposts":2,"title":"BCBA"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:546638","location":"Tracy, CA 95376","reposts":3,"title":"Clinical Supervisor (MS Required)"}
+{"company":"ACES","first_seen":"2026-10-27","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:547039","location":"Centennial, CO 80112","title":"Clinic Operations Manager - Centennial"}
+{"company":"ACES","first_seen":"2026-10-27","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:547189","location":"San Diego, CA 92163","title":"Senior Director, Real Estate & Development"}
+{"company":"ACES","first_seen":"2026-10-27","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:548327","location":"Austin, TX 78756","title":"Behavior Technician (AUS)"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:548364","location":"Live Oak, TX 78233","reposts":3,"title":"Entry Level Behavior Technician"}
 {"closed_at":"2026-10-14","company":"ACES","first_seen":"2026-10-10","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:548480","location":"United States","posted":"2025-05-15","remote":true,"title":"Senior Director of Human Resources"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:549279","location":"Corona, CA 92879","reposts":3,"title":"Entry Level Behavior Technician"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:549290","location":"Murrieta, CA 92562","reposts":3,"title":"Entry Level Behavior Technician"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:549298","location":"Ontario, CA 91764","reposts":3,"title":"Entry Level Behavior Technician"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:549310","location":"Pomona, CA, CA 91766","reposts":3,"title":"Entry Level Behavior Technician"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:549326","location":"Riverside, CA 92507","reposts":3,"title":"Entry Level Behavior Technician"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:549468","location":"Plano, TX 75023","reposts":3,"title":"Entry Level Behavior Technician"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:549491","location":"El Paso, TX 79912","reposts":3,"title":"Entry Level Behavior Technician"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:549529","location":"Leander, TX 78641","reposts":3,"title":"Entry Level Behavior Technician"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:549543","location":"McKinney, TX 75071","reposts":3,"title":"Entry Level Behavior Technician"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:549555","location":"Round Rock, TX 78681","reposts":3,"title":"Entry Level Behavior Technician"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:549588","location":"Centennial, CO 80112","reposts":3,"title":"Entry Level Behavior Technician"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:549609","location":"Denver, CO 80239","reposts":3,"title":"Entry Level Behavior Technician"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:549622","location":"Colorado Springs, CO 80906","reposts":3,"title":"Entry Level Behavior Technician"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:549688","location":"Lakewood, WA 98499-2731","reposts":3,"title":"Entry Level Behavior Technician"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:549722","location":"WA 98005","reposts":3,"title":"Entry Level Behavior Technician"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:549802","location":"Arcadia, CA 91006-2335","reposts":3,"title":"Entry Level Behavior Technician"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:549829","location":"La Puente, CA 91744","reposts":3,"title":"Entry Level Behavior Technician"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:549837","location":"Pasadena, CA 91001","reposts":3,"title":"Entry Level Behavior Technician"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:549844","location":"Van Nuys, CA 91406","reposts":3,"title":"Entry Level Behavior Technician"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:549851","location":"West Covina, CA 91791","reposts":3,"title":"Entry Level Behavior Technician"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:549858","location":"CA 90602","reposts":3,"title":"Entry Level Behavior Technician"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:550526","location":"Santa Cruz, CA 95060","pay":[90000,110000,"USD"],"reposts":2,"title":"BCBA"}
 {"closed_at":"2026-11-09","company":"ACES","first_seen":"2026-10-27","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:551684","location":"United States","posted":"2025-05-15","title":"Senior Vice President of Field Operations"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:552158","location":"Leander, TX 78641","pay":[85000,105000,"USD"],"reposts":2,"title":"BCBA"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:552318","location":"Aiea, HI 96701","reposts":3,"title":"Entry Level Behavior Technician"}
 {"closed_at":"2026-11-09","company":"ACES","first_seen":"2026-10-27","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:552336","location":"United States","posted":"2025-05-15","title":"Clinical Director"}
 {"closed_at":"2026-11-09","company":"ACES","first_seen":"2026-10-27","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:552823","location":"United States","posted":"2025-05-15","title":"Clinical Supervisor of Center Programming (Group Supervisor)"}
 {"closed_at":"2026-11-09","company":"ACES","first_seen":"2026-10-28","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:553568","location":"United States","posted":"2025-05-15","remote":true,"title":"BCBA (Remote) - CA Only"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:553671","location":"Mountain View, CA 94040","pay":[93000,110000,"USD"],"reposts":2,"title":"Clinical Manager, Treatment Initiation"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:553882","location":"Mountain View, CA 94040","pay":[95000,110000,"USD"],"reposts":3,"title":"Clinical Manager, Quality Assurance"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:554146","location":"Buckeye, AZ 85326","pay":[90000,110000,"USD"],"reposts":2,"title":"BCBA"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:554161","location":"Katy, TX 77494","reposts":3,"title":"Entry Level Behavior Technician"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:554168","location":"CA 90706","reposts":3,"title":"Entry Level Behavior Technician"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:554362","location":"Chula Vista, CA 91914","pay":[90000,102000,"USD"],"reposts":2,"title":"BCBA"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:554842","location":"Round Rock, TX 78681","pay":[85000,105000,"USD"],"reposts":2,"title":"BCBA"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:554850","location":"Elk Grove, CA 95824","pay":[85000,100000,"USD"],"reposts":2,"title":"BCBA"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:555390","location":"Katy, TX 77494","pay":[85000,105000,"USD"],"reposts":1,"title":"Clinical Supervisor of Center Programming (Group Supervisor)"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:555412","pay":[75000,80000,"USD"],"remote":true,"skills":["talent_acquisition"],"title":"Principal Talent Acquisition Partner"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:555804","location":"San Antonio, TX 78254","pay":[85000,105000,"USD"],"reposts":2,"title":"BCBA"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:555838","location":"Bakersfield, CA 93301","pay":[88000,105000,"USD"],"reposts":2,"title":"Clinical Manager, Treatment Initiation"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:555879","location":"Petaluma, CA 94954","reposts":2,"title":"Clinical Supervisor"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:555937","location":"Stockton, CA 95207","pay":[85000,100000,"USD"],"reposts":2,"title":"BCBA"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:556378","location":"Arcadia, CA 91006-2335","reposts":2,"title":"BCBA"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:556382","location":"San Jose, CA 95112","reposts":2,"title":"Clinical Supervisor"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:557094","location":"San Diego, CA 92163","remote":true,"title":"BCBA Fully Remote"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:557696","location":"Pomona, CA 91766","reposts":1,"title":"Clinical Supervisor (Masters Required)"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:557865","location":"Arcadia, CA 91006-2335","reposts":2,"title":"Clinical Supervisor"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:558118","location":"Buckeye, AZ 85326","title":"Clinic Operations Manager - Buckeye"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:558122","location":"Katy, TX 77494","title":"Clinic Operations Manager - Kingsland"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:558294","location":"Hayward, CA 94545","pay":[95000,110000,"USD"],"reposts":2,"title":"Clinical Manager, Treatment Initiation"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:558299","location":"Rancho Bernardo, CA 92128","pay":[90000,102000,"USD"],"reposts":2,"title":"BCBA"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:558329","location":"Surprise, AZ 85335","pay":[95000,115000,"USD"],"reposts":3,"title":"Clinical Manager, Quality Assurance"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:558353","location":"Santa Cruz, CA 95060","reposts":2,"title":"Clinical Supervisor"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:558665","location":"Fairfield, CA 94533","pay":[105000,110000,"USD"],"reposts":2,"title":"Clinical Director"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:558970","location":"Corona, CA 92879","pay":[90000,105000,"USD"],"remote":true,"reposts":1,"title":"BCBA (Remote) - CA Only"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:559124","location":"Irvine, CA 92606","pay":[90000,102000,"USD"],"reposts":2,"title":"BCBA"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:559563","location":"Queen Creek, AZ 85286","reposts":3,"title":"Entry Level Behavior Technician"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:559578","location":"Phoenix, AZ 85006","reposts":3,"title":"Entry Level Behavior Technician"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:559585","location":"Glendale, AZ 85308","reposts":3,"title":"Entry Level Behavior Technician"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:559617","location":"Sacramento, CA 95864","pay":[85000,100000,"USD"],"reposts":2,"title":"BCBA"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:559656","location":"Fairfield, CA 94533","pay":[85000,100000,"USD"],"reposts":2,"title":"BCBA"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:559993","location":"Long Beach, CA 90807","pay":[90000,102000,"USD"],"remote":true,"title":"BCBA Fully Remote"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:560142","location":"The Woodlands, TX 77381","pay":[90000,110000,"USD"],"reposts":2,"title":"Clinical Manager, Treatment Initiation"}
+{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:560150","location":"Benbrook, TX 76109","pay":[112000,117000,"USD"],"reposts":2,"title":"Clinical Director"}

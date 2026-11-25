@@ -163,7 +163,7 @@
 {"company":"京东方","first_seen":"2026-11-09","id":"beisen:boe:880099918","location":"安徽省·合肥市","posted":"2026-03-13","title":"4端叠层电池组件设计(J52156)"}
 {"company":"京东方","first_seen":"2026-11-09","id":"beisen:boe:880099920","location":"安徽省·合肥市","posted":"2026-03-13","title":"晶硅串焊工艺开发(J52155)"}
 {"company":"京东方","first_seen":"2026-11-09","id":"beisen:boe:880099948","location":"北京市·朝阳区","posted":"2026-03-17","title":"妇产科医师岗(J52192)"}
-{"company":"京东方","first_seen":"2026-11-09","id":"beisen:boe:880099969","location":"北京市·大兴区","posted":"2026-03-19","title":"EAP工程师(J52205)"}
+{"closed_at":"2026-11-25","company":"京东方","first_seen":"2026-11-09","id":"beisen:boe:880099969","location":"北京市·大兴区","posted":"2026-03-19","title":"EAP工程师(J52205)"}
 {"company":"京东方","first_seen":"2026-11-09","id":"beisen:boe:880099995","location":"安徽省·合肥市","posted":"2026-03-20","title":"钙钛矿寿命评价工程师(J52220)"}
 {"company":"京东方","first_seen":"2026-11-09","id":"beisen:boe:880100010","location":"安徽省·合肥市","posted":"2026-03-23","title":"钙钛矿设备与工艺岗(J52228)"}
 {"company":"京东方","first_seen":"2026-11-09","id":"beisen:boe:880100016","location":"安徽省·合肥市","posted":"2026-03-23","title":"激光设备与工艺岗(J52231)"}
@@ -173,7 +173,7 @@
 {"company":"京东方","first_seen":"2026-11-09","id":"beisen:boe:880100178","location":"北京市·朝阳区","posted":"2026-04-17","title":"外科主诊医师岗(J52327)"}
 {"company":"京东方","first_seen":"2026-11-09","id":"beisen:boe:880100194","location":"北京市·大兴区","posted":"2026-04-21","title":"设备与工艺岗（CVD设备工艺）(J52332)"}
 {"company":"京东方","first_seen":"2026-11-09","id":"beisen:boe:880100250","location":"北京市·大兴区","posted":"2026-04-29","title":"器件集成设计岗（刻蚀）(J52388)"}
-{"company":"京东方","first_seen":"2026-11-09","id":"beisen:boe:880100252","location":"广东省·珠海市·金湾区","posted":"2026-04-29","title":"器件研究岗-工艺开发(J52389)"}
+{"closed_at":"2026-11-25","company":"京东方","first_seen":"2026-11-09","id":"beisen:boe:880100252","location":"广东省·珠海市·金湾区","posted":"2026-04-29","title":"器件研究岗-工艺开发(J52389)"}
 {"company":"京东方","first_seen":"2026-11-09","id":"beisen:boe:880100256","location":"安徽省·合肥市","posted":"2026-04-29","title":"市场企划岗(J52322)"}
 {"company":"京东方","first_seen":"2026-11-09","id":"beisen:boe:880100258","location":"安徽省·合肥市","posted":"2026-04-29","title":"大客户经理岗（电站）(J52319)"}
 {"company":"京东方","first_seen":"2026-11-09","id":"beisen:boe:880100260","location":"安徽省·合肥市","posted":"2026-04-29","title":"产品企划岗（创新）(J52321)"}
@@ -282,7 +282,7 @@
 {"company":"京东方","first_seen":"2026-11-09","id":"beisen:boe:880103367","location":"北京市","posted":"2026-09-22","title":"药剂岗(J54633)"}
 {"company":"京东方","first_seen":"2026-11-09","id":"beisen:boe:880103374","location":"安徽省·合肥市·新站综合开发试验区","posted":"2026-09-28","title":"视觉算法研发岗(J54635)"}
 {"company":"京东方","first_seen":"2026-11-09","id":"beisen:boe:880103382","location":"北京市·朝阳区","posted":"2026-09-28","title":"医务室护士岗(J54640)"}
-{"company":"京东方","first_seen":"2026-11-09","id":"beisen:boe:880103390","location":"北京市·大兴区","posted":"2026-09-29","title":"SOC硬件工程师(J54645)"}
+{"closed_at":"2026-11-25","company":"京东方","first_seen":"2026-11-09","id":"beisen:boe:880103390","location":"北京市·大兴区","posted":"2026-09-29","title":"SOC硬件工程师(J54645)"}
 {"company":"京东方","first_seen":"2026-11-09","id":"beisen:boe:880103395","location":"北京市·房山区","posted":"2026-09-30","title":"护士岗(J54646)"}
 {"closed_at":"2026-11-11","company":"京东方","first_seen":"2026-11-09","id":"beisen:boe:880103397","location":"安徽省·合肥市·新站综合开发试验区","posted":"2026-10-08","title":"行政保卫岗(J54650)"}
 {"company":"京东方","first_seen":"2026-11-09","id":"beisen:boe:880103429","location":"安徽省·合肥市·新站综合开发试验区","posted":"2026-10-08","title":"测试开发岗(J51767)"}
@@ -326,3 +326,5 @@
 {"company":"京东方","first_seen":"2026-11-23","id":"beisen:boe:880103704","location":"江苏省·苏州市","posted":"2026-11-23","title":"行政保卫岗(J54811)"}
 {"company":"京东方","first_seen":"2026-11-24","id":"beisen:boe:880103709","location":"安徽省","posted":"2026-11-23","skills":["linux"],"title":"WCS系统软件开发岗（Android/Linux）(J54813)"}
 {"company":"京东方","first_seen":"2026-11-24","id":"beisen:boe:880103720","location":"北京市·房山区","posted":"2026-11-24","title":"智慧病房交付岗(J54819)"}
+{"company":"京东方","first_seen":"2026-11-25","id":"beisen:boe:880103723","location":"江苏省·苏州市·吴江区","posted":"2026-11-25","title":"内分泌科医师岗(J54822)"}
+{"company":"京东方","first_seen":"2026-11-25","id":"beisen:boe:880103725","location":"江苏省·苏州市·吴江区","posted":"2026-11-25","title":"急诊医学科护士岗(J54823)"}

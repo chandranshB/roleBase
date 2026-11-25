@@ -1,6 +1,5 @@
-{"closed_at":"2026-11-08","company":"Moscow Food Co-op","first_seen":"2026-10-01","id":"paycom:CC258F6DC59AD002532E1A1A356CC46C:192252","location":"United States","posted":"2019-05-14","title":"General Application"}
+{"company":"Moscow Food Co-op","first_seen":"2026-10-01","id":"paycom:CC258F6DC59AD002532E1A1A356CC46C:192252","location":"Moscow Food Co-op Downtown - Moscow, ID 83843","title":"General Application"}
 {"closed_at":"2026-09-01","company":"Moscow Food Co-op","first_seen":"2026-07-06","id":"paycom:CC258F6DC59AD002532E1A1A356CC46C:815622","location":"United States","posted":"2019-05-14","team":"Retail","title":"Cashier"}
-{"closed_at":"2026-08-26","company":"Moscow Food Co-op","first_seen":"2026-07-18","id":"paycom:CC258F6DC59AD002532E1A1A356CC46C:824267","location":"United States","posted":"2019-05-14","team":"Restaurant - Food Service","title":"Cook"}
 {"closed_at":"2026-09-07","company":"Moscow Food Co-op","first_seen":"2026-07-18","id":"paycom:CC258F6DC59AD002532E1A1A356CC46C:824992","location":"United States","posted":"2019-05-14","team":"Restaurant - Food Service","title":"Kitchen Staff"}
 {"closed_at":"2026-09-03","company":"Moscow Food Co-op","first_seen":"2026-08-11","id":"paycom:CC258F6DC59AD002532E1A1A356CC46C:842887","location":"United States","posted":"2019-05-14","team":"Retail","title":"Grocery Staff"}
 {"closed_at":"2026-09-10","company":"Moscow Food Co-op","employment":"full_time","first_seen":"2026-08-29","id":"paycom:CC258F6DC59AD002532E1A1A356CC46C:855685","location":"United States","posted":"2019-05-14","team":"Retail","title":"Produce Lead"}
@@ -10,4 +9,7 @@
 {"closed_at":"2026-10-10","company":"Moscow Food Co-op","first_seen":"2026-09-09","id":"paycom:CC258F6DC59AD002532E1A1A356CC46C:863063","location":"United States","posted":"2019-05-14","team":"Retail","title":"Cashier"}
 {"closed_at":"2026-10-12","company":"Moscow Food Co-op","first_seen":"2026-10-01","id":"paycom:CC258F6DC59AD002532E1A1A356CC46C:870139","location":"United States","posted":"2019-05-14","team":"Restaurant - Food Service","title":"Deli Staff"}
 {"closed_at":"2026-11-08","company":"Moscow Food Co-op","first_seen":"2026-10-18","id":"paycom:CC258F6DC59AD002532E1A1A356CC46C:873085","location":"United States","posted":"2019-05-14","team":"Retail","title":"Wellness Staff"}
-{"closed_at":"2026-11-08","company":"Moscow Food Co-op","first_seen":"2026-10-27","id":"paycom:CC258F6DC59AD002532E1A1A356CC46C:874241","location":"United States","posted":"2019-05-14","team":"Retail","title":"Grocery Staff"}
+{"company":"Moscow Food Co-op","first_seen":"2026-10-27","id":"paycom:CC258F6DC59AD002532E1A1A356CC46C:874241","location":"Moscow Food Co-op Downtown - Moscow, ID 83843","title":"Grocery Staff"}
+{"company":"Moscow Food Co-op","first_seen":"2026-11-25","id":"paycom:CC258F6DC59AD002532E1A1A356CC46C:875034","location":"Moscow Food Co-op Downtown - Moscow, ID 83843","reposts":1,"title":"Cook"}
+{"company":"Moscow Food Co-op","first_seen":"2026-11-25","id":"paycom:CC258F6DC59AD002532E1A1A356CC46C:875958","location":"Moscow Food Co-op Downtown - Moscow, ID 83843","reposts":1,"title":"Kitchen Staff"}
+{"company":"Moscow Food Co-op","first_seen":"2026-11-25","id":"paycom:CC258F6DC59AD002532E1A1A356CC46C:877457","location":"Moscow Food Co-op Downtown - Moscow, ID 83843","reposts":2,"skills":["customer_service"],"title":"Cashier"}

@@ -1,5 +1,4 @@
 {"closed_at":"2026-09-01","company":"The Loren Group","first_seen":"2026-05-24","id":"paycom:5F8857B9743F42714AB35FF17AE86E7F:132247","location":"United States","posted":"2025-05-12","title":"Porter/Door Attendant"}
-{"closed_at":"2026-08-26","company":"The Loren Group","first_seen":"2026-07-09","id":"paycom:5F8857B9743F42714AB35FF17AE86E7F:219310","location":"United States","posted":"2025-05-12","title":"MiniBar Attendant"}
 {"closed_at":"2026-09-10","company":"The Loren Group","employment":"part_time","first_seen":"2026-08-06","id":"paycom:5F8857B9743F42714AB35FF17AE86E7F:227899","location":"United States","posted":"2025-05-12","title":"Server AM Part-Time"}
 {"closed_at":"2026-11-08","company":"The Loren Group","employment":"part_time","first_seen":"2026-08-14","id":"paycom:5F8857B9743F42714AB35FF17AE86E7F:231002","location":"United States","posted":"2025-05-12","title":"AM Restaurant Host - Part Time"}
 {"closed_at":"2026-09-04","company":"The Loren Group","first_seen":"2026-08-25","id":"paycom:5F8857B9743F42714AB35FF17AE86E7F:233927","location":"United States","posted":"2025-05-12","title":"PM Barista"}
@@ -10,7 +9,7 @@
 {"closed_at":"2026-11-08","company":"The Loren Group","first_seen":"2026-10-08","id":"paycom:5F8857B9743F42714AB35FF17AE86E7F:243530","location":"United States","posted":"2025-05-12","title":"Bell/Door Attendant"}
 {"closed_at":"2026-10-09","company":"The Loren Group","first_seen":"2026-10-08","id":"paycom:5F8857B9743F42714AB35FF17AE86E7F:243880","location":"United States","posted":"2025-05-12","title":"AM Barista"}
 {"closed_at":"2026-11-08","company":"The Loren Group","first_seen":"2026-10-08","id":"paycom:5F8857B9743F42714AB35FF17AE86E7F:243885","location":"United States","posted":"2025-05-12","title":"Night Auditor"}
-{"closed_at":"2026-11-08","company":"The Loren Group","first_seen":"2026-10-10","id":"paycom:5F8857B9743F42714AB35FF17AE86E7F:244493","location":"United States","posted":"2025-05-12","title":"General Manager"}
+{"company":"The Loren Group","first_seen":"2026-10-10","id":"paycom:5F8857B9743F42714AB35FF17AE86E7F:244493","location":"San Antonio, TX 78205","title":"General Manager"}
 {"closed_at":"2026-11-08","company":"The Loren Group","first_seen":"2026-10-10","id":"paycom:5F8857B9743F42714AB35FF17AE86E7F:244500","location":"United States","posted":"2025-05-12","title":"Director of Sales and Marketing"}
 {"closed_at":"2026-10-13","company":"The Loren Group","first_seen":"2026-10-11","id":"paycom:5F8857B9743F42714AB35FF17AE86E7F:244687","location":"United States","posted":"2025-05-12","title":"Cook"}
 {"closed_at":"2026-11-08","company":"The Loren Group","first_seen":"2026-10-11","id":"paycom:5F8857B9743F42714AB35FF17AE86E7F:244694","location":"United States","posted":"2025-05-12","title":"In Room Dining Server"}
@@ -25,5 +24,23 @@
 {"closed_at":"2026-11-08","company":"The Loren Group","first_seen":"2026-10-14","id":"paycom:5F8857B9743F42714AB35FF17AE86E7F:245158","location":"United States","posted":"2025-05-12","title":"Server AM"}
 {"closed_at":"2026-11-08","company":"The Loren Group","first_seen":"2026-10-14","id":"paycom:5F8857B9743F42714AB35FF17AE86E7F:245168","location":"United States","posted":"2025-05-12","title":"Restaurant Host PM"}
 {"closed_at":"2026-11-08","company":"The Loren Group","first_seen":"2026-10-23","id":"paycom:5F8857B9743F42714AB35FF17AE86E7F:246793","location":"United States","posted":"2025-05-12","title":"Cook"}
-{"closed_at":"2026-11-08","company":"The Loren Group","employment":"full_time","first_seen":"2026-10-23","id":"paycom:5F8857B9743F42714AB35FF17AE86E7F:246902","location":"United States","posted":"2025-05-12","title":"Sous Chef"}
+{"company":"The Loren Group","employment":"full_time","first_seen":"2026-10-23","id":"paycom:5F8857B9743F42714AB35FF17AE86E7F:246902","location":"AUSTIN, TX 78704","title":"Sous Chef"}
 {"closed_at":"2026-11-08","company":"The Loren Group","first_seen":"2026-10-27","id":"paycom:5F8857B9743F42714AB35FF17AE86E7F:247086","location":"United States","posted":"2025-05-12","title":"Server Assistant"}
+{"company":"The Loren Group","first_seen":"2026-11-25","id":"paycom:5F8857B9743F42714AB35FF17AE86E7F:248478","location":"San Antonio, TX 78205","reposts":1,"title":"Server PM"}
+{"company":"The Loren Group","first_seen":"2026-11-25","id":"paycom:5F8857B9743F42714AB35FF17AE86E7F:248554","location":"San Antonio, TX 78205","reposts":2,"title":"Cook"}
+{"company":"The Loren Group","first_seen":"2026-11-25","id":"paycom:5F8857B9743F42714AB35FF17AE86E7F:248596","location":"San Antonio, TX 78205","reposts":1,"title":"In Room Dining Server"}
+{"company":"The Loren Group","first_seen":"2026-11-25","id":"paycom:5F8857B9743F42714AB35FF17AE86E7F:250792","location":"San Antonio, TX 78205","title":"On-Call Security Officer"}
+{"company":"The Loren Group","first_seen":"2026-11-25","id":"paycom:5F8857B9743F42714AB35FF17AE86E7F:251231","location":"San Antonio, TX 78205","reposts":1,"title":"MiniBar Attendant"}
+{"company":"The Loren Group","first_seen":"2026-11-25","id":"paycom:5F8857B9743F42714AB35FF17AE86E7F:251744","location":"AUSTIN, TX 78704","title":"PM Engineer Supervisor"}
+{"company":"The Loren Group","first_seen":"2026-11-25","id":"paycom:5F8857B9743F42714AB35FF17AE86E7F:252734","location":"AUSTIN, TX 78704","title":"Overnight Security/Engineer"}
+{"company":"The Loren Group","first_seen":"2026-11-25","id":"paycom:5F8857B9743F42714AB35FF17AE86E7F:252758","location":"AUSTIN, TX 78704","skills":["accounts_payable"],"title":"Accounts Payable Clerk"}
+{"company":"The Loren Group","first_seen":"2026-11-25","id":"paycom:5F8857B9743F42714AB35FF17AE86E7F:253790","location":"San Antonio, TX 78205","title":"On-Call Massage Therapist"}
+{"company":"The Loren Group","first_seen":"2026-11-25","id":"paycom:5F8857B9743F42714AB35FF17AE86E7F:253804","location":"San Antonio, TX 78205","reposts":1,"title":"Night Auditor"}
+{"company":"The Loren Group","first_seen":"2026-11-25","id":"paycom:5F8857B9743F42714AB35FF17AE86E7F:253986","location":"San Antonio, TX 78205","title":"PM Engineer II"}
+{"company":"The Loren Group","first_seen":"2026-11-25","id":"paycom:5F8857B9743F42714AB35FF17AE86E7F:254321","location":"San Antonio, TX 78205","reposts":2,"title":"Dishwasher"}
+{"company":"The Loren Group","first_seen":"2026-11-25","id":"paycom:5F8857B9743F42714AB35FF17AE86E7F:254484","location":"AUSTIN, TX 78704","title":"Hotel Head Chef"}
+{"company":"The Loren Group","first_seen":"2026-11-25","id":"paycom:5F8857B9743F42714AB35FF17AE86E7F:254542","location":"San Antonio, TX 78205","title":"Restaurant Host"}
+{"company":"The Loren Group","first_seen":"2026-11-25","id":"paycom:5F8857B9743F42714AB35FF17AE86E7F:254550","location":"San Antonio, TX 78205","reposts":2,"title":"Server AM"}
+{"company":"The Loren Group","first_seen":"2026-11-25","id":"paycom:5F8857B9743F42714AB35FF17AE86E7F:254557","location":"San Antonio, TX 78205","reposts":2,"title":"Bartender PM"}
+{"company":"The Loren Group","first_seen":"2026-11-25","id":"paycom:5F8857B9743F42714AB35FF17AE86E7F:254636","location":"San Antonio, TX 78205","title":"Painter"}
+{"company":"The Loren Group","first_seen":"2026-11-25","id":"paycom:5F8857B9743F42714AB35FF17AE86E7F:254689","location":"AUSTIN, TX 78704","title":"Area Director of Sales and Marketing"}

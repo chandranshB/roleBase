@@ -1,16 +1,40 @@
-{"closed_at":"2026-11-09","company":"AccuTRANS","first_seen":"2026-10-01","id":"paycom:BDA13CFC8B95B3E6CEB49A1EE82FB202:104771","location":"United States","posted":"2025-05-29","title":"INSPECTOR TRAINEE"}
-{"closed_at":"2026-11-09","company":"AccuTRANS","first_seen":"2026-10-01","id":"paycom:BDA13CFC8B95B3E6CEB49A1EE82FB202:104788","location":"United States","posted":"2025-05-29","title":"DISPATCHER"}
-{"closed_at":"2026-11-09","company":"AccuTRANS","first_seen":"2026-10-01","id":"paycom:BDA13CFC8B95B3E6CEB49A1EE82FB202:104792","location":"United States","posted":"2025-05-29","title":"RETAIN SPECIALIST"}
-{"closed_at":"2026-11-09","company":"AccuTRANS","first_seen":"2026-10-01","id":"paycom:BDA13CFC8B95B3E6CEB49A1EE82FB202:104798","location":"United States","posted":"2025-05-29","title":"OPERATIONS SUPERVISOR"}
-{"closed_at":"2026-11-09","company":"AccuTRANS","first_seen":"2026-10-01","id":"paycom:BDA13CFC8B95B3E6CEB49A1EE82FB202:104802","location":"United States","posted":"2025-05-29","title":"LAB TECHNICIAN TRAINEE"}
-{"closed_at":"2026-11-09","company":"AccuTRANS","first_seen":"2026-10-01","id":"paycom:BDA13CFC8B95B3E6CEB49A1EE82FB202:109261","location":"United States","posted":"2025-05-29","team":"Office/Logistics","title":"IT SUPPORT"}
-{"closed_at":"2026-11-09","company":"AccuTRANS","first_seen":"2026-09-25","id":"paycom:BDA13CFC8B95B3E6CEB49A1EE82FB202:136566","location":"United States","posted":"2025-05-29","title":"LAB TECHNICIAN"}
-{"closed_at":"2026-11-09","company":"AccuTRANS","first_seen":"2026-09-25","id":"paycom:BDA13CFC8B95B3E6CEB49A1EE82FB202:136570","location":"United States","posted":"2025-05-29","title":"INSPECTOR"}
-{"closed_at":"2026-11-09","company":"AccuTRANS","first_seen":"2026-10-08","id":"paycom:BDA13CFC8B95B3E6CEB49A1EE82FB202:137625","location":"United States","posted":"2025-05-29","title":"FLEET OPERATOR"}
-{"closed_at":"2026-11-09","company":"AccuTRANS","first_seen":"2026-10-01","id":"paycom:BDA13CFC8B95B3E6CEB49A1EE82FB202:70664","location":"United States","posted":"2025-05-29","team":"Office/Logistics","title":"ACCOUNTING ASSOCIATE"}
-{"closed_at":"2026-11-09","company":"AccuTRANS","first_seen":"2026-10-01","id":"paycom:BDA13CFC8B95B3E6CEB49A1EE82FB202:70670","location":"United States","posted":"2025-05-29","team":"Office/Logistics","title":"ADMINISTRATIVE ASSISTANT"}
-{"closed_at":"2026-11-09","company":"AccuTRANS","first_seen":"2026-10-01","id":"paycom:BDA13CFC8B95B3E6CEB49A1EE82FB202:79310","location":"United States","posted":"2025-05-29","team":"Office/Logistics","title":"LOGISTICS COORDINATOR"}
-{"closed_at":"2026-11-09","company":"AccuTRANS","first_seen":"2026-10-01","id":"paycom:BDA13CFC8B95B3E6CEB49A1EE82FB202:80364","location":"United States","posted":"2025-05-29","title":"BOAT DECKHAND"}
-{"closed_at":"2026-11-09","company":"AccuTRANS","first_seen":"2026-10-01","id":"paycom:BDA13CFC8B95B3E6CEB49A1EE82FB202:80394","location":"United States","posted":"2025-05-29","team":"Licensed Tankerman","title":"TANKERMAN"}
-{"closed_at":"2026-11-09","company":"AccuTRANS","first_seen":"2026-10-01","id":"paycom:BDA13CFC8B95B3E6CEB49A1EE82FB202:80402","location":"United States","posted":"2025-05-29","title":"PLANT OPERATOR"}
-{"closed_at":"2026-11-09","company":"AccuTRANS","first_seen":"2026-10-01","id":"paycom:BDA13CFC8B95B3E6CEB49A1EE82FB202:80428","location":"United States","posted":"2025-05-29","team":"Tankerman Trainee","title":"TANKERMAN TRAINEE"}
+{"company":"AccuTRANS","first_seen":"2026-11-25","id":"paycom:BDA13CFC8B95B3E6CEB49A1EE82FB202:102471","location":"Pasadena, TX 77502","reposts":1,"title":"LAB TECHNICIAN"}
+{"company":"AccuTRANS","first_seen":"2026-11-25","id":"paycom:BDA13CFC8B95B3E6CEB49A1EE82FB202:102476","location":"Sulphur, LA 70663","reposts":1,"title":"LAB TECHNICIAN"}
+{"company":"AccuTRANS","first_seen":"2026-10-01","id":"paycom:BDA13CFC8B95B3E6CEB49A1EE82FB202:104771","location":"Pasadena, TX 77502","title":"INSPECTOR TRAINEE"}
+{"company":"AccuTRANS","first_seen":"2026-11-25","id":"paycom:BDA13CFC8B95B3E6CEB49A1EE82FB202:104775","location":"Sulphur, LA 70663","reposts":1,"title":"INSPECTOR TRAINEE"}
+{"company":"AccuTRANS","first_seen":"2026-11-25","id":"paycom:BDA13CFC8B95B3E6CEB49A1EE82FB202:104780","location":"Pasadena, TX 77502","reposts":1,"title":"INSPECTOR"}
+{"company":"AccuTRANS","first_seen":"2026-11-25","id":"paycom:BDA13CFC8B95B3E6CEB49A1EE82FB202:104784","location":"Sulphur, LA 70663","reposts":1,"title":"INSPECTOR"}
+{"company":"AccuTRANS","first_seen":"2026-10-01","id":"paycom:BDA13CFC8B95B3E6CEB49A1EE82FB202:104788","location":"Pasadena, TX 77502","title":"DISPATCHER"}
+{"company":"AccuTRANS","first_seen":"2026-10-01","id":"paycom:BDA13CFC8B95B3E6CEB49A1EE82FB202:104792","location":"Pasadena, TX 77502","title":"RETAIN SPECIALIST"}
+{"company":"AccuTRANS","first_seen":"2026-10-01","id":"paycom:BDA13CFC8B95B3E6CEB49A1EE82FB202:104798","location":"Pasadena, TX 77502","title":"OPERATIONS SUPERVISOR"}
+{"company":"AccuTRANS","first_seen":"2026-10-01","id":"paycom:BDA13CFC8B95B3E6CEB49A1EE82FB202:104802","location":"Pasadena, TX 77502; Pasadena, TX 77504","title":"LAB TECHNICIAN TRAINEE"}
+{"company":"AccuTRANS","first_seen":"2026-10-01","id":"paycom:BDA13CFC8B95B3E6CEB49A1EE82FB202:109261","location":"Pasadena, TX 77504","title":"IT SUPPORT","years":7}
+{"company":"AccuTRANS","first_seen":"2026-09-25","id":"paycom:BDA13CFC8B95B3E6CEB49A1EE82FB202:136566","location":"Point Comfort, TX 77978","title":"LAB TECHNICIAN"}
+{"company":"AccuTRANS","first_seen":"2026-09-25","id":"paycom:BDA13CFC8B95B3E6CEB49A1EE82FB202:136570","location":"Point Comfort, TX 77978","title":"INSPECTOR"}
+{"company":"AccuTRANS","first_seen":"2026-10-08","id":"paycom:BDA13CFC8B95B3E6CEB49A1EE82FB202:137625","location":"Houston, TX 77002","title":"FLEET OPERATOR"}
+{"company":"AccuTRANS","first_seen":"2026-10-01","id":"paycom:BDA13CFC8B95B3E6CEB49A1EE82FB202:70664","location":"Kenner, LA 70062","title":"ACCOUNTING ASSOCIATE"}
+{"company":"AccuTRANS","first_seen":"2026-10-01","id":"paycom:BDA13CFC8B95B3E6CEB49A1EE82FB202:70670","location":"Kenner, LA 70062","title":"ADMINISTRATIVE ASSISTANT"}
+{"company":"AccuTRANS","first_seen":"2026-11-25","id":"paycom:BDA13CFC8B95B3E6CEB49A1EE82FB202:70675","location":"Pasadena, TX 77504","reposts":1,"title":"ADMINISTRATIVE ASSISTANT"}
+{"company":"AccuTRANS","first_seen":"2026-10-01","id":"paycom:BDA13CFC8B95B3E6CEB49A1EE82FB202:79310","location":"Pasadena, TX 77504","title":"LOGISTICS COORDINATOR"}
+{"company":"AccuTRANS","first_seen":"2026-10-01","id":"paycom:BDA13CFC8B95B3E6CEB49A1EE82FB202:80364","location":"Pasadena, TX 77504","title":"BOAT DECKHAND"}
+{"company":"AccuTRANS","first_seen":"2026-11-25","id":"paycom:BDA13CFC8B95B3E6CEB49A1EE82FB202:80373","location":"Memphis, TN 38103","reposts":1,"title":"TANKERMAN"}
+{"company":"AccuTRANS","first_seen":"2026-11-25","id":"paycom:BDA13CFC8B95B3E6CEB49A1EE82FB202:80384","location":"Louisville, KY 40202","reposts":1,"title":"TANKERMAN"}
+{"company":"AccuTRANS","first_seen":"2026-10-01","id":"paycom:BDA13CFC8B95B3E6CEB49A1EE82FB202:80394","location":"Paducah, KY 42003","title":"TANKERMAN"}
+{"company":"AccuTRANS","first_seen":"2026-10-01","id":"paycom:BDA13CFC8B95B3E6CEB49A1EE82FB202:80402","location":"Decatur, AL 35601","title":"PLANT OPERATOR"}
+{"company":"AccuTRANS","first_seen":"2026-11-25","id":"paycom:BDA13CFC8B95B3E6CEB49A1EE82FB202:80410","location":"Decatur, AL 35601","reposts":1,"title":"TANKERMAN"}
+{"company":"AccuTRANS","first_seen":"2026-11-25","id":"paycom:BDA13CFC8B95B3E6CEB49A1EE82FB202:80420","location":"Nashville, TN 37201","reposts":1,"title":"TANKERMAN"}
+{"company":"AccuTRANS","first_seen":"2026-10-01","id":"paycom:BDA13CFC8B95B3E6CEB49A1EE82FB202:80428","location":"Mobile, AL 36602","title":"TANKERMAN TRAINEE"}
+{"company":"AccuTRANS","first_seen":"2026-11-25","id":"paycom:BDA13CFC8B95B3E6CEB49A1EE82FB202:80437","location":"Mobile, AL 36602","reposts":1,"title":"TANKERMAN"}
+{"company":"AccuTRANS","first_seen":"2026-11-25","id":"paycom:BDA13CFC8B95B3E6CEB49A1EE82FB202:80446","location":"Mobile, AL 36602","reposts":1,"title":"PLANT OPERATOR"}
+{"company":"AccuTRANS","first_seen":"2026-11-25","id":"paycom:BDA13CFC8B95B3E6CEB49A1EE82FB202:80460","location":"Pasadena, TX 77504","reposts":1,"title":"PLANT OPERATOR"}
+{"company":"AccuTRANS","first_seen":"2026-11-25","id":"paycom:BDA13CFC8B95B3E6CEB49A1EE82FB202:80470","location":"Pasadena, TX 77504","reposts":1,"title":"TANKERMAN TRAINEE"}
+{"company":"AccuTRANS","first_seen":"2026-11-25","id":"paycom:BDA13CFC8B95B3E6CEB49A1EE82FB202:80485","location":"Pasadena, TX 77504","reposts":1,"title":"TANKERMAN"}
+{"company":"AccuTRANS","first_seen":"2026-11-25","id":"paycom:BDA13CFC8B95B3E6CEB49A1EE82FB202:80497","location":"Port Arthur, TX 77642","reposts":1,"title":"TANKERMAN"}
+{"company":"AccuTRANS","first_seen":"2026-11-25","id":"paycom:BDA13CFC8B95B3E6CEB49A1EE82FB202:80513","location":"Corpus Christi, TX 78402","reposts":1,"title":"TANKERMAN"}
+{"company":"AccuTRANS","first_seen":"2026-11-25","id":"paycom:BDA13CFC8B95B3E6CEB49A1EE82FB202:80521","location":"Kenner, LA 70062","reposts":1,"title":"PLANT OPERATOR"}
+{"company":"AccuTRANS","first_seen":"2026-11-25","id":"paycom:BDA13CFC8B95B3E6CEB49A1EE82FB202:80531","location":"Kenner, LA 70062","reposts":1,"title":"TANKERMAN TRAINEE"}
+{"company":"AccuTRANS","first_seen":"2026-11-25","id":"paycom:BDA13CFC8B95B3E6CEB49A1EE82FB202:80539","location":"Kenner, LA 70062","reposts":1,"title":"TANKERMAN"}
+{"company":"AccuTRANS","first_seen":"2026-11-25","id":"paycom:BDA13CFC8B95B3E6CEB49A1EE82FB202:80549","location":"Corpus Christi, TX 78402","reposts":1,"title":"PLANT OPERATOR"}
+{"company":"AccuTRANS","first_seen":"2026-11-25","id":"paycom:BDA13CFC8B95B3E6CEB49A1EE82FB202:80560","location":"Corpus Christi, TX 78402","reposts":1,"title":"TANKERMAN TRAINEE"}
+{"company":"AccuTRANS","first_seen":"2026-11-25","id":"paycom:BDA13CFC8B95B3E6CEB49A1EE82FB202:80569","location":"Port Arthur, TX 77642","reposts":1,"title":"TANKERMAN TRAINEE"}
+{"company":"AccuTRANS","first_seen":"2026-11-25","id":"paycom:BDA13CFC8B95B3E6CEB49A1EE82FB202:80578","location":"Port Arthur, TX 77642","reposts":1,"title":"PLANT OPERATOR"}

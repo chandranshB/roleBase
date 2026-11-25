@@ -1,14 +1,278 @@
-{"company":"Table 95 Management","first_seen":"2026-10-01","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:11085","location":"United States","posted":"2019-01-17","title":"Sous Chef","url":"https://www.paycomonline.net/v4/ats/web.php/portal/78BC0075C6CFECF5CBDA9F32F35E1B21/jobs/11085"}
-{"company":"Table 95 Management","first_seen":"2026-10-01","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:11086","location":"United States","posted":"2019-01-17","title":"Server","url":"https://www.paycomonline.net/v4/ats/web.php/portal/78BC0075C6CFECF5CBDA9F32F35E1B21/jobs/11086"}
-{"company":"Table 95 Management","first_seen":"2026-10-01","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:11091","location":"United States","posted":"2019-01-17","title":"Executive Chef","url":"https://www.paycomonline.net/v4/ats/web.php/portal/78BC0075C6CFECF5CBDA9F32F35E1B21/jobs/11091"}
-{"company":"Table 95 Management","first_seen":"2026-10-01","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:11092","location":"United States","posted":"2019-01-17","title":"Event Coordinator","url":"https://www.paycomonline.net/v4/ats/web.php/portal/78BC0075C6CFECF5CBDA9F32F35E1B21/jobs/11092"}
-{"company":"Table 95 Management","first_seen":"2026-10-01","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5738","location":"United States","posted":"2025-05-05","title":"Barback","url":"https://www.paycomonline.net/v4/ats/web.php/portal/78BC0075C6CFECF5CBDA9F32F35E1B21/jobs/5738"}
-{"company":"Table 95 Management","first_seen":"2026-10-01","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5739","location":"United States","posted":"2025-05-05","title":"Bartender","url":"https://www.paycomonline.net/v4/ats/web.php/portal/78BC0075C6CFECF5CBDA9F32F35E1B21/jobs/5739"}
-{"company":"Table 95 Management","first_seen":"2026-10-01","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5742","location":"United States","posted":"2025-05-05","title":"DJ","url":"https://www.paycomonline.net/v4/ats/web.php/portal/78BC0075C6CFECF5CBDA9F32F35E1B21/jobs/5742"}
-{"company":"Table 95 Management","first_seen":"2026-10-01","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5748","location":"United States","posted":"2025-05-05","title":"Restaurant Manager","url":"https://www.paycomonline.net/v4/ats/web.php/portal/78BC0075C6CFECF5CBDA9F32F35E1B21/jobs/5748"}
-{"company":"Table 95 Management","first_seen":"2026-10-01","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5861","location":"United States","posted":"2019-01-17","title":"Host/Hostess","url":"https://www.paycomonline.net/v4/ats/web.php/portal/78BC0075C6CFECF5CBDA9F32F35E1B21/jobs/5861"}
-{"company":"Table 95 Management","first_seen":"2026-10-01","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5873","location":"United States","posted":"2019-01-17","title":"Dishwasher","url":"https://www.paycomonline.net/v4/ats/web.php/portal/78BC0075C6CFECF5CBDA9F32F35E1B21/jobs/5873"}
-{"company":"Table 95 Management","first_seen":"2026-10-01","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5888","location":"United States","posted":"2019-01-17","title":"Busser & Food Runner","url":"https://www.paycomonline.net/v4/ats/web.php/portal/78BC0075C6CFECF5CBDA9F32F35E1B21/jobs/5888"}
-{"company":"Table 95 Management","first_seen":"2026-10-01","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5908","location":"United States","posted":"2019-01-17","title":"Line Cook","url":"https://www.paycomonline.net/v4/ats/web.php/portal/78BC0075C6CFECF5CBDA9F32F35E1B21/jobs/5908"}
-{"company":"Table 95 Management","first_seen":"2026-10-01","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5911","location":"United States","posted":"2019-01-17","title":"Security","url":"https://www.paycomonline.net/v4/ats/web.php/portal/78BC0075C6CFECF5CBDA9F32F35E1B21/jobs/5911"}
-{"company":"Table 95 Management","first_seen":"2026-10-01","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:8607","location":"United States","posted":"2019-01-17","title":"Sales, Marketing, and Events Manager","url":"https://www.paycomonline.net/v4/ats/web.php/portal/78BC0075C6CFECF5CBDA9F32F35E1B21/jobs/8607"}
+{"company":"Table 95 Management","first_seen":"2026-10-01","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:11085","location":"City Tap Loudoun - Ashburn, VA 20147","title":"Sous Chef"}
+{"company":"Table 95 Management","first_seen":"2026-10-01","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:11086","location":"City Tap Loudoun - Ashburn, VA 20147","title":"Server"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:11087","location":"City Tap Loudoun - Ashburn, VA 20147","title":"Security"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:11088","location":"City Tap Loudoun - Ashburn, VA 20147","title":"Restaurant Manager"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:11089","location":"City Tap Loudoun - Ashburn, VA 20147","title":"Line Cook"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:11090","location":"City Tap Loudoun - Ashburn, VA 20147","title":"Host/Hostess"}
+{"company":"Table 95 Management","first_seen":"2026-10-01","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:11091","location":"City Tap Loudoun - Ashburn, VA 20147","title":"Executive Chef"}
+{"company":"Table 95 Management","first_seen":"2026-10-01","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:11092","location":"City Tap Loudoun - Ashburn, VA 20147","title":"Event Coordinator"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:11093","location":"City Tap Loudoun - Ashburn, VA 20147","title":"DJ"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:11094","location":"City Tap Loudoun - Ashburn, VA 20147","title":"Dishwasher"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:11095","location":"City Tap Loudoun - Ashburn, VA 20147","title":"Busser & Food Runner"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:11096","location":"City Tap Loudoun - Ashburn, VA 20147","title":"Bartender"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:11097","location":"City Tap Loudoun - Ashburn, VA 20147","title":"Barback"}
+{"company":"Table 95 Management","first_seen":"2026-10-01","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5738","title":"Barback"}
+{"company":"Table 95 Management","first_seen":"2026-10-01","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5739","title":"Bartender"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5740","title":"Busser & Food Runner"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5741","title":"Dishwasher"}
+{"company":"Table 95 Management","first_seen":"2026-10-01","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5742","title":"DJ"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5743","title":"Event Coordinator"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5744","title":"Executive Chef"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5745","title":"Host/Hostess"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5747","title":"Line Cook"}
+{"company":"Table 95 Management","first_seen":"2026-10-01","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5748","title":"Restaurant Manager"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5749","title":"Security"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5750","title":"Server"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5751","title":"Sous Chef"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5756","location":"City Tap 901 DC, LLC - Washington, DC 20001","title":"Barback"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5757","location":"City Tap 901 DC, LLC - Washington, DC 20001","title":"Bartender"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5758","location":"City Tap 901 DC, LLC - Washington, DC 20001","title":"Busser & Food Runner"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5759","location":"City Tap 901 DC, LLC - Washington, DC 20001","title":"Dishwasher"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5843","location":"City Tap 901 DC, LLC - Washington, DC 20001","title":"DJ"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5844","location":"City Tap 901 DC, LLC - Washington, DC 20001","title":"Event Coordinator"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5845","location":"City Tap 901 DC, LLC - Washington, DC 20001","title":"Executive Chef"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5846","location":"City Tap 901 DC, LLC - Washington, DC 20001","title":"Host/Hostess"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5848","location":"City Tap 901 DC, LLC - Washington, DC 20001","title":"Line Cook"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5849","location":"City Tap 901 DC, LLC - Washington, DC 20001","title":"Restaurant Manager"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5850","location":"City Tap 901 DC, LLC - Washington, DC 20001","title":"Security"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5851","location":"City Tap 901 DC, LLC - Washington, DC 20001","title":"Server"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5852","location":"City Tap 901 DC, LLC - Washington, DC 20001","title":"Sous Chef"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5854","location":"Pennsylvania 6 NYC, LLC - New York, NY 10001","title":"Barback"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5855","location":"Pennsylvania 6 NYC, LLC - New York, NY 10001","title":"Bartender"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5856","location":"Pennsylvania 6 NYC, LLC - New York, NY 10001","title":"Busser & Food Runner"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5857","location":"Pennsylvania 6 NYC, LLC - New York, NY 10001","title":"Dishwasher"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5858","location":"Pennsylvania 6 NYC, LLC - New York, NY 10001","title":"DJ"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5859","location":"Pennsylvania 6 NYC, LLC - New York, NY 10001","title":"Event Coordinator"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5860","location":"Pennsylvania 6 NYC, LLC - New York, NY 10001","title":"Executive Chef"}
+{"company":"Table 95 Management","first_seen":"2026-10-01","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5861","location":"Pennsylvania 6 NYC, LLC - New York, NY 10001","title":"Host/Hostess"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5864","location":"Pennsylvania 6 NYC, LLC - New York, NY 10001","title":"Line Cook"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5865","location":"Pennsylvania 6 NYC, LLC - New York, NY 10001","title":"Restaurant Manager"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5866","location":"Pennsylvania 6 NYC, LLC - New York, NY 10001","title":"Security"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5867","location":"Pennsylvania 6 NYC, LLC - New York, NY 10001","title":"Server"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5868","location":"Pennsylvania 6 NYC, LLC - New York, NY 10001","title":"Sous Chef"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5870","location":"Lola's Mexican Kitchen - Stamford, CT 06901","title":"Barback"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5871","location":"Lola's Mexican Kitchen - Stamford, CT 06901","title":"Bartender"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5872","location":"Lola's Mexican Kitchen - Stamford, CT 06901","title":"Busser & Food Runner"}
+{"company":"Table 95 Management","first_seen":"2026-10-01","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5873","location":"Butterfield 8 WP, LLC - Stamford, CT 06901","title":"Dishwasher"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5874","location":"Lola's Mexican Kitchen - Stamford, CT 06901","title":"DJ"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5875","location":"Lola's Mexican Kitchen - Stamford, CT 06901","title":"Event Coordinator"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5876","location":"Lola's Mexican Kitchen - Stamford, CT 06901","title":"Executive Chef"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5877","location":"Lola's Mexican Kitchen - Stamford, CT 06901","title":"Host/Hostess"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5879","location":"Lola's Mexican Kitchen - Stamford, CT 06901","title":"Line Cook"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5880","location":"Lola's Mexican Kitchen - Stamford, CT 06901","title":"Restaurant Manager"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5881","location":"Lola's Mexican Kitchen - Stamford, CT 06901","title":"Security"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5882","location":"Lola's Mexican Kitchen - Stamford, CT 06901","title":"Server"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5883","location":"Lola's Mexican Kitchen - Stamford, CT 06901","title":"Sous Chef"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5885","location":"Lola's Mexican Kitchen - Stamford, CT 06901","title":"Barback"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5887","location":"Lola's Mexican Kitchen - Stamford, CT 06901","title":"Bartender"}
+{"company":"Table 95 Management","first_seen":"2026-10-01","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5888","location":"Lola's Mexican Kitchen - Stamford, CT 06901","title":"Busser & Food Runner"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5889","location":"Butterfield 8 WP, LLC - Stamford, CT 06901","title":"Dishwasher"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5890","location":"Lola's Mexican Kitchen - Stamford, CT 06901","title":"Event Coordinator"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5891","location":"Lola's Mexican Kitchen - Stamford, CT 06901","title":"Executive Chef"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5893","location":"Lola's Mexican Kitchen - Stamford, CT 06901","title":"Line Cook"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5894","location":"Lola's Mexican Kitchen - Stamford, CT 06901","title":"Restaurant Manager"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5895","location":"Lola's Mexican Kitchen - Stamford, CT 06901","title":"Security"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5896","location":"Lola's Mexican Kitchen - Stamford, CT 06901","title":"Server"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5897","location":"Lola's Mexican Kitchen - Stamford, CT 06901","title":"Sous Chef"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5899","location":"Pennsylvania 6 DC, LLC - Washington, DC 20005","title":"Barback"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5900","location":"Pennsylvania 6 DC, LLC - Washington, DC 20005","title":"Bartender"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5901","location":"Pennsylvania 6 DC, LLC - Washington, DC 20005","title":"Busser & Food Runner"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5902","location":"Pennsylvania 6 DC, LLC - Washington, DC 20005","title":"Dishwasher"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5903","location":"Pennsylvania 6 DC, LLC - Washington, DC 20005","title":"DJ"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5904","location":"Pennsylvania 6 DC, LLC - Washington, DC 20005","title":"Event Coordinator"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5905","location":"Pennsylvania 6 DC, LLC - Washington, DC 20005","title":"Executive Chef"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5906","location":"Pennsylvania 6 DC, LLC - Washington, DC 20005","title":"Host/Hostess"}
+{"company":"Table 95 Management","first_seen":"2026-10-01","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5908","location":"Pennsylvania 6 DC, LLC - Washington, DC 20005","title":"Line Cook"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5910","location":"Pennsylvania 6 DC, LLC - Washington, DC 20005","title":"Restaurant Manager"}
+{"company":"Table 95 Management","first_seen":"2026-10-01","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5911","location":"Pennsylvania 6 DC, LLC - Washington, DC 20005","title":"Security"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5912","location":"Pennsylvania 6 DC, LLC - Washington, DC 20005","title":"Server"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5913","location":"Pennsylvania 6 DC, LLC - Washington, DC 20005","title":"Sous Chef"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5915","location":"City Tap 1250 DC, LLC - Washington, DC 20036","title":"Barback"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5916","location":"City Tap 1250 DC, LLC - Washington, DC 20036","title":"Bartender"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5917","location":"City Tap 1250 DC, LLC - Washington, DC 20036","title":"Busser & Food Runner"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5918","location":"City Tap 1250 DC, LLC - Washington, DC 20036","title":"Dishwasher"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5919","location":"City Tap 1250 DC, LLC - Washington, DC 20036","title":"DJ"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5920","location":"City Tap 1250 DC, LLC - Washington, DC 20036","title":"Event Coordinator"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5921","location":"City Tap 1250 DC, LLC - Washington, DC 20036","title":"Executive Chef"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5922","location":"City Tap 1250 DC, LLC - Washington, DC 20036","title":"Host/Hostess"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5924","location":"City Tap 1250 DC, LLC - Washington, DC 20036","title":"Line Cook"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5925","location":"City Tap 1250 DC, LLC - Washington, DC 20036","title":"Restaurant Manager"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5926","location":"City Tap 1250 DC, LLC - Washington, DC 20036","title":"Security"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5927","location":"City Tap 1250 DC, LLC - Washington, DC 20036","title":"Server"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5928","location":"City Tap 1250 DC, LLC - Washington, DC 20036","title":"Sous Chef"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5930","location":"NH Restaurant B, LLC - New Haven, CT 06510","title":"Barback"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5931","location":"NH Restaurant B, LLC - New Haven, CT 06510","title":"Bartender"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5932","location":"NH Restaurant B, LLC - New Haven, CT 06510","title":"Busser & Food Runner"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5933","location":"NH Restaurant B, LLC - New Haven, CT 06510","title":"Dishwasher"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5934","location":"NH Restaurant B, LLC - New Haven, CT 06510","title":"DJ"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5935","location":"NH Restaurant B, LLC - New Haven, CT 06510","title":"Event Coordinator"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5936","location":"NH Restaurant B, LLC - New Haven, CT 06510","title":"Executive Chef"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5937","location":"NH Restaurant B, LLC - New Haven, CT 06510","title":"Host/Hostess"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5939","location":"NH Restaurant B, LLC - New Haven, CT 06510","title":"Line Cook"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5940","location":"NH Restaurant B, LLC - New Haven, CT 06510","title":"Restaurant Manager"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5941","location":"NH Restaurant B, LLC - New Haven, CT 06510","title":"Security"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5942","location":"NH Restaurant B, LLC - New Haven, CT 06510","title":"Server"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5943","location":"NH Restaurant B, LLC - New Haven, CT 06510","title":"Sous Chef"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5945","location":"Towne Parlor Pizza - Stamford, CT 06901","title":"Barback"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5946","location":"Towne Parlor Pizza - Stamford, CT 06901","title":"Barback"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5947","location":"Towne Parlor Pizza - Stamford, CT 06901","title":"Bartender"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5948","location":"Towne Parlor Pizza - Stamford, CT 06901","title":"Busser & Food Runner"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5949","location":"Towne Parlor Pizza - Stamford, CT 06901","title":"Dishwasher"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5950","location":"Towne Parlor Pizza - Stamford, CT 06901","title":"DJ"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5951","location":"Towne Parlor Pizza - Stamford, CT 06901","title":"Event Coordinator"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5952","location":"Towne Parlor Pizza - Stamford, CT 06901","title":"Executive Chef"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5953","location":"Towne Parlor Pizza - Stamford, CT 06901","title":"Host/Hostess"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5955","location":"Towne Parlor Pizza - Stamford, CT 06901","title":"Line Cook"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5956","location":"Towne Parlor Pizza - Stamford, CT 06901","title":"Restaurant Manager"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5957","location":"Towne Parlor Pizza - Stamford, CT 06901","title":"Security"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5958","location":"Towne Parlor Pizza - Stamford, CT 06901","title":"Server"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5959","location":"Towne Parlor Pizza - Stamford, CT 06901","title":"Sous Chef"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5961","location":"Public House NYC, LLC - New York, NY 10017","title":"Barback"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5962","location":"Public House NYC, LLC - New York, NY 10017","title":"Bartender"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5963","location":"Public House NYC, LLC - New York, NY 10017","title":"Busser & Food Runner"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5964","location":"Public House NYC, LLC - New York, NY 10017","title":"Dishwasher"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5965","location":"Public House NYC, LLC - New York, NY 10017","title":"DJ"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5966","location":"Public House NYC, LLC - New York, NY 10017","title":"Event Coordinator"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5967","location":"Public House NYC, LLC - New York, NY 10017","title":"Host/Hostess"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5969","location":"Public House NYC, LLC - New York, NY 10017","title":"Line Cook"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5970","location":"Public House NYC, LLC - New York, NY 10017","title":"Restaurant Manager"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5972","location":"Public House NYC, LLC - New York, NY 10017","title":"Security"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5973","location":"Public House NYC, LLC - New York, NY 10017","title":"Security"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5974","location":"Public House NYC, LLC - New York, NY 10017","title":"Server"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5975","location":"Public House NYC, LLC - New York, NY 10017","title":"Sous Chef"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5977","location":"Bedford Hall - Stamford, CT 06901","title":"Barback"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5978","location":"Bedford Hall - Stamford, CT 06901","title":"Bartender"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5979","location":"Bedford Hall - Stamford, CT 06901","title":"Busser & Food Runner"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5980","location":"Bedford Hall - Stamford, CT 06901","title":"Dishwasher"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5981","location":"Bedford Hall - Stamford, CT 06901","title":"DJ"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5982","location":"Bedford Hall - Stamford, CT 06901","title":"Event Coordinator"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5983","location":"Bedford Hall - Stamford, CT 06901","title":"Executive Chef"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5984","location":"Bedford Hall - Stamford, CT 06901","title":"Host/Hostess"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5986","location":"Bedford Hall - Stamford, CT 06901","title":"Line Cook"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5987","location":"Bedford Hall - Stamford, CT 06901","title":"Restaurant Manager"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5988","location":"Bedford Hall - Stamford, CT 06901","title":"Security"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5989","location":"Bedford Hall - Stamford, CT 06901","title":"Server"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5990","location":"Bedford Hall - Stamford, CT 06901","title":"Sous Chef"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5992","location":"City Tap Logan, LLC - Philadelphia, PA 19103","title":"Barback"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5993","location":"City Tap Logan, LLC - Philadelphia, PA 19103","title":"Bartender"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5994","location":"City Tap Logan, LLC - Philadelphia, PA 19103","title":"Busser & Food Runner"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5995","location":"City Tap Logan, LLC - Philadelphia, PA 19103","title":"Dishwasher"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5996","location":"City Tap Logan, LLC - Philadelphia, PA 19103","title":"DJ"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5997","location":"City Tap Logan, LLC - Philadelphia, PA 19103","title":"Event Coordinator"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:5998","location":"City Tap Logan, LLC - Philadelphia, PA 19103","title":"Host/Hostess"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6000","location":"City Tap Logan, LLC - Philadelphia, PA 19103","title":"Line Cook"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6001","location":"City Tap Logan, LLC - Philadelphia, PA 19103","title":"Restaurant Manager"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6002","location":"City Tap Logan, LLC - Philadelphia, PA 19103","title":"Security"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6003","location":"City Tap Logan, LLC - Philadelphia, PA 19103","title":"Server"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6004","location":"City Tap Logan, LLC - Philadelphia, PA 19103","title":"Sous Chef"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6006","location":"City Tap UC, LLC - Philadelphia, PA 19104","title":"Barback"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6007","location":"City Tap UC, LLC - Philadelphia, PA 19104","title":"Bartender"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6008","location":"City Tap UC, LLC - Philadelphia, PA 19104","title":"Busser & Food Runner"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6009","location":"City Tap UC, LLC - Philadelphia, PA 19104","title":"Dishwasher"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6010","location":"City Tap UC, LLC - Philadelphia, PA 19104","title":"DJ"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6011","location":"City Tap UC, LLC - Philadelphia, PA 19104","title":"Event Coordinator"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6012","location":"City Tap UC, LLC - Philadelphia, PA 19104","title":"Executive Chef"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6013","location":"City Tap UC, LLC - Philadelphia, PA 19104","title":"Host/Hostess"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6015","location":"City Tap UC, LLC - Philadelphia, PA 19104","title":"Line Cook"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6016","location":"City Tap UC, LLC - Philadelphia, PA 19104","title":"Restaurant Manager"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6017","location":"City Tap UC, LLC - Philadelphia, PA 19104","title":"Security"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6018","location":"City Tap UC, LLC - Philadelphia, PA 19104","title":"Server"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6019","location":"City Tap UC, LLC - Philadelphia, PA 19104","title":"Sous Chef"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6021","location":"Field House - Philadelphia, PA 19107","title":"Barback"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6022","location":"Field House - Philadelphia, PA 19107","title":"Bartender"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6023","location":"Field House - Philadelphia, PA 19107","title":"Busser & Food Runner"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6024","location":"Field House - Philadelphia, PA 19107","title":"Busser & Food Runner"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6025","location":"Field House - Philadelphia, PA 19107","title":"Dishwasher"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6026","location":"Field House - Philadelphia, PA 19107","title":"DJ"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6027","location":"Field House - Philadelphia, PA 19107","title":"Event Coordinator"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6028","location":"Field House - Philadelphia, PA 19107","title":"Executive Chef"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6029","location":"Field House - Philadelphia, PA 19107","title":"Host/Hostess"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6031","location":"Field House - Philadelphia, PA 19107","title":"Line Cook"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6032","location":"Field House - Philadelphia, PA 19107","title":"Restaurant Manager"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6033","location":"Field House - Philadelphia, PA 19107","title":"Security"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6034","location":"Field House - Philadelphia, PA 19107","title":"Server"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6035","location":"Field House - Philadelphia, PA 19107","title":"Sous Chef"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6037","location":"Pennsylvania 6 Philly, LLC - Philadelphia, PA 19107","title":"Barback"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6038","location":"Pennsylvania 6 Philly, LLC - Philadelphia, PA 19107","title":"Bartender"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6039","location":"Pennsylvania 6 Philly, LLC - Philadelphia, PA 19107","title":"Busser & Food Runner"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6040","location":"Pennsylvania 6 Philly, LLC - Philadelphia, PA 19107","title":"Dishwasher"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6041","location":"Pennsylvania 6 Philly, LLC - Philadelphia, PA 19107","title":"DJ"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6042","location":"Pennsylvania 6 Philly, LLC - Philadelphia, PA 19107","title":"DJ"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6043","location":"Pennsylvania 6 Philly, LLC - Philadelphia, PA 19107","title":"Event Coordinator"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6044","location":"Pennsylvania 6 Philly, LLC - Philadelphia, PA 19107","title":"Executive Chef"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6045","location":"Pennsylvania 6 Philly, LLC - Philadelphia, PA 19107","title":"Host/Hostess"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6047","location":"Pennsylvania 6 Philly, LLC - Philadelphia, PA 19107","title":"Line Cook"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6048","location":"Pennsylvania 6 Philly, LLC - Philadelphia, PA 19107","title":"Restaurant Manager"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6049","location":"Pennsylvania 6 Philly, LLC - Philadelphia, PA 19107","title":"Security"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6050","location":"Pennsylvania 6 Philly, LLC - Philadelphia, PA 19107","title":"Server"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6051","location":"Pennsylvania 6 Philly, LLC - Philadelphia, PA 19107","title":"Sous Chef"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6053","location":"Public Irish Pub, LLC - Oxon Hill, MD 20745","title":"Barback"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6054","location":"Public Irish Pub, LLC - Oxon Hill, MD 20745","title":"Bartender"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6055","location":"Public Irish Pub, LLC - Oxon Hill, MD 20745","title":"Busser & Food Runner"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6056","location":"Public Irish Pub, LLC - Oxon Hill, MD 20745","title":"Dishwasher"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6057","location":"Public Irish Pub, LLC - Oxon Hill, MD 20745","title":"DJ"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6058","location":"Public Irish Pub, LLC - Oxon Hill, MD 20745","title":"Event Coordinator"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6059","location":"Public Irish Pub, LLC - Oxon Hill, MD 20745","title":"Executive Chef"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6060","location":"Public Irish Pub, LLC - Oxon Hill, MD 20745","title":"Host/Hostess"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6062","location":"Public Irish Pub, LLC - Oxon Hill, MD 20745","title":"Line Cook"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6063","location":"Public Irish Pub, LLC - Oxon Hill, MD 20745","title":"Restaurant Manager"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6064","location":"Public Irish Pub, LLC - Oxon Hill, MD 20745","title":"Security"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6065","location":"Public Irish Pub, LLC - Oxon Hill, MD 20745","title":"Server"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6066","location":"Public Irish Pub, LLC - Oxon Hill, MD 20745","title":"Sous Chef"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6068","location":"City Tap Fort Point, LLC - Boston, MA 02210","title":"Barback"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6069","location":"City Tap Fort Point, LLC - Boston, MA 02210","title":"Bartender"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6070","location":"City Tap Fort Point, LLC - Boston, MA 02210","title":"Busser & Food Runner"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6071","location":"City Tap Fort Point, LLC - Boston, MA 02210","title":"Dishwasher"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6072","location":"City Tap Fort Point, LLC - Boston, MA 02210","title":"DJ"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6073","location":"City Tap Fort Point, LLC - Boston, MA 02210","title":"Event Coordinator"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6074","location":"City Tap Fort Point, LLC - Boston, MA 02210","title":"Executive Chef"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6075","location":"City Tap Fort Point, LLC - Boston, MA 02210","title":"Host/Hostess"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6077","location":"City Tap Fort Point, LLC - Boston, MA 02210","title":"Line Cook"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6078","location":"City Tap Fort Point, LLC - Boston, MA 02210","title":"Restaurant Manager"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6079","location":"City Tap Fort Point, LLC - Boston, MA 02210","title":"Server"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6080","location":"City Tap Fort Point, LLC - Boston, MA 02210","title":"Sous Chef"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6082","location":"Public House National Harbor, LLC - oxon Hill, MD 20745","title":"Barback"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6083","location":"Public House National Harbor, LLC - oxon Hill, MD 20745","title":"Bartender"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6084","location":"Public House National Harbor, LLC - oxon Hill, MD 20745","title":"Busser & Food Runner"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6085","location":"Public House National Harbor, LLC - oxon Hill, MD 20745","title":"Dishwasher"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6086","location":"Public House National Harbor, LLC - oxon Hill, MD 20745","title":"DJ"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6087","location":"Public House National Harbor, LLC - oxon Hill, MD 20745","title":"Event Coordinator"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6088","location":"Public House National Harbor, LLC - oxon Hill, MD 20745","title":"Executive Chef"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6089","location":"Public House National Harbor, LLC - oxon Hill, MD 20745","title":"Host/Hostess"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6091","location":"Public House National Harbor, LLC - oxon Hill, MD 20745","title":"Line Cook"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6092","location":"Public House National Harbor, LLC - oxon Hill, MD 20745","title":"Restaurant Manager"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6093","location":"Public House National Harbor, LLC - oxon Hill, MD 20745","title":"Security"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6094","location":"Public House National Harbor, LLC - oxon Hill, MD 20745","title":"Server"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6095","location":"Public House National Harbor, LLC - oxon Hill, MD 20745","title":"Sous Chef"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6097","location":"CTH Midtown Atlanta, LLC - Atlanta, GA 30308","title":"Barback"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6098","location":"CTH Midtown Atlanta, LLC - Atlanta, GA 30308","title":"Bartender"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6099","location":"CTH Midtown Atlanta, LLC - Atlanta, GA 30308","title":"Busser & Food Runner"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6100","location":"CTH Midtown Atlanta, LLC - Atlanta, GA 30308","title":"Dishwasher"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6101","location":"CTH Midtown Atlanta, LLC - Atlanta, GA 30308","title":"DJ"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6102","location":"CTH Midtown Atlanta, LLC - Atlanta, GA 30308","title":"Event Coordinator"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6103","location":"CTH Midtown Atlanta, LLC - Atlanta, GA 30308","title":"Executive Chef"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6104","location":"CTH Midtown Atlanta, LLC - Atlanta, GA 30308","title":"Host/Hostess"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6106","location":"CTH Midtown Atlanta, LLC - Atlanta, GA 30308","title":"Line Cook"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6107","location":"CTH Midtown Atlanta, LLC - Atlanta, GA 30308","title":"Restaurant Manager"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6108","location":"CTH Midtown Atlanta, LLC - Atlanta, GA 30308","title":"Security"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6109","location":"CTH Midtown Atlanta, LLC - Atlanta, GA 30308","title":"Server"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:6110","location":"CTH Midtown Atlanta, LLC - Atlanta, GA 30308","title":"Sous Chef"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:7446","location":"CTH Nashville, LLC - Nashville, TN 37201","title":"Barback"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:7447","location":"CTH Nashville, LLC - Nashville, TN 37201","title":"Bartender"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:7448","location":"CTH Nashville, LLC - Nashville, TN 37201","title":"Busser & Food Runner"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:7449","location":"CTH Nashville, LLC - Nashville, TN 37201","title":"Dishwasher"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:7450","location":"CTH Nashville, LLC - Nashville, TN 37201","title":"DJ"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:7452","location":"CTH Nashville, LLC - Nashville, TN 37201","title":"Event Coordinator"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:7453","location":"CTH Nashville, LLC - Nashville, TN 37201","title":"Executive Chef"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:7454","location":"CTH Nashville, LLC - Nashville, TN 37201","title":"Host/Hostess"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:7456","location":"CTH Nashville, LLC - Nashville, TN 37201","title":"Line Cook"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:7457","location":"CTH Nashville, LLC - Nashville, TN 37201","title":"Restaurant Manager"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:7459","location":"CTH Nashville, LLC - Nashville, TN 37201","title":"Security"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:7460","location":"CTH Nashville, LLC - Nashville, TN 37201","title":"Server"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:7461","location":"CTH Nashville, LLC - Nashville, TN 37201","title":"Sous Chef"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:8602","location":"City Tap House  Chicago - Chicago, IL 60607","title":"Barback"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:8603","location":"City Tap House  Chicago - Chicago, IL 60607","title":"Bartender"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:8604","location":"City Tap House  Chicago - Chicago, IL 60607","title":"Busser & Food Runner"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:8606","location":"City Tap House  Chicago - Chicago, IL 60607","title":"DJ"}
+{"company":"Table 95 Management","first_seen":"2026-10-01","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:8607","location":"City Tap House  Chicago - Chicago, IL 60607","title":"Sales, Marketing, and Events Manager"}
+{"company":"Table 95 Management","first_seen":"2026-11-25","id":"paycom:78BC0075C6CFECF5CBDA9F32F35E1B21:8608","location":"City Tap House  Chicago - Chicago, IL 60607","title":"Executive Chef"}
