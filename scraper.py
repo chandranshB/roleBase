@@ -32,14 +32,15 @@ COMPANIES = Path("companies.json")  # {"greenhouse": {"stripe": "Stripe"}, ...} 
 KEEP_CLOSED_DAYS = 90  # closed jobs older than this are pruned (git history still has them)
 
 class Client(requests.Session):
-    waits = (2, 6)  # seconds before the 2nd and 3rd try
+    waits = (1, 3)  # seconds before the 2nd and 3rd try
 
     def request(self, *a, **kw):  # urllib3's Retry stops once the response starts, so connection cuts / timeouts mid-body are retried here
         for w in (*self.waits, None):
             try:
                 return super().request(*a, **kw)
-            except (requests.exceptions.ChunkedEncodingError, requests.exceptions.ConnectionError, requests.exceptions.ReadTimeout):
-                if w is None:
+            except (requests.exceptions.ChunkedEncodingError, requests.exceptions.ConnectionError, requests.exceptions.ReadTimeout) as exc:
+                msg = str(exc)
+                if "NameResolutionError" in msg or "Failed to resolve" in msg or w is None:
                     raise
                 time.sleep(w)
 
@@ -47,7 +48,7 @@ class Client(requests.Session):
 S = Client()
 S.headers["User-Agent"] = "argus-job-scraper"
 S.headers["Accept-Encoding"] = "gzip, deflate"
-S.mount("https://", HTTPAdapter(pool_maxsize=128, max_retries=Retry(total=5, backoff_factor=2, status_forcelist=[429, 500, 502, 503, 504],
+S.mount("https://", HTTPAdapter(pool_maxsize=128, max_retries=Retry(total=2, backoff_factor=1, status_forcelist=[429, 500, 502, 503, 504],
                                                                     allowed_methods=None)))  # None = retry POST too (Workday searches are read-only)
 TIMEOUT = (10, 45)  # connect, read
 
@@ -513,7 +514,7 @@ def wd_posted(t):  # "Posted 3 Days Ago" / "Posted Today" / "Posted 30+ Days Ago
     return (dt.date.today() - dt.timedelta(days=n)).isoformat()
 
 
-WD_CAP = 10000  # newest N per tenant: Workday refuses offsets past 2000 on some views, up to 10k on others. The site shows each employer's newest SITE_PER_COMPANY only (build_site.py)
+WD_CAP = 50000  # newest N per tenant; partitions via facets when Workday exceeds 2000 offset window
 
 
 def pmap(fn, xs, workers=4):  # a few pages at a time: fast, but polite to one host. Own pool, so no deadlock inside main()'s pool
@@ -523,39 +524,85 @@ def pmap(fn, xs, workers=4):  # a few pages at a time: fast, but polite to one h
 
 def workday(s, name):  # s = "<tenant>.<pod>.myworkdayjobs.com/<site>"; the list has no description, so years/skills/pay stay empty
     host, site = s.split("/", 1)
+    url = f"https://{host}/wday/cxs/{host.split('.')[0]}/{site}/jobs"
 
-    def page(off):
-        return body(lambda: S.post(f"https://{host}/wday/cxs/{host.split('.')[0]}/{site}/jobs", json={"limit": 20, "offset": off, "searchText": ""}, timeout=TIMEOUT))
+    def page(off, facets=None):
+        payload = {"limit": 20, "offset": off, "searchText": ""}
+        if facets:
+            payload["appliedFacets"] = facets
+        return body(lambda: S.post(url, json=payload, timeout=TIMEOUT))
+
+    def collect_query(first_d, facets=None):
+        tot = min(first_d.get("total", 0) or 0, WD_CAP)
+        if tot <= 20:
+            return [first_d]
+        rest = pmap(lambda o: page(o, facets), range(20, min(tot, 2000), 20), 3)
+        return [first_d, *rest]
+
+    def fetch_partitioned(d, base_facets, depth=0):
+        docs = []
+        tot = d.get("total", 0) or 0
+        if tot <= 2000 or depth >= 2:
+            return collect_query(d, base_facets or None)
+        # Pick the facet dimension not yet in base_facets whose largest bucket is smallest (to fall <= 2000)
+        best = None
+        for f in (d.get("facets") or []):
+            fp = f.get("facetParameter")
+            vals = [v for v in (f.get("values") or []) if v.get("id") and (v.get("count") or 0) > 0]
+            if not fp or fp in base_facets or not vals:
+                continue
+            mx = max(v["count"] for v in vals)
+            key = (mx >= 2000, mx, len(vals))
+            if best is None or key < best[0]:
+                best = (key, fp, vals)
+        if not best:
+            return collect_query(d, base_facets or None)
+        _, fp, vals = best
+        for v in vals:
+            nf = {**base_facets, fp: [v["id"]]}
+            try:
+                fd = page(0, nf)
+            except Exception:
+                continue
+            docs.extend(fetch_partitioned(fd, nf, depth + 1))
+        return docs
 
     first = page(0)
-    total = first.get("total", 0)
-    rest = pmap(page, range(20, min(total, WD_CAP), 20)) if total > 20 else []
+    total = first.get("total", 0) or 0
+    docs = collect_query(first) if total <= 2000 else fetch_partitioned(first, {})
     return list({j["externalPath"]: job("workday", f"workday:{s}", j["externalPath"], name, j["title"], f"https://{s}{j['externalPath']}",
                                         j.get("locationsText"), posted=wd_posted(j.get("postedOn")))
-                 for d in [first, *rest] for j in d.get("jobPostings", []) if j.get("externalPath") and j.get("title")}.values())  # entries with no link or no title exist (KBR has one): skip them, not the board
+                 for d in docs for j in d.get("jobPostings", []) if j.get("externalPath") and j.get("title")}.values())  # entries with no link or no title exist (KBR has one): skip them, not the board
 
 
 CAPPED = {"workday", "eightfold", "himalayas", "jobicy", "jobtech", "usajobs", "oracle", "phenom", "apple", "themuse", "aidevboard", "nofluffjobs", "arbeitsagentur", "mycareersfuture", "freehire", "workatastartup", "talentbrew"}
-AIDEV_CAP = 500  # newest N AI Dev Jobs
-HIM_CAP = 400  # newest N Himalayas jobs (of 100k+)
-MUSE_CAP = 400  # newest N jobs from The Muse (of 400k+)
-ORA_CAP = 10000  # newest N per Oracle career site (uncapped for large enterprises)
-USAJOBS_CAP = 15000  # newest N federal postings (uncapped to capture full federal directory)
-JT_CAP = 500  # newest N Swedish public-employment ads (of ~40k)
-EF_CAP = 10000  # newest N per Eightfold site (Starbucks, Microsoft, etc.)
-APPLE_CAP = 10000  # newest N Apple jobs (Apple lists ~6,000)
+AIDEV_CAP = 50000  # AI Dev Jobs (~9k total)
+HIM_CAP = 2000  # newest N Himalayas jobs (cursor paging; 20/req)
+MUSE_CAP = 1000  # newest N jobs from The Muse
+ORA_CAP = 50000  # per Oracle career site (partitions via facets past 10k)
+USAJOBS_CAP = 50000  # federal postings
+JT_CAP = 100000  # Swedish public-employment ads (~43k, partitioned past 2k offset cap)
+EF_CAP = 100000  # per Eightfold site (Starbucks ~22k, Microsoft, etc.)
+APPLE_CAP = 50000  # all Apple jobs
 
 
 def pcsx(host, domain, source, scope, name, cap=None):  # Eightfold "PCSX" search API behind a careers site; their robots.txt allows /api/pcsx
     def page(off):
-        time.sleep(.2)  # Eightfold's bot protection answers 405 to a burst, so a few pages at a time with a pause (and one site at a time, see LANE_OF)
-        return get(f"https://{host}/api/pcsx/search", params={"domain": domain, "query": "", "start": off}).get("data", {})
+        for wait in (0.35, 2.0, 6.0, 15.0):
+            time.sleep(wait)  # Eightfold's WAF answers 405/429 to bursts; back off cleanly without dropping the board
+            r = S.get(f"https://{host}/api/pcsx/search", params={"domain": domain, "query": "", "start": off}, timeout=TIMEOUT)
+            if r.status_code in (405, 429):
+                continue
+            r.raise_for_status()
+            return r.json().get("data", {})
+        r.raise_for_status()
+        return {}
 
     first = page(0)
     positions = first.get("positions") or []
     size = len(positions)
     count = first.get("count", 0)
-    rest = pmap(page, range(size, min(count, cap or count), size), 4) if size and size < count else []
+    rest = pmap(page, range(size, min(count, cap or count), size), 2) if size and size < count else []
     return list({j["id"]: job(source, scope, j["id"], name, j["name"], f"https://{host}/careers/job/{j['id']}",
                               "; ".join(j["standardizedLocations"] or j["locations"] or []), j.get("workLocationOption") == "remote",
                               j.get("postedTs"), team=j.get("department"))
@@ -749,18 +796,26 @@ def weworkremotely():  # RSS of the whole board; titles are "Company: Role"
     return out
 
 
-def getonbrd():  # Latin America's tech board (mostly Spanish postings), programming category
-    out = []
-    for p in range(1, 21):
-        d = get("https://www.getonbrd.com/api/v0/categories/programming/jobs", params={"per_page": 100, "page": p, "expand": '["company"]'})
-        for j in d["data"]:
-            a = j["attributes"]
-            out.append(job("getonbrd", "getonbrd", j["id"], clean_company(a["company"]["data"]["attributes"]["name"]), a["title"],
-                           f"https://www.getonbrd.com/jobs/{j['id']}", ", ".join(a.get("countries") or []), a.get("remote"), a.get("published_at"),
-                           desc=text(" ".join(filter(None, [a.get("description"), a.get("functions"), a.get("desirable")])))))
-        if p >= d["meta"]["total_pages"]:
-            return out
-    raise RuntimeError("getonbrd: >20 pages")
+def getonbrd():  # Latin America's tech board across all categories
+    try:
+        cats_res = get("https://www.getonbrd.com/api/v0/categories", params={"per_page": 100})
+        cats = [c["id"] for c in (cats_res.get("data") or []) if c.get("id")]
+    except Exception:
+        cats = []
+    if not cats:
+        cats = ["programming"]
+    out = {}
+    for cat in cats:
+        for p in range(1, 51):
+            d = get(f"https://www.getonbrd.com/api/v0/categories/{cat}/jobs", params={"per_page": 100, "page": p, "expand": '["company"]'})
+            for j in d.get("data") or []:
+                a = j["attributes"]
+                out[j["id"]] = job("getonbrd", "getonbrd", j["id"], clean_company(a["company"]["data"]["attributes"]["name"]), a["title"],
+                                   f"https://www.getonbrd.com/jobs/{j['id']}", ", ".join(a.get("countries") or []), a.get("remote"), a.get("published_at"),
+                                   desc=text(" ".join(filter(None, [a.get("description"), a.get("functions"), a.get("desirable")]))), team=cat)
+            if p >= (d.get("meta") or {}).get("total_pages", 1):
+                break
+    return list(out.values())
 
 
 def workingnomads():  # remote jobs, tags and time-zone notes; the list is short (~50) and complete
@@ -770,12 +825,60 @@ def workingnomads():  # remote jobs, tags and time-zone notes; the list is short
             for j in get("https://www.workingnomads.com/api/exposed_jobs/")]
 
 
-def jobtech():  # Sweden's public employment service (open data, Swedish text): newest JT_CAP of ~40k ads
-    def page(off):
-        return get("https://jobsearch.api.jobtechdev.se/search", params={"limit": 100, "offset": off, "sort": "pubdate-desc"})["hits"]
+def jobtech():  # Sweden's public employment service: partition past 2,000 offset limit by region & occupation-field
+    def query_hits(extra_params, count_hint=2000):
+        pages = []
+        cap = min(count_hint, 2000, JT_CAP)
+        for off in range(0, cap, 100):
+            try:
+                res = get("https://jobsearch.api.jobtechdev.se/search", params={"limit": 100, "offset": off, "sort": "pubdate-desc", **extra_params})
+                hits = res.get("hits") or []
+                pages.extend(hits)
+                if len(hits) < 100:
+                    break
+            except Exception:
+                break
+        return pages
+
+    try:
+        meta = get("https://jobsearch.api.jobtechdev.se/search", params={"limit": 0, "stats": "region", "stats.limit": 30})
+        total = ((meta.get("total") or {}).get("value")) or 0
+        reg_stats = ((meta.get("stats") or [{}])[0]).get("values") or []
+    except Exception:
+        total, reg_stats = 0, []
+
+    all_hits = {}
+    if total and total <= 2000:
+        for h in query_hits({}, total):
+            all_hits[h["id"]] = h
+    elif reg_stats:
+        field_ids = []
+        for rv in reg_stats:
+            rcnt, rcode = rv.get("count") or 0, rv.get("concept_id")
+            if not rcode or rcnt <= 0:
+                continue
+            if rcnt <= 2000:
+                for h in query_hits({"region": rcode}, rcnt):
+                    all_hits[h["id"]] = h
+            else:
+                if not field_ids:
+                    fmeta = get("https://jobsearch.api.jobtechdev.se/search", params={"limit": 0, "stats": "occupation-field", "stats.limit": 30})
+                    field_ids = [fv["concept_id"] for fv in (((fmeta.get("stats") or [{}])[0]).get("values") or []) if fv.get("concept_id")]
+                for fcode in field_ids:
+                    for h in query_hits({"region": rcode, "occupation-field": fcode}, 2000):
+                        all_hits[h["id"]] = h
+                if len(all_hits) >= JT_CAP:
+                    break
+    else:
+        def page(off):
+            return get("https://jobsearch.api.jobtechdev.se/search", params={"limit": 100, "offset": off, "sort": "pubdate-desc"})["hits"]
+
+        for hits in pmap(page, range(0, min(JT_CAP, 2000), 100), 3):
+            for h in hits:
+                all_hits[h["id"]] = h
 
     out = []
-    for j in (h for hits in pmap(page, range(0, JT_CAP, 100), 3) for h in hits):
+    for j in list(all_hits.values())[:JT_CAP]:
         a = j.get("workplace_address") or {}
         out.append(job("jobtech", "jobtech", j["id"], clean_company((j.get("employer") or {}).get("name")), j["headline"], j["webpage_url"],
                        ", ".join(filter(None, [a.get("municipality"), a.get("country")])), False, j.get("publication_date"),
@@ -844,22 +947,73 @@ def usajobs():  # US federal jobs, every occupation; needs a free API key (devel
     return out
 
 
-def oracle(s, name):  # Oracle Recruiting Cloud career site, s = "<host>/<site number>", e.g. "ecvz.fa.us2.oraclecloud.com/CX_1"; newest ORA_CAP, no descriptions
+def oracle(s, name):  # Oracle Recruiting Cloud career site, s = "<host>/<site number>", e.g. "ecvz.fa.us2.oraclecloud.com/CX_1"; partitions past 10k via facets
     host, site = s.split("/", 1) if "/" in s else (s, "CX")
 
-    def page(off):
+    def page(off, facet_expr="", include_facets=False):
+        facets_part = "facetsList=LOCATIONS;WORK_LOCATIONS;WORKPLACE_TYPES;TITLES;CATEGORIES;ORGANIZATIONS;POSTING_DATES;FLEX_FIELDS," if include_facets else ""
         res = get(f"https://{host}/hcmRestApi/resources/latest/recruitingCEJobRequisitions", params={
-            "onlyData": "true", "expand": "requisitionList.secondaryLocations",
-            "finder": f"findReqs;siteNumber={site},limit=50,offset={off},sortBy=POSTING_DATES_DESC"})
+            "onlyData": "true",
+            "expand": "requisitionList.secondaryLocations",
+            "finder": f"findReqs;siteNumber={site},{facets_part}{facet_expr}limit=50,offset={off},sortBy=POSTING_DATES_DESC"})
         items = res.get("items", []) if isinstance(res, dict) else []
         d = items[0] if items else {}
-        return d.get("TotalJobsCount", 0), d.get("requisitionList", [])
+        return d
 
-    total, first = page(0)
-    rest = pmap(lambda o: page(o)[1], range(50, min(total, ORA_CAP), 50)) if total > 50 else []
+    def facet_choices(df, used_params):
+        # postingDatesFacet (30=<=30d + 31=>30d) gives a complete 2-bucket split without top-10 truncation; skip Id=7 subset when 30 is present
+        specs = [
+            ("postingDatesFacet", "selectedPostingDatesFacet"),
+            ("organizationsFacet", "selectedOrganizationsFacet"),
+            ("categoriesFacet", "selectedCategoriesFacet"),
+            ("locationsFacet", "selectedLocationsFacet"),
+            ("workLocationsFacet", "selectedWorkLocationsFacet"),
+            ("workplaceTypesFacet", "selectedWorkplaceTypesFacet"),
+        ]
+        for fkey, param_name in specs:
+            if param_name in used_params:
+                continue
+            vals = [v for v in (df.get(fkey) or []) if v.get("Id") is not None and (v.get("TotalCount") or 0) > 0]
+            if not vals:
+                continue
+            if fkey == "postingDatesFacet":
+                ids_str = {str(v["Id"]) for v in vals}
+                if "30" in ids_str:
+                    vals = [v for v in vals if str(v["Id"]) != "7"]
+            if vals:
+                return param_name, vals
+        return None, []
+
+    def collect(first_doc, expr="", used_params=frozenset(), depth=0):
+        tot = first_doc.get("TotalJobsCount", 0) or 0
+        if tot <= 10000 or depth >= 2:
+            out_docs = [first_doc]
+            cap = min(tot, 10000, ORA_CAP)
+            if cap > 50:
+                out_docs.extend(pmap(lambda o, e=expr: page(o, facet_expr=e), range(50, cap, 50)))
+            return out_docs
+        df = first_doc if any(first_doc.get(k) for k in ("postingDatesFacet", "organizationsFacet", "categoriesFacet", "locationsFacet")) else page(0, facet_expr=expr, include_facets=True)
+        param_name, vals = facet_choices(df, used_params)
+        if not param_name:
+            cap = min(tot, 10000, ORA_CAP)
+            return [first_doc, *(pmap(lambda o, e=expr: page(o, facet_expr=e), range(50, cap, 50)) if cap > 50 else [])]
+        out_docs = []
+        nused = used_params | {param_name}
+        for v in vals:
+            nexpr = f"{expr}{param_name}={v['Id']},"
+            fd = page(0, facet_expr=nexpr, include_facets=(v.get("TotalCount", 0) > 10000 and depth + 1 < 2))
+            out_docs.extend(collect(fd, nexpr, nused, depth + 1))
+        return out_docs
+
+    d0 = page(0)
+    total = d0.get("TotalJobsCount", 0) or 0
+    if total <= 10000:
+        docs = [d0, *(pmap(lambda o: page(o), range(50, min(total, ORA_CAP), 50)) if total > 50 else [])]
+    else:
+        docs = collect(d0)
     return list({j["Id"]: job("oracle", f"oracle:{s}", j["Id"], name, j["Title"], f"https://{host}/hcmUI/CandidateExperience/en/sites/{site}/job/{j['Id']}",
                               j.get("PrimaryLocation"), "REMOTE" in (j.get("WorkplaceTypeCode") or ""), j.get("PostedDate"))
-                 for js in [first, *rest] for j in js if j.get("Id") and j.get("Title")}.values())
+                 for j in (d.get("requisitionList") or [] for d in docs) for j in j if j.get("Id") and j.get("Title")}.values())
 
 
 def workable(s, name):  # apply.workable.com/<slug>; many small and mid-size employers (restaurants, clinics, schools, shops)
@@ -871,16 +1025,59 @@ def workable(s, name):  # apply.workable.com/<slug>; many small and mid-size emp
             for j in d.get("jobs") or [] if j.get("shortcode") and j.get("title")]
 
 
-def teamtailor(s, name):  # RSS per company: <slug>.teamtailor.com or custom domain
-    url = f"https://{s}/jobs.rss" if "." in s else f"https://{s}.teamtailor.com/jobs.rss"
-    r = S.get(url, timeout=TIMEOUT)
+def teamtailor(s, name):  # RSS per company (capped at 100); overflows to /jobs/show_more?page=N turbo-stream HTML
+    base = f"https://{s}" if "." in s else f"https://{s}.teamtailor.com"
+    r = S.get(f"{base}/jobs.rss", timeout=TIMEOUT)
     r.raise_for_status()
     ns, out = {"tt": "https://teamtailor.com/locations"}, []
+    seen_ids = set()
     for i in ET.fromstring(r.content).iter("item"):
+        link = i.findtext("link") or ""
+        m_id = re.search(r"/jobs/(\d+)", link)
+        seen_ids.add(m_id.group(1) if m_id else link.split("?")[0])
         loc = "; ".join(", ".join(filter(None, [l.findtext("tt:city", "", ns), l.findtext("tt:country", "", ns)])) for l in i.iterfind("tt:locations/tt:location", ns))
-        out.append(job("teamtailor", f"teamtailor:{s}", i.findtext("guid"), name, i.findtext("title"), i.findtext("link"), loc,
+        out.append(job("teamtailor", f"teamtailor:{s}", i.findtext("guid"), name, i.findtext("title"), link, loc,
                        i.findtext("remoteStatus") == "fully", rss_day(i.findtext("pubDate")), desc=text(i.findtext("description")),
                        team=i.findtext("tt:department", "", ns)))
+    if len(out) >= 100:
+        prev_page_ids = set()
+        for pg in range(2, 100):
+            try:
+                rp = S.get(f"{base}/jobs/show_more", params={"page": pg}, headers={"User-Agent": FEISHU_BROWSER_UA}, timeout=TIMEOUT)
+                if not rp.ok or not rp.text.strip():
+                    break
+            except Exception:
+                break
+            clean_html = re.sub(r"</?template\b[^>]*>", "", rp.text)
+            soup = BeautifulSoup(clean_html, "html.parser")
+            links = soup.find_all("a", href=re.compile(r"/jobs/\d+"))
+            if not links:
+                break
+            page_ids = set()
+            for a in links:
+                href = (a.get("href") or "").split("?")[0]
+                if not href:
+                    continue
+                if href.startswith("/"):
+                    href = f"{base}{href}"
+                m_id = re.search(r"/jobs/(\d+)", href)
+                jid = m_id.group(1) if m_id else href
+                page_ids.add(jid)
+                if jid in seen_ids:
+                    continue
+                seen_ids.add(jid)
+                title = a.get_text(" ", strip=True)
+                if not title:
+                    continue
+                card = a.find_parent("li") or a.find_parent("div") or a
+                spans = [sp.get_text(strip=True) for sp in card.select("div span") if sp.get_text(strip=True) and sp.get_text(strip=True) not in ("·", "•")]
+                team = spans[0] if len(spans) >= 2 else ""
+                loc = ", ".join(spans[1:]) if len(spans) >= 2 else (spans[0] if spans else "")
+                remote = "remote" in loc.lower() or "remote" in title.lower()
+                out.append(job("teamtailor", f"teamtailor:{s}", jid, name, title, href, loc, remote, team=team))
+            if not page_ids or (prev_page_ids and page_ids <= prev_page_ids):
+                break
+            prev_page_ids = page_ids
     return out
 
 
@@ -911,7 +1108,7 @@ def recruitee(s, name):  # <slug>.recruitee.com/api/offers
     return out
 
 
-PH_CAP = 10000  # newest N per Phenom site (Phenom stops at 10,000 results; Advance Auto Parts alone lists 16,000+)
+PH_CAP = 50000  # per Phenom site; partitions via country/state/category facets when >10,000 results
 
 
 def phenom_job(s, name, j):  # one record of a Phenom careers site's search -> job; the record has no page link of its own, only the apply link
@@ -924,17 +1121,46 @@ def phenom_job(s, name, j):  # one record of a Phenom careers site's search -> j
 
 
 def phenom(s, name):  # Phenom People career site, s = host, e.g. "talent.lowes.com": the /widgets search the page itself calls, newest first, 100 per request
-    def page(off):
+    def page(off, selected=None):
         return body(lambda: S.post(f"https://{s}/widgets", timeout=TIMEOUT, headers={"Content-Type": "application/json"}, json={
             "lang": "en_us", "deviceType": "desktop", "country": "us", "pageName": "search-results", "ddoKey": "refineSearch", "sortBy": "", "subsearch": "",
             "from": off, "jobs": True, "counts": True, "all_fields": ["category", "country", "state", "city", "type"], "size": 100, "clearAll": False,
-            "jdsource": "facets", "isSliderEnable": False, "pageId": "page1", "siteType": "external", "keywords": "", "global": True, "selected_fields": {},
+            "jdsource": "facets", "isSliderEnable": False, "pageId": "page1", "siteType": "external", "keywords": "", "global": True, "selected_fields": selected or {},
             "sort": {"order": "desc", "field": "postedDate"}, "locationData": {}})).get("refineSearch") or {}
+
+    def collect_partition(d, sel=None, depth=0):
+        tot = d.get("totalHits") or 0
+        if tot <= 10000 or depth >= 2:
+            rest = pmap(lambda o: page(o, sel), range(100, min(tot, 10000, PH_CAP), 100), 3) if tot > 100 else []
+            return [d, *rest]
+        aggs = (d.get("data") or {}).get("aggregations") or []
+        best = None
+        for agg in aggs:
+            fld = agg.get("field")
+            vals = agg.get("value") if isinstance(agg.get("value"), dict) else {}
+            if not fld or (sel and fld in sel) or not vals:
+                continue
+            mx = max((int(c) for c in vals.values() if isinstance(c, (int, float))), default=0)
+            key = (mx > 10000, len(vals), mx)
+            if best is None or key < best[0]:
+                best = (key, fld, list(vals.keys()))
+        if not best:
+            rest = pmap(lambda o: page(o, sel), range(100, min(tot, 10000), 100), 3) if tot > 100 else []
+            return [d, *rest]
+        _, fld, keys = best
+        out_docs = []
+        sub_firsts = pmap(lambda k: (k, page(0, {**(sel or {}), fld: [k]})), keys, 3)
+        for k, fd in sub_firsts:
+            out_docs.extend(collect_partition(fd, {**(sel or {}), fld: [k]}, depth + 1))
+        return out_docs
 
     first = page(0)
     total = first.get("totalHits") or 0
-    rest = pmap(page, range(100, min(total, PH_CAP), 100), 3) if total > 100 else []
-    jobs = (phenom_job(s, name, j) for d in [first, *rest] for j in (d.get("data") or {}).get("jobs") or [])
+    if total <= 10000:
+        docs = [first, *(pmap(page, range(100, min(total, PH_CAP), 100), 3) if total > 100 else [])]
+    else:
+        docs = collect_partition(first)
+    jobs = (phenom_job(s, name, j) for d in docs for j in (d.get("data") or {}).get("jobs") or [])
     return list({j["id"]: j for j in jobs if j}.values())
 
 
@@ -999,7 +1225,38 @@ def bamboohr(s, name):  # <slug>.bamboohr.com/careers/list
     return out
 
 
-def rippling(s, name):  # ats.rippling.com/<slug>/jobs
+def rippling(s, name):  # ats.rippling.com/<slug>/jobs + public v1 board API (full list without SSR 20-cap)
+    out = []
+    seen = set()
+    try:
+        r = S.get(f"https://api.rippling.com/platform/api/ats/v1/board/{s}/jobs", timeout=TIMEOUT)
+        if r.ok:
+            data = r.json()
+            if isinstance(data, list):
+                for j in data:
+                    if not isinstance(j, dict):
+                        continue
+                    jid = str(j.get("uuid") or j.get("id") or "")
+                    title = (j.get("name") or "").strip()
+                    if not jid or not title or jid in seen:
+                        continue
+                    seen.add(jid)
+                    wl = j.get("workLocation") or {}
+                    loc = (wl.get("label") or "").strip() if isinstance(wl, dict) else ""
+                    if not loc and isinstance(j.get("locations"), list) and j["locations"]:
+                        l0 = j["locations"][0] or {}
+                        loc = ", ".join(filter(None, [l0.get("city"), l0.get("stateCode") or l0.get("countryCode")]))
+                    dept = j.get("department") or {}
+                    team = (dept.get("label") or dept.get("name") or "") if isinstance(dept, dict) else ""
+                    remote = "remote" in loc.lower() or "remote" in title.lower() or any(
+                        isinstance(l, dict) and l.get("workplaceType") in ("REMOTE", "HYBRID") for l in (j.get("locations") or [])
+                    )
+                    url = j.get("url") or f"https://ats.rippling.com/{s}/jobs/{jid}"
+                    out.append(job("rippling", f"rippling:{s}", jid, name or s, title, url, loc, remote,
+                                   posted=j.get("createdAt") or j.get("updatedAt"), team=team))
+                return out
+    except Exception:
+        pass
     r = S.get(f"https://ats.rippling.com/{s}/jobs", timeout=TIMEOUT)
     r.raise_for_status()
     m = re.search(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', r.text)
@@ -1010,15 +1267,15 @@ def rippling(s, name):  # ats.rippling.com/<slug>/jobs
     except Exception:
         return []
     queries = data.get("props", {}).get("pageProps", {}).get("dehydratedState", {}).get("queries", [])
-    out = []
     for q in queries:
         if "job-posts" in q.get("queryKey", []):
             items = q.get("state", {}).get("data", {}).get("items", [])
             for j in items:
                 jid = j.get("id")
                 title = j.get("name")
-                if not jid or not title:
+                if not jid or not title or str(jid) in seen:
                     continue
+                seen.add(str(jid))
                 locs = j.get("locations") or []
                 loc = ", ".join(filter(None, [locs[0].get("city"), locs[0].get("stateCode") or locs[0].get("countryCode")])) if locs else ""
                 remote = any(l.get("workplaceType") in ("REMOTE", "HYBRID") for l in locs)
@@ -1027,7 +1284,16 @@ def rippling(s, name):  # ats.rippling.com/<slug>/jobs
                 out.append(job("rippling", f"rippling:{s}", str(jid), name or s, title, url, loc, remote, team=team))
     return out
 
-def join(s, name):  # join.com/companies/<slug>
+
+_JOIN_GQL = """query PublicJobsList($input: PublicJobsQueryInput!) {
+  publicJobs(input: $input) {
+    items { idParam id title workplaceType remoteType createdAt category { name } employmentType { name } country { iso3166 } city { cityName countryName } }
+    pageInfo { page pageCount pageSize rowCount }
+  }
+}"""
+
+
+def join(s, name):  # join.com/companies/<slug> via __NEXT_DATA__ + candidate-api GraphQL pagination past 5-job SSR cap
     r = S.get(f"https://join.com/companies/{s}", timeout=TIMEOUT)
     r.raise_for_status()
     m = re.search(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', r.text)
@@ -1037,20 +1303,50 @@ def join(s, name):  # join.com/companies/<slug>
         d = json.loads(m.group(1))
     except Exception:
         return []
-    items = d.get("props", {}).get("pageProps", {}).get("pageData", {}).get("jobs", {}).get("items") or []
+    page_data = d.get("props", {}).get("pageProps", {}).get("pageData", {})
+    jobs_box = page_data.get("jobs") or {}
+    items = list(jobs_box.get("items") or [])
+    company_id = (page_data.get("company") or {}).get("id")
+    pagination = jobs_box.get("pagination") or {}
+    row_count = pagination.get("total") or len(items)
+    if company_id and (row_count > len(items) or len(items) >= 5):
+        gql_items = []
+        pg = 1
+        while pg <= 100:
+            try:
+                gr = S.post("https://join.com/candidate-api/graphql", timeout=TIMEOUT,
+                            headers={"Content-Type": "application/json"},
+                            json={"query": _JOIN_GQL, "variables": {"input": {"companyId": company_id, "paginationPage": {"page": pg, "pageSize": 100}}}})
+                if not gr.ok:
+                    break
+                pj = (gr.json().get("data") or {}).get("publicJobs") or {}
+                batch = pj.get("items") or []
+                if not batch:
+                    break
+                gql_items.extend(batch)
+                pinfo = pj.get("pageInfo") or {}
+                if pg >= (pinfo.get("pageCount") or 1):
+                    break
+                pg += 1
+            except Exception:
+                break
+        if gql_items:
+            items = gql_items
     out = []
+    seen = set()
     for j in items:
         if not isinstance(j, dict):
             continue
         jid = j.get("idParam") or j.get("id")
         title = j.get("title")
-        if not jid or not title:
+        if not jid or not title or str(jid) in seen:
             continue
+        seen.add(str(jid))
         c_raw = j.get("city")
         city = c_raw.get("cityName") if isinstance(c_raw, dict) else (c_raw if isinstance(c_raw, str) else "")
         co_raw = j.get("country")
-        country = (c_raw.get("countryName") if isinstance(c_raw, dict) else "") or (co_raw.get("iso3166") if isinstance(co_raw, dict) else (co_raw if isinstance(co_raw, str) else ""))
-        loc = ", ".join(filter(None, [city, country]))
+        cntry = (c_raw.get("countryName") if isinstance(c_raw, dict) else "") or (co_raw.get("iso3166") if isinstance(co_raw, dict) else (co_raw if isinstance(co_raw, str) else ""))
+        loc = ", ".join(filter(None, [city, cntry]))
         wp = (j.get("workplaceType") or "").upper()
         remote = wp in ("REMOTE", "HYBRID")
         url = f"https://join.com/companies/{s}/jobs/{jid}"
@@ -1122,43 +1418,71 @@ def jazzhr(s, name):  # <slug>.applytojob.com/apply
     return out
 
 
-def jobvite(s, name):  # jobs.jobvite.com/<slug>/jobs
+def jobvite(s, name):  # jobs.jobvite.com/<slug>/jobs + Show More paginated category searches
     r = S.get(f"https://jobs.jobvite.com/{s}/jobs", timeout=TIMEOUT)
     r.raise_for_status()
     out = []
     seen = set()
-    for m in re.finditer(r'<a\s+[^>]*href=["\'](?:https://jobs\.jobvite\.com)?/[^/]+/job/([a-zA-Z0-9]+)["\'][^>]*>(.*?)</a>', r.text, re.DOTALL | re.I):
-        jid, raw_title = m.groups()
-        if jid in seen:
-            continue
-        seen.add(jid)
-        title = html.unescape(re.sub(r'<[^>]+>', ' ', raw_title)).strip()
-        if not title:
-            continue
-        url = f"https://jobs.jobvite.com/{s}/job/{jid}"
-        out.append(job("jobvite", f"jobvite:{s}", jid, name or s, title, url, "", False))
+
+    def collect_html(txt):
+        for m in re.finditer(r'<a\s+[^>]*href=["\'](?:https://jobs\.jobvite\.com)?/[^/]+/job/([a-zA-Z0-9_-]+)["\'][^>]*>(.*?)</a>', txt, re.DOTALL | re.I):
+            jid, raw_title = m.groups()
+            if jid in seen:
+                continue
+            seen.add(jid)
+            title = html.unescape(re.sub(r'<[^>]+>', ' ', raw_title)).strip()
+            if not title:
+                continue
+            url = f"https://jobs.jobvite.com/{s}/job/{jid}"
+            out.append(job("jobvite", f"jobvite:{s}", jid, name or s, title, url, "", False))
+
+    collect_html(r.text)
+    show_more = sorted(set(re.findall(r'href=["\']([^"\']*/search\?c=[^"\']+)["\']', r.text)))
+    for cpath in show_more:
+        base_cat = html.unescape(cpath)
+        for p in range(50):
+            cu = re.sub(r'([?&])p=\d+', rf'\1p={p}', base_cat) if re.search(r'[?&]p=\d+', base_cat) else f"{base_cat}{'&' if '?' in base_cat else '?'}p={p}"
+            if cu.startswith("/"):
+                cu = f"https://jobs.jobvite.com{cu}"
+            try:
+                rc = S.get(cu, timeout=TIMEOUT)
+                if not rc.ok:
+                    break
+            except Exception:
+                break
+            collect_html(rc.text)
+            if not re.search(rf'(?:[?&]|&amp;)p={p + 1}\b', rc.text):
+                break
     return out
 
 
-def trakstar_hire(s, name):  # <slug>.hire.trakstar.com/jobs
-    r = S.get(f"https://{s}.hire.trakstar.com/jobs", timeout=TIMEOUT)
-    r.raise_for_status()
+def trakstar_hire(s, name):  # <slug>.hire.trakstar.com/?p=N (RB.init_data.paginator uses ?p=2, ?p=3, ...)
     out = []
     seen = set()
-    for m in re.finditer(r'<a\s+[^>]*href=["\'](?:https://[^/]+)?/jobs/([a-zA-Z0-9]+)/?["\'][^>]*>(.*?)</a>', r.text, re.DOTALL | re.I):
-        jid, raw_title = m.groups()
-        if jid in seen or jid.lower() in ("jobs", "apply"):
-            continue
-        seen.add(jid)
-        raw_text = html.unescape(re.sub(r'<[^>]+>', '\n', raw_title))
-        parts = [p.strip() for p in raw_text.split('\n') if p.strip()]
-        if not parts:
-            continue
-        title = parts[0]
-        loc = ", ".join(parts[1:]) if len(parts) > 1 else ""
-        remote = "remote" in loc.lower() or "hybrid" in loc.lower()
-        url = f"https://{s}.hire.trakstar.com/jobs/{jid}"
-        out.append(job("trakstar_hire", f"trakstar_hire:{s}", jid, name or s, title, url, loc, remote))
+    page = 1
+    while page <= 100:
+        r = S.get(f"https://{s}.hire.trakstar.com/", params={"p": page} if page > 1 else None, timeout=TIMEOUT)
+        r.raise_for_status()
+        new_in_page = 0
+        for m in re.finditer(r'<a\s+[^>]*href=["\'](?:https://[^/]+)?/jobs/([a-zA-Z0-9]+)/?["\'][^>]*>(.*?)</a>', r.text, re.DOTALL | re.I):
+            jid, raw_title = m.groups()
+            if jid in seen or jid.lower() in ("jobs", "apply"):
+                continue
+            seen.add(jid)
+            raw_text = html.unescape(re.sub(r'<[^>]+>', '\n', raw_title))
+            parts = [p.strip() for p in raw_text.split('\n') if p.strip()]
+            if not parts:
+                continue
+            new_in_page += 1
+            title = parts[0]
+            loc = ", ".join(parts[1:]) if len(parts) > 1 else ""
+            remote = "remote" in loc.lower() or "hybrid" in loc.lower()
+            url = f"https://{s}.hire.trakstar.com/jobs/{jid}"
+            out.append(job("trakstar_hire", f"trakstar_hire:{s}", jid, name or s, title, url, loc, remote))
+        has_next = f"?p={page + 1}" in r.text
+        if new_in_page == 0 or (not has_next and new_in_page < 25):
+            break
+        page += 1
     return out
 
 
@@ -1238,37 +1562,45 @@ def zoho(s, name):  # <host>/jobs/Careers/rss
 
 
 def icims(s, name):  # s = "<subdomain>.icims.com"
+    host = s if "." in s else f"{s}.icims.com"
     out = []
     page = 0
     seen = set()
-    while page < 50:
-        r = S.get(f"https://{s}/jobs/search", params={"pr": page, "in_iframe": "1"}, timeout=TIMEOUT)
+    while page < 500:
+        r = S.get(f"https://{host}/jobs/search", params={"pr": page, "in_iframe": "1"}, timeout=TIMEOUT)
         if not r.ok or "iCIMS_Anchor" not in r.text:
             break
-        matches = re.findall(r'<a\s+[^>]*href=["\']([^"\']*/jobs/(\d+)/[^"\']*)["\'][^>]*class=["\']iCIMS_Anchor["\'][^>]*title=["\']([^"\']+)["\']', r.text)
-        if not matches:
-            break
+        soup = BeautifulSoup(r.text, "html.parser")
         new_jobs = 0
-        for href, jid, title_attr in matches:
+        for a in soup.select("a.iCIMS_Anchor"):
+            href = a.get("href") or ""
+            m_id = re.search(r"/jobs/(\d+)", href)
+            if not m_id:
+                continue
+            jid = m_id.group(1)
             if jid in seen:
                 continue
             seen.add(jid)
+            title_attr = a.get("title") or a.get_text(" ", strip=True) or ""
+            title = re.sub(r"^\d+\s*-\s*", "", title_attr).strip()
+            if not title:
+                continue
             new_jobs += 1
-            title = re.sub(r'^\d+\s*-\s*', '', title_attr).strip()
             clean_url = href.split("?")[0]
-            out.append(job("icims", f"icims:{s}", jid, name or s, title, clean_url, ""))
+            if clean_url.startswith("/"):
+                clean_url = f"https://{host}{clean_url}"
+            out.append(job("icims", f"icims:{s}", jid, name or host, title, clean_url, ""))
         if new_jobs == 0:
             break
         page += 1
     return out
 
 
-def ultipro(s, name):  # s = "{tenant}/JobBoard/{guid}" or "{tenant}/{guid}"
+def ultipro(s, name):  # s = "{tenant}/jobboard/{guid}" or "{tenant}/{guid}"
     out = []
     parts = s.split("/")
     tenant = parts[0]
     guid = parts[-1]
-    scope_slug = f"{tenant}/JobBoard/{guid}"
     url = f"https://recruiting2.ultipro.com/{tenant}/JobBoard/{guid}/JobBoardView/LoadSearchResults"
     page = 0
     page_size = 50
@@ -1278,7 +1610,7 @@ def ultipro(s, name):  # s = "{tenant}/JobBoard/{guid}" or "{tenant}/{guid}"
         "Accept": "application/json, text/javascript, */*; q=0.01",
         "X-Requested-With": "XMLHttpRequest",
     }
-    while page < 50:
+    while page < 500:
         payload = {"opportunitySearch": {"Top": page_size, "Skip": page * page_size}}
         try:
             r = S.post(url, json=payload, headers=headers, timeout=TIMEOUT)
@@ -1313,7 +1645,7 @@ def ultipro(s, name):  # s = "{tenant}/JobBoard/{guid}" or "{tenant}/{guid}"
             emp = ["full_time"] if o.get("FullTime") is True else ["part_time"] if o.get("FullTime") is False else []
             desc = o.get("BriefDescription") or ""
             apply_url = f"https://recruiting2.ultipro.com/{tenant}/JobBoard/{guid}/OpportunityDetail?opportunityId={jid}"
-            out.append(job("ultipro", f"ultipro:{scope_slug}", jid, name or tenant, title,
+            out.append(job("ultipro", f"ultipro:{s}", jid, name or tenant, title,
                            apply_url, loc, posted=posted_date, desc=desc, team=dept, emp=emp))
         if len(opps) < page_size:
             break
@@ -1344,15 +1676,43 @@ def dayforce(s, name):  # s = "{client}/{board_code}"
     return out
 
 
-def paylocity(s, name):  # s = "{guid}"
-    data = get(f"https://recruiting.paylocity.com/recruiting/v2/api/feed/jobs/{s}")
+def paylocity(s, name):  # s = "{guid}": parse window.pageData JSON from /All/{s}, with v2 JSON feed fallback
     out = []
+    seen = set()
+    try:
+        r = S.get(f"https://recruiting.paylocity.com/recruiting/jobs/All/{s}", timeout=TIMEOUT)
+        if r.ok:
+            m = re.search(r"window\.pageData\s*=\s*(\{.*?\});", r.text, re.DOTALL)
+            if m:
+                pd = json.loads(m.group(1))
+                comp = name or pd.get("CompanyName") or pd.get("ModuleTitle") or s
+                for j in (pd.get("Jobs") or []):
+                    rid = str(j.get("JobId") or "")
+                    title = str(j.get("JobTitle") or "").strip()
+                    if not rid or not title or rid in seen:
+                        continue
+                    seen.add(rid)
+                    jl = j.get("JobLocation") or {}
+                    loc = str(j.get("LocationName") or "").strip() or ", ".join(filter(None, [jl.get("City"), jl.get("State"), jl.get("Country")]))
+                    remote = bool(j.get("IsRemote")) or j.get("IndeedRemoteType") == 1 or "remote" in loc.lower() or "remote" in title.lower()
+                    dept = j.get("HiringDepartment") or ""
+                    posted = str(j.get("PublishedDate") or "")[:10] or None
+                    desc = text(j.get("Description"))
+                    apply_url = f"https://recruiting.paylocity.com/recruiting/jobs/Details/{rid}"
+                    out.append(job("paylocity", f"paylocity:{s}", rid, comp, title, apply_url,
+                                   location=loc, remote=remote, posted=posted, desc=desc, team=dept))
+                if out:
+                    return out
+    except Exception:
+        pass
+    data = get(f"https://recruiting.paylocity.com/recruiting/v2/api/feed/jobs/{s}")
     comp = name or (data.get("displayName") if isinstance(data, dict) else "") or s
     for j in (data.get("jobs", []) if isinstance(data, dict) else []):
         rid = str(j.get("jobId") or j.get("publicJobId") or "")
         title = (j.get("title") or "").strip()
-        if not rid or not title:
+        if not rid or not title or rid in seen:
             continue
+        seen.add(rid)
         apply_url = j.get("applyUrl") or f"https://recruiting.paylocity.com/recruiting/jobs/Details/{rid}"
         desc = text(j.get("description"))
         loc = (j.get("location") or "").strip()
@@ -1362,15 +1722,52 @@ def paylocity(s, name):  # s = "{guid}"
     return out
 
 
-def paycom(s, name):  # s = "{clientkey}"
+def paycom(s, name):  # s = "{clientkey}": parse Mantle sessionJWT from React portal HTML, fallback to legacy <a>
     url = f"https://www.paycomonline.net/v4/ats/web.php/jobs?clientkey={s}"
     r = S.get(url, timeout=TIMEOUT)
     if not r.ok:
         return []
-    soup = BeautifulSoup(r.text, "html.parser")
     out = []
     comp = name or s
     seen = set()
+    m_cfg = re.search(r"var\s+configsFromHost\s*=\s*(\{.*?\});", r.text, re.DOTALL)
+    if m_cfg:
+        try:
+            cfg = json.loads(m_cfg.group(1))
+            jwt = cfg.get("sessionJWT")
+            lib = json.loads(cfg["libConfig"]) if isinstance(cfg.get("libConfig"), str) else (cfg.get("libConfig") or {})
+            base = (lib.get("atsPortalMantleServiceUrl") or "https://portal-applicant-tracking.us-cent.paycomonline.net/").rstrip("/")
+            if jwt:
+                skip, take = 0, 500
+                while True:
+                    sr = body(lambda: S.post(f"{base}/api/ats/job-posting-previews/search",
+                                             headers={"Authorization": jwt, "Content-Type": "application/json"},
+                                             json={"skip": skip, "take": take, "filtersForQuery": {}}, timeout=TIMEOUT))
+                    rows = (sr.get("jobPostingPreviews") or []) if isinstance(sr, dict) else []
+                    for j in rows:
+                        rid = str(j.get("jobId") or "")
+                        title = str(j.get("jobTitle") or "").strip()
+                        if not rid or not title or rid in seen:
+                            continue
+                        seen.add(rid)
+                        loc = str(j.get("locations") or "").strip()
+                        rtype = str(j.get("remoteType") or "").lower()
+                        remote = "remote" in rtype or "remote" in loc.lower() or "remote" in title.lower()
+                        emp = [j.get("positionType")] if j.get("positionType") else []
+                        posted = str(j.get("postedOn") or "")[:10] or None
+                        desc = text(j.get("description"))
+                        apply_url = f"https://www.paycomonline.net/v4/ats/web.php/portal/{s}/jobs/{rid}"
+                        out.append(job("paycom", f"paycom:{s}", rid, comp, title, apply_url,
+                                       location=loc, remote=remote, posted=posted, desc=desc, emp=emp))
+                    total = (sr.get("jobPostingPreviewsCount") or 0) if isinstance(sr, dict) else 0
+                    skip += take
+                    if not rows or len(rows) < take or skip >= total:
+                        break
+                if out:
+                    return out
+        except Exception:
+            pass
+    soup = BeautifulSoup(r.text, "html.parser")
     for a in soup.find_all("a", href=lambda h: h and ("jobId=" in h or "/jobs/" in h)):
         href = a.get("href") or ""
         m = re.search(r"jobId=(\d+)", href) or re.search(r"/jobs/(\d+)", href)
@@ -1388,20 +1785,73 @@ def paycom(s, name):  # s = "{clientkey}"
     return out
 
 
-def applicantpro(s, name):
-    r = S.get(f"https://{s}.applicantpro.com/jobs/", timeout=TIMEOUT)
+def _applicantpro_like(source, domain_suffix, s, name):
+    base = f"https://{s}.{domain_suffix}"
+    r = S.get(f"{base}/jobs/", timeout=TIMEOUT)
     if not r.ok:
         return []
     m = re.search(r"domainId\s*:\s*\[?'?(\d+)", r.text)
     if not m:
         return []
     domain_id = m.group(1)
-    data = get(f"https://{s}.applicantpro.com/core/jobs/{domain_id}", params={"getParams": "{}"})
-    jobs_list = data.get("data", {}).get("jobs", []) if isinstance(data, dict) else []
-    out = []
     comp = name or s
-    for j in jobs_list:
-        rid = str(j.get("id") or "")
+
+    def fetch_jobs(gp):
+        d = get(f"{base}/core/jobs/{domain_id}", params={"getParams": json.dumps(gp)})
+        return (d.get("data") or {}) if isinstance(d, dict) else {}
+
+    first = fetch_jobs({})
+    total = first.get("jobCount") or 0
+    seen = {}
+    for j in (first.get("jobs") or []):
+        if isinstance(j, dict) and j.get("id"):
+            seen[str(j["id"])] = j
+
+    if total > len(seen):
+        try:
+            sf = get(f"{base}/core/jobs/{domain_id}/search-filters/all", params={
+                "domainId": domain_id, "showLocation": 1, "showEmploymentType": 1,
+                "showWorkplaceType": 1, "showJobBoardClassifications": 1,
+                "showOrgUnit": 1, "showJobCategory": 1, "showCustomCategory": 1,
+            })
+        except Exception:
+            sf = {}
+        if isinstance(sf, dict):
+            states = [x["id"] for x in (sf.get("stateId") or []) if isinstance(x, dict) and x.get("id")]
+            sorts = [x["id"] for x in (sf.get("sort") or []) if isinstance(x, dict) and x.get("id")]
+            orgs = [x["id"] for x in (sf.get("department") or []) if isinstance(x, dict) and x.get("id")]
+            cats = [x["id"] for x in (sf.get("jobCategoryId") or []) if isinstance(x, dict) and x.get("id")]
+
+            def add_bucket(gp):
+                try:
+                    data = fetch_jobs(gp)
+                    jl = data.get("jobs") or []
+                    for j in jl:
+                        if isinstance(j, dict) and j.get("id"):
+                            seen[str(j["id"])] = j
+                    return data.get("jobCount") or 0, len(jl)
+                except Exception:
+                    return 0, 0
+
+            overflow_states = []
+            if states:
+                for st, (scnt, slen) in zip(states, pmap(lambda st_id: add_bucket({"stateId": st_id}), states, 6)):
+                    if scnt > slen:
+                        overflow_states.append(st)
+            if len(seen) < total and orgs:
+                pmap(lambda o: add_bucket({"orgUnitId": o}), orgs, 6)
+            if len(seen) < total and cats:
+                pmap(lambda c: add_bucket({"jobCategoryId": c}), cats, 6)
+            for st in overflow_states:
+                if len(seen) >= total:
+                    break
+                for so in sorts:
+                    add_bucket({"stateId": st, "sort": so})
+                if len(seen) < total:
+                    pmap(lambda ch, _st=st: add_bucket({"stateId": _st, "keywords": ch}), list("etaoinshrdlcumwfgypbvkjxqz"), 6)
+
+    out = []
+    for rid, j in seen.items():
         title = (j.get("title") or "").strip()
         if not rid or not title:
             continue
@@ -1430,76 +1880,91 @@ def applicantpro(s, name):
                 pay = None
         emp = (j.get("employmentType") or "",)
         team = j.get("classification") or j.get("orgTitle") or ""
-        apply_url = j.get("jobUrl") or f"https://{s}.applicantpro.com/jobs/{rid}"
-        out.append(job("applicantpro", f"applicantpro:{s}", rid, comp, title, apply_url,
+        apply_url = j.get("jobUrl") or f"{base}/jobs/{rid}"
+        out.append(job(source, f"{source}:{s}", rid, comp, title, apply_url,
                        location=loc, remote=remote, posted=posted, pay=pay, team=team, emp=emp))
     return out
+
+
+def applicantpro(s, name):
+    return _applicantpro_like("applicantpro", "applicantpro.com", s, name)
 
 
 def isolved(s, name):
-    r = S.get(f"https://{s}.isolvedhire.com/jobs/", timeout=TIMEOUT)
-    if not r.ok:
-        return []
-    m = re.search(r"domainId\s*:\s*\[?'?(\d+)", r.text)
-    if not m:
-        return []
-    domain_id = m.group(1)
-    data = get(f"https://{s}.isolvedhire.com/core/jobs/{domain_id}", params={"getParams": "{}"})
-    jobs_list = data.get("data", {}).get("jobs", []) if isinstance(data, dict) else []
-    out = []
-    comp = name or s
-    for j in jobs_list:
-        rid = str(j.get("id") or "")
-        title = (j.get("title") or "").strip()
-        if not rid or not title:
-            continue
-        loc = (j.get("jobLocation") or "").strip()
-        wpt = (j.get("workplaceType") or "").lower()
-        remote = wpt == "remote" or "remote" in loc.lower() or "remote" in title.lower()
-        posted = None
-        if j.get("startDateRef"):
-            try:
-                posted = dt.datetime.strptime(j["startDateRef"].strip(), "%b %d, %Y").date().isoformat()
-            except Exception:
-                posted = None
-        pay = None
-        min_sal = j.get("minSalary")
-        max_sal = j.get("maxSalary") or min_sal
-        pay_type = (j.get("payType") or "").lower()
-        if min_sal:
-            try:
-                lo = float(str(min_sal).replace(",", "").strip())
-                hi = float(str(max_sal).replace(",", "").strip())
-                if pay_type == "hourly":
-                    lo, hi = lo * 2080, hi * 2080
-                if 20000 <= lo <= hi <= 2_000_000:
-                    pay = [int(lo), int(hi), "USD"]
-            except Exception:
-                pay = None
-        emp = (j.get("employmentType") or "",)
-        team = j.get("classification") or j.get("orgTitle") or ""
-        apply_url = j.get("jobUrl") or f"https://{s}.isolvedhire.com/jobs/{rid}"
-        out.append(job("isolved", f"isolved:{s}", rid, comp, title, apply_url,
-                       location=loc, remote=remote, posted=posted, pay=pay, team=team, emp=emp))
-    return out
+    return _applicantpro_like("isolved", "isolvedhire.com", s, name)
 
 
-def betterteam(s, name):  # s = "{subdomain}" or "{domain}"
+def betterteam(s, name):  # s = "{subdomain}" or "{domain}": React Router turbo-stream JSON + <a> fallback
     base = f"https://{s}" if "." in s else f"https://{s}.betterteam.com"
     r = S.get(base, timeout=TIMEOUT)
     if not r.ok:
         return []
-    soup = BeautifulSoup(r.text, "html.parser")
     out = []
     comp = name or s
     seen = set()
-    for a in soup.select("a[href*='/jobs/'], a[href*='betterteam.com/']"):
+
+    m_stream = re.search(r'streamController\.enqueue\("((?:\\.|[^"\\])*)"\)', r.text)
+    if m_stream:
+        try:
+            arr = json.loads(json.loads('"' + m_stream.group(1) + '"'))
+
+            def dec(val, stack=frozenset()):
+                if isinstance(val, bool) or val is None or isinstance(val, (str, float)):
+                    return val
+                if isinstance(val, int):
+                    if val < 0:
+                        return "" if val == -5 else None
+                    if val in stack or val >= len(arr):
+                        return None
+                    return dec(arr[val], stack | {val})
+                if isinstance(val, list):
+                    return [dec(x, stack) for x in val]
+                if isinstance(val, dict):
+                    return {(arr[int(k[1:])] if k.startswith("_") and k[1:].isdigit() and int(k[1:]) < len(arr) else k): dec(v, stack)
+                            for k, v in val.items()}
+                return val
+
+            raw_jobs = []
+            for i, el in enumerate(arr):
+                if el == "routes/CareersPage" and i + 1 < len(arr) and isinstance(arr[i + 1], int):
+                    cp = dec(arr[arr[i + 1]])
+                    if isinstance(cp, dict) and isinstance(cp.get("jobs"), list):
+                        raw_jobs = cp["jobs"]
+                        break
+            if not raw_jobs:
+                for i, el in enumerate(arr):
+                    if el == "jobs" and i + 1 < len(arr) and isinstance(arr[i + 1], list):
+                        cand = dec(arr[i + 1])
+                        if cand and isinstance(cand[0], dict) and "slug" in cand[0]:
+                            raw_jobs = cand
+                            break
+            for j in raw_jobs:
+                if not isinstance(j, dict):
+                    continue
+                rid = str(j.get("slug") or "").strip("/")
+                title = str(j.get("title") or "").strip()
+                if not rid or not title or rid in seen:
+                    continue
+                seen.add(rid)
+                loc_obj = j.get("location") if isinstance(j.get("location"), dict) else {}
+                loc = (loc_obj.get("rawLocation") or ", ".join(filter(None, [loc_obj.get("city"), loc_obj.get("state"), loc_obj.get("country")])) or "").strip()
+                remote = bool(j.get("isRemote")) or "remote" in loc.lower() or "remote" in title.lower()
+                emp = [j.get("type")] if j.get("type") else []
+                out.append(job("betterteam", f"betterteam:{s}", rid, comp, title, f"{base}/{rid}",
+                               location=loc, remote=remote, emp=emp))
+            if out:
+                return out
+        except Exception:
+            pass
+
+    soup = BeautifulSoup(r.text, "html.parser")
+    for a in soup.select("a[href*='/jobs/'], a[href*='betterteam.com/'], a[href^='/']"):
         href = a.get("href") or ""
         m = re.search(r"/([a-zA-Z0-9_\-]+)/?$", href)
         if not m:
             continue
         rid = m.group(1)
-        if rid in seen or rid in ("jobs", "apply", "contact"):
+        if rid in seen or rid in ("jobs", "apply", "contact", "privacy", "terms", "cookies"):
             continue
         seen.add(rid)
         title = a.get_text(strip=True)
@@ -1514,85 +1979,104 @@ def gohire(s, name):
     r = S.get(f"https://jobs.gohire.io/{s}", timeout=TIMEOUT)
     if not r.ok:
         return []
-    soup = BeautifulSoup(r.text, "html.parser")
+    base_url = r.url.split("?")[0]
     out = []
     comp = name or s
-    hdr = soup.select_one(".job-header-left")
-    if hdr and not name:
-        comp_text = hdr.get_text(strip=True)
-        comp = re.sub(r"^Jobs at\s+", "", comp_text).strip() or s
     seen = set()
-    for a in soup.select("a.gohire-job, a[href*='jobs.gohire.io']"):
-        href = a.get("href") or ""
-        m = re.search(r"-(\d+)/?$", href) or re.search(r"/(\d+)/?$", href)
-        if not m:
-            continue
-        rid = m.group(1)
-        if rid in seen:
-            continue
-        seen.add(rid)
-        title_el = a.select_one(".job-title, h3, h2")
-        title = title_el.get_text(strip=True) if title_el else a.get_text(strip=True)
-        if not title:
-            continue
-        loc_el = a.select_one(".careers-location, .location")
-        loc = loc_el.get_text(strip=True) if loc_el else ""
-        remote = "remote" in loc.lower() or "remote" in title.lower()
-        posted_el = a.select_one(".date-posted")
-        posted = None
-        if posted_el:
-            m_date = re.search(r"Posted\s+(.+)$", posted_el.get_text(strip=True), re.IGNORECASE)
-            if m_date:
-                for fmt in ("%d %B, %Y", "%d %b, %Y", "%B %d, %Y", "%b %d, %Y"):
-                    try:
-                        posted = dt.datetime.strptime(m_date.group(1).strip(), fmt).date().isoformat()
-                        break
-                    except Exception:
-                        pass
-        apply_url = href if href.startswith("http") else f"https://jobs.gohire.io{href}"
-        out.append(job("gohire", f"gohire:{s}", rid, comp, title, apply_url,
-                       location=loc, remote=remote, posted=posted))
+    page = 1
+    while page <= 100:
+        if page > 1:
+            r = S.get(base_url, params={"page": page}, timeout=TIMEOUT)
+            if not r.ok:
+                break
+        soup = BeautifulSoup(r.text, "html.parser")
+        if page == 1 and not name:
+            hdr = soup.select_one(".job-header-left")
+            if hdr:
+                comp = re.sub(r"^Jobs at\s+", "", hdr.get_text(strip=True)).strip() or s
+        new_jobs = 0
+        for a in soup.select("a.gohire-job, a[href*='jobs.gohire.io']"):
+            href = a.get("href") or ""
+            m = re.search(r"-(\d+)/?$", href) or re.search(r"/(\d+)/?$", href)
+            if not m:
+                continue
+            rid = m.group(1)
+            if rid in seen:
+                continue
+            seen.add(rid)
+            title_el = a.select_one(".job-title, h3, h2")
+            title = title_el.get_text(strip=True) if title_el else a.get_text(strip=True)
+            if not title:
+                continue
+            new_jobs += 1
+            loc_el = a.select_one(".careers-location, .location")
+            loc = loc_el.get_text(strip=True) if loc_el else ""
+            remote = "remote" in loc.lower() or "remote" in title.lower()
+            posted_el = a.select_one(".date-posted")
+            posted = None
+            if posted_el:
+                m_date = re.search(r"Posted\s+(.+)$", posted_el.get_text(strip=True), re.IGNORECASE)
+                if m_date:
+                    for fmt in ("%d %B, %Y", "%d %b, %Y", "%B %d, %Y", "%b %d, %Y"):
+                        try:
+                            posted = dt.datetime.strptime(m_date.group(1).strip(), fmt).date().isoformat()
+                            break
+                        except Exception:
+                            pass
+            apply_url = href if href.startswith("http") else f"https://jobs.gohire.io{href}"
+            out.append(job("gohire", f"gohire:{s}", rid, comp, title, apply_url,
+                           location=loc, remote=remote, posted=posted))
+        if new_jobs == 0 or (f"page={page + 1}" not in r.text and new_jobs < 10):
+            break
+        page += 1
     return out
 
 
 def freshteam(s, name):
-    r = S.get(f"https://{s}.freshteam.com/jobs", timeout=TIMEOUT)
-    if not r.ok:
-        return []
-    soup = BeautifulSoup(r.text, "html.parser")
     out = []
     comp = name or s
     seen = set()
-    for a in soup.select("a[href*='/jobs/']"):
-        href = a.get("href") or ""
-        m = re.search(r"/jobs/([a-zA-Z0-9_\-]+)", href)
-        if not m:
-            continue
-        rid = m.group(1)
-        if rid in seen or (rid.isdigit() and int(rid) < 10):
-            continue
-        seen.add(rid)
-        title_el = a.select_one(".job-title") or a
-        title = title_el.get_text(strip=True)
-        if not title:
-            continue
-        loc = a.get("data-portal-location") or ""
-        if not loc:
-            loc_el = a.find_parent("li")
-            if loc_el:
-                loc_sub = loc_el.select_one(".location, .job-location, .branch")
-                if loc_sub:
-                    loc = loc_sub.get_text(strip=True)
-        remote = a.get("data-portal-remote-location") == "true" or "remote" in loc.lower() or "remote" in title.lower()
-        role_group = a.find_parent(class_=re.compile(r"job-role|department|branch"))
-        team = ""
-        if role_group:
-            role_title = role_group.select_one(".job-role, .group-title, h2, h3")
-            if role_title:
-                team = role_title.get_text(strip=True)
-        apply_url = f"https://{s}.freshteam.com/jobs/{rid}"
-        out.append(job("freshteam", f"freshteam:{s}", rid, comp, title, apply_url,
-                       location=loc, remote=remote, team=team))
+    page = 1
+    while page <= 50:
+        r = S.get(f"https://{s}.freshteam.com/jobs", params={"page": page} if page > 1 else None, timeout=TIMEOUT)
+        if not r.ok:
+            break
+        soup = BeautifulSoup(r.text, "html.parser")
+        new_jobs = 0
+        for a in soup.select("a[href*='/jobs/']"):
+            href = a.get("href") or ""
+            m = re.search(r"/jobs/([a-zA-Z0-9_\-]+)", href)
+            if not m:
+                continue
+            rid = m.group(1)
+            if rid in seen or (rid.isdigit() and int(rid) < 10):
+                continue
+            seen.add(rid)
+            title_el = a.select_one(".job-title") or a
+            title = title_el.get_text(strip=True)
+            if not title:
+                continue
+            new_jobs += 1
+            loc = a.get("data-portal-location") or ""
+            if not loc:
+                loc_el = a.find_parent("li")
+                if loc_el:
+                    loc_sub = loc_el.select_one(".location, .job-location, .branch")
+                    if loc_sub:
+                        loc = loc_sub.get_text(strip=True)
+            remote = a.get("data-portal-remote-location") == "true" or "remote" in loc.lower() or "remote" in title.lower()
+            role_group = a.find_parent(class_=re.compile(r"job-role|department|branch"))
+            team = ""
+            if role_group:
+                role_title = role_group.select_one(".job-role, .group-title, h2, h3")
+                if role_title:
+                    team = role_title.get_text(strip=True)
+            apply_url = f"https://{s}.freshteam.com/jobs/{rid}"
+            out.append(job("freshteam", f"freshteam:{s}", rid, comp, title, apply_url,
+                           location=loc, remote=remote, team=team))
+        if new_jobs == 0 or (f"page={page + 1}" not in r.text and new_jobs < 1000):
+            break
+        page += 1
     return out
 
 
@@ -1663,13 +2147,14 @@ def recooty(s, name):
 def csod(s, name):
     parts = s.split("/")
     tenant = parts[0]
-    site_id = int(parts[1]) if len(parts) > 1 and parts[1].isdigit() else 1
-    r = S.get(f"https://{tenant}.csod.com/ux/ats/careersite/{site_id}/home?c={tenant}", timeout=TIMEOUT)
-    if not r.ok or "csod.context" not in r.text:
-        if site_id == 1:
-            site_id = 2
-            r = S.get(f"https://{tenant}.csod.com/ux/ats/careersite/{site_id}/home?c={tenant}", timeout=TIMEOUT)
-    if not r.ok or "csod.context" not in r.text:
+    explicit_sid = int(parts[1]) if len(parts) > 1 and parts[1].isdigit() else None
+    r = None
+    for probe_sid in ([explicit_sid] if explicit_sid is not None else [1, 2, 3, 4, 5, 6]):
+        cand = S.get(f"https://{tenant}.csod.com/ux/ats/careersite/{probe_sid}/home?c={tenant}", timeout=TIMEOUT)
+        if cand.ok and "csod.context" in cand.text:
+            r = cand
+            break
+    if not r:
         return []
     m = re.search(r"csod\.context\s*=\s*(\{.*?\});", r.text, re.DOTALL)
     if not m:
@@ -1688,87 +2173,179 @@ def csod(s, name):
     }
     culture_name = ctx.get("cultureName", "en-US")
     culture_id = ctx.get("cultureID", 1)
-    page = 1
     page_size = 50
     out = []
     comp = name or tenant
     seen = set()
-    while page <= 20:
-        payload = {
-            "careerSiteId": site_id,
-            "pageNumber": page,
-            "pageSize": page_size,
-            "cultureId": culture_id,
-            "cultureName": culture_name,
-            "searchText": "",
-        }
-        try:
-            res = S.post(f"https://{tenant}.csod.com/services/x/career-site/v1/search", headers=headers, json=payload, timeout=TIMEOUT)
-            if not res.ok:
+    site_ids = [explicit_sid] if explicit_sid is not None else [1, 2, 3, 4, 5, 6]
+    for site_id in site_ids:
+        page = 1
+        while page <= 200:
+            payload = {
+                "careerSiteId": site_id,
+                "pageNumber": page,
+                "pageSize": page_size,
+                "cultureId": culture_id,
+                "cultureName": culture_name,
+                "searchText": "",
+            }
+            try:
+                res = S.post(f"https://{tenant}.csod.com/services/x/career-site/v1/search", headers=headers, json=payload, timeout=TIMEOUT)
+                if not res.ok:
+                    break
+                d = res.json()
+            except Exception:
                 break
-            d = res.json()
-        except Exception:
-            break
-        reqs = d.get("data", {}).get("requisitions", [])
-        if not reqs:
-            break
-        for req in reqs:
-            rid = str(req.get("requisitionId") or "")
-            title = (req.get("displayJobTitle") or "").strip()
-            if not rid or not title or rid in seen:
-                continue
-            seen.add(rid)
-            locs = req.get("locations") or []
-            loc_parts = []
-            for l in locs:
-                if isinstance(l, dict):
-                    loc_parts.append(", ".join(filter(None, [l.get("city"), l.get("state"), l.get("country")])))
-            loc = "; ".join(loc_parts)
-            remote = "remote" in loc.lower() or "remote" in title.lower()
-            posted = None
-            if req.get("postingEffectiveDate"):
-                try:
-                    posted = dt.datetime.strptime(req["postingEffectiveDate"].strip(), "%m/%d/%Y").date().isoformat()
-                except Exception:
-                    posted = None
-            apply_url = f"https://{tenant}.csod.com/ux/ats/careersite/4/home/requisition/{rid}?c={tenant}"
-            out.append(job("csod", f"csod:{s}", rid, comp, title, apply_url,
-                           location=loc, remote=remote, posted=posted))
-        if len(reqs) < page_size:
-            break
-        page += 1
+            reqs = (d.get("data") or {}).get("requisitions") or []
+            if not reqs:
+                break
+            for req in reqs:
+                rid = str(req.get("requisitionId") or "")
+                title = (req.get("displayJobTitle") or "").strip()
+                if not rid or not title or rid in seen:
+                    continue
+                seen.add(rid)
+                locs = req.get("locations") or []
+                loc_parts = []
+                for l in locs:
+                    if isinstance(l, dict):
+                        loc_parts.append(", ".join(filter(None, [l.get("city"), l.get("state"), l.get("country")])))
+                loc = "; ".join(loc_parts)
+                remote = "remote" in loc.lower() or "remote" in title.lower()
+                posted = None
+                if req.get("postingEffectiveDate"):
+                    try:
+                        posted = dt.datetime.strptime(req["postingEffectiveDate"].strip(), "%m/%d/%Y").date().isoformat()
+                    except Exception:
+                        posted = None
+                apply_url = f"https://{tenant}.csod.com/ux/ats/careersite/{site_id}/home/requisition/{rid}?c={tenant}"
+                out.append(job("csod", f"csod:{s}", rid, comp, title, apply_url,
+                               location=loc, remote=remote, posted=posted))
+            if len(reqs) < page_size:
+                break
+            page += 1
     return out
 
 
 def taleo(s, name):
     parts = s.split("/")
     company = parts[0]
+    host = company if "." in company else f"{company}.taleo.net"
     section = parts[1] if len(parts) > 1 else "ex"
-    r = S.get(f"https://{company}.taleo.net/careersection/{section}/joblist.ftl?lang=en", timeout=TIMEOUT)
-    if not r.ok or "ftlform" not in r.text:
+    r = S.get(f"https://{host}/careersection/{section}/joblist.ftl?lang=en", timeout=TIMEOUT)
+    if (not r.ok or ("ftlform" not in r.text and "FacetedSearchSettings" not in r.text) or "Career Section Unavailable" in r.text) and len(parts) == 1:
+        r2 = S.get(f"https://{host}/careersection/default.ftl", timeout=TIMEOUT)
+        if r2.ok and ("ftlform" in r2.text or "FacetedSearchSettings" in r2.text):
+            r = r2
+            m_sec = re.search(r"/careersection/([^/]+)/", r.url)
+            if m_sec:
+                section = m_sec.group(1)
+    if not r.ok or "Career Section Unavailable" in r.text:
+        return []
+    comp = name or company.split(".")[0]
+    out = []
+    seen = set()
+
+    if "ftlform" not in r.text and "FacetedSearchSettings" in r.text:
+        m_qs = re.search(r"queryString\s*:\s*['\"]([^'\"]+)['\"]", r.text)
+        portal_qs = m_qs.group(1) if m_qs else ""
+        search_url = f"https://{host}/careersection/rest/jobboard/searchjobs?lang=en&{portal_qs}" if portal_qs else f"https://{host}/careersection/rest/jobboard/searchjobs?lang=en"
+        pg = 1
+        while pg <= 200:
+            payload = {
+                "multilineEnabled": False,
+                "sortingSelection": {"sortBySelectionParam": "3", "ascendingSortingOrder": "false"},
+                "fieldData": {"fields": {"KEYWORD": "", "LOCATION": ""}, "valid": True},
+                "filterSelectionParam": {"searchFilterSelections": []},
+                "advancedSearchFiltersSelectionParam": {"searchFilterSelections": []},
+                "pageNo": pg,
+            }
+            try:
+                rp = S.post(search_url, json=payload, headers={"Content-Type": "application/json", "tz": "GMT+00:00"}, timeout=TIMEOUT)
+                if not rp.ok:
+                    break
+                data = rp.json()
+            except Exception:
+                break
+            reqs = data.get("requisitionList") or []
+            if not reqs:
+                break
+            for item in reqs:
+                jid = str(item.get("jobId") or "")
+                cols = item.get("column") or []
+                lidx = int(item.get("linkedColumn") or 0)
+                title = cols[lidx] if lidx < len(cols) else ""
+                if not jid or not title or jid in seen:
+                    continue
+                seen.add(jid)
+                loc = ""
+                for ci in item.get("locationsColumns") or []:
+                    if isinstance(ci, int) and ci < len(cols) and cols[ci]:
+                        raw_loc = cols[ci]
+                        if isinstance(raw_loc, str) and raw_loc.startswith("["):
+                            try:
+                                raw_loc = ", ".join(str(x) for x in json.loads(raw_loc) if x)
+                            except Exception:
+                                pass
+                        loc = str(raw_loc)
+                        break
+                apply_url = f"https://{host}/careersection/{section}/jobdetail.ftl?job={jid}"
+                remote = "remote" in title.lower() or "remote" in loc.lower()
+                out.append(job("taleo", f"taleo:{s}", jid, comp, title, apply_url, location=loc, remote=remote))
+            pdata = data.get("pagingData") or {}
+            tot = int(pdata.get("totalCount") or 0)
+            psize = int(pdata.get("pageSize") or 25)
+            if tot and pg * psize >= tot:
+                break
+            pg += 1
+        return out
+
+    if "ftlform" not in r.text:
         return []
     soup = BeautifulSoup(r.text, "html.parser")
-    form = soup.find("form")
+    form = soup.find("form", attrs={"name": "ftlform"}) or soup.find("form")
     if not form:
         return []
     inputs = {i.get("name"): i.get("value", "") for i in form.find_all("input") if i.get("name")}
-    raw = inputs.get("initialHistory", "")
-    decoded = urllib.parse.unquote(urllib.parse.unquote(raw))
-    jobs = re.findall(r'!(\d+)!\|!([^!|]+)!\|!\1!\|!\2!\|!(?:\1!\|!)+([^!|]+)!\|!([^!|]+)!', decoded)
-    if not jobs:
-        jobs = [(m[0], m[1], "", "") for m in re.findall(r'!(\d+)!\|!([^!|]+)!\|!\1!\|!\2!', decoded)]
-    out = []
-    comp = name or company
-    seen = set()
-    for match in jobs:
-        jid, title = match[0].strip(), match[1].strip()
-        loc = match[3].strip() if len(match) > 3 and match[3].strip() != match[2].strip() else ""
-        if not jid or not title or jid == title or jid in seen:
-            continue
-        seen.add(jid)
-        apply_url = f"https://{company}.taleo.net/careersection/{section}/jobdetail.ftl?job={jid}"
-        remote = "remote" in title.lower() or "remote" in loc.lower()
-        out.append(job("taleo", f"taleo:{s}", jid, comp, title, apply_url, location=loc, remote=remote))
+
+    def parse_history(raw_text):
+        dec = urllib.parse.unquote(urllib.parse.unquote(raw_text or ""))
+        jobs = re.findall(r'!(\d+)!\|!([^!|]+)!\|!\1!\|!\2!\|!(?:\1!\|!)+([^!|]+)!\|!([^!|]+)!', dec)
+        if not jobs:
+            jobs = [(m[0], m[1], "", "") for m in re.findall(r'!(\d+)!\|!([^!|]+)!\|!\1!\|!\2!', dec)]
+        added = 0
+        for match in jobs:
+            jid, title = match[0].strip(), match[1].strip()
+            loc = match[3].strip() if len(match) > 3 and match[3].strip() != match[2].strip() else ""
+            if not jid or not title or jid == title or jid in seen:
+                continue
+            seen.add(jid)
+            added += 1
+            apply_url = f"https://{host}/careersection/{section}/jobdetail.ftl?job={jid}"
+            remote = "remote" in title.lower() or "remote" in loc.lower()
+            out.append(job("taleo", f"taleo:{s}", jid, comp, title, apply_url, location=loc, remote=remote))
+        return added
+
+    p1_added = parse_history(inputs.get("initialHistory", ""))
+    act = (form.get("action") or "joblist.ftl").split(";")[0].split(".ftl")[0] + ".ajax"
+    act_url = urllib.parse.urljoin(f"https://{host}/careersection/{section}/", act)
+    if p1_added >= 20 and "rlPager" in r.text and inputs.get("ftlpageid"):
+        ajax_q = {
+            "ftlpageid": inputs.get("ftlpageid", ""),
+            "ftlinterfaceid": "requisitionListInterface",
+            "ftlcompid": "rlPager",
+            "jsfCmdId": "rlPager",
+            "ftlcompclass": "PagerComponent",
+            "ftlcallback": "ftlPager_processResponse",
+            "ftlajaxid": "ftlx1",
+        }
+        for pg in range(2, 101):
+            try:
+                rp = S.post(act_url, params=ajax_q, data={**inputs, "iframemode": "1", "rlPager.currentPage": str(pg)}, timeout=TIMEOUT)
+                if not rp.ok or parse_history(rp.text) == 0:
+                    break
+            except Exception:
+                break
     return out
 
 
@@ -1781,7 +2358,7 @@ def bullhorn(s, name):  # s = "{cls}/{token}"
     start = 0
     page_size = 100
     seen = set()
-    while start < 500:
+    while start < 20000:
         url = f"https://public-rest{cls}.bullhornstaffing.com/rest-services/{token}/search/JobOrder"
         params = {
             "query": "(isOpen:1)",
@@ -1827,17 +2404,22 @@ def successfactors(s, name):
     comp = name or s
     out = []
     seen = set()
-    if "." in s:
+
+    def scrape_search_site(base_host, initial_html=None):
         startrow = 0
-        while startrow < 1000:
-            url = f"https://{s}/search/?q=&startrow={startrow}"
-            try:
-                r = S.get(url, timeout=TIMEOUT)
-                if not r.ok:
+        while startrow < 10000:
+            if startrow == 0 and initial_html is not None:
+                html_text = initial_html
+            else:
+                url = f"{base_host.rstrip('/')}/search/?q=&startrow={startrow}"
+                try:
+                    r = S.get(url, timeout=TIMEOUT)
+                    if not r.ok:
+                        break
+                    html_text = r.text
+                except Exception:
                     break
-            except Exception:
-                break
-            soup = BeautifulSoup(r.text, "html.parser")
+            soup = BeautifulSoup(html_text, "html.parser")
             rows = soup.find_all("tr", class_=lambda c: c and "data-row" in c.lower())
             if not rows:
                 break
@@ -1865,24 +2447,33 @@ def successfactors(s, name):
                             break
                         except Exception:
                             pass
-                apply_url = href if href.startswith("http") else f"https://{s}{href}"
+                apply_url = href if href.startswith("http") else f"{base_host.rstrip('/')}{href}"
                 remote = "remote" in loc.lower() or "remote" in title.lower()
                 out.append(job("successfactors", f"successfactors:{s}", jid, comp, title, apply_url, location=loc, remote=remote, posted=posted))
             if new_in_page == 0:
                 break
             startrow += len(rows)
+
+    if "." in s and "/" not in s:
+        scrape_search_site(f"https://{s}")
         return out
 
-    parts = s.split("/")
+    parts = s.split("/", 1)
     cls = parts[0]
     company = parts[1] if len(parts) > 1 else s
-    url = f"https://career{cls}.successfactors.com/career?company={company}&career_ns=job_listing_summary&navBarLevel=JOB_SEARCH"
+    sf_host = f"https://{cls}" if "." in cls else f"https://career{cls}.successfactors.com"
+    url = f"{sf_host}/career?company={company}&career_ns=job_listing_summary&navBarLevel=JOB_SEARCH"
     try:
         r = S.get(url, timeout=TIMEOUT)
         if not r.ok:
             return []
     except Exception:
         return []
+    # If redirected to an RMK /search/ site (e.g., Tenaris), paginate startrow cleanly across all pages
+    parsed_url = urllib.parse.urlparse(r.url)
+    if "/search" in parsed_url.path and parsed_url.netloc and "successfactors.com" not in parsed_url.netloc:
+        scrape_search_site(f"{parsed_url.scheme}://{parsed_url.netloc}", initial_html=r.text)
+        return out
     soup = BeautifulSoup(r.text, "html.parser")
     rows = soup.find_all("tr", class_=lambda c: c and "data-row" in c.lower())
     for tr in rows:
@@ -1907,7 +2498,7 @@ def successfactors(s, name):
                 posted = dt.datetime.strptime(date_str, "%b %d, %Y").date().isoformat()
             except Exception:
                 posted = None
-        apply_url = href if href.startswith("http") else f"https://career{cls}.successfactors.com{href}"
+        apply_url = href if href.startswith("http") else f"{sf_host}{href}"
         remote = "remote" in loc.lower() or "remote" in title.lower()
         out.append(job("successfactors", f"successfactors:{s}", jid, comp, title, apply_url, location=loc, remote=remote, team=team, posted=posted))
     return out
@@ -1918,9 +2509,8 @@ def avature(s, name):
     out = []
     seen = set()
     offset = 0
-    limit = 50
-    while offset < 500:
-        url = f"https://{s}.avature.net/careers/SearchJobs/?jobRecordsPerPage={limit}&jobOffset={offset}"
+    while offset < 10000:
+        url = f"https://{s}.avature.net/careers/SearchJobs/?jobRecordsPerPage=50&jobOffset={offset}"
         try:
             r = S.get(url, timeout=TIMEOUT)
             if not r.ok:
@@ -1930,13 +2520,15 @@ def avature(s, name):
         soup = BeautifulSoup(r.text, "html.parser")
         links = soup.find_all("a", href=re.compile(r"/JobDetail/"))
         new_jobs = 0
+        page_items = 0
         for a in links:
             href = a.get("href") or ""
             title = a.text.strip()
             if not title or title.lower() == "apply":
                 continue
+            page_items += 1
             jid = href.strip("/").split("/")[-1]
-            if not jid or not title or jid in seen:
+            if not jid or jid in seen:
                 continue
             seen.add(jid)
             parent = a.find_parent("li") or a.find_parent("div")
@@ -1949,9 +2541,10 @@ def avature(s, name):
             remote = "remote" in loc.lower() or "remote" in title.lower()
             out.append(job("avature", f"avature:{s}", jid, comp, title, apply_url, location=loc, remote=remote))
             new_jobs += 1
-        if new_jobs == 0:
+        if new_jobs == 0 or page_items == 0:
             break
-        offset += limit
+        # Step by actual page size returned by the portal (servers often ignore jobRecordsPerPage and return 12/18/20)
+        offset += page_items
     return out
 
 
@@ -1999,7 +2592,7 @@ def manatal(s, name):
     out = []
     seen = set()
     url = f"https://api.manatal.com/open/v3/career-page/{s}/jobs/?page_size=100"
-    while url and len(out) < 500:
+    while url and len(out) < 20000:
         try:
             r = S.get(url, timeout=TIMEOUT)
             if not r.ok:
@@ -2059,37 +2652,42 @@ def loxo(s, name):
 
 
 def careerplug(s, name):
-    try:
-        r = S.get(f"https://{s}.careerplug.com/jobs", timeout=TIMEOUT)
-        if not r.ok:
-            return []
-    except Exception:
-        return []
-    soup = BeautifulSoup(r.text, "html.parser")
-    links = soup.find_all("a", href=re.compile(r"/jobs/\d+"))
     out = []
     comp = name or s
     seen = set()
-    for a in links:
-        href = a.get("href") or ""
-        m = re.search(r"/jobs/(\d+)", href)
-        if not m:
-            continue
-        jid = m.group(1)
-        if jid in seen:
-            continue
-        seen.add(jid)
-        text_lines = [l.strip() for l in a.text.splitlines() if l.strip()]
-        title = text_lines[0] if text_lines else "Open Role"
-        if title.lower() in ("español", "apply", "view job"):
-            continue
-        loc = ""
-        for i, line in enumerate(text_lines):
-            if "location:" in line.lower() and i + 1 < len(text_lines):
-                loc = text_lines[i + 1]
-        remote = "remote" in loc.lower() or "remote" in title.lower()
-        apply_url = f"https://{s}.careerplug.com/jobs/{jid}"
-        out.append(job("careerplug", f"careerplug:{s}", jid, comp, title, apply_url, location=loc, remote=remote))
+    for page in range(1, 200):
+        try:
+            r = S.get(f"https://{s}.careerplug.com/jobs", params={"page": page} if page > 1 else None, timeout=TIMEOUT)
+            if not r.ok:
+                break
+        except Exception:
+            break
+        soup = BeautifulSoup(r.text, "html.parser")
+        links = soup.find_all("a", href=re.compile(r"/jobs/\d+"))
+        new_jobs = 0
+        for a in links:
+            href = a.get("href") or ""
+            m = re.search(r"/jobs/(\d+)", href)
+            if not m:
+                continue
+            jid = m.group(1)
+            if jid in seen:
+                continue
+            text_lines = [l.strip() for l in a.text.splitlines() if l.strip()]
+            title = text_lines[0] if text_lines else "Open Role"
+            if title.lower() in ("español", "apply", "view job"):
+                continue
+            seen.add(jid)
+            new_jobs += 1
+            loc = ""
+            for i, line in enumerate(text_lines):
+                if "location:" in line.lower() and i + 1 < len(text_lines):
+                    loc = text_lines[i + 1]
+            remote = "remote" in loc.lower() or "remote" in title.lower()
+            apply_url = f"https://{s}.careerplug.com/jobs/{jid}"
+            out.append(job("careerplug", f"careerplug:{s}", jid, comp, title, apply_url, location=loc, remote=remote))
+        if new_jobs == 0 or (f"page={page + 1}" not in r.text and new_jobs < 30):
+            break
     return out
 
 
@@ -2195,44 +2793,51 @@ def clearcompany(s, name):  # REST API: https://careers-api.clearcompany.com/v1/
     return out
 
 
-def pageup(s, name):  # http://careers.pageuppeople.com/{s}/caw/en/
+def pageup(s, name):  # http://careers.pageuppeople.com/{s}/caw/en/listing/?page={p}&page-items=100
     out = []
-    try:
-        r = S.get(f"http://careers.pageuppeople.com/{s}/caw/en/", timeout=TIMEOUT)
-        if not r.ok:
-            return []
-        soup = BeautifulSoup(r.text, "html.parser")
-    except Exception:
-        return []
     comp = name or s
     seen = set()
-    for a in soup.select("a.job-link"):
-        href = a.get("href") or ""
-        title = a.get_text(strip=True)
-        if not href or not title:
-            continue
-        parts = [p for p in href.split("/") if p]
-        rid = ""
-        for i, p in enumerate(parts):
-            if p == "job" and i + 1 < len(parts):
-                rid = parts[i + 1]
+    for page in range(1, 50):
+        try:
+            r = S.get(f"http://careers.pageuppeople.com/{s}/caw/en/listing/", params={"page": page, "page-items": 100}, timeout=TIMEOUT)
+            if page == 1 and (not r.ok or "job-link" not in r.text):
+                r = S.get(f"http://careers.pageuppeople.com/{s}/caw/en/", timeout=TIMEOUT)
+            if not r.ok:
                 break
-        if not rid:
-            rid = href
-        if rid in seen:
-            continue
-        seen.add(rid)
-        full_url = f"http://careers.pageuppeople.com{href}" if href.startswith("/") else href
-        tr = a.find_parent("tr") or a.find_parent("li")
-        team = ""
-        posted = ""
-        if tr:
-            cells = tr.find_all("td")
-            if len(cells) >= 3:
-                team = cells[1].get_text(strip=True)
-                posted = cells[-1].get_text(strip=True)
-        remote = "remote" in title.lower()
-        out.append(job("pageup", f"pageup:{s}", rid, comp, title, full_url, location="", remote=remote, posted=posted, team=team))
+            soup = BeautifulSoup(r.text, "html.parser")
+        except Exception:
+            break
+        new_jobs = 0
+        for a in soup.select("a.job-link"):
+            href = a.get("href") or ""
+            title = a.get_text(strip=True)
+            if not href or not title:
+                continue
+            parts = [p for p in href.split("/") if p]
+            rid = ""
+            for i, p in enumerate(parts):
+                if p == "job" and i + 1 < len(parts):
+                    rid = parts[i + 1]
+                    break
+            if not rid:
+                rid = href
+            if rid in seen:
+                continue
+            seen.add(rid)
+            new_jobs += 1
+            full_url = f"http://careers.pageuppeople.com{href}" if href.startswith("/") else href
+            tr = a.find_parent("tr") or a.find_parent("li")
+            team = ""
+            posted = ""
+            if tr:
+                cells = tr.find_all("td")
+                if len(cells) >= 3:
+                    team = cells[1].get_text(strip=True)
+                    posted = cells[-1].get_text(strip=True)
+            remote = "remote" in title.lower()
+            out.append(job("pageup", f"pageup:{s}", rid, comp, title, full_url, location="", remote=remote, posted=posted, team=team))
+        if new_jobs == 0 or new_jobs < 100:
+            break
     return out
 
 
@@ -2301,7 +2906,7 @@ def talentlyft(s, name):  # https://api.talentlyft.com/v2/public/{s}/jobs
             remote = "remote" in loc.lower() or "remote" in title.lower() or any("remote" in str(t).lower() for t in tags)
             out.append(job("talentlyft", f"talentlyft:{s}", rid, comp, title, apply_url, location=loc, remote=remote, team=team, tags=tags, country=j.get("Country")))
         pages = data.get("Pages") or {}
-        if not pages.get("Next") or page >= 10:
+        if not pages.get("Next") or page >= 200:
             break
         page += 1
     return out
@@ -2380,49 +2985,54 @@ def jobsoid(s, name):  # https://{s}.jobsoid.com
     return out
 
 
-def tribepad(s, name):  # https://{s}.tribepad.com/v2/jobs
-    try:
-        r = S.get(f"https://{s}.tribepad.com/v2/jobs", timeout=TIMEOUT)
-        if not r.ok:
-            return []
-        soup = BeautifulSoup(r.text, "html.parser")
-    except Exception:
-        return []
-    comp = name or s
+def tribepad(s, name):  # https://{s}.tribepad.com/v2/jobs?page=N
     out = []
+    comp = name or s
     seen = set()
-    for a in soup.find_all("a", href=lambda h: h and "record=" in h):
-        href = a.get("href") or ""
-        m = re.search(r"record=(\d+)", href)
-        if not m:
-            continue
-        rid = m.group(1)
-        if rid in seen:
-            continue
-        seen.add(rid)
-        t_el = a.find(class_="sitebuilder-job-results-item-title") or a.find("h3")
-        title = t_el.get_text(strip=True) if t_el else ""
-        if not title:
-            continue
-        meta = a.find(class_="sitebuilder-job-results-item-meta")
-        loc = ""
-        team = ""
-        emp = ()
-        pay = None
-        if meta:
-            for div in meta.find_all("div"):
-                txt = div.get_text(strip=True)
-                if div.find("i", class_=lambda c: c and "map-marker" in c):
-                    loc = txt
-                elif div.find("i", class_=lambda c: c and "wallet" in c):
-                    pay = find_pay(txt)
-                elif div.find("i", class_=lambda c: c and "tag" in c):
-                    team = txt
-                elif div.find("i", class_=lambda c: c and "clock" in c):
-                    emp = (txt,)
-        apply_url = f"https://{s}.tribepad.com/members/modules/job/detail.php?record={rid}"
-        remote = "remote" in loc.lower() or "remote" in title.lower()
-        out.append(job("tribepad", f"tribepad:{s}", rid, comp, title, apply_url, location=loc, remote=remote, team=team, emp=emp, pay=pay))
+    for page in range(1, 100):
+        try:
+            r = S.get(f"https://{s}.tribepad.com/v2/jobs", params={"page": page} if page > 1 else None, timeout=TIMEOUT)
+            if not r.ok:
+                break
+            soup = BeautifulSoup(r.text, "html.parser")
+        except Exception:
+            break
+        new_jobs = 0
+        for a in soup.find_all("a", href=lambda h: h and "record=" in h):
+            href = a.get("href") or ""
+            m = re.search(r"record=(\d+)", href)
+            if not m:
+                continue
+            rid = m.group(1)
+            if rid in seen:
+                continue
+            t_el = a.find(class_="sitebuilder-job-results-item-title") or a.find("h3")
+            title = t_el.get_text(strip=True) if t_el else ""
+            if not title:
+                continue
+            seen.add(rid)
+            new_jobs += 1
+            meta = a.find(class_="sitebuilder-job-results-item-meta")
+            loc = ""
+            team = ""
+            emp = ()
+            pay = None
+            if meta:
+                for div in meta.find_all("div"):
+                    txt = div.get_text(strip=True)
+                    if div.find("i", class_=lambda c: c and "map-marker" in c):
+                        loc = txt
+                    elif div.find("i", class_=lambda c: c and "wallet" in c):
+                        pay = find_pay(txt)
+                    elif div.find("i", class_=lambda c: c and "tag" in c):
+                        team = txt
+                    elif div.find("i", class_=lambda c: c and "clock" in c):
+                        emp = (txt,)
+            apply_url = f"https://{s}.tribepad.com/members/modules/job/detail.php?record={rid}"
+            remote = "remote" in loc.lower() or "remote" in title.lower()
+            out.append(job("tribepad", f"tribepad:{s}", rid, comp, title, apply_url, location=loc, remote=remote, team=team, emp=emp, pay=pay))
+        if new_jobs == 0 or f"page={page + 1}" not in r.text:
+            break
     return out
 
 
@@ -2517,7 +3127,7 @@ def aidevboard():  # 8,400+ AI/ML engineering roles from 489 AI-first companies
                            j.get("title"), j.get("apply_url") or j.get("url"), j.get("location"),
                            j.get("workplace") == "remote", j.get("published_at"),
                            desc=text(j.get("description")), tags=j.get("tags") or [], pay=pay))
-        if page >= d.get("pages", 1):
+        if page >= (d.get("total_pages") or d.get("pages") or 1) or d.get("has_next") is False:
             break
         page += 1
     return out
@@ -2591,7 +3201,7 @@ def remotepython():  # remote Python engineering jobs RSS feed; titles formatted
 
 
 
-NFJ_CAP = 1000
+NFJ_CAP = 50000
 
 
 def nofluffjobs():  # 15k+ tech & software engineering jobs across Europe
@@ -2706,8 +3316,9 @@ def golangprojects():  # Go language remote developer listings
 # ---------- New ATS Crawlers ----------
 def hireology(s, name):
     out = []
+    seen = set()
     page = 1
-    while page <= 40:
+    while page <= 500:
         try:
             d = get(f"https://api.hireology.com/v2/public/careers/{s}", params={"page": page, "page_size": 100})
         except Exception:
@@ -2719,8 +3330,9 @@ def hireology(s, name):
             break
         for j in rows:
             jid = str(j.get("id") or "")
-            if not jid or not j.get("name"):
+            if not jid or not j.get("name") or jid in seen:
                 continue
+            seen.add(jid)
             locs = []
             for l in j.get("locations") or []:
                 if isinstance(l, dict):
@@ -2786,8 +3398,9 @@ def feishu(s, name):
     }
 
     out = []
+    seen = set()
     limit = 50
-    for page in range(25):
+    for page in range(500):
         body_payload = {
             "keyword": "", "limit": limit, "offset": page * limit, "portal_type": 2,
             "job_category_id_list": [], "location_code_list": [], "subject_id_list": [],
@@ -2801,10 +3414,13 @@ def feishu(s, name):
         posts = data.get("job_post_list") or []
         if not posts:
             break
+        new_jobs = 0
         for j in posts:
             jid = str(j.get("id") or "")
-            if not jid or not j.get("title"):
+            if not jid or not j.get("title") or jid in seen:
                 continue
+            seen.add(jid)
+            new_jobs += 1
             cities = ", ".join(c.get("name", "") for c in (j.get("city_list") or []) if isinstance(c, dict) and c.get("name"))
             jf = j.get("job_function") or {}
             team = jf.get("name", "") if isinstance(jf, dict) else ""
@@ -2819,7 +3435,7 @@ def feishu(s, name):
             url = f"https://{host}/{path}/position/{jid}/detail"
             out.append(job("feishu", f"feishu:{s}", jid, name or s.split(".")[0], j["title"], url,
                            location=cities, posted=posted_date, desc=desc, team=team))
-        if len(posts) < limit or len(out) >= int(data.get("count") or 0):
+        if new_jobs == 0 or len(posts) < limit or len(out) >= int(data.get("count") or 0):
             break
     return out
 
@@ -2853,22 +3469,35 @@ def moka(s, name):
 
     headers = {"Origin": "https://app.mokahr.com", "Content-Type": "application/json"}
     out = []
+    seen = set()
     limit = 50
-    for page in range(25):
+    for page in range(500):
         payload = {"orgId": org_id, "siteId": site_id, "locale": "zh-CN", "limit": limit, "offset": page * limit}
         try:
             raw = body(lambda: S.post("https://app.mokahr.com/api/outer/ats-apply/website/jobs/v2", json=payload, headers=headers, timeout=TIMEOUT))
         except Exception:
             break
         dec = _decrypt_moka(raw)
-        data = (dec.get("data") or {}) if isinstance(dec, dict) else {}
+        data = dec.get("data") if isinstance(dec, dict) else {}
+        if isinstance(data, str):
+            try:
+                data = json.loads(data)
+            except Exception:
+                data = {}
+        if not isinstance(data, dict):
+            data = {}
         jobs = data.get("jobs") or data.get("list") or []
-        if not jobs:
+        if not isinstance(jobs, list) or not jobs:
             break
+        new_jobs = 0
         for j in jobs:
-            jid = str(j.get("id") or "")
-            if not jid or not j.get("title"):
+            if not isinstance(j, dict):
                 continue
+            jid = str(j.get("id") or "")
+            if not jid or not j.get("title") or jid in seen:
+                continue
+            seen.add(jid)
+            new_jobs += 1
             locs = ", ".join(x.get("cityName", "") for x in (j.get("locations") or []) if isinstance(x, dict) and x.get("cityName"))
             dep = j.get("department") or {}
             team = dep.get("name", "") if isinstance(dep, dict) else ""
@@ -2886,7 +3515,7 @@ def moka(s, name):
             url = f"https://app.mokahr.com/social-recruitment/{org_id}/{site_id}/job/{jid}"
             out.append(job("moka", f"moka:{s}", jid, name or org_id, j["title"], url,
                            location=locs, posted=posted_date, desc=desc, team=team, pay=pay))
-        if len(jobs) < limit:
+        if new_jobs == 0 or len(jobs) < limit:
             break
     return out
 
@@ -2899,8 +3528,9 @@ def beisen(s, name):
         "Content-Type": "application/json"
     }
     out = []
+    seen = set()
     limit = 50
-    for page in range(25):
+    for page in range(500):
         body_payload = {
             "PageIndex": page, "PageSize": limit, "LocId": [], "Category": ["1"],
             "KeyWords": "", "SpecialType": 0, "PortalId": "",
@@ -2913,11 +3543,14 @@ def beisen(s, name):
         posts = (res.get("Data") or []) if isinstance(res, dict) else []
         if not posts:
             break
+        new_jobs = 0
         for j in posts:
             jid = str(j.get("JobAdId") or j.get("Id") or "")
             title = j.get("JobAdName") or ""
-            if not jid or not title:
+            if not jid or not title or jid in seen:
                 continue
+            seen.add(jid)
+            new_jobs += 1
             locs = ", ".join(j.get("LocNames") or [])
             post_date = j.get("PostDate")
             date_str = str(post_date)[:10] if post_date and len(str(post_date)) >= 10 else None
@@ -2925,15 +3558,16 @@ def beisen(s, name):
             url = f"https://{slug}.zhiye.com/social/jobs"
             out.append(job("beisen", f"beisen:{s}", jid, name or slug, title, url,
                            location=locs, posted=date_str, desc=desc))
-        if len(posts) < limit or len(out) >= int(res.get("Count") or 0):
+        if new_jobs == 0 or len(posts) < limit or len(out) >= int(res.get("Count") or 0):
             break
     return out
 
 
 def tencent(s, name):
     out = []
+    seen = set()
     size = 100
-    for page in range(1, 30):
+    for page in range(1, 200):
         d = get("https://careers.tencent.com/tencentcareer/api/post/Query",
                 params={"pageSize": size, "pageIndex": page, "language": "zh-cn"})
         data = d.get("Data") or {}
@@ -2943,8 +3577,9 @@ def tencent(s, name):
         for j in posts:
             jid = str(j.get("PostId") or "")
             title = j.get("RecruitPostName") or ""
-            if not jid or not title:
+            if not jid or not title or jid in seen:
                 continue
+            seen.add(jid)
             loc = j.get("LocationName") or ""
             team = j.get("CategoryName") or j.get("BGName") or ""
             desc = text(j.get("Responsibility") or "")
@@ -2964,8 +3599,9 @@ def tencent(s, name):
 def bytedance(s, name):
     headers = {"User-Agent": FEISHU_BROWSER_UA, "portal-channel": "office", "portal-platform": "pc", "Content-Type": "application/json"}
     out = []
+    seen = set()
     limit = 50
-    for page in range(25):
+    for page in range(500):
         body_payload = {
             "keyword": "", "limit": limit, "offset": page * limit,
             "job_category_id_list": [], "location_code_list": [],
@@ -2979,11 +3615,14 @@ def bytedance(s, name):
         posts = data.get("job_post_list") or []
         if not posts:
             break
+        new_jobs = 0
         for j in posts:
             jid = str(j.get("id") or "")
             title = j.get("title") or ""
-            if not jid or not title:
+            if not jid or not title or jid in seen:
                 continue
+            seen.add(jid)
+            new_jobs += 1
             city = (j.get("city_info") or {}).get("name", "") if isinstance(j.get("city_info"), dict) else ""
             cat = j.get("job_category") or {}
             team = cat.get("name", "") if isinstance(cat, dict) else ""
@@ -2998,7 +3637,7 @@ def bytedance(s, name):
             url = f"https://jobs.bytedance.com/experienced/position/{jid}/detail"
             out.append(job("bytedance", f"bytedance:{s}", jid, name or "ByteDance", title, url,
                            location=city, posted=posted_date, desc=desc, team=team))
-        if len(posts) < limit or len(out) >= int(data.get("count") or 0):
+        if new_jobs == 0 or len(posts) < limit or len(out) >= int(data.get("count") or 0):
             break
     return out
 
@@ -3006,8 +3645,9 @@ def bytedance(s, name):
 def netease(s, name):
     headers = {"Content-Type": "application/json"}
     out = []
+    seen = set()
     size = 100
-    for page in range(1, 30):
+    for page in range(1, 200):
         payload = {"currentPage": page, "pageSize": size, "keyword": ""}
         try:
             res = body(lambda: S.post("https://hr.163.com/api/hr163/position/queryPage", json=payload, headers=headers, timeout=TIMEOUT))
@@ -3017,11 +3657,14 @@ def netease(s, name):
         posts = data.get("list") or []
         if not posts:
             break
+        new_jobs = 0
         for j in posts:
             jid = str(j.get("id") or "")
             title = j.get("name") or ""
-            if not jid or not title:
+            if not jid or not title or jid in seen:
                 continue
+            seen.add(jid)
+            new_jobs += 1
             locs = ", ".join(j.get("workPlaceNameList") or [])
             team = j.get("firstDepName") or j.get("firstPostTypeName") or ""
             desc = text(j.get("description") or j.get("requirement") or "")
@@ -3035,7 +3678,7 @@ def netease(s, name):
             url = f"https://hr.163.com/position/detail?id={jid}"
             out.append(job("netease", f"netease:{s}", jid, name or "NetEase", title, url,
                            location=locs, posted=posted_date, desc=desc, team=team))
-        if len(out) >= int(data.get("total") or 0):
+        if new_jobs == 0 or len(posts) < size or len(out) >= int(data.get("total") or 0):
             break
     return out
 
@@ -3043,8 +3686,9 @@ def netease(s, name):
 def jd(s, name):
     headers = {"Referer": "https://zhaopin.jd.com/web/job/job_info_list/3", "X-Requested-With": "XMLHttpRequest"}
     out = []
+    seen = set()
     size = 50
-    for page in range(1, 30):
+    for page in range(1, 500):
         form = {"pageIndex": page, "pageSize": size, "jobType": 3}
         try:
             res = body(lambda: S.post("https://zhaopin.jd.com/web/job/job_list", data=form, headers=headers, timeout=TIMEOUT))
@@ -3053,11 +3697,14 @@ def jd(s, name):
         rows = res if isinstance(res, list) else (res.get("data") or res.get("list") or [])
         if not rows:
             break
+        new_jobs = 0
         for j in rows:
             jid = str(j.get("positionId") or "")
             title = j.get("positionName") or ""
-            if not jid or not title:
+            if not jid or not title or jid in seen:
                 continue
+            seen.add(jid)
+            new_jobs += 1
             loc = j.get("workCity") or ""
             team = j.get("positionDeptName") or ""
             desc = text(j.get("qualification") or j.get("workContent") or "")
@@ -3066,7 +3713,7 @@ def jd(s, name):
             url = f"https://zhaopin.jd.com/web/job/job_detail/{jid}"
             out.append(job("jd", f"jd:{s}", jid, name or "JD.com", title, url,
                            location=loc, posted=posted_date, desc=desc, team=team))
-        if len(rows) < size:
+        if new_jobs == 0 or len(rows) < size:
             break
     return out
 
@@ -3106,32 +3753,37 @@ def baidu(s, name):
         "Accept": "application/json, text/plain, */*",
     }
     out = []
+    seen = set()
     size = 20
-    for page in range(1, 101):
-        form = {"recruitType": "SOCIAL", "pageSize": size, "keyWord": "", "curPage": page}
-        try:
-            res = body(lambda: S.post("https://talent.baidu.com/httservice/getPostListNew", data=form, headers=headers, timeout=TIMEOUT))
-        except Exception:
-            break
-        data = res.get("data") or {}
-        rows = data.get("list") or []
-        if not rows:
-            break
-        for j in rows:
-            jid = str(j.get("postId") or "")
-            title = j.get("name") or ""
-            if not jid or not title:
-                continue
-            dept = j.get("orgName") or j.get("bgShortName") or ""
-            loc = j.get("workPlace") or ""
-            posted_date = j.get("publishDate") or j.get("updateDate") or None
-            jd_desc = "\n\n".join(x for x in [j.get("workContent", ""), j.get("serviceCondition", "")] if x)
-            url = f"https://talent.baidu.com/jobs/social-detail/{jid}"
-            out.append(job("baidu", f"baidu:{s}", jid, name or "Baidu", title, url,
-                           location=loc, team=dept, posted=posted_date, desc=text(jd_desc)))
-        total = int(data.get("total") or 0)
-        if len(out) >= total or len(rows) < size:
-            break
+    for rtype in ("SOCIAL", "GRADUATE", "INTERN"):
+        cat_count = 0
+        for page in range(1, 500):
+            form = {"recruitType": rtype, "pageSize": size, "keyWord": "", "curPage": page}
+            try:
+                res = body(lambda: S.post("https://talent.baidu.com/httservice/getPostListNew", data=form, headers=headers, timeout=TIMEOUT))
+            except Exception:
+                break
+            data = res.get("data") or {}
+            rows = data.get("list") or []
+            if not rows:
+                break
+            cat_count += len(rows)
+            for j in rows:
+                jid = str(j.get("postId") or "")
+                title = j.get("name") or ""
+                if not jid or not title or jid in seen:
+                    continue
+                seen.add(jid)
+                dept = j.get("orgName") or j.get("bgShortName") or ""
+                loc = j.get("workPlace") or ""
+                posted_date = j.get("publishDate") or j.get("updateDate") or None
+                jd_desc = "\n\n".join(x for x in [j.get("workContent", ""), j.get("serviceCondition", "")] if x)
+                url = f"https://talent.baidu.com/jobs/social-detail/{jid}"
+                out.append(job("baidu", f"baidu:{s}", jid, name or "Baidu", title, url,
+                               location=loc, team=dept, posted=posted_date, desc=text(jd_desc)))
+            total = int(data.get("total") or 0)
+            if cat_count >= total or len(rows) < size:
+                break
     return out
 
 
@@ -3219,7 +3871,7 @@ def jibe(s, name):
     seen = set()
     page = 1
     base = f"https://{s}" if "." in s else f"https://{s}.jibeapply.com"
-    while page <= 50:
+    while page <= 500:
         url = f"{base}/api/jobs?page={page}&limit=100"
         try:
             r = S.get(url, timeout=TIMEOUT)
@@ -3268,20 +3920,11 @@ def talentbrew(s, name):
     comp = name or s
     out = []
     seen = set()
-    page = 1
     base = f"https://{s}" if "." in s else f"https://{s}.talentbrew.com"
-    while page <= 100:
-        url = f"{base}/search-jobs?p={page}"
-        try:
-            r = S.get(url, timeout=TIMEOUT)
-            if not r.ok:
-                break
-        except Exception:
-            break
-        soup = BeautifulSoup(r.text, "html.parser")
+
+    def parse_html(html_text):
+        soup = BeautifulSoup(html_text, "html.parser")
         links = soup.find_all("a", href=lambda h: h and "/job/" in h)
-        if not links:
-            break
         new_jobs = 0
         for a in links:
             href = a.get("href") or ""
@@ -3301,9 +3944,57 @@ def talentbrew(s, name):
             apply_url = href if href.startswith("http") else f"{base}{href}"
             out.append(job("talentbrew", f"talentbrew:{s}", str(jid), comp, title, apply_url,
                            location=loc, remote=remote))
-        if new_jobs == 0:
+        return new_jobs
+
+    def pull_sitemap():
+        added = 0
+        try:
+            sr = S.get(f"{base}/sitemap.xml", timeout=TIMEOUT)
+            if sr.ok and "<loc>" in sr.text:
+                for loc_url in re.findall(r"<loc>(https?://[^<]+/job/[^<]+)</loc>", sr.text):
+                    parts = [urllib.parse.unquote(p) for p in urllib.parse.urlparse(loc_url).path.strip("/").split("/")]
+                    if len(parts) < 3 or parts[0] != "job":
+                        continue
+                    jid = parts[-1]
+                    if not jid or jid in seen:
+                        continue
+                    seen.add(jid)
+                    added += 1
+                    slug_title = parts[2] if len(parts) >= 4 else parts[1]
+                    title = slug_title.replace("-", " ").strip().title()
+                    loc_part = parts[1].replace("-", " ").strip().title() if len(parts) >= 4 else ""
+                    if loc_part.isdigit():
+                        loc_part = ""
+                    out.append(job("talentbrew", f"talentbrew:{s}", str(jid), comp, title, loc_url,
+                                   location=loc_part, remote="remote" in (loc_part + " " + title).lower()))
+        except Exception:
+            pass
+        return added
+
+    try:
+        r1 = S.get(f"{base}/search-jobs?p=1", timeout=TIMEOUT)
+        if not r1.ok:
+            return out
+    except Exception:
+        return out
+    n1 = parse_html(r1.text)
+    if n1 == 0:
+        return out
+    m_tp = re.search(r'data-total-pages=["\']?(\d+)', r1.text)
+    total_pages = int(m_tp.group(1)) if m_tp else None
+    if total_pages and total_pages > 25 and pull_sitemap() > 0:
+        return out
+    pg = 1
+    max_pages = min(total_pages, 100) if total_pages else 100
+    for pg in range(2, max_pages + 1):
+        try:
+            r = S.get(f"{base}/search-jobs?p={pg}", timeout=TIMEOUT)
+            if not r.ok or parse_html(r.text) == 0:
+                break
+        except Exception:
             break
-        page += 1
+    if (total_pages and total_pages > 100) or pg >= 100:
+        pull_sitemap()
     return out
 
 
@@ -3311,49 +4002,78 @@ def talentbrew(s, name):
 def arbeitsagentur():
     headers = {"X-API-Key": "jobboerse-jobsuche"}
     out = []
+    seen = set()
     size = 100
-    for page in range(1, 51):
-        d = get("https://rest.arbeitsagentur.de/jobboerse/jobsuche-service/pc/v6/jobs",
-                params={"page": page, "size": size}, headers=headers)
-        rows = d.get("ergebnisliste") or []
-        if not rows:
-            break
-        for j in rows:
-            refnr = j.get("referenznummer")
-            title = j.get("stellenangebotsTitel")
-            if not refnr or not title:
-                continue
-            company = j.get("firma") or "Bundesagentur für Arbeit"
-            loc_list = []
-            for loc in j.get("stellenlokationen") or []:
-                if isinstance(loc, dict) and loc.get("ort"):
-                    loc_list.append(loc["ort"])
-            location = ", ".join(loc_list) or "Germany"
-            posted_date = j.get("datumErsteVeroeffentlichung")
-            date_str = str(posted_date)[:10] if posted_date and len(str(posted_date)) >= 10 else None
-            url = f"https://www.arbeitsagentur.de/jobsuche/jobdetail/{refnr}"
-            out.append(job("arbeitsagentur", "arbeitsagentur", refnr, clean_company(company), title, url,
-                           location=location, posted=date_str, country="Germany"))
-        if len(rows) < size:
-            break
+
+    def pull(extra_params):
+        max_total = 0
+        for page in range(1, 101):
+            d = get("https://rest.arbeitsagentur.de/jobboerse/jobsuche-service/pc/v6/jobs",
+                    params={"page": page, "size": size, **extra_params}, headers=headers)
+            max_total = max(max_total, int(d.get("maxErgebnisse") or 0))
+            rows = d.get("ergebnisliste") or []
+            if not rows:
+                break
+            new_rows = 0
+            for j in rows:
+                refnr = j.get("referenznummer")
+                title = j.get("stellenangebotsTitel")
+                if not refnr or not title or refnr in seen:
+                    continue
+                seen.add(refnr)
+                new_rows += 1
+                company = j.get("firma") or "Bundesagentur für Arbeit"
+                loc_list = []
+                for loc in j.get("stellenlokationen") or []:
+                    if isinstance(loc, dict) and loc.get("ort"):
+                        loc_list.append(loc["ort"])
+                location = ", ".join(loc_list) or "Germany"
+                posted_date = j.get("datumErsteVeroeffentlichung")
+                date_str = str(posted_date)[:10] if posted_date and len(str(posted_date)) >= 10 else None
+                url = f"https://www.arbeitsagentur.de/jobsuche/jobdetail/{refnr}"
+                out.append(job("arbeitsagentur", "arbeitsagentur", refnr, clean_company(company), title, url,
+                               location=location, posted=date_str, country="Germany"))
+            if len(rows) < size or new_rows == 0:
+                break
+        return max_total
+
+    total = pull({})
+    if total > 10000:
+        for art in (2, 4, 34):
+            pull({"angebotsart": art})
     return out
+
+
+_MCF_CATEGORIES = (
+    "Accounting / Auditing / Taxation", "Admin / Secretarial", "Advertising / Media",
+    "Architecture / Interior Design", "Banking and Finance", "Building and Construction",
+    "Consulting", "Customer Service", "Design", "Education and Training", "Engineering",
+    "Entertainment", "Environment / Health", "Events / Promotions", "F&B",
+    "General Management", "General Work", "Healthcare / Pharmaceutical", "Hospitality",
+    "Human Resources", "Information Technology", "Insurance", "Legal",
+    "Logistics / Supply Chain", "Manufacturing", "Marketing / Public Relations",
+    "Medical / Therapy Services", "Personal Care / Beauty", "Professional Services",
+    "Public / Civil Service", "Purchasing / Merchandising", "Real Estate / Property Management",
+    "Repair and Maintenance", "Risk Management", "Sales / Retail", "Sciences / Laboratory / R&D",
+    "Security and Investigation", "Social Services", "Telecommunications", "Travel / Tourism",
+    "Others", "Wholesale Trade", "Precision Engineering",
+)
+_MCF_EMPLOYMENT_TYPES = ("Full Time", "Permanent", "Contract Basis", "Part Time", "Temporary", "Freelance", "Flexi Work", "Internship")
 
 
 def mycareersfuture():
     headers = {"Content-Type": "application/json"}
     out = []
+    seen = set()
     limit = 100
-    for page in range(50):
-        payload = {"limit": limit, "page": page}
-        res = body(lambda: S.post("https://api.mycareersfuture.gov.sg/v2/search", json=payload, headers=headers, timeout=TIMEOUT))
-        rows = (res.get("results") or []) if isinstance(res, dict) else []
-        if not rows:
-            break
+
+    def parse_rows(rows):
         for j in rows:
             uuid = j.get("uuid")
             title = j.get("title")
-            if not uuid or not title:
+            if not uuid or not title or uuid in seen:
                 continue
+            seen.add(uuid)
             company = (j.get("postedCompany") or {}).get("name") or (j.get("hiringCompany") or {}).get("name") or "Employer"
             sal = j.get("salary") or {}
             pay = None
@@ -3370,8 +4090,60 @@ def mycareersfuture():
             url = f"https://www.mycareersfuture.gov.sg/job/{uuid}"
             out.append(job("mycareersfuture", "mycareersfuture", uuid, clean_company(company), title, url,
                            location="Singapore", posted=date_str, country="Singapore", team=cat, pay=pay))
-        if len(rows) < limit:
-            break
+
+    # limit & page must be query params on MyCareersFuture v2 search; page >= 100 returns HTTP 418, so partition >10k via categories
+    def fetch_page(pg, payload=None, throttle=0.25):
+        for wait in (throttle, 5.0, 15.0):
+            if wait:
+                time.sleep(wait)
+            try:
+                return body(lambda: S.post("https://api.mycareersfuture.gov.sg/v2/search",
+                                           params={"limit": limit, "page": pg}, json=payload or {}, headers=headers, timeout=TIMEOUT))
+            except requests.HTTPError as e:
+                if getattr(e.response, "status_code", None) == 429:
+                    continue
+                raise
+            except requests.exceptions.RetryError:
+                continue
+        return body(lambda: S.post("https://api.mycareersfuture.gov.sg/v2/search",
+                                   params={"limit": limit, "page": pg}, json=payload or {}, headers=headers, timeout=TIMEOUT))
+
+    def pull_slice(payload, first_doc=None):
+        d0 = first_doc if first_doc is not None else fetch_page(0, payload)
+        rows0 = (d0.get("results") or []) if isinstance(d0, dict) else []
+        parse_rows(rows0)
+        tot = int(d0.get("total") or 0) if isinstance(d0, dict) else 0
+        if len(rows0) >= limit and tot > limit:
+            max_page = min((tot - 1) // limit, 99)  # API hard-caps at page=99 (10k offset); HTTP 418 at page=100
+            for res in pmap(lambda pg, p=payload: fetch_page(pg, p), range(1, max_page + 1), 2):
+                rows = (res.get("results") or []) if isinstance(res, dict) else []
+                parse_rows(rows)
+        elif len(rows0) >= limit and tot == 0:
+            for page in range(1, 100):
+                res = fetch_page(page, payload)
+                rows = (res.get("results") or []) if isinstance(res, dict) else []
+                if not rows:
+                    break
+                parse_rows(rows)
+                if len(rows) < limit:
+                    break
+        return tot
+
+    first = fetch_page(0, {}, throttle=0)
+    total = int(first.get("total") or 0) if isinstance(first, dict) else 0
+    if total <= 10000:
+        pull_slice({}, first)
+    else:
+        for cat in _MCF_CATEGORIES:
+            d0 = fetch_page(0, {"categories": [cat]}, throttle=0.15)
+            ctot = int(d0.get("total") or 0) if isinstance(d0, dict) else 0
+            if ctot == 0:
+                continue
+            if ctot <= 10000:
+                pull_slice({"categories": [cat]}, d0)
+            else:
+                for et in _MCF_EMPLOYMENT_TYPES:
+                    pull_slice({"categories": [cat], "employmentTypes": [et]})
     return out
 
 
@@ -3500,6 +4272,38 @@ def workatastartup():
                                        location=loc, remote=remote, emp=emp, pay=pay, desc=desc))
         except Exception:
             pass
+
+    # 3. WaaS /jobs/search?q=<letter> public JSON search
+    def waas_search(kw):
+        try:
+            r = S.get("https://www.workatastartup.com/jobs/search", params={"q": kw}, timeout=TIMEOUT)
+            return r.json().get("jobs", []) if r.ok else []
+        except Exception:
+            return []
+
+    for hits in pmap(waas_search, list("abcdefghijklmnopqrstuvwxyz"), 6):
+        for j in hits:
+            if not isinstance(j, dict):
+                continue
+            jid = j.get("id")
+            title = j.get("title")
+            company = j.get("companyName")
+            slug = j.get("companySlug") or "yc"
+            if not jid or not title:
+                continue
+            s_jid = str(jid)
+            if s_jid in seen:
+                continue
+            seen.add(s_jid)
+            loc = j.get("location") or ""
+            remote = "remote" in loc.lower()
+            emp = [j.get("jobType")] if j.get("jobType") else []
+            sal = j.get("salary") or ""
+            pay = find_pay(sal) if sal else None
+            url = f"https://www.workatastartup.com/jobs/{jid}"
+            desc = text(j.get("companyOneLiner") or "")
+            out.append(job("workatastartup", f"yc:{slug}", s_jid, company or slug, title, url,
+                           location=loc, remote=remote, emp=emp, pay=pay, desc=desc))
 
     return out
 
@@ -3755,7 +4559,7 @@ def verdict(jobs, err, prev, strikes):
 # The number is how many boards of that provider are fetched at the same time (conservative defaults, not published limits); a provider not listed
 # here (Arbeitnow, every feed, Amazon, Microsoft...) gets one worker, i.e. one board at a time. Workable and Arbeitnow also pause a second between requests.
 LANE_OF = {"microsoft": "eightfold"}  # Microsoft's careers site is Eightfold-hosted: one lane, one site at a time, so their bot protection never sees a burst
-LANES = {"greenhouse": 24, "lever": 16, "ashby": 16, "smartrecruiters": 12, "workday": 32, "teamtailor": 4, "oracle": 8, "workable": 2, "personio": 12, "recruitee": 2, "phenom": 4, "apple": 1, "pinpoint": 8, "breezy": 8, "bamboohr": 16, "rippling": 8, "join": 16, "adp": 16, "jazzhr": 16, "jobvite": 8, "trakstar_hire": 8, "jobscore": 8, "zoho": 16, "icims": 8, "ultipro": 16, "dayforce": 16, "paylocity": 16, "paycom": 16, "applicantpro": 8, "isolved": 8, "betterteam": 8, "gohire": 8, "freshteam": 4, "gem": 4, "recooty": 4, "csod": 4, "taleo": 2, "bullhorn": 8, "successfactors": 8, "avature": 8, "recruiterflow": 8, "manatal": 8, "loxo": 8, "careerplug": 8, "comeet": 8, "crelate": 8, "clearcompany": 8, "pageup": 8, "catsone": 8, "talentlyft": 8, "jobadder": 8, "jobsoid": 8, "tribepad": 8, "applicantstack": 8, "factorial": 4, "hireology": 16, "feishu": 16, "moka": 16, "beisen": 8, "tencent": 4, "bytedance": 4, "netease": 4, "jd": 4, "unitree": 2, "baidu": 4, "arbeitsagentur": 4, "mycareersfuture": 4, "freehire": 4, "yc": 16, "workatastartup": 4, "jibe": 8, "talentbrew": 8, "aidevboard": 2, "larajobs": 2, "fourdayweek": 2, "nodesk": 2, "remotepython": 2, "nofluffjobs": 2, "landingjobs": 2, "cryptocurrencyjobs": 2, "cryptojobslist": 2, "golangprojects": 2}
+LANES = {"greenhouse": 24, "lever": 16, "ashby": 16, "smartrecruiters": 12, "workday": 16, "teamtailor": 4, "oracle": 12, "workable": 2, "personio": 12, "recruitee": 2, "phenom": 4, "apple": 1, "pinpoint": 8, "breezy": 8, "bamboohr": 16, "rippling": 8, "join": 16, "adp": 16, "jazzhr": 16, "jobvite": 8, "trakstar_hire": 8, "jobscore": 8, "zoho": 16, "icims": 8, "ultipro": 16, "dayforce": 16, "paylocity": 16, "paycom": 16, "applicantpro": 8, "isolved": 8, "betterteam": 8, "gohire": 8, "freshteam": 4, "gem": 4, "recooty": 4, "csod": 4, "taleo": 2, "bullhorn": 8, "successfactors": 8, "avature": 8, "recruiterflow": 8, "manatal": 8, "loxo": 8, "careerplug": 8, "comeet": 8, "crelate": 8, "clearcompany": 8, "pageup": 8, "catsone": 8, "talentlyft": 8, "jobadder": 8, "jobsoid": 8, "tribepad": 8, "applicantstack": 8, "factorial": 4, "hireology": 12, "feishu": 12, "moka": 12, "beisen": 8, "tencent": 4, "bytedance": 4, "netease": 4, "jd": 4, "unitree": 2, "baidu": 4, "arbeitsagentur": 4, "mycareersfuture": 4, "freehire": 4, "yc": 16, "workatastartup": 4, "jibe": 8, "talentbrew": 8, "aidevboard": 2, "larajobs": 2, "fourdayweek": 2, "nodesk": 2, "remotepython": 2, "nofluffjobs": 2, "landingjobs": 2, "cryptocurrencyjobs": 2, "cryptojobslist": 2, "golangprojects": 2}
 RUN_BUDGET = 16 * 60  # seconds: graceful cutoff so in-flight tasks finish, disk saves, and shards exit cleanly within CI limits
 
 
@@ -3861,7 +4665,9 @@ def main():
                 content = fpath.read_text(encoding="utf-8")
             except Exception:
                 return None
-            board = fpath.stem.replace("_", ":", 1)
+            board = (f"trakstar_hire:{fpath.stem[len('trakstar_hire_'):]}"
+                     if fpath.stem.startswith("trakstar_hire_")
+                     else fpath.stem.replace("_", ":", 1))
             lines_to_keep = []
             modified = False
             b_pruned = []

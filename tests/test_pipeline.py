@@ -1,8 +1,12 @@
 """Unit tests for pipeline orchestration, scrape guard verdicts, and company analytics."""
+import json
+import tempfile
 import unittest
+from pathlib import Path
+from unittest.mock import patch
 
 import scraper
-from argus.consolidate import company_stats
+from argus.consolidate import company_stats, consolidate_shards
 from argus.normalize import url_of
 
 
@@ -99,6 +103,35 @@ class TestPipeline(unittest.TestCase):
         import rolebase.storage
         self.assertEqual(rolebase.__version__, "2.0.0")
         self.assertEqual(rolebase.normalize.clean_company("Argus LLC"), "Argus")
+
+    def test_trakstar_hire_consolidate_scope(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            jobs_dir = root / "jobs"
+            jobs_dir.mkdir()
+            (jobs_dir / "trakstar_hire_acme.jsonl").write_text(
+                json.dumps({"id": "trakstar_hire:acme:1", "title": "Engineer", "company": "Acme", "closed_at": None}) + "\n",
+                encoding="utf-8",
+            )
+            cwd = Path.cwd()
+            try:
+                import os
+                os.chdir(root)
+                with patch("argus.consolidate.DIR", jobs_dir), patch("argus.consolidate.HEALTH", root / "health.json"):
+                    (root / "data").mkdir(exist_ok=True)
+                    consolidate_shards()
+                pulse = (root / "data" / "pulse.csv").read_text(encoding="utf-8")
+                self.assertIn(",trakstar_hire:acme,", pulse)
+                self.assertNotIn(",trakstar:hire_acme,", pulse)
+            finally:
+                os.chdir(cwd)
+
+    def test_companies_registry_clean(self):
+        data = json.loads(Path("companies.json").read_text(encoding="utf-8"))
+        ora = data.get("oracle", {})
+        self.assertEqual([s for s in ora if "." not in s], [])
+        self.assertEqual([s for s in data.get("icims", {}) if "." not in s], [])
+        self.assertEqual([s for s in data.get("paylocity", {}) if s.isdigit()], [])
 
 
 if __name__ == "__main__":

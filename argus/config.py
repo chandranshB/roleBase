@@ -243,14 +243,14 @@ SKIP = {"remotive", "remoteok", "himalayas", "jobicy", "weworkremotely", "getonb
 # Lane concurrency defaults (boards fetched in parallel per provider)
 LANE_OF = {"microsoft": "eightfold"}
 LANES = {
-    "greenhouse": 24, "lever": 16, "ashby": 16, "smartrecruiters": 12, "workday": 32, "teamtailor": 4, "oracle": 8, "workable": 2,
+    "greenhouse": 24, "lever": 16, "ashby": 16, "smartrecruiters": 12, "workday": 16, "teamtailor": 4, "oracle": 12, "workable": 2,
     "personio": 12, "recruitee": 2, "phenom": 4, "apple": 1, "pinpoint": 8, "breezy": 8, "bamboohr": 16, "rippling": 8, "join": 16,
     "adp": 16, "jazzhr": 16, "jobvite": 8, "trakstar_hire": 8, "jobscore": 8, "zoho": 16, "icims": 8, "ultipro": 16, "dayforce": 16,
     "paylocity": 16, "paycom": 16, "applicantpro": 8, "isolved": 8, "betterteam": 8, "gohire": 8, "freshteam": 4, "gem": 4,
     "recooty": 4, "csod": 4, "taleo": 2, "bullhorn": 8, "successfactors": 8, "avature": 8, "recruiterflow": 8, "manatal": 8,
     "loxo": 8, "careerplug": 8, "comeet": 8, "crelate": 8, "clearcompany": 8, "pageup": 8,
     "catsone": 8, "talentlyft": 8, "jobadder": 8, "jobsoid": 8, "tribepad": 8, "applicantstack": 8,
-    "factorial": 4, "hireology": 8, "feishu": 8, "moka": 8, "beisen": 8, "tencent": 4, "bytedance": 4, "netease": 4, "jd": 4, "unitree": 2, "baidu": 4,
+    "factorial": 4, "hireology": 12, "feishu": 12, "moka": 12, "beisen": 8, "tencent": 4, "bytedance": 4, "netease": 4, "jd": 4, "unitree": 2, "baidu": 4,
     "arbeitsagentur": 4, "mycareersfuture": 4, "freehire": 4,
     "yc": 16, "workatastartup": 4,
     "jibe": 8, "talentbrew": 8,
@@ -259,15 +259,17 @@ LANES = {
 }
 
 # Crawl limits
-PH_CAP = 10000
-EF_CAP = 3000
-ORA_CAP = 2000
-HIM_CAP = 1000
+WD_CAP = 50000
+PH_CAP = 50000
+EF_CAP = 100000
+ORA_CAP = 50000
+HIM_CAP = 2000
 MUSE_CAP = 1000
-APPLE_CAP = 2000
-JT_CAP = 1000
-AIDEV_CAP = 500
-NFJ_CAP = 1000
+APPLE_CAP = 50000
+JT_CAP = 100000
+AIDEV_CAP = 50000
+NFJ_CAP = 50000
+USAJOBS_CAP = 50000
 
 PERSONIO_LEVEL = {
     "entry-level": "junior", "trainee": "junior", "working student": "intern",

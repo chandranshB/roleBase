@@ -14,7 +14,7 @@ from argus.config import TIMEOUT
 
 class Client(requests.Session):
     """Session subclass handling transient socket drops and chunked read interruptions."""
-    waits = (2, 6)  # seconds before 2nd and 3rd retry
+    waits = (1, 3)  # seconds before 2nd and 3rd retry
 
     def request(self, *a, **kw):
         for w in (*self.waits, None):
@@ -22,8 +22,9 @@ class Client(requests.Session):
                 return super().request(*a, **kw)
             except (requests.exceptions.ChunkedEncodingError,
                     requests.exceptions.ConnectionError,
-                    requests.exceptions.ReadTimeout):
-                if w is None:
+                    requests.exceptions.ReadTimeout) as exc:
+                msg = str(exc)
+                if "NameResolutionError" in msg or "Failed to resolve" in msg or w is None:
                     raise
                 time.sleep(w)
 
@@ -37,8 +38,8 @@ S.mount(
     HTTPAdapter(
         pool_maxsize=128,
         max_retries=Retry(
-            total=5,
-            backoff_factor=2,
+            total=2,
+            backoff_factor=1,
             status_forcelist=[429, 500, 502, 503, 504],
             allowed_methods=None  # Retry POST requests as well (e.g., read-only Workday queries)
         ),

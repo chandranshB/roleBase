@@ -102,7 +102,9 @@ def consolidate_shards(today: str = None) -> None:
             content = fpath.read_text(encoding="utf-8")
         except Exception:
             return None
-        board = fpath.stem.replace("_", ":", 1)
+        board = (f"trakstar_hire:{fpath.stem[len('trakstar_hire_'):]}"
+                 if fpath.stem.startswith("trakstar_hire_")
+                 else fpath.stem.replace("_", ":", 1))
         lines_to_keep = []
         modified = False
         b_pruned = []
