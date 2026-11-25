@@ -1701,7 +1701,7 @@ def paylocity(s, name):  # s = "{guid}": parse window.pageData JSON from /All/{s
                     apply_url = f"https://recruiting.paylocity.com/recruiting/jobs/Details/{rid}"
                     out.append(job("paylocity", f"paylocity:{s}", rid, comp, title, apply_url,
                                    location=loc, remote=remote, posted=posted, desc=desc, team=dept))
-                if out:
+                if out or "Jobs" in pd:
                     return out
     except Exception:
         pass
