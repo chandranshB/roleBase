@@ -756,6 +756,7 @@
 {"company":"Apple","first_seen":"2026-11-08","id":"apple:apple:200656322","location":"United States of America","posted":"2026-04-08","team":"Hardware","title":"Analog Simulation/Env Automation CAD Engineer"}
 {"company":"Apple","first_seen":"2026-11-08","id":"apple:apple:200656418","location":"United States of America","posted":"2026-11-17","team":"Hardware","title":"Sr. SoC Physical Design Methodology Engineer"}
 {"company":"Apple","first_seen":"2026-11-08","id":"apple:apple:200656567","location":"India","posted":"2026-04-08","team":"Operations and Supply Chain","title":"Global Supply Management - Manager (Mechanical Enclosures)"}
+{"company":"Apple","first_seen":"2026-11-25","id":"apple:apple:200656643","location":"Japan","posted":"2026-11-25","team":"Marketing","title":"Channel Cross-functional Platforms Manager - Store Customer Experience, Japan"}
 {"company":"Apple","first_seen":"2026-11-08","id":"apple:apple:200656653","location":"United States of America","posted":"2026-04-15","team":"Corporate Functions","title":"Apple Real Estate & Development FP&A – Sr. Analyst, Renewable Energy"}
 {"company":"Apple","first_seen":"2026-11-08","id":"apple:apple:200656670","location":"United States of America","posted":"2026-04-08","team":"Hardware","title":"Analog Simulation/Env Automation CAD Engineer"}
 {"company":"Apple","first_seen":"2026-11-08","id":"apple:apple:200656678","location":"United States of America","posted":"2026-04-08","team":"Hardware","title":"Analog Simulation/Env Automation CAD Engineer"}
@@ -1010,7 +1011,6 @@
 {"company":"Apple","first_seen":"2026-11-08","id":"apple:apple:200658487","location":"United States of America","posted":"2026-04-21","skills":["project_management"],"team":"Software and Services","title":"Software & Tools Engineering Project Manager"}
 {"company":"Apple","first_seen":"2026-11-08","id":"apple:apple:200658493","location":"United States of America","posted":"2026-11-04","team":"Hardware","title":"PMU Design Verification Engineer: Analog & Mixed Signal Engineer"}
 {"company":"Apple","first_seen":"2026-11-08","id":"apple:apple:200658508","location":"China","posted":"2026-04-17","team":"Hardware","title":"Product Design Engineer (Mechanical)"}
-{"company":"Apple","first_seen":"2026-11-08","id":"apple:apple:200658531","location":"India","posted":"2026-05-14","team":"Software and Services","title":"Application support engineer"}
 {"company":"Apple","first_seen":"2026-11-08","id":"apple:apple:200658579","location":"United States of America","posted":"2026-09-02","skills":["crm"],"team":"Marketing","title":"Partner Communications Manager, Digital Specialist"}
 {"company":"Apple","first_seen":"2026-11-08","id":"apple:apple:200658630","location":"United States of America","posted":"2026-04-21","skills":["ml"],"team":"Machine Learning and AI","title":"Senior ML Infrastructure Engineer - VE Algorithms"}
 {"company":"Apple","first_seen":"2026-10-15","id":"apple:apple:200658655","location":"United States of America","posted":"2026-10-01","team":"Corporate Functions","title":"Content Strategy & Planning Lead, Greenlights & Slate Management"}
@@ -2831,7 +2831,6 @@
 {"company":"Apple","first_seen":"2026-11-08","id":"apple:apple:200684378","location":"United States of America","posted":"2026-09-24","team":"Corporate Functions","title":"Critical Facilities Operations Center Operator, Data Center Operations"}
 {"company":"Apple","first_seen":"2026-11-08","id":"apple:apple:200684384","location":"Singapore","posted":"2026-09-17","team":"Software and Services","title":"Network Engineer — Retail Network"}
 {"company":"Apple","first_seen":"2026-11-08","id":"apple:apple:200684386","location":"China","posted":"2026-09-17","team":"Support and Service","title":"Quality Program Manager, Retail Customer Care"}
-{"company":"Apple","first_seen":"2026-11-08","id":"apple:apple:200684387","location":"China","posted":"2026-09-28","skills":["supply_chain","ml"],"team":"Software and Services","title":"Site Reliability Engineer - eBusiness Services"}
 {"company":"Apple","employment":"contract","first_seen":"2026-11-08","id":"apple:apple:200684389","location":"India","posted":"2026-09-17","skills":["agile"],"team":"Corporate Functions","title":"Technical Recruiter (Contract)"}
 {"company":"Apple","first_seen":"2026-11-08","id":"apple:apple:200684393","location":"China","posted":"2026-09-28","skills":["supply_chain","ml"],"team":"Software and Services","title":"Site Reliability Engineer, eBusiness Services"}
 {"company":"Apple","first_seen":"2026-11-08","id":"apple:apple:200684394","location":"China","posted":"2026-09-28","team":"Software and Services","title":"Functional Integration Engineer - Software Engineer"}
@@ -3696,7 +3695,6 @@
 {"company":"Apple","first_seen":"2026-10-19","id":"apple:apple:200690093","location":"United Kingdom","posted":"2026-10-19","team":"Software and Services","title":"Device Platform Engineering Manager"}
 {"company":"Apple","first_seen":"2026-10-19","id":"apple:apple:200690097","location":"France","posted":"2026-10-19","team":"Software and Services","title":"Systems Software Engineer – File Provider Sync (CoreOS)"}
 {"company":"Apple","first_seen":"2026-10-19","id":"apple:apple:200690102","location":"Singapore","posted":"2026-10-19","team":"Corporate Functions","title":"APAC Regional Benefits Leader"}
-{"company":"Apple","employment":"internship","first_seen":"2026-10-21","id":"apple:apple:200690108","location":"China","posted":"2026-10-21","team":"Operations and Supply Chain","title":"MDS TPM Intern - Data"}
 {"company":"Apple","first_seen":"2026-10-19","id":"apple:apple:200690116","location":"United Kingdom","posted":"2026-10-19","team":"Sales and Business Development","title":"Global Channel Development Lead, Education"}
 {"company":"Apple","first_seen":"2026-11-08","id":"apple:apple:200690118","location":"Israel","posted":"2026-11-02","team":"Machine Learning and AI","title":"Agentic AI Researcher"}
 {"company":"Apple","employment":"internship","first_seen":"2026-10-19","id":"apple:apple:200690119","location":"Germany","posted":"2026-10-19","team":"Hardware","title":"Modeling Software Intern"}
