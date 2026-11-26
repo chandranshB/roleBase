@@ -190,7 +190,7 @@
 {"company":"阶跃星辰","first_seen":"2026-11-09","id":"moka:step/94904:83d839a8-d87c-4652-8d6f-c54de26a16a1","location":"海淀区, 南山区, 徐汇区","posted":"2026-09-07","skills":["python","sql"],"title":"语音标注质检专家"}
 {"company":"阶跃星辰","first_seen":"2026-11-09","id":"moka:step/94904:846ba690-df4f-4974-b3cc-4141f4f18895","location":"海淀区, 徐汇区","posted":"2026-07-01","title":"Pre train Data基建工程师"}
 {"company":"阶跃星辰","first_seen":"2026-11-09","id":"moka:step/94904:85665e97-b7f4-4f26-bf67-203e4043cff3","location":"南山区","posted":"2026-05-12","title":"内审专家"}
-{"company":"阶跃星辰","first_seen":"2026-11-11","id":"moka:step/94904:879b18aa-abe7-4b89-acef-d08a6a0f64cf","location":"南山区, 徐汇区","posted":"2026-11-10","skills":["linux","c++"],"title":"底层安全 & 生物识别工程师"}
+{"closed_at":"2026-11-26","company":"阶跃星辰","first_seen":"2026-11-11","id":"moka:step/94904:879b18aa-abe7-4b89-acef-d08a6a0f64cf","location":"南山区, 徐汇区","posted":"2026-11-10","skills":["linux","c++"],"title":"底层安全 & 生物识别工程师"}
 {"company":"阶跃星辰","first_seen":"2026-11-09","id":"moka:step/94904:87b312a0-a8d4-4dc7-bd3a-575f494e2e0b","location":"海淀区, 徐汇区, 南山区","posted":"2026-06-05","skills":["crm"],"title":"API 业务拓展经理"}
 {"company":"阶跃星辰","first_seen":"2026-11-09","id":"moka:step/94904:88e86aca-492c-4d28-a681-608078a8252f","location":"徐汇区","posted":"2026-11-04","title":"IT网络工程师"}
 {"company":"阶跃星辰","first_seen":"2026-11-09","id":"moka:step/94904:890f722e-5cb3-49f4-b707-a27b29c6534a","location":"徐汇区","posted":"2026-05-12","title":"影像测评工程师"}
@@ -255,7 +255,7 @@
 {"company":"阶跃星辰","first_seen":"2026-11-09","id":"moka:step/94904:b0db1eb7-87bc-4ccb-a408-f44404b7ad78","location":"徐汇区","posted":"2026-08-21","skills":["sap"],"title":"AI物料采购"}
 {"company":"阶跃星辰","first_seen":"2026-11-09","id":"moka:step/94904:b15e3016-8ae2-4a7d-a5a7-a69522a356ad","location":"海淀区","posted":"2026-05-26","skills":["python"],"title":"Agentic 基础设施开发工程师"}
 {"company":"阶跃星辰","first_seen":"2026-11-09","id":"moka:step/94904:b1876153-f8fa-4fc7-956b-6dcca93796d8","posted":"2026-06-09","skills":["salesforce","aws"],"title":"海外GTM运营","years":1}
-{"company":"阶跃星辰","first_seen":"2026-11-09","id":"moka:step/94904:b1a7bc72-3ebc-480e-9498-c8a6c4bc7f5a","location":"徐汇区","posted":"2026-07-23","title":"高级系统安全工程师"}
+{"closed_at":"2026-11-26","company":"阶跃星辰","first_seen":"2026-11-09","id":"moka:step/94904:b1a7bc72-3ebc-480e-9498-c8a6c4bc7f5a","location":"徐汇区","posted":"2026-07-23","title":"高级系统安全工程师"}
 {"company":"阶跃星辰","first_seen":"2026-11-09","id":"moka:step/94904:b245be36-1bc8-428f-aa8e-8672e9b4ee71","location":"徐汇区","posted":"2026-08-11","title":"芯片规划专家"}
 {"company":"阶跃星辰","first_seen":"2026-11-09","id":"moka:step/94904:b2d23cdf-3f11-43f7-aa0a-6bd8228ba096","location":"徐汇区","posted":"2026-10-14","skills":["figma"],"title":"AI 产品 UI/UX 设计师"}
 {"company":"阶跃星辰","first_seen":"2026-11-09","id":"moka:step/94904:b534415e-0786-4100-9ed9-84052d2d86dc","location":"徐汇区, 徐汇区","posted":"2026-08-28","skills":["java","kotlin","c++"],"title":"Android系统开发工程师（UI/动效）"}
@@ -265,7 +265,7 @@
 {"company":"阶跃星辰","first_seen":"2026-11-09","id":"moka:step/94904:b7e8277b-375d-47ec-a08c-75338d6cae46","location":"徐汇区, 海淀区","posted":"2026-08-24","skills":["python","pytorch"],"title":"语音大模型算法工程 Leader"}
 {"company":"阶跃星辰","first_seen":"2026-11-09","id":"moka:step/94904:b88b65cf-acd4-47ca-afff-a13b2ae6a2a7","location":"徐汇区","posted":"2026-09-17","title":"项目管理（设计中心）"}
 {"company":"阶跃星辰","first_seen":"2026-11-09","id":"moka:step/94904:b8eaf97a-b9c9-4cb9-9fc9-5b2a01a059b9","location":"徐汇区, 南山区, 徐汇区","posted":"2026-09-02","title":"订单履约经理"}
-{"company":"阶跃星辰","first_seen":"2026-11-09","id":"moka:step/94904:b96122ad-981a-45fd-96f2-f82c65fcfdf6","location":"南山区, 徐汇区","posted":"2026-05-12","skills":["c++","java"],"title":"安全研发工程师"}
+{"closed_at":"2026-11-26","company":"阶跃星辰","first_seen":"2026-11-09","id":"moka:step/94904:b96122ad-981a-45fd-96f2-f82c65fcfdf6","location":"南山区, 徐汇区","posted":"2026-05-12","skills":["c++","java"],"title":"安全研发工程师"}
 {"company":"阶跃星辰","first_seen":"2026-11-09","id":"moka:step/94904:b9998eac-b089-44bc-84a6-fbb972082e8f","location":"徐汇区","posted":"2026-10-27","skills":["python","sql"],"title":"Agent数据专家"}
 {"company":"阶跃星辰","first_seen":"2026-11-09","id":"moka:step/94904:ba12e4cb-63b2-4121-9fa2-bbb8eb57c910","location":"海淀区","posted":"2026-05-07","title":"数据采集开发工程师——web端/通用采集"}
 {"company":"阶跃星辰","first_seen":"2026-11-09","id":"moka:step/94904:ba610d0e-27cd-4006-9b2c-e73403d6fd5b","location":"南山区, 徐汇区","posted":"2026-09-22","skills":["llm","python","kotlin"],"title":"Agent开发工程师（端侧）"}
@@ -363,7 +363,7 @@
 {"company":"阶跃星辰","first_seen":"2026-11-09","id":"moka:step/94904:f91c4ffe-018d-4982-a5f3-cbcfa89a64a2","location":"南山区, 海淀区, 徐汇区","posted":"2026-08-26","title":"Agent产品经理"}
 {"company":"阶跃星辰","first_seen":"2026-11-09","id":"moka:step/94904:f9666335-e34d-4a20-a7dd-bad6d3a7b813","location":"海淀区, 徐汇区","posted":"2026-11-02","title":"业务安全专家"}
 {"closed_at":"2026-11-20","company":"阶跃星辰","first_seen":"2026-11-09","id":"moka:step/94904:fa0a5c6b-4704-4baa-8e1b-438c644828b7","location":"南山区","posted":"2026-09-30","title":"测试项目经理"}
-{"company":"阶跃星辰","first_seen":"2026-11-09","id":"moka:step/94904:faa51f8e-5304-4a16-85d3-7030d887f1bc","location":"徐汇区","posted":"2026-09-04","title":"AI 产品经理-模型评测方向"}
+{"company":"阶跃星辰","first_seen":"2026-11-09","id":"moka:step/94904:faa51f8e-5304-4a16-85d3-7030d887f1bc","location":"海淀区, 徐汇区","posted":"2026-09-04","title":"AI 产品经理-模型评测方向"}
 {"company":"阶跃星辰","first_seen":"2026-11-09","id":"moka:step/94904:fb659189-8d85-400f-9ec0-fc06734ce91a","location":"海淀区, 徐汇区","posted":"2026-04-07","skills":["python","java"],"title":"运维系统架构开发工程师（云资源）"}
 {"company":"阶跃星辰","first_seen":"2026-11-09","id":"moka:step/94904:fc6e227d-4012-449e-b604-36c5c2256187","location":"徐汇区","posted":"2026-05-12","title":"iOS研发工程师"}
 {"company":"阶跃星辰","first_seen":"2026-11-09","id":"moka:step/94904:fca2fd99-0734-4aa4-870f-1fbbc1dbddc1","location":"徐汇区","posted":"2026-08-24","title":"AI Agent 产品经理 （零售行业 ）"}

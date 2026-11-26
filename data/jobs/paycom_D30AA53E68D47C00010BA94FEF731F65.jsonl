@@ -36,7 +36,7 @@
 {"company":"Haas Automation","first_seen":"2026-10-01","id":"paycom:D30AA53E68D47C00010BA94FEF731F65:256440","location":"Henderson, NV 89044","title":"Mfg Eng 3 (51462)"}
 {"company":"Haas Automation","first_seen":"2026-10-01","id":"paycom:D30AA53E68D47C00010BA94FEF731F65:256456","location":"Henderson, NV 89044","title":"QC Eng 2 (51463)"}
 {"company":"Haas Automation","first_seen":"2026-10-01","id":"paycom:D30AA53E68D47C00010BA94FEF731F65:256460","location":"Henderson, NV 89044","title":"QC Eng 1 (51464)"}
-{"company":"Haas Automation","first_seen":"2026-06-10","id":"paycom:D30AA53E68D47C00010BA94FEF731F65:258008","location":"Oxnard, CA 93030; Henderson, NV 89044","title":"Sr Mech Design Eng (51479)"}
+{"company":"Haas Automation","first_seen":"2026-06-10","id":"paycom:D30AA53E68D47C00010BA94FEF731F65:258008","location":"Oxnard, CA 93030; Henderson, NV 89044","pay":[91000,173000,"USD"],"title":"Sr Mech Design Eng (51479)"}
 {"closed_at":"2026-11-08","company":"Haas Automation","first_seen":"2026-06-10","id":"paycom:D30AA53E68D47C00010BA94FEF731F65:258026","location":"United States","posted":"2025-05-12","team":"Engineering","title":"Machine Test Engineer 2 (51139)"}
 {"company":"Haas Automation","first_seen":"2026-06-10","id":"paycom:D30AA53E68D47C00010BA94FEF731F65:258058","location":"Oxnard, CA 93030","title":"Associate Mechanical Eng (51481)"}
 {"company":"Haas Automation","first_seen":"2026-10-01","id":"paycom:D30AA53E68D47C00010BA94FEF731F65:258097","location":"Oxnard, CA 93030","title":"Cost Accountant (51345)"}
@@ -49,7 +49,7 @@
 {"company":"Haas Automation","first_seen":"2026-07-23","id":"paycom:D30AA53E68D47C00010BA94FEF731F65:273411","location":"Oxnard, CA 93030","title":"Software Test Eng 2 (51757)"}
 {"closed_at":"2026-08-29","company":"Haas Automation","first_seen":"2026-08-18","id":"paycom:D30AA53E68D47C00010BA94FEF731F65:281126","location":"United States","posted":"2025-05-12","title":"Product Supply Engin Supv (52019)"}
 {"company":"Haas Automation","first_seen":"2026-08-20","id":"paycom:D30AA53E68D47C00010BA94FEF731F65:282308","location":"Oxnard, CA 93030","title":"Tooling Eng 2 (51856)"}
-{"company":"Haas Automation","first_seen":"2026-08-20","id":"paycom:D30AA53E68D47C00010BA94FEF731F65:282340","location":"Oxnard, CA 93030; Oxnard, CA 93030","title":"Sr Mech Design Eng (51845)"}
+{"company":"Haas Automation","first_seen":"2026-08-20","id":"paycom:D30AA53E68D47C00010BA94FEF731F65:282340","location":"Oxnard, CA 93030; Oxnard, CA 93030","pay":[91000,173000,"USD"],"title":"Sr Mech Design Eng (51845)"}
 {"closed_at":"2026-11-08","company":"Haas Automation","first_seen":"2026-08-20","id":"paycom:D30AA53E68D47C00010BA94FEF731F65:282400","location":"United States","posted":"2025-05-12","title":"IT Support Specialist (51989)"}
 {"company":"Haas Automation","first_seen":"2026-08-20","id":"paycom:D30AA53E68D47C00010BA94FEF731F65:282426","location":"Henderson, NV 89044","title":"Inventory Assoc 1 Service Parts / E-comm (52029)"}
 {"closed_at":"2026-11-08","company":"Haas Automation","first_seen":"2026-10-10","id":"paycom:D30AA53E68D47C00010BA94FEF731F65:282462","location":"United States","posted":"2025-05-12","title":"Inventory Control Mgr (52048)"}
@@ -78,5 +78,6 @@
 {"company":"Haas Automation","first_seen":"2026-11-25","id":"paycom:D30AA53E68D47C00010BA94FEF731F65:302086","location":"Oxnard, CA 93030","title":"Operator 3 (51247)"}
 {"company":"Haas Automation","first_seen":"2026-11-25","id":"paycom:D30AA53E68D47C00010BA94FEF731F65:302101","location":"Oxnard, CA 93030; Henderson, NV 89044","title":"Operator 2 (51734)"}
 {"company":"Haas Automation","first_seen":"2026-11-25","id":"paycom:D30AA53E68D47C00010BA94FEF731F65:302196","location":"Henderson, NV 89044","title":"Facilities Maint Mech 2 (52742)"}
+{"company":"Haas Automation","first_seen":"2026-11-26","id":"paycom:D30AA53E68D47C00010BA94FEF731F65:304604","location":"Henderson, NV 89044","title":"Assembler 2 (52650)"}
 {"closed_at":"2026-09-08","company":"Haas Automation","first_seen":"2026-05-24","id":"paycom:D30AA53E68D47C00010BA94FEF731F65:91692","location":"United States","posted":"2025-05-12","title":"Mfg Eng 2 (45580)"}
 {"company":"Haas Automation","first_seen":"2026-10-01","id":"paycom:D30AA53E68D47C00010BA94FEF731F65:99464","location":"Oxnard, CA 93030","title":"Mach Shop Tech Specialist (46164)"}

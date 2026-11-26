@@ -84,8 +84,6 @@
 {"company":"JM Eagle","first_seen":"2026-07-09","id":"paycom:D557FB5BC3482210A2CF7555F3F0F072:137622","location":"LOS ANGELES, CA 90045","title":"Credit Coordinator"}
 {"company":"JM Eagle","first_seen":"2026-07-09","id":"paycom:D557FB5BC3482210A2CF7555F3F0F072:137626","location":"LOS ANGELES, CA 90045","pay":[175000,215000,"USD"],"title":"Enterprise Applications Architect"}
 {"closed_at":"2026-11-08","company":"JM Eagle","first_seen":"2026-07-14","id":"paycom:D557FB5BC3482210A2CF7555F3F0F072:137848","location":"United States","posted":"2025-05-12","title":"Extrusion Technician"}
-{"closed_at":"2026-08-27","company":"JM Eagle","first_seen":"2026-07-18","id":"paycom:D557FB5BC3482210A2CF7555F3F0F072:138105","location":"United States","posted":"2025-05-12","title":"Extruder Operator - Night Shift"}
-{"closed_at":"2026-08-27","company":"JM Eagle","first_seen":"2026-07-22","id":"paycom:D557FB5BC3482210A2CF7555F3F0F072:138333","location":"United States","posted":"2024-10-17","title":"Electrical Technician"}
 {"company":"JM Eagle","first_seen":"2026-07-22","id":"paycom:D557FB5BC3482210A2CF7555F3F0F072:138347","location":"COLUMBIA, MO 65202","title":"Electrical Technician"}
 {"company":"JM Eagle","first_seen":"2026-11-25","id":"paycom:D557FB5BC3482210A2CF7555F3F0F072:138351","location":"COLUMBIA, MO 65202","reposts":1,"title":"Maintenance Technician"}
 {"company":"JM Eagle","first_seen":"2026-10-01","id":"paycom:D557FB5BC3482210A2CF7555F3F0F072:138379","location":"LOS ANGELES, CA 90045","skills":["hris"],"title":"HRIS / HR Generalist"}
@@ -96,18 +94,18 @@
 {"company":"JM Eagle","first_seen":"2026-08-12","id":"paycom:D557FB5BC3482210A2CF7555F3F0F072:139623","location":"LOS ANGELES, CA 90045","title":"Director of Purchasing"}
 {"company":"JM Eagle","first_seen":"2026-08-13","id":"paycom:D557FB5BC3482210A2CF7555F3F0F072:139667","location":"COLUMBIA, MO 65202","title":"Tool & Die Operator"}
 {"company":"JM Eagle","first_seen":"2026-10-04","id":"paycom:D557FB5BC3482210A2CF7555F3F0F072:139711","location":"BATCHELOR, LA 70715","title":"Loader B"}
-{"company":"JM Eagle","first_seen":"2026-08-13","id":"paycom:D557FB5BC3482210A2CF7555F3F0F072:139715","location":"LOS ANGELES, CA 90045","title":"Senior IT Support Engineer"}
+{"closed_at":"2026-11-26","company":"JM Eagle","first_seen":"2026-08-13","id":"paycom:D557FB5BC3482210A2CF7555F3F0F072:139715","location":"LOS ANGELES, CA 90045","title":"Senior IT Support Engineer"}
 {"closed_at":"2026-10-14","company":"JM Eagle","first_seen":"2026-08-15","id":"paycom:D557FB5BC3482210A2CF7555F3F0F072:139860","location":"United States","posted":"2025-05-12","title":"Purchasing Supervisor"}
 {"company":"JM Eagle","first_seen":"2026-08-20","id":"paycom:D557FB5BC3482210A2CF7555F3F0F072:140100","location":"Ashtabula, OH 44004","title":"Fork Truck Operator"}
 {"closed_at":"2026-09-01","company":"JM Eagle","first_seen":"2026-08-20","id":"paycom:D557FB5BC3482210A2CF7555F3F0F072:140110","location":"United States","posted":"2025-05-12","title":"2nd Shift Supervisor (Assembly)"}
-{"company":"JM Eagle","first_seen":"2026-08-25","id":"paycom:D557FB5BC3482210A2CF7555F3F0F072:140312","location":"LOS ANGELES, CA 90045","title":"Legal Operations Assistant"}
+{"closed_at":"2026-11-26","company":"JM Eagle","first_seen":"2026-08-25","id":"paycom:D557FB5BC3482210A2CF7555F3F0F072:140312","location":"LOS ANGELES, CA 90045","title":"Legal Operations Assistant"}
 {"company":"JM Eagle","first_seen":"2026-08-29","id":"paycom:D557FB5BC3482210A2CF7555F3F0F072:140623","location":"VISALIA, CA 93291","title":"Shipping & Receiving Loader"}
 {"company":"JM Eagle","first_seen":"2026-09-01","id":"paycom:D557FB5BC3482210A2CF7555F3F0F072:140735","location":"COLUMBIA, MO 65202","title":"Mixer Operator"}
 {"closed_at":"2026-09-06","company":"JM Eagle","first_seen":"2026-09-02","id":"paycom:D557FB5BC3482210A2CF7555F3F0F072:140830","location":"United States","posted":"2024-10-17","title":"Maintenance B"}
 {"company":"JM Eagle","first_seen":"2026-09-03","id":"paycom:D557FB5BC3482210A2CF7555F3F0F072:140891","location":"Hastings, NE 68901","title":"Class A Over the Road Driver (Hastings, NE)"}
 {"company":"JM Eagle","first_seen":"2026-09-03","id":"paycom:D557FB5BC3482210A2CF7555F3F0F072:140895","location":"ADEL, GA 31620","title":"Class A Over the Road Driver (Adel, GA)"}
 {"company":"JM Eagle","first_seen":"2026-09-24","id":"paycom:D557FB5BC3482210A2CF7555F3F0F072:140973","location":"BATCHELOR, LA 70715","title":"Electrician A"}
-{"company":"JM Eagle","first_seen":"2026-10-04","id":"paycom:D557FB5BC3482210A2CF7555F3F0F072:141139","location":"Ashtabula, OH 44004","title":"Human Resource Manager"}
+{"closed_at":"2026-11-26","company":"JM Eagle","first_seen":"2026-10-04","id":"paycom:D557FB5BC3482210A2CF7555F3F0F072:141139","location":"Ashtabula, OH 44004","title":"Human Resource Manager"}
 {"closed_at":"2026-10-09","company":"JM Eagle","first_seen":"2026-09-09","id":"paycom:D557FB5BC3482210A2CF7555F3F0F072:141159","location":"United States","posted":"2025-05-12","title":"Shipping & Receiving Loader"}
 {"company":"JM Eagle","first_seen":"2026-09-09","id":"paycom:D557FB5BC3482210A2CF7555F3F0F072:141173","location":"LOS ANGELES, CA 90045","title":"Mechanical Engineer"}
 {"company":"JM Eagle","first_seen":"2026-09-13","id":"paycom:D557FB5BC3482210A2CF7555F3F0F072:141316","location":"LOS ANGELES, CA 90045","title":"Electrical Automation Engineer"}
