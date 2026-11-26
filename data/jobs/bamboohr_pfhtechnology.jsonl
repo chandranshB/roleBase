@@ -8,7 +8,7 @@
 {"company":"PFH Technology Group","employment":"contract","first_seen":"2026-11-08","id":"bamboohr:pfhtechnology:1226","location":"Dublin, Dublin","team":"Talent Solution","title":"Applications Developer Architect Senior"}
 {"company":"PFH Technology Group","employment":"contract","first_seen":"2026-11-08","id":"bamboohr:pfhtechnology:1229","remote":true,"team":"Talent Solution","title":"Junior Infrastructure Operational Support(Nearshore)"}
 {"company":"PFH Technology Group","employment":"contract","first_seen":"2026-11-08","id":"bamboohr:pfhtechnology:1234","location":"Dublin, Dublin","title":"Third Party Contracts Support"}
-{"company":"PFH Technology Group","employment":"contract","first_seen":"2026-11-08","id":"bamboohr:pfhtechnology:1235","location":"Dublin, Dublin","title":"Senior Project Officer"}
+{"closed_at":"2026-11-26","company":"PFH Technology Group","employment":"contract","first_seen":"2026-11-08","id":"bamboohr:pfhtechnology:1235","location":"Dublin, Dublin","title":"Senior Project Officer"}
 {"company":"PFH Technology Group","employment":"contract","first_seen":"2026-11-08","id":"bamboohr:pfhtechnology:1236","location":"Dublin, Dublin","title":"Senior Business Analyst"}
 {"company":"PFH Technology Group","employment":"contract","first_seen":"2026-11-08","id":"bamboohr:pfhtechnology:1237","location":"Dublin, Dublin","title":"Medical Devices Manager"}
 {"company":"PFH Technology Group","employment":"contract","first_seen":"2026-11-08","id":"bamboohr:pfhtechnology:1238","location":"Dublin, Dublin","title":"Senior Project Manager"}
@@ -20,4 +20,5 @@
 {"company":"PFH Technology Group","first_seen":"2026-11-12","id":"bamboohr:pfhtechnology:1252","location":"Little Island, Cork","title":"Training Specialist"}
 {"company":"PFH Technology Group","first_seen":"2026-11-17","id":"bamboohr:pfhtechnology:1253","location":"Dublin 2, Dublin","title":"Presales Networking Specialist"}
 {"company":"PFH Technology Group","employment":"contract","first_seen":"2026-11-24","id":"bamboohr:pfhtechnology:1257","location":"Dublin 2, Dublin","title":"Interoperability Senior Support"}
-{"company":"PFH Technology Group","first_seen":"2026-11-25","id":"bamboohr:pfhtechnology:1258","location":"Little Island, Cork","title":"Accounts Assistant"}
+{"closed_at":"2026-11-26","company":"PFH Technology Group","first_seen":"2026-11-25","id":"bamboohr:pfhtechnology:1258","location":"Little Island, Cork","title":"Accounts Assistant"}
+{"company":"PFH Technology Group","employment":"contract","first_seen":"2026-11-26","id":"bamboohr:pfhtechnology:1260","remote":true,"title":"Data Architect"}

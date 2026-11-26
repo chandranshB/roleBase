@@ -27,7 +27,7 @@
 {"company":"px Group","first_seen":"2026-11-25","id":"pinpoint:pxlimited:6368a8d3-061e-47d8-8f09-f1af8e4cd272","location":"Teesside","skills":["procurement"],"title":"Mechanical Engineer"}
 {"company":"px Group","first_seen":"2026-11-08","id":"pinpoint:pxlimited:64b6685c-9a28-40d1-8b26-9db152ac5c73","location":"Middlesbrough","title":"DCS Engineer"}
 {"company":"px Group","first_seen":"2026-11-16","id":"pinpoint:pxlimited:6b5e2a06-99d5-4cc5-a2aa-a82d6c0b4197","location":"Middlesbrough","skills":["sap","ms_office"],"title":"Control of Work Manager"}
-{"company":"px Group","first_seen":"2026-11-08","id":"pinpoint:pxlimited:77afb1cc-734c-4367-ac27-31679502ba12","location":"Stockton on Tees","title":"Cyber Security Functional Lead"}
+{"closed_at":"2026-11-26","company":"px Group","first_seen":"2026-11-08","id":"pinpoint:pxlimited:77afb1cc-734c-4367-ac27-31679502ba12","location":"Stockton on Tees","title":"Cyber Security Functional Lead"}
 {"company":"px Group","first_seen":"2026-11-08","id":"pinpoint:pxlimited:794bc561-179d-4409-82f4-5981117cf55b","location":"Bahamas","skills":["osha"],"title":"Maintenance Technician","years":3}
 {"company":"px Group","first_seen":"2026-11-08","id":"pinpoint:pxlimited:7d807085-7e24-489b-9c3b-3a64b65f2bec","location":"Bahamas","skills":["osha","preventive_maintenance"],"title":"I&E Technician","years":3}
 {"company":"px Group","first_seen":"2026-11-25","id":"pinpoint:pxlimited:7de088b7-2c3d-43d4-bb31-81e8641e2e87","location":"Teesside","title":"Instrument Engineer"}
@@ -39,19 +39,20 @@
 {"closed_at":"2026-11-12","company":"px Group","first_seen":"2026-11-08","id":"pinpoint:pxlimited:a0a6dc35-8024-47b9-8520-7ca1cc3fdb1c","location":"Teesside","title":"Plant Manager"}
 {"closed_at":"2026-11-20","company":"px Group","first_seen":"2026-10-30","id":"pinpoint:pxlimited:a25a53ac-a5fa-4bed-8d6d-6bb668e2df97","location":"Northampton","skills":["project_management"],"title":"Senior Mechanical Engineer"}
 {"closed_at":"2026-11-26","company":"px Group","first_seen":"2026-11-08","id":"pinpoint:pxlimited:adab5e71-2ee7-4307-b004-f614c25596c2","location":"Aberdeen","title":"Cyber Security & Systems Engineer"}
-{"company":"px Group","first_seen":"2026-11-08","id":"pinpoint:pxlimited:aec47bf9-dab8-4e49-b9b4-698a5e2e18f4","location":"Saltend Chemicals Park","title":"Mechanical Technician"}
+{"closed_at":"2026-11-26","company":"px Group","first_seen":"2026-11-08","id":"pinpoint:pxlimited:aec47bf9-dab8-4e49-b9b4-698a5e2e18f4","location":"Saltend Chemicals Park","title":"Mechanical Technician"}
 {"company":"px Group","first_seen":"2026-11-25","id":"pinpoint:pxlimited:b0242b2d-5c54-4118-889c-4fc16374f182","location":"Teesside","title":"Electrical Engineer"}
 {"company":"px Group","first_seen":"2026-11-25","id":"pinpoint:pxlimited:b3c8564e-6f7f-459d-8909-23ea9b4ad43e","location":"Teesside","title":"C&I Technician"}
 {"company":"px Group","first_seen":"2026-11-25","id":"pinpoint:pxlimited:bece1b10-3a4a-4ff5-bbb4-ece52cff9c9e","location":"Teesside","title":"IACS Engineer"}
 {"closed_at":"2026-11-20","company":"px Group","first_seen":"2026-10-30","id":"pinpoint:pxlimited:c4186353-92a6-4a3d-8b03-5d36f0ad2d85","location":"Hull","skills":["project_management"],"title":"Senior Mechanical Engineer"}
 {"company":"px Group","first_seen":"2026-11-25","id":"pinpoint:pxlimited:c65790ed-482d-4583-b4e7-267255e9e407","location":"Teesside","reposts":1,"title":"Plant Manager"}
 {"company":"px Group","first_seen":"2026-11-25","id":"pinpoint:pxlimited:c962275d-2d72-4e7b-81ad-ef870fd33c2c","location":"Teesside","skills":["procurement","budgeting","forecasting","excel"],"title":"Finance & Procurement Site Lead"}
+{"company":"px Group","first_seen":"2026-11-26","id":"pinpoint:pxlimited:c9a8cbb3-3504-4cb3-aaaa-77abd6a760ec","location":"Saltend Chemicals Park","skills":["procurement","ms_office","erp"],"title":"Buyer"}
 {"company":"px Group","first_seen":"2026-11-18","id":"pinpoint:pxlimited:cb1aa823-2026-46ad-aa86-ac630c2c750d","location":"Seal Sands","title":"Senior SHEQ Advisor"}
-{"company":"px Group","first_seen":"2026-11-08","id":"pinpoint:pxlimited:cf7b23de-5b6a-498e-b213-07d565ff6afe","location":"Stockton on Tees","skills":["preventive_maintenance","procurement"],"title":"Senior Electrical Engineer"}
+{"closed_at":"2026-11-26","company":"px Group","first_seen":"2026-11-08","id":"pinpoint:pxlimited:cf7b23de-5b6a-498e-b213-07d565ff6afe","location":"Stockton on Tees","skills":["preventive_maintenance","procurement"],"title":"Senior Electrical Engineer"}
 {"closed_at":"2026-11-14","company":"px Group","first_seen":"2026-11-08","id":"pinpoint:pxlimited:debc5eab-4bbf-4573-b126-dd0ebbff9767","location":"Bahamas","title":"Electrical Commissioning Lead"}
 {"closed_at":"2026-11-24","company":"px Group","employment":"contract","first_seen":"2026-11-09","id":"pinpoint:pxlimited:e720f7cb-c12f-4944-a7fc-96d1cd1eea51","location":"Wyke","skills":["project_management"],"title":"Senior Project Engineer (CONTRACT)"}
 {"closed_at":"2026-11-14","company":"px Group","first_seen":"2026-11-08","id":"pinpoint:pxlimited:e805595d-a364-48c4-997b-96ac130e401d","location":"Wyke","skills":["supply_chain"],"title":"Asset Integrity Manager"}
-{"company":"px Group","first_seen":"2026-11-08","id":"pinpoint:pxlimited:ea6ceef5-a0c6-4880-b1d4-fbc833706a0b","location":"Saltend Chemicals Park","skills":["procurement","supply_chain"],"title":"Senior Buyer"}
+{"closed_at":"2026-11-26","company":"px Group","first_seen":"2026-11-08","id":"pinpoint:pxlimited:ea6ceef5-a0c6-4880-b1d4-fbc833706a0b","location":"Saltend Chemicals Park","skills":["procurement","supply_chain"],"title":"Senior Buyer"}
 {"company":"px Group","first_seen":"2026-11-25","id":"pinpoint:pxlimited:eca7ee3f-ef67-4d5a-aba6-d68f83365e77","location":"Teesside","title":"Optimisation Engineer"}
 {"company":"px Group","first_seen":"2026-11-08","id":"pinpoint:pxlimited:f00b53a1-b7a9-4b71-a372-b21659361519","location":"Stockton on Tees","title":"Senior Systems & Cyber Engineer"}
 {"company":"px Group","first_seen":"2026-11-13","id":"pinpoint:pxlimited:f1b07203-96cc-4ba6-85d6-d28be9b7c38c","location":"Stockton on Tees","title":"Occupational Health & Safety Advisor"}

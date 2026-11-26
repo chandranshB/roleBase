@@ -17,7 +17,7 @@
 {"company":"Nox Metals","employment":"full_time","first_seen":"2026-11-24","id":"yc:nox-metals:115826","location":"Los Angeles / San Francisco","pay":[152000,168000,"USD"],"skills":["ml","supply_chain"],"title":"Machine Learning Engineer"}
 {"company":"Nox Metals","employment":"full_time","first_seen":"2026-11-24","id":"yc:nox-metals:115827","location":"Los Angeles","skills":["supply_chain"],"title":"Production Supervisor"}
 {"company":"Nox Metals","employment":"full_time","first_seen":"2026-11-24","id":"yc:nox-metals:115828","location":"Los Angeles / Detroit","skills":["supply_chain"],"title":"Video Editor / Motion Designer"}
-{"company":"Nox Metals","employment":"full_time","first_seen":"2026-11-24","id":"yc:nox-metals:115829","location":"Los Angeles","pay":[188000,207000,"USD"],"skills":["supply_chain"],"title":"Head of Engineering"}
+{"company":"Nox Metals","employment":"full_time","first_seen":"2026-11-24","id":"yc:nox-metals:115829","location":"Los Angeles","pay":[188000,380000,"USD"],"skills":["supply_chain"],"title":"Head of Engineering"}
 {"company":"Nox Metals","employment":"full_time","first_seen":"2026-11-24","id":"yc:nox-metals:115830","location":"Los Angeles / Detroit","pay":[115000,127000,"USD"],"skills":["supply_chain"],"title":"Manufacturing Engineer"}
 {"company":"Nox Metals","employment":"full_time","first_seen":"2026-11-24","id":"yc:nox-metals:115831","location":"Los Angeles / Detroit","pay":[111000,123000,"USD"],"skills":["supply_chain"],"title":"Infrastructure Engineer"}
 {"company":"Nox Metals","employment":"full_time","first_seen":"2026-11-24","id":"yc:nox-metals:115832","location":"Los Angeles","pay":[124000,137000,"USD"],"skills":["supply_chain"],"title":"Customer & Commercial Product Manager"}
@@ -30,7 +30,7 @@
 {"company":"Nox Metals","employment":"full_time","first_seen":"2026-11-24","id":"yc:nox-metals:115840","location":"Detroit","skills":["supply_chain"],"title":"Business Development Representative"}
 {"company":"Nox Metals","employment":"full_time","first_seen":"2026-11-24","id":"yc:nox-metals:115841","location":"Los Angeles / Detroit","pay":[152000,168000,"USD"],"skills":["supply_chain"],"title":"Operations Systems Product Manager"}
 {"company":"Nox Metals","employment":"full_time","first_seen":"2026-11-24","id":"yc:nox-metals:115842","location":"Los Angeles / Detroit","pay":[132000,146000,"USD"],"skills":["supply_chain"],"title":"Plant Manager"}
-{"company":"Nox Metals","employment":"full_time","first_seen":"2026-11-24","id":"yc:nox-metals:115844","location":"Los Angeles / Detroit","pay":[129000,142000,"USD"],"skills":["supply_chain"],"title":"Director of Manufacturing"}
+{"closed_at":"2026-11-26","company":"Nox Metals","employment":"full_time","first_seen":"2026-11-24","id":"yc:nox-metals:115844","location":"Los Angeles / Detroit","pay":[129000,142000,"USD"],"skills":["supply_chain"],"title":"Director of Manufacturing"}
 {"company":"Nox Metals","employment":"full_time","first_seen":"2026-11-24","id":"yc:nox-metals:115845","location":"Los Angeles / Detroit","skills":["accounts_receivable","accounts_payable","supply_chain"],"title":"Accounts Receivable / Accounts Payable Specialist"}
 {"company":"Nox Metals","employment":"full_time","first_seen":"2026-11-24","id":"yc:nox-metals:115846","location":"Los Angeles","skills":["supply_chain"],"title":"Saw Operator"}
 {"company":"Nox Metals","employment":"full_time","first_seen":"2026-11-24","id":"yc:nox-metals:115847","location":"Los Angeles / San Francisco","pay":[154000,170000,"USD"],"skills":["supply_chain"],"title":"Full Stack Engineer"}
@@ -39,4 +39,4 @@
 {"company":"Nox Metals","employment":"full_time","first_seen":"2026-11-24","id":"yc:nox-metals:115851","location":"Detroit","skills":["supply_chain"],"title":"People Operations Associate"}
 {"company":"Nox Metals","employment":"full_time","first_seen":"2026-11-24","id":"yc:nox-metals:115852","location":"Detroit","skills":["supply_chain"],"title":"Office Manager"}
 {"company":"Nox Metals","employment":"full_time","first_seen":"2026-11-24","id":"yc:nox-metals:123011","location":"Los Angeles / Detroit / San Francisco","pay":[200000,350000,"USD"],"skills":["supply_chain"],"title":"VP of Finance"}
-{"company":"Nox Metals","employment":"full_time","first_seen":"2026-11-24","id":"yc:nox-metals:123012","location":"Los Angeles / Detroit / San Francisco","pay":[200000,350000,"USD"],"skills":["supply_chain"],"title":"VP of Production"}
+{"closed_at":"2026-11-26","company":"Nox Metals","employment":"full_time","first_seen":"2026-11-24","id":"yc:nox-metals:123012","location":"Los Angeles / Detroit / San Francisco","pay":[200000,350000,"USD"],"skills":["supply_chain"],"title":"VP of Production"}

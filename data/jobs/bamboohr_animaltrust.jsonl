@@ -14,7 +14,7 @@
 {"company":"Animal Trust","first_seen":"2026-10-19","id":"bamboohr:animaltrust:1062","location":"Hull, East Riding of Yorkshire","team":"PetA&E - Inpatient and ECC Vets","title":"Night Veterinary Surgeon"}
 {"company":"Animal Trust","first_seen":"2026-10-19","id":"bamboohr:animaltrust:1070","location":"Bolton, Greater Manchester","team":"Nursing Team - RVN","title":"Registered Veterinary Nurse"}
 {"company":"Animal Trust","first_seen":"2026-10-19","id":"bamboohr:animaltrust:1072","location":"Hull, East Riding of Yorkshire","team":"Nursing Team - RVN","title":"Registered Veterinary Nurse"}
-{"company":"Animal Trust","first_seen":"2026-11-26","id":"bamboohr:animaltrust:1074","location":"Hull, East Riding of Yorkshire","reposts":1,"team":"PetA&E - Inpatient and ECC Nurses","title":"Night Registered Veterinary Nurse"}
+{"closed_at":"2026-11-26","company":"Animal Trust","first_seen":"2026-11-26","id":"bamboohr:animaltrust:1074","location":"Hull, East Riding of Yorkshire","reposts":1,"team":"PetA&E - Inpatient and ECC Nurses","title":"Night Registered Veterinary Nurse"}
 {"company":"Animal Trust","first_seen":"2026-10-19","id":"bamboohr:animaltrust:1085","location":"Ellesmere Port, Cheshire","team":"PetA&E - Inpatient and ECC Vets","title":"Night Veterinary Surgeon"}
 {"company":"Animal Trust","first_seen":"2026-10-19","id":"bamboohr:animaltrust:1091","location":"Warrington, Cheshire","team":"Nursing Team - RVN","title":"Registered Veterinary Nurse"}
 {"company":"Animal Trust","first_seen":"2026-11-08","id":"bamboohr:animaltrust:1093","location":"Bolton, Greater Manchester","team":"Vets","title":"Veterinary Surgeon - Consulting Only"}
@@ -46,7 +46,7 @@
 {"company":"Animal Trust","first_seen":"2026-10-19","id":"bamboohr:animaltrust:1166","location":"Barnsley, South Yorkshire","team":"Nursing Team - RVN","title":"Registered Veterinary Nurse"}
 {"closed_at":"2026-11-13","company":"Animal Trust","first_seen":"2026-11-08","id":"bamboohr:animaltrust:1171","location":"Blackburn, Lancashire","reposts":3,"team":"Reception and Administration","title":"Veterinary Receptionist"}
 {"company":"Animal Trust","first_seen":"2026-11-08","id":"bamboohr:animaltrust:1174","location":"Blackburn, Lancashire","team":"Nursing Team - RVN","title":"Registered Veterinary Nurse"}
-{"company":"Animal Trust","first_seen":"2026-11-08","id":"bamboohr:animaltrust:1176","location":"Ellesmere Port, Cheshire","team":"Nursing Team - RVN","title":"Roving Registered Veterinary Nurse"}
+{"closed_at":"2026-11-26","company":"Animal Trust","first_seen":"2026-11-08","id":"bamboohr:animaltrust:1176","location":"Ellesmere Port, Cheshire","team":"Nursing Team - RVN","title":"Roving Registered Veterinary Nurse"}
 {"company":"Animal Trust","first_seen":"2026-10-19","id":"bamboohr:animaltrust:1183","location":"Dewsbury, West Yorkshire","team":"Vets","title":"Veterinary Surgeon"}
 {"company":"Animal Trust","first_seen":"2026-10-19","id":"bamboohr:animaltrust:1184","location":"Birkenhead, Wirral","team":"Vets","title":"Veterinary Surgeon"}
 {"company":"Animal Trust","first_seen":"2026-10-19","id":"bamboohr:animaltrust:1188","location":"Ashton-under-Lyne, Greater Manchester","team":"Leadership","title":"Veterinary Surgeon - Team Lead"}
@@ -57,7 +57,7 @@
 {"closed_at":"2026-10-28","company":"Animal Trust","first_seen":"2026-10-19","id":"bamboohr:animaltrust:1196","location":"Bolton, Greater Manchester","team":"Reception and Administration","title":"Veterinary Administrator"}
 {"closed_at":"2026-10-27","company":"Animal Trust","first_seen":"2026-10-19","id":"bamboohr:animaltrust:1197","location":"Barnsley, South Yorkshire","team":"Reception and Administration","title":"Veterinary Administrator"}
 {"closed_at":"2026-11-10","company":"Animal Trust","first_seen":"2026-11-08","id":"bamboohr:animaltrust:1199","location":"Shrewsbury, Shropshire","reposts":2,"team":"Reception and Administration","title":"Veterinary Administrator"}
-{"company":"Animal Trust","first_seen":"2026-10-19","id":"bamboohr:animaltrust:1203","location":"Hull, East Riding of Yorkshire","team":"Reception and Administration","title":"Veterinary Receptionist"}
+{"closed_at":"2026-11-26","company":"Animal Trust","first_seen":"2026-10-19","id":"bamboohr:animaltrust:1203","location":"Hull, East Riding of Yorkshire","team":"Reception and Administration","title":"Veterinary Receptionist"}
 {"company":"Animal Trust","first_seen":"2026-11-24","id":"bamboohr:animaltrust:1205","location":"Bolton, Greater Manchester","reposts":1,"team":"Nursing Team - None RVN","title":"Animal Nursing Assistant"}
 {"closed_at":"2026-11-13","company":"Animal Trust","first_seen":"2026-10-21","id":"bamboohr:animaltrust:1206","location":"Barnsley, South Yorkshire","reposts":1,"team":"Reception and Administration","title":"Veterinary Receptionist"}
 {"company":"Animal Trust","first_seen":"2026-11-08","id":"bamboohr:animaltrust:1207","location":"Ellesmere Port","team":"Finance and Facilities","title":"Financial Planning & Analysis Manager"}
@@ -81,11 +81,11 @@
 {"company":"Animal Trust","first_seen":"2026-11-09","id":"bamboohr:animaltrust:1235","location":"Barnsley, South Yorkshire","team":"PetA&E - Inpatient and ECC Vets","title":"A&E / Inpatient Veterinary Surgeon"}
 {"company":"Animal Trust","first_seen":"2026-11-10","id":"bamboohr:animaltrust:1236","location":"Barnsley, South Yorkshire","team":"Vets","title":"Veterinary Surgeon - Medical Bias"}
 {"company":"Animal Trust","first_seen":"2026-11-12","id":"bamboohr:animaltrust:1237","location":"Teesside, Stockton-on-Tees","team":"Vets","title":"Teesside - Veterinary Surgeon - Pet A&E / Inpatient Team Leader"}
-{"company":"Animal Trust","first_seen":"2026-11-11","id":"bamboohr:animaltrust:1238","location":"Teesside, Stockton-on-Tees","team":"Nursing Team - RVN","title":"Night Registered Veterinary Nurse"}
+{"closed_at":"2026-11-26","company":"Animal Trust","first_seen":"2026-11-11","id":"bamboohr:animaltrust:1238","location":"Teesside, Stockton-on-Tees","team":"Nursing Team - RVN","title":"Night Registered Veterinary Nurse"}
 {"company":"Animal Trust","first_seen":"2026-11-11","id":"bamboohr:animaltrust:1239","location":"Blackburn, Lancashire","team":"Nursing Team - RVN","title":"Veterinary Nurse Team Lead"}
 {"company":"Animal Trust","employment":"part_time","first_seen":"2026-11-12","id":"bamboohr:animaltrust:1241","location":"Shrewsbury, Shropshire","team":"Other in Surgery Non Clinical Roles","title":"House Keeper - Part time"}
 {"company":"Animal Trust","first_seen":"2026-11-13","id":"bamboohr:animaltrust:1246","location":"Barnsley, South Yorkshire","reposts":1,"team":"PetA&E - Inpatient and ECC Nurses","title":"Inpatient Registered Veterinary Nurse"}
-{"closed_at":"2026-11-24","company":"Animal Trust","employment":"part_time","first_seen":"2026-11-16","id":"bamboohr:animaltrust:1248","location":"Ellesmere Port, Cheshire","team":"Reception and Administration","title":"Receptionist - Part Time"}
+{"company":"Animal Trust","employment":"part_time","first_seen":"2026-11-16","id":"bamboohr:animaltrust:1248","location":"Ellesmere Port, Cheshire","team":"Reception and Administration","title":"Receptionist - Part Time"}
 {"company":"Animal Trust","first_seen":"2026-11-17","id":"bamboohr:animaltrust:1250","location":"Bolton, Greater Manchester","reposts":10,"team":"Reception and Administration","title":"Veterinary Receptionist"}
 {"company":"Animal Trust","first_seen":"2026-11-17","id":"bamboohr:animaltrust:1251","location":"Ellesmere Port, Cheshire","team":"Vets","title":"Small Animal Orthopaedic and Soft Tissue Surgeon (Specialist or Residency Trained)"}
 {"company":"Animal Trust","employment":"part_time","first_seen":"2026-11-20","id":"bamboohr:animaltrust:1252","location":"Ashton-under-Lyne, Greater Manchester","team":"Other in Surgery Non Clinical Roles","title":"House Keeper - Part time"}
@@ -96,5 +96,8 @@
 {"company":"Animal Trust","first_seen":"2026-11-24","id":"bamboohr:animaltrust:1257","location":"Warrington, Cheshire","reposts":1,"team":"Vets","title":"A&E / Inpatient Veterinary Surgeon"}
 {"company":"Animal Trust","first_seen":"2026-11-24","id":"bamboohr:animaltrust:1258","location":"Warrington, Cheshire","team":"Vets","title":"Veterinary Surgeon - Medical Bias"}
 {"company":"Animal Trust","first_seen":"2026-11-24","id":"bamboohr:animaltrust:1259","location":"Bolton, Greater Manchester","reposts":1,"team":"Nursing Team - RVN","title":"Veterinary Nurse Team Lead"}
+{"company":"Animal Trust","first_seen":"2026-11-26","id":"bamboohr:animaltrust:1260","location":"Ellesmere Port, Cheshire","reposts":1,"team":"PetA&E - Inpatient and ECC Vets","title":"A&E / Inpatient Veterinary Surgeon"}
+{"company":"Animal Trust","employment":"contract","first_seen":"2026-11-26","id":"bamboohr:animaltrust:1261","location":"Warrington, Cheshire","team":"Reception and Administration","title":"Area Operations Support Manager - 6-Month Fixed Term"}
+{"company":"Animal Trust","first_seen":"2026-11-26","id":"bamboohr:animaltrust:1262","location":"Hull, East Riding of Yorkshire","reposts":1,"team":"PetA&E - Inpatient and ECC Nurses","title":"Night Registered Veterinary Nurse"}
 {"company":"Animal Trust","first_seen":"2026-10-19","id":"bamboohr:animaltrust:971","location":"Failsworth, Greater Manchester","team":"Nursing Team - Non Clinical","title":"Registered Veterinary Nurse – Reception & Client Experience"}
 {"company":"Animal Trust","first_seen":"2026-10-19","id":"bamboohr:animaltrust:997","location":"Telford","team":"Leadership","title":"Lead Veterinary Surgeon"}

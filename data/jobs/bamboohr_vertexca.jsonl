@@ -3,10 +3,10 @@
 {"company":"Vertex Resource Group","first_seen":"2026-10-30","id":"bamboohr:vertexca:1815","location":"Calgary, Alberta","team":"Land","title":"Senior Environmental Land Use Professional"}
 {"closed_at":"2026-11-16","company":"Vertex Resource Group","first_seen":"2026-10-30","id":"bamboohr:vertexca:1820","location":"Alida, Saskatchewan","team":"Fluids - Field","title":"3rd or 4th Year Apprentice Heavy Duty Mechanic"}
 {"company":"Vertex Resource Group","employment":"contract","first_seen":"2026-10-30","id":"bamboohr:vertexca:1836","location":"Plentywood, Montana","team":"Fluids - US","title":"Lease / Owner Operator"}
-{"company":"Vertex Resource Group","first_seen":"2026-10-30","id":"bamboohr:vertexca:1857","location":"Tioga, North Dakota","skills":["cdl"],"team":"Fluids - Drivers","title":"CDL A Truck Driver - Hazmat/Tanker Endorsement Required"}
+{"closed_at":"2026-11-26","company":"Vertex Resource Group","first_seen":"2026-10-30","id":"bamboohr:vertexca:1857","location":"Tioga, North Dakota","skills":["cdl"],"team":"Fluids - Drivers","title":"CDL A Truck Driver - Hazmat/Tanker Endorsement Required"}
 {"company":"Vertex Resource Group","first_seen":"2026-11-08","id":"bamboohr:vertexca:1867","location":"Crossfield, Alberta","team":"Vac and Water - Field","title":"Water Truck Operator"}
-{"company":"Vertex Resource Group","first_seen":"2026-11-08","id":"bamboohr:vertexca:1875","location":"Plentywood, Montana","skills":["cdl"],"team":"Fluids - US","title":"CDL A Truck Driver - Hazmat/Tanker Endorsement Required"}
-{"company":"Vertex Resource Group","first_seen":"2026-11-08","id":"bamboohr:vertexca:1877","location":"Rycroft, Alberta","team":"Fluids - Drivers","title":"Class 1 Fluids Truck Driver"}
+{"closed_at":"2026-11-26","company":"Vertex Resource Group","first_seen":"2026-11-08","id":"bamboohr:vertexca:1875","location":"Plentywood, Montana","skills":["cdl"],"team":"Fluids - US","title":"CDL A Truck Driver - Hazmat/Tanker Endorsement Required"}
+{"closed_at":"2026-11-26","company":"Vertex Resource Group","first_seen":"2026-11-08","id":"bamboohr:vertexca:1877","location":"Rycroft, Alberta","team":"Fluids - Drivers","title":"Class 1 Fluids Truck Driver"}
 {"closed_at":"2026-11-10","company":"Vertex Resource Group","first_seen":"2026-11-08","id":"bamboohr:vertexca:1884","location":"Fort McMurray, Alberta","team":"Environmental","title":"Wildlife Technician/Biologist"}
 {"company":"Vertex Resource Group","first_seen":"2026-11-08","id":"bamboohr:vertexca:1887","location":"Alida, Saskatchewan","team":"Fluids - Drivers","title":"Class 1 Fluids Truck Driver with a FAST Card"}
 {"company":"Vertex Resource Group","first_seen":"2026-10-30","id":"bamboohr:vertexca:1897","location":"Dawson Creek, British Columbia","team":"Fluids - Drivers","title":"Class 1 Fluids Truck Driver"}
@@ -42,7 +42,7 @@
 {"closed_at":"2026-11-11","company":"Vertex Resource Group","first_seen":"2026-11-08","id":"bamboohr:vertexca:1952","location":"Sherwood Park, Alberta","team":"Projects - Operations","title":"Estimator - Industrial Cleaning"}
 {"company":"Vertex Resource Group","first_seen":"2026-11-08","id":"bamboohr:vertexca:1954","location":"Sherwood Park, Alberta","team":"Environmental","title":"Project Manager - Reclamation and Plant Sciences"}
 {"company":"Vertex Resource Group","first_seen":"2026-11-24","id":"bamboohr:vertexca:1955","location":"Sherwood Park, Alberta","team":"Environmental","title":"Junior Environmental Technician"}
-{"company":"Vertex Resource Group","first_seen":"2026-11-08","id":"bamboohr:vertexca:1956","location":"Fort McMurray, Alberta","team":"Environmental","title":"Junior Environmental Technician"}
+{"closed_at":"2026-11-26","company":"Vertex Resource Group","first_seen":"2026-11-08","id":"bamboohr:vertexca:1956","location":"Fort McMurray, Alberta","team":"Environmental","title":"Junior Environmental Technician"}
 {"closed_at":"2026-11-13","company":"Vertex Resource Group","first_seen":"2026-11-09","id":"bamboohr:vertexca:1957","location":"Nisku, Alberta","team":"Pressure and Vac - Field","title":"Class 1 or 3 Operators"}
 {"company":"Vertex Resource Group","first_seen":"2026-11-08","id":"bamboohr:vertexca:1962","location":"Dallas, Texas","team":"Engineering","title":"Client Development Associate - Geotechnical & Environmental Services"}
 {"company":"Vertex Resource Group","first_seen":"2026-11-08","id":"bamboohr:vertexca:1963","location":"Calgary, Alberta","skills":["accounts_receivable"],"team":"Corporate VPS - Administration","title":"Accounts Receivable/Billing Administrator"}
@@ -60,7 +60,7 @@
 {"closed_at":"2026-11-24","company":"Vertex Resource Group","first_seen":"2026-11-08","id":"bamboohr:vertexca:1975","location":"Sherwood Park, Alberta","team":"Land","title":"Indigenous Consultation Administrator"}
 {"closed_at":"2026-11-24","company":"Vertex Resource Group","first_seen":"2026-11-08","id":"bamboohr:vertexca:1976","location":"Calgary, Alberta","team":"Land","title":"Indigenous Consultation Administrator"}
 {"company":"Vertex Resource Group","first_seen":"2026-11-08","id":"bamboohr:vertexca:1977","location":"Edmonton, Alberta","team":"Projects - Field","title":"Shop Coordinator"}
-{"company":"Vertex Resource Group","first_seen":"2026-11-13","id":"bamboohr:vertexca:1978","location":"Alida, Saskatchewan","team":"Fluids - Field","title":"3rd or 4th Year Apprentice Heavy Duty Mechanic"}
+{"company":"Vertex Resource Group","first_seen":"2026-11-13","id":"bamboohr:vertexca:1978","location":"Alida, Saskatchewan","team":"Fluids - Field","title":"Apprentice Heavy Duty Mechanic | Accommodations Provided | Alida, SK"}
 {"company":"Vertex Resource Group","first_seen":"2026-11-13","id":"bamboohr:vertexca:1979","location":"Conroe, Texas","team":"Engineering","title":"Geotechnical Engineer In Training"}
 {"company":"Vertex Resource Group","first_seen":"2026-11-17","id":"bamboohr:vertexca:1980","location":"Conroe, Texas","team":"Engineering","title":"Construction Materials Testing (CMT) Technician"}
 {"company":"Vertex Resource Group","first_seen":"2026-11-17","id":"bamboohr:vertexca:1981","location":"Whitecourt, Alberta","team":"Rentals - Field","title":"Class 1 or 3 Operator"}
@@ -73,3 +73,7 @@
 {"company":"Vertex Resource Group","first_seen":"2026-11-24","id":"bamboohr:vertexca:1988","location":"Sherwood Park, Alberta","skills":["accounts_receivable"],"team":"Corporate VPS - Administration","title":"Accounts Receivable/Billing Administrator"}
 {"company":"Vertex Resource Group","first_seen":"2026-11-24","id":"bamboohr:vertexca:1989","location":"Sarnia, Ontario","team":"Engineering","title":"Geotechnical & Material Testing Technician"}
 {"company":"Vertex Resource Group","first_seen":"2026-11-24","id":"bamboohr:vertexca:1990","location":"Conroe, Texas","team":"Environmental","title":"Director - Environment"}
+{"company":"Vertex Resource Group","first_seen":"2026-11-26","id":"bamboohr:vertexca:1991","location":"Tioga, North Dakota","skills":["cdl"],"team":"Fluids - US","title":"Class A CDL Tanker Driver | Home Time Flexibility | 401(k) 6% Match"}
+{"company":"Vertex Resource Group","first_seen":"2026-11-26","id":"bamboohr:vertexca:1992","location":"Plentywood, Montana","skills":["cdl"],"team":"Fluids - US","title":"Class A CDL Tanker Driver | Home Time Flexibility | 401(k) 6% Match"}
+{"company":"Vertex Resource Group","first_seen":"2026-11-26","id":"bamboohr:vertexca:1993","location":"Fort McMurray, Alberta","team":"Environmental","title":"Junior Environmental Technician"}
+{"company":"Vertex Resource Group","first_seen":"2026-11-26","id":"bamboohr:vertexca:1994","location":"Rycroft, Alberta","reposts":1,"team":"Fluids - Drivers","title":"Class 1 Fluids Driver"}

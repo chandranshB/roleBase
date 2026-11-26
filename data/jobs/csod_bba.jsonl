@@ -118,7 +118,7 @@
 {"company":"BBA","first_seen":"2026-11-25","id":"csod:bba:3121","location":"Elko, NV, US; Tucson, AZ, US; Phoenix, AZ, US","posted":"2026-09-04","title":"Junior Geotechnical Engineer"}
 {"company":"BBA","first_seen":"2026-11-25","id":"csod:bba:3122","location":"Elko, NV, US; Tucson, AZ, US; Phoenix, AZ, US","posted":"2026-09-07","title":"Mining Engineer"}
 {"closed_at":"2026-11-25","company":"BBA","first_seen":"2026-11-25","id":"csod:bba:3123","location":"Mont-Saint-Hilaire, QC, CA; Montreal, QC, CA","posted":"2026-08-12","title":"Drafter/Designer, Automation"}
-{"company":"BBA","first_seen":"2026-11-25","id":"csod:bba:3133","location":"Montreal, QC, CA","posted":"2026-08-20","title":"Project Assistant - (Proposal Coordinator)"}
+{"closed_at":"2026-11-26","company":"BBA","first_seen":"2026-11-25","id":"csod:bba:3133","location":"Montreal, QC, CA","posted":"2026-08-20","title":"Project Assistant - (Proposal Coordinator)"}
 {"company":"BBA","first_seen":"2026-11-25","id":"csod:bba:3135","location":"Mont-Saint-Hilaire, QC, CA; Quebec City, QC, CA; Montreal, QC, CA; Boisbriand, QC, CA; CA","posted":"2026-08-17","title":"Candidate to the engineering profession (CEP), Transmission and Distribution Lines"}
 {"company":"BBA","first_seen":"2026-11-25","id":"csod:bba:3136","location":"Mont-Saint-Hilaire, QC, CA; Quebec City, QC, CA; Montreal, QC, CA","posted":"2026-08-18","title":"Candidate to the Engineering Profession, Industrial Electricity (three years of experience or less)"}
 {"company":"BBA","first_seen":"2026-11-25","id":"csod:bba:3138","location":"Mont-Saint-Hilaire, QC, CA; Montreal, QC, CA; Boisbriand, QC, CA","posted":"2026-11-23","title":"Junior Technician/Designer - Industrial Piping"}
@@ -177,7 +177,7 @@
 {"company":"BBA","first_seen":"2026-11-25","id":"csod:bba:3234","location":"Mont-Saint-Hilaire, QC, CA; Quebec City, QC, CA; Montreal, QC, CA; Mont-Tremblant, QC, CA; Val d'Or, QC, CA; Rouyn-Noranda, QC, CA","posted":"2026-10-01","title":"Project Controller - EPCM"}
 {"company":"BBA","first_seen":"2026-11-25","id":"csod:bba:3235","location":"Mont-Saint-Hilaire, QC, CA; Quebec City, QC, CA; Montreal, QC, CA; Boisbriand, QC, CA","posted":"2026-10-01","reposts":1,"title":"Project Planner - EPCM"}
 {"company":"BBA","first_seen":"2026-11-25","id":"csod:bba:3237","location":"Calgary, AB, CA","posted":"2026-11-09","title":"Intermediate Industrial Drafter"}
-{"company":"BBA","first_seen":"2026-11-25","id":"csod:bba:3242","location":"Mont-Saint-Hilaire, QC, CA","posted":"2026-10-05","title":"Junior Automation Engineer (EIT)"}
+{"closed_at":"2026-11-26","company":"BBA","first_seen":"2026-11-25","id":"csod:bba:3242","location":"Mont-Saint-Hilaire, QC, CA","posted":"2026-10-05","title":"Junior Automation Engineer (EIT)"}
 {"company":"BBA","first_seen":"2026-11-25","id":"csod:bba:3243","location":"Mont-Saint-Hilaire, QC, CA","posted":"2026-10-05","title":"Junior Engineer or Technician, Software Solution Integration"}
 {"company":"BBA","first_seen":"2026-11-25","id":"csod:bba:3244","location":"Montreal, QC, CA","posted":"2026-10-06","skills":["procurement"],"title":"Senior Advisor, Procurement"}
 {"closed_at":"2026-11-25","company":"BBA","first_seen":"2026-11-25","id":"csod:bba:3245","location":"Mont-Saint-Hilaire, QC, CA","posted":"2026-10-06","title":"Drafter, Electrical"}
@@ -258,12 +258,14 @@
 {"company":"BBA","first_seen":"2026-11-25","id":"csod:bba:3344","location":"Toronto, ON, CA","posted":"2026-11-19","title":"Junior Electrical Designer"}
 {"company":"BBA","first_seen":"2026-11-25","id":"csod:bba:3345","location":"Calgary, AB, CA","posted":"2026-11-21","title":"Intermediate Instrumentation and Control System Technologist"}
 {"company":"BBA","first_seen":"2026-11-25","id":"csod:bba:3346","location":"Val d'Or, QC, CA; Rouyn-Noranda, QC, CA","posted":"2026-11-23","title":"Junior Engineer, Mechanical and Industrial Piping"}
+{"company":"BBA","first_seen":"2026-11-26","id":"csod:bba:3347","location":"Vancouver, BC, CA","posted":"2026-11-26","title":"Senior Designer Civil 3D – Mining"}
 {"company":"BBA","first_seen":"2026-11-25","id":"csod:bba:3348","location":"Vancouver, BC, CA","posted":"2026-11-25","title":"Intermediate Designer, Civil 3D – Mining"}
 {"company":"BBA","first_seen":"2026-11-25","id":"csod:bba:3349","location":"Mont-Saint-Hilaire, QC, CA; Montreal, QC, CA; Mont-Tremblant, QC, CA; Boisbriand, QC, CA","posted":"2026-11-23","title":"Drafter, Mechanical and Piping"}
 {"company":"BBA","first_seen":"2026-11-25","id":"csod:bba:3350","location":"Quebec City, QC, CA; Montreal, QC, CA; Toronto, ON, CA","posted":"2026-11-24","title":"Civil 3D Designer – Tailings Facilities"}
 {"company":"BBA","first_seen":"2026-11-25","id":"csod:bba:3351","location":"Toronto, ON, CA; Sudbury, ON, CA","posted":"2026-11-25","title":"Intermediate Designer – Piping"}
-{"company":"BBA","first_seen":"2026-11-25","id":"csod:bba:3352","location":"Quebec City, QC, CA","posted":"2026-11-24","title":"Project Assistant - (Proposal Coordinator)"}
+{"closed_at":"2026-11-26","company":"BBA","first_seen":"2026-11-25","id":"csod:bba:3352","location":"Quebec City, QC, CA","posted":"2026-11-24","title":"Project Assistant - (Proposal Coordinator)"}
 {"company":"BBA","first_seen":"2026-11-26","id":"csod:bba:3355","location":"Montreal, QC, CA","posted":"2026-11-25","title":"Intermediate Technician, 3D Civil Engineering Design"}
+{"company":"BBA","first_seen":"2026-11-26","id":"csod:bba:3357","location":"Montreal, QC, CA","posted":"2026-11-26","title":"Senior Engineer, Water Treatment"}
 {"closed_at":"2026-11-25","company":"BBA","employment":"full_time","first_seen":"2026-10-04","id":"csod:bba:4/2194","location":"United States","posted":"2026-10-29","title":"Connect with us (spontaneous application)","url":"https://bba.csod.com/ux/ats/careersite/4/home/requisition/2194?c=bba"}
 {"closed_at":"2026-11-25","company":"BBA","employment":"full_time","first_seen":"2026-10-04","id":"csod:bba:4/2214","location":"United States","posted":"2026-10-30","title":"Tailings and Mine Waste Principal Engineer","url":"https://bba.csod.com/ux/ats/careersite/4/home/requisition/2214?c=bba"}
 {"closed_at":"2026-11-25","company":"BBA","employment":"full_time","first_seen":"2026-10-04","id":"csod:bba:4/2227","location":"United States","posted":"2026-10-29","title":"Project Manager and Senior Electrical Engineer","url":"https://bba.csod.com/ux/ats/careersite/4/home/requisition/2227?c=bba"}
