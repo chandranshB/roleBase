@@ -101,9 +101,11 @@
 {"company":"ÖBB","first_seen":"2026-11-25","id":"csod:oebb:25768","location":"St. Johann im Pongau, Salzburg, AT","title":"Allround-Fachkraft im Bereich Disposition und Lagerlogistik"}
 {"company":"ÖBB","first_seen":"2026-11-25","id":"csod:oebb:25844","location":"Wien-Leopoldstadt, Wien, AT","title":"Test Engineer (m/w/x)"}
 {"company":"ÖBB","employment":"internship","first_seen":"2026-11-25","id":"csod:oebb:25848","location":"Wien-Favoriten, Wien, AT","title":"Werkstudent:in Telematik-Services (IT Projektmanagement)"}
+{"company":"ÖBB","employment":"internship","first_seen":"2026-11-27","id":"csod:oebb:25852","location":"Wien-Favoriten, Wien, AT","title":"Werkstudent:in IT-Architektur, -portfolio und InfoSec"}
 {"company":"ÖBB","employment":"internship","first_seen":"2026-11-26","id":"csod:oebb:25857","location":"Wien-Favoriten, Wien, AT","title":"Werkstudent:in Central Support (19,25 Stunden/Woche)"}
 {"company":"ÖBB","first_seen":"2026-11-25","id":"csod:oebb:25861","location":"Graz, Steiermark, AT","reposts":1,"title":"Schienenfahrzeugtechnik Ingenieur:in für Diesel- und Elektrolokomotiven"}
 {"company":"ÖBB","first_seen":"2026-11-25","id":"csod:oebb:25863","location":"Bregenz, Vorarlberg, AT; Innsbruck, Tirol, AT","title":"Serviceteamkoordinator:in Travelmanagement West (T/Vbg) - Karenzvertretung"}
+{"company":"ÖBB","employment":"internship","first_seen":"2026-11-27","id":"csod:oebb:25876","location":"Wien-Favoriten, Wien, AT","title":"Werkstudent:in im Bereich System- und Betriebstechnik (19,25 Stunden/Woche)"}
 {"company":"ÖBB","employment":"internship","first_seen":"2026-11-25","id":"csod:oebb:25877","location":"Wien-Favoriten, Wien, AT","title":"Werkstudent:in im Bereich Flottenmanagement mit Schwerpunkt Datenaufbereitung (19,25 Stunden/Woche)"}
 {"company":"ÖBB","first_seen":"2026-11-25","id":"csod:oebb:25881","location":"Wien-Leopoldstadt, Wien, AT","title":"Pflichtpraktikant:in Engineering im IT-Bereich (1 Monat)"}
 {"company":"ÖBB","first_seen":"2026-11-25","id":"csod:oebb:25909","location":"Graz, Steiermark, AT","title":"Lehrberuf Fahrzeugtechnik – Nutzfahrzeugtechnik in Graz"}
@@ -159,8 +161,9 @@
 {"company":"ÖBB","first_seen":"2026-11-25","id":"csod:oebb:26065","location":"Innsbruck, Tirol, AT","title":"Facharbeiter:in Lehne"}
 {"company":"ÖBB","first_seen":"2026-11-25","id":"csod:oebb:26075","location":"Salzburg, Salzburg, AT","title":"Lehrberuf Elektrotechnik - Anlagen- und Betriebstechnik in Salzburg"}
 {"company":"ÖBB","first_seen":"2026-11-25","id":"csod:oebb:26076","location":"Innsbruck, Tirol, AT","title":"Lehrberuf Elektrotechnik - Anlagen- und Betriebstechnik in Innsbruck"}
-{"company":"ÖBB","first_seen":"2026-11-25","id":"csod:oebb:26077","location":"Wien-Rudolfsheim-Fünfhaus, Wien, AT","title":"Facharbeiter:in Elektrotechnik 16,7Hz  FUMA/MAGE (Fahrleitungsumbau), Montage"}
+{"closed_at":"2026-11-27","company":"ÖBB","first_seen":"2026-11-25","id":"csod:oebb:26077","location":"Wien-Rudolfsheim-Fünfhaus, Wien, AT","title":"Facharbeiter:in Elektrotechnik 16,7Hz  FUMA/MAGE (Fahrleitungsumbau), Montage"}
 {"company":"ÖBB","first_seen":"2026-11-25","id":"csod:oebb:26078","location":"Linz, Oberösterreich, AT","title":"Lehrberuf Elektrotechnik - Anlagen- und Betriebstechnik in Linz"}
+{"company":"ÖBB","first_seen":"2026-11-27","id":"csod:oebb:26089","location":"Wien-Leopoldstadt, Wien, AT","reposts":1,"title":"HTL Techniker:in - Technikmanagement Elektrotechnik (m/w/x)"}
 {"company":"ÖBB","first_seen":"2026-11-25","id":"csod:oebb:26090","location":"St. Pölten, Niederösterreich, AT","title":"Lehrberuf Elektrotechnik - Anlagen- und Betriebstechnik in St. Pölten"}
 {"company":"ÖBB","first_seen":"2026-11-25","id":"csod:oebb:26091","location":"Attnang-Puchheim, Oberösterreich, AT","title":"Lehrberuf Elektrotechnik - Anlagen- und Betriebstechnik in Attnang-Puchheim"}
 {"company":"ÖBB","first_seen":"2026-11-25","id":"csod:oebb:26092","location":"Bludenz, Vorarlberg, AT","reposts":1,"title":"Lehrberuf Elektrotechnik - Anlagen- und Betriebstechnik in Bludenz"}
@@ -207,7 +210,7 @@
 {"company":"ÖBB","first_seen":"2026-11-25","id":"csod:oebb:26162","location":"Wien, AT","title":"Mitarbeiter:in Intership Immobilienwirtschaft, Verwertung/ Vermarktung Immobilien"}
 {"company":"ÖBB","first_seen":"2026-11-25","id":"csod:oebb:26166","location":"Wien, Wien, AT","title":"Lehrberuf Gleisbautechnik in Wien"}
 {"company":"ÖBB","first_seen":"2026-11-25","id":"csod:oebb:26167","location":"Wien, Wien, AT","title":"Lehrberuf Mechatronik - Automatisierungstechnik  in Wien"}
-{"company":"ÖBB","first_seen":"2026-11-25","id":"csod:oebb:26168","location":"Linz, Oberösterreich, AT","title":"Junior Spezialist:in Technisches Dokumentenmanagement"}
+{"closed_at":"2026-11-27","company":"ÖBB","first_seen":"2026-11-25","id":"csod:oebb:26168","location":"Linz, Oberösterreich, AT","title":"Junior Spezialist:in Technisches Dokumentenmanagement"}
 {"company":"ÖBB","first_seen":"2026-11-25","id":"csod:oebb:26176","location":"Wien, Wien, AT","title":"Lehrberuf Metalltechnik - Maschinenbautechnik  in Wien"}
 {"closed_at":"2026-11-25","company":"ÖBB","first_seen":"2026-11-25","id":"csod:oebb:26179","location":"Wien-Leopoldstadt, Wien, AT","title":"IT Financial Manager:in"}
 {"company":"ÖBB","first_seen":"2026-11-25","id":"csod:oebb:26182","location":"Wels, Oberösterreich, AT","title":"Elektrotechniker:in Fahrleitungsinstandhaltung (Stützpunkt Wels)"}
@@ -236,6 +239,7 @@
 {"company":"ÖBB","first_seen":"2026-11-25","id":"csod:oebb:26275","location":"Wien-Leopoldstadt, Wien, AT","title":"Senior Spezialist:in Datenmanagement & Data Governance (Fokus: Applikationsmanagement)"}
 {"closed_at":"2026-11-25","company":"ÖBB","first_seen":"2026-11-25","id":"csod:oebb:26276","location":"Wien-Leopoldstadt, Wien, AT","title":"AI Engineer (m/w/x) - System Integration"}
 {"company":"ÖBB","first_seen":"2026-11-25","id":"csod:oebb:26278","location":"Wien-Leopoldstadt, Wien, AT","title":"AI Engineer (m/w/x) - Cloud & Agent Plattform"}
+{"company":"ÖBB","first_seen":"2026-11-27","id":"csod:oebb:26279","location":"Wien-Leopoldstadt, Wien, AT","title":"IT-Spezialist:in Business Analyse"}
 {"company":"ÖBB","first_seen":"2026-11-25","id":"csod:oebb:26282","location":"Salzburg, Salzburg, AT","title":"Pflichtpraktikum für Schüler:innen  im Bereich Maschinenbautechnik, Elektrotechnik oder Mechatronik"}
 {"company":"ÖBB","first_seen":"2026-11-25","id":"csod:oebb:26284","location":"Wr. Neustadt, Niederösterreich, AT","title":"Pflichtpraktikum für Schüler:innen im Bereich Mechatronik"}
 {"company":"ÖBB","first_seen":"2026-11-25","id":"csod:oebb:26285","location":"Attnang-Puchheim, Oberösterreich, AT","title":"Lehrberuf Bürokauffrau:mann in Attnang-Puchheim"}
@@ -347,7 +351,7 @@
 {"company":"ÖBB","first_seen":"2026-11-27","id":"csod:oebb:26543","location":"Wien-Leopoldstadt, Wien, AT","title":"Senior Software Testautomation Engineer (m/w/x) - Frontend"}
 {"company":"ÖBB","first_seen":"2026-11-25","id":"csod:oebb:26547","location":"St. Pölten, Niederösterreich, AT","reposts":1,"title":"Gebäude-, Liegenschafts- und Bahnhofsbetreuer:in vor Ort"}
 {"company":"ÖBB","first_seen":"2026-11-25","id":"csod:oebb:26548","location":"Bruck a.d. Leitha, Niederösterreich, AT","reposts":1,"title":"Gebäude-, Liegenschafts- und Bahnhofsbetreuer:in vor Ort"}
-{"company":"ÖBB","first_seen":"2026-11-25","id":"csod:oebb:26549","location":"Wien, AT","title":"Mitarbeiter:in in der Störungs- und Notrufleitstelle"}
+{"company":"ÖBB","first_seen":"2026-11-25","id":"csod:oebb:26549","location":"Wien-Favoriten, Wien, AT","title":"Mitarbeiter:in in der Störungs- und Notrufleitstelle"}
 {"company":"ÖBB","first_seen":"2026-11-25","id":"csod:oebb:26551","location":"Wien-Leopoldstadt, Wien, AT","title":"Berater:in Arbeitsfähigkeit und Gesundheit (Teilzeit 19,25 Std. bzw. 26,95 Std.)"}
 {"company":"ÖBB","first_seen":"2026-11-25","id":"csod:oebb:26552","location":"Wien-Leopoldstadt, Wien, AT","title":"Projektleiter:in DSTW und BFS-Vorhaben"}
 {"company":"ÖBB","first_seen":"2026-11-26","id":"csod:oebb:26554","location":"Wien-Leopoldstadt, Wien, AT","title":"Senior Plattform Engineer & DevOps-Advocate (m/w/x)"}
@@ -355,10 +359,13 @@
 {"company":"ÖBB","first_seen":"2026-11-26","id":"csod:oebb:26558","location":"Wien, AT","title":"Mitarbeiter:in Stammdatenmanagement Immobilien (Teilzeit 20 Std.)"}
 {"company":"ÖBB","first_seen":"2026-11-27","id":"csod:oebb:26561","location":"Wien-Leopoldstadt, Wien, AT","title":"Lead Backend Entwickler:in"}
 {"company":"ÖBB","first_seen":"2026-11-26","id":"csod:oebb:26563","location":"Innsbruck, Tirol, AT","title":"Regionale:r Leistungsmanager:in im Bereich Technikmanagement"}
+{"company":"ÖBB","first_seen":"2026-11-27","id":"csod:oebb:26565","location":"Wien-Leopoldstadt, Wien, AT","title":"Senior Software Testautomation Engineer (m/w/x) - Backend"}
 {"company":"ÖBB","first_seen":"2026-11-26","id":"csod:oebb:26567","location":"Wien-Leopoldstadt, Wien, AT","reposts":1,"title":"Zentrale:r Senior Elektrotechniker:in (Proofmanagement – Schwerpunkt: Daten- & Systemmanagement)"}
 {"company":"ÖBB","first_seen":"2026-11-26","id":"csod:oebb:26585","location":"Tirol, AT","title":"Buslenker:in Schienenersatzverkehr Tirol (Voll- und Teilzeit)"}
+{"company":"ÖBB","first_seen":"2026-11-27","id":"csod:oebb:26588","location":"Wien-Leopoldstadt, Wien, AT","title":"Senior Recruiter:in für Management-Funktionen"}
 {"company":"ÖBB","first_seen":"2026-11-26","id":"csod:oebb:26589","location":"Vösendorf, Niederösterreich, AT","title":"HR-Business Partner:innen Support"}
 {"company":"ÖBB","first_seen":"2026-11-26","id":"csod:oebb:26590","location":"Wien-Leopoldstadt, Wien, AT","title":"Senior Spezialist:in HR-Governance mit Fokus Leistungscontrolling"}
+{"company":"ÖBB","first_seen":"2026-11-27","id":"csod:oebb:26594","location":"St. Pölten, Niederösterreich, AT; Wien-Floridsdorf, Wien, AT; Wien-Simmering, Wien, AT","title":"Senior Spezialist:in technisches Kund:innenmanagement inkl. Umsatzplanung"}
 {"closed_at":"2026-11-25","company":"ÖBB","employment":"full_time","first_seen":"2026-10-04","id":"csod:oebb:4/20308","location":"Austria","posted":"2026-10-29","title":"Initiativbewerbung","url":"https://oebb.csod.com/ux/ats/careersite/4/home/requisition/20308?c=oebb"}
 {"closed_at":"2026-11-25","company":"ÖBB","employment":"full_time","first_seen":"2026-10-04","id":"csod:oebb:4/20316","location":"Austria","posted":"2026-10-29","title":"ÖBB Job Shop - Bewerbung vor Ort","url":"https://oebb.csod.com/ux/ats/careersite/4/home/requisition/20316?c=oebb"}
 {"closed_at":"2026-11-25","company":"ÖBB","employment":"full_time","first_seen":"2026-10-04","id":"csod:oebb:4/20404","location":"Austria","posted":"2026-10-30","title":"Fallweise Aushilfe (m/w/x) Geringfügig  Service und Küche für interne Veranstaltungen in Wien","url":"https://oebb.csod.com/ux/ats/careersite/4/home/requisition/20404?c=oebb"}

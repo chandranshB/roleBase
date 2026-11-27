@@ -38,7 +38,7 @@
 {"company":"Waystone","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:waystone:1710","location":"Dublin, Dublin","team":"Business Controls Oversight - Group - UI1003","title":"Billing Manager"}
 {"company":"Waystone","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:waystone:1711","location":"Mumbai, Maharashtra","title":"Platform Engineer"}
 {"company":"Waystone","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:waystone:1712","location":"Cashel, Tipperary","team":"COE Global Registration Services - CD0402","title":"Junior Associate - Global Registration Services"}
-{"company":"Waystone","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:waystone:1713","location":"Cashel, Tipperary","team":"Corporate Services - CD0122","title":"Associate - Corporate Services"}
+{"closed_at":"2026-11-27","company":"Waystone","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:waystone:1713","location":"Cashel, Tipperary","team":"Corporate Services - CD0122","title":"Associate - Corporate Services"}
 {"company":"Waystone","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:waystone:1714","location":"Leeds, West Yorkshire","team":"Transfer Agency - CD0108","title":"Analyst, Scheme Documentation"}
 {"company":"Waystone","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:waystone:1715","location":"Senningerberg, Luxembourg","team":"Compliance - Local - CI1201","title":"Associate - Compliance Officer"}
 {"company":"Waystone","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:waystone:1717","location":"Mumbai, Maharashtra","title":"Senior Associate – Investor Services"}
@@ -86,12 +86,14 @@
 {"company":"Waystone","first_seen":"2026-11-17","id":"bamboohr:waystone:1764","location":"Exeter, Devon","team":"Fund Accounting - PERE - CD0117","title":"Creative Design Studio Typesetter (FTC)"}
 {"company":"Waystone","employment":"full_time","first_seen":"2026-11-18","id":"bamboohr:waystone:1765","location":"Dublin, Dublin","team":"Fund Accounting - CD0105","title":"Vice President - Fund Accounting"}
 {"company":"Waystone","employment":"full_time","first_seen":"2026-11-19","id":"bamboohr:waystone:1766","location":"Dublin, Dublin","reposts":1,"team":"IT Operations - G - UI1306","title":"IT Helpdesk Engineer"}
-{"company":"Waystone","employment":"full_time","first_seen":"2026-11-19","id":"bamboohr:waystone:1767","location":"Cashel, Tipperary","team":"Fund Operations - CD0314","title":"Manager - Fund Operations"}
+{"closed_at":"2026-11-27","company":"Waystone","employment":"full_time","first_seen":"2026-11-19","id":"bamboohr:waystone:1767","location":"Cashel, Tipperary","team":"Fund Operations - CD0314","title":"Manager - Fund Operations"}
 {"company":"Waystone","employment":"full_time","first_seen":"2026-11-20","id":"bamboohr:waystone:1768","location":"Dublin, Dublin","team":"Financial Reporting - AS-CD0104","title":"Assistant Vice President - Financial Reporting"}
 {"company":"Waystone","employment":"full_time","first_seen":"2026-11-20","id":"bamboohr:waystone:1769","location":"Mumbai, Maharashtra","title":"Risk Analyst - Enterprise Resilience"}
 {"company":"Waystone","employment":"full_time","first_seen":"2026-11-20","id":"bamboohr:waystone:1770","location":"Mumbai, Maharashtra","title":"AI Governance & Risk Analyst – Enterprise Resilience"}
 {"company":"Waystone","employment":"full_time","first_seen":"2026-11-20","id":"bamboohr:waystone:1772","location":"Mumbai, Maharashtra","title":"Service Desk Engineer"}
 {"company":"Waystone","employment":"full_time","first_seen":"2026-11-20","id":"bamboohr:waystone:1773","location":"Mumbai, Maharashtra","skills":["sql"],"title":"Principal SQL Server DBA (SME)"}
-{"company":"Waystone","employment":"full_time","first_seen":"2026-11-24","id":"bamboohr:waystone:1774","location":"Dublin, Dublin","team":"Fund Operations - CD0314","title":"Manager - Fund Operations"}
+{"closed_at":"2026-11-27","company":"Waystone","employment":"full_time","first_seen":"2026-11-24","id":"bamboohr:waystone:1774","location":"Dublin, Dublin","team":"Fund Operations - CD0314","title":"Manager - Fund Operations"}
 {"company":"Waystone","employment":"full_time","first_seen":"2026-11-25","id":"bamboohr:waystone:1777","location":"Cashel, Tipperary","team":"Relationship Management - CD0315","title":"Director - Relationship Management"}
-{"company":"Waystone","employment":"full_time","first_seen":"2026-11-26","id":"bamboohr:waystone:1778","location":"Leeds, West Yorkshire","team":"Fund Operations - CD0314","title":"Operational Taxes - Assistant Manager"}
+{"company":"Waystone","employment":"full_time","first_seen":"2026-11-26","id":"bamboohr:waystone:1778","remote":true,"team":"Fund Operations - CD0314","title":"Tax - Assistant Manager"}
+{"company":"Waystone","employment":"full_time","first_seen":"2026-11-27","id":"bamboohr:waystone:1779","location":"Dublin, Dublin","team":"Investor Services - CD0106","title":"Assistant Vice President – Investor Services"}
+{"company":"Waystone","employment":"full_time","first_seen":"2026-11-27","id":"bamboohr:waystone:1780","remote":true,"team":"Fund Operations - CD0314","title":"Tax - Assistant Manager"}

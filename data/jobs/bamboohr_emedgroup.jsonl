@@ -4,7 +4,7 @@
 {"company":"EMED Group","first_seen":"2026-10-19","id":"bamboohr:emedgroup:1822","location":"Peterborough, Cambridgeshire","team":"Operations","title":"Volunteer Driver"}
 {"company":"EMED Group","first_seen":"2026-11-08","id":"bamboohr:emedgroup:1823","location":"Huntingdon, Cambridgeshire","team":"Operations","title":"Volunteer Car Driver"}
 {"company":"EMED Group","first_seen":"2026-10-19","id":"bamboohr:emedgroup:1834","location":"Shrewsbury, Shropshire","team":"Operations","title":"Volunteer Car Driver"}
-{"closed_at":"2026-11-25","company":"EMED Group","first_seen":"2026-10-19","id":"bamboohr:emedgroup:1953","location":"Gloucester, Gloucestershire","team":"Operations","title":"Volunteer Car Driver"}
+{"company":"EMED Group","first_seen":"2026-10-19","id":"bamboohr:emedgroup:1953","location":"Gloucester, Gloucestershire","team":"Operations","title":"Volunteer Car Driver"}
 {"company":"EMED Group","first_seen":"2026-10-19","id":"bamboohr:emedgroup:1957","location":"Guildford, Surrey","team":"Operations","title":"Volunteer Car Driver"}
 {"company":"EMED Group","first_seen":"2026-10-19","id":"bamboohr:emedgroup:1958","location":"Burgess Hill, West Sussex","team":"Operations","title":"Volunteer Car Driver"}
 {"company":"EMED Group","first_seen":"2026-10-19","id":"bamboohr:emedgroup:1959","location":"Hailsham, East Sussex","team":"Operations","title":"Volunteer Car Driver"}
@@ -33,7 +33,7 @@
 {"company":"EMED Group","first_seen":"2026-11-08","id":"bamboohr:emedgroup:2793","location":"Bristol, Bristol, City of","team":"Operations","title":"Retrieval Care Assistant (Bank)"}
 {"closed_at":"2026-11-24","company":"EMED Group","employment":"full_time","first_seen":"2026-11-17","id":"bamboohr:emedgroup:2796","location":"Shrewsbury, Shropshire","reposts":2,"team":"Central Ops","title":"Call Handler"}
 {"company":"EMED Group","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:emedgroup:2797","location":"Bristol, Bristol, City of","team":"Operations","title":"Emergency Care Assistant"}
-{"company":"EMED Group","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:emedgroup:2803","location":"Salisbury, Wiltshire","team":"Operations","title":"Ambulance Care Assistant"}
+{"closed_at":"2026-11-27","company":"EMED Group","employment":"full_time","first_seen":"2026-10-19","id":"bamboohr:emedgroup:2803","location":"Salisbury, Wiltshire","team":"Operations","title":"Ambulance Care Assistant"}
 {"company":"EMED Group","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:emedgroup:2805","location":"Bristol, Bristol, City of","team":"Operations","title":"Emergency Care Assistant (Bank)"}
 {"closed_at":"2026-11-16","company":"EMED Group","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:emedgroup:2807","location":"Crewe, Cheshire East","team":"Operations","title":"Patient Transport Liaison Officer"}
 {"closed_at":"2026-11-17","company":"EMED Group","employment":"full_time","first_seen":"2026-11-08","id":"bamboohr:emedgroup:2810","location":"Shrewsbury, Shropshire","skills":["employee_relations"],"team":"HR","title":"Employee Relations Advisor"}
@@ -106,7 +106,7 @@
 {"company":"EMED Group","employment":"full_time","first_seen":"2026-11-20","id":"bamboohr:emedgroup:2893","location":"Bristol, Bristol, City of","team":"Fleet","title":"Mechanic (Fleet)"}
 {"company":"EMED Group","employment":"full_time","first_seen":"2026-11-24","id":"bamboohr:emedgroup:2894","location":"Leicester, Leicestershire","reposts":22,"team":"Operations","title":"Ambulance Care Assistant"}
 {"company":"EMED Group","employment":"full_time","first_seen":"2026-11-24","id":"bamboohr:emedgroup:2895","location":"Kibworth, Leicestershire","reposts":22,"team":"Operations","title":"Ambulance Care Assistant"}
-{"company":"EMED Group","first_seen":"2026-11-24","id":"bamboohr:emedgroup:2896","location":"Bury St Edmunds, Suffolk","team":"Operations","title":"Bank Courier Driver"}
+{"closed_at":"2026-11-27","company":"EMED Group","first_seen":"2026-11-24","id":"bamboohr:emedgroup:2896","location":"Bury St Edmunds, Suffolk","team":"Operations","title":"Bank Courier Driver"}
 {"company":"EMED Group","employment":"full_time","first_seen":"2026-11-24","id":"bamboohr:emedgroup:2897","location":"Littlehampton, West Sussex","reposts":2,"team":"Central Ops","title":"Call Handler"}
 {"company":"EMED Group","employment":"full_time","first_seen":"2026-11-25","id":"bamboohr:emedgroup:2898","location":"Wellington, Somerset","team":"Fleet","title":"Fleet Assistant"}
 {"company":"EMED Group","employment":"full_time","first_seen":"2026-11-25","id":"bamboohr:emedgroup:2899","location":"Redhill, Surrey","reposts":3,"team":"Central Ops","title":"Call Handler"}
@@ -116,3 +116,4 @@
 {"company":"EMED Group","first_seen":"2026-11-26","id":"bamboohr:emedgroup:2903","location":"Durham","team":"Operations","title":"Ambulance Care Assistant - Mental Health (Bank)"}
 {"company":"EMED Group","employment":"full_time","first_seen":"2026-11-26","id":"bamboohr:emedgroup:2904","location":"Leicester, Leicestershire","team":"Operations","title":"Control Centre Operations Manager"}
 {"company":"EMED Group","employment":"full_time","first_seen":"2026-11-27","id":"bamboohr:emedgroup:2905","location":"Bristol, Bristol, City of","team":"Operations","title":"Managing Director"}
+{"company":"EMED Group","employment":"full_time","first_seen":"2026-11-27","id":"bamboohr:emedgroup:2906","location":"Redditch, Worcestershire","reposts":23,"team":"Operations","title":"Ambulance Care Assistant"}

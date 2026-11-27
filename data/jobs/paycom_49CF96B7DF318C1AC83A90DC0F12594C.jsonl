@@ -111,7 +111,7 @@
 {"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:546163","location":"Modesto, CA 95355","pay":[88000,100000,"USD"],"reposts":3,"title":"Clinical Manager, Quality Assurance"}
 {"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:546168","location":"Modesto, CA 95355","reposts":3,"title":"Clinical Supervisor (MS Required)"}
 {"closed_at":"2026-11-09","company":"ACES","first_seen":"2026-10-27","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:546188","location":"United States","posted":"2025-05-15","title":"Clinic Operations Manager"}
-{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:546235","location":"Hayward, CA 94545","pay":[90000,105000,"USD"],"reposts":2,"title":"BCBA"}
+{"closed_at":"2026-11-27","company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:546235","location":"Hayward, CA 94545","pay":[90000,105000,"USD"],"reposts":2,"title":"BCBA"}
 {"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:546239","location":"Norman, OK 73069","pay":[90000,105000,"USD"],"reposts":2,"title":"BCBA"}
 {"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:546638","location":"Tracy, CA 95376","reposts":3,"title":"Clinical Supervisor (MS Required)"}
 {"company":"ACES","first_seen":"2026-10-27","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:547039","location":"Centennial, CO 80112","title":"Clinic Operations Manager - Centennial"}
@@ -172,7 +172,7 @@
 {"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:557865","location":"Arcadia, CA 91006-2335","reposts":2,"title":"Clinical Supervisor"}
 {"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:558118","location":"Buckeye, AZ 85326","title":"Clinic Operations Manager - Buckeye"}
 {"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:558122","location":"Katy, TX 77494","title":"Clinic Operations Manager - Kingsland"}
-{"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:558294","location":"Hayward, CA 94545","pay":[95000,110000,"USD"],"reposts":2,"title":"Clinical Manager, Treatment Initiation"}
+{"closed_at":"2026-11-27","company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:558294","location":"Hayward, CA 94545","pay":[95000,110000,"USD"],"reposts":2,"title":"Clinical Manager, Treatment Initiation"}
 {"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:558299","location":"Rancho Bernardo, CA 92128","pay":[90000,102000,"USD"],"reposts":2,"title":"BCBA"}
 {"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:558329","location":"Surprise, AZ 85335","pay":[95000,115000,"USD"],"reposts":3,"title":"Clinical Manager, Quality Assurance"}
 {"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:558353","location":"Santa Cruz, CA 95060","reposts":2,"title":"Clinical Supervisor"}
@@ -188,3 +188,4 @@
 {"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:560142","location":"The Woodlands, TX 77381","pay":[90000,110000,"USD"],"reposts":2,"title":"Clinical Manager, Treatment Initiation"}
 {"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:560150","location":"Benbrook, TX 76109","pay":[112000,117000,"USD"],"reposts":2,"title":"Clinical Director"}
 {"company":"ACES","first_seen":"2026-11-25","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:561183","location":"Round Rock, TX 78681","pay":[85000,105000,"USD"],"title":"SV BCBA RR (External)"}
+{"company":"ACES","first_seen":"2026-11-27","id":"paycom:49CF96B7DF318C1AC83A90DC0F12594C:561402","location":"Newark, CA 94560","title":"Clinical Supervisor (Masters Required)"}

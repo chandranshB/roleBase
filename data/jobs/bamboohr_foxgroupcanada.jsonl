@@ -14,7 +14,7 @@
 {"company":"Fox Group Canada","first_seen":"2026-11-08","id":"bamboohr:foxgroupcanada:1041","location":"Etobicoke, Ontario","team":"Retail Location","title":"MANGO - Sales Associate - Sherway Gardens"}
 {"closed_at":"2026-11-11","company":"Fox Group Canada","first_seen":"2026-11-08","id":"bamboohr:foxgroupcanada:1043","location":"Québec, Quebec","team":"Retail Location","title":"MANGO - Shift Lead/Chef d’équipe  - Ste Foy"}
 {"closed_at":"2026-11-16","company":"Fox Group Canada","first_seen":"2026-11-08","id":"bamboohr:foxgroupcanada:1046","location":"Vaughan, Ontario","team":"Retail Location","title":"JUMBO - Stock Associate - Vaughan Mills"}
-{"company":"Fox Group Canada","first_seen":"2026-11-08","id":"bamboohr:foxgroupcanada:1047","location":"Vaughan, Ontario","team":"Retail Location","title":"JUMBO - Department Supervisor - Vaughan Mills"}
+{"closed_at":"2026-11-27","company":"Fox Group Canada","first_seen":"2026-11-08","id":"bamboohr:foxgroupcanada:1047","location":"Vaughan, Ontario","team":"Retail Location","title":"JUMBO - Department Supervisor - Vaughan Mills"}
 {"closed_at":"2026-11-16","company":"Fox Group Canada","first_seen":"2026-11-08","id":"bamboohr:foxgroupcanada:1048","location":"Vaughan, Ontario","team":"Retail Location","title":"JUMBO - Cash Manager - Vaughan Mills"}
 {"company":"Fox Group Canada","first_seen":"2026-11-08","id":"bamboohr:foxgroupcanada:1049","location":"Mississauga, Ontario","team":"Retail Location","title":"FOX CLOTHING - Sales Associate - Square One"}
 {"company":"Fox Group Canada","first_seen":"2026-11-08","id":"bamboohr:foxgroupcanada:1050","location":"Mississauga, Ontario","team":"Retail Location","title":"FOX CLOTHING - Shift Lead - Square One"}
@@ -44,8 +44,8 @@
 {"company":"Fox Group Canada","first_seen":"2026-11-08","id":"bamboohr:foxgroupcanada:1077","location":"Ontario, Ontario","team":"Retail Location","title":"Flying Tiger Copenhagen - Seasonal Sales Associate - Vaughan Mills Mall"}
 {"company":"Fox Group Canada","first_seen":"2026-11-08","id":"bamboohr:foxgroupcanada:1078","location":"Scarborough, Ontario","team":"Retail Location","title":"Flying Tiger Copenhagen - Seasonal Sales Associate - Scarborough Town Centre"}
 {"company":"Fox Group Canada","first_seen":"2026-11-09","id":"bamboohr:foxgroupcanada:1079","location":"Etobicoke, Ontario","team":"Retail Location","title":"FOX CLOTHING - Sales Associate - Sherway Garden"}
-{"company":"Fox Group Canada","first_seen":"2026-11-09","id":"bamboohr:foxgroupcanada:1080","location":"Vaughan, Ontario","team":"Retail Location","title":"JUMBO - Sales Associate - Vaughan Mills"}
-{"company":"Fox Group Canada","first_seen":"2026-11-09","id":"bamboohr:foxgroupcanada:1081","location":"Vaughan, Ontario","team":"Retail Location","title":"JUMBO -Cashier Associate - Vaughan Mills"}
+{"closed_at":"2026-11-27","company":"Fox Group Canada","first_seen":"2026-11-09","id":"bamboohr:foxgroupcanada:1080","location":"Vaughan, Ontario","team":"Retail Location","title":"JUMBO - Sales Associate - Vaughan Mills"}
+{"closed_at":"2026-11-27","company":"Fox Group Canada","first_seen":"2026-11-09","id":"bamboohr:foxgroupcanada:1081","location":"Vaughan, Ontario","team":"Retail Location","title":"JUMBO -Cashier Associate - Vaughan Mills"}
 {"company":"Fox Group Canada","first_seen":"2026-11-11","id":"bamboohr:foxgroupcanada:1082","location":"Point Claire, Quebec","team":"Retail Location","title":"MANGO - Assistant Store Manager/Assistant(e) gérant(e) de magasin - Pointe Claire"}
 {"company":"Fox Group Canada","first_seen":"2026-11-12","id":"bamboohr:foxgroupcanada:1083","location":"Markham, Ontario","team":"Retail Location","title":"Laline - Seasonal Sales Associate (Seasonal Beauty Advisor) - Markville Mall"}
 {"company":"Fox Group Canada","first_seen":"2026-11-14","id":"bamboohr:foxgroupcanada:1084","location":"Etobicoke, Ontario","team":"Retail Location","title":"FOX CLOTHING - Seasonal Sales Associate - Sherway Garden"}
@@ -56,4 +56,5 @@
 {"company":"Fox Group Canada","first_seen":"2026-11-24","id":"bamboohr:foxgroupcanada:1089","location":"Scarborough, Ontario","team":"Retail Location","title":"Flying Tiger Copenhagen - Shift Lead - Scarborough Town Centre"}
 {"company":"Fox Group Canada","first_seen":"2026-11-26","id":"bamboohr:foxgroupcanada:1090","location":"Oshawa, Ontario","team":"Retail Location","title":"Laline - Store Manager - Oshawa Centre"}
 {"company":"Fox Group Canada","first_seen":"2026-11-26","id":"bamboohr:foxgroupcanada:1091","location":"North York, Ontario","team":"Retail Location","title":"MANGO - Assistant Store Manager - Yorkdale Mall"}
-{"company":"Fox Group Canada","first_seen":"2026-11-17","id":"bamboohr:foxgroupcanada:940","location":"Vaughan, Ontario","team":"Retail Location","title":"JUMBO - Stockroom Manager - Vaughan Mills"}
+{"company":"Fox Group Canada","first_seen":"2026-11-27","id":"bamboohr:foxgroupcanada:1092","location":"Vaughan, Ontario","reposts":1,"team":"Retail Location","title":"JUMBO - Visual Merchandiser - Vaughan Mills"}
+{"closed_at":"2026-11-27","company":"Fox Group Canada","first_seen":"2026-11-17","id":"bamboohr:foxgroupcanada:940","location":"Vaughan, Ontario","team":"Retail Location","title":"JUMBO - Stockroom Manager - Vaughan Mills"}
