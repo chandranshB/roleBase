@@ -143,10 +143,13 @@ class TestParquetExport(unittest.TestCase):
         import pyarrow as pa
         import pyarrow.parquet as pq
 
+        import build_logos
         import build_pages
 
         site_dir = self.test_dir / "_site"
         site_dir.mkdir(parents=True)
+        cache_dir = self.test_dir / "logo-cache"
+        cache_dir.mkdir(parents=True)
         meta_bytes = json.dumps({"updated": "2026-11-25 00:00 UTC", "levels": ["mid"], "sources": ["lever"], "total": 1}).encode("utf-8")
         schema = pa.schema([
             ("title", pa.string()), ("company", pa.string()), ("location", pa.string()), ("remote", pa.int8()),
@@ -162,6 +165,13 @@ class TestParquetExport(unittest.TestCase):
         ], schema=schema)
         pq.write_table(tbl, site_dir / "jobs.parquet", compression="snappy")
 
+        comp_schema = pa.schema([
+            ("company", pa.string()), ("open_roles", pa.int32()), ("fresher_roles", pa.int32()),
+            ("fresher_share", pa.float64()), ("junior_asking_3plus", pa.int32()), ("years_stated_share", pa.float64()),
+        ])
+        comp_tbl = pa.Table.from_arrays([["Acme"], [5], [2], [0.4], [0], [0.8]], schema=comp_schema)
+        pq.write_table(comp_tbl, site_dir / "companies.parquet", compression="snappy")
+
         self.assertTrue(Path("web/vendor/hyparquet.mjs").exists())
         html_text = Path("web/index.html").read_text(encoding="utf-8")
         self.assertIn("feed.parquet", html_text)
@@ -172,6 +182,13 @@ class TestParquetExport(unittest.TestCase):
         with patch.object(build_pages, "SITE", site_dir):
             build_pages.main()
         self.assertTrue((site_dir / "sitemap.xml").exists())
+
+        with patch.object(build_logos, "SITE", site_dir), patch.object(build_logos, "CACHE", cache_dir), \
+             patch.object(build_logos, "load", side_effect=AssertionError("must read jobs.parquet, not JSONL")), \
+             patch.object(build_logos, "find_logo", return_value=None), \
+             patch.object(build_logos, "sector_icon", return_value=None):
+            build_logos.main()
+        self.assertTrue((site_dir / "logos.json").exists())
 
 
 if __name__ == "__main__":

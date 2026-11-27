@@ -73,6 +73,7 @@ jobs:
     needs: [scrape, consolidate]
     if: ${{ !cancelled() && (github.event_name == 'push' || needs.consolidate.result == 'success') }} # a push skips the scrape job; a failed scrape still stops the deploy
     runs-on: ubuntu-latest
+    timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
         with: { ref: main } # not the triggering sha: the bot commit above is newer

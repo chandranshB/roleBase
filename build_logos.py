@@ -2,19 +2,22 @@
 
 Order per company: the logo on its Lever board page, else the best icon on its own homepage (domain from domains.json).
 Only sharp icons are kept (PNG/ICO at least MIN px, or SVG); anything else falls back to the letter avatar on the site.
-Run after build_site.py: it writes _site/logos/* and _site/logos.json ({company name: file})."""
+Run after build_site.py: it reads _site/jobs.parquet and _site/companies.parquet and writes _site/logos/* and _site/logos.json ({company name: file})."""
 import io
 import json
 import re
 import shutil
 import struct
+import threading
 import time
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 from urllib.parse import urljoin
 
+import pyarrow.parquet as pq
 import requests
 from PIL import Image, ImageChops
+from requests.adapters import HTTPAdapter
 
 from scraper import load
 
@@ -23,6 +26,11 @@ MIN, MAX_BYTES, FRESH, RETRY = 48, 120_000, 30 * 86400, 7 * 86400  # px, bytes, 
 HEADERS = {"User-Agent": "argus-job-scraper (icon fetch)"}
 BAD = []
 VER = 2  # bump when the lookup recipe gains a source, so earlier misses get another try
+_S = requests.Session()
+_S.mount("https://", HTTPAdapter(pool_connections=32, pool_maxsize=32))
+_S.mount("http://", HTTPAdapter(pool_connections=32, pool_maxsize=32))
+_SI_LOCK = threading.Lock()
+_SECTOR_LOCK = threading.Lock()
 
 
 def kind(b):
@@ -40,8 +48,12 @@ def size(b, ext):
     if ext == "svg":
         return 9999
     if ext == "png":
-        return max(struct.unpack(">II", b[16:24]))
+        return max(struct.unpack(">II", b[16:24])) if len(b) >= 24 else 0
+    if len(b) < 6:
+        return 0
     n = struct.unpack("<H", b[4:6])[0]
+    if len(b) < 6 + 16 * n:
+        return 0
     return max((max(b[6 + 16 * i] or 256, b[7 + 16 * i] or 256) for i in range(n)), default=0)
 
 
@@ -66,7 +78,7 @@ def candidates(html, base):
 
 
 def fetch(url):
-    r = requests.get(url, headers=HEADERS, timeout=8, allow_redirects=True)
+    r = _S.get(url, headers=HEADERS, timeout=8, allow_redirects=True)
     if not r.ok and "google.com/s2" in url and len(BAD) < 5:
         BAD.append(f"{r.status_code} {url}")  # shown at the end, to tell "no icon" from "we are being blocked"
     return r.content if r.ok and len(r.content) <= MAX_BYTES else None
@@ -85,14 +97,16 @@ def simple_icon(name):
     """Brand mark from the Simple Icons library (CC0 files, vector, brand colour), only on an exact name match. Used when the
     company's own site gave no usable icon. Brand names stay the property of their owners; this is just to show who posted a job."""
     if not _SI:
-        try:
-            data = requests.get("https://cdn.jsdelivr.net/npm/simple-icons@latest/data/simple-icons.json", headers=HEADERS, timeout=30).json()
-            for e in data:
-                for t in [e["title"], *(e.get("aliases", {}).get("aka", []))]:
-                    _SI.setdefault(re.sub(r"[^a-z0-9]", "", t.lower()), (e["slug"], e["hex"]))
-        except Exception as e:
-            print(f"  simple-icons: {type(e).__name__}")
-        _SI.setdefault("", None)
+        with _SI_LOCK:
+            if not _SI:
+                try:
+                    data = _S.get("https://cdn.jsdelivr.net/npm/simple-icons@latest/data/simple-icons.json", headers=HEADERS, timeout=30).json()
+                    for e in data:
+                        for t in [e["title"], *(e.get("aliases", {}).get("aka", []))]:
+                            _SI.setdefault(re.sub(r"[^a-z0-9]", "", t.lower()), (e["slug"], e["hex"]))
+                except Exception as e:
+                    print(f"  simple-icons: {type(e).__name__}")
+                _SI.setdefault("", None)
     key = re.sub(r"[^a-z0-9]", "", re.sub(r"\b(inc|llc|ltd|plc|corp|corporation|group|the)\b", "", name.lower()))
     hit = len(key) >= 4 and _SI.get(key)
     if not hit:
@@ -116,10 +130,12 @@ SECTOR = dict(engineering="code", data="chart-bar", sales="briefcase", marketing
 def sector_icon(cat):
     f = CACHE / f"_sector_{cat}.svg"
     if not f.exists():
-        r = requests.get(f"https://cdn.jsdelivr.net/npm/@tabler/icons@latest/icons/outline/{SECTOR.get(cat, 'building')}.svg", headers=HEADERS, timeout=30)
-        if not r.ok:
-            return None
-        f.write_bytes(r.content.replace(b"currentColor", b"#6b7280"))
+        with _SECTOR_LOCK:
+            if not f.exists():
+                r = _S.get(f"https://cdn.jsdelivr.net/npm/@tabler/icons@latest/icons/outline/{SECTOR.get(cat, 'building')}.svg", headers=HEADERS, timeout=30)
+                if not r.ok:
+                    return None
+                f.write_bytes(r.content.replace(b"currentColor", b"#6b7280"))
     return f
 
 
@@ -127,12 +143,12 @@ def find_logo(name, slug, lever_slug, domain):
     """-> (bytes, ext) or None"""
     try:
         if lever_slug:
-            m = re.search(r'<img[^>]+src="(https://lever-client-logos[^"]+)"', requests.get(f"https://jobs.lever.co/{lever_slug}", headers=HEADERS, timeout=8).text)
+            m = re.search(r'<img[^>]+src="(https://lever-client-logos[^"]+)"', _S.get(f"https://jobs.lever.co/{lever_slug}", headers=HEADERS, timeout=8).text)
             b = m and fetch(m[1])
-            if b and kind(b) == "png" and max(struct.unpack(">II", b[16:24])) >= MIN and wide(b) < 1.6:  # wordmarks are unreadable in a small square
+            if b and kind(b) == "png" and len(b) >= 24 and max(struct.unpack(">II", b[16:24])) >= MIN and wide(b) < 1.6:  # wordmarks are unreadable in a small square
                 return b, "png"
         if domain:
-            page = requests.get(f"https://{domain}/", headers=HEADERS, timeout=8, allow_redirects=True)
+            page = _S.get(f"https://{domain}/", headers=HEADERS, timeout=8, allow_redirects=True)
             for u in candidates(page.text if page.ok else "", page.url)[:5]:
                 b = fetch(u)
                 if b and kind(b) and size(b, kind(b)) >= MIN:
@@ -144,7 +160,7 @@ def find_logo(name, slug, lever_slug, domain):
         return si, "svg"
     try:  # many big sites refuse bots: ask Google's icon service for the domain's favicon (build time only, never from the visitor's browser)
         b = domain and fetch(f"https://www.google.com/s2/favicons?domain={domain}&sz=128")
-        if b and kind(b) == "png" and max(struct.unpack(">II", b[16:24])) >= 32:  # smaller than MIN, but a real logo beats a letter
+        if b and kind(b) == "png" and len(b) >= 24 and max(struct.unpack(">II", b[16:24])) >= 32:  # smaller than MIN, but a real logo beats a letter
             return b, "png"
     except Exception as e:
         print(f"  {name}: {type(e).__name__}")
@@ -171,12 +187,23 @@ def tidy(b):
 
 
 def main():
+    t0 = time.time()
     cfg = json.loads(Path("companies.json").read_text(encoding="utf-8"))
     domains = json.loads(Path("domains.json").read_text(encoding="utf-8"))
+    site_jobs_pq = SITE / "jobs.parquet"
+    site_comp_pq = SITE / "companies.parquet"
     site_jobs_file = SITE / "jobs.json"
     site_comp_file = SITE / "companies.json"
     cats = {}
-    if site_jobs_file.exists() and site_comp_file.exists():
+    if site_jobs_pq.exists() and site_comp_pq.exists():
+        jtbl = pq.read_table(site_jobs_pq, columns=["company", "category"]).to_pydict()
+        ctbl = pq.read_table(site_comp_pq, columns=["company", "open_roles"]).to_pydict()
+        live_companies = set(jtbl["company"])
+        counts = dict(zip(ctbl["company"], ctbl["open_roles"]))
+        for comp, cat in zip(jtbl["company"], jtbl["category"]):
+            c = cats.setdefault(comp, {})
+            c[cat] = c.get(cat, 0) + 1
+    elif site_jobs_file.exists() and site_comp_file.exists():
         site_jobs = json.loads(site_jobs_file.read_text(encoding="utf-8")).get("rows", [])
         site_comp = json.loads(site_comp_file.read_text(encoding="utf-8"))
         live_companies = {r[1] for r in site_jobs}
@@ -206,7 +233,7 @@ def main():
             seen.add(n)
     for n, c in counts.items():
         slug = re.sub(r"\W+", "-", n.lower()).strip("-")
-        if c >= 3 and slug:
+        if c >= 3 and slug and n not in seen:
             todo.append((n, slug, None, None))
             seen.add(n)
     CACHE.mkdir(exist_ok=True)
@@ -224,8 +251,13 @@ def main():
         if got:
             (CACHE / f"{slug}.{got[1]}").write_bytes(got[0])
         return name, {"file": f"{slug}.{got[1]}" if got else None, "t": now, "v": VER, **({"domain": domain} if domain else {})}
+
+    print(f"Resolving logos for {len(todo):,} companies...", flush=True)
     with ThreadPoolExecutor(16) as ex:
-        idx.update(dict(ex.map(one, todo, chunksize=100)))
+        for done_n, (k, v) in enumerate(ex.map(one, todo, chunksize=100), 1):
+            idx[k] = v
+            if done_n % 2000 == 0:
+                print(f"  logos: {done_n:,}/{len(todo):,} checked ({time.time() - t0:.1f}s)...", flush=True)
     idx_file.write_text(json.dumps(idx, indent=1), encoding="utf-8")
 
     out = SITE / "logos"
