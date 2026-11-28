@@ -4513,28 +4513,10 @@ def append_csv(path, header, rows):
 
 
 def log_history(db, pruned, today):
-    """Append-only history for trends the 90-day job window can't answer later (git stores only the new lines):
-    pulse.csv = open/fresher job counts per board once a day; archive.csv = lifetime of every job that aged out."""
-    pulse = Path("data/pulse.csv")
-    if not (pulse.exists() and any(l.startswith(today + ",") for l in pulse.read_text(encoding="utf-8").split("\n"))):
-        counts = {}
-        for i, o in db.items():
-            if o["closed_at"] is None:
-                c = counts.setdefault(i.rsplit(":", 1)[0], [0, 0])
-                c[0] += 1
-                c[1] += fresher_ok(o)
-        append_csv(pulse, ["date", "board", "open", "fresher"], [[today, b, n, f] for b, (n, f) in sorted(counts.items())])
-    skills = Path("data/skills.csv")  # skill demand per day: postings that name each skill, out of postings that name any skill
-    if not (skills.exists() and any(l.startswith(today + ",") for l in skills.read_text(encoding="utf-8").split(chr(10)))):
-        live = [o for o in db.values() if o["closed_at"] is None]
-        tagged, n = sum(bool(o["skills"]) for o in live), {}
-        for o in live:
-            for k in o["skills"]:
-                n[k] = n.get(k, 0) + 1
-        append_csv(skills, ["date", "skill", "jobs", "tagged"], [[today, k, c, tagged] for k, c in sorted(n.items())])
-    if pruned:
-        append_csv(Path("data/archive.csv"), ["id", "company", "level", "category", "posted", "first_seen", "closed_at"],
-                   [[o["id"], o["company"], o["level"], o["category"], o["posted"] or "", o["first_seen"], o["closed_at"]] for o in pruned])
+    """Persist daily pulse/skills and pruned archive rows in ZSTD-compressed Apache Parquet."""
+    from argus.storage import log_history as _log_history
+
+    return _log_history(db, pruned, today)
 
 
 HEALTH = Path("data/health.json")  # per board: consecutive suspicious runs + last good day, so dead boards are visible
@@ -4642,8 +4624,6 @@ def main():
         for hf in Path("data").glob("health-*.json"):
             hf.unlink(missing_ok=True)
         cutoff = (dt.date.fromisoformat(today) - dt.timedelta(KEEP_CLOSED_DAYS)).isoformat()
-        pulse = Path("data/pulse.csv")
-        skills_path = Path("data/skills.csv")
 
         pulse_counts = {}
         all_skills = Counter()
@@ -4761,19 +4741,19 @@ def main():
                     pulse_counts[board] = [b_open, b_fresher]
 
         if pulse_counts:
-            if pulse.exists():
-                p_lines = [line for line in pulse.read_text(encoding="utf-8").splitlines() if line and not line.startswith(today + ",")]
-                pulse.write_text("\n".join(p_lines) + ("\n" if p_lines else ""), encoding="utf-8")
-            append_csv(pulse, ["date", "board", "open", "fresher"], [[today, b, n, f] for b, (n, f) in sorted(pulse_counts.items())])
+            from argus.storage import write_history_parquet
+
+            write_history_parquet("pulse", [[today, b, n, f] for b, (n, f) in sorted(pulse_counts.items())], replace_date=today)
 
         if all_skills:
-            if skills_path.exists():
-                s_lines = [line for line in skills_path.read_text(encoding="utf-8").splitlines() if line and not line.startswith(today + ",")]
-                skills_path.write_text("\n".join(s_lines) + ("\n" if s_lines else ""), encoding="utf-8")
-            append_csv(skills_path, ["date", "skill", "jobs", "tagged"], [[today, k, c, tagged_total] for k, c in sorted(all_skills.items())])
+            from argus.storage import write_history_parquet
+
+            write_history_parquet("skills", [[today, k, c, tagged_total] for k, c in sorted(all_skills.items())], replace_date=today)
 
         if pruned_rows:
-            append_csv(Path("data/archive.csv"), ["id", "company", "level", "category", "posted", "first_seen", "closed_at"], pruned_rows)
+            from argus.storage import write_history_parquet
+
+            write_history_parquet("archive", pruned_rows)
 
         company_stats_list = [
             [c, n, all_comp_fresh.get(c, 0), round(all_comp_fresh.get(c, 0) / n, 3), all_comp_jr3.get(c, 0), round(all_comp_years.get(c, 0) / n, 2)]

@@ -12,7 +12,6 @@ from typing import Any, Dict, List
 
 from argus.config import DIR, HEALTH, KEEP_CLOSED_DAYS
 from argus.normalize import category, clean_company, fresher_ok, level
-from argus.storage import append_csv
 
 
 def company_stats(jobs: List[Dict[str, Any]], min_roles: int = 5) -> List[Dict[str, Any]]:
@@ -79,8 +78,6 @@ def consolidate_shards(today: str = None) -> None:
         hf.unlink(missing_ok=True)
 
     cutoff = (dt.date.fromisoformat(today) - dt.timedelta(KEEP_CLOSED_DAYS)).isoformat()
-    pulse = Path("data/pulse.csv")
-    skills_path = Path("data/skills.csv")
 
     pulse_counts = {}
     all_skills = Counter()
@@ -198,19 +195,19 @@ def consolidate_shards(today: str = None) -> None:
                 pulse_counts[board] = [b_open, b_fresher]
 
     if pulse_counts:
-        if pulse.exists():
-            p_lines = [line for line in pulse.read_text(encoding="utf-8").splitlines() if line and not line.startswith(today + ",")]
-            pulse.write_text("\n".join(p_lines) + ("\n" if p_lines else ""), encoding="utf-8")
-        append_csv(pulse, ["date", "board", "open", "fresher"], [[today, b, n, f] for b, (n, f) in sorted(pulse_counts.items())])
+        from argus.storage import write_history_parquet
+
+        write_history_parquet("pulse", [[today, b, n, f] for b, (n, f) in sorted(pulse_counts.items())], replace_date=today)
 
     if all_skills:
-        if skills_path.exists():
-            s_lines = [line for line in skills_path.read_text(encoding="utf-8").splitlines() if line and not line.startswith(today + ",")]
-            skills_path.write_text("\n".join(s_lines) + ("\n" if s_lines else ""), encoding="utf-8")
-        append_csv(skills_path, ["date", "skill", "jobs", "tagged"], [[today, k, c, tagged_total] for k, c in sorted(all_skills.items())])
+        from argus.storage import write_history_parquet
+
+        write_history_parquet("skills", [[today, k, c, tagged_total] for k, c in sorted(all_skills.items())], replace_date=today)
 
     if pruned_rows:
-        append_csv(Path("data/archive.csv"), ["id", "company", "level", "category", "posted", "first_seen", "closed_at"], pruned_rows)
+        from argus.storage import write_history_parquet
+
+        write_history_parquet("archive", pruned_rows)
 
     company_stats_list = [
         [c, n, all_comp_fresh.get(c, 0), round(all_comp_fresh.get(c, 0) / n, 3), all_comp_jr3.get(c, 0), round(all_comp_years.get(c, 0) / n, 2)]

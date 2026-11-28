@@ -113,44 +113,38 @@ def lines(title, sub, series, w=W, unit=""):
 
 
 def pulse():
-    p, open_, fresher = Path("data/pulse.csv"), Counter(), Counter()
-    if p.exists():
-        try:
-            with open(p, encoding="utf-8") as f:
-                for r in csv.DictReader(f):
-                    d = str(r.get("date") or "").strip()[:10]
-                    if not d:
-                        continue
-                    try:
-                        open_[d] += int(r.get("open") or 0)
-                        fresher[d] += int(r.get("fresher") or 0)
-                    except (ValueError, TypeError):
-                        continue
-        except Exception:
-            pass
+    from argus.storage import read_history_table
+
+    open_, fresher = Counter(), Counter()
+    try:
+        cols = read_history_table("pulse").to_pydict()
+        for d_raw, op, fr in zip(cols["date"], cols["open"], cols["fresher"]):
+            d = str(d_raw or "").strip()[:10]
+            if not d:
+                continue
+            open_[d] += int(op or 0)
+            fresher[d] += int(fr or 0)
+    except Exception:
+        pass
     return sorted(open_.items()), sorted(fresher.items())
 
 
 def skill_trends():
-    """Share of skill-tagged open postings that mention each skill, per day (data/skills.csv); the 6 skills that lead today."""
-    p, share = Path("data/skills.csv"), {}
-    if p.exists():
-        try:
-            with open(p, encoding="utf-8") as f:
-                for r in csv.DictReader(f):
-                    d = str(r.get("date") or "").strip()[:10]
-                    skill = str(r.get("skill") or "").strip()
-                    if not d or not skill:
-                        continue
-                    try:
-                        tagged = int(r.get("tagged") or 0)
-                        jobs = int(r.get("jobs") or 0)
-                        if tagged > 0:
-                            share.setdefault(skill, []).append((d, 100 * jobs / tagged))
-                    except (ValueError, TypeError):
-                        continue
-        except Exception:
-            pass
+    """Share of skill-tagged open postings that mention each skill, per day (data/skills.parquet); the 6 skills that lead today."""
+    from argus.storage import read_history_table
+
+    share = {}
+    try:
+        cols = read_history_table("skills").to_pydict()
+        for d_raw, sk_raw, jb, tg in zip(cols["date"], cols["skill"], cols["jobs"], cols["tagged"]):
+            d = str(d_raw or "").strip()[:10]
+            skill = str(sk_raw or "").strip()
+            tagged = int(tg or 0)
+            jobs = int(jb or 0)
+            if d and skill and tagged > 0:
+                share.setdefault(skill, []).append((d, 100 * jobs / tagged))
+    except Exception:
+        pass
     lead = sorted(share, key=lambda s: -share[s][-1][1] if share[s] else 0)
     top = [s for s in lead if s not in TECH][:3] + [s for s in lead if s in TECH][:3]  # three non-IT skills and three IT ones, so no field drowns the chart
     return [(SK.get(s, s.capitalize()), i + 1, share[s]) for i, s in enumerate(top)]

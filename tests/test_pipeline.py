@@ -120,9 +120,11 @@ class TestPipeline(unittest.TestCase):
                 with patch("argus.consolidate.DIR", jobs_dir), patch("argus.consolidate.HEALTH", root / "health.json"):
                     (root / "data").mkdir(exist_ok=True)
                     consolidate_shards()
-                pulse = (root / "data" / "pulse.csv").read_text(encoding="utf-8")
-                self.assertIn(",trakstar_hire:acme,", pulse)
-                self.assertNotIn(",trakstar:hire_acme,", pulse)
+                import pyarrow.parquet as pq
+
+                boards = pq.read_table(root / "data" / "pulse.parquet", columns=["board"]).to_pydict()["board"]
+                self.assertIn("trakstar_hire:acme", boards)
+                self.assertNotIn("trakstar:hire_acme", boards)
             finally:
                 os.chdir(cwd)
 

@@ -168,31 +168,106 @@ def append_csv(path: Path, header: List[str], rows: List[List[Any]]) -> None:
         w.writerows(rows)
 
 
-def log_history(db: Dict[str, Dict[str, Any]], pruned: List[Dict[str, Any]], today: str) -> None:
-    """Log daily metrics snapshot to pulse.csv and skills.csv, and pruned jobs to archive.csv."""
-    pulse = Path("data/pulse.csv")
-    if not (pulse.exists() and any(line.startswith(today + ",") for line in pulse.read_text(encoding="utf-8").split("\n") if line)):
-        counts = {}
-        for i, o in db.items():
-            if o["closed_at"] is None:
-                c = counts.setdefault(i.rsplit(":", 1)[0], [0, 0])
-                c[0] += 1
-                c[1] += fresher_ok(o)
-        append_csv(pulse, ["date", "board", "open", "fresher"], [[today, b, n, f] for b, (n, f) in sorted(counts.items())])
+HISTORY_SPECS = {
+    "pulse": [("date", "str"), ("board", "str"), ("open", "int"), ("fresher", "int")],
+    "skills": [("date", "str"), ("skill", "str"), ("jobs", "int"), ("tagged", "int")],
+    "archive": [("id", "str"), ("company", "str"), ("level", "str"), ("category", "str"), ("posted", "str"), ("first_seen", "str"), ("closed_at", "str")],
+}
 
-    skills_path = Path("data/skills.csv")
-    if not (skills_path.exists() and any(line.startswith(today + ",") for line in skills_path.read_text(encoding="utf-8").split("\n") if line)):
-        live = [o for o in db.values() if o["closed_at"] is None]
-        tagged = sum(bool(o["skills"]) for o in live)
-        n = {}
-        for o in live:
-            for k in o["skills"]:
-                n[k] = n.get(k, 0) + 1
-        append_csv(skills_path, ["date", "skill", "jobs", "tagged"], [[today, k, c, tagged] for k, c in sorted(n.items())])
+
+def _history_schema(kind: str):
+    import pyarrow as pa
+
+    return pa.schema([
+        (col, pa.int32() if typ == "int" else pa.string())
+        for col, typ in HISTORY_SPECS[kind]
+    ])
+
+
+def read_history_table(kind: str):
+    """Read data/{kind}.parquet (or legacy data/{kind}.csv) as a PyArrow Table."""
+    import pyarrow as pa
+    import pyarrow.parquet as pq
+
+    pq_path = Path(f"data/{kind}.parquet")
+    csv_path = Path(f"data/{kind}.csv")
+    schema = _history_schema(kind)
+    if pq_path.exists():
+        return pq.read_table(pq_path)
+    if csv_path.exists():
+        spec = HISTORY_SPECS[kind]
+        cols: Dict[str, List[Any]] = {c: [] for c, _ in spec}
+        with open(csv_path, encoding="utf-8", errors="replace", newline="") as f:
+            for r in csv.DictReader(f):
+                for col, typ in spec:
+                    val = r.get(col)
+                    if typ == "int":
+                        try:
+                            cols[col].append(int(val or 0))
+                        except (ValueError, TypeError):
+                            cols[col].append(0)
+                    else:
+                        cols[col].append(str(val or ""))
+        return pa.Table.from_pydict(cols, schema=schema)
+    return pa.Table.from_pydict({c: [] for c, _ in HISTORY_SPECS[kind]}, schema=schema)
+
+
+def write_history_parquet(kind: str, rows: List[List[Any]], replace_date: str = None) -> None:
+    """Append or date-upsert rows into ZSTD-compressed data/{kind}.parquet (migrating any legacy CSV)."""
+    import pyarrow as pa
+    import pyarrow.compute as pc
+    import pyarrow.parquet as pq
+
+    if not rows:
+        return
+    pq_path = Path(f"data/{kind}.parquet")
+    pq_path.parent.mkdir(parents=True, exist_ok=True)
+    schema = _history_schema(kind)
+    spec = HISTORY_SPECS[kind]
+
+    existing = read_history_table(kind)
+    if existing.num_rows > 0 and replace_date and "date" in existing.column_names:
+        mask = pc.not_equal(existing["date"], replace_date)
+        existing = existing.filter(mask)
+
+    new_cols: Dict[str, List[Any]] = {c: [] for c, _ in spec}
+    for row in rows:
+        for idx, (col, typ) in enumerate(spec):
+            val = row[idx] if idx < len(row) else None
+            if typ == "int":
+                try:
+                    new_cols[col].append(int(val or 0))
+                except (ValueError, TypeError):
+                    new_cols[col].append(0)
+            else:
+                new_cols[col].append(str(val or ""))
+    new_table = pa.Table.from_pydict(new_cols, schema=schema)
+    combined = pa.concat_tables([existing, new_table]) if existing.num_rows > 0 else new_table
+    pq.write_table(combined, pq_path, compression="zstd")
+
+
+def log_history(db: Dict[str, Dict[str, Any]], pruned: List[Dict[str, Any]], today: str) -> None:
+    """Log daily metrics snapshot to pulse.parquet and skills.parquet, and pruned jobs to archive.parquet."""
+    counts = {}
+    for i, o in db.items():
+        if o["closed_at"] is None:
+            c = counts.setdefault(i.rsplit(":", 1)[0], [0, 0])
+            c[0] += 1
+            c[1] += fresher_ok(o)
+    if counts:
+        write_history_parquet("pulse", [[today, b, n, f] for b, (n, f) in sorted(counts.items())], replace_date=today)
+
+    live = [o for o in db.values() if o["closed_at"] is None]
+    tagged = sum(bool(o["skills"]) for o in live)
+    n = {}
+    for o in live:
+        for k in o["skills"]:
+            n[k] = n.get(k, 0) + 1
+    if n:
+        write_history_parquet("skills", [[today, k, c, tagged] for k, c in sorted(n.items())], replace_date=today)
 
     if pruned:
-        append_csv(
-            Path("data/archive.csv"),
-            ["id", "company", "level", "category", "posted", "first_seen", "closed_at"],
-            [[o["id"], o["company"], o["level"], o["category"], o["posted"] or "", o["first_seen"], o["closed_at"]] for o in pruned]
+        write_history_parquet(
+            "archive",
+            [[o["id"], o["company"], o["level"], o["category"], o["posted"] or "", o["first_seen"], o["closed_at"]] for o in pruned],
         )

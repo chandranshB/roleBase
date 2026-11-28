@@ -392,39 +392,31 @@ def main(argv=None):
 
     export_table(company_rows, COMPANY_COLUMNS, COMPANY_SCHEMA, out, "jobs_by_company", write_parquet, write_csv, args.compression)
 
-    # Two small time series datasets
+    # Two small time series datasets (read from data/pulse.parquet + data/skills.parquet, or legacy CSV)
+    from argus.storage import read_history_table
+
     daily = {}
-    pulse = Path("data/pulse.csv")
-    if pulse.exists():
-        with open(pulse, encoding="utf-8") as f_pulse:
-            for r in csv.DictReader(f_pulse):
-                try:
-                    d = daily.setdefault(r["date"], [0, 0])
-                    d[0] += int(r.get("open") or 0)
-                    d[1] += int(r.get("fresher") or 0)
-                except Exception:
-                    pass
+    pcols = read_history_table("pulse").to_pydict()
+    for d_str, op, fr in zip(pcols["date"], pcols["open"], pcols["fresher"]):
+        d = daily.setdefault(str(d_str), [0, 0])
+        d[0] += int(op or 0)
+        d[1] += int(fr or 0)
     daily_rows = [{"date": d, "open_jobs": v[0], "fresher_friendly_jobs": v[1]} for d, v in sorted(daily.items())]
     export_table(daily_rows, DAILY_COLUMNS, DAILY_SCHEMA, out, "open_jobs_daily", write_parquet, write_csv, args.compression)
 
     skill_rows = []
-    skills_path = Path("data/skills.csv")
-    if skills_path.exists():
-        with open(skills_path, encoding="utf-8") as f_skills:
-            for r in csv.DictReader(f_skills):
-                try:
-                    tagged = int(r.get("tagged") or 0)
-                    jobs_count = int(r.get("jobs") or 0)
-                    if tagged > 0:
-                        skill_rows.append({
-                            "date": r.get("date", ""),
-                            "skill": r.get("skill", ""),
-                            "jobs": jobs_count,
-                            "tagged": tagged,
-                            "share_pct": round(100 * jobs_count / tagged, 2)
-                        })
-                except Exception:
-                    pass
+    scols = read_history_table("skills").to_pydict()
+    for d_str, sk_str, jb, tg in zip(scols["date"], scols["skill"], scols["jobs"], scols["tagged"]):
+        tagged = int(tg or 0)
+        jobs_count = int(jb or 0)
+        if tagged > 0:
+            skill_rows.append({
+                "date": str(d_str or ""),
+                "skill": str(sk_str or ""),
+                "jobs": jobs_count,
+                "tagged": tagged,
+                "share_pct": round(100 * jobs_count / tagged, 2)
+            })
     export_table(skill_rows, SKILL_COLUMNS, SKILL_SCHEMA, out, "skill_demand_daily", write_parquet, write_csv, args.compression)
 
     active_files = get_file_catalog(fmt)
